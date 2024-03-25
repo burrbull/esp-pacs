@@ -1,5 +1,25 @@
 _svd: ../esp32.base.svd
 
+SPI0:
+  DMA_INT_ENA:
+    _strip_end: _INT_ENA
+  DMA_INT_RAW:
+    _strip_end: _INT_RAW
+  DMA_INT_ST:
+    _strip_end: _INT_ST
+  DMA_INT_CLR:
+    _strip_end: _INT_CLR
+
+"I2S0,UHCI0":
+  INT_ENA:
+    _strip_end: _INT_ENA
+  INT_RAW:
+    _strip_end: _INT_RAW
+  INT_ST:
+    _strip_end: _INT_ST
+  INT_CLR:
+    _strip_end: _INT_CLR
+
 TIMG0:
   T0UPDATE:
     _modify:
