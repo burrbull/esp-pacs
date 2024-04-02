@@ -93,7 +93,7 @@ PARL_IO:
         name: RX_FIFO_WOVF_INT_CLR
         description: Write 1 to clear RX_FIFO_WOVF_INTR.
 
-"EFUSE,I2C0,I2S0,UART0,SPI[01],USB_DEVICE,LP_UART,LP_WDT,PARL_IO,PAU,PMU":
+"EFUSE,I2C0,I2S0,UART0,USB_DEVICE,LP_UART,LP_WDT,PARL_IO,PAU,PMU":
   _include: ../../../common_patches/int_strip.yaml
 
 LEDC:
@@ -125,10 +125,76 @@ PCNT:
   _include: ../../../common_patches/pcnt.yaml
 
 SPI[12]:
+  MISC:
+    CS?_DIS:
+      Pin: [0, SPI_CSx signal is from/to CSx pin]
+      Disable: [1, Disable CSx pin]
+    _array:
+      CS?_DIS:
+        description: SPI CS0 pin enable bit. Can be configured in CONF state
   _include: ../../../common_patches/spi_w.yaml
 
 SPI2:
   _include: ../../../common_patches/spi_dma_int_strip.yaml
+
+SPI[02]:
+  DIN_MODE:
+    _modify:
+      DIN0_MODE:
+        description: Configure the input mode for FSPID signal. Can be configured in CONF state
+      DIN1_MODE:
+        description: Configure the input mode for FSPIQ signal. Can be configured in CONF state
+        derivedFrom: DIN0_MODE
+      DIN2_MODE:
+        description: Configure the input mode for FSPIWP signal. Can be configured in CONF state
+        derivedFrom: DIN0_MODE
+      DIN3_MODE:
+        description: Configure the input mode for FSPIHF signal. Can be configured in CONF state
+        derivedFrom: DIN0_MODE
+    DIN0_MODE:
+      _name: InMode
+      NoDelay: [0, Input without delay]
+      MstFalling: [1, Input at the (DINx_NUM + 1)th falling edge of clk_spi_mst]
+      HclkPlusMstRising: [2, Input at the (DINx_NUM + 1)th rising edge of clk_hclk plus one clk_spi_mst rising edge
+cycle]
+      HclkPlusMstFalling: [3, Input at the (DINx_NUM + 1)th rising edge of clk_hclk plus one clk_spi_mst falling
+edge cycle]
+  DIN_NUM:
+    _modify:
+      DIN0_NUM:
+        description: Configure the delays to input signal FSPID based on the setting of DIN%s_MODE. Can be configured in CONF state
+      DIN1_NUM:
+        description: Configure the delays to input signal FSPIQ based on the setting of DIN%s_MODE. Can be configured in CONF state
+        derivedFrom: DIN0_NUM
+      DIN2_NUM:
+        description: Configure the delays to input signal FSPIWP based on the setting of DIN%s_MODE. Can be configured in CONF state
+        derivedFrom: DIN0_NUM
+      DIN3_NUM:
+        description: Configure the delays to input signal FSPIHF based on the setting of DIN%s_MODE. Can be configured in CONF state
+        derivedFrom: DIN0_NUM
+    DIN0_NUM:
+      _name: Delay
+      Cycle1: [0, Delayed by 1 clock cycle]
+      Cycles2: [1, Delayed by 2 clock cycles]
+      Cycles3: [2, Delayed by 3 clock cycles]
+      Cycles4: [3, Delayed by 4 clock cycles]
+  DOUT_MODE:
+    _modify:
+      DOUT0_MODE:
+        description: Configure the output mode for FSPID signal. Can be configured in CONF state
+      DOUT1_MODE:
+        description: Configure the output mode for FSPIQ signal. Can be configured in CONF state
+        derivedFrom: DOUT0_MODE
+      DOUT2_MODE:
+        description: Configure the output mode for FSPIWP signal. Can be configured in CONF state
+        derivedFrom: DOUT0_MODE
+      DOUT3_MODE:
+        description: Configure the output mode for FSPIHF signal. Can be configured in CONF state
+        derivedFrom: DOUT0_MODE
+    DOUT0_MODE:
+      _name: OutMode
+      NoDelay: [0, Output without delay]
+      SpiEdge: [1, Output with a delay of a SPI module clock cycle at its falling edge]
 
 MCPWM0:
   _include: ../../../common_patches/mcpwm_collect.yaml

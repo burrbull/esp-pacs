@@ -1,33 +1,42 @@
 #[doc = "Register `DIN_MODE` reader"]
 pub type R = crate::R<DIN_MODE_SPEC>;
-#[doc = "Field `DIN0_MODE` reader - the input signals are delayed by system clock cycles, 0: input without delayed, 1: input with the posedge of clk_apb,2 input with the negedge of clk_apb, 3: input with the posedge of clk_160, 4 input with the negedge of clk_160, 5: input with the spi_clk high edge, 6: input with the spi_clk low edge"]
-pub type DIN0_MODE_R = crate::FieldReader;
-#[doc = "Field `DIN1_MODE` reader - the input signals are delayed by system clock cycles, 0: input without delayed, 1: input with the posedge of clk_apb,2 input with the negedge of clk_apb, 3: input with the posedge of clk_160, 4 input with the negedge of clk_160, 5: input with the spi_clk high edge, 6: input with the spi_clk low edge"]
-pub type DIN1_MODE_R = crate::FieldReader;
-#[doc = "Field `DIN2_MODE` reader - the input signals are delayed by system clock cycles, 0: input without delayed, 1: input with the posedge of clk_apb,2 input with the negedge of clk_apb, 3: input with the posedge of clk_160, 4 input with the negedge of clk_160, 5: input with the spi_clk high edge, 6: input with the spi_clk low edge"]
-pub type DIN2_MODE_R = crate::FieldReader;
-#[doc = "Field `DIN3_MODE` reader - the input signals are delayed by system clock cycles, 0: input without delayed, 1: input with the posedge of clk_apb,2 input with the negedge of clk_apb, 3: input with the posedge of clk_160, 4 input with the negedge of clk_160, 5: input with the spi_clk high edge, 6: input with the spi_clk low edge"]
-pub type DIN3_MODE_R = crate::FieldReader;
+#[doc = "Field `DIN_MODE(0-3)` reader - the input signals are delayed by system clock cycles, 0: input without delayed, 1: input with the posedge of clk_apb,2 input with the negedge of clk_apb, 3: input with the posedge of clk_160, 4 input with the negedge of clk_160, 5: input with the spi_clk high edge, 6: input with the spi_clk low edge"]
+pub type DIN_MODE_R = crate::FieldReader;
 impl R {
+    #[doc = "the input signals are delayed by system clock cycles, 0: input without delayed, 1: input with the posedge of clk_apb,2 input with the negedge of clk_apb, 3: input with the posedge of clk_160, 4 input with the negedge of clk_160, 5: input with the spi_clk high edge, 6: input with the spi_clk low edge"]
+    #[doc = ""]
+    #[doc = "NOTE: `n` is number of field in register. `n == 0` corresponds to `DIN0_MODE` field"]
+    #[inline(always)]
+    pub fn din_mode(&self, n: u8) -> DIN_MODE_R {
+        #[allow(clippy::no_effect)]
+        [(); 4][n as usize];
+        DIN_MODE_R::new(((self.bits >> (n * 2)) & 3) as u8)
+    }
+    #[doc = "Iterator for array of:"]
+    #[doc = "the input signals are delayed by system clock cycles, 0: input without delayed, 1: input with the posedge of clk_apb,2 input with the negedge of clk_apb, 3: input with the posedge of clk_160, 4 input with the negedge of clk_160, 5: input with the spi_clk high edge, 6: input with the spi_clk low edge"]
+    #[inline(always)]
+    pub fn din_mode_iter(&self) -> impl Iterator<Item = DIN_MODE_R> + '_ {
+        (0..4).map(move |n| DIN_MODE_R::new(((self.bits >> (n * 2)) & 3) as u8))
+    }
     #[doc = "Bits 0:1 - the input signals are delayed by system clock cycles, 0: input without delayed, 1: input with the posedge of clk_apb,2 input with the negedge of clk_apb, 3: input with the posedge of clk_160, 4 input with the negedge of clk_160, 5: input with the spi_clk high edge, 6: input with the spi_clk low edge"]
     #[inline(always)]
-    pub fn din0_mode(&self) -> DIN0_MODE_R {
-        DIN0_MODE_R::new((self.bits & 3) as u8)
+    pub fn din0_mode(&self) -> DIN_MODE_R {
+        DIN_MODE_R::new((self.bits & 3) as u8)
     }
     #[doc = "Bits 2:3 - the input signals are delayed by system clock cycles, 0: input without delayed, 1: input with the posedge of clk_apb,2 input with the negedge of clk_apb, 3: input with the posedge of clk_160, 4 input with the negedge of clk_160, 5: input with the spi_clk high edge, 6: input with the spi_clk low edge"]
     #[inline(always)]
-    pub fn din1_mode(&self) -> DIN1_MODE_R {
-        DIN1_MODE_R::new(((self.bits >> 2) & 3) as u8)
+    pub fn din1_mode(&self) -> DIN_MODE_R {
+        DIN_MODE_R::new(((self.bits >> 2) & 3) as u8)
     }
     #[doc = "Bits 4:5 - the input signals are delayed by system clock cycles, 0: input without delayed, 1: input with the posedge of clk_apb,2 input with the negedge of clk_apb, 3: input with the posedge of clk_160, 4 input with the negedge of clk_160, 5: input with the spi_clk high edge, 6: input with the spi_clk low edge"]
     #[inline(always)]
-    pub fn din2_mode(&self) -> DIN2_MODE_R {
-        DIN2_MODE_R::new(((self.bits >> 4) & 3) as u8)
+    pub fn din2_mode(&self) -> DIN_MODE_R {
+        DIN_MODE_R::new(((self.bits >> 4) & 3) as u8)
     }
     #[doc = "Bits 6:7 - the input signals are delayed by system clock cycles, 0: input without delayed, 1: input with the posedge of clk_apb,2 input with the negedge of clk_apb, 3: input with the posedge of clk_160, 4 input with the negedge of clk_160, 5: input with the spi_clk high edge, 6: input with the spi_clk low edge"]
     #[inline(always)]
-    pub fn din3_mode(&self) -> DIN3_MODE_R {
-        DIN3_MODE_R::new(((self.bits >> 6) & 3) as u8)
+    pub fn din3_mode(&self) -> DIN_MODE_R {
+        DIN_MODE_R::new(((self.bits >> 6) & 3) as u8)
     }
 }
 #[cfg(feature = "impl-register-debug")]

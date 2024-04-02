@@ -1,0 +1,4 @@
+MISC:
+  _array:
+    CS?_DIS:
+      description: "SPI_CS%s pin enable, 1: disable SPI_CSx, 0: SPI_CSx pin is active to select SPI device, such as flash, external RAM and so on."

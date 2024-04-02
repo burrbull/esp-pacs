@@ -1,33 +1,42 @@
 #[doc = "Register `DOUT_MODE` reader"]
 pub type R = crate::R<DOUT_MODE_SPEC>;
-#[doc = "Field `DOUT0_MODE` reader - the output signals are delayed by system clock cycles, 0: output without delayed, 1: output with the posedge of clk_apb,2 output with the negedge of clk_apb, 3: output with the posedge of clk_160,4 output with the negedge of clk_160,5: output with the spi_clk high edge ,6: output with the spi_clk low edge"]
-pub type DOUT0_MODE_R = crate::BitReader;
-#[doc = "Field `DOUT1_MODE` reader - the output signals are delayed by system clock cycles, 0: output without delayed, 1: output with the posedge of clk_apb,2 output with the negedge of clk_apb, 3: output with the posedge of clk_160,4 output with the negedge of clk_160,5: output with the spi_clk high edge ,6: output with the spi_clk low edge"]
-pub type DOUT1_MODE_R = crate::BitReader;
-#[doc = "Field `DOUT2_MODE` reader - the output signals are delayed by system clock cycles, 0: output without delayed, 1: output with the posedge of clk_apb,2 output with the negedge of clk_apb, 3: output with the posedge of clk_160,4 output with the negedge of clk_160,5: output with the spi_clk high edge ,6: output with the spi_clk low edge"]
-pub type DOUT2_MODE_R = crate::BitReader;
-#[doc = "Field `DOUT3_MODE` reader - the output signals are delayed by system clock cycles, 0: output without delayed, 1: output with the posedge of clk_apb,2 output with the negedge of clk_apb, 3: output with the posedge of clk_160,4 output with the negedge of clk_160,5: output with the spi_clk high edge ,6: output with the spi_clk low edge"]
-pub type DOUT3_MODE_R = crate::BitReader;
+#[doc = "Field `DOUT_MODE(0-3)` reader - the output signals are delayed by system clock cycles, 0: output without delayed, 1: output with the posedge of clk_apb,2 output with the negedge of clk_apb, 3: output with the posedge of clk_160,4 output with the negedge of clk_160,5: output with the spi_clk high edge ,6: output with the spi_clk low edge"]
+pub type DOUT_MODE_R = crate::BitReader;
 impl R {
+    #[doc = "the output signals are delayed by system clock cycles, 0: output without delayed, 1: output with the posedge of clk_apb,2 output with the negedge of clk_apb, 3: output with the posedge of clk_160,4 output with the negedge of clk_160,5: output with the spi_clk high edge ,6: output with the spi_clk low edge"]
+    #[doc = ""]
+    #[doc = "NOTE: `n` is number of field in register. `n == 0` corresponds to `DOUT0_MODE` field"]
+    #[inline(always)]
+    pub fn dout_mode(&self, n: u8) -> DOUT_MODE_R {
+        #[allow(clippy::no_effect)]
+        [(); 4][n as usize];
+        DOUT_MODE_R::new(((self.bits >> n) & 1) != 0)
+    }
+    #[doc = "Iterator for array of:"]
+    #[doc = "the output signals are delayed by system clock cycles, 0: output without delayed, 1: output with the posedge of clk_apb,2 output with the negedge of clk_apb, 3: output with the posedge of clk_160,4 output with the negedge of clk_160,5: output with the spi_clk high edge ,6: output with the spi_clk low edge"]
+    #[inline(always)]
+    pub fn dout_mode_iter(&self) -> impl Iterator<Item = DOUT_MODE_R> + '_ {
+        (0..4).map(move |n| DOUT_MODE_R::new(((self.bits >> n) & 1) != 0))
+    }
     #[doc = "Bit 0 - the output signals are delayed by system clock cycles, 0: output without delayed, 1: output with the posedge of clk_apb,2 output with the negedge of clk_apb, 3: output with the posedge of clk_160,4 output with the negedge of clk_160,5: output with the spi_clk high edge ,6: output with the spi_clk low edge"]
     #[inline(always)]
-    pub fn dout0_mode(&self) -> DOUT0_MODE_R {
-        DOUT0_MODE_R::new((self.bits & 1) != 0)
+    pub fn dout0_mode(&self) -> DOUT_MODE_R {
+        DOUT_MODE_R::new((self.bits & 1) != 0)
     }
     #[doc = "Bit 1 - the output signals are delayed by system clock cycles, 0: output without delayed, 1: output with the posedge of clk_apb,2 output with the negedge of clk_apb, 3: output with the posedge of clk_160,4 output with the negedge of clk_160,5: output with the spi_clk high edge ,6: output with the spi_clk low edge"]
     #[inline(always)]
-    pub fn dout1_mode(&self) -> DOUT1_MODE_R {
-        DOUT1_MODE_R::new(((self.bits >> 1) & 1) != 0)
+    pub fn dout1_mode(&self) -> DOUT_MODE_R {
+        DOUT_MODE_R::new(((self.bits >> 1) & 1) != 0)
     }
     #[doc = "Bit 2 - the output signals are delayed by system clock cycles, 0: output without delayed, 1: output with the posedge of clk_apb,2 output with the negedge of clk_apb, 3: output with the posedge of clk_160,4 output with the negedge of clk_160,5: output with the spi_clk high edge ,6: output with the spi_clk low edge"]
     #[inline(always)]
-    pub fn dout2_mode(&self) -> DOUT2_MODE_R {
-        DOUT2_MODE_R::new(((self.bits >> 2) & 1) != 0)
+    pub fn dout2_mode(&self) -> DOUT_MODE_R {
+        DOUT_MODE_R::new(((self.bits >> 2) & 1) != 0)
     }
     #[doc = "Bit 3 - the output signals are delayed by system clock cycles, 0: output without delayed, 1: output with the posedge of clk_apb,2 output with the negedge of clk_apb, 3: output with the posedge of clk_160,4 output with the negedge of clk_160,5: output with the spi_clk high edge ,6: output with the spi_clk low edge"]
     #[inline(always)]
-    pub fn dout3_mode(&self) -> DOUT3_MODE_R {
-        DOUT3_MODE_R::new(((self.bits >> 3) & 1) != 0)
+    pub fn dout3_mode(&self) -> DOUT_MODE_R {
+        DOUT_MODE_R::new(((self.bits >> 3) & 1) != 0)
     }
 }
 #[cfg(feature = "impl-register-debug")]

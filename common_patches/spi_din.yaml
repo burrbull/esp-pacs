@@ -1,0 +1,9 @@
+DIN_MODE:
+  _array:
+    DIN?_MODE: {}
+DIN_NUM:
+  _array:
+    DIN?_NUM: {}
+DOUT_MODE:
+  _array:
+    DOUT?_MODE: {}

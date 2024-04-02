@@ -1,61 +1,62 @@
 #[doc = "Register `DIN_NUM` reader"]
 pub type R = crate::R<DIN_NUM_SPEC>;
-#[doc = "Field `DIN0_NUM` reader - the input signals are delayed by SPI module clock cycles, 0: delayed by 1 cycle, 1: delayed by 2 cycles,... Can be configured in CONF state."]
-pub type DIN0_NUM_R = crate::FieldReader;
-#[doc = "Field `DIN1_NUM` reader - the input signals are delayed by SPI module clock cycles, 0: delayed by 1 cycle, 1: delayed by 2 cycles,... Can be configured in CONF state."]
-pub type DIN1_NUM_R = crate::FieldReader;
-#[doc = "Field `DIN2_NUM` reader - the input signals are delayed by SPI module clock cycles, 0: delayed by 1 cycle, 1: delayed by 2 cycles,... Can be configured in CONF state."]
-pub type DIN2_NUM_R = crate::FieldReader;
-#[doc = "Field `DIN3_NUM` reader - the input signals are delayed by SPI module clock cycles, 0: delayed by 1 cycle, 1: delayed by 2 cycles,... Can be configured in CONF state."]
-pub type DIN3_NUM_R = crate::FieldReader;
-#[doc = "Field `DIN4_NUM` reader - the input signals are delayed by SPI module clock cycles, 0: delayed by 1 cycle, 1: delayed by 2 cycles,... Can be configured in CONF state."]
-pub type DIN4_NUM_R = crate::FieldReader;
-#[doc = "Field `DIN5_NUM` reader - the input signals are delayed by SPI module clock cycles, 0: delayed by 1 cycle, 1: delayed by 2 cycles,... Can be configured in CONF state."]
-pub type DIN5_NUM_R = crate::FieldReader;
-#[doc = "Field `DIN6_NUM` reader - the input signals are delayed by SPI module clock cycles, 0: delayed by 1 cycle, 1: delayed by 2 cycles,... Can be configured in CONF state."]
-pub type DIN6_NUM_R = crate::FieldReader;
-#[doc = "Field `DIN7_NUM` reader - the input signals are delayed by SPI module clock cycles, 0: delayed by 1 cycle, 1: delayed by 2 cycles,... Can be configured in CONF state."]
-pub type DIN7_NUM_R = crate::FieldReader;
+#[doc = "Field `DIN_NUM(0-7)` reader - the input signals are delayed by SPI module clock cycles, 0: delayed by 1 cycle, 1: delayed by 2 cycles,... Can be configured in CONF state."]
+pub type DIN_NUM_R = crate::FieldReader;
 impl R {
+    #[doc = "the input signals are delayed by SPI module clock cycles, 0: delayed by 1 cycle, 1: delayed by 2 cycles,... Can be configured in CONF state."]
+    #[doc = ""]
+    #[doc = "NOTE: `n` is number of field in register. `n == 0` corresponds to `DIN0_NUM` field"]
+    #[inline(always)]
+    pub fn din_num(&self, n: u8) -> DIN_NUM_R {
+        #[allow(clippy::no_effect)]
+        [(); 8][n as usize];
+        DIN_NUM_R::new(((self.bits >> (n * 2)) & 3) as u8)
+    }
+    #[doc = "Iterator for array of:"]
+    #[doc = "the input signals are delayed by SPI module clock cycles, 0: delayed by 1 cycle, 1: delayed by 2 cycles,... Can be configured in CONF state."]
+    #[inline(always)]
+    pub fn din_num_iter(&self) -> impl Iterator<Item = DIN_NUM_R> + '_ {
+        (0..8).map(move |n| DIN_NUM_R::new(((self.bits >> (n * 2)) & 3) as u8))
+    }
     #[doc = "Bits 0:1 - the input signals are delayed by SPI module clock cycles, 0: delayed by 1 cycle, 1: delayed by 2 cycles,... Can be configured in CONF state."]
     #[inline(always)]
-    pub fn din0_num(&self) -> DIN0_NUM_R {
-        DIN0_NUM_R::new((self.bits & 3) as u8)
+    pub fn din0_num(&self) -> DIN_NUM_R {
+        DIN_NUM_R::new((self.bits & 3) as u8)
     }
     #[doc = "Bits 2:3 - the input signals are delayed by SPI module clock cycles, 0: delayed by 1 cycle, 1: delayed by 2 cycles,... Can be configured in CONF state."]
     #[inline(always)]
-    pub fn din1_num(&self) -> DIN1_NUM_R {
-        DIN1_NUM_R::new(((self.bits >> 2) & 3) as u8)
+    pub fn din1_num(&self) -> DIN_NUM_R {
+        DIN_NUM_R::new(((self.bits >> 2) & 3) as u8)
     }
     #[doc = "Bits 4:5 - the input signals are delayed by SPI module clock cycles, 0: delayed by 1 cycle, 1: delayed by 2 cycles,... Can be configured in CONF state."]
     #[inline(always)]
-    pub fn din2_num(&self) -> DIN2_NUM_R {
-        DIN2_NUM_R::new(((self.bits >> 4) & 3) as u8)
+    pub fn din2_num(&self) -> DIN_NUM_R {
+        DIN_NUM_R::new(((self.bits >> 4) & 3) as u8)
     }
     #[doc = "Bits 6:7 - the input signals are delayed by SPI module clock cycles, 0: delayed by 1 cycle, 1: delayed by 2 cycles,... Can be configured in CONF state."]
     #[inline(always)]
-    pub fn din3_num(&self) -> DIN3_NUM_R {
-        DIN3_NUM_R::new(((self.bits >> 6) & 3) as u8)
+    pub fn din3_num(&self) -> DIN_NUM_R {
+        DIN_NUM_R::new(((self.bits >> 6) & 3) as u8)
     }
     #[doc = "Bits 8:9 - the input signals are delayed by SPI module clock cycles, 0: delayed by 1 cycle, 1: delayed by 2 cycles,... Can be configured in CONF state."]
     #[inline(always)]
-    pub fn din4_num(&self) -> DIN4_NUM_R {
-        DIN4_NUM_R::new(((self.bits >> 8) & 3) as u8)
+    pub fn din4_num(&self) -> DIN_NUM_R {
+        DIN_NUM_R::new(((self.bits >> 8) & 3) as u8)
     }
     #[doc = "Bits 10:11 - the input signals are delayed by SPI module clock cycles, 0: delayed by 1 cycle, 1: delayed by 2 cycles,... Can be configured in CONF state."]
     #[inline(always)]
-    pub fn din5_num(&self) -> DIN5_NUM_R {
-        DIN5_NUM_R::new(((self.bits >> 10) & 3) as u8)
+    pub fn din5_num(&self) -> DIN_NUM_R {
+        DIN_NUM_R::new(((self.bits >> 10) & 3) as u8)
     }
     #[doc = "Bits 12:13 - the input signals are delayed by SPI module clock cycles, 0: delayed by 1 cycle, 1: delayed by 2 cycles,... Can be configured in CONF state."]
     #[inline(always)]
-    pub fn din6_num(&self) -> DIN6_NUM_R {
-        DIN6_NUM_R::new(((self.bits >> 12) & 3) as u8)
+    pub fn din6_num(&self) -> DIN_NUM_R {
+        DIN_NUM_R::new(((self.bits >> 12) & 3) as u8)
     }
     #[doc = "Bits 14:15 - the input signals are delayed by SPI module clock cycles, 0: delayed by 1 cycle, 1: delayed by 2 cycles,... Can be configured in CONF state."]
     #[inline(always)]
-    pub fn din7_num(&self) -> DIN7_NUM_R {
-        DIN7_NUM_R::new(((self.bits >> 14) & 3) as u8)
+    pub fn din7_num(&self) -> DIN_NUM_R {
+        DIN_NUM_R::new(((self.bits >> 14) & 3) as u8)
     }
 }
 #[cfg(feature = "impl-register-debug")]

@@ -1,33 +1,42 @@
 #[doc = "Register `DIN_NUM` reader"]
 pub type R = crate::R<DIN_NUM_SPEC>;
-#[doc = "Field `DIN0_NUM` reader - the input signals are delayed by system clock cycles, 0: delayed by 1 cycle, 1: delayed by 2 cycles,..."]
-pub type DIN0_NUM_R = crate::BitReader;
-#[doc = "Field `DIN1_NUM` reader - the input signals are delayed by system clock cycles, 0: delayed by 1 cycle, 1: delayed by 2 cycles,..."]
-pub type DIN1_NUM_R = crate::BitReader;
-#[doc = "Field `DIN2_NUM` reader - the input signals are delayed by system clock cycles, 0: delayed by 1 cycle, 1: delayed by 2 cycles,..."]
-pub type DIN2_NUM_R = crate::BitReader;
-#[doc = "Field `DIN3_NUM` reader - the input signals are delayed by system clock cycles, 0: delayed by 1 cycle, 1: delayed by 2 cycles,..."]
-pub type DIN3_NUM_R = crate::BitReader;
+#[doc = "Field `DIN_NUM(0-3)` reader - the input signals are delayed by system clock cycles, 0: delayed by 1 cycle, 1: delayed by 2 cycles,..."]
+pub type DIN_NUM_R = crate::BitReader;
 impl R {
+    #[doc = "the input signals are delayed by system clock cycles, 0: delayed by 1 cycle, 1: delayed by 2 cycles,..."]
+    #[doc = ""]
+    #[doc = "NOTE: `n` is number of field in register. `n == 0` corresponds to `DIN0_NUM` field"]
+    #[inline(always)]
+    pub fn din_num(&self, n: u8) -> DIN_NUM_R {
+        #[allow(clippy::no_effect)]
+        [(); 4][n as usize];
+        DIN_NUM_R::new(((self.bits >> n) & 1) != 0)
+    }
+    #[doc = "Iterator for array of:"]
+    #[doc = "the input signals are delayed by system clock cycles, 0: delayed by 1 cycle, 1: delayed by 2 cycles,..."]
+    #[inline(always)]
+    pub fn din_num_iter(&self) -> impl Iterator<Item = DIN_NUM_R> + '_ {
+        (0..4).map(move |n| DIN_NUM_R::new(((self.bits >> n) & 1) != 0))
+    }
     #[doc = "Bit 0 - the input signals are delayed by system clock cycles, 0: delayed by 1 cycle, 1: delayed by 2 cycles,..."]
     #[inline(always)]
-    pub fn din0_num(&self) -> DIN0_NUM_R {
-        DIN0_NUM_R::new((self.bits & 1) != 0)
+    pub fn din0_num(&self) -> DIN_NUM_R {
+        DIN_NUM_R::new((self.bits & 1) != 0)
     }
     #[doc = "Bit 1 - the input signals are delayed by system clock cycles, 0: delayed by 1 cycle, 1: delayed by 2 cycles,..."]
     #[inline(always)]
-    pub fn din1_num(&self) -> DIN1_NUM_R {
-        DIN1_NUM_R::new(((self.bits >> 1) & 1) != 0)
+    pub fn din1_num(&self) -> DIN_NUM_R {
+        DIN_NUM_R::new(((self.bits >> 1) & 1) != 0)
     }
     #[doc = "Bit 2 - the input signals are delayed by system clock cycles, 0: delayed by 1 cycle, 1: delayed by 2 cycles,..."]
     #[inline(always)]
-    pub fn din2_num(&self) -> DIN2_NUM_R {
-        DIN2_NUM_R::new(((self.bits >> 2) & 1) != 0)
+    pub fn din2_num(&self) -> DIN_NUM_R {
+        DIN_NUM_R::new(((self.bits >> 2) & 1) != 0)
     }
     #[doc = "Bit 3 - the input signals are delayed by system clock cycles, 0: delayed by 1 cycle, 1: delayed by 2 cycles,..."]
     #[inline(always)]
-    pub fn din3_num(&self) -> DIN3_NUM_R {
-        DIN3_NUM_R::new(((self.bits >> 3) & 1) != 0)
+    pub fn din3_num(&self) -> DIN_NUM_R {
+        DIN_NUM_R::new(((self.bits >> 3) & 1) != 0)
     }
 }
 #[cfg(feature = "impl-register-debug")]

@@ -2,18 +2,10 @@
 pub type R = crate::R<PIN_SPEC>;
 #[doc = "Register `PIN` writer"]
 pub type W = crate::W<PIN_SPEC>;
-#[doc = "Field `CS0_DIS` reader - SPI CS0 pin enable, 1: disable CS0, 0: spi_cs0 signal is from/to CS0 pin"]
-pub type CS0_DIS_R = crate::BitReader;
-#[doc = "Field `CS0_DIS` writer - SPI CS0 pin enable, 1: disable CS0, 0: spi_cs0 signal is from/to CS0 pin"]
-pub type CS0_DIS_W<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `CS1_DIS` reader - SPI CS1 pin enable, 1: disable CS1, 0: spi_cs1 signal is from/to CS1 pin"]
-pub type CS1_DIS_R = crate::BitReader;
-#[doc = "Field `CS1_DIS` writer - SPI CS1 pin enable, 1: disable CS1, 0: spi_cs1 signal is from/to CS1 pin"]
-pub type CS1_DIS_W<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `CS2_DIS` reader - SPI CS2 pin enable, 1: disable CS2, 0: spi_cs2 signal is from/to CS2 pin"]
-pub type CS2_DIS_R = crate::BitReader;
-#[doc = "Field `CS2_DIS` writer - SPI CS2 pin enable, 1: disable CS2, 0: spi_cs2 signal is from/to CS2 pin"]
-pub type CS2_DIS_W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `CS_DIS(0-2)` reader - SPI CS%s pin enable, 1: disable CSx, 0: spi_csx signal is from/to CSx pin"]
+pub type CS_DIS_R = crate::BitReader;
+#[doc = "Field `CS_DIS(0-2)` writer - SPI CS%s pin enable, 1: disable CSx, 0: spi_csx signal is from/to CSx pin"]
+pub type CS_DIS_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `CK_DIS` reader - 1: spi clk out disable 0: spi clk out enable"]
 pub type CK_DIS_R = crate::BitReader;
 #[doc = "Field `CK_DIS` writer - 1: spi clk out disable 0: spi clk out enable"]
@@ -35,20 +27,35 @@ pub type CS_KEEP_ACTIVE_R = crate::BitReader;
 #[doc = "Field `CS_KEEP_ACTIVE` writer - spi cs line keep low when the bit is set."]
 pub type CS_KEEP_ACTIVE_W<'a, REG> = crate::BitWriter<'a, REG>;
 impl R {
-    #[doc = "Bit 0 - SPI CS0 pin enable, 1: disable CS0, 0: spi_cs0 signal is from/to CS0 pin"]
+    #[doc = "SPI CS(0-2) pin enable, 1: disable CSx, 0: spi_csx signal is from/to CSx pin"]
+    #[doc = ""]
+    #[doc = "NOTE: `n` is number of field in register. `n == 0` corresponds to `CS0_DIS` field"]
     #[inline(always)]
-    pub fn cs0_dis(&self) -> CS0_DIS_R {
-        CS0_DIS_R::new((self.bits & 1) != 0)
+    pub fn cs_dis(&self, n: u8) -> CS_DIS_R {
+        #[allow(clippy::no_effect)]
+        [(); 3][n as usize];
+        CS_DIS_R::new(((self.bits >> n) & 1) != 0)
     }
-    #[doc = "Bit 1 - SPI CS1 pin enable, 1: disable CS1, 0: spi_cs1 signal is from/to CS1 pin"]
+    #[doc = "Iterator for array of:"]
+    #[doc = "SPI CS(0-2) pin enable, 1: disable CSx, 0: spi_csx signal is from/to CSx pin"]
     #[inline(always)]
-    pub fn cs1_dis(&self) -> CS1_DIS_R {
-        CS1_DIS_R::new(((self.bits >> 1) & 1) != 0)
+    pub fn cs_dis_iter(&self) -> impl Iterator<Item = CS_DIS_R> + '_ {
+        (0..3).map(move |n| CS_DIS_R::new(((self.bits >> n) & 1) != 0))
     }
-    #[doc = "Bit 2 - SPI CS2 pin enable, 1: disable CS2, 0: spi_cs2 signal is from/to CS2 pin"]
+    #[doc = "Bit 0 - SPI CS0 pin enable, 1: disable CSx, 0: spi_csx signal is from/to CSx pin"]
     #[inline(always)]
-    pub fn cs2_dis(&self) -> CS2_DIS_R {
-        CS2_DIS_R::new(((self.bits >> 2) & 1) != 0)
+    pub fn cs0_dis(&self) -> CS_DIS_R {
+        CS_DIS_R::new((self.bits & 1) != 0)
+    }
+    #[doc = "Bit 1 - SPI CS1 pin enable, 1: disable CSx, 0: spi_csx signal is from/to CSx pin"]
+    #[inline(always)]
+    pub fn cs1_dis(&self) -> CS_DIS_R {
+        CS_DIS_R::new(((self.bits >> 1) & 1) != 0)
+    }
+    #[doc = "Bit 2 - SPI CS2 pin enable, 1: disable CSx, 0: spi_csx signal is from/to CSx pin"]
+    #[inline(always)]
+    pub fn cs2_dis(&self) -> CS_DIS_R {
+        CS_DIS_R::new(((self.bits >> 2) & 1) != 0)
     }
     #[doc = "Bit 5 - 1: spi clk out disable 0: spi clk out enable"]
     #[inline(always)]
@@ -110,23 +117,33 @@ impl core::fmt::Debug for crate::generic::Reg<PIN_SPEC> {
     }
 }
 impl W {
-    #[doc = "Bit 0 - SPI CS0 pin enable, 1: disable CS0, 0: spi_cs0 signal is from/to CS0 pin"]
+    #[doc = "SPI CS(0-2) pin enable, 1: disable CSx, 0: spi_csx signal is from/to CSx pin"]
+    #[doc = ""]
+    #[doc = "NOTE: `n` is number of field in register. `n == 0` corresponds to `CS0_DIS` field"]
     #[inline(always)]
     #[must_use]
-    pub fn cs0_dis(&mut self) -> CS0_DIS_W<PIN_SPEC> {
-        CS0_DIS_W::new(self, 0)
+    pub fn cs_dis(&mut self, n: u8) -> CS_DIS_W<PIN_SPEC> {
+        #[allow(clippy::no_effect)]
+        [(); 3][n as usize];
+        CS_DIS_W::new(self, n)
     }
-    #[doc = "Bit 1 - SPI CS1 pin enable, 1: disable CS1, 0: spi_cs1 signal is from/to CS1 pin"]
+    #[doc = "Bit 0 - SPI CS0 pin enable, 1: disable CSx, 0: spi_csx signal is from/to CSx pin"]
     #[inline(always)]
     #[must_use]
-    pub fn cs1_dis(&mut self) -> CS1_DIS_W<PIN_SPEC> {
-        CS1_DIS_W::new(self, 1)
+    pub fn cs0_dis(&mut self) -> CS_DIS_W<PIN_SPEC> {
+        CS_DIS_W::new(self, 0)
     }
-    #[doc = "Bit 2 - SPI CS2 pin enable, 1: disable CS2, 0: spi_cs2 signal is from/to CS2 pin"]
+    #[doc = "Bit 1 - SPI CS1 pin enable, 1: disable CSx, 0: spi_csx signal is from/to CSx pin"]
     #[inline(always)]
     #[must_use]
-    pub fn cs2_dis(&mut self) -> CS2_DIS_W<PIN_SPEC> {
-        CS2_DIS_W::new(self, 2)
+    pub fn cs1_dis(&mut self) -> CS_DIS_W<PIN_SPEC> {
+        CS_DIS_W::new(self, 1)
+    }
+    #[doc = "Bit 2 - SPI CS2 pin enable, 1: disable CSx, 0: spi_csx signal is from/to CSx pin"]
+    #[inline(always)]
+    #[must_use]
+    pub fn cs2_dis(&mut self) -> CS_DIS_W<PIN_SPEC> {
+        CS_DIS_W::new(self, 2)
     }
     #[doc = "Bit 5 - 1: spi clk out disable 0: spi clk out enable"]
     #[inline(always)]

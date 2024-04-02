@@ -2,22 +2,105 @@
 pub type R = crate::R<DIN_NUM_SPEC>;
 #[doc = "Register `DIN_NUM` writer"]
 pub type W = crate::W<DIN_NUM_SPEC>;
-#[doc = "Field `DIN0_NUM` reader - the input signals are delayed by system clock cycles, 0: delayed by 1 cycle, 1: delayed by 2 cycles,..."]
-pub type DIN0_NUM_R = crate::FieldReader;
-#[doc = "Field `DIN0_NUM` writer - the input signals are delayed by system clock cycles, 0: delayed by 1 cycle, 1: delayed by 2 cycles,..."]
-pub type DIN0_NUM_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
-#[doc = "Field `DIN1_NUM` reader - the input signals are delayed by system clock cycles, 0: delayed by 1 cycle, 1: delayed by 2 cycles,..."]
-pub type DIN1_NUM_R = crate::FieldReader;
-#[doc = "Field `DIN1_NUM` writer - the input signals are delayed by system clock cycles, 0: delayed by 1 cycle, 1: delayed by 2 cycles,..."]
-pub type DIN1_NUM_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
-#[doc = "Field `DIN2_NUM` reader - the input signals are delayed by system clock cycles, 0: delayed by 1 cycle, 1: delayed by 2 cycles,..."]
-pub type DIN2_NUM_R = crate::FieldReader;
-#[doc = "Field `DIN2_NUM` writer - the input signals are delayed by system clock cycles, 0: delayed by 1 cycle, 1: delayed by 2 cycles,..."]
-pub type DIN2_NUM_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
-#[doc = "Field `DIN3_NUM` reader - the input signals are delayed by system clock cycles, 0: delayed by 1 cycle, 1: delayed by 2 cycles,..."]
-pub type DIN3_NUM_R = crate::FieldReader;
-#[doc = "Field `DIN3_NUM` writer - the input signals are delayed by system clock cycles, 0: delayed by 1 cycle, 1: delayed by 2 cycles,..."]
-pub type DIN3_NUM_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
+#[doc = "Configure the delays to input signal FSPID based on the setting of DIN%s_MODE. Can be configured in CONF state\n\nValue on reset: 0"]
+#[cfg_attr(feature = "defmt", derive(defmt::Format))]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
+#[repr(u8)]
+pub enum DELAY {
+    #[doc = "0: Delayed by 1 clock cycle"]
+    Cycle1 = 0,
+    #[doc = "1: Delayed by 2 clock cycles"]
+    Cycles2 = 1,
+    #[doc = "2: Delayed by 3 clock cycles"]
+    Cycles3 = 2,
+    #[doc = "3: Delayed by 4 clock cycles"]
+    Cycles4 = 3,
+}
+impl From<DELAY> for u8 {
+    #[inline(always)]
+    fn from(variant: DELAY) -> Self {
+        variant as _
+    }
+}
+impl crate::FieldSpec for DELAY {
+    type Ux = u8;
+}
+impl crate::IsEnum for DELAY {}
+#[doc = "Field `DIN0_NUM` reader - Configure the delays to input signal FSPID based on the setting of DIN%s_MODE. Can be configured in CONF state"]
+pub type DIN0_NUM_R = crate::FieldReader<DELAY>;
+impl DIN0_NUM_R {
+    #[doc = "Get enumerated values variant"]
+    #[inline(always)]
+    pub const fn variant(&self) -> DELAY {
+        match self.bits {
+            0 => DELAY::Cycle1,
+            1 => DELAY::Cycles2,
+            2 => DELAY::Cycles3,
+            3 => DELAY::Cycles4,
+            _ => unreachable!(),
+        }
+    }
+    #[doc = "Delayed by 1 clock cycle"]
+    #[inline(always)]
+    pub fn is_cycle1(&self) -> bool {
+        *self == DELAY::Cycle1
+    }
+    #[doc = "Delayed by 2 clock cycles"]
+    #[inline(always)]
+    pub fn is_cycles2(&self) -> bool {
+        *self == DELAY::Cycles2
+    }
+    #[doc = "Delayed by 3 clock cycles"]
+    #[inline(always)]
+    pub fn is_cycles3(&self) -> bool {
+        *self == DELAY::Cycles3
+    }
+    #[doc = "Delayed by 4 clock cycles"]
+    #[inline(always)]
+    pub fn is_cycles4(&self) -> bool {
+        *self == DELAY::Cycles4
+    }
+}
+#[doc = "Field `DIN0_NUM` writer - Configure the delays to input signal FSPID based on the setting of DIN%s_MODE. Can be configured in CONF state"]
+pub type DIN0_NUM_W<'a, REG> = crate::FieldWriter<'a, REG, 2, DELAY, crate::Safe>;
+impl<'a, REG> DIN0_NUM_W<'a, REG>
+where
+    REG: crate::Writable + crate::RegisterSpec,
+    REG::Ux: From<u8>,
+{
+    #[doc = "Delayed by 1 clock cycle"]
+    #[inline(always)]
+    pub fn cycle1(self) -> &'a mut crate::W<REG> {
+        self.variant(DELAY::Cycle1)
+    }
+    #[doc = "Delayed by 2 clock cycles"]
+    #[inline(always)]
+    pub fn cycles2(self) -> &'a mut crate::W<REG> {
+        self.variant(DELAY::Cycles2)
+    }
+    #[doc = "Delayed by 3 clock cycles"]
+    #[inline(always)]
+    pub fn cycles3(self) -> &'a mut crate::W<REG> {
+        self.variant(DELAY::Cycles3)
+    }
+    #[doc = "Delayed by 4 clock cycles"]
+    #[inline(always)]
+    pub fn cycles4(self) -> &'a mut crate::W<REG> {
+        self.variant(DELAY::Cycles4)
+    }
+}
+#[doc = "Field `DIN1_NUM` reader - Configure the delays to input signal FSPIQ based on the setting of DIN%s_MODE. Can be configured in CONF state"]
+pub use DIN0_NUM_R as DIN1_NUM_R;
+#[doc = "Field `DIN2_NUM` reader - Configure the delays to input signal FSPIWP based on the setting of DIN%s_MODE. Can be configured in CONF state"]
+pub use DIN0_NUM_R as DIN2_NUM_R;
+#[doc = "Field `DIN3_NUM` reader - Configure the delays to input signal FSPIHF based on the setting of DIN%s_MODE. Can be configured in CONF state"]
+pub use DIN0_NUM_R as DIN3_NUM_R;
+#[doc = "Field `DIN1_NUM` writer - Configure the delays to input signal FSPIQ based on the setting of DIN%s_MODE. Can be configured in CONF state"]
+pub use DIN0_NUM_W as DIN1_NUM_W;
+#[doc = "Field `DIN2_NUM` writer - Configure the delays to input signal FSPIWP based on the setting of DIN%s_MODE. Can be configured in CONF state"]
+pub use DIN0_NUM_W as DIN2_NUM_W;
+#[doc = "Field `DIN3_NUM` writer - Configure the delays to input signal FSPIHF based on the setting of DIN%s_MODE. Can be configured in CONF state"]
+pub use DIN0_NUM_W as DIN3_NUM_W;
 #[doc = "Field `DIN4_NUM` reader - the input signals are delayed by system clock cycles, 0: delayed by 1 cycle, 1: delayed by 2 cycles,..."]
 pub type DIN4_NUM_R = crate::FieldReader;
 #[doc = "Field `DIN4_NUM` writer - the input signals are delayed by system clock cycles, 0: delayed by 1 cycle, 1: delayed by 2 cycles,..."]
@@ -39,22 +122,22 @@ pub type DINS_NUM_R = crate::FieldReader;
 #[doc = "Field `DINS_NUM` writer - the input signals are delayed by system clock cycles, 0: delayed by 1 cycle, 1: delayed by 2 cycles,..."]
 pub type DINS_NUM_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
 impl R {
-    #[doc = "Bits 0:1 - the input signals are delayed by system clock cycles, 0: delayed by 1 cycle, 1: delayed by 2 cycles,..."]
+    #[doc = "Bits 0:1 - Configure the delays to input signal FSPID based on the setting of DIN%s_MODE. Can be configured in CONF state"]
     #[inline(always)]
     pub fn din0_num(&self) -> DIN0_NUM_R {
         DIN0_NUM_R::new((self.bits & 3) as u8)
     }
-    #[doc = "Bits 2:3 - the input signals are delayed by system clock cycles, 0: delayed by 1 cycle, 1: delayed by 2 cycles,..."]
+    #[doc = "Bits 2:3 - Configure the delays to input signal FSPIQ based on the setting of DIN%s_MODE. Can be configured in CONF state"]
     #[inline(always)]
     pub fn din1_num(&self) -> DIN1_NUM_R {
         DIN1_NUM_R::new(((self.bits >> 2) & 3) as u8)
     }
-    #[doc = "Bits 4:5 - the input signals are delayed by system clock cycles, 0: delayed by 1 cycle, 1: delayed by 2 cycles,..."]
+    #[doc = "Bits 4:5 - Configure the delays to input signal FSPIWP based on the setting of DIN%s_MODE. Can be configured in CONF state"]
     #[inline(always)]
     pub fn din2_num(&self) -> DIN2_NUM_R {
         DIN2_NUM_R::new(((self.bits >> 4) & 3) as u8)
     }
-    #[doc = "Bits 6:7 - the input signals are delayed by system clock cycles, 0: delayed by 1 cycle, 1: delayed by 2 cycles,..."]
+    #[doc = "Bits 6:7 - Configure the delays to input signal FSPIHF based on the setting of DIN%s_MODE. Can be configured in CONF state"]
     #[inline(always)]
     pub fn din3_num(&self) -> DIN3_NUM_R {
         DIN3_NUM_R::new(((self.bits >> 6) & 3) as u8)
@@ -108,25 +191,25 @@ impl core::fmt::Debug for crate::generic::Reg<DIN_NUM_SPEC> {
     }
 }
 impl W {
-    #[doc = "Bits 0:1 - the input signals are delayed by system clock cycles, 0: delayed by 1 cycle, 1: delayed by 2 cycles,..."]
+    #[doc = "Bits 0:1 - Configure the delays to input signal FSPID based on the setting of DIN%s_MODE. Can be configured in CONF state"]
     #[inline(always)]
     #[must_use]
     pub fn din0_num(&mut self) -> DIN0_NUM_W<DIN_NUM_SPEC> {
         DIN0_NUM_W::new(self, 0)
     }
-    #[doc = "Bits 2:3 - the input signals are delayed by system clock cycles, 0: delayed by 1 cycle, 1: delayed by 2 cycles,..."]
+    #[doc = "Bits 2:3 - Configure the delays to input signal FSPIQ based on the setting of DIN%s_MODE. Can be configured in CONF state"]
     #[inline(always)]
     #[must_use]
     pub fn din1_num(&mut self) -> DIN1_NUM_W<DIN_NUM_SPEC> {
         DIN1_NUM_W::new(self, 2)
     }
-    #[doc = "Bits 4:5 - the input signals are delayed by system clock cycles, 0: delayed by 1 cycle, 1: delayed by 2 cycles,..."]
+    #[doc = "Bits 4:5 - Configure the delays to input signal FSPIWP based on the setting of DIN%s_MODE. Can be configured in CONF state"]
     #[inline(always)]
     #[must_use]
     pub fn din2_num(&mut self) -> DIN2_NUM_W<DIN_NUM_SPEC> {
         DIN2_NUM_W::new(self, 4)
     }
-    #[doc = "Bits 6:7 - the input signals are delayed by system clock cycles, 0: delayed by 1 cycle, 1: delayed by 2 cycles,..."]
+    #[doc = "Bits 6:7 - Configure the delays to input signal FSPIHF based on the setting of DIN%s_MODE. Can be configured in CONF state"]
     #[inline(always)]
     #[must_use]
     pub fn din3_num(&mut self) -> DIN3_NUM_W<DIN_NUM_SPEC> {

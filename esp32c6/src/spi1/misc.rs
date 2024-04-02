@@ -2,14 +2,60 @@
 pub type R = crate::R<MISC_SPEC>;
 #[doc = "Register `MISC` writer"]
 pub type W = crate::W<MISC_SPEC>;
-#[doc = "Field `CS0_DIS` reader - SPI_CS0 pin enable, 1: disable SPI_CS0, 0: SPI_CS0 pin is active to select SPI device, such as flash, external RAM and so on."]
-pub type CS0_DIS_R = crate::BitReader;
-#[doc = "Field `CS0_DIS` writer - SPI_CS0 pin enable, 1: disable SPI_CS0, 0: SPI_CS0 pin is active to select SPI device, such as flash, external RAM and so on."]
-pub type CS0_DIS_W<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `CS1_DIS` reader - SPI_CS1 pin enable, 1: disable SPI_CS1, 0: SPI_CS1 pin is active to select SPI device, such as flash, external RAM and so on."]
-pub type CS1_DIS_R = crate::BitReader;
-#[doc = "Field `CS1_DIS` writer - SPI_CS1 pin enable, 1: disable SPI_CS1, 0: SPI_CS1 pin is active to select SPI device, such as flash, external RAM and so on."]
-pub type CS1_DIS_W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "SPI CS0 pin enable bit. Can be configured in CONF state\n\nValue on reset: 0"]
+#[cfg_attr(feature = "defmt", derive(defmt::Format))]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
+pub enum CS0_DIS {
+    #[doc = "0: SPI_CSx signal is from/to CSx pin"]
+    Pin = 0,
+    #[doc = "1: Disable CSx pin"]
+    Disable = 1,
+}
+impl From<CS0_DIS> for bool {
+    #[inline(always)]
+    fn from(variant: CS0_DIS) -> Self {
+        variant as u8 != 0
+    }
+}
+#[doc = "Field `CS_DIS(0-1)` reader - SPI CS0 pin enable bit. Can be configured in CONF state"]
+pub type CS_DIS_R = crate::BitReader<CS0_DIS>;
+impl CS_DIS_R {
+    #[doc = "Get enumerated values variant"]
+    #[inline(always)]
+    pub const fn variant(&self) -> CS0_DIS {
+        match self.bits {
+            false => CS0_DIS::Pin,
+            true => CS0_DIS::Disable,
+        }
+    }
+    #[doc = "SPI_CSx signal is from/to CSx pin"]
+    #[inline(always)]
+    pub fn is_pin(&self) -> bool {
+        *self == CS0_DIS::Pin
+    }
+    #[doc = "Disable CSx pin"]
+    #[inline(always)]
+    pub fn is_disable(&self) -> bool {
+        *self == CS0_DIS::Disable
+    }
+}
+#[doc = "Field `CS_DIS(0-1)` writer - SPI CS0 pin enable bit. Can be configured in CONF state"]
+pub type CS_DIS_W<'a, REG> = crate::BitWriter<'a, REG, CS0_DIS>;
+impl<'a, REG> CS_DIS_W<'a, REG>
+where
+    REG: crate::Writable + crate::RegisterSpec,
+{
+    #[doc = "SPI_CSx signal is from/to CSx pin"]
+    #[inline(always)]
+    pub fn pin(self) -> &'a mut crate::W<REG> {
+        self.variant(CS0_DIS::Pin)
+    }
+    #[doc = "Disable CSx pin"]
+    #[inline(always)]
+    pub fn disable(self) -> &'a mut crate::W<REG> {
+        self.variant(CS0_DIS::Disable)
+    }
+}
 #[doc = "Field `CK_IDLE_EDGE` reader - 1: spi clk line is high when idle 0: spi clk line is low when idle"]
 pub type CK_IDLE_EDGE_R = crate::BitReader;
 #[doc = "Field `CK_IDLE_EDGE` writer - 1: spi clk line is high when idle 0: spi clk line is low when idle"]
@@ -19,15 +65,30 @@ pub type CS_KEEP_ACTIVE_R = crate::BitReader;
 #[doc = "Field `CS_KEEP_ACTIVE` writer - spi cs line keep low when the bit is set."]
 pub type CS_KEEP_ACTIVE_W<'a, REG> = crate::BitWriter<'a, REG>;
 impl R {
-    #[doc = "Bit 0 - SPI_CS0 pin enable, 1: disable SPI_CS0, 0: SPI_CS0 pin is active to select SPI device, such as flash, external RAM and so on."]
+    #[doc = "SPI CS0 pin enable bit. Can be configured in CONF state"]
+    #[doc = ""]
+    #[doc = "NOTE: `n` is number of field in register. `n == 0` corresponds to `CS0_DIS` field"]
     #[inline(always)]
-    pub fn cs0_dis(&self) -> CS0_DIS_R {
-        CS0_DIS_R::new((self.bits & 1) != 0)
+    pub fn cs_dis(&self, n: u8) -> CS_DIS_R {
+        #[allow(clippy::no_effect)]
+        [(); 2][n as usize];
+        CS_DIS_R::new(((self.bits >> n) & 1) != 0)
     }
-    #[doc = "Bit 1 - SPI_CS1 pin enable, 1: disable SPI_CS1, 0: SPI_CS1 pin is active to select SPI device, such as flash, external RAM and so on."]
+    #[doc = "Iterator for array of:"]
+    #[doc = "SPI CS0 pin enable bit. Can be configured in CONF state"]
     #[inline(always)]
-    pub fn cs1_dis(&self) -> CS1_DIS_R {
-        CS1_DIS_R::new(((self.bits >> 1) & 1) != 0)
+    pub fn cs_dis_iter(&self) -> impl Iterator<Item = CS_DIS_R> + '_ {
+        (0..2).map(move |n| CS_DIS_R::new(((self.bits >> n) & 1) != 0))
+    }
+    #[doc = "Bit 0 - SPI CS0 pin enable bit. Can be configured in CONF state"]
+    #[inline(always)]
+    pub fn cs0_dis(&self) -> CS_DIS_R {
+        CS_DIS_R::new((self.bits & 1) != 0)
+    }
+    #[doc = "Bit 1 - SPI CS0 pin enable bit. Can be configured in CONF state"]
+    #[inline(always)]
+    pub fn cs1_dis(&self) -> CS_DIS_R {
+        CS_DIS_R::new(((self.bits >> 1) & 1) != 0)
     }
     #[doc = "Bit 9 - 1: spi clk line is high when idle 0: spi clk line is low when idle"]
     #[inline(always)]
@@ -64,17 +125,27 @@ impl core::fmt::Debug for crate::generic::Reg<MISC_SPEC> {
     }
 }
 impl W {
-    #[doc = "Bit 0 - SPI_CS0 pin enable, 1: disable SPI_CS0, 0: SPI_CS0 pin is active to select SPI device, such as flash, external RAM and so on."]
+    #[doc = "SPI CS0 pin enable bit. Can be configured in CONF state"]
+    #[doc = ""]
+    #[doc = "NOTE: `n` is number of field in register. `n == 0` corresponds to `CS0_DIS` field"]
     #[inline(always)]
     #[must_use]
-    pub fn cs0_dis(&mut self) -> CS0_DIS_W<MISC_SPEC> {
-        CS0_DIS_W::new(self, 0)
+    pub fn cs_dis(&mut self, n: u8) -> CS_DIS_W<MISC_SPEC> {
+        #[allow(clippy::no_effect)]
+        [(); 2][n as usize];
+        CS_DIS_W::new(self, n)
     }
-    #[doc = "Bit 1 - SPI_CS1 pin enable, 1: disable SPI_CS1, 0: SPI_CS1 pin is active to select SPI device, such as flash, external RAM and so on."]
+    #[doc = "Bit 0 - SPI CS0 pin enable bit. Can be configured in CONF state"]
     #[inline(always)]
     #[must_use]
-    pub fn cs1_dis(&mut self) -> CS1_DIS_W<MISC_SPEC> {
-        CS1_DIS_W::new(self, 1)
+    pub fn cs0_dis(&mut self) -> CS_DIS_W<MISC_SPEC> {
+        CS_DIS_W::new(self, 0)
+    }
+    #[doc = "Bit 1 - SPI CS0 pin enable bit. Can be configured in CONF state"]
+    #[inline(always)]
+    #[must_use]
+    pub fn cs1_dis(&mut self) -> CS_DIS_W<MISC_SPEC> {
+        CS_DIS_W::new(self, 1)
     }
     #[doc = "Bit 9 - 1: spi clk line is high when idle 0: spi clk line is low when idle"]
     #[inline(always)]

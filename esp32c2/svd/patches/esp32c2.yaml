@@ -26,7 +26,7 @@ I2C0:
 RTC_CNTL:
   _include: ../../../common_patches/rtc_cntl_int_strip.yaml
 
-"EFUSE,I2C0,UART0,SPI1":
+"EFUSE,I2C0,UART0":
   _include: ../../../common_patches/int_strip.yaml
 
 LEDC:
@@ -94,7 +94,11 @@ SPI2:
         name: SPI2
       SPI_INTR_1:
         name: SPI1
-  _include: ../../../common_patches/spi_dma_int_strip.yaml
+  _include:
+    - ../../../common_patches/spi_dma_int_strip.yaml
+    - ../../../common_patches/spi_w.yaml
+    - ../../../common_patches/spi_cs.yaml
+    - ../../../common_patches/spi_din.yaml
 
 SYSTIMER:
   _include: 

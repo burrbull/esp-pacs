@@ -2,39 +2,122 @@
 pub type R = crate::R<DIN_MODE_SPEC>;
 #[doc = "Register `DIN_MODE` writer"]
 pub type W = crate::W<DIN_MODE_SPEC>;
-#[doc = "Field `DIN0_MODE` reader - the input signals are delayed by system clock cycles, 0: input without delayed, 1: input with the posedge of clk_apb,2 input with the negedge of clk_apb, 3: input with the posedge of clk_160, 4 input with the negedge of clk_160, 5: input with the spi_clk high edge, 6: input with the spi_clk low edge"]
-pub type DIN0_MODE_R = crate::FieldReader;
-#[doc = "Field `DIN0_MODE` writer - the input signals are delayed by system clock cycles, 0: input without delayed, 1: input with the posedge of clk_apb,2 input with the negedge of clk_apb, 3: input with the posedge of clk_160, 4 input with the negedge of clk_160, 5: input with the spi_clk high edge, 6: input with the spi_clk low edge"]
-pub type DIN0_MODE_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
-#[doc = "Field `DIN1_MODE` reader - the input signals are delayed by system clock cycles, 0: input without delayed, 1: input with the posedge of clk_apb,2 input with the negedge of clk_apb, 3: input with the posedge of clk_160, 4 input with the negedge of clk_160, 5: input with the spi_clk high edge, 6: input with the spi_clk low edge"]
-pub type DIN1_MODE_R = crate::FieldReader;
-#[doc = "Field `DIN1_MODE` writer - the input signals are delayed by system clock cycles, 0: input without delayed, 1: input with the posedge of clk_apb,2 input with the negedge of clk_apb, 3: input with the posedge of clk_160, 4 input with the negedge of clk_160, 5: input with the spi_clk high edge, 6: input with the spi_clk low edge"]
-pub type DIN1_MODE_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
-#[doc = "Field `DIN2_MODE` reader - the input signals are delayed by system clock cycles, 0: input without delayed, 1: input with the posedge of clk_apb,2 input with the negedge of clk_apb, 3: input with the posedge of clk_160, 4 input with the negedge of clk_160, 5: input with the spi_clk high edge, 6: input with the spi_clk low edge"]
-pub type DIN2_MODE_R = crate::FieldReader;
-#[doc = "Field `DIN2_MODE` writer - the input signals are delayed by system clock cycles, 0: input without delayed, 1: input with the posedge of clk_apb,2 input with the negedge of clk_apb, 3: input with the posedge of clk_160, 4 input with the negedge of clk_160, 5: input with the spi_clk high edge, 6: input with the spi_clk low edge"]
-pub type DIN2_MODE_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
-#[doc = "Field `DIN3_MODE` reader - the input signals are delayed by system clock cycles, 0: input without delayed, 1: input with the posedge of clk_apb,2 input with the negedge of clk_apb, 3: input with the posedge of clk_160, 4 input with the negedge of clk_160, 5: input with the spi_clk high edge, 6: input with the spi_clk low edge"]
-pub type DIN3_MODE_R = crate::FieldReader;
-#[doc = "Field `DIN3_MODE` writer - the input signals are delayed by system clock cycles, 0: input without delayed, 1: input with the posedge of clk_apb,2 input with the negedge of clk_apb, 3: input with the posedge of clk_160, 4 input with the negedge of clk_160, 5: input with the spi_clk high edge, 6: input with the spi_clk low edge"]
-pub type DIN3_MODE_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
+#[doc = "Configure the input mode for FSPID signal. Can be configured in CONF state\n\nValue on reset: 0"]
+#[cfg_attr(feature = "defmt", derive(defmt::Format))]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
+#[repr(u8)]
+pub enum IN_MODE {
+    #[doc = "0: Input without delay"]
+    NoDelay = 0,
+    #[doc = "1: Input at the rising edge of APB_CLK"]
+    ApbRisingEdge = 1,
+    #[doc = "2: Input at the falling edge of APB_CLK"]
+    ApbFallingEdge = 2,
+    #[doc = "3: Input at the edge of SPI_CLK"]
+    SpiEdge = 3,
+}
+impl From<IN_MODE> for u8 {
+    #[inline(always)]
+    fn from(variant: IN_MODE) -> Self {
+        variant as _
+    }
+}
+impl crate::FieldSpec for IN_MODE {
+    type Ux = u8;
+}
+impl crate::IsEnum for IN_MODE {}
+#[doc = "Field `DIN0_MODE` reader - Configure the input mode for FSPID signal. Can be configured in CONF state"]
+pub type DIN0_MODE_R = crate::FieldReader<IN_MODE>;
+impl DIN0_MODE_R {
+    #[doc = "Get enumerated values variant"]
+    #[inline(always)]
+    pub const fn variant(&self) -> IN_MODE {
+        match self.bits {
+            0 => IN_MODE::NoDelay,
+            1 => IN_MODE::ApbRisingEdge,
+            2 => IN_MODE::ApbFallingEdge,
+            3 => IN_MODE::SpiEdge,
+            _ => unreachable!(),
+        }
+    }
+    #[doc = "Input without delay"]
+    #[inline(always)]
+    pub fn is_no_delay(&self) -> bool {
+        *self == IN_MODE::NoDelay
+    }
+    #[doc = "Input at the rising edge of APB_CLK"]
+    #[inline(always)]
+    pub fn is_apb_rising_edge(&self) -> bool {
+        *self == IN_MODE::ApbRisingEdge
+    }
+    #[doc = "Input at the falling edge of APB_CLK"]
+    #[inline(always)]
+    pub fn is_apb_falling_edge(&self) -> bool {
+        *self == IN_MODE::ApbFallingEdge
+    }
+    #[doc = "Input at the edge of SPI_CLK"]
+    #[inline(always)]
+    pub fn is_spi_edge(&self) -> bool {
+        *self == IN_MODE::SpiEdge
+    }
+}
+#[doc = "Field `DIN0_MODE` writer - Configure the input mode for FSPID signal. Can be configured in CONF state"]
+pub type DIN0_MODE_W<'a, REG> = crate::FieldWriter<'a, REG, 2, IN_MODE, crate::Safe>;
+impl<'a, REG> DIN0_MODE_W<'a, REG>
+where
+    REG: crate::Writable + crate::RegisterSpec,
+    REG::Ux: From<u8>,
+{
+    #[doc = "Input without delay"]
+    #[inline(always)]
+    pub fn no_delay(self) -> &'a mut crate::W<REG> {
+        self.variant(IN_MODE::NoDelay)
+    }
+    #[doc = "Input at the rising edge of APB_CLK"]
+    #[inline(always)]
+    pub fn apb_rising_edge(self) -> &'a mut crate::W<REG> {
+        self.variant(IN_MODE::ApbRisingEdge)
+    }
+    #[doc = "Input at the falling edge of APB_CLK"]
+    #[inline(always)]
+    pub fn apb_falling_edge(self) -> &'a mut crate::W<REG> {
+        self.variant(IN_MODE::ApbFallingEdge)
+    }
+    #[doc = "Input at the edge of SPI_CLK"]
+    #[inline(always)]
+    pub fn spi_edge(self) -> &'a mut crate::W<REG> {
+        self.variant(IN_MODE::SpiEdge)
+    }
+}
+#[doc = "Field `DIN1_MODE` reader - Configure the input mode for FSPIQ signal. Can be configured in CONF state"]
+pub use DIN0_MODE_R as DIN1_MODE_R;
+#[doc = "Field `DIN2_MODE` reader - Configure the input mode for FSPIWP signal. Can be configured in CONF state"]
+pub use DIN0_MODE_R as DIN2_MODE_R;
+#[doc = "Field `DIN3_MODE` reader - Configure the input mode for FSPIHF signal. Can be configured in CONF state"]
+pub use DIN0_MODE_R as DIN3_MODE_R;
+#[doc = "Field `DIN1_MODE` writer - Configure the input mode for FSPIQ signal. Can be configured in CONF state"]
+pub use DIN0_MODE_W as DIN1_MODE_W;
+#[doc = "Field `DIN2_MODE` writer - Configure the input mode for FSPIWP signal. Can be configured in CONF state"]
+pub use DIN0_MODE_W as DIN2_MODE_W;
+#[doc = "Field `DIN3_MODE` writer - Configure the input mode for FSPIHF signal. Can be configured in CONF state"]
+pub use DIN0_MODE_W as DIN3_MODE_W;
 impl R {
-    #[doc = "Bits 0:1 - the input signals are delayed by system clock cycles, 0: input without delayed, 1: input with the posedge of clk_apb,2 input with the negedge of clk_apb, 3: input with the posedge of clk_160, 4 input with the negedge of clk_160, 5: input with the spi_clk high edge, 6: input with the spi_clk low edge"]
+    #[doc = "Bits 0:1 - Configure the input mode for FSPID signal. Can be configured in CONF state"]
     #[inline(always)]
     pub fn din0_mode(&self) -> DIN0_MODE_R {
         DIN0_MODE_R::new((self.bits & 3) as u8)
     }
-    #[doc = "Bits 2:3 - the input signals are delayed by system clock cycles, 0: input without delayed, 1: input with the posedge of clk_apb,2 input with the negedge of clk_apb, 3: input with the posedge of clk_160, 4 input with the negedge of clk_160, 5: input with the spi_clk high edge, 6: input with the spi_clk low edge"]
+    #[doc = "Bits 2:3 - Configure the input mode for FSPIQ signal. Can be configured in CONF state"]
     #[inline(always)]
     pub fn din1_mode(&self) -> DIN1_MODE_R {
         DIN1_MODE_R::new(((self.bits >> 2) & 3) as u8)
     }
-    #[doc = "Bits 4:5 - the input signals are delayed by system clock cycles, 0: input without delayed, 1: input with the posedge of clk_apb,2 input with the negedge of clk_apb, 3: input with the posedge of clk_160, 4 input with the negedge of clk_160, 5: input with the spi_clk high edge, 6: input with the spi_clk low edge"]
+    #[doc = "Bits 4:5 - Configure the input mode for FSPIWP signal. Can be configured in CONF state"]
     #[inline(always)]
     pub fn din2_mode(&self) -> DIN2_MODE_R {
         DIN2_MODE_R::new(((self.bits >> 4) & 3) as u8)
     }
-    #[doc = "Bits 6:7 - the input signals are delayed by system clock cycles, 0: input without delayed, 1: input with the posedge of clk_apb,2 input with the negedge of clk_apb, 3: input with the posedge of clk_160, 4 input with the negedge of clk_160, 5: input with the spi_clk high edge, 6: input with the spi_clk low edge"]
+    #[doc = "Bits 6:7 - Configure the input mode for FSPIHF signal. Can be configured in CONF state"]
     #[inline(always)]
     pub fn din3_mode(&self) -> DIN3_MODE_R {
         DIN3_MODE_R::new(((self.bits >> 6) & 3) as u8)
@@ -58,25 +141,25 @@ impl core::fmt::Debug for crate::generic::Reg<DIN_MODE_SPEC> {
     }
 }
 impl W {
-    #[doc = "Bits 0:1 - the input signals are delayed by system clock cycles, 0: input without delayed, 1: input with the posedge of clk_apb,2 input with the negedge of clk_apb, 3: input with the posedge of clk_160, 4 input with the negedge of clk_160, 5: input with the spi_clk high edge, 6: input with the spi_clk low edge"]
+    #[doc = "Bits 0:1 - Configure the input mode for FSPID signal. Can be configured in CONF state"]
     #[inline(always)]
     #[must_use]
     pub fn din0_mode(&mut self) -> DIN0_MODE_W<DIN_MODE_SPEC> {
         DIN0_MODE_W::new(self, 0)
     }
-    #[doc = "Bits 2:3 - the input signals are delayed by system clock cycles, 0: input without delayed, 1: input with the posedge of clk_apb,2 input with the negedge of clk_apb, 3: input with the posedge of clk_160, 4 input with the negedge of clk_160, 5: input with the spi_clk high edge, 6: input with the spi_clk low edge"]
+    #[doc = "Bits 2:3 - Configure the input mode for FSPIQ signal. Can be configured in CONF state"]
     #[inline(always)]
     #[must_use]
     pub fn din1_mode(&mut self) -> DIN1_MODE_W<DIN_MODE_SPEC> {
         DIN1_MODE_W::new(self, 2)
     }
-    #[doc = "Bits 4:5 - the input signals are delayed by system clock cycles, 0: input without delayed, 1: input with the posedge of clk_apb,2 input with the negedge of clk_apb, 3: input with the posedge of clk_160, 4 input with the negedge of clk_160, 5: input with the spi_clk high edge, 6: input with the spi_clk low edge"]
+    #[doc = "Bits 4:5 - Configure the input mode for FSPIWP signal. Can be configured in CONF state"]
     #[inline(always)]
     #[must_use]
     pub fn din2_mode(&mut self) -> DIN2_MODE_W<DIN_MODE_SPEC> {
         DIN2_MODE_W::new(self, 4)
     }
-    #[doc = "Bits 6:7 - the input signals are delayed by system clock cycles, 0: input without delayed, 1: input with the posedge of clk_apb,2 input with the negedge of clk_apb, 3: input with the posedge of clk_160, 4 input with the negedge of clk_160, 5: input with the spi_clk high edge, 6: input with the spi_clk low edge"]
+    #[doc = "Bits 6:7 - Configure the input mode for FSPIHF signal. Can be configured in CONF state"]
     #[inline(always)]
     #[must_use]
     pub fn din3_mode(&mut self) -> DIN3_MODE_W<DIN_MODE_SPEC> {
