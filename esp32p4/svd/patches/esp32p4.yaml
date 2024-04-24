@@ -15,6 +15,17 @@ LP_ANA:
   _strip: LP_ANA_
   "*":
     _strip: LP_ANA_
+  _cluster:
+    TOUCH_PAD%s:
+      TOUCH_PAD*_TH0:
+        name: TH0
+        _strip: TOUCH_PAD0_
+      TOUCH_PAD*_TH1:
+        name: TH1
+        _strip: TOUCH_PAD0_
+      TOUCH_PAD*_TH2:
+        name: TH2
+        _strip: TOUCH_PAD0_
   _include: ../../../common_patches/lpana_int_strip.yaml
 
 "I2C0,LP_I2C0":
