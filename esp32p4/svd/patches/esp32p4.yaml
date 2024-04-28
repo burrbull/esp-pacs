@@ -30,6 +30,18 @@ LP_ANA:
     _strip: LP_ANA_
   _include: ../../../common_patches/lpana_int_strip.yaml
 
+LP_PERI:
+  CLK_EN:
+    _strip: CK_EN_
+  CORE_CLK_SEL:
+    _strip_end: _CLK_SEL
+  RESET_EN:
+    _strip: RST_EN_
+  "LP_I2S_RXCLK_DIV_NUM,LP_I2S_RXCLK_DIV_XYZ":
+    _strip: LP_I2S_RX_CLKM_DIV_
+  "LP_I2S_TXCLK_DIV_NUM,LP_I2S_TXCLK_DIV_XYZ":
+    _strip: LP_I2S_TX_CLKM_DIV_
+
 "I2C0,LP_I2C0":
   _modify:
     INT_STATUS:

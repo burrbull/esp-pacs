@@ -1,12 +1,12 @@
 #[doc = "Register `BUS_TIMEOUT_ADDR` reader"]
 pub type R = crate::R<BUS_TIMEOUT_ADDR_SPEC>;
-#[doc = "Field `LP_PERI_TIMEOUT_ADDR` reader - need_des"]
-pub type LP_PERI_TIMEOUT_ADDR_R = crate::FieldReader<u32>;
+#[doc = "Field `TIMEOUT_ADDR` reader - need_des"]
+pub type TIMEOUT_ADDR_R = crate::FieldReader<u32>;
 impl R {
     #[doc = "Bits 0:31 - need_des"]
     #[inline(always)]
-    pub fn lp_peri_timeout_addr(&self) -> LP_PERI_TIMEOUT_ADDR_R {
-        LP_PERI_TIMEOUT_ADDR_R::new(self.bits)
+    pub fn timeout_addr(&self) -> TIMEOUT_ADDR_R {
+        TIMEOUT_ADDR_R::new(self.bits)
     }
 }
 #[cfg(feature = "impl-register-debug")]
@@ -14,8 +14,8 @@ impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("BUS_TIMEOUT_ADDR")
             .field(
-                "lp_peri_timeout_addr",
-                &format_args!("{}", self.lp_peri_timeout_addr().bits()),
+                "timeout_addr",
+                &format_args!("{}", self.timeout_addr().bits()),
             )
             .finish()
     }

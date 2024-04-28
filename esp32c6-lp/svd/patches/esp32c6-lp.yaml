@@ -24,3 +24,11 @@ LP_ANA:
 
 LP_TIMER:
   _include: ../../../common_patches/lptim_int_strip.yaml
+
+LP_PERI:
+  CLK_EN:
+    _strip_end: _CK_EN
+  RESET_EN:
+    _strip_end: _RESET_EN
+  "BUS_TIMEOUT,BUS_TIMEOUT_ADDR,BUS_TIMEOUT_UID":
+    _strip: LP_PERI_

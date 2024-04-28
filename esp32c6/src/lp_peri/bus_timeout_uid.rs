@@ -1,12 +1,12 @@
 #[doc = "Register `BUS_TIMEOUT_UID` reader"]
 pub type R = crate::R<BUS_TIMEOUT_UID_SPEC>;
-#[doc = "Field `LP_PERI_TIMEOUT_UID` reader - need_des"]
-pub type LP_PERI_TIMEOUT_UID_R = crate::FieldReader;
+#[doc = "Field `TIMEOUT_UID` reader - need_des"]
+pub type TIMEOUT_UID_R = crate::FieldReader;
 impl R {
     #[doc = "Bits 0:6 - need_des"]
     #[inline(always)]
-    pub fn lp_peri_timeout_uid(&self) -> LP_PERI_TIMEOUT_UID_R {
-        LP_PERI_TIMEOUT_UID_R::new((self.bits & 0x7f) as u8)
+    pub fn timeout_uid(&self) -> TIMEOUT_UID_R {
+        TIMEOUT_UID_R::new((self.bits & 0x7f) as u8)
     }
 }
 #[cfg(feature = "impl-register-debug")]
@@ -14,8 +14,8 @@ impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("BUS_TIMEOUT_UID")
             .field(
-                "lp_peri_timeout_uid",
-                &format_args!("{}", self.lp_peri_timeout_uid().bits()),
+                "timeout_uid",
+                &format_args!("{}", self.timeout_uid().bits()),
             )
             .finish()
     }

@@ -41,6 +41,14 @@ LP_I2C0:
       FIFO_RDATA:
         access: read-write
 
+LP_PERI:
+  CLK_EN:
+    _strip_end: _CK_EN
+  RESET_EN:
+    _strip_end: _RESET_EN
+  "BUS_TIMEOUT,BUS_TIMEOUT_ADDR,BUS_TIMEOUT_UID":
+    _strip: LP_PERI_
+
 LP_WDT:
   _modify:
     INT_ST_RTC:

@@ -52,6 +52,14 @@ ECC:
 LP_ANA:
   _include: ../../../common_patches/lpana_int_strip.yaml
 
+LP_PERI:
+  CLK_EN:
+    _strip_end: _CK_EN
+  RESET_EN:
+    _strip_end: _RESET_EN
+  "BUS_TIMEOUT,BUS_TIMEOUT_ADDR,BUS_TIMEOUT_UID":
+    _strip: LP_PERI_
+
 PMU:
   _include: ../../../common_patches/pmu_int_strip.yaml
 
