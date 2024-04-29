@@ -2,64 +2,52 @@
 pub type R = crate::R<CONF_W15_SPEC>;
 #[doc = "Register `CONF_W15` writer"]
 pub type W = crate::W<CONF_W15_SPEC>;
-#[doc = "Field `SLCHOST_CONF60` reader - *******Description***********"]
-pub type SLCHOST_CONF60_R = crate::FieldReader;
-#[doc = "Field `SLCHOST_CONF60` writer - *******Description***********"]
-pub type SLCHOST_CONF60_W<'a, REG> = crate::FieldWriter<'a, REG, 8>;
-#[doc = "Field `SLCHOST_CONF61` reader - *******Description***********"]
-pub type SLCHOST_CONF61_R = crate::FieldReader;
-#[doc = "Field `SLCHOST_CONF61` writer - *******Description***********"]
-pub type SLCHOST_CONF61_W<'a, REG> = crate::FieldWriter<'a, REG, 8>;
-#[doc = "Field `SLCHOST_CONF62` reader - *******Description***********"]
-pub type SLCHOST_CONF62_R = crate::FieldReader;
-#[doc = "Field `SLCHOST_CONF62` writer - *******Description***********"]
-pub type SLCHOST_CONF62_W<'a, REG> = crate::FieldWriter<'a, REG, 8>;
-#[doc = "Field `SLCHOST_CONF63` reader - *******Description***********"]
-pub type SLCHOST_CONF63_R = crate::FieldReader;
-#[doc = "Field `SLCHOST_CONF63` writer - *******Description***********"]
-pub type SLCHOST_CONF63_W<'a, REG> = crate::FieldWriter<'a, REG, 8>;
+#[doc = "Field `CONF60` reader - *******Description***********"]
+pub type CONF60_R = crate::FieldReader;
+#[doc = "Field `CONF60` writer - *******Description***********"]
+pub type CONF60_W<'a, REG> = crate::FieldWriter<'a, REG, 8>;
+#[doc = "Field `CONF61` reader - *******Description***********"]
+pub type CONF61_R = crate::FieldReader;
+#[doc = "Field `CONF61` writer - *******Description***********"]
+pub type CONF61_W<'a, REG> = crate::FieldWriter<'a, REG, 8>;
+#[doc = "Field `CONF62` reader - *******Description***********"]
+pub type CONF62_R = crate::FieldReader;
+#[doc = "Field `CONF62` writer - *******Description***********"]
+pub type CONF62_W<'a, REG> = crate::FieldWriter<'a, REG, 8>;
+#[doc = "Field `CONF63` reader - *******Description***********"]
+pub type CONF63_R = crate::FieldReader;
+#[doc = "Field `CONF63` writer - *******Description***********"]
+pub type CONF63_W<'a, REG> = crate::FieldWriter<'a, REG, 8>;
 impl R {
     #[doc = "Bits 0:7 - *******Description***********"]
     #[inline(always)]
-    pub fn slchost_conf60(&self) -> SLCHOST_CONF60_R {
-        SLCHOST_CONF60_R::new((self.bits & 0xff) as u8)
+    pub fn conf60(&self) -> CONF60_R {
+        CONF60_R::new((self.bits & 0xff) as u8)
     }
     #[doc = "Bits 8:15 - *******Description***********"]
     #[inline(always)]
-    pub fn slchost_conf61(&self) -> SLCHOST_CONF61_R {
-        SLCHOST_CONF61_R::new(((self.bits >> 8) & 0xff) as u8)
+    pub fn conf61(&self) -> CONF61_R {
+        CONF61_R::new(((self.bits >> 8) & 0xff) as u8)
     }
     #[doc = "Bits 16:23 - *******Description***********"]
     #[inline(always)]
-    pub fn slchost_conf62(&self) -> SLCHOST_CONF62_R {
-        SLCHOST_CONF62_R::new(((self.bits >> 16) & 0xff) as u8)
+    pub fn conf62(&self) -> CONF62_R {
+        CONF62_R::new(((self.bits >> 16) & 0xff) as u8)
     }
     #[doc = "Bits 24:31 - *******Description***********"]
     #[inline(always)]
-    pub fn slchost_conf63(&self) -> SLCHOST_CONF63_R {
-        SLCHOST_CONF63_R::new(((self.bits >> 24) & 0xff) as u8)
+    pub fn conf63(&self) -> CONF63_R {
+        CONF63_R::new(((self.bits >> 24) & 0xff) as u8)
     }
 }
 #[cfg(feature = "impl-register-debug")]
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CONF_W15")
-            .field(
-                "slchost_conf60",
-                &format_args!("{}", self.slchost_conf60().bits()),
-            )
-            .field(
-                "slchost_conf61",
-                &format_args!("{}", self.slchost_conf61().bits()),
-            )
-            .field(
-                "slchost_conf62",
-                &format_args!("{}", self.slchost_conf62().bits()),
-            )
-            .field(
-                "slchost_conf63",
-                &format_args!("{}", self.slchost_conf63().bits()),
-            )
+            .field("conf60", &format_args!("{}", self.conf60().bits()))
+            .field("conf61", &format_args!("{}", self.conf61().bits()))
+            .field("conf62", &format_args!("{}", self.conf62().bits()))
+            .field("conf63", &format_args!("{}", self.conf63().bits()))
             .finish()
     }
 }
@@ -73,26 +61,26 @@ impl W {
     #[doc = "Bits 0:7 - *******Description***********"]
     #[inline(always)]
     #[must_use]
-    pub fn slchost_conf60(&mut self) -> SLCHOST_CONF60_W<CONF_W15_SPEC> {
-        SLCHOST_CONF60_W::new(self, 0)
+    pub fn conf60(&mut self) -> CONF60_W<CONF_W15_SPEC> {
+        CONF60_W::new(self, 0)
     }
     #[doc = "Bits 8:15 - *******Description***********"]
     #[inline(always)]
     #[must_use]
-    pub fn slchost_conf61(&mut self) -> SLCHOST_CONF61_W<CONF_W15_SPEC> {
-        SLCHOST_CONF61_W::new(self, 8)
+    pub fn conf61(&mut self) -> CONF61_W<CONF_W15_SPEC> {
+        CONF61_W::new(self, 8)
     }
     #[doc = "Bits 16:23 - *******Description***********"]
     #[inline(always)]
     #[must_use]
-    pub fn slchost_conf62(&mut self) -> SLCHOST_CONF62_W<CONF_W15_SPEC> {
-        SLCHOST_CONF62_W::new(self, 16)
+    pub fn conf62(&mut self) -> CONF62_W<CONF_W15_SPEC> {
+        CONF62_W::new(self, 16)
     }
     #[doc = "Bits 24:31 - *******Description***********"]
     #[inline(always)]
     #[must_use]
-    pub fn slchost_conf63(&mut self) -> SLCHOST_CONF63_W<CONF_W15_SPEC> {
-        SLCHOST_CONF63_W::new(self, 24)
+    pub fn conf63(&mut self) -> CONF63_W<CONF_W15_SPEC> {
+        CONF63_W::new(self, 24)
     }
 }
 #[doc = "*******Description***********\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`conf_w15::R`](R).  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`conf_w15::W`](W). You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]

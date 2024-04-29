@@ -1,33 +1,59 @@
 #[doc = "Register `TX_STATUS` reader"]
 pub type R = crate::R<TX_STATUS_SPEC>;
-#[doc = "Field `SLC0_TX_FULL` reader - "]
-pub type SLC0_TX_FULL_R = crate::BitReader;
-#[doc = "Field `SLC0_TX_EMPTY` reader - "]
-pub type SLC0_TX_EMPTY_R = crate::BitReader;
-#[doc = "Field `SLC1_TX_FULL` reader - "]
-pub type SLC1_TX_FULL_R = crate::BitReader;
-#[doc = "Field `SLC1_TX_EMPTY` reader - "]
-pub type SLC1_TX_EMPTY_R = crate::BitReader;
+#[doc = "Field `SLC_TX_FULL(0-1)` reader - "]
+pub type SLC_TX_FULL_R = crate::BitReader;
+#[doc = "Field `SLC_TX_EMPTY(0-1)` reader - "]
+pub type SLC_TX_EMPTY_R = crate::BitReader;
 impl R {
-    #[doc = "Bit 0"]
+    #[doc = ""]
+    #[doc = ""]
+    #[doc = "NOTE: `n` is number of field in register. `n == 0` corresponds to `SLC0_TX_FULL` field"]
     #[inline(always)]
-    pub fn slc0_tx_full(&self) -> SLC0_TX_FULL_R {
-        SLC0_TX_FULL_R::new((self.bits & 1) != 0)
+    pub fn slc_tx_full(&self, n: u8) -> SLC_TX_FULL_R {
+        #[allow(clippy::no_effect)]
+        [(); 2][n as usize];
+        SLC_TX_FULL_R::new(((self.bits >> (n * 16)) & 1) != 0)
     }
-    #[doc = "Bit 1"]
+    #[doc = "Iterator for array of:"]
+    #[doc = ""]
     #[inline(always)]
-    pub fn slc0_tx_empty(&self) -> SLC0_TX_EMPTY_R {
-        SLC0_TX_EMPTY_R::new(((self.bits >> 1) & 1) != 0)
+    pub fn slc_tx_full_iter(&self) -> impl Iterator<Item = SLC_TX_FULL_R> + '_ {
+        (0..2).map(move |n| SLC_TX_FULL_R::new(((self.bits >> (n * 16)) & 1) != 0))
     }
-    #[doc = "Bit 16"]
+    #[doc = "Bit 0 - SLC0_TX_FULL"]
     #[inline(always)]
-    pub fn slc1_tx_full(&self) -> SLC1_TX_FULL_R {
-        SLC1_TX_FULL_R::new(((self.bits >> 16) & 1) != 0)
+    pub fn slc0_tx_full(&self) -> SLC_TX_FULL_R {
+        SLC_TX_FULL_R::new((self.bits & 1) != 0)
     }
-    #[doc = "Bit 17"]
+    #[doc = "Bit 16 - SLC1_TX_FULL"]
     #[inline(always)]
-    pub fn slc1_tx_empty(&self) -> SLC1_TX_EMPTY_R {
-        SLC1_TX_EMPTY_R::new(((self.bits >> 17) & 1) != 0)
+    pub fn slc1_tx_full(&self) -> SLC_TX_FULL_R {
+        SLC_TX_FULL_R::new(((self.bits >> 16) & 1) != 0)
+    }
+    #[doc = ""]
+    #[doc = ""]
+    #[doc = "NOTE: `n` is number of field in register. `n == 0` corresponds to `SLC0_TX_EMPTY` field"]
+    #[inline(always)]
+    pub fn slc_tx_empty(&self, n: u8) -> SLC_TX_EMPTY_R {
+        #[allow(clippy::no_effect)]
+        [(); 2][n as usize];
+        SLC_TX_EMPTY_R::new(((self.bits >> (n * 16 + 1)) & 1) != 0)
+    }
+    #[doc = "Iterator for array of:"]
+    #[doc = ""]
+    #[inline(always)]
+    pub fn slc_tx_empty_iter(&self) -> impl Iterator<Item = SLC_TX_EMPTY_R> + '_ {
+        (0..2).map(move |n| SLC_TX_EMPTY_R::new(((self.bits >> (n * 16 + 1)) & 1) != 0))
+    }
+    #[doc = "Bit 1 - SLC0_TX_EMPTY"]
+    #[inline(always)]
+    pub fn slc0_tx_empty(&self) -> SLC_TX_EMPTY_R {
+        SLC_TX_EMPTY_R::new(((self.bits >> 1) & 1) != 0)
+    }
+    #[doc = "Bit 17 - SLC1_TX_EMPTY"]
+    #[inline(always)]
+    pub fn slc1_tx_empty(&self) -> SLC_TX_EMPTY_R {
+        SLC_TX_EMPTY_R::new(((self.bits >> 17) & 1) != 0)
     }
 }
 #[cfg(feature = "impl-register-debug")]
@@ -39,12 +65,12 @@ impl core::fmt::Debug for R {
                 &format_args!("{}", self.slc0_tx_full().bit()),
             )
             .field(
-                "slc0_tx_empty",
-                &format_args!("{}", self.slc0_tx_empty().bit()),
-            )
-            .field(
                 "slc1_tx_full",
                 &format_args!("{}", self.slc1_tx_full().bit()),
+            )
+            .field(
+                "slc0_tx_empty",
+                &format_args!("{}", self.slc0_tx_empty().bit()),
             )
             .field(
                 "slc1_tx_empty",

@@ -241,3 +241,8 @@ DMA:
         name: OUT_PRI
       OUT_PERI_SEL_CH?:
         name: OUT_PERI_SEL
+
+SLCHOST:
+  "*":
+    _strip:
+      - SLCHOST_

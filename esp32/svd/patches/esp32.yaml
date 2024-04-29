@@ -140,3 +140,263 @@ MCPWM0:
     _modify:
       "*":
         access: read-write
+
+SLC:
+  _modify:
+    _0INT_RAW:
+      name: SLC0_INT_RAW
+    _1INT_RAW:
+      name: SLC1_INT_RAW
+    _0INT_ST:
+      name: SLC0_INT_ST
+    _1INT_ST:
+      name: SLC1_INT_ST
+    _0INT_ENA:
+      name: SLC0_INT_ENA
+    _1INT_ENA:
+      name: SLC1_INT_ENA
+    _0INT_CLR:
+      name: SLC0_INT_CLR
+    _1INT_CLR:
+      name: SLC1_INT_CLR
+
+    _0_LEN_CONF:
+      name: SLC0_LEN_CONF
+    _0_LENGTH:
+      name: SLC0_LENGTH
+    _0_TXPKT_H_DSCR:
+      name: SLC0_TXPKT_H_DSCR
+    _0_TXPKT_E_DSCR:
+      name: SLC0_TXPKT_E_DSCR
+    _0_RXPKT_H_DSCR:
+      name: SLC0_RXPKT_H_DSCR
+    _0_RXPKT_E_DSCR:
+      name: SLC0_RXPKT_E_DSCR
+    _0_TXPKTU_H_DSCR:
+      name: SLC0_TXPKTU_H_DSCR
+    _0_TXPKTU_E_DSCR:
+      name: SLC0_TXPKTU_E_DSCR
+    _0_RXPKTU_H_DSCR:
+      name: SLC0_RXPKTU_H_DSCR
+    _0_RXPKTU_E_DSCR:
+      name: SLC0_RXPKTU_E_DSCR
+    _0_DSCR_REC_CONF:
+      name: SLC0_DSCR_REC_CONF
+    _0_EOF_START_DES:
+      name: SLC0_EOF_START_DES
+    _0_PUSH_DSCR_ADDR:
+      name: SLC0_PUSH_DSCR_ADDR
+    _0_DONE_DSCR_ADDR:
+      name: SLC0_DONE_DSCR_ADDR
+    _0_SUB_START_DES:
+      name: SLC0_SUB_START_DES
+    _0_DSCR_CNT:
+      name: SLC0_DSCR_CNT
+    _0_LEN_LIM_CONF:
+      name: SLC0_LEN_LIM_CONF
+
+    _0INT_ST1:
+      name: SLC0_INT_ST1
+    _1INT_ST1:
+      name: SLC1_INT_ST1
+    _0INT_ENA1:
+      name: SLC0_INT_ENA1
+    _1INT_ENA1:
+      name: SLC1_INT_ENA1
+    
+    _0RX_LINK:
+      name: SLC0_RX_LINK
+    _1RX_LINK:
+      name: SLC1_RX_LINK
+
+  CONF0:
+    _array:
+      SLC?_TX_RST: {}
+      SLC?_RX_RST: {}
+      SLC?_TX_LOOP_TEST: {}
+      SLC?_RX_LOOP_TEST: {}
+      SLC?_RX_AUTO_WRBACK: {}
+      SLC?_RX_NO_RESTART_CLR: {}
+      SLC?_RXDSCR_BURST_EN: {}
+      SLC?_RXDATA_BURST_EN: {}
+      SLC?_RXLINK_AUTO_RET: {}
+      SLC?_TXLINK_AUTO_RET: {}
+      SLC?_TXDSCR_BURST_EN: {}
+      SLC?_TXDATA_BURST_EN: {}
+      SLC?_TOKEN_AUTO_CLR: {}
+      SLC?_TOKEN_SEL: {}
+      SLC?_WR_RETRY_MASK_EN: {}
+  SLC[01]_INT_RAW:
+    _strip: SLC?_
+    _strip_end: _INT_RAW
+    _array:
+      FRHOST_BIT*: {}
+  SLC[01]_INT_ST:
+    _strip: SLC?_
+    _strip_end: _INT_ST
+    _array:
+      FRHOST_BIT*: {}
+  SLC[01]_INT_ENA:
+    _strip: SLC?_
+    _strip_end: _INT_ENA
+    _array:
+      FRHOST_BIT*: {}
+  SLC[01]_INT_CLR:
+    _strip: SLC?_
+    _strip_end: _INT_CLR
+    _array:
+      FRHOST_BIT*: {}
+  RX_STATUS:
+    _array:
+      SLC?_RX_FULL: {}
+      SLC?_RX_EMPTY: {}
+  _[01]RXFIFO_PUSH:
+    _strip: SLC?_
+  TX_STATUS:
+    _array:
+      SLC?_TX_FULL: {}
+      SLC?_TX_EMPTY: {}
+  _[01]TXFIFO_POP:
+    _strip: SLC?_
+  SLC[01]_RX_LINK:
+    _strip: SLC?_
+  _[01]TX_LINK:
+    _strip: SLC?_
+  INTVEC_TOHOST:
+    _array:
+      SLC?_TOHOST_INTVEC: {}
+  _[01]TOKEN[01]:
+    _strip: SLC?_
+    _modify:
+      TOKEN?_WDATA:
+        name: WDATA
+      TOKEN?_WR:
+        name: WR
+      TOKEN?_INC:
+        name: INC
+      TOKEN?_INC_MORE:
+        name: INC_MODE
+      TOKEN?:
+        name: TOKEN
+  CONF1:
+    _array:
+      SLC?_CHECK_OWNER: {}
+      SLC?_TX_CHECK_SUM_EN: {}
+      SLC?_RX_CHECK_SUM_EN: {}
+      SLC?_LEN_AUTO_CLR: {}
+      SLC?_TX_STITCH_EN: {}
+      SLC?_RX_STITCH_EN: {}
+  _[01]_STATE[01]:
+    _modify:
+      SLC?_STATE?:
+        name: STATE
+  BRIDGE_CONF:
+    _array:
+      SLC?_TX_DUMMY_MODE: {}
+  _?_TO_EOF_DES_ADDR:
+    _modify:
+      SLC?_TO_EOF_DES_ADDR:
+        name: DES_ADDR
+  _?_TX_EOF_DES_ADDR:
+    _modify:
+      SLC?_TX_SUC_EOF_DES_ADDR:
+        name: DES_ADDR
+  _?_TO_EOF_BFR_DES_ADDR:
+    _modify:
+      SLC?_TO_EOF_BFR_DES_ADDR:
+        name: DES_ADDR
+  RX_DSCR_CONF:
+    _array:
+      SLC?_TOKEN_NO_REPLACE: {}
+      SLC?_INFOR_NO_REPLACE: {}
+      SLC?_RX_FILL_MODE: {}
+      SLC?_RX_EOF_MODE: {}
+      SLC?_RX_FILL_EN: {}
+      SLC?_RD_RETRY_THRESHOLD: {}
+  
+  _[01]_TX_ERREOF_DES_ADDR:
+    _strip: SLC?_
+  
+  TOKEN_LAT:
+    _array:
+      SLC?_TOKEN: {}
+
+  _?_?XLINK_DSCR*:
+    _strip: SLC?_
+
+  "SLC0_LEN_CONF,SLC0_LENGTH,SLC0_TXPKT_H_DSCR,SLC0_TXPKT_E_DSCR,SLC0_RXPKT_H_DSCR,SLC0_RXPKT_E_DSCR,SLC0_TXPKTU_H_DSCR,SLC0_TXPKTU_E_DSCR,SLC0_RXPKTU_H_DSCR,SLC0_RXPKTU_E_DSCR,SLC0_DSCR_REC_CONF,SLC0_EOF_START_DES,SLC0_PUSH_DSCR_ADDR,SLC0_DONE_DSCR_ADDR,SLC0_SUB_START_DES,SLC0_DSCR_CNT,SLC0_LEN_LIM_CONF":
+    _strip: SLC?_
+
+  SEQ_POSITION:
+    _array:
+      SLC?_SEQ_POSITION: {}
+  SDIO_CRC_ST0:
+    _array:
+      DAT?_CRC_ERR_CNT: {}
+
+  SLC[01]_INT_ST1:
+    _strip: SLC?_
+    _strip_end: _INT_ST1
+    _array:
+      FRHOST_BIT*: {}
+  SLC[01]_INT_ENA1:
+    _strip: SLC?_
+    _strip_end: _INT_ENA1
+    _array:
+      FRHOST_BIT*: {}
+
+  _array:
+    _[01]RXFIFO_PUSH:
+      name: SLC%s_RXFIFO_PUSH
+    _[01]TXFIFO_POP:
+      name: SLC%s_TXFIFO_POP
+
+    _[01]TX_LINK:
+      name: SLC%s_TX_LINK
+
+    _[01]_TX_ERREOF_DES_ADDR:
+      name: SLC%s_TX_ERREOF_DES_ADDR
+  _cluster:
+    SLC%s_TOKEN:
+      _?TOKEN0:
+        name: TOKEN0
+      _?TOKEN1:
+        name: TOKEN1
+      _array:
+        TOKEN?: {}
+    SLC%s_STATE:
+      _?_STATE0:
+        name: STATE0
+      _?_STATE1:
+        name: STATE1
+      _array:
+        STATE?: {}
+    SLC%s_DES_ADDR:
+      _?_TO_EOF_DES_ADDR:
+        name: TO_EOF
+      _?_TX_EOF_DES_ADDR:
+        name: TX_SUC_EOF
+      _?_TO_EOF_BFR_DES_ADDR:
+        name: TO_EOF_BFR
+    SLC%s_LINK_DSCR:
+      _?_TXLINK_DSCR:
+        name: TXLINK_DSCR
+      _?_TXLINK_DSCR_BF0:
+        name: TXLINK_DSCR_BF0
+      _?_TXLINK_DSCR_BF1:
+        name: TXLINK_DSCR_BF1
+      _?_RXLINK_DSCR:
+        name: RXLINK_DSCR
+      _?_RXLINK_DSCR_BF0:
+        name: RXLINK_DSCR_BF0
+      _?_RXLINK_DSCR_BF1:
+        name: RXLINK_DSCR_BF1
+
+SLCHOST:
+  _strip:
+    - HOST_SLCHOST_
+    - HOST_
+  "*":
+    _strip:
+      - HOST_SLCHOST_
+      - HOST_

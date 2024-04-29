@@ -1,22 +1,19 @@
 #[doc = "Register `CHECK_SUM1` reader"]
 pub type R = crate::R<CHECK_SUM1_SPEC>;
-#[doc = "Field `SLCHOST_CHECK_SUM1` reader - *******Description***********"]
-pub type SLCHOST_CHECK_SUM1_R = crate::FieldReader<u32>;
+#[doc = "Field `CHECK_SUM1` reader - *******Description***********"]
+pub type CHECK_SUM1_R = crate::FieldReader<u32>;
 impl R {
     #[doc = "Bits 0:31 - *******Description***********"]
     #[inline(always)]
-    pub fn slchost_check_sum1(&self) -> SLCHOST_CHECK_SUM1_R {
-        SLCHOST_CHECK_SUM1_R::new(self.bits)
+    pub fn check_sum1(&self) -> CHECK_SUM1_R {
+        CHECK_SUM1_R::new(self.bits)
     }
 }
 #[cfg(feature = "impl-register-debug")]
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CHECK_SUM1")
-            .field(
-                "slchost_check_sum1",
-                &format_args!("{}", self.slchost_check_sum1().bits()),
-            )
+            .field("check_sum1", &format_args!("{}", self.check_sum1().bits()))
             .finish()
     }
 }

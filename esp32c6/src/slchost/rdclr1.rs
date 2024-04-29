@@ -2,24 +2,24 @@
 pub type R = crate::R<RDCLR1_SPEC>;
 #[doc = "Register `RDCLR1` writer"]
 pub type W = crate::W<RDCLR1_SPEC>;
-#[doc = "Field `SLCHOST_SLC1_BIT7_CLRADDR` reader - *******Description***********"]
-pub type SLCHOST_SLC1_BIT7_CLRADDR_R = crate::FieldReader<u16>;
-#[doc = "Field `SLCHOST_SLC1_BIT7_CLRADDR` writer - *******Description***********"]
-pub type SLCHOST_SLC1_BIT7_CLRADDR_W<'a, REG> = crate::FieldWriter<'a, REG, 9, u16>;
-#[doc = "Field `SLCHOST_SLC1_BIT6_CLRADDR` reader - *******Description***********"]
-pub type SLCHOST_SLC1_BIT6_CLRADDR_R = crate::FieldReader<u16>;
-#[doc = "Field `SLCHOST_SLC1_BIT6_CLRADDR` writer - *******Description***********"]
-pub type SLCHOST_SLC1_BIT6_CLRADDR_W<'a, REG> = crate::FieldWriter<'a, REG, 9, u16>;
+#[doc = "Field `SLC1_BIT7_CLRADDR` reader - *******Description***********"]
+pub type SLC1_BIT7_CLRADDR_R = crate::FieldReader<u16>;
+#[doc = "Field `SLC1_BIT7_CLRADDR` writer - *******Description***********"]
+pub type SLC1_BIT7_CLRADDR_W<'a, REG> = crate::FieldWriter<'a, REG, 9, u16>;
+#[doc = "Field `SLC1_BIT6_CLRADDR` reader - *******Description***********"]
+pub type SLC1_BIT6_CLRADDR_R = crate::FieldReader<u16>;
+#[doc = "Field `SLC1_BIT6_CLRADDR` writer - *******Description***********"]
+pub type SLC1_BIT6_CLRADDR_W<'a, REG> = crate::FieldWriter<'a, REG, 9, u16>;
 impl R {
     #[doc = "Bits 0:8 - *******Description***********"]
     #[inline(always)]
-    pub fn slchost_slc1_bit7_clraddr(&self) -> SLCHOST_SLC1_BIT7_CLRADDR_R {
-        SLCHOST_SLC1_BIT7_CLRADDR_R::new((self.bits & 0x01ff) as u16)
+    pub fn slc1_bit7_clraddr(&self) -> SLC1_BIT7_CLRADDR_R {
+        SLC1_BIT7_CLRADDR_R::new((self.bits & 0x01ff) as u16)
     }
     #[doc = "Bits 9:17 - *******Description***********"]
     #[inline(always)]
-    pub fn slchost_slc1_bit6_clraddr(&self) -> SLCHOST_SLC1_BIT6_CLRADDR_R {
-        SLCHOST_SLC1_BIT6_CLRADDR_R::new(((self.bits >> 9) & 0x01ff) as u16)
+    pub fn slc1_bit6_clraddr(&self) -> SLC1_BIT6_CLRADDR_R {
+        SLC1_BIT6_CLRADDR_R::new(((self.bits >> 9) & 0x01ff) as u16)
     }
 }
 #[cfg(feature = "impl-register-debug")]
@@ -27,12 +27,12 @@ impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("RDCLR1")
             .field(
-                "slchost_slc1_bit7_clraddr",
-                &format_args!("{}", self.slchost_slc1_bit7_clraddr().bits()),
+                "slc1_bit7_clraddr",
+                &format_args!("{}", self.slc1_bit7_clraddr().bits()),
             )
             .field(
-                "slchost_slc1_bit6_clraddr",
-                &format_args!("{}", self.slchost_slc1_bit6_clraddr().bits()),
+                "slc1_bit6_clraddr",
+                &format_args!("{}", self.slc1_bit6_clraddr().bits()),
             )
             .finish()
     }
@@ -47,14 +47,14 @@ impl W {
     #[doc = "Bits 0:8 - *******Description***********"]
     #[inline(always)]
     #[must_use]
-    pub fn slchost_slc1_bit7_clraddr(&mut self) -> SLCHOST_SLC1_BIT7_CLRADDR_W<RDCLR1_SPEC> {
-        SLCHOST_SLC1_BIT7_CLRADDR_W::new(self, 0)
+    pub fn slc1_bit7_clraddr(&mut self) -> SLC1_BIT7_CLRADDR_W<RDCLR1_SPEC> {
+        SLC1_BIT7_CLRADDR_W::new(self, 0)
     }
     #[doc = "Bits 9:17 - *******Description***********"]
     #[inline(always)]
     #[must_use]
-    pub fn slchost_slc1_bit6_clraddr(&mut self) -> SLCHOST_SLC1_BIT6_CLRADDR_W<RDCLR1_SPEC> {
-        SLCHOST_SLC1_BIT6_CLRADDR_W::new(self, 9)
+    pub fn slc1_bit6_clraddr(&mut self) -> SLC1_BIT6_CLRADDR_W<RDCLR1_SPEC> {
+        SLC1_BIT6_CLRADDR_W::new(self, 9)
     }
 }
 #[doc = "*******Description***********\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`rdclr1::R`](R).  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`rdclr1::W`](W). You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]

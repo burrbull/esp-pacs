@@ -2,24 +2,35 @@
 pub type R = crate::R<SEQ_POSITION_SPEC>;
 #[doc = "Register `SEQ_POSITION` writer"]
 pub type W = crate::W<SEQ_POSITION_SPEC>;
-#[doc = "Field `SLC0_SEQ_POSITION` reader - "]
-pub type SLC0_SEQ_POSITION_R = crate::FieldReader;
-#[doc = "Field `SLC0_SEQ_POSITION` writer - "]
-pub type SLC0_SEQ_POSITION_W<'a, REG> = crate::FieldWriter<'a, REG, 8>;
-#[doc = "Field `SLC1_SEQ_POSITION` reader - "]
-pub type SLC1_SEQ_POSITION_R = crate::FieldReader;
-#[doc = "Field `SLC1_SEQ_POSITION` writer - "]
-pub type SLC1_SEQ_POSITION_W<'a, REG> = crate::FieldWriter<'a, REG, 8>;
+#[doc = "Field `SLC_SEQ_POSITION(0-1)` reader - "]
+pub type SLC_SEQ_POSITION_R = crate::FieldReader;
+#[doc = "Field `SLC_SEQ_POSITION(0-1)` writer - "]
+pub type SLC_SEQ_POSITION_W<'a, REG> = crate::FieldWriter<'a, REG, 8>;
 impl R {
-    #[doc = "Bits 0:7"]
+    #[doc = ""]
+    #[doc = ""]
+    #[doc = "NOTE: `n` is number of field in register. `n == 0` corresponds to `SLC0_SEQ_POSITION` field"]
     #[inline(always)]
-    pub fn slc0_seq_position(&self) -> SLC0_SEQ_POSITION_R {
-        SLC0_SEQ_POSITION_R::new((self.bits & 0xff) as u8)
+    pub fn slc_seq_position(&self, n: u8) -> SLC_SEQ_POSITION_R {
+        #[allow(clippy::no_effect)]
+        [(); 2][n as usize];
+        SLC_SEQ_POSITION_R::new(((self.bits >> (n * 8)) & 0xff) as u8)
     }
-    #[doc = "Bits 8:15"]
+    #[doc = "Iterator for array of:"]
+    #[doc = ""]
     #[inline(always)]
-    pub fn slc1_seq_position(&self) -> SLC1_SEQ_POSITION_R {
-        SLC1_SEQ_POSITION_R::new(((self.bits >> 8) & 0xff) as u8)
+    pub fn slc_seq_position_iter(&self) -> impl Iterator<Item = SLC_SEQ_POSITION_R> + '_ {
+        (0..2).map(move |n| SLC_SEQ_POSITION_R::new(((self.bits >> (n * 8)) & 0xff) as u8))
+    }
+    #[doc = "Bits 0:7 - SLC0_SEQ_POSITION"]
+    #[inline(always)]
+    pub fn slc0_seq_position(&self) -> SLC_SEQ_POSITION_R {
+        SLC_SEQ_POSITION_R::new((self.bits & 0xff) as u8)
+    }
+    #[doc = "Bits 8:15 - SLC1_SEQ_POSITION"]
+    #[inline(always)]
+    pub fn slc1_seq_position(&self) -> SLC_SEQ_POSITION_R {
+        SLC_SEQ_POSITION_R::new(((self.bits >> 8) & 0xff) as u8)
     }
 }
 #[cfg(feature = "impl-register-debug")]
@@ -44,17 +55,27 @@ impl core::fmt::Debug for crate::generic::Reg<SEQ_POSITION_SPEC> {
     }
 }
 impl W {
-    #[doc = "Bits 0:7"]
+    #[doc = ""]
+    #[doc = ""]
+    #[doc = "NOTE: `n` is number of field in register. `n == 0` corresponds to `SLC0_SEQ_POSITION` field"]
     #[inline(always)]
     #[must_use]
-    pub fn slc0_seq_position(&mut self) -> SLC0_SEQ_POSITION_W<SEQ_POSITION_SPEC> {
-        SLC0_SEQ_POSITION_W::new(self, 0)
+    pub fn slc_seq_position(&mut self, n: u8) -> SLC_SEQ_POSITION_W<SEQ_POSITION_SPEC> {
+        #[allow(clippy::no_effect)]
+        [(); 2][n as usize];
+        SLC_SEQ_POSITION_W::new(self, n * 8)
     }
-    #[doc = "Bits 8:15"]
+    #[doc = "Bits 0:7 - SLC0_SEQ_POSITION"]
     #[inline(always)]
     #[must_use]
-    pub fn slc1_seq_position(&mut self) -> SLC1_SEQ_POSITION_W<SEQ_POSITION_SPEC> {
-        SLC1_SEQ_POSITION_W::new(self, 8)
+    pub fn slc0_seq_position(&mut self) -> SLC_SEQ_POSITION_W<SEQ_POSITION_SPEC> {
+        SLC_SEQ_POSITION_W::new(self, 0)
+    }
+    #[doc = "Bits 8:15 - SLC1_SEQ_POSITION"]
+    #[inline(always)]
+    #[must_use]
+    pub fn slc1_seq_position(&mut self) -> SLC_SEQ_POSITION_W<SEQ_POSITION_SPEC> {
+        SLC_SEQ_POSITION_W::new(self, 8)
     }
 }
 #[doc = "\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`seq_position::R`](R).  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`seq_position::W`](W). You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]

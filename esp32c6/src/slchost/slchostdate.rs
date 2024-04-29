@@ -2,25 +2,22 @@
 pub type R = crate::R<SLCHOSTDATE_SPEC>;
 #[doc = "Register `SLCHOSTDATE` writer"]
 pub type W = crate::W<SLCHOSTDATE_SPEC>;
-#[doc = "Field `SLCHOST_DATE` reader - *******Description***********"]
-pub type SLCHOST_DATE_R = crate::FieldReader<u32>;
-#[doc = "Field `SLCHOST_DATE` writer - *******Description***********"]
-pub type SLCHOST_DATE_W<'a, REG> = crate::FieldWriter<'a, REG, 32, u32>;
+#[doc = "Field `DATE` reader - *******Description***********"]
+pub type DATE_R = crate::FieldReader<u32>;
+#[doc = "Field `DATE` writer - *******Description***********"]
+pub type DATE_W<'a, REG> = crate::FieldWriter<'a, REG, 32, u32>;
 impl R {
     #[doc = "Bits 0:31 - *******Description***********"]
     #[inline(always)]
-    pub fn slchost_date(&self) -> SLCHOST_DATE_R {
-        SLCHOST_DATE_R::new(self.bits)
+    pub fn date(&self) -> DATE_R {
+        DATE_R::new(self.bits)
     }
 }
 #[cfg(feature = "impl-register-debug")]
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SLCHOSTDATE")
-            .field(
-                "slchost_date",
-                &format_args!("{}", self.slchost_date().bits()),
-            )
+            .field("date", &format_args!("{}", self.date().bits()))
             .finish()
     }
 }
@@ -34,8 +31,8 @@ impl W {
     #[doc = "Bits 0:31 - *******Description***********"]
     #[inline(always)]
     #[must_use]
-    pub fn slchost_date(&mut self) -> SLCHOST_DATE_W<SLCHOSTDATE_SPEC> {
-        SLCHOST_DATE_W::new(self, 0)
+    pub fn date(&mut self) -> DATE_W<SLCHOSTDATE_SPEC> {
+        DATE_W::new(self, 0)
     }
 }
 #[doc = "*******Description***********\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`slchostdate::R`](R).  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`slchostdate::W`](W). You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]

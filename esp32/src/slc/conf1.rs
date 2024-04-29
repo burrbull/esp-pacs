@@ -2,127 +2,197 @@
 pub type R = crate::R<CONF1_SPEC>;
 #[doc = "Register `CONF1` writer"]
 pub type W = crate::W<CONF1_SPEC>;
-#[doc = "Field `SLC0_CHECK_OWNER` reader - "]
-pub type SLC0_CHECK_OWNER_R = crate::BitReader;
-#[doc = "Field `SLC0_CHECK_OWNER` writer - "]
-pub type SLC0_CHECK_OWNER_W<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `SLC0_TX_CHECK_SUM_EN` reader - "]
-pub type SLC0_TX_CHECK_SUM_EN_R = crate::BitReader;
-#[doc = "Field `SLC0_TX_CHECK_SUM_EN` writer - "]
-pub type SLC0_TX_CHECK_SUM_EN_W<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `SLC0_RX_CHECK_SUM_EN` reader - "]
-pub type SLC0_RX_CHECK_SUM_EN_R = crate::BitReader;
-#[doc = "Field `SLC0_RX_CHECK_SUM_EN` writer - "]
-pub type SLC0_RX_CHECK_SUM_EN_W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `SLC_CHECK_OWNER(0-1)` reader - "]
+pub type SLC_CHECK_OWNER_R = crate::BitReader;
+#[doc = "Field `SLC_CHECK_OWNER(0-1)` writer - "]
+pub type SLC_CHECK_OWNER_W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `SLC_TX_CHECK_SUM_EN(0-1)` reader - "]
+pub type SLC_TX_CHECK_SUM_EN_R = crate::BitReader;
+#[doc = "Field `SLC_TX_CHECK_SUM_EN(0-1)` writer - "]
+pub type SLC_TX_CHECK_SUM_EN_W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `SLC_RX_CHECK_SUM_EN(0-1)` reader - "]
+pub type SLC_RX_CHECK_SUM_EN_R = crate::BitReader;
+#[doc = "Field `SLC_RX_CHECK_SUM_EN(0-1)` writer - "]
+pub type SLC_RX_CHECK_SUM_EN_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `CMD_HOLD_EN` reader - "]
 pub type CMD_HOLD_EN_R = crate::BitReader;
 #[doc = "Field `CMD_HOLD_EN` writer - "]
 pub type CMD_HOLD_EN_W<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `SLC0_LEN_AUTO_CLR` reader - "]
-pub type SLC0_LEN_AUTO_CLR_R = crate::BitReader;
-#[doc = "Field `SLC0_LEN_AUTO_CLR` writer - "]
-pub type SLC0_LEN_AUTO_CLR_W<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `SLC0_TX_STITCH_EN` reader - "]
-pub type SLC0_TX_STITCH_EN_R = crate::BitReader;
-#[doc = "Field `SLC0_TX_STITCH_EN` writer - "]
-pub type SLC0_TX_STITCH_EN_W<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `SLC0_RX_STITCH_EN` reader - "]
-pub type SLC0_RX_STITCH_EN_R = crate::BitReader;
-#[doc = "Field `SLC0_RX_STITCH_EN` writer - "]
-pub type SLC0_RX_STITCH_EN_W<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `SLC1_CHECK_OWNER` reader - "]
-pub type SLC1_CHECK_OWNER_R = crate::BitReader;
-#[doc = "Field `SLC1_CHECK_OWNER` writer - "]
-pub type SLC1_CHECK_OWNER_W<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `SLC1_TX_CHECK_SUM_EN` reader - "]
-pub type SLC1_TX_CHECK_SUM_EN_R = crate::BitReader;
-#[doc = "Field `SLC1_TX_CHECK_SUM_EN` writer - "]
-pub type SLC1_TX_CHECK_SUM_EN_W<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `SLC1_RX_CHECK_SUM_EN` reader - "]
-pub type SLC1_RX_CHECK_SUM_EN_R = crate::BitReader;
-#[doc = "Field `SLC1_RX_CHECK_SUM_EN` writer - "]
-pub type SLC1_RX_CHECK_SUM_EN_W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `SLC_LEN_AUTO_CLR(0-0)` reader - "]
+pub type SLC_LEN_AUTO_CLR_R = crate::BitReader;
+#[doc = "Field `SLC_LEN_AUTO_CLR(0-0)` writer - "]
+pub type SLC_LEN_AUTO_CLR_W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `SLC_TX_STITCH_EN(0-1)` reader - "]
+pub type SLC_TX_STITCH_EN_R = crate::BitReader;
+#[doc = "Field `SLC_TX_STITCH_EN(0-1)` writer - "]
+pub type SLC_TX_STITCH_EN_W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `SLC_RX_STITCH_EN(0-1)` reader - "]
+pub type SLC_RX_STITCH_EN_R = crate::BitReader;
+#[doc = "Field `SLC_RX_STITCH_EN(0-1)` writer - "]
+pub type SLC_RX_STITCH_EN_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `HOST_INT_LEVEL_SEL` reader - "]
 pub type HOST_INT_LEVEL_SEL_R = crate::BitReader;
 #[doc = "Field `HOST_INT_LEVEL_SEL` writer - "]
 pub type HOST_INT_LEVEL_SEL_W<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `SLC1_TX_STITCH_EN` reader - "]
-pub type SLC1_TX_STITCH_EN_R = crate::BitReader;
-#[doc = "Field `SLC1_TX_STITCH_EN` writer - "]
-pub type SLC1_TX_STITCH_EN_W<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `SLC1_RX_STITCH_EN` reader - "]
-pub type SLC1_RX_STITCH_EN_R = crate::BitReader;
-#[doc = "Field `SLC1_RX_STITCH_EN` writer - "]
-pub type SLC1_RX_STITCH_EN_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `CLK_EN` reader - "]
 pub type CLK_EN_R = crate::BitReader;
 #[doc = "Field `CLK_EN` writer - "]
 pub type CLK_EN_W<'a, REG> = crate::BitWriter<'a, REG>;
 impl R {
-    #[doc = "Bit 0"]
+    #[doc = ""]
+    #[doc = ""]
+    #[doc = "NOTE: `n` is number of field in register. `n == 0` corresponds to `SLC0_CHECK_OWNER` field"]
     #[inline(always)]
-    pub fn slc0_check_owner(&self) -> SLC0_CHECK_OWNER_R {
-        SLC0_CHECK_OWNER_R::new((self.bits & 1) != 0)
+    pub fn slc_check_owner(&self, n: u8) -> SLC_CHECK_OWNER_R {
+        #[allow(clippy::no_effect)]
+        [(); 2][n as usize];
+        SLC_CHECK_OWNER_R::new(((self.bits >> (n * 16)) & 1) != 0)
     }
-    #[doc = "Bit 1"]
+    #[doc = "Iterator for array of:"]
+    #[doc = ""]
     #[inline(always)]
-    pub fn slc0_tx_check_sum_en(&self) -> SLC0_TX_CHECK_SUM_EN_R {
-        SLC0_TX_CHECK_SUM_EN_R::new(((self.bits >> 1) & 1) != 0)
+    pub fn slc_check_owner_iter(&self) -> impl Iterator<Item = SLC_CHECK_OWNER_R> + '_ {
+        (0..2).map(move |n| SLC_CHECK_OWNER_R::new(((self.bits >> (n * 16)) & 1) != 0))
     }
-    #[doc = "Bit 2"]
+    #[doc = "Bit 0 - SLC0_CHECK_OWNER"]
     #[inline(always)]
-    pub fn slc0_rx_check_sum_en(&self) -> SLC0_RX_CHECK_SUM_EN_R {
-        SLC0_RX_CHECK_SUM_EN_R::new(((self.bits >> 2) & 1) != 0)
+    pub fn slc0_check_owner(&self) -> SLC_CHECK_OWNER_R {
+        SLC_CHECK_OWNER_R::new((self.bits & 1) != 0)
+    }
+    #[doc = "Bit 16 - SLC1_CHECK_OWNER"]
+    #[inline(always)]
+    pub fn slc1_check_owner(&self) -> SLC_CHECK_OWNER_R {
+        SLC_CHECK_OWNER_R::new(((self.bits >> 16) & 1) != 0)
+    }
+    #[doc = ""]
+    #[doc = ""]
+    #[doc = "NOTE: `n` is number of field in register. `n == 0` corresponds to `SLC0_TX_CHECK_SUM_EN` field"]
+    #[inline(always)]
+    pub fn slc_tx_check_sum_en(&self, n: u8) -> SLC_TX_CHECK_SUM_EN_R {
+        #[allow(clippy::no_effect)]
+        [(); 2][n as usize];
+        SLC_TX_CHECK_SUM_EN_R::new(((self.bits >> (n * 16 + 1)) & 1) != 0)
+    }
+    #[doc = "Iterator for array of:"]
+    #[doc = ""]
+    #[inline(always)]
+    pub fn slc_tx_check_sum_en_iter(&self) -> impl Iterator<Item = SLC_TX_CHECK_SUM_EN_R> + '_ {
+        (0..2).map(move |n| SLC_TX_CHECK_SUM_EN_R::new(((self.bits >> (n * 16 + 1)) & 1) != 0))
+    }
+    #[doc = "Bit 1 - SLC0_TX_CHECK_SUM_EN"]
+    #[inline(always)]
+    pub fn slc0_tx_check_sum_en(&self) -> SLC_TX_CHECK_SUM_EN_R {
+        SLC_TX_CHECK_SUM_EN_R::new(((self.bits >> 1) & 1) != 0)
+    }
+    #[doc = "Bit 17 - SLC1_TX_CHECK_SUM_EN"]
+    #[inline(always)]
+    pub fn slc1_tx_check_sum_en(&self) -> SLC_TX_CHECK_SUM_EN_R {
+        SLC_TX_CHECK_SUM_EN_R::new(((self.bits >> 17) & 1) != 0)
+    }
+    #[doc = ""]
+    #[doc = ""]
+    #[doc = "NOTE: `n` is number of field in register. `n == 0` corresponds to `SLC0_RX_CHECK_SUM_EN` field"]
+    #[inline(always)]
+    pub fn slc_rx_check_sum_en(&self, n: u8) -> SLC_RX_CHECK_SUM_EN_R {
+        #[allow(clippy::no_effect)]
+        [(); 2][n as usize];
+        SLC_RX_CHECK_SUM_EN_R::new(((self.bits >> (n * 16 + 2)) & 1) != 0)
+    }
+    #[doc = "Iterator for array of:"]
+    #[doc = ""]
+    #[inline(always)]
+    pub fn slc_rx_check_sum_en_iter(&self) -> impl Iterator<Item = SLC_RX_CHECK_SUM_EN_R> + '_ {
+        (0..2).map(move |n| SLC_RX_CHECK_SUM_EN_R::new(((self.bits >> (n * 16 + 2)) & 1) != 0))
+    }
+    #[doc = "Bit 2 - SLC0_RX_CHECK_SUM_EN"]
+    #[inline(always)]
+    pub fn slc0_rx_check_sum_en(&self) -> SLC_RX_CHECK_SUM_EN_R {
+        SLC_RX_CHECK_SUM_EN_R::new(((self.bits >> 2) & 1) != 0)
+    }
+    #[doc = "Bit 18 - SLC1_RX_CHECK_SUM_EN"]
+    #[inline(always)]
+    pub fn slc1_rx_check_sum_en(&self) -> SLC_RX_CHECK_SUM_EN_R {
+        SLC_RX_CHECK_SUM_EN_R::new(((self.bits >> 18) & 1) != 0)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
     pub fn cmd_hold_en(&self) -> CMD_HOLD_EN_R {
         CMD_HOLD_EN_R::new(((self.bits >> 3) & 1) != 0)
     }
-    #[doc = "Bit 4"]
+    #[doc = ""]
+    #[doc = ""]
+    #[doc = "NOTE: `n` is number of field in register. `n == 0` corresponds to `SLC0_LEN_AUTO_CLR` field"]
     #[inline(always)]
-    pub fn slc0_len_auto_clr(&self) -> SLC0_LEN_AUTO_CLR_R {
-        SLC0_LEN_AUTO_CLR_R::new(((self.bits >> 4) & 1) != 0)
+    pub fn slc_len_auto_clr(&self, n: u8) -> SLC_LEN_AUTO_CLR_R {
+        #[allow(clippy::no_effect)]
+        [(); 1][n as usize];
+        SLC_LEN_AUTO_CLR_R::new(((self.bits >> (n * 0 + 4)) & 1) != 0)
     }
-    #[doc = "Bit 5"]
+    #[doc = "Iterator for array of:"]
+    #[doc = ""]
     #[inline(always)]
-    pub fn slc0_tx_stitch_en(&self) -> SLC0_TX_STITCH_EN_R {
-        SLC0_TX_STITCH_EN_R::new(((self.bits >> 5) & 1) != 0)
+    pub fn slc_len_auto_clr_iter(&self) -> impl Iterator<Item = SLC_LEN_AUTO_CLR_R> + '_ {
+        (0..1).map(move |n| SLC_LEN_AUTO_CLR_R::new(((self.bits >> (n * 0 + 4)) & 1) != 0))
     }
-    #[doc = "Bit 6"]
+    #[doc = "Bit 4 - SLC0_LEN_AUTO_CLR"]
     #[inline(always)]
-    pub fn slc0_rx_stitch_en(&self) -> SLC0_RX_STITCH_EN_R {
-        SLC0_RX_STITCH_EN_R::new(((self.bits >> 6) & 1) != 0)
+    pub fn slc0_len_auto_clr(&self) -> SLC_LEN_AUTO_CLR_R {
+        SLC_LEN_AUTO_CLR_R::new(((self.bits >> 4) & 1) != 0)
     }
-    #[doc = "Bit 16"]
+    #[doc = ""]
+    #[doc = ""]
+    #[doc = "NOTE: `n` is number of field in register. `n == 0` corresponds to `SLC0_TX_STITCH_EN` field"]
     #[inline(always)]
-    pub fn slc1_check_owner(&self) -> SLC1_CHECK_OWNER_R {
-        SLC1_CHECK_OWNER_R::new(((self.bits >> 16) & 1) != 0)
+    pub fn slc_tx_stitch_en(&self, n: u8) -> SLC_TX_STITCH_EN_R {
+        #[allow(clippy::no_effect)]
+        [(); 2][n as usize];
+        SLC_TX_STITCH_EN_R::new(((self.bits >> (n * 15 + 5)) & 1) != 0)
     }
-    #[doc = "Bit 17"]
+    #[doc = "Iterator for array of:"]
+    #[doc = ""]
     #[inline(always)]
-    pub fn slc1_tx_check_sum_en(&self) -> SLC1_TX_CHECK_SUM_EN_R {
-        SLC1_TX_CHECK_SUM_EN_R::new(((self.bits >> 17) & 1) != 0)
+    pub fn slc_tx_stitch_en_iter(&self) -> impl Iterator<Item = SLC_TX_STITCH_EN_R> + '_ {
+        (0..2).map(move |n| SLC_TX_STITCH_EN_R::new(((self.bits >> (n * 15 + 5)) & 1) != 0))
     }
-    #[doc = "Bit 18"]
+    #[doc = "Bit 5 - SLC0_TX_STITCH_EN"]
     #[inline(always)]
-    pub fn slc1_rx_check_sum_en(&self) -> SLC1_RX_CHECK_SUM_EN_R {
-        SLC1_RX_CHECK_SUM_EN_R::new(((self.bits >> 18) & 1) != 0)
+    pub fn slc0_tx_stitch_en(&self) -> SLC_TX_STITCH_EN_R {
+        SLC_TX_STITCH_EN_R::new(((self.bits >> 5) & 1) != 0)
+    }
+    #[doc = "Bit 20 - SLC1_TX_STITCH_EN"]
+    #[inline(always)]
+    pub fn slc1_tx_stitch_en(&self) -> SLC_TX_STITCH_EN_R {
+        SLC_TX_STITCH_EN_R::new(((self.bits >> 20) & 1) != 0)
+    }
+    #[doc = ""]
+    #[doc = ""]
+    #[doc = "NOTE: `n` is number of field in register. `n == 0` corresponds to `SLC0_RX_STITCH_EN` field"]
+    #[inline(always)]
+    pub fn slc_rx_stitch_en(&self, n: u8) -> SLC_RX_STITCH_EN_R {
+        #[allow(clippy::no_effect)]
+        [(); 2][n as usize];
+        SLC_RX_STITCH_EN_R::new(((self.bits >> (n * 15 + 6)) & 1) != 0)
+    }
+    #[doc = "Iterator for array of:"]
+    #[doc = ""]
+    #[inline(always)]
+    pub fn slc_rx_stitch_en_iter(&self) -> impl Iterator<Item = SLC_RX_STITCH_EN_R> + '_ {
+        (0..2).map(move |n| SLC_RX_STITCH_EN_R::new(((self.bits >> (n * 15 + 6)) & 1) != 0))
+    }
+    #[doc = "Bit 6 - SLC0_RX_STITCH_EN"]
+    #[inline(always)]
+    pub fn slc0_rx_stitch_en(&self) -> SLC_RX_STITCH_EN_R {
+        SLC_RX_STITCH_EN_R::new(((self.bits >> 6) & 1) != 0)
+    }
+    #[doc = "Bit 21 - SLC1_RX_STITCH_EN"]
+    #[inline(always)]
+    pub fn slc1_rx_stitch_en(&self) -> SLC_RX_STITCH_EN_R {
+        SLC_RX_STITCH_EN_R::new(((self.bits >> 21) & 1) != 0)
     }
     #[doc = "Bit 19"]
     #[inline(always)]
     pub fn host_int_level_sel(&self) -> HOST_INT_LEVEL_SEL_R {
         HOST_INT_LEVEL_SEL_R::new(((self.bits >> 19) & 1) != 0)
-    }
-    #[doc = "Bit 20"]
-    #[inline(always)]
-    pub fn slc1_tx_stitch_en(&self) -> SLC1_TX_STITCH_EN_R {
-        SLC1_TX_STITCH_EN_R::new(((self.bits >> 20) & 1) != 0)
-    }
-    #[doc = "Bit 21"]
-    #[inline(always)]
-    pub fn slc1_rx_stitch_en(&self) -> SLC1_RX_STITCH_EN_R {
-        SLC1_RX_STITCH_EN_R::new(((self.bits >> 21) & 1) != 0)
     }
     #[doc = "Bit 22"]
     #[inline(always)]
@@ -139,12 +209,24 @@ impl core::fmt::Debug for R {
                 &format_args!("{}", self.slc0_check_owner().bit()),
             )
             .field(
+                "slc1_check_owner",
+                &format_args!("{}", self.slc1_check_owner().bit()),
+            )
+            .field(
                 "slc0_tx_check_sum_en",
                 &format_args!("{}", self.slc0_tx_check_sum_en().bit()),
             )
             .field(
+                "slc1_tx_check_sum_en",
+                &format_args!("{}", self.slc1_tx_check_sum_en().bit()),
+            )
+            .field(
                 "slc0_rx_check_sum_en",
                 &format_args!("{}", self.slc0_rx_check_sum_en().bit()),
+            )
+            .field(
+                "slc1_rx_check_sum_en",
+                &format_args!("{}", self.slc1_rx_check_sum_en().bit()),
             )
             .field("cmd_hold_en", &format_args!("{}", self.cmd_hold_en().bit()))
             .field(
@@ -156,32 +238,20 @@ impl core::fmt::Debug for R {
                 &format_args!("{}", self.slc0_tx_stitch_en().bit()),
             )
             .field(
-                "slc0_rx_stitch_en",
-                &format_args!("{}", self.slc0_rx_stitch_en().bit()),
-            )
-            .field(
-                "slc1_check_owner",
-                &format_args!("{}", self.slc1_check_owner().bit()),
-            )
-            .field(
-                "slc1_tx_check_sum_en",
-                &format_args!("{}", self.slc1_tx_check_sum_en().bit()),
-            )
-            .field(
-                "slc1_rx_check_sum_en",
-                &format_args!("{}", self.slc1_rx_check_sum_en().bit()),
-            )
-            .field(
-                "host_int_level_sel",
-                &format_args!("{}", self.host_int_level_sel().bit()),
-            )
-            .field(
                 "slc1_tx_stitch_en",
                 &format_args!("{}", self.slc1_tx_stitch_en().bit()),
             )
             .field(
+                "slc0_rx_stitch_en",
+                &format_args!("{}", self.slc0_rx_stitch_en().bit()),
+            )
+            .field(
                 "slc1_rx_stitch_en",
                 &format_args!("{}", self.slc1_rx_stitch_en().bit()),
+            )
+            .field(
+                "host_int_level_sel",
+                &format_args!("{}", self.host_int_level_sel().bit()),
             )
             .field("clk_en", &format_args!("{}", self.clk_en().bit()))
             .finish()
@@ -194,23 +264,71 @@ impl core::fmt::Debug for crate::generic::Reg<CONF1_SPEC> {
     }
 }
 impl W {
-    #[doc = "Bit 0"]
+    #[doc = ""]
+    #[doc = ""]
+    #[doc = "NOTE: `n` is number of field in register. `n == 0` corresponds to `SLC0_CHECK_OWNER` field"]
     #[inline(always)]
     #[must_use]
-    pub fn slc0_check_owner(&mut self) -> SLC0_CHECK_OWNER_W<CONF1_SPEC> {
-        SLC0_CHECK_OWNER_W::new(self, 0)
+    pub fn slc_check_owner(&mut self, n: u8) -> SLC_CHECK_OWNER_W<CONF1_SPEC> {
+        #[allow(clippy::no_effect)]
+        [(); 2][n as usize];
+        SLC_CHECK_OWNER_W::new(self, n * 16)
     }
-    #[doc = "Bit 1"]
+    #[doc = "Bit 0 - SLC0_CHECK_OWNER"]
     #[inline(always)]
     #[must_use]
-    pub fn slc0_tx_check_sum_en(&mut self) -> SLC0_TX_CHECK_SUM_EN_W<CONF1_SPEC> {
-        SLC0_TX_CHECK_SUM_EN_W::new(self, 1)
+    pub fn slc0_check_owner(&mut self) -> SLC_CHECK_OWNER_W<CONF1_SPEC> {
+        SLC_CHECK_OWNER_W::new(self, 0)
     }
-    #[doc = "Bit 2"]
+    #[doc = "Bit 16 - SLC1_CHECK_OWNER"]
     #[inline(always)]
     #[must_use]
-    pub fn slc0_rx_check_sum_en(&mut self) -> SLC0_RX_CHECK_SUM_EN_W<CONF1_SPEC> {
-        SLC0_RX_CHECK_SUM_EN_W::new(self, 2)
+    pub fn slc1_check_owner(&mut self) -> SLC_CHECK_OWNER_W<CONF1_SPEC> {
+        SLC_CHECK_OWNER_W::new(self, 16)
+    }
+    #[doc = ""]
+    #[doc = ""]
+    #[doc = "NOTE: `n` is number of field in register. `n == 0` corresponds to `SLC0_TX_CHECK_SUM_EN` field"]
+    #[inline(always)]
+    #[must_use]
+    pub fn slc_tx_check_sum_en(&mut self, n: u8) -> SLC_TX_CHECK_SUM_EN_W<CONF1_SPEC> {
+        #[allow(clippy::no_effect)]
+        [(); 2][n as usize];
+        SLC_TX_CHECK_SUM_EN_W::new(self, n * 16 + 1)
+    }
+    #[doc = "Bit 1 - SLC0_TX_CHECK_SUM_EN"]
+    #[inline(always)]
+    #[must_use]
+    pub fn slc0_tx_check_sum_en(&mut self) -> SLC_TX_CHECK_SUM_EN_W<CONF1_SPEC> {
+        SLC_TX_CHECK_SUM_EN_W::new(self, 1)
+    }
+    #[doc = "Bit 17 - SLC1_TX_CHECK_SUM_EN"]
+    #[inline(always)]
+    #[must_use]
+    pub fn slc1_tx_check_sum_en(&mut self) -> SLC_TX_CHECK_SUM_EN_W<CONF1_SPEC> {
+        SLC_TX_CHECK_SUM_EN_W::new(self, 17)
+    }
+    #[doc = ""]
+    #[doc = ""]
+    #[doc = "NOTE: `n` is number of field in register. `n == 0` corresponds to `SLC0_RX_CHECK_SUM_EN` field"]
+    #[inline(always)]
+    #[must_use]
+    pub fn slc_rx_check_sum_en(&mut self, n: u8) -> SLC_RX_CHECK_SUM_EN_W<CONF1_SPEC> {
+        #[allow(clippy::no_effect)]
+        [(); 2][n as usize];
+        SLC_RX_CHECK_SUM_EN_W::new(self, n * 16 + 2)
+    }
+    #[doc = "Bit 2 - SLC0_RX_CHECK_SUM_EN"]
+    #[inline(always)]
+    #[must_use]
+    pub fn slc0_rx_check_sum_en(&mut self) -> SLC_RX_CHECK_SUM_EN_W<CONF1_SPEC> {
+        SLC_RX_CHECK_SUM_EN_W::new(self, 2)
+    }
+    #[doc = "Bit 18 - SLC1_RX_CHECK_SUM_EN"]
+    #[inline(always)]
+    #[must_use]
+    pub fn slc1_rx_check_sum_en(&mut self) -> SLC_RX_CHECK_SUM_EN_W<CONF1_SPEC> {
+        SLC_RX_CHECK_SUM_EN_W::new(self, 18)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
@@ -218,59 +336,71 @@ impl W {
     pub fn cmd_hold_en(&mut self) -> CMD_HOLD_EN_W<CONF1_SPEC> {
         CMD_HOLD_EN_W::new(self, 3)
     }
-    #[doc = "Bit 4"]
+    #[doc = ""]
+    #[doc = ""]
+    #[doc = "NOTE: `n` is number of field in register. `n == 0` corresponds to `SLC0_LEN_AUTO_CLR` field"]
     #[inline(always)]
     #[must_use]
-    pub fn slc0_len_auto_clr(&mut self) -> SLC0_LEN_AUTO_CLR_W<CONF1_SPEC> {
-        SLC0_LEN_AUTO_CLR_W::new(self, 4)
+    pub fn slc_len_auto_clr(&mut self, n: u8) -> SLC_LEN_AUTO_CLR_W<CONF1_SPEC> {
+        #[allow(clippy::no_effect)]
+        [(); 1][n as usize];
+        SLC_LEN_AUTO_CLR_W::new(self, n * 0 + 4)
     }
-    #[doc = "Bit 5"]
+    #[doc = "Bit 4 - SLC0_LEN_AUTO_CLR"]
     #[inline(always)]
     #[must_use]
-    pub fn slc0_tx_stitch_en(&mut self) -> SLC0_TX_STITCH_EN_W<CONF1_SPEC> {
-        SLC0_TX_STITCH_EN_W::new(self, 5)
+    pub fn slc0_len_auto_clr(&mut self) -> SLC_LEN_AUTO_CLR_W<CONF1_SPEC> {
+        SLC_LEN_AUTO_CLR_W::new(self, 4)
     }
-    #[doc = "Bit 6"]
+    #[doc = ""]
+    #[doc = ""]
+    #[doc = "NOTE: `n` is number of field in register. `n == 0` corresponds to `SLC0_TX_STITCH_EN` field"]
     #[inline(always)]
     #[must_use]
-    pub fn slc0_rx_stitch_en(&mut self) -> SLC0_RX_STITCH_EN_W<CONF1_SPEC> {
-        SLC0_RX_STITCH_EN_W::new(self, 6)
+    pub fn slc_tx_stitch_en(&mut self, n: u8) -> SLC_TX_STITCH_EN_W<CONF1_SPEC> {
+        #[allow(clippy::no_effect)]
+        [(); 2][n as usize];
+        SLC_TX_STITCH_EN_W::new(self, n * 15 + 5)
     }
-    #[doc = "Bit 16"]
+    #[doc = "Bit 5 - SLC0_TX_STITCH_EN"]
     #[inline(always)]
     #[must_use]
-    pub fn slc1_check_owner(&mut self) -> SLC1_CHECK_OWNER_W<CONF1_SPEC> {
-        SLC1_CHECK_OWNER_W::new(self, 16)
+    pub fn slc0_tx_stitch_en(&mut self) -> SLC_TX_STITCH_EN_W<CONF1_SPEC> {
+        SLC_TX_STITCH_EN_W::new(self, 5)
     }
-    #[doc = "Bit 17"]
+    #[doc = "Bit 20 - SLC1_TX_STITCH_EN"]
     #[inline(always)]
     #[must_use]
-    pub fn slc1_tx_check_sum_en(&mut self) -> SLC1_TX_CHECK_SUM_EN_W<CONF1_SPEC> {
-        SLC1_TX_CHECK_SUM_EN_W::new(self, 17)
+    pub fn slc1_tx_stitch_en(&mut self) -> SLC_TX_STITCH_EN_W<CONF1_SPEC> {
+        SLC_TX_STITCH_EN_W::new(self, 20)
     }
-    #[doc = "Bit 18"]
+    #[doc = ""]
+    #[doc = ""]
+    #[doc = "NOTE: `n` is number of field in register. `n == 0` corresponds to `SLC0_RX_STITCH_EN` field"]
     #[inline(always)]
     #[must_use]
-    pub fn slc1_rx_check_sum_en(&mut self) -> SLC1_RX_CHECK_SUM_EN_W<CONF1_SPEC> {
-        SLC1_RX_CHECK_SUM_EN_W::new(self, 18)
+    pub fn slc_rx_stitch_en(&mut self, n: u8) -> SLC_RX_STITCH_EN_W<CONF1_SPEC> {
+        #[allow(clippy::no_effect)]
+        [(); 2][n as usize];
+        SLC_RX_STITCH_EN_W::new(self, n * 15 + 6)
+    }
+    #[doc = "Bit 6 - SLC0_RX_STITCH_EN"]
+    #[inline(always)]
+    #[must_use]
+    pub fn slc0_rx_stitch_en(&mut self) -> SLC_RX_STITCH_EN_W<CONF1_SPEC> {
+        SLC_RX_STITCH_EN_W::new(self, 6)
+    }
+    #[doc = "Bit 21 - SLC1_RX_STITCH_EN"]
+    #[inline(always)]
+    #[must_use]
+    pub fn slc1_rx_stitch_en(&mut self) -> SLC_RX_STITCH_EN_W<CONF1_SPEC> {
+        SLC_RX_STITCH_EN_W::new(self, 21)
     }
     #[doc = "Bit 19"]
     #[inline(always)]
     #[must_use]
     pub fn host_int_level_sel(&mut self) -> HOST_INT_LEVEL_SEL_W<CONF1_SPEC> {
         HOST_INT_LEVEL_SEL_W::new(self, 19)
-    }
-    #[doc = "Bit 20"]
-    #[inline(always)]
-    #[must_use]
-    pub fn slc1_tx_stitch_en(&mut self) -> SLC1_TX_STITCH_EN_W<CONF1_SPEC> {
-        SLC1_TX_STITCH_EN_W::new(self, 20)
-    }
-    #[doc = "Bit 21"]
-    #[inline(always)]
-    #[must_use]
-    pub fn slc1_rx_stitch_en(&mut self) -> SLC1_RX_STITCH_EN_W<CONF1_SPEC> {
-        SLC1_RX_STITCH_EN_W::new(self, 21)
     }
     #[doc = "Bit 22"]
     #[inline(always)]

@@ -2,25 +2,22 @@
 pub type R = crate::R<WIN_CMD_SPEC>;
 #[doc = "Register `WIN_CMD` writer"]
 pub type W = crate::W<WIN_CMD_SPEC>;
-#[doc = "Field `SLCHOST_WIN_CMD` reader - *******Description***********"]
-pub type SLCHOST_WIN_CMD_R = crate::FieldReader<u16>;
-#[doc = "Field `SLCHOST_WIN_CMD` writer - *******Description***********"]
-pub type SLCHOST_WIN_CMD_W<'a, REG> = crate::FieldWriter<'a, REG, 16, u16>;
+#[doc = "Field `WIN_CMD` reader - *******Description***********"]
+pub type WIN_CMD_R = crate::FieldReader<u16>;
+#[doc = "Field `WIN_CMD` writer - *******Description***********"]
+pub type WIN_CMD_W<'a, REG> = crate::FieldWriter<'a, REG, 16, u16>;
 impl R {
     #[doc = "Bits 0:15 - *******Description***********"]
     #[inline(always)]
-    pub fn slchost_win_cmd(&self) -> SLCHOST_WIN_CMD_R {
-        SLCHOST_WIN_CMD_R::new((self.bits & 0xffff) as u16)
+    pub fn win_cmd(&self) -> WIN_CMD_R {
+        WIN_CMD_R::new((self.bits & 0xffff) as u16)
     }
 }
 #[cfg(feature = "impl-register-debug")]
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("WIN_CMD")
-            .field(
-                "slchost_win_cmd",
-                &format_args!("{}", self.slchost_win_cmd().bits()),
-            )
+            .field("win_cmd", &format_args!("{}", self.win_cmd().bits()))
             .finish()
     }
 }
@@ -34,8 +31,8 @@ impl W {
     #[doc = "Bits 0:15 - *******Description***********"]
     #[inline(always)]
     #[must_use]
-    pub fn slchost_win_cmd(&mut self) -> SLCHOST_WIN_CMD_W<WIN_CMD_SPEC> {
-        SLCHOST_WIN_CMD_W::new(self, 0)
+    pub fn win_cmd(&mut self) -> WIN_CMD_W<WIN_CMD_SPEC> {
+        WIN_CMD_W::new(self, 0)
     }
 }
 #[doc = "*******Description***********\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`win_cmd::R`](R).  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`win_cmd::W`](W). You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]

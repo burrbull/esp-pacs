@@ -1,9 +1,7 @@
 #[doc = "Register `INTVEC_TOHOST` writer"]
 pub type W = crate::W<INTVEC_TOHOST_SPEC>;
-#[doc = "Field `SLC0_TOHOST_INTVEC` writer - "]
-pub type SLC0_TOHOST_INTVEC_W<'a, REG> = crate::FieldWriter<'a, REG, 8>;
-#[doc = "Field `SLC1_TOHOST_INTVEC` writer - "]
-pub type SLC1_TOHOST_INTVEC_W<'a, REG> = crate::FieldWriter<'a, REG, 8>;
+#[doc = "Field `SLC_TOHOST_INTVEC(0-1)` writer - "]
+pub type SLC_TOHOST_INTVEC_W<'a, REG> = crate::FieldWriter<'a, REG, 8>;
 #[cfg(feature = "impl-register-debug")]
 impl core::fmt::Debug for crate::generic::Reg<INTVEC_TOHOST_SPEC> {
     fn fmt(&self, f: &mut core::fmt::Formatter<'_>) -> core::fmt::Result {
@@ -11,17 +9,27 @@ impl core::fmt::Debug for crate::generic::Reg<INTVEC_TOHOST_SPEC> {
     }
 }
 impl W {
-    #[doc = "Bits 0:7"]
+    #[doc = ""]
+    #[doc = ""]
+    #[doc = "NOTE: `n` is number of field in register. `n == 0` corresponds to `SLC0_TOHOST_INTVEC` field"]
     #[inline(always)]
     #[must_use]
-    pub fn slc0_tohost_intvec(&mut self) -> SLC0_TOHOST_INTVEC_W<INTVEC_TOHOST_SPEC> {
-        SLC0_TOHOST_INTVEC_W::new(self, 0)
+    pub fn slc_tohost_intvec(&mut self, n: u8) -> SLC_TOHOST_INTVEC_W<INTVEC_TOHOST_SPEC> {
+        #[allow(clippy::no_effect)]
+        [(); 2][n as usize];
+        SLC_TOHOST_INTVEC_W::new(self, n * 16)
     }
-    #[doc = "Bits 16:23"]
+    #[doc = "Bits 0:7 - SLC0_TOHOST_INTVEC"]
     #[inline(always)]
     #[must_use]
-    pub fn slc1_tohost_intvec(&mut self) -> SLC1_TOHOST_INTVEC_W<INTVEC_TOHOST_SPEC> {
-        SLC1_TOHOST_INTVEC_W::new(self, 16)
+    pub fn slc0_tohost_intvec(&mut self) -> SLC_TOHOST_INTVEC_W<INTVEC_TOHOST_SPEC> {
+        SLC_TOHOST_INTVEC_W::new(self, 0)
+    }
+    #[doc = "Bits 16:23 - SLC1_TOHOST_INTVEC"]
+    #[inline(always)]
+    #[must_use]
+    pub fn slc1_tohost_intvec(&mut self) -> SLC_TOHOST_INTVEC_W<INTVEC_TOHOST_SPEC> {
+        SLC_TOHOST_INTVEC_W::new(self, 16)
     }
 }
 #[doc = "\n\nYou can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`intvec_tohost::W`](W). See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]

@@ -1,0 +1,72 @@
+#[doc = "Register `SLC0HOST_TOKEN_RDATA` reader"]
+pub type R = crate::R<SLC0HOST_TOKEN_RDATA_SPEC>;
+#[doc = "Field `SLC0_TOKEN0` reader - "]
+pub type SLC0_TOKEN0_R = crate::FieldReader<u16>;
+#[doc = "Field `SLC0_RX_PF_VALID` reader - "]
+pub type SLC0_RX_PF_VALID_R = crate::BitReader;
+#[doc = "Field `HOSTSLC0_TOKEN1` reader - "]
+pub type HOSTSLC0_TOKEN1_R = crate::FieldReader<u16>;
+#[doc = "Field `SLC0_RX_PF_EOF` reader - "]
+pub type SLC0_RX_PF_EOF_R = crate::FieldReader;
+impl R {
+    #[doc = "Bits 0:11"]
+    #[inline(always)]
+    pub fn slc0_token0(&self) -> SLC0_TOKEN0_R {
+        SLC0_TOKEN0_R::new((self.bits & 0x0fff) as u16)
+    }
+    #[doc = "Bit 12"]
+    #[inline(always)]
+    pub fn slc0_rx_pf_valid(&self) -> SLC0_RX_PF_VALID_R {
+        SLC0_RX_PF_VALID_R::new(((self.bits >> 12) & 1) != 0)
+    }
+    #[doc = "Bits 16:27"]
+    #[inline(always)]
+    pub fn hostslc0_token1(&self) -> HOSTSLC0_TOKEN1_R {
+        HOSTSLC0_TOKEN1_R::new(((self.bits >> 16) & 0x0fff) as u16)
+    }
+    #[doc = "Bits 28:31"]
+    #[inline(always)]
+    pub fn slc0_rx_pf_eof(&self) -> SLC0_RX_PF_EOF_R {
+        SLC0_RX_PF_EOF_R::new(((self.bits >> 28) & 0x0f) as u8)
+    }
+}
+#[cfg(feature = "impl-register-debug")]
+impl core::fmt::Debug for R {
+    fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
+        f.debug_struct("SLC0HOST_TOKEN_RDATA")
+            .field(
+                "slc0_token0",
+                &format_args!("{}", self.slc0_token0().bits()),
+            )
+            .field(
+                "slc0_rx_pf_valid",
+                &format_args!("{}", self.slc0_rx_pf_valid().bit()),
+            )
+            .field(
+                "hostslc0_token1",
+                &format_args!("{}", self.hostslc0_token1().bits()),
+            )
+            .field(
+                "slc0_rx_pf_eof",
+                &format_args!("{}", self.slc0_rx_pf_eof().bits()),
+            )
+            .finish()
+    }
+}
+#[cfg(feature = "impl-register-debug")]
+impl core::fmt::Debug for crate::generic::Reg<SLC0HOST_TOKEN_RDATA_SPEC> {
+    fn fmt(&self, f: &mut core::fmt::Formatter<'_>) -> core::fmt::Result {
+        core::fmt::Debug::fmt(&self.read(), f)
+    }
+}
+#[doc = "\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`slc0host_token_rdata::R`](R).  See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
+pub struct SLC0HOST_TOKEN_RDATA_SPEC;
+impl crate::RegisterSpec for SLC0HOST_TOKEN_RDATA_SPEC {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [`slc0host_token_rdata::R`](R) reader structure"]
+impl crate::Readable for SLC0HOST_TOKEN_RDATA_SPEC {}
+#[doc = "`reset()` method sets SLC0HOST_TOKEN_RDATA to value 0"]
+impl crate::Resettable for SLC0HOST_TOKEN_RDATA_SPEC {
+    const RESET_VALUE: u32 = 0;
+}

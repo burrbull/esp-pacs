@@ -2,64 +2,52 @@
 pub type R = crate::R<CONF_W5_SPEC>;
 #[doc = "Register `CONF_W5` writer"]
 pub type W = crate::W<CONF_W5_SPEC>;
-#[doc = "Field `SLCHOST_CONF20` reader - *******Description***********"]
-pub type SLCHOST_CONF20_R = crate::FieldReader;
-#[doc = "Field `SLCHOST_CONF20` writer - *******Description***********"]
-pub type SLCHOST_CONF20_W<'a, REG> = crate::FieldWriter<'a, REG, 8>;
-#[doc = "Field `SLCHOST_CONF21` reader - *******Description***********"]
-pub type SLCHOST_CONF21_R = crate::FieldReader;
-#[doc = "Field `SLCHOST_CONF21` writer - *******Description***********"]
-pub type SLCHOST_CONF21_W<'a, REG> = crate::FieldWriter<'a, REG, 8>;
-#[doc = "Field `SLCHOST_CONF22` reader - *******Description***********"]
-pub type SLCHOST_CONF22_R = crate::FieldReader;
-#[doc = "Field `SLCHOST_CONF22` writer - *******Description***********"]
-pub type SLCHOST_CONF22_W<'a, REG> = crate::FieldWriter<'a, REG, 8>;
-#[doc = "Field `SLCHOST_CONF23` reader - *******Description***********"]
-pub type SLCHOST_CONF23_R = crate::FieldReader;
-#[doc = "Field `SLCHOST_CONF23` writer - *******Description***********"]
-pub type SLCHOST_CONF23_W<'a, REG> = crate::FieldWriter<'a, REG, 8>;
+#[doc = "Field `CONF20` reader - *******Description***********"]
+pub type CONF20_R = crate::FieldReader;
+#[doc = "Field `CONF20` writer - *******Description***********"]
+pub type CONF20_W<'a, REG> = crate::FieldWriter<'a, REG, 8>;
+#[doc = "Field `CONF21` reader - *******Description***********"]
+pub type CONF21_R = crate::FieldReader;
+#[doc = "Field `CONF21` writer - *******Description***********"]
+pub type CONF21_W<'a, REG> = crate::FieldWriter<'a, REG, 8>;
+#[doc = "Field `CONF22` reader - *******Description***********"]
+pub type CONF22_R = crate::FieldReader;
+#[doc = "Field `CONF22` writer - *******Description***********"]
+pub type CONF22_W<'a, REG> = crate::FieldWriter<'a, REG, 8>;
+#[doc = "Field `CONF23` reader - *******Description***********"]
+pub type CONF23_R = crate::FieldReader;
+#[doc = "Field `CONF23` writer - *******Description***********"]
+pub type CONF23_W<'a, REG> = crate::FieldWriter<'a, REG, 8>;
 impl R {
     #[doc = "Bits 0:7 - *******Description***********"]
     #[inline(always)]
-    pub fn slchost_conf20(&self) -> SLCHOST_CONF20_R {
-        SLCHOST_CONF20_R::new((self.bits & 0xff) as u8)
+    pub fn conf20(&self) -> CONF20_R {
+        CONF20_R::new((self.bits & 0xff) as u8)
     }
     #[doc = "Bits 8:15 - *******Description***********"]
     #[inline(always)]
-    pub fn slchost_conf21(&self) -> SLCHOST_CONF21_R {
-        SLCHOST_CONF21_R::new(((self.bits >> 8) & 0xff) as u8)
+    pub fn conf21(&self) -> CONF21_R {
+        CONF21_R::new(((self.bits >> 8) & 0xff) as u8)
     }
     #[doc = "Bits 16:23 - *******Description***********"]
     #[inline(always)]
-    pub fn slchost_conf22(&self) -> SLCHOST_CONF22_R {
-        SLCHOST_CONF22_R::new(((self.bits >> 16) & 0xff) as u8)
+    pub fn conf22(&self) -> CONF22_R {
+        CONF22_R::new(((self.bits >> 16) & 0xff) as u8)
     }
     #[doc = "Bits 24:31 - *******Description***********"]
     #[inline(always)]
-    pub fn slchost_conf23(&self) -> SLCHOST_CONF23_R {
-        SLCHOST_CONF23_R::new(((self.bits >> 24) & 0xff) as u8)
+    pub fn conf23(&self) -> CONF23_R {
+        CONF23_R::new(((self.bits >> 24) & 0xff) as u8)
     }
 }
 #[cfg(feature = "impl-register-debug")]
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CONF_W5")
-            .field(
-                "slchost_conf20",
-                &format_args!("{}", self.slchost_conf20().bits()),
-            )
-            .field(
-                "slchost_conf21",
-                &format_args!("{}", self.slchost_conf21().bits()),
-            )
-            .field(
-                "slchost_conf22",
-                &format_args!("{}", self.slchost_conf22().bits()),
-            )
-            .field(
-                "slchost_conf23",
-                &format_args!("{}", self.slchost_conf23().bits()),
-            )
+            .field("conf20", &format_args!("{}", self.conf20().bits()))
+            .field("conf21", &format_args!("{}", self.conf21().bits()))
+            .field("conf22", &format_args!("{}", self.conf22().bits()))
+            .field("conf23", &format_args!("{}", self.conf23().bits()))
             .finish()
     }
 }
@@ -73,26 +61,26 @@ impl W {
     #[doc = "Bits 0:7 - *******Description***********"]
     #[inline(always)]
     #[must_use]
-    pub fn slchost_conf20(&mut self) -> SLCHOST_CONF20_W<CONF_W5_SPEC> {
-        SLCHOST_CONF20_W::new(self, 0)
+    pub fn conf20(&mut self) -> CONF20_W<CONF_W5_SPEC> {
+        CONF20_W::new(self, 0)
     }
     #[doc = "Bits 8:15 - *******Description***********"]
     #[inline(always)]
     #[must_use]
-    pub fn slchost_conf21(&mut self) -> SLCHOST_CONF21_W<CONF_W5_SPEC> {
-        SLCHOST_CONF21_W::new(self, 8)
+    pub fn conf21(&mut self) -> CONF21_W<CONF_W5_SPEC> {
+        CONF21_W::new(self, 8)
     }
     #[doc = "Bits 16:23 - *******Description***********"]
     #[inline(always)]
     #[must_use]
-    pub fn slchost_conf22(&mut self) -> SLCHOST_CONF22_W<CONF_W5_SPEC> {
-        SLCHOST_CONF22_W::new(self, 16)
+    pub fn conf22(&mut self) -> CONF22_W<CONF_W5_SPEC> {
+        CONF22_W::new(self, 16)
     }
     #[doc = "Bits 24:31 - *******Description***********"]
     #[inline(always)]
     #[must_use]
-    pub fn slchost_conf23(&mut self) -> SLCHOST_CONF23_W<CONF_W5_SPEC> {
-        SLCHOST_CONF23_W::new(self, 24)
+    pub fn conf23(&mut self) -> CONF23_W<CONF_W5_SPEC> {
+        CONF23_W::new(self, 24)
     }
 }
 #[doc = "*******Description***********\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`conf_w5::R`](R).  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`conf_w5::W`](W). You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]

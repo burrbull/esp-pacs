@@ -10,18 +10,14 @@ pub type TXEOF_ENA_W<'a, REG> = crate::FieldWriter<'a, REG, 6>;
 pub type FIFO_MAP_ENA_R = crate::FieldReader;
 #[doc = "Field `FIFO_MAP_ENA` writer - "]
 pub type FIFO_MAP_ENA_W<'a, REG> = crate::FieldWriter<'a, REG, 4>;
-#[doc = "Field `SLC0_TX_DUMMY_MODE` reader - "]
-pub type SLC0_TX_DUMMY_MODE_R = crate::BitReader;
-#[doc = "Field `SLC0_TX_DUMMY_MODE` writer - "]
-pub type SLC0_TX_DUMMY_MODE_W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `SLC_TX_DUMMY_MODE(0-1)` reader - "]
+pub type SLC_TX_DUMMY_MODE_R = crate::BitReader;
+#[doc = "Field `SLC_TX_DUMMY_MODE(0-1)` writer - "]
+pub type SLC_TX_DUMMY_MODE_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `HDA_MAP_128K` reader - "]
 pub type HDA_MAP_128K_R = crate::BitReader;
 #[doc = "Field `HDA_MAP_128K` writer - "]
 pub type HDA_MAP_128K_W<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `SLC1_TX_DUMMY_MODE` reader - "]
-pub type SLC1_TX_DUMMY_MODE_R = crate::BitReader;
-#[doc = "Field `SLC1_TX_DUMMY_MODE` writer - "]
-pub type SLC1_TX_DUMMY_MODE_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `TX_PUSH_IDLE_NUM` reader - "]
 pub type TX_PUSH_IDLE_NUM_R = crate::FieldReader<u16>;
 #[doc = "Field `TX_PUSH_IDLE_NUM` writer - "]
@@ -37,20 +33,35 @@ impl R {
     pub fn fifo_map_ena(&self) -> FIFO_MAP_ENA_R {
         FIFO_MAP_ENA_R::new(((self.bits >> 8) & 0x0f) as u8)
     }
-    #[doc = "Bit 12"]
+    #[doc = ""]
+    #[doc = ""]
+    #[doc = "NOTE: `n` is number of field in register. `n == 0` corresponds to `SLC0_TX_DUMMY_MODE` field"]
     #[inline(always)]
-    pub fn slc0_tx_dummy_mode(&self) -> SLC0_TX_DUMMY_MODE_R {
-        SLC0_TX_DUMMY_MODE_R::new(((self.bits >> 12) & 1) != 0)
+    pub fn slc_tx_dummy_mode(&self, n: u8) -> SLC_TX_DUMMY_MODE_R {
+        #[allow(clippy::no_effect)]
+        [(); 2][n as usize];
+        SLC_TX_DUMMY_MODE_R::new(((self.bits >> (n * 2 + 12)) & 1) != 0)
+    }
+    #[doc = "Iterator for array of:"]
+    #[doc = ""]
+    #[inline(always)]
+    pub fn slc_tx_dummy_mode_iter(&self) -> impl Iterator<Item = SLC_TX_DUMMY_MODE_R> + '_ {
+        (0..2).map(move |n| SLC_TX_DUMMY_MODE_R::new(((self.bits >> (n * 2 + 12)) & 1) != 0))
+    }
+    #[doc = "Bit 12 - SLC0_TX_DUMMY_MODE"]
+    #[inline(always)]
+    pub fn slc0_tx_dummy_mode(&self) -> SLC_TX_DUMMY_MODE_R {
+        SLC_TX_DUMMY_MODE_R::new(((self.bits >> 12) & 1) != 0)
+    }
+    #[doc = "Bit 14 - SLC1_TX_DUMMY_MODE"]
+    #[inline(always)]
+    pub fn slc1_tx_dummy_mode(&self) -> SLC_TX_DUMMY_MODE_R {
+        SLC_TX_DUMMY_MODE_R::new(((self.bits >> 14) & 1) != 0)
     }
     #[doc = "Bit 13"]
     #[inline(always)]
     pub fn hda_map_128k(&self) -> HDA_MAP_128K_R {
         HDA_MAP_128K_R::new(((self.bits >> 13) & 1) != 0)
-    }
-    #[doc = "Bit 14"]
-    #[inline(always)]
-    pub fn slc1_tx_dummy_mode(&self) -> SLC1_TX_DUMMY_MODE_R {
-        SLC1_TX_DUMMY_MODE_R::new(((self.bits >> 14) & 1) != 0)
     }
     #[doc = "Bits 16:31"]
     #[inline(always)]
@@ -72,12 +83,12 @@ impl core::fmt::Debug for R {
                 &format_args!("{}", self.slc0_tx_dummy_mode().bit()),
             )
             .field(
-                "hda_map_128k",
-                &format_args!("{}", self.hda_map_128k().bit()),
-            )
-            .field(
                 "slc1_tx_dummy_mode",
                 &format_args!("{}", self.slc1_tx_dummy_mode().bit()),
+            )
+            .field(
+                "hda_map_128k",
+                &format_args!("{}", self.hda_map_128k().bit()),
             )
             .field(
                 "tx_push_idle_num",
@@ -105,23 +116,33 @@ impl W {
     pub fn fifo_map_ena(&mut self) -> FIFO_MAP_ENA_W<BRIDGE_CONF_SPEC> {
         FIFO_MAP_ENA_W::new(self, 8)
     }
-    #[doc = "Bit 12"]
+    #[doc = ""]
+    #[doc = ""]
+    #[doc = "NOTE: `n` is number of field in register. `n == 0` corresponds to `SLC0_TX_DUMMY_MODE` field"]
     #[inline(always)]
     #[must_use]
-    pub fn slc0_tx_dummy_mode(&mut self) -> SLC0_TX_DUMMY_MODE_W<BRIDGE_CONF_SPEC> {
-        SLC0_TX_DUMMY_MODE_W::new(self, 12)
+    pub fn slc_tx_dummy_mode(&mut self, n: u8) -> SLC_TX_DUMMY_MODE_W<BRIDGE_CONF_SPEC> {
+        #[allow(clippy::no_effect)]
+        [(); 2][n as usize];
+        SLC_TX_DUMMY_MODE_W::new(self, n * 2 + 12)
+    }
+    #[doc = "Bit 12 - SLC0_TX_DUMMY_MODE"]
+    #[inline(always)]
+    #[must_use]
+    pub fn slc0_tx_dummy_mode(&mut self) -> SLC_TX_DUMMY_MODE_W<BRIDGE_CONF_SPEC> {
+        SLC_TX_DUMMY_MODE_W::new(self, 12)
+    }
+    #[doc = "Bit 14 - SLC1_TX_DUMMY_MODE"]
+    #[inline(always)]
+    #[must_use]
+    pub fn slc1_tx_dummy_mode(&mut self) -> SLC_TX_DUMMY_MODE_W<BRIDGE_CONF_SPEC> {
+        SLC_TX_DUMMY_MODE_W::new(self, 14)
     }
     #[doc = "Bit 13"]
     #[inline(always)]
     #[must_use]
     pub fn hda_map_128k(&mut self) -> HDA_MAP_128K_W<BRIDGE_CONF_SPEC> {
         HDA_MAP_128K_W::new(self, 13)
-    }
-    #[doc = "Bit 14"]
-    #[inline(always)]
-    #[must_use]
-    pub fn slc1_tx_dummy_mode(&mut self) -> SLC1_TX_DUMMY_MODE_W<BRIDGE_CONF_SPEC> {
-        SLC1_TX_DUMMY_MODE_W::new(self, 14)
     }
     #[doc = "Bits 16:31"]
     #[inline(always)]

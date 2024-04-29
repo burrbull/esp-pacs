@@ -1,55 +1,43 @@
 #[doc = "Register `STATE_W1` reader"]
 pub type R = crate::R<STATE_W1_SPEC>;
-#[doc = "Field `SLCHOST_STATE4` reader - *******Description***********"]
-pub type SLCHOST_STATE4_R = crate::FieldReader;
-#[doc = "Field `SLCHOST_STATE5` reader - *******Description***********"]
-pub type SLCHOST_STATE5_R = crate::FieldReader;
-#[doc = "Field `SLCHOST_STATE6` reader - *******Description***********"]
-pub type SLCHOST_STATE6_R = crate::FieldReader;
-#[doc = "Field `SLCHOST_STATE7` reader - *******Description***********"]
-pub type SLCHOST_STATE7_R = crate::FieldReader;
+#[doc = "Field `STATE4` reader - *******Description***********"]
+pub type STATE4_R = crate::FieldReader;
+#[doc = "Field `STATE5` reader - *******Description***********"]
+pub type STATE5_R = crate::FieldReader;
+#[doc = "Field `STATE6` reader - *******Description***********"]
+pub type STATE6_R = crate::FieldReader;
+#[doc = "Field `STATE7` reader - *******Description***********"]
+pub type STATE7_R = crate::FieldReader;
 impl R {
     #[doc = "Bits 0:7 - *******Description***********"]
     #[inline(always)]
-    pub fn slchost_state4(&self) -> SLCHOST_STATE4_R {
-        SLCHOST_STATE4_R::new((self.bits & 0xff) as u8)
+    pub fn state4(&self) -> STATE4_R {
+        STATE4_R::new((self.bits & 0xff) as u8)
     }
     #[doc = "Bits 8:15 - *******Description***********"]
     #[inline(always)]
-    pub fn slchost_state5(&self) -> SLCHOST_STATE5_R {
-        SLCHOST_STATE5_R::new(((self.bits >> 8) & 0xff) as u8)
+    pub fn state5(&self) -> STATE5_R {
+        STATE5_R::new(((self.bits >> 8) & 0xff) as u8)
     }
     #[doc = "Bits 16:23 - *******Description***********"]
     #[inline(always)]
-    pub fn slchost_state6(&self) -> SLCHOST_STATE6_R {
-        SLCHOST_STATE6_R::new(((self.bits >> 16) & 0xff) as u8)
+    pub fn state6(&self) -> STATE6_R {
+        STATE6_R::new(((self.bits >> 16) & 0xff) as u8)
     }
     #[doc = "Bits 24:31 - *******Description***********"]
     #[inline(always)]
-    pub fn slchost_state7(&self) -> SLCHOST_STATE7_R {
-        SLCHOST_STATE7_R::new(((self.bits >> 24) & 0xff) as u8)
+    pub fn state7(&self) -> STATE7_R {
+        STATE7_R::new(((self.bits >> 24) & 0xff) as u8)
     }
 }
 #[cfg(feature = "impl-register-debug")]
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("STATE_W1")
-            .field(
-                "slchost_state4",
-                &format_args!("{}", self.slchost_state4().bits()),
-            )
-            .field(
-                "slchost_state5",
-                &format_args!("{}", self.slchost_state5().bits()),
-            )
-            .field(
-                "slchost_state6",
-                &format_args!("{}", self.slchost_state6().bits()),
-            )
-            .field(
-                "slchost_state7",
-                &format_args!("{}", self.slchost_state7().bits()),
-            )
+            .field("state4", &format_args!("{}", self.state4().bits()))
+            .field("state5", &format_args!("{}", self.state5().bits()))
+            .field("state6", &format_args!("{}", self.state6().bits()))
+            .field("state7", &format_args!("{}", self.state7().bits()))
             .finish()
     }
 }

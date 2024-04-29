@@ -1,19 +1,32 @@
 #[doc = "Register `TOKEN_LAT` reader"]
 pub type R = crate::R<TOKEN_LAT_SPEC>;
-#[doc = "Field `SLC0_TOKEN` reader - "]
-pub type SLC0_TOKEN_R = crate::FieldReader<u16>;
-#[doc = "Field `SLC1_TOKEN` reader - "]
-pub type SLC1_TOKEN_R = crate::FieldReader<u16>;
+#[doc = "Field `SLC_TOKEN(0-1)` reader - "]
+pub type SLC_TOKEN_R = crate::FieldReader<u16>;
 impl R {
-    #[doc = "Bits 0:11"]
+    #[doc = ""]
+    #[doc = ""]
+    #[doc = "NOTE: `n` is number of field in register. `n == 0` corresponds to `SLC0_TOKEN` field"]
     #[inline(always)]
-    pub fn slc0_token(&self) -> SLC0_TOKEN_R {
-        SLC0_TOKEN_R::new((self.bits & 0x0fff) as u16)
+    pub fn slc_token(&self, n: u8) -> SLC_TOKEN_R {
+        #[allow(clippy::no_effect)]
+        [(); 2][n as usize];
+        SLC_TOKEN_R::new(((self.bits >> (n * 16)) & 0x0fff) as u16)
     }
-    #[doc = "Bits 16:27"]
+    #[doc = "Iterator for array of:"]
+    #[doc = ""]
     #[inline(always)]
-    pub fn slc1_token(&self) -> SLC1_TOKEN_R {
-        SLC1_TOKEN_R::new(((self.bits >> 16) & 0x0fff) as u16)
+    pub fn slc_token_iter(&self) -> impl Iterator<Item = SLC_TOKEN_R> + '_ {
+        (0..2).map(move |n| SLC_TOKEN_R::new(((self.bits >> (n * 16)) & 0x0fff) as u16))
+    }
+    #[doc = "Bits 0:11 - SLC0_TOKEN"]
+    #[inline(always)]
+    pub fn slc0_token(&self) -> SLC_TOKEN_R {
+        SLC_TOKEN_R::new((self.bits & 0x0fff) as u16)
+    }
+    #[doc = "Bits 16:27 - SLC1_TOKEN"]
+    #[inline(always)]
+    pub fn slc1_token(&self) -> SLC_TOKEN_R {
+        SLC_TOKEN_R::new(((self.bits >> 16) & 0x0fff) as u16)
     }
 }
 #[cfg(feature = "impl-register-debug")]

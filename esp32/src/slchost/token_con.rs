@@ -1,0 +1,97 @@
+#[doc = "Register `TOKEN_CON` writer"]
+pub type W = crate::W<TOKEN_CON_SPEC>;
+#[doc = "Field `SLC0HOST_TOKEN0_DEC` writer - "]
+pub type SLC0HOST_TOKEN0_DEC_W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `SLC0HOST_TOKEN1_DEC` writer - "]
+pub type SLC0HOST_TOKEN1_DEC_W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `SLC0HOST_TOKEN0_WR` writer - "]
+pub type SLC0HOST_TOKEN0_WR_W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `SLC0HOST_TOKEN1_WR` writer - "]
+pub type SLC0HOST_TOKEN1_WR_W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `SLC1HOST_TOKEN0_DEC` writer - "]
+pub type SLC1HOST_TOKEN0_DEC_W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `SLC1HOST_TOKEN1_DEC` writer - "]
+pub type SLC1HOST_TOKEN1_DEC_W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `SLC1HOST_TOKEN0_WR` writer - "]
+pub type SLC1HOST_TOKEN0_WR_W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `SLC1HOST_TOKEN1_WR` writer - "]
+pub type SLC1HOST_TOKEN1_WR_W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `SLC0HOST_LEN_WR` writer - "]
+pub type SLC0HOST_LEN_WR_W<'a, REG> = crate::BitWriter<'a, REG>;
+#[cfg(feature = "impl-register-debug")]
+impl core::fmt::Debug for crate::generic::Reg<TOKEN_CON_SPEC> {
+    fn fmt(&self, f: &mut core::fmt::Formatter<'_>) -> core::fmt::Result {
+        write!(f, "(not readable)")
+    }
+}
+impl W {
+    #[doc = "Bit 0"]
+    #[inline(always)]
+    #[must_use]
+    pub fn slc0host_token0_dec(&mut self) -> SLC0HOST_TOKEN0_DEC_W<TOKEN_CON_SPEC> {
+        SLC0HOST_TOKEN0_DEC_W::new(self, 0)
+    }
+    #[doc = "Bit 1"]
+    #[inline(always)]
+    #[must_use]
+    pub fn slc0host_token1_dec(&mut self) -> SLC0HOST_TOKEN1_DEC_W<TOKEN_CON_SPEC> {
+        SLC0HOST_TOKEN1_DEC_W::new(self, 1)
+    }
+    #[doc = "Bit 2"]
+    #[inline(always)]
+    #[must_use]
+    pub fn slc0host_token0_wr(&mut self) -> SLC0HOST_TOKEN0_WR_W<TOKEN_CON_SPEC> {
+        SLC0HOST_TOKEN0_WR_W::new(self, 2)
+    }
+    #[doc = "Bit 3"]
+    #[inline(always)]
+    #[must_use]
+    pub fn slc0host_token1_wr(&mut self) -> SLC0HOST_TOKEN1_WR_W<TOKEN_CON_SPEC> {
+        SLC0HOST_TOKEN1_WR_W::new(self, 3)
+    }
+    #[doc = "Bit 4"]
+    #[inline(always)]
+    #[must_use]
+    pub fn slc1host_token0_dec(&mut self) -> SLC1HOST_TOKEN0_DEC_W<TOKEN_CON_SPEC> {
+        SLC1HOST_TOKEN0_DEC_W::new(self, 4)
+    }
+    #[doc = "Bit 5"]
+    #[inline(always)]
+    #[must_use]
+    pub fn slc1host_token1_dec(&mut self) -> SLC1HOST_TOKEN1_DEC_W<TOKEN_CON_SPEC> {
+        SLC1HOST_TOKEN1_DEC_W::new(self, 5)
+    }
+    #[doc = "Bit 6"]
+    #[inline(always)]
+    #[must_use]
+    pub fn slc1host_token0_wr(&mut self) -> SLC1HOST_TOKEN0_WR_W<TOKEN_CON_SPEC> {
+        SLC1HOST_TOKEN0_WR_W::new(self, 6)
+    }
+    #[doc = "Bit 7"]
+    #[inline(always)]
+    #[must_use]
+    pub fn slc1host_token1_wr(&mut self) -> SLC1HOST_TOKEN1_WR_W<TOKEN_CON_SPEC> {
+        SLC1HOST_TOKEN1_WR_W::new(self, 7)
+    }
+    #[doc = "Bit 8"]
+    #[inline(always)]
+    #[must_use]
+    pub fn slc0host_len_wr(&mut self) -> SLC0HOST_LEN_WR_W<TOKEN_CON_SPEC> {
+        SLC0HOST_LEN_WR_W::new(self, 8)
+    }
+}
+#[doc = "\n\nYou can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`token_con::W`](W). See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
+pub struct TOKEN_CON_SPEC;
+impl crate::RegisterSpec for TOKEN_CON_SPEC {
+    type Ux = u32;
+}
+#[doc = "`write(|w| ..)` method takes [`token_con::W`](W) writer structure"]
+impl crate::Writable for TOKEN_CON_SPEC {
+    type Safety = crate::Unsafe;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
+}
+#[doc = "`reset()` method sets TOKEN_CON to value 0"]
+impl crate::Resettable for TOKEN_CON_SPEC {
+    const RESET_VALUE: u32 = 0;
+}
