@@ -1,22 +1,22 @@
-#[doc = "Register `DCACHE_PRELOCK_SCT_SIZE` reader"]
+///Register `DCACHE_PRELOCK_SCT_SIZE` reader
 pub type R = crate::R<DCACHE_PRELOCK_SCT_SIZE_SPEC>;
-#[doc = "Register `DCACHE_PRELOCK_SCT_SIZE` writer"]
+///Register `DCACHE_PRELOCK_SCT_SIZE` writer
 pub type W = crate::W<DCACHE_PRELOCK_SCT_SIZE_SPEC>;
-#[doc = "Field `DCACHE_PRELOCK_SCT1_SIZE` reader - The bits are used to configure the second length of data locking, which is combined with DCACHE_PRELOCK_SCT1_ADDR_REG"]
+///Field `DCACHE_PRELOCK_SCT1_SIZE` reader - The bits are used to configure the second length of data locking, which is combined with DCACHE_PRELOCK_SCT1_ADDR_REG
 pub type DCACHE_PRELOCK_SCT1_SIZE_R = crate::FieldReader<u16>;
-#[doc = "Field `DCACHE_PRELOCK_SCT1_SIZE` writer - The bits are used to configure the second length of data locking, which is combined with DCACHE_PRELOCK_SCT1_ADDR_REG"]
+///Field `DCACHE_PRELOCK_SCT1_SIZE` writer - The bits are used to configure the second length of data locking, which is combined with DCACHE_PRELOCK_SCT1_ADDR_REG
 pub type DCACHE_PRELOCK_SCT1_SIZE_W<'a, REG> = crate::FieldWriter<'a, REG, 16, u16>;
-#[doc = "Field `DCACHE_PRELOCK_SCT0_SIZE` reader - The bits are used to configure the first length of data locking, which is combined with DCACHE_PRELOCK_SCT0_ADDR_REG"]
+///Field `DCACHE_PRELOCK_SCT0_SIZE` reader - The bits are used to configure the first length of data locking, which is combined with DCACHE_PRELOCK_SCT0_ADDR_REG
 pub type DCACHE_PRELOCK_SCT0_SIZE_R = crate::FieldReader<u16>;
-#[doc = "Field `DCACHE_PRELOCK_SCT0_SIZE` writer - The bits are used to configure the first length of data locking, which is combined with DCACHE_PRELOCK_SCT0_ADDR_REG"]
+///Field `DCACHE_PRELOCK_SCT0_SIZE` writer - The bits are used to configure the first length of data locking, which is combined with DCACHE_PRELOCK_SCT0_ADDR_REG
 pub type DCACHE_PRELOCK_SCT0_SIZE_W<'a, REG> = crate::FieldWriter<'a, REG, 16, u16>;
 impl R {
-    #[doc = "Bits 0:15 - The bits are used to configure the second length of data locking, which is combined with DCACHE_PRELOCK_SCT1_ADDR_REG"]
+    ///Bits 0:15 - The bits are used to configure the second length of data locking, which is combined with DCACHE_PRELOCK_SCT1_ADDR_REG
     #[inline(always)]
     pub fn dcache_prelock_sct1_size(&self) -> DCACHE_PRELOCK_SCT1_SIZE_R {
         DCACHE_PRELOCK_SCT1_SIZE_R::new((self.bits & 0xffff) as u16)
     }
-    #[doc = "Bits 16:31 - The bits are used to configure the first length of data locking, which is combined with DCACHE_PRELOCK_SCT0_ADDR_REG"]
+    ///Bits 16:31 - The bits are used to configure the first length of data locking, which is combined with DCACHE_PRELOCK_SCT0_ADDR_REG
     #[inline(always)]
     pub fn dcache_prelock_sct0_size(&self) -> DCACHE_PRELOCK_SCT0_SIZE_R {
         DCACHE_PRELOCK_SCT0_SIZE_R::new(((self.bits >> 16) & 0xffff) as u16)
@@ -26,25 +26,13 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("DCACHE_PRELOCK_SCT_SIZE")
-            .field(
-                "dcache_prelock_sct1_size",
-                &format_args!("{}", self.dcache_prelock_sct1_size().bits()),
-            )
-            .field(
-                "dcache_prelock_sct0_size",
-                &format_args!("{}", self.dcache_prelock_sct0_size().bits()),
-            )
+            .field("dcache_prelock_sct1_size", &self.dcache_prelock_sct1_size())
+            .field("dcache_prelock_sct0_size", &self.dcache_prelock_sct0_size())
             .finish()
     }
 }
-#[cfg(feature = "impl-register-debug")]
-impl core::fmt::Debug for crate::generic::Reg<DCACHE_PRELOCK_SCT_SIZE_SPEC> {
-    fn fmt(&self, f: &mut core::fmt::Formatter<'_>) -> core::fmt::Result {
-        core::fmt::Debug::fmt(&self.read(), f)
-    }
-}
 impl W {
-    #[doc = "Bits 0:15 - The bits are used to configure the second length of data locking, which is combined with DCACHE_PRELOCK_SCT1_ADDR_REG"]
+    ///Bits 0:15 - The bits are used to configure the second length of data locking, which is combined with DCACHE_PRELOCK_SCT1_ADDR_REG
     #[inline(always)]
     #[must_use]
     pub fn dcache_prelock_sct1_size(
@@ -52,7 +40,7 @@ impl W {
     ) -> DCACHE_PRELOCK_SCT1_SIZE_W<DCACHE_PRELOCK_SCT_SIZE_SPEC> {
         DCACHE_PRELOCK_SCT1_SIZE_W::new(self, 0)
     }
-    #[doc = "Bits 16:31 - The bits are used to configure the first length of data locking, which is combined with DCACHE_PRELOCK_SCT0_ADDR_REG"]
+    ///Bits 16:31 - The bits are used to configure the first length of data locking, which is combined with DCACHE_PRELOCK_SCT0_ADDR_REG
     #[inline(always)]
     #[must_use]
     pub fn dcache_prelock_sct0_size(
@@ -66,15 +54,15 @@ pub struct DCACHE_PRELOCK_SCT_SIZE_SPEC;
 impl crate::RegisterSpec for DCACHE_PRELOCK_SCT_SIZE_SPEC {
     type Ux = u32;
 }
-#[doc = "`read()` method returns [`dcache_prelock_sct_size::R`](R) reader structure"]
+///`read()` method returns [`dcache_prelock_sct_size::R`](R) reader structure
 impl crate::Readable for DCACHE_PRELOCK_SCT_SIZE_SPEC {}
-#[doc = "`write(|w| ..)` method takes [`dcache_prelock_sct_size::W`](W) writer structure"]
+///`write(|w| ..)` method takes [`dcache_prelock_sct_size::W`](W) writer structure
 impl crate::Writable for DCACHE_PRELOCK_SCT_SIZE_SPEC {
     type Safety = crate::Unsafe;
     const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
     const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
-#[doc = "`reset()` method sets DCACHE_PRELOCK_SCT_SIZE to value 0"]
+///`reset()` method sets DCACHE_PRELOCK_SCT_SIZE to value 0
 impl crate::Resettable for DCACHE_PRELOCK_SCT_SIZE_SPEC {
     const RESET_VALUE: u32 = 0;
 }

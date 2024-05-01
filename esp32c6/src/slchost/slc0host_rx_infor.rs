@@ -1,13 +1,13 @@
-#[doc = "Register `SLC0HOST_RX_INFOR` reader"]
+///Register `SLC0HOST_RX_INFOR` reader
 pub type R = crate::R<SLC0HOST_RX_INFOR_SPEC>;
-#[doc = "Register `SLC0HOST_RX_INFOR` writer"]
+///Register `SLC0HOST_RX_INFOR` writer
 pub type W = crate::W<SLC0HOST_RX_INFOR_SPEC>;
-#[doc = "Field `SLC0HOST_RX_INFOR` reader - *******Description***********"]
+///Field `SLC0HOST_RX_INFOR` reader - *******Description***********
 pub type SLC0HOST_RX_INFOR_R = crate::FieldReader<u32>;
-#[doc = "Field `SLC0HOST_RX_INFOR` writer - *******Description***********"]
+///Field `SLC0HOST_RX_INFOR` writer - *******Description***********
 pub type SLC0HOST_RX_INFOR_W<'a, REG> = crate::FieldWriter<'a, REG, 20, u32>;
 impl R {
-    #[doc = "Bits 0:19 - *******Description***********"]
+    ///Bits 0:19 - *******Description***********
     #[inline(always)]
     pub fn slc0host_rx_infor(&self) -> SLC0HOST_RX_INFOR_R {
         SLC0HOST_RX_INFOR_R::new(self.bits & 0x000f_ffff)
@@ -17,21 +17,12 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SLC0HOST_RX_INFOR")
-            .field(
-                "slc0host_rx_infor",
-                &format_args!("{}", self.slc0host_rx_infor().bits()),
-            )
+            .field("slc0host_rx_infor", &self.slc0host_rx_infor())
             .finish()
     }
 }
-#[cfg(feature = "impl-register-debug")]
-impl core::fmt::Debug for crate::generic::Reg<SLC0HOST_RX_INFOR_SPEC> {
-    fn fmt(&self, f: &mut core::fmt::Formatter<'_>) -> core::fmt::Result {
-        core::fmt::Debug::fmt(&self.read(), f)
-    }
-}
 impl W {
-    #[doc = "Bits 0:19 - *******Description***********"]
+    ///Bits 0:19 - *******Description***********
     #[inline(always)]
     #[must_use]
     pub fn slc0host_rx_infor(&mut self) -> SLC0HOST_RX_INFOR_W<SLC0HOST_RX_INFOR_SPEC> {
@@ -43,15 +34,15 @@ pub struct SLC0HOST_RX_INFOR_SPEC;
 impl crate::RegisterSpec for SLC0HOST_RX_INFOR_SPEC {
     type Ux = u32;
 }
-#[doc = "`read()` method returns [`slc0host_rx_infor::R`](R) reader structure"]
+///`read()` method returns [`slc0host_rx_infor::R`](R) reader structure
 impl crate::Readable for SLC0HOST_RX_INFOR_SPEC {}
-#[doc = "`write(|w| ..)` method takes [`slc0host_rx_infor::W`](W) writer structure"]
+///`write(|w| ..)` method takes [`slc0host_rx_infor::W`](W) writer structure
 impl crate::Writable for SLC0HOST_RX_INFOR_SPEC {
     type Safety = crate::Unsafe;
     const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
     const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
-#[doc = "`reset()` method sets SLC0HOST_RX_INFOR to value 0"]
+///`reset()` method sets SLC0HOST_RX_INFOR to value 0
 impl crate::Resettable for SLC0HOST_RX_INFOR_SPEC {
     const RESET_VALUE: u32 = 0;
 }

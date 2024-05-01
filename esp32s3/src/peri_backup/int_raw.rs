@@ -1,16 +1,16 @@
-#[doc = "Register `INT_RAW` reader"]
+///Register `INT_RAW` reader
 pub type R = crate::R<INT_RAW_SPEC>;
-#[doc = "Field `DONE` reader - x"]
+///Field `DONE` reader - x
 pub type DONE_R = crate::BitReader;
-#[doc = "Field `ERR` reader - x"]
+///Field `ERR` reader - x
 pub type ERR_R = crate::BitReader;
 impl R {
-    #[doc = "Bit 0 - x"]
+    ///Bit 0 - x
     #[inline(always)]
     pub fn done(&self) -> DONE_R {
         DONE_R::new((self.bits & 1) != 0)
     }
-    #[doc = "Bit 1 - x"]
+    ///Bit 1 - x
     #[inline(always)]
     pub fn err(&self) -> ERR_R {
         ERR_R::new(((self.bits >> 1) & 1) != 0)
@@ -20,25 +20,21 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("INT_RAW")
-            .field("done", &format_args!("{}", self.done().bit()))
-            .field("err", &format_args!("{}", self.err().bit()))
+            .field("done", &self.done())
+            .field("err", &self.err())
             .finish()
     }
 }
-#[cfg(feature = "impl-register-debug")]
-impl core::fmt::Debug for crate::generic::Reg<INT_RAW_SPEC> {
-    fn fmt(&self, f: &mut core::fmt::Formatter<'_>) -> core::fmt::Result {
-        core::fmt::Debug::fmt(&self.read(), f)
-    }
-}
-#[doc = "x\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`int_raw::R`](R).  See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
+/**x
+
+You can [`read`](crate::generic::Reg::read) this register and get [`int_raw::R`](R).  See [API](https://docs.rs/svd2rust/#read--modify--write-api).*/
 pub struct INT_RAW_SPEC;
 impl crate::RegisterSpec for INT_RAW_SPEC {
     type Ux = u32;
 }
-#[doc = "`read()` method returns [`int_raw::R`](R) reader structure"]
+///`read()` method returns [`int_raw::R`](R) reader structure
 impl crate::Readable for INT_RAW_SPEC {}
-#[doc = "`reset()` method sets INT_RAW to value 0"]
+///`reset()` method sets INT_RAW to value 0
 impl crate::Resettable for INT_RAW_SPEC {
     const RESET_VALUE: u32 = 0;
 }

@@ -1,13 +1,13 @@
-#[doc = "Register `EXT_MEM_PMS_LOCK` reader"]
+///Register `EXT_MEM_PMS_LOCK` reader
 pub type R = crate::R<EXT_MEM_PMS_LOCK_SPEC>;
-#[doc = "Register `EXT_MEM_PMS_LOCK` writer"]
+///Register `EXT_MEM_PMS_LOCK` writer
 pub type W = crate::W<EXT_MEM_PMS_LOCK_SPEC>;
-#[doc = "Field `EXT_MEM_PMS_LOCK` reader - ******* Description ***********"]
+///Field `EXT_MEM_PMS_LOCK` reader - ******* Description ***********
 pub type EXT_MEM_PMS_LOCK_R = crate::BitReader;
-#[doc = "Field `EXT_MEM_PMS_LOCK` writer - ******* Description ***********"]
+///Field `EXT_MEM_PMS_LOCK` writer - ******* Description ***********
 pub type EXT_MEM_PMS_LOCK_W<'a, REG> = crate::BitWriter<'a, REG>;
 impl R {
-    #[doc = "Bit 0 - ******* Description ***********"]
+    ///Bit 0 - ******* Description ***********
     #[inline(always)]
     pub fn ext_mem_pms_lock(&self) -> EXT_MEM_PMS_LOCK_R {
         EXT_MEM_PMS_LOCK_R::new((self.bits & 1) != 0)
@@ -17,21 +17,12 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("EXT_MEM_PMS_LOCK")
-            .field(
-                "ext_mem_pms_lock",
-                &format_args!("{}", self.ext_mem_pms_lock().bit()),
-            )
+            .field("ext_mem_pms_lock", &self.ext_mem_pms_lock())
             .finish()
     }
 }
-#[cfg(feature = "impl-register-debug")]
-impl core::fmt::Debug for crate::generic::Reg<EXT_MEM_PMS_LOCK_SPEC> {
-    fn fmt(&self, f: &mut core::fmt::Formatter<'_>) -> core::fmt::Result {
-        core::fmt::Debug::fmt(&self.read(), f)
-    }
-}
 impl W {
-    #[doc = "Bit 0 - ******* Description ***********"]
+    ///Bit 0 - ******* Description ***********
     #[inline(always)]
     #[must_use]
     pub fn ext_mem_pms_lock(&mut self) -> EXT_MEM_PMS_LOCK_W<EXT_MEM_PMS_LOCK_SPEC> {
@@ -43,15 +34,15 @@ pub struct EXT_MEM_PMS_LOCK_SPEC;
 impl crate::RegisterSpec for EXT_MEM_PMS_LOCK_SPEC {
     type Ux = u32;
 }
-#[doc = "`read()` method returns [`ext_mem_pms_lock::R`](R) reader structure"]
+///`read()` method returns [`ext_mem_pms_lock::R`](R) reader structure
 impl crate::Readable for EXT_MEM_PMS_LOCK_SPEC {}
-#[doc = "`write(|w| ..)` method takes [`ext_mem_pms_lock::W`](W) writer structure"]
+///`write(|w| ..)` method takes [`ext_mem_pms_lock::W`](W) writer structure
 impl crate::Writable for EXT_MEM_PMS_LOCK_SPEC {
     type Safety = crate::Unsafe;
     const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
     const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
-#[doc = "`reset()` method sets EXT_MEM_PMS_LOCK to value 0"]
+///`reset()` method sets EXT_MEM_PMS_LOCK to value 0
 impl crate::Resettable for EXT_MEM_PMS_LOCK_SPEC {
     const RESET_VALUE: u32 = 0;
 }

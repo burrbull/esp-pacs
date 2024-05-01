@@ -1,9 +1,9 @@
-#[doc = "Register `L1_ICACHE3_AUTOLOAD_SCT0_SIZE` reader"]
+///Register `L1_ICACHE3_AUTOLOAD_SCT0_SIZE` reader
 pub type R = crate::R<L1_ICACHE3_AUTOLOAD_SCT0_SIZE_SPEC>;
-#[doc = "Field `L1_ICACHE3_AUTOLOAD_SCT0_SIZE` reader - Those bits are used to configure the size of the first section for autoload operation on L1-ICache3. Note that it should be used together with L1_ICACHE3_AUTOLOAD_SCT0_ADDR and L1_ICACHE_AUTOLOAD_SCT0_ENA."]
+///Field `L1_ICACHE3_AUTOLOAD_SCT0_SIZE` reader - Those bits are used to configure the size of the first section for autoload operation on L1-ICache3. Note that it should be used together with L1_ICACHE3_AUTOLOAD_SCT0_ADDR and L1_ICACHE_AUTOLOAD_SCT0_ENA.
 pub type L1_ICACHE3_AUTOLOAD_SCT0_SIZE_R = crate::FieldReader<u32>;
 impl R {
-    #[doc = "Bits 0:27 - Those bits are used to configure the size of the first section for autoload operation on L1-ICache3. Note that it should be used together with L1_ICACHE3_AUTOLOAD_SCT0_ADDR and L1_ICACHE_AUTOLOAD_SCT0_ENA."]
+    ///Bits 0:27 - Those bits are used to configure the size of the first section for autoload operation on L1-ICache3. Note that it should be used together with L1_ICACHE3_AUTOLOAD_SCT0_ADDR and L1_ICACHE_AUTOLOAD_SCT0_ENA.
     #[inline(always)]
     pub fn l1_icache3_autoload_sct0_size(&self) -> L1_ICACHE3_AUTOLOAD_SCT0_SIZE_R {
         L1_ICACHE3_AUTOLOAD_SCT0_SIZE_R::new(self.bits & 0x0fff_ffff)
@@ -15,25 +15,21 @@ impl core::fmt::Debug for R {
         f.debug_struct("L1_ICACHE3_AUTOLOAD_SCT0_SIZE")
             .field(
                 "l1_icache3_autoload_sct0_size",
-                &format_args!("{}", self.l1_icache3_autoload_sct0_size().bits()),
+                &self.l1_icache3_autoload_sct0_size(),
             )
             .finish()
     }
 }
-#[cfg(feature = "impl-register-debug")]
-impl core::fmt::Debug for crate::generic::Reg<L1_ICACHE3_AUTOLOAD_SCT0_SIZE_SPEC> {
-    fn fmt(&self, f: &mut core::fmt::Formatter<'_>) -> core::fmt::Result {
-        core::fmt::Debug::fmt(&self.read(), f)
-    }
-}
-#[doc = "L1 instruction Cache 3 autoload section 0 size configure register\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`l1_icache3_autoload_sct0_size::R`](R).  See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
+/**L1 instruction Cache 3 autoload section 0 size configure register
+
+You can [`read`](crate::generic::Reg::read) this register and get [`l1_icache3_autoload_sct0_size::R`](R).  See [API](https://docs.rs/svd2rust/#read--modify--write-api).*/
 pub struct L1_ICACHE3_AUTOLOAD_SCT0_SIZE_SPEC;
 impl crate::RegisterSpec for L1_ICACHE3_AUTOLOAD_SCT0_SIZE_SPEC {
     type Ux = u32;
 }
-#[doc = "`read()` method returns [`l1_icache3_autoload_sct0_size::R`](R) reader structure"]
+///`read()` method returns [`l1_icache3_autoload_sct0_size::R`](R) reader structure
 impl crate::Readable for L1_ICACHE3_AUTOLOAD_SCT0_SIZE_SPEC {}
-#[doc = "`reset()` method sets L1_ICACHE3_AUTOLOAD_SCT0_SIZE to value 0"]
+///`reset()` method sets L1_ICACHE3_AUTOLOAD_SCT0_SIZE to value 0
 impl crate::Resettable for L1_ICACHE3_AUTOLOAD_SCT0_SIZE_SPEC {
     const RESET_VALUE: u32 = 0;
 }

@@ -1,9 +1,9 @@
-#[doc = "Register `TIME_HIGH0` reader"]
+///Register `TIME_HIGH0` reader
 pub type R = crate::R<TIME_HIGH0_SPEC>;
-#[doc = "Field `TIMER_VALUE0_HIGH` reader - Stores the higher 16 bits of RTC timer 0."]
+///Field `TIMER_VALUE0_HIGH` reader - Stores the higher 16 bits of RTC timer 0.
 pub type TIMER_VALUE0_HIGH_R = crate::FieldReader<u16>;
 impl R {
-    #[doc = "Bits 0:15 - Stores the higher 16 bits of RTC timer 0."]
+    ///Bits 0:15 - Stores the higher 16 bits of RTC timer 0.
     #[inline(always)]
     pub fn timer_value0_high(&self) -> TIMER_VALUE0_HIGH_R {
         TIMER_VALUE0_HIGH_R::new((self.bits & 0xffff) as u16)
@@ -13,27 +13,20 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("TIME_HIGH0")
-            .field(
-                "timer_value0_high",
-                &format_args!("{}", self.timer_value0_high().bits()),
-            )
+            .field("timer_value0_high", &self.timer_value0_high())
             .finish()
     }
 }
-#[cfg(feature = "impl-register-debug")]
-impl core::fmt::Debug for crate::generic::Reg<TIME_HIGH0_SPEC> {
-    fn fmt(&self, f: &mut core::fmt::Formatter<'_>) -> core::fmt::Result {
-        core::fmt::Debug::fmt(&self.read(), f)
-    }
-}
-#[doc = "Stores the higher 16 bits of RTC timer 0\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`time_high0::R`](R).  See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
+/**Stores the higher 16 bits of RTC timer 0
+
+You can [`read`](crate::generic::Reg::read) this register and get [`time_high0::R`](R).  See [API](https://docs.rs/svd2rust/#read--modify--write-api).*/
 pub struct TIME_HIGH0_SPEC;
 impl crate::RegisterSpec for TIME_HIGH0_SPEC {
     type Ux = u32;
 }
-#[doc = "`read()` method returns [`time_high0::R`](R) reader structure"]
+///`read()` method returns [`time_high0::R`](R) reader structure
 impl crate::Readable for TIME_HIGH0_SPEC {}
-#[doc = "`reset()` method sets TIME_HIGH0 to value 0"]
+///`reset()` method sets TIME_HIGH0 to value 0
 impl crate::Resettable for TIME_HIGH0_SPEC {
     const RESET_VALUE: u32 = 0;
 }

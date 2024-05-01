@@ -1,13 +1,13 @@
-#[doc = "Register `CACHE_BRIDGE_ARBITER_CTRL` reader"]
+///Register `CACHE_BRIDGE_ARBITER_CTRL` reader
 pub type R = crate::R<CACHE_BRIDGE_ARBITER_CTRL_SPEC>;
-#[doc = "Register `CACHE_BRIDGE_ARBITER_CTRL` writer"]
+///Register `CACHE_BRIDGE_ARBITER_CTRL` writer
 pub type W = crate::W<CACHE_BRIDGE_ARBITER_CTRL_SPEC>;
-#[doc = "Field `ALLOC_WB_HOLD_ARBITER` reader - Reserved."]
+///Field `ALLOC_WB_HOLD_ARBITER` reader - Reserved.
 pub type ALLOC_WB_HOLD_ARBITER_R = crate::BitReader;
-#[doc = "Field `ALLOC_WB_HOLD_ARBITER` writer - Reserved."]
+///Field `ALLOC_WB_HOLD_ARBITER` writer - Reserved.
 pub type ALLOC_WB_HOLD_ARBITER_W<'a, REG> = crate::BitWriter<'a, REG>;
 impl R {
-    #[doc = "Bit 0 - Reserved."]
+    ///Bit 0 - Reserved.
     #[inline(always)]
     pub fn alloc_wb_hold_arbiter(&self) -> ALLOC_WB_HOLD_ARBITER_R {
         ALLOC_WB_HOLD_ARBITER_R::new((self.bits & 1) != 0)
@@ -17,21 +17,12 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CACHE_BRIDGE_ARBITER_CTRL")
-            .field(
-                "alloc_wb_hold_arbiter",
-                &format_args!("{}", self.alloc_wb_hold_arbiter().bit()),
-            )
+            .field("alloc_wb_hold_arbiter", &self.alloc_wb_hold_arbiter())
             .finish()
     }
 }
-#[cfg(feature = "impl-register-debug")]
-impl core::fmt::Debug for crate::generic::Reg<CACHE_BRIDGE_ARBITER_CTRL_SPEC> {
-    fn fmt(&self, f: &mut core::fmt::Formatter<'_>) -> core::fmt::Result {
-        core::fmt::Debug::fmt(&self.read(), f)
-    }
-}
 impl W {
-    #[doc = "Bit 0 - Reserved."]
+    ///Bit 0 - Reserved.
     #[inline(always)]
     #[must_use]
     pub fn alloc_wb_hold_arbiter(
@@ -40,20 +31,22 @@ impl W {
         ALLOC_WB_HOLD_ARBITER_W::new(self, 0)
     }
 }
-#[doc = "register description\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`cache_bridge_arbiter_ctrl::R`](R).  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`cache_bridge_arbiter_ctrl::W`](W). You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
+/**register description
+
+You can [`read`](crate::generic::Reg::read) this register and get [`cache_bridge_arbiter_ctrl::R`](R).  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`cache_bridge_arbiter_ctrl::W`](W). You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).*/
 pub struct CACHE_BRIDGE_ARBITER_CTRL_SPEC;
 impl crate::RegisterSpec for CACHE_BRIDGE_ARBITER_CTRL_SPEC {
     type Ux = u32;
 }
-#[doc = "`read()` method returns [`cache_bridge_arbiter_ctrl::R`](R) reader structure"]
+///`read()` method returns [`cache_bridge_arbiter_ctrl::R`](R) reader structure
 impl crate::Readable for CACHE_BRIDGE_ARBITER_CTRL_SPEC {}
-#[doc = "`write(|w| ..)` method takes [`cache_bridge_arbiter_ctrl::W`](W) writer structure"]
+///`write(|w| ..)` method takes [`cache_bridge_arbiter_ctrl::W`](W) writer structure
 impl crate::Writable for CACHE_BRIDGE_ARBITER_CTRL_SPEC {
     type Safety = crate::Unsafe;
     const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
     const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
-#[doc = "`reset()` method sets CACHE_BRIDGE_ARBITER_CTRL to value 0"]
+///`reset()` method sets CACHE_BRIDGE_ARBITER_CTRL to value 0
 impl crate::Resettable for CACHE_BRIDGE_ARBITER_CTRL_SPEC {
     const RESET_VALUE: u32 = 0;
 }

@@ -1,13 +1,13 @@
-#[doc = "Register `SLC_APBWIN_WDATA` reader"]
+///Register `SLC_APBWIN_WDATA` reader
 pub type R = crate::R<SLC_APBWIN_WDATA_SPEC>;
-#[doc = "Register `SLC_APBWIN_WDATA` writer"]
+///Register `SLC_APBWIN_WDATA` writer
 pub type W = crate::W<SLC_APBWIN_WDATA_SPEC>;
-#[doc = "Field `SLC_APBWIN_WDATA` reader - *******Description***********"]
+///Field `SLC_APBWIN_WDATA` reader - *******Description***********
 pub type SLC_APBWIN_WDATA_R = crate::FieldReader<u32>;
-#[doc = "Field `SLC_APBWIN_WDATA` writer - *******Description***********"]
+///Field `SLC_APBWIN_WDATA` writer - *******Description***********
 pub type SLC_APBWIN_WDATA_W<'a, REG> = crate::FieldWriter<'a, REG, 32, u32>;
 impl R {
-    #[doc = "Bits 0:31 - *******Description***********"]
+    ///Bits 0:31 - *******Description***********
     #[inline(always)]
     pub fn slc_apbwin_wdata(&self) -> SLC_APBWIN_WDATA_R {
         SLC_APBWIN_WDATA_R::new(self.bits)
@@ -17,21 +17,12 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SLC_APBWIN_WDATA")
-            .field(
-                "slc_apbwin_wdata",
-                &format_args!("{}", self.slc_apbwin_wdata().bits()),
-            )
+            .field("slc_apbwin_wdata", &self.slc_apbwin_wdata())
             .finish()
     }
 }
-#[cfg(feature = "impl-register-debug")]
-impl core::fmt::Debug for crate::generic::Reg<SLC_APBWIN_WDATA_SPEC> {
-    fn fmt(&self, f: &mut core::fmt::Formatter<'_>) -> core::fmt::Result {
-        core::fmt::Debug::fmt(&self.read(), f)
-    }
-}
 impl W {
-    #[doc = "Bits 0:31 - *******Description***********"]
+    ///Bits 0:31 - *******Description***********
     #[inline(always)]
     #[must_use]
     pub fn slc_apbwin_wdata(&mut self) -> SLC_APBWIN_WDATA_W<SLC_APBWIN_WDATA_SPEC> {
@@ -43,15 +34,15 @@ pub struct SLC_APBWIN_WDATA_SPEC;
 impl crate::RegisterSpec for SLC_APBWIN_WDATA_SPEC {
     type Ux = u32;
 }
-#[doc = "`read()` method returns [`slc_apbwin_wdata::R`](R) reader structure"]
+///`read()` method returns [`slc_apbwin_wdata::R`](R) reader structure
 impl crate::Readable for SLC_APBWIN_WDATA_SPEC {}
-#[doc = "`write(|w| ..)` method takes [`slc_apbwin_wdata::W`](W) writer structure"]
+///`write(|w| ..)` method takes [`slc_apbwin_wdata::W`](W) writer structure
 impl crate::Writable for SLC_APBWIN_WDATA_SPEC {
     type Safety = crate::Unsafe;
     const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
     const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
-#[doc = "`reset()` method sets SLC_APBWIN_WDATA to value 0"]
+///`reset()` method sets SLC_APBWIN_WDATA to value 0
 impl crate::Resettable for SLC_APBWIN_WDATA_SPEC {
     const RESET_VALUE: u32 = 0;
 }

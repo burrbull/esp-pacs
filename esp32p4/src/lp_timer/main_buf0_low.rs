@@ -1,9 +1,9 @@
-#[doc = "Register `MAIN_BUF0_LOW` reader"]
+///Register `MAIN_BUF0_LOW` reader
 pub type R = crate::R<MAIN_BUF0_LOW_SPEC>;
-#[doc = "Field `MAIN_TIMER_BUF0_LOW` reader - need_des"]
+///Field `MAIN_TIMER_BUF0_LOW` reader - need_des
 pub type MAIN_TIMER_BUF0_LOW_R = crate::FieldReader<u32>;
 impl R {
-    #[doc = "Bits 0:31 - need_des"]
+    ///Bits 0:31 - need_des
     #[inline(always)]
     pub fn main_timer_buf0_low(&self) -> MAIN_TIMER_BUF0_LOW_R {
         MAIN_TIMER_BUF0_LOW_R::new(self.bits)
@@ -13,27 +13,20 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("MAIN_BUF0_LOW")
-            .field(
-                "main_timer_buf0_low",
-                &format_args!("{}", self.main_timer_buf0_low().bits()),
-            )
+            .field("main_timer_buf0_low", &self.main_timer_buf0_low())
             .finish()
     }
 }
-#[cfg(feature = "impl-register-debug")]
-impl core::fmt::Debug for crate::generic::Reg<MAIN_BUF0_LOW_SPEC> {
-    fn fmt(&self, f: &mut core::fmt::Formatter<'_>) -> core::fmt::Result {
-        core::fmt::Debug::fmt(&self.read(), f)
-    }
-}
-#[doc = "need_des\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`main_buf0_low::R`](R).  See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
+/**need_des
+
+You can [`read`](crate::generic::Reg::read) this register and get [`main_buf0_low::R`](R).  See [API](https://docs.rs/svd2rust/#read--modify--write-api).*/
 pub struct MAIN_BUF0_LOW_SPEC;
 impl crate::RegisterSpec for MAIN_BUF0_LOW_SPEC {
     type Ux = u32;
 }
-#[doc = "`read()` method returns [`main_buf0_low::R`](R) reader structure"]
+///`read()` method returns [`main_buf0_low::R`](R) reader structure
 impl crate::Readable for MAIN_BUF0_LOW_SPEC {}
-#[doc = "`reset()` method sets MAIN_BUF0_LOW to value 0"]
+///`reset()` method sets MAIN_BUF0_LOW to value 0
 impl crate::Resettable for MAIN_BUF0_LOW_SPEC {
     const RESET_VALUE: u32 = 0;
 }
