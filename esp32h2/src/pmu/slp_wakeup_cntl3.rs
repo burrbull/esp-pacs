@@ -35,18 +35,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SLP_WAKEUP_CNTL3")
-            .field(
-                "lp_min_slp_val",
-                &format_args!("{}", self.lp_min_slp_val().bits()),
-            )
-            .field(
-                "hp_min_slp_val",
-                &format_args!("{}", self.hp_min_slp_val().bits()),
-            )
-            .field(
-                "sleep_prt_sel",
-                &format_args!("{}", self.sleep_prt_sel().bits()),
-            )
+            .field("lp_min_slp_val", &self.lp_min_slp_val().bits())
+            .field("hp_min_slp_val", &self.hp_min_slp_val().bits())
+            .field("sleep_prt_sel", &self.sleep_prt_sel().bits())
             .finish()
     }
 }
@@ -86,10 +77,6 @@ impl crate::Readable for SLP_WAKEUP_CNTL3_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`slp_wakeup_cntl3::W`](W) writer structure"]
 impl crate::Writable for SLP_WAKEUP_CNTL3_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SLP_WAKEUP_CNTL3 to value 0"]
-impl crate::Resettable for SLP_WAKEUP_CNTL3_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for SLP_WAKEUP_CNTL3_SPEC {}

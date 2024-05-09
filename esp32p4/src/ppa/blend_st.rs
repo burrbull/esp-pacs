@@ -13,10 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("BLEND_ST")
-            .field(
-                "blend_size_diff_st",
-                &format_args!("{}", self.blend_size_diff_st().bit()),
-            )
+            .field("blend_size_diff_st", &self.blend_size_diff_st().bit())
             .finish()
     }
 }
@@ -34,6 +31,4 @@ impl crate::RegisterSpec for BLEND_ST_SPEC {
 #[doc = "`read()` method returns [`blend_st::R`](R) reader structure"]
 impl crate::Readable for BLEND_ST_SPEC {}
 #[doc = "`reset()` method sets BLEND_ST to value 0"]
-impl crate::Resettable for BLEND_ST_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for BLEND_ST_SPEC {}

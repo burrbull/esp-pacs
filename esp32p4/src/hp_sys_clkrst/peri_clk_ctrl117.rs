@@ -64,27 +64,21 @@ impl core::fmt::Debug for R {
         f.debug_struct("PERI_CLK_CTRL117")
             .field(
                 "gpspi3_hs_clk_div_num",
-                &format_args!("{}", self.gpspi3_hs_clk_div_num().bits()),
+                &self.gpspi3_hs_clk_div_num().bits(),
             )
             .field(
                 "gpspi3_mst_clk_div_num",
-                &format_args!("{}", self.gpspi3_mst_clk_div_num().bits()),
+                &self.gpspi3_mst_clk_div_num().bits(),
             )
-            .field(
-                "gpspi3_mst_clk_en",
-                &format_args!("{}", self.gpspi3_mst_clk_en().bit()),
-            )
+            .field("gpspi3_mst_clk_en", &self.gpspi3_mst_clk_en().bit())
             .field(
                 "parlio_rx_clk_src_sel",
-                &format_args!("{}", self.parlio_rx_clk_src_sel().bits()),
+                &self.parlio_rx_clk_src_sel().bits(),
             )
-            .field(
-                "parlio_rx_clk_en",
-                &format_args!("{}", self.parlio_rx_clk_en().bit()),
-            )
+            .field("parlio_rx_clk_en", &self.parlio_rx_clk_en().bit())
             .field(
                 "parlio_rx_clk_div_num",
-                &format_args!("{}", self.parlio_rx_clk_div_num().bits()),
+                &self.parlio_rx_clk_div_num().bits(),
             )
             .finish()
     }
@@ -143,8 +137,6 @@ impl crate::Readable for PERI_CLK_CTRL117_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`peri_clk_ctrl117::W`](W) writer structure"]
 impl crate::Writable for PERI_CLK_CTRL117_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets PERI_CLK_CTRL117 to value 0x0001_0000"]
 impl crate::Resettable for PERI_CLK_CTRL117_SPEC {

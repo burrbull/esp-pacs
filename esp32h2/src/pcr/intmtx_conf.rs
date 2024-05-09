@@ -33,18 +33,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("INTMTX_CONF")
-            .field(
-                "intmtx_clk_en",
-                &format_args!("{}", self.intmtx_clk_en().bit()),
-            )
-            .field(
-                "intmtx_rst_en",
-                &format_args!("{}", self.intmtx_rst_en().bit()),
-            )
-            .field(
-                "intmtx_ready",
-                &format_args!("{}", self.intmtx_ready().bit()),
-            )
+            .field("intmtx_clk_en", &self.intmtx_clk_en().bit())
+            .field("intmtx_rst_en", &self.intmtx_rst_en().bit())
+            .field("intmtx_ready", &self.intmtx_ready().bit())
             .finish()
     }
 }
@@ -78,8 +69,6 @@ impl crate::Readable for INTMTX_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`intmtx_conf::W`](W) writer structure"]
 impl crate::Writable for INTMTX_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets INTMTX_CONF to value 0x05"]
 impl crate::Resettable for INTMTX_CONF_SPEC {

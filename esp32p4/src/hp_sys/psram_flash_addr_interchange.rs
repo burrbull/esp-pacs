@@ -26,8 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PSRAM_FLASH_ADDR_INTERCHANGE")
-            .field("cpu", &format_args!("{}", self.cpu().bit()))
-            .field("dma", &format_args!("{}", self.dma().bit()))
+            .field("cpu", &self.cpu().bit())
+            .field("dma", &self.dma().bit())
             .finish()
     }
 }
@@ -61,10 +61,6 @@ impl crate::Readable for PSRAM_FLASH_ADDR_INTERCHANGE_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`psram_flash_addr_interchange::W`](W) writer structure"]
 impl crate::Writable for PSRAM_FLASH_ADDR_INTERCHANGE_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets PSRAM_FLASH_ADDR_INTERCHANGE to value 0"]
-impl crate::Resettable for PSRAM_FLASH_ADDR_INTERCHANGE_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for PSRAM_FLASH_ADDR_INTERCHANGE_SPEC {}

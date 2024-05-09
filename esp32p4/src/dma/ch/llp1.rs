@@ -17,7 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("LLP1")
-            .field("ch1_loc1", &format_args!("{}", self.ch1_loc1().bits()))
+            .field("ch1_loc1", &self.ch1_loc1().bits())
             .finish()
     }
 }
@@ -45,10 +45,6 @@ impl crate::Readable for LLP1_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`llp1::W`](W) writer structure"]
 impl crate::Writable for LLP1_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets LLP1 to value 0"]
-impl crate::Resettable for LLP1_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for LLP1_SPEC {}

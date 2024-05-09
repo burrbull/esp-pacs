@@ -78,38 +78,14 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SAR_MEAS2_CTRL1")
-            .field(
-                "sar2_cntl_state",
-                &format_args!("{}", self.sar2_cntl_state().bits()),
-            )
-            .field(
-                "sar2_pwdet_cal_en",
-                &format_args!("{}", self.sar2_pwdet_cal_en().bit()),
-            )
-            .field(
-                "sar2_pkdet_cal_en",
-                &format_args!("{}", self.sar2_pkdet_cal_en().bit()),
-            )
-            .field(
-                "sar2_en_test",
-                &format_args!("{}", self.sar2_en_test().bit()),
-            )
-            .field(
-                "sar2_rstb_force",
-                &format_args!("{}", self.sar2_rstb_force().bits()),
-            )
-            .field(
-                "sar2_standby_wait",
-                &format_args!("{}", self.sar2_standby_wait().bits()),
-            )
-            .field(
-                "sar2_rstb_wait",
-                &format_args!("{}", self.sar2_rstb_wait().bits()),
-            )
-            .field(
-                "sar2_xpd_wait",
-                &format_args!("{}", self.sar2_xpd_wait().bits()),
-            )
+            .field("sar2_cntl_state", &self.sar2_cntl_state().bits())
+            .field("sar2_pwdet_cal_en", &self.sar2_pwdet_cal_en().bit())
+            .field("sar2_pkdet_cal_en", &self.sar2_pkdet_cal_en().bit())
+            .field("sar2_en_test", &self.sar2_en_test().bit())
+            .field("sar2_rstb_force", &self.sar2_rstb_force().bits())
+            .field("sar2_standby_wait", &self.sar2_standby_wait().bits())
+            .field("sar2_rstb_wait", &self.sar2_rstb_wait().bits())
+            .field("sar2_xpd_wait", &self.sar2_xpd_wait().bits())
             .finish()
     }
 }
@@ -173,8 +149,6 @@ impl crate::Readable for SAR_MEAS2_CTRL1_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`sar_meas2_ctrl1::W`](W) writer structure"]
 impl crate::Writable for SAR_MEAS2_CTRL1_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SAR_MEAS2_CTRL1 to value 0x0702_0200"]
 impl crate::Resettable for SAR_MEAS2_CTRL1_SPEC {

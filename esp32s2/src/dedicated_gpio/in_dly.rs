@@ -67,14 +67,14 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("IN_DLY")
-            .field("ch0", &format_args!("{}", self.ch0().bits()))
-            .field("ch1", &format_args!("{}", self.ch1().bits()))
-            .field("ch2", &format_args!("{}", self.ch2().bits()))
-            .field("ch3", &format_args!("{}", self.ch3().bits()))
-            .field("ch4", &format_args!("{}", self.ch4().bits()))
-            .field("ch5", &format_args!("{}", self.ch5().bits()))
-            .field("ch6", &format_args!("{}", self.ch6().bits()))
-            .field("ch7", &format_args!("{}", self.ch7().bits()))
+            .field("ch0", &self.ch0().bits())
+            .field("ch1", &self.ch1().bits())
+            .field("ch2", &self.ch2().bits())
+            .field("ch3", &self.ch3().bits())
+            .field("ch4", &self.ch4().bits())
+            .field("ch5", &self.ch5().bits())
+            .field("ch6", &self.ch6().bits())
+            .field("ch7", &self.ch7().bits())
             .finish()
     }
 }
@@ -154,10 +154,6 @@ impl crate::Readable for IN_DLY_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`in_dly::W`](W) writer structure"]
 impl crate::Writable for IN_DLY_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets IN_DLY to value 0"]
-impl crate::Resettable for IN_DLY_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for IN_DLY_SPEC {}

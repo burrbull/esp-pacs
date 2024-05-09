@@ -26,11 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PLC_CONF2")
-            .field(
-                "cvsd_seg_mod",
-                &format_args!("{}", self.cvsd_seg_mod().bits()),
-            )
-            .field("min_period", &format_args!("{}", self.min_period().bits()))
+            .field("cvsd_seg_mod", &self.cvsd_seg_mod().bits())
+            .field("min_period", &self.min_period().bits())
             .finish()
     }
 }
@@ -64,8 +61,6 @@ impl crate::Readable for PLC_CONF2_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`plc_conf2::W`](W) writer structure"]
 impl crate::Writable for PLC_CONF2_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets PLC_CONF2 to value 0x28"]
 impl crate::Resettable for PLC_CONF2_SPEC {

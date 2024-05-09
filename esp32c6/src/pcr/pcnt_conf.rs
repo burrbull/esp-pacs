@@ -26,8 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PCNT_CONF")
-            .field("pcnt_clk_en", &format_args!("{}", self.pcnt_clk_en().bit()))
-            .field("pcnt_rst_en", &format_args!("{}", self.pcnt_rst_en().bit()))
+            .field("pcnt_clk_en", &self.pcnt_clk_en().bit())
+            .field("pcnt_rst_en", &self.pcnt_rst_en().bit())
             .finish()
     }
 }
@@ -61,8 +61,6 @@ impl crate::Readable for PCNT_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`pcnt_conf::W`](W) writer structure"]
 impl crate::Writable for PCNT_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets PCNT_CONF to value 0x01"]
 impl crate::Resettable for PCNT_CONF_SPEC {

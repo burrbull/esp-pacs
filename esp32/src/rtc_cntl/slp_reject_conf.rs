@@ -51,26 +51,11 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SLP_REJECT_CONF")
-            .field(
-                "gpio_reject_en",
-                &format_args!("{}", self.gpio_reject_en().bit()),
-            )
-            .field(
-                "sdio_reject_en",
-                &format_args!("{}", self.sdio_reject_en().bit()),
-            )
-            .field(
-                "light_slp_reject_en",
-                &format_args!("{}", self.light_slp_reject_en().bit()),
-            )
-            .field(
-                "deep_slp_reject_en",
-                &format_args!("{}", self.deep_slp_reject_en().bit()),
-            )
-            .field(
-                "reject_cause",
-                &format_args!("{}", self.reject_cause().bits()),
-            )
+            .field("gpio_reject_en", &self.gpio_reject_en().bit())
+            .field("sdio_reject_en", &self.sdio_reject_en().bit())
+            .field("light_slp_reject_en", &self.light_slp_reject_en().bit())
+            .field("deep_slp_reject_en", &self.deep_slp_reject_en().bit())
+            .field("reject_cause", &self.reject_cause().bits())
             .finish()
     }
 }
@@ -116,10 +101,6 @@ impl crate::Readable for SLP_REJECT_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`slp_reject_conf::W`](W) writer structure"]
 impl crate::Writable for SLP_REJECT_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SLP_REJECT_CONF to value 0"]
-impl crate::Resettable for SLP_REJECT_CONF_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for SLP_REJECT_CONF_SPEC {}

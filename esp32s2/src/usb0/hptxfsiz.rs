@@ -26,8 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("HPTXFSIZ")
-            .field("ptxfstaddr", &format_args!("{}", self.ptxfstaddr().bits()))
-            .field("ptxfsize", &format_args!("{}", self.ptxfsize().bits()))
+            .field("ptxfstaddr", &self.ptxfstaddr().bits())
+            .field("ptxfsize", &self.ptxfsize().bits())
             .finish()
     }
 }
@@ -61,8 +61,6 @@ impl crate::Readable for HPTXFSIZ_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`hptxfsiz::W`](W) writer structure"]
 impl crate::Writable for HPTXFSIZ_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets HPTXFSIZ to value 0x1000_0200"]
 impl crate::Resettable for HPTXFSIZ_SPEC {

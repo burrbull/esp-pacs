@@ -15,7 +15,7 @@ impl core::fmt::Debug for R {
         f.debug_struct("C0RE_0_LASTPC_BEFORE_EXCEPTION")
             .field(
                 "core_0_lastpc_before_exc",
-                &format_args!("{}", self.core_0_lastpc_before_exc().bits()),
+                &self.core_0_lastpc_before_exc().bits(),
             )
             .finish()
     }
@@ -34,6 +34,4 @@ impl crate::RegisterSpec for C0RE_0_LASTPC_BEFORE_EXCEPTION_SPEC {
 #[doc = "`read()` method returns [`c0re_0_lastpc_before_exception::R`](R) reader structure"]
 impl crate::Readable for C0RE_0_LASTPC_BEFORE_EXCEPTION_SPEC {}
 #[doc = "`reset()` method sets C0RE_0_LASTPC_BEFORE_EXCEPTION to value 0"]
-impl crate::Resettable for C0RE_0_LASTPC_BEFORE_EXCEPTION_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for C0RE_0_LASTPC_BEFORE_EXCEPTION_SPEC {}

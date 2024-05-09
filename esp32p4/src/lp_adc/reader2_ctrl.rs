@@ -71,31 +71,16 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("READER2_CTRL")
-            .field(
-                "sar2_clk_div",
-                &format_args!("{}", self.sar2_clk_div().bits()),
-            )
-            .field(
-                "sar2_wait_arb_cycle",
-                &format_args!("{}", self.sar2_wait_arb_cycle().bits()),
-            )
-            .field(
-                "sar2_clk_gated",
-                &format_args!("{}", self.sar2_clk_gated().bit()),
-            )
-            .field(
-                "sar2_sample_num",
-                &format_args!("{}", self.sar2_sample_num().bits()),
-            )
+            .field("sar2_clk_div", &self.sar2_clk_div().bits())
+            .field("sar2_wait_arb_cycle", &self.sar2_wait_arb_cycle().bits())
+            .field("sar2_clk_gated", &self.sar2_clk_gated().bit())
+            .field("sar2_sample_num", &self.sar2_sample_num().bits())
             .field(
                 "sar2_en_pad_force_enable",
-                &format_args!("{}", self.sar2_en_pad_force_enable().bits()),
+                &self.sar2_en_pad_force_enable().bits(),
             )
-            .field(
-                "sar2_data_inv",
-                &format_args!("{}", self.sar2_data_inv().bit()),
-            )
-            .field("sar2_int_en", &format_args!("{}", self.sar2_int_en().bit()))
+            .field("sar2_data_inv", &self.sar2_data_inv().bit())
+            .field("sar2_int_en", &self.sar2_int_en().bit())
             .finish()
     }
 }
@@ -159,8 +144,6 @@ impl crate::Readable for READER2_CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`reader2_ctrl::W`](W) writer structure"]
 impl crate::Writable for READER2_CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets READER2_CTRL to value 0x4005_0002"]
 impl crate::Resettable for READER2_CTRL_SPEC {

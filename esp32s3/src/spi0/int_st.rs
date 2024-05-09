@@ -20,11 +20,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("INT_ST")
-            .field(
-                "total_trans_end",
-                &format_args!("{}", self.total_trans_end().bit()),
-            )
-            .field("ecc_err", &format_args!("{}", self.ecc_err().bit()))
+            .field("total_trans_end", &self.total_trans_end().bit())
+            .field("ecc_err", &self.ecc_err().bit())
             .finish()
     }
 }
@@ -42,6 +39,4 @@ impl crate::RegisterSpec for INT_ST_SPEC {
 #[doc = "`read()` method returns [`int_st::R`](R) reader structure"]
 impl crate::Readable for INT_ST_SPEC {}
 #[doc = "`reset()` method sets INT_ST to value 0"]
-impl crate::Resettable for INT_ST_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for INT_ST_SPEC {}

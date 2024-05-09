@@ -20,8 +20,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("RDATAH")
-            .field("data_lsb", &format_args!("{}", self.data_lsb().bits()))
-            .field("data_msb", &format_args!("{}", self.data_msb().bits()))
+            .field("data_lsb", &self.data_lsb().bits())
+            .field("data_msb", &self.data_msb().bits())
             .finish()
     }
 }
@@ -39,6 +39,4 @@ impl crate::RegisterSpec for RDATAH_SPEC {
 #[doc = "`read()` method returns [`rdatah::R`](R) reader structure"]
 impl crate::Readable for RDATAH_SPEC {}
 #[doc = "`reset()` method sets RDATAH to value 0"]
-impl crate::Resettable for RDATAH_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for RDATAH_SPEC {}

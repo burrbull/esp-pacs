@@ -71,16 +71,13 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("HCFG")
-            .field(
-                "fslspclksel",
-                &format_args!("{}", self.fslspclksel().bits()),
-            )
-            .field("fslssupp", &format_args!("{}", self.fslssupp().bit()))
-            .field("ena32khzs", &format_args!("{}", self.ena32khzs().bit()))
-            .field("descdma", &format_args!("{}", self.descdma().bit()))
-            .field("frlisten", &format_args!("{}", self.frlisten().bits()))
-            .field("perschedena", &format_args!("{}", self.perschedena().bit()))
-            .field("modechtimen", &format_args!("{}", self.modechtimen().bit()))
+            .field("fslspclksel", &self.fslspclksel().bits())
+            .field("fslssupp", &self.fslssupp().bit())
+            .field("ena32khzs", &self.ena32khzs().bit())
+            .field("descdma", &self.descdma().bit())
+            .field("frlisten", &self.frlisten().bits())
+            .field("perschedena", &self.perschedena().bit())
+            .field("modechtimen", &self.modechtimen().bit())
             .finish()
     }
 }
@@ -144,10 +141,6 @@ impl crate::Readable for HCFG_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`hcfg::W`](W) writer structure"]
 impl crate::Writable for HCFG_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets HCFG to value 0"]
-impl crate::Resettable for HCFG_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for HCFG_SPEC {}

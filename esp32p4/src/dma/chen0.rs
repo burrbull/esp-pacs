@@ -96,14 +96,14 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CHEN0")
-            .field("ch1_en", &format_args!("{}", self.ch1_en().bit()))
-            .field("ch2_en", &format_args!("{}", self.ch2_en().bit()))
-            .field("ch3_en", &format_args!("{}", self.ch3_en().bit()))
-            .field("ch4_en", &format_args!("{}", self.ch4_en().bit()))
-            .field("ch1_susp", &format_args!("{}", self.ch1_susp().bit()))
-            .field("ch2_susp", &format_args!("{}", self.ch2_susp().bit()))
-            .field("ch3_susp", &format_args!("{}", self.ch3_susp().bit()))
-            .field("ch4_susp", &format_args!("{}", self.ch4_susp().bit()))
+            .field("ch1_en", &self.ch1_en().bit())
+            .field("ch2_en", &self.ch2_en().bit())
+            .field("ch3_en", &self.ch3_en().bit())
+            .field("ch4_en", &self.ch4_en().bit())
+            .field("ch1_susp", &self.ch1_susp().bit())
+            .field("ch2_susp", &self.ch2_susp().bit())
+            .field("ch3_susp", &self.ch3_susp().bit())
+            .field("ch4_susp", &self.ch4_susp().bit())
             .finish()
     }
 }
@@ -221,10 +221,6 @@ impl crate::Readable for CHEN0_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`chen0::W`](W) writer structure"]
 impl crate::Writable for CHEN0_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CHEN0 to value 0"]
-impl crate::Resettable for CHEN0_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for CHEN0_SPEC {}

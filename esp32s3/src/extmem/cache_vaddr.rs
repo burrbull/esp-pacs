@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CACHE_VADDR")
-            .field(
-                "cache_vaddr",
-                &format_args!("{}", self.cache_vaddr().bits()),
-            )
+            .field("cache_vaddr", &self.cache_vaddr().bits())
             .finish()
     }
 }
@@ -48,10 +45,6 @@ impl crate::Readable for CACHE_VADDR_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`cache_vaddr::W`](W) writer structure"]
 impl crate::Writable for CACHE_VADDR_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CACHE_VADDR to value 0"]
-impl crate::Resettable for CACHE_VADDR_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for CACHE_VADDR_SPEC {}

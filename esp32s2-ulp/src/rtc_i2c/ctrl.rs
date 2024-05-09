@@ -89,27 +89,15 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CTRL")
-            .field(
-                "sda_force_out",
-                &format_args!("{}", self.sda_force_out().bit()),
-            )
-            .field(
-                "scl_force_out",
-                &format_args!("{}", self.scl_force_out().bit()),
-            )
-            .field("ms_mode", &format_args!("{}", self.ms_mode().bit()))
-            .field("trans_start", &format_args!("{}", self.trans_start().bit()))
-            .field(
-                "tx_lsb_first",
-                &format_args!("{}", self.tx_lsb_first().bit()),
-            )
-            .field(
-                "rx_lsb_first",
-                &format_args!("{}", self.rx_lsb_first().bit()),
-            )
-            .field("clk_gate_en", &format_args!("{}", self.clk_gate_en().bit()))
-            .field("reset", &format_args!("{}", self.reset().bit()))
-            .field("clk_en", &format_args!("{}", self.clk_en().bit()))
+            .field("sda_force_out", &self.sda_force_out().bit())
+            .field("scl_force_out", &self.scl_force_out().bit())
+            .field("ms_mode", &self.ms_mode().bit())
+            .field("trans_start", &self.trans_start().bit())
+            .field("tx_lsb_first", &self.tx_lsb_first().bit())
+            .field("rx_lsb_first", &self.rx_lsb_first().bit())
+            .field("clk_gate_en", &self.clk_gate_en().bit())
+            .field("reset", &self.reset().bit())
+            .field("clk_en", &self.clk_en().bit())
             .finish()
     }
 }
@@ -185,10 +173,6 @@ impl crate::Readable for CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`ctrl::W`](W) writer structure"]
 impl crate::Writable for CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CTRL to value 0"]
-impl crate::Resettable for CTRL_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for CTRL_SPEC {}

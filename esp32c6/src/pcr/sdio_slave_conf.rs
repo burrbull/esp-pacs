@@ -26,14 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SDIO_SLAVE_CONF")
-            .field(
-                "sdio_slave_clk_en",
-                &format_args!("{}", self.sdio_slave_clk_en().bit()),
-            )
-            .field(
-                "sdio_slave_rst_en",
-                &format_args!("{}", self.sdio_slave_rst_en().bit()),
-            )
+            .field("sdio_slave_clk_en", &self.sdio_slave_clk_en().bit())
+            .field("sdio_slave_rst_en", &self.sdio_slave_rst_en().bit())
             .finish()
     }
 }
@@ -67,8 +61,6 @@ impl crate::Readable for SDIO_SLAVE_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`sdio_slave_conf::W`](W) writer structure"]
 impl crate::Writable for SDIO_SLAVE_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SDIO_SLAVE_CONF to value 0x01"]
 impl crate::Resettable for SDIO_SLAVE_CONF_SPEC {

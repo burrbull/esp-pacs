@@ -20,14 +20,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("L2_CACHE_OBJECT_CTRL")
-            .field(
-                "l2_cache_tag_object",
-                &format_args!("{}", self.l2_cache_tag_object().bit()),
-            )
-            .field(
-                "l2_cache_mem_object",
-                &format_args!("{}", self.l2_cache_mem_object().bit()),
-            )
+            .field("l2_cache_tag_object", &self.l2_cache_tag_object().bit())
+            .field("l2_cache_mem_object", &self.l2_cache_mem_object().bit())
             .finish()
     }
 }
@@ -45,6 +39,4 @@ impl crate::RegisterSpec for L2_CACHE_OBJECT_CTRL_SPEC {
 #[doc = "`read()` method returns [`l2_cache_object_ctrl::R`](R) reader structure"]
 impl crate::Readable for L2_CACHE_OBJECT_CTRL_SPEC {}
 #[doc = "`reset()` method sets L2_CACHE_OBJECT_CTRL to value 0"]
-impl crate::Resettable for L2_CACHE_OBJECT_CTRL_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for L2_CACHE_OBJECT_CTRL_SPEC {}

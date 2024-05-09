@@ -46,19 +46,16 @@ impl core::fmt::Debug for R {
         f.debug_struct("SPI_SMEM_TIMING_CALI")
             .field(
                 "spi_smem_timing_clk_ena",
-                &format_args!("{}", self.spi_smem_timing_clk_ena().bit()),
+                &self.spi_smem_timing_clk_ena().bit(),
             )
-            .field(
-                "spi_smem_timing_cali",
-                &format_args!("{}", self.spi_smem_timing_cali().bit()),
-            )
+            .field("spi_smem_timing_cali", &self.spi_smem_timing_cali().bit())
             .field(
                 "spi_smem_extra_dummy_cyclelen",
-                &format_args!("{}", self.spi_smem_extra_dummy_cyclelen().bits()),
+                &self.spi_smem_extra_dummy_cyclelen().bits(),
             )
             .field(
                 "spi_smem_dll_timing_cali",
-                &format_args!("{}", self.spi_smem_dll_timing_cali().bit()),
+                &self.spi_smem_dll_timing_cali().bit(),
             )
             .finish()
     }
@@ -111,8 +108,6 @@ impl crate::Readable for SPI_SMEM_TIMING_CALI_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`spi_smem_timing_cali::W`](W) writer structure"]
 impl crate::Writable for SPI_SMEM_TIMING_CALI_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SPI_SMEM_TIMING_CALI to value 0x01"]
 impl crate::Resettable for SPI_SMEM_TIMING_CALI_SPEC {

@@ -73,36 +73,15 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("APP_DCACHE_DBUG0")
-            .field(
-                "app_slave_wdata",
-                &format_args!("{}", self.app_slave_wdata().bit()),
-            )
-            .field(
-                "app_cache_mmu_ia",
-                &format_args!("{}", self.app_cache_mmu_ia().bit()),
-            )
-            .field(
-                "app_cache_ia",
-                &format_args!("{}", self.app_cache_ia().bits()),
-            )
-            .field(
-                "app_cache_state",
-                &format_args!("{}", self.app_cache_state().bits()),
-            )
-            .field(
-                "app_wr_bak_to_read",
-                &format_args!("{}", self.app_wr_bak_to_read().bit()),
-            )
-            .field("app_tx_end", &format_args!("{}", self.app_tx_end().bit()))
-            .field(
-                "app_slave_wr",
-                &format_args!("{}", self.app_slave_wr().bit()),
-            )
-            .field(
-                "app_slave_wdata_v",
-                &format_args!("{}", self.app_slave_wdata_v().bit()),
-            )
-            .field("app_rx_end", &format_args!("{}", self.app_rx_end().bit()))
+            .field("app_slave_wdata", &self.app_slave_wdata().bit())
+            .field("app_cache_mmu_ia", &self.app_cache_mmu_ia().bit())
+            .field("app_cache_ia", &self.app_cache_ia().bits())
+            .field("app_cache_state", &self.app_cache_state().bits())
+            .field("app_wr_bak_to_read", &self.app_wr_bak_to_read().bit())
+            .field("app_tx_end", &self.app_tx_end().bit())
+            .field("app_slave_wr", &self.app_slave_wr().bit())
+            .field("app_slave_wdata_v", &self.app_slave_wdata_v().bit())
+            .field("app_rx_end", &self.app_rx_end().bit())
             .finish()
     }
 }
@@ -130,10 +109,6 @@ impl crate::Readable for APP_DCACHE_DBUG0_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`app_dcache_dbug0::W`](W) writer structure"]
 impl crate::Writable for APP_DCACHE_DBUG0_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets APP_DCACHE_DBUG0 to value 0"]
-impl crate::Resettable for APP_DCACHE_DBUG0_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for APP_DCACHE_DBUG0_SPEC {}

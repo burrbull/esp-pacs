@@ -83,15 +83,15 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("FAULT_DETECT")
-            .field("f0_en", &format_args!("{}", self.f0_en().bit()))
-            .field("f1_en", &format_args!("{}", self.f1_en().bit()))
-            .field("f2_en", &format_args!("{}", self.f2_en().bit()))
-            .field("f0_pole", &format_args!("{}", self.f0_pole().bit()))
-            .field("f1_pole", &format_args!("{}", self.f1_pole().bit()))
-            .field("f2_pole", &format_args!("{}", self.f2_pole().bit()))
-            .field("event_f0", &format_args!("{}", self.event_f0().bit()))
-            .field("event_f1", &format_args!("{}", self.event_f1().bit()))
-            .field("event_f2", &format_args!("{}", self.event_f2().bit()))
+            .field("f0_en", &self.f0_en().bit())
+            .field("f1_en", &self.f1_en().bit())
+            .field("f2_en", &self.f2_en().bit())
+            .field("f0_pole", &self.f0_pole().bit())
+            .field("f1_pole", &self.f1_pole().bit())
+            .field("f2_pole", &self.f2_pole().bit())
+            .field("event_f0", &self.event_f0().bit())
+            .field("event_f1", &self.event_f1().bit())
+            .field("event_f2", &self.event_f2().bit())
             .finish()
     }
 }
@@ -149,10 +149,6 @@ impl crate::Readable for FAULT_DETECT_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`fault_detect::W`](W) writer structure"]
 impl crate::Writable for FAULT_DETECT_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets FAULT_DETECT to value 0"]
-impl crate::Resettable for FAULT_DETECT_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for FAULT_DETECT_SPEC {}

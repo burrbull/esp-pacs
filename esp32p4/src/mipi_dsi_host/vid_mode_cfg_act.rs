@@ -69,42 +69,15 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("VID_MODE_CFG_ACT")
-            .field(
-                "vid_mode_type_act",
-                &format_args!("{}", self.vid_mode_type_act().bits()),
-            )
-            .field(
-                "lp_vsa_en_act",
-                &format_args!("{}", self.lp_vsa_en_act().bit()),
-            )
-            .field(
-                "lp_vbp_en_act",
-                &format_args!("{}", self.lp_vbp_en_act().bit()),
-            )
-            .field(
-                "lp_vfp_en_act",
-                &format_args!("{}", self.lp_vfp_en_act().bit()),
-            )
-            .field(
-                "lp_vact_en_act",
-                &format_args!("{}", self.lp_vact_en_act().bit()),
-            )
-            .field(
-                "lp_hbp_en_act",
-                &format_args!("{}", self.lp_hbp_en_act().bit()),
-            )
-            .field(
-                "lp_hfp_en_act",
-                &format_args!("{}", self.lp_hfp_en_act().bit()),
-            )
-            .field(
-                "frame_bta_ack_en_act",
-                &format_args!("{}", self.frame_bta_ack_en_act().bit()),
-            )
-            .field(
-                "lp_cmd_en_act",
-                &format_args!("{}", self.lp_cmd_en_act().bit()),
-            )
+            .field("vid_mode_type_act", &self.vid_mode_type_act().bits())
+            .field("lp_vsa_en_act", &self.lp_vsa_en_act().bit())
+            .field("lp_vbp_en_act", &self.lp_vbp_en_act().bit())
+            .field("lp_vfp_en_act", &self.lp_vfp_en_act().bit())
+            .field("lp_vact_en_act", &self.lp_vact_en_act().bit())
+            .field("lp_hbp_en_act", &self.lp_hbp_en_act().bit())
+            .field("lp_hfp_en_act", &self.lp_hfp_en_act().bit())
+            .field("frame_bta_ack_en_act", &self.frame_bta_ack_en_act().bit())
+            .field("lp_cmd_en_act", &self.lp_cmd_en_act().bit())
             .finish()
     }
 }
@@ -122,6 +95,4 @@ impl crate::RegisterSpec for VID_MODE_CFG_ACT_SPEC {
 #[doc = "`read()` method returns [`vid_mode_cfg_act::R`](R) reader structure"]
 impl crate::Readable for VID_MODE_CFG_ACT_SPEC {}
 #[doc = "`reset()` method sets VID_MODE_CFG_ACT to value 0"]
-impl crate::Resettable for VID_MODE_CFG_ACT_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for VID_MODE_CFG_ACT_SPEC {}

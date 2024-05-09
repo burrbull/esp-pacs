@@ -100,43 +100,43 @@ impl core::fmt::Debug for R {
         f.debug_struct("EVT_ST7")
             .field(
                 "dma2d_evt_in_suc_eof_ch1_st",
-                &format_args!("{}", self.dma2d_evt_in_suc_eof_ch1_st().bit()),
+                &self.dma2d_evt_in_suc_eof_ch1_st().bit(),
             )
             .field(
                 "dma2d_evt_out_done_ch0_st",
-                &format_args!("{}", self.dma2d_evt_out_done_ch0_st().bit()),
+                &self.dma2d_evt_out_done_ch0_st().bit(),
             )
             .field(
                 "dma2d_evt_out_done_ch1_st",
-                &format_args!("{}", self.dma2d_evt_out_done_ch1_st().bit()),
+                &self.dma2d_evt_out_done_ch1_st().bit(),
             )
             .field(
                 "dma2d_evt_out_done_ch2_st",
-                &format_args!("{}", self.dma2d_evt_out_done_ch2_st().bit()),
+                &self.dma2d_evt_out_done_ch2_st().bit(),
             )
             .field(
                 "dma2d_evt_out_eof_ch0_st",
-                &format_args!("{}", self.dma2d_evt_out_eof_ch0_st().bit()),
+                &self.dma2d_evt_out_eof_ch0_st().bit(),
             )
             .field(
                 "dma2d_evt_out_eof_ch1_st",
-                &format_args!("{}", self.dma2d_evt_out_eof_ch1_st().bit()),
+                &self.dma2d_evt_out_eof_ch1_st().bit(),
             )
             .field(
                 "dma2d_evt_out_eof_ch2_st",
-                &format_args!("{}", self.dma2d_evt_out_eof_ch2_st().bit()),
+                &self.dma2d_evt_out_eof_ch2_st().bit(),
             )
             .field(
                 "dma2d_evt_out_total_eof_ch0_st",
-                &format_args!("{}", self.dma2d_evt_out_total_eof_ch0_st().bit()),
+                &self.dma2d_evt_out_total_eof_ch0_st().bit(),
             )
             .field(
                 "dma2d_evt_out_total_eof_ch1_st",
-                &format_args!("{}", self.dma2d_evt_out_total_eof_ch1_st().bit()),
+                &self.dma2d_evt_out_total_eof_ch1_st().bit(),
             )
             .field(
                 "dma2d_evt_out_total_eof_ch2_st",
-                &format_args!("{}", self.dma2d_evt_out_total_eof_ch2_st().bit()),
+                &self.dma2d_evt_out_total_eof_ch2_st().bit(),
             )
             .finish()
     }
@@ -225,10 +225,6 @@ impl crate::Readable for EVT_ST7_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`evt_st7::W`](W) writer structure"]
 impl crate::Writable for EVT_ST7_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets EVT_ST7 to value 0"]
-impl crate::Resettable for EVT_ST7_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for EVT_ST7_SPEC {}

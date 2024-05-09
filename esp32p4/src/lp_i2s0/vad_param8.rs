@@ -35,18 +35,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("VAD_PARAM8")
-            .field(
-                "param_thres_upd_bdl",
-                &format_args!("{}", self.param_thres_upd_bdl().bits()),
-            )
-            .field(
-                "param_thres_upd_bdh",
-                &format_args!("{}", self.param_thres_upd_bdh().bits()),
-            )
-            .field(
-                "param_feature_burst",
-                &format_args!("{}", self.param_feature_burst().bits()),
-            )
+            .field("param_thres_upd_bdl", &self.param_thres_upd_bdl().bits())
+            .field("param_thres_upd_bdh", &self.param_thres_upd_bdh().bits())
+            .field("param_feature_burst", &self.param_feature_burst().bits())
             .finish()
     }
 }
@@ -86,8 +77,6 @@ impl crate::Readable for VAD_PARAM8_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`vad_param8::W`](W) writer structure"]
 impl crate::Writable for VAD_PARAM8_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets VAD_PARAM8 to value 0x2000_5040"]
 impl crate::Resettable for VAD_PARAM8_SPEC {

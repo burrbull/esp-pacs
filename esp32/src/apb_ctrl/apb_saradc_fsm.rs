@@ -44,22 +44,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("APB_SARADC_FSM")
-            .field(
-                "saradc_rstb_wait",
-                &format_args!("{}", self.saradc_rstb_wait().bits()),
-            )
-            .field(
-                "saradc_standby_wait",
-                &format_args!("{}", self.saradc_standby_wait().bits()),
-            )
-            .field(
-                "saradc_start_wait",
-                &format_args!("{}", self.saradc_start_wait().bits()),
-            )
-            .field(
-                "saradc_sample_cycle",
-                &format_args!("{}", self.saradc_sample_cycle().bits()),
-            )
+            .field("saradc_rstb_wait", &self.saradc_rstb_wait().bits())
+            .field("saradc_standby_wait", &self.saradc_standby_wait().bits())
+            .field("saradc_start_wait", &self.saradc_start_wait().bits())
+            .field("saradc_sample_cycle", &self.saradc_sample_cycle().bits())
             .finish()
     }
 }
@@ -105,8 +93,6 @@ impl crate::Readable for APB_SARADC_FSM_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`apb_saradc_fsm::W`](W) writer structure"]
 impl crate::Writable for APB_SARADC_FSM_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets APB_SARADC_FSM to value 0x0208_ff08"]
 impl crate::Resettable for APB_SARADC_FSM_SPEC {

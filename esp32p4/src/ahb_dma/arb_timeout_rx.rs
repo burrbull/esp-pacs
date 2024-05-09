@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("ARB_TIMEOUT_RX")
-            .field(
-                "arb_timeout_rx",
-                &format_args!("{}", self.arb_timeout_rx().bits()),
-            )
+            .field("arb_timeout_rx", &self.arb_timeout_rx().bits())
             .finish()
     }
 }
@@ -48,10 +45,6 @@ impl crate::Readable for ARB_TIMEOUT_RX_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`arb_timeout_rx::W`](W) writer structure"]
 impl crate::Writable for ARB_TIMEOUT_RX_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets ARB_TIMEOUT_RX to value 0"]
-impl crate::Resettable for ARB_TIMEOUT_RX_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for ARB_TIMEOUT_RX_SPEC {}

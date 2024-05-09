@@ -98,40 +98,16 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("ENA")
-            .field("out_done", &format_args!("{}", self.out_done().bit()))
-            .field("out_eof", &format_args!("{}", self.out_eof().bit()))
-            .field(
-                "out_dscr_err",
-                &format_args!("{}", self.out_dscr_err().bit()),
-            )
-            .field(
-                "out_total_eof",
-                &format_args!("{}", self.out_total_eof().bit()),
-            )
-            .field(
-                "outfifo_l1_ovf",
-                &format_args!("{}", self.outfifo_l1_ovf().bit()),
-            )
-            .field(
-                "outfifo_l1_udf",
-                &format_args!("{}", self.outfifo_l1_udf().bit()),
-            )
-            .field(
-                "outfifo_l2_ovf",
-                &format_args!("{}", self.outfifo_l2_ovf().bit()),
-            )
-            .field(
-                "outfifo_l2_udf",
-                &format_args!("{}", self.outfifo_l2_udf().bit()),
-            )
-            .field(
-                "outfifo_l3_ovf",
-                &format_args!("{}", self.outfifo_l3_ovf().bit()),
-            )
-            .field(
-                "outfifo_l3_udf",
-                &format_args!("{}", self.outfifo_l3_udf().bit()),
-            )
+            .field("out_done", &self.out_done().bit())
+            .field("out_eof", &self.out_eof().bit())
+            .field("out_dscr_err", &self.out_dscr_err().bit())
+            .field("out_total_eof", &self.out_total_eof().bit())
+            .field("outfifo_l1_ovf", &self.outfifo_l1_ovf().bit())
+            .field("outfifo_l1_udf", &self.outfifo_l1_udf().bit())
+            .field("outfifo_l2_ovf", &self.outfifo_l2_ovf().bit())
+            .field("outfifo_l2_udf", &self.outfifo_l2_udf().bit())
+            .field("outfifo_l3_ovf", &self.outfifo_l3_ovf().bit())
+            .field("outfifo_l3_udf", &self.outfifo_l3_udf().bit())
             .finish()
     }
 }
@@ -213,10 +189,6 @@ impl crate::Readable for ENA_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`ena::W`](W) writer structure"]
 impl crate::Writable for ENA_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets ENA to value 0"]
-impl crate::Resettable for ENA_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for ENA_SPEC {}

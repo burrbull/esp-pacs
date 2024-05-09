@@ -143,21 +143,21 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SRAM_CMD")
-            .field("sclk_mode", &format_args!("{}", self.sclk_mode().bits()))
-            .field("swb_mode", &format_args!("{}", self.swb_mode().bits()))
-            .field("sdin_dual", &format_args!("{}", self.sdin_dual().bit()))
-            .field("sdout_dual", &format_args!("{}", self.sdout_dual().bit()))
-            .field("saddr_dual", &format_args!("{}", self.saddr_dual().bit()))
-            .field("scmd_dual", &format_args!("{}", self.scmd_dual().bit()))
-            .field("sdin_quad", &format_args!("{}", self.sdin_quad().bit()))
-            .field("sdout_quad", &format_args!("{}", self.sdout_quad().bit()))
-            .field("saddr_quad", &format_args!("{}", self.saddr_quad().bit()))
-            .field("scmd_quad", &format_args!("{}", self.scmd_quad().bit()))
-            .field("sdin_oct", &format_args!("{}", self.sdin_oct().bit()))
-            .field("sdout_oct", &format_args!("{}", self.sdout_oct().bit()))
-            .field("saddr_oct", &format_args!("{}", self.saddr_oct().bit()))
-            .field("scmd_oct", &format_args!("{}", self.scmd_oct().bit()))
-            .field("sdummy_out", &format_args!("{}", self.sdummy_out().bit()))
+            .field("sclk_mode", &self.sclk_mode().bits())
+            .field("swb_mode", &self.swb_mode().bits())
+            .field("sdin_dual", &self.sdin_dual().bit())
+            .field("sdout_dual", &self.sdout_dual().bit())
+            .field("saddr_dual", &self.saddr_dual().bit())
+            .field("scmd_dual", &self.scmd_dual().bit())
+            .field("sdin_quad", &self.sdin_quad().bit())
+            .field("sdout_quad", &self.sdout_quad().bit())
+            .field("saddr_quad", &self.saddr_quad().bit())
+            .field("scmd_quad", &self.scmd_quad().bit())
+            .field("sdin_oct", &self.sdin_oct().bit())
+            .field("sdout_oct", &self.sdout_oct().bit())
+            .field("saddr_oct", &self.saddr_oct().bit())
+            .field("scmd_oct", &self.scmd_oct().bit())
+            .field("sdummy_out", &self.sdummy_out().bit())
             .finish()
     }
 }
@@ -269,10 +269,6 @@ impl crate::Readable for SRAM_CMD_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`sram_cmd::W`](W) writer structure"]
 impl crate::Writable for SRAM_CMD_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SRAM_CMD to value 0"]
-impl crate::Resettable for SRAM_CMD_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for SRAM_CMD_SPEC {}

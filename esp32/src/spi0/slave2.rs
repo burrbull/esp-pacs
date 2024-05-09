@@ -46,19 +46,19 @@ impl core::fmt::Debug for R {
         f.debug_struct("SLAVE2")
             .field(
                 "slv_rdsta_dummy_cyclelen",
-                &format_args!("{}", self.slv_rdsta_dummy_cyclelen().bits()),
+                &self.slv_rdsta_dummy_cyclelen().bits(),
             )
             .field(
                 "slv_wrsta_dummy_cyclelen",
-                &format_args!("{}", self.slv_wrsta_dummy_cyclelen().bits()),
+                &self.slv_wrsta_dummy_cyclelen().bits(),
             )
             .field(
                 "slv_rdbuf_dummy_cyclelen",
-                &format_args!("{}", self.slv_rdbuf_dummy_cyclelen().bits()),
+                &self.slv_rdbuf_dummy_cyclelen().bits(),
             )
             .field(
                 "slv_wrbuf_dummy_cyclelen",
-                &format_args!("{}", self.slv_wrbuf_dummy_cyclelen().bits()),
+                &self.slv_wrbuf_dummy_cyclelen().bits(),
             )
             .finish()
     }
@@ -105,10 +105,6 @@ impl crate::Readable for SLAVE2_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`slave2::W`](W) writer structure"]
 impl crate::Writable for SLAVE2_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SLAVE2 to value 0"]
-impl crate::Resettable for SLAVE2_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for SLAVE2_SPEC {}

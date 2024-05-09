@@ -35,18 +35,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("DCM_WAIT_DELAY")
-            .field(
-                "dcdc_pre_delay",
-                &format_args!("{}", self.dcdc_pre_delay().bits()),
-            )
-            .field(
-                "dcdc_res_off_delay",
-                &format_args!("{}", self.dcdc_res_off_delay().bits()),
-            )
-            .field(
-                "dcdc_stable_delay",
-                &format_args!("{}", self.dcdc_stable_delay().bits()),
-            )
+            .field("dcdc_pre_delay", &self.dcdc_pre_delay().bits())
+            .field("dcdc_res_off_delay", &self.dcdc_res_off_delay().bits())
+            .field("dcdc_stable_delay", &self.dcdc_stable_delay().bits())
             .finish()
     }
 }
@@ -86,8 +77,6 @@ impl crate::Readable for DCM_WAIT_DELAY_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`dcm_wait_delay::W`](W) writer structure"]
 impl crate::Writable for DCM_WAIT_DELAY_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets DCM_WAIT_DELAY to value 0x004b_0205"]
 impl crate::Resettable for DCM_WAIT_DELAY_SPEC {

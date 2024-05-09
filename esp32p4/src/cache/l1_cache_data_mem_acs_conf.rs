@@ -92,43 +92,43 @@ impl core::fmt::Debug for R {
         f.debug_struct("L1_CACHE_DATA_MEM_ACS_CONF")
             .field(
                 "l1_icache0_data_mem_rd_en",
-                &format_args!("{}", self.l1_icache0_data_mem_rd_en().bit()),
+                &self.l1_icache0_data_mem_rd_en().bit(),
             )
             .field(
                 "l1_icache0_data_mem_wr_en",
-                &format_args!("{}", self.l1_icache0_data_mem_wr_en().bit()),
+                &self.l1_icache0_data_mem_wr_en().bit(),
             )
             .field(
                 "l1_icache1_data_mem_rd_en",
-                &format_args!("{}", self.l1_icache1_data_mem_rd_en().bit()),
+                &self.l1_icache1_data_mem_rd_en().bit(),
             )
             .field(
                 "l1_icache1_data_mem_wr_en",
-                &format_args!("{}", self.l1_icache1_data_mem_wr_en().bit()),
+                &self.l1_icache1_data_mem_wr_en().bit(),
             )
             .field(
                 "l1_icache2_data_mem_rd_en",
-                &format_args!("{}", self.l1_icache2_data_mem_rd_en().bit()),
+                &self.l1_icache2_data_mem_rd_en().bit(),
             )
             .field(
                 "l1_icache2_data_mem_wr_en",
-                &format_args!("{}", self.l1_icache2_data_mem_wr_en().bit()),
+                &self.l1_icache2_data_mem_wr_en().bit(),
             )
             .field(
                 "l1_icache3_data_mem_rd_en",
-                &format_args!("{}", self.l1_icache3_data_mem_rd_en().bit()),
+                &self.l1_icache3_data_mem_rd_en().bit(),
             )
             .field(
                 "l1_icache3_data_mem_wr_en",
-                &format_args!("{}", self.l1_icache3_data_mem_wr_en().bit()),
+                &self.l1_icache3_data_mem_wr_en().bit(),
             )
             .field(
                 "l1_dcache_data_mem_rd_en",
-                &format_args!("{}", self.l1_dcache_data_mem_rd_en().bit()),
+                &self.l1_dcache_data_mem_rd_en().bit(),
             )
             .field(
                 "l1_dcache_data_mem_wr_en",
-                &format_args!("{}", self.l1_dcache_data_mem_wr_en().bit()),
+                &self.l1_dcache_data_mem_wr_en().bit(),
             )
             .finish()
     }
@@ -199,8 +199,6 @@ impl crate::Readable for L1_CACHE_DATA_MEM_ACS_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`l1_cache_data_mem_acs_conf::W`](W) writer structure"]
 impl crate::Writable for L1_CACHE_DATA_MEM_ACS_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets L1_CACHE_DATA_MEM_ACS_CONF to value 0x0003_3333"]
 impl crate::Resettable for L1_CACHE_DATA_MEM_ACS_CONF_SPEC {

@@ -35,18 +35,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PRO_DCACHE_CTRL1")
-            .field(
-                "pro_dcache_mask_bus0",
-                &format_args!("{}", self.pro_dcache_mask_bus0().bit()),
-            )
-            .field(
-                "pro_dcache_mask_bus1",
-                &format_args!("{}", self.pro_dcache_mask_bus1().bit()),
-            )
-            .field(
-                "pro_dcache_mask_bus2",
-                &format_args!("{}", self.pro_dcache_mask_bus2().bit()),
-            )
+            .field("pro_dcache_mask_bus0", &self.pro_dcache_mask_bus0().bit())
+            .field("pro_dcache_mask_bus1", &self.pro_dcache_mask_bus1().bit())
+            .field("pro_dcache_mask_bus2", &self.pro_dcache_mask_bus2().bit())
             .finish()
     }
 }
@@ -86,8 +77,6 @@ impl crate::Readable for PRO_DCACHE_CTRL1_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`pro_dcache_ctrl1::W`](W) writer structure"]
 impl crate::Writable for PRO_DCACHE_CTRL1_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets PRO_DCACHE_CTRL1 to value 0x07"]
 impl crate::Resettable for PRO_DCACHE_CTRL1_SPEC {

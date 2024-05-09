@@ -19,7 +19,7 @@ impl core::fmt::Debug for R {
         f.debug_struct("CORE_0_RCD_PDEBUGENABLE")
             .field(
                 "core_0_rcd_pdebugenable",
-                &format_args!("{}", self.core_0_rcd_pdebugenable().bit()),
+                &self.core_0_rcd_pdebugenable().bit(),
             )
             .finish()
     }
@@ -50,10 +50,6 @@ impl crate::Readable for CORE_0_RCD_PDEBUGENABLE_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`core_0_rcd_pdebugenable::W`](W) writer structure"]
 impl crate::Writable for CORE_0_RCD_PDEBUGENABLE_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CORE_0_RCD_PDEBUGENABLE to value 0"]
-impl crate::Resettable for CORE_0_RCD_PDEBUGENABLE_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for CORE_0_RCD_PDEBUGENABLE_SPEC {}

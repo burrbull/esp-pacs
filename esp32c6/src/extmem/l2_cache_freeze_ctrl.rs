@@ -27,18 +27,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("L2_CACHE_FREEZE_CTRL")
-            .field(
-                "l2_cache_freeze_en",
-                &format_args!("{}", self.l2_cache_freeze_en().bit()),
-            )
-            .field(
-                "l2_cache_freeze_mode",
-                &format_args!("{}", self.l2_cache_freeze_mode().bit()),
-            )
-            .field(
-                "l2_cache_freeze_done",
-                &format_args!("{}", self.l2_cache_freeze_done().bit()),
-            )
+            .field("l2_cache_freeze_en", &self.l2_cache_freeze_en().bit())
+            .field("l2_cache_freeze_mode", &self.l2_cache_freeze_mode().bit())
+            .field("l2_cache_freeze_done", &self.l2_cache_freeze_done().bit())
             .finish()
     }
 }
@@ -56,6 +47,4 @@ impl crate::RegisterSpec for L2_CACHE_FREEZE_CTRL_SPEC {
 #[doc = "`read()` method returns [`l2_cache_freeze_ctrl::R`](R) reader structure"]
 impl crate::Readable for L2_CACHE_FREEZE_CTRL_SPEC {}
 #[doc = "`reset()` method sets L2_CACHE_FREEZE_CTRL to value 0"]
-impl crate::Resettable for L2_CACHE_FREEZE_CTRL_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for L2_CACHE_FREEZE_CTRL_SPEC {}

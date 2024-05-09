@@ -75,34 +75,13 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("RESET_EN")
-            .field(
-                "lp_touch_reset_en",
-                &format_args!("{}", self.lp_touch_reset_en().bit()),
-            )
-            .field(
-                "otp_dbg_reset_en",
-                &format_args!("{}", self.otp_dbg_reset_en().bit()),
-            )
-            .field(
-                "lp_uart_reset_en",
-                &format_args!("{}", self.lp_uart_reset_en().bit()),
-            )
-            .field(
-                "lp_io_reset_en",
-                &format_args!("{}", self.lp_io_reset_en().bit()),
-            )
-            .field(
-                "lp_ext_i2c_reset_en",
-                &format_args!("{}", self.lp_ext_i2c_reset_en().bit()),
-            )
-            .field(
-                "lp_ana_i2c_reset_en",
-                &format_args!("{}", self.lp_ana_i2c_reset_en().bit()),
-            )
-            .field(
-                "efuse_reset_en",
-                &format_args!("{}", self.efuse_reset_en().bit()),
-            )
+            .field("lp_touch_reset_en", &self.lp_touch_reset_en().bit())
+            .field("otp_dbg_reset_en", &self.otp_dbg_reset_en().bit())
+            .field("lp_uart_reset_en", &self.lp_uart_reset_en().bit())
+            .field("lp_io_reset_en", &self.lp_io_reset_en().bit())
+            .field("lp_ext_i2c_reset_en", &self.lp_ext_i2c_reset_en().bit())
+            .field("lp_ana_i2c_reset_en", &self.lp_ana_i2c_reset_en().bit())
+            .field("efuse_reset_en", &self.efuse_reset_en().bit())
             .finish()
     }
 }
@@ -178,10 +157,6 @@ impl crate::Readable for RESET_EN_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`reset_en::W`](W) writer structure"]
 impl crate::Writable for RESET_EN_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets RESET_EN to value 0"]
-impl crate::Resettable for RESET_EN_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for RESET_EN_SPEC {}

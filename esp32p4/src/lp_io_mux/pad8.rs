@@ -98,46 +98,16 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PAD8")
-            .field(
-                "reg_pad8_drv",
-                &format_args!("{}", self.reg_pad8_drv().bits()),
-            )
-            .field(
-                "reg_pad8_rde",
-                &format_args!("{}", self.reg_pad8_rde().bit()),
-            )
-            .field(
-                "reg_pad8_rue",
-                &format_args!("{}", self.reg_pad8_rue().bit()),
-            )
-            .field(
-                "reg_pad8_mux_sel",
-                &format_args!("{}", self.reg_pad8_mux_sel().bit()),
-            )
-            .field(
-                "reg_pad8_fun_sel",
-                &format_args!("{}", self.reg_pad8_fun_sel().bits()),
-            )
-            .field(
-                "reg_pad8_slp_sel",
-                &format_args!("{}", self.reg_pad8_slp_sel().bit()),
-            )
-            .field(
-                "reg_pad8_slp_ie",
-                &format_args!("{}", self.reg_pad8_slp_ie().bit()),
-            )
-            .field(
-                "reg_pad8_slp_oe",
-                &format_args!("{}", self.reg_pad8_slp_oe().bit()),
-            )
-            .field(
-                "reg_pad8_fun_ie",
-                &format_args!("{}", self.reg_pad8_fun_ie().bit()),
-            )
-            .field(
-                "reg_pad8_filter_en",
-                &format_args!("{}", self.reg_pad8_filter_en().bit()),
-            )
+            .field("reg_pad8_drv", &self.reg_pad8_drv().bits())
+            .field("reg_pad8_rde", &self.reg_pad8_rde().bit())
+            .field("reg_pad8_rue", &self.reg_pad8_rue().bit())
+            .field("reg_pad8_mux_sel", &self.reg_pad8_mux_sel().bit())
+            .field("reg_pad8_fun_sel", &self.reg_pad8_fun_sel().bits())
+            .field("reg_pad8_slp_sel", &self.reg_pad8_slp_sel().bit())
+            .field("reg_pad8_slp_ie", &self.reg_pad8_slp_ie().bit())
+            .field("reg_pad8_slp_oe", &self.reg_pad8_slp_oe().bit())
+            .field("reg_pad8_fun_ie", &self.reg_pad8_fun_ie().bit())
+            .field("reg_pad8_filter_en", &self.reg_pad8_filter_en().bit())
             .finish()
     }
 }
@@ -219,8 +189,6 @@ impl crate::Readable for PAD8_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`pad8::W`](W) writer structure"]
 impl crate::Writable for PAD8_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets PAD8 to value 0x02"]
 impl crate::Resettable for PAD8_SPEC {

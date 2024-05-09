@@ -55,23 +55,20 @@ impl core::fmt::Debug for R {
         f.debug_struct("HP_SLEEP_SYSCLK")
             .field(
                 "hp_sleep_dig_sys_clk_no_div",
-                &format_args!("{}", self.hp_sleep_dig_sys_clk_no_div().bit()),
+                &self.hp_sleep_dig_sys_clk_no_div().bit(),
             )
             .field(
                 "hp_sleep_icg_sys_clock_en",
-                &format_args!("{}", self.hp_sleep_icg_sys_clock_en().bit()),
+                &self.hp_sleep_icg_sys_clock_en().bit(),
             )
             .field(
                 "hp_sleep_sys_clk_slp_sel",
-                &format_args!("{}", self.hp_sleep_sys_clk_slp_sel().bit()),
+                &self.hp_sleep_sys_clk_slp_sel().bit(),
             )
-            .field(
-                "hp_sleep_icg_slp_sel",
-                &format_args!("{}", self.hp_sleep_icg_slp_sel().bit()),
-            )
+            .field("hp_sleep_icg_slp_sel", &self.hp_sleep_icg_slp_sel().bit())
             .field(
                 "hp_sleep_dig_sys_clk_sel",
-                &format_args!("{}", self.hp_sleep_dig_sys_clk_sel().bits()),
+                &self.hp_sleep_dig_sys_clk_sel().bits(),
             )
             .finish()
     }
@@ -128,10 +125,6 @@ impl crate::Readable for HP_SLEEP_SYSCLK_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`hp_sleep_sysclk::W`](W) writer structure"]
 impl crate::Writable for HP_SLEEP_SYSCLK_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets HP_SLEEP_SYSCLK to value 0"]
-impl crate::Resettable for HP_SLEEP_SYSCLK_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for HP_SLEEP_SYSCLK_SPEC {}

@@ -55,23 +55,20 @@ impl core::fmt::Debug for R {
         f.debug_struct("HP_ACTIVE_DIG_POWER")
             .field(
                 "hp_active_dcdc_switch_pd_en",
-                &format_args!("{}", self.hp_active_dcdc_switch_pd_en().bit()),
+                &self.hp_active_dcdc_switch_pd_en().bit(),
             )
-            .field(
-                "hp_active_hp_mem_dslp",
-                &format_args!("{}", self.hp_active_hp_mem_dslp().bit()),
-            )
+            .field("hp_active_hp_mem_dslp", &self.hp_active_hp_mem_dslp().bit())
             .field(
                 "hp_active_pd_hp_mem_pd_en",
-                &format_args!("{}", self.hp_active_pd_hp_mem_pd_en().bit()),
+                &self.hp_active_pd_hp_mem_pd_en().bit(),
             )
             .field(
                 "hp_active_pd_cnnt_pd_en",
-                &format_args!("{}", self.hp_active_pd_cnnt_pd_en().bit()),
+                &self.hp_active_pd_cnnt_pd_en().bit(),
             )
             .field(
                 "hp_active_pd_top_pd_en",
-                &format_args!("{}", self.hp_active_pd_top_pd_en().bit()),
+                &self.hp_active_pd_top_pd_en().bit(),
             )
             .finish()
     }
@@ -130,10 +127,6 @@ impl crate::Readable for HP_ACTIVE_DIG_POWER_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`hp_active_dig_power::W`](W) writer structure"]
 impl crate::Writable for HP_ACTIVE_DIG_POWER_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets HP_ACTIVE_DIG_POWER to value 0"]
-impl crate::Resettable for HP_ACTIVE_DIG_POWER_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for HP_ACTIVE_DIG_POWER_SPEC {}

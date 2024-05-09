@@ -100,37 +100,22 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("COCPU_CTRL")
-            .field(
-                "cocpu_clk_fo",
-                &format_args!("{}", self.cocpu_clk_fo().bit()),
-            )
+            .field("cocpu_clk_fo", &self.cocpu_clk_fo().bit())
             .field(
                 "cocpu_start_2_reset_dis",
-                &format_args!("{}", self.cocpu_start_2_reset_dis().bits()),
+                &self.cocpu_start_2_reset_dis().bits(),
             )
             .field(
                 "cocpu_start_2_intr_en",
-                &format_args!("{}", self.cocpu_start_2_intr_en().bits()),
+                &self.cocpu_start_2_intr_en().bits(),
             )
-            .field("cocpu_shut", &format_args!("{}", self.cocpu_shut().bit()))
-            .field(
-                "cocpu_shut_2_clk_dis",
-                &format_args!("{}", self.cocpu_shut_2_clk_dis().bits()),
-            )
-            .field(
-                "cocpu_shut_reset_en",
-                &format_args!("{}", self.cocpu_shut_reset_en().bit()),
-            )
-            .field("cocpu_sel", &format_args!("{}", self.cocpu_sel().bit()))
-            .field(
-                "cocpu_done_force",
-                &format_args!("{}", self.cocpu_done_force().bit()),
-            )
-            .field("cocpu_done", &format_args!("{}", self.cocpu_done().bit()))
-            .field(
-                "cocpu_clkgate_en",
-                &format_args!("{}", self.cocpu_clkgate_en().bit()),
-            )
+            .field("cocpu_shut", &self.cocpu_shut().bit())
+            .field("cocpu_shut_2_clk_dis", &self.cocpu_shut_2_clk_dis().bits())
+            .field("cocpu_shut_reset_en", &self.cocpu_shut_reset_en().bit())
+            .field("cocpu_sel", &self.cocpu_sel().bit())
+            .field("cocpu_done_force", &self.cocpu_done_force().bit())
+            .field("cocpu_done", &self.cocpu_done().bit())
+            .field("cocpu_clkgate_en", &self.cocpu_clkgate_en().bit())
             .finish()
     }
 }
@@ -218,8 +203,6 @@ impl crate::Readable for COCPU_CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`cocpu_ctrl::W`](W) writer structure"]
 impl crate::Writable for COCPU_CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets COCPU_CTRL to value 0x008a_0810"]
 impl crate::Resettable for COCPU_CTRL_SPEC {

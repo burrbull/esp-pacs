@@ -53,23 +53,17 @@ impl core::fmt::Debug for R {
         f.debug_struct("VDDBAT_BOD_CNTL")
             .field(
                 "vddbat_undervoltage_flag",
-                &format_args!("{}", self.vddbat_undervoltage_flag().bit()),
+                &self.vddbat_undervoltage_flag().bit(),
             )
-            .field(
-                "vddbat_charger",
-                &format_args!("{}", self.vddbat_charger().bit()),
-            )
-            .field(
-                "vddbat_cnt_clr",
-                &format_args!("{}", self.vddbat_cnt_clr().bit()),
-            )
+            .field("vddbat_charger", &self.vddbat_charger().bit())
+            .field("vddbat_cnt_clr", &self.vddbat_cnt_clr().bit())
             .field(
                 "vddbat_upvoltage_target",
-                &format_args!("{}", self.vddbat_upvoltage_target().bits()),
+                &self.vddbat_upvoltage_target().bits(),
             )
             .field(
                 "vddbat_undervoltage_target",
-                &format_args!("{}", self.vddbat_undervoltage_target().bits()),
+                &self.vddbat_undervoltage_target().bits(),
             )
             .finish()
     }
@@ -118,8 +112,6 @@ impl crate::Readable for VDDBAT_BOD_CNTL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`vddbat_bod_cntl::W`](W) writer structure"]
 impl crate::Writable for VDDBAT_BOD_CNTL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets VDDBAT_BOD_CNTL to value 0xffc0_0000"]
 impl crate::Resettable for VDDBAT_BOD_CNTL_SPEC {

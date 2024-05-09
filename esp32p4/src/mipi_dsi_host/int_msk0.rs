@@ -197,90 +197,27 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("INT_MSK0")
-            .field(
-                "mask_ack_with_err_0",
-                &format_args!("{}", self.mask_ack_with_err_0().bit()),
-            )
-            .field(
-                "mask_ack_with_err_1",
-                &format_args!("{}", self.mask_ack_with_err_1().bit()),
-            )
-            .field(
-                "mask_ack_with_err_2",
-                &format_args!("{}", self.mask_ack_with_err_2().bit()),
-            )
-            .field(
-                "mask_ack_with_err_3",
-                &format_args!("{}", self.mask_ack_with_err_3().bit()),
-            )
-            .field(
-                "mask_ack_with_err_4",
-                &format_args!("{}", self.mask_ack_with_err_4().bit()),
-            )
-            .field(
-                "mask_ack_with_err_5",
-                &format_args!("{}", self.mask_ack_with_err_5().bit()),
-            )
-            .field(
-                "mask_ack_with_err_6",
-                &format_args!("{}", self.mask_ack_with_err_6().bit()),
-            )
-            .field(
-                "mask_ack_with_err_7",
-                &format_args!("{}", self.mask_ack_with_err_7().bit()),
-            )
-            .field(
-                "mask_ack_with_err_8",
-                &format_args!("{}", self.mask_ack_with_err_8().bit()),
-            )
-            .field(
-                "mask_ack_with_err_9",
-                &format_args!("{}", self.mask_ack_with_err_9().bit()),
-            )
-            .field(
-                "mask_ack_with_err_10",
-                &format_args!("{}", self.mask_ack_with_err_10().bit()),
-            )
-            .field(
-                "mask_ack_with_err_11",
-                &format_args!("{}", self.mask_ack_with_err_11().bit()),
-            )
-            .field(
-                "mask_ack_with_err_12",
-                &format_args!("{}", self.mask_ack_with_err_12().bit()),
-            )
-            .field(
-                "mask_ack_with_err_13",
-                &format_args!("{}", self.mask_ack_with_err_13().bit()),
-            )
-            .field(
-                "mask_ack_with_err_14",
-                &format_args!("{}", self.mask_ack_with_err_14().bit()),
-            )
-            .field(
-                "mask_ack_with_err_15",
-                &format_args!("{}", self.mask_ack_with_err_15().bit()),
-            )
-            .field(
-                "mask_dphy_errors_0",
-                &format_args!("{}", self.mask_dphy_errors_0().bit()),
-            )
-            .field(
-                "mask_dphy_errors_1",
-                &format_args!("{}", self.mask_dphy_errors_1().bit()),
-            )
-            .field(
-                "mask_dphy_errors_2",
-                &format_args!("{}", self.mask_dphy_errors_2().bit()),
-            )
-            .field(
-                "mask_dphy_errors_3",
-                &format_args!("{}", self.mask_dphy_errors_3().bit()),
-            )
-            .field(
-                "mask_dphy_errors_4",
-                &format_args!("{}", self.mask_dphy_errors_4().bit()),
-            )
+            .field("mask_ack_with_err_0", &self.mask_ack_with_err_0().bit())
+            .field("mask_ack_with_err_1", &self.mask_ack_with_err_1().bit())
+            .field("mask_ack_with_err_2", &self.mask_ack_with_err_2().bit())
+            .field("mask_ack_with_err_3", &self.mask_ack_with_err_3().bit())
+            .field("mask_ack_with_err_4", &self.mask_ack_with_err_4().bit())
+            .field("mask_ack_with_err_5", &self.mask_ack_with_err_5().bit())
+            .field("mask_ack_with_err_6", &self.mask_ack_with_err_6().bit())
+            .field("mask_ack_with_err_7", &self.mask_ack_with_err_7().bit())
+            .field("mask_ack_with_err_8", &self.mask_ack_with_err_8().bit())
+            .field("mask_ack_with_err_9", &self.mask_ack_with_err_9().bit())
+            .field("mask_ack_with_err_10", &self.mask_ack_with_err_10().bit())
+            .field("mask_ack_with_err_11", &self.mask_ack_with_err_11().bit())
+            .field("mask_ack_with_err_12", &self.mask_ack_with_err_12().bit())
+            .field("mask_ack_with_err_13", &self.mask_ack_with_err_13().bit())
+            .field("mask_ack_with_err_14", &self.mask_ack_with_err_14().bit())
+            .field("mask_ack_with_err_15", &self.mask_ack_with_err_15().bit())
+            .field("mask_dphy_errors_0", &self.mask_dphy_errors_0().bit())
+            .field("mask_dphy_errors_1", &self.mask_dphy_errors_1().bit())
+            .field("mask_dphy_errors_2", &self.mask_dphy_errors_2().bit())
+            .field("mask_dphy_errors_3", &self.mask_dphy_errors_3().bit())
+            .field("mask_dphy_errors_4", &self.mask_dphy_errors_4().bit())
             .finish()
     }
 }
@@ -428,10 +365,6 @@ impl crate::Readable for INT_MSK0_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`int_msk0::W`](W) writer structure"]
 impl crate::Writable for INT_MSK0_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets INT_MSK0 to value 0"]
-impl crate::Resettable for INT_MSK0_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for INT_MSK0_SPEC {}

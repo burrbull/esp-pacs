@@ -35,18 +35,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SAR_TOUCH_ENABLE")
-            .field(
-                "touch_pad_worken",
-                &format_args!("{}", self.touch_pad_worken().bits()),
-            )
-            .field(
-                "touch_pad_outen2",
-                &format_args!("{}", self.touch_pad_outen2().bits()),
-            )
-            .field(
-                "touch_pad_outen1",
-                &format_args!("{}", self.touch_pad_outen1().bits()),
-            )
+            .field("touch_pad_worken", &self.touch_pad_worken().bits())
+            .field("touch_pad_outen2", &self.touch_pad_outen2().bits())
+            .field("touch_pad_outen1", &self.touch_pad_outen1().bits())
             .finish()
     }
 }
@@ -86,8 +77,6 @@ impl crate::Readable for SAR_TOUCH_ENABLE_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`sar_touch_enable::W`](W) writer structure"]
 impl crate::Writable for SAR_TOUCH_ENABLE_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SAR_TOUCH_ENABLE to value 0x3fff_ffff"]
 impl crate::Resettable for SAR_TOUCH_ENABLE_SPEC {

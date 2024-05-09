@@ -53,17 +53,11 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("LCD_D_NUM")
-            .field("d_dqs_num", &format_args!("{}", self.d_dqs_num().bits()))
-            .field("d_cd_num", &format_args!("{}", self.d_cd_num().bits()))
-            .field("d_de_num", &format_args!("{}", self.d_de_num().bits()))
-            .field(
-                "d_hsync_num",
-                &format_args!("{}", self.d_hsync_num().bits()),
-            )
-            .field(
-                "d_vsync_num",
-                &format_args!("{}", self.d_vsync_num().bits()),
-            )
+            .field("d_dqs_num", &self.d_dqs_num().bits())
+            .field("d_cd_num", &self.d_cd_num().bits())
+            .field("d_de_num", &self.d_de_num().bits())
+            .field("d_hsync_num", &self.d_hsync_num().bits())
+            .field("d_vsync_num", &self.d_vsync_num().bits())
             .finish()
     }
 }
@@ -115,10 +109,6 @@ impl crate::Readable for LCD_D_NUM_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`lcd_d_num::W`](W) writer structure"]
 impl crate::Writable for LCD_D_NUM_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets LCD_D_NUM to value 0"]
-impl crate::Resettable for LCD_D_NUM_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for LCD_D_NUM_SPEC {}

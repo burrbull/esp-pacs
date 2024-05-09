@@ -26,14 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("TIMEOUT_CONF")
-            .field(
-                "cpu_timeout_rst_en",
-                &format_args!("{}", self.cpu_timeout_rst_en().bit()),
-            )
-            .field(
-                "hp_timeout_rst_en",
-                &format_args!("{}", self.hp_timeout_rst_en().bit()),
-            )
+            .field("cpu_timeout_rst_en", &self.cpu_timeout_rst_en().bit())
+            .field("hp_timeout_rst_en", &self.hp_timeout_rst_en().bit())
             .finish()
     }
 }
@@ -67,10 +61,6 @@ impl crate::Readable for TIMEOUT_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`timeout_conf::W`](W) writer structure"]
 impl crate::Writable for TIMEOUT_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets TIMEOUT_CONF to value 0"]
-impl crate::Resettable for TIMEOUT_CONF_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for TIMEOUT_CONF_SPEC {}

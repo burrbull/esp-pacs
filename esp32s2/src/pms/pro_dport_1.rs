@@ -73,31 +73,19 @@ impl core::fmt::Debug for R {
         f.debug_struct("PRO_DPORT_1")
             .field(
                 "pro_dport_apb_peripheral_forbid",
-                &format_args!("{}", self.pro_dport_apb_peripheral_forbid().bit()),
+                &self.pro_dport_apb_peripheral_forbid().bit(),
             )
             .field(
                 "pro_dport_rtcslow_spltaddr",
-                &format_args!("{}", self.pro_dport_rtcslow_spltaddr().bits()),
+                &self.pro_dport_rtcslow_spltaddr().bits(),
             )
-            .field(
-                "pro_dport_rtcslow_l_r",
-                &format_args!("{}", self.pro_dport_rtcslow_l_r().bit()),
-            )
-            .field(
-                "pro_dport_rtcslow_l_w",
-                &format_args!("{}", self.pro_dport_rtcslow_l_w().bit()),
-            )
-            .field(
-                "pro_dport_rtcslow_h_r",
-                &format_args!("{}", self.pro_dport_rtcslow_h_r().bit()),
-            )
-            .field(
-                "pro_dport_rtcslow_h_w",
-                &format_args!("{}", self.pro_dport_rtcslow_h_w().bit()),
-            )
+            .field("pro_dport_rtcslow_l_r", &self.pro_dport_rtcslow_l_r().bit())
+            .field("pro_dport_rtcslow_l_w", &self.pro_dport_rtcslow_l_w().bit())
+            .field("pro_dport_rtcslow_h_r", &self.pro_dport_rtcslow_h_r().bit())
+            .field("pro_dport_rtcslow_h_w", &self.pro_dport_rtcslow_h_w().bit())
             .field(
                 "pro_dport_reserve_fifo_valid",
-                &format_args!("{}", self.pro_dport_reserve_fifo_valid().bits()),
+                &self.pro_dport_reserve_fifo_valid().bits(),
             )
             .finish()
     }
@@ -166,8 +154,6 @@ impl crate::Readable for PRO_DPORT_1_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`pro_dport_1::W`](W) writer structure"]
 impl crate::Writable for PRO_DPORT_1_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets PRO_DPORT_1 to value 0xf000"]
 impl crate::Resettable for PRO_DPORT_1_SPEC {

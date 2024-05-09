@@ -28,11 +28,11 @@ impl core::fmt::Debug for R {
         f.debug_struct("HP_POR_RST_BYPASS_CTRL")
             .field(
                 "hp_po_cnnt_rstn_bypass_ctrl",
-                &format_args!("{}", self.hp_po_cnnt_rstn_bypass_ctrl().bits()),
+                &self.hp_po_cnnt_rstn_bypass_ctrl().bits(),
             )
             .field(
                 "hp_po_rstn_bypass_ctrl",
-                &format_args!("{}", self.hp_po_rstn_bypass_ctrl().bits()),
+                &self.hp_po_rstn_bypass_ctrl().bits(),
             )
             .finish()
     }
@@ -71,8 +71,6 @@ impl crate::Readable for HP_POR_RST_BYPASS_CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`hp_por_rst_bypass_ctrl::W`](W) writer structure"]
 impl crate::Writable for HP_POR_RST_BYPASS_CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets HP_POR_RST_BYPASS_CTRL to value 0xff00_ff00"]
 impl crate::Resettable for HP_POR_RST_BYPASS_CTRL_SPEC {

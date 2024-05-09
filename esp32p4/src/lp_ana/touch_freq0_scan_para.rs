@@ -53,26 +53,11 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("TOUCH_FREQ0_SCAN_PARA")
-            .field(
-                "touch_freq0_dcap_lpf",
-                &format_args!("{}", self.touch_freq0_dcap_lpf().bits()),
-            )
-            .field(
-                "touch_freq0_dres_lpf",
-                &format_args!("{}", self.touch_freq0_dres_lpf().bits()),
-            )
-            .field(
-                "touch_freq0_drv_ls",
-                &format_args!("{}", self.touch_freq0_drv_ls().bits()),
-            )
-            .field(
-                "touch_freq0_drv_hs",
-                &format_args!("{}", self.touch_freq0_drv_hs().bits()),
-            )
-            .field(
-                "touch_freq0_dbias",
-                &format_args!("{}", self.touch_freq0_dbias().bits()),
-            )
+            .field("touch_freq0_dcap_lpf", &self.touch_freq0_dcap_lpf().bits())
+            .field("touch_freq0_dres_lpf", &self.touch_freq0_dres_lpf().bits())
+            .field("touch_freq0_drv_ls", &self.touch_freq0_drv_ls().bits())
+            .field("touch_freq0_drv_hs", &self.touch_freq0_drv_hs().bits())
+            .field("touch_freq0_dbias", &self.touch_freq0_dbias().bits())
             .finish()
     }
 }
@@ -124,10 +109,6 @@ impl crate::Readable for TOUCH_FREQ0_SCAN_PARA_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`touch_freq0_scan_para::W`](W) writer structure"]
 impl crate::Writable for TOUCH_FREQ0_SCAN_PARA_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets TOUCH_FREQ0_SCAN_PARA to value 0"]
-impl crate::Resettable for TOUCH_FREQ0_SCAN_PARA_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for TOUCH_FREQ0_SCAN_PARA_SPEC {}

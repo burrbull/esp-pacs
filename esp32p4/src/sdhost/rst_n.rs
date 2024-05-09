@@ -17,7 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("RST_N")
-            .field("card_reset", &format_args!("{}", self.card_reset().bits()))
+            .field("card_reset", &self.card_reset().bits())
             .finish()
     }
 }
@@ -45,8 +45,6 @@ impl crate::Readable for RST_N_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`rst_n::W`](W) writer structure"]
 impl crate::Writable for RST_N_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets RST_N to value 0x01"]
 impl crate::Resettable for RST_N_SPEC {

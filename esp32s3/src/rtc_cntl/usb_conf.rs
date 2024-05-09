@@ -179,67 +179,28 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("USB_CONF")
-            .field("usb_vrefh", &format_args!("{}", self.usb_vrefh().bits()))
-            .field("usb_vrefl", &format_args!("{}", self.usb_vrefl().bits()))
-            .field(
-                "usb_vref_override",
-                &format_args!("{}", self.usb_vref_override().bit()),
-            )
-            .field(
-                "usb_pad_pull_override",
-                &format_args!("{}", self.usb_pad_pull_override().bit()),
-            )
-            .field(
-                "usb_dp_pullup",
-                &format_args!("{}", self.usb_dp_pullup().bit()),
-            )
-            .field(
-                "usb_dp_pulldown",
-                &format_args!("{}", self.usb_dp_pulldown().bit()),
-            )
-            .field(
-                "usb_dm_pullup",
-                &format_args!("{}", self.usb_dm_pullup().bit()),
-            )
-            .field(
-                "usb_dm_pulldown",
-                &format_args!("{}", self.usb_dm_pulldown().bit()),
-            )
-            .field(
-                "usb_pullup_value",
-                &format_args!("{}", self.usb_pullup_value().bit()),
-            )
+            .field("usb_vrefh", &self.usb_vrefh().bits())
+            .field("usb_vrefl", &self.usb_vrefl().bits())
+            .field("usb_vref_override", &self.usb_vref_override().bit())
+            .field("usb_pad_pull_override", &self.usb_pad_pull_override().bit())
+            .field("usb_dp_pullup", &self.usb_dp_pullup().bit())
+            .field("usb_dp_pulldown", &self.usb_dp_pulldown().bit())
+            .field("usb_dm_pullup", &self.usb_dm_pullup().bit())
+            .field("usb_dm_pulldown", &self.usb_dm_pulldown().bit())
+            .field("usb_pullup_value", &self.usb_pullup_value().bit())
             .field(
                 "usb_pad_enable_override",
-                &format_args!("{}", self.usb_pad_enable_override().bit()),
+                &self.usb_pad_enable_override().bit(),
             )
-            .field(
-                "usb_pad_enable",
-                &format_args!("{}", self.usb_pad_enable().bit()),
-            )
-            .field("usb_txm", &format_args!("{}", self.usb_txm().bit()))
-            .field("usb_txp", &format_args!("{}", self.usb_txp().bit()))
-            .field("usb_tx_en", &format_args!("{}", self.usb_tx_en().bit()))
-            .field(
-                "usb_tx_en_override",
-                &format_args!("{}", self.usb_tx_en_override().bit()),
-            )
-            .field(
-                "usb_reset_disable",
-                &format_args!("{}", self.usb_reset_disable().bit()),
-            )
-            .field(
-                "io_mux_reset_disable",
-                &format_args!("{}", self.io_mux_reset_disable().bit()),
-            )
-            .field(
-                "sw_usb_phy_sel",
-                &format_args!("{}", self.sw_usb_phy_sel().bit()),
-            )
-            .field(
-                "sw_hw_usb_phy_sel",
-                &format_args!("{}", self.sw_hw_usb_phy_sel().bit()),
-            )
+            .field("usb_pad_enable", &self.usb_pad_enable().bit())
+            .field("usb_txm", &self.usb_txm().bit())
+            .field("usb_txp", &self.usb_txp().bit())
+            .field("usb_tx_en", &self.usb_tx_en().bit())
+            .field("usb_tx_en_override", &self.usb_tx_en_override().bit())
+            .field("usb_reset_disable", &self.usb_reset_disable().bit())
+            .field("io_mux_reset_disable", &self.io_mux_reset_disable().bit())
+            .field("sw_usb_phy_sel", &self.sw_usb_phy_sel().bit())
+            .field("sw_hw_usb_phy_sel", &self.sw_hw_usb_phy_sel().bit())
             .finish()
     }
 }
@@ -375,10 +336,6 @@ impl crate::Readable for USB_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`usb_conf::W`](W) writer structure"]
 impl crate::Writable for USB_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets USB_CONF to value 0"]
-impl crate::Resettable for USB_CONF_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for USB_CONF_SPEC {}

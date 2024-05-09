@@ -13,10 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("STATUS4")
-            .field(
-                "hfm_bitstream",
-                &format_args!("{}", self.hfm_bitstream().bits()),
-            )
+            .field("hfm_bitstream", &self.hfm_bitstream().bits())
             .finish()
     }
 }
@@ -34,6 +31,4 @@ impl crate::RegisterSpec for STATUS4_SPEC {
 #[doc = "`read()` method returns [`status4::R`](R) reader structure"]
 impl crate::Readable for STATUS4_SPEC {}
 #[doc = "`reset()` method sets STATUS4 to value 0"]
-impl crate::Resettable for STATUS4_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for STATUS4_SPEC {}

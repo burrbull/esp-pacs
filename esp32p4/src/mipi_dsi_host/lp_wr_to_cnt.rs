@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("LP_WR_TO_CNT")
-            .field(
-                "lp_wr_to_cnt",
-                &format_args!("{}", self.lp_wr_to_cnt().bits()),
-            )
+            .field("lp_wr_to_cnt", &self.lp_wr_to_cnt().bits())
             .finish()
     }
 }
@@ -48,10 +45,6 @@ impl crate::Readable for LP_WR_TO_CNT_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`lp_wr_to_cnt::W`](W) writer structure"]
 impl crate::Writable for LP_WR_TO_CNT_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets LP_WR_TO_CNT to value 0"]
-impl crate::Resettable for LP_WR_TO_CNT_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for LP_WR_TO_CNT_SPEC {}

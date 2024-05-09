@@ -17,7 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("TEXT_IN")
-            .field("text_in", &format_args!("{}", self.text_in().bits()))
+            .field("text_in", &self.text_in().bits())
             .finish()
     }
 }
@@ -45,10 +45,6 @@ impl crate::Readable for TEXT_IN_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`text_in::W`](W) writer structure"]
 impl crate::Writable for TEXT_IN_SPEC {
     type Safety = crate::Safe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets TEXT_IN[%s] to value 0"]
-impl crate::Resettable for TEXT_IN_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for TEXT_IN_SPEC {}

@@ -19,7 +19,7 @@ impl core::fmt::Debug for R {
         f.debug_struct("HP_ACTIVE_HP_REGULATOR1")
             .field(
                 "hp_active_hp_regulator_drv_b",
-                &format_args!("{}", self.hp_active_hp_regulator_drv_b().bits()),
+                &self.hp_active_hp_regulator_drv_b().bits(),
             )
             .finish()
     }
@@ -50,10 +50,6 @@ impl crate::Readable for HP_ACTIVE_HP_REGULATOR1_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`hp_active_hp_regulator1::W`](W) writer structure"]
 impl crate::Writable for HP_ACTIVE_HP_REGULATOR1_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets HP_ACTIVE_HP_REGULATOR1 to value 0"]
-impl crate::Resettable for HP_ACTIVE_HP_REGULATOR1_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for HP_ACTIVE_HP_REGULATOR1_SPEC {}

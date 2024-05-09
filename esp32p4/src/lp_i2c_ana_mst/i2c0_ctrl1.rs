@@ -26,14 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("I2C0_CTRL1")
-            .field(
-                "i2c0_scl_pulse_dur",
-                &format_args!("{}", self.i2c0_scl_pulse_dur().bits()),
-            )
-            .field(
-                "i2c0_sda_side_guard",
-                &format_args!("{}", self.i2c0_sda_side_guard().bits()),
-            )
+            .field("i2c0_scl_pulse_dur", &self.i2c0_scl_pulse_dur().bits())
+            .field("i2c0_sda_side_guard", &self.i2c0_sda_side_guard().bits())
             .finish()
     }
 }
@@ -67,8 +61,6 @@ impl crate::Readable for I2C0_CTRL1_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`i2c0_ctrl1::W`](W) writer structure"]
 impl crate::Writable for I2C0_CTRL1_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets I2C0_CTRL1 to value 0x42"]
 impl crate::Resettable for I2C0_CTRL1_SPEC {

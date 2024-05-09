@@ -298,131 +298,119 @@ impl core::fmt::Debug for R {
         f.debug_struct("EVT_TASK_EN0")
             .field(
                 "evt_duty_chng_end_ch0_en",
-                &format_args!("{}", self.evt_duty_chng_end_ch0_en().bit()),
+                &self.evt_duty_chng_end_ch0_en().bit(),
             )
             .field(
                 "evt_duty_chng_end_ch1_en",
-                &format_args!("{}", self.evt_duty_chng_end_ch1_en().bit()),
+                &self.evt_duty_chng_end_ch1_en().bit(),
             )
             .field(
                 "evt_duty_chng_end_ch2_en",
-                &format_args!("{}", self.evt_duty_chng_end_ch2_en().bit()),
+                &self.evt_duty_chng_end_ch2_en().bit(),
             )
             .field(
                 "evt_duty_chng_end_ch3_en",
-                &format_args!("{}", self.evt_duty_chng_end_ch3_en().bit()),
+                &self.evt_duty_chng_end_ch3_en().bit(),
             )
             .field(
                 "evt_duty_chng_end_ch4_en",
-                &format_args!("{}", self.evt_duty_chng_end_ch4_en().bit()),
+                &self.evt_duty_chng_end_ch4_en().bit(),
             )
             .field(
                 "evt_duty_chng_end_ch5_en",
-                &format_args!("{}", self.evt_duty_chng_end_ch5_en().bit()),
+                &self.evt_duty_chng_end_ch5_en().bit(),
             )
             .field(
                 "evt_duty_chng_end_ch6_en",
-                &format_args!("{}", self.evt_duty_chng_end_ch6_en().bit()),
+                &self.evt_duty_chng_end_ch6_en().bit(),
             )
             .field(
                 "evt_duty_chng_end_ch7_en",
-                &format_args!("{}", self.evt_duty_chng_end_ch7_en().bit()),
+                &self.evt_duty_chng_end_ch7_en().bit(),
             )
             .field(
                 "evt_ovf_cnt_pls_ch0_en",
-                &format_args!("{}", self.evt_ovf_cnt_pls_ch0_en().bit()),
+                &self.evt_ovf_cnt_pls_ch0_en().bit(),
             )
             .field(
                 "evt_ovf_cnt_pls_ch1_en",
-                &format_args!("{}", self.evt_ovf_cnt_pls_ch1_en().bit()),
+                &self.evt_ovf_cnt_pls_ch1_en().bit(),
             )
             .field(
                 "evt_ovf_cnt_pls_ch2_en",
-                &format_args!("{}", self.evt_ovf_cnt_pls_ch2_en().bit()),
+                &self.evt_ovf_cnt_pls_ch2_en().bit(),
             )
             .field(
                 "evt_ovf_cnt_pls_ch3_en",
-                &format_args!("{}", self.evt_ovf_cnt_pls_ch3_en().bit()),
+                &self.evt_ovf_cnt_pls_ch3_en().bit(),
             )
             .field(
                 "evt_ovf_cnt_pls_ch4_en",
-                &format_args!("{}", self.evt_ovf_cnt_pls_ch4_en().bit()),
+                &self.evt_ovf_cnt_pls_ch4_en().bit(),
             )
             .field(
                 "evt_ovf_cnt_pls_ch5_en",
-                &format_args!("{}", self.evt_ovf_cnt_pls_ch5_en().bit()),
+                &self.evt_ovf_cnt_pls_ch5_en().bit(),
             )
             .field(
                 "evt_ovf_cnt_pls_ch6_en",
-                &format_args!("{}", self.evt_ovf_cnt_pls_ch6_en().bit()),
+                &self.evt_ovf_cnt_pls_ch6_en().bit(),
             )
             .field(
                 "evt_ovf_cnt_pls_ch7_en",
-                &format_args!("{}", self.evt_ovf_cnt_pls_ch7_en().bit()),
+                &self.evt_ovf_cnt_pls_ch7_en().bit(),
             )
             .field(
                 "evt_time_ovf_timer0_en",
-                &format_args!("{}", self.evt_time_ovf_timer0_en().bit()),
+                &self.evt_time_ovf_timer0_en().bit(),
             )
             .field(
                 "evt_time_ovf_timer1_en",
-                &format_args!("{}", self.evt_time_ovf_timer1_en().bit()),
+                &self.evt_time_ovf_timer1_en().bit(),
             )
             .field(
                 "evt_time_ovf_timer2_en",
-                &format_args!("{}", self.evt_time_ovf_timer2_en().bit()),
+                &self.evt_time_ovf_timer2_en().bit(),
             )
             .field(
                 "evt_time_ovf_timer3_en",
-                &format_args!("{}", self.evt_time_ovf_timer3_en().bit()),
+                &self.evt_time_ovf_timer3_en().bit(),
             )
-            .field(
-                "evt_time0_cmp_en",
-                &format_args!("{}", self.evt_time0_cmp_en().bit()),
-            )
-            .field(
-                "evt_time1_cmp_en",
-                &format_args!("{}", self.evt_time1_cmp_en().bit()),
-            )
-            .field(
-                "evt_time2_cmp_en",
-                &format_args!("{}", self.evt_time2_cmp_en().bit()),
-            )
-            .field(
-                "evt_time3_cmp_en",
-                &format_args!("{}", self.evt_time3_cmp_en().bit()),
-            )
+            .field("evt_time0_cmp_en", &self.evt_time0_cmp_en().bit())
+            .field("evt_time1_cmp_en", &self.evt_time1_cmp_en().bit())
+            .field("evt_time2_cmp_en", &self.evt_time2_cmp_en().bit())
+            .field("evt_time3_cmp_en", &self.evt_time3_cmp_en().bit())
             .field(
                 "task_duty_scale_update_ch0_en",
-                &format_args!("{}", self.task_duty_scale_update_ch0_en().bit()),
+                &self.task_duty_scale_update_ch0_en().bit(),
             )
             .field(
                 "task_duty_scale_update_ch1_en",
-                &format_args!("{}", self.task_duty_scale_update_ch1_en().bit()),
+                &self.task_duty_scale_update_ch1_en().bit(),
             )
             .field(
                 "task_duty_scale_update_ch2_en",
-                &format_args!("{}", self.task_duty_scale_update_ch2_en().bit()),
+                &self.task_duty_scale_update_ch2_en().bit(),
             )
             .field(
                 "task_duty_scale_update_ch3_en",
-                &format_args!("{}", self.task_duty_scale_update_ch3_en().bit()),
+                &self.task_duty_scale_update_ch3_en().bit(),
             )
             .field(
                 "task_duty_scale_update_ch4_en",
-                &format_args!("{}", self.task_duty_scale_update_ch4_en().bit()),
+                &self.task_duty_scale_update_ch4_en().bit(),
             )
             .field(
                 "task_duty_scale_update_ch5_en",
-                &format_args!("{}", self.task_duty_scale_update_ch5_en().bit()),
+                &self.task_duty_scale_update_ch5_en().bit(),
             )
             .field(
                 "task_duty_scale_update_ch6_en",
-                &format_args!("{}", self.task_duty_scale_update_ch6_en().bit()),
+                &self.task_duty_scale_update_ch6_en().bit(),
             )
             .field(
                 "task_duty_scale_update_ch7_en",
-                &format_args!("{}", self.task_duty_scale_update_ch7_en().bit()),
+                &self.task_duty_scale_update_ch7_en().bit(),
             )
             .finish()
     }
@@ -653,10 +641,6 @@ impl crate::Readable for EVT_TASK_EN0_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`evt_task_en0::W`](W) writer structure"]
 impl crate::Writable for EVT_TASK_EN0_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets EVT_TASK_EN0 to value 0"]
-impl crate::Resettable for EVT_TASK_EN0_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for EVT_TASK_EN0_SPEC {}

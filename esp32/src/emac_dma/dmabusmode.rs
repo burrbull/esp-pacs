@@ -116,33 +116,18 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("DMABUSMODE")
-            .field("sw_rst", &format_args!("{}", self.sw_rst().bit()))
-            .field("dma_arb_sch", &format_args!("{}", self.dma_arb_sch().bit()))
-            .field(
-                "desc_skip_len",
-                &format_args!("{}", self.desc_skip_len().bits()),
-            )
-            .field(
-                "alt_desc_size",
-                &format_args!("{}", self.alt_desc_size().bit()),
-            )
-            .field(
-                "prog_burst_len",
-                &format_args!("{}", self.prog_burst_len().bits()),
-            )
-            .field("pri_ratio", &format_args!("{}", self.pri_ratio().bits()))
-            .field("fixed_burst", &format_args!("{}", self.fixed_burst().bit()))
-            .field("rx_dma_pbl", &format_args!("{}", self.rx_dma_pbl().bits()))
-            .field("use_sep_pbl", &format_args!("{}", self.use_sep_pbl().bit()))
-            .field("pblx8_mode", &format_args!("{}", self.pblx8_mode().bit()))
-            .field(
-                "dmaaddralibea",
-                &format_args!("{}", self.dmaaddralibea().bit()),
-            )
-            .field(
-                "dmamixedburst",
-                &format_args!("{}", self.dmamixedburst().bit()),
-            )
+            .field("sw_rst", &self.sw_rst().bit())
+            .field("dma_arb_sch", &self.dma_arb_sch().bit())
+            .field("desc_skip_len", &self.desc_skip_len().bits())
+            .field("alt_desc_size", &self.alt_desc_size().bit())
+            .field("prog_burst_len", &self.prog_burst_len().bits())
+            .field("pri_ratio", &self.pri_ratio().bits())
+            .field("fixed_burst", &self.fixed_burst().bit())
+            .field("rx_dma_pbl", &self.rx_dma_pbl().bits())
+            .field("use_sep_pbl", &self.use_sep_pbl().bit())
+            .field("pblx8_mode", &self.pblx8_mode().bit())
+            .field("dmaaddralibea", &self.dmaaddralibea().bit())
+            .field("dmamixedburst", &self.dmamixedburst().bit())
             .finish()
     }
 }
@@ -236,10 +221,6 @@ impl crate::Readable for DMABUSMODE_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`dmabusmode::W`](W) writer structure"]
 impl crate::Writable for DMABUSMODE_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets DMABUSMODE to value 0"]
-impl crate::Resettable for DMABUSMODE_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for DMABUSMODE_SPEC {}

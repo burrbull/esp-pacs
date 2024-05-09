@@ -45,26 +45,11 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SAR_COCPU_STATE")
-            .field(
-                "sar_cocpu_clk_en_st",
-                &format_args!("{}", self.sar_cocpu_clk_en_st().bit()),
-            )
-            .field(
-                "sar_cocpu_reset_n",
-                &format_args!("{}", self.sar_cocpu_reset_n().bit()),
-            )
-            .field(
-                "sar_cocpu_eoi",
-                &format_args!("{}", self.sar_cocpu_eoi().bit()),
-            )
-            .field(
-                "sar_cocpu_trap",
-                &format_args!("{}", self.sar_cocpu_trap().bit()),
-            )
-            .field(
-                "sar_cocpu_ebreak",
-                &format_args!("{}", self.sar_cocpu_ebreak().bit()),
-            )
+            .field("sar_cocpu_clk_en_st", &self.sar_cocpu_clk_en_st().bit())
+            .field("sar_cocpu_reset_n", &self.sar_cocpu_reset_n().bit())
+            .field("sar_cocpu_eoi", &self.sar_cocpu_eoi().bit())
+            .field("sar_cocpu_trap", &self.sar_cocpu_trap().bit())
+            .field("sar_cocpu_ebreak", &self.sar_cocpu_ebreak().bit())
             .finish()
     }
 }
@@ -92,10 +77,6 @@ impl crate::Readable for SAR_COCPU_STATE_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`sar_cocpu_state::W`](W) writer structure"]
 impl crate::Writable for SAR_COCPU_STATE_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SAR_COCPU_STATE to value 0"]
-impl crate::Resettable for SAR_COCPU_STATE_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for SAR_COCPU_STATE_SPEC {}

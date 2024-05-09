@@ -35,18 +35,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("RX_TDM_CTRL")
-            .field(
-                "rx_tdm_pdm_chan0_en",
-                &format_args!("{}", self.rx_tdm_pdm_chan0_en().bit()),
-            )
-            .field(
-                "rx_tdm_pdm_chan1_en",
-                &format_args!("{}", self.rx_tdm_pdm_chan1_en().bit()),
-            )
-            .field(
-                "rx_tdm_tot_chan_num",
-                &format_args!("{}", self.rx_tdm_tot_chan_num().bits()),
-            )
+            .field("rx_tdm_pdm_chan0_en", &self.rx_tdm_pdm_chan0_en().bit())
+            .field("rx_tdm_pdm_chan1_en", &self.rx_tdm_pdm_chan1_en().bit())
+            .field("rx_tdm_tot_chan_num", &self.rx_tdm_tot_chan_num().bits())
             .finish()
     }
 }
@@ -86,8 +77,6 @@ impl crate::Readable for RX_TDM_CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`rx_tdm_ctrl::W`](W) writer structure"]
 impl crate::Writable for RX_TDM_CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets RX_TDM_CTRL to value 0x03"]
 impl crate::Resettable for RX_TDM_CTRL_SPEC {

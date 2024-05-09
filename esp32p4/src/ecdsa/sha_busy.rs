@@ -13,7 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SHA_BUSY")
-            .field("sha_busy", &format_args!("{}", self.sha_busy().bit()))
+            .field("sha_busy", &self.sha_busy().bit())
             .finish()
     }
 }
@@ -31,6 +31,4 @@ impl crate::RegisterSpec for SHA_BUSY_SPEC {
 #[doc = "`read()` method returns [`sha_busy::R`](R) reader structure"]
 impl crate::Readable for SHA_BUSY_SPEC {}
 #[doc = "`reset()` method sets SHA_BUSY to value 0"]
-impl crate::Resettable for SHA_BUSY_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for SHA_BUSY_SPEC {}

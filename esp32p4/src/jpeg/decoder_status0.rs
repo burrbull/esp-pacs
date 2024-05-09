@@ -27,18 +27,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("DECODER_STATUS0")
-            .field(
-                "decode_byte_cnt",
-                &format_args!("{}", self.decode_byte_cnt().bits()),
-            )
-            .field(
-                "header_dec_st",
-                &format_args!("{}", self.header_dec_st().bits()),
-            )
-            .field(
-                "decode_sample_sel",
-                &format_args!("{}", self.decode_sample_sel().bits()),
-            )
+            .field("decode_byte_cnt", &self.decode_byte_cnt().bits())
+            .field("header_dec_st", &self.header_dec_st().bits())
+            .field("decode_sample_sel", &self.decode_sample_sel().bits())
             .finish()
     }
 }
@@ -56,6 +47,4 @@ impl crate::RegisterSpec for DECODER_STATUS0_SPEC {
 #[doc = "`read()` method returns [`decoder_status0::R`](R) reader structure"]
 impl crate::Readable for DECODER_STATUS0_SPEC {}
 #[doc = "`reset()` method sets DECODER_STATUS0 to value 0"]
-impl crate::Resettable for DECODER_STATUS0_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for DECODER_STATUS0_SPEC {}

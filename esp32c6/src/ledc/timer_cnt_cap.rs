@@ -13,10 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("TIMER_CNT_CAP")
-            .field(
-                "timer_cnt_cap",
-                &format_args!("{}", self.timer_cnt_cap().bits()),
-            )
+            .field("timer_cnt_cap", &self.timer_cnt_cap().bits())
             .finish()
     }
 }
@@ -34,6 +31,4 @@ impl crate::RegisterSpec for TIMER_CNT_CAP_SPEC {
 #[doc = "`read()` method returns [`timer_cnt_cap::R`](R) reader structure"]
 impl crate::Readable for TIMER_CNT_CAP_SPEC {}
 #[doc = "`reset()` method sets TIMER%s_CNT_CAP to value 0"]
-impl crate::Resettable for TIMER_CNT_CAP_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for TIMER_CNT_CAP_SPEC {}

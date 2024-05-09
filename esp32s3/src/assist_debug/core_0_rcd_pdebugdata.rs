@@ -15,7 +15,7 @@ impl core::fmt::Debug for R {
         f.debug_struct("CORE_0_RCD_PDEBUGDATA")
             .field(
                 "core_0_rcd_pdebugdata",
-                &format_args!("{}", self.core_0_rcd_pdebugdata().bits()),
+                &self.core_0_rcd_pdebugdata().bits(),
             )
             .finish()
     }
@@ -34,6 +34,4 @@ impl crate::RegisterSpec for CORE_0_RCD_PDEBUGDATA_SPEC {
 #[doc = "`read()` method returns [`core_0_rcd_pdebugdata::R`](R) reader structure"]
 impl crate::Readable for CORE_0_RCD_PDEBUGDATA_SPEC {}
 #[doc = "`reset()` method sets CORE_0_RCD_PDEBUGDATA to value 0"]
-impl crate::Resettable for CORE_0_RCD_PDEBUGDATA_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for CORE_0_RCD_PDEBUGDATA_SPEC {}

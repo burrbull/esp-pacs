@@ -19,7 +19,7 @@ impl core::fmt::Debug for R {
         f.debug_struct("SYSTIMER_TARGET1_INT_MAP")
             .field(
                 "systimer_target1_int_map",
-                &format_args!("{}", self.systimer_target1_int_map().bits()),
+                &self.systimer_target1_int_map().bits(),
             )
             .finish()
     }
@@ -50,8 +50,6 @@ impl crate::Readable for SYSTIMER_TARGET1_INT_MAP_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`systimer_target1_int_map::W`](W) writer structure"]
 impl crate::Writable for SYSTIMER_TARGET1_INT_MAP_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SYSTIMER_TARGET1_INT_MAP to value 0x10"]
 impl crate::Resettable for SYSTIMER_TARGET1_INT_MAP_SPEC {

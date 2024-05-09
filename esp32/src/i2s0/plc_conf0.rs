@@ -62,21 +62,12 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PLC_CONF0")
-            .field(
-                "good_pack_max",
-                &format_args!("{}", self.good_pack_max().bits()),
-            )
-            .field("n_err_seg", &format_args!("{}", self.n_err_seg().bits()))
-            .field("shift_rate", &format_args!("{}", self.shift_rate().bits()))
-            .field(
-                "max_slide_sample",
-                &format_args!("{}", self.max_slide_sample().bits()),
-            )
-            .field(
-                "pack_len_8k",
-                &format_args!("{}", self.pack_len_8k().bits()),
-            )
-            .field("n_min_err", &format_args!("{}", self.n_min_err().bits()))
+            .field("good_pack_max", &self.good_pack_max().bits())
+            .field("n_err_seg", &self.n_err_seg().bits())
+            .field("shift_rate", &self.shift_rate().bits())
+            .field("max_slide_sample", &self.max_slide_sample().bits())
+            .field("pack_len_8k", &self.pack_len_8k().bits())
+            .field("n_min_err", &self.n_min_err().bits())
             .finish()
     }
 }
@@ -134,8 +125,6 @@ impl crate::Readable for PLC_CONF0_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`plc_conf0::W`](W) writer structure"]
 impl crate::Writable for PLC_CONF0_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets PLC_CONF0 to value 0x08a8_0339"]
 impl crate::Resettable for PLC_CONF0_SPEC {

@@ -46,19 +46,19 @@ impl core::fmt::Debug for R {
         f.debug_struct("L2_CACHE_ACCESS_ATTR_CTRL")
             .field(
                 "l2_cache_access_force_cc",
-                &format_args!("{}", self.l2_cache_access_force_cc().bit()),
+                &self.l2_cache_access_force_cc().bit(),
             )
             .field(
                 "l2_cache_access_force_wb",
-                &format_args!("{}", self.l2_cache_access_force_wb().bit()),
+                &self.l2_cache_access_force_wb().bit(),
             )
             .field(
                 "l2_cache_access_force_wma",
-                &format_args!("{}", self.l2_cache_access_force_wma().bit()),
+                &self.l2_cache_access_force_wma().bit(),
             )
             .field(
                 "l2_cache_access_force_rma",
-                &format_args!("{}", self.l2_cache_access_force_rma().bit()),
+                &self.l2_cache_access_force_rma().bit(),
             )
             .finish()
     }
@@ -113,8 +113,6 @@ impl crate::Readable for L2_CACHE_ACCESS_ATTR_CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`l2_cache_access_attr_ctrl::W`](W) writer structure"]
 impl crate::Writable for L2_CACHE_ACCESS_ATTR_CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets L2_CACHE_ACCESS_ATTR_CTRL to value 0x0f"]
 impl crate::Resettable for L2_CACHE_ACCESS_ATTR_CTRL_SPEC {

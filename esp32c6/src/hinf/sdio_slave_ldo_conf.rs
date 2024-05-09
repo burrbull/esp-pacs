@@ -35,18 +35,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SDIO_SLAVE_LDO_CONF")
-            .field(
-                "ldo_ready_ctl_in_en",
-                &format_args!("{}", self.ldo_ready_ctl_in_en().bit()),
-            )
-            .field(
-                "ldo_ready_thres",
-                &format_args!("{}", self.ldo_ready_thres().bits()),
-            )
-            .field(
-                "ldo_ready_ignore_en",
-                &format_args!("{}", self.ldo_ready_ignore_en().bit()),
-            )
+            .field("ldo_ready_ctl_in_en", &self.ldo_ready_ctl_in_en().bit())
+            .field("ldo_ready_thres", &self.ldo_ready_thres().bits())
+            .field("ldo_ready_ignore_en", &self.ldo_ready_ignore_en().bit())
             .finish()
     }
 }
@@ -86,8 +77,6 @@ impl crate::Readable for SDIO_SLAVE_LDO_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`sdio_slave_ldo_conf::W`](W) writer structure"]
 impl crate::Writable for SDIO_SLAVE_LDO_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SDIO_SLAVE_LDO_CONF to value 0x14"]
 impl crate::Resettable for SDIO_SLAVE_LDO_CONF_SPEC {

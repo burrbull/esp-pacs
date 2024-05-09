@@ -17,7 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("TX_CRC")
-            .field("data", &format_args!("{}", self.data().bits()))
+            .field("data", &self.data().bits())
             .finish()
     }
 }
@@ -45,10 +45,6 @@ impl crate::Readable for TX_CRC_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`tx_crc::W`](W) writer structure"]
 impl crate::Writable for TX_CRC_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets TX_CRC to value 0"]
-impl crate::Resettable for TX_CRC_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for TX_CRC_SPEC {}

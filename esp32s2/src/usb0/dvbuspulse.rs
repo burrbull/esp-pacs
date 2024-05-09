@@ -17,7 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("DVBUSPULSE")
-            .field("dvbuspulse", &format_args!("{}", self.dvbuspulse().bits()))
+            .field("dvbuspulse", &self.dvbuspulse().bits())
             .finish()
     }
 }
@@ -45,8 +45,6 @@ impl crate::Readable for DVBUSPULSE_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`dvbuspulse::W`](W) writer structure"]
 impl crate::Writable for DVBUSPULSE_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets DVBUSPULSE to value 0x05b8"]
 impl crate::Resettable for DVBUSPULSE_SPEC {

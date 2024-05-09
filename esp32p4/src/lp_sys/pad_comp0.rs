@@ -35,9 +35,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PAD_COMP0")
-            .field("dref_comp0", &format_args!("{}", self.dref_comp0().bits()))
-            .field("mode_comp0", &format_args!("{}", self.mode_comp0().bit()))
-            .field("xpd_comp0", &format_args!("{}", self.xpd_comp0().bit()))
+            .field("dref_comp0", &self.dref_comp0().bits())
+            .field("mode_comp0", &self.mode_comp0().bit())
+            .field("xpd_comp0", &self.xpd_comp0().bit())
             .finish()
     }
 }
@@ -77,10 +77,6 @@ impl crate::Readable for PAD_COMP0_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`pad_comp0::W`](W) writer structure"]
 impl crate::Writable for PAD_COMP0_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets PAD_COMP0 to value 0"]
-impl crate::Resettable for PAD_COMP0_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for PAD_COMP0_SPEC {}

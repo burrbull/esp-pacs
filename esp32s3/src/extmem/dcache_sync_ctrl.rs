@@ -42,22 +42,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("DCACHE_SYNC_CTRL")
-            .field(
-                "dcache_invalidate_ena",
-                &format_args!("{}", self.dcache_invalidate_ena().bit()),
-            )
-            .field(
-                "dcache_writeback_ena",
-                &format_args!("{}", self.dcache_writeback_ena().bit()),
-            )
-            .field(
-                "dcache_clean_ena",
-                &format_args!("{}", self.dcache_clean_ena().bit()),
-            )
-            .field(
-                "dcache_sync_done",
-                &format_args!("{}", self.dcache_sync_done().bit()),
-            )
+            .field("dcache_invalidate_ena", &self.dcache_invalidate_ena().bit())
+            .field("dcache_writeback_ena", &self.dcache_writeback_ena().bit())
+            .field("dcache_clean_ena", &self.dcache_clean_ena().bit())
+            .field("dcache_sync_done", &self.dcache_sync_done().bit())
             .finish()
     }
 }
@@ -97,8 +85,6 @@ impl crate::Readable for DCACHE_SYNC_CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`dcache_sync_ctrl::W`](W) writer structure"]
 impl crate::Writable for DCACHE_SYNC_CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets DCACHE_SYNC_CTRL to value 0x01"]
 impl crate::Resettable for DCACHE_SYNC_CTRL_SPEC {

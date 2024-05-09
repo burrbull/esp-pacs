@@ -20,8 +20,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("STATUS")
-            .field("value", &format_args!("{}", self.value().bits()))
-            .field("direction", &format_args!("{}", self.direction().bit()))
+            .field("value", &self.value().bits())
+            .field("direction", &self.direction().bit())
             .finish()
     }
 }
@@ -39,6 +39,4 @@ impl crate::RegisterSpec for STATUS_SPEC {
 #[doc = "`read()` method returns [`status::R`](R) reader structure"]
 impl crate::Readable for STATUS_SPEC {}
 #[doc = "`reset()` method sets STATUS to value 0"]
-impl crate::Resettable for STATUS_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for STATUS_SPEC {}

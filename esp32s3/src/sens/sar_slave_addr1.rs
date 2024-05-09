@@ -33,17 +33,11 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SAR_SLAVE_ADDR1")
-            .field(
-                "sar_i2c_slave_addr1",
-                &format_args!("{}", self.sar_i2c_slave_addr1().bits()),
-            )
-            .field(
-                "sar_i2c_slave_addr0",
-                &format_args!("{}", self.sar_i2c_slave_addr0().bits()),
-            )
+            .field("sar_i2c_slave_addr1", &self.sar_i2c_slave_addr1().bits())
+            .field("sar_i2c_slave_addr0", &self.sar_i2c_slave_addr0().bits())
             .field(
                 "sar_saradc_meas_status",
-                &format_args!("{}", self.sar_saradc_meas_status().bits()),
+                &self.sar_saradc_meas_status().bits(),
             )
             .finish()
     }
@@ -78,10 +72,6 @@ impl crate::Readable for SAR_SLAVE_ADDR1_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`sar_slave_addr1::W`](W) writer structure"]
 impl crate::Writable for SAR_SLAVE_ADDR1_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SAR_SLAVE_ADDR1 to value 0"]
-impl crate::Resettable for SAR_SLAVE_ADDR1_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for SAR_SLAVE_ADDR1_SPEC {}

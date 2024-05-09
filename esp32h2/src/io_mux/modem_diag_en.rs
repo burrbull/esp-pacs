@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("MODEM_DIAG_EN")
-            .field(
-                "modem_diag_en",
-                &format_args!("{}", self.modem_diag_en().bits()),
-            )
+            .field("modem_diag_en", &self.modem_diag_en().bits())
             .finish()
     }
 }
@@ -48,10 +45,6 @@ impl crate::Readable for MODEM_DIAG_EN_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`modem_diag_en::W`](W) writer structure"]
 impl crate::Writable for MODEM_DIAG_EN_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets MODEM_DIAG_EN to value 0"]
-impl crate::Resettable for MODEM_DIAG_EN_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for MODEM_DIAG_EN_SPEC {}

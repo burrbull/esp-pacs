@@ -254,118 +254,111 @@ impl core::fmt::Debug for R {
         f.debug_struct("INTSIGNAL_ENABLE0")
             .field(
                 "ch1_enable_block_tfr_done_intsignal",
-                &format_args!("{}", self.ch1_enable_block_tfr_done_intsignal().bit()),
+                &self.ch1_enable_block_tfr_done_intsignal().bit(),
             )
             .field(
                 "ch1_enable_dma_tfr_done_intsignal",
-                &format_args!("{}", self.ch1_enable_dma_tfr_done_intsignal().bit()),
+                &self.ch1_enable_dma_tfr_done_intsignal().bit(),
             )
             .field(
                 "ch1_enable_src_transcomp_intsignal",
-                &format_args!("{}", self.ch1_enable_src_transcomp_intsignal().bit()),
+                &self.ch1_enable_src_transcomp_intsignal().bit(),
             )
             .field(
                 "ch1_enable_dst_transcomp_intsignal",
-                &format_args!("{}", self.ch1_enable_dst_transcomp_intsignal().bit()),
+                &self.ch1_enable_dst_transcomp_intsignal().bit(),
             )
             .field(
                 "ch1_enable_src_dec_err_intsignal",
-                &format_args!("{}", self.ch1_enable_src_dec_err_intsignal().bit()),
+                &self.ch1_enable_src_dec_err_intsignal().bit(),
             )
             .field(
                 "ch1_enable_dst_dec_err_intsignal",
-                &format_args!("{}", self.ch1_enable_dst_dec_err_intsignal().bit()),
+                &self.ch1_enable_dst_dec_err_intsignal().bit(),
             )
             .field(
                 "ch1_enable_src_slv_err_intsignal",
-                &format_args!("{}", self.ch1_enable_src_slv_err_intsignal().bit()),
+                &self.ch1_enable_src_slv_err_intsignal().bit(),
             )
             .field(
                 "ch1_enable_dst_slv_err_intsignal",
-                &format_args!("{}", self.ch1_enable_dst_slv_err_intsignal().bit()),
+                &self.ch1_enable_dst_slv_err_intsignal().bit(),
             )
             .field(
                 "ch1_enable_lli_rd_dec_err_intsignal",
-                &format_args!("{}", self.ch1_enable_lli_rd_dec_err_intsignal().bit()),
+                &self.ch1_enable_lli_rd_dec_err_intsignal().bit(),
             )
             .field(
                 "ch1_enable_lli_wr_dec_err_intsignal",
-                &format_args!("{}", self.ch1_enable_lli_wr_dec_err_intsignal().bit()),
+                &self.ch1_enable_lli_wr_dec_err_intsignal().bit(),
             )
             .field(
                 "ch1_enable_lli_rd_slv_err_intsignal",
-                &format_args!("{}", self.ch1_enable_lli_rd_slv_err_intsignal().bit()),
+                &self.ch1_enable_lli_rd_slv_err_intsignal().bit(),
             )
             .field(
                 "ch1_enable_lli_wr_slv_err_intsignal",
-                &format_args!("{}", self.ch1_enable_lli_wr_slv_err_intsignal().bit()),
+                &self.ch1_enable_lli_wr_slv_err_intsignal().bit(),
             )
             .field(
                 "ch1_enable_shadowreg_or_lli_invalid_err_intsignal",
-                &format_args!(
-                    "{}",
-                    self.ch1_enable_shadowreg_or_lli_invalid_err_intsignal()
-                        .bit()
-                ),
+                &self
+                    .ch1_enable_shadowreg_or_lli_invalid_err_intsignal()
+                    .bit(),
             )
             .field(
                 "ch1_enable_slvif_multiblktype_err_intsignal",
-                &format_args!(
-                    "{}",
-                    self.ch1_enable_slvif_multiblktype_err_intsignal().bit()
-                ),
+                &self.ch1_enable_slvif_multiblktype_err_intsignal().bit(),
             )
             .field(
                 "ch1_enable_slvif_dec_err_intsignal",
-                &format_args!("{}", self.ch1_enable_slvif_dec_err_intsignal().bit()),
+                &self.ch1_enable_slvif_dec_err_intsignal().bit(),
             )
             .field(
                 "ch1_enable_slvif_wr2ro_err_intsignal",
-                &format_args!("{}", self.ch1_enable_slvif_wr2ro_err_intsignal().bit()),
+                &self.ch1_enable_slvif_wr2ro_err_intsignal().bit(),
             )
             .field(
                 "ch1_enable_slvif_rd2rwo_err_intsignal",
-                &format_args!("{}", self.ch1_enable_slvif_rd2rwo_err_intsignal().bit()),
+                &self.ch1_enable_slvif_rd2rwo_err_intsignal().bit(),
             )
             .field(
                 "ch1_enable_slvif_wronchen_err_intsignal",
-                &format_args!("{}", self.ch1_enable_slvif_wronchen_err_intsignal().bit()),
+                &self.ch1_enable_slvif_wronchen_err_intsignal().bit(),
             )
             .field(
                 "ch1_enable_slvif_shadowreg_wron_valid_err_intsignal",
-                &format_args!(
-                    "{}",
-                    self.ch1_enable_slvif_shadowreg_wron_valid_err_intsignal()
-                        .bit()
-                ),
+                &self
+                    .ch1_enable_slvif_shadowreg_wron_valid_err_intsignal()
+                    .bit(),
             )
             .field(
                 "ch1_enable_slvif_wronhold_err_intsignal",
-                &format_args!("{}", self.ch1_enable_slvif_wronhold_err_intsignal().bit()),
+                &self.ch1_enable_slvif_wronhold_err_intsignal().bit(),
             )
             .field(
                 "ch1_enable_slvif_wrparity_err_intsignal",
-                &format_args!("{}", self.ch1_enable_slvif_wrparity_err_intsignal().bit()),
+                &self.ch1_enable_slvif_wrparity_err_intsignal().bit(),
             )
             .field(
                 "ch1_enable_ch_lock_cleared_intsignal",
-                &format_args!("{}", self.ch1_enable_ch_lock_cleared_intsignal().bit()),
+                &self.ch1_enable_ch_lock_cleared_intsignal().bit(),
             )
             .field(
                 "ch1_enable_ch_src_suspended_intsignal",
-                &format_args!("{}", self.ch1_enable_ch_src_suspended_intsignal().bit()),
+                &self.ch1_enable_ch_src_suspended_intsignal().bit(),
             )
             .field(
                 "ch1_enable_ch_suspended_intsignal",
-                &format_args!("{}", self.ch1_enable_ch_suspended_intsignal().bit()),
+                &self.ch1_enable_ch_suspended_intsignal().bit(),
             )
             .field(
                 "ch1_enable_ch_disabled_intsignal",
-                &format_args!("{}", self.ch1_enable_ch_disabled_intsignal().bit()),
+                &self.ch1_enable_ch_disabled_intsignal().bit(),
             )
             .field(
                 "ch1_enable_ch_aborted_intsignal",
-                &format_args!("{}", self.ch1_enable_ch_aborted_intsignal().bit()),
+                &self.ch1_enable_ch_aborted_intsignal().bit(),
             )
             .finish()
     }
@@ -588,8 +581,6 @@ impl crate::Readable for INTSIGNAL_ENABLE0_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`intsignal_enable0::W`](W) writer structure"]
 impl crate::Writable for INTSIGNAL_ENABLE0_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets INTSIGNAL_ENABLE0 to value 0xfa3f_7ffb"]
 impl crate::Resettable for INTSIGNAL_ENABLE0_SPEC {

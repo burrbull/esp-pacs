@@ -37,15 +37,15 @@ impl core::fmt::Debug for R {
         f.debug_struct("CORE_1_CONTROL_0")
             .field(
                 "control_core_1_runstall",
-                &format_args!("{}", self.control_core_1_runstall().bit()),
+                &self.control_core_1_runstall().bit(),
             )
             .field(
                 "control_core_1_clkgate_en",
-                &format_args!("{}", self.control_core_1_clkgate_en().bit()),
+                &self.control_core_1_clkgate_en().bit(),
             )
             .field(
                 "control_core_1_reseting",
-                &format_args!("{}", self.control_core_1_reseting().bit()),
+                &self.control_core_1_reseting().bit(),
             )
             .finish()
     }
@@ -88,8 +88,6 @@ impl crate::Readable for CORE_1_CONTROL_0_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`core_1_control_0::W`](W) writer structure"]
 impl crate::Writable for CORE_1_CONTROL_0_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CORE_1_CONTROL_0 to value 0x04"]
 impl crate::Resettable for CORE_1_CONTROL_0_SPEC {

@@ -26,8 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("ETM_EVENT_CH_CFG")
-            .field("event_sel", &format_args!("{}", self.event_sel().bits()))
-            .field("event_en", &format_args!("{}", self.event_en().bit()))
+            .field("event_sel", &self.event_sel().bits())
+            .field("event_en", &self.event_en().bit())
             .finish()
     }
 }
@@ -61,10 +61,6 @@ impl crate::Readable for ETM_EVENT_CH_CFG_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`etm_event_ch_cfg::W`](W) writer structure"]
 impl crate::Writable for ETM_EVENT_CH_CFG_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets ETM_EVENT_CH%s_CFG to value 0"]
-impl crate::Resettable for ETM_EVENT_CH_CFG_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for ETM_EVENT_CH_CFG_SPEC {}

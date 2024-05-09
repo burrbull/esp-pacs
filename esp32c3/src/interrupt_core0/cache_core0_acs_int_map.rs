@@ -19,7 +19,7 @@ impl core::fmt::Debug for R {
         f.debug_struct("CACHE_CORE0_ACS_INT_MAP")
             .field(
                 "cache_core0_acs_int_map",
-                &format_args!("{}", self.cache_core0_acs_int_map().bits()),
+                &self.cache_core0_acs_int_map().bits(),
             )
             .finish()
     }
@@ -50,10 +50,6 @@ impl crate::Readable for CACHE_CORE0_ACS_INT_MAP_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`cache_core0_acs_int_map::W`](W) writer structure"]
 impl crate::Writable for CACHE_CORE0_ACS_INT_MAP_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CACHE_CORE0_ACS_INT_MAP to value 0"]
-impl crate::Resettable for CACHE_CORE0_ACS_INT_MAP_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for CACHE_CORE0_ACS_INT_MAP_SPEC {}

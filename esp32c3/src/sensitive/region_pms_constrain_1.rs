@@ -73,31 +73,31 @@ impl core::fmt::Debug for R {
         f.debug_struct("REGION_PMS_CONSTRAIN_1")
             .field(
                 "region_pms_constrain_world_0_area_0",
-                &format_args!("{}", self.region_pms_constrain_world_0_area_0().bits()),
+                &self.region_pms_constrain_world_0_area_0().bits(),
             )
             .field(
                 "region_pms_constrain_world_0_area_1",
-                &format_args!("{}", self.region_pms_constrain_world_0_area_1().bits()),
+                &self.region_pms_constrain_world_0_area_1().bits(),
             )
             .field(
                 "region_pms_constrain_world_0_area_2",
-                &format_args!("{}", self.region_pms_constrain_world_0_area_2().bits()),
+                &self.region_pms_constrain_world_0_area_2().bits(),
             )
             .field(
                 "region_pms_constrain_world_0_area_3",
-                &format_args!("{}", self.region_pms_constrain_world_0_area_3().bits()),
+                &self.region_pms_constrain_world_0_area_3().bits(),
             )
             .field(
                 "region_pms_constrain_world_0_area_4",
-                &format_args!("{}", self.region_pms_constrain_world_0_area_4().bits()),
+                &self.region_pms_constrain_world_0_area_4().bits(),
             )
             .field(
                 "region_pms_constrain_world_0_area_5",
-                &format_args!("{}", self.region_pms_constrain_world_0_area_5().bits()),
+                &self.region_pms_constrain_world_0_area_5().bits(),
             )
             .field(
                 "region_pms_constrain_world_0_area_6",
-                &format_args!("{}", self.region_pms_constrain_world_0_area_6().bits()),
+                &self.region_pms_constrain_world_0_area_6().bits(),
             )
             .finish()
     }
@@ -176,8 +176,6 @@ impl crate::Readable for REGION_PMS_CONSTRAIN_1_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`region_pms_constrain_1::W`](W) writer structure"]
 impl crate::Writable for REGION_PMS_CONSTRAIN_1_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets REGION_PMS_CONSTRAIN_1 to value 0x3fff"]
 impl crate::Resettable for REGION_PMS_CONSTRAIN_1_SPEC {

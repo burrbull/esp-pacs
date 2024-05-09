@@ -35,15 +35,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PWM_CLK_CONF")
-            .field(
-                "pwm_div_num",
-                &format_args!("{}", self.pwm_div_num().bits()),
-            )
-            .field(
-                "pwm_clkm_sel",
-                &format_args!("{}", self.pwm_clkm_sel().bits()),
-            )
-            .field("pwm_clkm_en", &format_args!("{}", self.pwm_clkm_en().bit()))
+            .field("pwm_div_num", &self.pwm_div_num().bits())
+            .field("pwm_clkm_sel", &self.pwm_clkm_sel().bits())
+            .field("pwm_clkm_en", &self.pwm_clkm_en().bit())
             .finish()
     }
 }
@@ -83,8 +77,6 @@ impl crate::Readable for PWM_CLK_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`pwm_clk_conf::W`](W) writer structure"]
 impl crate::Writable for PWM_CLK_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets PWM_CLK_CONF to value 0x0040_4000"]
 impl crate::Resettable for PWM_CLK_CONF_SPEC {

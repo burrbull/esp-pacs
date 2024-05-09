@@ -19,7 +19,7 @@ impl core::fmt::Debug for R {
         f.debug_struct("INTER_MEM_START_ADDR0")
             .field(
                 "access_inter_mem_start_addr0",
-                &format_args!("{}", self.access_inter_mem_start_addr0().bits()),
+                &self.access_inter_mem_start_addr0().bits(),
             )
             .finish()
     }
@@ -50,8 +50,6 @@ impl crate::Readable for INTER_MEM_START_ADDR0_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`inter_mem_start_addr0::W`](W) writer structure"]
 impl crate::Writable for INTER_MEM_START_ADDR0_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets INTER_MEM_START_ADDR0 to value 0x3010_0000"]
 impl crate::Resettable for INTER_MEM_START_ADDR0_SPEC {

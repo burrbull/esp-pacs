@@ -28,11 +28,11 @@ impl core::fmt::Debug for R {
         f.debug_struct("LP_AONCLKRST_HPCPU_RESET_CTRL1")
             .field(
                 "lp_aonclkrst_hpcore0_sw_stall_code",
-                &format_args!("{}", self.lp_aonclkrst_hpcore0_sw_stall_code().bits()),
+                &self.lp_aonclkrst_hpcore0_sw_stall_code().bits(),
             )
             .field(
                 "lp_aonclkrst_hpcore1_sw_stall_code",
-                &format_args!("{}", self.lp_aonclkrst_hpcore1_sw_stall_code().bits()),
+                &self.lp_aonclkrst_hpcore1_sw_stall_code().bits(),
             )
             .finish()
     }
@@ -71,10 +71,6 @@ impl crate::Readable for LP_AONCLKRST_HPCPU_RESET_CTRL1_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`lp_aonclkrst_hpcpu_reset_ctrl1::W`](W) writer structure"]
 impl crate::Writable for LP_AONCLKRST_HPCPU_RESET_CTRL1_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets LP_AONCLKRST_HPCPU_RESET_CTRL1 to value 0"]
-impl crate::Resettable for LP_AONCLKRST_HPCPU_RESET_CTRL1_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for LP_AONCLKRST_HPCPU_RESET_CTRL1_SPEC {}

@@ -53,26 +53,11 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("TOUCH_SCAN_CTRL2")
-            .field(
-                "touch_timeout_num",
-                &format_args!("{}", self.touch_timeout_num().bits()),
-            )
-            .field(
-                "touch_timeout_en",
-                &format_args!("{}", self.touch_timeout_en().bit()),
-            )
-            .field(
-                "touch_out_ring",
-                &format_args!("{}", self.touch_out_ring().bits()),
-            )
-            .field(
-                "freq_scan_en",
-                &format_args!("{}", self.freq_scan_en().bit()),
-            )
-            .field(
-                "freq_scan_cnt_limit",
-                &format_args!("{}", self.freq_scan_cnt_limit().bits()),
-            )
+            .field("touch_timeout_num", &self.touch_timeout_num().bits())
+            .field("touch_timeout_en", &self.touch_timeout_en().bit())
+            .field("touch_out_ring", &self.touch_out_ring().bits())
+            .field("freq_scan_en", &self.freq_scan_en().bit())
+            .field("freq_scan_cnt_limit", &self.freq_scan_cnt_limit().bits())
             .finish()
     }
 }
@@ -124,8 +109,6 @@ impl crate::Readable for TOUCH_SCAN_CTRL2_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`touch_scan_ctrl2::W`](W) writer structure"]
 impl crate::Writable for TOUCH_SCAN_CTRL2_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets TOUCH_SCAN_CTRL2 to value 0x37bf_ffc0"]
 impl crate::Resettable for TOUCH_SCAN_CTRL2_SPEC {

@@ -24,14 +24,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("DCACHE_OCCUPY_CTRL")
-            .field(
-                "dcache_occupy_ena",
-                &format_args!("{}", self.dcache_occupy_ena().bit()),
-            )
-            .field(
-                "dcache_occupy_done",
-                &format_args!("{}", self.dcache_occupy_done().bit()),
-            )
+            .field("dcache_occupy_ena", &self.dcache_occupy_ena().bit())
+            .field("dcache_occupy_done", &self.dcache_occupy_done().bit())
             .finish()
     }
 }
@@ -59,8 +53,6 @@ impl crate::Readable for DCACHE_OCCUPY_CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`dcache_occupy_ctrl::W`](W) writer structure"]
 impl crate::Writable for DCACHE_OCCUPY_CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets DCACHE_OCCUPY_CTRL to value 0x02"]
 impl crate::Resettable for DCACHE_OCCUPY_CTRL_SPEC {

@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("BLK0_WDATA1")
-            .field(
-                "wifi_mac_crc_low",
-                &format_args!("{}", self.wifi_mac_crc_low().bits()),
-            )
+            .field("wifi_mac_crc_low", &self.wifi_mac_crc_low().bits())
             .finish()
     }
 }
@@ -48,10 +45,6 @@ impl crate::Readable for BLK0_WDATA1_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`blk0_wdata1::W`](W) writer structure"]
 impl crate::Writable for BLK0_WDATA1_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets BLK0_WDATA1 to value 0"]
-impl crate::Resettable for BLK0_WDATA1_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for BLK0_WDATA1_SPEC {}

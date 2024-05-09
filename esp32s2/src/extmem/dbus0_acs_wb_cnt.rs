@@ -13,10 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("DBUS0_ACS_WB_CNT")
-            .field(
-                "dbus0_acs_wb_cnt",
-                &format_args!("{}", self.dbus0_acs_wb_cnt().bits()),
-            )
+            .field("dbus0_acs_wb_cnt", &self.dbus0_acs_wb_cnt().bits())
             .finish()
     }
 }
@@ -34,6 +31,4 @@ impl crate::RegisterSpec for DBUS0_ACS_WB_CNT_SPEC {
 #[doc = "`read()` method returns [`dbus0_acs_wb_cnt::R`](R) reader structure"]
 impl crate::Readable for DBUS0_ACS_WB_CNT_SPEC {}
 #[doc = "`reset()` method sets DBUS0_ACS_WB_CNT to value 0"]
-impl crate::Resettable for DBUS0_ACS_WB_CNT_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for DBUS0_ACS_WB_CNT_SPEC {}

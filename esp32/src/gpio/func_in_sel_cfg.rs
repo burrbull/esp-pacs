@@ -35,9 +35,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("FUNC_IN_SEL_CFG")
-            .field("in_sel", &format_args!("{}", self.in_sel().bits()))
-            .field("in_inv_sel", &format_args!("{}", self.in_inv_sel().bit()))
-            .field("sel", &format_args!("{}", self.sel().bit()))
+            .field("in_sel", &self.in_sel().bits())
+            .field("in_inv_sel", &self.in_inv_sel().bit())
+            .field("sel", &self.sel().bit())
             .finish()
     }
 }
@@ -77,10 +77,6 @@ impl crate::Readable for FUNC_IN_SEL_CFG_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`func_in_sel_cfg::W`](W) writer structure"]
 impl crate::Writable for FUNC_IN_SEL_CFG_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets FUNC%s_IN_SEL_CFG to value 0"]
-impl crate::Resettable for FUNC_IN_SEL_CFG_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for FUNC_IN_SEL_CFG_SPEC {}

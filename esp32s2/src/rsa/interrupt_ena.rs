@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("INTERRUPT_ENA")
-            .field(
-                "interrupt_ena",
-                &format_args!("{}", self.interrupt_ena().bit()),
-            )
+            .field("interrupt_ena", &self.interrupt_ena().bit())
             .finish()
     }
 }
@@ -48,8 +45,6 @@ impl crate::Readable for INTERRUPT_ENA_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`interrupt_ena::W`](W) writer structure"]
 impl crate::Writable for INTERRUPT_ENA_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets INTERRUPT_ENA to value 0x01"]
 impl crate::Resettable for INTERRUPT_ENA_SPEC {

@@ -44,22 +44,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("REGDMA_BKP_CONF")
-            .field(
-                "read_interval",
-                &format_args!("{}", self.read_interval().bits()),
-            )
-            .field(
-                "link_tout_thres",
-                &format_args!("{}", self.link_tout_thres().bits()),
-            )
-            .field(
-                "burst_limit",
-                &format_args!("{}", self.burst_limit().bits()),
-            )
-            .field(
-                "backup_tout_thres",
-                &format_args!("{}", self.backup_tout_thres().bits()),
-            )
+            .field("read_interval", &self.read_interval().bits())
+            .field("link_tout_thres", &self.link_tout_thres().bits())
+            .field("burst_limit", &self.burst_limit().bits())
+            .field("backup_tout_thres", &self.backup_tout_thres().bits())
             .finish()
     }
 }
@@ -105,8 +93,6 @@ impl crate::Readable for REGDMA_BKP_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`regdma_bkp_conf::W`](W) writer structure"]
 impl crate::Writable for REGDMA_BKP_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets REGDMA_BKP_CONF to value 0x7d10_1920"]
 impl crate::Resettable for REGDMA_BKP_CONF_SPEC {

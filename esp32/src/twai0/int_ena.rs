@@ -71,28 +71,13 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("INT_ENA")
-            .field("rx_int_ena", &format_args!("{}", self.rx_int_ena().bit()))
-            .field("tx_int_ena", &format_args!("{}", self.tx_int_ena().bit()))
-            .field(
-                "err_warn_int_ena",
-                &format_args!("{}", self.err_warn_int_ena().bit()),
-            )
-            .field(
-                "overrun_int_ena",
-                &format_args!("{}", self.overrun_int_ena().bit()),
-            )
-            .field(
-                "err_passive_int_ena",
-                &format_args!("{}", self.err_passive_int_ena().bit()),
-            )
-            .field(
-                "arb_lost_int_ena",
-                &format_args!("{}", self.arb_lost_int_ena().bit()),
-            )
-            .field(
-                "bus_err_int_ena",
-                &format_args!("{}", self.bus_err_int_ena().bit()),
-            )
+            .field("rx_int_ena", &self.rx_int_ena().bit())
+            .field("tx_int_ena", &self.tx_int_ena().bit())
+            .field("err_warn_int_ena", &self.err_warn_int_ena().bit())
+            .field("overrun_int_ena", &self.overrun_int_ena().bit())
+            .field("err_passive_int_ena", &self.err_passive_int_ena().bit())
+            .field("arb_lost_int_ena", &self.arb_lost_int_ena().bit())
+            .field("bus_err_int_ena", &self.bus_err_int_ena().bit())
             .finish()
     }
 }
@@ -156,10 +141,6 @@ impl crate::Readable for INT_ENA_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`int_ena::W`](W) writer structure"]
 impl crate::Writable for INT_ENA_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets INT_ENA to value 0"]
-impl crate::Resettable for INT_ENA_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for INT_ENA_SPEC {}

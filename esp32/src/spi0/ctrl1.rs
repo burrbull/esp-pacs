@@ -26,14 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CTRL1")
-            .field(
-                "cs_hold_delay_res",
-                &format_args!("{}", self.cs_hold_delay_res().bits()),
-            )
-            .field(
-                "cs_hold_delay",
-                &format_args!("{}", self.cs_hold_delay().bits()),
-            )
+            .field("cs_hold_delay_res", &self.cs_hold_delay_res().bits())
+            .field("cs_hold_delay", &self.cs_hold_delay().bits())
             .finish()
     }
 }
@@ -67,8 +61,6 @@ impl crate::Readable for CTRL1_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`ctrl1::W`](W) writer structure"]
 impl crate::Writable for CTRL1_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CTRL1 to value 0x5fff_0000"]
 impl crate::Resettable for CTRL1_SPEC {

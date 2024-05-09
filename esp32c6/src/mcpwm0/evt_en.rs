@@ -278,108 +278,36 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("EVT_EN")
-            .field(
-                "evt_timer0_stop_en",
-                &format_args!("{}", self.evt_timer0_stop_en().bit()),
-            )
-            .field(
-                "evt_timer1_stop_en",
-                &format_args!("{}", self.evt_timer1_stop_en().bit()),
-            )
-            .field(
-                "evt_timer2_stop_en",
-                &format_args!("{}", self.evt_timer2_stop_en().bit()),
-            )
-            .field(
-                "evt_timer0_tez_en",
-                &format_args!("{}", self.evt_timer0_tez_en().bit()),
-            )
-            .field(
-                "evt_timer1_tez_en",
-                &format_args!("{}", self.evt_timer1_tez_en().bit()),
-            )
-            .field(
-                "evt_timer2_tez_en",
-                &format_args!("{}", self.evt_timer2_tez_en().bit()),
-            )
-            .field(
-                "evt_timer0_tep_en",
-                &format_args!("{}", self.evt_timer0_tep_en().bit()),
-            )
-            .field(
-                "evt_timer1_tep_en",
-                &format_args!("{}", self.evt_timer1_tep_en().bit()),
-            )
-            .field(
-                "evt_timer2_tep_en",
-                &format_args!("{}", self.evt_timer2_tep_en().bit()),
-            )
-            .field(
-                "evt_op0_tea_en",
-                &format_args!("{}", self.evt_op0_tea_en().bit()),
-            )
-            .field(
-                "evt_op1_tea_en",
-                &format_args!("{}", self.evt_op1_tea_en().bit()),
-            )
-            .field(
-                "evt_op2_tea_en",
-                &format_args!("{}", self.evt_op2_tea_en().bit()),
-            )
-            .field(
-                "evt_op0_teb_en",
-                &format_args!("{}", self.evt_op0_teb_en().bit()),
-            )
-            .field(
-                "evt_op1_teb_en",
-                &format_args!("{}", self.evt_op1_teb_en().bit()),
-            )
-            .field(
-                "evt_op2_teb_en",
-                &format_args!("{}", self.evt_op2_teb_en().bit()),
-            )
-            .field("evt_f0_en", &format_args!("{}", self.evt_f0_en().bit()))
-            .field("evt_f1_en", &format_args!("{}", self.evt_f1_en().bit()))
-            .field("evt_f2_en", &format_args!("{}", self.evt_f2_en().bit()))
-            .field(
-                "evt_f0_clr_en",
-                &format_args!("{}", self.evt_f0_clr_en().bit()),
-            )
-            .field(
-                "evt_f1_clr_en",
-                &format_args!("{}", self.evt_f1_clr_en().bit()),
-            )
-            .field(
-                "evt_f2_clr_en",
-                &format_args!("{}", self.evt_f2_clr_en().bit()),
-            )
-            .field(
-                "evt_tz0_cbc_en",
-                &format_args!("{}", self.evt_tz0_cbc_en().bit()),
-            )
-            .field(
-                "evt_tz1_cbc_en",
-                &format_args!("{}", self.evt_tz1_cbc_en().bit()),
-            )
-            .field(
-                "evt_tz2_cbc_en",
-                &format_args!("{}", self.evt_tz2_cbc_en().bit()),
-            )
-            .field(
-                "evt_tz0_ost_en",
-                &format_args!("{}", self.evt_tz0_ost_en().bit()),
-            )
-            .field(
-                "evt_tz1_ost_en",
-                &format_args!("{}", self.evt_tz1_ost_en().bit()),
-            )
-            .field(
-                "evt_tz2_ost_en",
-                &format_args!("{}", self.evt_tz2_ost_en().bit()),
-            )
-            .field("evt_cap0_en", &format_args!("{}", self.evt_cap0_en().bit()))
-            .field("evt_cap1_en", &format_args!("{}", self.evt_cap1_en().bit()))
-            .field("evt_cap2_en", &format_args!("{}", self.evt_cap2_en().bit()))
+            .field("evt_timer0_stop_en", &self.evt_timer0_stop_en().bit())
+            .field("evt_timer1_stop_en", &self.evt_timer1_stop_en().bit())
+            .field("evt_timer2_stop_en", &self.evt_timer2_stop_en().bit())
+            .field("evt_timer0_tez_en", &self.evt_timer0_tez_en().bit())
+            .field("evt_timer1_tez_en", &self.evt_timer1_tez_en().bit())
+            .field("evt_timer2_tez_en", &self.evt_timer2_tez_en().bit())
+            .field("evt_timer0_tep_en", &self.evt_timer0_tep_en().bit())
+            .field("evt_timer1_tep_en", &self.evt_timer1_tep_en().bit())
+            .field("evt_timer2_tep_en", &self.evt_timer2_tep_en().bit())
+            .field("evt_op0_tea_en", &self.evt_op0_tea_en().bit())
+            .field("evt_op1_tea_en", &self.evt_op1_tea_en().bit())
+            .field("evt_op2_tea_en", &self.evt_op2_tea_en().bit())
+            .field("evt_op0_teb_en", &self.evt_op0_teb_en().bit())
+            .field("evt_op1_teb_en", &self.evt_op1_teb_en().bit())
+            .field("evt_op2_teb_en", &self.evt_op2_teb_en().bit())
+            .field("evt_f0_en", &self.evt_f0_en().bit())
+            .field("evt_f1_en", &self.evt_f1_en().bit())
+            .field("evt_f2_en", &self.evt_f2_en().bit())
+            .field("evt_f0_clr_en", &self.evt_f0_clr_en().bit())
+            .field("evt_f1_clr_en", &self.evt_f1_clr_en().bit())
+            .field("evt_f2_clr_en", &self.evt_f2_clr_en().bit())
+            .field("evt_tz0_cbc_en", &self.evt_tz0_cbc_en().bit())
+            .field("evt_tz1_cbc_en", &self.evt_tz1_cbc_en().bit())
+            .field("evt_tz2_cbc_en", &self.evt_tz2_cbc_en().bit())
+            .field("evt_tz0_ost_en", &self.evt_tz0_ost_en().bit())
+            .field("evt_tz1_ost_en", &self.evt_tz1_ost_en().bit())
+            .field("evt_tz2_ost_en", &self.evt_tz2_ost_en().bit())
+            .field("evt_cap0_en", &self.evt_cap0_en().bit())
+            .field("evt_cap1_en", &self.evt_cap1_en().bit())
+            .field("evt_cap2_en", &self.evt_cap2_en().bit())
             .finish()
     }
 }
@@ -581,10 +509,6 @@ impl crate::Readable for EVT_EN_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`evt_en::W`](W) writer structure"]
 impl crate::Writable for EVT_EN_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets EVT_EN to value 0"]
-impl crate::Resettable for EVT_EN_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for EVT_EN_SPEC {}

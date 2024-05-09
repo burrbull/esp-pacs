@@ -13,10 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("DMA_IN_ERR_EOF_DES_ADDR")
-            .field(
-                "in_err_eof_des_addr",
-                &format_args!("{}", self.in_err_eof_des_addr().bits()),
-            )
+            .field("in_err_eof_des_addr", &self.in_err_eof_des_addr().bits())
             .finish()
     }
 }
@@ -34,6 +31,4 @@ impl crate::RegisterSpec for DMA_IN_ERR_EOF_DES_ADDR_SPEC {
 #[doc = "`read()` method returns [`dma_in_err_eof_des_addr::R`](R) reader structure"]
 impl crate::Readable for DMA_IN_ERR_EOF_DES_ADDR_SPEC {}
 #[doc = "`reset()` method sets DMA_IN_ERR_EOF_DES_ADDR to value 0"]
-impl crate::Resettable for DMA_IN_ERR_EOF_DES_ADDR_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for DMA_IN_ERR_EOF_DES_ADDR_SPEC {}

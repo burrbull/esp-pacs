@@ -42,10 +42,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("LOCK_CTRL")
-            .field("lock_ena", &format_args!("{}", self.lock_ena().bit()))
-            .field("unlock_ena", &format_args!("{}", self.unlock_ena().bit()))
-            .field("lock_done", &format_args!("{}", self.lock_done().bit()))
-            .field("lock_rgid", &format_args!("{}", self.lock_rgid().bits()))
+            .field("lock_ena", &self.lock_ena().bit())
+            .field("unlock_ena", &self.unlock_ena().bit())
+            .field("lock_done", &self.lock_done().bit())
+            .field("lock_rgid", &self.lock_rgid().bits())
             .finish()
     }
 }
@@ -85,8 +85,6 @@ impl crate::Readable for LOCK_CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`lock_ctrl::W`](W) writer structure"]
 impl crate::Writable for LOCK_CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets LOCK_CTRL to value 0x04"]
 impl crate::Resettable for LOCK_CTRL_SPEC {

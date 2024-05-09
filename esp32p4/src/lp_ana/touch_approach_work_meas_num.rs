@@ -37,15 +37,15 @@ impl core::fmt::Debug for R {
         f.debug_struct("TOUCH_APPROACH_WORK_MEAS_NUM")
             .field(
                 "touch_approach_meas_num2",
-                &format_args!("{}", self.touch_approach_meas_num2().bits()),
+                &self.touch_approach_meas_num2().bits(),
             )
             .field(
                 "touch_approach_meas_num1",
-                &format_args!("{}", self.touch_approach_meas_num1().bits()),
+                &self.touch_approach_meas_num1().bits(),
             )
             .field(
                 "touch_approach_meas_num0",
-                &format_args!("{}", self.touch_approach_meas_num0().bits()),
+                &self.touch_approach_meas_num0().bits(),
             )
             .finish()
     }
@@ -92,8 +92,6 @@ impl crate::Readable for TOUCH_APPROACH_WORK_MEAS_NUM_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`touch_approach_work_meas_num::W`](W) writer structure"]
 impl crate::Writable for TOUCH_APPROACH_WORK_MEAS_NUM_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets TOUCH_APPROACH_WORK_MEAS_NUM to value 0x0641_9064"]
 impl crate::Resettable for TOUCH_APPROACH_WORK_MEAS_NUM_SPEC {

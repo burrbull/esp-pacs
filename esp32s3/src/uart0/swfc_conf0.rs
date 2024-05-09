@@ -26,11 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SWFC_CONF0")
-            .field(
-                "xoff_threshold",
-                &format_args!("{}", self.xoff_threshold().bits()),
-            )
-            .field("xoff_char", &format_args!("{}", self.xoff_char().bits()))
+            .field("xoff_threshold", &self.xoff_threshold().bits())
+            .field("xoff_char", &self.xoff_char().bits())
             .finish()
     }
 }
@@ -64,8 +61,6 @@ impl crate::Readable for SWFC_CONF0_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`swfc_conf0::W`](W) writer structure"]
 impl crate::Writable for SWFC_CONF0_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SWFC_CONF0 to value 0x4ce0"]
 impl crate::Resettable for SWFC_CONF0_SPEC {

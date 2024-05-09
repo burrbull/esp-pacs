@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SHROM_MPU_TABLE22")
-            .field(
-                "shrom_mpu_table22",
-                &format_args!("{}", self.shrom_mpu_table22().bits()),
-            )
+            .field("shrom_mpu_table22", &self.shrom_mpu_table22().bits())
             .finish()
     }
 }
@@ -48,8 +45,6 @@ impl crate::Readable for SHROM_MPU_TABLE22_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`shrom_mpu_table22::W`](W) writer structure"]
 impl crate::Writable for SHROM_MPU_TABLE22_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SHROM_MPU_TABLE22 to value 0x01"]
 impl crate::Resettable for SHROM_MPU_TABLE22_SPEC {

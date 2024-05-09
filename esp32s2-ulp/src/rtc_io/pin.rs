@@ -35,17 +35,11 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PIN")
-            .field(
-                "gpio_pin_pad_driver",
-                &format_args!("{}", self.gpio_pin_pad_driver().bit()),
-            )
-            .field(
-                "gpio_pin_int_type",
-                &format_args!("{}", self.gpio_pin_int_type().bits()),
-            )
+            .field("gpio_pin_pad_driver", &self.gpio_pin_pad_driver().bit())
+            .field("gpio_pin_int_type", &self.gpio_pin_int_type().bits())
             .field(
                 "gpio_pin_wakeup_enable",
-                &format_args!("{}", self.gpio_pin_wakeup_enable().bit()),
+                &self.gpio_pin_wakeup_enable().bit(),
             )
             .finish()
     }
@@ -86,10 +80,6 @@ impl crate::Readable for PIN_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`pin::W`](W) writer structure"]
 impl crate::Writable for PIN_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets PIN%s to value 0"]
-impl crate::Resettable for PIN_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for PIN_SPEC {}

@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("BACKUP_CFG")
-            .field(
-                "backup_sys_clk_no_div",
-                &format_args!("{}", self.backup_sys_clk_no_div().bit()),
-            )
+            .field("backup_sys_clk_no_div", &self.backup_sys_clk_no_div().bit())
             .finish()
     }
 }
@@ -48,8 +45,6 @@ impl crate::Readable for BACKUP_CFG_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`backup_cfg::W`](W) writer structure"]
 impl crate::Writable for BACKUP_CFG_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets BACKUP_CFG to value 0x8000_0000"]
 impl crate::Resettable for BACKUP_CFG_SPEC {

@@ -116,18 +116,18 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("GEN")
-            .field("utez", &format_args!("{}", self.utez().bits()))
-            .field("utep", &format_args!("{}", self.utep().bits()))
-            .field("utea", &format_args!("{}", self.utea().bits()))
-            .field("uteb", &format_args!("{}", self.uteb().bits()))
-            .field("ut0", &format_args!("{}", self.ut0().bits()))
-            .field("ut1", &format_args!("{}", self.ut1().bits()))
-            .field("dtez", &format_args!("{}", self.dtez().bits()))
-            .field("dtep", &format_args!("{}", self.dtep().bits()))
-            .field("dtea", &format_args!("{}", self.dtea().bits()))
-            .field("dteb", &format_args!("{}", self.dteb().bits()))
-            .field("dt0", &format_args!("{}", self.dt0().bits()))
-            .field("dt1", &format_args!("{}", self.dt1().bits()))
+            .field("utez", &self.utez().bits())
+            .field("utep", &self.utep().bits())
+            .field("utea", &self.utea().bits())
+            .field("uteb", &self.uteb().bits())
+            .field("ut0", &self.ut0().bits())
+            .field("ut1", &self.ut1().bits())
+            .field("dtez", &self.dtez().bits())
+            .field("dtep", &self.dtep().bits())
+            .field("dtea", &self.dtea().bits())
+            .field("dteb", &self.dteb().bits())
+            .field("dt0", &self.dt0().bits())
+            .field("dt1", &self.dt1().bits())
             .finish()
     }
 }
@@ -221,10 +221,6 @@ impl crate::Readable for GEN_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`gen::W`](W) writer structure"]
 impl crate::Writable for GEN_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets GEN%s to value 0"]
-impl crate::Resettable for GEN_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for GEN_SPEC {}

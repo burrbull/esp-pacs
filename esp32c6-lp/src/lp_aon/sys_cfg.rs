@@ -19,10 +19,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SYS_CFG")
-            .field(
-                "force_download_boot",
-                &format_args!("{}", self.force_download_boot().bit()),
-            )
+            .field("force_download_boot", &self.force_download_boot().bit())
             .finish()
     }
 }
@@ -56,10 +53,6 @@ impl crate::Readable for SYS_CFG_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`sys_cfg::W`](W) writer structure"]
 impl crate::Writable for SYS_CFG_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SYS_CFG to value 0"]
-impl crate::Resettable for SYS_CFG_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for SYS_CFG_SPEC {}

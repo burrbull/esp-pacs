@@ -60,24 +60,12 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CPUSDIO_INT1")
-            .field("sdio_int_h", &format_args!("{}", self.sdio_int_h().bits()))
-            .field(
-                "pin_pad_driver",
-                &format_args!("{}", self.pin_pad_driver().bit()),
-            )
-            .field(
-                "pin_int_type",
-                &format_args!("{}", self.pin_int_type().bits()),
-            )
-            .field(
-                "pin_wakeup_enable",
-                &format_args!("{}", self.pin_wakeup_enable().bit()),
-            )
-            .field("pin_config", &format_args!("{}", self.pin_config().bits()))
-            .field(
-                "pin_int_ena",
-                &format_args!("{}", self.pin_int_ena().bits()),
-            )
+            .field("sdio_int_h", &self.sdio_int_h().bits())
+            .field("pin_pad_driver", &self.pin_pad_driver().bit())
+            .field("pin_int_type", &self.pin_int_type().bits())
+            .field("pin_wakeup_enable", &self.pin_wakeup_enable().bit())
+            .field("pin_config", &self.pin_config().bits())
+            .field("pin_int_ena", &self.pin_int_ena().bits())
             .finish()
     }
 }
@@ -129,10 +117,6 @@ impl crate::Readable for CPUSDIO_INT1_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`cpusdio_int1::W`](W) writer structure"]
 impl crate::Writable for CPUSDIO_INT1_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CPUSDIO_INT1 to value 0"]
-impl crate::Resettable for CPUSDIO_INT1_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for CPUSDIO_INT1_SPEC {}

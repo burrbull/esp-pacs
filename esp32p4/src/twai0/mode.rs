@@ -44,18 +44,12 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("MODE")
-            .field("reset_mode", &format_args!("{}", self.reset_mode().bit()))
-            .field(
-                "listen_only_mode",
-                &format_args!("{}", self.listen_only_mode().bit()),
-            )
-            .field(
-                "self_test_mode",
-                &format_args!("{}", self.self_test_mode().bit()),
-            )
+            .field("reset_mode", &self.reset_mode().bit())
+            .field("listen_only_mode", &self.listen_only_mode().bit())
+            .field("self_test_mode", &self.self_test_mode().bit())
             .field(
                 "acceptance_filter_mode",
-                &format_args!("{}", self.acceptance_filter_mode().bit()),
+                &self.acceptance_filter_mode().bit(),
             )
             .finish()
     }
@@ -102,8 +96,6 @@ impl crate::Readable for MODE_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`mode::W`](W) writer structure"]
 impl crate::Writable for MODE_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets MODE to value 0x01"]
 impl crate::Resettable for MODE_SPEC {

@@ -17,7 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("TX_INST_CFG1")
-            .field("tx_inst", &format_args!("{}", self.tx_inst().bits()))
+            .field("tx_inst", &self.tx_inst().bits())
             .finish()
     }
 }
@@ -45,8 +45,6 @@ impl crate::Readable for TX_INST_CFG1_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`tx_inst_cfg1::W`](W) writer structure"]
 impl crate::Writable for TX_INST_CFG1_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets TX_INST_CFG1 to value 0x04"]
 impl crate::Resettable for TX_INST_CFG1_SPEC {

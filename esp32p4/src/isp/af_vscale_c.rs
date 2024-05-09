@@ -26,14 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("AF_VSCALE_C")
-            .field(
-                "af_bpoint_c",
-                &format_args!("{}", self.af_bpoint_c().bits()),
-            )
-            .field(
-                "af_tpoint_c",
-                &format_args!("{}", self.af_tpoint_c().bits()),
-            )
+            .field("af_bpoint_c", &self.af_bpoint_c().bits())
+            .field("af_tpoint_c", &self.af_tpoint_c().bits())
             .finish()
     }
 }
@@ -67,8 +61,6 @@ impl crate::Readable for AF_VSCALE_C_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`af_vscale_c::W`](W) writer structure"]
 impl crate::Writable for AF_VSCALE_C_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets AF_VSCALE_C to value 0x0001_0080"]
 impl crate::Resettable for AF_VSCALE_C_SPEC {

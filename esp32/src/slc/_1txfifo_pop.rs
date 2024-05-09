@@ -24,14 +24,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("_1TXFIFO_POP")
-            .field(
-                "slc1_txfifo_rdata",
-                &format_args!("{}", self.slc1_txfifo_rdata().bits()),
-            )
-            .field(
-                "slc1_txfifo_pop",
-                &format_args!("{}", self.slc1_txfifo_pop().bit()),
-            )
+            .field("slc1_txfifo_rdata", &self.slc1_txfifo_rdata().bits())
+            .field("slc1_txfifo_pop", &self.slc1_txfifo_pop().bit())
             .finish()
     }
 }
@@ -59,10 +53,6 @@ impl crate::Readable for _1TXFIFO_POP_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`_1txfifo_pop::W`](W) writer structure"]
 impl crate::Writable for _1TXFIFO_POP_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets _1TXFIFO_POP to value 0"]
-impl crate::Resettable for _1TXFIFO_POP_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for _1TXFIFO_POP_SPEC {}

@@ -48,18 +48,12 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("ST")
-            .field("out_done", &format_args!("{}", self.out_done().bit()))
-            .field("out_eof", &format_args!("{}", self.out_eof().bit()))
-            .field(
-                "out_dscr_err",
-                &format_args!("{}", self.out_dscr_err().bit()),
-            )
-            .field(
-                "out_total_eof",
-                &format_args!("{}", self.out_total_eof().bit()),
-            )
-            .field("outfifo_ovf", &format_args!("{}", self.outfifo_ovf().bit()))
-            .field("outfifo_udf", &format_args!("{}", self.outfifo_udf().bit()))
+            .field("out_done", &self.out_done().bit())
+            .field("out_eof", &self.out_eof().bit())
+            .field("out_dscr_err", &self.out_dscr_err().bit())
+            .field("out_total_eof", &self.out_total_eof().bit())
+            .field("outfifo_ovf", &self.outfifo_ovf().bit())
+            .field("outfifo_udf", &self.outfifo_udf().bit())
             .finish()
     }
 }
@@ -77,6 +71,4 @@ impl crate::RegisterSpec for ST_SPEC {
 #[doc = "`read()` method returns [`st::R`](R) reader structure"]
 impl crate::Readable for ST_SPEC {}
 #[doc = "`reset()` method sets ST to value 0"]
-impl crate::Resettable for ST_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for ST_SPEC {}

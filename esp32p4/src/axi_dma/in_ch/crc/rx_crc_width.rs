@@ -26,14 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("RX_CRC_WIDTH")
-            .field(
-                "rx_crc_width",
-                &format_args!("{}", self.rx_crc_width().bits()),
-            )
-            .field(
-                "rx_crc_lautch_flga",
-                &format_args!("{}", self.rx_crc_lautch_flga().bit()),
-            )
+            .field("rx_crc_width", &self.rx_crc_width().bits())
+            .field("rx_crc_lautch_flga", &self.rx_crc_lautch_flga().bit())
             .finish()
     }
 }
@@ -67,10 +61,6 @@ impl crate::Readable for RX_CRC_WIDTH_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`rx_crc_width::W`](W) writer structure"]
 impl crate::Writable for RX_CRC_WIDTH_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets RX_CRC_WIDTH to value 0"]
-impl crate::Resettable for RX_CRC_WIDTH_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for RX_CRC_WIDTH_SPEC {}

@@ -26,14 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("POWER_PD_TOP_MASK")
-            .field(
-                "xpd_top_mask",
-                &format_args!("{}", self.xpd_top_mask().bits()),
-            )
-            .field(
-                "pd_top_mask",
-                &format_args!("{}", self.pd_top_mask().bits()),
-            )
+            .field("xpd_top_mask", &self.xpd_top_mask().bits())
+            .field("pd_top_mask", &self.pd_top_mask().bits())
             .finish()
     }
 }
@@ -67,10 +61,6 @@ impl crate::Readable for POWER_PD_TOP_MASK_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`power_pd_top_mask::W`](W) writer structure"]
 impl crate::Writable for POWER_PD_TOP_MASK_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets POWER_PD_TOP_MASK to value 0"]
-impl crate::Resettable for POWER_PD_TOP_MASK_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for POWER_PD_TOP_MASK_SPEC {}

@@ -35,18 +35,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("TOUCH_WORK_MEAS_NUM")
-            .field(
-                "touch_meas_num2",
-                &format_args!("{}", self.touch_meas_num2().bits()),
-            )
-            .field(
-                "touch_meas_num1",
-                &format_args!("{}", self.touch_meas_num1().bits()),
-            )
-            .field(
-                "touch_meas_num0",
-                &format_args!("{}", self.touch_meas_num0().bits()),
-            )
+            .field("touch_meas_num2", &self.touch_meas_num2().bits())
+            .field("touch_meas_num1", &self.touch_meas_num1().bits())
+            .field("touch_meas_num0", &self.touch_meas_num0().bits())
             .finish()
     }
 }
@@ -86,8 +77,6 @@ impl crate::Readable for TOUCH_WORK_MEAS_NUM_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`touch_work_meas_num::W`](W) writer structure"]
 impl crate::Writable for TOUCH_WORK_MEAS_NUM_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets TOUCH_WORK_MEAS_NUM to value 0x0641_9064"]
 impl crate::Resettable for TOUCH_WORK_MEAS_NUM_SPEC {

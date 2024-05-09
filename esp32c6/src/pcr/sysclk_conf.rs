@@ -38,16 +38,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SYSCLK_CONF")
-            .field("ls_div_num", &format_args!("{}", self.ls_div_num().bits()))
-            .field("hs_div_num", &format_args!("{}", self.hs_div_num().bits()))
-            .field(
-                "soc_clk_sel",
-                &format_args!("{}", self.soc_clk_sel().bits()),
-            )
-            .field(
-                "clk_xtal_freq",
-                &format_args!("{}", self.clk_xtal_freq().bits()),
-            )
+            .field("ls_div_num", &self.ls_div_num().bits())
+            .field("hs_div_num", &self.hs_div_num().bits())
+            .field("soc_clk_sel", &self.soc_clk_sel().bits())
+            .field("clk_xtal_freq", &self.clk_xtal_freq().bits())
             .finish()
     }
 }
@@ -75,8 +69,6 @@ impl crate::Readable for SYSCLK_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`sysclk_conf::W`](W) writer structure"]
 impl crate::Writable for SYSCLK_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SYSCLK_CONF to value 0x2800_0200"]
 impl crate::Resettable for SYSCLK_CONF_SPEC {

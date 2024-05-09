@@ -28,11 +28,11 @@ impl core::fmt::Debug for R {
         f.debug_struct("L1_ICACHE0_PRELOCK_SCT_SIZE")
             .field(
                 "l1_icache0_prelock_sct0_size",
-                &format_args!("{}", self.l1_icache0_prelock_sct0_size().bits()),
+                &self.l1_icache0_prelock_sct0_size().bits(),
             )
             .field(
                 "l1_icache0_prelock_sct1_size",
-                &format_args!("{}", self.l1_icache0_prelock_sct1_size().bits()),
+                &self.l1_icache0_prelock_sct1_size().bits(),
             )
             .finish()
     }
@@ -71,8 +71,6 @@ impl crate::Readable for L1_ICACHE0_PRELOCK_SCT_SIZE_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`l1_icache0_prelock_sct_size::W`](W) writer structure"]
 impl crate::Writable for L1_ICACHE0_PRELOCK_SCT_SIZE_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets L1_ICACHE0_PRELOCK_SCT_SIZE to value 0x3fff_3fff"]
 impl crate::Resettable for L1_ICACHE0_PRELOCK_SCT_SIZE_SPEC {

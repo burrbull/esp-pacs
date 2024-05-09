@@ -13,10 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("_1_RXLINK_DSCR")
-            .field(
-                "slc1_rxlink_dscr",
-                &format_args!("{}", self.slc1_rxlink_dscr().bits()),
-            )
+            .field("slc1_rxlink_dscr", &self.slc1_rxlink_dscr().bits())
             .finish()
     }
 }
@@ -34,6 +31,4 @@ impl crate::RegisterSpec for _1_RXLINK_DSCR_SPEC {
 #[doc = "`read()` method returns [`_1_rxlink_dscr::R`](R) reader structure"]
 impl crate::Readable for _1_RXLINK_DSCR_SPEC {}
 #[doc = "`reset()` method sets _1_RXLINK_DSCR to value 0"]
-impl crate::Resettable for _1_RXLINK_DSCR_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for _1_RXLINK_DSCR_SPEC {}

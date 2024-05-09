@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("OCCUPY_2")
-            .field(
-                "occupy_mac_dump",
-                &format_args!("{}", self.occupy_mac_dump().bits()),
-            )
+            .field("occupy_mac_dump", &self.occupy_mac_dump().bits())
             .finish()
     }
 }
@@ -48,10 +45,6 @@ impl crate::Readable for OCCUPY_2_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`occupy_2::W`](W) writer structure"]
 impl crate::Writable for OCCUPY_2_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets OCCUPY_2 to value 0"]
-impl crate::Resettable for OCCUPY_2_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for OCCUPY_2_SPEC {}

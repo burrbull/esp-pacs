@@ -44,22 +44,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("RX_GENRL_CFG")
-            .field(
-                "rx_gating_en",
-                &format_args!("{}", self.rx_gating_en().bit()),
-            )
-            .field(
-                "rx_timeout_thres",
-                &format_args!("{}", self.rx_timeout_thres().bits()),
-            )
-            .field(
-                "rx_timeout_en",
-                &format_args!("{}", self.rx_timeout_en().bit()),
-            )
-            .field(
-                "rx_eof_gen_sel",
-                &format_args!("{}", self.rx_eof_gen_sel().bit()),
-            )
+            .field("rx_gating_en", &self.rx_gating_en().bit())
+            .field("rx_timeout_thres", &self.rx_timeout_thres().bits())
+            .field("rx_timeout_en", &self.rx_timeout_en().bit())
+            .field("rx_eof_gen_sel", &self.rx_eof_gen_sel().bit())
             .finish()
     }
 }
@@ -105,8 +93,6 @@ impl crate::Readable for RX_GENRL_CFG_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`rx_genrl_cfg::W`](W) writer structure"]
 impl crate::Writable for RX_GENRL_CFG_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets RX_GENRL_CFG to value 0x21ff_e000"]
 impl crate::Resettable for RX_GENRL_CFG_SPEC {

@@ -116,30 +116,18 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("DB_CFG")
-            .field(
-                "fed_upmethod",
-                &format_args!("{}", self.fed_upmethod().bits()),
-            )
-            .field(
-                "red_upmethod",
-                &format_args!("{}", self.red_upmethod().bits()),
-            )
-            .field("deb_mode", &format_args!("{}", self.deb_mode().bit()))
-            .field("a_outswap", &format_args!("{}", self.a_outswap().bit()))
-            .field("b_outswap", &format_args!("{}", self.b_outswap().bit()))
-            .field("red_insel", &format_args!("{}", self.red_insel().bit()))
-            .field("fed_insel", &format_args!("{}", self.fed_insel().bit()))
-            .field(
-                "red_outinvert",
-                &format_args!("{}", self.red_outinvert().bit()),
-            )
-            .field(
-                "fed_outinvert",
-                &format_args!("{}", self.fed_outinvert().bit()),
-            )
-            .field("a_outbypass", &format_args!("{}", self.a_outbypass().bit()))
-            .field("b_outbypass", &format_args!("{}", self.b_outbypass().bit()))
-            .field("clk_sel", &format_args!("{}", self.clk_sel().bit()))
+            .field("fed_upmethod", &self.fed_upmethod().bits())
+            .field("red_upmethod", &self.red_upmethod().bits())
+            .field("deb_mode", &self.deb_mode().bit())
+            .field("a_outswap", &self.a_outswap().bit())
+            .field("b_outswap", &self.b_outswap().bit())
+            .field("red_insel", &self.red_insel().bit())
+            .field("fed_insel", &self.fed_insel().bit())
+            .field("red_outinvert", &self.red_outinvert().bit())
+            .field("fed_outinvert", &self.fed_outinvert().bit())
+            .field("a_outbypass", &self.a_outbypass().bit())
+            .field("b_outbypass", &self.b_outbypass().bit())
+            .field("clk_sel", &self.clk_sel().bit())
             .finish()
     }
 }
@@ -233,8 +221,6 @@ impl crate::Readable for DB_CFG_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`db_cfg::W`](W) writer structure"]
 impl crate::Writable for DB_CFG_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets DB_CFG to value 0x0001_8000"]
 impl crate::Resettable for DB_CFG_SPEC {

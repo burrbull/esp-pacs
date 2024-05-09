@@ -107,47 +107,47 @@ impl core::fmt::Debug for R {
         f.debug_struct("PRO_CPU_RECORD_PDEBUGLS0STAT")
             .field(
                 "record_pro_pdebugls0stat",
-                &format_args!("{}", self.record_pro_pdebugls0stat().bits()),
+                &self.record_pro_pdebugls0stat().bits(),
             )
             .field(
                 "record_pdebugls0stat_type",
-                &format_args!("{}", self.record_pdebugls0stat_type().bits()),
+                &self.record_pdebugls0stat_type().bits(),
             )
             .field(
                 "record_pdebugls0stat_sz",
-                &format_args!("{}", self.record_pdebugls0stat_sz().bits()),
+                &self.record_pdebugls0stat_sz().bits(),
             )
             .field(
                 "record_pdebugls0stat_dtlbm",
-                &format_args!("{}", self.record_pdebugls0stat_dtlbm().bit()),
+                &self.record_pdebugls0stat_dtlbm().bit(),
             )
             .field(
                 "record_pdebugls0stat_dcm",
-                &format_args!("{}", self.record_pdebugls0stat_dcm().bit()),
+                &self.record_pdebugls0stat_dcm().bit(),
             )
             .field(
                 "record_pdebugls0stat_dch",
-                &format_args!("{}", self.record_pdebugls0stat_dch().bit()),
+                &self.record_pdebugls0stat_dch().bit(),
             )
             .field(
                 "record_pdebugls0stat_uc",
-                &format_args!("{}", self.record_pdebugls0stat_uc().bit()),
+                &self.record_pdebugls0stat_uc().bit(),
             )
             .field(
                 "record_pdebugls0stat_wb",
-                &format_args!("{}", self.record_pdebugls0stat_wb().bit()),
+                &self.record_pdebugls0stat_wb().bit(),
             )
             .field(
                 "record_pdebugls0stat_coh",
-                &format_args!("{}", self.record_pdebugls0stat_coh().bit()),
+                &self.record_pdebugls0stat_coh().bit(),
             )
             .field(
                 "record_pdebugls0stat_stcoh",
-                &format_args!("{}", self.record_pdebugls0stat_stcoh().bits()),
+                &self.record_pdebugls0stat_stcoh().bits(),
             )
             .field(
                 "record_pdebugls0stat_tgt",
-                &format_args!("{}", self.record_pdebugls0stat_tgt().bits()),
+                &self.record_pdebugls0stat_tgt().bits(),
             )
             .finish()
     }
@@ -250,10 +250,6 @@ impl crate::Readable for PRO_CPU_RECORD_PDEBUGLS0STAT_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`pro_cpu_record_pdebugls0stat::W`](W) writer structure"]
 impl crate::Writable for PRO_CPU_RECORD_PDEBUGLS0STAT_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets PRO_CPU_RECORD_PDEBUGLS0STAT to value 0"]
-impl crate::Resettable for PRO_CPU_RECORD_PDEBUGLS0STAT_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for PRO_CPU_RECORD_PDEBUGLS0STAT_SPEC {}

@@ -35,18 +35,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("VID_SHADOW_CTRL")
-            .field(
-                "vid_shadow_en",
-                &format_args!("{}", self.vid_shadow_en().bit()),
-            )
-            .field(
-                "vid_shadow_req",
-                &format_args!("{}", self.vid_shadow_req().bit()),
-            )
-            .field(
-                "vid_shadow_pin_req",
-                &format_args!("{}", self.vid_shadow_pin_req().bit()),
-            )
+            .field("vid_shadow_en", &self.vid_shadow_en().bit())
+            .field("vid_shadow_req", &self.vid_shadow_req().bit())
+            .field("vid_shadow_pin_req", &self.vid_shadow_pin_req().bit())
             .finish()
     }
 }
@@ -86,10 +77,6 @@ impl crate::Readable for VID_SHADOW_CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`vid_shadow_ctrl::W`](W) writer structure"]
 impl crate::Writable for VID_SHADOW_CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets VID_SHADOW_CTRL to value 0"]
-impl crate::Resettable for VID_SHADOW_CTRL_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for VID_SHADOW_CTRL_SPEC {}

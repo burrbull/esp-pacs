@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SENSITIVE_REG_DATE")
-            .field(
-                "sensitive_reg_date",
-                &format_args!("{}", self.sensitive_reg_date().bits()),
-            )
+            .field("sensitive_reg_date", &self.sensitive_reg_date().bits())
             .finish()
     }
 }
@@ -48,8 +45,6 @@ impl crate::Readable for SENSITIVE_REG_DATE_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`sensitive_reg_date::W`](W) writer structure"]
 impl crate::Writable for SENSITIVE_REG_DATE_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SENSITIVE_REG_DATE to value 0x0210_6301"]
 impl crate::Resettable for SENSITIVE_REG_DATE_SPEC {

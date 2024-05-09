@@ -28,11 +28,11 @@ impl core::fmt::Debug for R {
         f.debug_struct("CONF2")
             .field(
                 "block_row_length_12line",
-                &format_args!("{}", self.block_row_length_12line().bits()),
+                &self.block_row_length_12line().bits(),
             )
             .field(
                 "block_row_length_4line",
-                &format_args!("{}", self.block_row_length_4line().bits()),
+                &self.block_row_length_4line().bits(),
             )
             .finish()
     }
@@ -67,8 +67,6 @@ impl crate::Readable for CONF2_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`conf2::W`](W) writer structure"]
 impl crate::Writable for CONF2_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CONF2 to value 0x3c00_7800"]
 impl crate::Resettable for CONF2_SPEC {

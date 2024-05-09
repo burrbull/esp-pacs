@@ -44,22 +44,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("HIST_WEIGHT0")
-            .field(
-                "hist_weight_03",
-                &format_args!("{}", self.hist_weight_03().bits()),
-            )
-            .field(
-                "hist_weight_02",
-                &format_args!("{}", self.hist_weight_02().bits()),
-            )
-            .field(
-                "hist_weight_01",
-                &format_args!("{}", self.hist_weight_01().bits()),
-            )
-            .field(
-                "hist_weight_00",
-                &format_args!("{}", self.hist_weight_00().bits()),
-            )
+            .field("hist_weight_03", &self.hist_weight_03().bits())
+            .field("hist_weight_02", &self.hist_weight_02().bits())
+            .field("hist_weight_01", &self.hist_weight_01().bits())
+            .field("hist_weight_00", &self.hist_weight_00().bits())
             .finish()
     }
 }
@@ -105,8 +93,6 @@ impl crate::Readable for HIST_WEIGHT0_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`hist_weight0::W`](W) writer structure"]
 impl crate::Writable for HIST_WEIGHT0_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets HIST_WEIGHT0 to value 0x0101_0101"]
 impl crate::Resettable for HIST_WEIGHT0_SPEC {

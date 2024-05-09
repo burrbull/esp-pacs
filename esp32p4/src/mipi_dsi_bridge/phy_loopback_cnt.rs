@@ -26,14 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PHY_LOOPBACK_CNT")
-            .field(
-                "phy_hs_check_cnt_th",
-                &format_args!("{}", self.phy_hs_check_cnt_th().bits()),
-            )
-            .field(
-                "phy_lp_check_cnt_th",
-                &format_args!("{}", self.phy_lp_check_cnt_th().bits()),
-            )
+            .field("phy_hs_check_cnt_th", &self.phy_hs_check_cnt_th().bits())
+            .field("phy_lp_check_cnt_th", &self.phy_lp_check_cnt_th().bits())
             .finish()
     }
 }
@@ -67,8 +61,6 @@ impl crate::Readable for PHY_LOOPBACK_CNT_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`phy_loopback_cnt::W`](W) writer structure"]
 impl crate::Writable for PHY_LOOPBACK_CNT_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets PHY_LOOPBACK_CNT to value 0x0040_0040"]
 impl crate::Resettable for PHY_LOOPBACK_CNT_SPEC {

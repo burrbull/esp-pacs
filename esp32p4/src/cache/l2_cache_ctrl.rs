@@ -26,14 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("L2_CACHE_CTRL")
-            .field(
-                "l2_cache_shut_dma",
-                &format_args!("{}", self.l2_cache_shut_dma().bit()),
-            )
-            .field(
-                "l2_cache_undef_op",
-                &format_args!("{}", self.l2_cache_undef_op().bits()),
-            )
+            .field("l2_cache_shut_dma", &self.l2_cache_shut_dma().bit())
+            .field("l2_cache_undef_op", &self.l2_cache_undef_op().bits())
             .finish()
     }
 }
@@ -67,8 +61,6 @@ impl crate::Readable for L2_CACHE_CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`l2_cache_ctrl::W`](W) writer structure"]
 impl crate::Writable for L2_CACHE_CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets L2_CACHE_CTRL to value 0x10"]
 impl crate::Resettable for L2_CACHE_CTRL_SPEC {

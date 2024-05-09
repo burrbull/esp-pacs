@@ -13,10 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("OUTLINK_DSCR")
-            .field(
-                "dma_outlink_dscr",
-                &format_args!("{}", self.dma_outlink_dscr().bits()),
-            )
+            .field("dma_outlink_dscr", &self.dma_outlink_dscr().bits())
             .finish()
     }
 }
@@ -34,6 +31,4 @@ impl crate::RegisterSpec for OUTLINK_DSCR_SPEC {
 #[doc = "`read()` method returns [`outlink_dscr::R`](R) reader structure"]
 impl crate::Readable for OUTLINK_DSCR_SPEC {}
 #[doc = "`reset()` method sets OUTLINK_DSCR to value 0"]
-impl crate::Resettable for OUTLINK_DSCR_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for OUTLINK_DSCR_SPEC {}

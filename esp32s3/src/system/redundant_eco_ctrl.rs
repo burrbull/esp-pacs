@@ -24,14 +24,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("REDUNDANT_ECO_CTRL")
-            .field(
-                "redundant_eco_drive",
-                &format_args!("{}", self.redundant_eco_drive().bit()),
-            )
-            .field(
-                "redundant_eco_result",
-                &format_args!("{}", self.redundant_eco_result().bit()),
-            )
+            .field("redundant_eco_drive", &self.redundant_eco_drive().bit())
+            .field("redundant_eco_result", &self.redundant_eco_result().bit())
             .finish()
     }
 }
@@ -59,10 +53,6 @@ impl crate::Readable for REDUNDANT_ECO_CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`redundant_eco_ctrl::W`](W) writer structure"]
 impl crate::Writable for REDUNDANT_ECO_CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets REDUNDANT_ECO_CTRL to value 0"]
-impl crate::Resettable for REDUNDANT_ECO_CTRL_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for REDUNDANT_ECO_CTRL_SPEC {}

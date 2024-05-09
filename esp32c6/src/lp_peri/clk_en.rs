@@ -89,33 +89,15 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CLK_EN")
-            .field(
-                "lp_touch_ck_en",
-                &format_args!("{}", self.lp_touch_ck_en().bit()),
-            )
-            .field("rng_ck_en", &format_args!("{}", self.rng_ck_en().bit()))
-            .field(
-                "otp_dbg_ck_en",
-                &format_args!("{}", self.otp_dbg_ck_en().bit()),
-            )
-            .field(
-                "lp_uart_ck_en",
-                &format_args!("{}", self.lp_uart_ck_en().bit()),
-            )
-            .field("lp_io_ck_en", &format_args!("{}", self.lp_io_ck_en().bit()))
-            .field(
-                "lp_ext_i2c_ck_en",
-                &format_args!("{}", self.lp_ext_i2c_ck_en().bit()),
-            )
-            .field(
-                "lp_ana_i2c_ck_en",
-                &format_args!("{}", self.lp_ana_i2c_ck_en().bit()),
-            )
-            .field("efuse_ck_en", &format_args!("{}", self.efuse_ck_en().bit()))
-            .field(
-                "lp_cpu_ck_en",
-                &format_args!("{}", self.lp_cpu_ck_en().bit()),
-            )
+            .field("lp_touch_ck_en", &self.lp_touch_ck_en().bit())
+            .field("rng_ck_en", &self.rng_ck_en().bit())
+            .field("otp_dbg_ck_en", &self.otp_dbg_ck_en().bit())
+            .field("lp_uart_ck_en", &self.lp_uart_ck_en().bit())
+            .field("lp_io_ck_en", &self.lp_io_ck_en().bit())
+            .field("lp_ext_i2c_ck_en", &self.lp_ext_i2c_ck_en().bit())
+            .field("lp_ana_i2c_ck_en", &self.lp_ana_i2c_ck_en().bit())
+            .field("efuse_ck_en", &self.efuse_ck_en().bit())
+            .field("lp_cpu_ck_en", &self.lp_cpu_ck_en().bit())
             .finish()
     }
 }
@@ -191,8 +173,6 @@ impl crate::Readable for CLK_EN_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`clk_en::W`](W) writer structure"]
 impl crate::Writable for CLK_EN_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CLK_EN to value 0x7f80_0000"]
 impl crate::Resettable for CLK_EN_SPEC {

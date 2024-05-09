@@ -107,17 +107,17 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CTRL")
-            .field("fdummy_out", &format_args!("{}", self.fdummy_out().bit()))
-            .field("fcmd_dual", &format_args!("{}", self.fcmd_dual().bit()))
-            .field("fcmd_quad", &format_args!("{}", self.fcmd_quad().bit()))
-            .field("fastrd_mode", &format_args!("{}", self.fastrd_mode().bit()))
-            .field("fread_dual", &format_args!("{}", self.fread_dual().bit()))
-            .field("q_pol", &format_args!("{}", self.q_pol().bit()))
-            .field("d_pol", &format_args!("{}", self.d_pol().bit()))
-            .field("fread_quad", &format_args!("{}", self.fread_quad().bit()))
-            .field("wp", &format_args!("{}", self.wp().bit()))
-            .field("fread_dio", &format_args!("{}", self.fread_dio().bit()))
-            .field("fread_qio", &format_args!("{}", self.fread_qio().bit()))
+            .field("fdummy_out", &self.fdummy_out().bit())
+            .field("fcmd_dual", &self.fcmd_dual().bit())
+            .field("fcmd_quad", &self.fcmd_quad().bit())
+            .field("fastrd_mode", &self.fastrd_mode().bit())
+            .field("fread_dual", &self.fread_dual().bit())
+            .field("q_pol", &self.q_pol().bit())
+            .field("d_pol", &self.d_pol().bit())
+            .field("fread_quad", &self.fread_quad().bit())
+            .field("wp", &self.wp().bit())
+            .field("fread_dio", &self.fread_dio().bit())
+            .field("fread_qio", &self.fread_qio().bit())
             .finish()
     }
 }
@@ -205,8 +205,6 @@ impl crate::Readable for CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`ctrl::W`](W) writer structure"]
 impl crate::Writable for CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CTRL to value 0x002c_2000"]
 impl crate::Resettable for CTRL_SPEC {

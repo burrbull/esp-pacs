@@ -35,18 +35,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("TOUCH_ANA_PARA")
-            .field(
-                "touch_touch_buf_drv",
-                &format_args!("{}", self.touch_touch_buf_drv().bits()),
-            )
-            .field(
-                "touch_touch_en_cal",
-                &format_args!("{}", self.touch_touch_en_cal().bit()),
-            )
-            .field(
-                "touch_touch_dcap_cal",
-                &format_args!("{}", self.touch_touch_dcap_cal().bits()),
-            )
+            .field("touch_touch_buf_drv", &self.touch_touch_buf_drv().bits())
+            .field("touch_touch_en_cal", &self.touch_touch_en_cal().bit())
+            .field("touch_touch_dcap_cal", &self.touch_touch_dcap_cal().bits())
             .finish()
     }
 }
@@ -86,10 +77,6 @@ impl crate::Readable for TOUCH_ANA_PARA_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`touch_ana_para::W`](W) writer structure"]
 impl crate::Writable for TOUCH_ANA_PARA_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets TOUCH_ANA_PARA to value 0"]
-impl crate::Resettable for TOUCH_ANA_PARA_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for TOUCH_ANA_PARA_SPEC {}

@@ -26,14 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SCL_FILTER_CFG")
-            .field(
-                "scl_filter_thres",
-                &format_args!("{}", self.scl_filter_thres().bits()),
-            )
-            .field(
-                "scl_filter_en",
-                &format_args!("{}", self.scl_filter_en().bit()),
-            )
+            .field("scl_filter_thres", &self.scl_filter_thres().bits())
+            .field("scl_filter_en", &self.scl_filter_en().bit())
             .finish()
     }
 }
@@ -67,8 +61,6 @@ impl crate::Readable for SCL_FILTER_CFG_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`scl_filter_cfg::W`](W) writer structure"]
 impl crate::Writable for SCL_FILTER_CFG_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SCL_FILTER_CFG to value 0x08"]
 impl crate::Resettable for SCL_FILTER_CFG_SPEC {

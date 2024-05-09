@@ -44,22 +44,16 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PERI_MEM_CLK_FORCE_ON")
-            .field(
-                "rmt_mem_clk_force_on",
-                &format_args!("{}", self.rmt_mem_clk_force_on().bit()),
-            )
+            .field("rmt_mem_clk_force_on", &self.rmt_mem_clk_force_on().bit())
             .field(
                 "bitscrambler_tx_mem_clk_force_on",
-                &format_args!("{}", self.bitscrambler_tx_mem_clk_force_on().bit()),
+                &self.bitscrambler_tx_mem_clk_force_on().bit(),
             )
             .field(
                 "bitscrambler_rx_mem_clk_force_on",
-                &format_args!("{}", self.bitscrambler_rx_mem_clk_force_on().bit()),
+                &self.bitscrambler_rx_mem_clk_force_on().bit(),
             )
-            .field(
-                "gdma_mem_clk_force_on",
-                &format_args!("{}", self.gdma_mem_clk_force_on().bit()),
-            )
+            .field("gdma_mem_clk_force_on", &self.gdma_mem_clk_force_on().bit())
             .finish()
     }
 }
@@ -109,10 +103,6 @@ impl crate::Readable for PERI_MEM_CLK_FORCE_ON_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`peri_mem_clk_force_on::W`](W) writer structure"]
 impl crate::Writable for PERI_MEM_CLK_FORCE_ON_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets PERI_MEM_CLK_FORCE_ON to value 0"]
-impl crate::Resettable for PERI_MEM_CLK_FORCE_ON_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for PERI_MEM_CLK_FORCE_ON_SPEC {}

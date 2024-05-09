@@ -50,27 +50,27 @@ impl core::fmt::Debug for R {
         f.debug_struct("CORE_TIMEOUT_INT_ST")
             .field(
                 "core0_ahb_timeout_int_st",
-                &format_args!("{}", self.core0_ahb_timeout_int_st().bit()),
+                &self.core0_ahb_timeout_int_st().bit(),
             )
             .field(
                 "core1_ahb_timeout_int_st",
-                &format_args!("{}", self.core1_ahb_timeout_int_st().bit()),
+                &self.core1_ahb_timeout_int_st().bit(),
             )
             .field(
                 "core0_ibus_timeout_int_st",
-                &format_args!("{}", self.core0_ibus_timeout_int_st().bit()),
+                &self.core0_ibus_timeout_int_st().bit(),
             )
             .field(
                 "core1_ibus_timeout_int_st",
-                &format_args!("{}", self.core1_ibus_timeout_int_st().bit()),
+                &self.core1_ibus_timeout_int_st().bit(),
             )
             .field(
                 "core0_dbus_timeout_int_st",
-                &format_args!("{}", self.core0_dbus_timeout_int_st().bit()),
+                &self.core0_dbus_timeout_int_st().bit(),
             )
             .field(
                 "core1_dbus_timeout_int_st",
-                &format_args!("{}", self.core1_dbus_timeout_int_st().bit()),
+                &self.core1_dbus_timeout_int_st().bit(),
             )
             .finish()
     }
@@ -89,6 +89,4 @@ impl crate::RegisterSpec for CORE_TIMEOUT_INT_ST_SPEC {
 #[doc = "`read()` method returns [`core_timeout_int_st::R`](R) reader structure"]
 impl crate::Readable for CORE_TIMEOUT_INT_ST_SPEC {}
 #[doc = "`reset()` method sets CORE_TIMEOUT_INT_ST to value 0"]
-impl crate::Resettable for CORE_TIMEOUT_INT_ST_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for CORE_TIMEOUT_INT_ST_SPEC {}

@@ -44,22 +44,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CACHE_TAG_ACCESS_1")
-            .field(
-                "pro_i_tag_rd_acs",
-                &format_args!("{}", self.pro_i_tag_rd_acs().bit()),
-            )
-            .field(
-                "pro_i_tag_wr_acs",
-                &format_args!("{}", self.pro_i_tag_wr_acs().bit()),
-            )
-            .field(
-                "pro_d_tag_rd_acs",
-                &format_args!("{}", self.pro_d_tag_rd_acs().bit()),
-            )
-            .field(
-                "pro_d_tag_wr_acs",
-                &format_args!("{}", self.pro_d_tag_wr_acs().bit()),
-            )
+            .field("pro_i_tag_rd_acs", &self.pro_i_tag_rd_acs().bit())
+            .field("pro_i_tag_wr_acs", &self.pro_i_tag_wr_acs().bit())
+            .field("pro_d_tag_rd_acs", &self.pro_d_tag_rd_acs().bit())
+            .field("pro_d_tag_wr_acs", &self.pro_d_tag_wr_acs().bit())
             .finish()
     }
 }
@@ -105,8 +93,6 @@ impl crate::Readable for CACHE_TAG_ACCESS_1_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`cache_tag_access_1::W`](W) writer structure"]
 impl crate::Writable for CACHE_TAG_ACCESS_1_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CACHE_TAG_ACCESS_1 to value 0x0f"]
 impl crate::Resettable for CACHE_TAG_ACCESS_1_SPEC {

@@ -125,57 +125,54 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CACHE_IA_INT_EN")
-            .field(
-                "cache_ia_int_en",
-                &format_args!("{}", self.cache_ia_int_en().bits()),
-            )
+            .field("cache_ia_int_en", &self.cache_ia_int_en().bits())
             .field(
                 "cache_ia_int_app_drom0",
-                &format_args!("{}", self.cache_ia_int_app_drom0().bit()),
+                &self.cache_ia_int_app_drom0().bit(),
             )
             .field(
                 "cache_ia_int_app_iram0",
-                &format_args!("{}", self.cache_ia_int_app_iram0().bit()),
+                &self.cache_ia_int_app_iram0().bit(),
             )
             .field(
                 "cache_ia_int_app_iram1",
-                &format_args!("{}", self.cache_ia_int_app_iram1().bit()),
+                &self.cache_ia_int_app_iram1().bit(),
             )
             .field(
                 "cache_ia_int_app_irom0",
-                &format_args!("{}", self.cache_ia_int_app_irom0().bit()),
+                &self.cache_ia_int_app_irom0().bit(),
             )
             .field(
                 "cache_ia_int_app_dram1",
-                &format_args!("{}", self.cache_ia_int_app_dram1().bit()),
+                &self.cache_ia_int_app_dram1().bit(),
             )
             .field(
                 "cache_ia_int_app_opposite",
-                &format_args!("{}", self.cache_ia_int_app_opposite().bit()),
+                &self.cache_ia_int_app_opposite().bit(),
             )
             .field(
                 "cache_ia_int_pro_drom0",
-                &format_args!("{}", self.cache_ia_int_pro_drom0().bit()),
+                &self.cache_ia_int_pro_drom0().bit(),
             )
             .field(
                 "cache_ia_int_pro_iram0",
-                &format_args!("{}", self.cache_ia_int_pro_iram0().bit()),
+                &self.cache_ia_int_pro_iram0().bit(),
             )
             .field(
                 "cache_ia_int_pro_iram1",
-                &format_args!("{}", self.cache_ia_int_pro_iram1().bit()),
+                &self.cache_ia_int_pro_iram1().bit(),
             )
             .field(
                 "cache_ia_int_pro_irom0",
-                &format_args!("{}", self.cache_ia_int_pro_irom0().bit()),
+                &self.cache_ia_int_pro_irom0().bit(),
             )
             .field(
                 "cache_ia_int_pro_dram1",
-                &format_args!("{}", self.cache_ia_int_pro_dram1().bit()),
+                &self.cache_ia_int_pro_dram1().bit(),
             )
             .field(
                 "cache_ia_int_pro_opposite",
-                &format_args!("{}", self.cache_ia_int_pro_opposite().bit()),
+                &self.cache_ia_int_pro_opposite().bit(),
             )
             .finish()
     }
@@ -280,10 +277,6 @@ impl crate::Readable for CACHE_IA_INT_EN_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`cache_ia_int_en::W`](W) writer structure"]
 impl crate::Writable for CACHE_IA_INT_EN_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CACHE_IA_INT_EN to value 0"]
-impl crate::Resettable for CACHE_IA_INT_EN_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for CACHE_IA_INT_EN_SPEC {}

@@ -35,15 +35,15 @@ impl core::fmt::Debug for R {
         f.debug_struct("CPU_PERIPHERAL_INTR")
             .field(
                 "cpu_peri_byte_error_clr",
-                &format_args!("{}", self.cpu_peri_byte_error_clr().bit()),
+                &self.cpu_peri_byte_error_clr().bit(),
             )
             .field(
                 "cpu_peri_byte_error_en",
-                &format_args!("{}", self.cpu_peri_byte_error_en().bit()),
+                &self.cpu_peri_byte_error_en().bit(),
             )
             .field(
                 "cpu_peri_byte_error_intr",
-                &format_args!("{}", self.cpu_peri_byte_error_intr().bit()),
+                &self.cpu_peri_byte_error_intr().bit(),
             )
             .finish()
     }
@@ -80,10 +80,6 @@ impl crate::Readable for CPU_PERIPHERAL_INTR_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`cpu_peripheral_intr::W`](W) writer structure"]
 impl crate::Writable for CPU_PERIPHERAL_INTR_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CPU_PERIPHERAL_INTR to value 0"]
-impl crate::Resettable for CPU_PERIPHERAL_INTR_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for CPU_PERIPHERAL_INTR_SPEC {}

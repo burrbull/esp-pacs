@@ -62,30 +62,12 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("POWER_PD_CNNT_CNTL")
-            .field(
-                "force_cnnt_reset",
-                &format_args!("{}", self.force_cnnt_reset().bit()),
-            )
-            .field(
-                "force_cnnt_iso",
-                &format_args!("{}", self.force_cnnt_iso().bit()),
-            )
-            .field(
-                "force_cnnt_pu",
-                &format_args!("{}", self.force_cnnt_pu().bit()),
-            )
-            .field(
-                "force_cnnt_no_reset",
-                &format_args!("{}", self.force_cnnt_no_reset().bit()),
-            )
-            .field(
-                "force_cnnt_no_iso",
-                &format_args!("{}", self.force_cnnt_no_iso().bit()),
-            )
-            .field(
-                "force_cnnt_pd",
-                &format_args!("{}", self.force_cnnt_pd().bit()),
-            )
+            .field("force_cnnt_reset", &self.force_cnnt_reset().bit())
+            .field("force_cnnt_iso", &self.force_cnnt_iso().bit())
+            .field("force_cnnt_pu", &self.force_cnnt_pu().bit())
+            .field("force_cnnt_no_reset", &self.force_cnnt_no_reset().bit())
+            .field("force_cnnt_no_iso", &self.force_cnnt_no_iso().bit())
+            .field("force_cnnt_pd", &self.force_cnnt_pd().bit())
             .finish()
     }
 }
@@ -143,8 +125,6 @@ impl crate::Readable for POWER_PD_CNNT_CNTL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`power_pd_cnnt_cntl::W`](W) writer structure"]
 impl crate::Writable for POWER_PD_CNNT_CNTL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets POWER_PD_CNNT_CNTL to value 0x1c"]
 impl crate::Resettable for POWER_PD_CNNT_CNTL_SPEC {

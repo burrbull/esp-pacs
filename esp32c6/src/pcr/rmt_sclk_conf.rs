@@ -53,14 +53,11 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("RMT_SCLK_CONF")
-            .field("sclk_div_a", &format_args!("{}", self.sclk_div_a().bits()))
-            .field("sclk_div_b", &format_args!("{}", self.sclk_div_b().bits()))
-            .field(
-                "sclk_div_num",
-                &format_args!("{}", self.sclk_div_num().bits()),
-            )
-            .field("sclk_sel", &format_args!("{}", self.sclk_sel().bits()))
-            .field("sclk_en", &format_args!("{}", self.sclk_en().bit()))
+            .field("sclk_div_a", &self.sclk_div_a().bits())
+            .field("sclk_div_b", &self.sclk_div_b().bits())
+            .field("sclk_div_num", &self.sclk_div_num().bits())
+            .field("sclk_sel", &self.sclk_sel().bits())
+            .field("sclk_en", &self.sclk_en().bit())
             .finish()
     }
 }
@@ -112,8 +109,6 @@ impl crate::Readable for RMT_SCLK_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`rmt_sclk_conf::W`](W) writer structure"]
 impl crate::Writable for RMT_SCLK_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets RMT_SCLK_CONF to value 0x0050_1000"]
 impl crate::Resettable for RMT_SCLK_CONF_SPEC {

@@ -62,30 +62,12 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("BLEND_FIX_ALPHA")
-            .field(
-                "blend0_rx_fix_alpha",
-                &format_args!("{}", self.blend0_rx_fix_alpha().bits()),
-            )
-            .field(
-                "blend1_rx_fix_alpha",
-                &format_args!("{}", self.blend1_rx_fix_alpha().bits()),
-            )
-            .field(
-                "blend0_rx_alpha_mod",
-                &format_args!("{}", self.blend0_rx_alpha_mod().bits()),
-            )
-            .field(
-                "blend1_rx_alpha_mod",
-                &format_args!("{}", self.blend1_rx_alpha_mod().bits()),
-            )
-            .field(
-                "blend0_rx_alpha_inv",
-                &format_args!("{}", self.blend0_rx_alpha_inv().bit()),
-            )
-            .field(
-                "blend1_rx_alpha_inv",
-                &format_args!("{}", self.blend1_rx_alpha_inv().bit()),
-            )
+            .field("blend0_rx_fix_alpha", &self.blend0_rx_fix_alpha().bits())
+            .field("blend1_rx_fix_alpha", &self.blend1_rx_fix_alpha().bits())
+            .field("blend0_rx_alpha_mod", &self.blend0_rx_alpha_mod().bits())
+            .field("blend1_rx_alpha_mod", &self.blend1_rx_alpha_mod().bits())
+            .field("blend0_rx_alpha_inv", &self.blend0_rx_alpha_inv().bit())
+            .field("blend1_rx_alpha_inv", &self.blend1_rx_alpha_inv().bit())
             .finish()
     }
 }
@@ -143,8 +125,6 @@ impl crate::Readable for BLEND_FIX_ALPHA_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`blend_fix_alpha::W`](W) writer structure"]
 impl crate::Writable for BLEND_FIX_ALPHA_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets BLEND_FIX_ALPHA to value 0x8080"]
 impl crate::Resettable for BLEND_FIX_ALPHA_SPEC {

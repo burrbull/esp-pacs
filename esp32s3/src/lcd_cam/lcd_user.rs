@@ -127,43 +127,19 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("LCD_USER")
-            .field(
-                "lcd_dout_cyclelen",
-                &format_args!("{}", self.lcd_dout_cyclelen().bits()),
-            )
-            .field(
-                "lcd_always_out_en",
-                &format_args!("{}", self.lcd_always_out_en().bit()),
-            )
-            .field(
-                "lcd_8bits_order",
-                &format_args!("{}", self.lcd_8bits_order().bit()),
-            )
-            .field("lcd_update", &format_args!("{}", self.lcd_update().bit()))
-            .field(
-                "lcd_bit_order",
-                &format_args!("{}", self.lcd_bit_order().bit()),
-            )
-            .field(
-                "lcd_byte_order",
-                &format_args!("{}", self.lcd_byte_order().bit()),
-            )
-            .field(
-                "lcd_2byte_en",
-                &format_args!("{}", self.lcd_2byte_en().bit()),
-            )
-            .field("lcd_dout", &format_args!("{}", self.lcd_dout().bit()))
-            .field("lcd_dummy", &format_args!("{}", self.lcd_dummy().bit()))
-            .field("lcd_cmd", &format_args!("{}", self.lcd_cmd().bit()))
-            .field("lcd_start", &format_args!("{}", self.lcd_start().bit()))
-            .field(
-                "lcd_dummy_cyclelen",
-                &format_args!("{}", self.lcd_dummy_cyclelen().bits()),
-            )
-            .field(
-                "lcd_cmd_2_cycle_en",
-                &format_args!("{}", self.lcd_cmd_2_cycle_en().bit()),
-            )
+            .field("lcd_dout_cyclelen", &self.lcd_dout_cyclelen().bits())
+            .field("lcd_always_out_en", &self.lcd_always_out_en().bit())
+            .field("lcd_8bits_order", &self.lcd_8bits_order().bit())
+            .field("lcd_update", &self.lcd_update().bit())
+            .field("lcd_bit_order", &self.lcd_bit_order().bit())
+            .field("lcd_byte_order", &self.lcd_byte_order().bit())
+            .field("lcd_2byte_en", &self.lcd_2byte_en().bit())
+            .field("lcd_dout", &self.lcd_dout().bit())
+            .field("lcd_dummy", &self.lcd_dummy().bit())
+            .field("lcd_cmd", &self.lcd_cmd().bit())
+            .field("lcd_start", &self.lcd_start().bit())
+            .field("lcd_dummy_cyclelen", &self.lcd_dummy_cyclelen().bits())
+            .field("lcd_cmd_2_cycle_en", &self.lcd_cmd_2_cycle_en().bit())
             .finish()
     }
 }
@@ -269,10 +245,6 @@ impl crate::Readable for LCD_USER_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`lcd_user::W`](W) writer structure"]
 impl crate::Writable for LCD_USER_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets LCD_USER to value 0"]
-impl crate::Resettable for LCD_USER_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for LCD_USER_SPEC {}

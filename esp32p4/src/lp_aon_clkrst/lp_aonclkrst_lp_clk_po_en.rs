@@ -100,43 +100,43 @@ impl core::fmt::Debug for R {
         f.debug_struct("LP_AONCLKRST_LP_CLK_PO_EN")
             .field(
                 "lp_aonclkrst_clk_core_efuse_oen",
-                &format_args!("{}", self.lp_aonclkrst_clk_core_efuse_oen().bit()),
+                &self.lp_aonclkrst_clk_core_efuse_oen().bit(),
             )
             .field(
                 "lp_aonclkrst_clk_lp_bus_oen",
-                &format_args!("{}", self.lp_aonclkrst_clk_lp_bus_oen().bit()),
+                &self.lp_aonclkrst_clk_lp_bus_oen().bit(),
             )
             .field(
                 "lp_aonclkrst_clk_aon_slow_oen",
-                &format_args!("{}", self.lp_aonclkrst_clk_aon_slow_oen().bit()),
+                &self.lp_aonclkrst_clk_aon_slow_oen().bit(),
             )
             .field(
                 "lp_aonclkrst_clk_aon_fast_oen",
-                &format_args!("{}", self.lp_aonclkrst_clk_aon_fast_oen().bit()),
+                &self.lp_aonclkrst_clk_aon_fast_oen().bit(),
             )
             .field(
                 "lp_aonclkrst_clk_slow_oen",
-                &format_args!("{}", self.lp_aonclkrst_clk_slow_oen().bit()),
+                &self.lp_aonclkrst_clk_slow_oen().bit(),
             )
             .field(
                 "lp_aonclkrst_clk_fast_oen",
-                &format_args!("{}", self.lp_aonclkrst_clk_fast_oen().bit()),
+                &self.lp_aonclkrst_clk_fast_oen().bit(),
             )
             .field(
                 "lp_aonclkrst_clk_fosc_oen",
-                &format_args!("{}", self.lp_aonclkrst_clk_fosc_oen().bit()),
+                &self.lp_aonclkrst_clk_fosc_oen().bit(),
             )
             .field(
                 "lp_aonclkrst_clk_rc32k_oen",
-                &format_args!("{}", self.lp_aonclkrst_clk_rc32k_oen().bit()),
+                &self.lp_aonclkrst_clk_rc32k_oen().bit(),
             )
             .field(
                 "lp_aonclkrst_clk_sxtal_oen",
-                &format_args!("{}", self.lp_aonclkrst_clk_sxtal_oen().bit()),
+                &self.lp_aonclkrst_clk_sxtal_oen().bit(),
             )
             .field(
                 "lp_aonclkrst_clk_sosc_oen",
-                &format_args!("{}", self.lp_aonclkrst_clk_sosc_oen().bit()),
+                &self.lp_aonclkrst_clk_sosc_oen().bit(),
             )
             .finish()
     }
@@ -239,10 +239,6 @@ impl crate::Readable for LP_AONCLKRST_LP_CLK_PO_EN_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`lp_aonclkrst_lp_clk_po_en::W`](W) writer structure"]
 impl crate::Writable for LP_AONCLKRST_LP_CLK_PO_EN_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets LP_AONCLKRST_LP_CLK_PO_EN to value 0"]
-impl crate::Resettable for LP_AONCLKRST_LP_CLK_PO_EN_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for LP_AONCLKRST_LP_CLK_PO_EN_SPEC {}

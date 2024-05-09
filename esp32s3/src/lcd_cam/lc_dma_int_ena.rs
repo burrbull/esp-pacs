@@ -44,22 +44,13 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("LC_DMA_INT_ENA")
-            .field(
-                "lcd_vsync_int_ena",
-                &format_args!("{}", self.lcd_vsync_int_ena().bit()),
-            )
+            .field("lcd_vsync_int_ena", &self.lcd_vsync_int_ena().bit())
             .field(
                 "lcd_trans_done_int_ena",
-                &format_args!("{}", self.lcd_trans_done_int_ena().bit()),
+                &self.lcd_trans_done_int_ena().bit(),
             )
-            .field(
-                "cam_vsync_int_ena",
-                &format_args!("{}", self.cam_vsync_int_ena().bit()),
-            )
-            .field(
-                "cam_hs_int_ena",
-                &format_args!("{}", self.cam_hs_int_ena().bit()),
-            )
+            .field("cam_vsync_int_ena", &self.cam_vsync_int_ena().bit())
+            .field("cam_hs_int_ena", &self.cam_hs_int_ena().bit())
             .finish()
     }
 }
@@ -105,10 +96,6 @@ impl crate::Readable for LC_DMA_INT_ENA_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`lc_dma_int_ena::W`](W) writer structure"]
 impl crate::Writable for LC_DMA_INT_ENA_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets LC_DMA_INT_ENA to value 0"]
-impl crate::Resettable for LC_DMA_INT_ENA_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for LC_DMA_INT_ENA_SPEC {}

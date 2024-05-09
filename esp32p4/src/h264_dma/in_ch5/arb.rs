@@ -26,13 +26,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("ARB")
-            .field(
-                "in_arb_token_num",
-                &format_args!("{}", self.in_arb_token_num().bits()),
-            )
+            .field("in_arb_token_num", &self.in_arb_token_num().bits())
             .field(
                 "inter_in_arb_priority",
-                &format_args!("{}", self.inter_in_arb_priority().bits()),
+                &self.inter_in_arb_priority().bits(),
             )
             .finish()
     }
@@ -67,8 +64,6 @@ impl crate::Readable for ARB_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`arb::W`](W) writer structure"]
 impl crate::Writable for ARB_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets ARB to value 0x41"]
 impl crate::Resettable for ARB_SPEC {

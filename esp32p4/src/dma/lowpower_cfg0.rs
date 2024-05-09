@@ -44,19 +44,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("LOWPOWER_CFG0")
-            .field("gbl_cslp_en", &format_args!("{}", self.gbl_cslp_en().bit()))
-            .field(
-                "chnl_cslp_en",
-                &format_args!("{}", self.chnl_cslp_en().bit()),
-            )
-            .field(
-                "sbiu_cslp_en",
-                &format_args!("{}", self.sbiu_cslp_en().bit()),
-            )
-            .field(
-                "mxif_cslp_en",
-                &format_args!("{}", self.mxif_cslp_en().bit()),
-            )
+            .field("gbl_cslp_en", &self.gbl_cslp_en().bit())
+            .field("chnl_cslp_en", &self.chnl_cslp_en().bit())
+            .field("sbiu_cslp_en", &self.sbiu_cslp_en().bit())
+            .field("mxif_cslp_en", &self.mxif_cslp_en().bit())
             .finish()
     }
 }
@@ -102,8 +93,6 @@ impl crate::Readable for LOWPOWER_CFG0_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`lowpower_cfg0::W`](W) writer structure"]
 impl crate::Writable for LOWPOWER_CFG0_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets LOWPOWER_CFG0 to value 0x0f"]
 impl crate::Resettable for LOWPOWER_CFG0_SPEC {

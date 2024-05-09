@@ -44,10 +44,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("GEN_STMP_CFG")
-            .field("a_upmethod", &format_args!("{}", self.a_upmethod().bits()))
-            .field("b_upmethod", &format_args!("{}", self.b_upmethod().bits()))
-            .field("a_shdw_full", &format_args!("{}", self.a_shdw_full().bit()))
-            .field("b_shdw_full", &format_args!("{}", self.b_shdw_full().bit()))
+            .field("a_upmethod", &self.a_upmethod().bits())
+            .field("b_upmethod", &self.b_upmethod().bits())
+            .field("a_shdw_full", &self.a_shdw_full().bit())
+            .field("b_shdw_full", &self.b_shdw_full().bit())
             .finish()
     }
 }
@@ -93,10 +93,6 @@ impl crate::Readable for GEN_STMP_CFG_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`gen_stmp_cfg::W`](W) writer structure"]
 impl crate::Writable for GEN_STMP_CFG_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets GEN_STMP_CFG to value 0"]
-impl crate::Resettable for GEN_STMP_CFG_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for GEN_STMP_CFG_SPEC {}

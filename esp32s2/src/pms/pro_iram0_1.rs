@@ -116,54 +116,18 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PRO_IRAM0_1")
-            .field(
-                "pro_iram0_sram_0_f",
-                &format_args!("{}", self.pro_iram0_sram_0_f().bit()),
-            )
-            .field(
-                "pro_iram0_sram_0_r",
-                &format_args!("{}", self.pro_iram0_sram_0_r().bit()),
-            )
-            .field(
-                "pro_iram0_sram_0_w",
-                &format_args!("{}", self.pro_iram0_sram_0_w().bit()),
-            )
-            .field(
-                "pro_iram0_sram_1_f",
-                &format_args!("{}", self.pro_iram0_sram_1_f().bit()),
-            )
-            .field(
-                "pro_iram0_sram_1_r",
-                &format_args!("{}", self.pro_iram0_sram_1_r().bit()),
-            )
-            .field(
-                "pro_iram0_sram_1_w",
-                &format_args!("{}", self.pro_iram0_sram_1_w().bit()),
-            )
-            .field(
-                "pro_iram0_sram_2_f",
-                &format_args!("{}", self.pro_iram0_sram_2_f().bit()),
-            )
-            .field(
-                "pro_iram0_sram_2_r",
-                &format_args!("{}", self.pro_iram0_sram_2_r().bit()),
-            )
-            .field(
-                "pro_iram0_sram_2_w",
-                &format_args!("{}", self.pro_iram0_sram_2_w().bit()),
-            )
-            .field(
-                "pro_iram0_sram_3_f",
-                &format_args!("{}", self.pro_iram0_sram_3_f().bit()),
-            )
-            .field(
-                "pro_iram0_sram_3_r",
-                &format_args!("{}", self.pro_iram0_sram_3_r().bit()),
-            )
-            .field(
-                "pro_iram0_sram_3_w",
-                &format_args!("{}", self.pro_iram0_sram_3_w().bit()),
-            )
+            .field("pro_iram0_sram_0_f", &self.pro_iram0_sram_0_f().bit())
+            .field("pro_iram0_sram_0_r", &self.pro_iram0_sram_0_r().bit())
+            .field("pro_iram0_sram_0_w", &self.pro_iram0_sram_0_w().bit())
+            .field("pro_iram0_sram_1_f", &self.pro_iram0_sram_1_f().bit())
+            .field("pro_iram0_sram_1_r", &self.pro_iram0_sram_1_r().bit())
+            .field("pro_iram0_sram_1_w", &self.pro_iram0_sram_1_w().bit())
+            .field("pro_iram0_sram_2_f", &self.pro_iram0_sram_2_f().bit())
+            .field("pro_iram0_sram_2_r", &self.pro_iram0_sram_2_r().bit())
+            .field("pro_iram0_sram_2_w", &self.pro_iram0_sram_2_w().bit())
+            .field("pro_iram0_sram_3_f", &self.pro_iram0_sram_3_f().bit())
+            .field("pro_iram0_sram_3_r", &self.pro_iram0_sram_3_r().bit())
+            .field("pro_iram0_sram_3_w", &self.pro_iram0_sram_3_w().bit())
             .finish()
     }
 }
@@ -257,8 +221,6 @@ impl crate::Readable for PRO_IRAM0_1_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`pro_iram0_1::W`](W) writer structure"]
 impl crate::Writable for PRO_IRAM0_1_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets PRO_IRAM0_1 to value 0x0fff"]
 impl crate::Resettable for PRO_IRAM0_1_SPEC {

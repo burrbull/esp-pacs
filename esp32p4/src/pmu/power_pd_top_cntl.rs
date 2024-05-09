@@ -62,30 +62,12 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("POWER_PD_TOP_CNTL")
-            .field(
-                "force_top_reset",
-                &format_args!("{}", self.force_top_reset().bit()),
-            )
-            .field(
-                "force_top_iso",
-                &format_args!("{}", self.force_top_iso().bit()),
-            )
-            .field(
-                "force_top_pu",
-                &format_args!("{}", self.force_top_pu().bit()),
-            )
-            .field(
-                "force_top_no_reset",
-                &format_args!("{}", self.force_top_no_reset().bit()),
-            )
-            .field(
-                "force_top_no_iso",
-                &format_args!("{}", self.force_top_no_iso().bit()),
-            )
-            .field(
-                "force_top_pd",
-                &format_args!("{}", self.force_top_pd().bit()),
-            )
+            .field("force_top_reset", &self.force_top_reset().bit())
+            .field("force_top_iso", &self.force_top_iso().bit())
+            .field("force_top_pu", &self.force_top_pu().bit())
+            .field("force_top_no_reset", &self.force_top_no_reset().bit())
+            .field("force_top_no_iso", &self.force_top_no_iso().bit())
+            .field("force_top_pd", &self.force_top_pd().bit())
             .finish()
     }
 }
@@ -143,8 +125,6 @@ impl crate::Readable for POWER_PD_TOP_CNTL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`power_pd_top_cntl::W`](W) writer structure"]
 impl crate::Writable for POWER_PD_TOP_CNTL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets POWER_PD_TOP_CNTL to value 0x1c"]
 impl crate::Resettable for POWER_PD_TOP_CNTL_SPEC {

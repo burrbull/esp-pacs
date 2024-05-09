@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SDIO_ACT_CONF")
-            .field(
-                "sdio_act_dnum",
-                &format_args!("{}", self.sdio_act_dnum().bits()),
-            )
+            .field("sdio_act_dnum", &self.sdio_act_dnum().bits())
             .finish()
     }
 }
@@ -48,10 +45,6 @@ impl crate::Readable for SDIO_ACT_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`sdio_act_conf::W`](W) writer structure"]
 impl crate::Writable for SDIO_ACT_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SDIO_ACT_CONF to value 0"]
-impl crate::Resettable for SDIO_ACT_CONF_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for SDIO_ACT_CONF_SPEC {}

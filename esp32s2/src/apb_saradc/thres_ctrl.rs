@@ -71,25 +71,13 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("THRES_CTRL")
-            .field("clk_en", &format_args!("{}", self.clk_en().bit()))
-            .field(
-                "adc2_thres_mode",
-                &format_args!("{}", self.adc2_thres_mode().bit()),
-            )
-            .field(
-                "adc1_thres_mode",
-                &format_args!("{}", self.adc1_thres_mode().bit()),
-            )
-            .field("adc2_thres", &format_args!("{}", self.adc2_thres().bits()))
-            .field("adc1_thres", &format_args!("{}", self.adc1_thres().bits()))
-            .field(
-                "adc2_thres_en",
-                &format_args!("{}", self.adc2_thres_en().bit()),
-            )
-            .field(
-                "adc1_thres_en",
-                &format_args!("{}", self.adc1_thres_en().bit()),
-            )
+            .field("clk_en", &self.clk_en().bit())
+            .field("adc2_thres_mode", &self.adc2_thres_mode().bit())
+            .field("adc1_thres_mode", &self.adc1_thres_mode().bit())
+            .field("adc2_thres", &self.adc2_thres().bits())
+            .field("adc1_thres", &self.adc1_thres().bits())
+            .field("adc2_thres_en", &self.adc2_thres_en().bit())
+            .field("adc1_thres_en", &self.adc1_thres_en().bit())
             .finish()
     }
 }
@@ -153,10 +141,6 @@ impl crate::Readable for THRES_CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`thres_ctrl::W`](W) writer structure"]
 impl crate::Writable for THRES_CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets THRES_CTRL to value 0"]
-impl crate::Resettable for THRES_CTRL_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for THRES_CTRL_SPEC {}

@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SLC1HOST_RX_INFOR")
-            .field(
-                "slc1host_rx_infor",
-                &format_args!("{}", self.slc1host_rx_infor().bits()),
-            )
+            .field("slc1host_rx_infor", &self.slc1host_rx_infor().bits())
             .finish()
     }
 }
@@ -48,10 +45,6 @@ impl crate::Readable for SLC1HOST_RX_INFOR_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`slc1host_rx_infor::W`](W) writer structure"]
 impl crate::Writable for SLC1HOST_RX_INFOR_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SLC1HOST_RX_INFOR to value 0"]
-impl crate::Resettable for SLC1HOST_RX_INFOR_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for SLC1HOST_RX_INFOR_SPEC {}

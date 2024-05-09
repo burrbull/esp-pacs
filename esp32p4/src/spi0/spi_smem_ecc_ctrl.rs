@@ -37,16 +37,10 @@ impl core::fmt::Debug for R {
         f.debug_struct("SPI_SMEM_ECC_CTRL")
             .field(
                 "spi_smem_ecc_err_int_en",
-                &format_args!("{}", self.spi_smem_ecc_err_int_en().bit()),
+                &self.spi_smem_ecc_err_int_en().bit(),
             )
-            .field(
-                "spi_smem_page_size",
-                &format_args!("{}", self.spi_smem_page_size().bits()),
-            )
-            .field(
-                "spi_smem_ecc_addr_en",
-                &format_args!("{}", self.spi_smem_ecc_addr_en().bit()),
-            )
+            .field("spi_smem_page_size", &self.spi_smem_page_size().bits())
+            .field("spi_smem_ecc_addr_en", &self.spi_smem_ecc_addr_en().bit())
             .finish()
     }
 }
@@ -86,8 +80,6 @@ impl crate::Readable for SPI_SMEM_ECC_CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`spi_smem_ecc_ctrl::W`](W) writer structure"]
 impl crate::Writable for SPI_SMEM_ECC_CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SPI_SMEM_ECC_CTRL to value 0x0008_0000"]
 impl crate::Resettable for SPI_SMEM_ECC_CTRL_SPEC {

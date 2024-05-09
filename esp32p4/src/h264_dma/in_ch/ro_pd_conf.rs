@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("RO_PD_CONF")
-            .field(
-                "in_ro_ram_clk_fo",
-                &format_args!("{}", self.in_ro_ram_clk_fo().bit()),
-            )
+            .field("in_ro_ram_clk_fo", &self.in_ro_ram_clk_fo().bit())
             .finish()
     }
 }
@@ -48,10 +45,6 @@ impl crate::Readable for RO_PD_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`ro_pd_conf::W`](W) writer structure"]
 impl crate::Writable for RO_PD_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets RO_PD_CONF to value 0"]
-impl crate::Resettable for RO_PD_CONF_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for RO_PD_CONF_SPEC {}

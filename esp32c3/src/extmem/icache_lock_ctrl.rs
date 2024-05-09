@@ -33,18 +33,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("ICACHE_LOCK_CTRL")
-            .field(
-                "icache_lock_ena",
-                &format_args!("{}", self.icache_lock_ena().bit()),
-            )
-            .field(
-                "icache_unlock_ena",
-                &format_args!("{}", self.icache_unlock_ena().bit()),
-            )
-            .field(
-                "icache_lock_done",
-                &format_args!("{}", self.icache_lock_done().bit()),
-            )
+            .field("icache_lock_ena", &self.icache_lock_ena().bit())
+            .field("icache_unlock_ena", &self.icache_unlock_ena().bit())
+            .field("icache_lock_done", &self.icache_lock_done().bit())
             .finish()
     }
 }
@@ -78,8 +69,6 @@ impl crate::Readable for ICACHE_LOCK_CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`icache_lock_ctrl::W`](W) writer structure"]
 impl crate::Writable for ICACHE_LOCK_CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets ICACHE_LOCK_CTRL to value 0x04"]
 impl crate::Resettable for ICACHE_LOCK_CTRL_SPEC {

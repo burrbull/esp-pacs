@@ -26,10 +26,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("DPI_MISC_CONFIG")
-            .field("dpi_en", &format_args!("{}", self.dpi_en().bit()))
+            .field("dpi_en", &self.dpi_en().bit())
             .field(
                 "fifo_underrun_discard_vcnt",
-                &format_args!("{}", self.fifo_underrun_discard_vcnt().bits()),
+                &self.fifo_underrun_discard_vcnt().bits(),
             )
             .finish()
     }
@@ -66,8 +66,6 @@ impl crate::Readable for DPI_MISC_CONFIG_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`dpi_misc_config::W`](W) writer structure"]
 impl crate::Writable for DPI_MISC_CONFIG_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets DPI_MISC_CONFIG to value 0x19d0"]
 impl crate::Resettable for DPI_MISC_CONFIG_SPEC {

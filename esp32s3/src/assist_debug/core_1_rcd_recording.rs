@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CORE_1_RCD_RECORDING")
-            .field(
-                "core_1_rcd_recording",
-                &format_args!("{}", self.core_1_rcd_recording().bit()),
-            )
+            .field("core_1_rcd_recording", &self.core_1_rcd_recording().bit())
             .finish()
     }
 }
@@ -48,10 +45,6 @@ impl crate::Readable for CORE_1_RCD_RECORDING_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`core_1_rcd_recording::W`](W) writer structure"]
 impl crate::Writable for CORE_1_RCD_RECORDING_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CORE_1_RCD_RECORDING to value 0"]
-impl crate::Resettable for CORE_1_RCD_RECORDING_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for CORE_1_RCD_RECORDING_SPEC {}

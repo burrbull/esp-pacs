@@ -35,18 +35,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PD_CONF")
-            .field(
-                "dma_ram_force_pd",
-                &format_args!("{}", self.dma_ram_force_pd().bit()),
-            )
-            .field(
-                "dma_ram_force_pu",
-                &format_args!("{}", self.dma_ram_force_pu().bit()),
-            )
-            .field(
-                "dma_ram_clk_fo",
-                &format_args!("{}", self.dma_ram_clk_fo().bit()),
-            )
+            .field("dma_ram_force_pd", &self.dma_ram_force_pd().bit())
+            .field("dma_ram_force_pu", &self.dma_ram_force_pu().bit())
+            .field("dma_ram_clk_fo", &self.dma_ram_clk_fo().bit())
             .finish()
     }
 }
@@ -86,8 +77,6 @@ impl crate::Readable for PD_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`pd_conf::W`](W) writer structure"]
 impl crate::Writable for PD_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets PD_CONF to value 0x20"]
 impl crate::Resettable for PD_CONF_SPEC {

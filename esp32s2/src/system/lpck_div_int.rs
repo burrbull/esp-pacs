@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("LPCK_DIV_INT")
-            .field(
-                "lpck_div_num",
-                &format_args!("{}", self.lpck_div_num().bits()),
-            )
+            .field("lpck_div_num", &self.lpck_div_num().bits())
             .finish()
     }
 }
@@ -48,8 +45,6 @@ impl crate::Readable for LPCK_DIV_INT_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`lpck_div_int::W`](W) writer structure"]
 impl crate::Writable for LPCK_DIV_INT_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets LPCK_DIV_INT to value 0xff"]
 impl crate::Resettable for LPCK_DIV_INT_SPEC {

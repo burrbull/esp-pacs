@@ -17,7 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("LOCK_MAP")
-            .field("lock_map", &format_args!("{}", self.lock_map().bits()))
+            .field("lock_map", &self.lock_map().bits())
             .finish()
     }
 }
@@ -45,10 +45,6 @@ impl crate::Readable for LOCK_MAP_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`lock_map::W`](W) writer structure"]
 impl crate::Writable for LOCK_MAP_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets LOCK_MAP to value 0"]
-impl crate::Resettable for LOCK_MAP_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for LOCK_MAP_SPEC {}

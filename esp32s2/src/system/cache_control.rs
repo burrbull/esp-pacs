@@ -35,18 +35,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CACHE_CONTROL")
-            .field(
-                "pro_icache_clk_on",
-                &format_args!("{}", self.pro_icache_clk_on().bit()),
-            )
-            .field(
-                "pro_dcache_clk_on",
-                &format_args!("{}", self.pro_dcache_clk_on().bit()),
-            )
-            .field(
-                "pro_cache_reset",
-                &format_args!("{}", self.pro_cache_reset().bit()),
-            )
+            .field("pro_icache_clk_on", &self.pro_icache_clk_on().bit())
+            .field("pro_dcache_clk_on", &self.pro_dcache_clk_on().bit())
+            .field("pro_cache_reset", &self.pro_cache_reset().bit())
             .finish()
     }
 }
@@ -86,8 +77,6 @@ impl crate::Readable for CACHE_CONTROL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`cache_control::W`](W) writer structure"]
 impl crate::Writable for CACHE_CONTROL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CACHE_CONTROL to value 0x03"]
 impl crate::Resettable for CACHE_CONTROL_SPEC {

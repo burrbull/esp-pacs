@@ -63,31 +63,13 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("BLK0_RDATA4")
-            .field(
-                "rd_clk8m_freq",
-                &format_args!("{}", self.rd_clk8m_freq().bits()),
-            )
-            .field(
-                "rd_adc_vref",
-                &format_args!("{}", self.rd_adc_vref().bits()),
-            )
-            .field(
-                "rd_reserve_0_141",
-                &format_args!("{}", self.rd_reserve_0_141().bit()),
-            )
-            .field("rd_xpd_sdio", &format_args!("{}", self.rd_xpd_sdio().bit()))
-            .field(
-                "rd_xpd_sdio_tieh",
-                &format_args!("{}", self.rd_xpd_sdio_tieh().bit()),
-            )
-            .field(
-                "rd_xpd_sdio_force",
-                &format_args!("{}", self.rd_xpd_sdio_force().bit()),
-            )
-            .field(
-                "rd_reserve_0_145",
-                &format_args!("{}", self.rd_reserve_0_145().bits()),
-            )
+            .field("rd_clk8m_freq", &self.rd_clk8m_freq().bits())
+            .field("rd_adc_vref", &self.rd_adc_vref().bits())
+            .field("rd_reserve_0_141", &self.rd_reserve_0_141().bit())
+            .field("rd_xpd_sdio", &self.rd_xpd_sdio().bit())
+            .field("rd_xpd_sdio_tieh", &self.rd_xpd_sdio_tieh().bit())
+            .field("rd_xpd_sdio_force", &self.rd_xpd_sdio_force().bit())
+            .field("rd_reserve_0_145", &self.rd_reserve_0_145().bits())
             .finish()
     }
 }
@@ -127,10 +109,6 @@ impl crate::Readable for BLK0_RDATA4_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`blk0_rdata4::W`](W) writer structure"]
 impl crate::Writable for BLK0_RDATA4_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets BLK0_RDATA4 to value 0"]
-impl crate::Resettable for BLK0_RDATA4_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for BLK0_RDATA4_SPEC {}

@@ -112,54 +112,36 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("RESET_STATE")
-            .field(
-                "reset_cause_procpu",
-                &format_args!("{}", self.reset_cause_procpu().bits()),
-            )
-            .field(
-                "reset_cause_appcpu",
-                &format_args!("{}", self.reset_cause_appcpu().bits()),
-            )
+            .field("reset_cause_procpu", &self.reset_cause_procpu().bits())
+            .field("reset_cause_appcpu", &self.reset_cause_appcpu().bits())
             .field(
                 "stat_vector_sel_appcpu",
-                &format_args!("{}", self.stat_vector_sel_appcpu().bit()),
+                &self.stat_vector_sel_appcpu().bit(),
             )
             .field(
                 "stat_vector_sel_procpu",
-                &format_args!("{}", self.stat_vector_sel_procpu().bit()),
+                &self.stat_vector_sel_procpu().bit(),
             )
-            .field(
-                "all_reset_flag_procpu",
-                &format_args!("{}", self.all_reset_flag_procpu().bit()),
-            )
-            .field(
-                "all_reset_flag_appcpu",
-                &format_args!("{}", self.all_reset_flag_appcpu().bit()),
-            )
+            .field("all_reset_flag_procpu", &self.all_reset_flag_procpu().bit())
+            .field("all_reset_flag_appcpu", &self.all_reset_flag_appcpu().bit())
             .field(
                 "ocd_halt_on_reset_appcpu",
-                &format_args!("{}", self.ocd_halt_on_reset_appcpu().bit()),
+                &self.ocd_halt_on_reset_appcpu().bit(),
             )
             .field(
                 "ocd_halt_on_reset_procpu",
-                &format_args!("{}", self.ocd_halt_on_reset_procpu().bit()),
+                &self.ocd_halt_on_reset_procpu().bit(),
             )
             .field(
                 "jtag_reset_flag_procpu",
-                &format_args!("{}", self.jtag_reset_flag_procpu().bit()),
+                &self.jtag_reset_flag_procpu().bit(),
             )
             .field(
                 "jtag_reset_flag_appcpu",
-                &format_args!("{}", self.jtag_reset_flag_appcpu().bit()),
+                &self.jtag_reset_flag_appcpu().bit(),
             )
-            .field(
-                "dreset_mask_appcpu",
-                &format_args!("{}", self.dreset_mask_appcpu().bit()),
-            )
-            .field(
-                "dreset_mask_procpu",
-                &format_args!("{}", self.dreset_mask_procpu().bit()),
-            )
+            .field("dreset_mask_appcpu", &self.dreset_mask_appcpu().bit())
+            .field("dreset_mask_procpu", &self.dreset_mask_procpu().bit())
             .finish()
     }
 }
@@ -241,8 +223,6 @@ impl crate::Readable for RESET_STATE_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`reset_state::W`](W) writer structure"]
 impl crate::Writable for RESET_STATE_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets RESET_STATE to value 0x3000"]
 impl crate::Resettable for RESET_STATE_SPEC {

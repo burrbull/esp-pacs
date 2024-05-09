@@ -35,15 +35,15 @@ impl core::fmt::Debug for R {
         f.debug_struct("ICM_CPU_H2X_CFG")
             .field(
                 "cpu_icm_h2x_post_wr_en",
-                &format_args!("{}", self.cpu_icm_h2x_post_wr_en().bit()),
+                &self.cpu_icm_h2x_post_wr_en().bit(),
             )
             .field(
                 "cpu_icm_h2x_cut_through_en",
-                &format_args!("{}", self.cpu_icm_h2x_cut_through_en().bit()),
+                &self.cpu_icm_h2x_cut_through_en().bit(),
             )
             .field(
                 "cpu_icm_h2x_bridge_busy",
-                &format_args!("{}", self.cpu_icm_h2x_bridge_busy().bit()),
+                &self.cpu_icm_h2x_bridge_busy().bit(),
             )
             .finish()
     }
@@ -80,8 +80,6 @@ impl crate::Readable for ICM_CPU_H2X_CFG_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`icm_cpu_h2x_cfg::W`](W) writer structure"]
 impl crate::Writable for ICM_CPU_H2X_CFG_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets ICM_CPU_H2X_CFG to value 0x03"]
 impl crate::Resettable for ICM_CPU_H2X_CFG_SPEC {

@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("IN_LINK2")
-            .field(
-                "inlink_addr",
-                &format_args!("{}", self.inlink_addr().bits()),
-            )
+            .field("inlink_addr", &self.inlink_addr().bits())
             .finish()
     }
 }
@@ -48,10 +45,6 @@ impl crate::Readable for IN_LINK2_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`in_link2::W`](W) writer structure"]
 impl crate::Writable for IN_LINK2_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets IN_LINK2 to value 0"]
-impl crate::Resettable for IN_LINK2_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for IN_LINK2_SPEC {}

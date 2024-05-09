@@ -26,14 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CTYPE")
-            .field(
-                "card_width4",
-                &format_args!("{}", self.card_width4().bits()),
-            )
-            .field(
-                "card_width8",
-                &format_args!("{}", self.card_width8().bits()),
-            )
+            .field("card_width4", &self.card_width4().bits())
+            .field("card_width8", &self.card_width8().bits())
             .finish()
     }
 }
@@ -67,10 +61,6 @@ impl crate::Readable for CTYPE_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`ctype::W`](W) writer structure"]
 impl crate::Writable for CTYPE_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CTYPE to value 0"]
-impl crate::Resettable for CTYPE_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for CTYPE_SPEC {}

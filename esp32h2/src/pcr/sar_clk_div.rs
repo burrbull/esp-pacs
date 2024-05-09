@@ -26,14 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SAR_CLK_DIV")
-            .field(
-                "sar2_clk_div_num",
-                &format_args!("{}", self.sar2_clk_div_num().bits()),
-            )
-            .field(
-                "sar1_clk_div_num",
-                &format_args!("{}", self.sar1_clk_div_num().bits()),
-            )
+            .field("sar2_clk_div_num", &self.sar2_clk_div_num().bits())
+            .field("sar1_clk_div_num", &self.sar1_clk_div_num().bits())
             .finish()
     }
 }
@@ -67,8 +61,6 @@ impl crate::Readable for SAR_CLK_DIV_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`sar_clk_div::W`](W) writer structure"]
 impl crate::Writable for SAR_CLK_DIV_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SAR_CLK_DIV to value 0x0404"]
 impl crate::Resettable for SAR_CLK_DIV_SPEC {

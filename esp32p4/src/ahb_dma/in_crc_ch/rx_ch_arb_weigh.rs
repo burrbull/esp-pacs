@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("RX_CH_ARB_WEIGH")
-            .field(
-                "rx_ch_arb_weigh",
-                &format_args!("{}", self.rx_ch_arb_weigh().bits()),
-            )
+            .field("rx_ch_arb_weigh", &self.rx_ch_arb_weigh().bits())
             .finish()
     }
 }
@@ -48,10 +45,6 @@ impl crate::Readable for RX_CH_ARB_WEIGH_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`rx_ch_arb_weigh::W`](W) writer structure"]
 impl crate::Writable for RX_CH_ARB_WEIGH_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets RX_CH_ARB_WEIGH to value 0"]
-impl crate::Resettable for RX_CH_ARB_WEIGH_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for RX_CH_ARB_WEIGH_SPEC {}

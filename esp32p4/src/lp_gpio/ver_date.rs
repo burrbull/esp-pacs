@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("VER_DATE")
-            .field(
-                "reg_ver_date",
-                &format_args!("{}", self.reg_ver_date().bits()),
-            )
+            .field("reg_ver_date", &self.reg_ver_date().bits())
             .finish()
     }
 }
@@ -48,8 +45,6 @@ impl crate::Readable for VER_DATE_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`ver_date::W`](W) writer structure"]
 impl crate::Writable for VER_DATE_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets VER_DATE to value 0x0023_0323"]
 impl crate::Resettable for VER_DATE_SPEC {

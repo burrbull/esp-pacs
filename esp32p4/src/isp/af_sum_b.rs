@@ -13,7 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("AF_SUM_B")
-            .field("af_sumb", &format_args!("{}", self.af_sumb().bits()))
+            .field("af_sumb", &self.af_sumb().bits())
             .finish()
     }
 }
@@ -31,6 +31,4 @@ impl crate::RegisterSpec for AF_SUM_B_SPEC {
 #[doc = "`read()` method returns [`af_sum_b::R`](R) reader structure"]
 impl crate::Readable for AF_SUM_B_SPEC {}
 #[doc = "`reset()` method sets AF_SUM_B to value 0"]
-impl crate::Resettable for AF_SUM_B_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for AF_SUM_B_SPEC {}

@@ -15,7 +15,7 @@ impl core::fmt::Debug for R {
         f.debug_struct("L1_ICACHE3_PRELOCK_SCT1_ADDR")
             .field(
                 "l1_icache3_prelock_sct1_addr",
-                &format_args!("{}", self.l1_icache3_prelock_sct1_addr().bits()),
+                &self.l1_icache3_prelock_sct1_addr().bits(),
             )
             .finish()
     }
@@ -34,6 +34,4 @@ impl crate::RegisterSpec for L1_ICACHE3_PRELOCK_SCT1_ADDR_SPEC {
 #[doc = "`read()` method returns [`l1_icache3_prelock_sct1_addr::R`](R) reader structure"]
 impl crate::Readable for L1_ICACHE3_PRELOCK_SCT1_ADDR_SPEC {}
 #[doc = "`reset()` method sets L1_ICACHE3_PRELOCK_SCT1_ADDR to value 0"]
-impl crate::Resettable for L1_ICACHE3_PRELOCK_SCT1_ADDR_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for L1_ICACHE3_PRELOCK_SCT1_ADDR_SPEC {}

@@ -98,46 +98,16 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("REF_CLK_CTRL2")
-            .field(
-                "ref_160m_clk_en",
-                &format_args!("{}", self.ref_160m_clk_en().bit()),
-            )
-            .field(
-                "tm_160m_clk_en",
-                &format_args!("{}", self.tm_160m_clk_en().bit()),
-            )
-            .field(
-                "ref_120m_clk_en",
-                &format_args!("{}", self.ref_120m_clk_en().bit()),
-            )
-            .field(
-                "tm_120m_clk_en",
-                &format_args!("{}", self.tm_120m_clk_en().bit()),
-            )
-            .field(
-                "ref_80m_clk_en",
-                &format_args!("{}", self.ref_80m_clk_en().bit()),
-            )
-            .field(
-                "tm_80m_clk_en",
-                &format_args!("{}", self.tm_80m_clk_en().bit()),
-            )
-            .field(
-                "tm_60m_clk_en",
-                &format_args!("{}", self.tm_60m_clk_en().bit()),
-            )
-            .field(
-                "tm_48m_clk_en",
-                &format_args!("{}", self.tm_48m_clk_en().bit()),
-            )
-            .field(
-                "ref_20m_clk_en",
-                &format_args!("{}", self.ref_20m_clk_en().bit()),
-            )
-            .field(
-                "tm_20m_clk_en",
-                &format_args!("{}", self.tm_20m_clk_en().bit()),
-            )
+            .field("ref_160m_clk_en", &self.ref_160m_clk_en().bit())
+            .field("tm_160m_clk_en", &self.tm_160m_clk_en().bit())
+            .field("ref_120m_clk_en", &self.ref_120m_clk_en().bit())
+            .field("tm_120m_clk_en", &self.tm_120m_clk_en().bit())
+            .field("ref_80m_clk_en", &self.ref_80m_clk_en().bit())
+            .field("tm_80m_clk_en", &self.tm_80m_clk_en().bit())
+            .field("tm_60m_clk_en", &self.tm_60m_clk_en().bit())
+            .field("tm_48m_clk_en", &self.tm_48m_clk_en().bit())
+            .field("ref_20m_clk_en", &self.ref_20m_clk_en().bit())
+            .field("tm_20m_clk_en", &self.tm_20m_clk_en().bit())
             .finish()
     }
 }
@@ -219,8 +189,6 @@ impl crate::Readable for REF_CLK_CTRL2_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`ref_clk_ctrl2::W`](W) writer structure"]
 impl crate::Writable for REF_CLK_CTRL2_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets REF_CLK_CTRL2 to value 0x0115"]
 impl crate::Resettable for REF_CLK_CTRL2_SPEC {

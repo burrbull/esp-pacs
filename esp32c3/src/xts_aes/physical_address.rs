@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PHYSICAL_ADDRESS")
-            .field(
-                "physical_address",
-                &format_args!("{}", self.physical_address().bits()),
-            )
+            .field("physical_address", &self.physical_address().bits())
             .finish()
     }
 }
@@ -48,10 +45,6 @@ impl crate::Readable for PHYSICAL_ADDRESS_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`physical_address::W`](W) writer structure"]
 impl crate::Writable for PHYSICAL_ADDRESS_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets PHYSICAL_ADDRESS to value 0"]
-impl crate::Resettable for PHYSICAL_ADDRESS_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for PHYSICAL_ADDRESS_SPEC {}

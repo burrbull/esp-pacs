@@ -15,7 +15,7 @@ impl core::fmt::Debug for R {
         f.debug_struct("COMB_PVT_ERR_LVT_SITE0")
             .field(
                 "comb_timing_err_cnt_lvt_site0",
-                &format_args!("{}", self.comb_timing_err_cnt_lvt_site0().bits()),
+                &self.comb_timing_err_cnt_lvt_site0().bits(),
             )
             .finish()
     }
@@ -34,6 +34,4 @@ impl crate::RegisterSpec for COMB_PVT_ERR_LVT_SITE0_SPEC {
 #[doc = "`read()` method returns [`comb_pvt_err_lvt_site0::R`](R) reader structure"]
 impl crate::Readable for COMB_PVT_ERR_LVT_SITE0_SPEC {}
 #[doc = "`reset()` method sets COMB_PVT_ERR_LVT_SITE0 to value 0"]
-impl crate::Resettable for COMB_PVT_ERR_LVT_SITE0_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for COMB_PVT_ERR_LVT_SITE0_SPEC {}

@@ -13,7 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PHY_CAL")
-            .field("rxskewcalhs", &format_args!("{}", self.rxskewcalhs().bit()))
+            .field("rxskewcalhs", &self.rxskewcalhs().bit())
             .finish()
     }
 }
@@ -31,6 +31,4 @@ impl crate::RegisterSpec for PHY_CAL_SPEC {
 #[doc = "`read()` method returns [`phy_cal::R`](R) reader structure"]
 impl crate::Readable for PHY_CAL_SPEC {}
 #[doc = "`reset()` method sets PHY_CAL to value 0"]
-impl crate::Resettable for PHY_CAL_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for PHY_CAL_SPEC {}

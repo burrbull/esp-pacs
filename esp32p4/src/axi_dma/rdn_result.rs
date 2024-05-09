@@ -24,8 +24,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("RDN_RESULT")
-            .field("rdn_ena", &format_args!("{}", self.rdn_ena().bit()))
-            .field("rdn_result", &format_args!("{}", self.rdn_result().bit()))
+            .field("rdn_ena", &self.rdn_ena().bit())
+            .field("rdn_result", &self.rdn_result().bit())
             .finish()
     }
 }
@@ -53,10 +53,6 @@ impl crate::Readable for RDN_RESULT_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`rdn_result::W`](W) writer structure"]
 impl crate::Writable for RDN_RESULT_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets RDN_RESULT to value 0"]
-impl crate::Resettable for RDN_RESULT_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for RDN_RESULT_SPEC {}

@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PHY_TX_TRIGGERS")
-            .field(
-                "phy_tx_triggers",
-                &format_args!("{}", self.phy_tx_triggers().bits()),
-            )
+            .field("phy_tx_triggers", &self.phy_tx_triggers().bits())
             .finish()
     }
 }
@@ -48,10 +45,6 @@ impl crate::Readable for PHY_TX_TRIGGERS_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`phy_tx_triggers::W`](W) writer structure"]
 impl crate::Writable for PHY_TX_TRIGGERS_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets PHY_TX_TRIGGERS to value 0"]
-impl crate::Resettable for PHY_TX_TRIGGERS_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for PHY_TX_TRIGGERS_SPEC {}

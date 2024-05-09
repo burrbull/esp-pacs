@@ -13,10 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("EXTMEM_REJECT_ADDR")
-            .field(
-                "extmem_reject_addr",
-                &format_args!("{}", self.extmem_reject_addr().bits()),
-            )
+            .field("extmem_reject_addr", &self.extmem_reject_addr().bits())
             .finish()
     }
 }
@@ -34,6 +31,4 @@ impl crate::RegisterSpec for EXTMEM_REJECT_ADDR_SPEC {
 #[doc = "`read()` method returns [`extmem_reject_addr::R`](R) reader structure"]
 impl crate::Readable for EXTMEM_REJECT_ADDR_SPEC {}
 #[doc = "`reset()` method sets EXTMEM_REJECT_ADDR to value 0"]
-impl crate::Resettable for EXTMEM_REJECT_ADDR_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for EXTMEM_REJECT_ADDR_SPEC {}

@@ -34,22 +34,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("LC_DMA_INT_ST")
-            .field(
-                "lcd_vsync_int_st",
-                &format_args!("{}", self.lcd_vsync_int_st().bit()),
-            )
-            .field(
-                "lcd_trans_done_int_st",
-                &format_args!("{}", self.lcd_trans_done_int_st().bit()),
-            )
-            .field(
-                "cam_vsync_int_st",
-                &format_args!("{}", self.cam_vsync_int_st().bit()),
-            )
-            .field(
-                "cam_hs_int_st",
-                &format_args!("{}", self.cam_hs_int_st().bit()),
-            )
+            .field("lcd_vsync_int_st", &self.lcd_vsync_int_st().bit())
+            .field("lcd_trans_done_int_st", &self.lcd_trans_done_int_st().bit())
+            .field("cam_vsync_int_st", &self.cam_vsync_int_st().bit())
+            .field("cam_hs_int_st", &self.cam_hs_int_st().bit())
             .finish()
     }
 }
@@ -67,6 +55,4 @@ impl crate::RegisterSpec for LC_DMA_INT_ST_SPEC {
 #[doc = "`read()` method returns [`lc_dma_int_st::R`](R) reader structure"]
 impl crate::Readable for LC_DMA_INT_ST_SPEC {}
 #[doc = "`reset()` method sets LC_DMA_INT_ST to value 0"]
-impl crate::Resettable for LC_DMA_INT_ST_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for LC_DMA_INT_ST_SPEC {}

@@ -21,7 +21,7 @@ impl core::fmt::Debug for R {
         f.debug_struct("TOUCH_APPROACH")
             .field(
                 "touch_approach_meas_time",
-                &format_args!("{}", self.touch_approach_meas_time().bits()),
+                &self.touch_approach_meas_time().bits(),
             )
             .finish()
     }
@@ -56,8 +56,6 @@ impl crate::Readable for TOUCH_APPROACH_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`touch_approach::W`](W) writer structure"]
 impl crate::Writable for TOUCH_APPROACH_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets TOUCH_APPROACH to value 0x5000_0000"]
 impl crate::Resettable for TOUCH_APPROACH_SPEC {

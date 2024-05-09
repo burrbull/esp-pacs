@@ -67,14 +67,14 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("OUT_CPU")
-            .field("sel0", &format_args!("{}", self.sel0().bit()))
-            .field("sel1", &format_args!("{}", self.sel1().bit()))
-            .field("sel2", &format_args!("{}", self.sel2().bit()))
-            .field("sel3", &format_args!("{}", self.sel3().bit()))
-            .field("sel4", &format_args!("{}", self.sel4().bit()))
-            .field("sel5", &format_args!("{}", self.sel5().bit()))
-            .field("sel6", &format_args!("{}", self.sel6().bit()))
-            .field("sel7", &format_args!("{}", self.sel7().bit()))
+            .field("sel0", &self.sel0().bit())
+            .field("sel1", &self.sel1().bit())
+            .field("sel2", &self.sel2().bit())
+            .field("sel3", &self.sel3().bit())
+            .field("sel4", &self.sel4().bit())
+            .field("sel5", &self.sel5().bit())
+            .field("sel6", &self.sel6().bit())
+            .field("sel7", &self.sel7().bit())
             .finish()
     }
 }
@@ -154,10 +154,6 @@ impl crate::Readable for OUT_CPU_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`out_cpu::W`](W) writer structure"]
 impl crate::Writable for OUT_CPU_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets OUT_CPU to value 0"]
-impl crate::Resettable for OUT_CPU_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for OUT_CPU_SPEC {}

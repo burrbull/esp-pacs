@@ -174,60 +174,24 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("TX_CONF")
-            .field("tx_start", &format_args!("{}", self.tx_start().bit()))
-            .field(
-                "tx_slave_mod",
-                &format_args!("{}", self.tx_slave_mod().bit()),
-            )
-            .field("tx_mono", &format_args!("{}", self.tx_mono().bit()))
-            .field(
-                "tx_chan_equal",
-                &format_args!("{}", self.tx_chan_equal().bit()),
-            )
-            .field(
-                "tx_big_endian",
-                &format_args!("{}", self.tx_big_endian().bit()),
-            )
-            .field("tx_update", &format_args!("{}", self.tx_update().bit()))
-            .field(
-                "tx_mono_fst_vld",
-                &format_args!("{}", self.tx_mono_fst_vld().bit()),
-            )
-            .field(
-                "tx_pcm_conf",
-                &format_args!("{}", self.tx_pcm_conf().bits()),
-            )
-            .field(
-                "tx_pcm_bypass",
-                &format_args!("{}", self.tx_pcm_bypass().bit()),
-            )
-            .field("tx_stop_en", &format_args!("{}", self.tx_stop_en().bit()))
-            .field(
-                "tx_left_align",
-                &format_args!("{}", self.tx_left_align().bit()),
-            )
-            .field(
-                "tx_24_fill_en",
-                &format_args!("{}", self.tx_24_fill_en().bit()),
-            )
-            .field(
-                "tx_ws_idle_pol",
-                &format_args!("{}", self.tx_ws_idle_pol().bit()),
-            )
-            .field(
-                "tx_bit_order",
-                &format_args!("{}", self.tx_bit_order().bit()),
-            )
-            .field("tx_tdm_en", &format_args!("{}", self.tx_tdm_en().bit()))
-            .field("tx_pdm_en", &format_args!("{}", self.tx_pdm_en().bit()))
-            .field(
-                "tx_chan_mod",
-                &format_args!("{}", self.tx_chan_mod().bits()),
-            )
-            .field(
-                "sig_loopback",
-                &format_args!("{}", self.sig_loopback().bit()),
-            )
+            .field("tx_start", &self.tx_start().bit())
+            .field("tx_slave_mod", &self.tx_slave_mod().bit())
+            .field("tx_mono", &self.tx_mono().bit())
+            .field("tx_chan_equal", &self.tx_chan_equal().bit())
+            .field("tx_big_endian", &self.tx_big_endian().bit())
+            .field("tx_update", &self.tx_update().bit())
+            .field("tx_mono_fst_vld", &self.tx_mono_fst_vld().bit())
+            .field("tx_pcm_conf", &self.tx_pcm_conf().bits())
+            .field("tx_pcm_bypass", &self.tx_pcm_bypass().bit())
+            .field("tx_stop_en", &self.tx_stop_en().bit())
+            .field("tx_left_align", &self.tx_left_align().bit())
+            .field("tx_24_fill_en", &self.tx_24_fill_en().bit())
+            .field("tx_ws_idle_pol", &self.tx_ws_idle_pol().bit())
+            .field("tx_bit_order", &self.tx_bit_order().bit())
+            .field("tx_tdm_en", &self.tx_tdm_en().bit())
+            .field("tx_pdm_en", &self.tx_pdm_en().bit())
+            .field("tx_chan_mod", &self.tx_chan_mod().bits())
+            .field("sig_loopback", &self.sig_loopback().bit())
             .finish()
     }
 }
@@ -369,8 +333,6 @@ impl crate::Readable for TX_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`tx_conf::W`](W) writer structure"]
 impl crate::Writable for TX_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets TX_CONF to value 0xb200"]
 impl crate::Resettable for TX_CONF_SPEC {

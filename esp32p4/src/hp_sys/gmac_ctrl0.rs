@@ -56,27 +56,12 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("GMAC_CTRL0")
-            .field("ptp_pps", &format_args!("{}", self.ptp_pps().bit()))
-            .field(
-                "sbd_flowctrl",
-                &format_args!("{}", self.sbd_flowctrl().bit()),
-            )
-            .field(
-                "phy_intf_sel",
-                &format_args!("{}", self.phy_intf_sel().bits()),
-            )
-            .field(
-                "gmac_mem_clk_force_on",
-                &format_args!("{}", self.gmac_mem_clk_force_on().bit()),
-            )
-            .field(
-                "gmac_rst_clk_tx_n",
-                &format_args!("{}", self.gmac_rst_clk_tx_n().bit()),
-            )
-            .field(
-                "gmac_rst_clk_rx_n",
-                &format_args!("{}", self.gmac_rst_clk_rx_n().bit()),
-            )
+            .field("ptp_pps", &self.ptp_pps().bit())
+            .field("sbd_flowctrl", &self.sbd_flowctrl().bit())
+            .field("phy_intf_sel", &self.phy_intf_sel().bits())
+            .field("gmac_mem_clk_force_on", &self.gmac_mem_clk_force_on().bit())
+            .field("gmac_rst_clk_tx_n", &self.gmac_rst_clk_tx_n().bit())
+            .field("gmac_rst_clk_rx_n", &self.gmac_rst_clk_rx_n().bit())
             .finish()
     }
 }
@@ -116,10 +101,6 @@ impl crate::Readable for GMAC_CTRL0_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`gmac_ctrl0::W`](W) writer structure"]
 impl crate::Writable for GMAC_CTRL0_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets GMAC_CTRL0 to value 0"]
-impl crate::Resettable for GMAC_CTRL0_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for GMAC_CTRL0_SPEC {}

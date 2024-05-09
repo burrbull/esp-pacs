@@ -115,55 +115,55 @@ impl core::fmt::Debug for R {
         f.debug_struct("L2_MEM_REFRESH")
             .field(
                 "reg_l2_mem_unit0_refersh_en",
-                &format_args!("{}", self.reg_l2_mem_unit0_refersh_en().bit()),
+                &self.reg_l2_mem_unit0_refersh_en().bit(),
             )
             .field(
                 "reg_l2_mem_unit1_refersh_en",
-                &format_args!("{}", self.reg_l2_mem_unit1_refersh_en().bit()),
+                &self.reg_l2_mem_unit1_refersh_en().bit(),
             )
             .field(
                 "reg_l2_mem_unit2_refersh_en",
-                &format_args!("{}", self.reg_l2_mem_unit2_refersh_en().bit()),
+                &self.reg_l2_mem_unit2_refersh_en().bit(),
             )
             .field(
                 "reg_l2_mem_unit3_refersh_en",
-                &format_args!("{}", self.reg_l2_mem_unit3_refersh_en().bit()),
+                &self.reg_l2_mem_unit3_refersh_en().bit(),
             )
             .field(
                 "reg_l2_mem_unit4_refersh_en",
-                &format_args!("{}", self.reg_l2_mem_unit4_refersh_en().bit()),
+                &self.reg_l2_mem_unit4_refersh_en().bit(),
             )
             .field(
                 "reg_l2_mem_unit5_refersh_en",
-                &format_args!("{}", self.reg_l2_mem_unit5_refersh_en().bit()),
+                &self.reg_l2_mem_unit5_refersh_en().bit(),
             )
             .field(
                 "reg_l2_mem_refersh_cnt_reset",
-                &format_args!("{}", self.reg_l2_mem_refersh_cnt_reset().bit()),
+                &self.reg_l2_mem_refersh_cnt_reset().bit(),
             )
             .field(
                 "reg_l2_mem_unit0_refresh_done",
-                &format_args!("{}", self.reg_l2_mem_unit0_refresh_done().bit()),
+                &self.reg_l2_mem_unit0_refresh_done().bit(),
             )
             .field(
                 "reg_l2_mem_unit1_refresh_done",
-                &format_args!("{}", self.reg_l2_mem_unit1_refresh_done().bit()),
+                &self.reg_l2_mem_unit1_refresh_done().bit(),
             )
             .field(
                 "reg_l2_mem_unit2_refresh_done",
-                &format_args!("{}", self.reg_l2_mem_unit2_refresh_done().bit()),
+                &self.reg_l2_mem_unit2_refresh_done().bit(),
             )
             .field(
                 "reg_l2_mem_unit3_refresh_done",
-                &format_args!("{}", self.reg_l2_mem_unit3_refresh_done().bit()),
+                &self.reg_l2_mem_unit3_refresh_done().bit(),
             )
             .field(
                 "reg_l2_mem_unit4_refresh_done",
-                &format_args!("{}", self.reg_l2_mem_unit4_refresh_done().bit()),
+                &self.reg_l2_mem_unit4_refresh_done().bit(),
             )
             .field(
                 "reg_l2_mem_unit5_refresh_done",
-                &format_args!("{}", self.reg_l2_mem_unit5_refresh_done().bit()),
+                &self.reg_l2_mem_unit5_refresh_done().bit(),
             )
             .finish()
     }
@@ -242,8 +242,6 @@ impl crate::Readable for L2_MEM_REFRESH_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`l2_mem_refresh::W`](W) writer structure"]
 impl crate::Writable for L2_MEM_REFRESH_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets L2_MEM_REFRESH to value 0x40"]
 impl crate::Resettable for L2_MEM_REFRESH_SPEC {

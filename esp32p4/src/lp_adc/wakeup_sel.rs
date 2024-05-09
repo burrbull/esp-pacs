@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("WAKEUP_SEL")
-            .field(
-                "sar_wakeup_sel",
-                &format_args!("{}", self.sar_wakeup_sel().bit()),
-            )
+            .field("sar_wakeup_sel", &self.sar_wakeup_sel().bit())
             .finish()
     }
 }
@@ -48,10 +45,6 @@ impl crate::Readable for WAKEUP_SEL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`wakeup_sel::W`](W) writer structure"]
 impl crate::Writable for WAKEUP_SEL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets WAKEUP_SEL to value 0"]
-impl crate::Resettable for WAKEUP_SEL_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for WAKEUP_SEL_SPEC {}

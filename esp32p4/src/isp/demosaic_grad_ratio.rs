@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("DEMOSAIC_GRAD_RATIO")
-            .field(
-                "demosaic_grad_ratio",
-                &format_args!("{}", self.demosaic_grad_ratio().bits()),
-            )
+            .field("demosaic_grad_ratio", &self.demosaic_grad_ratio().bits())
             .finish()
     }
 }
@@ -48,8 +45,6 @@ impl crate::Readable for DEMOSAIC_GRAD_RATIO_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`demosaic_grad_ratio::W`](W) writer structure"]
 impl crate::Writable for DEMOSAIC_GRAD_RATIO_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets DEMOSAIC_GRAD_RATIO to value 0x10"]
 impl crate::Resettable for DEMOSAIC_GRAD_RATIO_SPEC {

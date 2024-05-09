@@ -26,14 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("DPA_CTRL0")
-            .field(
-                "sec_dpa_level",
-                &format_args!("{}", self.sec_dpa_level().bits()),
-            )
-            .field(
-                "sec_dpa_cfg_sel",
-                &format_args!("{}", self.sec_dpa_cfg_sel().bit()),
-            )
+            .field("sec_dpa_level", &self.sec_dpa_level().bits())
+            .field("sec_dpa_cfg_sel", &self.sec_dpa_cfg_sel().bit())
             .finish()
     }
 }
@@ -67,10 +61,6 @@ impl crate::Readable for DPA_CTRL0_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`dpa_ctrl0::W`](W) writer structure"]
 impl crate::Writable for DPA_CTRL0_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets DPA_CTRL0 to value 0"]
-impl crate::Resettable for DPA_CTRL0_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for DPA_CTRL0_SPEC {}

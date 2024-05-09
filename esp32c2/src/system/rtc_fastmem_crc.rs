@@ -13,10 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("RTC_FASTMEM_CRC")
-            .field(
-                "rtc_mem_crc_res",
-                &format_args!("{}", self.rtc_mem_crc_res().bits()),
-            )
+            .field("rtc_mem_crc_res", &self.rtc_mem_crc_res().bits())
             .finish()
     }
 }
@@ -34,6 +31,4 @@ impl crate::RegisterSpec for RTC_FASTMEM_CRC_SPEC {
 #[doc = "`read()` method returns [`rtc_fastmem_crc::R`](R) reader structure"]
 impl crate::Readable for RTC_FASTMEM_CRC_SPEC {}
 #[doc = "`reset()` method sets RTC_FASTMEM_CRC to value 0"]
-impl crate::Resettable for RTC_FASTMEM_CRC_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for RTC_FASTMEM_CRC_SPEC {}

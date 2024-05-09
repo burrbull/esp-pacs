@@ -116,36 +116,18 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("ADC_PAD")
-            .field("adc2_fun_ie", &format_args!("{}", self.adc2_fun_ie().bit()))
-            .field("adc2_slp_ie", &format_args!("{}", self.adc2_slp_ie().bit()))
-            .field(
-                "adc2_slp_sel",
-                &format_args!("{}", self.adc2_slp_sel().bit()),
-            )
-            .field(
-                "adc2_fun_sel",
-                &format_args!("{}", self.adc2_fun_sel().bits()),
-            )
-            .field("adc1_fun_ie", &format_args!("{}", self.adc1_fun_ie().bit()))
-            .field("adc1_slp_ie", &format_args!("{}", self.adc1_slp_ie().bit()))
-            .field(
-                "adc1_slp_sel",
-                &format_args!("{}", self.adc1_slp_sel().bit()),
-            )
-            .field(
-                "adc1_fun_sel",
-                &format_args!("{}", self.adc1_fun_sel().bits()),
-            )
-            .field(
-                "adc2_mux_sel",
-                &format_args!("{}", self.adc2_mux_sel().bit()),
-            )
-            .field(
-                "adc1_mux_sel",
-                &format_args!("{}", self.adc1_mux_sel().bit()),
-            )
-            .field("adc2_hold", &format_args!("{}", self.adc2_hold().bit()))
-            .field("adc1_hold", &format_args!("{}", self.adc1_hold().bit()))
+            .field("adc2_fun_ie", &self.adc2_fun_ie().bit())
+            .field("adc2_slp_ie", &self.adc2_slp_ie().bit())
+            .field("adc2_slp_sel", &self.adc2_slp_sel().bit())
+            .field("adc2_fun_sel", &self.adc2_fun_sel().bits())
+            .field("adc1_fun_ie", &self.adc1_fun_ie().bit())
+            .field("adc1_slp_ie", &self.adc1_slp_ie().bit())
+            .field("adc1_slp_sel", &self.adc1_slp_sel().bit())
+            .field("adc1_fun_sel", &self.adc1_fun_sel().bits())
+            .field("adc2_mux_sel", &self.adc2_mux_sel().bit())
+            .field("adc1_mux_sel", &self.adc1_mux_sel().bit())
+            .field("adc2_hold", &self.adc2_hold().bit())
+            .field("adc1_hold", &self.adc1_hold().bit())
             .finish()
     }
 }
@@ -239,10 +221,6 @@ impl crate::Readable for ADC_PAD_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`adc_pad::W`](W) writer structure"]
 impl crate::Writable for ADC_PAD_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets ADC_PAD to value 0"]
-impl crate::Resettable for ADC_PAD_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for ADC_PAD_SPEC {}

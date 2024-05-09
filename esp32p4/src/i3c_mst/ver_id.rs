@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("VER_ID")
-            .field(
-                "reg_i3c_mst_ver_id",
-                &format_args!("{}", self.reg_i3c_mst_ver_id().bits()),
-            )
+            .field("reg_i3c_mst_ver_id", &self.reg_i3c_mst_ver_id().bits())
             .finish()
     }
 }
@@ -48,8 +45,6 @@ impl crate::Readable for VER_ID_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`ver_id::W`](W) writer structure"]
 impl crate::Writable for VER_ID_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets VER_ID to value 0x2023_0504"]
 impl crate::Resettable for VER_ID_SPEC {

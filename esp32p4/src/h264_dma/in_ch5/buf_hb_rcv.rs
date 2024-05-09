@@ -15,7 +15,7 @@ impl core::fmt::Debug for R {
         f.debug_struct("BUF_HB_RCV")
             .field(
                 "in_cmdfifo_buf_hb_rcv",
-                &format_args!("{}", self.in_cmdfifo_buf_hb_rcv().bits()),
+                &self.in_cmdfifo_buf_hb_rcv().bits(),
             )
             .finish()
     }
@@ -34,6 +34,4 @@ impl crate::RegisterSpec for BUF_HB_RCV_SPEC {
 #[doc = "`read()` method returns [`buf_hb_rcv::R`](R) reader structure"]
 impl crate::Readable for BUF_HB_RCV_SPEC {}
 #[doc = "`reset()` method sets BUF_HB_RCV to value 0"]
-impl crate::Resettable for BUF_HB_RCV_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for BUF_HB_RCV_SPEC {}

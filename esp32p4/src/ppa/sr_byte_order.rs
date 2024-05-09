@@ -35,18 +35,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SR_BYTE_ORDER")
-            .field(
-                "sr_rx_byte_swap_en",
-                &format_args!("{}", self.sr_rx_byte_swap_en().bit()),
-            )
-            .field(
-                "sr_rx_rgb_swap_en",
-                &format_args!("{}", self.sr_rx_rgb_swap_en().bit()),
-            )
-            .field(
-                "sr_macro_bk_ro_bypass",
-                &format_args!("{}", self.sr_macro_bk_ro_bypass().bit()),
-            )
+            .field("sr_rx_byte_swap_en", &self.sr_rx_byte_swap_en().bit())
+            .field("sr_rx_rgb_swap_en", &self.sr_rx_rgb_swap_en().bit())
+            .field("sr_macro_bk_ro_bypass", &self.sr_macro_bk_ro_bypass().bit())
             .finish()
     }
 }
@@ -86,10 +77,6 @@ impl crate::Readable for SR_BYTE_ORDER_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`sr_byte_order::W`](W) writer structure"]
 impl crate::Writable for SR_BYTE_ORDER_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SR_BYTE_ORDER to value 0"]
-impl crate::Resettable for SR_BYTE_ORDER_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for SR_BYTE_ORDER_SPEC {}

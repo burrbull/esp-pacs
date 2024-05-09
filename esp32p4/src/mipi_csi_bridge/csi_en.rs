@@ -17,7 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CSI_EN")
-            .field("csi_brig_en", &format_args!("{}", self.csi_brig_en().bit()))
+            .field("csi_brig_en", &self.csi_brig_en().bit())
             .finish()
     }
 }
@@ -45,10 +45,6 @@ impl crate::Readable for CSI_EN_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`csi_en::W`](W) writer structure"]
 impl crate::Writable for CSI_EN_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CSI_EN to value 0"]
-impl crate::Resettable for CSI_EN_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for CSI_EN_SPEC {}

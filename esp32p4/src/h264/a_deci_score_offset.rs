@@ -46,19 +46,19 @@ impl core::fmt::Debug for R {
         f.debug_struct("A_DECI_SCORE_OFFSET")
             .field(
                 "a_i16x16_deci_score_offset",
-                &format_args!("{}", self.a_i16x16_deci_score_offset().bits()),
+                &self.a_i16x16_deci_score_offset().bits(),
             )
             .field(
                 "a_i_chroma_deci_score_offset",
-                &format_args!("{}", self.a_i_chroma_deci_score_offset().bits()),
+                &self.a_i_chroma_deci_score_offset().bits(),
             )
             .field(
                 "a_p16x16_deci_score_offset",
-                &format_args!("{}", self.a_p16x16_deci_score_offset().bits()),
+                &self.a_p16x16_deci_score_offset().bits(),
             )
             .field(
                 "a_p_chroma_deci_score_offset",
-                &format_args!("{}", self.a_p_chroma_deci_score_offset().bits()),
+                &self.a_p_chroma_deci_score_offset().bits(),
             )
             .finish()
     }
@@ -113,10 +113,6 @@ impl crate::Readable for A_DECI_SCORE_OFFSET_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`a_deci_score_offset::W`](W) writer structure"]
 impl crate::Writable for A_DECI_SCORE_OFFSET_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets A_DECI_SCORE_OFFSET to value 0"]
-impl crate::Resettable for A_DECI_SCORE_OFFSET_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for A_DECI_SCORE_OFFSET_SPEC {}

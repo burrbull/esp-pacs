@@ -13,10 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("HOST_SLCHOST_GPIO_STATUS0")
-            .field(
-                "host_gpio_sdio_int0",
-                &format_args!("{}", self.host_gpio_sdio_int0().bits()),
-            )
+            .field("host_gpio_sdio_int0", &self.host_gpio_sdio_int0().bits())
             .finish()
     }
 }
@@ -34,6 +31,4 @@ impl crate::RegisterSpec for HOST_SLCHOST_GPIO_STATUS0_SPEC {
 #[doc = "`read()` method returns [`host_slchost_gpio_status0::R`](R) reader structure"]
 impl crate::Readable for HOST_SLCHOST_GPIO_STATUS0_SPEC {}
 #[doc = "`reset()` method sets HOST_SLCHOST_GPIO_STATUS0 to value 0"]
-impl crate::Resettable for HOST_SLCHOST_GPIO_STATUS0_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for HOST_SLCHOST_GPIO_STATUS0_SPEC {}

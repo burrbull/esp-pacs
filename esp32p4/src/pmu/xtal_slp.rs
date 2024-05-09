@@ -17,7 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("XTAL_SLP")
-            .field("cnt_target", &format_args!("{}", self.cnt_target().bits()))
+            .field("cnt_target", &self.cnt_target().bits())
             .finish()
     }
 }
@@ -45,8 +45,6 @@ impl crate::Readable for XTAL_SLP_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`xtal_slp::W`](W) writer structure"]
 impl crate::Writable for XTAL_SLP_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets XTAL_SLP to value 0x000f_0000"]
 impl crate::Resettable for XTAL_SLP_SPEC {

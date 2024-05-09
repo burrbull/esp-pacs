@@ -71,34 +71,13 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("TX_CONF1")
-            .field(
-                "tx_tdm_ws_width",
-                &format_args!("{}", self.tx_tdm_ws_width().bits()),
-            )
-            .field(
-                "tx_bck_div_num",
-                &format_args!("{}", self.tx_bck_div_num().bits()),
-            )
-            .field(
-                "tx_bits_mod",
-                &format_args!("{}", self.tx_bits_mod().bits()),
-            )
-            .field(
-                "tx_half_sample_bits",
-                &format_args!("{}", self.tx_half_sample_bits().bits()),
-            )
-            .field(
-                "tx_tdm_chan_bits",
-                &format_args!("{}", self.tx_tdm_chan_bits().bits()),
-            )
-            .field(
-                "tx_msb_shift",
-                &format_args!("{}", self.tx_msb_shift().bit()),
-            )
-            .field(
-                "tx_bck_no_dly",
-                &format_args!("{}", self.tx_bck_no_dly().bit()),
-            )
+            .field("tx_tdm_ws_width", &self.tx_tdm_ws_width().bits())
+            .field("tx_bck_div_num", &self.tx_bck_div_num().bits())
+            .field("tx_bits_mod", &self.tx_bits_mod().bits())
+            .field("tx_half_sample_bits", &self.tx_half_sample_bits().bits())
+            .field("tx_tdm_chan_bits", &self.tx_tdm_chan_bits().bits())
+            .field("tx_msb_shift", &self.tx_msb_shift().bit())
+            .field("tx_bck_no_dly", &self.tx_bck_no_dly().bit())
             .finish()
     }
 }
@@ -162,8 +141,6 @@ impl crate::Readable for TX_CONF1_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`tx_conf1::W`](W) writer structure"]
 impl crate::Writable for TX_CONF1_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets TX_CONF1 to value 0x6f3d_e300"]
 impl crate::Resettable for TX_CONF1_SPEC {

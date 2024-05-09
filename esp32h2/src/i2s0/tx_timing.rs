@@ -62,30 +62,12 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("TX_TIMING")
-            .field(
-                "tx_sd_out_dm",
-                &format_args!("{}", self.tx_sd_out_dm().bits()),
-            )
-            .field(
-                "tx_sd1_out_dm",
-                &format_args!("{}", self.tx_sd1_out_dm().bits()),
-            )
-            .field(
-                "tx_ws_out_dm",
-                &format_args!("{}", self.tx_ws_out_dm().bits()),
-            )
-            .field(
-                "tx_bck_out_dm",
-                &format_args!("{}", self.tx_bck_out_dm().bits()),
-            )
-            .field(
-                "tx_ws_in_dm",
-                &format_args!("{}", self.tx_ws_in_dm().bits()),
-            )
-            .field(
-                "tx_bck_in_dm",
-                &format_args!("{}", self.tx_bck_in_dm().bits()),
-            )
+            .field("tx_sd_out_dm", &self.tx_sd_out_dm().bits())
+            .field("tx_sd1_out_dm", &self.tx_sd1_out_dm().bits())
+            .field("tx_ws_out_dm", &self.tx_ws_out_dm().bits())
+            .field("tx_bck_out_dm", &self.tx_bck_out_dm().bits())
+            .field("tx_ws_in_dm", &self.tx_ws_in_dm().bits())
+            .field("tx_bck_in_dm", &self.tx_bck_in_dm().bits())
             .finish()
     }
 }
@@ -143,10 +125,6 @@ impl crate::Readable for TX_TIMING_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`tx_timing::W`](W) writer structure"]
 impl crate::Writable for TX_TIMING_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets TX_TIMING to value 0"]
-impl crate::Resettable for TX_TIMING_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for TX_TIMING_SPEC {}

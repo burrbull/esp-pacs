@@ -44,22 +44,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("LP_SLEEP_LP_CK_POWER")
-            .field(
-                "lp_sleep_xpd_xtal32k",
-                &format_args!("{}", self.lp_sleep_xpd_xtal32k().bit()),
-            )
-            .field(
-                "lp_sleep_xpd_rc32k",
-                &format_args!("{}", self.lp_sleep_xpd_rc32k().bit()),
-            )
-            .field(
-                "lp_sleep_xpd_fosc_clk",
-                &format_args!("{}", self.lp_sleep_xpd_fosc_clk().bit()),
-            )
-            .field(
-                "lp_sleep_pd_osc_clk",
-                &format_args!("{}", self.lp_sleep_pd_osc_clk().bit()),
-            )
+            .field("lp_sleep_xpd_xtal32k", &self.lp_sleep_xpd_xtal32k().bit())
+            .field("lp_sleep_xpd_rc32k", &self.lp_sleep_xpd_rc32k().bit())
+            .field("lp_sleep_xpd_fosc_clk", &self.lp_sleep_xpd_fosc_clk().bit())
+            .field("lp_sleep_pd_osc_clk", &self.lp_sleep_pd_osc_clk().bit())
             .finish()
     }
 }
@@ -105,8 +93,6 @@ impl crate::Readable for LP_SLEEP_LP_CK_POWER_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`lp_sleep_lp_ck_power::W`](W) writer structure"]
 impl crate::Writable for LP_SLEEP_LP_CK_POWER_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets LP_SLEEP_LP_CK_POWER to value 0x4000_0000"]
 impl crate::Resettable for LP_SLEEP_LP_CK_POWER_SPEC {

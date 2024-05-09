@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("VID_PKT_SIZE")
-            .field(
-                "vid_pkt_size",
-                &format_args!("{}", self.vid_pkt_size().bits()),
-            )
+            .field("vid_pkt_size", &self.vid_pkt_size().bits())
             .finish()
     }
 }
@@ -48,10 +45,6 @@ impl crate::Readable for VID_PKT_SIZE_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`vid_pkt_size::W`](W) writer structure"]
 impl crate::Writable for VID_PKT_SIZE_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets VID_PKT_SIZE to value 0"]
-impl crate::Resettable for VID_PKT_SIZE_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for VID_PKT_SIZE_SPEC {}

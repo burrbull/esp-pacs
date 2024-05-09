@@ -35,18 +35,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("MODE_YUV")
-            .field(
-                "out_test_y_value",
-                &format_args!("{}", self.out_test_y_value().bits()),
-            )
-            .field(
-                "out_test_u_value",
-                &format_args!("{}", self.out_test_u_value().bits()),
-            )
-            .field(
-                "out_test_v_value",
-                &format_args!("{}", self.out_test_v_value().bits()),
-            )
+            .field("out_test_y_value", &self.out_test_y_value().bits())
+            .field("out_test_u_value", &self.out_test_u_value().bits())
+            .field("out_test_v_value", &self.out_test_v_value().bits())
             .finish()
     }
 }
@@ -86,10 +77,6 @@ impl crate::Readable for MODE_YUV_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`mode_yuv::W`](W) writer structure"]
 impl crate::Writable for MODE_YUV_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets MODE_YUV to value 0"]
-impl crate::Resettable for MODE_YUV_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for MODE_YUV_SPEC {}

@@ -60,30 +60,12 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SAR_TOUCH_CTRL2")
-            .field(
-                "touch_meas_en",
-                &format_args!("{}", self.touch_meas_en().bits()),
-            )
-            .field(
-                "touch_meas_done",
-                &format_args!("{}", self.touch_meas_done().bit()),
-            )
-            .field(
-                "touch_start_fsm_en",
-                &format_args!("{}", self.touch_start_fsm_en().bit()),
-            )
-            .field(
-                "touch_start_en",
-                &format_args!("{}", self.touch_start_en().bit()),
-            )
-            .field(
-                "touch_start_force",
-                &format_args!("{}", self.touch_start_force().bit()),
-            )
-            .field(
-                "touch_sleep_cycles",
-                &format_args!("{}", self.touch_sleep_cycles().bits()),
-            )
+            .field("touch_meas_en", &self.touch_meas_en().bits())
+            .field("touch_meas_done", &self.touch_meas_done().bit())
+            .field("touch_start_fsm_en", &self.touch_start_fsm_en().bit())
+            .field("touch_start_en", &self.touch_start_en().bit())
+            .field("touch_start_force", &self.touch_start_force().bit())
+            .field("touch_sleep_cycles", &self.touch_sleep_cycles().bits())
             .finish()
     }
 }
@@ -135,8 +117,6 @@ impl crate::Readable for SAR_TOUCH_CTRL2_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`sar_touch_ctrl2::W`](W) writer structure"]
 impl crate::Writable for SAR_TOUCH_CTRL2_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SAR_TOUCH_CTRL2 to value 0x0040_0800"]
 impl crate::Resettable for SAR_TOUCH_CTRL2_SPEC {

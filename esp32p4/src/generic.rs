@@ -1,8 +1,9 @@
+use const_default::ConstDefault;
 use core::marker;
 #[doc = " Raw register type (`u8`, `u16`, `u32`, ...)"]
 pub trait RawReg:
     Copy
-    + Default
+    + ConstDefault
     + From<bool>
     + core::ops::BitOr<Output = Self>
     + core::ops::BitAnd<Output = Self>
@@ -65,9 +66,9 @@ pub trait Writable: RegisterSpec {
     #[doc = " Is it safe to write any bits to register"]
     type Safety;
     #[doc = " Specifies the register bits that are not changed if you pass `1` and are changed if you pass `0`"]
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux;
+    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = Self::Ux::DEFAULT;
     #[doc = " Specifies the register bits that are not changed if you pass `0` and are changed if you pass `1`"]
-    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = Self::Ux::DEFAULT;
 }
 #[doc = " Reset value of the register."]
 #[doc = ""]
@@ -75,7 +76,7 @@ pub trait Writable: RegisterSpec {
 #[doc = " register by using the `reset` method."]
 pub trait Resettable: RegisterSpec {
     #[doc = " Reset value of the register."]
-    const RESET_VALUE: Self::Ux;
+    const RESET_VALUE: Self::Ux = Self::Ux::DEFAULT;
     #[doc = " Reset value of the register."]
     #[inline(always)]
     fn reset_value() -> Self::Ux {
@@ -182,7 +183,7 @@ impl<REG: Writable> Reg<REG> {
     {
         self.register.set(
             f(&mut W {
-                bits: REG::Ux::default(),
+                bits: REG::Ux::DEFAULT,
                 _reg: marker::PhantomData,
             })
             .bits,
@@ -342,6 +343,12 @@ impl<FI> BitReader<FI> {
 pub struct Safe;
 #[doc = " You should check that value is allowed to pass to register/field writer marked with this"]
 pub struct Unsafe;
+#[doc = " Marker for field writers are safe to write in specified inclusive range"]
+pub struct Range<const MIN: u64, const MAX: u64>;
+#[doc = " Marker for field writers are safe to write in specified inclusive range"]
+pub struct RangeFrom<const MIN: u64>;
+#[doc = " Marker for field writers are safe to write in specified inclusive range"]
+pub struct RangeTo<const MAX: u64>;
 #[doc = " Write field Proxy"]
 pub type FieldWriter<'a, REG, const WI: u8, FI = u8, Safety = Unsafe> =
     raw::FieldWriter<'a, REG, WI, FI, Safety>;
@@ -390,6 +397,58 @@ where
     #[doc = " Writes raw bits to the field"]
     #[inline(always)]
     pub fn set(self, value: FI::Ux) -> &'a mut W<REG> {
+        unsafe { self.bits(value) }
+    }
+}
+impl<'a, REG, const WI: u8, FI, const MIN: u64, const MAX: u64>
+    FieldWriter<'a, REG, WI, FI, Range<MIN, MAX>>
+where
+    REG: Writable + RegisterSpec,
+    FI: FieldSpec,
+    REG::Ux: From<FI::Ux>,
+    u64: From<FI::Ux>,
+{
+    #[doc = " Writes raw bits to the field"]
+    #[inline(always)]
+    pub fn set(self, value: FI::Ux) -> &'a mut W<REG> {
+        {
+            let value = u64::from(value);
+            assert!(value >= MIN && value <= MAX);
+        }
+        unsafe { self.bits(value) }
+    }
+}
+impl<'a, REG, const WI: u8, FI, const MIN: u64> FieldWriter<'a, REG, WI, FI, RangeFrom<MIN>>
+where
+    REG: Writable + RegisterSpec,
+    FI: FieldSpec,
+    REG::Ux: From<FI::Ux>,
+    u64: From<FI::Ux>,
+{
+    #[doc = " Writes raw bits to the field"]
+    #[inline(always)]
+    pub fn set(self, value: FI::Ux) -> &'a mut W<REG> {
+        {
+            let value = u64::from(value);
+            assert!(value >= MIN);
+        }
+        unsafe { self.bits(value) }
+    }
+}
+impl<'a, REG, const WI: u8, FI, const MAX: u64> FieldWriter<'a, REG, WI, FI, RangeTo<MAX>>
+where
+    REG: Writable + RegisterSpec,
+    FI: FieldSpec,
+    REG::Ux: From<FI::Ux>,
+    u64: From<FI::Ux>,
+{
+    #[doc = " Writes raw bits to the field"]
+    #[inline(always)]
+    pub fn set(self, value: FI::Ux) -> &'a mut W<REG> {
+        {
+            let value = u64::from(value);
+            assert!(value <= MAX);
+        }
         unsafe { self.bits(value) }
     }
 }

@@ -64,27 +64,27 @@ impl core::fmt::Debug for R {
         f.debug_struct("CORE_TIMEOUT_INT_RAW")
             .field(
                 "core0_ahb_timeout_int_raw",
-                &format_args!("{}", self.core0_ahb_timeout_int_raw().bit()),
+                &self.core0_ahb_timeout_int_raw().bit(),
             )
             .field(
                 "core1_ahb_timeout_int_raw",
-                &format_args!("{}", self.core1_ahb_timeout_int_raw().bit()),
+                &self.core1_ahb_timeout_int_raw().bit(),
             )
             .field(
                 "core0_ibus_timeout_int_raw",
-                &format_args!("{}", self.core0_ibus_timeout_int_raw().bit()),
+                &self.core0_ibus_timeout_int_raw().bit(),
             )
             .field(
                 "core1_ibus_timeout_int_raw",
-                &format_args!("{}", self.core1_ibus_timeout_int_raw().bit()),
+                &self.core1_ibus_timeout_int_raw().bit(),
             )
             .field(
                 "core0_dbus_timeout_int_raw",
-                &format_args!("{}", self.core0_dbus_timeout_int_raw().bit()),
+                &self.core0_dbus_timeout_int_raw().bit(),
             )
             .field(
                 "core1_dbus_timeout_int_raw",
-                &format_args!("{}", self.core1_dbus_timeout_int_raw().bit()),
+                &self.core1_dbus_timeout_int_raw().bit(),
             )
             .finish()
     }
@@ -155,10 +155,6 @@ impl crate::Readable for CORE_TIMEOUT_INT_RAW_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`core_timeout_int_raw::W`](W) writer structure"]
 impl crate::Writable for CORE_TIMEOUT_INT_RAW_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CORE_TIMEOUT_INT_RAW to value 0"]
-impl crate::Resettable for CORE_TIMEOUT_INT_RAW_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for CORE_TIMEOUT_INT_RAW_SPEC {}

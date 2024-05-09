@@ -62,24 +62,12 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SR_COLOR_MODE")
-            .field("sr_rx_cm", &format_args!("{}", self.sr_rx_cm().bits()))
-            .field("sr_tx_cm", &format_args!("{}", self.sr_tx_cm().bits()))
-            .field(
-                "yuv_rx_range",
-                &format_args!("{}", self.yuv_rx_range().bit()),
-            )
-            .field(
-                "yuv_tx_range",
-                &format_args!("{}", self.yuv_tx_range().bit()),
-            )
-            .field(
-                "yuv2rgb_protocal",
-                &format_args!("{}", self.yuv2rgb_protocal().bit()),
-            )
-            .field(
-                "rgb2yuv_protocal",
-                &format_args!("{}", self.rgb2yuv_protocal().bit()),
-            )
+            .field("sr_rx_cm", &self.sr_rx_cm().bits())
+            .field("sr_tx_cm", &self.sr_tx_cm().bits())
+            .field("yuv_rx_range", &self.yuv_rx_range().bit())
+            .field("yuv_tx_range", &self.yuv_tx_range().bit())
+            .field("yuv2rgb_protocal", &self.yuv2rgb_protocal().bit())
+            .field("rgb2yuv_protocal", &self.rgb2yuv_protocal().bit())
             .finish()
     }
 }
@@ -137,10 +125,6 @@ impl crate::Readable for SR_COLOR_MODE_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`sr_color_mode::W`](W) writer structure"]
 impl crate::Writable for SR_COLOR_MODE_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SR_COLOR_MODE to value 0"]
-impl crate::Resettable for SR_COLOR_MODE_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for SR_COLOR_MODE_SPEC {}

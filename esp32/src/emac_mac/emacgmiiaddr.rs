@@ -53,11 +53,11 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("EMACGMIIADDR")
-            .field("miibusy", &format_args!("{}", self.miibusy().bit()))
-            .field("miiwrite", &format_args!("{}", self.miiwrite().bit()))
-            .field("miicsrclk", &format_args!("{}", self.miicsrclk().bits()))
-            .field("miireg", &format_args!("{}", self.miireg().bits()))
-            .field("miidev", &format_args!("{}", self.miidev().bits()))
+            .field("miibusy", &self.miibusy().bit())
+            .field("miiwrite", &self.miiwrite().bit())
+            .field("miicsrclk", &self.miicsrclk().bits())
+            .field("miireg", &self.miireg().bits())
+            .field("miidev", &self.miidev().bits())
             .finish()
     }
 }
@@ -109,10 +109,6 @@ impl crate::Readable for EMACGMIIADDR_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`emacgmiiaddr::W`](W) writer structure"]
 impl crate::Writable for EMACGMIIADDR_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets EMACGMIIADDR to value 0"]
-impl crate::Resettable for EMACGMIIADDR_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for EMACGMIIADDR_SPEC {}

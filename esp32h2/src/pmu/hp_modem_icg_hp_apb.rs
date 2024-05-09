@@ -19,7 +19,7 @@ impl core::fmt::Debug for R {
         f.debug_struct("HP_MODEM_ICG_HP_APB")
             .field(
                 "hp_modem_dig_icg_apb_en",
-                &format_args!("{}", self.hp_modem_dig_icg_apb_en().bits()),
+                &self.hp_modem_dig_icg_apb_en().bits(),
             )
             .finish()
     }
@@ -50,8 +50,6 @@ impl crate::Readable for HP_MODEM_ICG_HP_APB_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`hp_modem_icg_hp_apb::W`](W) writer structure"]
 impl crate::Writable for HP_MODEM_ICG_HP_APB_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets HP_MODEM_ICG_HP_APB to value 0xffff_ffff"]
 impl crate::Resettable for HP_MODEM_ICG_HP_APB_SPEC {

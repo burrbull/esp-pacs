@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("RC32K_CNTL")
-            .field(
-                "rc32k_dfreq",
-                &format_args!("{}", self.rc32k_dfreq().bits()),
-            )
+            .field("rc32k_dfreq", &self.rc32k_dfreq().bits())
             .finish()
     }
 }
@@ -48,8 +45,6 @@ impl crate::Readable for RC32K_CNTL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`rc32k_cntl::W`](W) writer structure"]
 impl crate::Writable for RC32K_CNTL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets RC32K_CNTL to value 0xa280_0000"]
 impl crate::Resettable for RC32K_CNTL_SPEC {

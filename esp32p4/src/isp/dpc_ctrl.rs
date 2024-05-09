@@ -62,24 +62,12 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("DPC_CTRL")
-            .field(
-                "dpc_check_en",
-                &format_args!("{}", self.dpc_check_en().bit()),
-            )
-            .field("sta_en", &format_args!("{}", self.sta_en().bit()))
-            .field("dyn_en", &format_args!("{}", self.dyn_en().bit()))
-            .field(
-                "dpc_black_en",
-                &format_args!("{}", self.dpc_black_en().bit()),
-            )
-            .field(
-                "dpc_method_sel",
-                &format_args!("{}", self.dpc_method_sel().bit()),
-            )
-            .field(
-                "dpc_check_od_en",
-                &format_args!("{}", self.dpc_check_od_en().bit()),
-            )
+            .field("dpc_check_en", &self.dpc_check_en().bit())
+            .field("sta_en", &self.sta_en().bit())
+            .field("dyn_en", &self.dyn_en().bit())
+            .field("dpc_black_en", &self.dpc_black_en().bit())
+            .field("dpc_method_sel", &self.dpc_method_sel().bit())
+            .field("dpc_check_od_en", &self.dpc_check_od_en().bit())
             .finish()
     }
 }
@@ -137,8 +125,6 @@ impl crate::Readable for DPC_CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`dpc_ctrl::W`](W) writer structure"]
 impl crate::Writable for DPC_CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets DPC_CTRL to value 0x04"]
 impl crate::Resettable for DPC_CTRL_SPEC {

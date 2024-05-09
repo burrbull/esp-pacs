@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("LP_MEM_AUX_CTRL")
-            .field(
-                "lp_mem_aux_ctrl",
-                &format_args!("{}", self.lp_mem_aux_ctrl().bits()),
-            )
+            .field("lp_mem_aux_ctrl", &self.lp_mem_aux_ctrl().bits())
             .finish()
     }
 }
@@ -48,8 +45,6 @@ impl crate::Readable for LP_MEM_AUX_CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`lp_mem_aux_ctrl::W`](W) writer structure"]
 impl crate::Writable for LP_MEM_AUX_CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets LP_MEM_AUX_CTRL to value 0x2070"]
 impl crate::Resettable for LP_MEM_AUX_CTRL_SPEC {

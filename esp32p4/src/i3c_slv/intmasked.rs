@@ -27,9 +27,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("INTMASKED")
-            .field("stop_mask", &format_args!("{}", self.stop_mask().bit()))
-            .field("rxpend_mask", &format_args!("{}", self.rxpend_mask().bit()))
-            .field("txsend_mask", &format_args!("{}", self.txsend_mask().bit()))
+            .field("stop_mask", &self.stop_mask().bit())
+            .field("rxpend_mask", &self.rxpend_mask().bit())
+            .field("txsend_mask", &self.txsend_mask().bit())
             .finish()
     }
 }
@@ -47,6 +47,4 @@ impl crate::RegisterSpec for INTMASKED_SPEC {
 #[doc = "`read()` method returns [`intmasked::R`](R) reader structure"]
 impl crate::Readable for INTMASKED_SPEC {}
 #[doc = "`reset()` method sets INTMASKED to value 0"]
-impl crate::Resettable for INTMASKED_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for INTMASKED_SPEC {}

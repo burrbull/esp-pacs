@@ -80,38 +80,14 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("L1_CACHE_ACS_CNT_INT_RAW")
-            .field(
-                "l1_ibus0_ovf_int_raw",
-                &format_args!("{}", self.l1_ibus0_ovf_int_raw().bit()),
-            )
-            .field(
-                "l1_ibus1_ovf_int_raw",
-                &format_args!("{}", self.l1_ibus1_ovf_int_raw().bit()),
-            )
-            .field(
-                "l1_ibus2_ovf_int_raw",
-                &format_args!("{}", self.l1_ibus2_ovf_int_raw().bit()),
-            )
-            .field(
-                "l1_ibus3_ovf_int_raw",
-                &format_args!("{}", self.l1_ibus3_ovf_int_raw().bit()),
-            )
-            .field(
-                "l1_bus0_ovf_int_raw",
-                &format_args!("{}", self.l1_bus0_ovf_int_raw().bit()),
-            )
-            .field(
-                "l1_bus1_ovf_int_raw",
-                &format_args!("{}", self.l1_bus1_ovf_int_raw().bit()),
-            )
-            .field(
-                "l1_dbus2_ovf_int_raw",
-                &format_args!("{}", self.l1_dbus2_ovf_int_raw().bit()),
-            )
-            .field(
-                "l1_dbus3_ovf_int_raw",
-                &format_args!("{}", self.l1_dbus3_ovf_int_raw().bit()),
-            )
+            .field("l1_ibus0_ovf_int_raw", &self.l1_ibus0_ovf_int_raw().bit())
+            .field("l1_ibus1_ovf_int_raw", &self.l1_ibus1_ovf_int_raw().bit())
+            .field("l1_ibus2_ovf_int_raw", &self.l1_ibus2_ovf_int_raw().bit())
+            .field("l1_ibus3_ovf_int_raw", &self.l1_ibus3_ovf_int_raw().bit())
+            .field("l1_bus0_ovf_int_raw", &self.l1_bus0_ovf_int_raw().bit())
+            .field("l1_bus1_ovf_int_raw", &self.l1_bus1_ovf_int_raw().bit())
+            .field("l1_dbus2_ovf_int_raw", &self.l1_dbus2_ovf_int_raw().bit())
+            .field("l1_dbus3_ovf_int_raw", &self.l1_dbus3_ovf_int_raw().bit())
             .finish()
     }
 }
@@ -193,10 +169,6 @@ impl crate::Readable for L1_CACHE_ACS_CNT_INT_RAW_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`l1_cache_acs_cnt_int_raw::W`](W) writer structure"]
 impl crate::Writable for L1_CACHE_ACS_CNT_INT_RAW_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets L1_CACHE_ACS_CNT_INT_RAW to value 0"]
-impl crate::Resettable for L1_CACHE_ACS_CNT_INT_RAW_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for L1_CACHE_ACS_CNT_INT_RAW_SPEC {}

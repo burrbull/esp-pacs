@@ -26,8 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CLK_CONF1_FORCE_ON")
-            .field("clk_fe_fo", &format_args!("{}", self.clk_fe_fo().bit()))
-            .field("clk_bt_fo", &format_args!("{}", self.clk_bt_fo().bit()))
+            .field("clk_fe_fo", &self.clk_fe_fo().bit())
+            .field("clk_bt_fo", &self.clk_bt_fo().bit())
             .finish()
     }
 }
@@ -61,10 +61,6 @@ impl crate::Readable for CLK_CONF1_FORCE_ON_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`clk_conf1_force_on::W`](W) writer structure"]
 impl crate::Writable for CLK_CONF1_FORCE_ON_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CLK_CONF1_FORCE_ON to value 0"]
-impl crate::Resettable for CLK_CONF1_FORCE_ON_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for CLK_CONF1_FORCE_ON_SPEC {}

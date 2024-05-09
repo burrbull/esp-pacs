@@ -44,22 +44,13 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("RETENTION_CTRL2")
-            .field(
-                "ret_icache_size",
-                &format_args!("{}", self.ret_icache_size().bits()),
-            )
-            .field(
-                "ret_icache_vld_size",
-                &format_args!("{}", self.ret_icache_vld_size().bits()),
-            )
+            .field("ret_icache_size", &self.ret_icache_size().bits())
+            .field("ret_icache_vld_size", &self.ret_icache_vld_size().bits())
             .field(
                 "ret_icache_start_point",
-                &format_args!("{}", self.ret_icache_start_point().bits()),
+                &self.ret_icache_start_point().bits(),
             )
-            .field(
-                "ret_icache_enable",
-                &format_args!("{}", self.ret_icache_enable().bit()),
-            )
+            .field("ret_icache_enable", &self.ret_icache_enable().bit())
             .finish()
     }
 }
@@ -105,8 +96,6 @@ impl crate::Readable for RETENTION_CTRL2_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`retention_ctrl2::W`](W) writer structure"]
 impl crate::Writable for RETENTION_CTRL2_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets RETENTION_CTRL2 to value 0x001f_eff0"]
 impl crate::Resettable for RETENTION_CTRL2_SPEC {

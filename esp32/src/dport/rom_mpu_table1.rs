@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("ROM_MPU_TABLE1")
-            .field(
-                "rom_mpu_table1",
-                &format_args!("{}", self.rom_mpu_table1().bits()),
-            )
+            .field("rom_mpu_table1", &self.rom_mpu_table1().bits())
             .finish()
     }
 }
@@ -48,8 +45,6 @@ impl crate::Readable for ROM_MPU_TABLE1_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`rom_mpu_table1::W`](W) writer structure"]
 impl crate::Writable for ROM_MPU_TABLE1_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets ROM_MPU_TABLE1 to value 0x01"]
 impl crate::Resettable for ROM_MPU_TABLE1_SPEC {

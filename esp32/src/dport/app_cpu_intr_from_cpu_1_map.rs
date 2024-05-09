@@ -19,7 +19,7 @@ impl core::fmt::Debug for R {
         f.debug_struct("APP_CPU_INTR_FROM_CPU_1_MAP")
             .field(
                 "app_cpu_intr_from_cpu_1_map",
-                &format_args!("{}", self.app_cpu_intr_from_cpu_1_map().bits()),
+                &self.app_cpu_intr_from_cpu_1_map().bits(),
             )
             .finish()
     }
@@ -50,8 +50,6 @@ impl crate::Readable for APP_CPU_INTR_FROM_CPU_1_MAP_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`app_cpu_intr_from_cpu_1_map::W`](W) writer structure"]
 impl crate::Writable for APP_CPU_INTR_FROM_CPU_1_MAP_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets APP_CPU_INTR_FROM_CPU_1_MAP to value 0x10"]
 impl crate::Resettable for APP_CPU_INTR_FROM_CPU_1_MAP_SPEC {

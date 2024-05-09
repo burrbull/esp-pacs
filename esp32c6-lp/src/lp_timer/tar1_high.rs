@@ -19,10 +19,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("TAR1_HIGH")
-            .field(
-                "main_timer_tar_high1",
-                &format_args!("{}", self.main_timer_tar_high1().bits()),
-            )
+            .field("main_timer_tar_high1", &self.main_timer_tar_high1().bits())
             .finish()
     }
 }
@@ -56,10 +53,6 @@ impl crate::Readable for TAR1_HIGH_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`tar1_high::W`](W) writer structure"]
 impl crate::Writable for TAR1_HIGH_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets TAR1_HIGH to value 0"]
-impl crate::Resettable for TAR1_HIGH_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for TAR1_HIGH_SPEC {}

@@ -111,26 +111,17 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("DCTL")
-            .field("rmtwkupsig", &format_args!("{}", self.rmtwkupsig().bit()))
-            .field("sftdiscon", &format_args!("{}", self.sftdiscon().bit()))
-            .field("gnpinnaksts", &format_args!("{}", self.gnpinnaksts().bit()))
-            .field("goutnaksts", &format_args!("{}", self.goutnaksts().bit()))
-            .field("tstctl", &format_args!("{}", self.tstctl().bits()))
-            .field(
-                "pwronprgdone",
-                &format_args!("{}", self.pwronprgdone().bit()),
-            )
-            .field("gmc", &format_args!("{}", self.gmc().bits()))
-            .field("ignrfrmnum", &format_args!("{}", self.ignrfrmnum().bit()))
-            .field("nakonbble", &format_args!("{}", self.nakonbble().bit()))
-            .field(
-                "encountonbna",
-                &format_args!("{}", self.encountonbna().bit()),
-            )
-            .field(
-                "deepsleepbeslreject",
-                &format_args!("{}", self.deepsleepbeslreject().bit()),
-            )
+            .field("rmtwkupsig", &self.rmtwkupsig().bit())
+            .field("sftdiscon", &self.sftdiscon().bit())
+            .field("gnpinnaksts", &self.gnpinnaksts().bit())
+            .field("goutnaksts", &self.goutnaksts().bit())
+            .field("tstctl", &self.tstctl().bits())
+            .field("pwronprgdone", &self.pwronprgdone().bit())
+            .field("gmc", &self.gmc().bits())
+            .field("ignrfrmnum", &self.ignrfrmnum().bit())
+            .field("nakonbble", &self.nakonbble().bit())
+            .field("encountonbna", &self.encountonbna().bit())
+            .field("deepsleepbeslreject", &self.deepsleepbeslreject().bit())
             .finish()
     }
 }
@@ -230,8 +221,6 @@ impl crate::Readable for DCTL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`dctl::W`](W) writer structure"]
 impl crate::Writable for DCTL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets DCTL to value 0x2000"]
 impl crate::Resettable for DCTL_SPEC {

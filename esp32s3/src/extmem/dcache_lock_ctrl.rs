@@ -33,18 +33,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("DCACHE_LOCK_CTRL")
-            .field(
-                "dcache_lock_ena",
-                &format_args!("{}", self.dcache_lock_ena().bit()),
-            )
-            .field(
-                "dcache_unlock_ena",
-                &format_args!("{}", self.dcache_unlock_ena().bit()),
-            )
-            .field(
-                "dcache_lock_done",
-                &format_args!("{}", self.dcache_lock_done().bit()),
-            )
+            .field("dcache_lock_ena", &self.dcache_lock_ena().bit())
+            .field("dcache_unlock_ena", &self.dcache_unlock_ena().bit())
+            .field("dcache_lock_done", &self.dcache_lock_done().bit())
             .finish()
     }
 }
@@ -78,8 +69,6 @@ impl crate::Readable for DCACHE_LOCK_CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`dcache_lock_ctrl::W`](W) writer structure"]
 impl crate::Writable for DCACHE_LOCK_CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets DCACHE_LOCK_CTRL to value 0x04"]
 impl crate::Resettable for DCACHE_LOCK_CTRL_SPEC {

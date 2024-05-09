@@ -35,15 +35,15 @@ impl core::fmt::Debug for R {
         f.debug_struct("PRO_CPU_RECORD_PDEBUGSTATUS")
             .field(
                 "record_pro_pdebugstatus",
-                &format_args!("{}", self.record_pro_pdebugstatus().bits()),
+                &self.record_pro_pdebugstatus().bits(),
             )
             .field(
                 "record_pdebugstatus_bbcause",
-                &format_args!("{}", self.record_pdebugstatus_bbcause().bits()),
+                &self.record_pdebugstatus_bbcause().bits(),
             )
             .field(
                 "record_pdebugstatus_insntype",
-                &format_args!("{}", self.record_pdebugstatus_insntype().bits()),
+                &self.record_pdebugstatus_insntype().bits(),
             )
             .finish()
     }
@@ -82,10 +82,6 @@ impl crate::Readable for PRO_CPU_RECORD_PDEBUGSTATUS_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`pro_cpu_record_pdebugstatus::W`](W) writer structure"]
 impl crate::Writable for PRO_CPU_RECORD_PDEBUGSTATUS_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets PRO_CPU_RECORD_PDEBUGSTATUS to value 0"]
-impl crate::Resettable for PRO_CPU_RECORD_PDEBUGSTATUS_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for PRO_CPU_RECORD_PDEBUGSTATUS_SPEC {}

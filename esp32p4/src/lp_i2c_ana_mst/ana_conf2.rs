@@ -24,11 +24,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("ANA_CONF2")
-            .field("ana_conf2", &format_args!("{}", self.ana_conf2().bits()))
-            .field(
-                "ana_status2",
-                &format_args!("{}", self.ana_status2().bits()),
-            )
+            .field("ana_conf2", &self.ana_conf2().bits())
+            .field("ana_status2", &self.ana_status2().bits())
             .finish()
     }
 }
@@ -56,10 +53,6 @@ impl crate::Readable for ANA_CONF2_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`ana_conf2::W`](W) writer structure"]
 impl crate::Writable for ANA_CONF2_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets ANA_CONF2 to value 0"]
-impl crate::Resettable for ANA_CONF2_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for ANA_CONF2_SPEC {}

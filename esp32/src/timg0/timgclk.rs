@@ -17,7 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("TIMGCLK")
-            .field("clk_en", &format_args!("{}", self.clk_en().bit()))
+            .field("clk_en", &self.clk_en().bit())
             .finish()
     }
 }
@@ -45,10 +45,6 @@ impl crate::Readable for TIMGCLK_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`timgclk::W`](W) writer structure"]
 impl crate::Writable for TIMGCLK_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets TIMGCLK to value 0"]
-impl crate::Resettable for TIMGCLK_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for TIMGCLK_SPEC {}

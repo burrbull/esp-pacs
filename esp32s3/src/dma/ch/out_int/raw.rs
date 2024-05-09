@@ -80,32 +80,14 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("RAW")
-            .field("out_done", &format_args!("{}", self.out_done().bit()))
-            .field("out_eof", &format_args!("{}", self.out_eof().bit()))
-            .field(
-                "out_dscr_err",
-                &format_args!("{}", self.out_dscr_err().bit()),
-            )
-            .field(
-                "out_total_eof",
-                &format_args!("{}", self.out_total_eof().bit()),
-            )
-            .field(
-                "outfifo_ovf_l1",
-                &format_args!("{}", self.outfifo_ovf_l1().bit()),
-            )
-            .field(
-                "outfifo_udf_l1",
-                &format_args!("{}", self.outfifo_udf_l1().bit()),
-            )
-            .field(
-                "outfifo_ovf_l3",
-                &format_args!("{}", self.outfifo_ovf_l3().bit()),
-            )
-            .field(
-                "outfifo_udf_l3",
-                &format_args!("{}", self.outfifo_udf_l3().bit()),
-            )
+            .field("out_done", &self.out_done().bit())
+            .field("out_eof", &self.out_eof().bit())
+            .field("out_dscr_err", &self.out_dscr_err().bit())
+            .field("out_total_eof", &self.out_total_eof().bit())
+            .field("outfifo_ovf_l1", &self.outfifo_ovf_l1().bit())
+            .field("outfifo_udf_l1", &self.outfifo_udf_l1().bit())
+            .field("outfifo_ovf_l3", &self.outfifo_ovf_l3().bit())
+            .field("outfifo_udf_l3", &self.outfifo_udf_l3().bit())
             .finish()
     }
 }
@@ -175,10 +157,6 @@ impl crate::Readable for RAW_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`raw::W`](W) writer structure"]
 impl crate::Writable for RAW_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets RAW to value 0"]
-impl crate::Resettable for RAW_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for RAW_SPEC {}

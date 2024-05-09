@@ -17,7 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("VID_VSA_LINES")
-            .field("vsa_lines", &format_args!("{}", self.vsa_lines().bits()))
+            .field("vsa_lines", &self.vsa_lines().bits())
             .finish()
     }
 }
@@ -45,10 +45,6 @@ impl crate::Readable for VID_VSA_LINES_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`vid_vsa_lines::W`](W) writer structure"]
 impl crate::Writable for VID_VSA_LINES_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets VID_VSA_LINES to value 0"]
-impl crate::Resettable for VID_VSA_LINES_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for VID_VSA_LINES_SPEC {}

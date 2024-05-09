@@ -13,10 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("EOF_DES_ADDR")
-            .field(
-                "out_eof_des_addr",
-                &format_args!("{}", self.out_eof_des_addr().bits()),
-            )
+            .field("out_eof_des_addr", &self.out_eof_des_addr().bits())
             .finish()
     }
 }
@@ -34,6 +31,4 @@ impl crate::RegisterSpec for EOF_DES_ADDR_SPEC {
 #[doc = "`read()` method returns [`eof_des_addr::R`](R) reader structure"]
 impl crate::Readable for EOF_DES_ADDR_SPEC {}
 #[doc = "`reset()` method sets EOF_DES_ADDR to value 0"]
-impl crate::Resettable for EOF_DES_ADDR_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for EOF_DES_ADDR_SPEC {}

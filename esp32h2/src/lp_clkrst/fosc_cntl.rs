@@ -17,7 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("FOSC_CNTL")
-            .field("fosc_dfreq", &format_args!("{}", self.fosc_dfreq().bits()))
+            .field("fosc_dfreq", &self.fosc_dfreq().bits())
             .finish()
     }
 }
@@ -45,8 +45,6 @@ impl crate::Readable for FOSC_CNTL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`fosc_cntl::W`](W) writer structure"]
 impl crate::Writable for FOSC_CNTL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets FOSC_CNTL to value 0x9600_0000"]
 impl crate::Resettable for FOSC_CNTL_SPEC {

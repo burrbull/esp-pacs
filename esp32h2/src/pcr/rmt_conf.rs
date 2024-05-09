@@ -33,9 +33,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("RMT_CONF")
-            .field("rmt_clk_en", &format_args!("{}", self.rmt_clk_en().bit()))
-            .field("rmt_rst_en", &format_args!("{}", self.rmt_rst_en().bit()))
-            .field("rmt_ready", &format_args!("{}", self.rmt_ready().bit()))
+            .field("rmt_clk_en", &self.rmt_clk_en().bit())
+            .field("rmt_rst_en", &self.rmt_rst_en().bit())
+            .field("rmt_ready", &self.rmt_ready().bit())
             .finish()
     }
 }
@@ -69,8 +69,6 @@ impl crate::Readable for RMT_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`rmt_conf::W`](W) writer structure"]
 impl crate::Writable for RMT_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets RMT_CONF to value 0x05"]
 impl crate::Resettable for RMT_CONF_SPEC {

@@ -134,50 +134,20 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CMD_MODE_CFG")
-            .field("tear_fx_en", &format_args!("{}", self.tear_fx_en().bit()))
-            .field("ack_rqst_en", &format_args!("{}", self.ack_rqst_en().bit()))
-            .field(
-                "gen_sw_0p_tx",
-                &format_args!("{}", self.gen_sw_0p_tx().bit()),
-            )
-            .field(
-                "gen_sw_1p_tx",
-                &format_args!("{}", self.gen_sw_1p_tx().bit()),
-            )
-            .field(
-                "gen_sw_2p_tx",
-                &format_args!("{}", self.gen_sw_2p_tx().bit()),
-            )
-            .field(
-                "gen_sr_0p_tx",
-                &format_args!("{}", self.gen_sr_0p_tx().bit()),
-            )
-            .field(
-                "gen_sr_1p_tx",
-                &format_args!("{}", self.gen_sr_1p_tx().bit()),
-            )
-            .field(
-                "gen_sr_2p_tx",
-                &format_args!("{}", self.gen_sr_2p_tx().bit()),
-            )
-            .field("gen_lw_tx", &format_args!("{}", self.gen_lw_tx().bit()))
-            .field(
-                "dcs_sw_0p_tx",
-                &format_args!("{}", self.dcs_sw_0p_tx().bit()),
-            )
-            .field(
-                "dcs_sw_1p_tx",
-                &format_args!("{}", self.dcs_sw_1p_tx().bit()),
-            )
-            .field(
-                "dcs_sr_0p_tx",
-                &format_args!("{}", self.dcs_sr_0p_tx().bit()),
-            )
-            .field("dcs_lw_tx", &format_args!("{}", self.dcs_lw_tx().bit()))
-            .field(
-                "max_rd_pkt_size",
-                &format_args!("{}", self.max_rd_pkt_size().bit()),
-            )
+            .field("tear_fx_en", &self.tear_fx_en().bit())
+            .field("ack_rqst_en", &self.ack_rqst_en().bit())
+            .field("gen_sw_0p_tx", &self.gen_sw_0p_tx().bit())
+            .field("gen_sw_1p_tx", &self.gen_sw_1p_tx().bit())
+            .field("gen_sw_2p_tx", &self.gen_sw_2p_tx().bit())
+            .field("gen_sr_0p_tx", &self.gen_sr_0p_tx().bit())
+            .field("gen_sr_1p_tx", &self.gen_sr_1p_tx().bit())
+            .field("gen_sr_2p_tx", &self.gen_sr_2p_tx().bit())
+            .field("gen_lw_tx", &self.gen_lw_tx().bit())
+            .field("dcs_sw_0p_tx", &self.dcs_sw_0p_tx().bit())
+            .field("dcs_sw_1p_tx", &self.dcs_sw_1p_tx().bit())
+            .field("dcs_sr_0p_tx", &self.dcs_sr_0p_tx().bit())
+            .field("dcs_lw_tx", &self.dcs_lw_tx().bit())
+            .field("max_rd_pkt_size", &self.max_rd_pkt_size().bit())
             .finish()
     }
 }
@@ -283,10 +253,6 @@ impl crate::Readable for CMD_MODE_CFG_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`cmd_mode_cfg::W`](W) writer structure"]
 impl crate::Writable for CMD_MODE_CFG_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CMD_MODE_CFG to value 0"]
-impl crate::Resettable for CMD_MODE_CFG_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for CMD_MODE_CFG_SPEC {}

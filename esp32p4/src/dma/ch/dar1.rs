@@ -17,7 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("DAR1")
-            .field("ch1_dar1", &format_args!("{}", self.ch1_dar1().bits()))
+            .field("ch1_dar1", &self.ch1_dar1().bits())
             .finish()
     }
 }
@@ -45,10 +45,6 @@ impl crate::Readable for DAR1_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`dar1::W`](W) writer structure"]
 impl crate::Writable for DAR1_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets DAR1 to value 0"]
-impl crate::Resettable for DAR1_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for DAR1_SPEC {}

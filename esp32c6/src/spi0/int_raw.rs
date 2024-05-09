@@ -65,22 +65,13 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("INT_RAW")
-            .field("slv_st_end", &format_args!("{}", self.slv_st_end().bit()))
-            .field("mst_st_end", &format_args!("{}", self.mst_st_end().bit()))
-            .field("ecc_err", &format_args!("{}", self.ecc_err().bit()))
-            .field("pms_reject", &format_args!("{}", self.pms_reject().bit()))
-            .field(
-                "axi_raddr_err",
-                &format_args!("{}", self.axi_raddr_err().bit()),
-            )
-            .field(
-                "axi_wr_flash_err",
-                &format_args!("{}", self.axi_wr_flash_err().bit()),
-            )
-            .field(
-                "axi_waddr_err",
-                &format_args!("{}", self.axi_waddr_err().bit()),
-            )
+            .field("slv_st_end", &self.slv_st_end().bit())
+            .field("mst_st_end", &self.mst_st_end().bit())
+            .field("ecc_err", &self.ecc_err().bit())
+            .field("pms_reject", &self.pms_reject().bit())
+            .field("axi_raddr_err", &self.axi_raddr_err().bit())
+            .field("axi_wr_flash_err", &self.axi_wr_flash_err().bit())
+            .field("axi_waddr_err", &self.axi_waddr_err().bit())
             .finish()
     }
 }
@@ -126,10 +117,6 @@ impl crate::Readable for INT_RAW_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`int_raw::W`](W) writer structure"]
 impl crate::Writable for INT_RAW_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets INT_RAW to value 0"]
-impl crate::Resettable for INT_RAW_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for INT_RAW_SPEC {}

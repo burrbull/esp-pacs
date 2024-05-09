@@ -26,11 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("RESYNC_PROLONGED")
-            .field(
-                "resync_prolonged",
-                &format_args!("{}", self.resync_prolonged().bits()),
-            )
-            .field("resync_mode", &format_args!("{}", self.resync_mode().bit()))
+            .field("resync_prolonged", &self.resync_prolonged().bits())
+            .field("resync_mode", &self.resync_mode().bit())
             .finish()
     }
 }
@@ -64,8 +61,6 @@ impl crate::Readable for RESYNC_PROLONGED_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`resync_prolonged::W`](W) writer structure"]
 impl crate::Writable for RESYNC_PROLONGED_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets RESYNC_PROLONGED to value 0x80"]
 impl crate::Resettable for RESYNC_PROLONGED_SPEC {

@@ -73,29 +73,17 @@ impl core::fmt::Debug for R {
         f.debug_struct("PERI_CLK_CTRL119")
             .field(
                 "parlio_tx_clk_div_numerator",
-                &format_args!("{}", self.parlio_tx_clk_div_numerator().bits()),
+                &self.parlio_tx_clk_div_numerator().bits(),
             )
             .field(
                 "parlio_tx_clk_div_denominator",
-                &format_args!("{}", self.parlio_tx_clk_div_denominator().bits()),
+                &self.parlio_tx_clk_div_denominator().bits(),
             )
-            .field(
-                "i3c_mst_clk_src_sel",
-                &format_args!("{}", self.i3c_mst_clk_src_sel().bits()),
-            )
-            .field(
-                "i3c_mst_clk_en",
-                &format_args!("{}", self.i3c_mst_clk_en().bit()),
-            )
-            .field(
-                "i3c_mst_clk_div_num",
-                &format_args!("{}", self.i3c_mst_clk_div_num().bits()),
-            )
-            .field(
-                "cam_clk_src_sel",
-                &format_args!("{}", self.cam_clk_src_sel().bits()),
-            )
-            .field("cam_clk_en", &format_args!("{}", self.cam_clk_en().bit()))
+            .field("i3c_mst_clk_src_sel", &self.i3c_mst_clk_src_sel().bits())
+            .field("i3c_mst_clk_en", &self.i3c_mst_clk_en().bit())
+            .field("i3c_mst_clk_div_num", &self.i3c_mst_clk_div_num().bits())
+            .field("cam_clk_src_sel", &self.cam_clk_src_sel().bits())
+            .field("cam_clk_en", &self.cam_clk_en().bit())
             .finish()
     }
 }
@@ -163,10 +151,6 @@ impl crate::Readable for PERI_CLK_CTRL119_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`peri_clk_ctrl119::W`](W) writer structure"]
 impl crate::Writable for PERI_CLK_CTRL119_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets PERI_CLK_CTRL119 to value 0"]
-impl crate::Resettable for PERI_CLK_CTRL119_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for PERI_CLK_CTRL119_SPEC {}

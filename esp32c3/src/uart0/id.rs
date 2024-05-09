@@ -35,9 +35,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("ID")
-            .field("id", &format_args!("{}", self.id().bits()))
-            .field("high_speed", &format_args!("{}", self.high_speed().bit()))
-            .field("reg_update", &format_args!("{}", self.reg_update().bit()))
+            .field("id", &self.id().bits())
+            .field("high_speed", &self.high_speed().bit())
+            .field("reg_update", &self.reg_update().bit())
             .finish()
     }
 }
@@ -77,8 +77,6 @@ impl crate::Readable for ID_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`id::W`](W) writer structure"]
 impl crate::Writable for ID_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets ID to value 0x4000_0500"]
 impl crate::Resettable for ID_SPEC {

@@ -54,19 +54,19 @@ impl core::fmt::Debug for R {
         f.debug_struct("CORE_X_IRAM0_DRAM0_DMA_SPLIT_LINE_CONSTRAIN_4")
             .field(
                 "core_x_dram0_dma_sram_line_0_category_0",
-                &format_args!("{}", self.core_x_dram0_dma_sram_line_0_category_0().bits()),
+                &self.core_x_dram0_dma_sram_line_0_category_0().bits(),
             )
             .field(
                 "core_x_dram0_dma_sram_line_0_category_1",
-                &format_args!("{}", self.core_x_dram0_dma_sram_line_0_category_1().bits()),
+                &self.core_x_dram0_dma_sram_line_0_category_1().bits(),
             )
             .field(
                 "core_x_dram0_dma_sram_line_0_category_2",
-                &format_args!("{}", self.core_x_dram0_dma_sram_line_0_category_2().bits()),
+                &self.core_x_dram0_dma_sram_line_0_category_2().bits(),
             )
             .field(
                 "core_x_dram0_dma_sram_line_0_splitaddr",
-                &format_args!("{}", self.core_x_dram0_dma_sram_line_0_splitaddr().bits()),
+                &self.core_x_dram0_dma_sram_line_0_splitaddr().bits(),
             )
             .finish()
     }
@@ -125,10 +125,6 @@ impl crate::Readable for CORE_X_IRAM0_DRAM0_DMA_SPLIT_LINE_CONSTRAIN_4_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`core_x_iram0_dram0_dma_split_line_constrain_4::W`](W) writer structure"]
 impl crate::Writable for CORE_X_IRAM0_DRAM0_DMA_SPLIT_LINE_CONSTRAIN_4_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CORE_X_IRAM0_DRAM0_DMA_SPLIT_LINE_CONSTRAIN_4 to value 0"]
-impl crate::Resettable for CORE_X_IRAM0_DRAM0_DMA_SPLIT_LINE_CONSTRAIN_4_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for CORE_X_IRAM0_DRAM0_DMA_SPLIT_LINE_CONSTRAIN_4_SPEC {}

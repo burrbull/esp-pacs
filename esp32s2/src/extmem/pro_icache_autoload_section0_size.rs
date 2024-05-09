@@ -19,7 +19,7 @@ impl core::fmt::Debug for R {
         f.debug_struct("PRO_ICACHE_AUTOLOAD_SECTION0_SIZE")
             .field(
                 "pro_icache_autoload_sct0_size",
-                &format_args!("{}", self.pro_icache_autoload_sct0_size().bits()),
+                &self.pro_icache_autoload_sct0_size().bits(),
             )
             .finish()
     }
@@ -50,8 +50,6 @@ impl crate::Readable for PRO_ICACHE_AUTOLOAD_SECTION0_SIZE_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`pro_icache_autoload_section0_size::W`](W) writer structure"]
 impl crate::Writable for PRO_ICACHE_AUTOLOAD_SECTION0_SIZE_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets PRO_ICACHE_AUTOLOAD_SECTION0_SIZE to value 0x8000"]
 impl crate::Resettable for PRO_ICACHE_AUTOLOAD_SECTION0_SIZE_SPEC {

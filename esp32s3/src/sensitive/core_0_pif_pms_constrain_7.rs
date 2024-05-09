@@ -132,60 +132,51 @@ impl core::fmt::Debug for R {
         f.debug_struct("CORE_0_PIF_PMS_CONSTRAIN_7")
             .field(
                 "core_0_pif_pms_constrain_world_1_spi_2",
-                &format_args!("{}", self.core_0_pif_pms_constrain_world_1_spi_2().bits()),
+                &self.core_0_pif_pms_constrain_world_1_spi_2().bits(),
             )
             .field(
                 "core_0_pif_pms_constrain_world_1_spi_3",
-                &format_args!("{}", self.core_0_pif_pms_constrain_world_1_spi_3().bits()),
+                &self.core_0_pif_pms_constrain_world_1_spi_3().bits(),
             )
             .field(
                 "core_0_pif_pms_constrain_world_1_apb_ctrl",
-                &format_args!(
-                    "{}",
-                    self.core_0_pif_pms_constrain_world_1_apb_ctrl().bits()
-                ),
+                &self.core_0_pif_pms_constrain_world_1_apb_ctrl().bits(),
             )
             .field(
                 "core_0_pif_pms_constrain_world_1_i2c_ext1",
-                &format_args!(
-                    "{}",
-                    self.core_0_pif_pms_constrain_world_1_i2c_ext1().bits()
-                ),
+                &self.core_0_pif_pms_constrain_world_1_i2c_ext1().bits(),
             )
             .field(
                 "core_0_pif_pms_constrain_world_1_sdio_host",
-                &format_args!(
-                    "{}",
-                    self.core_0_pif_pms_constrain_world_1_sdio_host().bits()
-                ),
+                &self.core_0_pif_pms_constrain_world_1_sdio_host().bits(),
             )
             .field(
                 "core_0_pif_pms_constrain_world_1_can",
-                &format_args!("{}", self.core_0_pif_pms_constrain_world_1_can().bits()),
+                &self.core_0_pif_pms_constrain_world_1_can().bits(),
             )
             .field(
                 "core_0_pif_pms_constrain_world_1_pwm1",
-                &format_args!("{}", self.core_0_pif_pms_constrain_world_1_pwm1().bits()),
+                &self.core_0_pif_pms_constrain_world_1_pwm1().bits(),
             )
             .field(
                 "core_0_pif_pms_constrain_world_1_i2s1",
-                &format_args!("{}", self.core_0_pif_pms_constrain_world_1_i2s1().bits()),
+                &self.core_0_pif_pms_constrain_world_1_i2s1().bits(),
             )
             .field(
                 "core_0_pif_pms_constrain_world_1_uart2",
-                &format_args!("{}", self.core_0_pif_pms_constrain_world_1_uart2().bits()),
+                &self.core_0_pif_pms_constrain_world_1_uart2().bits(),
             )
             .field(
                 "core_0_pif_pms_constrain_world_1_rwbt",
-                &format_args!("{}", self.core_0_pif_pms_constrain_world_1_rwbt().bits()),
+                &self.core_0_pif_pms_constrain_world_1_rwbt().bits(),
             )
             .field(
                 "core_0_pif_pms_constrain_world_1_wifimac",
-                &format_args!("{}", self.core_0_pif_pms_constrain_world_1_wifimac().bits()),
+                &self.core_0_pif_pms_constrain_world_1_wifimac().bits(),
             )
             .field(
                 "core_0_pif_pms_constrain_world_1_pwr",
-                &format_args!("{}", self.core_0_pif_pms_constrain_world_1_pwr().bits()),
+                &self.core_0_pif_pms_constrain_world_1_pwr().bits(),
             )
             .finish()
     }
@@ -304,8 +295,6 @@ impl crate::Readable for CORE_0_PIF_PMS_CONSTRAIN_7_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`core_0_pif_pms_constrain_7::W`](W) writer structure"]
 impl crate::Writable for CORE_0_PIF_PMS_CONSTRAIN_7_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CORE_0_PIF_PMS_CONSTRAIN_7 to value 0x3cc3_ffff"]
 impl crate::Resettable for CORE_0_PIF_PMS_CONSTRAIN_7_SPEC {

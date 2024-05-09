@@ -26,14 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("DIEPTXF")
-            .field(
-                "inep1txfstaddr",
-                &format_args!("{}", self.inep1txfstaddr().bits()),
-            )
-            .field(
-                "inep1txfdep",
-                &format_args!("{}", self.inep1txfdep().bits()),
-            )
+            .field("inep1txfstaddr", &self.inep1txfstaddr().bits())
+            .field("inep1txfdep", &self.inep1txfdep().bits())
             .finish()
     }
 }
@@ -67,8 +61,6 @@ impl crate::Readable for DIEPTXF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`dieptxf::W`](W) writer structure"]
 impl crate::Writable for DIEPTXF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets DIEPTXF%s to value 0x1000_0200"]
 impl crate::Resettable for DIEPTXF_SPEC {

@@ -44,22 +44,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("LCD_DLY_MODE")
-            .field(
-                "lcd_cd_mode",
-                &format_args!("{}", self.lcd_cd_mode().bits()),
-            )
-            .field(
-                "lcd_de_mode",
-                &format_args!("{}", self.lcd_de_mode().bits()),
-            )
-            .field(
-                "lcd_hsync_mode",
-                &format_args!("{}", self.lcd_hsync_mode().bits()),
-            )
-            .field(
-                "lcd_vsync_mode",
-                &format_args!("{}", self.lcd_vsync_mode().bits()),
-            )
+            .field("lcd_cd_mode", &self.lcd_cd_mode().bits())
+            .field("lcd_de_mode", &self.lcd_de_mode().bits())
+            .field("lcd_hsync_mode", &self.lcd_hsync_mode().bits())
+            .field("lcd_vsync_mode", &self.lcd_vsync_mode().bits())
             .finish()
     }
 }
@@ -105,10 +93,6 @@ impl crate::Readable for LCD_DLY_MODE_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`lcd_dly_mode::W`](W) writer structure"]
 impl crate::Writable for LCD_DLY_MODE_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets LCD_DLY_MODE to value 0"]
-impl crate::Resettable for LCD_DLY_MODE_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for LCD_DLY_MODE_SPEC {}

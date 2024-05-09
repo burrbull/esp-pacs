@@ -20,14 +20,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CHADDR")
-            .field(
-                "apb_mem_waddr",
-                &format_args!("{}", self.apb_mem_waddr().bits()),
-            )
-            .field(
-                "apb_mem_raddr",
-                &format_args!("{}", self.apb_mem_raddr().bits()),
-            )
+            .field("apb_mem_waddr", &self.apb_mem_waddr().bits())
+            .field("apb_mem_raddr", &self.apb_mem_raddr().bits())
             .finish()
     }
 }
@@ -45,6 +39,4 @@ impl crate::RegisterSpec for CHADDR_SPEC {
 #[doc = "`read()` method returns [`chaddr::R`](R) reader structure"]
 impl crate::Readable for CHADDR_SPEC {}
 #[doc = "`reset()` method sets CH%sADDR to value 0"]
-impl crate::Resettable for CHADDR_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for CHADDR_SPEC {}

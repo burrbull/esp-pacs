@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("RSA_INTR_MAP")
-            .field(
-                "rsa_intr_map",
-                &format_args!("{}", self.rsa_intr_map().bits()),
-            )
+            .field("rsa_intr_map", &self.rsa_intr_map().bits())
             .finish()
     }
 }
@@ -48,10 +45,6 @@ impl crate::Readable for RSA_INTR_MAP_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`rsa_intr_map::W`](W) writer structure"]
 impl crate::Writable for RSA_INTR_MAP_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets RSA_INTR_MAP to value 0"]
-impl crate::Resettable for RSA_INTR_MAP_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for RSA_INTR_MAP_SPEC {}

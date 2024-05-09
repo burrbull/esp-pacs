@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("GPIO_INT2_MAP")
-            .field(
-                "core1_gpio_int2_map",
-                &format_args!("{}", self.core1_gpio_int2_map().bits()),
-            )
+            .field("core1_gpio_int2_map", &self.core1_gpio_int2_map().bits())
             .finish()
     }
 }
@@ -48,10 +45,6 @@ impl crate::Readable for GPIO_INT2_MAP_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`gpio_int2_map::W`](W) writer structure"]
 impl crate::Writable for GPIO_INT2_MAP_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets GPIO_INT2_MAP to value 0"]
-impl crate::Resettable for GPIO_INT2_MAP_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for GPIO_INT2_MAP_SPEC {}

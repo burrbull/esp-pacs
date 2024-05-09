@@ -62,27 +62,24 @@ impl core::fmt::Debug for R {
         f.debug_struct("PRO_CPU_RECORD_PDEBUGINST")
             .field(
                 "record_pro_pdebuginst",
-                &format_args!("{}", self.record_pro_pdebuginst().bits()),
+                &self.record_pro_pdebuginst().bits(),
             )
-            .field(
-                "record_pdebuginst_sz",
-                &format_args!("{}", self.record_pdebuginst_sz().bits()),
-            )
+            .field("record_pdebuginst_sz", &self.record_pdebuginst_sz().bits())
             .field(
                 "record_pdebuginst_isrc",
-                &format_args!("{}", self.record_pdebuginst_isrc().bits()),
+                &self.record_pdebuginst_isrc().bits(),
             )
             .field(
                 "record_pdebuginst_loop_rep",
-                &format_args!("{}", self.record_pdebuginst_loop_rep().bit()),
+                &self.record_pdebuginst_loop_rep().bit(),
             )
             .field(
                 "record_pdebuginst_loop",
-                &format_args!("{}", self.record_pdebuginst_loop().bit()),
+                &self.record_pdebuginst_loop().bit(),
             )
             .field(
                 "record_pdebuginst_cintl",
-                &format_args!("{}", self.record_pdebuginst_cintl().bits()),
+                &self.record_pdebuginst_cintl().bits(),
             )
             .finish()
     }
@@ -145,10 +142,6 @@ impl crate::Readable for PRO_CPU_RECORD_PDEBUGINST_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`pro_cpu_record_pdebuginst::W`](W) writer structure"]
 impl crate::Writable for PRO_CPU_RECORD_PDEBUGINST_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets PRO_CPU_RECORD_PDEBUGINST to value 0"]
-impl crate::Resettable for PRO_CPU_RECORD_PDEBUGINST_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for PRO_CPU_RECORD_PDEBUGINST_SPEC {}

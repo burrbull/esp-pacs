@@ -13,10 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("DHT_VAl_AC1")
-            .field(
-                "dht_val_ac1",
-                &format_args!("{}", self.dht_val_ac1().bits()),
-            )
+            .field("dht_val_ac1", &self.dht_val_ac1().bits())
             .finish()
     }
 }
@@ -34,6 +31,4 @@ impl crate::RegisterSpec for DHT_VAL_AC1_SPEC {
 #[doc = "`read()` method returns [`dht_val_ac1::R`](R) reader structure"]
 impl crate::Readable for DHT_VAL_AC1_SPEC {}
 #[doc = "`reset()` method sets DHT_VAl_AC1 to value 0"]
-impl crate::Resettable for DHT_VAL_AC1_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for DHT_VAL_AC1_SPEC {}

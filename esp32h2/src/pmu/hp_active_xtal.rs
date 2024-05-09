@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("HP_ACTIVE_XTAL")
-            .field(
-                "hp_active_xpd_xtal",
-                &format_args!("{}", self.hp_active_xpd_xtal().bit()),
-            )
+            .field("hp_active_xpd_xtal", &self.hp_active_xpd_xtal().bit())
             .finish()
     }
 }
@@ -48,8 +45,6 @@ impl crate::Readable for HP_ACTIVE_XTAL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`hp_active_xtal::W`](W) writer structure"]
 impl crate::Writable for HP_ACTIVE_XTAL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets HP_ACTIVE_XTAL to value 0x8000_0000"]
 impl crate::Resettable for HP_ACTIVE_XTAL_SPEC {

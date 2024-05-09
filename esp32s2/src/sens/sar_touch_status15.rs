@@ -20,14 +20,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SAR_TOUCH_STATUS15")
-            .field(
-                "touch_slp_data",
-                &format_args!("{}", self.touch_slp_data().bits()),
-            )
-            .field(
-                "touch_slp_debounce",
-                &format_args!("{}", self.touch_slp_debounce().bits()),
-            )
+            .field("touch_slp_data", &self.touch_slp_data().bits())
+            .field("touch_slp_debounce", &self.touch_slp_debounce().bits())
             .finish()
     }
 }
@@ -45,6 +39,4 @@ impl crate::RegisterSpec for SAR_TOUCH_STATUS15_SPEC {
 #[doc = "`read()` method returns [`sar_touch_status15::R`](R) reader structure"]
 impl crate::Readable for SAR_TOUCH_STATUS15_SPEC {}
 #[doc = "`reset()` method sets SAR_TOUCH_STATUS15 to value 0"]
-impl crate::Resettable for SAR_TOUCH_STATUS15_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for SAR_TOUCH_STATUS15_SPEC {}

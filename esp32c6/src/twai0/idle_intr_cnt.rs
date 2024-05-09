@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("IDLE_INTR_CNT")
-            .field(
-                "idle_intr_cnt",
-                &format_args!("{}", self.idle_intr_cnt().bits()),
-            )
+            .field("idle_intr_cnt", &self.idle_intr_cnt().bits())
             .finish()
     }
 }
@@ -48,8 +45,6 @@ impl crate::Readable for IDLE_INTR_CNT_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`idle_intr_cnt::W`](W) writer structure"]
 impl crate::Writable for IDLE_INTR_CNT_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets IDLE_INTR_CNT to value 0x01"]
 impl crate::Resettable for IDLE_INTR_CNT_SPEC {

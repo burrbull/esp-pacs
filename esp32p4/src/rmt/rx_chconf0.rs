@@ -53,26 +53,11 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("RX_CHCONF0")
-            .field(
-                "div_cnt_ch4",
-                &format_args!("{}", self.div_cnt_ch4().bits()),
-            )
-            .field(
-                "idle_thres_ch4",
-                &format_args!("{}", self.idle_thres_ch4().bits()),
-            )
-            .field(
-                "mem_size_ch4",
-                &format_args!("{}", self.mem_size_ch4().bits()),
-            )
-            .field(
-                "carrier_en_ch4",
-                &format_args!("{}", self.carrier_en_ch4().bit()),
-            )
-            .field(
-                "carrier_out_lv_ch4",
-                &format_args!("{}", self.carrier_out_lv_ch4().bit()),
-            )
+            .field("div_cnt_ch4", &self.div_cnt_ch4().bits())
+            .field("idle_thres_ch4", &self.idle_thres_ch4().bits())
+            .field("mem_size_ch4", &self.mem_size_ch4().bits())
+            .field("carrier_en_ch4", &self.carrier_en_ch4().bit())
+            .field("carrier_out_lv_ch4", &self.carrier_out_lv_ch4().bit())
             .finish()
     }
 }
@@ -124,8 +109,6 @@ impl crate::Readable for RX_CHCONF0_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`rx_chconf0::W`](W) writer structure"]
 impl crate::Writable for RX_CHCONF0_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets RX_CH%sCONF0 to value 0x317f_ff02"]
 impl crate::Resettable for RX_CHCONF0_SPEC {

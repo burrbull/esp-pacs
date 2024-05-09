@@ -43,24 +43,21 @@ impl core::fmt::Debug for R {
         f.debug_struct("L1_CACHE_ACS_FAIL_INT_ST")
             .field(
                 "l1_icache0_fail_int_st",
-                &format_args!("{}", self.l1_icache0_fail_int_st().bit()),
+                &self.l1_icache0_fail_int_st().bit(),
             )
             .field(
                 "l1_icache1_fail_int_st",
-                &format_args!("{}", self.l1_icache1_fail_int_st().bit()),
+                &self.l1_icache1_fail_int_st().bit(),
             )
             .field(
                 "l1_icache2_fail_int_st",
-                &format_args!("{}", self.l1_icache2_fail_int_st().bit()),
+                &self.l1_icache2_fail_int_st().bit(),
             )
             .field(
                 "l1_icache3_fail_int_st",
-                &format_args!("{}", self.l1_icache3_fail_int_st().bit()),
+                &self.l1_icache3_fail_int_st().bit(),
             )
-            .field(
-                "l1_dcache_fail_int_st",
-                &format_args!("{}", self.l1_dcache_fail_int_st().bit()),
-            )
+            .field("l1_dcache_fail_int_st", &self.l1_dcache_fail_int_st().bit())
             .finish()
     }
 }
@@ -78,6 +75,4 @@ impl crate::RegisterSpec for L1_CACHE_ACS_FAIL_INT_ST_SPEC {
 #[doc = "`read()` method returns [`l1_cache_acs_fail_int_st::R`](R) reader structure"]
 impl crate::Readable for L1_CACHE_ACS_FAIL_INT_ST_SPEC {}
 #[doc = "`reset()` method sets L1_CACHE_ACS_FAIL_INT_ST to value 0"]
-impl crate::Resettable for L1_CACHE_ACS_FAIL_INT_ST_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for L1_CACHE_ACS_FAIL_INT_ST_SPEC {}

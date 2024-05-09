@@ -15,7 +15,7 @@ impl core::fmt::Debug for R {
         f.debug_struct("APP_CPU_RECORD_PDEBUGLS0STAT")
             .field(
                 "record_app_pdebugls0stat",
-                &format_args!("{}", self.record_app_pdebugls0stat().bits()),
+                &self.record_app_pdebugls0stat().bits(),
             )
             .finish()
     }
@@ -34,6 +34,4 @@ impl crate::RegisterSpec for APP_CPU_RECORD_PDEBUGLS0STAT_SPEC {
 #[doc = "`read()` method returns [`app_cpu_record_pdebugls0stat::R`](R) reader structure"]
 impl crate::Readable for APP_CPU_RECORD_PDEBUGLS0STAT_SPEC {}
 #[doc = "`reset()` method sets APP_CPU_RECORD_PDEBUGLS0STAT to value 0"]
-impl crate::Resettable for APP_CPU_RECORD_PDEBUGLS0STAT_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for APP_CPU_RECORD_PDEBUGLS0STAT_SPEC {}

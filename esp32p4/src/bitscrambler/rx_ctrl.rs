@@ -82,23 +82,14 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("RX_CTRL")
-            .field("rx_ena", &format_args!("{}", self.rx_ena().bit()))
-            .field("rx_pause", &format_args!("{}", self.rx_pause().bit()))
-            .field("rx_halt", &format_args!("{}", self.rx_halt().bit()))
-            .field("rx_eof_mode", &format_args!("{}", self.rx_eof_mode().bit()))
-            .field(
-                "rx_cond_mode",
-                &format_args!("{}", self.rx_cond_mode().bit()),
-            )
-            .field(
-                "rx_fetch_mode",
-                &format_args!("{}", self.rx_fetch_mode().bit()),
-            )
-            .field(
-                "rx_halt_mode",
-                &format_args!("{}", self.rx_halt_mode().bit()),
-            )
-            .field("rx_rd_dummy", &format_args!("{}", self.rx_rd_dummy().bit()))
+            .field("rx_ena", &self.rx_ena().bit())
+            .field("rx_pause", &self.rx_pause().bit())
+            .field("rx_halt", &self.rx_halt().bit())
+            .field("rx_eof_mode", &self.rx_eof_mode().bit())
+            .field("rx_cond_mode", &self.rx_cond_mode().bit())
+            .field("rx_fetch_mode", &self.rx_fetch_mode().bit())
+            .field("rx_halt_mode", &self.rx_halt_mode().bit())
+            .field("rx_rd_dummy", &self.rx_rd_dummy().bit())
             .finish()
     }
 }
@@ -174,8 +165,6 @@ impl crate::Readable for RX_CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`rx_ctrl::W`](W) writer structure"]
 impl crate::Writable for RX_CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets RX_CTRL to value 0x04"]
 impl crate::Resettable for RX_CTRL_SPEC {

@@ -69,35 +69,17 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("MEM_ACCESS_DBUG0")
-            .field(
-                "pro_rom_mpu_ad",
-                &format_args!("{}", self.pro_rom_mpu_ad().bit()),
-            )
-            .field("pro_rom_ia", &format_args!("{}", self.pro_rom_ia().bit()))
-            .field(
-                "app_rom_mpu_ad",
-                &format_args!("{}", self.app_rom_mpu_ad().bit()),
-            )
-            .field("app_rom_ia", &format_args!("{}", self.app_rom_ia().bit()))
-            .field(
-                "share_rom_mpu_ad",
-                &format_args!("{}", self.share_rom_mpu_ad().bits()),
-            )
-            .field(
-                "share_rom_ia",
-                &format_args!("{}", self.share_rom_ia().bits()),
-            )
-            .field(
-                "internal_sram_mmu_ad",
-                &format_args!("{}", self.internal_sram_mmu_ad().bits()),
-            )
-            .field(
-                "internal_sram_ia",
-                &format_args!("{}", self.internal_sram_ia().bits()),
-            )
+            .field("pro_rom_mpu_ad", &self.pro_rom_mpu_ad().bit())
+            .field("pro_rom_ia", &self.pro_rom_ia().bit())
+            .field("app_rom_mpu_ad", &self.app_rom_mpu_ad().bit())
+            .field("app_rom_ia", &self.app_rom_ia().bit())
+            .field("share_rom_mpu_ad", &self.share_rom_mpu_ad().bits())
+            .field("share_rom_ia", &self.share_rom_ia().bits())
+            .field("internal_sram_mmu_ad", &self.internal_sram_mmu_ad().bits())
+            .field("internal_sram_ia", &self.internal_sram_ia().bits())
             .field(
                 "internal_sram_mmu_multi_hit",
-                &format_args!("{}", self.internal_sram_mmu_multi_hit().bits()),
+                &self.internal_sram_mmu_multi_hit().bits(),
             )
             .finish()
     }
@@ -116,6 +98,4 @@ impl crate::RegisterSpec for MEM_ACCESS_DBUG0_SPEC {
 #[doc = "`read()` method returns [`mem_access_dbug0::R`](R) reader structure"]
 impl crate::Readable for MEM_ACCESS_DBUG0_SPEC {}
 #[doc = "`reset()` method sets MEM_ACCESS_DBUG0 to value 0"]
-impl crate::Resettable for MEM_ACCESS_DBUG0_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for MEM_ACCESS_DBUG0_SPEC {}

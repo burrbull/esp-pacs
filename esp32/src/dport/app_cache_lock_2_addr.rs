@@ -35,9 +35,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("APP_CACHE_LOCK_2_ADDR")
-            .field("pre", &format_args!("{}", self.pre().bits()))
-            .field("min", &format_args!("{}", self.min().bits()))
-            .field("max", &format_args!("{}", self.max().bits()))
+            .field("pre", &self.pre().bits())
+            .field("min", &self.min().bits())
+            .field("max", &self.max().bits())
             .finish()
     }
 }
@@ -77,10 +77,6 @@ impl crate::Readable for APP_CACHE_LOCK_2_ADDR_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`app_cache_lock_2_addr::W`](W) writer structure"]
 impl crate::Writable for APP_CACHE_LOCK_2_ADDR_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets APP_CACHE_LOCK_2_ADDR to value 0"]
-impl crate::Resettable for APP_CACHE_LOCK_2_ADDR_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for APP_CACHE_LOCK_2_ADDR_SPEC {}

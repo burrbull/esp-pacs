@@ -35,18 +35,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SLOW_CLK_CONF")
-            .field(
-                "ana_clk_div_vld",
-                &format_args!("{}", self.ana_clk_div_vld().bit()),
-            )
-            .field(
-                "ana_clk_div",
-                &format_args!("{}", self.ana_clk_div().bits()),
-            )
-            .field(
-                "slow_clk_next_edge",
-                &format_args!("{}", self.slow_clk_next_edge().bit()),
-            )
+            .field("ana_clk_div_vld", &self.ana_clk_div_vld().bit())
+            .field("ana_clk_div", &self.ana_clk_div().bits())
+            .field("slow_clk_next_edge", &self.slow_clk_next_edge().bit())
             .finish()
     }
 }
@@ -86,8 +77,6 @@ impl crate::Readable for SLOW_CLK_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`slow_clk_conf::W`](W) writer structure"]
 impl crate::Writable for SLOW_CLK_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SLOW_CLK_CONF to value 0x0040_0000"]
 impl crate::Resettable for SLOW_CLK_CONF_SPEC {

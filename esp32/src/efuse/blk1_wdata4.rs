@@ -17,7 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("BLK1_WDATA4")
-            .field("blk1_din4", &format_args!("{}", self.blk1_din4().bits()))
+            .field("blk1_din4", &self.blk1_din4().bits())
             .finish()
     }
 }
@@ -45,10 +45,6 @@ impl crate::Readable for BLK1_WDATA4_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`blk1_wdata4::W`](W) writer structure"]
 impl crate::Writable for BLK1_WDATA4_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets BLK1_WDATA4 to value 0"]
-impl crate::Resettable for BLK1_WDATA4_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for BLK1_WDATA4_SPEC {}

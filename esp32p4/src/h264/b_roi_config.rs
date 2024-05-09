@@ -26,8 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("B_ROI_CONFIG")
-            .field("b_roi_en", &format_args!("{}", self.b_roi_en().bit()))
-            .field("b_roi_mode", &format_args!("{}", self.b_roi_mode().bit()))
+            .field("b_roi_en", &self.b_roi_en().bit())
+            .field("b_roi_mode", &self.b_roi_mode().bit())
             .finish()
     }
 }
@@ -61,10 +61,6 @@ impl crate::Readable for B_ROI_CONFIG_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`b_roi_config::W`](W) writer structure"]
 impl crate::Writable for B_ROI_CONFIG_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets B_ROI_CONFIG to value 0"]
-impl crate::Resettable for B_ROI_CONFIG_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for B_ROI_CONFIG_SPEC {}

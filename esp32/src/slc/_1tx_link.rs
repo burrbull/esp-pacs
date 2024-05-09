@@ -51,26 +51,11 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("_1TX_LINK")
-            .field(
-                "slc1_txlink_addr",
-                &format_args!("{}", self.slc1_txlink_addr().bits()),
-            )
-            .field(
-                "slc1_txlink_stop",
-                &format_args!("{}", self.slc1_txlink_stop().bit()),
-            )
-            .field(
-                "slc1_txlink_start",
-                &format_args!("{}", self.slc1_txlink_start().bit()),
-            )
-            .field(
-                "slc1_txlink_restart",
-                &format_args!("{}", self.slc1_txlink_restart().bit()),
-            )
-            .field(
-                "slc1_txlink_park",
-                &format_args!("{}", self.slc1_txlink_park().bit()),
-            )
+            .field("slc1_txlink_addr", &self.slc1_txlink_addr().bits())
+            .field("slc1_txlink_stop", &self.slc1_txlink_stop().bit())
+            .field("slc1_txlink_start", &self.slc1_txlink_start().bit())
+            .field("slc1_txlink_restart", &self.slc1_txlink_restart().bit())
+            .field("slc1_txlink_park", &self.slc1_txlink_park().bit())
             .finish()
     }
 }
@@ -116,10 +101,6 @@ impl crate::Readable for _1TX_LINK_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`_1tx_link::W`](W) writer structure"]
 impl crate::Writable for _1TX_LINK_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets _1TX_LINK to value 0"]
-impl crate::Resettable for _1TX_LINK_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for _1TX_LINK_SPEC {}

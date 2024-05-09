@@ -44,19 +44,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("TIMING_CALI")
-            .field(
-                "timing_clk_ena",
-                &format_args!("{}", self.timing_clk_ena().bit()),
-            )
-            .field("timing_cali", &format_args!("{}", self.timing_cali().bit()))
-            .field(
-                "extra_dummy_cyclelen",
-                &format_args!("{}", self.extra_dummy_cyclelen().bits()),
-            )
-            .field(
-                "dll_timing_cali",
-                &format_args!("{}", self.dll_timing_cali().bit()),
-            )
+            .field("timing_clk_ena", &self.timing_clk_ena().bit())
+            .field("timing_cali", &self.timing_cali().bit())
+            .field("extra_dummy_cyclelen", &self.extra_dummy_cyclelen().bits())
+            .field("dll_timing_cali", &self.dll_timing_cali().bit())
             .finish()
     }
 }
@@ -102,8 +93,6 @@ impl crate::Readable for TIMING_CALI_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`timing_cali::W`](W) writer structure"]
 impl crate::Writable for TIMING_CALI_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets TIMING_CALI to value 0x01"]
 impl crate::Resettable for TIMING_CALI_SPEC {

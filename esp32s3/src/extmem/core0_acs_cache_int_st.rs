@@ -43,24 +43,15 @@ impl core::fmt::Debug for R {
         f.debug_struct("CORE0_ACS_CACHE_INT_ST")
             .field(
                 "core0_ibus_acs_msk_icache",
-                &format_args!("{}", self.core0_ibus_acs_msk_icache().bit()),
+                &self.core0_ibus_acs_msk_icache().bit(),
             )
-            .field(
-                "core0_ibus_wr_icache",
-                &format_args!("{}", self.core0_ibus_wr_icache().bit()),
-            )
-            .field(
-                "core0_ibus_reject",
-                &format_args!("{}", self.core0_ibus_reject().bit()),
-            )
+            .field("core0_ibus_wr_icache", &self.core0_ibus_wr_icache().bit())
+            .field("core0_ibus_reject", &self.core0_ibus_reject().bit())
             .field(
                 "core0_dbus_acs_msk_dcache",
-                &format_args!("{}", self.core0_dbus_acs_msk_dcache().bit()),
+                &self.core0_dbus_acs_msk_dcache().bit(),
             )
-            .field(
-                "core0_dbus_reject",
-                &format_args!("{}", self.core0_dbus_reject().bit()),
-            )
+            .field("core0_dbus_reject", &self.core0_dbus_reject().bit())
             .finish()
     }
 }
@@ -78,6 +69,4 @@ impl crate::RegisterSpec for CORE0_ACS_CACHE_INT_ST_SPEC {
 #[doc = "`read()` method returns [`core0_acs_cache_int_st::R`](R) reader structure"]
 impl crate::Readable for CORE0_ACS_CACHE_INT_ST_SPEC {}
 #[doc = "`reset()` method sets CORE0_ACS_CACHE_INT_ST to value 0"]
-impl crate::Resettable for CORE0_ACS_CACHE_INT_ST_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for CORE0_ACS_CACHE_INT_ST_SPEC {}

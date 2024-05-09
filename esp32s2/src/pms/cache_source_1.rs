@@ -64,27 +64,27 @@ impl core::fmt::Debug for R {
         f.debug_struct("CACHE_SOURCE_1")
             .field(
                 "pro_cache_i_source_pro_iram1",
-                &format_args!("{}", self.pro_cache_i_source_pro_iram1().bit()),
+                &self.pro_cache_i_source_pro_iram1().bit(),
             )
             .field(
                 "pro_cache_i_source_pro_irom0",
-                &format_args!("{}", self.pro_cache_i_source_pro_irom0().bit()),
+                &self.pro_cache_i_source_pro_irom0().bit(),
             )
             .field(
                 "pro_cache_i_source_pro_drom0",
-                &format_args!("{}", self.pro_cache_i_source_pro_drom0().bit()),
+                &self.pro_cache_i_source_pro_drom0().bit(),
             )
             .field(
                 "pro_cache_d_source_pro_dram0",
-                &format_args!("{}", self.pro_cache_d_source_pro_dram0().bit()),
+                &self.pro_cache_d_source_pro_dram0().bit(),
             )
             .field(
                 "pro_cache_d_source_pro_dport",
-                &format_args!("{}", self.pro_cache_d_source_pro_dport().bit()),
+                &self.pro_cache_d_source_pro_dport().bit(),
             )
             .field(
                 "pro_cache_d_source_pro_drom0",
-                &format_args!("{}", self.pro_cache_d_source_pro_drom0().bit()),
+                &self.pro_cache_d_source_pro_drom0().bit(),
             )
             .finish()
     }
@@ -155,10 +155,6 @@ impl crate::Readable for CACHE_SOURCE_1_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`cache_source_1::W`](W) writer structure"]
 impl crate::Writable for CACHE_SOURCE_1_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CACHE_SOURCE_1 to value 0"]
-impl crate::Resettable for CACHE_SOURCE_1_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for CACHE_SOURCE_1_SPEC {}

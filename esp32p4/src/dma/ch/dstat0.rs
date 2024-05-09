@@ -13,7 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("DSTAT0")
-            .field("ch1_dstat", &format_args!("{}", self.ch1_dstat().bits()))
+            .field("ch1_dstat", &self.ch1_dstat().bits())
             .finish()
     }
 }
@@ -31,6 +31,4 @@ impl crate::RegisterSpec for DSTAT0_SPEC {
 #[doc = "`read()` method returns [`dstat0::R`](R) reader structure"]
 impl crate::Readable for DSTAT0_SPEC {}
 #[doc = "`reset()` method sets DSTAT0 to value 0"]
-impl crate::Resettable for DSTAT0_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for DSTAT0_SPEC {}

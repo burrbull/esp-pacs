@@ -194,86 +194,26 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("OPTIONS0")
-            .field(
-                "sw_stall_appcpu_c0",
-                &format_args!("{}", self.sw_stall_appcpu_c0().bits()),
-            )
-            .field(
-                "sw_stall_procpu_c0",
-                &format_args!("{}", self.sw_stall_procpu_c0().bits()),
-            )
-            .field(
-                "bb_i2c_force_pd",
-                &format_args!("{}", self.bb_i2c_force_pd().bit()),
-            )
-            .field(
-                "bb_i2c_force_pu",
-                &format_args!("{}", self.bb_i2c_force_pu().bit()),
-            )
-            .field(
-                "bbpll_i2c_force_pd",
-                &format_args!("{}", self.bbpll_i2c_force_pd().bit()),
-            )
-            .field(
-                "bbpll_i2c_force_pu",
-                &format_args!("{}", self.bbpll_i2c_force_pu().bit()),
-            )
-            .field(
-                "bbpll_force_pd",
-                &format_args!("{}", self.bbpll_force_pd().bit()),
-            )
-            .field(
-                "bbpll_force_pu",
-                &format_args!("{}", self.bbpll_force_pu().bit()),
-            )
-            .field(
-                "xtl_force_pd",
-                &format_args!("{}", self.xtl_force_pd().bit()),
-            )
-            .field(
-                "xtl_force_pu",
-                &format_args!("{}", self.xtl_force_pu().bit()),
-            )
-            .field(
-                "xtl_en_wait",
-                &format_args!("{}", self.xtl_en_wait().bits()),
-            )
-            .field(
-                "xtl_ext_ctr_sel",
-                &format_args!("{}", self.xtl_ext_ctr_sel().bits()),
-            )
-            .field(
-                "xtl_force_iso",
-                &format_args!("{}", self.xtl_force_iso().bit()),
-            )
-            .field(
-                "pll_force_iso",
-                &format_args!("{}", self.pll_force_iso().bit()),
-            )
-            .field(
-                "analog_force_iso",
-                &format_args!("{}", self.analog_force_iso().bit()),
-            )
-            .field(
-                "xtl_force_noiso",
-                &format_args!("{}", self.xtl_force_noiso().bit()),
-            )
-            .field(
-                "pll_force_noiso",
-                &format_args!("{}", self.pll_force_noiso().bit()),
-            )
-            .field(
-                "analog_force_noiso",
-                &format_args!("{}", self.analog_force_noiso().bit()),
-            )
-            .field(
-                "dg_wrap_force_rst",
-                &format_args!("{}", self.dg_wrap_force_rst().bit()),
-            )
-            .field(
-                "dg_wrap_force_norst",
-                &format_args!("{}", self.dg_wrap_force_norst().bit()),
-            )
+            .field("sw_stall_appcpu_c0", &self.sw_stall_appcpu_c0().bits())
+            .field("sw_stall_procpu_c0", &self.sw_stall_procpu_c0().bits())
+            .field("bb_i2c_force_pd", &self.bb_i2c_force_pd().bit())
+            .field("bb_i2c_force_pu", &self.bb_i2c_force_pu().bit())
+            .field("bbpll_i2c_force_pd", &self.bbpll_i2c_force_pd().bit())
+            .field("bbpll_i2c_force_pu", &self.bbpll_i2c_force_pu().bit())
+            .field("bbpll_force_pd", &self.bbpll_force_pd().bit())
+            .field("bbpll_force_pu", &self.bbpll_force_pu().bit())
+            .field("xtl_force_pd", &self.xtl_force_pd().bit())
+            .field("xtl_force_pu", &self.xtl_force_pu().bit())
+            .field("xtl_en_wait", &self.xtl_en_wait().bits())
+            .field("xtl_ext_ctr_sel", &self.xtl_ext_ctr_sel().bits())
+            .field("xtl_force_iso", &self.xtl_force_iso().bit())
+            .field("pll_force_iso", &self.pll_force_iso().bit())
+            .field("analog_force_iso", &self.analog_force_iso().bit())
+            .field("xtl_force_noiso", &self.xtl_force_noiso().bit())
+            .field("pll_force_noiso", &self.pll_force_noiso().bit())
+            .field("analog_force_noiso", &self.analog_force_noiso().bit())
+            .field("dg_wrap_force_rst", &self.dg_wrap_force_rst().bit())
+            .field("dg_wrap_force_norst", &self.dg_wrap_force_norst().bit())
             .finish()
     }
 }
@@ -433,8 +373,6 @@ impl crate::Readable for OPTIONS0_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`options0::W`](W) writer structure"]
 impl crate::Writable for OPTIONS0_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets OPTIONS0 to value 0x1c00_a000"]
 impl crate::Resettable for OPTIONS0_SPEC {

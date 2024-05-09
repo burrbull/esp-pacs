@@ -17,7 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PGM_DATA3")
-            .field("pgm_data_3", &format_args!("{}", self.pgm_data_3().bits()))
+            .field("pgm_data_3", &self.pgm_data_3().bits())
             .finish()
     }
 }
@@ -45,10 +45,6 @@ impl crate::Readable for PGM_DATA3_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`pgm_data3::W`](W) writer structure"]
 impl crate::Writable for PGM_DATA3_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets PGM_DATA3 to value 0"]
-impl crate::Resettable for PGM_DATA3_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for PGM_DATA3_SPEC {}

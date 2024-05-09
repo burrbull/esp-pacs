@@ -35,18 +35,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("HOST_CTRL")
-            .field(
-                "csi_enableclk",
-                &format_args!("{}", self.csi_enableclk().bit()),
-            )
-            .field(
-                "csi_cfg_clk_en",
-                &format_args!("{}", self.csi_cfg_clk_en().bit()),
-            )
-            .field(
-                "loopbk_test_en",
-                &format_args!("{}", self.loopbk_test_en().bit()),
-            )
+            .field("csi_enableclk", &self.csi_enableclk().bit())
+            .field("csi_cfg_clk_en", &self.csi_cfg_clk_en().bit())
+            .field("loopbk_test_en", &self.loopbk_test_en().bit())
             .finish()
     }
 }
@@ -86,8 +77,6 @@ impl crate::Readable for HOST_CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`host_ctrl::W`](W) writer structure"]
 impl crate::Writable for HOST_CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets HOST_CTRL to value 0x03"]
 impl crate::Resettable for HOST_CTRL_SPEC {

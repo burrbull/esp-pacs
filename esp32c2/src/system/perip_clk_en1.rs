@@ -44,19 +44,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PERIP_CLK_EN1")
-            .field(
-                "crypto_ecc_clk_en",
-                &format_args!("{}", self.crypto_ecc_clk_en().bit()),
-            )
-            .field(
-                "crypto_sha_clk_en",
-                &format_args!("{}", self.crypto_sha_clk_en().bit()),
-            )
-            .field("dma_clk_en", &format_args!("{}", self.dma_clk_en().bit()))
-            .field(
-                "tsens_clk_en",
-                &format_args!("{}", self.tsens_clk_en().bit()),
-            )
+            .field("crypto_ecc_clk_en", &self.crypto_ecc_clk_en().bit())
+            .field("crypto_sha_clk_en", &self.crypto_sha_clk_en().bit())
+            .field("dma_clk_en", &self.dma_clk_en().bit())
+            .field("tsens_clk_en", &self.tsens_clk_en().bit())
             .finish()
     }
 }
@@ -102,10 +93,6 @@ impl crate::Readable for PERIP_CLK_EN1_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`perip_clk_en1::W`](W) writer structure"]
 impl crate::Writable for PERIP_CLK_EN1_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets PERIP_CLK_EN1 to value 0"]
-impl crate::Resettable for PERIP_CLK_EN1_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for PERIP_CLK_EN1_SPEC {}

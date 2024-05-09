@@ -35,9 +35,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PIN_CTRL")
-            .field("clk1", &format_args!("{}", self.clk1().bits()))
-            .field("clk2", &format_args!("{}", self.clk2().bits()))
-            .field("clk3", &format_args!("{}", self.clk3().bits()))
+            .field("clk1", &self.clk1().bits())
+            .field("clk2", &self.clk2().bits())
+            .field("clk3", &self.clk3().bits())
             .finish()
     }
 }
@@ -77,10 +77,6 @@ impl crate::Readable for PIN_CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`pin_ctrl::W`](W) writer structure"]
 impl crate::Writable for PIN_CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets PIN_CTRL to value 0"]
-impl crate::Resettable for PIN_CTRL_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for PIN_CTRL_SPEC {}

@@ -23,10 +23,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("_1TOKEN0")
-            .field(
-                "slc1_token0",
-                &format_args!("{}", self.slc1_token0().bits()),
-            )
+            .field("slc1_token0", &self.slc1_token0().bits())
             .finish()
     }
 }
@@ -72,10 +69,6 @@ impl crate::Readable for _1TOKEN0_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`_1token0::W`](W) writer structure"]
 impl crate::Writable for _1TOKEN0_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets _1TOKEN0 to value 0"]
-impl crate::Resettable for _1TOKEN0_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for _1TOKEN0_SPEC {}

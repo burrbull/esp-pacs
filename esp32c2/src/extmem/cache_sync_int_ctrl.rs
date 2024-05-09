@@ -26,8 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CACHE_SYNC_INT_CTRL")
-            .field("st", &format_args!("{}", self.st().bit()))
-            .field("ena", &format_args!("{}", self.ena().bit()))
+            .field("st", &self.st().bit())
+            .field("ena", &self.ena().bit())
             .finish()
     }
 }
@@ -61,10 +61,7 @@ impl crate::Readable for CACHE_SYNC_INT_CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`cache_sync_int_ctrl::W`](W) writer structure"]
 impl crate::Writable for CACHE_SYNC_INT_CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
     const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0x04;
 }
 #[doc = "`reset()` method sets CACHE_SYNC_INT_CTRL to value 0"]
-impl crate::Resettable for CACHE_SYNC_INT_CTRL_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for CACHE_SYNC_INT_CTRL_SPEC {}

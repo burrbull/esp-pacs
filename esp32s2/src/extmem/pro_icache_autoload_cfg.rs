@@ -73,31 +73,31 @@ impl core::fmt::Debug for R {
         f.debug_struct("PRO_ICACHE_AUTOLOAD_CFG")
             .field(
                 "pro_icache_autoload_mode",
-                &format_args!("{}", self.pro_icache_autoload_mode().bit()),
+                &self.pro_icache_autoload_mode().bit(),
             )
             .field(
                 "pro_icache_autoload_step",
-                &format_args!("{}", self.pro_icache_autoload_step().bits()),
+                &self.pro_icache_autoload_step().bits(),
             )
             .field(
                 "pro_icache_autoload_order",
-                &format_args!("{}", self.pro_icache_autoload_order().bit()),
+                &self.pro_icache_autoload_order().bit(),
             )
             .field(
                 "pro_icache_autoload_rqst",
-                &format_args!("{}", self.pro_icache_autoload_rqst().bits()),
+                &self.pro_icache_autoload_rqst().bits(),
             )
             .field(
                 "pro_icache_autoload_size",
-                &format_args!("{}", self.pro_icache_autoload_size().bits()),
+                &self.pro_icache_autoload_size().bits(),
             )
             .field(
                 "pro_icache_autoload_sct0_ena",
-                &format_args!("{}", self.pro_icache_autoload_sct0_ena().bit()),
+                &self.pro_icache_autoload_sct0_ena().bit(),
             )
             .field(
                 "pro_icache_autoload_sct1_ena",
-                &format_args!("{}", self.pro_icache_autoload_sct1_ena().bit()),
+                &self.pro_icache_autoload_sct1_ena().bit(),
             )
             .finish()
     }
@@ -176,10 +176,6 @@ impl crate::Readable for PRO_ICACHE_AUTOLOAD_CFG_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`pro_icache_autoload_cfg::W`](W) writer structure"]
 impl crate::Writable for PRO_ICACHE_AUTOLOAD_CFG_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets PRO_ICACHE_AUTOLOAD_CFG to value 0"]
-impl crate::Resettable for PRO_ICACHE_AUTOLOAD_CFG_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for PRO_ICACHE_AUTOLOAD_CFG_SPEC {}

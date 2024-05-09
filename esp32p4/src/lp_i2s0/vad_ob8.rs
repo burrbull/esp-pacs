@@ -13,10 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("VAD_OB8")
-            .field(
-                "energy_high_ob",
-                &format_args!("{}", self.energy_high_ob().bits()),
-            )
+            .field("energy_high_ob", &self.energy_high_ob().bits())
             .finish()
     }
 }
@@ -34,6 +31,4 @@ impl crate::RegisterSpec for VAD_OB8_SPEC {
 #[doc = "`read()` method returns [`vad_ob8::R`](R) reader structure"]
 impl crate::Readable for VAD_OB8_SPEC {}
 #[doc = "`reset()` method sets VAD_OB8 to value 0"]
-impl crate::Resettable for VAD_OB8_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for VAD_OB8_SPEC {}

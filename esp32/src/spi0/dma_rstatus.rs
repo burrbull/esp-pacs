@@ -13,10 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("DMA_RSTATUS")
-            .field(
-                "dma_out_status",
-                &format_args!("{}", self.dma_out_status().bits()),
-            )
+            .field("dma_out_status", &self.dma_out_status().bits())
             .finish()
     }
 }
@@ -34,6 +31,4 @@ impl crate::RegisterSpec for DMA_RSTATUS_SPEC {
 #[doc = "`read()` method returns [`dma_rstatus::R`](R) reader structure"]
 impl crate::Readable for DMA_RSTATUS_SPEC {}
 #[doc = "`reset()` method sets DMA_RSTATUS to value 0"]
-impl crate::Resettable for DMA_RSTATUS_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for DMA_RSTATUS_SPEC {}

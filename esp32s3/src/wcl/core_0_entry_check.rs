@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("Core_0_ENTRY_CHECK")
-            .field(
-                "core_0_entry_check",
-                &format_args!("{}", self.core_0_entry_check().bits()),
-            )
+            .field("core_0_entry_check", &self.core_0_entry_check().bits())
             .finish()
     }
 }
@@ -48,8 +45,6 @@ impl crate::Readable for CORE_0_ENTRY_CHECK_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`core_0_entry_check::W`](W) writer structure"]
 impl crate::Writable for CORE_0_ENTRY_CHECK_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets Core_0_ENTRY_CHECK to value 0x02"]
 impl crate::Resettable for CORE_0_ENTRY_CHECK_SPEC {

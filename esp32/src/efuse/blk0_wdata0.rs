@@ -35,12 +35,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("BLK0_WDATA0")
-            .field("wr_dis", &format_args!("{}", self.wr_dis().bits()))
-            .field("rd_dis", &format_args!("{}", self.rd_dis().bits()))
-            .field(
-                "flash_crypt_cnt",
-                &format_args!("{}", self.flash_crypt_cnt().bits()),
-            )
+            .field("wr_dis", &self.wr_dis().bits())
+            .field("rd_dis", &self.rd_dis().bits())
+            .field("flash_crypt_cnt", &self.flash_crypt_cnt().bits())
             .finish()
     }
 }
@@ -80,10 +77,6 @@ impl crate::Readable for BLK0_WDATA0_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`blk0_wdata0::W`](W) writer structure"]
 impl crate::Writable for BLK0_WDATA0_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets BLK0_WDATA0 to value 0"]
-impl crate::Resettable for BLK0_WDATA0_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for BLK0_WDATA0_SPEC {}

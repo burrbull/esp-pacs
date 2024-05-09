@@ -62,30 +62,12 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("IN_MEM_CONF")
-            .field(
-                "in_mem_clk_force_en",
-                &format_args!("{}", self.in_mem_clk_force_en().bit()),
-            )
-            .field(
-                "in_mem_force_pu",
-                &format_args!("{}", self.in_mem_force_pu().bit()),
-            )
-            .field(
-                "in_mem_force_pd",
-                &format_args!("{}", self.in_mem_force_pd().bit()),
-            )
-            .field(
-                "out_mem_clk_force_en",
-                &format_args!("{}", self.out_mem_clk_force_en().bit()),
-            )
-            .field(
-                "out_mem_force_pu",
-                &format_args!("{}", self.out_mem_force_pu().bit()),
-            )
-            .field(
-                "out_mem_force_pd",
-                &format_args!("{}", self.out_mem_force_pd().bit()),
-            )
+            .field("in_mem_clk_force_en", &self.in_mem_clk_force_en().bit())
+            .field("in_mem_force_pu", &self.in_mem_force_pu().bit())
+            .field("in_mem_force_pd", &self.in_mem_force_pd().bit())
+            .field("out_mem_clk_force_en", &self.out_mem_clk_force_en().bit())
+            .field("out_mem_force_pu", &self.out_mem_force_pu().bit())
+            .field("out_mem_force_pd", &self.out_mem_force_pd().bit())
             .finish()
     }
 }
@@ -143,10 +125,6 @@ impl crate::Readable for IN_MEM_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`in_mem_conf::W`](W) writer structure"]
 impl crate::Writable for IN_MEM_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets IN_MEM_CONF to value 0"]
-impl crate::Resettable for IN_MEM_CONF_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for IN_MEM_CONF_SPEC {}

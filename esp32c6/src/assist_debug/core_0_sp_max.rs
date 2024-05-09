@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CORE_0_SP_MAX")
-            .field(
-                "core_0_sp_max",
-                &format_args!("{}", self.core_0_sp_max().bits()),
-            )
+            .field("core_0_sp_max", &self.core_0_sp_max().bits())
             .finish()
     }
 }
@@ -48,8 +45,6 @@ impl crate::Readable for CORE_0_SP_MAX_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`core_0_sp_max::W`](W) writer structure"]
 impl crate::Writable for CORE_0_SP_MAX_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CORE_0_SP_MAX to value 0xffff_ffff"]
 impl crate::Resettable for CORE_0_SP_MAX_SPEC {

@@ -72,14 +72,14 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("DIN_NUM")
-            .field("din0_num", &format_args!("{}", self.din0_num().bits()))
-            .field("din1_num", &format_args!("{}", self.din1_num().bits()))
-            .field("din2_num", &format_args!("{}", self.din2_num().bits()))
-            .field("din3_num", &format_args!("{}", self.din3_num().bits()))
-            .field("din4_num", &format_args!("{}", self.din4_num().bits()))
-            .field("din5_num", &format_args!("{}", self.din5_num().bits()))
-            .field("din6_num", &format_args!("{}", self.din6_num().bits()))
-            .field("din7_num", &format_args!("{}", self.din7_num().bits()))
+            .field("din0_num", &self.din0_num().bits())
+            .field("din1_num", &self.din1_num().bits())
+            .field("din2_num", &self.din2_num().bits())
+            .field("din3_num", &self.din3_num().bits())
+            .field("din4_num", &self.din4_num().bits())
+            .field("din5_num", &self.din5_num().bits())
+            .field("din6_num", &self.din6_num().bits())
+            .field("din7_num", &self.din7_num().bits())
             .finish()
     }
 }
@@ -125,10 +125,6 @@ impl crate::Readable for DIN_NUM_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`din_num::W`](W) writer structure"]
 impl crate::Writable for DIN_NUM_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets DIN_NUM to value 0"]
-impl crate::Resettable for DIN_NUM_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for DIN_NUM_SPEC {}

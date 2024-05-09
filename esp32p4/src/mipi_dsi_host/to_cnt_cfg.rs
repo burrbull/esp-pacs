@@ -26,14 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("TO_CNT_CFG")
-            .field(
-                "lprx_to_cnt",
-                &format_args!("{}", self.lprx_to_cnt().bits()),
-            )
-            .field(
-                "hstx_to_cnt",
-                &format_args!("{}", self.hstx_to_cnt().bits()),
-            )
+            .field("lprx_to_cnt", &self.lprx_to_cnt().bits())
+            .field("hstx_to_cnt", &self.hstx_to_cnt().bits())
             .finish()
     }
 }
@@ -67,10 +61,6 @@ impl crate::Readable for TO_CNT_CFG_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`to_cnt_cfg::W`](W) writer structure"]
 impl crate::Writable for TO_CNT_CFG_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets TO_CNT_CFG to value 0"]
-impl crate::Resettable for TO_CNT_CFG_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for TO_CNT_CFG_SPEC {}

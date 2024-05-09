@@ -62,15 +62,12 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PCKHDL_CFG")
-            .field("eotp_tx_en", &format_args!("{}", self.eotp_tx_en().bit()))
-            .field("eotp_rx_en", &format_args!("{}", self.eotp_rx_en().bit()))
-            .field("bta_en", &format_args!("{}", self.bta_en().bit()))
-            .field("ecc_rx_en", &format_args!("{}", self.ecc_rx_en().bit()))
-            .field("crc_rx_en", &format_args!("{}", self.crc_rx_en().bit()))
-            .field(
-                "eotp_tx_lp_en",
-                &format_args!("{}", self.eotp_tx_lp_en().bit()),
-            )
+            .field("eotp_tx_en", &self.eotp_tx_en().bit())
+            .field("eotp_rx_en", &self.eotp_rx_en().bit())
+            .field("bta_en", &self.bta_en().bit())
+            .field("ecc_rx_en", &self.ecc_rx_en().bit())
+            .field("crc_rx_en", &self.crc_rx_en().bit())
+            .field("eotp_tx_lp_en", &self.eotp_tx_lp_en().bit())
             .finish()
     }
 }
@@ -128,10 +125,6 @@ impl crate::Readable for PCKHDL_CFG_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`pckhdl_cfg::W`](W) writer structure"]
 impl crate::Writable for PCKHDL_CFG_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets PCKHDL_CFG to value 0"]
-impl crate::Resettable for PCKHDL_CFG_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for PCKHDL_CFG_SPEC {}

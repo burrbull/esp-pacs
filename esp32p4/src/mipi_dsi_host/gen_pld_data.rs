@@ -44,10 +44,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("GEN_PLD_DATA")
-            .field("gen_pld_b1", &format_args!("{}", self.gen_pld_b1().bits()))
-            .field("gen_pld_b2", &format_args!("{}", self.gen_pld_b2().bits()))
-            .field("gen_pld_b3", &format_args!("{}", self.gen_pld_b3().bits()))
-            .field("gen_pld_b4", &format_args!("{}", self.gen_pld_b4().bits()))
+            .field("gen_pld_b1", &self.gen_pld_b1().bits())
+            .field("gen_pld_b2", &self.gen_pld_b2().bits())
+            .field("gen_pld_b3", &self.gen_pld_b3().bits())
+            .field("gen_pld_b4", &self.gen_pld_b4().bits())
             .finish()
     }
 }
@@ -93,10 +93,6 @@ impl crate::Readable for GEN_PLD_DATA_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`gen_pld_data::W`](W) writer structure"]
 impl crate::Writable for GEN_PLD_DATA_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets GEN_PLD_DATA to value 0"]
-impl crate::Resettable for GEN_PLD_DATA_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for GEN_PLD_DATA_SPEC {}

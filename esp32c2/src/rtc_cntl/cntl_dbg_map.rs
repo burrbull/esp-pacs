@@ -116,54 +116,18 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CNTL_DBG_MAP")
-            .field(
-                "gpio_pin5_mux_sel",
-                &format_args!("{}", self.gpio_pin5_mux_sel().bit()),
-            )
-            .field(
-                "gpio_pin4_mux_sel",
-                &format_args!("{}", self.gpio_pin4_mux_sel().bit()),
-            )
-            .field(
-                "gpio_pin3_mux_sel",
-                &format_args!("{}", self.gpio_pin3_mux_sel().bit()),
-            )
-            .field(
-                "gpio_pin2_mux_sel",
-                &format_args!("{}", self.gpio_pin2_mux_sel().bit()),
-            )
-            .field(
-                "gpio_pin1_mux_sel",
-                &format_args!("{}", self.gpio_pin1_mux_sel().bit()),
-            )
-            .field(
-                "gpio_pin0_mux_sel",
-                &format_args!("{}", self.gpio_pin0_mux_sel().bit()),
-            )
-            .field(
-                "gpio_pin5_fun_sel",
-                &format_args!("{}", self.gpio_pin5_fun_sel().bits()),
-            )
-            .field(
-                "gpio_pin4_fun_sel",
-                &format_args!("{}", self.gpio_pin4_fun_sel().bits()),
-            )
-            .field(
-                "gpio_pin3_fun_sel",
-                &format_args!("{}", self.gpio_pin3_fun_sel().bits()),
-            )
-            .field(
-                "gpio_pin2_fun_sel",
-                &format_args!("{}", self.gpio_pin2_fun_sel().bits()),
-            )
-            .field(
-                "gpio_pin1_fun_sel",
-                &format_args!("{}", self.gpio_pin1_fun_sel().bits()),
-            )
-            .field(
-                "gpio_pin0_fun_sel",
-                &format_args!("{}", self.gpio_pin0_fun_sel().bits()),
-            )
+            .field("gpio_pin5_mux_sel", &self.gpio_pin5_mux_sel().bit())
+            .field("gpio_pin4_mux_sel", &self.gpio_pin4_mux_sel().bit())
+            .field("gpio_pin3_mux_sel", &self.gpio_pin3_mux_sel().bit())
+            .field("gpio_pin2_mux_sel", &self.gpio_pin2_mux_sel().bit())
+            .field("gpio_pin1_mux_sel", &self.gpio_pin1_mux_sel().bit())
+            .field("gpio_pin0_mux_sel", &self.gpio_pin0_mux_sel().bit())
+            .field("gpio_pin5_fun_sel", &self.gpio_pin5_fun_sel().bits())
+            .field("gpio_pin4_fun_sel", &self.gpio_pin4_fun_sel().bits())
+            .field("gpio_pin3_fun_sel", &self.gpio_pin3_fun_sel().bits())
+            .field("gpio_pin2_fun_sel", &self.gpio_pin2_fun_sel().bits())
+            .field("gpio_pin1_fun_sel", &self.gpio_pin1_fun_sel().bits())
+            .field("gpio_pin0_fun_sel", &self.gpio_pin0_fun_sel().bits())
             .finish()
     }
 }
@@ -257,10 +221,6 @@ impl crate::Readable for CNTL_DBG_MAP_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`cntl_dbg_map::W`](W) writer structure"]
 impl crate::Writable for CNTL_DBG_MAP_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CNTL_DBG_MAP to value 0"]
-impl crate::Resettable for CNTL_DBG_MAP_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for CNTL_DBG_MAP_SPEC {}

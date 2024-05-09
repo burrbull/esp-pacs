@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SLEEP_CONF")
-            .field(
-                "active_threshold",
-                &format_args!("{}", self.active_threshold().bits()),
-            )
+            .field("active_threshold", &self.active_threshold().bits())
             .finish()
     }
 }
@@ -48,8 +45,6 @@ impl crate::Readable for SLEEP_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`sleep_conf::W`](W) writer structure"]
 impl crate::Writable for SLEEP_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SLEEP_CONF to value 0xf0"]
 impl crate::Resettable for SLEEP_CONF_SPEC {

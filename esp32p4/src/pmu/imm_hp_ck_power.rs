@@ -50,13 +50,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("IMM_HP_CK_POWER")
-            .field(
-                "tie_low_cali_xtal_icg",
-                &format_args!("{}", self.tie_low_cali_xtal_icg().bit()),
-            )
+            .field("tie_low_cali_xtal_icg", &self.tie_low_cali_xtal_icg().bit())
             .field(
                 "tie_high_cali_xtal_icg",
-                &format_args!("{}", self.tie_high_cali_xtal_icg().bit()),
+                &self.tie_high_cali_xtal_icg().bit(),
             )
             .finish()
     }
@@ -163,10 +160,6 @@ impl crate::Readable for IMM_HP_CK_POWER_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`imm_hp_ck_power::W`](W) writer structure"]
 impl crate::Writable for IMM_HP_CK_POWER_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets IMM_HP_CK_POWER to value 0"]
-impl crate::Resettable for IMM_HP_CK_POWER_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for IMM_HP_CK_POWER_SPEC {}

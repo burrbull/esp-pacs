@@ -17,7 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("DESIGN_FOR_VERIFICATION1")
-            .field("dfv1", &format_args!("{}", self.dfv1().bits()))
+            .field("dfv1", &self.dfv1().bits())
             .finish()
     }
 }
@@ -45,10 +45,6 @@ impl crate::Readable for DESIGN_FOR_VERIFICATION1_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`design_for_verification1::W`](W) writer structure"]
 impl crate::Writable for DESIGN_FOR_VERIFICATION1_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets DESIGN_FOR_VERIFICATION1 to value 0"]
-impl crate::Resettable for DESIGN_FOR_VERIFICATION1_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for DESIGN_FOR_VERIFICATION1_SPEC {}

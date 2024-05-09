@@ -44,22 +44,16 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("ROOT_CLK_CTRL1")
-            .field(
-                "mem_clk_div_num",
-                &format_args!("{}", self.mem_clk_div_num().bits()),
-            )
+            .field("mem_clk_div_num", &self.mem_clk_div_num().bits())
             .field(
                 "mem_clk_div_numerator",
-                &format_args!("{}", self.mem_clk_div_numerator().bits()),
+                &self.mem_clk_div_numerator().bits(),
             )
             .field(
                 "mem_clk_div_denominator",
-                &format_args!("{}", self.mem_clk_div_denominator().bits()),
+                &self.mem_clk_div_denominator().bits(),
             )
-            .field(
-                "sys_clk_div_num",
-                &format_args!("{}", self.sys_clk_div_num().bits()),
-            )
+            .field("sys_clk_div_num", &self.sys_clk_div_num().bits())
             .finish()
     }
 }
@@ -105,8 +99,6 @@ impl crate::Readable for ROOT_CLK_CTRL1_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`root_clk_ctrl1::W`](W) writer structure"]
 impl crate::Writable for ROOT_CLK_CTRL1_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets ROOT_CLK_CTRL1 to value 0x01"]
 impl crate::Resettable for ROOT_CLK_CTRL1_SPEC {

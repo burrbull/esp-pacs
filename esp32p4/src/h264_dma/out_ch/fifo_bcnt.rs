@@ -15,7 +15,7 @@ impl core::fmt::Debug for R {
         f.debug_struct("FIFO_BCNT")
             .field(
                 "out_cmdfifo_outfifo_bcnt",
-                &format_args!("{}", self.out_cmdfifo_outfifo_bcnt().bits()),
+                &self.out_cmdfifo_outfifo_bcnt().bits(),
             )
             .finish()
     }
@@ -34,6 +34,4 @@ impl crate::RegisterSpec for FIFO_BCNT_SPEC {
 #[doc = "`read()` method returns [`fifo_bcnt::R`](R) reader structure"]
 impl crate::Readable for FIFO_BCNT_SPEC {}
 #[doc = "`reset()` method sets FIFO_BCNT to value 0"]
-impl crate::Resettable for FIFO_BCNT_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for FIFO_BCNT_SPEC {}

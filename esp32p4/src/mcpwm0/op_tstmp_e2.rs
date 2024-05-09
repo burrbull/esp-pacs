@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("OP_TSTMP_E2")
-            .field(
-                "op_tstmp_e2",
-                &format_args!("{}", self.op_tstmp_e2().bits()),
-            )
+            .field("op_tstmp_e2", &self.op_tstmp_e2().bits())
             .finish()
     }
 }
@@ -48,10 +45,6 @@ impl crate::Readable for OP_TSTMP_E2_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`op_tstmp_e2::W`](W) writer structure"]
 impl crate::Writable for OP_TSTMP_E2_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets OP%s_TSTMP_E2 to value 0"]
-impl crate::Resettable for OP_TSTMP_E2_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for OP_TSTMP_E2_SPEC {}

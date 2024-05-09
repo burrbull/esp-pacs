@@ -66,17 +66,14 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("DECODER_STATUS5")
-            .field(
-                "idct_hfm_data",
-                &format_args!("{}", self.idct_hfm_data().bits()),
-            )
-            .field("ns0", &format_args!("{}", self.ns0().bits()))
-            .field("ns1", &format_args!("{}", self.ns1().bits()))
-            .field("ns2", &format_args!("{}", self.ns2().bits()))
-            .field("ns3", &format_args!("{}", self.ns3().bits()))
-            .field("data_last_o", &format_args!("{}", self.data_last_o().bit()))
-            .field("rdn_result", &format_args!("{}", self.rdn_result().bit()))
-            .field("rdn_ena", &format_args!("{}", self.rdn_ena().bit()))
+            .field("idct_hfm_data", &self.idct_hfm_data().bits())
+            .field("ns0", &self.ns0().bits())
+            .field("ns1", &self.ns1().bits())
+            .field("ns2", &self.ns2().bits())
+            .field("ns3", &self.ns3().bits())
+            .field("data_last_o", &self.data_last_o().bit())
+            .field("rdn_result", &self.rdn_result().bit())
+            .field("rdn_ena", &self.rdn_ena().bit())
             .finish()
     }
 }
@@ -104,10 +101,6 @@ impl crate::Readable for DECODER_STATUS5_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`decoder_status5::W`](W) writer structure"]
 impl crate::Writable for DECODER_STATUS5_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets DECODER_STATUS5 to value 0"]
-impl crate::Resettable for DECODER_STATUS5_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for DECODER_STATUS5_SPEC {}

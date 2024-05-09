@@ -13,10 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("DEV_CHAR_TABLE5_LOC2")
-            .field(
-                "dct_dev5_loc2",
-                &format_args!("{}", self.dct_dev5_loc2().bits()),
-            )
+            .field("dct_dev5_loc2", &self.dct_dev5_loc2().bits())
             .finish()
     }
 }
@@ -34,6 +31,4 @@ impl crate::RegisterSpec for DEV_CHAR_TABLE5_LOC2_SPEC {
 #[doc = "`read()` method returns [`dev_char_table5_loc2::R`](R) reader structure"]
 impl crate::Readable for DEV_CHAR_TABLE5_LOC2_SPEC {}
 #[doc = "`reset()` method sets DEV_CHAR_TABLE5_LOC2 to value 0"]
-impl crate::Resettable for DEV_CHAR_TABLE5_LOC2_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for DEV_CHAR_TABLE5_LOC2_SPEC {}

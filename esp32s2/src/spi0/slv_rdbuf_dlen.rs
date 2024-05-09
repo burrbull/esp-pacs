@@ -35,18 +35,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SLV_RDBUF_DLEN")
-            .field(
-                "slv_dma_rd_bytelen",
-                &format_args!("{}", self.slv_dma_rd_bytelen().bits()),
-            )
-            .field(
-                "slv_rd_buf_done",
-                &format_args!("{}", self.slv_rd_buf_done().bit()),
-            )
-            .field(
-                "seg_magic_err",
-                &format_args!("{}", self.seg_magic_err().bit()),
-            )
+            .field("slv_dma_rd_bytelen", &self.slv_dma_rd_bytelen().bits())
+            .field("slv_rd_buf_done", &self.slv_rd_buf_done().bit())
+            .field("seg_magic_err", &self.seg_magic_err().bit())
             .finish()
     }
 }
@@ -86,10 +77,6 @@ impl crate::Readable for SLV_RDBUF_DLEN_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`slv_rdbuf_dlen::W`](W) writer structure"]
 impl crate::Writable for SLV_RDBUF_DLEN_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SLV_RDBUF_DLEN to value 0"]
-impl crate::Resettable for SLV_RDBUF_DLEN_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for SLV_RDBUF_DLEN_SPEC {}

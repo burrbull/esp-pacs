@@ -53,26 +53,11 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("MODEM_LP_TIMER_CONF")
-            .field(
-                "lp_timer_sel_rtc_slow",
-                &format_args!("{}", self.lp_timer_sel_rtc_slow().bit()),
-            )
-            .field(
-                "lp_timer_sel_8m",
-                &format_args!("{}", self.lp_timer_sel_8m().bit()),
-            )
-            .field(
-                "lp_timer_sel_xtal",
-                &format_args!("{}", self.lp_timer_sel_xtal().bit()),
-            )
-            .field(
-                "lp_timer_sel_xtal32k",
-                &format_args!("{}", self.lp_timer_sel_xtal32k().bit()),
-            )
-            .field(
-                "lp_timer_clk_div_num",
-                &format_args!("{}", self.lp_timer_clk_div_num().bits()),
-            )
+            .field("lp_timer_sel_rtc_slow", &self.lp_timer_sel_rtc_slow().bit())
+            .field("lp_timer_sel_8m", &self.lp_timer_sel_8m().bit())
+            .field("lp_timer_sel_xtal", &self.lp_timer_sel_xtal().bit())
+            .field("lp_timer_sel_xtal32k", &self.lp_timer_sel_xtal32k().bit())
+            .field("lp_timer_clk_div_num", &self.lp_timer_clk_div_num().bits())
             .finish()
     }
 }
@@ -124,10 +109,6 @@ impl crate::Readable for MODEM_LP_TIMER_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`modem_lp_timer_conf::W`](W) writer structure"]
 impl crate::Writable for MODEM_LP_TIMER_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets MODEM_LP_TIMER_CONF to value 0"]
-impl crate::Resettable for MODEM_LP_TIMER_CONF_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for MODEM_LP_TIMER_CONF_SPEC {}

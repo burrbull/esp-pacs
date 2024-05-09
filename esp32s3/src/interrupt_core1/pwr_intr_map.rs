@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PWR_INTR_MAP")
-            .field(
-                "pwr_intr_map",
-                &format_args!("{}", self.pwr_intr_map().bits()),
-            )
+            .field("pwr_intr_map", &self.pwr_intr_map().bits())
             .finish()
     }
 }
@@ -48,8 +45,6 @@ impl crate::Readable for PWR_INTR_MAP_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`pwr_intr_map::W`](W) writer structure"]
 impl crate::Writable for PWR_INTR_MAP_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets PWR_INTR_MAP to value 0x10"]
 impl crate::Resettable for PWR_INTR_MAP_SPEC {

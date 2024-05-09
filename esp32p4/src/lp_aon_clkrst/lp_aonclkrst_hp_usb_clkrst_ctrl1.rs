@@ -84,38 +84,35 @@ impl core::fmt::Debug for R {
         f.debug_struct("LP_AONCLKRST_HP_USB_CLKRST_CTRL1")
             .field(
                 "lp_aonclkrst_rst_en_usb_otg20_adp",
-                &format_args!("{}", self.lp_aonclkrst_rst_en_usb_otg20_adp().bit()),
+                &self.lp_aonclkrst_rst_en_usb_otg20_adp().bit(),
             )
             .field(
                 "lp_aonclkrst_rst_en_usb_otg20_phy",
-                &format_args!("{}", self.lp_aonclkrst_rst_en_usb_otg20_phy().bit()),
+                &self.lp_aonclkrst_rst_en_usb_otg20_phy().bit(),
             )
             .field(
                 "lp_aonclkrst_rst_en_usb_otg20",
-                &format_args!("{}", self.lp_aonclkrst_rst_en_usb_otg20().bit()),
+                &self.lp_aonclkrst_rst_en_usb_otg20().bit(),
             )
             .field(
                 "lp_aonclkrst_rst_en_usb_otg11",
-                &format_args!("{}", self.lp_aonclkrst_rst_en_usb_otg11().bit()),
+                &self.lp_aonclkrst_rst_en_usb_otg11().bit(),
             )
             .field(
                 "lp_aonclkrst_rst_en_usb_device",
-                &format_args!("{}", self.lp_aonclkrst_rst_en_usb_device().bit()),
+                &self.lp_aonclkrst_rst_en_usb_device().bit(),
             )
             .field(
                 "lp_aonclkrst_usb_otg20_phyref_clk_src_sel",
-                &format_args!(
-                    "{}",
-                    self.lp_aonclkrst_usb_otg20_phyref_clk_src_sel().bits()
-                ),
+                &self.lp_aonclkrst_usb_otg20_phyref_clk_src_sel().bits(),
             )
             .field(
                 "lp_aonclkrst_usb_otg20_phyref_clk_en",
-                &format_args!("{}", self.lp_aonclkrst_usb_otg20_phyref_clk_en().bit()),
+                &self.lp_aonclkrst_usb_otg20_phyref_clk_en().bit(),
             )
             .field(
                 "lp_aonclkrst_usb_otg20_ulpi_clk_en",
-                &format_args!("{}", self.lp_aonclkrst_usb_otg20_ulpi_clk_en().bit()),
+                &self.lp_aonclkrst_usb_otg20_ulpi_clk_en().bit(),
             )
             .finish()
     }
@@ -202,8 +199,6 @@ impl crate::Readable for LP_AONCLKRST_HP_USB_CLKRST_CTRL1_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`lp_aonclkrst_hp_usb_clkrst_ctrl1::W`](W) writer structure"]
 impl crate::Writable for LP_AONCLKRST_HP_USB_CLKRST_CTRL1_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets LP_AONCLKRST_HP_USB_CLKRST_CTRL1 to value 0xc000_0000"]
 impl crate::Resettable for LP_AONCLKRST_HP_USB_CLKRST_CTRL1_SPEC {

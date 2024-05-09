@@ -13,10 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CPU_INT_EIP_STATUS")
-            .field(
-                "cpu_int_eip_status",
-                &format_args!("{}", self.cpu_int_eip_status().bits()),
-            )
+            .field("cpu_int_eip_status", &self.cpu_int_eip_status().bits())
             .finish()
     }
 }
@@ -34,6 +31,4 @@ impl crate::RegisterSpec for CPU_INT_EIP_STATUS_SPEC {
 #[doc = "`read()` method returns [`cpu_int_eip_status::R`](R) reader structure"]
 impl crate::Readable for CPU_INT_EIP_STATUS_SPEC {}
 #[doc = "`reset()` method sets CPU_INT_EIP_STATUS to value 0"]
-impl crate::Resettable for CPU_INT_EIP_STATUS_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for CPU_INT_EIP_STATUS_SPEC {}

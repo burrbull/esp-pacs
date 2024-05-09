@@ -15,7 +15,7 @@ impl core::fmt::Debug for R {
         f.debug_struct("HOST_SLC_APBWIN_RDATA")
             .field(
                 "host_slc_apbwin_rdata",
-                &format_args!("{}", self.host_slc_apbwin_rdata().bits()),
+                &self.host_slc_apbwin_rdata().bits(),
             )
             .finish()
     }
@@ -34,6 +34,4 @@ impl crate::RegisterSpec for HOST_SLC_APBWIN_RDATA_SPEC {
 #[doc = "`read()` method returns [`host_slc_apbwin_rdata::R`](R) reader structure"]
 impl crate::Readable for HOST_SLC_APBWIN_RDATA_SPEC {}
 #[doc = "`reset()` method sets HOST_SLC_APBWIN_RDATA to value 0"]
-impl crate::Resettable for HOST_SLC_APBWIN_RDATA_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for HOST_SLC_APBWIN_RDATA_SPEC {}

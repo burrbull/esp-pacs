@@ -35,9 +35,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("AE_MONITOR")
-            .field("tl", &format_args!("{}", self.tl().bits()))
-            .field("th", &format_args!("{}", self.th().bits()))
-            .field("period", &format_args!("{}", self.period().bits()))
+            .field("tl", &self.tl().bits())
+            .field("th", &self.th().bits())
+            .field("period", &self.period().bits())
             .finish()
     }
 }
@@ -77,10 +77,6 @@ impl crate::Readable for AE_MONITOR_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`ae_monitor::W`](W) writer structure"]
 impl crate::Writable for AE_MONITOR_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets AE_MONITOR to value 0"]
-impl crate::Resettable for AE_MONITOR_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for AE_MONITOR_SPEC {}

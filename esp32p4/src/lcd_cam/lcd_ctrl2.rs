@@ -71,34 +71,13 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("LCD_CTRL2")
-            .field(
-                "lcd_vsync_width",
-                &format_args!("{}", self.lcd_vsync_width().bits()),
-            )
-            .field(
-                "lcd_vsync_idle_pol",
-                &format_args!("{}", self.lcd_vsync_idle_pol().bit()),
-            )
-            .field(
-                "lcd_de_idle_pol",
-                &format_args!("{}", self.lcd_de_idle_pol().bit()),
-            )
-            .field(
-                "lcd_hs_blank_en",
-                &format_args!("{}", self.lcd_hs_blank_en().bit()),
-            )
-            .field(
-                "lcd_hsync_width",
-                &format_args!("{}", self.lcd_hsync_width().bits()),
-            )
-            .field(
-                "lcd_hsync_idle_pol",
-                &format_args!("{}", self.lcd_hsync_idle_pol().bit()),
-            )
-            .field(
-                "lcd_hsync_position",
-                &format_args!("{}", self.lcd_hsync_position().bits()),
-            )
+            .field("lcd_vsync_width", &self.lcd_vsync_width().bits())
+            .field("lcd_vsync_idle_pol", &self.lcd_vsync_idle_pol().bit())
+            .field("lcd_de_idle_pol", &self.lcd_de_idle_pol().bit())
+            .field("lcd_hs_blank_en", &self.lcd_hs_blank_en().bit())
+            .field("lcd_hsync_width", &self.lcd_hsync_width().bits())
+            .field("lcd_hsync_idle_pol", &self.lcd_hsync_idle_pol().bit())
+            .field("lcd_hsync_position", &self.lcd_hsync_position().bits())
             .finish()
     }
 }
@@ -162,8 +141,6 @@ impl crate::Readable for LCD_CTRL2_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`lcd_ctrl2::W`](W) writer structure"]
 impl crate::Writable for LCD_CTRL2_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets LCD_CTRL2 to value 0x0001_0001"]
 impl crate::Resettable for LCD_CTRL2_SPEC {

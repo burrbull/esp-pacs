@@ -55,23 +55,23 @@ impl core::fmt::Debug for R {
         f.debug_struct("L1_CACHE_ACS_FAIL_CTRL")
             .field(
                 "l1_icache0_acs_fail_check_mode",
-                &format_args!("{}", self.l1_icache0_acs_fail_check_mode().bit()),
+                &self.l1_icache0_acs_fail_check_mode().bit(),
             )
             .field(
                 "l1_icache1_acs_fail_check_mode",
-                &format_args!("{}", self.l1_icache1_acs_fail_check_mode().bit()),
+                &self.l1_icache1_acs_fail_check_mode().bit(),
             )
             .field(
                 "l1_icache2_acs_fail_check_mode",
-                &format_args!("{}", self.l1_icache2_acs_fail_check_mode().bit()),
+                &self.l1_icache2_acs_fail_check_mode().bit(),
             )
             .field(
                 "l1_icache3_acs_fail_check_mode",
-                &format_args!("{}", self.l1_icache3_acs_fail_check_mode().bit()),
+                &self.l1_icache3_acs_fail_check_mode().bit(),
             )
             .field(
                 "l1_dcache_acs_fail_check_mode",
-                &format_args!("{}", self.l1_dcache_acs_fail_check_mode().bit()),
+                &self.l1_dcache_acs_fail_check_mode().bit(),
             )
             .finish()
     }
@@ -134,10 +134,6 @@ impl crate::Readable for L1_CACHE_ACS_FAIL_CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`l1_cache_acs_fail_ctrl::W`](W) writer structure"]
 impl crate::Writable for L1_CACHE_ACS_FAIL_CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets L1_CACHE_ACS_FAIL_CTRL to value 0"]
-impl crate::Resettable for L1_CACHE_ACS_FAIL_CTRL_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for L1_CACHE_ACS_FAIL_CTRL_SPEC {}

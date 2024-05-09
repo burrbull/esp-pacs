@@ -28,12 +28,9 @@ impl core::fmt::Debug for R {
         f.debug_struct("POWER_HP_PAD")
             .field(
                 "force_hp_pad_no_iso_all",
-                &format_args!("{}", self.force_hp_pad_no_iso_all().bit()),
+                &self.force_hp_pad_no_iso_all().bit(),
             )
-            .field(
-                "force_hp_pad_iso_all",
-                &format_args!("{}", self.force_hp_pad_iso_all().bit()),
-            )
+            .field("force_hp_pad_iso_all", &self.force_hp_pad_iso_all().bit())
             .finish()
     }
 }
@@ -67,10 +64,6 @@ impl crate::Readable for POWER_HP_PAD_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`power_hp_pad::W`](W) writer structure"]
 impl crate::Writable for POWER_HP_PAD_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets POWER_HP_PAD to value 0"]
-impl crate::Resettable for POWER_HP_PAD_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for POWER_HP_PAD_SPEC {}

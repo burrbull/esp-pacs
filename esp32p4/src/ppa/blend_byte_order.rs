@@ -46,20 +46,14 @@ impl core::fmt::Debug for R {
         f.debug_struct("BLEND_BYTE_ORDER")
             .field(
                 "blend0_rx_byte_swap_en",
-                &format_args!("{}", self.blend0_rx_byte_swap_en().bit()),
+                &self.blend0_rx_byte_swap_en().bit(),
             )
             .field(
                 "blend1_rx_byte_swap_en",
-                &format_args!("{}", self.blend1_rx_byte_swap_en().bit()),
+                &self.blend1_rx_byte_swap_en().bit(),
             )
-            .field(
-                "blend0_rx_rgb_swap_en",
-                &format_args!("{}", self.blend0_rx_rgb_swap_en().bit()),
-            )
-            .field(
-                "blend1_rx_rgb_swap_en",
-                &format_args!("{}", self.blend1_rx_rgb_swap_en().bit()),
-            )
+            .field("blend0_rx_rgb_swap_en", &self.blend0_rx_rgb_swap_en().bit())
+            .field("blend1_rx_rgb_swap_en", &self.blend1_rx_rgb_swap_en().bit())
             .finish()
     }
 }
@@ -105,10 +99,6 @@ impl crate::Readable for BLEND_BYTE_ORDER_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`blend_byte_order::W`](W) writer structure"]
 impl crate::Writable for BLEND_BYTE_ORDER_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets BLEND_BYTE_ORDER to value 0"]
-impl crate::Resettable for BLEND_BYTE_ORDER_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for BLEND_BYTE_ORDER_SPEC {}

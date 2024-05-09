@@ -46,22 +46,16 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CPUCORE0_CFG")
-            .field(
-                "cpu_core0_sw_stall",
-                &format_args!("{}", self.cpu_core0_sw_stall().bits()),
-            )
+            .field("cpu_core0_sw_stall", &self.cpu_core0_sw_stall().bits())
             .field(
                 "cpu_core0_ocd_halt_on_reset",
-                &format_args!("{}", self.cpu_core0_ocd_halt_on_reset().bit()),
+                &self.cpu_core0_ocd_halt_on_reset().bit(),
             )
             .field(
                 "cpu_core0_stat_vector_sel",
-                &format_args!("{}", self.cpu_core0_stat_vector_sel().bit()),
+                &self.cpu_core0_stat_vector_sel().bit(),
             )
-            .field(
-                "cpu_core0_dreset_mask",
-                &format_args!("{}", self.cpu_core0_dreset_mask().bit()),
-            )
+            .field("cpu_core0_dreset_mask", &self.cpu_core0_dreset_mask().bit())
             .finish()
     }
 }
@@ -115,8 +109,6 @@ impl crate::Readable for CPUCORE0_CFG_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`cpucore0_cfg::W`](W) writer structure"]
 impl crate::Writable for CPUCORE0_CFG_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CPUCORE0_CFG to value 0x4000_0000"]
 impl crate::Resettable for CPUCORE0_CFG_SPEC {

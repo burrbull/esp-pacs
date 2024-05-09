@@ -17,10 +17,7 @@ impl core::fmt::Debug for R {
         f.debug_struct("CORE_1_PIF_PMS_MONITOR_3")
             .field(
                 "core_1_pif_pms_monitor_violate_status_haddr",
-                &format_args!(
-                    "{}",
-                    self.core_1_pif_pms_monitor_violate_status_haddr().bits()
-                ),
+                &self.core_1_pif_pms_monitor_violate_status_haddr().bits(),
             )
             .finish()
     }
@@ -39,6 +36,4 @@ impl crate::RegisterSpec for CORE_1_PIF_PMS_MONITOR_3_SPEC {
 #[doc = "`read()` method returns [`core_1_pif_pms_monitor_3::R`](R) reader structure"]
 impl crate::Readable for CORE_1_PIF_PMS_MONITOR_3_SPEC {}
 #[doc = "`reset()` method sets CORE_1_PIF_PMS_MONITOR_3 to value 0"]
-impl crate::Resettable for CORE_1_PIF_PMS_MONITOR_3_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for CORE_1_PIF_PMS_MONITOR_3_SPEC {}

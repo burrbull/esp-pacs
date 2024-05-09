@@ -13,10 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("AWB0_WHITE_CNT")
-            .field(
-                "awb0_white_cnt",
-                &format_args!("{}", self.awb0_white_cnt().bits()),
-            )
+            .field("awb0_white_cnt", &self.awb0_white_cnt().bits())
             .finish()
     }
 }
@@ -34,6 +31,4 @@ impl crate::RegisterSpec for AWB0_WHITE_CNT_SPEC {
 #[doc = "`read()` method returns [`awb0_white_cnt::R`](R) reader structure"]
 impl crate::Readable for AWB0_WHITE_CNT_SPEC {}
 #[doc = "`reset()` method sets AWB0_WHITE_CNT to value 0"]
-impl crate::Resettable for AWB0_WHITE_CNT_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for AWB0_WHITE_CNT_SPEC {}

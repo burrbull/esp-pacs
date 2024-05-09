@@ -35,18 +35,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("TIMER5")
-            .field(
-                "min_slp_val",
-                &format_args!("{}", self.min_slp_val().bits()),
-            )
-            .field(
-                "rtcmem_wait_timer",
-                &format_args!("{}", self.rtcmem_wait_timer().bits()),
-            )
-            .field(
-                "rtcmem_powerup_timer",
-                &format_args!("{}", self.rtcmem_powerup_timer().bits()),
-            )
+            .field("min_slp_val", &self.min_slp_val().bits())
+            .field("rtcmem_wait_timer", &self.rtcmem_wait_timer().bits())
+            .field("rtcmem_powerup_timer", &self.rtcmem_powerup_timer().bits())
             .finish()
     }
 }
@@ -86,8 +77,6 @@ impl crate::Readable for TIMER5_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`timer5::W`](W) writer structure"]
 impl crate::Writable for TIMER5_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets TIMER5 to value 0x1214_8000"]
 impl crate::Resettable for TIMER5_SPEC {

@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("COMMAND_BUF_PORT")
-            .field(
-                "reg_command",
-                &format_args!("{}", self.reg_command().bits()),
-            )
+            .field("reg_command", &self.reg_command().bits())
             .finish()
     }
 }
@@ -48,10 +45,6 @@ impl crate::Readable for COMMAND_BUF_PORT_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`command_buf_port::W`](W) writer structure"]
 impl crate::Writable for COMMAND_BUF_PORT_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets COMMAND_BUF_PORT to value 0"]
-impl crate::Resettable for COMMAND_BUF_PORT_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for COMMAND_BUF_PORT_SPEC {}

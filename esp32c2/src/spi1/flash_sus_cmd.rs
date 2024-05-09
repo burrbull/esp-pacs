@@ -35,18 +35,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("FLASH_SUS_CMD")
-            .field(
-                "flash_per_command",
-                &format_args!("{}", self.flash_per_command().bits()),
-            )
-            .field(
-                "flash_pes_command",
-                &format_args!("{}", self.flash_pes_command().bits()),
-            )
-            .field(
-                "wait_pesr_command",
-                &format_args!("{}", self.wait_pesr_command().bits()),
-            )
+            .field("flash_per_command", &self.flash_per_command().bits())
+            .field("flash_pes_command", &self.flash_pes_command().bits())
+            .field("wait_pesr_command", &self.wait_pesr_command().bits())
             .finish()
     }
 }
@@ -86,8 +77,6 @@ impl crate::Readable for FLASH_SUS_CMD_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`flash_sus_cmd::W`](W) writer structure"]
 impl crate::Writable for FLASH_SUS_CMD_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets FLASH_SUS_CMD to value 0x0005_757a"]
 impl crate::Resettable for FLASH_SUS_CMD_SPEC {

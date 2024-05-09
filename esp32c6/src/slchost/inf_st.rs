@@ -65,22 +65,13 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("INF_ST")
-            .field(
-                "sdio20_mode",
-                &format_args!("{}", self.sdio20_mode().bits()),
-            )
-            .field(
-                "sdio_neg_samp",
-                &format_args!("{}", self.sdio_neg_samp().bits()),
-            )
-            .field(
-                "sdio_quick_in",
-                &format_args!("{}", self.sdio_quick_in().bits()),
-            )
-            .field("dll_on_sw", &format_args!("{}", self.dll_on_sw().bit()))
-            .field("dll_on", &format_args!("{}", self.dll_on().bit()))
-            .field("clk_mode_sw", &format_args!("{}", self.clk_mode_sw().bit()))
-            .field("clk_mode", &format_args!("{}", self.clk_mode().bits()))
+            .field("sdio20_mode", &self.sdio20_mode().bits())
+            .field("sdio_neg_samp", &self.sdio_neg_samp().bits())
+            .field("sdio_quick_in", &self.sdio_quick_in().bits())
+            .field("dll_on_sw", &self.dll_on_sw().bit())
+            .field("dll_on", &self.dll_on().bit())
+            .field("clk_mode_sw", &self.clk_mode_sw().bit())
+            .field("clk_mode", &self.clk_mode().bits())
             .finish()
     }
 }
@@ -126,10 +117,6 @@ impl crate::Readable for INF_ST_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`inf_st::W`](W) writer structure"]
 impl crate::Writable for INF_ST_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets INF_ST to value 0"]
-impl crate::Resettable for INF_ST_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for INF_ST_SPEC {}

@@ -44,22 +44,13 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("BACKUP_DMA_CFG0")
-            .field(
-                "burst_limit_aon",
-                &format_args!("{}", self.burst_limit_aon().bits()),
-            )
-            .field(
-                "read_interval_aon",
-                &format_args!("{}", self.read_interval_aon().bits()),
-            )
+            .field("burst_limit_aon", &self.burst_limit_aon().bits())
+            .field("read_interval_aon", &self.read_interval_aon().bits())
             .field(
                 "link_backup_tout_thres_aon",
-                &format_args!("{}", self.link_backup_tout_thres_aon().bits()),
+                &self.link_backup_tout_thres_aon().bits(),
             )
-            .field(
-                "link_tout_thres_aon",
-                &format_args!("{}", self.link_tout_thres_aon().bits()),
-            )
+            .field("link_tout_thres_aon", &self.link_tout_thres_aon().bits())
             .finish()
     }
 }
@@ -107,8 +98,6 @@ impl crate::Readable for BACKUP_DMA_CFG0_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`backup_dma_cfg0::W`](W) writer structure"]
 impl crate::Writable for BACKUP_DMA_CFG0_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets BACKUP_DMA_CFG0 to value 0x1906_414a"]
 impl crate::Resettable for BACKUP_DMA_CFG0_SPEC {

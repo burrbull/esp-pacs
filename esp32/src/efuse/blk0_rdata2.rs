@@ -31,12 +31,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("BLK0_RDATA2")
-            .field("rd_mac_1", &format_args!("{}", self.rd_mac_1().bits()))
-            .field("rd_mac_crc", &format_args!("{}", self.rd_mac_crc().bits()))
-            .field(
-                "rd_reserve_0_88",
-                &format_args!("{}", self.rd_reserve_0_88().bits()),
-            )
+            .field("rd_mac_1", &self.rd_mac_1().bits())
+            .field("rd_mac_crc", &self.rd_mac_crc().bits())
+            .field("rd_reserve_0_88", &self.rd_reserve_0_88().bits())
             .finish()
     }
 }
@@ -64,10 +61,6 @@ impl crate::Readable for BLK0_RDATA2_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`blk0_rdata2::W`](W) writer structure"]
 impl crate::Writable for BLK0_RDATA2_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets BLK0_RDATA2 to value 0"]
-impl crate::Resettable for BLK0_RDATA2_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for BLK0_RDATA2_SPEC {}

@@ -26,14 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("INT_RAW")
-            .field(
-                "overflow_raw",
-                &format_args!("{}", self.overflow_raw().bit()),
-            )
-            .field(
-                "soc_wakeup_int_raw",
-                &format_args!("{}", self.soc_wakeup_int_raw().bit()),
-            )
+            .field("overflow_raw", &self.overflow_raw().bit())
+            .field("soc_wakeup_int_raw", &self.soc_wakeup_int_raw().bit())
             .finish()
     }
 }
@@ -67,10 +61,6 @@ impl crate::Readable for INT_RAW_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`int_raw::W`](W) writer structure"]
 impl crate::Writable for INT_RAW_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets INT_RAW to value 0"]
-impl crate::Resettable for INT_RAW_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for INT_RAW_SPEC {}

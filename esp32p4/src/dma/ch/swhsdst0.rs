@@ -41,18 +41,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SWHSDST0")
-            .field(
-                "ch1_swhs_req_dst",
-                &format_args!("{}", self.ch1_swhs_req_dst().bit()),
-            )
-            .field(
-                "ch1_swhs_sglreq_dst",
-                &format_args!("{}", self.ch1_swhs_sglreq_dst().bit()),
-            )
-            .field(
-                "ch1_swhs_lst_dst",
-                &format_args!("{}", self.ch1_swhs_lst_dst().bit()),
-            )
+            .field("ch1_swhs_req_dst", &self.ch1_swhs_req_dst().bit())
+            .field("ch1_swhs_sglreq_dst", &self.ch1_swhs_sglreq_dst().bit())
+            .field("ch1_swhs_lst_dst", &self.ch1_swhs_lst_dst().bit())
             .finish()
     }
 }
@@ -110,10 +101,6 @@ impl crate::Readable for SWHSDST0_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`swhsdst0::W`](W) writer structure"]
 impl crate::Writable for SWHSDST0_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SWHSDST0 to value 0"]
-impl crate::Resettable for SWHSDST0_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for SWHSDST0_SPEC {}

@@ -13,10 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("MAIN_BUF1_LOW")
-            .field(
-                "main_timer_buf1_low",
-                &format_args!("{}", self.main_timer_buf1_low().bits()),
-            )
+            .field("main_timer_buf1_low", &self.main_timer_buf1_low().bits())
             .finish()
     }
 }
@@ -34,6 +31,4 @@ impl crate::RegisterSpec for MAIN_BUF1_LOW_SPEC {
 #[doc = "`read()` method returns [`main_buf1_low::R`](R) reader structure"]
 impl crate::Readable for MAIN_BUF1_LOW_SPEC {}
 #[doc = "`reset()` method sets MAIN_BUF1_LOW to value 0"]
-impl crate::Resettable for MAIN_BUF1_LOW_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for MAIN_BUF1_LOW_SPEC {}

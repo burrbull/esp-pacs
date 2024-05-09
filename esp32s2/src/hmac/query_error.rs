@@ -13,7 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("QUERY_ERROR")
-            .field("query_check", &format_args!("{}", self.query_check().bit()))
+            .field("query_check", &self.query_check().bit())
             .finish()
     }
 }
@@ -31,6 +31,4 @@ impl crate::RegisterSpec for QUERY_ERROR_SPEC {
 #[doc = "`read()` method returns [`query_error::R`](R) reader structure"]
 impl crate::Readable for QUERY_ERROR_SPEC {}
 #[doc = "`reset()` method sets QUERY_ERROR to value 0"]
-impl crate::Resettable for QUERY_ERROR_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for QUERY_ERROR_SPEC {}

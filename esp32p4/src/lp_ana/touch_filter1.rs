@@ -109,48 +109,24 @@ impl core::fmt::Debug for R {
         f.debug_struct("TOUCH_FILTER1")
             .field(
                 "touch_neg_noise_disupdate_baseline_en",
-                &format_args!("{}", self.touch_neg_noise_disupdate_baseline_en().bit()),
+                &self.touch_neg_noise_disupdate_baseline_en().bit(),
             )
-            .field(
-                "touch_hysteresis",
-                &format_args!("{}", self.touch_hysteresis().bits()),
-            )
+            .field("touch_hysteresis", &self.touch_hysteresis().bits())
             .field(
                 "touch_neg_noise_thres",
-                &format_args!("{}", self.touch_neg_noise_thres().bits()),
+                &self.touch_neg_noise_thres().bits(),
             )
-            .field(
-                "touch_noise_thres",
-                &format_args!("{}", self.touch_noise_thres().bits()),
-            )
-            .field(
-                "touch_smooth_lvl",
-                &format_args!("{}", self.touch_smooth_lvl().bits()),
-            )
-            .field(
-                "touch_jitter_step",
-                &format_args!("{}", self.touch_jitter_step().bits()),
-            )
-            .field(
-                "touch_filter_mode",
-                &format_args!("{}", self.touch_filter_mode().bits()),
-            )
-            .field(
-                "touch_filter_en",
-                &format_args!("{}", self.touch_filter_en().bit()),
-            )
+            .field("touch_noise_thres", &self.touch_noise_thres().bits())
+            .field("touch_smooth_lvl", &self.touch_smooth_lvl().bits())
+            .field("touch_jitter_step", &self.touch_jitter_step().bits())
+            .field("touch_filter_mode", &self.touch_filter_mode().bits())
+            .field("touch_filter_en", &self.touch_filter_en().bit())
             .field(
                 "touch_neg_noise_limit",
-                &format_args!("{}", self.touch_neg_noise_limit().bits()),
+                &self.touch_neg_noise_limit().bits(),
             )
-            .field(
-                "touch_approach_limit",
-                &format_args!("{}", self.touch_approach_limit().bits()),
-            )
-            .field(
-                "touch_debounce_limit",
-                &format_args!("{}", self.touch_debounce_limit().bits()),
-            )
+            .field("touch_approach_limit", &self.touch_approach_limit().bits())
+            .field("touch_debounce_limit", &self.touch_debounce_limit().bits())
             .finish()
     }
 }
@@ -240,8 +216,6 @@ impl crate::Readable for TOUCH_FILTER1_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`touch_filter1::W`](W) writer structure"]
 impl crate::Writable for TOUCH_FILTER1_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets TOUCH_FILTER1 to value 0x6a0a_0200"]
 impl crate::Resettable for TOUCH_FILTER1_SPEC {

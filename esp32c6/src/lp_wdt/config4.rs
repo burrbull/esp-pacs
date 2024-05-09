@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CONFIG4")
-            .field(
-                "wdt_stg3_hold",
-                &format_args!("{}", self.wdt_stg3_hold().bits()),
-            )
+            .field("wdt_stg3_hold", &self.wdt_stg3_hold().bits())
             .finish()
     }
 }
@@ -48,8 +45,6 @@ impl crate::Readable for CONFIG4_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`config4::W`](W) writer structure"]
 impl crate::Writable for CONFIG4_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CONFIG4 to value 0x0fff"]
 impl crate::Resettable for CONFIG4_SPEC {

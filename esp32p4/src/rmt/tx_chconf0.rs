@@ -108,43 +108,16 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("TX_CHCONF0")
-            .field(
-                "tx_conti_mode_ch0",
-                &format_args!("{}", self.tx_conti_mode_ch0().bit()),
-            )
-            .field(
-                "mem_tx_wrap_en_ch0",
-                &format_args!("{}", self.mem_tx_wrap_en_ch0().bit()),
-            )
-            .field(
-                "idle_out_lv_ch0",
-                &format_args!("{}", self.idle_out_lv_ch0().bit()),
-            )
-            .field(
-                "idle_out_en_ch0",
-                &format_args!("{}", self.idle_out_en_ch0().bit()),
-            )
-            .field("tx_stop_ch0", &format_args!("{}", self.tx_stop_ch0().bit()))
-            .field(
-                "div_cnt_ch0",
-                &format_args!("{}", self.div_cnt_ch0().bits()),
-            )
-            .field(
-                "mem_size_ch0",
-                &format_args!("{}", self.mem_size_ch0().bits()),
-            )
-            .field(
-                "carrier_eff_en_ch0",
-                &format_args!("{}", self.carrier_eff_en_ch0().bit()),
-            )
-            .field(
-                "carrier_en_ch0",
-                &format_args!("{}", self.carrier_en_ch0().bit()),
-            )
-            .field(
-                "carrier_out_lv_ch0",
-                &format_args!("{}", self.carrier_out_lv_ch0().bit()),
-            )
+            .field("tx_conti_mode_ch0", &self.tx_conti_mode_ch0().bit())
+            .field("mem_tx_wrap_en_ch0", &self.mem_tx_wrap_en_ch0().bit())
+            .field("idle_out_lv_ch0", &self.idle_out_lv_ch0().bit())
+            .field("idle_out_en_ch0", &self.idle_out_en_ch0().bit())
+            .field("tx_stop_ch0", &self.tx_stop_ch0().bit())
+            .field("div_cnt_ch0", &self.div_cnt_ch0().bits())
+            .field("mem_size_ch0", &self.mem_size_ch0().bits())
+            .field("carrier_eff_en_ch0", &self.carrier_eff_en_ch0().bit())
+            .field("carrier_en_ch0", &self.carrier_en_ch0().bit())
+            .field("carrier_out_lv_ch0", &self.carrier_out_lv_ch0().bit())
             .finish()
     }
 }
@@ -256,8 +229,6 @@ impl crate::Readable for TX_CHCONF0_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`tx_chconf0::W`](W) writer structure"]
 impl crate::Writable for TX_CHCONF0_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets TX_CH%sCONF0 to value 0x0071_0200"]
 impl crate::Resettable for TX_CHCONF0_SPEC {

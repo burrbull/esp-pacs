@@ -27,18 +27,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("HOST_SLCHOST_INF_ST")
-            .field(
-                "host_sdio20_mode",
-                &format_args!("{}", self.host_sdio20_mode().bits()),
-            )
-            .field(
-                "host_sdio_neg_samp",
-                &format_args!("{}", self.host_sdio_neg_samp().bits()),
-            )
-            .field(
-                "host_sdio_quick_in",
-                &format_args!("{}", self.host_sdio_quick_in().bits()),
-            )
+            .field("host_sdio20_mode", &self.host_sdio20_mode().bits())
+            .field("host_sdio_neg_samp", &self.host_sdio_neg_samp().bits())
+            .field("host_sdio_quick_in", &self.host_sdio_quick_in().bits())
             .finish()
     }
 }
@@ -56,6 +47,4 @@ impl crate::RegisterSpec for HOST_SLCHOST_INF_ST_SPEC {
 #[doc = "`read()` method returns [`host_slchost_inf_st::R`](R) reader structure"]
 impl crate::Readable for HOST_SLCHOST_INF_ST_SPEC {}
 #[doc = "`reset()` method sets HOST_SLCHOST_INF_ST to value 0"]
-impl crate::Resettable for HOST_SLCHOST_INF_ST_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for HOST_SLCHOST_INF_ST_SPEC {}

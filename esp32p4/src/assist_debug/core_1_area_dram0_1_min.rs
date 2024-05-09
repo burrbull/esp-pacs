@@ -19,7 +19,7 @@ impl core::fmt::Debug for R {
         f.debug_struct("CORE_1_AREA_DRAM0_1_MIN")
             .field(
                 "core_1_area_dram0_1_min",
-                &format_args!("{}", self.core_1_area_dram0_1_min().bits()),
+                &self.core_1_area_dram0_1_min().bits(),
             )
             .finish()
     }
@@ -50,8 +50,6 @@ impl crate::Readable for CORE_1_AREA_DRAM0_1_MIN_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`core_1_area_dram0_1_min::W`](W) writer structure"]
 impl crate::Writable for CORE_1_AREA_DRAM0_1_MIN_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CORE_1_AREA_DRAM0_1_MIN to value 0xffff_ffff"]
 impl crate::Resettable for CORE_1_AREA_DRAM0_1_MIN_SPEC {

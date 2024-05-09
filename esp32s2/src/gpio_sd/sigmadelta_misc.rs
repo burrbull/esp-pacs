@@ -26,11 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SIGMADELTA_MISC")
-            .field(
-                "function_clk_en",
-                &format_args!("{}", self.function_clk_en().bit()),
-            )
-            .field("spi_swap", &format_args!("{}", self.spi_swap().bit()))
+            .field("function_clk_en", &self.function_clk_en().bit())
+            .field("spi_swap", &self.spi_swap().bit())
             .finish()
     }
 }
@@ -64,10 +61,6 @@ impl crate::Readable for SIGMADELTA_MISC_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`sigmadelta_misc::W`](W) writer structure"]
 impl crate::Writable for SIGMADELTA_MISC_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SIGMADELTA_MISC to value 0"]
-impl crate::Resettable for SIGMADELTA_MISC_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for SIGMADELTA_MISC_SPEC {}

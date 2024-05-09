@@ -26,11 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("GNPTXFSIZ")
-            .field(
-                "nptxfstaddr",
-                &format_args!("{}", self.nptxfstaddr().bits()),
-            )
-            .field("nptxfdep", &format_args!("{}", self.nptxfdep().bits()))
+            .field("nptxfstaddr", &self.nptxfstaddr().bits())
+            .field("nptxfdep", &self.nptxfdep().bits())
             .finish()
     }
 }
@@ -64,8 +61,6 @@ impl crate::Readable for GNPTXFSIZ_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`gnptxfsiz::W`](W) writer structure"]
 impl crate::Writable for GNPTXFSIZ_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets GNPTXFSIZ to value 0x0100_0100"]
 impl crate::Resettable for GNPTXFSIZ_SPEC {

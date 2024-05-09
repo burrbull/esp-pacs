@@ -26,14 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("DPI_LP_CMD_TIM")
-            .field(
-                "invact_lpcmd_time",
-                &format_args!("{}", self.invact_lpcmd_time().bits()),
-            )
-            .field(
-                "outvact_lpcmd_time",
-                &format_args!("{}", self.outvact_lpcmd_time().bits()),
-            )
+            .field("invact_lpcmd_time", &self.invact_lpcmd_time().bits())
+            .field("outvact_lpcmd_time", &self.outvact_lpcmd_time().bits())
             .finish()
     }
 }
@@ -67,10 +61,6 @@ impl crate::Readable for DPI_LP_CMD_TIM_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`dpi_lp_cmd_tim::W`](W) writer structure"]
 impl crate::Writable for DPI_LP_CMD_TIM_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets DPI_LP_CMD_TIM to value 0"]
-impl crate::Resettable for DPI_LP_CMD_TIM_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for DPI_LP_CMD_TIM_SPEC {}

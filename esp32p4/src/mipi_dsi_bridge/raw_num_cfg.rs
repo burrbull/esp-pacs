@@ -28,14 +28,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("RAW_NUM_CFG")
-            .field(
-                "raw_num_total",
-                &format_args!("{}", self.raw_num_total().bits()),
-            )
-            .field(
-                "unalign_64bit_en",
-                &format_args!("{}", self.unalign_64bit_en().bit()),
-            )
+            .field("raw_num_total", &self.raw_num_total().bits())
+            .field("unalign_64bit_en", &self.unalign_64bit_en().bit())
             .finish()
     }
 }
@@ -75,8 +69,6 @@ impl crate::Readable for RAW_NUM_CFG_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`raw_num_cfg::W`](W) writer structure"]
 impl crate::Writable for RAW_NUM_CFG_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets RAW_NUM_CFG to value 0x0003_8400"]
 impl crate::Resettable for RAW_NUM_CFG_SPEC {

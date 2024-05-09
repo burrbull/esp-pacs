@@ -80,14 +80,14 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SAR_DAC_CTRL2")
-            .field("dac_dc1", &format_args!("{}", self.dac_dc1().bits()))
-            .field("dac_dc2", &format_args!("{}", self.dac_dc2().bits()))
-            .field("dac_scale1", &format_args!("{}", self.dac_scale1().bits()))
-            .field("dac_scale2", &format_args!("{}", self.dac_scale2().bits()))
-            .field("dac_inv1", &format_args!("{}", self.dac_inv1().bits()))
-            .field("dac_inv2", &format_args!("{}", self.dac_inv2().bits()))
-            .field("dac_cw_en1", &format_args!("{}", self.dac_cw_en1().bit()))
-            .field("dac_cw_en2", &format_args!("{}", self.dac_cw_en2().bit()))
+            .field("dac_dc1", &self.dac_dc1().bits())
+            .field("dac_dc2", &self.dac_dc2().bits())
+            .field("dac_scale1", &self.dac_scale1().bits())
+            .field("dac_scale2", &self.dac_scale2().bits())
+            .field("dac_inv1", &self.dac_inv1().bits())
+            .field("dac_inv2", &self.dac_inv2().bits())
+            .field("dac_cw_en1", &self.dac_cw_en1().bit())
+            .field("dac_cw_en2", &self.dac_cw_en2().bit())
             .finish()
     }
 }
@@ -157,8 +157,6 @@ impl crate::Readable for SAR_DAC_CTRL2_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`sar_dac_ctrl2::W`](W) writer structure"]
 impl crate::Writable for SAR_DAC_CTRL2_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SAR_DAC_CTRL2 to value 0x0300_0000"]
 impl crate::Resettable for SAR_DAC_CTRL2_SPEC {

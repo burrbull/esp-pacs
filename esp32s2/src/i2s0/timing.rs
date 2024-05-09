@@ -134,56 +134,20 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("TIMING")
-            .field(
-                "tx_bck_in_delay",
-                &format_args!("{}", self.tx_bck_in_delay().bits()),
-            )
-            .field(
-                "tx_ws_in_delay",
-                &format_args!("{}", self.tx_ws_in_delay().bits()),
-            )
-            .field(
-                "rx_bck_in_delay",
-                &format_args!("{}", self.rx_bck_in_delay().bits()),
-            )
-            .field(
-                "rx_ws_in_delay",
-                &format_args!("{}", self.rx_ws_in_delay().bits()),
-            )
-            .field(
-                "rx_sd_in_delay",
-                &format_args!("{}", self.rx_sd_in_delay().bits()),
-            )
-            .field(
-                "tx_bck_out_delay",
-                &format_args!("{}", self.tx_bck_out_delay().bits()),
-            )
-            .field(
-                "tx_ws_out_delay",
-                &format_args!("{}", self.tx_ws_out_delay().bits()),
-            )
-            .field(
-                "tx_sd_out_delay",
-                &format_args!("{}", self.tx_sd_out_delay().bits()),
-            )
-            .field(
-                "rx_ws_out_delay",
-                &format_args!("{}", self.rx_ws_out_delay().bits()),
-            )
-            .field(
-                "rx_bck_out_delay",
-                &format_args!("{}", self.rx_bck_out_delay().bits()),
-            )
-            .field("tx_dsync_sw", &format_args!("{}", self.tx_dsync_sw().bit()))
-            .field("rx_dsync_sw", &format_args!("{}", self.rx_dsync_sw().bit()))
-            .field(
-                "data_enable_delay",
-                &format_args!("{}", self.data_enable_delay().bits()),
-            )
-            .field(
-                "tx_bck_in_inv",
-                &format_args!("{}", self.tx_bck_in_inv().bit()),
-            )
+            .field("tx_bck_in_delay", &self.tx_bck_in_delay().bits())
+            .field("tx_ws_in_delay", &self.tx_ws_in_delay().bits())
+            .field("rx_bck_in_delay", &self.rx_bck_in_delay().bits())
+            .field("rx_ws_in_delay", &self.rx_ws_in_delay().bits())
+            .field("rx_sd_in_delay", &self.rx_sd_in_delay().bits())
+            .field("tx_bck_out_delay", &self.tx_bck_out_delay().bits())
+            .field("tx_ws_out_delay", &self.tx_ws_out_delay().bits())
+            .field("tx_sd_out_delay", &self.tx_sd_out_delay().bits())
+            .field("rx_ws_out_delay", &self.rx_ws_out_delay().bits())
+            .field("rx_bck_out_delay", &self.rx_bck_out_delay().bits())
+            .field("tx_dsync_sw", &self.tx_dsync_sw().bit())
+            .field("rx_dsync_sw", &self.rx_dsync_sw().bit())
+            .field("data_enable_delay", &self.data_enable_delay().bits())
+            .field("tx_bck_in_inv", &self.tx_bck_in_inv().bit())
             .finish()
     }
 }
@@ -289,10 +253,6 @@ impl crate::Readable for TIMING_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`timing::W`](W) writer structure"]
 impl crate::Writable for TIMING_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets TIMING to value 0"]
-impl crate::Resettable for TIMING_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for TIMING_SPEC {}

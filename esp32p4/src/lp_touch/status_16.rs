@@ -34,22 +34,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("STATUS_16")
-            .field(
-                "approach_pad2_cnt",
-                &format_args!("{}", self.approach_pad2_cnt().bits()),
-            )
-            .field(
-                "approach_pad1_cnt",
-                &format_args!("{}", self.approach_pad1_cnt().bits()),
-            )
-            .field(
-                "approach_pad0_cnt",
-                &format_args!("{}", self.approach_pad0_cnt().bits()),
-            )
-            .field(
-                "slp_approach_cnt",
-                &format_args!("{}", self.slp_approach_cnt().bits()),
-            )
+            .field("approach_pad2_cnt", &self.approach_pad2_cnt().bits())
+            .field("approach_pad1_cnt", &self.approach_pad1_cnt().bits())
+            .field("approach_pad0_cnt", &self.approach_pad0_cnt().bits())
+            .field("slp_approach_cnt", &self.slp_approach_cnt().bits())
             .finish()
     }
 }
@@ -67,6 +55,4 @@ impl crate::RegisterSpec for STATUS_16_SPEC {
 #[doc = "`read()` method returns [`status_16::R`](R) reader structure"]
 impl crate::Readable for STATUS_16_SPEC {}
 #[doc = "`reset()` method sets STATUS_16 to value 0"]
-impl crate::Resettable for STATUS_16_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for STATUS_16_SPEC {}

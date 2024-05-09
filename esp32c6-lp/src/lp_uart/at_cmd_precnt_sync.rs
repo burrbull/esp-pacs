@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("AT_CMD_PRECNT_SYNC")
-            .field(
-                "pre_idle_num",
-                &format_args!("{}", self.pre_idle_num().bits()),
-            )
+            .field("pre_idle_num", &self.pre_idle_num().bits())
             .finish()
     }
 }
@@ -48,8 +45,6 @@ impl crate::Readable for AT_CMD_PRECNT_SYNC_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`at_cmd_precnt_sync::W`](W) writer structure"]
 impl crate::Writable for AT_CMD_PRECNT_SYNC_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets AT_CMD_PRECNT_SYNC to value 0x0901"]
 impl crate::Resettable for AT_CMD_PRECNT_SYNC_SPEC {

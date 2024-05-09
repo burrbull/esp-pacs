@@ -15,7 +15,7 @@ impl core::fmt::Debug for R {
         f.debug_struct("STATUS1")
             .field(
                 "ch1_data_left_in_fifo",
-                &format_args!("{}", self.ch1_data_left_in_fifo().bits()),
+                &self.ch1_data_left_in_fifo().bits(),
             )
             .finish()
     }
@@ -34,6 +34,4 @@ impl crate::RegisterSpec for STATUS1_SPEC {
 #[doc = "`read()` method returns [`status1::R`](R) reader structure"]
 impl crate::Readable for STATUS1_SPEC {}
 #[doc = "`reset()` method sets STATUS1 to value 0"]
-impl crate::Resettable for STATUS1_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for STATUS1_SPEC {}

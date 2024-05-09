@@ -26,8 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("EDMA_PMS_SPI2")
-            .field("attr1", &format_args!("{}", self.attr1().bits()))
-            .field("attr2", &format_args!("{}", self.attr2().bits()))
+            .field("attr1", &self.attr1().bits())
+            .field("attr2", &self.attr2().bits())
             .finish()
     }
 }
@@ -61,8 +61,6 @@ impl crate::Readable for EDMA_PMS_SPI2_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`edma_pms_spi2::W`](W) writer structure"]
 impl crate::Writable for EDMA_PMS_SPI2_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets EDMA_PMS_SPI2 to value 0x0f"]
 impl crate::Resettable for EDMA_PMS_SPI2_SPEC {

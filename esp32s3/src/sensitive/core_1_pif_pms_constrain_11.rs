@@ -36,19 +36,15 @@ impl core::fmt::Debug for R {
         f.debug_struct("CORE_1_PIF_PMS_CONSTRAIN_11")
             .field(
                 "core_1_pif_pms_constrain_rtcslow_0_spltaddr_world_0",
-                &format_args!(
-                    "{}",
-                    self.core_1_pif_pms_constrain_rtcslow_0_spltaddr_world_0()
-                        .bits()
-                ),
+                &self
+                    .core_1_pif_pms_constrain_rtcslow_0_spltaddr_world_0()
+                    .bits(),
             )
             .field(
                 "core_1_pif_pms_constrain_rtcslow_0_spltaddr_world_1",
-                &format_args!(
-                    "{}",
-                    self.core_1_pif_pms_constrain_rtcslow_0_spltaddr_world_1()
-                        .bits()
-                ),
+                &self
+                    .core_1_pif_pms_constrain_rtcslow_0_spltaddr_world_1()
+                    .bits(),
             )
             .finish()
     }
@@ -89,8 +85,6 @@ impl crate::Readable for CORE_1_PIF_PMS_CONSTRAIN_11_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`core_1_pif_pms_constrain_11::W`](W) writer structure"]
 impl crate::Writable for CORE_1_PIF_PMS_CONSTRAIN_11_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CORE_1_PIF_PMS_CONSTRAIN_11 to value 0x003f_ffff"]
 impl crate::Resettable for CORE_1_PIF_PMS_CONSTRAIN_11_SPEC {

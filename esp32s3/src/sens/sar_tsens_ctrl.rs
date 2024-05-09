@@ -76,38 +76,17 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SAR_TSENS_CTRL")
-            .field(
-                "sar_tsens_out",
-                &format_args!("{}", self.sar_tsens_out().bits()),
-            )
-            .field(
-                "sar_tsens_ready",
-                &format_args!("{}", self.sar_tsens_ready().bit()),
-            )
-            .field(
-                "sar_tsens_int_en",
-                &format_args!("{}", self.sar_tsens_int_en().bit()),
-            )
-            .field(
-                "sar_tsens_in_inv",
-                &format_args!("{}", self.sar_tsens_in_inv().bit()),
-            )
-            .field(
-                "sar_tsens_clk_div",
-                &format_args!("{}", self.sar_tsens_clk_div().bits()),
-            )
-            .field(
-                "sar_tsens_power_up",
-                &format_args!("{}", self.sar_tsens_power_up().bit()),
-            )
+            .field("sar_tsens_out", &self.sar_tsens_out().bits())
+            .field("sar_tsens_ready", &self.sar_tsens_ready().bit())
+            .field("sar_tsens_int_en", &self.sar_tsens_int_en().bit())
+            .field("sar_tsens_in_inv", &self.sar_tsens_in_inv().bit())
+            .field("sar_tsens_clk_div", &self.sar_tsens_clk_div().bits())
+            .field("sar_tsens_power_up", &self.sar_tsens_power_up().bit())
             .field(
                 "sar_tsens_power_up_force",
-                &format_args!("{}", self.sar_tsens_power_up_force().bit()),
+                &self.sar_tsens_power_up_force().bit(),
             )
-            .field(
-                "sar_tsens_dump_out",
-                &format_args!("{}", self.sar_tsens_dump_out().bit()),
-            )
+            .field("sar_tsens_dump_out", &self.sar_tsens_dump_out().bit())
             .finish()
     }
 }
@@ -165,8 +144,6 @@ impl crate::Readable for SAR_TSENS_CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`sar_tsens_ctrl::W`](W) writer structure"]
 impl crate::Writable for SAR_TSENS_CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SAR_TSENS_CTRL to value 0x0001_9000"]
 impl crate::Resettable for SAR_TSENS_CTRL_SPEC {

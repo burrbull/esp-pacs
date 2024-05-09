@@ -19,7 +19,7 @@ impl core::fmt::Debug for R {
         f.debug_struct("IBUS_TO_FLASH_END_VADDR")
             .field(
                 "ibus_to_flash_end_vaddr",
-                &format_args!("{}", self.ibus_to_flash_end_vaddr().bits()),
+                &self.ibus_to_flash_end_vaddr().bits(),
             )
             .finish()
     }
@@ -50,8 +50,6 @@ impl crate::Readable for IBUS_TO_FLASH_END_VADDR_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`ibus_to_flash_end_vaddr::W`](W) writer structure"]
 impl crate::Writable for IBUS_TO_FLASH_END_VADDR_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets IBUS_TO_FLASH_END_VADDR to value 0x427f_ffff"]
 impl crate::Resettable for IBUS_TO_FLASH_END_VADDR_SPEC {

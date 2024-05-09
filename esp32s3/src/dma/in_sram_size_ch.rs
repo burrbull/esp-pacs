@@ -17,7 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("IN_SRAM_SIZE_CH")
-            .field("in_size", &format_args!("{}", self.in_size().bits()))
+            .field("in_size", &self.in_size().bits())
             .finish()
     }
 }
@@ -45,8 +45,6 @@ impl crate::Readable for IN_SRAM_SIZE_CH_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`in_sram_size_ch::W`](W) writer structure"]
 impl crate::Writable for IN_SRAM_SIZE_CH_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets IN_SRAM_SIZE_CH%s to value 0x0e"]
 impl crate::Resettable for IN_SRAM_SIZE_CH_SPEC {

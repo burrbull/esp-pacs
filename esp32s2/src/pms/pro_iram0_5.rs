@@ -13,10 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PRO_IRAM0_5")
-            .field(
-                "pro_iram0_ilg_st",
-                &format_args!("{}", self.pro_iram0_ilg_st().bits()),
-            )
+            .field("pro_iram0_ilg_st", &self.pro_iram0_ilg_st().bits())
             .finish()
     }
 }
@@ -34,6 +31,4 @@ impl crate::RegisterSpec for PRO_IRAM0_5_SPEC {
 #[doc = "`read()` method returns [`pro_iram0_5::R`](R) reader structure"]
 impl crate::Readable for PRO_IRAM0_5_SPEC {}
 #[doc = "`reset()` method sets PRO_IRAM0_5 to value 0"]
-impl crate::Resettable for PRO_IRAM0_5_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for PRO_IRAM0_5_SPEC {}

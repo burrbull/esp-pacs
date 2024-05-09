@@ -109,47 +109,47 @@ impl core::fmt::Debug for R {
         f.debug_struct("HP_SLEEP_BACKUP")
             .field(
                 "hp_modem2sleep_backup_modem_clk_code",
-                &format_args!("{}", self.hp_modem2sleep_backup_modem_clk_code().bits()),
+                &self.hp_modem2sleep_backup_modem_clk_code().bits(),
             )
             .field(
                 "hp_active2sleep_backup_modem_clk_code",
-                &format_args!("{}", self.hp_active2sleep_backup_modem_clk_code().bits()),
+                &self.hp_active2sleep_backup_modem_clk_code().bits(),
             )
             .field(
                 "hp_sleep_retention_mode",
-                &format_args!("{}", self.hp_sleep_retention_mode().bit()),
+                &self.hp_sleep_retention_mode().bit(),
             )
             .field(
                 "hp_modem2sleep_retention_en",
-                &format_args!("{}", self.hp_modem2sleep_retention_en().bit()),
+                &self.hp_modem2sleep_retention_en().bit(),
             )
             .field(
                 "hp_active2sleep_retention_en",
-                &format_args!("{}", self.hp_active2sleep_retention_en().bit()),
+                &self.hp_active2sleep_retention_en().bit(),
             )
             .field(
                 "hp_modem2sleep_backup_clk_sel",
-                &format_args!("{}", self.hp_modem2sleep_backup_clk_sel().bits()),
+                &self.hp_modem2sleep_backup_clk_sel().bits(),
             )
             .field(
                 "hp_active2sleep_backup_clk_sel",
-                &format_args!("{}", self.hp_active2sleep_backup_clk_sel().bits()),
+                &self.hp_active2sleep_backup_clk_sel().bits(),
             )
             .field(
                 "hp_modem2sleep_backup_mode",
-                &format_args!("{}", self.hp_modem2sleep_backup_mode().bits()),
+                &self.hp_modem2sleep_backup_mode().bits(),
             )
             .field(
                 "hp_active2sleep_backup_mode",
-                &format_args!("{}", self.hp_active2sleep_backup_mode().bits()),
+                &self.hp_active2sleep_backup_mode().bits(),
             )
             .field(
                 "hp_modem2sleep_backup_en",
-                &format_args!("{}", self.hp_modem2sleep_backup_en().bit()),
+                &self.hp_modem2sleep_backup_en().bit(),
             )
             .field(
                 "hp_active2sleep_backup_en",
-                &format_args!("{}", self.hp_active2sleep_backup_en().bit()),
+                &self.hp_active2sleep_backup_en().bit(),
             )
             .finish()
     }
@@ -256,10 +256,6 @@ impl crate::Readable for HP_SLEEP_BACKUP_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`hp_sleep_backup::W`](W) writer structure"]
 impl crate::Writable for HP_SLEEP_BACKUP_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets HP_SLEEP_BACKUP to value 0"]
-impl crate::Resettable for HP_SLEEP_BACKUP_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for HP_SLEEP_BACKUP_SPEC {}

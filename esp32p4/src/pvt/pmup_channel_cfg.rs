@@ -53,26 +53,11 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PMUP_CHANNEL_CFG")
-            .field(
-                "pump_channel_code4",
-                &format_args!("{}", self.pump_channel_code4().bits()),
-            )
-            .field(
-                "pump_channel_code3",
-                &format_args!("{}", self.pump_channel_code3().bits()),
-            )
-            .field(
-                "pump_channel_code2",
-                &format_args!("{}", self.pump_channel_code2().bits()),
-            )
-            .field(
-                "pump_channel_code1",
-                &format_args!("{}", self.pump_channel_code1().bits()),
-            )
-            .field(
-                "pump_channel_code0",
-                &format_args!("{}", self.pump_channel_code0().bits()),
-            )
+            .field("pump_channel_code4", &self.pump_channel_code4().bits())
+            .field("pump_channel_code3", &self.pump_channel_code3().bits())
+            .field("pump_channel_code2", &self.pump_channel_code2().bits())
+            .field("pump_channel_code1", &self.pump_channel_code1().bits())
+            .field("pump_channel_code0", &self.pump_channel_code0().bits())
             .finish()
     }
 }
@@ -124,10 +109,6 @@ impl crate::Readable for PMUP_CHANNEL_CFG_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`pmup_channel_cfg::W`](W) writer structure"]
 impl crate::Writable for PMUP_CHANNEL_CFG_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets PMUP_CHANNEL_CFG to value 0"]
-impl crate::Resettable for PMUP_CHANNEL_CFG_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for PMUP_CHANNEL_CFG_SPEC {}

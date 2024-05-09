@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("LP_PMU_RDN_ECO_LOW")
-            .field(
-                "pmu_rdn_eco_low",
-                &format_args!("{}", self.pmu_rdn_eco_low().bits()),
-            )
+            .field("pmu_rdn_eco_low", &self.pmu_rdn_eco_low().bits())
             .finish()
     }
 }
@@ -48,10 +45,6 @@ impl crate::Readable for LP_PMU_RDN_ECO_LOW_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`lp_pmu_rdn_eco_low::W`](W) writer structure"]
 impl crate::Writable for LP_PMU_RDN_ECO_LOW_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets LP_PMU_RDN_ECO_LOW to value 0"]
-impl crate::Resettable for LP_PMU_RDN_ECO_LOW_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for LP_PMU_RDN_ECO_LOW_SPEC {}

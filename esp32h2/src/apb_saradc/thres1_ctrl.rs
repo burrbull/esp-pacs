@@ -35,15 +35,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("THRES1_CTRL")
-            .field(
-                "thres1_channel",
-                &format_args!("{}", self.thres1_channel().bits()),
-            )
-            .field(
-                "thres1_high",
-                &format_args!("{}", self.thres1_high().bits()),
-            )
-            .field("thres1_low", &format_args!("{}", self.thres1_low().bits()))
+            .field("thres1_channel", &self.thres1_channel().bits())
+            .field("thres1_high", &self.thres1_high().bits())
+            .field("thres1_low", &self.thres1_low().bits())
             .finish()
     }
 }
@@ -83,8 +77,6 @@ impl crate::Readable for THRES1_CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`thres1_ctrl::W`](W) writer structure"]
 impl crate::Writable for THRES1_CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets THRES1_CTRL to value 0x0003_ffed"]
 impl crate::Resettable for THRES1_CTRL_SPEC {

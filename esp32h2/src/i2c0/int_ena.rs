@@ -179,49 +179,25 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("INT_ENA")
-            .field("rxfifo_wm", &format_args!("{}", self.rxfifo_wm().bit()))
-            .field("txfifo_wm", &format_args!("{}", self.txfifo_wm().bit()))
-            .field("rxfifo_ovf", &format_args!("{}", self.rxfifo_ovf().bit()))
-            .field("end_detect", &format_args!("{}", self.end_detect().bit()))
-            .field(
-                "byte_trans_done",
-                &format_args!("{}", self.byte_trans_done().bit()),
-            )
-            .field(
-                "arbitration_lost",
-                &format_args!("{}", self.arbitration_lost().bit()),
-            )
-            .field(
-                "mst_txfifo_udf",
-                &format_args!("{}", self.mst_txfifo_udf().bit()),
-            )
-            .field(
-                "trans_complete",
-                &format_args!("{}", self.trans_complete().bit()),
-            )
-            .field("time_out", &format_args!("{}", self.time_out().bit()))
-            .field("trans_start", &format_args!("{}", self.trans_start().bit()))
-            .field("nack", &format_args!("{}", self.nack().bit()))
-            .field("txfifo_ovf", &format_args!("{}", self.txfifo_ovf().bit()))
-            .field("rxfifo_udf", &format_args!("{}", self.rxfifo_udf().bit()))
-            .field("scl_st_to", &format_args!("{}", self.scl_st_to().bit()))
-            .field(
-                "scl_main_st_to",
-                &format_args!("{}", self.scl_main_st_to().bit()),
-            )
-            .field("det_start", &format_args!("{}", self.det_start().bit()))
-            .field(
-                "slave_stretch",
-                &format_args!("{}", self.slave_stretch().bit()),
-            )
-            .field(
-                "general_call",
-                &format_args!("{}", self.general_call().bit()),
-            )
-            .field(
-                "slave_addr_unmatch",
-                &format_args!("{}", self.slave_addr_unmatch().bit()),
-            )
+            .field("rxfifo_wm", &self.rxfifo_wm().bit())
+            .field("txfifo_wm", &self.txfifo_wm().bit())
+            .field("rxfifo_ovf", &self.rxfifo_ovf().bit())
+            .field("end_detect", &self.end_detect().bit())
+            .field("byte_trans_done", &self.byte_trans_done().bit())
+            .field("arbitration_lost", &self.arbitration_lost().bit())
+            .field("mst_txfifo_udf", &self.mst_txfifo_udf().bit())
+            .field("trans_complete", &self.trans_complete().bit())
+            .field("time_out", &self.time_out().bit())
+            .field("trans_start", &self.trans_start().bit())
+            .field("nack", &self.nack().bit())
+            .field("txfifo_ovf", &self.txfifo_ovf().bit())
+            .field("rxfifo_udf", &self.rxfifo_udf().bit())
+            .field("scl_st_to", &self.scl_st_to().bit())
+            .field("scl_main_st_to", &self.scl_main_st_to().bit())
+            .field("det_start", &self.det_start().bit())
+            .field("slave_stretch", &self.slave_stretch().bit())
+            .field("general_call", &self.general_call().bit())
+            .field("slave_addr_unmatch", &self.slave_addr_unmatch().bit())
             .finish()
     }
 }
@@ -357,10 +333,6 @@ impl crate::Readable for INT_ENA_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`int_ena::W`](W) writer structure"]
 impl crate::Writable for INT_ENA_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets INT_ENA to value 0"]
-impl crate::Resettable for INT_ENA_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for INT_ENA_SPEC {}

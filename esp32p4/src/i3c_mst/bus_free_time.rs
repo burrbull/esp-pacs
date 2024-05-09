@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("BUS_FREE_TIME")
-            .field(
-                "reg_bus_free_time",
-                &format_args!("{}", self.reg_bus_free_time().bits()),
-            )
+            .field("reg_bus_free_time", &self.reg_bus_free_time().bits())
             .finish()
     }
 }
@@ -48,8 +45,6 @@ impl crate::Readable for BUS_FREE_TIME_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`bus_free_time::W`](W) writer structure"]
 impl crate::Writable for BUS_FREE_TIME_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets BUS_FREE_TIME to value 0x05"]
 impl crate::Resettable for BUS_FREE_TIME_SPEC {

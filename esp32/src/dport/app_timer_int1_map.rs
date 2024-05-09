@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("APP_TIMER_INT1_MAP")
-            .field(
-                "app_timer_int1_map",
-                &format_args!("{}", self.app_timer_int1_map().bits()),
-            )
+            .field("app_timer_int1_map", &self.app_timer_int1_map().bits())
             .finish()
     }
 }
@@ -48,8 +45,6 @@ impl crate::Readable for APP_TIMER_INT1_MAP_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`app_timer_int1_map::W`](W) writer structure"]
 impl crate::Writable for APP_TIMER_INT1_MAP_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets APP_TIMER_INT1_MAP to value 0x10"]
 impl crate::Resettable for APP_TIMER_INT1_MAP_SPEC {

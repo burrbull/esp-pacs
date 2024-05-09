@@ -80,35 +80,14 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SUS_STATUS")
-            .field("flash_sus", &format_args!("{}", self.flash_sus().bit()))
-            .field(
-                "wait_pesr_cmd_2b",
-                &format_args!("{}", self.wait_pesr_cmd_2b().bit()),
-            )
-            .field(
-                "flash_hpm_dly_128",
-                &format_args!("{}", self.flash_hpm_dly_128().bit()),
-            )
-            .field(
-                "flash_res_dly_128",
-                &format_args!("{}", self.flash_res_dly_128().bit()),
-            )
-            .field(
-                "flash_dp_dly_128",
-                &format_args!("{}", self.flash_dp_dly_128().bit()),
-            )
-            .field(
-                "flash_per_dly_128",
-                &format_args!("{}", self.flash_per_dly_128().bit()),
-            )
-            .field(
-                "flash_pes_dly_128",
-                &format_args!("{}", self.flash_pes_dly_128().bit()),
-            )
-            .field(
-                "spi0_lock_en",
-                &format_args!("{}", self.spi0_lock_en().bit()),
-            )
+            .field("flash_sus", &self.flash_sus().bit())
+            .field("wait_pesr_cmd_2b", &self.wait_pesr_cmd_2b().bit())
+            .field("flash_hpm_dly_128", &self.flash_hpm_dly_128().bit())
+            .field("flash_res_dly_128", &self.flash_res_dly_128().bit())
+            .field("flash_dp_dly_128", &self.flash_dp_dly_128().bit())
+            .field("flash_per_dly_128", &self.flash_per_dly_128().bit())
+            .field("flash_pes_dly_128", &self.flash_pes_dly_128().bit())
+            .field("spi0_lock_en", &self.spi0_lock_en().bit())
             .finish()
     }
 }
@@ -178,10 +157,6 @@ impl crate::Readable for SUS_STATUS_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`sus_status::W`](W) writer structure"]
 impl crate::Writable for SUS_STATUS_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SUS_STATUS to value 0"]
-impl crate::Resettable for SUS_STATUS_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for SUS_STATUS_SPEC {}

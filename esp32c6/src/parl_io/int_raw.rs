@@ -35,15 +35,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("INT_RAW")
-            .field(
-                "tx_fifo_rempty",
-                &format_args!("{}", self.tx_fifo_rempty().bit()),
-            )
-            .field(
-                "rx_fifo_wovf",
-                &format_args!("{}", self.rx_fifo_wovf().bit()),
-            )
-            .field("tx_eof", &format_args!("{}", self.tx_eof().bit()))
+            .field("tx_fifo_rempty", &self.tx_fifo_rempty().bit())
+            .field("rx_fifo_wovf", &self.rx_fifo_wovf().bit())
+            .field("tx_eof", &self.tx_eof().bit())
             .finish()
     }
 }
@@ -83,10 +77,6 @@ impl crate::Readable for INT_RAW_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`int_raw::W`](W) writer structure"]
 impl crate::Writable for INT_RAW_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets INT_RAW to value 0"]
-impl crate::Resettable for INT_RAW_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for INT_RAW_SPEC {}

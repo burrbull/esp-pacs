@@ -26,14 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("U1_CHANGE_CONF")
-            .field(
-                "cnt_step_u1",
-                &format_args!("{}", self.cnt_step_u1().bits()),
-            )
-            .field(
-                "cnt_step_lim_u1",
-                &format_args!("{}", self.cnt_step_lim_u1().bits()),
-            )
+            .field("cnt_step_u1", &self.cnt_step_u1().bits())
+            .field("cnt_step_lim_u1", &self.cnt_step_lim_u1().bits())
             .finish()
     }
 }
@@ -67,10 +61,6 @@ impl crate::Readable for U1_CHANGE_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`u1_change_conf::W`](W) writer structure"]
 impl crate::Writable for U1_CHANGE_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets U1_CHANGE_CONF to value 0"]
-impl crate::Resettable for U1_CHANGE_CONF_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for U1_CHANGE_CONF_SPEC {}

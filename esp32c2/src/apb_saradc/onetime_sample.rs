@@ -53,25 +53,16 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("ONETIME_SAMPLE")
-            .field(
-                "onetime_atten",
-                &format_args!("{}", self.onetime_atten().bits()),
-            )
-            .field(
-                "onetime_channel",
-                &format_args!("{}", self.onetime_channel().bits()),
-            )
-            .field(
-                "onetime_start",
-                &format_args!("{}", self.onetime_start().bit()),
-            )
+            .field("onetime_atten", &self.onetime_atten().bits())
+            .field("onetime_channel", &self.onetime_channel().bits())
+            .field("onetime_start", &self.onetime_start().bit())
             .field(
                 "saradc2_onetime_sample",
-                &format_args!("{}", self.saradc2_onetime_sample().bit()),
+                &self.saradc2_onetime_sample().bit(),
             )
             .field(
                 "saradc1_onetime_sample",
-                &format_args!("{}", self.saradc1_onetime_sample().bit()),
+                &self.saradc1_onetime_sample().bit(),
             )
             .finish()
     }
@@ -124,8 +115,6 @@ impl crate::Readable for ONETIME_SAMPLE_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`onetime_sample::W`](W) writer structure"]
 impl crate::Writable for ONETIME_SAMPLE_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets ONETIME_SAMPLE to value 0x1a00_0000"]
 impl crate::Resettable for ONETIME_SAMPLE_SPEC {

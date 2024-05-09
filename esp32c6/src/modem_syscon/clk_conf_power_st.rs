@@ -62,30 +62,15 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CLK_CONF_POWER_ST")
-            .field(
-                "clk_zb_st_map",
-                &format_args!("{}", self.clk_zb_st_map().bits()),
-            )
-            .field(
-                "clk_fe_st_map",
-                &format_args!("{}", self.clk_fe_st_map().bits()),
-            )
-            .field(
-                "clk_bt_st_map",
-                &format_args!("{}", self.clk_bt_st_map().bits()),
-            )
-            .field(
-                "clk_wifi_st_map",
-                &format_args!("{}", self.clk_wifi_st_map().bits()),
-            )
+            .field("clk_zb_st_map", &self.clk_zb_st_map().bits())
+            .field("clk_fe_st_map", &self.clk_fe_st_map().bits())
+            .field("clk_bt_st_map", &self.clk_bt_st_map().bits())
+            .field("clk_wifi_st_map", &self.clk_wifi_st_map().bits())
             .field(
                 "clk_modem_peri_st_map",
-                &format_args!("{}", self.clk_modem_peri_st_map().bits()),
+                &self.clk_modem_peri_st_map().bits(),
             )
-            .field(
-                "clk_modem_apb_st_map",
-                &format_args!("{}", self.clk_modem_apb_st_map().bits()),
-            )
+            .field("clk_modem_apb_st_map", &self.clk_modem_apb_st_map().bits())
             .finish()
     }
 }
@@ -143,10 +128,6 @@ impl crate::Readable for CLK_CONF_POWER_ST_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`clk_conf_power_st::W`](W) writer structure"]
 impl crate::Writable for CLK_CONF_POWER_ST_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CLK_CONF_POWER_ST to value 0"]
-impl crate::Resettable for CLK_CONF_POWER_ST_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for CLK_CONF_POWER_ST_SPEC {}

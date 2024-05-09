@@ -62,30 +62,12 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("POWER_PD_MEM_MASK")
-            .field(
-                "pd_hp_mem2_pd_mask",
-                &format_args!("{}", self.pd_hp_mem2_pd_mask().bits()),
-            )
-            .field(
-                "pd_hp_mem1_pd_mask",
-                &format_args!("{}", self.pd_hp_mem1_pd_mask().bits()),
-            )
-            .field(
-                "pd_hp_mem0_pd_mask",
-                &format_args!("{}", self.pd_hp_mem0_pd_mask().bits()),
-            )
-            .field(
-                "pd_hp_mem2_mask",
-                &format_args!("{}", self.pd_hp_mem2_mask().bits()),
-            )
-            .field(
-                "pd_hp_mem1_mask",
-                &format_args!("{}", self.pd_hp_mem1_mask().bits()),
-            )
-            .field(
-                "pd_hp_mem0_mask",
-                &format_args!("{}", self.pd_hp_mem0_mask().bits()),
-            )
+            .field("pd_hp_mem2_pd_mask", &self.pd_hp_mem2_pd_mask().bits())
+            .field("pd_hp_mem1_pd_mask", &self.pd_hp_mem1_pd_mask().bits())
+            .field("pd_hp_mem0_pd_mask", &self.pd_hp_mem0_pd_mask().bits())
+            .field("pd_hp_mem2_mask", &self.pd_hp_mem2_mask().bits())
+            .field("pd_hp_mem1_mask", &self.pd_hp_mem1_mask().bits())
+            .field("pd_hp_mem0_mask", &self.pd_hp_mem0_mask().bits())
             .finish()
     }
 }
@@ -143,10 +125,6 @@ impl crate::Readable for POWER_PD_MEM_MASK_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`power_pd_mem_mask::W`](W) writer structure"]
 impl crate::Writable for POWER_PD_MEM_MASK_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets POWER_PD_MEM_MASK to value 0"]
-impl crate::Resettable for POWER_PD_MEM_MASK_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for POWER_PD_MEM_MASK_SPEC {}

@@ -19,7 +19,7 @@ impl core::fmt::Debug for R {
         f.debug_struct("APP_I2C_EXT0_INTR_MAP")
             .field(
                 "app_i2c_ext0_intr_map",
-                &format_args!("{}", self.app_i2c_ext0_intr_map().bits()),
+                &self.app_i2c_ext0_intr_map().bits(),
             )
             .finish()
     }
@@ -48,8 +48,6 @@ impl crate::Readable for APP_I2C_EXT0_INTR_MAP_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`app_i2c_ext0_intr_map::W`](W) writer structure"]
 impl crate::Writable for APP_I2C_EXT0_INTR_MAP_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets APP_I2C_EXT0_INTR_MAP to value 0x10"]
 impl crate::Resettable for APP_I2C_EXT0_INTR_MAP_SPEC {

@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CONF_SIGLE_DATA")
-            .field(
-                "single_data",
-                &format_args!("{}", self.single_data().bits()),
-            )
+            .field("single_data", &self.single_data().bits())
             .finish()
     }
 }
@@ -48,10 +45,6 @@ impl crate::Readable for CONF_SIGLE_DATA_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`conf_sigle_data::W`](W) writer structure"]
 impl crate::Writable for CONF_SIGLE_DATA_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CONF_SIGLE_DATA to value 0"]
-impl crate::Resettable for CONF_SIGLE_DATA_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for CONF_SIGLE_DATA_SPEC {}

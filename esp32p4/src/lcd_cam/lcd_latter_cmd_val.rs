@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("LCD_LATTER_CMD_VAL")
-            .field(
-                "lcd_latter_cmd_value",
-                &format_args!("{}", self.lcd_latter_cmd_value().bits()),
-            )
+            .field("lcd_latter_cmd_value", &self.lcd_latter_cmd_value().bits())
             .finish()
     }
 }
@@ -48,10 +45,6 @@ impl crate::Readable for LCD_LATTER_CMD_VAL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`lcd_latter_cmd_val::W`](W) writer structure"]
 impl crate::Writable for LCD_LATTER_CMD_VAL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets LCD_LATTER_CMD_VAL to value 0"]
-impl crate::Resettable for LCD_LATTER_CMD_VAL_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for LCD_LATTER_CMD_VAL_SPEC {}

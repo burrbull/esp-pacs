@@ -100,44 +100,29 @@ impl core::fmt::Debug for R {
         f.debug_struct("LCD_RGB_YUV")
             .field(
                 "lcd_conv_8bits_data_inv",
-                &format_args!("{}", self.lcd_conv_8bits_data_inv().bit()),
+                &self.lcd_conv_8bits_data_inv().bit(),
             )
-            .field(
-                "lcd_conv_txtorx",
-                &format_args!("{}", self.lcd_conv_txtorx().bit()),
-            )
+            .field("lcd_conv_txtorx", &self.lcd_conv_txtorx().bit())
             .field(
                 "lcd_conv_yuv2yuv_mode",
-                &format_args!("{}", self.lcd_conv_yuv2yuv_mode().bits()),
+                &self.lcd_conv_yuv2yuv_mode().bits(),
             )
-            .field(
-                "lcd_conv_yuv_mode",
-                &format_args!("{}", self.lcd_conv_yuv_mode().bits()),
-            )
+            .field("lcd_conv_yuv_mode", &self.lcd_conv_yuv_mode().bits())
             .field(
                 "lcd_conv_protocol_mode",
-                &format_args!("{}", self.lcd_conv_protocol_mode().bit()),
+                &self.lcd_conv_protocol_mode().bit(),
             )
             .field(
                 "lcd_conv_data_out_mode",
-                &format_args!("{}", self.lcd_conv_data_out_mode().bit()),
+                &self.lcd_conv_data_out_mode().bit(),
             )
-            .field(
-                "lcd_conv_data_in_mode",
-                &format_args!("{}", self.lcd_conv_data_in_mode().bit()),
-            )
+            .field("lcd_conv_data_in_mode", &self.lcd_conv_data_in_mode().bit())
             .field(
                 "lcd_conv_mode_8bits_on",
-                &format_args!("{}", self.lcd_conv_mode_8bits_on().bit()),
+                &self.lcd_conv_mode_8bits_on().bit(),
             )
-            .field(
-                "lcd_conv_trans_mode",
-                &format_args!("{}", self.lcd_conv_trans_mode().bit()),
-            )
-            .field(
-                "lcd_conv_enable",
-                &format_args!("{}", self.lcd_conv_enable().bit()),
-            )
+            .field("lcd_conv_trans_mode", &self.lcd_conv_trans_mode().bit())
+            .field("lcd_conv_enable", &self.lcd_conv_enable().bit())
             .finish()
     }
 }
@@ -219,8 +204,6 @@ impl crate::Readable for LCD_RGB_YUV_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`lcd_rgb_yuv::W`](W) writer structure"]
 impl crate::Writable for LCD_RGB_YUV_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets LCD_RGB_YUV to value 0x00c0_0000"]
 impl crate::Resettable for LCD_RGB_YUV_SPEC {

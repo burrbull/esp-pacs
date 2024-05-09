@@ -177,40 +177,22 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("LCD_DATA_DOUT_MODE")
-            .field("dout0_mode", &format_args!("{}", self.dout0_mode().bits()))
-            .field("dout1_mode", &format_args!("{}", self.dout1_mode().bits()))
-            .field("dout2_mode", &format_args!("{}", self.dout2_mode().bits()))
-            .field("dout3_mode", &format_args!("{}", self.dout3_mode().bits()))
-            .field("dout4_mode", &format_args!("{}", self.dout4_mode().bits()))
-            .field("dout5_mode", &format_args!("{}", self.dout5_mode().bits()))
-            .field("dout6_mode", &format_args!("{}", self.dout6_mode().bits()))
-            .field("dout7_mode", &format_args!("{}", self.dout7_mode().bits()))
-            .field("dout8_mode", &format_args!("{}", self.dout8_mode().bits()))
-            .field("dout9_mode", &format_args!("{}", self.dout9_mode().bits()))
-            .field(
-                "dout10_mode",
-                &format_args!("{}", self.dout10_mode().bits()),
-            )
-            .field(
-                "dout11_mode",
-                &format_args!("{}", self.dout11_mode().bits()),
-            )
-            .field(
-                "dout12_mode",
-                &format_args!("{}", self.dout12_mode().bits()),
-            )
-            .field(
-                "dout13_mode",
-                &format_args!("{}", self.dout13_mode().bits()),
-            )
-            .field(
-                "dout14_mode",
-                &format_args!("{}", self.dout14_mode().bits()),
-            )
-            .field(
-                "dout15_mode",
-                &format_args!("{}", self.dout15_mode().bits()),
-            )
+            .field("dout0_mode", &self.dout0_mode().bits())
+            .field("dout1_mode", &self.dout1_mode().bits())
+            .field("dout2_mode", &self.dout2_mode().bits())
+            .field("dout3_mode", &self.dout3_mode().bits())
+            .field("dout4_mode", &self.dout4_mode().bits())
+            .field("dout5_mode", &self.dout5_mode().bits())
+            .field("dout6_mode", &self.dout6_mode().bits())
+            .field("dout7_mode", &self.dout7_mode().bits())
+            .field("dout8_mode", &self.dout8_mode().bits())
+            .field("dout9_mode", &self.dout9_mode().bits())
+            .field("dout10_mode", &self.dout10_mode().bits())
+            .field("dout11_mode", &self.dout11_mode().bits())
+            .field("dout12_mode", &self.dout12_mode().bits())
+            .field("dout13_mode", &self.dout13_mode().bits())
+            .field("dout14_mode", &self.dout14_mode().bits())
+            .field("dout15_mode", &self.dout15_mode().bits())
             .finish()
     }
 }
@@ -338,10 +320,6 @@ impl crate::Readable for LCD_DATA_DOUT_MODE_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`lcd_data_dout_mode::W`](W) writer structure"]
 impl crate::Writable for LCD_DATA_DOUT_MODE_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets LCD_DATA_DOUT_MODE to value 0"]
-impl crate::Resettable for LCD_DATA_DOUT_MODE_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for LCD_DATA_DOUT_MODE_SPEC {}

@@ -26,8 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("STEP")
-            .field("xtal_step", &format_args!("{}", self.xtal_step().bits()))
-            .field("pll_step", &format_args!("{}", self.pll_step().bits()))
+            .field("xtal_step", &self.xtal_step().bits())
+            .field("pll_step", &self.pll_step().bits())
             .finish()
     }
 }
@@ -61,8 +61,6 @@ impl crate::Readable for STEP_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`step::W`](W) writer structure"]
 impl crate::Writable for STEP_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets STEP to value 0x0450"]
 impl crate::Resettable for STEP_SPEC {

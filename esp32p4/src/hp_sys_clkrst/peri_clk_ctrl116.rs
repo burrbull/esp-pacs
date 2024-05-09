@@ -71,34 +71,19 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PERI_CLK_CTRL116")
-            .field(
-                "gpspi2_clk_src_sel",
-                &format_args!("{}", self.gpspi2_clk_src_sel().bits()),
-            )
-            .field(
-                "gpspi2_hs_clk_en",
-                &format_args!("{}", self.gpspi2_hs_clk_en().bit()),
-            )
+            .field("gpspi2_clk_src_sel", &self.gpspi2_clk_src_sel().bits())
+            .field("gpspi2_hs_clk_en", &self.gpspi2_hs_clk_en().bit())
             .field(
                 "gpspi2_hs_clk_div_num",
-                &format_args!("{}", self.gpspi2_hs_clk_div_num().bits()),
+                &self.gpspi2_hs_clk_div_num().bits(),
             )
             .field(
                 "gpspi2_mst_clk_div_num",
-                &format_args!("{}", self.gpspi2_mst_clk_div_num().bits()),
+                &self.gpspi2_mst_clk_div_num().bits(),
             )
-            .field(
-                "gpspi2_mst_clk_en",
-                &format_args!("{}", self.gpspi2_mst_clk_en().bit()),
-            )
-            .field(
-                "gpspi3_clk_src_sel",
-                &format_args!("{}", self.gpspi3_clk_src_sel().bits()),
-            )
-            .field(
-                "gpspi3_hs_clk_en",
-                &format_args!("{}", self.gpspi3_hs_clk_en().bit()),
-            )
+            .field("gpspi2_mst_clk_en", &self.gpspi2_mst_clk_en().bit())
+            .field("gpspi3_clk_src_sel", &self.gpspi3_clk_src_sel().bits())
+            .field("gpspi3_hs_clk_en", &self.gpspi3_hs_clk_en().bit())
             .finish()
     }
 }
@@ -162,8 +147,6 @@ impl crate::Readable for PERI_CLK_CTRL116_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`peri_clk_ctrl116::W`](W) writer structure"]
 impl crate::Writable for PERI_CLK_CTRL116_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets PERI_CLK_CTRL116 to value 0x0110_0008"]
 impl crate::Resettable for PERI_CLK_CTRL116_SPEC {

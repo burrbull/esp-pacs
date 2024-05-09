@@ -15,7 +15,7 @@ impl core::fmt::Debug for R {
         f.debug_struct("L2_CACHE_PRELOCK_SCT0_ADDR")
             .field(
                 "l2_cache_prelock_sct0_addr",
-                &format_args!("{}", self.l2_cache_prelock_sct0_addr().bits()),
+                &self.l2_cache_prelock_sct0_addr().bits(),
             )
             .finish()
     }
@@ -34,6 +34,4 @@ impl crate::RegisterSpec for L2_CACHE_PRELOCK_SCT0_ADDR_SPEC {
 #[doc = "`read()` method returns [`l2_cache_prelock_sct0_addr::R`](R) reader structure"]
 impl crate::Readable for L2_CACHE_PRELOCK_SCT0_ADDR_SPEC {}
 #[doc = "`reset()` method sets L2_CACHE_PRELOCK_SCT0_ADDR to value 0"]
-impl crate::Resettable for L2_CACHE_PRELOCK_SCT0_ADDR_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for L2_CACHE_PRELOCK_SCT0_ADDR_SPEC {}

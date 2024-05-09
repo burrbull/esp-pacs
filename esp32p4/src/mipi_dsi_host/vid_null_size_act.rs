@@ -13,10 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("VID_NULL_SIZE_ACT")
-            .field(
-                "vid_null_size_act",
-                &format_args!("{}", self.vid_null_size_act().bits()),
-            )
+            .field("vid_null_size_act", &self.vid_null_size_act().bits())
             .finish()
     }
 }
@@ -34,6 +31,4 @@ impl crate::RegisterSpec for VID_NULL_SIZE_ACT_SPEC {
 #[doc = "`read()` method returns [`vid_null_size_act::R`](R) reader structure"]
 impl crate::Readable for VID_NULL_SIZE_ACT_SPEC {}
 #[doc = "`reset()` method sets VID_NULL_SIZE_ACT to value 0"]
-impl crate::Resettable for VID_NULL_SIZE_ACT_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for VID_NULL_SIZE_ACT_SPEC {}

@@ -40,19 +40,19 @@ impl core::fmt::Debug for R {
         f.debug_struct("L1_ICACHE1_PRELOAD_CTRL")
             .field(
                 "l1_icache1_preload_ena",
-                &format_args!("{}", self.l1_icache1_preload_ena().bit()),
+                &self.l1_icache1_preload_ena().bit(),
             )
             .field(
                 "l1_icache1_preload_done",
-                &format_args!("{}", self.l1_icache1_preload_done().bit()),
+                &self.l1_icache1_preload_done().bit(),
             )
             .field(
                 "l1_icache1_preload_order",
-                &format_args!("{}", self.l1_icache1_preload_order().bit()),
+                &self.l1_icache1_preload_order().bit(),
             )
             .field(
                 "l1_icache1_preload_rgid",
-                &format_args!("{}", self.l1_icache1_preload_rgid().bits()),
+                &self.l1_icache1_preload_rgid().bits(),
             )
             .finish()
     }
@@ -83,8 +83,6 @@ impl crate::Readable for L1_ICACHE1_PRELOAD_CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`l1_icache1_preload_ctrl::W`](W) writer structure"]
 impl crate::Writable for L1_ICACHE1_PRELOAD_CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets L1_ICACHE1_PRELOAD_CTRL to value 0x02"]
 impl crate::Resettable for L1_ICACHE1_PRELOAD_CTRL_SPEC {

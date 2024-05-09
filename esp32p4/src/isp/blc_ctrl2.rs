@@ -44,10 +44,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("BLC_CTRL2")
-            .field("blc_r3_th", &format_args!("{}", self.blc_r3_th().bits()))
-            .field("blc_r2_th", &format_args!("{}", self.blc_r2_th().bits()))
-            .field("blc_r1_th", &format_args!("{}", self.blc_r1_th().bits()))
-            .field("blc_r0_th", &format_args!("{}", self.blc_r0_th().bits()))
+            .field("blc_r3_th", &self.blc_r3_th().bits())
+            .field("blc_r2_th", &self.blc_r2_th().bits())
+            .field("blc_r1_th", &self.blc_r1_th().bits())
+            .field("blc_r0_th", &self.blc_r0_th().bits())
             .finish()
     }
 }
@@ -93,10 +93,6 @@ impl crate::Readable for BLC_CTRL2_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`blc_ctrl2::W`](W) writer structure"]
 impl crate::Writable for BLC_CTRL2_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets BLC_CTRL2 to value 0"]
-impl crate::Resettable for BLC_CTRL2_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for BLC_CTRL2_SPEC {}

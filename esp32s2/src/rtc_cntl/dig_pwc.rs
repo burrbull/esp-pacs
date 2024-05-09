@@ -269,116 +269,35 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("DIG_PWC")
-            .field(
-                "lslp_mem_force_pd",
-                &format_args!("{}", self.lslp_mem_force_pd().bit()),
-            )
-            .field(
-                "lslp_mem_force_pu",
-                &format_args!("{}", self.lslp_mem_force_pu().bit()),
-            )
-            .field(
-                "rom0_force_pd",
-                &format_args!("{}", self.rom0_force_pd().bit()),
-            )
-            .field(
-                "rom0_force_pu",
-                &format_args!("{}", self.rom0_force_pu().bit()),
-            )
-            .field(
-                "inter_ram0_force_pd",
-                &format_args!("{}", self.inter_ram0_force_pd().bit()),
-            )
-            .field(
-                "inter_ram0_force_pu",
-                &format_args!("{}", self.inter_ram0_force_pu().bit()),
-            )
-            .field(
-                "inter_ram1_force_pd",
-                &format_args!("{}", self.inter_ram1_force_pd().bit()),
-            )
-            .field(
-                "inter_ram1_force_pu",
-                &format_args!("{}", self.inter_ram1_force_pu().bit()),
-            )
-            .field(
-                "inter_ram2_force_pd",
-                &format_args!("{}", self.inter_ram2_force_pd().bit()),
-            )
-            .field(
-                "inter_ram2_force_pu",
-                &format_args!("{}", self.inter_ram2_force_pu().bit()),
-            )
-            .field(
-                "inter_ram3_force_pd",
-                &format_args!("{}", self.inter_ram3_force_pd().bit()),
-            )
-            .field(
-                "inter_ram3_force_pu",
-                &format_args!("{}", self.inter_ram3_force_pu().bit()),
-            )
-            .field(
-                "inter_ram4_force_pd",
-                &format_args!("{}", self.inter_ram4_force_pd().bit()),
-            )
-            .field(
-                "inter_ram4_force_pu",
-                &format_args!("{}", self.inter_ram4_force_pu().bit()),
-            )
-            .field(
-                "wifi_force_pd",
-                &format_args!("{}", self.wifi_force_pd().bit()),
-            )
-            .field(
-                "wifi_force_pu",
-                &format_args!("{}", self.wifi_force_pu().bit()),
-            )
-            .field(
-                "dg_wrap_force_pd",
-                &format_args!("{}", self.dg_wrap_force_pd().bit()),
-            )
-            .field(
-                "dg_wrap_force_pu",
-                &format_args!("{}", self.dg_wrap_force_pu().bit()),
-            )
-            .field(
-                "dg_dcdc_force_pd",
-                &format_args!("{}", self.dg_dcdc_force_pd().bit()),
-            )
-            .field(
-                "dg_dcdc_force_pu",
-                &format_args!("{}", self.dg_dcdc_force_pu().bit()),
-            )
-            .field(
-                "dg_dcdc_pd_en",
-                &format_args!("{}", self.dg_dcdc_pd_en().bit()),
-            )
-            .field("rom0_pd_en", &format_args!("{}", self.rom0_pd_en().bit()))
-            .field(
-                "inter_ram0_pd_en",
-                &format_args!("{}", self.inter_ram0_pd_en().bit()),
-            )
-            .field(
-                "inter_ram1_pd_en",
-                &format_args!("{}", self.inter_ram1_pd_en().bit()),
-            )
-            .field(
-                "inter_ram2_pd_en",
-                &format_args!("{}", self.inter_ram2_pd_en().bit()),
-            )
-            .field(
-                "inter_ram3_pd_en",
-                &format_args!("{}", self.inter_ram3_pd_en().bit()),
-            )
-            .field(
-                "inter_ram4_pd_en",
-                &format_args!("{}", self.inter_ram4_pd_en().bit()),
-            )
-            .field("wifi_pd_en", &format_args!("{}", self.wifi_pd_en().bit()))
-            .field(
-                "dg_wrap_pd_en",
-                &format_args!("{}", self.dg_wrap_pd_en().bit()),
-            )
+            .field("lslp_mem_force_pd", &self.lslp_mem_force_pd().bit())
+            .field("lslp_mem_force_pu", &self.lslp_mem_force_pu().bit())
+            .field("rom0_force_pd", &self.rom0_force_pd().bit())
+            .field("rom0_force_pu", &self.rom0_force_pu().bit())
+            .field("inter_ram0_force_pd", &self.inter_ram0_force_pd().bit())
+            .field("inter_ram0_force_pu", &self.inter_ram0_force_pu().bit())
+            .field("inter_ram1_force_pd", &self.inter_ram1_force_pd().bit())
+            .field("inter_ram1_force_pu", &self.inter_ram1_force_pu().bit())
+            .field("inter_ram2_force_pd", &self.inter_ram2_force_pd().bit())
+            .field("inter_ram2_force_pu", &self.inter_ram2_force_pu().bit())
+            .field("inter_ram3_force_pd", &self.inter_ram3_force_pd().bit())
+            .field("inter_ram3_force_pu", &self.inter_ram3_force_pu().bit())
+            .field("inter_ram4_force_pd", &self.inter_ram4_force_pd().bit())
+            .field("inter_ram4_force_pu", &self.inter_ram4_force_pu().bit())
+            .field("wifi_force_pd", &self.wifi_force_pd().bit())
+            .field("wifi_force_pu", &self.wifi_force_pu().bit())
+            .field("dg_wrap_force_pd", &self.dg_wrap_force_pd().bit())
+            .field("dg_wrap_force_pu", &self.dg_wrap_force_pu().bit())
+            .field("dg_dcdc_force_pd", &self.dg_dcdc_force_pd().bit())
+            .field("dg_dcdc_force_pu", &self.dg_dcdc_force_pu().bit())
+            .field("dg_dcdc_pd_en", &self.dg_dcdc_pd_en().bit())
+            .field("rom0_pd_en", &self.rom0_pd_en().bit())
+            .field("inter_ram0_pd_en", &self.inter_ram0_pd_en().bit())
+            .field("inter_ram1_pd_en", &self.inter_ram1_pd_en().bit())
+            .field("inter_ram2_pd_en", &self.inter_ram2_pd_en().bit())
+            .field("inter_ram3_pd_en", &self.inter_ram3_pd_en().bit())
+            .field("inter_ram4_pd_en", &self.inter_ram4_pd_en().bit())
+            .field("wifi_pd_en", &self.wifi_pd_en().bit())
+            .field("dg_wrap_pd_en", &self.dg_wrap_pd_en().bit())
             .finish()
     }
 }
@@ -574,8 +493,6 @@ impl crate::Readable for DIG_PWC_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`dig_pwc::W`](W) writer structure"]
 impl crate::Writable for DIG_PWC_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets DIG_PWC to value 0x0055_5550"]
 impl crate::Resettable for DIG_PWC_SPEC {

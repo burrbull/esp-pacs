@@ -71,13 +71,13 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PMUP_DRV_CFG")
-            .field("pump_en", &format_args!("{}", self.pump_en().bit()))
-            .field("clk_en", &format_args!("{}", self.clk_en().bit()))
-            .field("pump_drv4", &format_args!("{}", self.pump_drv4().bits()))
-            .field("pump_drv3", &format_args!("{}", self.pump_drv3().bits()))
-            .field("pump_drv2", &format_args!("{}", self.pump_drv2().bits()))
-            .field("pump_drv1", &format_args!("{}", self.pump_drv1().bits()))
-            .field("pump_drv0", &format_args!("{}", self.pump_drv0().bits()))
+            .field("pump_en", &self.pump_en().bit())
+            .field("clk_en", &self.clk_en().bit())
+            .field("pump_drv4", &self.pump_drv4().bits())
+            .field("pump_drv3", &self.pump_drv3().bits())
+            .field("pump_drv2", &self.pump_drv2().bits())
+            .field("pump_drv1", &self.pump_drv1().bits())
+            .field("pump_drv0", &self.pump_drv0().bits())
             .finish()
     }
 }
@@ -141,10 +141,6 @@ impl crate::Readable for PMUP_DRV_CFG_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`pmup_drv_cfg::W`](W) writer structure"]
 impl crate::Writable for PMUP_DRV_CFG_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets PMUP_DRV_CFG to value 0"]
-impl crate::Resettable for PMUP_DRV_CFG_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for PMUP_DRV_CFG_SPEC {}

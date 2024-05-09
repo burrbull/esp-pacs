@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("OUT")
-            .field(
-                "reg_gpio_out_data",
-                &format_args!("{}", self.reg_gpio_out_data().bits()),
-            )
+            .field("reg_gpio_out_data", &self.reg_gpio_out_data().bits())
             .finish()
     }
 }
@@ -48,10 +45,6 @@ impl crate::Readable for OUT_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`out::W`](W) writer structure"]
 impl crate::Writable for OUT_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets OUT to value 0"]
-impl crate::Resettable for OUT_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for OUT_SPEC {}

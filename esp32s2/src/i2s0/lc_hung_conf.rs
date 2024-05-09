@@ -35,18 +35,12 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("LC_HUNG_CONF")
-            .field(
-                "lc_fifo_timeout",
-                &format_args!("{}", self.lc_fifo_timeout().bits()),
-            )
+            .field("lc_fifo_timeout", &self.lc_fifo_timeout().bits())
             .field(
                 "lc_fifo_timeout_shift",
-                &format_args!("{}", self.lc_fifo_timeout_shift().bits()),
+                &self.lc_fifo_timeout_shift().bits(),
             )
-            .field(
-                "lc_fifo_timeout_ena",
-                &format_args!("{}", self.lc_fifo_timeout_ena().bit()),
-            )
+            .field("lc_fifo_timeout_ena", &self.lc_fifo_timeout_ena().bit())
             .finish()
     }
 }
@@ -86,8 +80,6 @@ impl crate::Readable for LC_HUNG_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`lc_hung_conf::W`](W) writer structure"]
 impl crate::Writable for LC_HUNG_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets LC_HUNG_CONF to value 0x0810"]
 impl crate::Resettable for LC_HUNG_CONF_SPEC {

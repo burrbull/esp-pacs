@@ -26,8 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("EMACINTMASK")
-            .field("pmtintmask", &format_args!("{}", self.pmtintmask().bit()))
-            .field("lpiintmask", &format_args!("{}", self.lpiintmask().bit()))
+            .field("pmtintmask", &self.pmtintmask().bit())
+            .field("lpiintmask", &self.lpiintmask().bit())
             .finish()
     }
 }
@@ -61,10 +61,6 @@ impl crate::Readable for EMACINTMASK_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`emacintmask::W`](W) writer structure"]
 impl crate::Writable for EMACINTMASK_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets EMACINTMASK to value 0"]
-impl crate::Resettable for EMACINTMASK_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for EMACINTMASK_SPEC {}

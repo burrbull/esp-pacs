@@ -20,14 +20,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("INT_ST_PKT_FATAL")
-            .field(
-                "st_err_ecc_double",
-                &format_args!("{}", self.st_err_ecc_double().bit()),
-            )
-            .field(
-                "st_shorter_payload",
-                &format_args!("{}", self.st_shorter_payload().bit()),
-            )
+            .field("st_err_ecc_double", &self.st_err_ecc_double().bit())
+            .field("st_shorter_payload", &self.st_shorter_payload().bit())
             .finish()
     }
 }
@@ -45,6 +39,4 @@ impl crate::RegisterSpec for INT_ST_PKT_FATAL_SPEC {
 #[doc = "`read()` method returns [`int_st_pkt_fatal::R`](R) reader structure"]
 impl crate::Readable for INT_ST_PKT_FATAL_SPEC {}
 #[doc = "`reset()` method sets INT_ST_PKT_FATAL to value 0"]
-impl crate::Resettable for INT_ST_PKT_FATAL_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for INT_ST_PKT_FATAL_SPEC {}

@@ -20,8 +20,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("INT_RAW")
-            .field("done", &format_args!("{}", self.done().bit()))
-            .field("err", &format_args!("{}", self.err().bit()))
+            .field("done", &self.done().bit())
+            .field("err", &self.err().bit())
             .finish()
     }
 }
@@ -39,6 +39,4 @@ impl crate::RegisterSpec for INT_RAW_SPEC {
 #[doc = "`read()` method returns [`int_raw::R`](R) reader structure"]
 impl crate::Readable for INT_RAW_SPEC {}
 #[doc = "`reset()` method sets INT_RAW to value 0"]
-impl crate::Resettable for INT_RAW_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for INT_RAW_SPEC {}

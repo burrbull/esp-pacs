@@ -62,29 +62,20 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("TIMER_SYNCI_CFG")
-            .field(
-                "timer0_syncisel",
-                &format_args!("{}", self.timer0_syncisel().bits()),
-            )
-            .field(
-                "timer1_syncisel",
-                &format_args!("{}", self.timer1_syncisel().bits()),
-            )
-            .field(
-                "timer2_syncisel",
-                &format_args!("{}", self.timer2_syncisel().bits()),
-            )
+            .field("timer0_syncisel", &self.timer0_syncisel().bits())
+            .field("timer1_syncisel", &self.timer1_syncisel().bits())
+            .field("timer2_syncisel", &self.timer2_syncisel().bits())
             .field(
                 "external_synci0_invert",
-                &format_args!("{}", self.external_synci0_invert().bit()),
+                &self.external_synci0_invert().bit(),
             )
             .field(
                 "external_synci1_invert",
-                &format_args!("{}", self.external_synci1_invert().bit()),
+                &self.external_synci1_invert().bit(),
             )
             .field(
                 "external_synci2_invert",
-                &format_args!("{}", self.external_synci2_invert().bit()),
+                &self.external_synci2_invert().bit(),
             )
             .finish()
     }
@@ -143,10 +134,6 @@ impl crate::Readable for TIMER_SYNCI_CFG_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`timer_synci_cfg::W`](W) writer structure"]
 impl crate::Writable for TIMER_SYNCI_CFG_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets TIMER_SYNCI_CFG to value 0"]
-impl crate::Resettable for TIMER_SYNCI_CFG_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for TIMER_SYNCI_CFG_SPEC {}

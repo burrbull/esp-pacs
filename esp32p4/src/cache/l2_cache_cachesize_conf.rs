@@ -107,55 +107,43 @@ impl core::fmt::Debug for R {
         f.debug_struct("L2_CACHE_CACHESIZE_CONF")
             .field(
                 "l2_cache_cachesize_256",
-                &format_args!("{}", self.l2_cache_cachesize_256().bit()),
+                &self.l2_cache_cachesize_256().bit(),
             )
             .field(
                 "l2_cache_cachesize_512",
-                &format_args!("{}", self.l2_cache_cachesize_512().bit()),
+                &self.l2_cache_cachesize_512().bit(),
             )
-            .field(
-                "l2_cache_cachesize_1k",
-                &format_args!("{}", self.l2_cache_cachesize_1k().bit()),
-            )
-            .field(
-                "l2_cache_cachesize_2k",
-                &format_args!("{}", self.l2_cache_cachesize_2k().bit()),
-            )
-            .field(
-                "l2_cache_cachesize_4k",
-                &format_args!("{}", self.l2_cache_cachesize_4k().bit()),
-            )
-            .field(
-                "l2_cache_cachesize_8k",
-                &format_args!("{}", self.l2_cache_cachesize_8k().bit()),
-            )
+            .field("l2_cache_cachesize_1k", &self.l2_cache_cachesize_1k().bit())
+            .field("l2_cache_cachesize_2k", &self.l2_cache_cachesize_2k().bit())
+            .field("l2_cache_cachesize_4k", &self.l2_cache_cachesize_4k().bit())
+            .field("l2_cache_cachesize_8k", &self.l2_cache_cachesize_8k().bit())
             .field(
                 "l2_cache_cachesize_16k",
-                &format_args!("{}", self.l2_cache_cachesize_16k().bit()),
+                &self.l2_cache_cachesize_16k().bit(),
             )
             .field(
                 "l2_cache_cachesize_32k",
-                &format_args!("{}", self.l2_cache_cachesize_32k().bit()),
+                &self.l2_cache_cachesize_32k().bit(),
             )
             .field(
                 "l2_cache_cachesize_64k",
-                &format_args!("{}", self.l2_cache_cachesize_64k().bit()),
+                &self.l2_cache_cachesize_64k().bit(),
             )
             .field(
                 "l2_cache_cachesize_128k",
-                &format_args!("{}", self.l2_cache_cachesize_128k().bit()),
+                &self.l2_cache_cachesize_128k().bit(),
             )
             .field(
                 "l2_cache_cachesize_256k",
-                &format_args!("{}", self.l2_cache_cachesize_256k().bit()),
+                &self.l2_cache_cachesize_256k().bit(),
             )
             .field(
                 "l2_cache_cachesize_512k",
-                &format_args!("{}", self.l2_cache_cachesize_512k().bit()),
+                &self.l2_cache_cachesize_512k().bit(),
             )
             .field(
                 "l2_cache_cachesize_1024k",
-                &format_args!("{}", self.l2_cache_cachesize_1024k().bit()),
+                &self.l2_cache_cachesize_1024k().bit(),
             )
             .finish()
     }
@@ -202,8 +190,6 @@ impl crate::Readable for L2_CACHE_CACHESIZE_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`l2_cache_cachesize_conf::W`](W) writer structure"]
 impl crate::Writable for L2_CACHE_CACHESIZE_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets L2_CACHE_CACHESIZE_CONF to value 0x0400"]
 impl crate::Resettable for L2_CACHE_CACHESIZE_CONF_SPEC {

@@ -35,18 +35,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SLC_APBWIN_CONF")
-            .field(
-                "slc_apbwin_addr",
-                &format_args!("{}", self.slc_apbwin_addr().bits()),
-            )
-            .field(
-                "slc_apbwin_wr",
-                &format_args!("{}", self.slc_apbwin_wr().bit()),
-            )
-            .field(
-                "slc_apbwin_start",
-                &format_args!("{}", self.slc_apbwin_start().bit()),
-            )
+            .field("slc_apbwin_addr", &self.slc_apbwin_addr().bits())
+            .field("slc_apbwin_wr", &self.slc_apbwin_wr().bit())
+            .field("slc_apbwin_start", &self.slc_apbwin_start().bit())
             .finish()
     }
 }
@@ -86,10 +77,6 @@ impl crate::Readable for SLC_APBWIN_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`slc_apbwin_conf::W`](W) writer structure"]
 impl crate::Writable for SLC_APBWIN_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SLC_APBWIN_CONF to value 0"]
-impl crate::Resettable for SLC_APBWIN_CONF_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for SLC_APBWIN_CONF_SPEC {}

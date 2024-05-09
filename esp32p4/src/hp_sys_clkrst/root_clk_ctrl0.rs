@@ -53,25 +53,16 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("ROOT_CLK_CTRL0")
-            .field(
-                "cpuicm_delay_num",
-                &format_args!("{}", self.cpuicm_delay_num().bits()),
-            )
-            .field(
-                "soc_clk_div_update",
-                &format_args!("{}", self.soc_clk_div_update().bit()),
-            )
-            .field(
-                "cpu_clk_div_num",
-                &format_args!("{}", self.cpu_clk_div_num().bits()),
-            )
+            .field("cpuicm_delay_num", &self.cpuicm_delay_num().bits())
+            .field("soc_clk_div_update", &self.soc_clk_div_update().bit())
+            .field("cpu_clk_div_num", &self.cpu_clk_div_num().bits())
             .field(
                 "cpu_clk_div_numerator",
-                &format_args!("{}", self.cpu_clk_div_numerator().bits()),
+                &self.cpu_clk_div_numerator().bits(),
             )
             .field(
                 "cpu_clk_div_denominator",
-                &format_args!("{}", self.cpu_clk_div_denominator().bits()),
+                &self.cpu_clk_div_denominator().bits(),
             )
             .finish()
     }
@@ -124,10 +115,6 @@ impl crate::Readable for ROOT_CLK_CTRL0_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`root_clk_ctrl0::W`](W) writer structure"]
 impl crate::Writable for ROOT_CLK_CTRL0_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets ROOT_CLK_CTRL0 to value 0"]
-impl crate::Resettable for ROOT_CLK_CTRL0_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for ROOT_CLK_CTRL0_SPEC {}

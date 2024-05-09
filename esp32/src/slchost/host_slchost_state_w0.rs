@@ -34,22 +34,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("HOST_SLCHOST_STATE_W0")
-            .field(
-                "host_slchost_state0",
-                &format_args!("{}", self.host_slchost_state0().bits()),
-            )
-            .field(
-                "host_slchost_state1",
-                &format_args!("{}", self.host_slchost_state1().bits()),
-            )
-            .field(
-                "host_slchost_state2",
-                &format_args!("{}", self.host_slchost_state2().bits()),
-            )
-            .field(
-                "host_slchost_state3",
-                &format_args!("{}", self.host_slchost_state3().bits()),
-            )
+            .field("host_slchost_state0", &self.host_slchost_state0().bits())
+            .field("host_slchost_state1", &self.host_slchost_state1().bits())
+            .field("host_slchost_state2", &self.host_slchost_state2().bits())
+            .field("host_slchost_state3", &self.host_slchost_state3().bits())
             .finish()
     }
 }
@@ -67,6 +55,4 @@ impl crate::RegisterSpec for HOST_SLCHOST_STATE_W0_SPEC {
 #[doc = "`read()` method returns [`host_slchost_state_w0::R`](R) reader structure"]
 impl crate::Readable for HOST_SLCHOST_STATE_W0_SPEC {}
 #[doc = "`reset()` method sets HOST_SLCHOST_STATE_W0 to value 0"]
-impl crate::Resettable for HOST_SLCHOST_STATE_W0_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for HOST_SLCHOST_STATE_W0_SPEC {}

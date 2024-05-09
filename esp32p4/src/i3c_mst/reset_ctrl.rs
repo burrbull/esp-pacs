@@ -64,29 +64,17 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("RESET_CTRL")
-            .field(
-                "reg_cmd_buf_rst",
-                &format_args!("{}", self.reg_cmd_buf_rst().bit()),
-            )
-            .field(
-                "reg_resp_buf_rst",
-                &format_args!("{}", self.reg_resp_buf_rst().bit()),
-            )
+            .field("reg_cmd_buf_rst", &self.reg_cmd_buf_rst().bit())
+            .field("reg_resp_buf_rst", &self.reg_resp_buf_rst().bit())
             .field(
                 "reg_tx_data_buf_buf_rst",
-                &format_args!("{}", self.reg_tx_data_buf_buf_rst().bit()),
+                &self.reg_tx_data_buf_buf_rst().bit(),
             )
-            .field(
-                "reg_rx_data_buf_rst",
-                &format_args!("{}", self.reg_rx_data_buf_rst().bit()),
-            )
-            .field(
-                "reg_ibi_data_buf_rst",
-                &format_args!("{}", self.reg_ibi_data_buf_rst().bit()),
-            )
+            .field("reg_rx_data_buf_rst", &self.reg_rx_data_buf_rst().bit())
+            .field("reg_ibi_data_buf_rst", &self.reg_ibi_data_buf_rst().bit())
             .field(
                 "reg_ibi_status_buf_rst",
-                &format_args!("{}", self.reg_ibi_status_buf_rst().bit()),
+                &self.reg_ibi_status_buf_rst().bit(),
             )
             .finish()
     }
@@ -151,10 +139,6 @@ impl crate::Readable for RESET_CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`reset_ctrl::W`](W) writer structure"]
 impl crate::Writable for RESET_CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets RESET_CTRL to value 0"]
-impl crate::Resettable for RESET_CTRL_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for RESET_CTRL_SPEC {}

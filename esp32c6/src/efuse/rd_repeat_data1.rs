@@ -62,38 +62,23 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("RD_REPEAT_DATA1")
-            .field(
-                "rpt4_reserved1_0",
-                &format_args!("{}", self.rpt4_reserved1_0().bits()),
-            )
-            .field(
-                "wdt_delay_sel",
-                &format_args!("{}", self.wdt_delay_sel().bits()),
-            )
-            .field(
-                "spi_boot_crypt_cnt",
-                &format_args!("{}", self.spi_boot_crypt_cnt().bits()),
-            )
+            .field("rpt4_reserved1_0", &self.rpt4_reserved1_0().bits())
+            .field("wdt_delay_sel", &self.wdt_delay_sel().bits())
+            .field("spi_boot_crypt_cnt", &self.spi_boot_crypt_cnt().bits())
             .field(
                 "secure_boot_key_revoke0",
-                &format_args!("{}", self.secure_boot_key_revoke0().bit()),
+                &self.secure_boot_key_revoke0().bit(),
             )
             .field(
                 "secure_boot_key_revoke1",
-                &format_args!("{}", self.secure_boot_key_revoke1().bit()),
+                &self.secure_boot_key_revoke1().bit(),
             )
             .field(
                 "secure_boot_key_revoke2",
-                &format_args!("{}", self.secure_boot_key_revoke2().bit()),
+                &self.secure_boot_key_revoke2().bit(),
             )
-            .field(
-                "key_purpose_0",
-                &format_args!("{}", self.key_purpose_0().bits()),
-            )
-            .field(
-                "key_purpose_1",
-                &format_args!("{}", self.key_purpose_1().bits()),
-            )
+            .field("key_purpose_0", &self.key_purpose_0().bits())
+            .field("key_purpose_1", &self.key_purpose_1().bits())
             .finish()
     }
 }
@@ -111,6 +96,4 @@ impl crate::RegisterSpec for RD_REPEAT_DATA1_SPEC {
 #[doc = "`read()` method returns [`rd_repeat_data1::R`](R) reader structure"]
 impl crate::Readable for RD_REPEAT_DATA1_SPEC {}
 #[doc = "`reset()` method sets RD_REPEAT_DATA1 to value 0"]
-impl crate::Resettable for RD_REPEAT_DATA1_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for RD_REPEAT_DATA1_SPEC {}

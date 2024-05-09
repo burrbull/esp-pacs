@@ -22,11 +22,11 @@ impl core::fmt::Debug for R {
         f.debug_struct("PKT_LEN0")
             .field(
                 "hostslchost_slc0_len0",
-                &format_args!("{}", self.hostslchost_slc0_len0().bits()),
+                &self.hostslchost_slc0_len0().bits(),
             )
             .field(
                 "hostslchost_slc0_len0_check",
-                &format_args!("{}", self.hostslchost_slc0_len0_check().bits()),
+                &self.hostslchost_slc0_len0_check().bits(),
             )
             .finish()
     }
@@ -45,6 +45,4 @@ impl crate::RegisterSpec for PKT_LEN0_SPEC {
 #[doc = "`read()` method returns [`pkt_len0::R`](R) reader structure"]
 impl crate::Readable for PKT_LEN0_SPEC {}
 #[doc = "`reset()` method sets PKT_LEN0 to value 0"]
-impl crate::Resettable for PKT_LEN0_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for PKT_LEN0_SPEC {}

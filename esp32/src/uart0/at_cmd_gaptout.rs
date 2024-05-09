@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("AT_CMD_GAPTOUT")
-            .field(
-                "rx_gap_tout",
-                &format_args!("{}", self.rx_gap_tout().bits()),
-            )
+            .field("rx_gap_tout", &self.rx_gap_tout().bits())
             .finish()
     }
 }
@@ -48,8 +45,6 @@ impl crate::Readable for AT_CMD_GAPTOUT_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`at_cmd_gaptout::W`](W) writer structure"]
 impl crate::Writable for AT_CMD_GAPTOUT_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets AT_CMD_GAPTOUT to value 0x1e00"]
 impl crate::Resettable for AT_CMD_GAPTOUT_SPEC {

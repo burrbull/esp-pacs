@@ -79,46 +79,29 @@ impl core::fmt::Debug for R {
         f.debug_struct("CORE_X_IRAM0_PMS_CONSTRAIN_2")
             .field(
                 "core_x_iram0_pms_constrain_sram_world_0_pms_0",
-                &format_args!(
-                    "{}",
-                    self.core_x_iram0_pms_constrain_sram_world_0_pms_0().bits()
-                ),
+                &self.core_x_iram0_pms_constrain_sram_world_0_pms_0().bits(),
             )
             .field(
                 "core_x_iram0_pms_constrain_sram_world_0_pms_1",
-                &format_args!(
-                    "{}",
-                    self.core_x_iram0_pms_constrain_sram_world_0_pms_1().bits()
-                ),
+                &self.core_x_iram0_pms_constrain_sram_world_0_pms_1().bits(),
             )
             .field(
                 "core_x_iram0_pms_constrain_sram_world_0_pms_2",
-                &format_args!(
-                    "{}",
-                    self.core_x_iram0_pms_constrain_sram_world_0_pms_2().bits()
-                ),
+                &self.core_x_iram0_pms_constrain_sram_world_0_pms_2().bits(),
             )
             .field(
                 "core_x_iram0_pms_constrain_sram_world_0_pms_3",
-                &format_args!(
-                    "{}",
-                    self.core_x_iram0_pms_constrain_sram_world_0_pms_3().bits()
-                ),
+                &self.core_x_iram0_pms_constrain_sram_world_0_pms_3().bits(),
             )
             .field(
                 "core_x_iram0_pms_constrain_sram_world_0_cachedataarray_pms_0",
-                &format_args!(
-                    "{}",
-                    self.core_x_iram0_pms_constrain_sram_world_0_cachedataarray_pms_0()
-                        .bits()
-                ),
+                &self
+                    .core_x_iram0_pms_constrain_sram_world_0_cachedataarray_pms_0()
+                    .bits(),
             )
             .field(
                 "core_x_iram0_pms_constrain_rom_world_0_pms",
-                &format_args!(
-                    "{}",
-                    self.core_x_iram0_pms_constrain_rom_world_0_pms().bits()
-                ),
+                &self.core_x_iram0_pms_constrain_rom_world_0_pms().bits(),
             )
             .finish()
     }
@@ -191,8 +174,6 @@ impl crate::Readable for CORE_X_IRAM0_PMS_CONSTRAIN_2_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`core_x_iram0_pms_constrain_2::W`](W) writer structure"]
 impl crate::Writable for CORE_X_IRAM0_PMS_CONSTRAIN_2_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CORE_X_IRAM0_PMS_CONSTRAIN_2 to value 0x001c_7fff"]
 impl crate::Resettable for CORE_X_IRAM0_PMS_CONSTRAIN_2_SPEC {

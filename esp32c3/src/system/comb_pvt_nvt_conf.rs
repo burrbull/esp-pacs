@@ -28,13 +28,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("COMB_PVT_NVT_CONF")
-            .field(
-                "comb_path_len_nvt",
-                &format_args!("{}", self.comb_path_len_nvt().bits()),
-            )
+            .field("comb_path_len_nvt", &self.comb_path_len_nvt().bits())
             .field(
                 "comb_pvt_monitor_en_nvt",
-                &format_args!("{}", self.comb_pvt_monitor_en_nvt().bit()),
+                &self.comb_pvt_monitor_en_nvt().bit(),
             )
             .finish()
     }
@@ -75,8 +72,6 @@ impl crate::Readable for COMB_PVT_NVT_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`comb_pvt_nvt_conf::W`](W) writer structure"]
 impl crate::Writable for COMB_PVT_NVT_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets COMB_PVT_NVT_CONF to value 0x03"]
 impl crate::Resettable for COMB_PVT_NVT_CONF_SPEC {

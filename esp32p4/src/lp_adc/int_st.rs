@@ -48,29 +48,23 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("INT_ST")
-            .field(
-                "cocpu_saradc1_int_st",
-                &format_args!("{}", self.cocpu_saradc1_int_st().bit()),
-            )
-            .field(
-                "cocpu_saradc2_int_st",
-                &format_args!("{}", self.cocpu_saradc2_int_st().bit()),
-            )
+            .field("cocpu_saradc1_int_st", &self.cocpu_saradc1_int_st().bit())
+            .field("cocpu_saradc2_int_st", &self.cocpu_saradc2_int_st().bit())
             .field(
                 "cocpu_saradc1_error_int_st",
-                &format_args!("{}", self.cocpu_saradc1_error_int_st().bit()),
+                &self.cocpu_saradc1_error_int_st().bit(),
             )
             .field(
                 "cocpu_saradc2_error_int_st",
-                &format_args!("{}", self.cocpu_saradc2_error_int_st().bit()),
+                &self.cocpu_saradc2_error_int_st().bit(),
             )
             .field(
                 "cocpu_saradc1_wake_int_st",
-                &format_args!("{}", self.cocpu_saradc1_wake_int_st().bit()),
+                &self.cocpu_saradc1_wake_int_st().bit(),
             )
             .field(
                 "cocpu_saradc2_wake_int_st",
-                &format_args!("{}", self.cocpu_saradc2_wake_int_st().bit()),
+                &self.cocpu_saradc2_wake_int_st().bit(),
             )
             .finish()
     }
@@ -89,6 +83,4 @@ impl crate::RegisterSpec for INT_ST_SPEC {
 #[doc = "`read()` method returns [`int_st::R`](R) reader structure"]
 impl crate::Readable for INT_ST_SPEC {}
 #[doc = "`reset()` method sets INT_ST to value 0"]
-impl crate::Resettable for INT_ST_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for INT_ST_SPEC {}

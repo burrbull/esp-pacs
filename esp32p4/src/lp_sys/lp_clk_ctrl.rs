@@ -26,11 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("LP_CLK_CTRL")
-            .field("clk_en", &format_args!("{}", self.clk_en().bit()))
-            .field(
-                "lp_fosc_hp_cken",
-                &format_args!("{}", self.lp_fosc_hp_cken().bit()),
-            )
+            .field("clk_en", &self.clk_en().bit())
+            .field("lp_fosc_hp_cken", &self.lp_fosc_hp_cken().bit())
             .finish()
     }
 }
@@ -64,8 +61,6 @@ impl crate::Readable for LP_CLK_CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`lp_clk_ctrl::W`](W) writer structure"]
 impl crate::Writable for LP_CLK_CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets LP_CLK_CTRL to value 0x4001"]
 impl crate::Resettable for LP_CLK_CTRL_SPEC {

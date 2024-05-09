@@ -13,10 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CHECK_SUM0")
-            .field(
-                "slchost_check_sum0",
-                &format_args!("{}", self.slchost_check_sum0().bits()),
-            )
+            .field("slchost_check_sum0", &self.slchost_check_sum0().bits())
             .finish()
     }
 }
@@ -34,6 +31,4 @@ impl crate::RegisterSpec for CHECK_SUM0_SPEC {
 #[doc = "`read()` method returns [`check_sum0::R`](R) reader structure"]
 impl crate::Readable for CHECK_SUM0_SPEC {}
 #[doc = "`reset()` method sets CHECK_SUM0 to value 0"]
-impl crate::Resettable for CHECK_SUM0_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for CHECK_SUM0_SPEC {}

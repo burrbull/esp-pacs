@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("DIG_PAD_HOLD")
-            .field(
-                "dig_pad_hold",
-                &format_args!("{}", self.dig_pad_hold().bits()),
-            )
+            .field("dig_pad_hold", &self.dig_pad_hold().bits())
             .finish()
     }
 }
@@ -48,10 +45,6 @@ impl crate::Readable for DIG_PAD_HOLD_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`dig_pad_hold::W`](W) writer structure"]
 impl crate::Writable for DIG_PAD_HOLD_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets DIG_PAD_HOLD to value 0"]
-impl crate::Resettable for DIG_PAD_HOLD_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for DIG_PAD_HOLD_SPEC {}

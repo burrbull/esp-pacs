@@ -37,18 +37,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("AF_CTRL0")
-            .field(
-                "af_auto_update",
-                &format_args!("{}", self.af_auto_update().bit()),
-            )
-            .field(
-                "af_env_threshold",
-                &format_args!("{}", self.af_env_threshold().bits()),
-            )
-            .field(
-                "af_env_period",
-                &format_args!("{}", self.af_env_period().bits()),
-            )
+            .field("af_auto_update", &self.af_auto_update().bit())
+            .field("af_env_threshold", &self.af_env_threshold().bits())
+            .field("af_env_period", &self.af_env_period().bits())
             .finish()
     }
 }
@@ -94,10 +85,6 @@ impl crate::Readable for AF_CTRL0_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`af_ctrl0::W`](W) writer structure"]
 impl crate::Writable for AF_CTRL0_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets AF_CTRL0 to value 0"]
-impl crate::Resettable for AF_CTRL0_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for AF_CTRL0_SPEC {}

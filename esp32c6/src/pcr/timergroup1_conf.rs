@@ -26,8 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("TIMERGROUP1_CONF")
-            .field("tg1_clk_en", &format_args!("{}", self.tg1_clk_en().bit()))
-            .field("tg1_rst_en", &format_args!("{}", self.tg1_rst_en().bit()))
+            .field("tg1_clk_en", &self.tg1_clk_en().bit())
+            .field("tg1_rst_en", &self.tg1_rst_en().bit())
             .finish()
     }
 }
@@ -61,8 +61,6 @@ impl crate::Readable for TIMERGROUP1_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`timergroup1_conf::W`](W) writer structure"]
 impl crate::Writable for TIMERGROUP1_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets TIMERGROUP1_CONF to value 0x01"]
 impl crate::Resettable for TIMERGROUP1_CONF_SPEC {

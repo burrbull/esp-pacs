@@ -41,11 +41,11 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("GRXSTSP")
-            .field("chnum", &format_args!("{}", self.chnum().bits()))
-            .field("bcnt", &format_args!("{}", self.bcnt().bits()))
-            .field("dpid", &format_args!("{}", self.dpid().bits()))
-            .field("pktsts", &format_args!("{}", self.pktsts().bits()))
-            .field("fn_", &format_args!("{}", self.fn_().bits()))
+            .field("chnum", &self.chnum().bits())
+            .field("bcnt", &self.bcnt().bits())
+            .field("dpid", &self.dpid().bits())
+            .field("pktsts", &self.pktsts().bits())
+            .field("fn_", &self.fn_().bits())
             .finish()
     }
 }
@@ -63,6 +63,4 @@ impl crate::RegisterSpec for GRXSTSP_SPEC {
 #[doc = "`read()` method returns [`grxstsp::R`](R) reader structure"]
 impl crate::Readable for GRXSTSP_SPEC {}
 #[doc = "`reset()` method sets GRXSTSP to value 0"]
-impl crate::Resettable for GRXSTSP_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for GRXSTSP_SPEC {}

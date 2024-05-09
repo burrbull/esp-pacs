@@ -51,20 +51,11 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("LINK_CONF")
-            .field(
-                "inlink_auto_ret",
-                &format_args!("{}", self.inlink_auto_ret().bit()),
-            )
-            .field("inlink_stop", &format_args!("{}", self.inlink_stop().bit()))
-            .field(
-                "inlink_start",
-                &format_args!("{}", self.inlink_start().bit()),
-            )
-            .field(
-                "inlink_restart",
-                &format_args!("{}", self.inlink_restart().bit()),
-            )
-            .field("inlink_park", &format_args!("{}", self.inlink_park().bit()))
+            .field("inlink_auto_ret", &self.inlink_auto_ret().bit())
+            .field("inlink_stop", &self.inlink_stop().bit())
+            .field("inlink_start", &self.inlink_start().bit())
+            .field("inlink_restart", &self.inlink_restart().bit())
+            .field("inlink_park", &self.inlink_park().bit())
             .finish()
     }
 }
@@ -110,8 +101,6 @@ impl crate::Readable for LINK_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`link_conf::W`](W) writer structure"]
 impl crate::Writable for LINK_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets LINK_CONF to value 0x0110_0000"]
 impl crate::Resettable for LINK_CONF_SPEC {

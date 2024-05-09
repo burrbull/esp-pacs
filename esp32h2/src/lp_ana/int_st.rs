@@ -43,21 +43,15 @@ impl core::fmt::Debug for R {
         f.debug_struct("INT_ST")
             .field(
                 "vddbat_charge_upvoltage",
-                &format_args!("{}", self.vddbat_charge_upvoltage().bit()),
+                &self.vddbat_charge_upvoltage().bit(),
             )
             .field(
                 "vddbat_charge_undervoltage",
-                &format_args!("{}", self.vddbat_charge_undervoltage().bit()),
+                &self.vddbat_charge_undervoltage().bit(),
             )
-            .field(
-                "vddbat_upvoltage",
-                &format_args!("{}", self.vddbat_upvoltage().bit()),
-            )
-            .field(
-                "vddbat_undervoltage",
-                &format_args!("{}", self.vddbat_undervoltage().bit()),
-            )
-            .field("bod_mode0", &format_args!("{}", self.bod_mode0().bit()))
+            .field("vddbat_upvoltage", &self.vddbat_upvoltage().bit())
+            .field("vddbat_undervoltage", &self.vddbat_undervoltage().bit())
+            .field("bod_mode0", &self.bod_mode0().bit())
             .finish()
     }
 }
@@ -75,6 +69,4 @@ impl crate::RegisterSpec for INT_ST_SPEC {
 #[doc = "`read()` method returns [`int_st::R`](R) reader structure"]
 impl crate::Readable for INT_ST_SPEC {}
 #[doc = "`reset()` method sets INT_ST to value 0"]
-impl crate::Resettable for INT_ST_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for INT_ST_SPEC {}

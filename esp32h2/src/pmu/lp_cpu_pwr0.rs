@@ -85,41 +85,26 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("LP_CPU_PWR0")
-            .field(
-                "lp_cpu_waiti_rdy",
-                &format_args!("{}", self.lp_cpu_waiti_rdy().bit()),
-            )
-            .field(
-                "lp_cpu_stall_rdy",
-                &format_args!("{}", self.lp_cpu_stall_rdy().bit()),
-            )
-            .field(
-                "lp_cpu_force_stall",
-                &format_args!("{}", self.lp_cpu_force_stall().bit()),
-            )
+            .field("lp_cpu_waiti_rdy", &self.lp_cpu_waiti_rdy().bit())
+            .field("lp_cpu_stall_rdy", &self.lp_cpu_stall_rdy().bit())
+            .field("lp_cpu_force_stall", &self.lp_cpu_force_stall().bit())
             .field(
                 "lp_cpu_slp_waiti_flag_en",
-                &format_args!("{}", self.lp_cpu_slp_waiti_flag_en().bit()),
+                &self.lp_cpu_slp_waiti_flag_en().bit(),
             )
             .field(
                 "lp_cpu_slp_stall_flag_en",
-                &format_args!("{}", self.lp_cpu_slp_stall_flag_en().bit()),
+                &self.lp_cpu_slp_stall_flag_en().bit(),
             )
             .field(
                 "lp_cpu_slp_stall_wait",
-                &format_args!("{}", self.lp_cpu_slp_stall_wait().bits()),
+                &self.lp_cpu_slp_stall_wait().bits(),
             )
-            .field(
-                "lp_cpu_slp_stall_en",
-                &format_args!("{}", self.lp_cpu_slp_stall_en().bit()),
-            )
-            .field(
-                "lp_cpu_slp_reset_en",
-                &format_args!("{}", self.lp_cpu_slp_reset_en().bit()),
-            )
+            .field("lp_cpu_slp_stall_en", &self.lp_cpu_slp_stall_en().bit())
+            .field("lp_cpu_slp_reset_en", &self.lp_cpu_slp_reset_en().bit())
             .field(
                 "lp_cpu_slp_bypass_intr_en",
-                &format_args!("{}", self.lp_cpu_slp_bypass_intr_en().bit()),
+                &self.lp_cpu_slp_bypass_intr_en().bit(),
             )
             .finish()
     }
@@ -184,8 +169,6 @@ impl crate::Readable for LP_CPU_PWR0_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`lp_cpu_pwr0::W`](W) writer structure"]
 impl crate::Writable for LP_CPU_PWR0_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets LP_CPU_PWR0 to value 0x1ff0_0000"]
 impl crate::Resettable for LP_CPU_PWR0_SPEC {

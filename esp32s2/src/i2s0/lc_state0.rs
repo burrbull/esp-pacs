@@ -48,21 +48,12 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("LC_STATE0")
-            .field(
-                "outlink_dscr_addr",
-                &format_args!("{}", self.outlink_dscr_addr().bits()),
-            )
-            .field(
-                "out_dscr_state",
-                &format_args!("{}", self.out_dscr_state().bits()),
-            )
-            .field("out_state", &format_args!("{}", self.out_state().bits()))
-            .field(
-                "outfifo_cnt",
-                &format_args!("{}", self.outfifo_cnt().bits()),
-            )
-            .field("out_full", &format_args!("{}", self.out_full().bit()))
-            .field("out_empty", &format_args!("{}", self.out_empty().bit()))
+            .field("outlink_dscr_addr", &self.outlink_dscr_addr().bits())
+            .field("out_dscr_state", &self.out_dscr_state().bits())
+            .field("out_state", &self.out_state().bits())
+            .field("outfifo_cnt", &self.outfifo_cnt().bits())
+            .field("out_full", &self.out_full().bit())
+            .field("out_empty", &self.out_empty().bit())
             .finish()
     }
 }
@@ -80,6 +71,4 @@ impl crate::RegisterSpec for LC_STATE0_SPEC {
 #[doc = "`read()` method returns [`lc_state0::R`](R) reader structure"]
 impl crate::Readable for LC_STATE0_SPEC {}
 #[doc = "`reset()` method sets LC_STATE0 to value 0"]
-impl crate::Resettable for LC_STATE0_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for LC_STATE0_SPEC {}

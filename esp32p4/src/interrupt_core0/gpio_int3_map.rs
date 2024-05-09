@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("GPIO_INT3_MAP")
-            .field(
-                "core0_gpio_int3_map",
-                &format_args!("{}", self.core0_gpio_int3_map().bits()),
-            )
+            .field("core0_gpio_int3_map", &self.core0_gpio_int3_map().bits())
             .finish()
     }
 }
@@ -48,10 +45,6 @@ impl crate::Readable for GPIO_INT3_MAP_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`gpio_int3_map::W`](W) writer structure"]
 impl crate::Writable for GPIO_INT3_MAP_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets GPIO_INT3_MAP to value 0"]
-impl crate::Resettable for GPIO_INT3_MAP_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for GPIO_INT3_MAP_SPEC {}

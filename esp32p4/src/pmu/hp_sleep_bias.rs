@@ -62,27 +62,12 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("HP_SLEEP_BIAS")
-            .field(
-                "hp_sleep_dcm_vset",
-                &format_args!("{}", self.hp_sleep_dcm_vset().bits()),
-            )
-            .field(
-                "hp_sleep_dcm_mode",
-                &format_args!("{}", self.hp_sleep_dcm_mode().bits()),
-            )
-            .field(
-                "hp_sleep_xpd_bias",
-                &format_args!("{}", self.hp_sleep_xpd_bias().bit()),
-            )
-            .field(
-                "hp_sleep_dbg_atten",
-                &format_args!("{}", self.hp_sleep_dbg_atten().bits()),
-            )
-            .field(
-                "hp_sleep_pd_cur",
-                &format_args!("{}", self.hp_sleep_pd_cur().bit()),
-            )
-            .field("sleep", &format_args!("{}", self.sleep().bit()))
+            .field("hp_sleep_dcm_vset", &self.hp_sleep_dcm_vset().bits())
+            .field("hp_sleep_dcm_mode", &self.hp_sleep_dcm_mode().bits())
+            .field("hp_sleep_xpd_bias", &self.hp_sleep_xpd_bias().bit())
+            .field("hp_sleep_dbg_atten", &self.hp_sleep_dbg_atten().bits())
+            .field("hp_sleep_pd_cur", &self.hp_sleep_pd_cur().bit())
+            .field("sleep", &self.sleep().bit())
             .finish()
     }
 }
@@ -140,8 +125,6 @@ impl crate::Readable for HP_SLEEP_BIAS_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`hp_sleep_bias::W`](W) writer structure"]
 impl crate::Writable for HP_SLEEP_BIAS_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets HP_SLEEP_BIAS to value 0x0050_0000"]
 impl crate::Resettable for HP_SLEEP_BIAS_SPEC {

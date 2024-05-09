@@ -54,20 +54,14 @@ impl core::fmt::Debug for R {
         f.debug_struct("_0_LEN_CONF")
             .field(
                 "slc0_rx_packet_load_en",
-                &format_args!("{}", self.slc0_rx_packet_load_en().bit()),
+                &self.slc0_rx_packet_load_en().bit(),
             )
             .field(
                 "slc0_tx_packet_load_en",
-                &format_args!("{}", self.slc0_tx_packet_load_en().bit()),
+                &self.slc0_tx_packet_load_en().bit(),
             )
-            .field(
-                "slc0_rx_new_pkt_ind",
-                &format_args!("{}", self.slc0_rx_new_pkt_ind().bit()),
-            )
-            .field(
-                "slc0_tx_new_pkt_ind",
-                &format_args!("{}", self.slc0_tx_new_pkt_ind().bit()),
-            )
+            .field("slc0_rx_new_pkt_ind", &self.slc0_rx_new_pkt_ind().bit())
+            .field("slc0_tx_new_pkt_ind", &self.slc0_tx_new_pkt_ind().bit())
             .finish()
     }
 }
@@ -137,10 +131,6 @@ impl crate::Readable for _0_LEN_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`_0_len_conf::W`](W) writer structure"]
 impl crate::Writable for _0_LEN_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets _0_LEN_CONF to value 0"]
-impl crate::Resettable for _0_LEN_CONF_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for _0_LEN_CONF_SPEC {}

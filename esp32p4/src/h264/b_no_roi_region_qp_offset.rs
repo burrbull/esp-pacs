@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("B_NO_ROI_REGION_QP_OFFSET")
-            .field(
-                "b_no_roi_region_qp",
-                &format_args!("{}", self.b_no_roi_region_qp().bits()),
-            )
+            .field("b_no_roi_region_qp", &self.b_no_roi_region_qp().bits())
             .finish()
     }
 }
@@ -48,10 +45,6 @@ impl crate::Readable for B_NO_ROI_REGION_QP_OFFSET_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`b_no_roi_region_qp_offset::W`](W) writer structure"]
 impl crate::Writable for B_NO_ROI_REGION_QP_OFFSET_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets B_NO_ROI_REGION_QP_OFFSET to value 0"]
-impl crate::Resettable for B_NO_ROI_REGION_QP_OFFSET_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for B_NO_ROI_REGION_QP_OFFSET_SPEC {}

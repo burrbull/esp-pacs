@@ -35,15 +35,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("B_RC_CONF0")
-            .field("b_qp", &format_args!("{}", self.b_qp().bits()))
-            .field(
-                "b_rate_ctrl_u",
-                &format_args!("{}", self.b_rate_ctrl_u().bits()),
-            )
-            .field(
-                "b_mb_rate_ctrl_en",
-                &format_args!("{}", self.b_mb_rate_ctrl_en().bit()),
-            )
+            .field("b_qp", &self.b_qp().bits())
+            .field("b_rate_ctrl_u", &self.b_rate_ctrl_u().bits())
+            .field("b_mb_rate_ctrl_en", &self.b_mb_rate_ctrl_en().bit())
             .finish()
     }
 }
@@ -83,10 +77,6 @@ impl crate::Readable for B_RC_CONF0_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`b_rc_conf0::W`](W) writer structure"]
 impl crate::Writable for B_RC_CONF0_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets B_RC_CONF0 to value 0"]
-impl crate::Resettable for B_RC_CONF0_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for B_RC_CONF0_SPEC {}

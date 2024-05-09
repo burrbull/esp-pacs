@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("REGDMA_LINK_3_ADDR")
-            .field(
-                "link_addr_3",
-                &format_args!("{}", self.link_addr_3().bits()),
-            )
+            .field("link_addr_3", &self.link_addr_3().bits())
             .finish()
     }
 }
@@ -48,10 +45,6 @@ impl crate::Readable for REGDMA_LINK_3_ADDR_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`regdma_link_3_addr::W`](W) writer structure"]
 impl crate::Writable for REGDMA_LINK_3_ADDR_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets REGDMA_LINK_3_ADDR to value 0"]
-impl crate::Resettable for REGDMA_LINK_3_ADDR_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for REGDMA_LINK_3_ADDR_SPEC {}

@@ -54,31 +54,19 @@ impl core::fmt::Debug for R {
         f.debug_struct("CORE_1_PIF_PMS_CONSTRAIN_14")
             .field(
                 "core_1_pif_pms_constrain_rtcslow_1_world_0_l",
-                &format_args!(
-                    "{}",
-                    self.core_1_pif_pms_constrain_rtcslow_1_world_0_l().bits()
-                ),
+                &self.core_1_pif_pms_constrain_rtcslow_1_world_0_l().bits(),
             )
             .field(
                 "core_1_pif_pms_constrain_rtcslow_1_world_0_h",
-                &format_args!(
-                    "{}",
-                    self.core_1_pif_pms_constrain_rtcslow_1_world_0_h().bits()
-                ),
+                &self.core_1_pif_pms_constrain_rtcslow_1_world_0_h().bits(),
             )
             .field(
                 "core_1_pif_pms_constrain_rtcslow_1_world_1_l",
-                &format_args!(
-                    "{}",
-                    self.core_1_pif_pms_constrain_rtcslow_1_world_1_l().bits()
-                ),
+                &self.core_1_pif_pms_constrain_rtcslow_1_world_1_l().bits(),
             )
             .field(
                 "core_1_pif_pms_constrain_rtcslow_1_world_1_h",
-                &format_args!(
-                    "{}",
-                    self.core_1_pif_pms_constrain_rtcslow_1_world_1_h().bits()
-                ),
+                &self.core_1_pif_pms_constrain_rtcslow_1_world_1_h().bits(),
             )
             .finish()
     }
@@ -133,8 +121,6 @@ impl crate::Readable for CORE_1_PIF_PMS_CONSTRAIN_14_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`core_1_pif_pms_constrain_14::W`](W) writer structure"]
 impl crate::Writable for CORE_1_PIF_PMS_CONSTRAIN_14_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CORE_1_PIF_PMS_CONSTRAIN_14 to value 0x0fff"]
 impl crate::Resettable for CORE_1_PIF_PMS_CONSTRAIN_14_SPEC {

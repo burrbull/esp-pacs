@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("HW_STANDBY_CNT")
-            .field(
-                "standby_wait_cnt",
-                &format_args!("{}", self.standby_wait_cnt().bits()),
-            )
+            .field("standby_wait_cnt", &self.standby_wait_cnt().bits())
             .finish()
     }
 }
@@ -48,8 +45,6 @@ impl crate::Readable for HW_STANDBY_CNT_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`hw_standby_cnt::W`](W) writer structure"]
 impl crate::Writable for HW_STANDBY_CNT_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets HW_STANDBY_CNT to value 0x01"]
 impl crate::Resettable for HW_STANDBY_CNT_SPEC {

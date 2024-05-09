@@ -78,17 +78,14 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SDIO_CONF")
-            .field("sdio_pd_en", &format_args!("{}", self.sdio_pd_en().bit()))
-            .field("sdio_force", &format_args!("{}", self.sdio_force().bit()))
-            .field("sdio_tieh", &format_args!("{}", self.sdio_tieh().bit()))
-            .field(
-                "reg1p8_ready",
-                &format_args!("{}", self.reg1p8_ready().bit()),
-            )
-            .field("drefl_sdio", &format_args!("{}", self.drefl_sdio().bits()))
-            .field("drefm_sdio", &format_args!("{}", self.drefm_sdio().bits()))
-            .field("drefh_sdio", &format_args!("{}", self.drefh_sdio().bits()))
-            .field("xpd_sdio", &format_args!("{}", self.xpd_sdio().bit()))
+            .field("sdio_pd_en", &self.sdio_pd_en().bit())
+            .field("sdio_force", &self.sdio_force().bit())
+            .field("sdio_tieh", &self.sdio_tieh().bit())
+            .field("reg1p8_ready", &self.reg1p8_ready().bit())
+            .field("drefl_sdio", &self.drefl_sdio().bits())
+            .field("drefm_sdio", &self.drefm_sdio().bits())
+            .field("drefh_sdio", &self.drefh_sdio().bits())
+            .field("xpd_sdio", &self.xpd_sdio().bit())
             .finish()
     }
 }
@@ -152,8 +149,6 @@ impl crate::Readable for SDIO_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`sdio_conf::W`](W) writer structure"]
 impl crate::Writable for SDIO_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SDIO_CONF to value 0x02a0_0000"]
 impl crate::Resettable for SDIO_CONF_SPEC {

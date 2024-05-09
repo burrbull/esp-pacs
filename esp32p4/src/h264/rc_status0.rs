@@ -13,10 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("RC_STATUS0")
-            .field(
-                "frame_mad_sum",
-                &format_args!("{}", self.frame_mad_sum().bits()),
-            )
+            .field("frame_mad_sum", &self.frame_mad_sum().bits())
             .finish()
     }
 }
@@ -34,6 +31,4 @@ impl crate::RegisterSpec for RC_STATUS0_SPEC {
 #[doc = "`read()` method returns [`rc_status0::R`](R) reader structure"]
 impl crate::Readable for RC_STATUS0_SPEC {}
 #[doc = "`reset()` method sets RC_STATUS0 to value 0"]
-impl crate::Resettable for RC_STATUS0_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for RC_STATUS0_SPEC {}

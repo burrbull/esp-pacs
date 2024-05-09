@@ -17,7 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("ENDIAN")
-            .field("endian", &format_args!("{}", self.endian().bits()))
+            .field("endian", &self.endian().bits())
             .finish()
     }
 }
@@ -45,10 +45,6 @@ impl crate::Readable for ENDIAN_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`endian::W`](W) writer structure"]
 impl crate::Writable for ENDIAN_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets ENDIAN to value 0"]
-impl crate::Resettable for ENDIAN_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for ENDIAN_SPEC {}

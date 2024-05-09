@@ -71,19 +71,13 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CNTL_DBG_SEL")
-            .field(
-                "debug_12m_no_gating",
-                &format_args!("{}", self.debug_12m_no_gating().bit()),
-            )
-            .field(
-                "debug_bit_sel",
-                &format_args!("{}", self.debug_bit_sel().bits()),
-            )
-            .field("debug_sel0", &format_args!("{}", self.debug_sel0().bits()))
-            .field("debug_sel1", &format_args!("{}", self.debug_sel1().bits()))
-            .field("debug_sel2", &format_args!("{}", self.debug_sel2().bits()))
-            .field("debug_sel3", &format_args!("{}", self.debug_sel3().bits()))
-            .field("debug_sel4", &format_args!("{}", self.debug_sel4().bits()))
+            .field("debug_12m_no_gating", &self.debug_12m_no_gating().bit())
+            .field("debug_bit_sel", &self.debug_bit_sel().bits())
+            .field("debug_sel0", &self.debug_sel0().bits())
+            .field("debug_sel1", &self.debug_sel1().bits())
+            .field("debug_sel2", &self.debug_sel2().bits())
+            .field("debug_sel3", &self.debug_sel3().bits())
+            .field("debug_sel4", &self.debug_sel4().bits())
             .finish()
     }
 }
@@ -147,10 +141,6 @@ impl crate::Readable for CNTL_DBG_SEL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`cntl_dbg_sel::W`](W) writer structure"]
 impl crate::Writable for CNTL_DBG_SEL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CNTL_DBG_SEL to value 0"]
-impl crate::Resettable for CNTL_DBG_SEL_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for CNTL_DBG_SEL_SPEC {}

@@ -44,22 +44,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("FILTER_CFG")
-            .field(
-                "scl_filter_thres",
-                &format_args!("{}", self.scl_filter_thres().bits()),
-            )
-            .field(
-                "sda_filter_thres",
-                &format_args!("{}", self.sda_filter_thres().bits()),
-            )
-            .field(
-                "scl_filter_en",
-                &format_args!("{}", self.scl_filter_en().bit()),
-            )
-            .field(
-                "sda_filter_en",
-                &format_args!("{}", self.sda_filter_en().bit()),
-            )
+            .field("scl_filter_thres", &self.scl_filter_thres().bits())
+            .field("sda_filter_thres", &self.sda_filter_thres().bits())
+            .field("scl_filter_en", &self.scl_filter_en().bit())
+            .field("sda_filter_en", &self.sda_filter_en().bit())
             .finish()
     }
 }
@@ -105,8 +93,6 @@ impl crate::Readable for FILTER_CFG_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`filter_cfg::W`](W) writer structure"]
 impl crate::Writable for FILTER_CFG_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets FILTER_CFG to value 0x0300"]
 impl crate::Resettable for FILTER_CFG_SPEC {

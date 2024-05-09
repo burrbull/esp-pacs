@@ -51,20 +51,11 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("TSENS_WAKE")
-            .field(
-                "wakeup_th_low",
-                &format_args!("{}", self.wakeup_th_low().bits()),
-            )
-            .field(
-                "wakeup_th_high",
-                &format_args!("{}", self.wakeup_th_high().bits()),
-            )
-            .field(
-                "wakeup_over_upper_th",
-                &format_args!("{}", self.wakeup_over_upper_th().bit()),
-            )
-            .field("wakeup_mode", &format_args!("{}", self.wakeup_mode().bit()))
-            .field("wakeup_en", &format_args!("{}", self.wakeup_en().bit()))
+            .field("wakeup_th_low", &self.wakeup_th_low().bits())
+            .field("wakeup_th_high", &self.wakeup_th_high().bits())
+            .field("wakeup_over_upper_th", &self.wakeup_over_upper_th().bit())
+            .field("wakeup_mode", &self.wakeup_mode().bit())
+            .field("wakeup_en", &self.wakeup_en().bit())
             .finish()
     }
 }
@@ -110,8 +101,6 @@ impl crate::Readable for TSENS_WAKE_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`tsens_wake::W`](W) writer structure"]
 impl crate::Writable for TSENS_WAKE_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets TSENS_WAKE to value 0xff00"]
 impl crate::Resettable for TSENS_WAKE_SPEC {

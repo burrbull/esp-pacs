@@ -30,11 +30,11 @@ impl core::fmt::Debug for R {
         f.debug_struct("MODEM_PERI_TIMEOUT_CONF")
             .field(
                 "modem_peri_timeout_thres",
-                &format_args!("{}", self.modem_peri_timeout_thres().bits()),
+                &self.modem_peri_timeout_thres().bits(),
             )
             .field(
                 "modem_peri_timeout_protect_en",
-                &format_args!("{}", self.modem_peri_timeout_protect_en().bit()),
+                &self.modem_peri_timeout_protect_en().bit(),
             )
             .finish()
     }
@@ -81,8 +81,6 @@ impl crate::Readable for MODEM_PERI_TIMEOUT_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`modem_peri_timeout_conf::W`](W) writer structure"]
 impl crate::Writable for MODEM_PERI_TIMEOUT_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets MODEM_PERI_TIMEOUT_CONF to value 0x0002_ffff"]
 impl crate::Resettable for MODEM_PERI_TIMEOUT_CONF_SPEC {

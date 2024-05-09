@@ -20,14 +20,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("LOW_POWER_ST")
-            .field(
-                "low_power_diag0",
-                &format_args!("{}", self.low_power_diag0().bits()),
-            )
-            .field(
-                "rdy_for_wakeup",
-                &format_args!("{}", self.rdy_for_wakeup().bit()),
-            )
+            .field("low_power_diag0", &self.low_power_diag0().bits())
+            .field("rdy_for_wakeup", &self.rdy_for_wakeup().bit())
             .finish()
     }
 }
@@ -45,6 +39,4 @@ impl crate::RegisterSpec for LOW_POWER_ST_SPEC {
 #[doc = "`read()` method returns [`low_power_st::R`](R) reader structure"]
 impl crate::Readable for LOW_POWER_ST_SPEC {}
 #[doc = "`reset()` method sets LOW_POWER_ST to value 0"]
-impl crate::Resettable for LOW_POWER_ST_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for LOW_POWER_ST_SPEC {}

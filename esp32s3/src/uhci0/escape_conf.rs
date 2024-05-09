@@ -80,38 +80,14 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("ESCAPE_CONF")
-            .field(
-                "tx_c0_esc_en",
-                &format_args!("{}", self.tx_c0_esc_en().bit()),
-            )
-            .field(
-                "tx_db_esc_en",
-                &format_args!("{}", self.tx_db_esc_en().bit()),
-            )
-            .field(
-                "tx_11_esc_en",
-                &format_args!("{}", self.tx_11_esc_en().bit()),
-            )
-            .field(
-                "tx_13_esc_en",
-                &format_args!("{}", self.tx_13_esc_en().bit()),
-            )
-            .field(
-                "rx_c0_esc_en",
-                &format_args!("{}", self.rx_c0_esc_en().bit()),
-            )
-            .field(
-                "rx_db_esc_en",
-                &format_args!("{}", self.rx_db_esc_en().bit()),
-            )
-            .field(
-                "rx_11_esc_en",
-                &format_args!("{}", self.rx_11_esc_en().bit()),
-            )
-            .field(
-                "rx_13_esc_en",
-                &format_args!("{}", self.rx_13_esc_en().bit()),
-            )
+            .field("tx_c0_esc_en", &self.tx_c0_esc_en().bit())
+            .field("tx_db_esc_en", &self.tx_db_esc_en().bit())
+            .field("tx_11_esc_en", &self.tx_11_esc_en().bit())
+            .field("tx_13_esc_en", &self.tx_13_esc_en().bit())
+            .field("rx_c0_esc_en", &self.rx_c0_esc_en().bit())
+            .field("rx_db_esc_en", &self.rx_db_esc_en().bit())
+            .field("rx_11_esc_en", &self.rx_11_esc_en().bit())
+            .field("rx_13_esc_en", &self.rx_13_esc_en().bit())
             .finish()
     }
 }
@@ -181,8 +157,6 @@ impl crate::Readable for ESCAPE_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`escape_conf::W`](W) writer structure"]
 impl crate::Writable for ESCAPE_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets ESCAPE_CONF to value 0x33"]
 impl crate::Resettable for ESCAPE_CONF_SPEC {

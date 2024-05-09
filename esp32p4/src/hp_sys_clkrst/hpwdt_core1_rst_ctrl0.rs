@@ -35,18 +35,12 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("HPWDT_CORE1_RST_CTRL0")
-            .field(
-                "hpcore1_stall_en",
-                &format_args!("{}", self.hpcore1_stall_en().bit()),
-            )
+            .field("hpcore1_stall_en", &self.hpcore1_stall_en().bit())
             .field(
                 "hpcore1_stall_wait_num",
-                &format_args!("{}", self.hpcore1_stall_wait_num().bits()),
+                &self.hpcore1_stall_wait_num().bits(),
             )
-            .field(
-                "wdt_hpcore1_rst_len",
-                &format_args!("{}", self.wdt_hpcore1_rst_len().bits()),
-            )
+            .field("wdt_hpcore1_rst_len", &self.wdt_hpcore1_rst_len().bits())
             .finish()
     }
 }
@@ -88,8 +82,6 @@ impl crate::Readable for HPWDT_CORE1_RST_CTRL0_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`hpwdt_core1_rst_ctrl0::W`](W) writer structure"]
 impl crate::Writable for HPWDT_CORE1_RST_CTRL0_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets HPWDT_CORE1_RST_CTRL0 to value 0x1011"]
 impl crate::Resettable for HPWDT_CORE1_RST_CTRL0_SPEC {

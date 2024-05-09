@@ -13,10 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("XTS_STATE")
-            .field(
-                "spi_xts_state",
-                &format_args!("{}", self.spi_xts_state().bits()),
-            )
+            .field("spi_xts_state", &self.spi_xts_state().bits())
             .finish()
     }
 }
@@ -34,6 +31,4 @@ impl crate::RegisterSpec for XTS_STATE_SPEC {
 #[doc = "`read()` method returns [`xts_state::R`](R) reader structure"]
 impl crate::Readable for XTS_STATE_SPEC {}
 #[doc = "`reset()` method sets XTS_STATE to value 0"]
-impl crate::Resettable for XTS_STATE_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for XTS_STATE_SPEC {}

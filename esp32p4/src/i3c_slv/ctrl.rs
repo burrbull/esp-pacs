@@ -71,13 +71,13 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CTRL")
-            .field("slv_event", &format_args!("{}", self.slv_event().bits()))
-            .field("extdata", &format_args!("{}", self.extdata().bit()))
-            .field("mapidx", &format_args!("{}", self.mapidx().bits()))
-            .field("ibidata", &format_args!("{}", self.ibidata().bits()))
-            .field("pendint", &format_args!("{}", self.pendint().bits()))
-            .field("actstate", &format_args!("{}", self.actstate().bits()))
-            .field("vendinfo", &format_args!("{}", self.vendinfo().bits()))
+            .field("slv_event", &self.slv_event().bits())
+            .field("extdata", &self.extdata().bit())
+            .field("mapidx", &self.mapidx().bits())
+            .field("ibidata", &self.ibidata().bits())
+            .field("pendint", &self.pendint().bits())
+            .field("actstate", &self.actstate().bits())
+            .field("vendinfo", &self.vendinfo().bits())
             .finish()
     }
 }
@@ -141,10 +141,6 @@ impl crate::Readable for CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`ctrl::W`](W) writer structure"]
 impl crate::Writable for CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CTRL to value 0"]
-impl crate::Resettable for CTRL_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for CTRL_SPEC {}

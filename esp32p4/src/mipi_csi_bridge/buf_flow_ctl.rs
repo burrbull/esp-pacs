@@ -24,14 +24,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("BUF_FLOW_CTL")
-            .field(
-                "csi_buf_afull_thrd",
-                &format_args!("{}", self.csi_buf_afull_thrd().bits()),
-            )
-            .field(
-                "csi_buf_depth",
-                &format_args!("{}", self.csi_buf_depth().bits()),
-            )
+            .field("csi_buf_afull_thrd", &self.csi_buf_afull_thrd().bits())
+            .field("csi_buf_depth", &self.csi_buf_depth().bits())
             .finish()
     }
 }
@@ -59,8 +53,6 @@ impl crate::Readable for BUF_FLOW_CTL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`buf_flow_ctl::W`](W) writer structure"]
 impl crate::Writable for BUF_FLOW_CTL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets BUF_FLOW_CTL to value 0x07f8"]
 impl crate::Resettable for BUF_FLOW_CTL_SPEC {

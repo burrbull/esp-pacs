@@ -71,34 +71,16 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("TOUCH_SCAN_CTRL")
-            .field(
-                "touch_denoise_res",
-                &format_args!("{}", self.touch_denoise_res().bits()),
-            )
-            .field(
-                "touch_denoise_en",
-                &format_args!("{}", self.touch_denoise_en().bit()),
-            )
+            .field("touch_denoise_res", &self.touch_denoise_res().bits())
+            .field("touch_denoise_en", &self.touch_denoise_en().bit())
             .field(
                 "touch_inactive_connection",
-                &format_args!("{}", self.touch_inactive_connection().bit()),
+                &self.touch_inactive_connection().bit(),
             )
-            .field(
-                "touch_shield_pad_en",
-                &format_args!("{}", self.touch_shield_pad_en().bit()),
-            )
-            .field(
-                "touch_scan_pad_map",
-                &format_args!("{}", self.touch_scan_pad_map().bits()),
-            )
-            .field(
-                "touch_bufdrv",
-                &format_args!("{}", self.touch_bufdrv().bits()),
-            )
-            .field(
-                "touch_out_ring",
-                &format_args!("{}", self.touch_out_ring().bits()),
-            )
+            .field("touch_shield_pad_en", &self.touch_shield_pad_en().bit())
+            .field("touch_scan_pad_map", &self.touch_scan_pad_map().bits())
+            .field("touch_bufdrv", &self.touch_bufdrv().bits())
+            .field("touch_out_ring", &self.touch_out_ring().bits())
             .finish()
     }
 }
@@ -164,8 +146,6 @@ impl crate::Readable for TOUCH_SCAN_CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`touch_scan_ctrl::W`](W) writer structure"]
 impl crate::Writable for TOUCH_SCAN_CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets TOUCH_SCAN_CTRL to value 0xf000_0102"]
 impl crate::Resettable for TOUCH_SCAN_CTRL_SPEC {

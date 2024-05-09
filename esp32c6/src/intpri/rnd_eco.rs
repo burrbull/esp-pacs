@@ -24,11 +24,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("RND_ECO")
-            .field("redcy_ena", &format_args!("{}", self.redcy_ena().bit()))
-            .field(
-                "redcy_result",
-                &format_args!("{}", self.redcy_result().bit()),
-            )
+            .field("redcy_ena", &self.redcy_ena().bit())
+            .field("redcy_result", &self.redcy_result().bit())
             .finish()
     }
 }
@@ -56,10 +53,6 @@ impl crate::Readable for RND_ECO_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`rnd_eco::W`](W) writer structure"]
 impl crate::Writable for RND_ECO_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets RND_ECO to value 0"]
-impl crate::Resettable for RND_ECO_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for RND_ECO_SPEC {}

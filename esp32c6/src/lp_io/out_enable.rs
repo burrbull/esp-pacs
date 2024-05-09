@@ -17,7 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("OUT_ENABLE")
-            .field("enable", &format_args!("{}", self.enable().bits()))
+            .field("enable", &self.enable().bits())
             .finish()
     }
 }
@@ -45,10 +45,6 @@ impl crate::Readable for OUT_ENABLE_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`out_enable::W`](W) writer structure"]
 impl crate::Writable for OUT_ENABLE_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets OUT_ENABLE to value 0"]
-impl crate::Resettable for OUT_ENABLE_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for OUT_ENABLE_SPEC {}

@@ -26,14 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SDIO_CTRL")
-            .field(
-                "dis_sdio_prob",
-                &format_args!("{}", self.dis_sdio_prob().bit()),
-            )
-            .field(
-                "sdio_win_access_en",
-                &format_args!("{}", self.sdio_win_access_en().bit()),
-            )
+            .field("dis_sdio_prob", &self.dis_sdio_prob().bit())
+            .field("sdio_win_access_en", &self.sdio_win_access_en().bit())
             .finish()
     }
 }
@@ -67,8 +61,6 @@ impl crate::Readable for SDIO_CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`sdio_ctrl::W`](W) writer structure"]
 impl crate::Writable for SDIO_CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SDIO_CTRL to value 0x03"]
 impl crate::Resettable for SDIO_CTRL_SPEC {

@@ -44,15 +44,12 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("LP_CORE_AHB_TIMEOUT")
-            .field("en", &format_args!("{}", self.en().bit()))
-            .field("thres", &format_args!("{}", self.thres().bits()))
-            .field(
-                "lp2hp_ahb_timeout_en",
-                &format_args!("{}", self.lp2hp_ahb_timeout_en().bit()),
-            )
+            .field("en", &self.en().bit())
+            .field("thres", &self.thres().bits())
+            .field("lp2hp_ahb_timeout_en", &self.lp2hp_ahb_timeout_en().bit())
             .field(
                 "lp2hp_ahb_timeout_thres",
-                &format_args!("{}", self.lp2hp_ahb_timeout_thres().bits()),
+                &self.lp2hp_ahb_timeout_thres().bits(),
             )
             .finish()
     }
@@ -101,8 +98,6 @@ impl crate::Readable for LP_CORE_AHB_TIMEOUT_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`lp_core_ahb_timeout::W`](W) writer structure"]
 impl crate::Writable for LP_CORE_AHB_TIMEOUT_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets LP_CORE_AHB_TIMEOUT to value 0x007f_ffff"]
 impl crate::Resettable for LP_CORE_AHB_TIMEOUT_SPEC {

@@ -89,42 +89,15 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SLAVE1")
-            .field(
-                "slv_rdbuf_dummy_en",
-                &format_args!("{}", self.slv_rdbuf_dummy_en().bit()),
-            )
-            .field(
-                "slv_wrbuf_dummy_en",
-                &format_args!("{}", self.slv_wrbuf_dummy_en().bit()),
-            )
-            .field(
-                "slv_rdsta_dummy_en",
-                &format_args!("{}", self.slv_rdsta_dummy_en().bit()),
-            )
-            .field(
-                "slv_wrsta_dummy_en",
-                &format_args!("{}", self.slv_wrsta_dummy_en().bit()),
-            )
-            .field(
-                "slv_wr_addr_bitlen",
-                &format_args!("{}", self.slv_wr_addr_bitlen().bits()),
-            )
-            .field(
-                "slv_rd_addr_bitlen",
-                &format_args!("{}", self.slv_rd_addr_bitlen().bits()),
-            )
-            .field(
-                "slv_status_readback",
-                &format_args!("{}", self.slv_status_readback().bit()),
-            )
-            .field(
-                "slv_status_fast_en",
-                &format_args!("{}", self.slv_status_fast_en().bit()),
-            )
-            .field(
-                "slv_status_bitlen",
-                &format_args!("{}", self.slv_status_bitlen().bits()),
-            )
+            .field("slv_rdbuf_dummy_en", &self.slv_rdbuf_dummy_en().bit())
+            .field("slv_wrbuf_dummy_en", &self.slv_wrbuf_dummy_en().bit())
+            .field("slv_rdsta_dummy_en", &self.slv_rdsta_dummy_en().bit())
+            .field("slv_wrsta_dummy_en", &self.slv_wrsta_dummy_en().bit())
+            .field("slv_wr_addr_bitlen", &self.slv_wr_addr_bitlen().bits())
+            .field("slv_rd_addr_bitlen", &self.slv_rd_addr_bitlen().bits())
+            .field("slv_status_readback", &self.slv_status_readback().bit())
+            .field("slv_status_fast_en", &self.slv_status_fast_en().bit())
+            .field("slv_status_bitlen", &self.slv_status_bitlen().bits())
             .finish()
     }
 }
@@ -200,8 +173,6 @@ impl crate::Readable for SLAVE1_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`slave1::W`](W) writer structure"]
 impl crate::Writable for SLAVE1_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SLAVE1 to value 0x0200_0000"]
 impl crate::Resettable for SLAVE1_SPEC {

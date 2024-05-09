@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SPI_FMEM_PMS_SIZE")
-            .field(
-                "spi_fmem_pms_size",
-                &format_args!("{}", self.spi_fmem_pms_size().bits()),
-            )
+            .field("spi_fmem_pms_size", &self.spi_fmem_pms_size().bits())
             .finish()
     }
 }
@@ -48,8 +45,6 @@ impl crate::Readable for SPI_FMEM_PMS_SIZE_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`spi_fmem_pms_size::W`](W) writer structure"]
 impl crate::Writable for SPI_FMEM_PMS_SIZE_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SPI_FMEM_PMS%s_SIZE to value 0x1000"]
 impl crate::Resettable for SPI_FMEM_PMS_SIZE_SPEC {

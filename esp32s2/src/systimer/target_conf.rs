@@ -35,9 +35,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("TARGET_CONF")
-            .field("period", &format_args!("{}", self.period().bits()))
-            .field("period_mode", &format_args!("{}", self.period_mode().bit()))
-            .field("work_en", &format_args!("{}", self.work_en().bit()))
+            .field("period", &self.period().bits())
+            .field("period_mode", &self.period_mode().bit())
+            .field("work_en", &self.work_en().bit())
             .finish()
     }
 }
@@ -77,10 +77,6 @@ impl crate::Readable for TARGET_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`target_conf::W`](W) writer structure"]
 impl crate::Writable for TARGET_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets TARGET%s_CONF to value 0"]
-impl crate::Resettable for TARGET_CONF_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for TARGET_CONF_SPEC {}

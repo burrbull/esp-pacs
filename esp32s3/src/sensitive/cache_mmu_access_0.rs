@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CACHE_MMU_ACCESS_0")
-            .field(
-                "cache_mmu_access_lock",
-                &format_args!("{}", self.cache_mmu_access_lock().bit()),
-            )
+            .field("cache_mmu_access_lock", &self.cache_mmu_access_lock().bit())
             .finish()
     }
 }
@@ -48,10 +45,6 @@ impl crate::Readable for CACHE_MMU_ACCESS_0_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`cache_mmu_access_0::W`](W) writer structure"]
 impl crate::Writable for CACHE_MMU_ACCESS_0_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CACHE_MMU_ACCESS_0 to value 0"]
-impl crate::Resettable for CACHE_MMU_ACCESS_0_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for CACHE_MMU_ACCESS_0_SPEC {}

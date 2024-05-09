@@ -65,25 +65,13 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("MMU_POWER_CTRL")
-            .field(
-                "spi_mmu_mem_force_on",
-                &format_args!("{}", self.spi_mmu_mem_force_on().bit()),
-            )
-            .field(
-                "spi_mmu_mem_force_pd",
-                &format_args!("{}", self.spi_mmu_mem_force_pd().bit()),
-            )
-            .field(
-                "spi_mmu_mem_force_pu",
-                &format_args!("{}", self.spi_mmu_mem_force_pu().bit()),
-            )
-            .field(
-                "spi_mmu_page_size",
-                &format_args!("{}", self.spi_mmu_page_size().bits()),
-            )
-            .field("aux_ctrl", &format_args!("{}", self.aux_ctrl().bits()))
-            .field("rdn_ena", &format_args!("{}", self.rdn_ena().bit()))
-            .field("rdn_result", &format_args!("{}", self.rdn_result().bit()))
+            .field("spi_mmu_mem_force_on", &self.spi_mmu_mem_force_on().bit())
+            .field("spi_mmu_mem_force_pd", &self.spi_mmu_mem_force_pd().bit())
+            .field("spi_mmu_mem_force_pu", &self.spi_mmu_mem_force_pu().bit())
+            .field("spi_mmu_page_size", &self.spi_mmu_page_size().bits())
+            .field("aux_ctrl", &self.aux_ctrl().bits())
+            .field("rdn_ena", &self.rdn_ena().bit())
+            .field("rdn_result", &self.rdn_result().bit())
             .finish()
     }
 }
@@ -129,8 +117,6 @@ impl crate::Readable for MMU_POWER_CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`mmu_power_ctrl::W`](W) writer structure"]
 impl crate::Writable for MMU_POWER_CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets MMU_POWER_CTRL to value 0x1320_0004"]
 impl crate::Resettable for MMU_POWER_CTRL_SPEC {

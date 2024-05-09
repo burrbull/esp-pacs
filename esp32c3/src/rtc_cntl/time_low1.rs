@@ -13,10 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("TIME_LOW1")
-            .field(
-                "timer_value1_low",
-                &format_args!("{}", self.timer_value1_low().bits()),
-            )
+            .field("timer_value1_low", &self.timer_value1_low().bits())
             .finish()
     }
 }
@@ -34,6 +31,4 @@ impl crate::RegisterSpec for TIME_LOW1_SPEC {
 #[doc = "`read()` method returns [`time_low1::R`](R) reader structure"]
 impl crate::Readable for TIME_LOW1_SPEC {}
 #[doc = "`reset()` method sets TIME_LOW1 to value 0"]
-impl crate::Resettable for TIME_LOW1_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for TIME_LOW1_SPEC {}

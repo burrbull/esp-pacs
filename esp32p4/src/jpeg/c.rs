@@ -44,13 +44,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("C")
-            .field(
-                "dqt_tbl_sel",
-                &format_args!("{}", self.dqt_tbl_sel().bits()),
-            )
-            .field("y_factor", &format_args!("{}", self.y_factor().bits()))
-            .field("x_factor", &format_args!("{}", self.x_factor().bits()))
-            .field("id", &format_args!("{}", self.id().bits()))
+            .field("dqt_tbl_sel", &self.dqt_tbl_sel().bits())
+            .field("y_factor", &self.y_factor().bits())
+            .field("x_factor", &self.x_factor().bits())
+            .field("id", &self.id().bits())
             .finish()
     }
 }
@@ -96,8 +93,6 @@ impl crate::Readable for C_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`c::W`](W) writer structure"]
 impl crate::Writable for C_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets C%s to value 0x1100"]
 impl crate::Resettable for C_SPEC {

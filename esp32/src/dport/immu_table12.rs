@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("IMMU_TABLE12")
-            .field(
-                "immu_table12",
-                &format_args!("{}", self.immu_table12().bits()),
-            )
+            .field("immu_table12", &self.immu_table12().bits())
             .finish()
     }
 }
@@ -48,8 +45,6 @@ impl crate::Readable for IMMU_TABLE12_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`immu_table12::W`](W) writer structure"]
 impl crate::Writable for IMMU_TABLE12_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets IMMU_TABLE12 to value 0x0c"]
 impl crate::Resettable for IMMU_TABLE12_SPEC {

@@ -107,46 +107,19 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CONF0")
-            .field(
-                "out_auto_wrback",
-                &format_args!("{}", self.out_auto_wrback().bit()),
-            )
-            .field(
-                "out_eof_mode",
-                &format_args!("{}", self.out_eof_mode().bit()),
-            )
-            .field(
-                "outdscr_burst_en",
-                &format_args!("{}", self.outdscr_burst_en().bit()),
-            )
-            .field(
-                "out_ecc_aes_en",
-                &format_args!("{}", self.out_ecc_aes_en().bit()),
-            )
-            .field(
-                "out_check_owner",
-                &format_args!("{}", self.out_check_owner().bit()),
-            )
-            .field(
-                "out_mem_burst_length",
-                &format_args!("{}", self.out_mem_burst_length().bits()),
-            )
-            .field(
-                "out_page_bound_en",
-                &format_args!("{}", self.out_page_bound_en().bit()),
-            )
-            .field(
-                "out_reorder_en",
-                &format_args!("{}", self.out_reorder_en().bit()),
-            )
-            .field("out_rst", &format_args!("{}", self.out_rst().bit()))
-            .field(
-                "out_cmd_disable",
-                &format_args!("{}", self.out_cmd_disable().bit()),
-            )
+            .field("out_auto_wrback", &self.out_auto_wrback().bit())
+            .field("out_eof_mode", &self.out_eof_mode().bit())
+            .field("outdscr_burst_en", &self.outdscr_burst_en().bit())
+            .field("out_ecc_aes_en", &self.out_ecc_aes_en().bit())
+            .field("out_check_owner", &self.out_check_owner().bit())
+            .field("out_mem_burst_length", &self.out_mem_burst_length().bits())
+            .field("out_page_bound_en", &self.out_page_bound_en().bit())
+            .field("out_reorder_en", &self.out_reorder_en().bit())
+            .field("out_rst", &self.out_rst().bit())
+            .field("out_cmd_disable", &self.out_cmd_disable().bit())
             .field(
                 "out_arb_weight_opt_dis",
-                &format_args!("{}", self.out_arb_weight_opt_dis().bit()),
+                &self.out_arb_weight_opt_dis().bit(),
             )
             .finish()
     }
@@ -235,8 +208,6 @@ impl crate::Readable for CONF0_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`conf0::W`](W) writer structure"]
 impl crate::Writable for CONF0_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CONF0 to value 0x02"]
 impl crate::Resettable for CONF0_SPEC {

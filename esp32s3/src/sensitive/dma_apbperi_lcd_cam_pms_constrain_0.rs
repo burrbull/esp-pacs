@@ -21,7 +21,7 @@ impl core::fmt::Debug for R {
         f.debug_struct("DMA_APBPERI_LCD_CAM_PMS_CONSTRAIN_0")
             .field(
                 "dma_apbperi_lcd_cam_pms_constrain_lock",
-                &format_args!("{}", self.dma_apbperi_lcd_cam_pms_constrain_lock().bit()),
+                &self.dma_apbperi_lcd_cam_pms_constrain_lock().bit(),
             )
             .finish()
     }
@@ -52,10 +52,6 @@ impl crate::Readable for DMA_APBPERI_LCD_CAM_PMS_CONSTRAIN_0_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`dma_apbperi_lcd_cam_pms_constrain_0::W`](W) writer structure"]
 impl crate::Writable for DMA_APBPERI_LCD_CAM_PMS_CONSTRAIN_0_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets DMA_APBPERI_LCD_CAM_PMS_CONSTRAIN_0 to value 0"]
-impl crate::Resettable for DMA_APBPERI_LCD_CAM_PMS_CONSTRAIN_0_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for DMA_APBPERI_LCD_CAM_PMS_CONSTRAIN_0_SPEC {}

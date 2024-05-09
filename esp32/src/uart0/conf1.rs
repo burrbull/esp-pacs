@@ -62,24 +62,12 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CONF1")
-            .field(
-                "rxfifo_full_thrhd",
-                &format_args!("{}", self.rxfifo_full_thrhd().bits()),
-            )
-            .field(
-                "txfifo_empty_thrhd",
-                &format_args!("{}", self.txfifo_empty_thrhd().bits()),
-            )
-            .field(
-                "rx_flow_thrhd",
-                &format_args!("{}", self.rx_flow_thrhd().bits()),
-            )
-            .field("rx_flow_en", &format_args!("{}", self.rx_flow_en().bit()))
-            .field(
-                "rx_tout_thrhd",
-                &format_args!("{}", self.rx_tout_thrhd().bits()),
-            )
-            .field("rx_tout_en", &format_args!("{}", self.rx_tout_en().bit()))
+            .field("rxfifo_full_thrhd", &self.rxfifo_full_thrhd().bits())
+            .field("txfifo_empty_thrhd", &self.txfifo_empty_thrhd().bits())
+            .field("rx_flow_thrhd", &self.rx_flow_thrhd().bits())
+            .field("rx_flow_en", &self.rx_flow_en().bit())
+            .field("rx_tout_thrhd", &self.rx_tout_thrhd().bits())
+            .field("rx_tout_en", &self.rx_tout_en().bit())
             .finish()
     }
 }
@@ -137,8 +125,6 @@ impl crate::Readable for CONF1_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`conf1::W`](W) writer structure"]
 impl crate::Writable for CONF1_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CONF1 to value 0x6060"]
 impl crate::Resettable for CONF1_SPEC {

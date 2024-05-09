@@ -44,16 +44,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("RX_CLKM_CONF")
-            .field(
-                "rx_clkm_div_num",
-                &format_args!("{}", self.rx_clkm_div_num().bits()),
-            )
-            .field(
-                "rx_clk_active",
-                &format_args!("{}", self.rx_clk_active().bit()),
-            )
-            .field("rx_clk_sel", &format_args!("{}", self.rx_clk_sel().bits()))
-            .field("mclk_sel", &format_args!("{}", self.mclk_sel().bit()))
+            .field("rx_clkm_div_num", &self.rx_clkm_div_num().bits())
+            .field("rx_clk_active", &self.rx_clk_active().bit())
+            .field("rx_clk_sel", &self.rx_clk_sel().bits())
+            .field("mclk_sel", &self.mclk_sel().bit())
             .finish()
     }
 }
@@ -99,8 +93,6 @@ impl crate::Readable for RX_CLKM_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`rx_clkm_conf::W`](W) writer structure"]
 impl crate::Writable for RX_CLKM_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets RX_CLKM_CONF to value 0x02"]
 impl crate::Resettable for RX_CLKM_CONF_SPEC {

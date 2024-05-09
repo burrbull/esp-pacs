@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("DBIAS_CHANNEL_SEL1")
-            .field(
-                "dbias_channel4_sel",
-                &format_args!("{}", self.dbias_channel4_sel().bits()),
-            )
+            .field("dbias_channel4_sel", &self.dbias_channel4_sel().bits())
             .finish()
     }
 }
@@ -48,8 +45,6 @@ impl crate::Readable for DBIAS_CHANNEL_SEL1_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`dbias_channel_sel1::W`](W) writer structure"]
 impl crate::Writable for DBIAS_CHANNEL_SEL1_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets DBIAS_CHANNEL_SEL1 to value 0x8000_0000"]
 impl crate::Resettable for DBIAS_CHANNEL_SEL1_SPEC {

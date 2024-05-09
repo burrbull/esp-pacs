@@ -44,22 +44,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SARADC_CONF")
-            .field(
-                "saradc_clk_en",
-                &format_args!("{}", self.saradc_clk_en().bit()),
-            )
-            .field(
-                "saradc_rst_en",
-                &format_args!("{}", self.saradc_rst_en().bit()),
-            )
-            .field(
-                "saradc_reg_clk_en",
-                &format_args!("{}", self.saradc_reg_clk_en().bit()),
-            )
-            .field(
-                "saradc_reg_rst_en",
-                &format_args!("{}", self.saradc_reg_rst_en().bit()),
-            )
+            .field("saradc_clk_en", &self.saradc_clk_en().bit())
+            .field("saradc_rst_en", &self.saradc_rst_en().bit())
+            .field("saradc_reg_clk_en", &self.saradc_reg_clk_en().bit())
+            .field("saradc_reg_rst_en", &self.saradc_reg_rst_en().bit())
             .finish()
     }
 }
@@ -105,8 +93,6 @@ impl crate::Readable for SARADC_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`saradc_conf::W`](W) writer structure"]
 impl crate::Writable for SARADC_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SARADC_CONF to value 0x05"]
 impl crate::Resettable for SARADC_CONF_SPEC {

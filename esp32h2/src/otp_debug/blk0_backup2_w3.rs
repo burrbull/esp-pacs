@@ -15,7 +15,7 @@ impl core::fmt::Debug for R {
         f.debug_struct("BLK0_BACKUP2_W3")
             .field(
                 "otp_bebug_block0_backup2_w3",
-                &format_args!("{}", self.otp_bebug_block0_backup2_w3().bits()),
+                &self.otp_bebug_block0_backup2_w3().bits(),
             )
             .finish()
     }
@@ -34,6 +34,4 @@ impl crate::RegisterSpec for BLK0_BACKUP2_W3_SPEC {
 #[doc = "`read()` method returns [`blk0_backup2_w3::R`](R) reader structure"]
 impl crate::Readable for BLK0_BACKUP2_W3_SPEC {}
 #[doc = "`reset()` method sets BLK0_BACKUP2_W3 to value 0"]
-impl crate::Resettable for BLK0_BACKUP2_W3_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for BLK0_BACKUP2_W3_SPEC {}

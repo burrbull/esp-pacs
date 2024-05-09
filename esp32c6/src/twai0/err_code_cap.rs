@@ -29,15 +29,15 @@ impl core::fmt::Debug for R {
         f.debug_struct("ERR_CODE_CAP")
             .field(
                 "err_capture_code_segment",
-                &format_args!("{}", self.err_capture_code_segment().bits()),
+                &self.err_capture_code_segment().bits(),
             )
             .field(
                 "err_capture_code_direction",
-                &format_args!("{}", self.err_capture_code_direction().bit()),
+                &self.err_capture_code_direction().bit(),
             )
             .field(
                 "err_capture_code_type",
-                &format_args!("{}", self.err_capture_code_type().bits()),
+                &self.err_capture_code_type().bits(),
             )
             .finish()
     }
@@ -56,6 +56,4 @@ impl crate::RegisterSpec for ERR_CODE_CAP_SPEC {
 #[doc = "`read()` method returns [`err_code_cap::R`](R) reader structure"]
 impl crate::Readable for ERR_CODE_CAP_SPEC {}
 #[doc = "`reset()` method sets ERR_CODE_CAP to value 0"]
-impl crate::Resettable for ERR_CODE_CAP_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for ERR_CODE_CAP_SPEC {}

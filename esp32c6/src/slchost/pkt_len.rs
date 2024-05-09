@@ -20,13 +20,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PKT_LEN")
-            .field(
-                "hostslchost_slc0_len",
-                &format_args!("{}", self.hostslchost_slc0_len().bits()),
-            )
+            .field("hostslchost_slc0_len", &self.hostslchost_slc0_len().bits())
             .field(
                 "hostslchost_slc0_len_check",
-                &format_args!("{}", self.hostslchost_slc0_len_check().bits()),
+                &self.hostslchost_slc0_len_check().bits(),
             )
             .finish()
     }
@@ -45,6 +42,4 @@ impl crate::RegisterSpec for PKT_LEN_SPEC {
 #[doc = "`read()` method returns [`pkt_len::R`](R) reader structure"]
 impl crate::Readable for PKT_LEN_SPEC {}
 #[doc = "`reset()` method sets PKT_LEN to value 0"]
-impl crate::Resettable for PKT_LEN_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for PKT_LEN_SPEC {}

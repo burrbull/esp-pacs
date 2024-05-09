@@ -28,11 +28,11 @@ impl core::fmt::Debug for R {
         f.debug_struct("DMA_APBPERI_PMS_MONITOR_1")
             .field(
                 "dma_apbperi_pms_monitor_violate_clr",
-                &format_args!("{}", self.dma_apbperi_pms_monitor_violate_clr().bit()),
+                &self.dma_apbperi_pms_monitor_violate_clr().bit(),
             )
             .field(
                 "dma_apbperi_pms_monitor_violate_en",
-                &format_args!("{}", self.dma_apbperi_pms_monitor_violate_en().bit()),
+                &self.dma_apbperi_pms_monitor_violate_en().bit(),
             )
             .finish()
     }
@@ -71,8 +71,6 @@ impl crate::Readable for DMA_APBPERI_PMS_MONITOR_1_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`dma_apbperi_pms_monitor_1::W`](W) writer structure"]
 impl crate::Writable for DMA_APBPERI_PMS_MONITOR_1_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets DMA_APBPERI_PMS_MONITOR_1 to value 0x03"]
 impl crate::Resettable for DMA_APBPERI_PMS_MONITOR_1_SPEC {

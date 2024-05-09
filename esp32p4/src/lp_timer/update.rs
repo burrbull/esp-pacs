@@ -37,18 +37,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("UPDATE")
-            .field(
-                "main_timer_xtal_off",
-                &format_args!("{}", self.main_timer_xtal_off().bit()),
-            )
-            .field(
-                "main_timer_sys_stall",
-                &format_args!("{}", self.main_timer_sys_stall().bit()),
-            )
-            .field(
-                "main_timer_sys_rst",
-                &format_args!("{}", self.main_timer_sys_rst().bit()),
-            )
+            .field("main_timer_xtal_off", &self.main_timer_xtal_off().bit())
+            .field("main_timer_sys_stall", &self.main_timer_sys_stall().bit())
+            .field("main_timer_sys_rst", &self.main_timer_sys_rst().bit())
             .finish()
     }
 }
@@ -94,10 +85,6 @@ impl crate::Readable for UPDATE_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`update::W`](W) writer structure"]
 impl crate::Writable for UPDATE_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets UPDATE to value 0"]
-impl crate::Resettable for UPDATE_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for UPDATE_SPEC {}

@@ -62,18 +62,12 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("FIFO_CONF")
-            .field(
-                "rxfifo_wm_thrhd",
-                &format_args!("{}", self.rxfifo_wm_thrhd().bits()),
-            )
-            .field(
-                "txfifo_wm_thrhd",
-                &format_args!("{}", self.txfifo_wm_thrhd().bits()),
-            )
-            .field("nonfifo_en", &format_args!("{}", self.nonfifo_en().bit()))
-            .field("rx_fifo_rst", &format_args!("{}", self.rx_fifo_rst().bit()))
-            .field("tx_fifo_rst", &format_args!("{}", self.tx_fifo_rst().bit()))
-            .field("fifo_prt_en", &format_args!("{}", self.fifo_prt_en().bit()))
+            .field("rxfifo_wm_thrhd", &self.rxfifo_wm_thrhd().bits())
+            .field("txfifo_wm_thrhd", &self.txfifo_wm_thrhd().bits())
+            .field("nonfifo_en", &self.nonfifo_en().bit())
+            .field("rx_fifo_rst", &self.rx_fifo_rst().bit())
+            .field("tx_fifo_rst", &self.tx_fifo_rst().bit())
+            .field("fifo_prt_en", &self.fifo_prt_en().bit())
             .finish()
     }
 }
@@ -131,8 +125,6 @@ impl crate::Readable for FIFO_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`fifo_conf::W`](W) writer structure"]
 impl crate::Writable for FIFO_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets FIFO_CONF to value 0x4046"]
 impl crate::Resettable for FIFO_CONF_SPEC {

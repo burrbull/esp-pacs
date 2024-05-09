@@ -62,21 +62,12 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("INT_ENA")
-            .field("rx_done", &format_args!("{}", self.rx_done().bit()))
-            .field("rx_hung", &format_args!("{}", self.rx_hung().bit()))
-            .field(
-                "rx_fifomem_udf",
-                &format_args!("{}", self.rx_fifomem_udf().bit()),
-            )
-            .field("lp_vad_done", &format_args!("{}", self.lp_vad_done().bit()))
-            .field(
-                "lp_vad_reset_done",
-                &format_args!("{}", self.lp_vad_reset_done().bit()),
-            )
-            .field(
-                "rx_mem_threshold",
-                &format_args!("{}", self.rx_mem_threshold().bit()),
-            )
+            .field("rx_done", &self.rx_done().bit())
+            .field("rx_hung", &self.rx_hung().bit())
+            .field("rx_fifomem_udf", &self.rx_fifomem_udf().bit())
+            .field("lp_vad_done", &self.lp_vad_done().bit())
+            .field("lp_vad_reset_done", &self.lp_vad_reset_done().bit())
+            .field("rx_mem_threshold", &self.rx_mem_threshold().bit())
             .finish()
     }
 }
@@ -134,10 +125,6 @@ impl crate::Readable for INT_ENA_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`int_ena::W`](W) writer structure"]
 impl crate::Writable for INT_ENA_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets INT_ENA to value 0"]
-impl crate::Resettable for INT_ENA_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for INT_ENA_SPEC {}

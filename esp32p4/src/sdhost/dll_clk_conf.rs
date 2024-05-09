@@ -62,29 +62,20 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("DLL_CLK_CONF")
-            .field(
-                "dll_cclk_in_slf_en",
-                &format_args!("{}", self.dll_cclk_in_slf_en().bit()),
-            )
-            .field(
-                "dll_cclk_in_drv_en",
-                &format_args!("{}", self.dll_cclk_in_drv_en().bit()),
-            )
-            .field(
-                "dll_cclk_in_sam_en",
-                &format_args!("{}", self.dll_cclk_in_sam_en().bit()),
-            )
+            .field("dll_cclk_in_slf_en", &self.dll_cclk_in_slf_en().bit())
+            .field("dll_cclk_in_drv_en", &self.dll_cclk_in_drv_en().bit())
+            .field("dll_cclk_in_sam_en", &self.dll_cclk_in_sam_en().bit())
             .field(
                 "dll_cclk_in_slf_phase",
-                &format_args!("{}", self.dll_cclk_in_slf_phase().bits()),
+                &self.dll_cclk_in_slf_phase().bits(),
             )
             .field(
                 "dll_cclk_in_drv_phase",
-                &format_args!("{}", self.dll_cclk_in_drv_phase().bits()),
+                &self.dll_cclk_in_drv_phase().bits(),
             )
             .field(
                 "dll_cclk_in_sam_phase",
-                &format_args!("{}", self.dll_cclk_in_sam_phase().bits()),
+                &self.dll_cclk_in_sam_phase().bits(),
             )
             .finish()
     }
@@ -143,10 +134,6 @@ impl crate::Readable for DLL_CLK_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`dll_clk_conf::W`](W) writer structure"]
 impl crate::Writable for DLL_CLK_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets DLL_CLK_CONF to value 0"]
-impl crate::Resettable for DLL_CLK_CONF_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for DLL_CLK_CONF_SPEC {}

@@ -26,8 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PARL_IO_CONF")
-            .field("parl_clk_en", &format_args!("{}", self.parl_clk_en().bit()))
-            .field("parl_rst_en", &format_args!("{}", self.parl_rst_en().bit()))
+            .field("parl_clk_en", &self.parl_clk_en().bit())
+            .field("parl_rst_en", &self.parl_rst_en().bit())
             .finish()
     }
 }
@@ -61,8 +61,6 @@ impl crate::Readable for PARL_IO_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`parl_io_conf::W`](W) writer structure"]
 impl crate::Writable for PARL_IO_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets PARL_IO_CONF to value 0x01"]
 impl crate::Resettable for PARL_IO_CONF_SPEC {

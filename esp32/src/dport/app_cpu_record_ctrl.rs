@@ -35,18 +35,12 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("APP_CPU_RECORD_CTRL")
-            .field(
-                "app_cpu_record_enable",
-                &format_args!("{}", self.app_cpu_record_enable().bit()),
-            )
+            .field("app_cpu_record_enable", &self.app_cpu_record_enable().bit())
             .field(
                 "app_cpu_record_disable",
-                &format_args!("{}", self.app_cpu_record_disable().bit()),
+                &self.app_cpu_record_disable().bit(),
             )
-            .field(
-                "app_cpu_pdebug_enable",
-                &format_args!("{}", self.app_cpu_pdebug_enable().bit()),
-            )
+            .field("app_cpu_pdebug_enable", &self.app_cpu_pdebug_enable().bit())
             .finish()
     }
 }
@@ -86,8 +80,6 @@ impl crate::Readable for APP_CPU_RECORD_CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`app_cpu_record_ctrl::W`](W) writer structure"]
 impl crate::Writable for APP_CPU_RECORD_CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets APP_CPU_RECORD_CTRL to value 0x0100"]
 impl crate::Resettable for APP_CPU_RECORD_CTRL_SPEC {

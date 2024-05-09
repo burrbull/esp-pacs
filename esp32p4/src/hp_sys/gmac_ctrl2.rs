@@ -13,10 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("GMAC_CTRL2")
-            .field(
-                "ptp_timestamp_h",
-                &format_args!("{}", self.ptp_timestamp_h().bits()),
-            )
+            .field("ptp_timestamp_h", &self.ptp_timestamp_h().bits())
             .finish()
     }
 }
@@ -34,6 +31,4 @@ impl crate::RegisterSpec for GMAC_CTRL2_SPEC {
 #[doc = "`read()` method returns [`gmac_ctrl2::R`](R) reader structure"]
 impl crate::Readable for GMAC_CTRL2_SPEC {}
 #[doc = "`reset()` method sets GMAC_CTRL2 to value 0"]
-impl crate::Resettable for GMAC_CTRL2_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for GMAC_CTRL2_SPEC {}

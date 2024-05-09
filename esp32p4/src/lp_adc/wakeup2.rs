@@ -51,26 +51,14 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("WAKEUP2")
-            .field(
-                "sar2_wakeup_th_low",
-                &format_args!("{}", self.sar2_wakeup_th_low().bits()),
-            )
-            .field(
-                "sar2_wakeup_th_high",
-                &format_args!("{}", self.sar2_wakeup_th_high().bits()),
-            )
+            .field("sar2_wakeup_th_low", &self.sar2_wakeup_th_low().bits())
+            .field("sar2_wakeup_th_high", &self.sar2_wakeup_th_high().bits())
             .field(
                 "sar2_wakeup_over_upper_th",
-                &format_args!("{}", self.sar2_wakeup_over_upper_th().bit()),
+                &self.sar2_wakeup_over_upper_th().bit(),
             )
-            .field(
-                "sar2_wakeup_en",
-                &format_args!("{}", self.sar2_wakeup_en().bit()),
-            )
-            .field(
-                "sar2_wakeup_mode",
-                &format_args!("{}", self.sar2_wakeup_mode().bit()),
-            )
+            .field("sar2_wakeup_en", &self.sar2_wakeup_en().bit())
+            .field("sar2_wakeup_mode", &self.sar2_wakeup_mode().bit())
             .finish()
     }
 }
@@ -116,8 +104,6 @@ impl crate::Readable for WAKEUP2_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`wakeup2::W`](W) writer structure"]
 impl crate::Writable for WAKEUP2_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets WAKEUP2 to value 0x03ff_c000"]
 impl crate::Resettable for WAKEUP2_SPEC {

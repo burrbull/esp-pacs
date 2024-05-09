@@ -69,42 +69,15 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SPI_SMEM_DOUT_MODE")
-            .field(
-                "spi_smem_dout0_mode",
-                &format_args!("{}", self.spi_smem_dout0_mode().bit()),
-            )
-            .field(
-                "spi_smem_dout1_mode",
-                &format_args!("{}", self.spi_smem_dout1_mode().bit()),
-            )
-            .field(
-                "spi_smem_dout2_mode",
-                &format_args!("{}", self.spi_smem_dout2_mode().bit()),
-            )
-            .field(
-                "spi_smem_dout3_mode",
-                &format_args!("{}", self.spi_smem_dout3_mode().bit()),
-            )
-            .field(
-                "spi_smem_dout4_mode",
-                &format_args!("{}", self.spi_smem_dout4_mode().bit()),
-            )
-            .field(
-                "spi_smem_dout5_mode",
-                &format_args!("{}", self.spi_smem_dout5_mode().bit()),
-            )
-            .field(
-                "spi_smem_dout6_mode",
-                &format_args!("{}", self.spi_smem_dout6_mode().bit()),
-            )
-            .field(
-                "spi_smem_dout7_mode",
-                &format_args!("{}", self.spi_smem_dout7_mode().bit()),
-            )
-            .field(
-                "spi_smem_douts_mode",
-                &format_args!("{}", self.spi_smem_douts_mode().bit()),
-            )
+            .field("spi_smem_dout0_mode", &self.spi_smem_dout0_mode().bit())
+            .field("spi_smem_dout1_mode", &self.spi_smem_dout1_mode().bit())
+            .field("spi_smem_dout2_mode", &self.spi_smem_dout2_mode().bit())
+            .field("spi_smem_dout3_mode", &self.spi_smem_dout3_mode().bit())
+            .field("spi_smem_dout4_mode", &self.spi_smem_dout4_mode().bit())
+            .field("spi_smem_dout5_mode", &self.spi_smem_dout5_mode().bit())
+            .field("spi_smem_dout6_mode", &self.spi_smem_dout6_mode().bit())
+            .field("spi_smem_dout7_mode", &self.spi_smem_dout7_mode().bit())
+            .field("spi_smem_douts_mode", &self.spi_smem_douts_mode().bit())
             .finish()
     }
 }
@@ -122,6 +95,4 @@ impl crate::RegisterSpec for SPI_SMEM_DOUT_MODE_SPEC {
 #[doc = "`read()` method returns [`spi_smem_dout_mode::R`](R) reader structure"]
 impl crate::Readable for SPI_SMEM_DOUT_MODE_SPEC {}
 #[doc = "`reset()` method sets SPI_SMEM_DOUT_MODE to value 0"]
-impl crate::Resettable for SPI_SMEM_DOUT_MODE_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for SPI_SMEM_DOUT_MODE_SPEC {}

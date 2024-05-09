@@ -296,133 +296,115 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("EVT_ST5")
-            .field(
-                "ulp_evt_err_intr_st",
-                &format_args!("{}", self.ulp_evt_err_intr_st().bit()),
-            )
-            .field(
-                "ulp_evt_halt_st",
-                &format_args!("{}", self.ulp_evt_halt_st().bit()),
-            )
-            .field(
-                "ulp_evt_start_intr_st",
-                &format_args!("{}", self.ulp_evt_start_intr_st().bit()),
-            )
-            .field(
-                "rtc_evt_tick_st",
-                &format_args!("{}", self.rtc_evt_tick_st().bit()),
-            )
-            .field(
-                "rtc_evt_ovf_st",
-                &format_args!("{}", self.rtc_evt_ovf_st().bit()),
-            )
-            .field(
-                "rtc_evt_cmp_st",
-                &format_args!("{}", self.rtc_evt_cmp_st().bit()),
-            )
+            .field("ulp_evt_err_intr_st", &self.ulp_evt_err_intr_st().bit())
+            .field("ulp_evt_halt_st", &self.ulp_evt_halt_st().bit())
+            .field("ulp_evt_start_intr_st", &self.ulp_evt_start_intr_st().bit())
+            .field("rtc_evt_tick_st", &self.rtc_evt_tick_st().bit())
+            .field("rtc_evt_ovf_st", &self.rtc_evt_ovf_st().bit())
+            .field("rtc_evt_cmp_st", &self.rtc_evt_cmp_st().bit())
             .field(
                 "pdma_ahb_evt_in_done_ch0_st",
-                &format_args!("{}", self.pdma_ahb_evt_in_done_ch0_st().bit()),
+                &self.pdma_ahb_evt_in_done_ch0_st().bit(),
             )
             .field(
                 "pdma_ahb_evt_in_done_ch1_st",
-                &format_args!("{}", self.pdma_ahb_evt_in_done_ch1_st().bit()),
+                &self.pdma_ahb_evt_in_done_ch1_st().bit(),
             )
             .field(
                 "pdma_ahb_evt_in_done_ch2_st",
-                &format_args!("{}", self.pdma_ahb_evt_in_done_ch2_st().bit()),
+                &self.pdma_ahb_evt_in_done_ch2_st().bit(),
             )
             .field(
                 "pdma_ahb_evt_in_suc_eof_ch0_st",
-                &format_args!("{}", self.pdma_ahb_evt_in_suc_eof_ch0_st().bit()),
+                &self.pdma_ahb_evt_in_suc_eof_ch0_st().bit(),
             )
             .field(
                 "pdma_ahb_evt_in_suc_eof_ch1_st",
-                &format_args!("{}", self.pdma_ahb_evt_in_suc_eof_ch1_st().bit()),
+                &self.pdma_ahb_evt_in_suc_eof_ch1_st().bit(),
             )
             .field(
                 "pdma_ahb_evt_in_suc_eof_ch2_st",
-                &format_args!("{}", self.pdma_ahb_evt_in_suc_eof_ch2_st().bit()),
+                &self.pdma_ahb_evt_in_suc_eof_ch2_st().bit(),
             )
             .field(
                 "pdma_ahb_evt_in_fifo_empty_ch0_st",
-                &format_args!("{}", self.pdma_ahb_evt_in_fifo_empty_ch0_st().bit()),
+                &self.pdma_ahb_evt_in_fifo_empty_ch0_st().bit(),
             )
             .field(
                 "pdma_ahb_evt_in_fifo_empty_ch1_st",
-                &format_args!("{}", self.pdma_ahb_evt_in_fifo_empty_ch1_st().bit()),
+                &self.pdma_ahb_evt_in_fifo_empty_ch1_st().bit(),
             )
             .field(
                 "pdma_ahb_evt_in_fifo_empty_ch2_st",
-                &format_args!("{}", self.pdma_ahb_evt_in_fifo_empty_ch2_st().bit()),
+                &self.pdma_ahb_evt_in_fifo_empty_ch2_st().bit(),
             )
             .field(
                 "pdma_ahb_evt_in_fifo_full_ch0_st",
-                &format_args!("{}", self.pdma_ahb_evt_in_fifo_full_ch0_st().bit()),
+                &self.pdma_ahb_evt_in_fifo_full_ch0_st().bit(),
             )
             .field(
                 "pdma_ahb_evt_in_fifo_full_ch1_st",
-                &format_args!("{}", self.pdma_ahb_evt_in_fifo_full_ch1_st().bit()),
+                &self.pdma_ahb_evt_in_fifo_full_ch1_st().bit(),
             )
             .field(
                 "pdma_ahb_evt_in_fifo_full_ch2_st",
-                &format_args!("{}", self.pdma_ahb_evt_in_fifo_full_ch2_st().bit()),
+                &self.pdma_ahb_evt_in_fifo_full_ch2_st().bit(),
             )
             .field(
                 "pdma_ahb_evt_out_done_ch0_st",
-                &format_args!("{}", self.pdma_ahb_evt_out_done_ch0_st().bit()),
+                &self.pdma_ahb_evt_out_done_ch0_st().bit(),
             )
             .field(
                 "pdma_ahb_evt_out_done_ch1_st",
-                &format_args!("{}", self.pdma_ahb_evt_out_done_ch1_st().bit()),
+                &self.pdma_ahb_evt_out_done_ch1_st().bit(),
             )
             .field(
                 "pdma_ahb_evt_out_done_ch2_st",
-                &format_args!("{}", self.pdma_ahb_evt_out_done_ch2_st().bit()),
+                &self.pdma_ahb_evt_out_done_ch2_st().bit(),
             )
             .field(
                 "pdma_ahb_evt_out_eof_ch0_st",
-                &format_args!("{}", self.pdma_ahb_evt_out_eof_ch0_st().bit()),
+                &self.pdma_ahb_evt_out_eof_ch0_st().bit(),
             )
             .field(
                 "pdma_ahb_evt_out_eof_ch1_st",
-                &format_args!("{}", self.pdma_ahb_evt_out_eof_ch1_st().bit()),
+                &self.pdma_ahb_evt_out_eof_ch1_st().bit(),
             )
             .field(
                 "pdma_ahb_evt_out_eof_ch2_st",
-                &format_args!("{}", self.pdma_ahb_evt_out_eof_ch2_st().bit()),
+                &self.pdma_ahb_evt_out_eof_ch2_st().bit(),
             )
             .field(
                 "pdma_ahb_evt_out_total_eof_ch0_st",
-                &format_args!("{}", self.pdma_ahb_evt_out_total_eof_ch0_st().bit()),
+                &self.pdma_ahb_evt_out_total_eof_ch0_st().bit(),
             )
             .field(
                 "pdma_ahb_evt_out_total_eof_ch1_st",
-                &format_args!("{}", self.pdma_ahb_evt_out_total_eof_ch1_st().bit()),
+                &self.pdma_ahb_evt_out_total_eof_ch1_st().bit(),
             )
             .field(
                 "pdma_ahb_evt_out_total_eof_ch2_st",
-                &format_args!("{}", self.pdma_ahb_evt_out_total_eof_ch2_st().bit()),
+                &self.pdma_ahb_evt_out_total_eof_ch2_st().bit(),
             )
             .field(
                 "pdma_ahb_evt_out_fifo_empty_ch0_st",
-                &format_args!("{}", self.pdma_ahb_evt_out_fifo_empty_ch0_st().bit()),
+                &self.pdma_ahb_evt_out_fifo_empty_ch0_st().bit(),
             )
             .field(
                 "pdma_ahb_evt_out_fifo_empty_ch1_st",
-                &format_args!("{}", self.pdma_ahb_evt_out_fifo_empty_ch1_st().bit()),
+                &self.pdma_ahb_evt_out_fifo_empty_ch1_st().bit(),
             )
             .field(
                 "pdma_ahb_evt_out_fifo_empty_ch2_st",
-                &format_args!("{}", self.pdma_ahb_evt_out_fifo_empty_ch2_st().bit()),
+                &self.pdma_ahb_evt_out_fifo_empty_ch2_st().bit(),
             )
             .field(
                 "pdma_ahb_evt_out_fifo_full_ch0_st",
-                &format_args!("{}", self.pdma_ahb_evt_out_fifo_full_ch0_st().bit()),
+                &self.pdma_ahb_evt_out_fifo_full_ch0_st().bit(),
             )
             .field(
                 "pdma_ahb_evt_out_fifo_full_ch1_st",
-                &format_args!("{}", self.pdma_ahb_evt_out_fifo_full_ch1_st().bit()),
+                &self.pdma_ahb_evt_out_fifo_full_ch1_st().bit(),
             )
             .finish()
     }
@@ -671,10 +653,6 @@ impl crate::Readable for EVT_ST5_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`evt_st5::W`](W) writer structure"]
 impl crate::Writable for EVT_ST5_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets EVT_ST5 to value 0"]
-impl crate::Resettable for EVT_ST5_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for EVT_ST5_SPEC {}

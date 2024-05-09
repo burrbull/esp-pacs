@@ -13,10 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("RD_MAC_SPI_SYS_5")
-            .field(
-                "sys_data_part0_2",
-                &format_args!("{}", self.sys_data_part0_2().bits()),
-            )
+            .field("sys_data_part0_2", &self.sys_data_part0_2().bits())
             .finish()
     }
 }
@@ -34,6 +31,4 @@ impl crate::RegisterSpec for RD_MAC_SPI_SYS_5_SPEC {
 #[doc = "`read()` method returns [`rd_mac_spi_sys_5::R`](R) reader structure"]
 impl crate::Readable for RD_MAC_SPI_SYS_5_SPEC {}
 #[doc = "`reset()` method sets RD_MAC_SPI_SYS_5 to value 0"]
-impl crate::Resettable for RD_MAC_SPI_SYS_5_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for RD_MAC_SPI_SYS_5_SPEC {}

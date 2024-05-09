@@ -13,7 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("RX_CH2_COUNTER")
-            .field("rx_ch2_cnt", &format_args!("{}", self.rx_ch2_cnt().bits()))
+            .field("rx_ch2_cnt", &self.rx_ch2_cnt().bits())
             .finish()
     }
 }
@@ -31,6 +31,4 @@ impl crate::RegisterSpec for RX_CH2_COUNTER_SPEC {
 #[doc = "`read()` method returns [`rx_ch2_counter::R`](R) reader structure"]
 impl crate::Readable for RX_CH2_COUNTER_SPEC {}
 #[doc = "`reset()` method sets RX_CH2_COUNTER to value 0"]
-impl crate::Resettable for RX_CH2_COUNTER_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for RX_CH2_COUNTER_SPEC {}

@@ -26,8 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("DPI_V_CFG1")
-            .field("vbank", &format_args!("{}", self.vbank().bits()))
-            .field("vsync", &format_args!("{}", self.vsync().bits()))
+            .field("vbank", &self.vbank().bits())
+            .field("vsync", &self.vsync().bits())
             .finish()
     }
 }
@@ -61,8 +61,6 @@ impl crate::Readable for DPI_V_CFG1_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`dpi_v_cfg1::W`](W) writer structure"]
 impl crate::Writable for DPI_V_CFG1_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets DPI_V_CFG1 to value 0x0002_0021"]
 impl crate::Resettable for DPI_V_CFG1_SPEC {

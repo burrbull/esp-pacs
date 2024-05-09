@@ -35,18 +35,12 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PRO_CPU_RECORD_CTRL")
-            .field(
-                "pro_cpu_record_enable",
-                &format_args!("{}", self.pro_cpu_record_enable().bit()),
-            )
+            .field("pro_cpu_record_enable", &self.pro_cpu_record_enable().bit())
             .field(
                 "pro_cpu_record_disable",
-                &format_args!("{}", self.pro_cpu_record_disable().bit()),
+                &self.pro_cpu_record_disable().bit(),
             )
-            .field(
-                "pro_cpu_pdebug_enable",
-                &format_args!("{}", self.pro_cpu_pdebug_enable().bit()),
-            )
+            .field("pro_cpu_pdebug_enable", &self.pro_cpu_pdebug_enable().bit())
             .finish()
     }
 }
@@ -86,8 +80,6 @@ impl crate::Readable for PRO_CPU_RECORD_CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`pro_cpu_record_ctrl::W`](W) writer structure"]
 impl crate::Writable for PRO_CPU_RECORD_CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets PRO_CPU_RECORD_CTRL to value 0x0100"]
 impl crate::Resettable for PRO_CPU_RECORD_CTRL_SPEC {

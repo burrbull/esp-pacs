@@ -62,29 +62,23 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("COCPU_INT_RAW")
-            .field(
-                "cocpu_saradc1_int_raw",
-                &format_args!("{}", self.cocpu_saradc1_int_raw().bit()),
-            )
-            .field(
-                "cocpu_saradc2_int_raw",
-                &format_args!("{}", self.cocpu_saradc2_int_raw().bit()),
-            )
+            .field("cocpu_saradc1_int_raw", &self.cocpu_saradc1_int_raw().bit())
+            .field("cocpu_saradc2_int_raw", &self.cocpu_saradc2_int_raw().bit())
             .field(
                 "cocpu_saradc1_error_int_raw",
-                &format_args!("{}", self.cocpu_saradc1_error_int_raw().bit()),
+                &self.cocpu_saradc1_error_int_raw().bit(),
             )
             .field(
                 "cocpu_saradc2_error_int_raw",
-                &format_args!("{}", self.cocpu_saradc2_error_int_raw().bit()),
+                &self.cocpu_saradc2_error_int_raw().bit(),
             )
             .field(
                 "cocpu_saradc1_wake_int_raw",
-                &format_args!("{}", self.cocpu_saradc1_wake_int_raw().bit()),
+                &self.cocpu_saradc1_wake_int_raw().bit(),
             )
             .field(
                 "cocpu_saradc2_wake_int_raw",
-                &format_args!("{}", self.cocpu_saradc2_wake_int_raw().bit()),
+                &self.cocpu_saradc2_wake_int_raw().bit(),
             )
             .finish()
     }
@@ -151,10 +145,6 @@ impl crate::Readable for COCPU_INT_RAW_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`cocpu_int_raw::W`](W) writer structure"]
 impl crate::Writable for COCPU_INT_RAW_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets COCPU_INT_RAW to value 0"]
-impl crate::Resettable for COCPU_INT_RAW_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for COCPU_INT_RAW_SPEC {}

@@ -19,7 +19,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("VALUE_UPDATE")
-            .field("bypass", &format_args!("{}", self.bypass().bit()))
+            .field("bypass", &self.bypass().bit())
             .finish()
     }
 }
@@ -53,10 +53,6 @@ impl crate::Readable for VALUE_UPDATE_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`value_update::W`](W) writer structure"]
 impl crate::Writable for VALUE_UPDATE_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets VALUE_UPDATE to value 0"]
-impl crate::Resettable for VALUE_UPDATE_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for VALUE_UPDATE_SPEC {}

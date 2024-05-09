@@ -13,7 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CLEAN")
-            .field("clean", &format_args!("{}", self.clean().bit()))
+            .field("clean", &self.clean().bit())
             .finish()
     }
 }
@@ -31,6 +31,4 @@ impl crate::RegisterSpec for CLEAN_SPEC {
 #[doc = "`read()` method returns [`clean::R`](R) reader structure"]
 impl crate::Readable for CLEAN_SPEC {}
 #[doc = "`reset()` method sets CLEAN to value 0"]
-impl crate::Resettable for CLEAN_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for CLEAN_SPEC {}

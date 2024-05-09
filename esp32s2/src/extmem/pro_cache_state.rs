@@ -20,14 +20,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PRO_CACHE_STATE")
-            .field(
-                "pro_icache_state",
-                &format_args!("{}", self.pro_icache_state().bits()),
-            )
-            .field(
-                "pro_dcache_state",
-                &format_args!("{}", self.pro_dcache_state().bits()),
-            )
+            .field("pro_icache_state", &self.pro_icache_state().bits())
+            .field("pro_dcache_state", &self.pro_dcache_state().bits())
             .finish()
     }
 }
@@ -45,6 +39,4 @@ impl crate::RegisterSpec for PRO_CACHE_STATE_SPEC {
 #[doc = "`read()` method returns [`pro_cache_state::R`](R) reader structure"]
 impl crate::Readable for PRO_CACHE_STATE_SPEC {}
 #[doc = "`reset()` method sets PRO_CACHE_STATE to value 0"]
-impl crate::Resettable for PRO_CACHE_STATE_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for PRO_CACHE_STATE_SPEC {}

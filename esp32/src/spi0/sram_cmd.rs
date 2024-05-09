@@ -35,9 +35,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SRAM_CMD")
-            .field("sram_dio", &format_args!("{}", self.sram_dio().bit()))
-            .field("sram_qio", &format_args!("{}", self.sram_qio().bit()))
-            .field("sram_rstio", &format_args!("{}", self.sram_rstio().bit()))
+            .field("sram_dio", &self.sram_dio().bit())
+            .field("sram_qio", &self.sram_qio().bit())
+            .field("sram_rstio", &self.sram_rstio().bit())
             .finish()
     }
 }
@@ -77,10 +77,6 @@ impl crate::Readable for SRAM_CMD_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`sram_cmd::W`](W) writer structure"]
 impl crate::Writable for SRAM_CMD_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SRAM_CMD to value 0"]
-impl crate::Resettable for SRAM_CMD_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for SRAM_CMD_SPEC {}

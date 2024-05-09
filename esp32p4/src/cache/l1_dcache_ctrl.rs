@@ -58,30 +58,12 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("L1_DCACHE_CTRL")
-            .field(
-                "l1_dcache_shut_dbus0",
-                &format_args!("{}", self.l1_dcache_shut_dbus0().bit()),
-            )
-            .field(
-                "l1_dcache_shut_dbus1",
-                &format_args!("{}", self.l1_dcache_shut_dbus1().bit()),
-            )
-            .field(
-                "l1_dcache_shut_dbus2",
-                &format_args!("{}", self.l1_dcache_shut_dbus2().bit()),
-            )
-            .field(
-                "l1_dcache_shut_dbus3",
-                &format_args!("{}", self.l1_dcache_shut_dbus3().bit()),
-            )
-            .field(
-                "l1_dcache_shut_dma",
-                &format_args!("{}", self.l1_dcache_shut_dma().bit()),
-            )
-            .field(
-                "l1_dcache_undef_op",
-                &format_args!("{}", self.l1_dcache_undef_op().bits()),
-            )
+            .field("l1_dcache_shut_dbus0", &self.l1_dcache_shut_dbus0().bit())
+            .field("l1_dcache_shut_dbus1", &self.l1_dcache_shut_dbus1().bit())
+            .field("l1_dcache_shut_dbus2", &self.l1_dcache_shut_dbus2().bit())
+            .field("l1_dcache_shut_dbus3", &self.l1_dcache_shut_dbus3().bit())
+            .field("l1_dcache_shut_dma", &self.l1_dcache_shut_dma().bit())
+            .field("l1_dcache_undef_op", &self.l1_dcache_undef_op().bits())
             .finish()
     }
 }
@@ -127,10 +109,6 @@ impl crate::Readable for L1_DCACHE_CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`l1_dcache_ctrl::W`](W) writer structure"]
 impl crate::Writable for L1_DCACHE_CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets L1_DCACHE_CTRL to value 0"]
-impl crate::Resettable for L1_DCACHE_CTRL_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for L1_DCACHE_CTRL_SPEC {}

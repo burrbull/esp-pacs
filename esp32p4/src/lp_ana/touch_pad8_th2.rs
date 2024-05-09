@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("TOUCH_PAD8_TH2")
-            .field(
-                "touch_pad8_th2",
-                &format_args!("{}", self.touch_pad8_th2().bits()),
-            )
+            .field("touch_pad8_th2", &self.touch_pad8_th2().bits())
             .finish()
     }
 }
@@ -48,10 +45,6 @@ impl crate::Readable for TOUCH_PAD8_TH2_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`touch_pad8_th2::W`](W) writer structure"]
 impl crate::Writable for TOUCH_PAD8_TH2_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets TOUCH_PAD8_TH2 to value 0"]
-impl crate::Resettable for TOUCH_PAD8_TH2_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for TOUCH_PAD8_TH2_SPEC {}

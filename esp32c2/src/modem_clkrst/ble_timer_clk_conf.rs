@@ -26,13 +26,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("BLE_TIMER_CLK_CONF")
-            .field(
-                "bletimer_use_xtal",
-                &format_args!("{}", self.bletimer_use_xtal().bit()),
-            )
+            .field("bletimer_use_xtal", &self.bletimer_use_xtal().bit())
             .field(
                 "bletimer_clk_is_active",
-                &format_args!("{}", self.bletimer_clk_is_active().bit()),
+                &self.bletimer_clk_is_active().bit(),
             )
             .finish()
     }
@@ -67,8 +64,6 @@ impl crate::Readable for BLE_TIMER_CLK_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`ble_timer_clk_conf::W`](W) writer structure"]
 impl crate::Writable for BLE_TIMER_CLK_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets BLE_TIMER_CLK_CONF to value 0x03"]
 impl crate::Resettable for BLE_TIMER_CLK_CONF_SPEC {

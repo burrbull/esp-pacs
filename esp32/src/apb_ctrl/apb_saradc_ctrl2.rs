@@ -44,22 +44,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("APB_SARADC_CTRL2")
-            .field(
-                "saradc_meas_num_limit",
-                &format_args!("{}", self.saradc_meas_num_limit().bit()),
-            )
-            .field(
-                "saradc_max_meas_num",
-                &format_args!("{}", self.saradc_max_meas_num().bits()),
-            )
-            .field(
-                "saradc_sar1_inv",
-                &format_args!("{}", self.saradc_sar1_inv().bit()),
-            )
-            .field(
-                "saradc_sar2_inv",
-                &format_args!("{}", self.saradc_sar2_inv().bit()),
-            )
+            .field("saradc_meas_num_limit", &self.saradc_meas_num_limit().bit())
+            .field("saradc_max_meas_num", &self.saradc_max_meas_num().bits())
+            .field("saradc_sar1_inv", &self.saradc_sar1_inv().bit())
+            .field("saradc_sar2_inv", &self.saradc_sar2_inv().bit())
             .finish()
     }
 }
@@ -105,8 +93,6 @@ impl crate::Readable for APB_SARADC_CTRL2_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`apb_saradc_ctrl2::W`](W) writer structure"]
 impl crate::Writable for APB_SARADC_CTRL2_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets APB_SARADC_CTRL2 to value 0x01fe"]
 impl crate::Resettable for APB_SARADC_CTRL2_SPEC {

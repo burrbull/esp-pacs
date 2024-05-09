@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("AHB_MPU_TABLE_0")
-            .field(
-                "ahb_access_grant_0",
-                &format_args!("{}", self.ahb_access_grant_0().bits()),
-            )
+            .field("ahb_access_grant_0", &self.ahb_access_grant_0().bits())
             .finish()
     }
 }
@@ -48,8 +45,6 @@ impl crate::Readable for AHB_MPU_TABLE_0_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`ahb_mpu_table_0::W`](W) writer structure"]
 impl crate::Writable for AHB_MPU_TABLE_0_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets AHB_MPU_TABLE_0 to value 0xffff_ffff"]
 impl crate::Resettable for AHB_MPU_TABLE_0_SPEC {

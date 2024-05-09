@@ -71,34 +71,16 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("AMP_CTRL3")
-            .field(
-                "sar1_dac_xpd_fsm",
-                &format_args!("{}", self.sar1_dac_xpd_fsm().bits()),
-            )
-            .field(
-                "xpd_sar_amp_fsm",
-                &format_args!("{}", self.xpd_sar_amp_fsm().bits()),
-            )
-            .field(
-                "amp_rst_fb_fsm",
-                &format_args!("{}", self.amp_rst_fb_fsm().bits()),
-            )
-            .field(
-                "amp_short_ref_fsm",
-                &format_args!("{}", self.amp_short_ref_fsm().bits()),
-            )
+            .field("sar1_dac_xpd_fsm", &self.sar1_dac_xpd_fsm().bits())
+            .field("xpd_sar_amp_fsm", &self.xpd_sar_amp_fsm().bits())
+            .field("amp_rst_fb_fsm", &self.amp_rst_fb_fsm().bits())
+            .field("amp_short_ref_fsm", &self.amp_short_ref_fsm().bits())
             .field(
                 "amp_short_ref_gnd_fsm",
-                &format_args!("{}", self.amp_short_ref_gnd_fsm().bits()),
+                &self.amp_short_ref_gnd_fsm().bits(),
             )
-            .field(
-                "xpd_sar_fsm",
-                &format_args!("{}", self.xpd_sar_fsm().bits()),
-            )
-            .field(
-                "sar_rstb_fsm",
-                &format_args!("{}", self.sar_rstb_fsm().bits()),
-            )
+            .field("xpd_sar_fsm", &self.xpd_sar_fsm().bits())
+            .field("sar_rstb_fsm", &self.sar_rstb_fsm().bits())
             .finish()
     }
 }
@@ -162,8 +144,6 @@ impl crate::Readable for AMP_CTRL3_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`amp_ctrl3::W`](W) writer structure"]
 impl crate::Writable for AMP_CTRL3_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets AMP_CTRL3 to value 0x0073_38f3"]
 impl crate::Resettable for AMP_CTRL3_SPEC {

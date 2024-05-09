@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("XTS_DATE")
-            .field(
-                "spi_xts_date",
-                &format_args!("{}", self.spi_xts_date().bits()),
-            )
+            .field("spi_xts_date", &self.spi_xts_date().bits())
             .finish()
     }
 }
@@ -48,8 +45,6 @@ impl crate::Readable for XTS_DATE_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`xts_date::W`](W) writer structure"]
 impl crate::Writable for XTS_DATE_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets XTS_DATE to value 0x2020_1010"]
 impl crate::Resettable for XTS_DATE_SPEC {

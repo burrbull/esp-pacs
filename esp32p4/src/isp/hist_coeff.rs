@@ -35,9 +35,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("HIST_COEFF")
-            .field("b", &format_args!("{}", self.b().bits()))
-            .field("g", &format_args!("{}", self.g().bits()))
-            .field("r", &format_args!("{}", self.r().bits()))
+            .field("b", &self.b().bits())
+            .field("g", &self.g().bits())
+            .field("r", &self.r().bits())
             .finish()
     }
 }
@@ -77,8 +77,6 @@ impl crate::Readable for HIST_COEFF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`hist_coeff::W`](W) writer structure"]
 impl crate::Writable for HIST_COEFF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets HIST_COEFF to value 0x0055_5555"]
 impl crate::Resettable for HIST_COEFF_SPEC {

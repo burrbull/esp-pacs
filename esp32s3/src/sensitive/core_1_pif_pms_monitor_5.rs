@@ -35,26 +35,19 @@ impl core::fmt::Debug for R {
         f.debug_struct("CORE_1_PIF_PMS_MONITOR_5")
             .field(
                 "core_1_pif_pms_monitor_nonword_violate_intr",
-                &format_args!(
-                    "{}",
-                    self.core_1_pif_pms_monitor_nonword_violate_intr().bit()
-                ),
+                &self.core_1_pif_pms_monitor_nonword_violate_intr().bit(),
             )
             .field(
                 "core_1_pif_pms_monitor_nonword_violate_status_hsize",
-                &format_args!(
-                    "{}",
-                    self.core_1_pif_pms_monitor_nonword_violate_status_hsize()
-                        .bits()
-                ),
+                &self
+                    .core_1_pif_pms_monitor_nonword_violate_status_hsize()
+                    .bits(),
             )
             .field(
                 "core_1_pif_pms_monitor_nonword_violate_status_hworld",
-                &format_args!(
-                    "{}",
-                    self.core_1_pif_pms_monitor_nonword_violate_status_hworld()
-                        .bits()
-                ),
+                &self
+                    .core_1_pif_pms_monitor_nonword_violate_status_hworld()
+                    .bits(),
             )
             .finish()
     }
@@ -73,6 +66,4 @@ impl crate::RegisterSpec for CORE_1_PIF_PMS_MONITOR_5_SPEC {
 #[doc = "`read()` method returns [`core_1_pif_pms_monitor_5::R`](R) reader structure"]
 impl crate::Readable for CORE_1_PIF_PMS_MONITOR_5_SPEC {}
 #[doc = "`reset()` method sets CORE_1_PIF_PMS_MONITOR_5 to value 0"]
-impl crate::Resettable for CORE_1_PIF_PMS_MONITOR_5_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for CORE_1_PIF_PMS_MONITOR_5_SPEC {}

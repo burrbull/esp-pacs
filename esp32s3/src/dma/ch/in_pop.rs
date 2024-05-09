@@ -24,11 +24,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("IN_POP")
-            .field(
-                "infifo_rdata",
-                &format_args!("{}", self.infifo_rdata().bits()),
-            )
-            .field("infifo_pop", &format_args!("{}", self.infifo_pop().bit()))
+            .field("infifo_rdata", &self.infifo_rdata().bits())
+            .field("infifo_pop", &self.infifo_pop().bit())
             .finish()
     }
 }
@@ -56,8 +53,6 @@ impl crate::Readable for IN_POP_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`in_pop::W`](W) writer structure"]
 impl crate::Writable for IN_POP_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets IN_POP to value 0x0800"]
 impl crate::Resettable for IN_POP_SPEC {

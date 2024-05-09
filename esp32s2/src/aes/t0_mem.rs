@@ -13,7 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("T0_MEM")
-            .field("t0", &format_args!("{}", self.t0().bits()))
+            .field("t0", &self.t0().bits())
             .finish()
     }
 }
@@ -31,6 +31,4 @@ impl crate::RegisterSpec for T0_MEM_SPEC {
 #[doc = "`read()` method returns [`t0_mem::R`](R) reader structure"]
 impl crate::Readable for T0_MEM_SPEC {}
 #[doc = "`reset()` method sets T0_MEM[%s] to value 0"]
-impl crate::Resettable for T0_MEM_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for T0_MEM_SPEC {}

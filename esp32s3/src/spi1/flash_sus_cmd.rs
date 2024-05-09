@@ -62,21 +62,12 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("FLASH_SUS_CMD")
-            .field("flash_per", &format_args!("{}", self.flash_per().bit()))
-            .field("flash_pes", &format_args!("{}", self.flash_pes().bit()))
-            .field(
-                "flash_per_wait_en",
-                &format_args!("{}", self.flash_per_wait_en().bit()),
-            )
-            .field(
-                "flash_pes_wait_en",
-                &format_args!("{}", self.flash_pes_wait_en().bit()),
-            )
-            .field("pes_per_en", &format_args!("{}", self.pes_per_en().bit()))
-            .field(
-                "pesr_idle_en",
-                &format_args!("{}", self.pesr_idle_en().bit()),
-            )
+            .field("flash_per", &self.flash_per().bit())
+            .field("flash_pes", &self.flash_pes().bit())
+            .field("flash_per_wait_en", &self.flash_per_wait_en().bit())
+            .field("flash_pes_wait_en", &self.flash_pes_wait_en().bit())
+            .field("pes_per_en", &self.pes_per_en().bit())
+            .field("pesr_idle_en", &self.pesr_idle_en().bit())
             .finish()
     }
 }
@@ -134,10 +125,6 @@ impl crate::Readable for FLASH_SUS_CMD_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`flash_sus_cmd::W`](W) writer structure"]
 impl crate::Writable for FLASH_SUS_CMD_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets FLASH_SUS_CMD to value 0"]
-impl crate::Resettable for FLASH_SUS_CMD_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for FLASH_SUS_CMD_SPEC {}

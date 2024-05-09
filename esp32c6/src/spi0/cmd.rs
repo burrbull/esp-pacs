@@ -27,9 +27,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CMD")
-            .field("mst_st", &format_args!("{}", self.mst_st().bits()))
-            .field("slv_st", &format_args!("{}", self.slv_st().bits()))
-            .field("usr", &format_args!("{}", self.usr().bit()))
+            .field("mst_st", &self.mst_st().bits())
+            .field("slv_st", &self.slv_st().bits())
+            .field("usr", &self.usr().bit())
             .finish()
     }
 }
@@ -47,6 +47,4 @@ impl crate::RegisterSpec for CMD_SPEC {
 #[doc = "`read()` method returns [`cmd::R`](R) reader structure"]
 impl crate::Readable for CMD_SPEC {}
 #[doc = "`reset()` method sets CMD to value 0"]
-impl crate::Resettable for CMD_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for CMD_SPEC {}

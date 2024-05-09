@@ -30,8 +30,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("TRIGGER")
-            .field("mem_loop", &format_args!("{}", self.mem_loop().bit()))
-            .field("restart_ena", &format_args!("{}", self.restart_ena().bit()))
+            .field("mem_loop", &self.mem_loop().bit())
+            .field("restart_ena", &self.restart_ena().bit())
             .finish()
     }
 }
@@ -77,8 +77,6 @@ impl crate::Readable for TRIGGER_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`trigger::W`](W) writer structure"]
 impl crate::Writable for TRIGGER_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets TRIGGER to value 0x0c"]
 impl crate::Resettable for TRIGGER_SPEC {

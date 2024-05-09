@@ -19,7 +19,7 @@ impl core::fmt::Debug for R {
         f.debug_struct("GPIO_INTERRUPT_APP_NMI_MAP")
             .field(
                 "gpio_interrupt_app_nmi_map",
-                &format_args!("{}", self.gpio_interrupt_app_nmi_map().bits()),
+                &self.gpio_interrupt_app_nmi_map().bits(),
             )
             .finish()
     }
@@ -50,8 +50,6 @@ impl crate::Readable for GPIO_INTERRUPT_APP_NMI_MAP_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`gpio_interrupt_app_nmi_map::W`](W) writer structure"]
 impl crate::Writable for GPIO_INTERRUPT_APP_NMI_MAP_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets GPIO_INTERRUPT_APP_NMI_MAP to value 0x10"]
 impl crate::Resettable for GPIO_INTERRUPT_APP_NMI_MAP_SPEC {

@@ -19,7 +19,7 @@ impl core::fmt::Debug for R {
         f.debug_struct("CACHE_DATAARRAY_CONNECT_1")
             .field(
                 "cache_dataarray_connect_flatten",
-                &format_args!("{}", self.cache_dataarray_connect_flatten().bits()),
+                &self.cache_dataarray_connect_flatten().bits(),
             )
             .finish()
     }
@@ -50,8 +50,6 @@ impl crate::Readable for CACHE_DATAARRAY_CONNECT_1_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`cache_dataarray_connect_1::W`](W) writer structure"]
 impl crate::Writable for CACHE_DATAARRAY_CONNECT_1_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CACHE_DATAARRAY_CONNECT_1 to value 0xff"]
 impl crate::Resettable for CACHE_DATAARRAY_CONNECT_1_SPEC {

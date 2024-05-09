@@ -26,14 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("USER1")
-            .field(
-                "usr_dummy_cyclelen",
-                &format_args!("{}", self.usr_dummy_cyclelen().bits()),
-            )
-            .field(
-                "usr_addr_bitlen",
-                &format_args!("{}", self.usr_addr_bitlen().bits()),
-            )
+            .field("usr_dummy_cyclelen", &self.usr_dummy_cyclelen().bits())
+            .field("usr_addr_bitlen", &self.usr_addr_bitlen().bits())
             .finish()
     }
 }
@@ -67,8 +61,6 @@ impl crate::Readable for USER1_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`user1::W`](W) writer structure"]
 impl crate::Writable for USER1_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets USER1 to value 0xb800_0007"]
 impl crate::Resettable for USER1_SPEC {

@@ -19,7 +19,7 @@ impl core::fmt::Debug for R {
         f.debug_struct("PRO_BOOT_LOCATION_0")
             .field(
                 "pro_boot_location_lock",
-                &format_args!("{}", self.pro_boot_location_lock().bit()),
+                &self.pro_boot_location_lock().bit(),
             )
             .finish()
     }
@@ -48,10 +48,6 @@ impl crate::Readable for PRO_BOOT_LOCATION_0_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`pro_boot_location_0::W`](W) writer structure"]
 impl crate::Writable for PRO_BOOT_LOCATION_0_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets PRO_BOOT_LOCATION_0 to value 0"]
-impl crate::Resettable for PRO_BOOT_LOCATION_0_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for PRO_BOOT_LOCATION_0_SPEC {}

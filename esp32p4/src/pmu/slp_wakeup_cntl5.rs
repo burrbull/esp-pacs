@@ -26,14 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SLP_WAKEUP_CNTL5")
-            .field(
-                "modem_wait_target",
-                &format_args!("{}", self.modem_wait_target().bits()),
-            )
-            .field(
-                "lp_ana_wait_target",
-                &format_args!("{}", self.lp_ana_wait_target().bits()),
-            )
+            .field("modem_wait_target", &self.modem_wait_target().bits())
+            .field("lp_ana_wait_target", &self.lp_ana_wait_target().bits())
             .finish()
     }
 }
@@ -67,8 +61,6 @@ impl crate::Readable for SLP_WAKEUP_CNTL5_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`slp_wakeup_cntl5::W`](W) writer structure"]
 impl crate::Writable for SLP_WAKEUP_CNTL5_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SLP_WAKEUP_CNTL5 to value 0x0100_0080"]
 impl crate::Resettable for SLP_WAKEUP_CNTL5_SPEC {

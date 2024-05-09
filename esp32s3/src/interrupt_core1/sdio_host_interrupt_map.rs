@@ -19,7 +19,7 @@ impl core::fmt::Debug for R {
         f.debug_struct("SDIO_HOST_INTERRUPT_MAP")
             .field(
                 "sdio_host_interrupt_map",
-                &format_args!("{}", self.sdio_host_interrupt_map().bits()),
+                &self.sdio_host_interrupt_map().bits(),
             )
             .finish()
     }
@@ -50,8 +50,6 @@ impl crate::Readable for SDIO_HOST_INTERRUPT_MAP_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`sdio_host_interrupt_map::W`](W) writer structure"]
 impl crate::Writable for SDIO_HOST_INTERRUPT_MAP_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SDIO_HOST_INTERRUPT_MAP to value 0x10"]
 impl crate::Resettable for SDIO_HOST_INTERRUPT_MAP_SPEC {

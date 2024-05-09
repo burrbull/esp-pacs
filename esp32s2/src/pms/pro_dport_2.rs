@@ -19,7 +19,7 @@ impl core::fmt::Debug for R {
         f.debug_struct("PRO_DPORT_2")
             .field(
                 "pro_dport_reserve_fifo_0",
-                &format_args!("{}", self.pro_dport_reserve_fifo_0().bits()),
+                &self.pro_dport_reserve_fifo_0().bits(),
             )
             .finish()
     }
@@ -48,10 +48,6 @@ impl crate::Readable for PRO_DPORT_2_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`pro_dport_2::W`](W) writer structure"]
 impl crate::Writable for PRO_DPORT_2_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets PRO_DPORT_2 to value 0"]
-impl crate::Resettable for PRO_DPORT_2_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for PRO_DPORT_2_SPEC {}

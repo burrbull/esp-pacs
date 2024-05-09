@@ -13,7 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("HI")
-            .field("value_hi", &format_args!("{}", self.value_hi().bits()))
+            .field("value_hi", &self.value_hi().bits())
             .finish()
     }
 }
@@ -31,6 +31,4 @@ impl crate::RegisterSpec for HI_SPEC {
 #[doc = "`read()` method returns [`hi::R`](R) reader structure"]
 impl crate::Readable for HI_SPEC {}
 #[doc = "`reset()` method sets HI to value 0"]
-impl crate::Resettable for HI_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for HI_SPEC {}

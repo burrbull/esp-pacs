@@ -89,41 +89,17 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SPI_SMEM_DIN_HEX_MODE")
-            .field(
-                "spi_smem_din08_mode",
-                &format_args!("{}", self.spi_smem_din08_mode().bits()),
-            )
-            .field(
-                "spi_smem_din09_mode",
-                &format_args!("{}", self.spi_smem_din09_mode().bits()),
-            )
-            .field(
-                "spi_smem_din10_mode",
-                &format_args!("{}", self.spi_smem_din10_mode().bits()),
-            )
-            .field(
-                "spi_smem_din11_mode",
-                &format_args!("{}", self.spi_smem_din11_mode().bits()),
-            )
-            .field(
-                "spi_smem_din12_mode",
-                &format_args!("{}", self.spi_smem_din12_mode().bits()),
-            )
-            .field(
-                "spi_smem_din13_mode",
-                &format_args!("{}", self.spi_smem_din13_mode().bits()),
-            )
-            .field(
-                "spi_smem_din14_mode",
-                &format_args!("{}", self.spi_smem_din14_mode().bits()),
-            )
-            .field(
-                "spi_smem_din15_mode",
-                &format_args!("{}", self.spi_smem_din15_mode().bits()),
-            )
+            .field("spi_smem_din08_mode", &self.spi_smem_din08_mode().bits())
+            .field("spi_smem_din09_mode", &self.spi_smem_din09_mode().bits())
+            .field("spi_smem_din10_mode", &self.spi_smem_din10_mode().bits())
+            .field("spi_smem_din11_mode", &self.spi_smem_din11_mode().bits())
+            .field("spi_smem_din12_mode", &self.spi_smem_din12_mode().bits())
+            .field("spi_smem_din13_mode", &self.spi_smem_din13_mode().bits())
+            .field("spi_smem_din14_mode", &self.spi_smem_din14_mode().bits())
+            .field("spi_smem_din15_mode", &self.spi_smem_din15_mode().bits())
             .field(
                 "spi_smem_dins_hex_mode",
-                &format_args!("{}", self.spi_smem_dins_hex_mode().bits()),
+                &self.spi_smem_dins_hex_mode().bits(),
             )
             .finish()
     }
@@ -202,10 +178,6 @@ impl crate::Readable for SPI_SMEM_DIN_HEX_MODE_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`spi_smem_din_hex_mode::W`](W) writer structure"]
 impl crate::Writable for SPI_SMEM_DIN_HEX_MODE_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SPI_SMEM_DIN_HEX_MODE to value 0"]
-impl crate::Resettable for SPI_SMEM_DIN_HEX_MODE_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for SPI_SMEM_DIN_HEX_MODE_SPEC {}

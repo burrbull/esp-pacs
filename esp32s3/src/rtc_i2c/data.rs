@@ -31,12 +31,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("DATA")
-            .field("i2c_rdata", &format_args!("{}", self.i2c_rdata().bits()))
-            .field(
-                "slave_tx_data",
-                &format_args!("{}", self.slave_tx_data().bits()),
-            )
-            .field("i2c_done", &format_args!("{}", self.i2c_done().bit()))
+            .field("i2c_rdata", &self.i2c_rdata().bits())
+            .field("slave_tx_data", &self.slave_tx_data().bits())
+            .field("i2c_done", &self.i2c_done().bit())
             .finish()
     }
 }
@@ -64,10 +61,6 @@ impl crate::Readable for DATA_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`data::W`](W) writer structure"]
 impl crate::Writable for DATA_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets DATA to value 0"]
-impl crate::Resettable for DATA_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for DATA_SPEC {}

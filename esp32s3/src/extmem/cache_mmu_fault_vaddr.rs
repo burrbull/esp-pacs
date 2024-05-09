@@ -15,7 +15,7 @@ impl core::fmt::Debug for R {
         f.debug_struct("CACHE_MMU_FAULT_VADDR")
             .field(
                 "cache_mmu_fault_vaddr",
-                &format_args!("{}", self.cache_mmu_fault_vaddr().bits()),
+                &self.cache_mmu_fault_vaddr().bits(),
             )
             .finish()
     }
@@ -34,6 +34,4 @@ impl crate::RegisterSpec for CACHE_MMU_FAULT_VADDR_SPEC {
 #[doc = "`read()` method returns [`cache_mmu_fault_vaddr::R`](R) reader structure"]
 impl crate::Readable for CACHE_MMU_FAULT_VADDR_SPEC {}
 #[doc = "`reset()` method sets CACHE_MMU_FAULT_VADDR to value 0"]
-impl crate::Resettable for CACHE_MMU_FAULT_VADDR_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for CACHE_MMU_FAULT_VADDR_SPEC {}

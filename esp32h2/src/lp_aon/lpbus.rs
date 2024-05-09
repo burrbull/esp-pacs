@@ -72,38 +72,20 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("LPBUS")
-            .field(
-                "fast_mem_wpulse",
-                &format_args!("{}", self.fast_mem_wpulse().bits()),
-            )
-            .field(
-                "fast_mem_wa",
-                &format_args!("{}", self.fast_mem_wa().bits()),
-            )
-            .field(
-                "fast_mem_ra",
-                &format_args!("{}", self.fast_mem_ra().bits()),
-            )
-            .field(
-                "fast_mem_rm",
-                &format_args!("{}", self.fast_mem_rm().bits()),
-            )
-            .field(
-                "fast_mem_mux_fsm_idle",
-                &format_args!("{}", self.fast_mem_mux_fsm_idle().bit()),
-            )
+            .field("fast_mem_wpulse", &self.fast_mem_wpulse().bits())
+            .field("fast_mem_wa", &self.fast_mem_wa().bits())
+            .field("fast_mem_ra", &self.fast_mem_ra().bits())
+            .field("fast_mem_rm", &self.fast_mem_rm().bits())
+            .field("fast_mem_mux_fsm_idle", &self.fast_mem_mux_fsm_idle().bit())
             .field(
                 "fast_mem_mux_sel_status",
-                &format_args!("{}", self.fast_mem_mux_sel_status().bit()),
+                &self.fast_mem_mux_sel_status().bit(),
             )
             .field(
                 "fast_mem_mux_sel_update",
-                &format_args!("{}", self.fast_mem_mux_sel_update().bit()),
+                &self.fast_mem_mux_sel_update().bit(),
             )
-            .field(
-                "fast_mem_mux_sel",
-                &format_args!("{}", self.fast_mem_mux_sel().bit()),
-            )
+            .field("fast_mem_mux_sel", &self.fast_mem_mux_sel().bit())
             .finish()
     }
 }
@@ -149,8 +131,6 @@ impl crate::Readable for LPBUS_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`lpbus::W`](W) writer structure"]
 impl crate::Writable for LPBUS_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets LPBUS to value 0x0228_0000"]
 impl crate::Resettable for LPBUS_SPEC {

@@ -53,26 +53,17 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PLC_CONF1")
-            .field(
-                "bad_cef_atten_para",
-                &format_args!("{}", self.bad_cef_atten_para().bits()),
-            )
+            .field("bad_cef_atten_para", &self.bad_cef_atten_para().bits())
             .field(
                 "bad_cef_atten_para_shift",
-                &format_args!("{}", self.bad_cef_atten_para_shift().bits()),
+                &self.bad_cef_atten_para_shift().bits(),
             )
             .field(
                 "bad_ola_win2_para_shift",
-                &format_args!("{}", self.bad_ola_win2_para_shift().bits()),
+                &self.bad_ola_win2_para_shift().bits(),
             )
-            .field(
-                "bad_ola_win2_para",
-                &format_args!("{}", self.bad_ola_win2_para().bits()),
-            )
-            .field(
-                "slide_win_len",
-                &format_args!("{}", self.slide_win_len().bits()),
-            )
+            .field("bad_ola_win2_para", &self.bad_ola_win2_para().bits())
+            .field("slide_win_len", &self.slide_win_len().bits())
             .finish()
     }
 }
@@ -124,8 +115,6 @@ impl crate::Readable for PLC_CONF1_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`plc_conf1::W`](W) writer structure"]
 impl crate::Writable for PLC_CONF1_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets PLC_CONF1 to value 0xa017_8a05"]
 impl crate::Resettable for PLC_CONF1_SPEC {

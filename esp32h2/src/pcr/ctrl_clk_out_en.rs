@@ -71,25 +71,13 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CTRL_CLK_OUT_EN")
-            .field("clk8_oen", &format_args!("{}", self.clk8_oen().bit()))
-            .field("clk16_oen", &format_args!("{}", self.clk16_oen().bit()))
-            .field("clk32_oen", &format_args!("{}", self.clk32_oen().bit()))
-            .field(
-                "clk_adc_inf_oen",
-                &format_args!("{}", self.clk_adc_inf_oen().bit()),
-            )
-            .field(
-                "clk_dfm_inf_oen",
-                &format_args!("{}", self.clk_dfm_inf_oen().bit()),
-            )
-            .field(
-                "clk_sdm_mod_oen",
-                &format_args!("{}", self.clk_sdm_mod_oen().bit()),
-            )
-            .field(
-                "clk_xtal_oen",
-                &format_args!("{}", self.clk_xtal_oen().bit()),
-            )
+            .field("clk8_oen", &self.clk8_oen().bit())
+            .field("clk16_oen", &self.clk16_oen().bit())
+            .field("clk32_oen", &self.clk32_oen().bit())
+            .field("clk_adc_inf_oen", &self.clk_adc_inf_oen().bit())
+            .field("clk_dfm_inf_oen", &self.clk_dfm_inf_oen().bit())
+            .field("clk_sdm_mod_oen", &self.clk_sdm_mod_oen().bit())
+            .field("clk_xtal_oen", &self.clk_xtal_oen().bit())
             .finish()
     }
 }
@@ -153,8 +141,6 @@ impl crate::Readable for CTRL_CLK_OUT_EN_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`ctrl_clk_out_en::W`](W) writer structure"]
 impl crate::Writable for CTRL_CLK_OUT_EN_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CTRL_CLK_OUT_EN to value 0x7f"]
 impl crate::Resettable for CTRL_CLK_OUT_EN_SPEC {

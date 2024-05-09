@@ -34,22 +34,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("DECODER_STATUS4")
-            .field(
-                "block_eof_cnt",
-                &format_args!("{}", self.block_eof_cnt().bits()),
-            )
-            .field(
-                "dezigzag_ready",
-                &format_args!("{}", self.dezigzag_ready().bit()),
-            )
-            .field(
-                "de_frame_eof_check",
-                &format_args!("{}", self.de_frame_eof_check().bit()),
-            )
-            .field(
-                "de_dma2d_in_push",
-                &format_args!("{}", self.de_dma2d_in_push().bit()),
-            )
+            .field("block_eof_cnt", &self.block_eof_cnt().bits())
+            .field("dezigzag_ready", &self.dezigzag_ready().bit())
+            .field("de_frame_eof_check", &self.de_frame_eof_check().bit())
+            .field("de_dma2d_in_push", &self.de_dma2d_in_push().bit())
             .finish()
     }
 }
@@ -67,6 +55,4 @@ impl crate::RegisterSpec for DECODER_STATUS4_SPEC {
 #[doc = "`read()` method returns [`decoder_status4::R`](R) reader structure"]
 impl crate::Readable for DECODER_STATUS4_SPEC {}
 #[doc = "`reset()` method sets DECODER_STATUS4 to value 0"]
-impl crate::Resettable for DECODER_STATUS4_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for DECODER_STATUS4_SPEC {}

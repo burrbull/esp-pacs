@@ -26,14 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("AWB_TH_LUM")
-            .field(
-                "awb_min_lum",
-                &format_args!("{}", self.awb_min_lum().bits()),
-            )
-            .field(
-                "awb_max_lum",
-                &format_args!("{}", self.awb_max_lum().bits()),
-            )
+            .field("awb_min_lum", &self.awb_min_lum().bits())
+            .field("awb_max_lum", &self.awb_max_lum().bits())
             .finish()
     }
 }
@@ -67,8 +61,6 @@ impl crate::Readable for AWB_TH_LUM_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`awb_th_lum::W`](W) writer structure"]
 impl crate::Writable for AWB_TH_LUM_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets AWB_TH_LUM to value 0x02fd_0000"]
 impl crate::Resettable for AWB_TH_LUM_SPEC {

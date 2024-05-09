@@ -56,29 +56,23 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SDIO_SLAVE_ECO_CONF")
-            .field(
-                "sdio_slave_rdn_result",
-                &format_args!("{}", self.sdio_slave_rdn_result().bit()),
-            )
-            .field(
-                "sdio_slave_rdn_ena",
-                &format_args!("{}", self.sdio_slave_rdn_ena().bit()),
-            )
+            .field("sdio_slave_rdn_result", &self.sdio_slave_rdn_result().bit())
+            .field("sdio_slave_rdn_ena", &self.sdio_slave_rdn_ena().bit())
             .field(
                 "sdio_slave_sdio_clk_rdn_result",
-                &format_args!("{}", self.sdio_slave_sdio_clk_rdn_result().bit()),
+                &self.sdio_slave_sdio_clk_rdn_result().bit(),
             )
             .field(
                 "sdio_slave_sdio_clk_rdn_ena",
-                &format_args!("{}", self.sdio_slave_sdio_clk_rdn_ena().bit()),
+                &self.sdio_slave_sdio_clk_rdn_ena().bit(),
             )
             .field(
                 "sdio_slave_sdclk_pad_rdn_result",
-                &format_args!("{}", self.sdio_slave_sdclk_pad_rdn_result().bit()),
+                &self.sdio_slave_sdclk_pad_rdn_result().bit(),
             )
             .field(
                 "sdio_slave_sdclk_pad_rdn_ena",
-                &format_args!("{}", self.sdio_slave_sdclk_pad_rdn_ena().bit()),
+                &self.sdio_slave_sdclk_pad_rdn_ena().bit(),
             )
             .finish()
     }
@@ -123,10 +117,6 @@ impl crate::Readable for SDIO_SLAVE_ECO_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`sdio_slave_eco_conf::W`](W) writer structure"]
 impl crate::Writable for SDIO_SLAVE_ECO_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SDIO_SLAVE_ECO_CONF to value 0"]
-impl crate::Resettable for SDIO_SLAVE_ECO_CONF_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for SDIO_SLAVE_ECO_CONF_SPEC {}

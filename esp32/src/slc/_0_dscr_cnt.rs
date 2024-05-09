@@ -20,14 +20,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("_0_DSCR_CNT")
-            .field(
-                "slc0_rx_dscr_cnt_lat",
-                &format_args!("{}", self.slc0_rx_dscr_cnt_lat().bits()),
-            )
-            .field(
-                "slc0_rx_get_eof_occ",
-                &format_args!("{}", self.slc0_rx_get_eof_occ().bit()),
-            )
+            .field("slc0_rx_dscr_cnt_lat", &self.slc0_rx_dscr_cnt_lat().bits())
+            .field("slc0_rx_get_eof_occ", &self.slc0_rx_get_eof_occ().bit())
             .finish()
     }
 }
@@ -45,6 +39,4 @@ impl crate::RegisterSpec for _0_DSCR_CNT_SPEC {
 #[doc = "`read()` method returns [`_0_dscr_cnt::R`](R) reader structure"]
 impl crate::Readable for _0_DSCR_CNT_SPEC {}
 #[doc = "`reset()` method sets _0_DSCR_CNT to value 0"]
-impl crate::Resettable for _0_DSCR_CNT_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for _0_DSCR_CNT_SPEC {}

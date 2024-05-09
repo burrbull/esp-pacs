@@ -35,15 +35,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("DSC_PARAMETER")
-            .field(
-                "compression_mode",
-                &format_args!("{}", self.compression_mode().bit()),
-            )
-            .field(
-                "compress_algo",
-                &format_args!("{}", self.compress_algo().bits()),
-            )
-            .field("pps_sel", &format_args!("{}", self.pps_sel().bits()))
+            .field("compression_mode", &self.compression_mode().bit())
+            .field("compress_algo", &self.compress_algo().bits())
+            .field("pps_sel", &self.pps_sel().bits())
             .finish()
     }
 }
@@ -83,10 +77,6 @@ impl crate::Readable for DSC_PARAMETER_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`dsc_parameter::W`](W) writer structure"]
 impl crate::Writable for DSC_PARAMETER_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets DSC_PARAMETER to value 0"]
-impl crate::Resettable for DSC_PARAMETER_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for DSC_PARAMETER_SPEC {}

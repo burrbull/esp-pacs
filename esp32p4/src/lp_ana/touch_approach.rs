@@ -44,13 +44,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("TOUCH_APPROACH")
-            .field("pad0", &format_args!("{}", self.pad0().bits()))
-            .field("pad1", &format_args!("{}", self.pad1().bits()))
-            .field("pad2", &format_args!("{}", self.pad2().bits()))
-            .field(
-                "touch_slp_approach_en",
-                &format_args!("{}", self.touch_slp_approach_en().bit()),
-            )
+            .field("pad0", &self.pad0().bits())
+            .field("pad1", &self.pad1().bits())
+            .field("pad2", &self.pad2().bits())
+            .field("touch_slp_approach_en", &self.touch_slp_approach_en().bit())
             .finish()
     }
 }
@@ -96,8 +93,6 @@ impl crate::Readable for TOUCH_APPROACH_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`touch_approach::W`](W) writer structure"]
 impl crate::Writable for TOUCH_APPROACH_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets TOUCH_APPROACH to value 0x0fff"]
 impl crate::Resettable for TOUCH_APPROACH_SPEC {

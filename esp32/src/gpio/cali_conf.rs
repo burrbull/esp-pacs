@@ -26,11 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("cali_conf")
-            .field(
-                "cali_rtc_max",
-                &format_args!("{}", self.cali_rtc_max().bits()),
-            )
-            .field("cali_start", &format_args!("{}", self.cali_start().bit()))
+            .field("cali_rtc_max", &self.cali_rtc_max().bits())
+            .field("cali_start", &self.cali_start().bit())
             .finish()
     }
 }
@@ -64,10 +61,6 @@ impl crate::Readable for CALI_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`cali_conf::W`](W) writer structure"]
 impl crate::Writable for CALI_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets cali_conf to value 0"]
-impl crate::Resettable for CALI_CONF_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for CALI_CONF_SPEC {}

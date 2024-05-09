@@ -22,12 +22,9 @@ impl core::fmt::Debug for R {
         f.debug_struct("INTR_RAW")
             .field(
                 "fifo_overflow_intr_raw",
-                &format_args!("{}", self.fifo_overflow_intr_raw().bit()),
+                &self.fifo_overflow_intr_raw().bit(),
             )
-            .field(
-                "mem_full_intr_raw",
-                &format_args!("{}", self.mem_full_intr_raw().bit()),
-            )
+            .field("mem_full_intr_raw", &self.mem_full_intr_raw().bit())
             .finish()
     }
 }
@@ -45,6 +42,4 @@ impl crate::RegisterSpec for INTR_RAW_SPEC {
 #[doc = "`read()` method returns [`intr_raw::R`](R) reader structure"]
 impl crate::Readable for INTR_RAW_SPEC {}
 #[doc = "`reset()` method sets INTR_RAW to value 0"]
-impl crate::Resettable for INTR_RAW_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for INTR_RAW_SPEC {}

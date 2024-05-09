@@ -116,45 +116,18 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CONF2")
-            .field("camera_en", &format_args!("{}", self.camera_en().bit()))
-            .field(
-                "lcd_tx_wrx2_en",
-                &format_args!("{}", self.lcd_tx_wrx2_en().bit()),
-            )
-            .field(
-                "lcd_tx_sdx2_en",
-                &format_args!("{}", self.lcd_tx_sdx2_en().bit()),
-            )
-            .field(
-                "data_enable_test_en",
-                &format_args!("{}", self.data_enable_test_en().bit()),
-            )
-            .field("data_enable", &format_args!("{}", self.data_enable().bit()))
-            .field("lcd_en", &format_args!("{}", self.lcd_en().bit()))
-            .field(
-                "ext_adc_start_en",
-                &format_args!("{}", self.ext_adc_start_en().bit()),
-            )
-            .field(
-                "inter_valid_en",
-                &format_args!("{}", self.inter_valid_en().bit()),
-            )
-            .field(
-                "cam_sync_fifo_reset",
-                &format_args!("{}", self.cam_sync_fifo_reset().bit()),
-            )
-            .field(
-                "cam_clk_loopback",
-                &format_args!("{}", self.cam_clk_loopback().bit()),
-            )
-            .field(
-                "vsync_filter_en",
-                &format_args!("{}", self.vsync_filter_en().bit()),
-            )
-            .field(
-                "vsync_filter_thres",
-                &format_args!("{}", self.vsync_filter_thres().bits()),
-            )
+            .field("camera_en", &self.camera_en().bit())
+            .field("lcd_tx_wrx2_en", &self.lcd_tx_wrx2_en().bit())
+            .field("lcd_tx_sdx2_en", &self.lcd_tx_sdx2_en().bit())
+            .field("data_enable_test_en", &self.data_enable_test_en().bit())
+            .field("data_enable", &self.data_enable().bit())
+            .field("lcd_en", &self.lcd_en().bit())
+            .field("ext_adc_start_en", &self.ext_adc_start_en().bit())
+            .field("inter_valid_en", &self.inter_valid_en().bit())
+            .field("cam_sync_fifo_reset", &self.cam_sync_fifo_reset().bit())
+            .field("cam_clk_loopback", &self.cam_clk_loopback().bit())
+            .field("vsync_filter_en", &self.vsync_filter_en().bit())
+            .field("vsync_filter_thres", &self.vsync_filter_thres().bits())
             .finish()
     }
 }
@@ -248,10 +221,6 @@ impl crate::Readable for CONF2_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`conf2::W`](W) writer structure"]
 impl crate::Writable for CONF2_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CONF2 to value 0"]
-impl crate::Resettable for CONF2_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for CONF2_SPEC {}

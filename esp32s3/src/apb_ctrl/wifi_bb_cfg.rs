@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("WIFI_BB_CFG")
-            .field(
-                "wifi_bb_cfg",
-                &format_args!("{}", self.wifi_bb_cfg().bits()),
-            )
+            .field("wifi_bb_cfg", &self.wifi_bb_cfg().bits())
             .finish()
     }
 }
@@ -48,10 +45,6 @@ impl crate::Readable for WIFI_BB_CFG_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`wifi_bb_cfg::W`](W) writer structure"]
 impl crate::Writable for WIFI_BB_CFG_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets WIFI_BB_CFG to value 0"]
-impl crate::Resettable for WIFI_BB_CFG_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for WIFI_BB_CFG_SPEC {}

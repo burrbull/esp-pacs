@@ -46,22 +46,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("MEM_CTRL")
-            .field(
-                "lp_uart_wakeup_flag",
-                &format_args!("{}", self.lp_uart_wakeup_flag().bit()),
-            )
-            .field(
-                "lp_uart_wakeup_en",
-                &format_args!("{}", self.lp_uart_wakeup_en().bit()),
-            )
-            .field(
-                "lp_uart_mem_force_pd",
-                &format_args!("{}", self.lp_uart_mem_force_pd().bit()),
-            )
-            .field(
-                "lp_uart_mem_force_pu",
-                &format_args!("{}", self.lp_uart_mem_force_pu().bit()),
-            )
+            .field("lp_uart_wakeup_flag", &self.lp_uart_wakeup_flag().bit())
+            .field("lp_uart_wakeup_en", &self.lp_uart_wakeup_en().bit())
+            .field("lp_uart_mem_force_pd", &self.lp_uart_mem_force_pd().bit())
+            .field("lp_uart_mem_force_pu", &self.lp_uart_mem_force_pu().bit())
             .finish()
     }
 }
@@ -113,8 +101,6 @@ impl crate::Readable for MEM_CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`mem_ctrl::W`](W) writer structure"]
 impl crate::Writable for MEM_CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets MEM_CTRL to value 0x8000_0000"]
 impl crate::Resettable for MEM_CTRL_SPEC {

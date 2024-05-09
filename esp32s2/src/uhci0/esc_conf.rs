@@ -35,15 +35,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("ESC_CONF")
-            .field("seper_char", &format_args!("{}", self.seper_char().bits()))
-            .field(
-                "seper_esc_char0",
-                &format_args!("{}", self.seper_esc_char0().bits()),
-            )
-            .field(
-                "seper_esc_char1",
-                &format_args!("{}", self.seper_esc_char1().bits()),
-            )
+            .field("seper_char", &self.seper_char().bits())
+            .field("seper_esc_char0", &self.seper_esc_char0().bits())
+            .field("seper_esc_char1", &self.seper_esc_char1().bits())
             .finish()
     }
 }
@@ -83,8 +77,6 @@ impl crate::Readable for ESC_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`esc_conf::W`](W) writer structure"]
 impl crate::Writable for ESC_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets ESC_CONF%s to value 0x00dc_dbc0"]
 impl crate::Resettable for ESC_CONF_SPEC {

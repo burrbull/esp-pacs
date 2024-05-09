@@ -71,34 +71,13 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("BT_LPCK_DIV_FRAC")
-            .field(
-                "bt_lpck_div_b",
-                &format_args!("{}", self.bt_lpck_div_b().bits()),
-            )
-            .field(
-                "bt_lpck_div_a",
-                &format_args!("{}", self.bt_lpck_div_a().bits()),
-            )
-            .field(
-                "lpclk_sel_rtc_slow",
-                &format_args!("{}", self.lpclk_sel_rtc_slow().bit()),
-            )
-            .field(
-                "lpclk_sel_8m",
-                &format_args!("{}", self.lpclk_sel_8m().bit()),
-            )
-            .field(
-                "lpclk_sel_xtal",
-                &format_args!("{}", self.lpclk_sel_xtal().bit()),
-            )
-            .field(
-                "lpclk_sel_xtal32k",
-                &format_args!("{}", self.lpclk_sel_xtal32k().bit()),
-            )
-            .field(
-                "lpclk_rtc_en",
-                &format_args!("{}", self.lpclk_rtc_en().bit()),
-            )
+            .field("bt_lpck_div_b", &self.bt_lpck_div_b().bits())
+            .field("bt_lpck_div_a", &self.bt_lpck_div_a().bits())
+            .field("lpclk_sel_rtc_slow", &self.lpclk_sel_rtc_slow().bit())
+            .field("lpclk_sel_8m", &self.lpclk_sel_8m().bit())
+            .field("lpclk_sel_xtal", &self.lpclk_sel_xtal().bit())
+            .field("lpclk_sel_xtal32k", &self.lpclk_sel_xtal32k().bit())
+            .field("lpclk_rtc_en", &self.lpclk_rtc_en().bit())
             .finish()
     }
 }
@@ -162,8 +141,6 @@ impl crate::Readable for BT_LPCK_DIV_FRAC_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`bt_lpck_div_frac::W`](W) writer structure"]
 impl crate::Writable for BT_LPCK_DIV_FRAC_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets BT_LPCK_DIV_FRAC to value 0x0200_1001"]
 impl crate::Resettable for BT_LPCK_DIV_FRAC_SPEC {

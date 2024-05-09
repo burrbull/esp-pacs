@@ -17,7 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("ATTEN1")
-            .field("sar1_atten", &format_args!("{}", self.sar1_atten().bits()))
+            .field("sar1_atten", &self.sar1_atten().bits())
             .finish()
     }
 }
@@ -45,8 +45,6 @@ impl crate::Readable for ATTEN1_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`atten1::W`](W) writer structure"]
 impl crate::Writable for ATTEN1_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets ATTEN1 to value 0xffff_ffff"]
 impl crate::Resettable for ATTEN1_SPEC {

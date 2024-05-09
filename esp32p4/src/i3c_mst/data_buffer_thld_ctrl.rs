@@ -26,14 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("DATA_BUFFER_THLD_CTRL")
-            .field(
-                "reg_tx_data_buf_thld",
-                &format_args!("{}", self.reg_tx_data_buf_thld().bits()),
-            )
-            .field(
-                "reg_rx_data_buf_thld",
-                &format_args!("{}", self.reg_rx_data_buf_thld().bits()),
-            )
+            .field("reg_tx_data_buf_thld", &self.reg_tx_data_buf_thld().bits())
+            .field("reg_rx_data_buf_thld", &self.reg_rx_data_buf_thld().bits())
             .finish()
     }
 }
@@ -67,8 +61,6 @@ impl crate::Readable for DATA_BUFFER_THLD_CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`data_buffer_thld_ctrl::W`](W) writer structure"]
 impl crate::Writable for DATA_BUFFER_THLD_CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets DATA_BUFFER_THLD_CTRL to value 0x09"]
 impl crate::Resettable for DATA_BUFFER_THLD_CTRL_SPEC {

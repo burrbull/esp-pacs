@@ -62,24 +62,12 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("MEM_CONF")
-            .field("rx_size", &format_args!("{}", self.rx_size().bits()))
-            .field("tx_size", &format_args!("{}", self.tx_size().bits()))
-            .field(
-                "rx_flow_thrhd",
-                &format_args!("{}", self.rx_flow_thrhd().bits()),
-            )
-            .field(
-                "rx_tout_thrhd",
-                &format_args!("{}", self.rx_tout_thrhd().bits()),
-            )
-            .field(
-                "mem_force_pd",
-                &format_args!("{}", self.mem_force_pd().bit()),
-            )
-            .field(
-                "mem_force_pu",
-                &format_args!("{}", self.mem_force_pu().bit()),
-            )
+            .field("rx_size", &self.rx_size().bits())
+            .field("tx_size", &self.tx_size().bits())
+            .field("rx_flow_thrhd", &self.rx_flow_thrhd().bits())
+            .field("rx_tout_thrhd", &self.rx_tout_thrhd().bits())
+            .field("mem_force_pd", &self.mem_force_pd().bit())
+            .field("mem_force_pu", &self.mem_force_pu().bit())
             .finish()
     }
 }
@@ -137,8 +125,6 @@ impl crate::Readable for MEM_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`mem_conf::W`](W) writer structure"]
 impl crate::Writable for MEM_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets MEM_CONF to value 0x0014_0012"]
 impl crate::Resettable for MEM_CONF_SPEC {

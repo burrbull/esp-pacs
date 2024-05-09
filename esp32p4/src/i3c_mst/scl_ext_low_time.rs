@@ -46,19 +46,19 @@ impl core::fmt::Debug for R {
         f.debug_struct("SCL_EXT_LOW_TIME")
             .field(
                 "reg_i3c_mst_ext_low_period1",
-                &format_args!("{}", self.reg_i3c_mst_ext_low_period1().bits()),
+                &self.reg_i3c_mst_ext_low_period1().bits(),
             )
             .field(
                 "reg_i3c_mst_ext_low_period2",
-                &format_args!("{}", self.reg_i3c_mst_ext_low_period2().bits()),
+                &self.reg_i3c_mst_ext_low_period2().bits(),
             )
             .field(
                 "reg_i3c_mst_ext_low_period3",
-                &format_args!("{}", self.reg_i3c_mst_ext_low_period3().bits()),
+                &self.reg_i3c_mst_ext_low_period3().bits(),
             )
             .field(
                 "reg_i3c_mst_ext_low_period4",
-                &format_args!("{}", self.reg_i3c_mst_ext_low_period4().bits()),
+                &self.reg_i3c_mst_ext_low_period4().bits(),
             )
             .finish()
     }
@@ -113,10 +113,6 @@ impl crate::Readable for SCL_EXT_LOW_TIME_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`scl_ext_low_time::W`](W) writer structure"]
 impl crate::Writable for SCL_EXT_LOW_TIME_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SCL_EXT_LOW_TIME to value 0"]
-impl crate::Resettable for SCL_EXT_LOW_TIME_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for SCL_EXT_LOW_TIME_SPEC {}

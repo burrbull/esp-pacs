@@ -17,7 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("LOG_MIN")
-            .field("log_min", &format_args!("{}", self.log_min().bits()))
+            .field("log_min", &self.log_min().bits())
             .finish()
     }
 }
@@ -45,10 +45,6 @@ impl crate::Readable for LOG_MIN_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`log_min::W`](W) writer structure"]
 impl crate::Writable for LOG_MIN_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets LOG_MIN to value 0"]
-impl crate::Resettable for LOG_MIN_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for LOG_MIN_SPEC {}

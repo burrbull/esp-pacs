@@ -47,26 +47,11 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("FIFO_ST")
-            .field(
-                "rxfifo_start_addr",
-                &format_args!("{}", self.rxfifo_start_addr().bits()),
-            )
-            .field(
-                "rxfifo_end_addr",
-                &format_args!("{}", self.rxfifo_end_addr().bits()),
-            )
-            .field(
-                "txfifo_start_addr",
-                &format_args!("{}", self.txfifo_start_addr().bits()),
-            )
-            .field(
-                "txfifo_end_addr",
-                &format_args!("{}", self.txfifo_end_addr().bits()),
-            )
-            .field(
-                "slave_rw_point",
-                &format_args!("{}", self.slave_rw_point().bits()),
-            )
+            .field("rxfifo_start_addr", &self.rxfifo_start_addr().bits())
+            .field("rxfifo_end_addr", &self.rxfifo_end_addr().bits())
+            .field("txfifo_start_addr", &self.txfifo_start_addr().bits())
+            .field("txfifo_end_addr", &self.txfifo_end_addr().bits())
+            .field("slave_rw_point", &self.slave_rw_point().bits())
             .finish()
     }
 }
@@ -100,10 +85,6 @@ impl crate::Readable for FIFO_ST_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`fifo_st::W`](W) writer structure"]
 impl crate::Writable for FIFO_ST_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets FIFO_ST to value 0"]
-impl crate::Resettable for FIFO_ST_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for FIFO_ST_SPEC {}

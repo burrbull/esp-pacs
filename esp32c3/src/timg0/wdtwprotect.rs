@@ -17,7 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("WDTWPROTECT")
-            .field("wdt_wkey", &format_args!("{}", self.wdt_wkey().bits()))
+            .field("wdt_wkey", &self.wdt_wkey().bits())
             .finish()
     }
 }
@@ -45,8 +45,6 @@ impl crate::Readable for WDTWPROTECT_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`wdtwprotect::W`](W) writer structure"]
 impl crate::Writable for WDTWPROTECT_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets WDTWPROTECT to value 0x50d8_3aa1"]
 impl crate::Resettable for WDTWPROTECT_SPEC {

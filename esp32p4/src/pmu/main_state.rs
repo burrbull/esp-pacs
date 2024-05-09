@@ -38,21 +38,18 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("MAIN_STATE")
-            .field(
-                "enable_cali_pmu_cntl",
-                &format_args!("{}", self.enable_cali_pmu_cntl().bit()),
-            )
+            .field("enable_cali_pmu_cntl", &self.enable_cali_pmu_cntl().bit())
             .field(
                 "pmu_main_last_st_state",
-                &format_args!("{}", self.pmu_main_last_st_state().bits()),
+                &self.pmu_main_last_st_state().bits(),
             )
             .field(
                 "pmu_main_tar_st_state",
-                &format_args!("{}", self.pmu_main_tar_st_state().bits()),
+                &self.pmu_main_tar_st_state().bits(),
             )
             .field(
                 "pmu_main_cur_st_state",
-                &format_args!("{}", self.pmu_main_cur_st_state().bits()),
+                &self.pmu_main_cur_st_state().bits(),
             )
             .finish()
     }
@@ -81,8 +78,6 @@ impl crate::Readable for MAIN_STATE_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`main_state::W`](W) writer structure"]
 impl crate::Writable for MAIN_STATE_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets MAIN_STATE to value 0x0810_0801"]
 impl crate::Resettable for MAIN_STATE_SPEC {

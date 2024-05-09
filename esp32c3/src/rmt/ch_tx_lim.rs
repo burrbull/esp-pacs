@@ -37,15 +37,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CH_TX_LIM")
-            .field("tx_lim", &format_args!("{}", self.tx_lim().bits()))
-            .field(
-                "tx_loop_num",
-                &format_args!("{}", self.tx_loop_num().bits()),
-            )
-            .field(
-                "tx_loop_cnt_en",
-                &format_args!("{}", self.tx_loop_cnt_en().bit()),
-            )
+            .field("tx_lim", &self.tx_lim().bits())
+            .field("tx_loop_num", &self.tx_loop_num().bits())
+            .field("tx_loop_cnt_en", &self.tx_loop_cnt_en().bit())
             .finish()
     }
 }
@@ -91,8 +85,6 @@ impl crate::Readable for CH_TX_LIM_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`ch_tx_lim::W`](W) writer structure"]
 impl crate::Writable for CH_TX_LIM_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CH%s_TX_LIM to value 0x80"]
 impl crate::Resettable for CH_TX_LIM_SPEC {

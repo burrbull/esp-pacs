@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("MAC_DUMP_0")
-            .field(
-                "mac_dump_lock",
-                &format_args!("{}", self.mac_dump_lock().bit()),
-            )
+            .field("mac_dump_lock", &self.mac_dump_lock().bit())
             .finish()
     }
 }
@@ -48,10 +45,6 @@ impl crate::Readable for MAC_DUMP_0_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`mac_dump_0::W`](W) writer structure"]
 impl crate::Writable for MAC_DUMP_0_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets MAC_DUMP_0 to value 0"]
-impl crate::Resettable for MAC_DUMP_0_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for MAC_DUMP_0_SPEC {}

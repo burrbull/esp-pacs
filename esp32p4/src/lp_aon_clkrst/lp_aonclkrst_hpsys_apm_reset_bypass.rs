@@ -19,7 +19,7 @@ impl core::fmt::Debug for R {
         f.debug_struct("LP_AONCLKRST_HPSYS_APM_RESET_BYPASS")
             .field(
                 "lp_aonclkrst_hpsys_apm_reset_bypass",
-                &format_args!("{}", self.lp_aonclkrst_hpsys_apm_reset_bypass().bits()),
+                &self.lp_aonclkrst_hpsys_apm_reset_bypass().bits(),
             )
             .finish()
     }
@@ -50,8 +50,6 @@ impl crate::Readable for LP_AONCLKRST_HPSYS_APM_RESET_BYPASS_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`lp_aonclkrst_hpsys_apm_reset_bypass::W`](W) writer structure"]
 impl crate::Writable for LP_AONCLKRST_HPSYS_APM_RESET_BYPASS_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets LP_AONCLKRST_HPSYS_APM_RESET_BYPASS to value 0xffff_ffff"]
 impl crate::Resettable for LP_AONCLKRST_HPSYS_APM_RESET_BYPASS_SPEC {

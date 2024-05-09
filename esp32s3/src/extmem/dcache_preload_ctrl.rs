@@ -33,18 +33,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("DCACHE_PRELOAD_CTRL")
-            .field(
-                "dcache_preload_ena",
-                &format_args!("{}", self.dcache_preload_ena().bit()),
-            )
-            .field(
-                "dcache_preload_done",
-                &format_args!("{}", self.dcache_preload_done().bit()),
-            )
-            .field(
-                "dcache_preload_order",
-                &format_args!("{}", self.dcache_preload_order().bit()),
-            )
+            .field("dcache_preload_ena", &self.dcache_preload_ena().bit())
+            .field("dcache_preload_done", &self.dcache_preload_done().bit())
+            .field("dcache_preload_order", &self.dcache_preload_order().bit())
             .finish()
     }
 }
@@ -78,8 +69,6 @@ impl crate::Readable for DCACHE_PRELOAD_CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`dcache_preload_ctrl::W`](W) writer structure"]
 impl crate::Writable for DCACHE_PRELOAD_CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets DCACHE_PRELOAD_CTRL to value 0x02"]
 impl crate::Resettable for DCACHE_PRELOAD_CTRL_SPEC {

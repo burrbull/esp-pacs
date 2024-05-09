@@ -35,18 +35,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SAR_I2C_IO")
-            .field(
-                "sar_debug_bit_sel",
-                &format_args!("{}", self.sar_debug_bit_sel().bits()),
-            )
-            .field(
-                "sar_i2c_scl_sel",
-                &format_args!("{}", self.sar_i2c_scl_sel().bits()),
-            )
-            .field(
-                "sar_i2c_sda_sel",
-                &format_args!("{}", self.sar_i2c_sda_sel().bits()),
-            )
+            .field("sar_debug_bit_sel", &self.sar_debug_bit_sel().bits())
+            .field("sar_i2c_scl_sel", &self.sar_i2c_scl_sel().bits())
+            .field("sar_i2c_sda_sel", &self.sar_i2c_sda_sel().bits())
             .finish()
     }
 }
@@ -86,10 +77,6 @@ impl crate::Readable for SAR_I2C_IO_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`sar_i2c_io::W`](W) writer structure"]
 impl crate::Writable for SAR_I2C_IO_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SAR_I2C_IO to value 0"]
-impl crate::Resettable for SAR_I2C_IO_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for SAR_I2C_IO_SPEC {}

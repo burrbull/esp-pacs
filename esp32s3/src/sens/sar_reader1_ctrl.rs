@@ -53,26 +53,11 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SAR_READER1_CTRL")
-            .field(
-                "sar_sar1_clk_div",
-                &format_args!("{}", self.sar_sar1_clk_div().bits()),
-            )
-            .field(
-                "sar_sar1_clk_gated",
-                &format_args!("{}", self.sar_sar1_clk_gated().bit()),
-            )
-            .field(
-                "sar_sar1_sample_num",
-                &format_args!("{}", self.sar_sar1_sample_num().bits()),
-            )
-            .field(
-                "sar_sar1_data_inv",
-                &format_args!("{}", self.sar_sar1_data_inv().bit()),
-            )
-            .field(
-                "sar_sar1_int_en",
-                &format_args!("{}", self.sar_sar1_int_en().bit()),
-            )
+            .field("sar_sar1_clk_div", &self.sar_sar1_clk_div().bits())
+            .field("sar_sar1_clk_gated", &self.sar_sar1_clk_gated().bit())
+            .field("sar_sar1_sample_num", &self.sar_sar1_sample_num().bits())
+            .field("sar_sar1_data_inv", &self.sar_sar1_data_inv().bit())
+            .field("sar_sar1_int_en", &self.sar_sar1_int_en().bit())
             .finish()
     }
 }
@@ -124,8 +109,6 @@ impl crate::Readable for SAR_READER1_CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`sar_reader1_ctrl::W`](W) writer structure"]
 impl crate::Writable for SAR_READER1_CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SAR_READER1_CTRL to value 0x2004_0002"]
 impl crate::Resettable for SAR_READER1_CTRL_SPEC {

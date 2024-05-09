@@ -28,11 +28,11 @@ impl core::fmt::Debug for R {
         f.debug_struct("DATE")
             .field(
                 "lp_i2c_ana_mast_i2c_mat_date",
-                &format_args!("{}", self.lp_i2c_ana_mast_i2c_mat_date().bits()),
+                &self.lp_i2c_ana_mast_i2c_mat_date().bits(),
             )
             .field(
                 "lp_i2c_ana_mast_i2c_mat_clk_en",
-                &format_args!("{}", self.lp_i2c_ana_mast_i2c_mat_clk_en().bit()),
+                &self.lp_i2c_ana_mast_i2c_mat_clk_en().bit(),
             )
             .finish()
     }
@@ -69,8 +69,6 @@ impl crate::Readable for DATE_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`date::W`](W) writer structure"]
 impl crate::Writable for DATE_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets DATE to value 0x0200_7301"]
 impl crate::Resettable for DATE_SPEC {

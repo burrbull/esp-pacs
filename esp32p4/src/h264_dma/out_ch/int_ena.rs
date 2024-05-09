@@ -89,36 +89,15 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("INT_ENA")
-            .field("out_done", &format_args!("{}", self.out_done().bit()))
-            .field("out_eof", &format_args!("{}", self.out_eof().bit()))
-            .field(
-                "out_dscr_err",
-                &format_args!("{}", self.out_dscr_err().bit()),
-            )
-            .field(
-                "out_total_eof",
-                &format_args!("{}", self.out_total_eof().bit()),
-            )
-            .field(
-                "outfifo_ovf_l1",
-                &format_args!("{}", self.outfifo_ovf_l1().bit()),
-            )
-            .field(
-                "outfifo_udf_l1",
-                &format_args!("{}", self.outfifo_udf_l1().bit()),
-            )
-            .field(
-                "outfifo_ovf_l2",
-                &format_args!("{}", self.outfifo_ovf_l2().bit()),
-            )
-            .field(
-                "outfifo_udf_l2",
-                &format_args!("{}", self.outfifo_udf_l2().bit()),
-            )
-            .field(
-                "out_dscr_task_ovf",
-                &format_args!("{}", self.out_dscr_task_ovf().bit()),
-            )
+            .field("out_done", &self.out_done().bit())
+            .field("out_eof", &self.out_eof().bit())
+            .field("out_dscr_err", &self.out_dscr_err().bit())
+            .field("out_total_eof", &self.out_total_eof().bit())
+            .field("outfifo_ovf_l1", &self.outfifo_ovf_l1().bit())
+            .field("outfifo_udf_l1", &self.outfifo_udf_l1().bit())
+            .field("outfifo_ovf_l2", &self.outfifo_ovf_l2().bit())
+            .field("outfifo_udf_l2", &self.outfifo_udf_l2().bit())
+            .field("out_dscr_task_ovf", &self.out_dscr_task_ovf().bit())
             .finish()
     }
 }
@@ -194,10 +173,6 @@ impl crate::Readable for INT_ENA_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`int_ena::W`](W) writer structure"]
 impl crate::Writable for INT_ENA_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets INT_ENA to value 0"]
-impl crate::Resettable for INT_ENA_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for INT_ENA_SPEC {}

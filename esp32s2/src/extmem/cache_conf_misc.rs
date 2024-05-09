@@ -30,11 +30,11 @@ impl core::fmt::Debug for R {
         f.debug_struct("CACHE_CONF_MISC")
             .field(
                 "pro_cache_ignore_preload_mmu_entry_fault",
-                &format_args!("{}", self.pro_cache_ignore_preload_mmu_entry_fault().bit()),
+                &self.pro_cache_ignore_preload_mmu_entry_fault().bit(),
             )
             .field(
                 "pro_cache_ignore_sync_mmu_entry_fault",
-                &format_args!("{}", self.pro_cache_ignore_sync_mmu_entry_fault().bit()),
+                &self.pro_cache_ignore_sync_mmu_entry_fault().bit(),
             )
             .finish()
     }
@@ -73,8 +73,6 @@ impl crate::Readable for CACHE_CONF_MISC_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`cache_conf_misc::W`](W) writer structure"]
 impl crate::Writable for CACHE_CONF_MISC_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CACHE_CONF_MISC to value 0x03"]
 impl crate::Resettable for CACHE_CONF_MISC_SPEC {

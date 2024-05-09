@@ -28,11 +28,11 @@ impl core::fmt::Debug for R {
         f.debug_struct("CPU_SW_STALL")
             .field(
                 "hpcore1_sw_stall_code",
-                &format_args!("{}", self.hpcore1_sw_stall_code().bits()),
+                &self.hpcore1_sw_stall_code().bits(),
             )
             .field(
                 "hpcore0_sw_stall_code",
-                &format_args!("{}", self.hpcore0_sw_stall_code().bits()),
+                &self.hpcore0_sw_stall_code().bits(),
             )
             .finish()
     }
@@ -67,10 +67,6 @@ impl crate::Readable for CPU_SW_STALL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`cpu_sw_stall::W`](W) writer structure"]
 impl crate::Writable for CPU_SW_STALL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CPU_SW_STALL to value 0"]
-impl crate::Resettable for CPU_SW_STALL_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for CPU_SW_STALL_SPEC {}

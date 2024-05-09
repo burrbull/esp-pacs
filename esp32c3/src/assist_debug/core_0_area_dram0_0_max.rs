@@ -19,7 +19,7 @@ impl core::fmt::Debug for R {
         f.debug_struct("CORE_0_AREA_DRAM0_0_MAX")
             .field(
                 "core_0_area_dram0_0_max",
-                &format_args!("{}", self.core_0_area_dram0_0_max().bits()),
+                &self.core_0_area_dram0_0_max().bits(),
             )
             .finish()
     }
@@ -50,10 +50,6 @@ impl crate::Readable for CORE_0_AREA_DRAM0_0_MAX_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`core_0_area_dram0_0_max::W`](W) writer structure"]
 impl crate::Writable for CORE_0_AREA_DRAM0_0_MAX_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CORE_0_AREA_DRAM0_0_MAX to value 0"]
-impl crate::Resettable for CORE_0_AREA_DRAM0_0_MAX_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for CORE_0_AREA_DRAM0_0_MAX_SPEC {}

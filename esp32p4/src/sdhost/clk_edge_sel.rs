@@ -98,37 +98,16 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CLK_EDGE_SEL")
-            .field(
-                "cclkin_edge_drv_sel",
-                &format_args!("{}", self.cclkin_edge_drv_sel().bits()),
-            )
-            .field(
-                "cclkin_edge_sam_sel",
-                &format_args!("{}", self.cclkin_edge_sam_sel().bits()),
-            )
-            .field(
-                "cclkin_edge_slf_sel",
-                &format_args!("{}", self.cclkin_edge_slf_sel().bits()),
-            )
-            .field(
-                "ccllkin_edge_h",
-                &format_args!("{}", self.ccllkin_edge_h().bits()),
-            )
-            .field(
-                "ccllkin_edge_l",
-                &format_args!("{}", self.ccllkin_edge_l().bits()),
-            )
-            .field(
-                "ccllkin_edge_n",
-                &format_args!("{}", self.ccllkin_edge_n().bits()),
-            )
-            .field("esdio_mode", &format_args!("{}", self.esdio_mode().bit()))
-            .field("esd_mode", &format_args!("{}", self.esd_mode().bit()))
-            .field("cclk_en", &format_args!("{}", self.cclk_en().bit()))
-            .field(
-                "ultra_high_speed_mode",
-                &format_args!("{}", self.ultra_high_speed_mode().bit()),
-            )
+            .field("cclkin_edge_drv_sel", &self.cclkin_edge_drv_sel().bits())
+            .field("cclkin_edge_sam_sel", &self.cclkin_edge_sam_sel().bits())
+            .field("cclkin_edge_slf_sel", &self.cclkin_edge_slf_sel().bits())
+            .field("ccllkin_edge_h", &self.ccllkin_edge_h().bits())
+            .field("ccllkin_edge_l", &self.ccllkin_edge_l().bits())
+            .field("ccllkin_edge_n", &self.ccllkin_edge_n().bits())
+            .field("esdio_mode", &self.esdio_mode().bit())
+            .field("esd_mode", &self.esd_mode().bit())
+            .field("cclk_en", &self.cclk_en().bit())
+            .field("ultra_high_speed_mode", &self.ultra_high_speed_mode().bit())
             .finish()
     }
 }
@@ -210,8 +189,6 @@ impl crate::Readable for CLK_EDGE_SEL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`clk_edge_sel::W`](W) writer structure"]
 impl crate::Writable for CLK_EDGE_SEL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CLK_EDGE_SEL to value 0x0082_0200"]
 impl crate::Resettable for CLK_EDGE_SEL_SPEC {

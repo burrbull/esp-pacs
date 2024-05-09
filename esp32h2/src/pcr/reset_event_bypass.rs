@@ -26,11 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("RESET_EVENT_BYPASS")
-            .field("apm", &format_args!("{}", self.apm().bit()))
-            .field(
-                "reset_event_bypass",
-                &format_args!("{}", self.reset_event_bypass().bit()),
-            )
+            .field("apm", &self.apm().bit())
+            .field("reset_event_bypass", &self.reset_event_bypass().bit())
             .finish()
     }
 }
@@ -64,8 +61,6 @@ impl crate::Readable for RESET_EVENT_BYPASS_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`reset_event_bypass::W`](W) writer structure"]
 impl crate::Writable for RESET_EVENT_BYPASS_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets RESET_EVENT_BYPASS to value 0x02"]
 impl crate::Resettable for RESET_EVENT_BYPASS_SPEC {

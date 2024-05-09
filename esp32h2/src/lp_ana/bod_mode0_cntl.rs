@@ -82,36 +82,15 @@ impl core::fmt::Debug for R {
         f.debug_struct("BOD_MODE0_CNTL")
             .field(
                 "bod_mode0_close_flash_ena",
-                &format_args!("{}", self.bod_mode0_close_flash_ena().bit()),
+                &self.bod_mode0_close_flash_ena().bit(),
             )
-            .field(
-                "bod_mode0_pd_rf_ena",
-                &format_args!("{}", self.bod_mode0_pd_rf_ena().bit()),
-            )
-            .field(
-                "bod_mode0_intr_wait",
-                &format_args!("{}", self.bod_mode0_intr_wait().bits()),
-            )
-            .field(
-                "bod_mode0_reset_wait",
-                &format_args!("{}", self.bod_mode0_reset_wait().bits()),
-            )
-            .field(
-                "bod_mode0_cnt_clr",
-                &format_args!("{}", self.bod_mode0_cnt_clr().bit()),
-            )
-            .field(
-                "bod_mode0_intr_ena",
-                &format_args!("{}", self.bod_mode0_intr_ena().bit()),
-            )
-            .field(
-                "bod_mode0_reset_sel",
-                &format_args!("{}", self.bod_mode0_reset_sel().bit()),
-            )
-            .field(
-                "bod_mode0_reset_ena",
-                &format_args!("{}", self.bod_mode0_reset_ena().bit()),
-            )
+            .field("bod_mode0_pd_rf_ena", &self.bod_mode0_pd_rf_ena().bit())
+            .field("bod_mode0_intr_wait", &self.bod_mode0_intr_wait().bits())
+            .field("bod_mode0_reset_wait", &self.bod_mode0_reset_wait().bits())
+            .field("bod_mode0_cnt_clr", &self.bod_mode0_cnt_clr().bit())
+            .field("bod_mode0_intr_ena", &self.bod_mode0_intr_ena().bit())
+            .field("bod_mode0_reset_sel", &self.bod_mode0_reset_sel().bit())
+            .field("bod_mode0_reset_ena", &self.bod_mode0_reset_ena().bit())
             .finish()
     }
 }
@@ -183,8 +162,6 @@ impl crate::Readable for BOD_MODE0_CNTL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`bod_mode0_cntl::W`](W) writer structure"]
 impl crate::Writable for BOD_MODE0_CNTL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets BOD_MODE0_CNTL to value 0x0ffc_0100"]
 impl crate::Resettable for BOD_MODE0_CNTL_SPEC {

@@ -26,14 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("A_SYS_MB_RES")
-            .field(
-                "a_sys_total_mb_y",
-                &format_args!("{}", self.a_sys_total_mb_y().bits()),
-            )
-            .field(
-                "a_sys_total_mb_x",
-                &format_args!("{}", self.a_sys_total_mb_x().bits()),
-            )
+            .field("a_sys_total_mb_y", &self.a_sys_total_mb_y().bits())
+            .field("a_sys_total_mb_x", &self.a_sys_total_mb_x().bits())
             .finish()
     }
 }
@@ -67,10 +61,6 @@ impl crate::Readable for A_SYS_MB_RES_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`a_sys_mb_res::W`](W) writer structure"]
 impl crate::Writable for A_SYS_MB_RES_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets A_SYS_MB_RES to value 0"]
-impl crate::Resettable for A_SYS_MB_RES_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for A_SYS_MB_RES_SPEC {}

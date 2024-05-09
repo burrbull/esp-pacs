@@ -17,7 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("LOADLO")
-            .field("load_lo", &format_args!("{}", self.load_lo().bits()))
+            .field("load_lo", &self.load_lo().bits())
             .finish()
     }
 }
@@ -45,10 +45,6 @@ impl crate::Readable for LOADLO_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`loadlo::W`](W) writer structure"]
 impl crate::Writable for LOADLO_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets LOADLO to value 0"]
-impl crate::Resettable for LOADLO_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for LOADLO_SPEC {}

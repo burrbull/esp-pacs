@@ -13,10 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("FIFO_FLOW_STATUS")
-            .field(
-                "raw_buf_depth",
-                &format_args!("{}", self.raw_buf_depth().bits()),
-            )
+            .field("raw_buf_depth", &self.raw_buf_depth().bits())
             .finish()
     }
 }
@@ -34,6 +31,4 @@ impl crate::RegisterSpec for FIFO_FLOW_STATUS_SPEC {
 #[doc = "`read()` method returns [`fifo_flow_status::R`](R) reader structure"]
 impl crate::Readable for FIFO_FLOW_STATUS_SPEC {}
 #[doc = "`reset()` method sets FIFO_FLOW_STATUS to value 0"]
-impl crate::Resettable for FIFO_FLOW_STATUS_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for FIFO_FLOW_STATUS_SPEC {}

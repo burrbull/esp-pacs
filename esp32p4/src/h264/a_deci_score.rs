@@ -26,14 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("A_DECI_SCORE")
-            .field(
-                "a_c_deci_score",
-                &format_args!("{}", self.a_c_deci_score().bits()),
-            )
-            .field(
-                "a_l_deci_score",
-                &format_args!("{}", self.a_l_deci_score().bits()),
-            )
+            .field("a_c_deci_score", &self.a_c_deci_score().bits())
+            .field("a_l_deci_score", &self.a_l_deci_score().bits())
             .finish()
     }
 }
@@ -67,10 +61,6 @@ impl crate::Readable for A_DECI_SCORE_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`a_deci_score::W`](W) writer structure"]
 impl crate::Writable for A_DECI_SCORE_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets A_DECI_SCORE to value 0"]
-impl crate::Resettable for A_DECI_SCORE_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for A_DECI_SCORE_SPEC {}

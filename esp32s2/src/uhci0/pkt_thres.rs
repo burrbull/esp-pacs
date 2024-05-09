@@ -17,7 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PKT_THRES")
-            .field("pkt_thrs", &format_args!("{}", self.pkt_thrs().bits()))
+            .field("pkt_thrs", &self.pkt_thrs().bits())
             .finish()
     }
 }
@@ -45,8 +45,6 @@ impl crate::Readable for PKT_THRES_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`pkt_thres::W`](W) writer structure"]
 impl crate::Writable for PKT_THRES_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets PKT_THRES to value 0x80"]
 impl crate::Resettable for PKT_THRES_SPEC {

@@ -44,16 +44,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("MISC_CONF")
-            .field(
-                "ahbm_rst_inter",
-                &format_args!("{}", self.ahbm_rst_inter().bit()),
-            )
-            .field(
-                "ahbm_rst_exter",
-                &format_args!("{}", self.ahbm_rst_exter().bit()),
-            )
-            .field("arb_pri_dis", &format_args!("{}", self.arb_pri_dis().bit()))
-            .field("clk_en", &format_args!("{}", self.clk_en().bit()))
+            .field("ahbm_rst_inter", &self.ahbm_rst_inter().bit())
+            .field("ahbm_rst_exter", &self.ahbm_rst_exter().bit())
+            .field("arb_pri_dis", &self.arb_pri_dis().bit())
+            .field("clk_en", &self.clk_en().bit())
             .finish()
     }
 }
@@ -99,10 +93,6 @@ impl crate::Readable for MISC_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`misc_conf::W`](W) writer structure"]
 impl crate::Writable for MISC_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets MISC_CONF to value 0"]
-impl crate::Resettable for MISC_CONF_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for MISC_CONF_SPEC {}

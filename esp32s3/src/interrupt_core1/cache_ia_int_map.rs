@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CACHE_IA_INT_MAP")
-            .field(
-                "cache_ia_int_map",
-                &format_args!("{}", self.cache_ia_int_map().bits()),
-            )
+            .field("cache_ia_int_map", &self.cache_ia_int_map().bits())
             .finish()
     }
 }
@@ -48,8 +45,6 @@ impl crate::Readable for CACHE_IA_INT_MAP_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`cache_ia_int_map::W`](W) writer structure"]
 impl crate::Writable for CACHE_IA_INT_MAP_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CACHE_IA_INT_MAP to value 0x10"]
 impl crate::Resettable for CACHE_IA_INT_MAP_SPEC {

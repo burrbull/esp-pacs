@@ -33,9 +33,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("HMAC_CONF")
-            .field("hmac_clk_en", &format_args!("{}", self.hmac_clk_en().bit()))
-            .field("hmac_rst_en", &format_args!("{}", self.hmac_rst_en().bit()))
-            .field("hmac_ready", &format_args!("{}", self.hmac_ready().bit()))
+            .field("hmac_clk_en", &self.hmac_clk_en().bit())
+            .field("hmac_rst_en", &self.hmac_rst_en().bit())
+            .field("hmac_ready", &self.hmac_ready().bit())
             .finish()
     }
 }
@@ -69,8 +69,6 @@ impl crate::Readable for HMAC_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`hmac_conf::W`](W) writer structure"]
 impl crate::Writable for HMAC_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets HMAC_CONF to value 0x05"]
 impl crate::Resettable for HMAC_CONF_SPEC {

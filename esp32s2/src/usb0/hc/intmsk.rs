@@ -125,28 +125,19 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("INTMSK")
-            .field(
-                "xfercomplmsk",
-                &format_args!("{}", self.xfercomplmsk().bit()),
-            )
-            .field("chhltdmsk", &format_args!("{}", self.chhltdmsk().bit()))
-            .field("ahberrmsk", &format_args!("{}", self.ahberrmsk().bit()))
-            .field("stallmsk", &format_args!("{}", self.stallmsk().bit()))
-            .field("nakmsk", &format_args!("{}", self.nakmsk().bit()))
-            .field("ackmsk", &format_args!("{}", self.ackmsk().bit()))
-            .field("nyetmsk", &format_args!("{}", self.nyetmsk().bit()))
-            .field("xacterrmsk", &format_args!("{}", self.xacterrmsk().bit()))
-            .field("bblerrmsk", &format_args!("{}", self.bblerrmsk().bit()))
-            .field("frmovrunmsk", &format_args!("{}", self.frmovrunmsk().bit()))
-            .field(
-                "datatglerrmsk",
-                &format_args!("{}", self.datatglerrmsk().bit()),
-            )
-            .field("bnaintrmsk", &format_args!("{}", self.bnaintrmsk().bit()))
-            .field(
-                "desc_lst_rollintrmsk",
-                &format_args!("{}", self.desc_lst_rollintrmsk().bit()),
-            )
+            .field("xfercomplmsk", &self.xfercomplmsk().bit())
+            .field("chhltdmsk", &self.chhltdmsk().bit())
+            .field("ahberrmsk", &self.ahberrmsk().bit())
+            .field("stallmsk", &self.stallmsk().bit())
+            .field("nakmsk", &self.nakmsk().bit())
+            .field("ackmsk", &self.ackmsk().bit())
+            .field("nyetmsk", &self.nyetmsk().bit())
+            .field("xacterrmsk", &self.xacterrmsk().bit())
+            .field("bblerrmsk", &self.bblerrmsk().bit())
+            .field("frmovrunmsk", &self.frmovrunmsk().bit())
+            .field("datatglerrmsk", &self.datatglerrmsk().bit())
+            .field("bnaintrmsk", &self.bnaintrmsk().bit())
+            .field("desc_lst_rollintrmsk", &self.desc_lst_rollintrmsk().bit())
             .finish()
     }
 }
@@ -246,10 +237,6 @@ impl crate::Readable for INTMSK_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`intmsk::W`](W) writer structure"]
 impl crate::Writable for INTMSK_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets INTMSK to value 0"]
-impl crate::Resettable for INTMSK_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for INTMSK_SPEC {}

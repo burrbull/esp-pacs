@@ -44,21 +44,12 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("TIMER3")
-            .field(
-                "wifi_wait_timer",
-                &format_args!("{}", self.wifi_wait_timer().bits()),
-            )
-            .field(
-                "wifi_powerup_timer",
-                &format_args!("{}", self.wifi_powerup_timer().bits()),
-            )
-            .field(
-                "rom_ram_wait_timer",
-                &format_args!("{}", self.rom_ram_wait_timer().bits()),
-            )
+            .field("wifi_wait_timer", &self.wifi_wait_timer().bits())
+            .field("wifi_powerup_timer", &self.wifi_powerup_timer().bits())
+            .field("rom_ram_wait_timer", &self.rom_ram_wait_timer().bits())
             .field(
                 "rom_ram_powerup_timer",
-                &format_args!("{}", self.rom_ram_powerup_timer().bits()),
+                &self.rom_ram_powerup_timer().bits(),
             )
             .finish()
     }
@@ -105,8 +96,6 @@ impl crate::Readable for TIMER3_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`timer3::W`](W) writer structure"]
 impl crate::Writable for TIMER3_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets TIMER3 to value 0x1416_0a08"]
 impl crate::Resettable for TIMER3_SPEC {

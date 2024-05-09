@@ -26,11 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("RX_LUT_CFG0")
-            .field("rx_lut_idx", &format_args!("{}", self.rx_lut_idx().bits()))
-            .field(
-                "rx_lut_mode",
-                &format_args!("{}", self.rx_lut_mode().bits()),
-            )
+            .field("rx_lut_idx", &self.rx_lut_idx().bits())
+            .field("rx_lut_mode", &self.rx_lut_mode().bits())
             .finish()
     }
 }
@@ -64,10 +61,6 @@ impl crate::Readable for RX_LUT_CFG0_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`rx_lut_cfg0::W`](W) writer structure"]
 impl crate::Writable for RX_LUT_CFG0_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets RX_LUT_CFG0 to value 0"]
-impl crate::Resettable for RX_LUT_CFG0_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for RX_LUT_CFG0_SPEC {}

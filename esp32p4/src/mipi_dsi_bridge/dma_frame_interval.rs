@@ -44,19 +44,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("DMA_FRAME_INTERVAL")
-            .field(
-                "dma_frame_slot",
-                &format_args!("{}", self.dma_frame_slot().bits()),
-            )
-            .field(
-                "dma_frame_interval",
-                &format_args!("{}", self.dma_frame_interval().bits()),
-            )
-            .field(
-                "dma_multiblk_en",
-                &format_args!("{}", self.dma_multiblk_en().bit()),
-            )
-            .field("en", &format_args!("{}", self.en().bit()))
+            .field("dma_frame_slot", &self.dma_frame_slot().bits())
+            .field("dma_frame_interval", &self.dma_frame_interval().bits())
+            .field("dma_multiblk_en", &self.dma_multiblk_en().bit())
+            .field("en", &self.en().bit())
             .finish()
     }
 }
@@ -102,8 +93,6 @@ impl crate::Readable for DMA_FRAME_INTERVAL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`dma_frame_interval::W`](W) writer structure"]
 impl crate::Writable for DMA_FRAME_INTERVAL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets DMA_FRAME_INTERVAL to value 0x2000_2409"]
 impl crate::Resettable for DMA_FRAME_INTERVAL_SPEC {

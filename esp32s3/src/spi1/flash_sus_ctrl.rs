@@ -35,18 +35,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("FLASH_SUS_CTRL")
-            .field(
-                "flash_pes_en",
-                &format_args!("{}", self.flash_pes_en().bit()),
-            )
-            .field(
-                "flash_per_command",
-                &format_args!("{}", self.flash_per_command().bits()),
-            )
-            .field(
-                "flash_pes_command",
-                &format_args!("{}", self.flash_pes_command().bits()),
-            )
+            .field("flash_pes_en", &self.flash_pes_en().bit())
+            .field("flash_per_command", &self.flash_per_command().bits())
+            .field("flash_pes_command", &self.flash_pes_command().bits())
             .finish()
     }
 }
@@ -86,8 +77,6 @@ impl crate::Readable for FLASH_SUS_CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`flash_sus_ctrl::W`](W) writer structure"]
 impl crate::Writable for FLASH_SUS_CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets FLASH_SUS_CTRL to value 0xeaf4"]
 impl crate::Resettable for FLASH_SUS_CTRL_SPEC {

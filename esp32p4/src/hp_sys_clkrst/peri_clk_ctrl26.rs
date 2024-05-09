@@ -89,39 +89,18 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PERI_CLK_CTRL26")
-            .field(
-                "isp_clk_div_num",
-                &format_args!("{}", self.isp_clk_div_num().bits()),
-            )
-            .field(
-                "iomux_clk_src_sel",
-                &format_args!("{}", self.iomux_clk_src_sel().bit()),
-            )
-            .field(
-                "iomux_clk_en",
-                &format_args!("{}", self.iomux_clk_en().bit()),
-            )
-            .field(
-                "iomux_clk_div_num",
-                &format_args!("{}", self.iomux_clk_div_num().bits()),
-            )
-            .field(
-                "h264_clk_src_sel",
-                &format_args!("{}", self.h264_clk_src_sel().bit()),
-            )
-            .field("h264_clk_en", &format_args!("{}", self.h264_clk_en().bit()))
-            .field(
-                "h264_clk_div_num",
-                &format_args!("{}", self.h264_clk_div_num().bits()),
-            )
+            .field("isp_clk_div_num", &self.isp_clk_div_num().bits())
+            .field("iomux_clk_src_sel", &self.iomux_clk_src_sel().bit())
+            .field("iomux_clk_en", &self.iomux_clk_en().bit())
+            .field("iomux_clk_div_num", &self.iomux_clk_div_num().bits())
+            .field("h264_clk_src_sel", &self.h264_clk_src_sel().bit())
+            .field("h264_clk_en", &self.h264_clk_en().bit())
+            .field("h264_clk_div_num", &self.h264_clk_div_num().bits())
             .field(
                 "padbist_rx_clk_src_sel",
-                &format_args!("{}", self.padbist_rx_clk_src_sel().bit()),
+                &self.padbist_rx_clk_src_sel().bit(),
             )
-            .field(
-                "padbist_rx_clk_en",
-                &format_args!("{}", self.padbist_rx_clk_en().bit()),
-            )
+            .field("padbist_rx_clk_en", &self.padbist_rx_clk_en().bit())
             .finish()
     }
 }
@@ -197,8 +176,6 @@ impl crate::Readable for PERI_CLK_CTRL26_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`peri_clk_ctrl26::W`](W) writer structure"]
 impl crate::Writable for PERI_CLK_CTRL26_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets PERI_CLK_CTRL26 to value 0x0200"]
 impl crate::Resettable for PERI_CLK_CTRL26_SPEC {

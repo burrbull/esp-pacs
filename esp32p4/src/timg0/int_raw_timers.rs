@@ -40,9 +40,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("INT_RAW_TIMERS")
-            .field("t0", &format_args!("{}", self.t0().bit()))
-            .field("t1", &format_args!("{}", self.t1().bit()))
-            .field("wdt", &format_args!("{}", self.wdt().bit()))
+            .field("t0", &self.t0().bit())
+            .field("t1", &self.t1().bit())
+            .field("wdt", &self.wdt().bit())
             .finish()
     }
 }
@@ -60,6 +60,4 @@ impl crate::RegisterSpec for INT_RAW_TIMERS_SPEC {
 #[doc = "`read()` method returns [`int_raw_timers::R`](R) reader structure"]
 impl crate::Readable for INT_RAW_TIMERS_SPEC {}
 #[doc = "`reset()` method sets INT_RAW_TIMERS to value 0"]
-impl crate::Resettable for INT_RAW_TIMERS_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for INT_RAW_TIMERS_SPEC {}

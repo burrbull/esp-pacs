@@ -35,18 +35,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("TSENS_CLK_CONF")
-            .field(
-                "tsens_clk_sel",
-                &format_args!("{}", self.tsens_clk_sel().bit()),
-            )
-            .field(
-                "tsens_clk_en",
-                &format_args!("{}", self.tsens_clk_en().bit()),
-            )
-            .field(
-                "tsens_rst_en",
-                &format_args!("{}", self.tsens_rst_en().bit()),
-            )
+            .field("tsens_clk_sel", &self.tsens_clk_sel().bit())
+            .field("tsens_clk_en", &self.tsens_clk_en().bit())
+            .field("tsens_rst_en", &self.tsens_rst_en().bit())
             .finish()
     }
 }
@@ -86,8 +77,6 @@ impl crate::Readable for TSENS_CLK_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`tsens_clk_conf::W`](W) writer structure"]
 impl crate::Writable for TSENS_CLK_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets TSENS_CLK_CONF to value 0x0040_0000"]
 impl crate::Resettable for TSENS_CLK_CONF_SPEC {

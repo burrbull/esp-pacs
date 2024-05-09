@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("DCACHE_LOCK_SIZE")
-            .field(
-                "dcache_lock_size",
-                &format_args!("{}", self.dcache_lock_size().bits()),
-            )
+            .field("dcache_lock_size", &self.dcache_lock_size().bits())
             .finish()
     }
 }
@@ -48,10 +45,6 @@ impl crate::Readable for DCACHE_LOCK_SIZE_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`dcache_lock_size::W`](W) writer structure"]
 impl crate::Writable for DCACHE_LOCK_SIZE_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets DCACHE_LOCK_SIZE to value 0"]
-impl crate::Resettable for DCACHE_LOCK_SIZE_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for DCACHE_LOCK_SIZE_SPEC {}

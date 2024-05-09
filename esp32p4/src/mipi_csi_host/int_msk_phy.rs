@@ -44,22 +44,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("INT_MSK_PHY")
-            .field(
-                "mask_phy_errsoths_0",
-                &format_args!("{}", self.mask_phy_errsoths_0().bit()),
-            )
-            .field(
-                "mask_phy_errsoths_1",
-                &format_args!("{}", self.mask_phy_errsoths_1().bit()),
-            )
-            .field(
-                "mask_phy_erresc_0",
-                &format_args!("{}", self.mask_phy_erresc_0().bit()),
-            )
-            .field(
-                "mask_phy_erresc_1",
-                &format_args!("{}", self.mask_phy_erresc_1().bit()),
-            )
+            .field("mask_phy_errsoths_0", &self.mask_phy_errsoths_0().bit())
+            .field("mask_phy_errsoths_1", &self.mask_phy_errsoths_1().bit())
+            .field("mask_phy_erresc_0", &self.mask_phy_erresc_0().bit())
+            .field("mask_phy_erresc_1", &self.mask_phy_erresc_1().bit())
             .finish()
     }
 }
@@ -105,10 +93,6 @@ impl crate::Readable for INT_MSK_PHY_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`int_msk_phy::W`](W) writer structure"]
 impl crate::Writable for INT_MSK_PHY_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets INT_MSK_PHY to value 0"]
-impl crate::Resettable for INT_MSK_PHY_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for INT_MSK_PHY_SPEC {}

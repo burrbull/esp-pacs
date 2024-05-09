@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("EXT_MEM_WRITEBACK_BYPASS")
-            .field(
-                "writeback_bypass",
-                &format_args!("{}", self.writeback_bypass().bit()),
-            )
+            .field("writeback_bypass", &self.writeback_bypass().bit())
             .finish()
     }
 }
@@ -48,10 +45,6 @@ impl crate::Readable for EXT_MEM_WRITEBACK_BYPASS_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`ext_mem_writeback_bypass::W`](W) writer structure"]
 impl crate::Writable for EXT_MEM_WRITEBACK_BYPASS_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets EXT_MEM_WRITEBACK_BYPASS to value 0"]
-impl crate::Resettable for EXT_MEM_WRITEBACK_BYPASS_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for EXT_MEM_WRITEBACK_BYPASS_SPEC {}

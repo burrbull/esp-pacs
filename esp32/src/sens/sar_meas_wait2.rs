@@ -53,26 +53,11 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SAR_MEAS_WAIT2")
-            .field(
-                "force_xpd_sar_sw",
-                &format_args!("{}", self.force_xpd_sar_sw().bit()),
-            )
-            .field(
-                "sar_amp_wait3",
-                &format_args!("{}", self.sar_amp_wait3().bits()),
-            )
-            .field(
-                "force_xpd_amp",
-                &format_args!("{}", self.force_xpd_amp().bits()),
-            )
-            .field(
-                "force_xpd_sar",
-                &format_args!("{}", self.force_xpd_sar().bits()),
-            )
-            .field(
-                "sar2_rstb_wait",
-                &format_args!("{}", self.sar2_rstb_wait().bits()),
-            )
+            .field("force_xpd_sar_sw", &self.force_xpd_sar_sw().bit())
+            .field("sar_amp_wait3", &self.sar_amp_wait3().bits())
+            .field("force_xpd_amp", &self.force_xpd_amp().bits())
+            .field("force_xpd_sar", &self.force_xpd_sar().bits())
+            .field("sar2_rstb_wait", &self.sar2_rstb_wait().bits())
             .finish()
     }
 }
@@ -124,8 +109,6 @@ impl crate::Readable for SAR_MEAS_WAIT2_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`sar_meas_wait2::W`](W) writer structure"]
 impl crate::Writable for SAR_MEAS_WAIT2_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SAR_MEAS_WAIT2 to value 0x0020_000a"]
 impl crate::Resettable for SAR_MEAS_WAIT2_SPEC {

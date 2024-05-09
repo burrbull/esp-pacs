@@ -53,26 +53,17 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PERI_CLK_CTRL111")
-            .field(
-                "uart0_sclk_div_num",
-                &format_args!("{}", self.uart0_sclk_div_num().bits()),
-            )
+            .field("uart0_sclk_div_num", &self.uart0_sclk_div_num().bits())
             .field(
                 "uart0_sclk_div_numerator",
-                &format_args!("{}", self.uart0_sclk_div_numerator().bits()),
+                &self.uart0_sclk_div_numerator().bits(),
             )
             .field(
                 "uart0_sclk_div_denominator",
-                &format_args!("{}", self.uart0_sclk_div_denominator().bits()),
+                &self.uart0_sclk_div_denominator().bits(),
             )
-            .field(
-                "uart1_clk_src_sel",
-                &format_args!("{}", self.uart1_clk_src_sel().bits()),
-            )
-            .field(
-                "uart1_clk_en",
-                &format_args!("{}", self.uart1_clk_en().bit()),
-            )
+            .field("uart1_clk_src_sel", &self.uart1_clk_src_sel().bits())
+            .field("uart1_clk_en", &self.uart1_clk_en().bit())
             .finish()
     }
 }
@@ -128,8 +119,6 @@ impl crate::Readable for PERI_CLK_CTRL111_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`peri_clk_ctrl111::W`](W) writer structure"]
 impl crate::Writable for PERI_CLK_CTRL111_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets PERI_CLK_CTRL111 to value 0x0400_0000"]
 impl crate::Resettable for PERI_CLK_CTRL111_SPEC {

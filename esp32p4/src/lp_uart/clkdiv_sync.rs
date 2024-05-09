@@ -26,11 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CLKDIV_SYNC")
-            .field("clkdiv", &format_args!("{}", self.clkdiv().bits()))
-            .field(
-                "clkdiv_frag",
-                &format_args!("{}", self.clkdiv_frag().bits()),
-            )
+            .field("clkdiv", &self.clkdiv().bits())
+            .field("clkdiv_frag", &self.clkdiv_frag().bits())
             .finish()
     }
 }
@@ -64,8 +61,6 @@ impl crate::Readable for CLKDIV_SYNC_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`clkdiv_sync::W`](W) writer structure"]
 impl crate::Writable for CLKDIV_SYNC_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CLKDIV_SYNC to value 0x02b6"]
 impl crate::Resettable for CLKDIV_SYNC_SPEC {

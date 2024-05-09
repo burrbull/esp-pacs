@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("STATUS")
-            .field(
-                "gpio_status_int",
-                &format_args!("{}", self.gpio_status_int().bits()),
-            )
+            .field("gpio_status_int", &self.gpio_status_int().bits())
             .finish()
     }
 }
@@ -48,10 +45,6 @@ impl crate::Readable for STATUS_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`status::W`](W) writer structure"]
 impl crate::Writable for STATUS_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets STATUS to value 0"]
-impl crate::Resettable for STATUS_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for STATUS_SPEC {}

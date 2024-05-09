@@ -37,18 +37,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CAP_TIMER_CFG")
-            .field(
-                "cap_timer_en",
-                &format_args!("{}", self.cap_timer_en().bit()),
-            )
-            .field(
-                "cap_synci_en",
-                &format_args!("{}", self.cap_synci_en().bit()),
-            )
-            .field(
-                "cap_synci_sel",
-                &format_args!("{}", self.cap_synci_sel().bits()),
-            )
+            .field("cap_timer_en", &self.cap_timer_en().bit())
+            .field("cap_synci_en", &self.cap_synci_en().bit())
+            .field("cap_synci_sel", &self.cap_synci_sel().bits())
             .finish()
     }
 }
@@ -94,10 +85,6 @@ impl crate::Readable for CAP_TIMER_CFG_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`cap_timer_cfg::W`](W) writer structure"]
 impl crate::Writable for CAP_TIMER_CFG_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CAP_TIMER_CFG to value 0"]
-impl crate::Resettable for CAP_TIMER_CFG_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for CAP_TIMER_CFG_SPEC {}

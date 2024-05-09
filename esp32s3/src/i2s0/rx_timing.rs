@@ -80,38 +80,14 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("RX_TIMING")
-            .field(
-                "rx_sd_in_dm",
-                &format_args!("{}", self.rx_sd_in_dm().bits()),
-            )
-            .field(
-                "rx_sd1_in_dm",
-                &format_args!("{}", self.rx_sd1_in_dm().bits()),
-            )
-            .field(
-                "rx_sd2_in_dm",
-                &format_args!("{}", self.rx_sd2_in_dm().bits()),
-            )
-            .field(
-                "rx_sd3_in_dm",
-                &format_args!("{}", self.rx_sd3_in_dm().bits()),
-            )
-            .field(
-                "rx_ws_out_dm",
-                &format_args!("{}", self.rx_ws_out_dm().bits()),
-            )
-            .field(
-                "rx_bck_out_dm",
-                &format_args!("{}", self.rx_bck_out_dm().bits()),
-            )
-            .field(
-                "rx_ws_in_dm",
-                &format_args!("{}", self.rx_ws_in_dm().bits()),
-            )
-            .field(
-                "rx_bck_in_dm",
-                &format_args!("{}", self.rx_bck_in_dm().bits()),
-            )
+            .field("rx_sd_in_dm", &self.rx_sd_in_dm().bits())
+            .field("rx_sd1_in_dm", &self.rx_sd1_in_dm().bits())
+            .field("rx_sd2_in_dm", &self.rx_sd2_in_dm().bits())
+            .field("rx_sd3_in_dm", &self.rx_sd3_in_dm().bits())
+            .field("rx_ws_out_dm", &self.rx_ws_out_dm().bits())
+            .field("rx_bck_out_dm", &self.rx_bck_out_dm().bits())
+            .field("rx_ws_in_dm", &self.rx_ws_in_dm().bits())
+            .field("rx_bck_in_dm", &self.rx_bck_in_dm().bits())
             .finish()
     }
 }
@@ -181,10 +157,6 @@ impl crate::Readable for RX_TIMING_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`rx_timing::W`](W) writer structure"]
 impl crate::Writable for RX_TIMING_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets RX_TIMING to value 0"]
-impl crate::Resettable for RX_TIMING_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for RX_TIMING_SPEC {}

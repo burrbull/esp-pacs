@@ -13,7 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SAR_TOUCH_DENOISE")
-            .field("data", &format_args!("{}", self.data().bits()))
+            .field("data", &self.data().bits())
             .finish()
     }
 }
@@ -31,6 +31,4 @@ impl crate::RegisterSpec for SAR_TOUCH_DENOISE_SPEC {
 #[doc = "`read()` method returns [`sar_touch_denoise::R`](R) reader structure"]
 impl crate::Readable for SAR_TOUCH_DENOISE_SPEC {}
 #[doc = "`reset()` method sets SAR_TOUCH_DENOISE to value 0"]
-impl crate::Resettable for SAR_TOUCH_DENOISE_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for SAR_TOUCH_DENOISE_SPEC {}

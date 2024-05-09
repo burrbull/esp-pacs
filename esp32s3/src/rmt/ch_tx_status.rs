@@ -41,20 +41,11 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CH_TX_STATUS")
-            .field(
-                "mem_raddr_ex",
-                &format_args!("{}", self.mem_raddr_ex().bits()),
-            )
-            .field(
-                "apb_mem_waddr",
-                &format_args!("{}", self.apb_mem_waddr().bits()),
-            )
-            .field("state", &format_args!("{}", self.state().bits()))
-            .field("mem_empty", &format_args!("{}", self.mem_empty().bit()))
-            .field(
-                "apb_mem_wr_err",
-                &format_args!("{}", self.apb_mem_wr_err().bit()),
-            )
+            .field("mem_raddr_ex", &self.mem_raddr_ex().bits())
+            .field("apb_mem_waddr", &self.apb_mem_waddr().bits())
+            .field("state", &self.state().bits())
+            .field("mem_empty", &self.mem_empty().bit())
+            .field("apb_mem_wr_err", &self.apb_mem_wr_err().bit())
             .finish()
     }
 }
@@ -72,6 +63,4 @@ impl crate::RegisterSpec for CH_TX_STATUS_SPEC {
 #[doc = "`read()` method returns [`ch_tx_status::R`](R) reader structure"]
 impl crate::Readable for CH_TX_STATUS_SPEC {}
 #[doc = "`reset()` method sets CH%s_TX_STATUS to value 0"]
-impl crate::Resettable for CH_TX_STATUS_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for CH_TX_STATUS_SPEC {}

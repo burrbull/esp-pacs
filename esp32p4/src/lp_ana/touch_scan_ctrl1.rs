@@ -44,22 +44,13 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("TOUCH_SCAN_CTRL1")
-            .field(
-                "touch_shield_pad_en",
-                &format_args!("{}", self.touch_shield_pad_en().bit()),
-            )
+            .field("touch_shield_pad_en", &self.touch_shield_pad_en().bit())
             .field(
                 "touch_inactive_connection",
-                &format_args!("{}", self.touch_inactive_connection().bit()),
+                &self.touch_inactive_connection().bit(),
             )
-            .field(
-                "touch_scan_pad_map",
-                &format_args!("{}", self.touch_scan_pad_map().bits()),
-            )
-            .field(
-                "touch_xpd_wait",
-                &format_args!("{}", self.touch_xpd_wait().bits()),
-            )
+            .field("touch_scan_pad_map", &self.touch_scan_pad_map().bits())
+            .field("touch_xpd_wait", &self.touch_xpd_wait().bits())
             .finish()
     }
 }
@@ -107,8 +98,6 @@ impl crate::Readable for TOUCH_SCAN_CTRL1_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`touch_scan_ctrl1::W`](W) writer structure"]
 impl crate::Writable for TOUCH_SCAN_CTRL1_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets TOUCH_SCAN_CTRL1 to value 0x0008_0000"]
 impl crate::Resettable for TOUCH_SCAN_CTRL1_SPEC {

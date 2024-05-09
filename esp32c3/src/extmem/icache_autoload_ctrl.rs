@@ -62,28 +62,16 @@ impl core::fmt::Debug for R {
         f.debug_struct("ICACHE_AUTOLOAD_CTRL")
             .field(
                 "icache_autoload_sct0_ena",
-                &format_args!("{}", self.icache_autoload_sct0_ena().bit()),
+                &self.icache_autoload_sct0_ena().bit(),
             )
             .field(
                 "icache_autoload_sct1_ena",
-                &format_args!("{}", self.icache_autoload_sct1_ena().bit()),
+                &self.icache_autoload_sct1_ena().bit(),
             )
-            .field(
-                "icache_autoload_ena",
-                &format_args!("{}", self.icache_autoload_ena().bit()),
-            )
-            .field(
-                "icache_autoload_done",
-                &format_args!("{}", self.icache_autoload_done().bit()),
-            )
-            .field(
-                "icache_autoload_order",
-                &format_args!("{}", self.icache_autoload_order().bit()),
-            )
-            .field(
-                "icache_autoload_rqst",
-                &format_args!("{}", self.icache_autoload_rqst().bits()),
-            )
+            .field("icache_autoload_ena", &self.icache_autoload_ena().bit())
+            .field("icache_autoload_done", &self.icache_autoload_done().bit())
+            .field("icache_autoload_order", &self.icache_autoload_order().bit())
+            .field("icache_autoload_rqst", &self.icache_autoload_rqst().bits())
             .finish()
     }
 }
@@ -139,8 +127,6 @@ impl crate::Readable for ICACHE_AUTOLOAD_CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`icache_autoload_ctrl::W`](W) writer structure"]
 impl crate::Writable for ICACHE_AUTOLOAD_CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets ICACHE_AUTOLOAD_CTRL to value 0x08"]
 impl crate::Resettable for ICACHE_AUTOLOAD_CTRL_SPEC {

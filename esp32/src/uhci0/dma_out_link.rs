@@ -51,26 +51,11 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("DMA_OUT_LINK")
-            .field(
-                "outlink_addr",
-                &format_args!("{}", self.outlink_addr().bits()),
-            )
-            .field(
-                "outlink_stop",
-                &format_args!("{}", self.outlink_stop().bit()),
-            )
-            .field(
-                "outlink_start",
-                &format_args!("{}", self.outlink_start().bit()),
-            )
-            .field(
-                "outlink_restart",
-                &format_args!("{}", self.outlink_restart().bit()),
-            )
-            .field(
-                "outlink_park",
-                &format_args!("{}", self.outlink_park().bit()),
-            )
+            .field("outlink_addr", &self.outlink_addr().bits())
+            .field("outlink_stop", &self.outlink_stop().bit())
+            .field("outlink_start", &self.outlink_start().bit())
+            .field("outlink_restart", &self.outlink_restart().bit())
+            .field("outlink_park", &self.outlink_park().bit())
             .finish()
     }
 }
@@ -116,10 +101,6 @@ impl crate::Readable for DMA_OUT_LINK_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`dma_out_link::W`](W) writer structure"]
 impl crate::Writable for DMA_OUT_LINK_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets DMA_OUT_LINK to value 0"]
-impl crate::Resettable for DMA_OUT_LINK_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for DMA_OUT_LINK_SPEC {}

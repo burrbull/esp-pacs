@@ -20,11 +20,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("TX_ST0")
-            .field("tx_cnt", &format_args!("{}", self.tx_cnt().bits()))
-            .field(
-                "tx_fifo_rd_bit_cnt",
-                &format_args!("{}", self.tx_fifo_rd_bit_cnt().bits()),
-            )
+            .field("tx_cnt", &self.tx_cnt().bits())
+            .field("tx_fifo_rd_bit_cnt", &self.tx_fifo_rd_bit_cnt().bits())
             .finish()
     }
 }
@@ -42,6 +39,4 @@ impl crate::RegisterSpec for TX_ST0_SPEC {
 #[doc = "`read()` method returns [`tx_st0::R`](R) reader structure"]
 impl crate::Readable for TX_ST0_SPEC {}
 #[doc = "`reset()` method sets TX_ST0 to value 0"]
-impl crate::Resettable for TX_ST0_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for TX_ST0_SPEC {}

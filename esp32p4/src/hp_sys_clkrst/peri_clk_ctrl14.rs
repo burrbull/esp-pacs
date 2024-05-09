@@ -71,34 +71,13 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PERI_CLK_CTRL14")
-            .field(
-                "i2s0_tx_div_y",
-                &format_args!("{}", self.i2s0_tx_div_y().bits()),
-            )
-            .field(
-                "i2s0_tx_div_z",
-                &format_args!("{}", self.i2s0_tx_div_z().bits()),
-            )
-            .field(
-                "i2s0_tx_div_yn1",
-                &format_args!("{}", self.i2s0_tx_div_yn1().bit()),
-            )
-            .field(
-                "i2s0_mst_clk_sel",
-                &format_args!("{}", self.i2s0_mst_clk_sel().bit()),
-            )
-            .field(
-                "i2s1_rx_clk_en",
-                &format_args!("{}", self.i2s1_rx_clk_en().bit()),
-            )
-            .field(
-                "i2s1_rx_clk_src_sel",
-                &format_args!("{}", self.i2s1_rx_clk_src_sel().bits()),
-            )
-            .field(
-                "i2s1_rx_div_n",
-                &format_args!("{}", self.i2s1_rx_div_n().bits()),
-            )
+            .field("i2s0_tx_div_y", &self.i2s0_tx_div_y().bits())
+            .field("i2s0_tx_div_z", &self.i2s0_tx_div_z().bits())
+            .field("i2s0_tx_div_yn1", &self.i2s0_tx_div_yn1().bit())
+            .field("i2s0_mst_clk_sel", &self.i2s0_mst_clk_sel().bit())
+            .field("i2s1_rx_clk_en", &self.i2s1_rx_clk_en().bit())
+            .field("i2s1_rx_clk_src_sel", &self.i2s1_rx_clk_src_sel().bits())
+            .field("i2s1_rx_div_n", &self.i2s1_rx_div_n().bits())
             .finish()
     }
 }
@@ -162,10 +141,6 @@ impl crate::Readable for PERI_CLK_CTRL14_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`peri_clk_ctrl14::W`](W) writer structure"]
 impl crate::Writable for PERI_CLK_CTRL14_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets PERI_CLK_CTRL14 to value 0"]
-impl crate::Resettable for PERI_CLK_CTRL14_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for PERI_CLK_CTRL14_SPEC {}

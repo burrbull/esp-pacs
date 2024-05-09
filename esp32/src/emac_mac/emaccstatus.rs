@@ -27,12 +27,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("EMACCSTATUS")
-            .field("link_mode", &format_args!("{}", self.link_mode().bit()))
-            .field("link_speed", &format_args!("{}", self.link_speed().bits()))
-            .field(
-                "jabber_timeout",
-                &format_args!("{}", self.jabber_timeout().bit()),
-            )
+            .field("link_mode", &self.link_mode().bit())
+            .field("link_speed", &self.link_speed().bits())
+            .field("jabber_timeout", &self.jabber_timeout().bit())
             .finish()
     }
 }
@@ -50,6 +47,4 @@ impl crate::RegisterSpec for EMACCSTATUS_SPEC {
 #[doc = "`read()` method returns [`emaccstatus::R`](R) reader structure"]
 impl crate::Readable for EMACCSTATUS_SPEC {}
 #[doc = "`reset()` method sets EMACCSTATUS to value 0"]
-impl crate::Resettable for EMACCSTATUS_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for EMACCSTATUS_SPEC {}

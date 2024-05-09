@@ -53,26 +53,14 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("RETENTION_CTRL")
-            .field(
-                "retention_clk_sel",
-                &format_args!("{}", self.retention_clk_sel().bit()),
-            )
-            .field(
-                "retention_done_wait",
-                &format_args!("{}", self.retention_done_wait().bits()),
-            )
+            .field("retention_clk_sel", &self.retention_clk_sel().bit())
+            .field("retention_done_wait", &self.retention_done_wait().bits())
             .field(
                 "retention_clkoff_wait",
-                &format_args!("{}", self.retention_clkoff_wait().bits()),
+                &self.retention_clkoff_wait().bits(),
             )
-            .field(
-                "retention_en",
-                &format_args!("{}", self.retention_en().bit()),
-            )
-            .field(
-                "retention_wait",
-                &format_args!("{}", self.retention_wait().bits()),
-            )
+            .field("retention_en", &self.retention_en().bit())
+            .field("retention_wait", &self.retention_wait().bits())
             .finish()
     }
 }
@@ -124,8 +112,6 @@ impl crate::Readable for RETENTION_CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`retention_ctrl::W`](W) writer structure"]
 impl crate::Writable for RETENTION_CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets RETENTION_CTRL to value 0xa0d0_0000"]
 impl crate::Resettable for RETENTION_CTRL_SPEC {

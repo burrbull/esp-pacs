@@ -98,46 +98,16 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PAD3")
-            .field(
-                "reg_pad3_drv",
-                &format_args!("{}", self.reg_pad3_drv().bits()),
-            )
-            .field(
-                "reg_pad3_rde",
-                &format_args!("{}", self.reg_pad3_rde().bit()),
-            )
-            .field(
-                "reg_pad3_rue",
-                &format_args!("{}", self.reg_pad3_rue().bit()),
-            )
-            .field(
-                "reg_pad3_mux_sel",
-                &format_args!("{}", self.reg_pad3_mux_sel().bit()),
-            )
-            .field(
-                "reg_pad3_fun_sel",
-                &format_args!("{}", self.reg_pad3_fun_sel().bits()),
-            )
-            .field(
-                "reg_pad3_slp_sel",
-                &format_args!("{}", self.reg_pad3_slp_sel().bit()),
-            )
-            .field(
-                "reg_pad3_slp_ie",
-                &format_args!("{}", self.reg_pad3_slp_ie().bit()),
-            )
-            .field(
-                "reg_pad3_slp_oe",
-                &format_args!("{}", self.reg_pad3_slp_oe().bit()),
-            )
-            .field(
-                "reg_pad3_fun_ie",
-                &format_args!("{}", self.reg_pad3_fun_ie().bit()),
-            )
-            .field(
-                "reg_pad3_filter_en",
-                &format_args!("{}", self.reg_pad3_filter_en().bit()),
-            )
+            .field("reg_pad3_drv", &self.reg_pad3_drv().bits())
+            .field("reg_pad3_rde", &self.reg_pad3_rde().bit())
+            .field("reg_pad3_rue", &self.reg_pad3_rue().bit())
+            .field("reg_pad3_mux_sel", &self.reg_pad3_mux_sel().bit())
+            .field("reg_pad3_fun_sel", &self.reg_pad3_fun_sel().bits())
+            .field("reg_pad3_slp_sel", &self.reg_pad3_slp_sel().bit())
+            .field("reg_pad3_slp_ie", &self.reg_pad3_slp_ie().bit())
+            .field("reg_pad3_slp_oe", &self.reg_pad3_slp_oe().bit())
+            .field("reg_pad3_fun_ie", &self.reg_pad3_fun_ie().bit())
+            .field("reg_pad3_filter_en", &self.reg_pad3_filter_en().bit())
             .finish()
     }
 }
@@ -219,8 +189,6 @@ impl crate::Readable for PAD3_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`pad3::W`](W) writer structure"]
 impl crate::Writable for PAD3_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets PAD3 to value 0x02"]
 impl crate::Resettable for PAD3_SPEC {

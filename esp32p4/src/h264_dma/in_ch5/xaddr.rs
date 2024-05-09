@@ -13,10 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("XADDR")
-            .field(
-                "in_cmdfifo_xaddr",
-                &format_args!("{}", self.in_cmdfifo_xaddr().bits()),
-            )
+            .field("in_cmdfifo_xaddr", &self.in_cmdfifo_xaddr().bits())
             .finish()
     }
 }
@@ -34,6 +31,4 @@ impl crate::RegisterSpec for XADDR_SPEC {
 #[doc = "`read()` method returns [`xaddr::R`](R) reader structure"]
 impl crate::Readable for XADDR_SPEC {}
 #[doc = "`reset()` method sets XADDR to value 0"]
-impl crate::Resettable for XADDR_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for XADDR_SPEC {}

@@ -28,11 +28,11 @@ impl core::fmt::Debug for R {
         f.debug_struct("HPCORE_WDT_RESET_SOURCE0")
             .field(
                 "hpcore0_wdt_reset_source_sel",
-                &format_args!("{}", self.hpcore0_wdt_reset_source_sel().bit()),
+                &self.hpcore0_wdt_reset_source_sel().bit(),
             )
             .field(
                 "hpcore1_wdt_reset_source_sel",
-                &format_args!("{}", self.hpcore1_wdt_reset_source_sel().bit()),
+                &self.hpcore1_wdt_reset_source_sel().bit(),
             )
             .finish()
     }
@@ -71,8 +71,6 @@ impl crate::Readable for HPCORE_WDT_RESET_SOURCE0_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`hpcore_wdt_reset_source0::W`](W) writer structure"]
 impl crate::Writable for HPCORE_WDT_RESET_SOURCE0_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets HPCORE_WDT_RESET_SOURCE0 to value 0x02"]
 impl crate::Resettable for HPCORE_WDT_RESET_SOURCE0_SPEC {

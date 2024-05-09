@@ -94,51 +94,45 @@ impl core::fmt::Debug for R {
         f.debug_struct("SAR_COCPU_INT_ST")
             .field(
                 "sar_cocpu_touch_done_int_st",
-                &format_args!("{}", self.sar_cocpu_touch_done_int_st().bit()),
+                &self.sar_cocpu_touch_done_int_st().bit(),
             )
             .field(
                 "sar_cocpu_touch_inactive_int_st",
-                &format_args!("{}", self.sar_cocpu_touch_inactive_int_st().bit()),
+                &self.sar_cocpu_touch_inactive_int_st().bit(),
             )
             .field(
                 "sar_cocpu_touch_active_int_st",
-                &format_args!("{}", self.sar_cocpu_touch_active_int_st().bit()),
+                &self.sar_cocpu_touch_active_int_st().bit(),
             )
             .field(
                 "sar_cocpu_saradc1_int_st",
-                &format_args!("{}", self.sar_cocpu_saradc1_int_st().bit()),
+                &self.sar_cocpu_saradc1_int_st().bit(),
             )
             .field(
                 "sar_cocpu_saradc2_int_st",
-                &format_args!("{}", self.sar_cocpu_saradc2_int_st().bit()),
+                &self.sar_cocpu_saradc2_int_st().bit(),
             )
             .field(
                 "sar_cocpu_tsens_int_st",
-                &format_args!("{}", self.sar_cocpu_tsens_int_st().bit()),
+                &self.sar_cocpu_tsens_int_st().bit(),
             )
             .field(
                 "sar_cocpu_start_int_st",
-                &format_args!("{}", self.sar_cocpu_start_int_st().bit()),
+                &self.sar_cocpu_start_int_st().bit(),
             )
-            .field(
-                "sar_cocpu_sw_int_st",
-                &format_args!("{}", self.sar_cocpu_sw_int_st().bit()),
-            )
-            .field(
-                "sar_cocpu_swd_int_st",
-                &format_args!("{}", self.sar_cocpu_swd_int_st().bit()),
-            )
+            .field("sar_cocpu_sw_int_st", &self.sar_cocpu_sw_int_st().bit())
+            .field("sar_cocpu_swd_int_st", &self.sar_cocpu_swd_int_st().bit())
             .field(
                 "sar_cocpu_touch_timeout_int_st",
-                &format_args!("{}", self.sar_cocpu_touch_timeout_int_st().bit()),
+                &self.sar_cocpu_touch_timeout_int_st().bit(),
             )
             .field(
                 "sar_cocpu_touch_approach_loop_done_int_st",
-                &format_args!("{}", self.sar_cocpu_touch_approach_loop_done_int_st().bit()),
+                &self.sar_cocpu_touch_approach_loop_done_int_st().bit(),
             )
             .field(
                 "sar_cocpu_touch_scan_done_int_st",
-                &format_args!("{}", self.sar_cocpu_touch_scan_done_int_st().bit()),
+                &self.sar_cocpu_touch_scan_done_int_st().bit(),
             )
             .finish()
     }
@@ -157,6 +151,4 @@ impl crate::RegisterSpec for SAR_COCPU_INT_ST_SPEC {
 #[doc = "`read()` method returns [`sar_cocpu_int_st::R`](R) reader structure"]
 impl crate::Readable for SAR_COCPU_INT_ST_SPEC {}
 #[doc = "`reset()` method sets SAR_COCPU_INT_ST to value 0"]
-impl crate::Resettable for SAR_COCPU_INT_ST_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for SAR_COCPU_INT_ST_SPEC {}

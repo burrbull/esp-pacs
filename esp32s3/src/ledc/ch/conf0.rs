@@ -66,15 +66,12 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CONF0")
-            .field("timer_sel", &format_args!("{}", self.timer_sel().bits()))
-            .field("sig_out_en", &format_args!("{}", self.sig_out_en().bit()))
-            .field("idle_lv", &format_args!("{}", self.idle_lv().bit()))
-            .field("ovf_num", &format_args!("{}", self.ovf_num().bits()))
-            .field("ovf_cnt_en", &format_args!("{}", self.ovf_cnt_en().bit()))
-            .field(
-                "ovf_cnt_reset_st",
-                &format_args!("{}", self.ovf_cnt_reset_st().bit()),
-            )
+            .field("timer_sel", &self.timer_sel().bits())
+            .field("sig_out_en", &self.sig_out_en().bit())
+            .field("idle_lv", &self.idle_lv().bit())
+            .field("ovf_num", &self.ovf_num().bits())
+            .field("ovf_cnt_en", &self.ovf_cnt_en().bit())
+            .field("ovf_cnt_reset_st", &self.ovf_cnt_reset_st().bit())
             .finish()
     }
 }
@@ -144,10 +141,6 @@ impl crate::Readable for CONF0_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`conf0::W`](W) writer structure"]
 impl crate::Writable for CONF0_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CONF0 to value 0"]
-impl crate::Resettable for CONF0_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for CONF0_SPEC {}

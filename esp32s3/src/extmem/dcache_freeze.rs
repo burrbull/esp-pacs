@@ -33,9 +33,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("DCACHE_FREEZE")
-            .field("ena", &format_args!("{}", self.ena().bit()))
-            .field("mode", &format_args!("{}", self.mode().bit()))
-            .field("done", &format_args!("{}", self.done().bit()))
+            .field("ena", &self.ena().bit())
+            .field("mode", &self.mode().bit())
+            .field("done", &self.done().bit())
             .finish()
     }
 }
@@ -69,8 +69,6 @@ impl crate::Readable for DCACHE_FREEZE_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`dcache_freeze::W`](W) writer structure"]
 impl crate::Writable for DCACHE_FREEZE_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets DCACHE_FREEZE to value 0x04"]
 impl crate::Resettable for DCACHE_FREEZE_SPEC {

@@ -28,11 +28,11 @@ impl core::fmt::Debug for R {
         f.debug_struct("BITSCRAMBLER_PERI_SEL")
             .field(
                 "bitscrambler_peri_rx_sel",
-                &format_args!("{}", self.bitscrambler_peri_rx_sel().bits()),
+                &self.bitscrambler_peri_rx_sel().bits(),
             )
             .field(
                 "bitscrambler_peri_tx_sel",
-                &format_args!("{}", self.bitscrambler_peri_tx_sel().bits()),
+                &self.bitscrambler_peri_tx_sel().bits(),
             )
             .finish()
     }
@@ -71,8 +71,6 @@ impl crate::Readable for BITSCRAMBLER_PERI_SEL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`bitscrambler_peri_sel::W`](W) writer structure"]
 impl crate::Writable for BITSCRAMBLER_PERI_SEL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets BITSCRAMBLER_PERI_SEL to value 0xff"]
 impl crate::Resettable for BITSCRAMBLER_PERI_SEL_SPEC {

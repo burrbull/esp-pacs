@@ -244,108 +244,87 @@ impl core::fmt::Debug for R {
         f.debug_struct("SLC0HOST_INT_RAW")
             .field(
                 "slc0_tohost_bit0_int_raw",
-                &format_args!("{}", self.slc0_tohost_bit0_int_raw().bit()),
+                &self.slc0_tohost_bit0_int_raw().bit(),
             )
             .field(
                 "slc0_tohost_bit1_int_raw",
-                &format_args!("{}", self.slc0_tohost_bit1_int_raw().bit()),
+                &self.slc0_tohost_bit1_int_raw().bit(),
             )
             .field(
                 "slc0_tohost_bit2_int_raw",
-                &format_args!("{}", self.slc0_tohost_bit2_int_raw().bit()),
+                &self.slc0_tohost_bit2_int_raw().bit(),
             )
             .field(
                 "slc0_tohost_bit3_int_raw",
-                &format_args!("{}", self.slc0_tohost_bit3_int_raw().bit()),
+                &self.slc0_tohost_bit3_int_raw().bit(),
             )
             .field(
                 "slc0_tohost_bit4_int_raw",
-                &format_args!("{}", self.slc0_tohost_bit4_int_raw().bit()),
+                &self.slc0_tohost_bit4_int_raw().bit(),
             )
             .field(
                 "slc0_tohost_bit5_int_raw",
-                &format_args!("{}", self.slc0_tohost_bit5_int_raw().bit()),
+                &self.slc0_tohost_bit5_int_raw().bit(),
             )
             .field(
                 "slc0_tohost_bit6_int_raw",
-                &format_args!("{}", self.slc0_tohost_bit6_int_raw().bit()),
+                &self.slc0_tohost_bit6_int_raw().bit(),
             )
             .field(
                 "slc0_tohost_bit7_int_raw",
-                &format_args!("{}", self.slc0_tohost_bit7_int_raw().bit()),
+                &self.slc0_tohost_bit7_int_raw().bit(),
             )
             .field(
                 "slc0_token0_1to0_int_raw",
-                &format_args!("{}", self.slc0_token0_1to0_int_raw().bit()),
+                &self.slc0_token0_1to0_int_raw().bit(),
             )
             .field(
                 "slc0_token1_1to0_int_raw",
-                &format_args!("{}", self.slc0_token1_1to0_int_raw().bit()),
+                &self.slc0_token1_1to0_int_raw().bit(),
             )
             .field(
                 "slc0_token0_0to1_int_raw",
-                &format_args!("{}", self.slc0_token0_0to1_int_raw().bit()),
+                &self.slc0_token0_0to1_int_raw().bit(),
             )
             .field(
                 "slc0_token1_0to1_int_raw",
-                &format_args!("{}", self.slc0_token1_0to1_int_raw().bit()),
+                &self.slc0_token1_0to1_int_raw().bit(),
             )
             .field(
                 "slc0host_rx_sof_int_raw",
-                &format_args!("{}", self.slc0host_rx_sof_int_raw().bit()),
+                &self.slc0host_rx_sof_int_raw().bit(),
             )
             .field(
                 "slc0host_rx_eof_int_raw",
-                &format_args!("{}", self.slc0host_rx_eof_int_raw().bit()),
+                &self.slc0host_rx_eof_int_raw().bit(),
             )
             .field(
                 "slc0host_rx_start_int_raw",
-                &format_args!("{}", self.slc0host_rx_start_int_raw().bit()),
+                &self.slc0host_rx_start_int_raw().bit(),
             )
             .field(
                 "slc0host_tx_start_int_raw",
-                &format_args!("{}", self.slc0host_tx_start_int_raw().bit()),
+                &self.slc0host_tx_start_int_raw().bit(),
             )
-            .field(
-                "slc0_rx_udf_int_raw",
-                &format_args!("{}", self.slc0_rx_udf_int_raw().bit()),
-            )
-            .field(
-                "slc0_tx_ovf_int_raw",
-                &format_args!("{}", self.slc0_tx_ovf_int_raw().bit()),
-            )
+            .field("slc0_rx_udf_int_raw", &self.slc0_rx_udf_int_raw().bit())
+            .field("slc0_tx_ovf_int_raw", &self.slc0_tx_ovf_int_raw().bit())
             .field(
                 "slc0_rx_pf_valid_int_raw",
-                &format_args!("{}", self.slc0_rx_pf_valid_int_raw().bit()),
+                &self.slc0_rx_pf_valid_int_raw().bit(),
             )
-            .field(
-                "slc0_ext_bit0_int_raw",
-                &format_args!("{}", self.slc0_ext_bit0_int_raw().bit()),
-            )
-            .field(
-                "slc0_ext_bit1_int_raw",
-                &format_args!("{}", self.slc0_ext_bit1_int_raw().bit()),
-            )
-            .field(
-                "slc0_ext_bit2_int_raw",
-                &format_args!("{}", self.slc0_ext_bit2_int_raw().bit()),
-            )
-            .field(
-                "slc0_ext_bit3_int_raw",
-                &format_args!("{}", self.slc0_ext_bit3_int_raw().bit()),
-            )
+            .field("slc0_ext_bit0_int_raw", &self.slc0_ext_bit0_int_raw().bit())
+            .field("slc0_ext_bit1_int_raw", &self.slc0_ext_bit1_int_raw().bit())
+            .field("slc0_ext_bit2_int_raw", &self.slc0_ext_bit2_int_raw().bit())
+            .field("slc0_ext_bit3_int_raw", &self.slc0_ext_bit3_int_raw().bit())
             .field(
                 "slc0_rx_new_packet_int_raw",
-                &format_args!("{}", self.slc0_rx_new_packet_int_raw().bit()),
+                &self.slc0_rx_new_packet_int_raw().bit(),
             )
             .field(
                 "slc0_host_rd_retry_int_raw",
-                &format_args!("{}", self.slc0_host_rd_retry_int_raw().bit()),
+                &self.slc0_host_rd_retry_int_raw().bit(),
             )
-            .field(
-                "gpio_sdio_int_raw",
-                &format_args!("{}", self.gpio_sdio_int_raw().bit()),
-            )
+            .field("gpio_sdio_int_raw", &self.gpio_sdio_int_raw().bit())
             .finish()
     }
 }
@@ -557,10 +536,6 @@ impl crate::Readable for SLC0HOST_INT_RAW_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`slc0host_int_raw::W`](W) writer structure"]
 impl crate::Writable for SLC0HOST_INT_RAW_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SLC0HOST_INT_RAW to value 0"]
-impl crate::Resettable for SLC0HOST_INT_RAW_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for SLC0HOST_INT_RAW_SPEC {}

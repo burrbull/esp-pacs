@@ -26,14 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("IBUS_PMS_TBL_ATTR")
-            .field(
-                "ibus_pms_sct1_attr",
-                &format_args!("{}", self.ibus_pms_sct1_attr().bits()),
-            )
-            .field(
-                "ibus_pms_sct2_attr",
-                &format_args!("{}", self.ibus_pms_sct2_attr().bits()),
-            )
+            .field("ibus_pms_sct1_attr", &self.ibus_pms_sct1_attr().bits())
+            .field("ibus_pms_sct2_attr", &self.ibus_pms_sct2_attr().bits())
             .finish()
     }
 }
@@ -67,8 +61,6 @@ impl crate::Readable for IBUS_PMS_TBL_ATTR_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`ibus_pms_tbl_attr::W`](W) writer structure"]
 impl crate::Writable for IBUS_PMS_TBL_ATTR_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets IBUS_PMS_TBL_ATTR to value 0xff"]
 impl crate::Resettable for IBUS_PMS_TBL_ATTR_SPEC {

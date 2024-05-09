@@ -13,10 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("APB2OTP_BLK10_W3")
-            .field(
-                "apb2otp_block10_w3",
-                &format_args!("{}", self.apb2otp_block10_w3().bits()),
-            )
+            .field("apb2otp_block10_w3", &self.apb2otp_block10_w3().bits())
             .finish()
     }
 }
@@ -34,6 +31,4 @@ impl crate::RegisterSpec for APB2OTP_BLK10_W3_SPEC {
 #[doc = "`read()` method returns [`apb2otp_blk10_w3::R`](R) reader structure"]
 impl crate::Readable for APB2OTP_BLK10_W3_SPEC {}
 #[doc = "`reset()` method sets APB2OTP_BLK10_W3 to value 0"]
-impl crate::Resettable for APB2OTP_BLK10_W3_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for APB2OTP_BLK10_W3_SPEC {}

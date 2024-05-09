@@ -44,22 +44,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("A_ROI_REGION4_7_QP")
-            .field(
-                "a_roi_region4_qp",
-                &format_args!("{}", self.a_roi_region4_qp().bits()),
-            )
-            .field(
-                "a_roi_region5_qp",
-                &format_args!("{}", self.a_roi_region5_qp().bits()),
-            )
-            .field(
-                "a_roi_region6_qp",
-                &format_args!("{}", self.a_roi_region6_qp().bits()),
-            )
-            .field(
-                "a_roi_region7_qp",
-                &format_args!("{}", self.a_roi_region7_qp().bits()),
-            )
+            .field("a_roi_region4_qp", &self.a_roi_region4_qp().bits())
+            .field("a_roi_region5_qp", &self.a_roi_region5_qp().bits())
+            .field("a_roi_region6_qp", &self.a_roi_region6_qp().bits())
+            .field("a_roi_region7_qp", &self.a_roi_region7_qp().bits())
             .finish()
     }
 }
@@ -105,10 +93,6 @@ impl crate::Readable for A_ROI_REGION4_7_QP_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`a_roi_region4_7_qp::W`](W) writer structure"]
 impl crate::Writable for A_ROI_REGION4_7_QP_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets A_ROI_REGION4_7_QP to value 0"]
-impl crate::Resettable for A_ROI_REGION4_7_QP_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for A_ROI_REGION4_7_QP_SPEC {}

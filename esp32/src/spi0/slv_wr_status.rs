@@ -17,7 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SLV_WR_STATUS")
-            .field("slv_wr_st", &format_args!("{}", self.slv_wr_st().bits()))
+            .field("slv_wr_st", &self.slv_wr_st().bits())
             .finish()
     }
 }
@@ -45,10 +45,6 @@ impl crate::Readable for SLV_WR_STATUS_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`slv_wr_status::W`](W) writer structure"]
 impl crate::Writable for SLV_WR_STATUS_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SLV_WR_STATUS to value 0"]
-impl crate::Resettable for SLV_WR_STATUS_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for SLV_WR_STATUS_SPEC {}

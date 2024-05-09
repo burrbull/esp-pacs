@@ -58,30 +58,12 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("MEAS2_CTRL2")
-            .field(
-                "meas2_data_sar",
-                &format_args!("{}", self.meas2_data_sar().bits()),
-            )
-            .field(
-                "meas2_done_sar",
-                &format_args!("{}", self.meas2_done_sar().bit()),
-            )
-            .field(
-                "meas2_start_sar",
-                &format_args!("{}", self.meas2_start_sar().bit()),
-            )
-            .field(
-                "meas2_start_force",
-                &format_args!("{}", self.meas2_start_force().bit()),
-            )
-            .field(
-                "sar2_en_pad",
-                &format_args!("{}", self.sar2_en_pad().bits()),
-            )
-            .field(
-                "sar2_en_pad_force",
-                &format_args!("{}", self.sar2_en_pad_force().bit()),
-            )
+            .field("meas2_data_sar", &self.meas2_data_sar().bits())
+            .field("meas2_done_sar", &self.meas2_done_sar().bit())
+            .field("meas2_start_sar", &self.meas2_start_sar().bit())
+            .field("meas2_start_force", &self.meas2_start_force().bit())
+            .field("sar2_en_pad", &self.sar2_en_pad().bits())
+            .field("sar2_en_pad_force", &self.sar2_en_pad_force().bit())
             .finish()
     }
 }
@@ -127,10 +109,6 @@ impl crate::Readable for MEAS2_CTRL2_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`meas2_ctrl2::W`](W) writer structure"]
 impl crate::Writable for MEAS2_CTRL2_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets MEAS2_CTRL2 to value 0"]
-impl crate::Resettable for MEAS2_CTRL2_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for MEAS2_CTRL2_SPEC {}

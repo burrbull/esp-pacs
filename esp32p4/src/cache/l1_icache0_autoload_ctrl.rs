@@ -71,31 +71,31 @@ impl core::fmt::Debug for R {
         f.debug_struct("L1_ICACHE0_AUTOLOAD_CTRL")
             .field(
                 "l1_icache0_autoload_ena",
-                &format_args!("{}", self.l1_icache0_autoload_ena().bit()),
+                &self.l1_icache0_autoload_ena().bit(),
             )
             .field(
                 "l1_icache0_autoload_done",
-                &format_args!("{}", self.l1_icache0_autoload_done().bit()),
+                &self.l1_icache0_autoload_done().bit(),
             )
             .field(
                 "l1_icache0_autoload_order",
-                &format_args!("{}", self.l1_icache0_autoload_order().bit()),
+                &self.l1_icache0_autoload_order().bit(),
             )
             .field(
                 "l1_icache0_autoload_trigger_mode",
-                &format_args!("{}", self.l1_icache0_autoload_trigger_mode().bits()),
+                &self.l1_icache0_autoload_trigger_mode().bits(),
             )
             .field(
                 "l1_icache0_autoload_sct0_ena",
-                &format_args!("{}", self.l1_icache0_autoload_sct0_ena().bit()),
+                &self.l1_icache0_autoload_sct0_ena().bit(),
             )
             .field(
                 "l1_icache0_autoload_sct1_ena",
-                &format_args!("{}", self.l1_icache0_autoload_sct1_ena().bit()),
+                &self.l1_icache0_autoload_sct1_ena().bit(),
             )
             .field(
                 "l1_icache0_autoload_rgid",
-                &format_args!("{}", self.l1_icache0_autoload_rgid().bits()),
+                &self.l1_icache0_autoload_rgid().bits(),
             )
             .finish()
     }
@@ -166,8 +166,6 @@ impl crate::Readable for L1_ICACHE0_AUTOLOAD_CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`l1_icache0_autoload_ctrl::W`](W) writer structure"]
 impl crate::Writable for L1_ICACHE0_AUTOLOAD_CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets L1_ICACHE0_AUTOLOAD_CTRL to value 0x02"]
 impl crate::Resettable for L1_ICACHE0_AUTOLOAD_CTRL_SPEC {

@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("L1CACHE_BUS0_ID")
-            .field(
-                "reg_l1_cache_bus0_id",
-                &format_args!("{}", self.reg_l1_cache_bus0_id().bits()),
-            )
+            .field("reg_l1_cache_bus0_id", &self.reg_l1_cache_bus0_id().bits())
             .finish()
     }
 }
@@ -48,10 +45,6 @@ impl crate::Readable for L1CACHE_BUS0_ID_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`l1cache_bus0_id::W`](W) writer structure"]
 impl crate::Writable for L1CACHE_BUS0_ID_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets L1CACHE_BUS0_ID to value 0"]
-impl crate::Resettable for L1CACHE_BUS0_ID_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for L1CACHE_BUS0_ID_SPEC {}

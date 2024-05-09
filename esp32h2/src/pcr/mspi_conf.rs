@@ -51,17 +51,11 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("MSPI_CONF")
-            .field("mspi_clk_en", &format_args!("{}", self.mspi_clk_en().bit()))
-            .field("mspi_rst_en", &format_args!("{}", self.mspi_rst_en().bit()))
-            .field(
-                "mspi_pll_clk_en",
-                &format_args!("{}", self.mspi_pll_clk_en().bit()),
-            )
-            .field(
-                "mspi_clk_sel",
-                &format_args!("{}", self.mspi_clk_sel().bits()),
-            )
-            .field("mspi_ready", &format_args!("{}", self.mspi_ready().bit()))
+            .field("mspi_clk_en", &self.mspi_clk_en().bit())
+            .field("mspi_rst_en", &self.mspi_rst_en().bit())
+            .field("mspi_pll_clk_en", &self.mspi_pll_clk_en().bit())
+            .field("mspi_clk_sel", &self.mspi_clk_sel().bits())
+            .field("mspi_ready", &self.mspi_ready().bit())
             .finish()
     }
 }
@@ -107,8 +101,6 @@ impl crate::Readable for MSPI_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`mspi_conf::W`](W) writer structure"]
 impl crate::Writable for MSPI_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets MSPI_CONF to value 0x25"]
 impl crate::Resettable for MSPI_CONF_SPEC {

@@ -55,24 +55,18 @@ impl core::fmt::Debug for R {
         f.debug_struct("LP_TIMER_CONF")
             .field(
                 "clk_lp_timer_sel_osc_slow",
-                &format_args!("{}", self.clk_lp_timer_sel_osc_slow().bit()),
+                &self.clk_lp_timer_sel_osc_slow().bit(),
             )
             .field(
                 "clk_lp_timer_sel_osc_fast",
-                &format_args!("{}", self.clk_lp_timer_sel_osc_fast().bit()),
+                &self.clk_lp_timer_sel_osc_fast().bit(),
             )
-            .field(
-                "clk_lp_timer_sel_xtal",
-                &format_args!("{}", self.clk_lp_timer_sel_xtal().bit()),
-            )
+            .field("clk_lp_timer_sel_xtal", &self.clk_lp_timer_sel_xtal().bit())
             .field(
                 "clk_lp_timer_sel_xtal32k",
-                &format_args!("{}", self.clk_lp_timer_sel_xtal32k().bit()),
+                &self.clk_lp_timer_sel_xtal32k().bit(),
             )
-            .field(
-                "clk_lp_timer_div_num",
-                &format_args!("{}", self.clk_lp_timer_div_num().bits()),
-            )
+            .field("clk_lp_timer_div_num", &self.clk_lp_timer_div_num().bits())
             .finish()
     }
 }
@@ -124,10 +118,6 @@ impl crate::Readable for LP_TIMER_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`lp_timer_conf::W`](W) writer structure"]
 impl crate::Writable for LP_TIMER_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets LP_TIMER_CONF to value 0"]
-impl crate::Resettable for LP_TIMER_CONF_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for LP_TIMER_CONF_SPEC {}

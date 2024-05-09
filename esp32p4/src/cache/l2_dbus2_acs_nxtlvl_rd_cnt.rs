@@ -15,7 +15,7 @@ impl core::fmt::Debug for R {
         f.debug_struct("L2_DBUS2_ACS_NXTLVL_RD_CNT")
             .field(
                 "l2_dbus2_nxtlvl_rd_cnt",
-                &format_args!("{}", self.l2_dbus2_nxtlvl_rd_cnt().bits()),
+                &self.l2_dbus2_nxtlvl_rd_cnt().bits(),
             )
             .finish()
     }
@@ -34,6 +34,4 @@ impl crate::RegisterSpec for L2_DBUS2_ACS_NXTLVL_RD_CNT_SPEC {
 #[doc = "`read()` method returns [`l2_dbus2_acs_nxtlvl_rd_cnt::R`](R) reader structure"]
 impl crate::Readable for L2_DBUS2_ACS_NXTLVL_RD_CNT_SPEC {}
 #[doc = "`reset()` method sets L2_DBUS2_ACS_NXTLVL_RD_CNT to value 0"]
-impl crate::Resettable for L2_DBUS2_ACS_NXTLVL_RD_CNT_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for L2_DBUS2_ACS_NXTLVL_RD_CNT_SPEC {}

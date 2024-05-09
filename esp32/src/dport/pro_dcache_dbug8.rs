@@ -13,10 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PRO_DCACHE_DBUG8")
-            .field(
-                "pro_irom0addr_ia",
-                &format_args!("{}", self.pro_irom0addr_ia().bits()),
-            )
+            .field("pro_irom0addr_ia", &self.pro_irom0addr_ia().bits())
             .finish()
     }
 }
@@ -34,6 +31,4 @@ impl crate::RegisterSpec for PRO_DCACHE_DBUG8_SPEC {
 #[doc = "`read()` method returns [`pro_dcache_dbug8::R`](R) reader structure"]
 impl crate::Readable for PRO_DCACHE_DBUG8_SPEC {}
 #[doc = "`reset()` method sets PRO_DCACHE_DBUG8 to value 0"]
-impl crate::Resettable for PRO_DCACHE_DBUG8_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for PRO_DCACHE_DBUG8_SPEC {}

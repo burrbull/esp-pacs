@@ -20,14 +20,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("RESULT")
-            .field(
-                "operation_result",
-                &format_args!("{}", self.operation_result().bit()),
-            )
-            .field(
-                "k_value_warning",
-                &format_args!("{}", self.k_value_warning().bit()),
-            )
+            .field("operation_result", &self.operation_result().bit())
+            .field("k_value_warning", &self.k_value_warning().bit())
             .finish()
     }
 }
@@ -45,6 +39,4 @@ impl crate::RegisterSpec for RESULT_SPEC {
 #[doc = "`read()` method returns [`result::R`](R) reader structure"]
 impl crate::Readable for RESULT_SPEC {}
 #[doc = "`reset()` method sets RESULT to value 0"]
-impl crate::Resettable for RESULT_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for RESULT_SPEC {}

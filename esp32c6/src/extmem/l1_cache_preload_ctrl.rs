@@ -40,21 +40,15 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("L1_CACHE_PRELOAD_CTRL")
-            .field(
-                "l1_cache_preload_ena",
-                &format_args!("{}", self.l1_cache_preload_ena().bit()),
-            )
-            .field(
-                "l1_cache_preload_done",
-                &format_args!("{}", self.l1_cache_preload_done().bit()),
-            )
+            .field("l1_cache_preload_ena", &self.l1_cache_preload_ena().bit())
+            .field("l1_cache_preload_done", &self.l1_cache_preload_done().bit())
             .field(
                 "l1_cache_preload_order",
-                &format_args!("{}", self.l1_cache_preload_order().bit()),
+                &self.l1_cache_preload_order().bit(),
             )
             .field(
                 "l1_cache_preload_rgid",
-                &format_args!("{}", self.l1_cache_preload_rgid().bits()),
+                &self.l1_cache_preload_rgid().bits(),
             )
             .finish()
     }
@@ -91,8 +85,6 @@ impl crate::Readable for L1_CACHE_PRELOAD_CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`l1_cache_preload_ctrl::W`](W) writer structure"]
 impl crate::Writable for L1_CACHE_PRELOAD_CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets L1_CACHE_PRELOAD_CTRL to value 0x02"]
 impl crate::Resettable for L1_CACHE_PRELOAD_CTRL_SPEC {

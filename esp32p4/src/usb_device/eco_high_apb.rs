@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("ECO_HIGH_APB")
-            .field(
-                "rnd_eco_high_apb",
-                &format_args!("{}", self.rnd_eco_high_apb().bits()),
-            )
+            .field("rnd_eco_high_apb", &self.rnd_eco_high_apb().bits())
             .finish()
     }
 }
@@ -48,8 +45,6 @@ impl crate::Readable for ECO_HIGH_APB_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`eco_high_apb::W`](W) writer structure"]
 impl crate::Writable for ECO_HIGH_APB_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets ECO_HIGH_APB to value 0xffff_ffff"]
 impl crate::Resettable for ECO_HIGH_APB_SPEC {

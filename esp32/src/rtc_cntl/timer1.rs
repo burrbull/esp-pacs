@@ -53,23 +53,11 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("TIMER1")
-            .field(
-                "cpu_stall_en",
-                &format_args!("{}", self.cpu_stall_en().bit()),
-            )
-            .field(
-                "cpu_stall_wait",
-                &format_args!("{}", self.cpu_stall_wait().bits()),
-            )
-            .field("ck8m_wait", &format_args!("{}", self.ck8m_wait().bits()))
-            .field(
-                "xtl_buf_wait",
-                &format_args!("{}", self.xtl_buf_wait().bits()),
-            )
-            .field(
-                "pll_buf_wait",
-                &format_args!("{}", self.pll_buf_wait().bits()),
-            )
+            .field("cpu_stall_en", &self.cpu_stall_en().bit())
+            .field("cpu_stall_wait", &self.cpu_stall_wait().bits())
+            .field("ck8m_wait", &self.ck8m_wait().bits())
+            .field("xtl_buf_wait", &self.xtl_buf_wait().bits())
+            .field("pll_buf_wait", &self.pll_buf_wait().bits())
             .finish()
     }
 }
@@ -121,8 +109,6 @@ impl crate::Readable for TIMER1_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`timer1::W`](W) writer structure"]
 impl crate::Writable for TIMER1_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets TIMER1 to value 0x2814_0403"]
 impl crate::Resettable for TIMER1_SPEC {

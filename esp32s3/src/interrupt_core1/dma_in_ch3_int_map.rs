@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("DMA_IN_CH3_INT_MAP")
-            .field(
-                "dma_in_ch3_int_map",
-                &format_args!("{}", self.dma_in_ch3_int_map().bits()),
-            )
+            .field("dma_in_ch3_int_map", &self.dma_in_ch3_int_map().bits())
             .finish()
     }
 }
@@ -48,8 +45,6 @@ impl crate::Readable for DMA_IN_CH3_INT_MAP_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`dma_in_ch3_int_map::W`](W) writer structure"]
 impl crate::Writable for DMA_IN_CH3_INT_MAP_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets DMA_IN_CH3_INT_MAP to value 0x10"]
 impl crate::Resettable for DMA_IN_CH3_INT_MAP_SPEC {

@@ -19,7 +19,7 @@ impl core::fmt::Debug for R {
         f.debug_struct("DCACHE_ATOMIC_OPERATE_ENA")
             .field(
                 "dcache_atomic_operate_ena",
-                &format_args!("{}", self.dcache_atomic_operate_ena().bit()),
+                &self.dcache_atomic_operate_ena().bit(),
             )
             .finish()
     }
@@ -50,8 +50,6 @@ impl crate::Readable for DCACHE_ATOMIC_OPERATE_ENA_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`dcache_atomic_operate_ena::W`](W) writer structure"]
 impl crate::Writable for DCACHE_ATOMIC_OPERATE_ENA_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets DCACHE_ATOMIC_OPERATE_ENA to value 0x01"]
 impl crate::Resettable for DCACHE_ATOMIC_OPERATE_ENA_SPEC {

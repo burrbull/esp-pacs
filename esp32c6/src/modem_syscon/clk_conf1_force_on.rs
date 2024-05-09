@@ -224,98 +224,32 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CLK_CONF1_FORCE_ON")
-            .field(
-                "clk_wifibb_22m_fo",
-                &format_args!("{}", self.clk_wifibb_22m_fo().bit()),
-            )
-            .field(
-                "clk_wifibb_40m_fo",
-                &format_args!("{}", self.clk_wifibb_40m_fo().bit()),
-            )
-            .field(
-                "clk_wifibb_44m_fo",
-                &format_args!("{}", self.clk_wifibb_44m_fo().bit()),
-            )
-            .field(
-                "clk_wifibb_80m_fo",
-                &format_args!("{}", self.clk_wifibb_80m_fo().bit()),
-            )
-            .field(
-                "clk_wifibb_40x_fo",
-                &format_args!("{}", self.clk_wifibb_40x_fo().bit()),
-            )
-            .field(
-                "clk_wifibb_80x_fo",
-                &format_args!("{}", self.clk_wifibb_80x_fo().bit()),
-            )
-            .field(
-                "clk_wifibb_40x1_fo",
-                &format_args!("{}", self.clk_wifibb_40x1_fo().bit()),
-            )
-            .field(
-                "clk_wifibb_80x1_fo",
-                &format_args!("{}", self.clk_wifibb_80x1_fo().bit()),
-            )
-            .field(
-                "clk_wifibb_160x1_fo",
-                &format_args!("{}", self.clk_wifibb_160x1_fo().bit()),
-            )
-            .field(
-                "clk_wifimac_fo",
-                &format_args!("{}", self.clk_wifimac_fo().bit()),
-            )
-            .field(
-                "clk_wifi_apb_fo",
-                &format_args!("{}", self.clk_wifi_apb_fo().bit()),
-            )
-            .field(
-                "clk_fe_20m_fo",
-                &format_args!("{}", self.clk_fe_20m_fo().bit()),
-            )
-            .field(
-                "clk_fe_40m_fo",
-                &format_args!("{}", self.clk_fe_40m_fo().bit()),
-            )
-            .field(
-                "clk_fe_80m_fo",
-                &format_args!("{}", self.clk_fe_80m_fo().bit()),
-            )
-            .field(
-                "clk_fe_160m_fo",
-                &format_args!("{}", self.clk_fe_160m_fo().bit()),
-            )
-            .field(
-                "clk_fe_cal_160m_fo",
-                &format_args!("{}", self.clk_fe_cal_160m_fo().bit()),
-            )
-            .field(
-                "clk_fe_apb_fo",
-                &format_args!("{}", self.clk_fe_apb_fo().bit()),
-            )
-            .field(
-                "clk_bt_apb_fo",
-                &format_args!("{}", self.clk_bt_apb_fo().bit()),
-            )
-            .field("clk_bt_fo", &format_args!("{}", self.clk_bt_fo().bit()))
-            .field(
-                "clk_wifibb_480m_fo",
-                &format_args!("{}", self.clk_wifibb_480m_fo().bit()),
-            )
-            .field(
-                "clk_fe_480m_fo",
-                &format_args!("{}", self.clk_fe_480m_fo().bit()),
-            )
-            .field(
-                "clk_fe_anamode_40m_fo",
-                &format_args!("{}", self.clk_fe_anamode_40m_fo().bit()),
-            )
-            .field(
-                "clk_fe_anamode_80m_fo",
-                &format_args!("{}", self.clk_fe_anamode_80m_fo().bit()),
-            )
+            .field("clk_wifibb_22m_fo", &self.clk_wifibb_22m_fo().bit())
+            .field("clk_wifibb_40m_fo", &self.clk_wifibb_40m_fo().bit())
+            .field("clk_wifibb_44m_fo", &self.clk_wifibb_44m_fo().bit())
+            .field("clk_wifibb_80m_fo", &self.clk_wifibb_80m_fo().bit())
+            .field("clk_wifibb_40x_fo", &self.clk_wifibb_40x_fo().bit())
+            .field("clk_wifibb_80x_fo", &self.clk_wifibb_80x_fo().bit())
+            .field("clk_wifibb_40x1_fo", &self.clk_wifibb_40x1_fo().bit())
+            .field("clk_wifibb_80x1_fo", &self.clk_wifibb_80x1_fo().bit())
+            .field("clk_wifibb_160x1_fo", &self.clk_wifibb_160x1_fo().bit())
+            .field("clk_wifimac_fo", &self.clk_wifimac_fo().bit())
+            .field("clk_wifi_apb_fo", &self.clk_wifi_apb_fo().bit())
+            .field("clk_fe_20m_fo", &self.clk_fe_20m_fo().bit())
+            .field("clk_fe_40m_fo", &self.clk_fe_40m_fo().bit())
+            .field("clk_fe_80m_fo", &self.clk_fe_80m_fo().bit())
+            .field("clk_fe_160m_fo", &self.clk_fe_160m_fo().bit())
+            .field("clk_fe_cal_160m_fo", &self.clk_fe_cal_160m_fo().bit())
+            .field("clk_fe_apb_fo", &self.clk_fe_apb_fo().bit())
+            .field("clk_bt_apb_fo", &self.clk_bt_apb_fo().bit())
+            .field("clk_bt_fo", &self.clk_bt_fo().bit())
+            .field("clk_wifibb_480m_fo", &self.clk_wifibb_480m_fo().bit())
+            .field("clk_fe_480m_fo", &self.clk_fe_480m_fo().bit())
+            .field("clk_fe_anamode_40m_fo", &self.clk_fe_anamode_40m_fo().bit())
+            .field("clk_fe_anamode_80m_fo", &self.clk_fe_anamode_80m_fo().bit())
             .field(
                 "clk_fe_anamode_160m_fo",
-                &format_args!("{}", self.clk_fe_anamode_160m_fo().bit()),
+                &self.clk_fe_anamode_160m_fo().bit(),
             )
             .finish()
     }
@@ -482,10 +416,6 @@ impl crate::Readable for CLK_CONF1_FORCE_ON_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`clk_conf1_force_on::W`](W) writer structure"]
 impl crate::Writable for CLK_CONF1_FORCE_ON_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CLK_CONF1_FORCE_ON to value 0"]
-impl crate::Resettable for CLK_CONF1_FORCE_ON_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for CLK_CONF1_FORCE_ON_SPEC {}

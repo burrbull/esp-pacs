@@ -60,24 +60,12 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("DMA_IN_LINK")
-            .field(
-                "inlink_addr",
-                &format_args!("{}", self.inlink_addr().bits()),
-            )
-            .field(
-                "inlink_auto_ret",
-                &format_args!("{}", self.inlink_auto_ret().bit()),
-            )
-            .field("inlink_stop", &format_args!("{}", self.inlink_stop().bit()))
-            .field(
-                "inlink_start",
-                &format_args!("{}", self.inlink_start().bit()),
-            )
-            .field(
-                "inlink_restart",
-                &format_args!("{}", self.inlink_restart().bit()),
-            )
-            .field("inlink_park", &format_args!("{}", self.inlink_park().bit()))
+            .field("inlink_addr", &self.inlink_addr().bits())
+            .field("inlink_auto_ret", &self.inlink_auto_ret().bit())
+            .field("inlink_stop", &self.inlink_stop().bit())
+            .field("inlink_start", &self.inlink_start().bit())
+            .field("inlink_restart", &self.inlink_restart().bit())
+            .field("inlink_park", &self.inlink_park().bit())
             .finish()
     }
 }
@@ -129,8 +117,6 @@ impl crate::Readable for DMA_IN_LINK_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`dma_in_link::W`](W) writer structure"]
 impl crate::Writable for DMA_IN_LINK_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets DMA_IN_LINK to value 0x0010_0000"]
 impl crate::Resettable for DMA_IN_LINK_SPEC {

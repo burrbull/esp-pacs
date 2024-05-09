@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("FLASH_ACE3_ATTR")
-            .field(
-                "flash_ace3_attr",
-                &format_args!("{}", self.flash_ace3_attr().bits()),
-            )
+            .field("flash_ace3_attr", &self.flash_ace3_attr().bits())
             .finish()
     }
 }
@@ -48,8 +45,6 @@ impl crate::Readable for FLASH_ACE3_ATTR_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`flash_ace3_attr::W`](W) writer structure"]
 impl crate::Writable for FLASH_ACE3_ATTR_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets FLASH_ACE3_ATTR to value 0x07"]
 impl crate::Resettable for FLASH_ACE3_ATTR_SPEC {

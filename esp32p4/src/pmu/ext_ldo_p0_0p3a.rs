@@ -91,36 +91,18 @@ impl core::fmt::Debug for R {
         f.debug_struct("EXT_LDO_P0_0P3A")
             .field(
                 "_0p3a_force_tieh_sel_0",
-                &format_args!("{}", self._0p3a_force_tieh_sel_0().bit()),
+                &self._0p3a_force_tieh_sel_0().bit(),
             )
-            .field("_0p3a_xpd_0", &format_args!("{}", self._0p3a_xpd_0().bit()))
-            .field(
-                "_0p3a_tieh_sel_0",
-                &format_args!("{}", self._0p3a_tieh_sel_0().bits()),
-            )
-            .field(
-                "_0p3a_tieh_pos_en_0",
-                &format_args!("{}", self._0p3a_tieh_pos_en_0().bit()),
-            )
-            .field(
-                "_0p3a_tieh_neg_en_0",
-                &format_args!("{}", self._0p3a_tieh_neg_en_0().bit()),
-            )
-            .field(
-                "_0p3a_tieh_0",
-                &format_args!("{}", self._0p3a_tieh_0().bit()),
-            )
-            .field(
-                "_0p3a_target1_0",
-                &format_args!("{}", self._0p3a_target1_0().bits()),
-            )
-            .field(
-                "_0p3a_target0_0",
-                &format_args!("{}", self._0p3a_target0_0().bits()),
-            )
+            .field("_0p3a_xpd_0", &self._0p3a_xpd_0().bit())
+            .field("_0p3a_tieh_sel_0", &self._0p3a_tieh_sel_0().bits())
+            .field("_0p3a_tieh_pos_en_0", &self._0p3a_tieh_pos_en_0().bit())
+            .field("_0p3a_tieh_neg_en_0", &self._0p3a_tieh_neg_en_0().bit())
+            .field("_0p3a_tieh_0", &self._0p3a_tieh_0().bit())
+            .field("_0p3a_target1_0", &self._0p3a_target1_0().bits())
+            .field("_0p3a_target0_0", &self._0p3a_target0_0().bits())
             .field(
                 "_0p3a_ldo_cnt_prescaler_sel_0",
-                &format_args!("{}", self._0p3a_ldo_cnt_prescaler_sel_0().bit()),
+                &self._0p3a_ldo_cnt_prescaler_sel_0().bit(),
             )
             .finish()
     }
@@ -199,8 +181,6 @@ impl crate::Readable for EXT_LDO_P0_0P3A_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`ext_ldo_p0_0p3a::W`](W) writer structure"]
 impl crate::Writable for EXT_LDO_P0_0P3A_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets EXT_LDO_P0_0P3A to value 0x4020_0000"]
 impl crate::Resettable for EXT_LDO_P0_0P3A_SPEC {

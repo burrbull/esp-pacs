@@ -13,10 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PROBE_OUT")
-            .field(
-                "reg_probe_top_out",
-                &format_args!("{}", self.reg_probe_top_out().bits()),
-            )
+            .field("reg_probe_top_out", &self.reg_probe_top_out().bits())
             .finish()
     }
 }
@@ -34,6 +31,4 @@ impl crate::RegisterSpec for PROBE_OUT_SPEC {
 #[doc = "`read()` method returns [`probe_out::R`](R) reader structure"]
 impl crate::Readable for PROBE_OUT_SPEC {}
 #[doc = "`reset()` method sets PROBE_OUT to value 0"]
-impl crate::Resettable for PROBE_OUT_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for PROBE_OUT_SPEC {}

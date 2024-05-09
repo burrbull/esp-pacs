@@ -16,9 +16,7 @@ impl R {
 #[cfg(feature = "impl-register-debug")]
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("ID")
-            .field("id", &format_args!("{}", self.id().bits()))
-            .finish()
+        f.debug_struct("ID").field("id", &self.id().bits()).finish()
     }
 }
 #[cfg(feature = "impl-register-debug")]
@@ -45,8 +43,6 @@ impl crate::Readable for ID_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`id::W`](W) writer structure"]
 impl crate::Writable for ID_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets ID to value 0x0100"]
 impl crate::Resettable for ID_SPEC {

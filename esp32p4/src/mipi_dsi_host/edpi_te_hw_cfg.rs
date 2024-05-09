@@ -44,22 +44,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("EDPI_TE_HW_CFG")
-            .field(
-                "hw_tear_effect_on",
-                &format_args!("{}", self.hw_tear_effect_on().bit()),
-            )
-            .field(
-                "hw_tear_effect_gen",
-                &format_args!("{}", self.hw_tear_effect_gen().bit()),
-            )
-            .field(
-                "hw_set_scan_line",
-                &format_args!("{}", self.hw_set_scan_line().bit()),
-            )
-            .field(
-                "scan_line_parameter",
-                &format_args!("{}", self.scan_line_parameter().bits()),
-            )
+            .field("hw_tear_effect_on", &self.hw_tear_effect_on().bit())
+            .field("hw_tear_effect_gen", &self.hw_tear_effect_gen().bit())
+            .field("hw_set_scan_line", &self.hw_set_scan_line().bit())
+            .field("scan_line_parameter", &self.scan_line_parameter().bits())
             .finish()
     }
 }
@@ -105,10 +93,6 @@ impl crate::Readable for EDPI_TE_HW_CFG_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`edpi_te_hw_cfg::W`](W) writer structure"]
 impl crate::Writable for EDPI_TE_HW_CFG_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets EDPI_TE_HW_CFG to value 0"]
-impl crate::Resettable for EDPI_TE_HW_CFG_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for EDPI_TE_HW_CFG_SPEC {}

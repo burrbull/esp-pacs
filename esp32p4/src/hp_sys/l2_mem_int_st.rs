@@ -29,15 +29,15 @@ impl core::fmt::Debug for R {
         f.debug_struct("L2_MEM_INT_ST")
             .field(
                 "reg_l2_mem_ecc_err_int_st",
-                &format_args!("{}", self.reg_l2_mem_ecc_err_int_st().bit()),
+                &self.reg_l2_mem_ecc_err_int_st().bit(),
             )
             .field(
                 "reg_l2_mem_exceed_addr_int_st",
-                &format_args!("{}", self.reg_l2_mem_exceed_addr_int_st().bit()),
+                &self.reg_l2_mem_exceed_addr_int_st().bit(),
             )
             .field(
                 "reg_l2_mem_err_resp_int_st",
-                &format_args!("{}", self.reg_l2_mem_err_resp_int_st().bit()),
+                &self.reg_l2_mem_err_resp_int_st().bit(),
             )
             .finish()
     }
@@ -56,6 +56,4 @@ impl crate::RegisterSpec for L2_MEM_INT_ST_SPEC {
 #[doc = "`read()` method returns [`l2_mem_int_st::R`](R) reader structure"]
 impl crate::Readable for L2_MEM_INT_ST_SPEC {}
 #[doc = "`reset()` method sets L2_MEM_INT_ST to value 0"]
-impl crate::Resettable for L2_MEM_INT_ST_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for L2_MEM_INT_ST_SPEC {}

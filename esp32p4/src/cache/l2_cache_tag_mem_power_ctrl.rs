@@ -37,15 +37,15 @@ impl core::fmt::Debug for R {
         f.debug_struct("L2_CACHE_TAG_MEM_POWER_CTRL")
             .field(
                 "l2_cache_tag_mem_force_on",
-                &format_args!("{}", self.l2_cache_tag_mem_force_on().bit()),
+                &self.l2_cache_tag_mem_force_on().bit(),
             )
             .field(
                 "l2_cache_tag_mem_force_pd",
-                &format_args!("{}", self.l2_cache_tag_mem_force_pd().bit()),
+                &self.l2_cache_tag_mem_force_pd().bit(),
             )
             .field(
                 "l2_cache_tag_mem_force_pu",
-                &format_args!("{}", self.l2_cache_tag_mem_force_pu().bit()),
+                &self.l2_cache_tag_mem_force_pu().bit(),
             )
             .finish()
     }
@@ -92,8 +92,6 @@ impl crate::Readable for L2_CACHE_TAG_MEM_POWER_CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`l2_cache_tag_mem_power_ctrl::W`](W) writer structure"]
 impl crate::Writable for L2_CACHE_TAG_MEM_POWER_CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets L2_CACHE_TAG_MEM_POWER_CTRL to value 0x0050_0000"]
 impl crate::Resettable for L2_CACHE_TAG_MEM_POWER_CTRL_SPEC {

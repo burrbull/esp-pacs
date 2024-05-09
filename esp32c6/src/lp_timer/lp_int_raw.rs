@@ -26,11 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("LP_INT_RAW")
-            .field(
-                "main_timer_overflow",
-                &format_args!("{}", self.main_timer_overflow().bit()),
-            )
-            .field("main_timer", &format_args!("{}", self.main_timer().bit()))
+            .field("main_timer_overflow", &self.main_timer_overflow().bit())
+            .field("main_timer", &self.main_timer().bit())
             .finish()
     }
 }
@@ -64,10 +61,6 @@ impl crate::Readable for LP_INT_RAW_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`lp_int_raw::W`](W) writer structure"]
 impl crate::Writable for LP_INT_RAW_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets LP_INT_RAW to value 0"]
-impl crate::Resettable for LP_INT_RAW_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for LP_INT_RAW_SPEC {}

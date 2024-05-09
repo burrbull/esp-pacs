@@ -20,13 +20,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("C0RE_0_DEBUG_MODE")
-            .field(
-                "core_0_debug_mode",
-                &format_args!("{}", self.core_0_debug_mode().bit()),
-            )
+            .field("core_0_debug_mode", &self.core_0_debug_mode().bit())
             .field(
                 "core_0_debug_module_active",
-                &format_args!("{}", self.core_0_debug_module_active().bit()),
+                &self.core_0_debug_module_active().bit(),
             )
             .finish()
     }
@@ -45,6 +42,4 @@ impl crate::RegisterSpec for C0RE_0_DEBUG_MODE_SPEC {
 #[doc = "`read()` method returns [`c0re_0_debug_mode::R`](R) reader structure"]
 impl crate::Readable for C0RE_0_DEBUG_MODE_SPEC {}
 #[doc = "`reset()` method sets C0RE_0_DEBUG_MODE to value 0"]
-impl crate::Resettable for C0RE_0_DEBUG_MODE_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for C0RE_0_DEBUG_MODE_SPEC {}

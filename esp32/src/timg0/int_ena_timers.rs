@@ -55,10 +55,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("INT_ENA_TIMERS")
-            .field("t0", &format_args!("{}", self.t0().bit()))
-            .field("t1", &format_args!("{}", self.t1().bit()))
-            .field("wdt", &format_args!("{}", self.wdt().bit()))
-            .field("lact", &format_args!("{}", self.lact().bit()))
+            .field("t0", &self.t0().bit())
+            .field("t1", &self.t1().bit())
+            .field("wdt", &self.wdt().bit())
+            .field("lact", &self.lact().bit())
             .finish()
     }
 }
@@ -114,10 +114,6 @@ impl crate::Readable for INT_ENA_TIMERS_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`int_ena_timers::W`](W) writer structure"]
 impl crate::Writable for INT_ENA_TIMERS_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets INT_ENA_TIMERS to value 0"]
-impl crate::Resettable for INT_ENA_TIMERS_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for INT_ENA_TIMERS_SPEC {}

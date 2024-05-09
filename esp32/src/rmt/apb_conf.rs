@@ -26,14 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("APB_CONF")
-            .field(
-                "apb_fifo_mask",
-                &format_args!("{}", self.apb_fifo_mask().bit()),
-            )
-            .field(
-                "mem_tx_wrap_en",
-                &format_args!("{}", self.mem_tx_wrap_en().bit()),
-            )
+            .field("apb_fifo_mask", &self.apb_fifo_mask().bit())
+            .field("mem_tx_wrap_en", &self.mem_tx_wrap_en().bit())
             .finish()
     }
 }
@@ -67,10 +61,6 @@ impl crate::Readable for APB_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`apb_conf::W`](W) writer structure"]
 impl crate::Writable for APB_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets APB_CONF to value 0"]
-impl crate::Resettable for APB_CONF_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for APB_CONF_SPEC {}

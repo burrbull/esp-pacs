@@ -26,8 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PIC_SIZE")
-            .field("va", &format_args!("{}", self.va().bits()))
-            .field("ha", &format_args!("{}", self.ha().bits()))
+            .field("va", &self.va().bits())
+            .field("ha", &self.ha().bits())
             .finish()
     }
 }
@@ -61,8 +61,6 @@ impl crate::Readable for PIC_SIZE_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`pic_size::W`](W) writer structure"]
 impl crate::Writable for PIC_SIZE_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets PIC_SIZE to value 0x0280_01e0"]
 impl crate::Resettable for PIC_SIZE_SPEC {

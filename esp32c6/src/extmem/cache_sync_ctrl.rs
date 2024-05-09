@@ -58,30 +58,15 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CACHE_SYNC_CTRL")
-            .field(
-                "cache_invalidate_ena",
-                &format_args!("{}", self.cache_invalidate_ena().bit()),
-            )
-            .field(
-                "cache_clean_ena",
-                &format_args!("{}", self.cache_clean_ena().bit()),
-            )
-            .field(
-                "cache_writeback_ena",
-                &format_args!("{}", self.cache_writeback_ena().bit()),
-            )
+            .field("cache_invalidate_ena", &self.cache_invalidate_ena().bit())
+            .field("cache_clean_ena", &self.cache_clean_ena().bit())
+            .field("cache_writeback_ena", &self.cache_writeback_ena().bit())
             .field(
                 "cache_writeback_invalidate_ena",
-                &format_args!("{}", self.cache_writeback_invalidate_ena().bit()),
+                &self.cache_writeback_invalidate_ena().bit(),
             )
-            .field(
-                "cache_sync_done",
-                &format_args!("{}", self.cache_sync_done().bit()),
-            )
-            .field(
-                "cache_sync_rgid",
-                &format_args!("{}", self.cache_sync_rgid().bits()),
-            )
+            .field("cache_sync_done", &self.cache_sync_done().bit())
+            .field("cache_sync_rgid", &self.cache_sync_rgid().bits())
             .finish()
     }
 }
@@ -129,8 +114,6 @@ impl crate::Readable for CACHE_SYNC_CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`cache_sync_ctrl::W`](W) writer structure"]
 impl crate::Writable for CACHE_SYNC_CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CACHE_SYNC_CTRL to value 0x01"]
 impl crate::Resettable for CACHE_SYNC_CTRL_SPEC {

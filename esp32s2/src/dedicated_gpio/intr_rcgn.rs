@@ -67,38 +67,14 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("INTR_RCGN")
-            .field(
-                "intr_mode_ch0",
-                &format_args!("{}", self.intr_mode_ch0().bits()),
-            )
-            .field(
-                "intr_mode_ch1",
-                &format_args!("{}", self.intr_mode_ch1().bits()),
-            )
-            .field(
-                "intr_mode_ch2",
-                &format_args!("{}", self.intr_mode_ch2().bits()),
-            )
-            .field(
-                "intr_mode_ch3",
-                &format_args!("{}", self.intr_mode_ch3().bits()),
-            )
-            .field(
-                "intr_mode_ch4",
-                &format_args!("{}", self.intr_mode_ch4().bits()),
-            )
-            .field(
-                "intr_mode_ch5",
-                &format_args!("{}", self.intr_mode_ch5().bits()),
-            )
-            .field(
-                "intr_mode_ch6",
-                &format_args!("{}", self.intr_mode_ch6().bits()),
-            )
-            .field(
-                "intr_mode_ch7",
-                &format_args!("{}", self.intr_mode_ch7().bits()),
-            )
+            .field("intr_mode_ch0", &self.intr_mode_ch0().bits())
+            .field("intr_mode_ch1", &self.intr_mode_ch1().bits())
+            .field("intr_mode_ch2", &self.intr_mode_ch2().bits())
+            .field("intr_mode_ch3", &self.intr_mode_ch3().bits())
+            .field("intr_mode_ch4", &self.intr_mode_ch4().bits())
+            .field("intr_mode_ch5", &self.intr_mode_ch5().bits())
+            .field("intr_mode_ch6", &self.intr_mode_ch6().bits())
+            .field("intr_mode_ch7", &self.intr_mode_ch7().bits())
             .finish()
     }
 }
@@ -178,10 +154,6 @@ impl crate::Readable for INTR_RCGN_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`intr_rcgn::W`](W) writer structure"]
 impl crate::Writable for INTR_RCGN_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets INTR_RCGN to value 0"]
-impl crate::Resettable for INTR_RCGN_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for INTR_RCGN_SPEC {}

@@ -15,7 +15,7 @@ impl core::fmt::Debug for R {
         f.debug_struct("CPU_PERI_TIMEOUT_ADDR")
             .field(
                 "cpu_peri_timeout_addr",
-                &format_args!("{}", self.cpu_peri_timeout_addr().bits()),
+                &self.cpu_peri_timeout_addr().bits(),
             )
             .finish()
     }
@@ -34,6 +34,4 @@ impl crate::RegisterSpec for CPU_PERI_TIMEOUT_ADDR_SPEC {
 #[doc = "`read()` method returns [`cpu_peri_timeout_addr::R`](R) reader structure"]
 impl crate::Readable for CPU_PERI_TIMEOUT_ADDR_SPEC {}
 #[doc = "`reset()` method sets CPU_PERI_TIMEOUT_ADDR to value 0"]
-impl crate::Resettable for CPU_PERI_TIMEOUT_ADDR_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for CPU_PERI_TIMEOUT_ADDR_SPEC {}

@@ -13,7 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("REGDMA_MEM_ADDR")
-            .field("mem_addr", &format_args!("{}", self.mem_addr().bits()))
+            .field("mem_addr", &self.mem_addr().bits())
             .finish()
     }
 }
@@ -31,6 +31,4 @@ impl crate::RegisterSpec for REGDMA_MEM_ADDR_SPEC {
 #[doc = "`read()` method returns [`regdma_mem_addr::R`](R) reader structure"]
 impl crate::Readable for REGDMA_MEM_ADDR_SPEC {}
 #[doc = "`reset()` method sets REGDMA_MEM_ADDR to value 0"]
-impl crate::Resettable for REGDMA_MEM_ADDR_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for REGDMA_MEM_ADDR_SPEC {}

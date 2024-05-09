@@ -19,7 +19,7 @@ impl core::fmt::Debug for R {
         f.debug_struct("HP_PARLIO_TX_INT_MAP")
             .field(
                 "core1_hp_parlio_tx_int_map",
-                &format_args!("{}", self.core1_hp_parlio_tx_int_map().bits()),
+                &self.core1_hp_parlio_tx_int_map().bits(),
             )
             .finish()
     }
@@ -50,10 +50,6 @@ impl crate::Readable for HP_PARLIO_TX_INT_MAP_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`hp_parlio_tx_int_map::W`](W) writer structure"]
 impl crate::Writable for HP_PARLIO_TX_INT_MAP_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets HP_PARLIO_TX_INT_MAP to value 0"]
-impl crate::Resettable for HP_PARLIO_TX_INT_MAP_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for HP_PARLIO_TX_INT_MAP_SPEC {}

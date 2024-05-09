@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("GPIO_O_HOLD_CTRL0")
-            .field(
-                "reg_gpio_0_hold_low",
-                &format_args!("{}", self.reg_gpio_0_hold_low().bits()),
-            )
+            .field("reg_gpio_0_hold_low", &self.reg_gpio_0_hold_low().bits())
             .finish()
     }
 }
@@ -48,10 +45,6 @@ impl crate::Readable for GPIO_O_HOLD_CTRL0_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`gpio_o_hold_ctrl0::W`](W) writer structure"]
 impl crate::Writable for GPIO_O_HOLD_CTRL0_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets GPIO_O_HOLD_CTRL0 to value 0"]
-impl crate::Resettable for GPIO_O_HOLD_CTRL0_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for GPIO_O_HOLD_CTRL0_SPEC {}

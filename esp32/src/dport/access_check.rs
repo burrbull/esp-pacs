@@ -20,8 +20,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("ACCESS_CHECK")
-            .field("pro", &format_args!("{}", self.pro().bit()))
-            .field("app", &format_args!("{}", self.app().bit()))
+            .field("pro", &self.pro().bit())
+            .field("app", &self.app().bit())
             .finish()
     }
 }
@@ -39,6 +39,4 @@ impl crate::RegisterSpec for ACCESS_CHECK_SPEC {
 #[doc = "`read()` method returns [`access_check::R`](R) reader structure"]
 impl crate::Readable for ACCESS_CHECK_SPEC {}
 #[doc = "`reset()` method sets ACCESS_CHECK to value 0"]
-impl crate::Resettable for ACCESS_CHECK_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for ACCESS_CHECK_SPEC {}

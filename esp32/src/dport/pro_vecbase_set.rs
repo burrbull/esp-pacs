@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PRO_VECBASE_SET")
-            .field(
-                "pro_out_vecbase",
-                &format_args!("{}", self.pro_out_vecbase().bits()),
-            )
+            .field("pro_out_vecbase", &self.pro_out_vecbase().bits())
             .finish()
     }
 }
@@ -48,10 +45,6 @@ impl crate::Readable for PRO_VECBASE_SET_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`pro_vecbase_set::W`](W) writer structure"]
 impl crate::Writable for PRO_VECBASE_SET_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets PRO_VECBASE_SET to value 0"]
-impl crate::Resettable for PRO_VECBASE_SET_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for PRO_VECBASE_SET_SPEC {}

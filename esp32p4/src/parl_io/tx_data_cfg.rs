@@ -35,15 +35,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("TX_DATA_CFG")
-            .field("tx_bitlen", &format_args!("{}", self.tx_bitlen().bits()))
-            .field(
-                "tx_data_order_inv",
-                &format_args!("{}", self.tx_data_order_inv().bit()),
-            )
-            .field(
-                "tx_bus_wid_sel",
-                &format_args!("{}", self.tx_bus_wid_sel().bits()),
-            )
+            .field("tx_bitlen", &self.tx_bitlen().bits())
+            .field("tx_data_order_inv", &self.tx_data_order_inv().bit())
+            .field("tx_bus_wid_sel", &self.tx_bus_wid_sel().bits())
             .finish()
     }
 }
@@ -83,8 +77,6 @@ impl crate::Readable for TX_DATA_CFG_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`tx_data_cfg::W`](W) writer structure"]
 impl crate::Writable for TX_DATA_CFG_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets TX_DATA_CFG to value 0x6000_0000"]
 impl crate::Resettable for TX_DATA_CFG_SPEC {

@@ -35,15 +35,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("OUT_PRI")
-            .field("tx_pri", &format_args!("{}", self.tx_pri().bits()))
-            .field(
-                "tx_ch_arb_weigh",
-                &format_args!("{}", self.tx_ch_arb_weigh().bits()),
-            )
-            .field(
-                "tx_arb_weigh_opt_dir",
-                &format_args!("{}", self.tx_arb_weigh_opt_dir().bit()),
-            )
+            .field("tx_pri", &self.tx_pri().bits())
+            .field("tx_ch_arb_weigh", &self.tx_ch_arb_weigh().bits())
+            .field("tx_arb_weigh_opt_dir", &self.tx_arb_weigh_opt_dir().bit())
             .finish()
     }
 }
@@ -83,10 +77,6 @@ impl crate::Readable for OUT_PRI_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`out_pri::W`](W) writer structure"]
 impl crate::Writable for OUT_PRI_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets OUT_PRI to value 0"]
-impl crate::Resettable for OUT_PRI_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for OUT_PRI_SPEC {}

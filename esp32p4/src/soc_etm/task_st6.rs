@@ -145,63 +145,60 @@ impl core::fmt::Debug for R {
         f.debug_struct("TASK_ST6")
             .field(
                 "pdma_axi_task_in_start_ch2_st",
-                &format_args!("{}", self.pdma_axi_task_in_start_ch2_st().bit()),
+                &self.pdma_axi_task_in_start_ch2_st().bit(),
             )
             .field(
                 "pdma_axi_task_out_start_ch0_st",
-                &format_args!("{}", self.pdma_axi_task_out_start_ch0_st().bit()),
+                &self.pdma_axi_task_out_start_ch0_st().bit(),
             )
             .field(
                 "pdma_axi_task_out_start_ch1_st",
-                &format_args!("{}", self.pdma_axi_task_out_start_ch1_st().bit()),
+                &self.pdma_axi_task_out_start_ch1_st().bit(),
             )
             .field(
                 "pdma_axi_task_out_start_ch2_st",
-                &format_args!("{}", self.pdma_axi_task_out_start_ch2_st().bit()),
+                &self.pdma_axi_task_out_start_ch2_st().bit(),
             )
-            .field(
-                "pmu_task_sleep_req_st",
-                &format_args!("{}", self.pmu_task_sleep_req_st().bit()),
-            )
+            .field("pmu_task_sleep_req_st", &self.pmu_task_sleep_req_st().bit())
             .field(
                 "dma2d_task_in_start_ch0_st",
-                &format_args!("{}", self.dma2d_task_in_start_ch0_st().bit()),
+                &self.dma2d_task_in_start_ch0_st().bit(),
             )
             .field(
                 "dma2d_task_in_start_ch1_st",
-                &format_args!("{}", self.dma2d_task_in_start_ch1_st().bit()),
+                &self.dma2d_task_in_start_ch1_st().bit(),
             )
             .field(
                 "dma2d_task_in_dscr_ready_ch0_st",
-                &format_args!("{}", self.dma2d_task_in_dscr_ready_ch0_st().bit()),
+                &self.dma2d_task_in_dscr_ready_ch0_st().bit(),
             )
             .field(
                 "dma2d_task_in_dscr_ready_ch1_st",
-                &format_args!("{}", self.dma2d_task_in_dscr_ready_ch1_st().bit()),
+                &self.dma2d_task_in_dscr_ready_ch1_st().bit(),
             )
             .field(
                 "dma2d_task_out_start_ch0_st",
-                &format_args!("{}", self.dma2d_task_out_start_ch0_st().bit()),
+                &self.dma2d_task_out_start_ch0_st().bit(),
             )
             .field(
                 "dma2d_task_out_start_ch1_st",
-                &format_args!("{}", self.dma2d_task_out_start_ch1_st().bit()),
+                &self.dma2d_task_out_start_ch1_st().bit(),
             )
             .field(
                 "dma2d_task_out_start_ch2_st",
-                &format_args!("{}", self.dma2d_task_out_start_ch2_st().bit()),
+                &self.dma2d_task_out_start_ch2_st().bit(),
             )
             .field(
                 "dma2d_task_out_dscr_ready_ch0_st",
-                &format_args!("{}", self.dma2d_task_out_dscr_ready_ch0_st().bit()),
+                &self.dma2d_task_out_dscr_ready_ch0_st().bit(),
             )
             .field(
                 "dma2d_task_out_dscr_ready_ch1_st",
-                &format_args!("{}", self.dma2d_task_out_dscr_ready_ch1_st().bit()),
+                &self.dma2d_task_out_dscr_ready_ch1_st().bit(),
             )
             .field(
                 "dma2d_task_out_dscr_ready_ch2_st",
-                &format_args!("{}", self.dma2d_task_out_dscr_ready_ch2_st().bit()),
+                &self.dma2d_task_out_dscr_ready_ch2_st().bit(),
             )
             .finish()
     }
@@ -332,10 +329,6 @@ impl crate::Readable for TASK_ST6_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`task_st6::W`](W) writer structure"]
 impl crate::Writable for TASK_ST6_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets TASK_ST6 to value 0"]
-impl crate::Resettable for TASK_ST6_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for TASK_ST6_SPEC {}

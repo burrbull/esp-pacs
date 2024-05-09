@@ -34,22 +34,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("AE_BLOCK_MEAN_0")
-            .field(
-                "ae_b03_mean",
-                &format_args!("{}", self.ae_b03_mean().bits()),
-            )
-            .field(
-                "ae_b02_mean",
-                &format_args!("{}", self.ae_b02_mean().bits()),
-            )
-            .field(
-                "ae_b01_mean",
-                &format_args!("{}", self.ae_b01_mean().bits()),
-            )
-            .field(
-                "ae_b00_mean",
-                &format_args!("{}", self.ae_b00_mean().bits()),
-            )
+            .field("ae_b03_mean", &self.ae_b03_mean().bits())
+            .field("ae_b02_mean", &self.ae_b02_mean().bits())
+            .field("ae_b01_mean", &self.ae_b01_mean().bits())
+            .field("ae_b00_mean", &self.ae_b00_mean().bits())
             .finish()
     }
 }
@@ -67,6 +55,4 @@ impl crate::RegisterSpec for AE_BLOCK_MEAN_0_SPEC {
 #[doc = "`read()` method returns [`ae_block_mean_0::R`](R) reader structure"]
 impl crate::Readable for AE_BLOCK_MEAN_0_SPEC {}
 #[doc = "`reset()` method sets AE_BLOCK_MEAN_0 to value 0"]
-impl crate::Resettable for AE_BLOCK_MEAN_0_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for AE_BLOCK_MEAN_0_SPEC {}

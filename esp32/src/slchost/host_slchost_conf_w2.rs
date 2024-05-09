@@ -44,22 +44,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("HOST_SLCHOST_CONF_W2")
-            .field(
-                "host_slchost_conf8",
-                &format_args!("{}", self.host_slchost_conf8().bits()),
-            )
-            .field(
-                "host_slchost_conf9",
-                &format_args!("{}", self.host_slchost_conf9().bits()),
-            )
-            .field(
-                "host_slchost_conf10",
-                &format_args!("{}", self.host_slchost_conf10().bits()),
-            )
-            .field(
-                "host_slchost_conf11",
-                &format_args!("{}", self.host_slchost_conf11().bits()),
-            )
+            .field("host_slchost_conf8", &self.host_slchost_conf8().bits())
+            .field("host_slchost_conf9", &self.host_slchost_conf9().bits())
+            .field("host_slchost_conf10", &self.host_slchost_conf10().bits())
+            .field("host_slchost_conf11", &self.host_slchost_conf11().bits())
             .finish()
     }
 }
@@ -105,10 +93,6 @@ impl crate::Readable for HOST_SLCHOST_CONF_W2_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`host_slchost_conf_w2::W`](W) writer structure"]
 impl crate::Writable for HOST_SLCHOST_CONF_W2_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets HOST_SLCHOST_CONF_W2 to value 0"]
-impl crate::Resettable for HOST_SLCHOST_CONF_W2_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for HOST_SLCHOST_CONF_W2_SPEC {}

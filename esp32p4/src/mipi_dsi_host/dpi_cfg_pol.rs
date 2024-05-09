@@ -53,26 +53,11 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("DPI_CFG_POL")
-            .field(
-                "dataen_active_low",
-                &format_args!("{}", self.dataen_active_low().bit()),
-            )
-            .field(
-                "vsync_active_low",
-                &format_args!("{}", self.vsync_active_low().bit()),
-            )
-            .field(
-                "hsync_active_low",
-                &format_args!("{}", self.hsync_active_low().bit()),
-            )
-            .field(
-                "shutd_active_low",
-                &format_args!("{}", self.shutd_active_low().bit()),
-            )
-            .field(
-                "colorm_active_low",
-                &format_args!("{}", self.colorm_active_low().bit()),
-            )
+            .field("dataen_active_low", &self.dataen_active_low().bit())
+            .field("vsync_active_low", &self.vsync_active_low().bit())
+            .field("hsync_active_low", &self.hsync_active_low().bit())
+            .field("shutd_active_low", &self.shutd_active_low().bit())
+            .field("colorm_active_low", &self.colorm_active_low().bit())
             .finish()
     }
 }
@@ -124,10 +109,6 @@ impl crate::Readable for DPI_CFG_POL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`dpi_cfg_pol::W`](W) writer structure"]
 impl crate::Writable for DPI_CFG_POL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets DPI_CFG_POL to value 0"]
-impl crate::Resettable for DPI_CFG_POL_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for DPI_CFG_POL_SPEC {}

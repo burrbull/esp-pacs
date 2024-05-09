@@ -55,11 +55,11 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("REGDMA_CONF")
-            .field("flow_err", &format_args!("{}", self.flow_err().bits()))
-            .field("to_mem", &format_args!("{}", self.to_mem().bit()))
-            .field("link_sel", &format_args!("{}", self.link_sel().bits()))
-            .field("to_mem_mac", &format_args!("{}", self.to_mem_mac().bit()))
-            .field("sel_mac", &format_args!("{}", self.sel_mac().bit()))
+            .field("flow_err", &self.flow_err().bits())
+            .field("to_mem", &self.to_mem().bit())
+            .field("link_sel", &self.link_sel().bits())
+            .field("to_mem_mac", &self.to_mem_mac().bit())
+            .field("sel_mac", &self.sel_mac().bit())
             .finish()
     }
 }
@@ -117,10 +117,6 @@ impl crate::Readable for REGDMA_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`regdma_conf::W`](W) writer structure"]
 impl crate::Writable for REGDMA_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets REGDMA_CONF to value 0"]
-impl crate::Resettable for REGDMA_CONF_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for REGDMA_CONF_SPEC {}

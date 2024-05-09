@@ -42,22 +42,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("RTC_FASTMEM_CONFIG")
-            .field(
-                "rtc_mem_crc_start",
-                &format_args!("{}", self.rtc_mem_crc_start().bit()),
-            )
-            .field(
-                "rtc_mem_crc_addr",
-                &format_args!("{}", self.rtc_mem_crc_addr().bits()),
-            )
-            .field(
-                "rtc_mem_crc_len",
-                &format_args!("{}", self.rtc_mem_crc_len().bits()),
-            )
-            .field(
-                "rtc_mem_crc_finish",
-                &format_args!("{}", self.rtc_mem_crc_finish().bit()),
-            )
+            .field("rtc_mem_crc_start", &self.rtc_mem_crc_start().bit())
+            .field("rtc_mem_crc_addr", &self.rtc_mem_crc_addr().bits())
+            .field("rtc_mem_crc_len", &self.rtc_mem_crc_len().bits())
+            .field("rtc_mem_crc_finish", &self.rtc_mem_crc_finish().bit())
             .finish()
     }
 }
@@ -97,8 +85,6 @@ impl crate::Readable for RTC_FASTMEM_CONFIG_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`rtc_fastmem_config::W`](W) writer structure"]
 impl crate::Writable for RTC_FASTMEM_CONFIG_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets RTC_FASTMEM_CONFIG to value 0x7ff0_0000"]
 impl crate::Resettable for RTC_FASTMEM_CONFIG_SPEC {

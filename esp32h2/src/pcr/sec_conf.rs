@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SEC_CONF")
-            .field(
-                "sec_clk_sel",
-                &format_args!("{}", self.sec_clk_sel().bits()),
-            )
+            .field("sec_clk_sel", &self.sec_clk_sel().bits())
             .finish()
     }
 }
@@ -48,10 +45,6 @@ impl crate::Readable for SEC_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`sec_conf::W`](W) writer structure"]
 impl crate::Writable for SEC_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SEC_CONF to value 0"]
-impl crate::Resettable for SEC_CONF_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for SEC_CONF_SPEC {}

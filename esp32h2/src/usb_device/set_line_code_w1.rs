@@ -27,15 +27,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SET_LINE_CODE_W1")
-            .field(
-                "bchar_format",
-                &format_args!("{}", self.bchar_format().bits()),
-            )
-            .field(
-                "bparity_type",
-                &format_args!("{}", self.bparity_type().bits()),
-            )
-            .field("bdata_bits", &format_args!("{}", self.bdata_bits().bits()))
+            .field("bchar_format", &self.bchar_format().bits())
+            .field("bparity_type", &self.bparity_type().bits())
+            .field("bdata_bits", &self.bdata_bits().bits())
             .finish()
     }
 }
@@ -53,6 +47,4 @@ impl crate::RegisterSpec for SET_LINE_CODE_W1_SPEC {
 #[doc = "`read()` method returns [`set_line_code_w1::R`](R) reader structure"]
 impl crate::Readable for SET_LINE_CODE_W1_SPEC {}
 #[doc = "`reset()` method sets SET_LINE_CODE_W1 to value 0"]
-impl crate::Resettable for SET_LINE_CODE_W1_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for SET_LINE_CODE_W1_SPEC {}

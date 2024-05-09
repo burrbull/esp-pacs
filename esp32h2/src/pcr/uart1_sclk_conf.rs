@@ -53,26 +53,11 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("UART1_SCLK_CONF")
-            .field(
-                "uart1_sclk_div_a",
-                &format_args!("{}", self.uart1_sclk_div_a().bits()),
-            )
-            .field(
-                "uart1_sclk_div_b",
-                &format_args!("{}", self.uart1_sclk_div_b().bits()),
-            )
-            .field(
-                "uart1_sclk_div_num",
-                &format_args!("{}", self.uart1_sclk_div_num().bits()),
-            )
-            .field(
-                "uart1_sclk_sel",
-                &format_args!("{}", self.uart1_sclk_sel().bits()),
-            )
-            .field(
-                "uart1_sclk_en",
-                &format_args!("{}", self.uart1_sclk_en().bit()),
-            )
+            .field("uart1_sclk_div_a", &self.uart1_sclk_div_a().bits())
+            .field("uart1_sclk_div_b", &self.uart1_sclk_div_b().bits())
+            .field("uart1_sclk_div_num", &self.uart1_sclk_div_num().bits())
+            .field("uart1_sclk_sel", &self.uart1_sclk_sel().bits())
+            .field("uart1_sclk_en", &self.uart1_sclk_en().bit())
             .finish()
     }
 }
@@ -124,8 +109,6 @@ impl crate::Readable for UART1_SCLK_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`uart1_sclk_conf::W`](W) writer structure"]
 impl crate::Writable for UART1_SCLK_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets UART1_SCLK_CONF to value 0x0070_0000"]
 impl crate::Resettable for UART1_SCLK_CONF_SPEC {

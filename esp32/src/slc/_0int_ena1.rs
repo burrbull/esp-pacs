@@ -251,113 +251,68 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("_0INT_ENA1")
-            .field(
-                "frhost_bit0_int_ena1",
-                &format_args!("{}", self.frhost_bit0_int_ena1().bit()),
-            )
-            .field(
-                "frhost_bit1_int_ena1",
-                &format_args!("{}", self.frhost_bit1_int_ena1().bit()),
-            )
-            .field(
-                "frhost_bit2_int_ena1",
-                &format_args!("{}", self.frhost_bit2_int_ena1().bit()),
-            )
-            .field(
-                "frhost_bit3_int_ena1",
-                &format_args!("{}", self.frhost_bit3_int_ena1().bit()),
-            )
-            .field(
-                "frhost_bit4_int_ena1",
-                &format_args!("{}", self.frhost_bit4_int_ena1().bit()),
-            )
-            .field(
-                "frhost_bit5_int_ena1",
-                &format_args!("{}", self.frhost_bit5_int_ena1().bit()),
-            )
-            .field(
-                "frhost_bit6_int_ena1",
-                &format_args!("{}", self.frhost_bit6_int_ena1().bit()),
-            )
-            .field(
-                "frhost_bit7_int_ena1",
-                &format_args!("{}", self.frhost_bit7_int_ena1().bit()),
-            )
+            .field("frhost_bit0_int_ena1", &self.frhost_bit0_int_ena1().bit())
+            .field("frhost_bit1_int_ena1", &self.frhost_bit1_int_ena1().bit())
+            .field("frhost_bit2_int_ena1", &self.frhost_bit2_int_ena1().bit())
+            .field("frhost_bit3_int_ena1", &self.frhost_bit3_int_ena1().bit())
+            .field("frhost_bit4_int_ena1", &self.frhost_bit4_int_ena1().bit())
+            .field("frhost_bit5_int_ena1", &self.frhost_bit5_int_ena1().bit())
+            .field("frhost_bit6_int_ena1", &self.frhost_bit6_int_ena1().bit())
+            .field("frhost_bit7_int_ena1", &self.frhost_bit7_int_ena1().bit())
             .field(
                 "slc0_rx_start_int_ena1",
-                &format_args!("{}", self.slc0_rx_start_int_ena1().bit()),
+                &self.slc0_rx_start_int_ena1().bit(),
             )
             .field(
                 "slc0_tx_start_int_ena1",
-                &format_args!("{}", self.slc0_tx_start_int_ena1().bit()),
+                &self.slc0_tx_start_int_ena1().bit(),
             )
-            .field(
-                "slc0_rx_udf_int_ena1",
-                &format_args!("{}", self.slc0_rx_udf_int_ena1().bit()),
-            )
-            .field(
-                "slc0_tx_ovf_int_ena1",
-                &format_args!("{}", self.slc0_tx_ovf_int_ena1().bit()),
-            )
+            .field("slc0_rx_udf_int_ena1", &self.slc0_rx_udf_int_ena1().bit())
+            .field("slc0_tx_ovf_int_ena1", &self.slc0_tx_ovf_int_ena1().bit())
             .field(
                 "slc0_token0_1to0_int_ena1",
-                &format_args!("{}", self.slc0_token0_1to0_int_ena1().bit()),
+                &self.slc0_token0_1to0_int_ena1().bit(),
             )
             .field(
                 "slc0_token1_1to0_int_ena1",
-                &format_args!("{}", self.slc0_token1_1to0_int_ena1().bit()),
+                &self.slc0_token1_1to0_int_ena1().bit(),
             )
-            .field(
-                "slc0_tx_done_int_ena1",
-                &format_args!("{}", self.slc0_tx_done_int_ena1().bit()),
-            )
+            .field("slc0_tx_done_int_ena1", &self.slc0_tx_done_int_ena1().bit())
             .field(
                 "slc0_tx_suc_eof_int_ena1",
-                &format_args!("{}", self.slc0_tx_suc_eof_int_ena1().bit()),
+                &self.slc0_tx_suc_eof_int_ena1().bit(),
             )
-            .field(
-                "slc0_rx_done_int_ena1",
-                &format_args!("{}", self.slc0_rx_done_int_ena1().bit()),
-            )
-            .field(
-                "slc0_rx_eof_int_ena1",
-                &format_args!("{}", self.slc0_rx_eof_int_ena1().bit()),
-            )
-            .field(
-                "slc0_tohost_int_ena1",
-                &format_args!("{}", self.slc0_tohost_int_ena1().bit()),
-            )
+            .field("slc0_rx_done_int_ena1", &self.slc0_rx_done_int_ena1().bit())
+            .field("slc0_rx_eof_int_ena1", &self.slc0_rx_eof_int_ena1().bit())
+            .field("slc0_tohost_int_ena1", &self.slc0_tohost_int_ena1().bit())
             .field(
                 "slc0_tx_dscr_err_int_ena1",
-                &format_args!("{}", self.slc0_tx_dscr_err_int_ena1().bit()),
+                &self.slc0_tx_dscr_err_int_ena1().bit(),
             )
             .field(
                 "slc0_rx_dscr_err_int_ena1",
-                &format_args!("{}", self.slc0_rx_dscr_err_int_ena1().bit()),
+                &self.slc0_rx_dscr_err_int_ena1().bit(),
             )
             .field(
                 "slc0_tx_dscr_empty_int_ena1",
-                &format_args!("{}", self.slc0_tx_dscr_empty_int_ena1().bit()),
+                &self.slc0_tx_dscr_empty_int_ena1().bit(),
             )
             .field(
                 "slc0_host_rd_ack_int_ena1",
-                &format_args!("{}", self.slc0_host_rd_ack_int_ena1().bit()),
+                &self.slc0_host_rd_ack_int_ena1().bit(),
             )
             .field(
                 "slc0_wr_retry_done_int_ena1",
-                &format_args!("{}", self.slc0_wr_retry_done_int_ena1().bit()),
+                &self.slc0_wr_retry_done_int_ena1().bit(),
             )
             .field(
                 "slc0_tx_err_eof_int_ena1",
-                &format_args!("{}", self.slc0_tx_err_eof_int_ena1().bit()),
+                &self.slc0_tx_err_eof_int_ena1().bit(),
             )
-            .field(
-                "cmd_dtc_int_ena1",
-                &format_args!("{}", self.cmd_dtc_int_ena1().bit()),
-            )
+            .field("cmd_dtc_int_ena1", &self.cmd_dtc_int_ena1().bit())
             .field(
                 "slc0_rx_quick_eof_int_ena1",
-                &format_args!("{}", self.slc0_rx_quick_eof_int_ena1().bit()),
+                &self.slc0_rx_quick_eof_int_ena1().bit(),
             )
             .finish()
     }
@@ -546,10 +501,6 @@ impl crate::Readable for _0INT_ENA1_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`_0int_ena1::W`](W) writer structure"]
 impl crate::Writable for _0INT_ENA1_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets _0INT_ENA1 to value 0"]
-impl crate::Resettable for _0INT_ENA1_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for _0INT_ENA1_SPEC {}

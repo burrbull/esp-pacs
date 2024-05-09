@@ -44,22 +44,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("L2_CACHE_ACS_CNT_INT_CLR")
-            .field(
-                "l2_ibus2_ovf_int_clr",
-                &format_args!("{}", self.l2_ibus2_ovf_int_clr().bit()),
-            )
-            .field(
-                "l2_ibus3_ovf_int_clr",
-                &format_args!("{}", self.l2_ibus3_ovf_int_clr().bit()),
-            )
-            .field(
-                "l2_dbus2_ovf_int_clr",
-                &format_args!("{}", self.l2_dbus2_ovf_int_clr().bit()),
-            )
-            .field(
-                "l2_dbus3_ovf_int_clr",
-                &format_args!("{}", self.l2_dbus3_ovf_int_clr().bit()),
-            )
+            .field("l2_ibus2_ovf_int_clr", &self.l2_ibus2_ovf_int_clr().bit())
+            .field("l2_ibus3_ovf_int_clr", &self.l2_ibus3_ovf_int_clr().bit())
+            .field("l2_dbus2_ovf_int_clr", &self.l2_dbus2_ovf_int_clr().bit())
+            .field("l2_dbus3_ovf_int_clr", &self.l2_dbus3_ovf_int_clr().bit())
             .finish()
     }
 }
@@ -113,10 +101,6 @@ impl crate::Readable for L2_CACHE_ACS_CNT_INT_CLR_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`l2_cache_acs_cnt_int_clr::W`](W) writer structure"]
 impl crate::Writable for L2_CACHE_ACS_CNT_INT_CLR_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets L2_CACHE_ACS_CNT_INT_CLR to value 0"]
-impl crate::Resettable for L2_CACHE_ACS_CNT_INT_CLR_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for L2_CACHE_ACS_CNT_INT_CLR_SPEC {}

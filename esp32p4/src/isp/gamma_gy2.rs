@@ -44,22 +44,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("GAMMA_GY2")
-            .field(
-                "gamma_g_y07",
-                &format_args!("{}", self.gamma_g_y07().bits()),
-            )
-            .field(
-                "gamma_g_y06",
-                &format_args!("{}", self.gamma_g_y06().bits()),
-            )
-            .field(
-                "gamma_g_y05",
-                &format_args!("{}", self.gamma_g_y05().bits()),
-            )
-            .field(
-                "gamma_g_y04",
-                &format_args!("{}", self.gamma_g_y04().bits()),
-            )
+            .field("gamma_g_y07", &self.gamma_g_y07().bits())
+            .field("gamma_g_y06", &self.gamma_g_y06().bits())
+            .field("gamma_g_y05", &self.gamma_g_y05().bits())
+            .field("gamma_g_y04", &self.gamma_g_y04().bits())
             .finish()
     }
 }
@@ -105,8 +93,6 @@ impl crate::Readable for GAMMA_GY2_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`gamma_gy2::W`](W) writer structure"]
 impl crate::Writable for GAMMA_GY2_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets GAMMA_GY2 to value 0x5060_7080"]
 impl crate::Resettable for GAMMA_GY2_SPEC {

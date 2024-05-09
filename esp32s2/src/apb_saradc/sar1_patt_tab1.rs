@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SAR1_PATT_TAB1")
-            .field(
-                "sar1_patt_tab1",
-                &format_args!("{}", self.sar1_patt_tab1().bits()),
-            )
+            .field("sar1_patt_tab1", &self.sar1_patt_tab1().bits())
             .finish()
     }
 }
@@ -48,8 +45,6 @@ impl crate::Readable for SAR1_PATT_TAB1_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`sar1_patt_tab1::W`](W) writer structure"]
 impl crate::Writable for SAR1_PATT_TAB1_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SAR1_PATT_TAB1 to value 0x0f0f_0f0f"]
 impl crate::Resettable for SAR1_PATT_TAB1_SPEC {

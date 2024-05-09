@@ -48,21 +48,12 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("INT_RAW")
-            .field("rx_done", &format_args!("{}", self.rx_done().bit()))
-            .field("rx_hung", &format_args!("{}", self.rx_hung().bit()))
-            .field(
-                "rx_fifomem_udf",
-                &format_args!("{}", self.rx_fifomem_udf().bit()),
-            )
-            .field("vad_done", &format_args!("{}", self.vad_done().bit()))
-            .field(
-                "vad_reset_done",
-                &format_args!("{}", self.vad_reset_done().bit()),
-            )
-            .field(
-                "rx_mem_threshold",
-                &format_args!("{}", self.rx_mem_threshold().bit()),
-            )
+            .field("rx_done", &self.rx_done().bit())
+            .field("rx_hung", &self.rx_hung().bit())
+            .field("rx_fifomem_udf", &self.rx_fifomem_udf().bit())
+            .field("vad_done", &self.vad_done().bit())
+            .field("vad_reset_done", &self.vad_reset_done().bit())
+            .field("rx_mem_threshold", &self.rx_mem_threshold().bit())
             .finish()
     }
 }
@@ -80,6 +71,4 @@ impl crate::RegisterSpec for INT_RAW_SPEC {
 #[doc = "`read()` method returns [`int_raw::R`](R) reader structure"]
 impl crate::Readable for INT_RAW_SPEC {}
 #[doc = "`reset()` method sets INT_RAW to value 0"]
-impl crate::Resettable for INT_RAW_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for INT_RAW_SPEC {}

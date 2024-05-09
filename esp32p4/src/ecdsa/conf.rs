@@ -62,24 +62,12 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CONF")
-            .field("work_mode", &format_args!("{}", self.work_mode().bits()))
-            .field("ecc_curve", &format_args!("{}", self.ecc_curve().bit()))
-            .field(
-                "software_set_k",
-                &format_args!("{}", self.software_set_k().bit()),
-            )
-            .field(
-                "software_set_z",
-                &format_args!("{}", self.software_set_z().bit()),
-            )
-            .field(
-                "deterministic_k",
-                &format_args!("{}", self.deterministic_k().bit()),
-            )
-            .field(
-                "deterministic_loop",
-                &format_args!("{}", self.deterministic_loop().bits()),
-            )
+            .field("work_mode", &self.work_mode().bits())
+            .field("ecc_curve", &self.ecc_curve().bit())
+            .field("software_set_k", &self.software_set_k().bit())
+            .field("software_set_z", &self.software_set_z().bit())
+            .field("deterministic_k", &self.deterministic_k().bit())
+            .field("deterministic_loop", &self.deterministic_loop().bits())
             .finish()
     }
 }
@@ -137,10 +125,6 @@ impl crate::Readable for CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`conf::W`](W) writer structure"]
 impl crate::Writable for CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CONF to value 0"]
-impl crate::Resettable for CONF_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for CONF_SPEC {}

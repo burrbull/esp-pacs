@@ -24,11 +24,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("ECO_CELL_CTRL_APB")
-            .field(
-                "rdn_result_apb",
-                &format_args!("{}", self.rdn_result_apb().bit()),
-            )
-            .field("rdn_ena_apb", &format_args!("{}", self.rdn_ena_apb().bit()))
+            .field("rdn_result_apb", &self.rdn_result_apb().bit())
+            .field("rdn_ena_apb", &self.rdn_ena_apb().bit())
             .finish()
     }
 }
@@ -56,10 +53,6 @@ impl crate::Readable for ECO_CELL_CTRL_APB_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`eco_cell_ctrl_apb::W`](W) writer structure"]
 impl crate::Writable for ECO_CELL_CTRL_APB_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets ECO_CELL_CTRL_APB to value 0"]
-impl crate::Resettable for ECO_CELL_CTRL_APB_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for ECO_CELL_CTRL_APB_SPEC {}

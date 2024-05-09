@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("RETENTION_CFG")
-            .field(
-                "ret_inv_cfg",
-                &format_args!("{}", self.ret_inv_cfg().bits()),
-            )
+            .field("ret_inv_cfg", &self.ret_inv_cfg().bits())
             .finish()
     }
 }
@@ -48,8 +45,6 @@ impl crate::Readable for RETENTION_CFG_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`retention_cfg::W`](W) writer structure"]
 impl crate::Writable for RETENTION_CFG_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets RETENTION_CFG to value 0xffff_ffff"]
 impl crate::Resettable for RETENTION_CFG_SPEC {

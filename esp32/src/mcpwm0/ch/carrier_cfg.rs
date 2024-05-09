@@ -62,12 +62,12 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CARRIER_CFG")
-            .field("en", &format_args!("{}", self.en().bit()))
-            .field("prescale", &format_args!("{}", self.prescale().bits()))
-            .field("duty", &format_args!("{}", self.duty().bits()))
-            .field("oshtwth", &format_args!("{}", self.oshtwth().bits()))
-            .field("out_invert", &format_args!("{}", self.out_invert().bit()))
-            .field("in_invert", &format_args!("{}", self.in_invert().bit()))
+            .field("en", &self.en().bit())
+            .field("prescale", &self.prescale().bits())
+            .field("duty", &self.duty().bits())
+            .field("oshtwth", &self.oshtwth().bits())
+            .field("out_invert", &self.out_invert().bit())
+            .field("in_invert", &self.in_invert().bit())
             .finish()
     }
 }
@@ -125,10 +125,6 @@ impl crate::Readable for CARRIER_CFG_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`carrier_cfg::W`](W) writer structure"]
 impl crate::Writable for CARRIER_CFG_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CARRIER_CFG to value 0"]
-impl crate::Resettable for CARRIER_CFG_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for CARRIER_CFG_SPEC {}

@@ -44,22 +44,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("DEBUG_SEL0")
-            .field(
-                "lp_debug_sel0",
-                &format_args!("{}", self.lp_debug_sel0().bits()),
-            )
-            .field(
-                "lp_debug_sel1",
-                &format_args!("{}", self.lp_debug_sel1().bits()),
-            )
-            .field(
-                "lp_debug_sel2",
-                &format_args!("{}", self.lp_debug_sel2().bits()),
-            )
-            .field(
-                "lp_debug_sel3",
-                &format_args!("{}", self.lp_debug_sel3().bits()),
-            )
+            .field("lp_debug_sel0", &self.lp_debug_sel0().bits())
+            .field("lp_debug_sel1", &self.lp_debug_sel1().bits())
+            .field("lp_debug_sel2", &self.lp_debug_sel2().bits())
+            .field("lp_debug_sel3", &self.lp_debug_sel3().bits())
             .finish()
     }
 }
@@ -105,10 +93,6 @@ impl crate::Readable for DEBUG_SEL0_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`debug_sel0::W`](W) writer structure"]
 impl crate::Writable for DEBUG_SEL0_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets DEBUG_SEL0 to value 0"]
-impl crate::Resettable for DEBUG_SEL0_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for DEBUG_SEL0_SPEC {}

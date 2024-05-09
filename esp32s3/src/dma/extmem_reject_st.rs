@@ -27,17 +27,14 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("EXTMEM_REJECT_ST")
-            .field(
-                "extmem_reject_atrr",
-                &format_args!("{}", self.extmem_reject_atrr().bits()),
-            )
+            .field("extmem_reject_atrr", &self.extmem_reject_atrr().bits())
             .field(
                 "extmem_reject_channel_num",
-                &format_args!("{}", self.extmem_reject_channel_num().bits()),
+                &self.extmem_reject_channel_num().bits(),
             )
             .field(
                 "extmem_reject_peri_num",
-                &format_args!("{}", self.extmem_reject_peri_num().bits()),
+                &self.extmem_reject_peri_num().bits(),
             )
             .finish()
     }
@@ -56,6 +53,4 @@ impl crate::RegisterSpec for EXTMEM_REJECT_ST_SPEC {
 #[doc = "`read()` method returns [`extmem_reject_st::R`](R) reader structure"]
 impl crate::Readable for EXTMEM_REJECT_ST_SPEC {}
 #[doc = "`reset()` method sets EXTMEM_REJECT_ST to value 0"]
-impl crate::Resettable for EXTMEM_REJECT_ST_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for EXTMEM_REJECT_ST_SPEC {}

@@ -26,14 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("RETENTION_CTRL")
-            .field(
-                "retention_link_addr",
-                &format_args!("{}", self.retention_link_addr().bits()),
-            )
-            .field(
-                "nobypass_cpu_iso_rst",
-                &format_args!("{}", self.nobypass_cpu_iso_rst().bit()),
-            )
+            .field("retention_link_addr", &self.retention_link_addr().bits())
+            .field("nobypass_cpu_iso_rst", &self.nobypass_cpu_iso_rst().bit())
             .finish()
     }
 }
@@ -67,10 +61,6 @@ impl crate::Readable for RETENTION_CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`retention_ctrl::W`](W) writer structure"]
 impl crate::Writable for RETENTION_CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets RETENTION_CTRL to value 0"]
-impl crate::Resettable for RETENTION_CTRL_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for RETENTION_CTRL_SPEC {}

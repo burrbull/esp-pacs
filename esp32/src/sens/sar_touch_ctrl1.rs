@@ -62,30 +62,12 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SAR_TOUCH_CTRL1")
-            .field(
-                "touch_meas_delay",
-                &format_args!("{}", self.touch_meas_delay().bits()),
-            )
-            .field(
-                "touch_xpd_wait",
-                &format_args!("{}", self.touch_xpd_wait().bits()),
-            )
-            .field(
-                "touch_out_sel",
-                &format_args!("{}", self.touch_out_sel().bit()),
-            )
-            .field(
-                "touch_out_1en",
-                &format_args!("{}", self.touch_out_1en().bit()),
-            )
-            .field(
-                "xpd_hall_force",
-                &format_args!("{}", self.xpd_hall_force().bit()),
-            )
-            .field(
-                "hall_phase_force",
-                &format_args!("{}", self.hall_phase_force().bit()),
-            )
+            .field("touch_meas_delay", &self.touch_meas_delay().bits())
+            .field("touch_xpd_wait", &self.touch_xpd_wait().bits())
+            .field("touch_out_sel", &self.touch_out_sel().bit())
+            .field("touch_out_1en", &self.touch_out_1en().bit())
+            .field("xpd_hall_force", &self.xpd_hall_force().bit())
+            .field("hall_phase_force", &self.hall_phase_force().bit())
             .finish()
     }
 }
@@ -143,8 +125,6 @@ impl crate::Readable for SAR_TOUCH_CTRL1_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`sar_touch_ctrl1::W`](W) writer structure"]
 impl crate::Writable for SAR_TOUCH_CTRL1_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SAR_TOUCH_CTRL1 to value 0x0204_1000"]
 impl crate::Resettable for SAR_TOUCH_CTRL1_SPEC {

@@ -69,34 +69,13 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SAR_TOUCH_CONF")
-            .field(
-                "touch_outen",
-                &format_args!("{}", self.touch_outen().bits()),
-            )
-            .field(
-                "touch_data_sel",
-                &format_args!("{}", self.touch_data_sel().bits()),
-            )
-            .field(
-                "touch_denoise_end",
-                &format_args!("{}", self.touch_denoise_end().bit()),
-            )
-            .field(
-                "touch_unit_end",
-                &format_args!("{}", self.touch_unit_end().bit()),
-            )
-            .field(
-                "touch_approach_pad2",
-                &format_args!("{}", self.touch_approach_pad2().bits()),
-            )
-            .field(
-                "touch_approach_pad1",
-                &format_args!("{}", self.touch_approach_pad1().bits()),
-            )
-            .field(
-                "touch_approach_pad0",
-                &format_args!("{}", self.touch_approach_pad0().bits()),
-            )
+            .field("touch_outen", &self.touch_outen().bits())
+            .field("touch_data_sel", &self.touch_data_sel().bits())
+            .field("touch_denoise_end", &self.touch_denoise_end().bit())
+            .field("touch_unit_end", &self.touch_unit_end().bit())
+            .field("touch_approach_pad2", &self.touch_approach_pad2().bits())
+            .field("touch_approach_pad1", &self.touch_approach_pad1().bits())
+            .field("touch_approach_pad0", &self.touch_approach_pad0().bits())
             .finish()
     }
 }
@@ -154,8 +133,6 @@ impl crate::Readable for SAR_TOUCH_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`sar_touch_conf::W`](W) writer structure"]
 impl crate::Writable for SAR_TOUCH_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SAR_TOUCH_CONF to value 0xfff0_7fff"]
 impl crate::Resettable for SAR_TOUCH_CONF_SPEC {

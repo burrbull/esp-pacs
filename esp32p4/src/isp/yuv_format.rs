@@ -26,8 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("YUV_FORMAT")
-            .field("yuv_mode", &format_args!("{}", self.yuv_mode().bit()))
-            .field("yuv_range", &format_args!("{}", self.yuv_range().bit()))
+            .field("yuv_mode", &self.yuv_mode().bit())
+            .field("yuv_range", &self.yuv_range().bit())
             .finish()
     }
 }
@@ -61,10 +61,6 @@ impl crate::Readable for YUV_FORMAT_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`yuv_format::W`](W) writer structure"]
 impl crate::Writable for YUV_FORMAT_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets YUV_FORMAT to value 0"]
-impl crate::Resettable for YUV_FORMAT_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for YUV_FORMAT_SPEC {}

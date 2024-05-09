@@ -35,18 +35,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CPU_PER_CONF")
-            .field(
-                "cpuperiod_sel",
-                &format_args!("{}", self.cpuperiod_sel().bits()),
-            )
-            .field(
-                "lowspeed_clk_sel",
-                &format_args!("{}", self.lowspeed_clk_sel().bit()),
-            )
-            .field(
-                "fast_clk_rtc_sel",
-                &format_args!("{}", self.fast_clk_rtc_sel().bit()),
-            )
+            .field("cpuperiod_sel", &self.cpuperiod_sel().bits())
+            .field("lowspeed_clk_sel", &self.lowspeed_clk_sel().bit())
+            .field("fast_clk_rtc_sel", &self.fast_clk_rtc_sel().bit())
             .finish()
     }
 }
@@ -86,10 +77,6 @@ impl crate::Readable for CPU_PER_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`cpu_per_conf::W`](W) writer structure"]
 impl crate::Writable for CPU_PER_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CPU_PER_CONF to value 0"]
-impl crate::Resettable for CPU_PER_CONF_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for CPU_PER_CONF_SPEC {}

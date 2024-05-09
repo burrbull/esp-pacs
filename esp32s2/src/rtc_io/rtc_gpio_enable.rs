@@ -19,7 +19,7 @@ impl core::fmt::Debug for R {
         f.debug_struct("RTC_GPIO_ENABLE")
             .field(
                 "reg_rtcio_reg_gpio_enable",
-                &format_args!("{}", self.reg_rtcio_reg_gpio_enable().bits()),
+                &self.reg_rtcio_reg_gpio_enable().bits(),
             )
             .finish()
     }
@@ -50,10 +50,6 @@ impl crate::Readable for RTC_GPIO_ENABLE_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`rtc_gpio_enable::W`](W) writer structure"]
 impl crate::Writable for RTC_GPIO_ENABLE_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets RTC_GPIO_ENABLE to value 0"]
-impl crate::Resettable for RTC_GPIO_ENABLE_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for RTC_GPIO_ENABLE_SPEC {}

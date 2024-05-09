@@ -170,78 +170,24 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("TX_TDM_CTRL")
-            .field(
-                "tx_tdm_chan0_en",
-                &format_args!("{}", self.tx_tdm_chan0_en().bit()),
-            )
-            .field(
-                "tx_tdm_chan1_en",
-                &format_args!("{}", self.tx_tdm_chan1_en().bit()),
-            )
-            .field(
-                "tx_tdm_chan2_en",
-                &format_args!("{}", self.tx_tdm_chan2_en().bit()),
-            )
-            .field(
-                "tx_tdm_chan3_en",
-                &format_args!("{}", self.tx_tdm_chan3_en().bit()),
-            )
-            .field(
-                "tx_tdm_chan4_en",
-                &format_args!("{}", self.tx_tdm_chan4_en().bit()),
-            )
-            .field(
-                "tx_tdm_chan5_en",
-                &format_args!("{}", self.tx_tdm_chan5_en().bit()),
-            )
-            .field(
-                "tx_tdm_chan6_en",
-                &format_args!("{}", self.tx_tdm_chan6_en().bit()),
-            )
-            .field(
-                "tx_tdm_chan7_en",
-                &format_args!("{}", self.tx_tdm_chan7_en().bit()),
-            )
-            .field(
-                "tx_tdm_chan8_en",
-                &format_args!("{}", self.tx_tdm_chan8_en().bit()),
-            )
-            .field(
-                "tx_tdm_chan9_en",
-                &format_args!("{}", self.tx_tdm_chan9_en().bit()),
-            )
-            .field(
-                "tx_tdm_chan10_en",
-                &format_args!("{}", self.tx_tdm_chan10_en().bit()),
-            )
-            .field(
-                "tx_tdm_chan11_en",
-                &format_args!("{}", self.tx_tdm_chan11_en().bit()),
-            )
-            .field(
-                "tx_tdm_chan12_en",
-                &format_args!("{}", self.tx_tdm_chan12_en().bit()),
-            )
-            .field(
-                "tx_tdm_chan13_en",
-                &format_args!("{}", self.tx_tdm_chan13_en().bit()),
-            )
-            .field(
-                "tx_tdm_chan14_en",
-                &format_args!("{}", self.tx_tdm_chan14_en().bit()),
-            )
-            .field(
-                "tx_tdm_chan15_en",
-                &format_args!("{}", self.tx_tdm_chan15_en().bit()),
-            )
-            .field(
-                "tx_tdm_tot_chan_num",
-                &format_args!("{}", self.tx_tdm_tot_chan_num().bits()),
-            )
-            .field(
-                "tx_tdm_skip_msk_en",
-                &format_args!("{}", self.tx_tdm_skip_msk_en().bit()),
-            )
+            .field("tx_tdm_chan0_en", &self.tx_tdm_chan0_en().bit())
+            .field("tx_tdm_chan1_en", &self.tx_tdm_chan1_en().bit())
+            .field("tx_tdm_chan2_en", &self.tx_tdm_chan2_en().bit())
+            .field("tx_tdm_chan3_en", &self.tx_tdm_chan3_en().bit())
+            .field("tx_tdm_chan4_en", &self.tx_tdm_chan4_en().bit())
+            .field("tx_tdm_chan5_en", &self.tx_tdm_chan5_en().bit())
+            .field("tx_tdm_chan6_en", &self.tx_tdm_chan6_en().bit())
+            .field("tx_tdm_chan7_en", &self.tx_tdm_chan7_en().bit())
+            .field("tx_tdm_chan8_en", &self.tx_tdm_chan8_en().bit())
+            .field("tx_tdm_chan9_en", &self.tx_tdm_chan9_en().bit())
+            .field("tx_tdm_chan10_en", &self.tx_tdm_chan10_en().bit())
+            .field("tx_tdm_chan11_en", &self.tx_tdm_chan11_en().bit())
+            .field("tx_tdm_chan12_en", &self.tx_tdm_chan12_en().bit())
+            .field("tx_tdm_chan13_en", &self.tx_tdm_chan13_en().bit())
+            .field("tx_tdm_chan14_en", &self.tx_tdm_chan14_en().bit())
+            .field("tx_tdm_chan15_en", &self.tx_tdm_chan15_en().bit())
+            .field("tx_tdm_tot_chan_num", &self.tx_tdm_tot_chan_num().bits())
+            .field("tx_tdm_skip_msk_en", &self.tx_tdm_skip_msk_en().bit())
             .finish()
     }
 }
@@ -371,8 +317,6 @@ impl crate::Readable for TX_TDM_CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`tx_tdm_ctrl::W`](W) writer structure"]
 impl crate::Writable for TX_TDM_CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets TX_TDM_CTRL to value 0xffff"]
 impl crate::Resettable for TX_TDM_CTRL_SPEC {

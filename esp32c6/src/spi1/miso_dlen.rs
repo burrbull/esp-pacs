@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("MISO_DLEN")
-            .field(
-                "usr_miso_dbitlen",
-                &format_args!("{}", self.usr_miso_dbitlen().bits()),
-            )
+            .field("usr_miso_dbitlen", &self.usr_miso_dbitlen().bits())
             .finish()
     }
 }
@@ -48,10 +45,6 @@ impl crate::Readable for MISO_DLEN_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`miso_dlen::W`](W) writer structure"]
 impl crate::Writable for MISO_DLEN_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets MISO_DLEN to value 0"]
-impl crate::Resettable for MISO_DLEN_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for MISO_DLEN_SPEC {}

@@ -35,18 +35,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("FILTER_CTRL0")
-            .field(
-                "filter_channel1",
-                &format_args!("{}", self.filter_channel1().bits()),
-            )
-            .field(
-                "filter_channel0",
-                &format_args!("{}", self.filter_channel0().bits()),
-            )
-            .field(
-                "filter_reset",
-                &format_args!("{}", self.filter_reset().bit()),
-            )
+            .field("filter_channel1", &self.filter_channel1().bits())
+            .field("filter_channel0", &self.filter_channel0().bits())
+            .field("filter_reset", &self.filter_reset().bit())
             .finish()
     }
 }
@@ -86,8 +77,6 @@ impl crate::Readable for FILTER_CTRL0_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`filter_ctrl0::W`](W) writer structure"]
 impl crate::Writable for FILTER_CTRL0_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets FILTER_CTRL0 to value 0x006b_4000"]
 impl crate::Resettable for FILTER_CTRL0_SPEC {

@@ -60,12 +60,12 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("DATACTRL")
-            .field("txtrig", &format_args!("{}", self.txtrig().bits()))
-            .field("rxtrig", &format_args!("{}", self.rxtrig().bits()))
-            .field("txcount", &format_args!("{}", self.txcount().bits()))
-            .field("rxcount", &format_args!("{}", self.rxcount().bits()))
-            .field("txfull", &format_args!("{}", self.txfull().bit()))
-            .field("rxempty", &format_args!("{}", self.rxempty().bit()))
+            .field("txtrig", &self.txtrig().bits())
+            .field("rxtrig", &self.rxtrig().bits())
+            .field("txcount", &self.txcount().bits())
+            .field("rxcount", &self.rxcount().bits())
+            .field("txfull", &self.txfull().bit())
+            .field("rxempty", &self.rxempty().bit())
             .finish()
     }
 }
@@ -117,8 +117,6 @@ impl crate::Readable for DATACTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`datactrl::W`](W) writer structure"]
 impl crate::Writable for DATACTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets DATACTRL to value 0xb0"]
 impl crate::Resettable for DATACTRL_SPEC {

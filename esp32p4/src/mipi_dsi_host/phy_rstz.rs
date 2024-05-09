@@ -44,19 +44,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PHY_RSTZ")
-            .field(
-                "phy_shutdownz",
-                &format_args!("{}", self.phy_shutdownz().bit()),
-            )
-            .field("phy_rstz", &format_args!("{}", self.phy_rstz().bit()))
-            .field(
-                "phy_enableclk",
-                &format_args!("{}", self.phy_enableclk().bit()),
-            )
-            .field(
-                "phy_forcepll",
-                &format_args!("{}", self.phy_forcepll().bit()),
-            )
+            .field("phy_shutdownz", &self.phy_shutdownz().bit())
+            .field("phy_rstz", &self.phy_rstz().bit())
+            .field("phy_enableclk", &self.phy_enableclk().bit())
+            .field("phy_forcepll", &self.phy_forcepll().bit())
             .finish()
     }
 }
@@ -102,10 +93,6 @@ impl crate::Readable for PHY_RSTZ_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`phy_rstz::W`](W) writer structure"]
 impl crate::Writable for PHY_RSTZ_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets PHY_RSTZ to value 0"]
-impl crate::Resettable for PHY_RSTZ_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for PHY_RSTZ_SPEC {}

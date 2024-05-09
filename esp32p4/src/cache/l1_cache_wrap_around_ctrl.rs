@@ -49,26 +49,11 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("L1_CACHE_WRAP_AROUND_CTRL")
-            .field(
-                "l1_icache0_wrap",
-                &format_args!("{}", self.l1_icache0_wrap().bit()),
-            )
-            .field(
-                "l1_icache1_wrap",
-                &format_args!("{}", self.l1_icache1_wrap().bit()),
-            )
-            .field(
-                "l1_icache2_wrap",
-                &format_args!("{}", self.l1_icache2_wrap().bit()),
-            )
-            .field(
-                "l1_icache3_wrap",
-                &format_args!("{}", self.l1_icache3_wrap().bit()),
-            )
-            .field(
-                "l1_dcache_wrap",
-                &format_args!("{}", self.l1_dcache_wrap().bit()),
-            )
+            .field("l1_icache0_wrap", &self.l1_icache0_wrap().bit())
+            .field("l1_icache1_wrap", &self.l1_icache1_wrap().bit())
+            .field("l1_icache2_wrap", &self.l1_icache2_wrap().bit())
+            .field("l1_icache3_wrap", &self.l1_icache3_wrap().bit())
+            .field("l1_dcache_wrap", &self.l1_dcache_wrap().bit())
             .finish()
     }
 }
@@ -108,10 +93,6 @@ impl crate::Readable for L1_CACHE_WRAP_AROUND_CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`l1_cache_wrap_around_ctrl::W`](W) writer structure"]
 impl crate::Writable for L1_CACHE_WRAP_AROUND_CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets L1_CACHE_WRAP_AROUND_CTRL to value 0"]
-impl crate::Resettable for L1_CACHE_WRAP_AROUND_CTRL_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for L1_CACHE_WRAP_AROUND_CTRL_SPEC {}

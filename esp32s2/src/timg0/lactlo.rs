@@ -13,7 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("LACTLO")
-            .field("lo", &format_args!("{}", self.lo().bits()))
+            .field("lo", &self.lo().bits())
             .finish()
     }
 }
@@ -31,6 +31,4 @@ impl crate::RegisterSpec for LACTLO_SPEC {
 #[doc = "`read()` method returns [`lactlo::R`](R) reader structure"]
 impl crate::Readable for LACTLO_SPEC {}
 #[doc = "`reset()` method sets LACTLO to value 0"]
-impl crate::Resettable for LACTLO_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for LACTLO_SPEC {}

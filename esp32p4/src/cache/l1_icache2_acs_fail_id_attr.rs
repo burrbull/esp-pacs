@@ -20,14 +20,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("L1_ICACHE2_ACS_FAIL_ID_ATTR")
-            .field(
-                "l1_icache2_fail_id",
-                &format_args!("{}", self.l1_icache2_fail_id().bits()),
-            )
-            .field(
-                "l1_icache2_fail_attr",
-                &format_args!("{}", self.l1_icache2_fail_attr().bits()),
-            )
+            .field("l1_icache2_fail_id", &self.l1_icache2_fail_id().bits())
+            .field("l1_icache2_fail_attr", &self.l1_icache2_fail_attr().bits())
             .finish()
     }
 }
@@ -45,6 +39,4 @@ impl crate::RegisterSpec for L1_ICACHE2_ACS_FAIL_ID_ATTR_SPEC {
 #[doc = "`read()` method returns [`l1_icache2_acs_fail_id_attr::R`](R) reader structure"]
 impl crate::Readable for L1_ICACHE2_ACS_FAIL_ID_ATTR_SPEC {}
 #[doc = "`reset()` method sets L1_ICACHE2_ACS_FAIL_ID_ATTR to value 0"]
-impl crate::Resettable for L1_ICACHE2_ACS_FAIL_ID_ATTR_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for L1_ICACHE2_ACS_FAIL_ID_ATTR_SPEC {}

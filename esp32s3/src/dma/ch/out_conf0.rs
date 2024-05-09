@@ -62,27 +62,12 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("OUT_CONF0")
-            .field("out_rst", &format_args!("{}", self.out_rst().bit()))
-            .field(
-                "out_loop_test",
-                &format_args!("{}", self.out_loop_test().bit()),
-            )
-            .field(
-                "out_auto_wrback",
-                &format_args!("{}", self.out_auto_wrback().bit()),
-            )
-            .field(
-                "out_eof_mode",
-                &format_args!("{}", self.out_eof_mode().bit()),
-            )
-            .field(
-                "outdscr_burst_en",
-                &format_args!("{}", self.outdscr_burst_en().bit()),
-            )
-            .field(
-                "out_data_burst_en",
-                &format_args!("{}", self.out_data_burst_en().bit()),
-            )
+            .field("out_rst", &self.out_rst().bit())
+            .field("out_loop_test", &self.out_loop_test().bit())
+            .field("out_auto_wrback", &self.out_auto_wrback().bit())
+            .field("out_eof_mode", &self.out_eof_mode().bit())
+            .field("outdscr_burst_en", &self.outdscr_burst_en().bit())
+            .field("out_data_burst_en", &self.out_data_burst_en().bit())
             .finish()
     }
 }
@@ -140,8 +125,6 @@ impl crate::Readable for OUT_CONF0_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`out_conf0::W`](W) writer structure"]
 impl crate::Writable for OUT_CONF0_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets OUT_CONF0 to value 0x08"]
 impl crate::Resettable for OUT_CONF0_SPEC {

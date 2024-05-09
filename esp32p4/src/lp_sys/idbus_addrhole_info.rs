@@ -27,18 +27,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("IDBUS_ADDRHOLE_INFO")
-            .field(
-                "idbus_addrhole_id",
-                &format_args!("{}", self.idbus_addrhole_id().bits()),
-            )
-            .field(
-                "idbus_addrhole_wr",
-                &format_args!("{}", self.idbus_addrhole_wr().bit()),
-            )
-            .field(
-                "idbus_addrhole_secure",
-                &format_args!("{}", self.idbus_addrhole_secure().bit()),
-            )
+            .field("idbus_addrhole_id", &self.idbus_addrhole_id().bits())
+            .field("idbus_addrhole_wr", &self.idbus_addrhole_wr().bit())
+            .field("idbus_addrhole_secure", &self.idbus_addrhole_secure().bit())
             .finish()
     }
 }
@@ -56,6 +47,4 @@ impl crate::RegisterSpec for IDBUS_ADDRHOLE_INFO_SPEC {
 #[doc = "`read()` method returns [`idbus_addrhole_info::R`](R) reader structure"]
 impl crate::Readable for IDBUS_ADDRHOLE_INFO_SPEC {}
 #[doc = "`reset()` method sets IDBUS_ADDRHOLE_INFO to value 0"]
-impl crate::Resettable for IDBUS_ADDRHOLE_INFO_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for IDBUS_ADDRHOLE_INFO_SPEC {}

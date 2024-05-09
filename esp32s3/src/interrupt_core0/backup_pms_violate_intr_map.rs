@@ -19,7 +19,7 @@ impl core::fmt::Debug for R {
         f.debug_struct("BACKUP_PMS_VIOLATE_INTR_MAP")
             .field(
                 "backup_pms_violate_intr_map",
-                &format_args!("{}", self.backup_pms_violate_intr_map().bits()),
+                &self.backup_pms_violate_intr_map().bits(),
             )
             .finish()
     }
@@ -50,8 +50,6 @@ impl crate::Readable for BACKUP_PMS_VIOLATE_INTR_MAP_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`backup_pms_violate_intr_map::W`](W) writer structure"]
 impl crate::Writable for BACKUP_PMS_VIOLATE_INTR_MAP_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets BACKUP_PMS_VIOLATE_INTR_MAP to value 0x10"]
 impl crate::Resettable for BACKUP_PMS_VIOLATE_INTR_MAP_SPEC {

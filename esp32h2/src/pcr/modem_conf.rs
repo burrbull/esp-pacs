@@ -35,18 +35,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("MODEM_CONF")
-            .field(
-                "modem_clk_sel",
-                &format_args!("{}", self.modem_clk_sel().bit()),
-            )
-            .field(
-                "modem_clk_en",
-                &format_args!("{}", self.modem_clk_en().bit()),
-            )
-            .field(
-                "modem_rst_en",
-                &format_args!("{}", self.modem_rst_en().bit()),
-            )
+            .field("modem_clk_sel", &self.modem_clk_sel().bit())
+            .field("modem_clk_en", &self.modem_clk_en().bit())
+            .field("modem_rst_en", &self.modem_rst_en().bit())
             .finish()
     }
 }
@@ -86,8 +77,6 @@ impl crate::Readable for MODEM_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`modem_conf::W`](W) writer structure"]
 impl crate::Writable for MODEM_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets MODEM_CONF to value 0x02"]
 impl crate::Resettable for MODEM_CONF_SPEC {

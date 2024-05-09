@@ -53,23 +53,11 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SWD_CONF")
-            .field(
-                "swd_reset_flag",
-                &format_args!("{}", self.swd_reset_flag().bit()),
-            )
-            .field(
-                "swd_feed_int",
-                &format_args!("{}", self.swd_feed_int().bit()),
-            )
-            .field(
-                "swd_signal_width",
-                &format_args!("{}", self.swd_signal_width().bits()),
-            )
-            .field("swd_disable", &format_args!("{}", self.swd_disable().bit()))
-            .field(
-                "swd_auto_feed_en",
-                &format_args!("{}", self.swd_auto_feed_en().bit()),
-            )
+            .field("swd_reset_flag", &self.swd_reset_flag().bit())
+            .field("swd_feed_int", &self.swd_feed_int().bit())
+            .field("swd_signal_width", &self.swd_signal_width().bits())
+            .field("swd_disable", &self.swd_disable().bit())
+            .field("swd_auto_feed_en", &self.swd_auto_feed_en().bit())
             .finish()
     }
 }
@@ -121,8 +109,6 @@ impl crate::Readable for SWD_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`swd_conf::W`](W) writer structure"]
 impl crate::Writable for SWD_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SWD_CONF to value 0x04b0_0000"]
 impl crate::Resettable for SWD_CONF_SPEC {

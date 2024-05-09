@@ -62,27 +62,12 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("APB_CONF")
-            .field(
-                "apb_fifo_mask",
-                &format_args!("{}", self.apb_fifo_mask().bit()),
-            )
-            .field(
-                "mem_tx_wrap_en",
-                &format_args!("{}", self.mem_tx_wrap_en().bit()),
-            )
-            .field(
-                "mem_clk_force_on",
-                &format_args!("{}", self.mem_clk_force_on().bit()),
-            )
-            .field(
-                "mem_force_pd",
-                &format_args!("{}", self.mem_force_pd().bit()),
-            )
-            .field(
-                "mem_force_pu",
-                &format_args!("{}", self.mem_force_pu().bit()),
-            )
-            .field("clk_en", &format_args!("{}", self.clk_en().bit()))
+            .field("apb_fifo_mask", &self.apb_fifo_mask().bit())
+            .field("mem_tx_wrap_en", &self.mem_tx_wrap_en().bit())
+            .field("mem_clk_force_on", &self.mem_clk_force_on().bit())
+            .field("mem_force_pd", &self.mem_force_pd().bit())
+            .field("mem_force_pu", &self.mem_force_pu().bit())
+            .field("clk_en", &self.clk_en().bit())
             .finish()
     }
 }
@@ -140,8 +125,6 @@ impl crate::Readable for APB_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`apb_conf::W`](W) writer structure"]
 impl crate::Writable for APB_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets APB_CONF to value 0x04"]
 impl crate::Resettable for APB_CONF_SPEC {

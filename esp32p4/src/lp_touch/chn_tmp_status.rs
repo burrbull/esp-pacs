@@ -20,14 +20,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CHN_TMP_STATUS")
-            .field(
-                "pad_inactive_status",
-                &format_args!("{}", self.pad_inactive_status().bits()),
-            )
-            .field(
-                "pad_active_status",
-                &format_args!("{}", self.pad_active_status().bits()),
-            )
+            .field("pad_inactive_status", &self.pad_inactive_status().bits())
+            .field("pad_active_status", &self.pad_active_status().bits())
             .finish()
     }
 }
@@ -45,6 +39,4 @@ impl crate::RegisterSpec for CHN_TMP_STATUS_SPEC {
 #[doc = "`read()` method returns [`chn_tmp_status::R`](R) reader structure"]
 impl crate::Readable for CHN_TMP_STATUS_SPEC {}
 #[doc = "`reset()` method sets CHN_TMP_STATUS to value 0"]
-impl crate::Resettable for CHN_TMP_STATUS_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for CHN_TMP_STATUS_SPEC {}

@@ -325,60 +325,21 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CONF0")
-            .field(
-                "filter_thres",
-                &format_args!("{}", self.filter_thres().bits()),
-            )
-            .field("filter_en", &format_args!("{}", self.filter_en().bit()))
-            .field("thr_zero_en", &format_args!("{}", self.thr_zero_en().bit()))
-            .field(
-                "thr_h_lim_en",
-                &format_args!("{}", self.thr_h_lim_en().bit()),
-            )
-            .field(
-                "thr_l_lim_en",
-                &format_args!("{}", self.thr_l_lim_en().bit()),
-            )
-            .field(
-                "thr_thres0_en",
-                &format_args!("{}", self.thr_thres0_en().bit()),
-            )
-            .field(
-                "thr_thres1_en",
-                &format_args!("{}", self.thr_thres1_en().bit()),
-            )
-            .field(
-                "ch0_neg_mode",
-                &format_args!("{}", self.ch0_neg_mode().bits()),
-            )
-            .field(
-                "ch1_neg_mode",
-                &format_args!("{}", self.ch1_neg_mode().bits()),
-            )
-            .field(
-                "ch0_pos_mode",
-                &format_args!("{}", self.ch0_pos_mode().bits()),
-            )
-            .field(
-                "ch1_pos_mode",
-                &format_args!("{}", self.ch1_pos_mode().bits()),
-            )
-            .field(
-                "ch0_hctrl_mode",
-                &format_args!("{}", self.ch0_hctrl_mode().bits()),
-            )
-            .field(
-                "ch1_hctrl_mode",
-                &format_args!("{}", self.ch1_hctrl_mode().bits()),
-            )
-            .field(
-                "ch0_lctrl_mode",
-                &format_args!("{}", self.ch0_lctrl_mode().bits()),
-            )
-            .field(
-                "ch1_lctrl_mode",
-                &format_args!("{}", self.ch1_lctrl_mode().bits()),
-            )
+            .field("filter_thres", &self.filter_thres().bits())
+            .field("filter_en", &self.filter_en().bit())
+            .field("thr_zero_en", &self.thr_zero_en().bit())
+            .field("thr_h_lim_en", &self.thr_h_lim_en().bit())
+            .field("thr_l_lim_en", &self.thr_l_lim_en().bit())
+            .field("thr_thres0_en", &self.thr_thres0_en().bit())
+            .field("thr_thres1_en", &self.thr_thres1_en().bit())
+            .field("ch0_neg_mode", &self.ch0_neg_mode().bits())
+            .field("ch1_neg_mode", &self.ch1_neg_mode().bits())
+            .field("ch0_pos_mode", &self.ch0_pos_mode().bits())
+            .field("ch1_pos_mode", &self.ch1_pos_mode().bits())
+            .field("ch0_hctrl_mode", &self.ch0_hctrl_mode().bits())
+            .field("ch1_hctrl_mode", &self.ch1_hctrl_mode().bits())
+            .field("ch0_lctrl_mode", &self.ch0_lctrl_mode().bits())
+            .field("ch1_lctrl_mode", &self.ch1_lctrl_mode().bits())
             .finish()
     }
 }
@@ -530,8 +491,6 @@ impl crate::Readable for CONF0_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`conf0::W`](W) writer structure"]
 impl crate::Writable for CONF0_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CONF0 to value 0x3c10"]
 impl crate::Resettable for CONF0_SPEC {

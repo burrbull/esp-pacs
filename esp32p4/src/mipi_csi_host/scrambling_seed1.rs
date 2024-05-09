@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SCRAMBLING_SEED1")
-            .field(
-                "scramble_seed_lane1",
-                &format_args!("{}", self.scramble_seed_lane1().bits()),
-            )
+            .field("scramble_seed_lane1", &self.scramble_seed_lane1().bits())
             .finish()
     }
 }
@@ -48,8 +45,6 @@ impl crate::Readable for SCRAMBLING_SEED1_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`scrambling_seed1::W`](W) writer structure"]
 impl crate::Writable for SCRAMBLING_SEED1_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SCRAMBLING_SEED1 to value 0x1008"]
 impl crate::Resettable for SCRAMBLING_SEED1_SPEC {

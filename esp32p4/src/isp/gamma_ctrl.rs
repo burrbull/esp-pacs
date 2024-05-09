@@ -44,22 +44,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("GAMMA_CTRL")
-            .field(
-                "gamma_update",
-                &format_args!("{}", self.gamma_update().bit()),
-            )
-            .field(
-                "gamma_b_last_correct",
-                &format_args!("{}", self.gamma_b_last_correct().bit()),
-            )
-            .field(
-                "gamma_g_last_correct",
-                &format_args!("{}", self.gamma_g_last_correct().bit()),
-            )
-            .field(
-                "gamma_r_last_correct",
-                &format_args!("{}", self.gamma_r_last_correct().bit()),
-            )
+            .field("gamma_update", &self.gamma_update().bit())
+            .field("gamma_b_last_correct", &self.gamma_b_last_correct().bit())
+            .field("gamma_g_last_correct", &self.gamma_g_last_correct().bit())
+            .field("gamma_r_last_correct", &self.gamma_r_last_correct().bit())
             .finish()
     }
 }
@@ -105,8 +93,6 @@ impl crate::Readable for GAMMA_CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`gamma_ctrl::W`](W) writer structure"]
 impl crate::Writable for GAMMA_CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets GAMMA_CTRL to value 0x0e"]
 impl crate::Resettable for GAMMA_CTRL_SPEC {

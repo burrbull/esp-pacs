@@ -44,22 +44,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("BBPD_CTRL")
-            .field(
-                "dc_est_force_pd",
-                &format_args!("{}", self.dc_est_force_pd().bit()),
-            )
-            .field(
-                "dc_est_force_pu",
-                &format_args!("{}", self.dc_est_force_pu().bit()),
-            )
-            .field(
-                "fft_force_pd",
-                &format_args!("{}", self.fft_force_pd().bit()),
-            )
-            .field(
-                "fft_force_pu",
-                &format_args!("{}", self.fft_force_pu().bit()),
-            )
+            .field("dc_est_force_pd", &self.dc_est_force_pd().bit())
+            .field("dc_est_force_pu", &self.dc_est_force_pu().bit())
+            .field("fft_force_pd", &self.fft_force_pd().bit())
+            .field("fft_force_pu", &self.fft_force_pu().bit())
             .finish()
     }
 }
@@ -105,10 +93,6 @@ impl crate::Readable for BBPD_CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`bbpd_ctrl::W`](W) writer structure"]
 impl crate::Writable for BBPD_CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets BBPD_CTRL to value 0"]
-impl crate::Resettable for BBPD_CTRL_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for BBPD_CTRL_SPEC {}

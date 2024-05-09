@@ -116,41 +116,20 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SLAVE")
-            .field("clk_mode", &format_args!("{}", self.clk_mode().bits()))
-            .field("clk_mode_13", &format_args!("{}", self.clk_mode_13().bit()))
-            .field(
-                "rsck_data_out",
-                &format_args!("{}", self.rsck_data_out().bit()),
-            )
-            .field(
-                "slv_rddma_bitlen_en",
-                &format_args!("{}", self.slv_rddma_bitlen_en().bit()),
-            )
-            .field(
-                "slv_wrdma_bitlen_en",
-                &format_args!("{}", self.slv_wrdma_bitlen_en().bit()),
-            )
-            .field(
-                "slv_rdbuf_bitlen_en",
-                &format_args!("{}", self.slv_rdbuf_bitlen_en().bit()),
-            )
-            .field(
-                "slv_wrbuf_bitlen_en",
-                &format_args!("{}", self.slv_wrbuf_bitlen_en().bit()),
-            )
-            .field(
-                "slv_last_byte_strb",
-                &format_args!("{}", self.slv_last_byte_strb().bits()),
-            )
-            .field(
-                "dma_seg_magic_value",
-                &format_args!("{}", self.dma_seg_magic_value().bits()),
-            )
-            .field("mode", &format_args!("{}", self.mode().bit()))
-            .field("usr_conf", &format_args!("{}", self.usr_conf().bit()))
+            .field("clk_mode", &self.clk_mode().bits())
+            .field("clk_mode_13", &self.clk_mode_13().bit())
+            .field("rsck_data_out", &self.rsck_data_out().bit())
+            .field("slv_rddma_bitlen_en", &self.slv_rddma_bitlen_en().bit())
+            .field("slv_wrdma_bitlen_en", &self.slv_wrdma_bitlen_en().bit())
+            .field("slv_rdbuf_bitlen_en", &self.slv_rdbuf_bitlen_en().bit())
+            .field("slv_wrbuf_bitlen_en", &self.slv_wrbuf_bitlen_en().bit())
+            .field("slv_last_byte_strb", &self.slv_last_byte_strb().bits())
+            .field("dma_seg_magic_value", &self.dma_seg_magic_value().bits())
+            .field("mode", &self.mode().bit())
+            .field("usr_conf", &self.usr_conf().bit())
             .field(
                 "mst_fd_wait_dma_tx_data",
-                &format_args!("{}", self.mst_fd_wait_dma_tx_data().bit()),
+                &self.mst_fd_wait_dma_tx_data().bit(),
             )
             .finish()
     }
@@ -245,8 +224,6 @@ impl crate::Readable for SLAVE_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`slave::W`](W) writer structure"]
 impl crate::Writable for SLAVE_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SLAVE to value 0x0280_0000"]
 impl crate::Resettable for SLAVE_SPEC {

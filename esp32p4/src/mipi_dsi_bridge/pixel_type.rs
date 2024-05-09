@@ -35,12 +35,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PIXEL_TYPE")
-            .field("raw_type", &format_args!("{}", self.raw_type().bits()))
-            .field("dpi_config", &format_args!("{}", self.dpi_config().bits()))
-            .field(
-                "data_in_type",
-                &format_args!("{}", self.data_in_type().bit()),
-            )
+            .field("raw_type", &self.raw_type().bits())
+            .field("dpi_config", &self.dpi_config().bits())
+            .field("data_in_type", &self.data_in_type().bit())
             .finish()
     }
 }
@@ -80,10 +77,6 @@ impl crate::Readable for PIXEL_TYPE_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`pixel_type::W`](W) writer structure"]
 impl crate::Writable for PIXEL_TYPE_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets PIXEL_TYPE to value 0"]
-impl crate::Resettable for PIXEL_TYPE_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for PIXEL_TYPE_SPEC {}

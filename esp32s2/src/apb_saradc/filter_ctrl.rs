@@ -62,30 +62,12 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("FILTER_CTRL")
-            .field(
-                "adc2_filter_reset",
-                &format_args!("{}", self.adc2_filter_reset().bit()),
-            )
-            .field(
-                "adc1_filter_reset",
-                &format_args!("{}", self.adc1_filter_reset().bit()),
-            )
-            .field(
-                "adc2_filter_factor",
-                &format_args!("{}", self.adc2_filter_factor().bits()),
-            )
-            .field(
-                "adc1_filter_factor",
-                &format_args!("{}", self.adc1_filter_factor().bits()),
-            )
-            .field(
-                "adc2_filter_en",
-                &format_args!("{}", self.adc2_filter_en().bit()),
-            )
-            .field(
-                "adc1_filter_en",
-                &format_args!("{}", self.adc1_filter_en().bit()),
-            )
+            .field("adc2_filter_reset", &self.adc2_filter_reset().bit())
+            .field("adc1_filter_reset", &self.adc1_filter_reset().bit())
+            .field("adc2_filter_factor", &self.adc2_filter_factor().bits())
+            .field("adc1_filter_factor", &self.adc1_filter_factor().bits())
+            .field("adc2_filter_en", &self.adc2_filter_en().bit())
+            .field("adc1_filter_en", &self.adc1_filter_en().bit())
             .finish()
     }
 }
@@ -143,8 +125,6 @@ impl crate::Readable for FILTER_CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`filter_ctrl::W`](W) writer structure"]
 impl crate::Writable for FILTER_CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets FILTER_CTRL to value 0x2040_0000"]
 impl crate::Resettable for FILTER_CTRL_SPEC {

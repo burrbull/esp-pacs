@@ -46,19 +46,19 @@ impl core::fmt::Debug for R {
         f.debug_struct("LP_AONCLKRST_HP_SDMMC_EMAC_RST_CTRL")
             .field(
                 "lp_aonclkrst_rst_en_sdmmc",
-                &format_args!("{}", self.lp_aonclkrst_rst_en_sdmmc().bit()),
+                &self.lp_aonclkrst_rst_en_sdmmc().bit(),
             )
             .field(
                 "lp_aonclkrst_force_norst_sdmmc",
-                &format_args!("{}", self.lp_aonclkrst_force_norst_sdmmc().bit()),
+                &self.lp_aonclkrst_force_norst_sdmmc().bit(),
             )
             .field(
                 "lp_aonclkrst_rst_en_emac",
-                &format_args!("{}", self.lp_aonclkrst_rst_en_emac().bit()),
+                &self.lp_aonclkrst_rst_en_emac().bit(),
             )
             .field(
                 "lp_aonclkrst_force_norst_emac",
-                &format_args!("{}", self.lp_aonclkrst_force_norst_emac().bit()),
+                &self.lp_aonclkrst_force_norst_emac().bit(),
             )
             .finish()
     }
@@ -113,10 +113,6 @@ impl crate::Readable for LP_AONCLKRST_HP_SDMMC_EMAC_RST_CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`lp_aonclkrst_hp_sdmmc_emac_rst_ctrl::W`](W) writer structure"]
 impl crate::Writable for LP_AONCLKRST_HP_SDMMC_EMAC_RST_CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets LP_AONCLKRST_HP_SDMMC_EMAC_RST_CTRL to value 0"]
-impl crate::Resettable for LP_AONCLKRST_HP_SDMMC_EMAC_RST_CTRL_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for LP_AONCLKRST_HP_SDMMC_EMAC_RST_CTRL_SPEC {}

@@ -35,18 +35,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SAR_TSENS_CTRL2")
-            .field(
-                "sar_tsens_xpd_wait",
-                &format_args!("{}", self.sar_tsens_xpd_wait().bits()),
-            )
-            .field(
-                "sar_tsens_xpd_force",
-                &format_args!("{}", self.sar_tsens_xpd_force().bits()),
-            )
-            .field(
-                "sar_tsens_clk_inv",
-                &format_args!("{}", self.sar_tsens_clk_inv().bit()),
-            )
+            .field("sar_tsens_xpd_wait", &self.sar_tsens_xpd_wait().bits())
+            .field("sar_tsens_xpd_force", &self.sar_tsens_xpd_force().bits())
+            .field("sar_tsens_clk_inv", &self.sar_tsens_clk_inv().bit())
             .finish()
     }
 }
@@ -86,8 +77,6 @@ impl crate::Readable for SAR_TSENS_CTRL2_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`sar_tsens_ctrl2::W`](W) writer structure"]
 impl crate::Writable for SAR_TSENS_CTRL2_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SAR_TSENS_CTRL2 to value 0x4002"]
 impl crate::Resettable for SAR_TSENS_CTRL2_SPEC {

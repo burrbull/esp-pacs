@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SCL_START_PERIOD")
-            .field(
-                "scl_start_period",
-                &format_args!("{}", self.scl_start_period().bits()),
-            )
+            .field("scl_start_period", &self.scl_start_period().bits())
             .finish()
     }
 }
@@ -48,10 +45,6 @@ impl crate::Readable for SCL_START_PERIOD_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`scl_start_period::W`](W) writer structure"]
 impl crate::Writable for SCL_START_PERIOD_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SCL_START_PERIOD to value 0"]
-impl crate::Resettable for SCL_START_PERIOD_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for SCL_START_PERIOD_SPEC {}

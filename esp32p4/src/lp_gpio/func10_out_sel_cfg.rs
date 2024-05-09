@@ -46,19 +46,19 @@ impl core::fmt::Debug for R {
         f.debug_struct("FUNC10_OUT_SEL_CFG")
             .field(
                 "reg_gpio_func10_oe_inv_sel",
-                &format_args!("{}", self.reg_gpio_func10_oe_inv_sel().bit()),
+                &self.reg_gpio_func10_oe_inv_sel().bit(),
             )
             .field(
                 "reg_gpio_func10_oe_sel",
-                &format_args!("{}", self.reg_gpio_func10_oe_sel().bit()),
+                &self.reg_gpio_func10_oe_sel().bit(),
             )
             .field(
                 "reg_gpio_func10_out_inv_sel",
-                &format_args!("{}", self.reg_gpio_func10_out_inv_sel().bit()),
+                &self.reg_gpio_func10_out_inv_sel().bit(),
             )
             .field(
                 "reg_gpio_func10_out_sel",
-                &format_args!("{}", self.reg_gpio_func10_out_sel().bits()),
+                &self.reg_gpio_func10_out_sel().bits(),
             )
             .finish()
     }
@@ -111,8 +111,6 @@ impl crate::Readable for FUNC10_OUT_SEL_CFG_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`func10_out_sel_cfg::W`](W) writer structure"]
 impl crate::Writable for FUNC10_OUT_SEL_CFG_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets FUNC10_OUT_SEL_CFG to value 0x0100"]
 impl crate::Resettable for FUNC10_OUT_SEL_CFG_SPEC {

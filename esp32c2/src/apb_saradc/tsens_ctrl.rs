@@ -42,10 +42,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("TSENS_CTRL")
-            .field("out", &format_args!("{}", self.out().bits()))
-            .field("in_inv", &format_args!("{}", self.in_inv().bit()))
-            .field("clk_div", &format_args!("{}", self.clk_div().bits()))
-            .field("pu", &format_args!("{}", self.pu().bit()))
+            .field("out", &self.out().bits())
+            .field("in_inv", &self.in_inv().bit())
+            .field("clk_div", &self.clk_div().bits())
+            .field("pu", &self.pu().bit())
             .finish()
     }
 }
@@ -85,8 +85,6 @@ impl crate::Readable for TSENS_CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`tsens_ctrl::W`](W) writer structure"]
 impl crate::Writable for TSENS_CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets TSENS_CTRL to value 0x0001_8000"]
 impl crate::Resettable for TSENS_CTRL_SPEC {

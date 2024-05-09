@@ -100,7 +100,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("M_MODE_CTRL")
-            .field("mode", &format_args!("{}", self.mode().bits()))
+            .field("mode", &self.mode().bits())
             .finish()
     }
 }
@@ -128,8 +128,6 @@ impl crate::Readable for M_MODE_CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`m_mode_ctrl::W`](W) writer structure"]
 impl crate::Writable for M_MODE_CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets M%s_MODE_CTRL to value 0x03"]
 impl crate::Resettable for M_MODE_CTRL_SPEC {

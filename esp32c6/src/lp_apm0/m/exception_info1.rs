@@ -13,10 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("EXCEPTION_INFO1")
-            .field(
-                "exception_addr",
-                &format_args!("{}", self.exception_addr().bits()),
-            )
+            .field("exception_addr", &self.exception_addr().bits())
             .finish()
     }
 }
@@ -34,6 +31,4 @@ impl crate::RegisterSpec for EXCEPTION_INFO1_SPEC {
 #[doc = "`read()` method returns [`exception_info1::R`](R) reader structure"]
 impl crate::Readable for EXCEPTION_INFO1_SPEC {}
 #[doc = "`reset()` method sets EXCEPTION_INFO1 to value 0"]
-impl crate::Resettable for EXCEPTION_INFO1_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for EXCEPTION_INFO1_SPEC {}

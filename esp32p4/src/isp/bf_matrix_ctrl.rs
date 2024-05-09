@@ -46,20 +46,14 @@ impl core::fmt::Debug for R {
         f.debug_struct("BF_MATRIX_CTRL")
             .field(
                 "bf_tail_pixen_pulse_tl",
-                &format_args!("{}", self.bf_tail_pixen_pulse_tl().bits()),
+                &self.bf_tail_pixen_pulse_tl().bits(),
             )
             .field(
                 "bf_tail_pixen_pulse_th",
-                &format_args!("{}", self.bf_tail_pixen_pulse_th().bits()),
+                &self.bf_tail_pixen_pulse_th().bits(),
             )
-            .field(
-                "bf_padding_data",
-                &format_args!("{}", self.bf_padding_data().bits()),
-            )
-            .field(
-                "bf_padding_mode",
-                &format_args!("{}", self.bf_padding_mode().bit()),
-            )
+            .field("bf_padding_data", &self.bf_padding_data().bits())
+            .field("bf_padding_mode", &self.bf_padding_mode().bit())
             .finish()
     }
 }
@@ -105,10 +99,6 @@ impl crate::Readable for BF_MATRIX_CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`bf_matrix_ctrl::W`](W) writer structure"]
 impl crate::Writable for BF_MATRIX_CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets BF_MATRIX_CTRL to value 0"]
-impl crate::Resettable for BF_MATRIX_CTRL_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for BF_MATRIX_CTRL_SPEC {}

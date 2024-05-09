@@ -26,14 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("ICACHE_CTRL1")
-            .field(
-                "icache_shut_ibus",
-                &format_args!("{}", self.icache_shut_ibus().bit()),
-            )
-            .field(
-                "icache_shut_dbus",
-                &format_args!("{}", self.icache_shut_dbus().bit()),
-            )
+            .field("icache_shut_ibus", &self.icache_shut_ibus().bit())
+            .field("icache_shut_dbus", &self.icache_shut_dbus().bit())
             .finish()
     }
 }
@@ -67,8 +61,6 @@ impl crate::Readable for ICACHE_CTRL1_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`icache_ctrl1::W`](W) writer structure"]
 impl crate::Writable for ICACHE_CTRL1_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets ICACHE_CTRL1 to value 0x03"]
 impl crate::Resettable for ICACHE_CTRL1_SPEC {

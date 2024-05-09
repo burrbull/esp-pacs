@@ -117,25 +117,19 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("HPRT")
-            .field("prtconnsts", &format_args!("{}", self.prtconnsts().bit()))
-            .field("prtconndet", &format_args!("{}", self.prtconndet().bit()))
-            .field("prtena", &format_args!("{}", self.prtena().bit()))
-            .field("prtenchng", &format_args!("{}", self.prtenchng().bit()))
-            .field(
-                "prtovrcurract",
-                &format_args!("{}", self.prtovrcurract().bit()),
-            )
-            .field(
-                "prtovrcurrchng",
-                &format_args!("{}", self.prtovrcurrchng().bit()),
-            )
-            .field("prtres", &format_args!("{}", self.prtres().bit()))
-            .field("prtsusp", &format_args!("{}", self.prtsusp().bit()))
-            .field("prtrst", &format_args!("{}", self.prtrst().bit()))
-            .field("prtlnsts", &format_args!("{}", self.prtlnsts().bits()))
-            .field("prtpwr", &format_args!("{}", self.prtpwr().bit()))
-            .field("prttstctl", &format_args!("{}", self.prttstctl().bits()))
-            .field("prtspd", &format_args!("{}", self.prtspd().bits()))
+            .field("prtconnsts", &self.prtconnsts().bit())
+            .field("prtconndet", &self.prtconndet().bit())
+            .field("prtena", &self.prtena().bit())
+            .field("prtenchng", &self.prtenchng().bit())
+            .field("prtovrcurract", &self.prtovrcurract().bit())
+            .field("prtovrcurrchng", &self.prtovrcurrchng().bit())
+            .field("prtres", &self.prtres().bit())
+            .field("prtsusp", &self.prtsusp().bit())
+            .field("prtrst", &self.prtrst().bit())
+            .field("prtlnsts", &self.prtlnsts().bits())
+            .field("prtpwr", &self.prtpwr().bit())
+            .field("prttstctl", &self.prttstctl().bits())
+            .field("prtspd", &self.prtspd().bits())
             .finish()
     }
 }
@@ -211,10 +205,6 @@ impl crate::Readable for HPRT_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`hprt::W`](W) writer structure"]
 impl crate::Writable for HPRT_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets HPRT to value 0"]
-impl crate::Resettable for HPRT_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for HPRT_SPEC {}

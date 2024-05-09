@@ -34,22 +34,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("INT_ST_PHY")
-            .field(
-                "st_phy_errsoths_0",
-                &format_args!("{}", self.st_phy_errsoths_0().bit()),
-            )
-            .field(
-                "st_phy_errsoths_1",
-                &format_args!("{}", self.st_phy_errsoths_1().bit()),
-            )
-            .field(
-                "st_phy_erresc_0",
-                &format_args!("{}", self.st_phy_erresc_0().bit()),
-            )
-            .field(
-                "st_phy_erresc_1",
-                &format_args!("{}", self.st_phy_erresc_1().bit()),
-            )
+            .field("st_phy_errsoths_0", &self.st_phy_errsoths_0().bit())
+            .field("st_phy_errsoths_1", &self.st_phy_errsoths_1().bit())
+            .field("st_phy_erresc_0", &self.st_phy_erresc_0().bit())
+            .field("st_phy_erresc_1", &self.st_phy_erresc_1().bit())
             .finish()
     }
 }
@@ -67,6 +55,4 @@ impl crate::RegisterSpec for INT_ST_PHY_SPEC {
 #[doc = "`read()` method returns [`int_st_phy::R`](R) reader structure"]
 impl crate::Readable for INT_ST_PHY_SPEC {}
 #[doc = "`reset()` method sets INT_ST_PHY to value 0"]
-impl crate::Resettable for INT_ST_PHY_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for INT_ST_PHY_SPEC {}

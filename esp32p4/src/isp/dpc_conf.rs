@@ -44,22 +44,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("DPC_CONF")
-            .field(
-                "dpc_threshold_l",
-                &format_args!("{}", self.dpc_threshold_l().bits()),
-            )
-            .field(
-                "dpc_threshold_h",
-                &format_args!("{}", self.dpc_threshold_h().bits()),
-            )
-            .field(
-                "dpc_factor_dark",
-                &format_args!("{}", self.dpc_factor_dark().bits()),
-            )
-            .field(
-                "dpc_factor_brig",
-                &format_args!("{}", self.dpc_factor_brig().bits()),
-            )
+            .field("dpc_threshold_l", &self.dpc_threshold_l().bits())
+            .field("dpc_threshold_h", &self.dpc_threshold_h().bits())
+            .field("dpc_factor_dark", &self.dpc_factor_dark().bits())
+            .field("dpc_factor_brig", &self.dpc_factor_brig().bits())
             .finish()
     }
 }
@@ -105,8 +93,6 @@ impl crate::Readable for DPC_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`dpc_conf::W`](W) writer structure"]
 impl crate::Writable for DPC_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets DPC_CONF to value 0x0410_3030"]
 impl crate::Resettable for DPC_CONF_SPEC {

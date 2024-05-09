@@ -89,15 +89,15 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("INT_ENA")
-            .field("slp_wakeup", &format_args!("{}", self.slp_wakeup().bit()))
-            .field("slp_reject", &format_args!("{}", self.slp_reject().bit()))
-            .field("sdio_idle", &format_args!("{}", self.sdio_idle().bit()))
-            .field("wdt", &format_args!("{}", self.wdt().bit()))
-            .field("time_valid", &format_args!("{}", self.time_valid().bit()))
-            .field("ulp_cp", &format_args!("{}", self.ulp_cp().bit()))
-            .field("touch", &format_args!("{}", self.touch().bit()))
-            .field("brown_out", &format_args!("{}", self.brown_out().bit()))
-            .field("main_timer", &format_args!("{}", self.main_timer().bit()))
+            .field("slp_wakeup", &self.slp_wakeup().bit())
+            .field("slp_reject", &self.slp_reject().bit())
+            .field("sdio_idle", &self.sdio_idle().bit())
+            .field("wdt", &self.wdt().bit())
+            .field("time_valid", &self.time_valid().bit())
+            .field("ulp_cp", &self.ulp_cp().bit())
+            .field("touch", &self.touch().bit())
+            .field("brown_out", &self.brown_out().bit())
+            .field("main_timer", &self.main_timer().bit())
             .finish()
     }
 }
@@ -173,10 +173,6 @@ impl crate::Readable for INT_ENA_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`int_ena::W`](W) writer structure"]
 impl crate::Writable for INT_ENA_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets INT_ENA to value 0"]
-impl crate::Resettable for INT_ENA_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for INT_ENA_SPEC {}

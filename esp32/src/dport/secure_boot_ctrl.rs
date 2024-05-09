@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SECURE_BOOT_CTRL")
-            .field(
-                "sw_bootloader_sel",
-                &format_args!("{}", self.sw_bootloader_sel().bit()),
-            )
+            .field("sw_bootloader_sel", &self.sw_bootloader_sel().bit())
             .finish()
     }
 }
@@ -48,10 +45,6 @@ impl crate::Readable for SECURE_BOOT_CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`secure_boot_ctrl::W`](W) writer structure"]
 impl crate::Writable for SECURE_BOOT_CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SECURE_BOOT_CTRL to value 0"]
-impl crate::Resettable for SECURE_BOOT_CTRL_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for SECURE_BOOT_CTRL_SPEC {}

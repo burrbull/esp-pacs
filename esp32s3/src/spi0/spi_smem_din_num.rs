@@ -89,42 +89,15 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SPI_SMEM_DIN_NUM")
-            .field(
-                "spi_smem_din0_num",
-                &format_args!("{}", self.spi_smem_din0_num().bits()),
-            )
-            .field(
-                "spi_smem_din1_num",
-                &format_args!("{}", self.spi_smem_din1_num().bits()),
-            )
-            .field(
-                "spi_smem_din2_num",
-                &format_args!("{}", self.spi_smem_din2_num().bits()),
-            )
-            .field(
-                "spi_smem_din3_num",
-                &format_args!("{}", self.spi_smem_din3_num().bits()),
-            )
-            .field(
-                "spi_smem_din4_num",
-                &format_args!("{}", self.spi_smem_din4_num().bits()),
-            )
-            .field(
-                "spi_smem_din5_num",
-                &format_args!("{}", self.spi_smem_din5_num().bits()),
-            )
-            .field(
-                "spi_smem_din6_num",
-                &format_args!("{}", self.spi_smem_din6_num().bits()),
-            )
-            .field(
-                "spi_smem_din7_num",
-                &format_args!("{}", self.spi_smem_din7_num().bits()),
-            )
-            .field(
-                "spi_smem_dins_num",
-                &format_args!("{}", self.spi_smem_dins_num().bits()),
-            )
+            .field("spi_smem_din0_num", &self.spi_smem_din0_num().bits())
+            .field("spi_smem_din1_num", &self.spi_smem_din1_num().bits())
+            .field("spi_smem_din2_num", &self.spi_smem_din2_num().bits())
+            .field("spi_smem_din3_num", &self.spi_smem_din3_num().bits())
+            .field("spi_smem_din4_num", &self.spi_smem_din4_num().bits())
+            .field("spi_smem_din5_num", &self.spi_smem_din5_num().bits())
+            .field("spi_smem_din6_num", &self.spi_smem_din6_num().bits())
+            .field("spi_smem_din7_num", &self.spi_smem_din7_num().bits())
+            .field("spi_smem_dins_num", &self.spi_smem_dins_num().bits())
             .finish()
     }
 }
@@ -200,10 +173,6 @@ impl crate::Readable for SPI_SMEM_DIN_NUM_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`spi_smem_din_num::W`](W) writer structure"]
 impl crate::Writable for SPI_SMEM_DIN_NUM_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SPI_SMEM_DIN_NUM to value 0"]
-impl crate::Resettable for SPI_SMEM_DIN_NUM_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for SPI_SMEM_DIN_NUM_SPEC {}

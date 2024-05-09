@@ -27,18 +27,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("VAD_OB0")
-            .field(
-                "speech_count_ob",
-                &format_args!("{}", self.speech_count_ob().bits()),
-            )
-            .field(
-                "silent_count_ob",
-                &format_args!("{}", self.silent_count_ob().bits()),
-            )
-            .field(
-                "max_signal0_ob",
-                &format_args!("{}", self.max_signal0_ob().bits()),
-            )
+            .field("speech_count_ob", &self.speech_count_ob().bits())
+            .field("silent_count_ob", &self.silent_count_ob().bits())
+            .field("max_signal0_ob", &self.max_signal0_ob().bits())
             .finish()
     }
 }
@@ -56,6 +47,4 @@ impl crate::RegisterSpec for VAD_OB0_SPEC {
 #[doc = "`read()` method returns [`vad_ob0::R`](R) reader structure"]
 impl crate::Readable for VAD_OB0_SPEC {}
 #[doc = "`reset()` method sets VAD_OB0 to value 0"]
-impl crate::Resettable for VAD_OB0_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for VAD_OB0_SPEC {}

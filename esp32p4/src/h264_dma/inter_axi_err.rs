@@ -55,33 +55,18 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("INTER_AXI_ERR")
-            .field(
-                "inter_rid_err_cnt",
-                &format_args!("{}", self.inter_rid_err_cnt().bits()),
-            )
-            .field(
-                "inter_rresp_err_cnt",
-                &format_args!("{}", self.inter_rresp_err_cnt().bits()),
-            )
-            .field(
-                "inter_wresp_err_cnt",
-                &format_args!("{}", self.inter_wresp_err_cnt().bits()),
-            )
-            .field(
-                "inter_rd_fifo_cnt",
-                &format_args!("{}", self.inter_rd_fifo_cnt().bits()),
-            )
+            .field("inter_rid_err_cnt", &self.inter_rid_err_cnt().bits())
+            .field("inter_rresp_err_cnt", &self.inter_rresp_err_cnt().bits())
+            .field("inter_wresp_err_cnt", &self.inter_wresp_err_cnt().bits())
+            .field("inter_rd_fifo_cnt", &self.inter_rd_fifo_cnt().bits())
             .field(
                 "inter_rd_bak_fifo_cnt",
-                &format_args!("{}", self.inter_rd_bak_fifo_cnt().bits()),
+                &self.inter_rd_bak_fifo_cnt().bits(),
             )
-            .field(
-                "inter_wr_fifo_cnt",
-                &format_args!("{}", self.inter_wr_fifo_cnt().bits()),
-            )
+            .field("inter_wr_fifo_cnt", &self.inter_wr_fifo_cnt().bits())
             .field(
                 "inter_wr_bak_fifo_cnt",
-                &format_args!("{}", self.inter_wr_bak_fifo_cnt().bits()),
+                &self.inter_wr_bak_fifo_cnt().bits(),
             )
             .finish()
     }
@@ -100,6 +85,4 @@ impl crate::RegisterSpec for INTER_AXI_ERR_SPEC {
 #[doc = "`read()` method returns [`inter_axi_err::R`](R) reader structure"]
 impl crate::Readable for INTER_AXI_ERR_SPEC {}
 #[doc = "`reset()` method sets INTER_AXI_ERR to value 0"]
-impl crate::Resettable for INTER_AXI_ERR_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for INTER_AXI_ERR_SPEC {}

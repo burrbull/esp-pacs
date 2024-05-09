@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PMUP_BITMAP_HIGH1")
-            .field(
-                "pump_bitmap_high1",
-                &format_args!("{}", self.pump_bitmap_high1().bits()),
-            )
+            .field("pump_bitmap_high1", &self.pump_bitmap_high1().bits())
             .finish()
     }
 }
@@ -48,10 +45,6 @@ impl crate::Readable for PMUP_BITMAP_HIGH1_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`pmup_bitmap_high1::W`](W) writer structure"]
 impl crate::Writable for PMUP_BITMAP_HIGH1_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets PMUP_BITMAP_HIGH1 to value 0"]
-impl crate::Resettable for PMUP_BITMAP_HIGH1_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for PMUP_BITMAP_HIGH1_SPEC {}

@@ -26,14 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SAR1_HW_WAKEUP")
-            .field(
-                "adc1_hw_read_en_i",
-                &format_args!("{}", self.adc1_hw_read_en_i().bit()),
-            )
-            .field(
-                "adc1_hw_read_rate_i",
-                &format_args!("{}", self.adc1_hw_read_rate_i().bits()),
-            )
+            .field("adc1_hw_read_en_i", &self.adc1_hw_read_en_i().bit())
+            .field("adc1_hw_read_rate_i", &self.adc1_hw_read_rate_i().bits())
             .finish()
     }
 }
@@ -67,8 +61,6 @@ impl crate::Readable for SAR1_HW_WAKEUP_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`sar1_hw_wakeup::W`](W) writer structure"]
 impl crate::Writable for SAR1_HW_WAKEUP_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SAR1_HW_WAKEUP to value 0xc8"]
 impl crate::Resettable for SAR1_HW_WAKEUP_SPEC {

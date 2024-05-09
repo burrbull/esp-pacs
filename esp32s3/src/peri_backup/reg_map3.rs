@@ -17,7 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("REG_MAP3")
-            .field("map3", &format_args!("{}", self.map3().bits()))
+            .field("map3", &self.map3().bits())
             .finish()
     }
 }
@@ -45,10 +45,6 @@ impl crate::Readable for REG_MAP3_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`reg_map3::W`](W) writer structure"]
 impl crate::Writable for REG_MAP3_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets REG_MAP3 to value 0"]
-impl crate::Resettable for REG_MAP3_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for REG_MAP3_SPEC {}

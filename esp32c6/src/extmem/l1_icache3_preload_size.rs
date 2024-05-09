@@ -15,7 +15,7 @@ impl core::fmt::Debug for R {
         f.debug_struct("L1_ICACHE3_PRELOAD_SIZE")
             .field(
                 "l1_icache3_preload_size",
-                &format_args!("{}", self.l1_icache3_preload_size().bits()),
+                &self.l1_icache3_preload_size().bits(),
             )
             .finish()
     }
@@ -34,6 +34,4 @@ impl crate::RegisterSpec for L1_ICACHE3_PRELOAD_SIZE_SPEC {
 #[doc = "`read()` method returns [`l1_icache3_preload_size::R`](R) reader structure"]
 impl crate::Readable for L1_ICACHE3_PRELOAD_SIZE_SPEC {}
 #[doc = "`reset()` method sets L1_ICACHE3_PRELOAD_SIZE to value 0"]
-impl crate::Resettable for L1_ICACHE3_PRELOAD_SIZE_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for L1_ICACHE3_PRELOAD_SIZE_SPEC {}

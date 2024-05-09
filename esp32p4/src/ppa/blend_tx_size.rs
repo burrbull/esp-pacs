@@ -26,8 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("BLEND_TX_SIZE")
-            .field("blend_hb", &format_args!("{}", self.blend_hb().bits()))
-            .field("blend_vb", &format_args!("{}", self.blend_vb().bits()))
+            .field("blend_hb", &self.blend_hb().bits())
+            .field("blend_vb", &self.blend_vb().bits())
             .finish()
     }
 }
@@ -61,10 +61,6 @@ impl crate::Readable for BLEND_TX_SIZE_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`blend_tx_size::W`](W) writer structure"]
 impl crate::Writable for BLEND_TX_SIZE_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets BLEND_TX_SIZE to value 0"]
-impl crate::Resettable for BLEND_TX_SIZE_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for BLEND_TX_SIZE_SPEC {}

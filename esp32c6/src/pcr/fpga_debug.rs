@@ -17,7 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("FPGA_DEBUG")
-            .field("fpga_debug", &format_args!("{}", self.fpga_debug().bits()))
+            .field("fpga_debug", &self.fpga_debug().bits())
             .finish()
     }
 }
@@ -45,8 +45,6 @@ impl crate::Readable for FPGA_DEBUG_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`fpga_debug::W`](W) writer structure"]
 impl crate::Writable for FPGA_DEBUG_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets FPGA_DEBUG to value 0xffff_ffff"]
 impl crate::Resettable for FPGA_DEBUG_SPEC {

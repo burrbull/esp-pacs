@@ -82,32 +82,14 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SR_SCAL_ROTATE")
-            .field(
-                "sr_scal_x_int",
-                &format_args!("{}", self.sr_scal_x_int().bits()),
-            )
-            .field(
-                "sr_scal_x_frag",
-                &format_args!("{}", self.sr_scal_x_frag().bits()),
-            )
-            .field(
-                "sr_scal_y_int",
-                &format_args!("{}", self.sr_scal_y_int().bits()),
-            )
-            .field(
-                "sr_scal_y_frag",
-                &format_args!("{}", self.sr_scal_y_frag().bits()),
-            )
-            .field(
-                "sr_rotate_angle",
-                &format_args!("{}", self.sr_rotate_angle().bits()),
-            )
-            .field(
-                "scal_rotate_rst",
-                &format_args!("{}", self.scal_rotate_rst().bit()),
-            )
-            .field("sr_mirror_x", &format_args!("{}", self.sr_mirror_x().bit()))
-            .field("sr_mirror_y", &format_args!("{}", self.sr_mirror_y().bit()))
+            .field("sr_scal_x_int", &self.sr_scal_x_int().bits())
+            .field("sr_scal_x_frag", &self.sr_scal_x_frag().bits())
+            .field("sr_scal_y_int", &self.sr_scal_y_int().bits())
+            .field("sr_scal_y_frag", &self.sr_scal_y_frag().bits())
+            .field("sr_rotate_angle", &self.sr_rotate_angle().bits())
+            .field("scal_rotate_rst", &self.scal_rotate_rst().bit())
+            .field("sr_mirror_x", &self.sr_mirror_x().bit())
+            .field("sr_mirror_y", &self.sr_mirror_y().bit())
             .finish()
     }
 }
@@ -183,8 +165,6 @@ impl crate::Readable for SR_SCAL_ROTATE_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`sr_scal_rotate::W`](W) writer structure"]
 impl crate::Writable for SR_SCAL_ROTATE_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SR_SCAL_ROTATE to value 0x1001"]
 impl crate::Resettable for SR_SCAL_ROTATE_SPEC {

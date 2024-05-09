@@ -107,47 +107,17 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CLK_CONF")
-            .field("clk_etm_en", &format_args!("{}", self.clk_etm_en().bit()))
-            .field(
-                "clk_zb_apb_en",
-                &format_args!("{}", self.clk_zb_apb_en().bit()),
-            )
-            .field(
-                "clk_zb_mac_en",
-                &format_args!("{}", self.clk_zb_mac_en().bit()),
-            )
-            .field(
-                "clk_modem_sec_ecb_en",
-                &format_args!("{}", self.clk_modem_sec_ecb_en().bit()),
-            )
-            .field(
-                "clk_modem_sec_ccm_en",
-                &format_args!("{}", self.clk_modem_sec_ccm_en().bit()),
-            )
-            .field(
-                "clk_modem_sec_bah_en",
-                &format_args!("{}", self.clk_modem_sec_bah_en().bit()),
-            )
-            .field(
-                "clk_modem_sec_apb_en",
-                &format_args!("{}", self.clk_modem_sec_apb_en().bit()),
-            )
-            .field(
-                "clk_modem_sec_en",
-                &format_args!("{}", self.clk_modem_sec_en().bit()),
-            )
-            .field(
-                "clk_ble_timer_apb_en",
-                &format_args!("{}", self.clk_ble_timer_apb_en().bit()),
-            )
-            .field(
-                "clk_ble_timer_en",
-                &format_args!("{}", self.clk_ble_timer_en().bit()),
-            )
-            .field(
-                "clk_data_dump_en",
-                &format_args!("{}", self.clk_data_dump_en().bit()),
-            )
+            .field("clk_etm_en", &self.clk_etm_en().bit())
+            .field("clk_zb_apb_en", &self.clk_zb_apb_en().bit())
+            .field("clk_zb_mac_en", &self.clk_zb_mac_en().bit())
+            .field("clk_modem_sec_ecb_en", &self.clk_modem_sec_ecb_en().bit())
+            .field("clk_modem_sec_ccm_en", &self.clk_modem_sec_ccm_en().bit())
+            .field("clk_modem_sec_bah_en", &self.clk_modem_sec_bah_en().bit())
+            .field("clk_modem_sec_apb_en", &self.clk_modem_sec_apb_en().bit())
+            .field("clk_modem_sec_en", &self.clk_modem_sec_en().bit())
+            .field("clk_ble_timer_apb_en", &self.clk_ble_timer_apb_en().bit())
+            .field("clk_ble_timer_en", &self.clk_ble_timer_en().bit())
+            .field("clk_data_dump_en", &self.clk_data_dump_en().bit())
             .finish()
     }
 }
@@ -235,10 +205,6 @@ impl crate::Readable for CLK_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`clk_conf::W`](W) writer structure"]
 impl crate::Writable for CLK_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CLK_CONF to value 0"]
-impl crate::Resettable for CLK_CONF_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for CLK_CONF_SPEC {}

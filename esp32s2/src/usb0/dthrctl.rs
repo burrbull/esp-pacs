@@ -71,16 +71,13 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("DTHRCTL")
-            .field("nonisothren", &format_args!("{}", self.nonisothren().bit()))
-            .field("isothren", &format_args!("{}", self.isothren().bit()))
-            .field("txthrlen", &format_args!("{}", self.txthrlen().bits()))
-            .field(
-                "ahbthrratio",
-                &format_args!("{}", self.ahbthrratio().bits()),
-            )
-            .field("rxthren", &format_args!("{}", self.rxthren().bit()))
-            .field("rxthrlen", &format_args!("{}", self.rxthrlen().bits()))
-            .field("arbprken", &format_args!("{}", self.arbprken().bit()))
+            .field("nonisothren", &self.nonisothren().bit())
+            .field("isothren", &self.isothren().bit())
+            .field("txthrlen", &self.txthrlen().bits())
+            .field("ahbthrratio", &self.ahbthrratio().bits())
+            .field("rxthren", &self.rxthren().bit())
+            .field("rxthrlen", &self.rxthrlen().bits())
+            .field("arbprken", &self.arbprken().bit())
             .finish()
     }
 }
@@ -144,8 +141,6 @@ impl crate::Readable for DTHRCTL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`dthrctl::W`](W) writer structure"]
 impl crate::Writable for DTHRCTL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets DTHRCTL to value 0x0802_0020"]
 impl crate::Resettable for DTHRCTL_SPEC {

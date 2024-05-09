@@ -19,7 +19,7 @@ impl core::fmt::Debug for R {
         f.debug_struct("L2_CACHE_ACS_FAIL_CTRL")
             .field(
                 "l2_cache_acs_fail_check_mode",
-                &format_args!("{}", self.l2_cache_acs_fail_check_mode().bit()),
+                &self.l2_cache_acs_fail_check_mode().bit(),
             )
             .finish()
     }
@@ -50,10 +50,6 @@ impl crate::Readable for L2_CACHE_ACS_FAIL_CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`l2_cache_acs_fail_ctrl::W`](W) writer structure"]
 impl crate::Writable for L2_CACHE_ACS_FAIL_CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets L2_CACHE_ACS_FAIL_CTRL to value 0"]
-impl crate::Resettable for L2_CACHE_ACS_FAIL_CTRL_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for L2_CACHE_ACS_FAIL_CTRL_SPEC {}

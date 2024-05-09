@@ -26,11 +26,11 @@ impl core::fmt::Debug for R {
         f.debug_struct("I2C0_CONF")
             .field(
                 "lp_i2c_ana_mast_i2c0_conf",
-                &format_args!("{}", self.lp_i2c_ana_mast_i2c0_conf().bits()),
+                &self.lp_i2c_ana_mast_i2c0_conf().bits(),
             )
             .field(
                 "lp_i2c_ana_mast_i2c0_status",
-                &format_args!("{}", self.lp_i2c_ana_mast_i2c0_status().bits()),
+                &self.lp_i2c_ana_mast_i2c0_status().bits(),
             )
             .finish()
     }
@@ -59,8 +59,6 @@ impl crate::Readable for I2C0_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`i2c0_conf::W`](W) writer structure"]
 impl crate::Writable for I2C0_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets I2C0_CONF to value 0x0700_0000"]
 impl crate::Resettable for I2C0_CONF_SPEC {

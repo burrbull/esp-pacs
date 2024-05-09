@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CLK_CFG")
-            .field(
-                "clk_prescale",
-                &format_args!("{}", self.clk_prescale().bits()),
-            )
+            .field("clk_prescale", &self.clk_prescale().bits())
             .finish()
     }
 }
@@ -48,10 +45,6 @@ impl crate::Readable for CLK_CFG_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`clk_cfg::W`](W) writer structure"]
 impl crate::Writable for CLK_CFG_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CLK_CFG to value 0"]
-impl crate::Resettable for CLK_CFG_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for CLK_CFG_SPEC {}

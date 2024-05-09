@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CORE_1_SP_UNSTABLE")
-            .field(
-                "core_1_sp_unstable",
-                &format_args!("{}", self.core_1_sp_unstable().bits()),
-            )
+            .field("core_1_sp_unstable", &self.core_1_sp_unstable().bits())
             .finish()
     }
 }
@@ -48,8 +45,6 @@ impl crate::Readable for CORE_1_SP_UNSTABLE_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`core_1_sp_unstable::W`](W) writer structure"]
 impl crate::Writable for CORE_1_SP_UNSTABLE_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CORE_1_SP_UNSTABLE to value 0x0b"]
 impl crate::Resettable for CORE_1_SP_UNSTABLE_SPEC {

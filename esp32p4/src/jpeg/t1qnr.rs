@@ -13,10 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("T1QNR")
-            .field(
-                "chrominance_qnr_val",
-                &format_args!("{}", self.chrominance_qnr_val().bits()),
-            )
+            .field("chrominance_qnr_val", &self.chrominance_qnr_val().bits())
             .finish()
     }
 }
@@ -34,6 +31,4 @@ impl crate::RegisterSpec for T1QNR_SPEC {
 #[doc = "`read()` method returns [`t1qnr::R`](R) reader structure"]
 impl crate::Readable for T1QNR_SPEC {}
 #[doc = "`reset()` method sets T1QNR to value 0"]
-impl crate::Resettable for T1QNR_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for T1QNR_SPEC {}

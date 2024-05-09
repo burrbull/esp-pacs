@@ -80,14 +80,14 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("EMACFF")
-            .field("pmode", &format_args!("{}", self.pmode().bit()))
-            .field("daif", &format_args!("{}", self.daif().bit()))
-            .field("pam", &format_args!("{}", self.pam().bit()))
-            .field("dbf", &format_args!("{}", self.dbf().bit()))
-            .field("pcf", &format_args!("{}", self.pcf().bits()))
-            .field("saif", &format_args!("{}", self.saif().bit()))
-            .field("safe", &format_args!("{}", self.safe().bit()))
-            .field("receive_all", &format_args!("{}", self.receive_all().bit()))
+            .field("pmode", &self.pmode().bit())
+            .field("daif", &self.daif().bit())
+            .field("pam", &self.pam().bit())
+            .field("dbf", &self.dbf().bit())
+            .field("pcf", &self.pcf().bits())
+            .field("saif", &self.saif().bit())
+            .field("safe", &self.safe().bit())
+            .field("receive_all", &self.receive_all().bit())
             .finish()
     }
 }
@@ -157,10 +157,6 @@ impl crate::Readable for EMACFF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`emacff::W`](W) writer structure"]
 impl crate::Writable for EMACFF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets EMACFF to value 0"]
-impl crate::Resettable for EMACFF_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for EMACFF_SPEC {}

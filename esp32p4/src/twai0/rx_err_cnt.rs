@@ -17,7 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("RX_ERR_CNT")
-            .field("rx_err_cnt", &format_args!("{}", self.rx_err_cnt().bits()))
+            .field("rx_err_cnt", &self.rx_err_cnt().bits())
             .finish()
     }
 }
@@ -45,10 +45,6 @@ impl crate::Readable for RX_ERR_CNT_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`rx_err_cnt::W`](W) writer structure"]
 impl crate::Writable for RX_ERR_CNT_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets RX_ERR_CNT to value 0"]
-impl crate::Resettable for RX_ERR_CNT_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for RX_ERR_CNT_SPEC {}

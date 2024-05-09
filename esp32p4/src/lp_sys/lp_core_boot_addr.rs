@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("LP_CORE_BOOT_ADDR")
-            .field(
-                "lp_cpu_boot_addr",
-                &format_args!("{}", self.lp_cpu_boot_addr().bits()),
-            )
+            .field("lp_cpu_boot_addr", &self.lp_cpu_boot_addr().bits())
             .finish()
     }
 }
@@ -48,8 +45,6 @@ impl crate::Readable for LP_CORE_BOOT_ADDR_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`lp_core_boot_addr::W`](W) writer structure"]
 impl crate::Writable for LP_CORE_BOOT_ADDR_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets LP_CORE_BOOT_ADDR to value 0x5010_0000"]
 impl crate::Resettable for LP_CORE_BOOT_ADDR_SPEC {

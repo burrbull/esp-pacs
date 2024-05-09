@@ -53,26 +53,11 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("LP_PROBEA_CTRL")
-            .field(
-                "probe_a_mod_sel",
-                &format_args!("{}", self.probe_a_mod_sel().bits()),
-            )
-            .field(
-                "probe_a_top_sel",
-                &format_args!("{}", self.probe_a_top_sel().bits()),
-            )
-            .field(
-                "probe_l_sel",
-                &format_args!("{}", self.probe_l_sel().bits()),
-            )
-            .field(
-                "probe_h_sel",
-                &format_args!("{}", self.probe_h_sel().bits()),
-            )
-            .field(
-                "probe_global_en",
-                &format_args!("{}", self.probe_global_en().bit()),
-            )
+            .field("probe_a_mod_sel", &self.probe_a_mod_sel().bits())
+            .field("probe_a_top_sel", &self.probe_a_top_sel().bits())
+            .field("probe_l_sel", &self.probe_l_sel().bits())
+            .field("probe_h_sel", &self.probe_h_sel().bits())
+            .field("probe_global_en", &self.probe_global_en().bit())
             .finish()
     }
 }
@@ -124,10 +109,6 @@ impl crate::Readable for LP_PROBEA_CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`lp_probea_ctrl::W`](W) writer structure"]
 impl crate::Writable for LP_PROBEA_CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets LP_PROBEA_CTRL to value 0"]
-impl crate::Resettable for LP_PROBEA_CTRL_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for LP_PROBEA_CTRL_SPEC {}

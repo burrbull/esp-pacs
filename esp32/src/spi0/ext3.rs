@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("EXT3")
-            .field(
-                "int_hold_ena",
-                &format_args!("{}", self.int_hold_ena().bits()),
-            )
+            .field("int_hold_ena", &self.int_hold_ena().bits())
             .finish()
     }
 }
@@ -48,10 +45,6 @@ impl crate::Readable for EXT3_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`ext3::W`](W) writer structure"]
 impl crate::Writable for EXT3_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets EXT3 to value 0"]
-impl crate::Resettable for EXT3_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for EXT3_SPEC {}

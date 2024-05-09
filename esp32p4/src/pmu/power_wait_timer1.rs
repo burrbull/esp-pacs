@@ -37,16 +37,10 @@ impl core::fmt::Debug for R {
         f.debug_struct("POWER_WAIT_TIMER1")
             .field(
                 "dg_lp_powerdown_timer",
-                &format_args!("{}", self.dg_lp_powerdown_timer().bits()),
+                &self.dg_lp_powerdown_timer().bits(),
             )
-            .field(
-                "dg_lp_powerup_timer",
-                &format_args!("{}", self.dg_lp_powerup_timer().bits()),
-            )
-            .field(
-                "dg_lp_wait_timer",
-                &format_args!("{}", self.dg_lp_wait_timer().bits()),
-            )
+            .field("dg_lp_powerup_timer", &self.dg_lp_powerup_timer().bits())
+            .field("dg_lp_wait_timer", &self.dg_lp_wait_timer().bits())
             .finish()
     }
 }
@@ -86,8 +80,6 @@ impl crate::Readable for POWER_WAIT_TIMER1_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`power_wait_timer1::W`](W) writer structure"]
 impl crate::Writable for POWER_WAIT_TIMER1_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets POWER_WAIT_TIMER1 to value 0x7fbf_dfe0"]
 impl crate::Resettable for POWER_WAIT_TIMER1_SPEC {

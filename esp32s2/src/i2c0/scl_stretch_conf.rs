@@ -28,14 +28,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SCL_STRETCH_CONF")
-            .field(
-                "stretch_protect_num",
-                &format_args!("{}", self.stretch_protect_num().bits()),
-            )
-            .field(
-                "slave_scl_stretch_en",
-                &format_args!("{}", self.slave_scl_stretch_en().bit()),
-            )
+            .field("stretch_protect_num", &self.stretch_protect_num().bits())
+            .field("slave_scl_stretch_en", &self.slave_scl_stretch_en().bit())
             .finish()
     }
 }
@@ -75,10 +69,6 @@ impl crate::Readable for SCL_STRETCH_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`scl_stretch_conf::W`](W) writer structure"]
 impl crate::Writable for SCL_STRETCH_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SCL_STRETCH_CONF to value 0"]
-impl crate::Resettable for SCL_STRETCH_CONF_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for SCL_STRETCH_CONF_SPEC {}

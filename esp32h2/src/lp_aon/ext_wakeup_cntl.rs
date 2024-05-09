@@ -44,22 +44,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("EXT_WAKEUP_CNTL")
-            .field(
-                "ext_wakeup_status",
-                &format_args!("{}", self.ext_wakeup_status().bits()),
-            )
-            .field(
-                "ext_wakeup_sel",
-                &format_args!("{}", self.ext_wakeup_sel().bits()),
-            )
-            .field(
-                "ext_wakeup_lv",
-                &format_args!("{}", self.ext_wakeup_lv().bits()),
-            )
-            .field(
-                "ext_wakeup_filter",
-                &format_args!("{}", self.ext_wakeup_filter().bit()),
-            )
+            .field("ext_wakeup_status", &self.ext_wakeup_status().bits())
+            .field("ext_wakeup_sel", &self.ext_wakeup_sel().bits())
+            .field("ext_wakeup_lv", &self.ext_wakeup_lv().bits())
+            .field("ext_wakeup_filter", &self.ext_wakeup_filter().bit())
             .finish()
     }
 }
@@ -105,10 +93,6 @@ impl crate::Readable for EXT_WAKEUP_CNTL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`ext_wakeup_cntl::W`](W) writer structure"]
 impl crate::Writable for EXT_WAKEUP_CNTL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets EXT_WAKEUP_CNTL to value 0"]
-impl crate::Resettable for EXT_WAKEUP_CNTL_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for EXT_WAKEUP_CNTL_SPEC {}

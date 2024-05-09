@@ -15,7 +15,7 @@ impl core::fmt::Debug for R {
         f.debug_struct("_0_SUB_START_DES")
             .field(
                 "slc0_sub_pac_start_dscr_addr",
-                &format_args!("{}", self.slc0_sub_pac_start_dscr_addr().bits()),
+                &self.slc0_sub_pac_start_dscr_addr().bits(),
             )
             .finish()
     }
@@ -34,6 +34,4 @@ impl crate::RegisterSpec for _0_SUB_START_DES_SPEC {
 #[doc = "`read()` method returns [`_0_sub_start_des::R`](R) reader structure"]
 impl crate::Readable for _0_SUB_START_DES_SPEC {}
 #[doc = "`reset()` method sets _0_SUB_START_DES to value 0"]
-impl crate::Resettable for _0_SUB_START_DES_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for _0_SUB_START_DES_SPEC {}

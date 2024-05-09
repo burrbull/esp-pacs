@@ -19,7 +19,7 @@ impl core::fmt::Debug for R {
         f.debug_struct("APP_INTRUSION_CTRL")
             .field(
                 "app_intrusion_record_reset_n",
-                &format_args!("{}", self.app_intrusion_record_reset_n().bit()),
+                &self.app_intrusion_record_reset_n().bit(),
             )
             .finish()
     }
@@ -50,8 +50,6 @@ impl crate::Readable for APP_INTRUSION_CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`app_intrusion_ctrl::W`](W) writer structure"]
 impl crate::Writable for APP_INTRUSION_CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets APP_INTRUSION_CTRL to value 0x01"]
 impl crate::Resettable for APP_INTRUSION_CTRL_SPEC {

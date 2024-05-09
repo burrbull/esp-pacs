@@ -20,14 +20,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CLUT_CNT")
-            .field(
-                "blend0_clut_cnt",
-                &format_args!("{}", self.blend0_clut_cnt().bits()),
-            )
-            .field(
-                "blend1_clut_cnt",
-                &format_args!("{}", self.blend1_clut_cnt().bits()),
-            )
+            .field("blend0_clut_cnt", &self.blend0_clut_cnt().bits())
+            .field("blend1_clut_cnt", &self.blend1_clut_cnt().bits())
             .finish()
     }
 }
@@ -45,6 +39,4 @@ impl crate::RegisterSpec for CLUT_CNT_SPEC {
 #[doc = "`read()` method returns [`clut_cnt::R`](R) reader structure"]
 impl crate::Readable for CLUT_CNT_SPEC {}
 #[doc = "`reset()` method sets CLUT_CNT to value 0"]
-impl crate::Resettable for CLUT_CNT_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for CLUT_CNT_SPEC {}

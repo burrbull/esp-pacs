@@ -15,7 +15,7 @@ impl core::fmt::Debug for R {
         f.debug_struct("TCM_PARITY_INT_RECORD")
             .field(
                 "tcm_parity_err_int_addr",
-                &format_args!("{}", self.tcm_parity_err_int_addr().bits()),
+                &self.tcm_parity_err_int_addr().bits(),
             )
             .finish()
     }
@@ -34,6 +34,4 @@ impl crate::RegisterSpec for TCM_PARITY_INT_RECORD_SPEC {
 #[doc = "`read()` method returns [`tcm_parity_int_record::R`](R) reader structure"]
 impl crate::Readable for TCM_PARITY_INT_RECORD_SPEC {}
 #[doc = "`reset()` method sets TCM_PARITY_INT_RECORD to value 0"]
-impl crate::Resettable for TCM_PARITY_INT_RECORD_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for TCM_PARITY_INT_RECORD_SPEC {}

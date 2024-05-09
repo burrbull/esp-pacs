@@ -143,57 +143,21 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CLK_CONF")
-            .field(
-                "ck8m_div_sel_vld",
-                &format_args!("{}", self.ck8m_div_sel_vld().bit()),
-            )
-            .field("ck8m_div", &format_args!("{}", self.ck8m_div().bits()))
-            .field("enb_ck8m", &format_args!("{}", self.enb_ck8m().bit()))
-            .field(
-                "enb_ck8m_div",
-                &format_args!("{}", self.enb_ck8m_div().bit()),
-            )
-            .field(
-                "dig_xtal32k_en",
-                &format_args!("{}", self.dig_xtal32k_en().bit()),
-            )
-            .field(
-                "dig_clk8m_d256_en",
-                &format_args!("{}", self.dig_clk8m_d256_en().bit()),
-            )
-            .field(
-                "dig_clk8m_en",
-                &format_args!("{}", self.dig_clk8m_en().bit()),
-            )
-            .field(
-                "ck8m_div_sel",
-                &format_args!("{}", self.ck8m_div_sel().bits()),
-            )
-            .field(
-                "xtal_force_nogating",
-                &format_args!("{}", self.xtal_force_nogating().bit()),
-            )
-            .field(
-                "ck8m_force_nogating",
-                &format_args!("{}", self.ck8m_force_nogating().bit()),
-            )
-            .field("ck8m_dfreq", &format_args!("{}", self.ck8m_dfreq().bits()))
-            .field(
-                "ck8m_force_pd",
-                &format_args!("{}", self.ck8m_force_pd().bit()),
-            )
-            .field(
-                "ck8m_force_pu",
-                &format_args!("{}", self.ck8m_force_pu().bit()),
-            )
-            .field(
-                "fast_clk_rtc_sel",
-                &format_args!("{}", self.fast_clk_rtc_sel().bit()),
-            )
-            .field(
-                "ana_clk_rtc_sel",
-                &format_args!("{}", self.ana_clk_rtc_sel().bits()),
-            )
+            .field("ck8m_div_sel_vld", &self.ck8m_div_sel_vld().bit())
+            .field("ck8m_div", &self.ck8m_div().bits())
+            .field("enb_ck8m", &self.enb_ck8m().bit())
+            .field("enb_ck8m_div", &self.enb_ck8m_div().bit())
+            .field("dig_xtal32k_en", &self.dig_xtal32k_en().bit())
+            .field("dig_clk8m_d256_en", &self.dig_clk8m_d256_en().bit())
+            .field("dig_clk8m_en", &self.dig_clk8m_en().bit())
+            .field("ck8m_div_sel", &self.ck8m_div_sel().bits())
+            .field("xtal_force_nogating", &self.xtal_force_nogating().bit())
+            .field("ck8m_force_nogating", &self.ck8m_force_nogating().bit())
+            .field("ck8m_dfreq", &self.ck8m_dfreq().bits())
+            .field("ck8m_force_pd", &self.ck8m_force_pd().bit())
+            .field("ck8m_force_pu", &self.ck8m_force_pu().bit())
+            .field("fast_clk_rtc_sel", &self.fast_clk_rtc_sel().bit())
+            .field("ana_clk_rtc_sel", &self.ana_clk_rtc_sel().bits())
             .finish()
     }
 }
@@ -305,8 +269,6 @@ impl crate::Readable for CLK_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`clk_conf::W`](W) writer structure"]
 impl crate::Writable for CLK_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CLK_CONF to value 0x0158_3218"]
 impl crate::Resettable for CLK_CONF_SPEC {

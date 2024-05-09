@@ -50,28 +50,25 @@ impl core::fmt::Debug for R {
         f.debug_struct("L1_CACHE_SYNC_PRELOAD_EXCEPTION")
             .field(
                 "l1_icache0_pld_err_code",
-                &format_args!("{}", self.l1_icache0_pld_err_code().bits()),
+                &self.l1_icache0_pld_err_code().bits(),
             )
             .field(
                 "l1_icache1_pld_err_code",
-                &format_args!("{}", self.l1_icache1_pld_err_code().bits()),
+                &self.l1_icache1_pld_err_code().bits(),
             )
             .field(
                 "l1_icache2_pld_err_code",
-                &format_args!("{}", self.l1_icache2_pld_err_code().bits()),
+                &self.l1_icache2_pld_err_code().bits(),
             )
             .field(
                 "l1_icache3_pld_err_code",
-                &format_args!("{}", self.l1_icache3_pld_err_code().bits()),
+                &self.l1_icache3_pld_err_code().bits(),
             )
             .field(
                 "l1_cache_pld_err_code",
-                &format_args!("{}", self.l1_cache_pld_err_code().bits()),
+                &self.l1_cache_pld_err_code().bits(),
             )
-            .field(
-                "cache_sync_err_code",
-                &format_args!("{}", self.cache_sync_err_code().bits()),
-            )
+            .field("cache_sync_err_code", &self.cache_sync_err_code().bits())
             .finish()
     }
 }
@@ -89,6 +86,4 @@ impl crate::RegisterSpec for L1_CACHE_SYNC_PRELOAD_EXCEPTION_SPEC {
 #[doc = "`read()` method returns [`l1_cache_sync_preload_exception::R`](R) reader structure"]
 impl crate::Readable for L1_CACHE_SYNC_PRELOAD_EXCEPTION_SPEC {}
 #[doc = "`reset()` method sets L1_CACHE_SYNC_PRELOAD_EXCEPTION to value 0"]
-impl crate::Resettable for L1_CACHE_SYNC_PRELOAD_EXCEPTION_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for L1_CACHE_SYNC_PRELOAD_EXCEPTION_SPEC {}

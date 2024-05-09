@@ -24,14 +24,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SPI_MEM_PMS_CTRL")
-            .field(
-                "spi_mem_reject_int",
-                &format_args!("{}", self.spi_mem_reject_int().bit()),
-            )
-            .field(
-                "spi_mem_reject_cde",
-                &format_args!("{}", self.spi_mem_reject_cde().bits()),
-            )
+            .field("spi_mem_reject_int", &self.spi_mem_reject_int().bit())
+            .field("spi_mem_reject_cde", &self.spi_mem_reject_cde().bits())
             .finish()
     }
 }
@@ -59,10 +53,6 @@ impl crate::Readable for SPI_MEM_PMS_CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`spi_mem_pms_ctrl::W`](W) writer structure"]
 impl crate::Writable for SPI_MEM_PMS_CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SPI_MEM_PMS_CTRL to value 0"]
-impl crate::Resettable for SPI_MEM_PMS_CTRL_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for SPI_MEM_PMS_CTRL_SPEC {}

@@ -19,7 +19,7 @@ impl core::fmt::Debug for R {
         f.debug_struct("LP_I2S_TXCLK_DIV_NUM")
             .field(
                 "lp_i2s_tx_clkm_div_num",
-                &format_args!("{}", self.lp_i2s_tx_clkm_div_num().bits()),
+                &self.lp_i2s_tx_clkm_div_num().bits(),
             )
             .finish()
     }
@@ -50,8 +50,6 @@ impl crate::Readable for LP_I2S_TXCLK_DIV_NUM_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`lp_i2s_txclk_div_num::W`](W) writer structure"]
 impl crate::Writable for LP_I2S_TXCLK_DIV_NUM_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets LP_I2S_TXCLK_DIV_NUM to value 0x0200_0000"]
 impl crate::Resettable for LP_I2S_TXCLK_DIV_NUM_SPEC {

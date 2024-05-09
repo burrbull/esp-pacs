@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("RWBLE_NMI_MAP")
-            .field(
-                "rwble_nmi_map",
-                &format_args!("{}", self.rwble_nmi_map().bits()),
-            )
+            .field("rwble_nmi_map", &self.rwble_nmi_map().bits())
             .finish()
     }
 }
@@ -48,8 +45,6 @@ impl crate::Readable for RWBLE_NMI_MAP_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`rwble_nmi_map::W`](W) writer structure"]
 impl crate::Writable for RWBLE_NMI_MAP_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets RWBLE_NMI_MAP to value 0x10"]
 impl crate::Resettable for RWBLE_NMI_MAP_SPEC {

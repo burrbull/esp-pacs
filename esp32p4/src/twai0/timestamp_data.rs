@@ -13,10 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("TIMESTAMP_DATA")
-            .field(
-                "timestamp_data",
-                &format_args!("{}", self.timestamp_data().bits()),
-            )
+            .field("timestamp_data", &self.timestamp_data().bits())
             .finish()
     }
 }
@@ -34,6 +31,4 @@ impl crate::RegisterSpec for TIMESTAMP_DATA_SPEC {
 #[doc = "`read()` method returns [`timestamp_data::R`](R) reader structure"]
 impl crate::Readable for TIMESTAMP_DATA_SPEC {}
 #[doc = "`reset()` method sets TIMESTAMP_DATA to value 0"]
-impl crate::Resettable for TIMESTAMP_DATA_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for TIMESTAMP_DATA_SPEC {}

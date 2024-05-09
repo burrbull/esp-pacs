@@ -90,18 +90,18 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("EMACDEBUG")
-            .field("macrpes", &format_args!("{}", self.macrpes().bit()))
-            .field("macrffcs", &format_args!("{}", self.macrffcs().bits()))
-            .field("mtlrfwcas", &format_args!("{}", self.mtlrfwcas().bit()))
-            .field("mtlrfrcs", &format_args!("{}", self.mtlrfrcs().bits()))
-            .field("mtlrffls", &format_args!("{}", self.mtlrffls().bits()))
-            .field("mactpes", &format_args!("{}", self.mactpes().bit()))
-            .field("mactfcs", &format_args!("{}", self.mactfcs().bits()))
-            .field("mactp", &format_args!("{}", self.mactp().bit()))
-            .field("mtltfrcs", &format_args!("{}", self.mtltfrcs().bits()))
-            .field("mtltfwcs", &format_args!("{}", self.mtltfwcs().bit()))
-            .field("mtltfnes", &format_args!("{}", self.mtltfnes().bit()))
-            .field("mtltsffs", &format_args!("{}", self.mtltsffs().bit()))
+            .field("macrpes", &self.macrpes().bit())
+            .field("macrffcs", &self.macrffcs().bits())
+            .field("mtlrfwcas", &self.mtlrfwcas().bit())
+            .field("mtlrfrcs", &self.mtlrfrcs().bits())
+            .field("mtlrffls", &self.mtlrffls().bits())
+            .field("mactpes", &self.mactpes().bit())
+            .field("mactfcs", &self.mactfcs().bits())
+            .field("mactp", &self.mactp().bit())
+            .field("mtltfrcs", &self.mtltfrcs().bits())
+            .field("mtltfwcs", &self.mtltfwcs().bit())
+            .field("mtltfnes", &self.mtltfnes().bit())
+            .field("mtltsffs", &self.mtltsffs().bit())
             .finish()
     }
 }
@@ -119,6 +119,4 @@ impl crate::RegisterSpec for EMACDEBUG_SPEC {
 #[doc = "`read()` method returns [`emacdebug::R`](R) reader structure"]
 impl crate::Readable for EMACDEBUG_SPEC {}
 #[doc = "`reset()` method sets EMACDEBUG to value 0"]
-impl crate::Resettable for EMACDEBUG_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for EMACDEBUG_SPEC {}

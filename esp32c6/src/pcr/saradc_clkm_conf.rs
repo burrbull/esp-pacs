@@ -53,26 +53,11 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SARADC_CLKM_CONF")
-            .field(
-                "saradc_clkm_div_a",
-                &format_args!("{}", self.saradc_clkm_div_a().bits()),
-            )
-            .field(
-                "saradc_clkm_div_b",
-                &format_args!("{}", self.saradc_clkm_div_b().bits()),
-            )
-            .field(
-                "saradc_clkm_div_num",
-                &format_args!("{}", self.saradc_clkm_div_num().bits()),
-            )
-            .field(
-                "saradc_clkm_sel",
-                &format_args!("{}", self.saradc_clkm_sel().bits()),
-            )
-            .field(
-                "saradc_clkm_en",
-                &format_args!("{}", self.saradc_clkm_en().bit()),
-            )
+            .field("saradc_clkm_div_a", &self.saradc_clkm_div_a().bits())
+            .field("saradc_clkm_div_b", &self.saradc_clkm_div_b().bits())
+            .field("saradc_clkm_div_num", &self.saradc_clkm_div_num().bits())
+            .field("saradc_clkm_sel", &self.saradc_clkm_sel().bits())
+            .field("saradc_clkm_en", &self.saradc_clkm_en().bit())
             .finish()
     }
 }
@@ -124,8 +109,6 @@ impl crate::Readable for SARADC_CLKM_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`saradc_clkm_conf::W`](W) writer structure"]
 impl crate::Writable for SARADC_CLKM_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SARADC_CLKM_CONF to value 0x0040_4000"]
 impl crate::Resettable for SARADC_CLKM_CONF_SPEC {

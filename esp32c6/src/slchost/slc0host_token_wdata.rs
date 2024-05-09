@@ -26,14 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SLC0HOST_TOKEN_WDATA")
-            .field(
-                "slc0host_token0_wd",
-                &format_args!("{}", self.slc0host_token0_wd().bits()),
-            )
-            .field(
-                "slc0host_token1_wd",
-                &format_args!("{}", self.slc0host_token1_wd().bits()),
-            )
+            .field("slc0host_token0_wd", &self.slc0host_token0_wd().bits())
+            .field("slc0host_token1_wd", &self.slc0host_token1_wd().bits())
             .finish()
     }
 }
@@ -67,10 +61,6 @@ impl crate::Readable for SLC0HOST_TOKEN_WDATA_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`slc0host_token_wdata::W`](W) writer structure"]
 impl crate::Writable for SLC0HOST_TOKEN_WDATA_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SLC0HOST_TOKEN_WDATA to value 0"]
-impl crate::Resettable for SLC0HOST_TOKEN_WDATA_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for SLC0HOST_TOKEN_WDATA_SPEC {}

@@ -37,16 +37,13 @@ impl core::fmt::Debug for R {
         f.debug_struct("CACHE_ENCRYPT_DECRYPT_CLK_FORCE_ON")
             .field(
                 "clk_force_on_manual_crypt",
-                &format_args!("{}", self.clk_force_on_manual_crypt().bit()),
+                &self.clk_force_on_manual_crypt().bit(),
             )
             .field(
                 "clk_force_on_auto_crypt",
-                &format_args!("{}", self.clk_force_on_auto_crypt().bit()),
+                &self.clk_force_on_auto_crypt().bit(),
             )
-            .field(
-                "clk_force_on_crypt",
-                &format_args!("{}", self.clk_force_on_crypt().bit()),
-            )
+            .field("clk_force_on_crypt", &self.clk_force_on_crypt().bit())
             .finish()
     }
 }
@@ -92,8 +89,6 @@ impl crate::Readable for CACHE_ENCRYPT_DECRYPT_CLK_FORCE_ON_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`cache_encrypt_decrypt_clk_force_on::W`](W) writer structure"]
 impl crate::Writable for CACHE_ENCRYPT_DECRYPT_CLK_FORCE_ON_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CACHE_ENCRYPT_DECRYPT_CLK_FORCE_ON to value 0x07"]
 impl crate::Resettable for CACHE_ENCRYPT_DECRYPT_CLK_FORCE_ON_SPEC {

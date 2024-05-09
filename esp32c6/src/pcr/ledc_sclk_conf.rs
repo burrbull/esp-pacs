@@ -26,14 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("LEDC_SCLK_CONF")
-            .field(
-                "ledc_sclk_sel",
-                &format_args!("{}", self.ledc_sclk_sel().bits()),
-            )
-            .field(
-                "ledc_sclk_en",
-                &format_args!("{}", self.ledc_sclk_en().bit()),
-            )
+            .field("ledc_sclk_sel", &self.ledc_sclk_sel().bits())
+            .field("ledc_sclk_en", &self.ledc_sclk_en().bit())
             .finish()
     }
 }
@@ -67,8 +61,6 @@ impl crate::Readable for LEDC_SCLK_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`ledc_sclk_conf::W`](W) writer structure"]
 impl crate::Writable for LEDC_SCLK_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets LEDC_SCLK_CONF to value 0x0040_0000"]
 impl crate::Resettable for LEDC_SCLK_CONF_SPEC {

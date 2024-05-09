@@ -26,14 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("AF_HSCALE_B")
-            .field(
-                "af_rpoint_b",
-                &format_args!("{}", self.af_rpoint_b().bits()),
-            )
-            .field(
-                "af_lpoint_b",
-                &format_args!("{}", self.af_lpoint_b().bits()),
-            )
+            .field("af_rpoint_b", &self.af_rpoint_b().bits())
+            .field("af_lpoint_b", &self.af_lpoint_b().bits())
             .finish()
     }
 }
@@ -67,8 +61,6 @@ impl crate::Readable for AF_HSCALE_B_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`af_hscale_b::W`](W) writer structure"]
 impl crate::Writable for AF_HSCALE_B_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets AF_HSCALE_B to value 0x0001_0080"]
 impl crate::Resettable for AF_HSCALE_B_SPEC {

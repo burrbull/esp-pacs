@@ -19,7 +19,7 @@ impl core::fmt::Debug for R {
         f.debug_struct("CORE_DEBUG_RUNSTALL_CONF")
             .field(
                 "core_debug_runstall_enable",
-                &format_args!("{}", self.core_debug_runstall_enable().bit()),
+                &self.core_debug_runstall_enable().bit(),
             )
             .finish()
     }
@@ -50,10 +50,6 @@ impl crate::Readable for CORE_DEBUG_RUNSTALL_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`core_debug_runstall_conf::W`](W) writer structure"]
 impl crate::Writable for CORE_DEBUG_RUNSTALL_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CORE_DEBUG_RUNSTALL_CONF to value 0"]
-impl crate::Resettable for CORE_DEBUG_RUNSTALL_CONF_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for CORE_DEBUG_RUNSTALL_CONF_SPEC {}

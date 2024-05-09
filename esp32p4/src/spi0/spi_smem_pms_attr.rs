@@ -35,18 +35,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SPI_SMEM_PMS_ATTR")
-            .field(
-                "spi_smem_pms_rd_attr",
-                &format_args!("{}", self.spi_smem_pms_rd_attr().bit()),
-            )
-            .field(
-                "spi_smem_pms_wr_attr",
-                &format_args!("{}", self.spi_smem_pms_wr_attr().bit()),
-            )
-            .field(
-                "spi_smem_pms_ecc",
-                &format_args!("{}", self.spi_smem_pms_ecc().bit()),
-            )
+            .field("spi_smem_pms_rd_attr", &self.spi_smem_pms_rd_attr().bit())
+            .field("spi_smem_pms_wr_attr", &self.spi_smem_pms_wr_attr().bit())
+            .field("spi_smem_pms_ecc", &self.spi_smem_pms_ecc().bit())
             .finish()
     }
 }
@@ -86,8 +77,6 @@ impl crate::Readable for SPI_SMEM_PMS_ATTR_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`spi_smem_pms_attr::W`](W) writer structure"]
 impl crate::Writable for SPI_SMEM_PMS_ATTR_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SPI_SMEM_PMS%s_ATTR to value 0x03"]
 impl crate::Resettable for SPI_SMEM_PMS_ATTR_SPEC {

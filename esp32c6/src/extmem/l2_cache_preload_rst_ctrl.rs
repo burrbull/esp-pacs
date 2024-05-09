@@ -13,10 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("L2_CACHE_PRELOAD_RST_CTRL")
-            .field(
-                "l2_cache_pld_rst",
-                &format_args!("{}", self.l2_cache_pld_rst().bit()),
-            )
+            .field("l2_cache_pld_rst", &self.l2_cache_pld_rst().bit())
             .finish()
     }
 }
@@ -34,6 +31,4 @@ impl crate::RegisterSpec for L2_CACHE_PRELOAD_RST_CTRL_SPEC {
 #[doc = "`read()` method returns [`l2_cache_preload_rst_ctrl::R`](R) reader structure"]
 impl crate::Readable for L2_CACHE_PRELOAD_RST_CTRL_SPEC {}
 #[doc = "`reset()` method sets L2_CACHE_PRELOAD_RST_CTRL to value 0"]
-impl crate::Resettable for L2_CACHE_PRELOAD_RST_CTRL_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for L2_CACHE_PRELOAD_RST_CTRL_SPEC {}

@@ -19,7 +19,7 @@ impl core::fmt::Debug for R {
         f.debug_struct("AHBLITE_MPU_TABLE_EFUSE")
             .field(
                 "efuse_access_grant_config",
-                &format_args!("{}", self.efuse_access_grant_config().bits()),
+                &self.efuse_access_grant_config().bits(),
             )
             .finish()
     }
@@ -50,10 +50,6 @@ impl crate::Readable for AHBLITE_MPU_TABLE_EFUSE_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`ahblite_mpu_table_efuse::W`](W) writer structure"]
 impl crate::Writable for AHBLITE_MPU_TABLE_EFUSE_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets AHBLITE_MPU_TABLE_EFUSE to value 0"]
-impl crate::Resettable for AHBLITE_MPU_TABLE_EFUSE_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for AHBLITE_MPU_TABLE_EFUSE_SPEC {}

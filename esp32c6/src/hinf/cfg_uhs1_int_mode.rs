@@ -44,22 +44,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CFG_UHS1_INT_MODE")
-            .field(
-                "intoe_end_ahead_mode",
-                &format_args!("{}", self.intoe_end_ahead_mode().bits()),
-            )
-            .field(
-                "int_end_ahead_mode",
-                &format_args!("{}", self.int_end_ahead_mode().bits()),
-            )
-            .field(
-                "intoe_st_ahead_mode",
-                &format_args!("{}", self.intoe_st_ahead_mode().bits()),
-            )
-            .field(
-                "int_st_ahead_mode",
-                &format_args!("{}", self.int_st_ahead_mode().bits()),
-            )
+            .field("intoe_end_ahead_mode", &self.intoe_end_ahead_mode().bits())
+            .field("int_end_ahead_mode", &self.int_end_ahead_mode().bits())
+            .field("intoe_st_ahead_mode", &self.intoe_st_ahead_mode().bits())
+            .field("int_st_ahead_mode", &self.int_st_ahead_mode().bits())
             .finish()
     }
 }
@@ -105,10 +93,6 @@ impl crate::Readable for CFG_UHS1_INT_MODE_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`cfg_uhs1_int_mode::W`](W) writer structure"]
 impl crate::Writable for CFG_UHS1_INT_MODE_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CFG_UHS1_INT_MODE to value 0"]
-impl crate::Resettable for CFG_UHS1_INT_MODE_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for CFG_UHS1_INT_MODE_SPEC {}

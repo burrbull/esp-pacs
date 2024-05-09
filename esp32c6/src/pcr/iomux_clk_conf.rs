@@ -26,14 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("IOMUX_CLK_CONF")
-            .field(
-                "iomux_func_clk_sel",
-                &format_args!("{}", self.iomux_func_clk_sel().bits()),
-            )
-            .field(
-                "iomux_func_clk_en",
-                &format_args!("{}", self.iomux_func_clk_en().bit()),
-            )
+            .field("iomux_func_clk_sel", &self.iomux_func_clk_sel().bits())
+            .field("iomux_func_clk_en", &self.iomux_func_clk_en().bit())
             .finish()
     }
 }
@@ -67,8 +61,6 @@ impl crate::Readable for IOMUX_CLK_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`iomux_clk_conf::W`](W) writer structure"]
 impl crate::Writable for IOMUX_CLK_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets IOMUX_CLK_CONF to value 0x0070_0000"]
 impl crate::Resettable for IOMUX_CLK_CONF_SPEC {

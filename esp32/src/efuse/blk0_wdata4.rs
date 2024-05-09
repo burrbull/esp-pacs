@@ -63,25 +63,13 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("BLK0_WDATA4")
-            .field("clk8m_freq", &format_args!("{}", self.clk8m_freq().bits()))
-            .field("adc_vref", &format_args!("{}", self.adc_vref().bits()))
-            .field(
-                "reserve_0_141",
-                &format_args!("{}", self.reserve_0_141().bit()),
-            )
-            .field("xpd_sdio", &format_args!("{}", self.xpd_sdio().bit()))
-            .field(
-                "xpd_sdio_tieh",
-                &format_args!("{}", self.xpd_sdio_tieh().bit()),
-            )
-            .field(
-                "xpd_sdio_force",
-                &format_args!("{}", self.xpd_sdio_force().bit()),
-            )
-            .field(
-                "reserve_0_145",
-                &format_args!("{}", self.reserve_0_145().bits()),
-            )
+            .field("clk8m_freq", &self.clk8m_freq().bits())
+            .field("adc_vref", &self.adc_vref().bits())
+            .field("reserve_0_141", &self.reserve_0_141().bit())
+            .field("xpd_sdio", &self.xpd_sdio().bit())
+            .field("xpd_sdio_tieh", &self.xpd_sdio_tieh().bit())
+            .field("xpd_sdio_force", &self.xpd_sdio_force().bit())
+            .field("reserve_0_145", &self.reserve_0_145().bits())
             .finish()
     }
 }
@@ -121,10 +109,6 @@ impl crate::Readable for BLK0_WDATA4_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`blk0_wdata4::W`](W) writer structure"]
 impl crate::Writable for BLK0_WDATA4_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets BLK0_WDATA4 to value 0"]
-impl crate::Resettable for BLK0_WDATA4_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for BLK0_WDATA4_SPEC {}

@@ -46,19 +46,19 @@ impl core::fmt::Debug for R {
         f.debug_struct("LP_AONCLKRST_LP_CLK_CONF")
             .field(
                 "lp_aonclkrst_slow_clk_sel",
-                &format_args!("{}", self.lp_aonclkrst_slow_clk_sel().bits()),
+                &self.lp_aonclkrst_slow_clk_sel().bits(),
             )
             .field(
                 "lp_aonclkrst_fast_clk_sel",
-                &format_args!("{}", self.lp_aonclkrst_fast_clk_sel().bits()),
+                &self.lp_aonclkrst_fast_clk_sel().bits(),
             )
             .field(
                 "lp_aonclkrst_lp_peri_div_num",
-                &format_args!("{}", self.lp_aonclkrst_lp_peri_div_num().bits()),
+                &self.lp_aonclkrst_lp_peri_div_num().bits(),
             )
             .field(
                 "lp_aonclkrst_ana_sel_ref_pll8m",
-                &format_args!("{}", self.lp_aonclkrst_ana_sel_ref_pll8m().bit()),
+                &self.lp_aonclkrst_ana_sel_ref_pll8m().bit(),
             )
             .finish()
     }
@@ -113,8 +113,6 @@ impl crate::Readable for LP_AONCLKRST_LP_CLK_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`lp_aonclkrst_lp_clk_conf::W`](W) writer structure"]
 impl crate::Writable for LP_AONCLKRST_LP_CLK_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets LP_AONCLKRST_LP_CLK_CONF to value 0x04"]
 impl crate::Resettable for LP_AONCLKRST_LP_CLK_CONF_SPEC {

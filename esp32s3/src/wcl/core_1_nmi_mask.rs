@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("Core_1_NMI_MASK")
-            .field(
-                "core_1_nmi_mask",
-                &format_args!("{}", self.core_1_nmi_mask().bit()),
-            )
+            .field("core_1_nmi_mask", &self.core_1_nmi_mask().bit())
             .finish()
     }
 }
@@ -48,10 +45,6 @@ impl crate::Readable for CORE_1_NMI_MASK_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`core_1_nmi_mask::W`](W) writer structure"]
 impl crate::Writable for CORE_1_NMI_MASK_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets Core_1_NMI_MASK to value 0"]
-impl crate::Resettable for CORE_1_NMI_MASK_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for CORE_1_NMI_MASK_SPEC {}

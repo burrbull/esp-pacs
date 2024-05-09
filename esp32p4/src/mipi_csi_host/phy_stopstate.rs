@@ -27,18 +27,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PHY_STOPSTATE")
-            .field(
-                "phy_stopstatedata_0",
-                &format_args!("{}", self.phy_stopstatedata_0().bit()),
-            )
-            .field(
-                "phy_stopstatedata_1",
-                &format_args!("{}", self.phy_stopstatedata_1().bit()),
-            )
-            .field(
-                "phy_stopstateclk",
-                &format_args!("{}", self.phy_stopstateclk().bit()),
-            )
+            .field("phy_stopstatedata_0", &self.phy_stopstatedata_0().bit())
+            .field("phy_stopstatedata_1", &self.phy_stopstatedata_1().bit())
+            .field("phy_stopstateclk", &self.phy_stopstateclk().bit())
             .finish()
     }
 }
@@ -56,6 +47,4 @@ impl crate::RegisterSpec for PHY_STOPSTATE_SPEC {
 #[doc = "`read()` method returns [`phy_stopstate::R`](R) reader structure"]
 impl crate::Readable for PHY_STOPSTATE_SPEC {}
 #[doc = "`reset()` method sets PHY_STOPSTATE to value 0"]
-impl crate::Resettable for PHY_STOPSTATE_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for PHY_STOPSTATE_SPEC {}

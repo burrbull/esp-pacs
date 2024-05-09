@@ -31,7 +31,7 @@ impl core::fmt::Debug for R {
         f.debug_struct("HP_MODEM_DIG_POWER")
             .field(
                 "hp_modem_dcdc_switch_pd_en",
-                &format_args!("{}", self.hp_modem_dcdc_switch_pd_en().bit()),
+                &self.hp_modem_dcdc_switch_pd_en().bit(),
             )
             .finish()
     }
@@ -104,10 +104,6 @@ impl crate::Readable for HP_MODEM_DIG_POWER_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`hp_modem_dig_power::W`](W) writer structure"]
 impl crate::Writable for HP_MODEM_DIG_POWER_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets HP_MODEM_DIG_POWER to value 0"]
-impl crate::Resettable for HP_MODEM_DIG_POWER_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for HP_MODEM_DIG_POWER_SPEC {}

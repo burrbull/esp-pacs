@@ -19,7 +19,7 @@ impl core::fmt::Debug for R {
         f.debug_struct("HP_ACTIVE_ICG_HP_FUNC")
             .field(
                 "hp_active_dig_icg_func_en",
-                &format_args!("{}", self.hp_active_dig_icg_func_en().bits()),
+                &self.hp_active_dig_icg_func_en().bits(),
             )
             .finish()
     }
@@ -50,8 +50,6 @@ impl crate::Readable for HP_ACTIVE_ICG_HP_FUNC_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`hp_active_icg_hp_func::W`](W) writer structure"]
 impl crate::Writable for HP_ACTIVE_ICG_HP_FUNC_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets HP_ACTIVE_ICG_HP_FUNC to value 0xffff_ffff"]
 impl crate::Resettable for HP_ACTIVE_ICG_HP_FUNC_SPEC {

@@ -49,26 +49,11 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("L1_ICACHE_CTRL")
-            .field(
-                "l1_icache_shut_ibus0",
-                &format_args!("{}", self.l1_icache_shut_ibus0().bit()),
-            )
-            .field(
-                "l1_icache_shut_ibus1",
-                &format_args!("{}", self.l1_icache_shut_ibus1().bit()),
-            )
-            .field(
-                "l1_icache_shut_ibus2",
-                &format_args!("{}", self.l1_icache_shut_ibus2().bit()),
-            )
-            .field(
-                "l1_icache_shut_ibus3",
-                &format_args!("{}", self.l1_icache_shut_ibus3().bit()),
-            )
-            .field(
-                "l1_icache_undef_op",
-                &format_args!("{}", self.l1_icache_undef_op().bits()),
-            )
+            .field("l1_icache_shut_ibus0", &self.l1_icache_shut_ibus0().bit())
+            .field("l1_icache_shut_ibus1", &self.l1_icache_shut_ibus1().bit())
+            .field("l1_icache_shut_ibus2", &self.l1_icache_shut_ibus2().bit())
+            .field("l1_icache_shut_ibus3", &self.l1_icache_shut_ibus3().bit())
+            .field("l1_icache_undef_op", &self.l1_icache_undef_op().bits())
             .finish()
     }
 }
@@ -108,10 +93,6 @@ impl crate::Readable for L1_ICACHE_CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`l1_icache_ctrl::W`](W) writer structure"]
 impl crate::Writable for L1_ICACHE_CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets L1_ICACHE_CTRL to value 0"]
-impl crate::Resettable for L1_ICACHE_CTRL_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for L1_ICACHE_CTRL_SPEC {}

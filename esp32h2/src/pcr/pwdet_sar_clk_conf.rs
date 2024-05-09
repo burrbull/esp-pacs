@@ -28,12 +28,9 @@ impl core::fmt::Debug for R {
         f.debug_struct("PWDET_SAR_CLK_CONF")
             .field(
                 "pwdet_sar_clk_div_num",
-                &format_args!("{}", self.pwdet_sar_clk_div_num().bits()),
+                &self.pwdet_sar_clk_div_num().bits(),
             )
-            .field(
-                "pwdet_sar_reader_en",
-                &format_args!("{}", self.pwdet_sar_reader_en().bit()),
-            )
+            .field("pwdet_sar_reader_en", &self.pwdet_sar_reader_en().bit())
             .finish()
     }
 }
@@ -67,8 +64,6 @@ impl crate::Readable for PWDET_SAR_CLK_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`pwdet_sar_clk_conf::W`](W) writer structure"]
 impl crate::Writable for PWDET_SAR_CLK_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets PWDET_SAR_CLK_CONF to value 0x0107"]
 impl crate::Resettable for PWDET_SAR_CLK_CONF_SPEC {

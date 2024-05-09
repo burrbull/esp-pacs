@@ -53,11 +53,11 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("B_ROI_REGION0")
-            .field("x", &format_args!("{}", self.x().bits()))
-            .field("y", &format_args!("{}", self.y().bits()))
-            .field("x_len", &format_args!("{}", self.x_len().bits()))
-            .field("y_len", &format_args!("{}", self.y_len().bits()))
-            .field("en", &format_args!("{}", self.en().bit()))
+            .field("x", &self.x().bits())
+            .field("y", &self.y().bits())
+            .field("x_len", &self.x_len().bits())
+            .field("y_len", &self.y_len().bits())
+            .field("en", &self.en().bit())
             .finish()
     }
 }
@@ -109,10 +109,6 @@ impl crate::Readable for B_ROI_REGION0_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`b_roi_region0::W`](W) writer structure"]
 impl crate::Writable for B_ROI_REGION0_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets B_ROI_REGION0 to value 0"]
-impl crate::Resettable for B_ROI_REGION0_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for B_ROI_REGION0_SPEC {}

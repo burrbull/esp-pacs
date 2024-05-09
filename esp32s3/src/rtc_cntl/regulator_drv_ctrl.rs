@@ -46,20 +46,11 @@ impl core::fmt::Debug for R {
         f.debug_struct("REGULATOR_DRV_CTRL")
             .field(
                 "regulator_drv_b_monitor",
-                &format_args!("{}", self.regulator_drv_b_monitor().bits()),
+                &self.regulator_drv_b_monitor().bits(),
             )
-            .field(
-                "regulator_drv_b_slp",
-                &format_args!("{}", self.regulator_drv_b_slp().bits()),
-            )
-            .field(
-                "dg_vdd_drv_b_slp",
-                &format_args!("{}", self.dg_vdd_drv_b_slp().bits()),
-            )
-            .field(
-                "dg_vdd_drv_b_monitor",
-                &format_args!("{}", self.dg_vdd_drv_b_monitor().bits()),
-            )
+            .field("regulator_drv_b_slp", &self.regulator_drv_b_slp().bits())
+            .field("dg_vdd_drv_b_slp", &self.dg_vdd_drv_b_slp().bits())
+            .field("dg_vdd_drv_b_monitor", &self.dg_vdd_drv_b_monitor().bits())
             .finish()
     }
 }
@@ -107,10 +98,6 @@ impl crate::Readable for REGULATOR_DRV_CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`regulator_drv_ctrl::W`](W) writer structure"]
 impl crate::Writable for REGULATOR_DRV_CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets REGULATOR_DRV_CTRL to value 0"]
-impl crate::Resettable for REGULATOR_DRV_CTRL_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for REGULATOR_DRV_CTRL_SPEC {}

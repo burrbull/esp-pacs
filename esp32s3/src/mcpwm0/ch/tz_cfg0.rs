@@ -152,22 +152,22 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("TZ_CFG0")
-            .field("sw_cbc", &format_args!("{}", self.sw_cbc().bit()))
-            .field("f2_cbc", &format_args!("{}", self.f2_cbc().bit()))
-            .field("f1_cbc", &format_args!("{}", self.f1_cbc().bit()))
-            .field("f0_cbc", &format_args!("{}", self.f0_cbc().bit()))
-            .field("sw_ost", &format_args!("{}", self.sw_ost().bit()))
-            .field("f2_ost", &format_args!("{}", self.f2_ost().bit()))
-            .field("f1_ost", &format_args!("{}", self.f1_ost().bit()))
-            .field("f0_ost", &format_args!("{}", self.f0_ost().bit()))
-            .field("a_cbc_d", &format_args!("{}", self.a_cbc_d().bits()))
-            .field("a_cbc_u", &format_args!("{}", self.a_cbc_u().bits()))
-            .field("a_ost_d", &format_args!("{}", self.a_ost_d().bits()))
-            .field("a_ost_u", &format_args!("{}", self.a_ost_u().bits()))
-            .field("b_cbc_d", &format_args!("{}", self.b_cbc_d().bits()))
-            .field("b_cbc_u", &format_args!("{}", self.b_cbc_u().bits()))
-            .field("b_ost_d", &format_args!("{}", self.b_ost_d().bits()))
-            .field("b_ost_u", &format_args!("{}", self.b_ost_u().bits()))
+            .field("sw_cbc", &self.sw_cbc().bit())
+            .field("f2_cbc", &self.f2_cbc().bit())
+            .field("f1_cbc", &self.f1_cbc().bit())
+            .field("f0_cbc", &self.f0_cbc().bit())
+            .field("sw_ost", &self.sw_ost().bit())
+            .field("f2_ost", &self.f2_ost().bit())
+            .field("f1_ost", &self.f1_ost().bit())
+            .field("f0_ost", &self.f0_ost().bit())
+            .field("a_cbc_d", &self.a_cbc_d().bits())
+            .field("a_cbc_u", &self.a_cbc_u().bits())
+            .field("a_ost_d", &self.a_ost_d().bits())
+            .field("a_ost_u", &self.a_ost_u().bits())
+            .field("b_cbc_d", &self.b_cbc_d().bits())
+            .field("b_cbc_u", &self.b_cbc_u().bits())
+            .field("b_ost_d", &self.b_ost_d().bits())
+            .field("b_ost_u", &self.b_ost_u().bits())
             .finish()
     }
 }
@@ -285,10 +285,6 @@ impl crate::Readable for TZ_CFG0_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`tz_cfg0::W`](W) writer structure"]
 impl crate::Writable for TZ_CFG0_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets TZ_CFG0 to value 0"]
-impl crate::Resettable for TZ_CFG0_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for TZ_CFG0_SPEC {}

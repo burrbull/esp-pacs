@@ -20,14 +20,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("MINTSTS")
-            .field(
-                "int_status_msk",
-                &format_args!("{}", self.int_status_msk().bits()),
-            )
-            .field(
-                "sdio_interrupt_msk",
-                &format_args!("{}", self.sdio_interrupt_msk().bits()),
-            )
+            .field("int_status_msk", &self.int_status_msk().bits())
+            .field("sdio_interrupt_msk", &self.sdio_interrupt_msk().bits())
             .finish()
     }
 }
@@ -45,6 +39,4 @@ impl crate::RegisterSpec for MINTSTS_SPEC {
 #[doc = "`read()` method returns [`mintsts::R`](R) reader structure"]
 impl crate::Readable for MINTSTS_SPEC {}
 #[doc = "`reset()` method sets MINTSTS to value 0"]
-impl crate::Resettable for MINTSTS_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for MINTSTS_SPEC {}

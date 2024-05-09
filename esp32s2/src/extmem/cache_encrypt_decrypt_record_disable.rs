@@ -28,11 +28,11 @@ impl core::fmt::Debug for R {
         f.debug_struct("CACHE_ENCRYPT_DECRYPT_RECORD_DISABLE")
             .field(
                 "record_disable_db_encrypt",
-                &format_args!("{}", self.record_disable_db_encrypt().bit()),
+                &self.record_disable_db_encrypt().bit(),
             )
             .field(
                 "record_disable_g0cb_decrypt",
-                &format_args!("{}", self.record_disable_g0cb_decrypt().bit()),
+                &self.record_disable_g0cb_decrypt().bit(),
             )
             .finish()
     }
@@ -71,10 +71,6 @@ impl crate::Readable for CACHE_ENCRYPT_DECRYPT_RECORD_DISABLE_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`cache_encrypt_decrypt_record_disable::W`](W) writer structure"]
 impl crate::Writable for CACHE_ENCRYPT_DECRYPT_RECORD_DISABLE_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CACHE_ENCRYPT_DECRYPT_RECORD_DISABLE to value 0"]
-impl crate::Resettable for CACHE_ENCRYPT_DECRYPT_RECORD_DISABLE_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for CACHE_ENCRYPT_DECRYPT_RECORD_DISABLE_SPEC {}

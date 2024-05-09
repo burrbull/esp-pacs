@@ -148,83 +148,65 @@ impl core::fmt::Debug for R {
         f.debug_struct("CACHE_DBG_STATUS0")
             .field(
                 "ibus0_acs_msk_icache_st",
-                &format_args!("{}", self.ibus0_acs_msk_icache_st().bit()),
+                &self.ibus0_acs_msk_icache_st().bit(),
             )
             .field(
                 "ibus1_acs_msk_icache_st",
-                &format_args!("{}", self.ibus1_acs_msk_icache_st().bit()),
+                &self.ibus1_acs_msk_icache_st().bit(),
             )
             .field(
                 "ibus2_acs_msk_icache_st",
-                &format_args!("{}", self.ibus2_acs_msk_icache_st().bit()),
+                &self.ibus2_acs_msk_icache_st().bit(),
             )
-            .field(
-                "ibus0_acs_cnt_ovf_st",
-                &format_args!("{}", self.ibus0_acs_cnt_ovf_st().bit()),
-            )
-            .field(
-                "ibus1_acs_cnt_ovf_st",
-                &format_args!("{}", self.ibus1_acs_cnt_ovf_st().bit()),
-            )
-            .field(
-                "ibus2_acs_cnt_ovf_st",
-                &format_args!("{}", self.ibus2_acs_cnt_ovf_st().bit()),
-            )
+            .field("ibus0_acs_cnt_ovf_st", &self.ibus0_acs_cnt_ovf_st().bit())
+            .field("ibus1_acs_cnt_ovf_st", &self.ibus1_acs_cnt_ovf_st().bit())
+            .field("ibus2_acs_cnt_ovf_st", &self.ibus2_acs_cnt_ovf_st().bit())
             .field(
                 "ibus0_acs_miss_cnt_ovf_st",
-                &format_args!("{}", self.ibus0_acs_miss_cnt_ovf_st().bit()),
+                &self.ibus0_acs_miss_cnt_ovf_st().bit(),
             )
             .field(
                 "ibus1_acs_miss_cnt_ovf_st",
-                &format_args!("{}", self.ibus1_acs_miss_cnt_ovf_st().bit()),
+                &self.ibus1_acs_miss_cnt_ovf_st().bit(),
             )
             .field(
                 "ibus2_acs_miss_cnt_ovf_st",
-                &format_args!("{}", self.ibus2_acs_miss_cnt_ovf_st().bit()),
+                &self.ibus2_acs_miss_cnt_ovf_st().bit(),
             )
             .field(
                 "ibus0_abandon_cnt_ovf_st",
-                &format_args!("{}", self.ibus0_abandon_cnt_ovf_st().bit()),
+                &self.ibus0_abandon_cnt_ovf_st().bit(),
             )
             .field(
                 "ibus1_abandon_cnt_ovf_st",
-                &format_args!("{}", self.ibus1_abandon_cnt_ovf_st().bit()),
+                &self.ibus1_abandon_cnt_ovf_st().bit(),
             )
             .field(
                 "ibus2_abandon_cnt_ovf_st",
-                &format_args!("{}", self.ibus2_abandon_cnt_ovf_st().bit()),
+                &self.ibus2_abandon_cnt_ovf_st().bit(),
             )
             .field(
                 "ic_preload_miss_cnt_ovf_st",
-                &format_args!("{}", self.ic_preload_miss_cnt_ovf_st().bit()),
+                &self.ic_preload_miss_cnt_ovf_st().bit(),
             )
-            .field(
-                "ic_preload_cnt_ovf_st",
-                &format_args!("{}", self.ic_preload_cnt_ovf_st().bit()),
-            )
-            .field(
-                "ic_sync_size_fault_st",
-                &format_args!("{}", self.ic_sync_size_fault_st().bit()),
-            )
+            .field("ic_preload_cnt_ovf_st", &self.ic_preload_cnt_ovf_st().bit())
+            .field("ic_sync_size_fault_st", &self.ic_sync_size_fault_st().bit())
             .field(
                 "ic_preload_size_fault_st",
-                &format_args!("{}", self.ic_preload_size_fault_st().bit()),
+                &self.ic_preload_size_fault_st().bit(),
             )
-            .field(
-                "icache_reject_st",
-                &format_args!("{}", self.icache_reject_st().bit()),
-            )
+            .field("icache_reject_st", &self.icache_reject_st().bit())
             .field(
                 "icache_set_preload_ilg_st",
-                &format_args!("{}", self.icache_set_preload_ilg_st().bit()),
+                &self.icache_set_preload_ilg_st().bit(),
             )
             .field(
                 "icache_set_sync_ilg_st",
-                &format_args!("{}", self.icache_set_sync_ilg_st().bit()),
+                &self.icache_set_sync_ilg_st().bit(),
             )
             .field(
                 "icache_set_lock_ilg_st",
-                &format_args!("{}", self.icache_set_lock_ilg_st().bit()),
+                &self.icache_set_lock_ilg_st().bit(),
             )
             .finish()
     }
@@ -243,6 +225,4 @@ impl crate::RegisterSpec for CACHE_DBG_STATUS0_SPEC {
 #[doc = "`read()` method returns [`cache_dbg_status0::R`](R) reader structure"]
 impl crate::Readable for CACHE_DBG_STATUS0_SPEC {}
 #[doc = "`reset()` method sets CACHE_DBG_STATUS0 to value 0"]
-impl crate::Resettable for CACHE_DBG_STATUS0_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for CACHE_DBG_STATUS0_SPEC {}

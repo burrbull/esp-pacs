@@ -26,8 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("EDMA_CTRL")
-            .field("edma_clk_on", &format_args!("{}", self.edma_clk_on().bit()))
-            .field("edma_reset", &format_args!("{}", self.edma_reset().bit()))
+            .field("edma_clk_on", &self.edma_clk_on().bit())
+            .field("edma_reset", &self.edma_reset().bit())
             .finish()
     }
 }
@@ -61,8 +61,6 @@ impl crate::Readable for EDMA_CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`edma_ctrl::W`](W) writer structure"]
 impl crate::Writable for EDMA_CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets EDMA_CTRL to value 0x01"]
 impl crate::Resettable for EDMA_CTRL_SPEC {

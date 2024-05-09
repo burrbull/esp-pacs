@@ -53,14 +53,11 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SDF_3D")
-            .field("mode_3d", &format_args!("{}", self.mode_3d().bits()))
-            .field("format_3d", &format_args!("{}", self.format_3d().bits()))
-            .field(
-                "second_vsync",
-                &format_args!("{}", self.second_vsync().bit()),
-            )
-            .field("right_first", &format_args!("{}", self.right_first().bit()))
-            .field("send_3d_cfg", &format_args!("{}", self.send_3d_cfg().bit()))
+            .field("mode_3d", &self.mode_3d().bits())
+            .field("format_3d", &self.format_3d().bits())
+            .field("second_vsync", &self.second_vsync().bit())
+            .field("right_first", &self.right_first().bit())
+            .field("send_3d_cfg", &self.send_3d_cfg().bit())
             .finish()
     }
 }
@@ -112,10 +109,6 @@ impl crate::Readable for SDF_3D_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`sdf_3d::W`](W) writer structure"]
 impl crate::Writable for SDF_3D_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SDF_3D to value 0"]
-impl crate::Resettable for SDF_3D_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for SDF_3D_SPEC {}

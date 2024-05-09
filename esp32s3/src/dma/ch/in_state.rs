@@ -27,15 +27,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("IN_STATE")
-            .field(
-                "inlink_dscr_addr",
-                &format_args!("{}", self.inlink_dscr_addr().bits()),
-            )
-            .field(
-                "in_dscr_state",
-                &format_args!("{}", self.in_dscr_state().bits()),
-            )
-            .field("in_state", &format_args!("{}", self.in_state().bits()))
+            .field("inlink_dscr_addr", &self.inlink_dscr_addr().bits())
+            .field("in_dscr_state", &self.in_dscr_state().bits())
+            .field("in_state", &self.in_state().bits())
             .finish()
     }
 }
@@ -53,6 +47,4 @@ impl crate::RegisterSpec for IN_STATE_SPEC {
 #[doc = "`read()` method returns [`in_state::R`](R) reader structure"]
 impl crate::Readable for IN_STATE_SPEC {}
 #[doc = "`reset()` method sets IN_STATE to value 0"]
-impl crate::Resettable for IN_STATE_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for IN_STATE_SPEC {}

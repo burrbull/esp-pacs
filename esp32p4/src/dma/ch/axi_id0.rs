@@ -28,11 +28,11 @@ impl core::fmt::Debug for R {
         f.debug_struct("AXI_ID0")
             .field(
                 "ch1_axi_read_id_suffix",
-                &format_args!("{}", self.ch1_axi_read_id_suffix().bit()),
+                &self.ch1_axi_read_id_suffix().bit(),
             )
             .field(
                 "ch1_axi_write_id_suffix",
-                &format_args!("{}", self.ch1_axi_write_id_suffix().bit()),
+                &self.ch1_axi_write_id_suffix().bit(),
             )
             .finish()
     }
@@ -67,10 +67,6 @@ impl crate::Readable for AXI_ID0_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`axi_id0::W`](W) writer structure"]
 impl crate::Writable for AXI_ID0_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets AXI_ID0 to value 0"]
-impl crate::Resettable for AXI_ID0_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for AXI_ID0_SPEC {}

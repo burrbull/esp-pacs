@@ -17,7 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("FLASH_ACE2_ADDR")
-            .field("s", &format_args!("{}", self.s().bits()))
+            .field("s", &self.s().bits())
             .finish()
     }
 }
@@ -45,8 +45,6 @@ impl crate::Readable for FLASH_ACE2_ADDR_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`flash_ace2_addr::W`](W) writer structure"]
 impl crate::Writable for FLASH_ACE2_ADDR_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets FLASH_ACE2_ADDR to value 0x2000_0000"]
 impl crate::Resettable for FLASH_ACE2_ADDR_SPEC {

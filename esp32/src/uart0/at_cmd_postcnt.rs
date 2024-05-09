@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("AT_CMD_POSTCNT")
-            .field(
-                "post_idle_num",
-                &format_args!("{}", self.post_idle_num().bits()),
-            )
+            .field("post_idle_num", &self.post_idle_num().bits())
             .finish()
     }
 }
@@ -48,8 +45,6 @@ impl crate::Readable for AT_CMD_POSTCNT_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`at_cmd_postcnt::W`](W) writer structure"]
 impl crate::Writable for AT_CMD_POSTCNT_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets AT_CMD_POSTCNT to value 0x0018_6a00"]
 impl crate::Resettable for AT_CMD_POSTCNT_SPEC {

@@ -34,22 +34,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("RXFIFO_ST")
-            .field(
-                "rxfifo_start_addr",
-                &format_args!("{}", self.rxfifo_start_addr().bits()),
-            )
-            .field(
-                "rxfifo_end_addr",
-                &format_args!("{}", self.rxfifo_end_addr().bits()),
-            )
-            .field(
-                "txfifo_start_addr",
-                &format_args!("{}", self.txfifo_start_addr().bits()),
-            )
-            .field(
-                "txfifo_end_addr",
-                &format_args!("{}", self.txfifo_end_addr().bits()),
-            )
+            .field("rxfifo_start_addr", &self.rxfifo_start_addr().bits())
+            .field("rxfifo_end_addr", &self.rxfifo_end_addr().bits())
+            .field("txfifo_start_addr", &self.txfifo_start_addr().bits())
+            .field("txfifo_end_addr", &self.txfifo_end_addr().bits())
             .finish()
     }
 }
@@ -67,6 +55,4 @@ impl crate::RegisterSpec for RXFIFO_ST_SPEC {
 #[doc = "`read()` method returns [`rxfifo_st::R`](R) reader structure"]
 impl crate::Readable for RXFIFO_ST_SPEC {}
 #[doc = "`reset()` method sets RXFIFO_ST to value 0"]
-impl crate::Resettable for RXFIFO_ST_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for RXFIFO_ST_SPEC {}

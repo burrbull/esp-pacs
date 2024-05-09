@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("DIEPEMPMSK")
-            .field(
-                "d_ineptxfempmsk",
-                &format_args!("{}", self.d_ineptxfempmsk().bits()),
-            )
+            .field("d_ineptxfempmsk", &self.d_ineptxfempmsk().bits())
             .finish()
     }
 }
@@ -48,10 +45,6 @@ impl crate::Readable for DIEPEMPMSK_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`diepempmsk::W`](W) writer structure"]
 impl crate::Writable for DIEPEMPMSK_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets DIEPEMPMSK to value 0"]
-impl crate::Resettable for DIEPEMPMSK_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for DIEPEMPMSK_SPEC {}

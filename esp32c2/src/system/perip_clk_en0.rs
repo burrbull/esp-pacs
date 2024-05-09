@@ -107,41 +107,17 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PERIP_CLK_EN0")
-            .field(
-                "spi01_clk_en",
-                &format_args!("{}", self.spi01_clk_en().bit()),
-            )
-            .field("uart_clk_en", &format_args!("{}", self.uart_clk_en().bit()))
-            .field(
-                "uart1_clk_en",
-                &format_args!("{}", self.uart1_clk_en().bit()),
-            )
-            .field("spi2_clk_en", &format_args!("{}", self.spi2_clk_en().bit()))
-            .field(
-                "i2c_ext0_clk_en",
-                &format_args!("{}", self.i2c_ext0_clk_en().bit()),
-            )
-            .field("ledc_clk_en", &format_args!("{}", self.ledc_clk_en().bit()))
-            .field(
-                "timergroup_clk_en",
-                &format_args!("{}", self.timergroup_clk_en().bit()),
-            )
-            .field(
-                "uart_mem_clk_en",
-                &format_args!("{}", self.uart_mem_clk_en().bit()),
-            )
-            .field(
-                "apb_saradc_clk_en",
-                &format_args!("{}", self.apb_saradc_clk_en().bit()),
-            )
-            .field(
-                "systimer_clk_en",
-                &format_args!("{}", self.systimer_clk_en().bit()),
-            )
-            .field(
-                "adc2_arb_clk_en",
-                &format_args!("{}", self.adc2_arb_clk_en().bit()),
-            )
+            .field("spi01_clk_en", &self.spi01_clk_en().bit())
+            .field("uart_clk_en", &self.uart_clk_en().bit())
+            .field("uart1_clk_en", &self.uart1_clk_en().bit())
+            .field("spi2_clk_en", &self.spi2_clk_en().bit())
+            .field("i2c_ext0_clk_en", &self.i2c_ext0_clk_en().bit())
+            .field("ledc_clk_en", &self.ledc_clk_en().bit())
+            .field("timergroup_clk_en", &self.timergroup_clk_en().bit())
+            .field("uart_mem_clk_en", &self.uart_mem_clk_en().bit())
+            .field("apb_saradc_clk_en", &self.apb_saradc_clk_en().bit())
+            .field("systimer_clk_en", &self.systimer_clk_en().bit())
+            .field("adc2_arb_clk_en", &self.adc2_arb_clk_en().bit())
             .finish()
     }
 }
@@ -229,8 +205,6 @@ impl crate::Readable for PERIP_CLK_EN0_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`perip_clk_en0::W`](W) writer structure"]
 impl crate::Writable for PERIP_CLK_EN0_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets PERIP_CLK_EN0 to value 0x7100_2066"]
 impl crate::Resettable for PERIP_CLK_EN0_SPEC {

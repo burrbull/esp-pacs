@@ -16,9 +16,7 @@ impl R {
 #[cfg(feature = "impl-register-debug")]
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("LO")
-            .field("lo", &format_args!("{}", self.lo().bits()))
-            .finish()
+        f.debug_struct("LO").field("lo", &self.lo().bits()).finish()
     }
 }
 #[cfg(feature = "impl-register-debug")]
@@ -45,10 +43,6 @@ impl crate::Readable for LO_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`lo::W`](W) writer structure"]
 impl crate::Writable for LO_SPEC {
     type Safety = crate::Safe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets LO to value 0"]
-impl crate::Resettable for LO_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for LO_SPEC {}

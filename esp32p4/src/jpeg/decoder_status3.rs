@@ -13,10 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("DECODER_STATUS3")
-            .field(
-                "lookup_data",
-                &format_args!("{}", self.lookup_data().bits()),
-            )
+            .field("lookup_data", &self.lookup_data().bits())
             .finish()
     }
 }
@@ -34,6 +31,4 @@ impl crate::RegisterSpec for DECODER_STATUS3_SPEC {
 #[doc = "`read()` method returns [`decoder_status3::R`](R) reader structure"]
 impl crate::Readable for DECODER_STATUS3_SPEC {}
 #[doc = "`reset()` method sets DECODER_STATUS3 to value 0"]
-impl crate::Resettable for DECODER_STATUS3_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for DECODER_STATUS3_SPEC {}

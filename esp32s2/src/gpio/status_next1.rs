@@ -15,7 +15,7 @@ impl core::fmt::Debug for R {
         f.debug_struct("STATUS_NEXT1")
             .field(
                 "status1_interrupt_next",
-                &format_args!("{}", self.status1_interrupt_next().bits()),
+                &self.status1_interrupt_next().bits(),
             )
             .finish()
     }
@@ -34,6 +34,4 @@ impl crate::RegisterSpec for STATUS_NEXT1_SPEC {
 #[doc = "`read()` method returns [`status_next1::R`](R) reader structure"]
 impl crate::Readable for STATUS_NEXT1_SPEC {}
 #[doc = "`reset()` method sets STATUS_NEXT1 to value 0"]
-impl crate::Resettable for STATUS_NEXT1_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for STATUS_NEXT1_SPEC {}

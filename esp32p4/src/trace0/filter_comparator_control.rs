@@ -71,13 +71,13 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("FILTER_COMPARATOR_CONTROL")
-            .field("p_input", &format_args!("{}", self.p_input().bit()))
-            .field("p_function", &format_args!("{}", self.p_function().bits()))
-            .field("p_notify", &format_args!("{}", self.p_notify().bit()))
-            .field("s_input", &format_args!("{}", self.s_input().bit()))
-            .field("s_function", &format_args!("{}", self.s_function().bits()))
-            .field("s_notify", &format_args!("{}", self.s_notify().bit()))
-            .field("match_mode", &format_args!("{}", self.match_mode().bits()))
+            .field("p_input", &self.p_input().bit())
+            .field("p_function", &self.p_function().bits())
+            .field("p_notify", &self.p_notify().bit())
+            .field("s_input", &self.s_input().bit())
+            .field("s_function", &self.s_function().bits())
+            .field("s_notify", &self.s_notify().bit())
+            .field("match_mode", &self.match_mode().bits())
             .finish()
     }
 }
@@ -141,10 +141,6 @@ impl crate::Readable for FILTER_COMPARATOR_CONTROL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`filter_comparator_control::W`](W) writer structure"]
 impl crate::Writable for FILTER_COMPARATOR_CONTROL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets FILTER_COMPARATOR_CONTROL to value 0"]
-impl crate::Resettable for FILTER_COMPARATOR_CONTROL_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for FILTER_COMPARATOR_CONTROL_SPEC {}

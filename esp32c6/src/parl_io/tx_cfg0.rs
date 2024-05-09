@@ -80,32 +80,14 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("TX_CFG0")
-            .field("tx_bytelen", &format_args!("{}", self.tx_bytelen().bits()))
-            .field(
-                "tx_gating_en",
-                &format_args!("{}", self.tx_gating_en().bit()),
-            )
-            .field("tx_start", &format_args!("{}", self.tx_start().bit()))
-            .field(
-                "tx_hw_valid_en",
-                &format_args!("{}", self.tx_hw_valid_en().bit()),
-            )
-            .field(
-                "tx_smp_edge_sel",
-                &format_args!("{}", self.tx_smp_edge_sel().bit()),
-            )
-            .field(
-                "tx_bit_unpack_order",
-                &format_args!("{}", self.tx_bit_unpack_order().bit()),
-            )
-            .field(
-                "tx_bus_wid_sel",
-                &format_args!("{}", self.tx_bus_wid_sel().bits()),
-            )
-            .field(
-                "tx_fifo_srst",
-                &format_args!("{}", self.tx_fifo_srst().bit()),
-            )
+            .field("tx_bytelen", &self.tx_bytelen().bits())
+            .field("tx_gating_en", &self.tx_gating_en().bit())
+            .field("tx_start", &self.tx_start().bit())
+            .field("tx_hw_valid_en", &self.tx_hw_valid_en().bit())
+            .field("tx_smp_edge_sel", &self.tx_smp_edge_sel().bit())
+            .field("tx_bit_unpack_order", &self.tx_bit_unpack_order().bit())
+            .field("tx_bus_wid_sel", &self.tx_bus_wid_sel().bits())
+            .field("tx_fifo_srst", &self.tx_fifo_srst().bit())
             .finish()
     }
 }
@@ -175,10 +157,6 @@ impl crate::Readable for TX_CFG0_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`tx_cfg0::W`](W) writer structure"]
 impl crate::Writable for TX_CFG0_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets TX_CFG0 to value 0"]
-impl crate::Resettable for TX_CFG0_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for TX_CFG0_SPEC {}

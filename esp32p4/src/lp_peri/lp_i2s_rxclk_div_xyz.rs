@@ -46,20 +46,11 @@ impl core::fmt::Debug for R {
         f.debug_struct("LP_I2S_RXCLK_DIV_XYZ")
             .field(
                 "lp_i2s_rx_clkm_div_yn1",
-                &format_args!("{}", self.lp_i2s_rx_clkm_div_yn1().bit()),
+                &self.lp_i2s_rx_clkm_div_yn1().bit(),
             )
-            .field(
-                "lp_i2s_rx_clkm_div_z",
-                &format_args!("{}", self.lp_i2s_rx_clkm_div_z().bits()),
-            )
-            .field(
-                "lp_i2s_rx_clkm_div_y",
-                &format_args!("{}", self.lp_i2s_rx_clkm_div_y().bits()),
-            )
-            .field(
-                "lp_i2s_rx_clkm_div_x",
-                &format_args!("{}", self.lp_i2s_rx_clkm_div_x().bits()),
-            )
+            .field("lp_i2s_rx_clkm_div_z", &self.lp_i2s_rx_clkm_div_z().bits())
+            .field("lp_i2s_rx_clkm_div_y", &self.lp_i2s_rx_clkm_div_y().bits())
+            .field("lp_i2s_rx_clkm_div_x", &self.lp_i2s_rx_clkm_div_x().bits())
             .finish()
     }
 }
@@ -107,8 +98,6 @@ impl crate::Readable for LP_I2S_RXCLK_DIV_XYZ_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`lp_i2s_rxclk_div_xyz::W`](W) writer structure"]
 impl crate::Writable for LP_I2S_RXCLK_DIV_XYZ_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets LP_I2S_RXCLK_DIV_XYZ to value 0x4000"]
 impl crate::Resettable for LP_I2S_RXCLK_DIV_XYZ_SPEC {

@@ -27,12 +27,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SYS_STATUS")
-            .field("frame_num", &format_args!("{}", self.frame_num().bits()))
-            .field(
-                "dual_stream_sel",
-                &format_args!("{}", self.dual_stream_sel().bit()),
-            )
-            .field("intra_flag", &format_args!("{}", self.intra_flag().bit()))
+            .field("frame_num", &self.frame_num().bits())
+            .field("dual_stream_sel", &self.dual_stream_sel().bit())
+            .field("intra_flag", &self.intra_flag().bit())
             .finish()
     }
 }
@@ -50,6 +47,4 @@ impl crate::RegisterSpec for SYS_STATUS_SPEC {
 #[doc = "`read()` method returns [`sys_status::R`](R) reader structure"]
 impl crate::Readable for SYS_STATUS_SPEC {}
 #[doc = "`reset()` method sets SYS_STATUS to value 0"]
-impl crate::Resettable for SYS_STATUS_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for SYS_STATUS_SPEC {}

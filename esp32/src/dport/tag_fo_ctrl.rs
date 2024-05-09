@@ -46,20 +46,14 @@ impl core::fmt::Debug for R {
         f.debug_struct("TAG_FO_CTRL")
             .field(
                 "pro_cache_tag_force_on",
-                &format_args!("{}", self.pro_cache_tag_force_on().bit()),
+                &self.pro_cache_tag_force_on().bit(),
             )
-            .field(
-                "pro_cache_tag_pd",
-                &format_args!("{}", self.pro_cache_tag_pd().bit()),
-            )
+            .field("pro_cache_tag_pd", &self.pro_cache_tag_pd().bit())
             .field(
                 "app_cache_tag_force_on",
-                &format_args!("{}", self.app_cache_tag_force_on().bit()),
+                &self.app_cache_tag_force_on().bit(),
             )
-            .field(
-                "app_cache_tag_pd",
-                &format_args!("{}", self.app_cache_tag_pd().bit()),
-            )
+            .field("app_cache_tag_pd", &self.app_cache_tag_pd().bit())
             .finish()
     }
 }
@@ -105,8 +99,6 @@ impl crate::Readable for TAG_FO_CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`tag_fo_ctrl::W`](W) writer structure"]
 impl crate::Writable for TAG_FO_CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets TAG_FO_CTRL to value 0x0101"]
 impl crate::Resettable for TAG_FO_CTRL_SPEC {

@@ -13,10 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("HP_PERI_TIMEOUT_ADDR")
-            .field(
-                "hp_peri_timeout_addr",
-                &format_args!("{}", self.hp_peri_timeout_addr().bits()),
-            )
+            .field("hp_peri_timeout_addr", &self.hp_peri_timeout_addr().bits())
             .finish()
     }
 }
@@ -34,6 +31,4 @@ impl crate::RegisterSpec for HP_PERI_TIMEOUT_ADDR_SPEC {
 #[doc = "`read()` method returns [`hp_peri_timeout_addr::R`](R) reader structure"]
 impl crate::Readable for HP_PERI_TIMEOUT_ADDR_SPEC {}
 #[doc = "`reset()` method sets HP_PERI_TIMEOUT_ADDR to value 0"]
-impl crate::Resettable for HP_PERI_TIMEOUT_ADDR_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for HP_PERI_TIMEOUT_ADDR_SPEC {}

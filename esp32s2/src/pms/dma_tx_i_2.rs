@@ -33,18 +33,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("DMA_TX_I_2")
-            .field(
-                "dma_tx_i_ilg_clr",
-                &format_args!("{}", self.dma_tx_i_ilg_clr().bit()),
-            )
-            .field(
-                "dma_tx_i_ilg_en",
-                &format_args!("{}", self.dma_tx_i_ilg_en().bit()),
-            )
-            .field(
-                "dma_tx_i_ilg_intr",
-                &format_args!("{}", self.dma_tx_i_ilg_intr().bit()),
-            )
+            .field("dma_tx_i_ilg_clr", &self.dma_tx_i_ilg_clr().bit())
+            .field("dma_tx_i_ilg_en", &self.dma_tx_i_ilg_en().bit())
+            .field("dma_tx_i_ilg_intr", &self.dma_tx_i_ilg_intr().bit())
             .finish()
     }
 }
@@ -78,10 +69,6 @@ impl crate::Readable for DMA_TX_I_2_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`dma_tx_i_2::W`](W) writer structure"]
 impl crate::Writable for DMA_TX_I_2_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets DMA_TX_I_2 to value 0"]
-impl crate::Resettable for DMA_TX_I_2_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for DMA_TX_I_2_SPEC {}

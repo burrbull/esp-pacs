@@ -17,7 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("VERSION")
-            .field("date", &format_args!("{}", self.date().bits()))
+            .field("date", &self.date().bits())
             .finish()
     }
 }
@@ -45,8 +45,6 @@ impl crate::Readable for VERSION_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`version::W`](W) writer structure"]
 impl crate::Writable for VERSION_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets VERSION to value 0x0220_1240"]
 impl crate::Resettable for VERSION_SPEC {

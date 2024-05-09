@@ -20,14 +20,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("MEM_TX_STATUS")
-            .field(
-                "tx_sram_waddr",
-                &format_args!("{}", self.tx_sram_waddr().bits()),
-            )
-            .field(
-                "tx_sram_raddr",
-                &format_args!("{}", self.tx_sram_raddr().bits()),
-            )
+            .field("tx_sram_waddr", &self.tx_sram_waddr().bits())
+            .field("tx_sram_raddr", &self.tx_sram_raddr().bits())
             .finish()
     }
 }
@@ -45,6 +39,4 @@ impl crate::RegisterSpec for MEM_TX_STATUS_SPEC {
 #[doc = "`read()` method returns [`mem_tx_status::R`](R) reader structure"]
 impl crate::Readable for MEM_TX_STATUS_SPEC {}
 #[doc = "`reset()` method sets MEM_TX_STATUS to value 0"]
-impl crate::Resettable for MEM_TX_STATUS_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for MEM_TX_STATUS_SPEC {}

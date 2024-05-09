@@ -133,57 +133,21 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PRO_CACHE_CTRL")
-            .field(
-                "pro_cache_mode",
-                &format_args!("{}", self.pro_cache_mode().bit()),
-            )
-            .field(
-                "pro_cache_enable",
-                &format_args!("{}", self.pro_cache_enable().bit()),
-            )
-            .field(
-                "pro_cache_flush_ena",
-                &format_args!("{}", self.pro_cache_flush_ena().bit()),
-            )
-            .field(
-                "pro_cache_flush_done",
-                &format_args!("{}", self.pro_cache_flush_done().bit()),
-            )
-            .field(
-                "pro_cache_lock_0_en",
-                &format_args!("{}", self.pro_cache_lock_0_en().bit()),
-            )
-            .field(
-                "pro_cache_lock_1_en",
-                &format_args!("{}", self.pro_cache_lock_1_en().bit()),
-            )
-            .field(
-                "pro_cache_lock_2_en",
-                &format_args!("{}", self.pro_cache_lock_2_en().bit()),
-            )
-            .field(
-                "pro_cache_lock_3_en",
-                &format_args!("{}", self.pro_cache_lock_3_en().bit()),
-            )
-            .field(
-                "pro_single_iram_ena",
-                &format_args!("{}", self.pro_single_iram_ena().bit()),
-            )
-            .field(
-                "pro_dram_split",
-                &format_args!("{}", self.pro_dram_split().bit()),
-            )
-            .field(
-                "pro_ahb_spi_req",
-                &format_args!("{}", self.pro_ahb_spi_req().bit()),
-            )
-            .field(
-                "pro_slave_req",
-                &format_args!("{}", self.pro_slave_req().bit()),
-            )
-            .field("ahb_spi_req", &format_args!("{}", self.ahb_spi_req().bit()))
-            .field("slave_req", &format_args!("{}", self.slave_req().bit()))
-            .field("pro_dram_hl", &format_args!("{}", self.pro_dram_hl().bit()))
+            .field("pro_cache_mode", &self.pro_cache_mode().bit())
+            .field("pro_cache_enable", &self.pro_cache_enable().bit())
+            .field("pro_cache_flush_ena", &self.pro_cache_flush_ena().bit())
+            .field("pro_cache_flush_done", &self.pro_cache_flush_done().bit())
+            .field("pro_cache_lock_0_en", &self.pro_cache_lock_0_en().bit())
+            .field("pro_cache_lock_1_en", &self.pro_cache_lock_1_en().bit())
+            .field("pro_cache_lock_2_en", &self.pro_cache_lock_2_en().bit())
+            .field("pro_cache_lock_3_en", &self.pro_cache_lock_3_en().bit())
+            .field("pro_single_iram_ena", &self.pro_single_iram_ena().bit())
+            .field("pro_dram_split", &self.pro_dram_split().bit())
+            .field("pro_ahb_spi_req", &self.pro_ahb_spi_req().bit())
+            .field("pro_slave_req", &self.pro_slave_req().bit())
+            .field("ahb_spi_req", &self.ahb_spi_req().bit())
+            .field("slave_req", &self.slave_req().bit())
+            .field("pro_dram_hl", &self.pro_dram_hl().bit())
             .finish()
     }
 }
@@ -265,8 +229,6 @@ impl crate::Readable for PRO_CACHE_CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`pro_cache_ctrl::W`](W) writer structure"]
 impl crate::Writable for PRO_CACHE_CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets PRO_CACHE_CTRL to value 0x10"]
 impl crate::Resettable for PRO_CACHE_CTRL_SPEC {

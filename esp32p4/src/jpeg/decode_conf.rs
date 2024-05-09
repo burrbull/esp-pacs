@@ -69,31 +69,13 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("DECODE_CONF")
-            .field(
-                "restart_interval",
-                &format_args!("{}", self.restart_interval().bits()),
-            )
-            .field(
-                "component_num",
-                &format_args!("{}", self.component_num().bits()),
-            )
-            .field("sw_dht_en", &format_args!("{}", self.sw_dht_en().bit()))
-            .field(
-                "sos_check_byte_num",
-                &format_args!("{}", self.sos_check_byte_num().bits()),
-            )
-            .field(
-                "rst_check_byte_num",
-                &format_args!("{}", self.rst_check_byte_num().bits()),
-            )
-            .field(
-                "multi_scan_err_check",
-                &format_args!("{}", self.multi_scan_err_check().bit()),
-            )
-            .field(
-                "dezigzag_ready_ctl",
-                &format_args!("{}", self.dezigzag_ready_ctl().bit()),
-            )
+            .field("restart_interval", &self.restart_interval().bits())
+            .field("component_num", &self.component_num().bits())
+            .field("sw_dht_en", &self.sw_dht_en().bit())
+            .field("sos_check_byte_num", &self.sos_check_byte_num().bits())
+            .field("rst_check_byte_num", &self.rst_check_byte_num().bits())
+            .field("multi_scan_err_check", &self.multi_scan_err_check().bit())
+            .field("dezigzag_ready_ctl", &self.dezigzag_ready_ctl().bit())
             .finish()
     }
 }
@@ -151,8 +133,6 @@ impl crate::Readable for DECODE_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`decode_conf::W`](W) writer structure"]
 impl crate::Writable for DECODE_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets DECODE_CONF to value 0x5f03_0000"]
 impl crate::Resettable for DECODE_CONF_SPEC {

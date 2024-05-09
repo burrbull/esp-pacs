@@ -26,14 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("MEM_MONITOR_CONF")
-            .field(
-                "mem_monitor_clk_en",
-                &format_args!("{}", self.mem_monitor_clk_en().bit()),
-            )
-            .field(
-                "mem_monitor_rst_en",
-                &format_args!("{}", self.mem_monitor_rst_en().bit()),
-            )
+            .field("mem_monitor_clk_en", &self.mem_monitor_clk_en().bit())
+            .field("mem_monitor_rst_en", &self.mem_monitor_rst_en().bit())
             .finish()
     }
 }
@@ -67,8 +61,6 @@ impl crate::Readable for MEM_MONITOR_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`mem_monitor_conf::W`](W) writer structure"]
 impl crate::Writable for MEM_MONITOR_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets MEM_MONITOR_CONF to value 0x01"]
 impl crate::Resettable for MEM_MONITOR_CONF_SPEC {

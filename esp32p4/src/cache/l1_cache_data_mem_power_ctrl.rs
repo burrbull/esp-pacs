@@ -133,63 +133,63 @@ impl core::fmt::Debug for R {
         f.debug_struct("L1_CACHE_DATA_MEM_POWER_CTRL")
             .field(
                 "l1_icache0_data_mem_force_on",
-                &format_args!("{}", self.l1_icache0_data_mem_force_on().bit()),
+                &self.l1_icache0_data_mem_force_on().bit(),
             )
             .field(
                 "l1_icache0_data_mem_force_pd",
-                &format_args!("{}", self.l1_icache0_data_mem_force_pd().bit()),
+                &self.l1_icache0_data_mem_force_pd().bit(),
             )
             .field(
                 "l1_icache0_data_mem_force_pu",
-                &format_args!("{}", self.l1_icache0_data_mem_force_pu().bit()),
+                &self.l1_icache0_data_mem_force_pu().bit(),
             )
             .field(
                 "l1_icache1_data_mem_force_on",
-                &format_args!("{}", self.l1_icache1_data_mem_force_on().bit()),
+                &self.l1_icache1_data_mem_force_on().bit(),
             )
             .field(
                 "l1_icache1_data_mem_force_pd",
-                &format_args!("{}", self.l1_icache1_data_mem_force_pd().bit()),
+                &self.l1_icache1_data_mem_force_pd().bit(),
             )
             .field(
                 "l1_icache1_data_mem_force_pu",
-                &format_args!("{}", self.l1_icache1_data_mem_force_pu().bit()),
+                &self.l1_icache1_data_mem_force_pu().bit(),
             )
             .field(
                 "l1_icache2_data_mem_force_on",
-                &format_args!("{}", self.l1_icache2_data_mem_force_on().bit()),
+                &self.l1_icache2_data_mem_force_on().bit(),
             )
             .field(
                 "l1_icache2_data_mem_force_pd",
-                &format_args!("{}", self.l1_icache2_data_mem_force_pd().bit()),
+                &self.l1_icache2_data_mem_force_pd().bit(),
             )
             .field(
                 "l1_icache2_data_mem_force_pu",
-                &format_args!("{}", self.l1_icache2_data_mem_force_pu().bit()),
+                &self.l1_icache2_data_mem_force_pu().bit(),
             )
             .field(
                 "l1_icache3_data_mem_force_on",
-                &format_args!("{}", self.l1_icache3_data_mem_force_on().bit()),
+                &self.l1_icache3_data_mem_force_on().bit(),
             )
             .field(
                 "l1_icache3_data_mem_force_pd",
-                &format_args!("{}", self.l1_icache3_data_mem_force_pd().bit()),
+                &self.l1_icache3_data_mem_force_pd().bit(),
             )
             .field(
                 "l1_icache3_data_mem_force_pu",
-                &format_args!("{}", self.l1_icache3_data_mem_force_pu().bit()),
+                &self.l1_icache3_data_mem_force_pu().bit(),
             )
             .field(
                 "l1_dcache_data_mem_force_on",
-                &format_args!("{}", self.l1_dcache_data_mem_force_on().bit()),
+                &self.l1_dcache_data_mem_force_on().bit(),
             )
             .field(
                 "l1_dcache_data_mem_force_pd",
-                &format_args!("{}", self.l1_dcache_data_mem_force_pd().bit()),
+                &self.l1_dcache_data_mem_force_pd().bit(),
             )
             .field(
                 "l1_dcache_data_mem_force_pu",
-                &format_args!("{}", self.l1_dcache_data_mem_force_pu().bit()),
+                &self.l1_dcache_data_mem_force_pu().bit(),
             )
             .finish()
     }
@@ -284,8 +284,6 @@ impl crate::Readable for L1_CACHE_DATA_MEM_POWER_CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`l1_cache_data_mem_power_ctrl::W`](W) writer structure"]
 impl crate::Writable for L1_CACHE_DATA_MEM_POWER_CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets L1_CACHE_DATA_MEM_POWER_CTRL to value 0x0005_5555"]
 impl crate::Resettable for L1_CACHE_DATA_MEM_POWER_CTRL_SPEC {

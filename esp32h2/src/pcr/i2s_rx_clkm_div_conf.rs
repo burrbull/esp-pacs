@@ -44,22 +44,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("I2S_RX_CLKM_DIV_CONF")
-            .field(
-                "i2s_rx_clkm_div_z",
-                &format_args!("{}", self.i2s_rx_clkm_div_z().bits()),
-            )
-            .field(
-                "i2s_rx_clkm_div_y",
-                &format_args!("{}", self.i2s_rx_clkm_div_y().bits()),
-            )
-            .field(
-                "i2s_rx_clkm_div_x",
-                &format_args!("{}", self.i2s_rx_clkm_div_x().bits()),
-            )
-            .field(
-                "i2s_rx_clkm_div_yn1",
-                &format_args!("{}", self.i2s_rx_clkm_div_yn1().bit()),
-            )
+            .field("i2s_rx_clkm_div_z", &self.i2s_rx_clkm_div_z().bits())
+            .field("i2s_rx_clkm_div_y", &self.i2s_rx_clkm_div_y().bits())
+            .field("i2s_rx_clkm_div_x", &self.i2s_rx_clkm_div_x().bits())
+            .field("i2s_rx_clkm_div_yn1", &self.i2s_rx_clkm_div_yn1().bit())
             .finish()
     }
 }
@@ -105,8 +93,6 @@ impl crate::Readable for I2S_RX_CLKM_DIV_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`i2s_rx_clkm_div_conf::W`](W) writer structure"]
 impl crate::Writable for I2S_RX_CLKM_DIV_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets I2S_RX_CLKM_DIV_CONF to value 0x0200"]
 impl crate::Resettable for I2S_RX_CLKM_DIV_CONF_SPEC {

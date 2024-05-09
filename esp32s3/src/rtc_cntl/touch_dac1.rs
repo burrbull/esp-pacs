@@ -53,26 +53,11 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("TOUCH_DAC1")
-            .field(
-                "touch_pad14_dac",
-                &format_args!("{}", self.touch_pad14_dac().bits()),
-            )
-            .field(
-                "touch_pad13_dac",
-                &format_args!("{}", self.touch_pad13_dac().bits()),
-            )
-            .field(
-                "touch_pad12_dac",
-                &format_args!("{}", self.touch_pad12_dac().bits()),
-            )
-            .field(
-                "touch_pad11_dac",
-                &format_args!("{}", self.touch_pad11_dac().bits()),
-            )
-            .field(
-                "touch_pad10_dac",
-                &format_args!("{}", self.touch_pad10_dac().bits()),
-            )
+            .field("touch_pad14_dac", &self.touch_pad14_dac().bits())
+            .field("touch_pad13_dac", &self.touch_pad13_dac().bits())
+            .field("touch_pad12_dac", &self.touch_pad12_dac().bits())
+            .field("touch_pad11_dac", &self.touch_pad11_dac().bits())
+            .field("touch_pad10_dac", &self.touch_pad10_dac().bits())
             .finish()
     }
 }
@@ -124,10 +109,6 @@ impl crate::Readable for TOUCH_DAC1_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`touch_dac1::W`](W) writer structure"]
 impl crate::Writable for TOUCH_DAC1_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets TOUCH_DAC1 to value 0"]
-impl crate::Resettable for TOUCH_DAC1_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for TOUCH_DAC1_SPEC {}

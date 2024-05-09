@@ -80,26 +80,14 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("ARB_CTRL")
-            .field("apb_force", &format_args!("{}", self.apb_force().bit()))
-            .field("rtc_force", &format_args!("{}", self.rtc_force().bit()))
-            .field("wifi_force", &format_args!("{}", self.wifi_force().bit()))
-            .field("grant_force", &format_args!("{}", self.grant_force().bit()))
-            .field(
-                "apb_priority",
-                &format_args!("{}", self.apb_priority().bits()),
-            )
-            .field(
-                "rtc_priority",
-                &format_args!("{}", self.rtc_priority().bits()),
-            )
-            .field(
-                "wifi_priority",
-                &format_args!("{}", self.wifi_priority().bits()),
-            )
-            .field(
-                "fix_priority",
-                &format_args!("{}", self.fix_priority().bit()),
-            )
+            .field("apb_force", &self.apb_force().bit())
+            .field("rtc_force", &self.rtc_force().bit())
+            .field("wifi_force", &self.wifi_force().bit())
+            .field("grant_force", &self.grant_force().bit())
+            .field("apb_priority", &self.apb_priority().bits())
+            .field("rtc_priority", &self.rtc_priority().bits())
+            .field("wifi_priority", &self.wifi_priority().bits())
+            .field("fix_priority", &self.fix_priority().bit())
             .finish()
     }
 }
@@ -169,8 +157,6 @@ impl crate::Readable for ARB_CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`arb_ctrl::W`](W) writer structure"]
 impl crate::Writable for ARB_CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets ARB_CTRL to value 0x0900"]
 impl crate::Resettable for ARB_CTRL_SPEC {

@@ -86,35 +86,14 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CTR")
-            .field(
-                "sda_force_out",
-                &format_args!("{}", self.sda_force_out().bit()),
-            )
-            .field(
-                "scl_force_out",
-                &format_args!("{}", self.scl_force_out().bit()),
-            )
-            .field(
-                "sample_scl_level",
-                &format_args!("{}", self.sample_scl_level().bit()),
-            )
-            .field(
-                "rx_full_ack_level",
-                &format_args!("{}", self.rx_full_ack_level().bit()),
-            )
-            .field(
-                "tx_lsb_first",
-                &format_args!("{}", self.tx_lsb_first().bit()),
-            )
-            .field(
-                "rx_lsb_first",
-                &format_args!("{}", self.rx_lsb_first().bit()),
-            )
-            .field("clk_en", &format_args!("{}", self.clk_en().bit()))
-            .field(
-                "arbitration_en",
-                &format_args!("{}", self.arbitration_en().bit()),
-            )
+            .field("sda_force_out", &self.sda_force_out().bit())
+            .field("scl_force_out", &self.scl_force_out().bit())
+            .field("sample_scl_level", &self.sample_scl_level().bit())
+            .field("rx_full_ack_level", &self.rx_full_ack_level().bit())
+            .field("tx_lsb_first", &self.tx_lsb_first().bit())
+            .field("rx_lsb_first", &self.rx_lsb_first().bit())
+            .field("clk_en", &self.clk_en().bit())
+            .field("arbitration_en", &self.arbitration_en().bit())
             .finish()
     }
 }
@@ -202,8 +181,6 @@ impl crate::Readable for CTR_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`ctr::W`](W) writer structure"]
 impl crate::Writable for CTR_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CTR to value 0x0208"]
 impl crate::Resettable for CTR_SPEC {

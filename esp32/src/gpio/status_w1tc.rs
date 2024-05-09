@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("STATUS_W1TC")
-            .field(
-                "status_int_w1tc",
-                &format_args!("{}", self.status_int_w1tc().bits()),
-            )
+            .field("status_int_w1tc", &self.status_int_w1tc().bits())
             .finish()
     }
 }
@@ -48,10 +45,6 @@ impl crate::Readable for STATUS_W1TC_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`status_w1tc::W`](W) writer structure"]
 impl crate::Writable for STATUS_W1TC_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets STATUS_W1TC to value 0"]
-impl crate::Resettable for STATUS_W1TC_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for STATUS_W1TC_SPEC {}

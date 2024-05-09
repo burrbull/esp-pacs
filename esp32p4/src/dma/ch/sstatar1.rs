@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SSTATAR1")
-            .field(
-                "ch1_sstatar1",
-                &format_args!("{}", self.ch1_sstatar1().bits()),
-            )
+            .field("ch1_sstatar1", &self.ch1_sstatar1().bits())
             .finish()
     }
 }
@@ -48,10 +45,6 @@ impl crate::Readable for SSTATAR1_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`sstatar1::W`](W) writer structure"]
 impl crate::Writable for SSTATAR1_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SSTATAR1 to value 0"]
-impl crate::Resettable for SSTATAR1_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for SSTATAR1_SPEC {}

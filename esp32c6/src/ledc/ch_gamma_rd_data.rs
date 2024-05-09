@@ -13,10 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CH_GAMMA_RD_DATA")
-            .field(
-                "ch_gamma_rd_data",
-                &format_args!("{}", self.ch_gamma_rd_data().bits()),
-            )
+            .field("ch_gamma_rd_data", &self.ch_gamma_rd_data().bits())
             .finish()
     }
 }
@@ -34,6 +31,4 @@ impl crate::RegisterSpec for CH_GAMMA_RD_DATA_SPEC {
 #[doc = "`read()` method returns [`ch_gamma_rd_data::R`](R) reader structure"]
 impl crate::Readable for CH_GAMMA_RD_DATA_SPEC {}
 #[doc = "`reset()` method sets CH%s_GAMMA_RD_DATA to value 0"]
-impl crate::Resettable for CH_GAMMA_RD_DATA_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for CH_GAMMA_RD_DATA_SPEC {}

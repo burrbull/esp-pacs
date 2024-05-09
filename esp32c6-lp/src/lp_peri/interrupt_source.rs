@@ -13,10 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("INTERRUPT_SOURCE")
-            .field(
-                "lp_interrupt_source",
-                &format_args!("{}", self.lp_interrupt_source().bits()),
-            )
+            .field("lp_interrupt_source", &self.lp_interrupt_source().bits())
             .finish()
     }
 }
@@ -34,6 +31,4 @@ impl crate::RegisterSpec for INTERRUPT_SOURCE_SPEC {
 #[doc = "`read()` method returns [`interrupt_source::R`](R) reader structure"]
 impl crate::Readable for INTERRUPT_SOURCE_SPEC {}
 #[doc = "`reset()` method sets INTERRUPT_SOURCE to value 0"]
-impl crate::Resettable for INTERRUPT_SOURCE_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for INTERRUPT_SOURCE_SPEC {}

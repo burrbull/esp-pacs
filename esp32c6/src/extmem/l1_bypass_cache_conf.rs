@@ -41,26 +41,11 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("L1_BYPASS_CACHE_CONF")
-            .field(
-                "bypass_l1_icache0_en",
-                &format_args!("{}", self.bypass_l1_icache0_en().bit()),
-            )
-            .field(
-                "bypass_l1_icache1_en",
-                &format_args!("{}", self.bypass_l1_icache1_en().bit()),
-            )
-            .field(
-                "bypass_l1_icache2_en",
-                &format_args!("{}", self.bypass_l1_icache2_en().bit()),
-            )
-            .field(
-                "bypass_l1_icache3_en",
-                &format_args!("{}", self.bypass_l1_icache3_en().bit()),
-            )
-            .field(
-                "bypass_l1_dcache_en",
-                &format_args!("{}", self.bypass_l1_dcache_en().bit()),
-            )
+            .field("bypass_l1_icache0_en", &self.bypass_l1_icache0_en().bit())
+            .field("bypass_l1_icache1_en", &self.bypass_l1_icache1_en().bit())
+            .field("bypass_l1_icache2_en", &self.bypass_l1_icache2_en().bit())
+            .field("bypass_l1_icache3_en", &self.bypass_l1_icache3_en().bit())
+            .field("bypass_l1_dcache_en", &self.bypass_l1_dcache_en().bit())
             .finish()
     }
 }
@@ -78,6 +63,4 @@ impl crate::RegisterSpec for L1_BYPASS_CACHE_CONF_SPEC {
 #[doc = "`read()` method returns [`l1_bypass_cache_conf::R`](R) reader structure"]
 impl crate::Readable for L1_BYPASS_CACHE_CONF_SPEC {}
 #[doc = "`reset()` method sets L1_BYPASS_CACHE_CONF to value 0"]
-impl crate::Resettable for L1_BYPASS_CACHE_CONF_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for L1_BYPASS_CACHE_CONF_SPEC {}

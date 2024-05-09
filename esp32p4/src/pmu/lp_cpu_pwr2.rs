@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("LP_CPU_PWR2")
-            .field(
-                "lp_cpu_wakeup_en",
-                &format_args!("{}", self.lp_cpu_wakeup_en().bits()),
-            )
+            .field("lp_cpu_wakeup_en", &self.lp_cpu_wakeup_en().bits())
             .finish()
     }
 }
@@ -48,10 +45,6 @@ impl crate::Readable for LP_CPU_PWR2_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`lp_cpu_pwr2::W`](W) writer structure"]
 impl crate::Writable for LP_CPU_PWR2_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets LP_CPU_PWR2 to value 0"]
-impl crate::Resettable for LP_CPU_PWR2_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for LP_CPU_PWR2_SPEC {}

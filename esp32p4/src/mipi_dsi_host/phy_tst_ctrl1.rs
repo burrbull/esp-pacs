@@ -33,15 +33,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PHY_TST_CTRL1")
-            .field(
-                "phy_testdin",
-                &format_args!("{}", self.phy_testdin().bits()),
-            )
-            .field(
-                "pht_testdout",
-                &format_args!("{}", self.pht_testdout().bits()),
-            )
-            .field("phy_testen", &format_args!("{}", self.phy_testen().bit()))
+            .field("phy_testdin", &self.phy_testdin().bits())
+            .field("pht_testdout", &self.pht_testdout().bits())
+            .field("phy_testen", &self.phy_testen().bit())
             .finish()
     }
 }
@@ -75,10 +69,6 @@ impl crate::Readable for PHY_TST_CTRL1_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`phy_tst_ctrl1::W`](W) writer structure"]
 impl crate::Writable for PHY_TST_CTRL1_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets PHY_TST_CTRL1 to value 0"]
-impl crate::Resettable for PHY_TST_CTRL1_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for PHY_TST_CTRL1_SPEC {}

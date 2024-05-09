@@ -17,7 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CCM_COEF5")
-            .field("ccm_bb", &format_args!("{}", self.ccm_bb().bits()))
+            .field("ccm_bb", &self.ccm_bb().bits())
             .finish()
     }
 }
@@ -45,8 +45,6 @@ impl crate::Readable for CCM_COEF5_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`ccm_coef5::W`](W) writer structure"]
 impl crate::Writable for CCM_COEF5_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CCM_COEF5 to value 0x0740"]
 impl crate::Resettable for CCM_COEF5_SPEC {

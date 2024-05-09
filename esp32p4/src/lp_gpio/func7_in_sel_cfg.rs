@@ -37,15 +37,12 @@ impl core::fmt::Debug for R {
         f.debug_struct("FUNC7_IN_SEL_CFG")
             .field(
                 "reg_gpio_func7_in_inv_sel",
-                &format_args!("{}", self.reg_gpio_func7_in_inv_sel().bit()),
+                &self.reg_gpio_func7_in_inv_sel().bit(),
             )
-            .field(
-                "reg_gpio_sig7_in_sel",
-                &format_args!("{}", self.reg_gpio_sig7_in_sel().bit()),
-            )
+            .field("reg_gpio_sig7_in_sel", &self.reg_gpio_sig7_in_sel().bit())
             .field(
                 "reg_gpio_func7_in_sel",
-                &format_args!("{}", self.reg_gpio_func7_in_sel().bits()),
+                &self.reg_gpio_func7_in_sel().bits(),
             )
             .finish()
     }
@@ -88,8 +85,6 @@ impl crate::Readable for FUNC7_IN_SEL_CFG_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`func7_in_sel_cfg::W`](W) writer structure"]
 impl crate::Writable for FUNC7_IN_SEL_CFG_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets FUNC7_IN_SEL_CFG to value 0x80"]
 impl crate::Resettable for FUNC7_IN_SEL_CFG_SPEC {

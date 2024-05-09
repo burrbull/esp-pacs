@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("STORE2")
-            .field(
-                "lp_aon_store2",
-                &format_args!("{}", self.lp_aon_store2().bits()),
-            )
+            .field("lp_aon_store2", &self.lp_aon_store2().bits())
             .finish()
     }
 }
@@ -48,10 +45,6 @@ impl crate::Readable for STORE2_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`store2::W`](W) writer structure"]
 impl crate::Writable for STORE2_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets STORE2 to value 0"]
-impl crate::Resettable for STORE2_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for STORE2_SPEC {}

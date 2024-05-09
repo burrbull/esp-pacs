@@ -13,10 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("DC_PRELOAD_MISS_CNT")
-            .field(
-                "dc_preload_miss_cnt",
-                &format_args!("{}", self.dc_preload_miss_cnt().bits()),
-            )
+            .field("dc_preload_miss_cnt", &self.dc_preload_miss_cnt().bits())
             .finish()
     }
 }
@@ -34,6 +31,4 @@ impl crate::RegisterSpec for DC_PRELOAD_MISS_CNT_SPEC {
 #[doc = "`read()` method returns [`dc_preload_miss_cnt::R`](R) reader structure"]
 impl crate::Readable for DC_PRELOAD_MISS_CNT_SPEC {}
 #[doc = "`reset()` method sets DC_PRELOAD_MISS_CNT to value 0"]
-impl crate::Resettable for DC_PRELOAD_MISS_CNT_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for DC_PRELOAD_MISS_CNT_SPEC {}

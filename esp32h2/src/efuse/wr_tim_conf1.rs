@@ -35,9 +35,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("WR_TIM_CONF1")
-            .field("tsup_a", &format_args!("{}", self.tsup_a().bits()))
-            .field("pwr_on_num", &format_args!("{}", self.pwr_on_num().bits()))
-            .field("thp_a", &format_args!("{}", self.thp_a().bits()))
+            .field("tsup_a", &self.tsup_a().bits())
+            .field("pwr_on_num", &self.pwr_on_num().bits())
+            .field("thp_a", &self.thp_a().bits())
             .finish()
     }
 }
@@ -77,8 +77,6 @@ impl crate::Readable for WR_TIM_CONF1_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`wr_tim_conf1::W`](W) writer structure"]
 impl crate::Writable for WR_TIM_CONF1_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets WR_TIM_CONF1 to value 0x0126_6701"]
 impl crate::Resettable for WR_TIM_CONF1_SPEC {

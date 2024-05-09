@@ -26,8 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PHY_TEST_CTRL0")
-            .field("phy_testclr", &format_args!("{}", self.phy_testclr().bit()))
-            .field("phy_testclk", &format_args!("{}", self.phy_testclk().bit()))
+            .field("phy_testclr", &self.phy_testclr().bit())
+            .field("phy_testclk", &self.phy_testclk().bit())
             .finish()
     }
 }
@@ -61,8 +61,6 @@ impl crate::Readable for PHY_TEST_CTRL0_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`phy_test_ctrl0::W`](W) writer structure"]
 impl crate::Writable for PHY_TEST_CTRL0_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets PHY_TEST_CTRL0 to value 0x01"]
 impl crate::Resettable for PHY_TEST_CTRL0_SPEC {

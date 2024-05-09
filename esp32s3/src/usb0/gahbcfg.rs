@@ -89,21 +89,15 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("GAHBCFG")
-            .field("glbllntrmsk", &format_args!("{}", self.glbllntrmsk().bit()))
-            .field("hbstlen", &format_args!("{}", self.hbstlen().bits()))
-            .field("dmaen", &format_args!("{}", self.dmaen().bit()))
-            .field("nptxfemplvl", &format_args!("{}", self.nptxfemplvl().bit()))
-            .field("ptxfemplvl", &format_args!("{}", self.ptxfemplvl().bit()))
-            .field("remmemsupp", &format_args!("{}", self.remmemsupp().bit()))
-            .field(
-                "notialldmawrit",
-                &format_args!("{}", self.notialldmawrit().bit()),
-            )
-            .field("ahbsingle", &format_args!("{}", self.ahbsingle().bit()))
-            .field(
-                "invdescendianess",
-                &format_args!("{}", self.invdescendianess().bit()),
-            )
+            .field("glbllntrmsk", &self.glbllntrmsk().bit())
+            .field("hbstlen", &self.hbstlen().bits())
+            .field("dmaen", &self.dmaen().bit())
+            .field("nptxfemplvl", &self.nptxfemplvl().bit())
+            .field("ptxfemplvl", &self.ptxfemplvl().bit())
+            .field("remmemsupp", &self.remmemsupp().bit())
+            .field("notialldmawrit", &self.notialldmawrit().bit())
+            .field("ahbsingle", &self.ahbsingle().bit())
+            .field("invdescendianess", &self.invdescendianess().bit())
             .finish()
     }
 }
@@ -179,10 +173,6 @@ impl crate::Readable for GAHBCFG_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`gahbcfg::W`](W) writer structure"]
 impl crate::Writable for GAHBCFG_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets GAHBCFG to value 0"]
-impl crate::Resettable for GAHBCFG_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for GAHBCFG_SPEC {}

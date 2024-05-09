@@ -26,8 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CONF2")
-            .field("cnt_h_lim", &format_args!("{}", self.cnt_h_lim().bits()))
-            .field("cnt_l_lim", &format_args!("{}", self.cnt_l_lim().bits()))
+            .field("cnt_h_lim", &self.cnt_h_lim().bits())
+            .field("cnt_l_lim", &self.cnt_l_lim().bits())
             .finish()
     }
 }
@@ -61,10 +61,6 @@ impl crate::Readable for CONF2_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`conf2::W`](W) writer structure"]
 impl crate::Writable for CONF2_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CONF2 to value 0"]
-impl crate::Resettable for CONF2_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for CONF2_SPEC {}

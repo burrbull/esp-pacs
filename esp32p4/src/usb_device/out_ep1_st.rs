@@ -34,22 +34,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("OUT_EP1_ST")
-            .field(
-                "out_ep1_state",
-                &format_args!("{}", self.out_ep1_state().bits()),
-            )
-            .field(
-                "out_ep1_wr_addr",
-                &format_args!("{}", self.out_ep1_wr_addr().bits()),
-            )
-            .field(
-                "out_ep1_rd_addr",
-                &format_args!("{}", self.out_ep1_rd_addr().bits()),
-            )
-            .field(
-                "out_ep1_rec_data_cnt",
-                &format_args!("{}", self.out_ep1_rec_data_cnt().bits()),
-            )
+            .field("out_ep1_state", &self.out_ep1_state().bits())
+            .field("out_ep1_wr_addr", &self.out_ep1_wr_addr().bits())
+            .field("out_ep1_rd_addr", &self.out_ep1_rd_addr().bits())
+            .field("out_ep1_rec_data_cnt", &self.out_ep1_rec_data_cnt().bits())
             .finish()
     }
 }
@@ -67,6 +55,4 @@ impl crate::RegisterSpec for OUT_EP1_ST_SPEC {
 #[doc = "`read()` method returns [`out_ep1_st::R`](R) reader structure"]
 impl crate::Readable for OUT_EP1_ST_SPEC {}
 #[doc = "`reset()` method sets OUT_EP1_ST to value 0"]
-impl crate::Resettable for OUT_EP1_ST_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for OUT_EP1_ST_SPEC {}

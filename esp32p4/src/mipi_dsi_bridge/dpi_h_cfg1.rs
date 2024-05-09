@@ -26,8 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("DPI_H_CFG1")
-            .field("hbank", &format_args!("{}", self.hbank().bits()))
-            .field("hsync", &format_args!("{}", self.hsync().bits()))
+            .field("hbank", &self.hbank().bits())
+            .field("hsync", &self.hsync().bits())
             .finish()
     }
 }
@@ -61,8 +61,6 @@ impl crate::Readable for DPI_H_CFG1_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`dpi_h_cfg1::W`](W) writer structure"]
 impl crate::Writable for DPI_H_CFG1_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets DPI_H_CFG1 to value 0x0060_0030"]
 impl crate::Resettable for DPI_H_CFG1_SPEC {

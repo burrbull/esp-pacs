@@ -13,10 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CMD_INFOR1")
-            .field(
-                "cmd_content1",
-                &format_args!("{}", self.cmd_content1().bits()),
-            )
+            .field("cmd_content1", &self.cmd_content1().bits())
             .finish()
     }
 }
@@ -34,6 +31,4 @@ impl crate::RegisterSpec for CMD_INFOR1_SPEC {
 #[doc = "`read()` method returns [`cmd_infor1::R`](R) reader structure"]
 impl crate::Readable for CMD_INFOR1_SPEC {}
 #[doc = "`reset()` method sets CMD_INFOR1 to value 0"]
-impl crate::Resettable for CMD_INFOR1_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for CMD_INFOR1_SPEC {}

@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SRAM_ACE2_ATTR")
-            .field(
-                "sram_ace2_attr",
-                &format_args!("{}", self.sram_ace2_attr().bits()),
-            )
+            .field("sram_ace2_attr", &self.sram_ace2_attr().bits())
             .finish()
     }
 }
@@ -48,8 +45,6 @@ impl crate::Readable for SRAM_ACE2_ATTR_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`sram_ace2_attr::W`](W) writer structure"]
 impl crate::Writable for SRAM_ACE2_ATTR_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SRAM_ACE2_ATTR to value 0x07"]
 impl crate::Resettable for SRAM_ACE2_ATTR_SPEC {

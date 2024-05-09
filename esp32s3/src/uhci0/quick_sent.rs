@@ -44,22 +44,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("QUICK_SENT")
-            .field(
-                "single_send_num",
-                &format_args!("{}", self.single_send_num().bits()),
-            )
-            .field(
-                "single_send_en",
-                &format_args!("{}", self.single_send_en().bit()),
-            )
-            .field(
-                "always_send_num",
-                &format_args!("{}", self.always_send_num().bits()),
-            )
-            .field(
-                "always_send_en",
-                &format_args!("{}", self.always_send_en().bit()),
-            )
+            .field("single_send_num", &self.single_send_num().bits())
+            .field("single_send_en", &self.single_send_en().bit())
+            .field("always_send_num", &self.always_send_num().bits())
+            .field("always_send_en", &self.always_send_en().bit())
             .finish()
     }
 }
@@ -105,10 +93,6 @@ impl crate::Readable for QUICK_SENT_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`quick_sent::W`](W) writer structure"]
 impl crate::Writable for QUICK_SENT_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets QUICK_SENT to value 0"]
-impl crate::Resettable for QUICK_SENT_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for QUICK_SENT_SPEC {}

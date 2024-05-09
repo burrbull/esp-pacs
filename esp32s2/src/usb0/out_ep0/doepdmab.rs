@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("DOEPDMAB")
-            .field(
-                "dmabufferaddr",
-                &format_args!("{}", self.dmabufferaddr().bits()),
-            )
+            .field("dmabufferaddr", &self.dmabufferaddr().bits())
             .finish()
     }
 }
@@ -48,10 +45,6 @@ impl crate::Readable for DOEPDMAB_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`doepdmab::W`](W) writer structure"]
 impl crate::Writable for DOEPDMAB_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets DOEPDMAB to value 0"]
-impl crate::Resettable for DOEPDMAB_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for DOEPDMAB_SPEC {}

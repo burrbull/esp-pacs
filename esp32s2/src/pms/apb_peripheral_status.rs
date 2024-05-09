@@ -15,7 +15,7 @@ impl core::fmt::Debug for R {
         f.debug_struct("APB_PERIPHERAL_STATUS")
             .field(
                 "apb_peri_byte_error_addr",
-                &format_args!("{}", self.apb_peri_byte_error_addr().bits()),
+                &self.apb_peri_byte_error_addr().bits(),
             )
             .finish()
     }
@@ -34,6 +34,4 @@ impl crate::RegisterSpec for APB_PERIPHERAL_STATUS_SPEC {
 #[doc = "`read()` method returns [`apb_peripheral_status::R`](R) reader structure"]
 impl crate::Readable for APB_PERIPHERAL_STATUS_SPEC {}
 #[doc = "`reset()` method sets APB_PERIPHERAL_STATUS to value 0"]
-impl crate::Resettable for APB_PERIPHERAL_STATUS_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for APB_PERIPHERAL_STATUS_SPEC {}

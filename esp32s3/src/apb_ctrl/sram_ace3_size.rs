@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SRAM_ACE3_SIZE")
-            .field(
-                "sram_ace3_size",
-                &format_args!("{}", self.sram_ace3_size().bits()),
-            )
+            .field("sram_ace3_size", &self.sram_ace3_size().bits())
             .finish()
     }
 }
@@ -48,8 +45,6 @@ impl crate::Readable for SRAM_ACE3_SIZE_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`sram_ace3_size::W`](W) writer structure"]
 impl crate::Writable for SRAM_ACE3_SIZE_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SRAM_ACE3_SIZE to value 0x1000"]
 impl crate::Resettable for SRAM_ACE3_SIZE_SPEC {

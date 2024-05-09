@@ -26,14 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SAR_MEAS_WAIT1")
-            .field(
-                "sar_amp_wait1",
-                &format_args!("{}", self.sar_amp_wait1().bits()),
-            )
-            .field(
-                "sar_amp_wait2",
-                &format_args!("{}", self.sar_amp_wait2().bits()),
-            )
+            .field("sar_amp_wait1", &self.sar_amp_wait1().bits())
+            .field("sar_amp_wait2", &self.sar_amp_wait2().bits())
             .finish()
     }
 }
@@ -67,8 +61,6 @@ impl crate::Readable for SAR_MEAS_WAIT1_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`sar_meas_wait1::W`](W) writer structure"]
 impl crate::Writable for SAR_MEAS_WAIT1_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SAR_MEAS_WAIT1 to value 0x000a_000a"]
 impl crate::Resettable for SAR_MEAS_WAIT1_SPEC {

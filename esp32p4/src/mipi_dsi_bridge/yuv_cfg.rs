@@ -35,15 +35,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("YUV_CFG")
-            .field("protocal", &format_args!("{}", self.protocal().bit()))
-            .field(
-                "yuv_pix_endian",
-                &format_args!("{}", self.yuv_pix_endian().bit()),
-            )
-            .field(
-                "yuv422_format",
-                &format_args!("{}", self.yuv422_format().bits()),
-            )
+            .field("protocal", &self.protocal().bit())
+            .field("yuv_pix_endian", &self.yuv_pix_endian().bit())
+            .field("yuv422_format", &self.yuv422_format().bits())
             .finish()
     }
 }
@@ -83,10 +77,6 @@ impl crate::Readable for YUV_CFG_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`yuv_cfg::W`](W) writer structure"]
 impl crate::Writable for YUV_CFG_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets YUV_CFG to value 0"]
-impl crate::Resettable for YUV_CFG_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for YUV_CFG_SPEC {}

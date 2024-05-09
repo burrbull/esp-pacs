@@ -19,7 +19,7 @@ impl core::fmt::Debug for R {
         f.debug_struct("PRO_DEDICATED_GPIO_IN_INTR_MAP")
             .field(
                 "pro_dedicated_gpio_in_intr_map",
-                &format_args!("{}", self.pro_dedicated_gpio_in_intr_map().bits()),
+                &self.pro_dedicated_gpio_in_intr_map().bits(),
             )
             .finish()
     }
@@ -50,8 +50,6 @@ impl crate::Readable for PRO_DEDICATED_GPIO_IN_INTR_MAP_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`pro_dedicated_gpio_in_intr_map::W`](W) writer structure"]
 impl crate::Writable for PRO_DEDICATED_GPIO_IN_INTR_MAP_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets PRO_DEDICATED_GPIO_IN_INTR_MAP to value 0x10"]
 impl crate::Resettable for PRO_DEDICATED_GPIO_IN_INTR_MAP_SPEC {

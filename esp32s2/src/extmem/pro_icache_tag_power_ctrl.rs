@@ -37,15 +37,15 @@ impl core::fmt::Debug for R {
         f.debug_struct("PRO_ICACHE_TAG_POWER_CTRL")
             .field(
                 "pro_icache_tag_mem_force_on",
-                &format_args!("{}", self.pro_icache_tag_mem_force_on().bit()),
+                &self.pro_icache_tag_mem_force_on().bit(),
             )
             .field(
                 "pro_icache_tag_mem_force_pd",
-                &format_args!("{}", self.pro_icache_tag_mem_force_pd().bit()),
+                &self.pro_icache_tag_mem_force_pd().bit(),
             )
             .field(
                 "pro_icache_tag_mem_force_pu",
-                &format_args!("{}", self.pro_icache_tag_mem_force_pu().bit()),
+                &self.pro_icache_tag_mem_force_pu().bit(),
             )
             .finish()
     }
@@ -92,8 +92,6 @@ impl crate::Readable for PRO_ICACHE_TAG_POWER_CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`pro_icache_tag_power_ctrl::W`](W) writer structure"]
 impl crate::Writable for PRO_ICACHE_TAG_POWER_CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets PRO_ICACHE_TAG_POWER_CTRL to value 0x05"]
 impl crate::Resettable for PRO_ICACHE_TAG_POWER_CTRL_SPEC {

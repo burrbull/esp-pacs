@@ -125,70 +125,43 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("RD_REPEAT_ERR0")
-            .field("rd_dis_err", &format_args!("{}", self.rd_dis_err().bits()))
+            .field("rd_dis_err", &self.rd_dis_err().bits())
             .field(
                 "dis_usb_device_exchg_pins_err",
-                &format_args!("{}", self.dis_usb_device_exchg_pins_err().bit()),
+                &self.dis_usb_device_exchg_pins_err().bit(),
             )
             .field(
                 "dis_usb_otg11_exchg_pins_err",
-                &format_args!("{}", self.dis_usb_otg11_exchg_pins_err().bit()),
+                &self.dis_usb_otg11_exchg_pins_err().bit(),
             )
-            .field(
-                "dis_usb_jtag_err",
-                &format_args!("{}", self.dis_usb_jtag_err().bit()),
-            )
-            .field(
-                "powerglitch_en_err",
-                &format_args!("{}", self.powerglitch_en_err().bit()),
-            )
+            .field("dis_usb_jtag_err", &self.dis_usb_jtag_err().bit())
+            .field("powerglitch_en_err", &self.powerglitch_en_err().bit())
             .field(
                 "dis_usb_serial_jtag_err",
-                &format_args!("{}", self.dis_usb_serial_jtag_err().bit()),
+                &self.dis_usb_serial_jtag_err().bit(),
             )
             .field(
                 "dis_force_download_err",
-                &format_args!("{}", self.dis_force_download_err().bit()),
+                &self.dis_force_download_err().bit(),
             )
             .field(
                 "spi_download_mspi_dis_err",
-                &format_args!("{}", self.spi_download_mspi_dis_err().bit()),
+                &self.spi_download_mspi_dis_err().bit(),
             )
-            .field(
-                "dis_twai_err",
-                &format_args!("{}", self.dis_twai_err().bit()),
-            )
-            .field(
-                "jtag_sel_enable_err",
-                &format_args!("{}", self.jtag_sel_enable_err().bit()),
-            )
-            .field(
-                "soft_dis_jtag_err",
-                &format_args!("{}", self.soft_dis_jtag_err().bits()),
-            )
-            .field(
-                "dis_pad_jtag_err",
-                &format_args!("{}", self.dis_pad_jtag_err().bit()),
-            )
+            .field("dis_twai_err", &self.dis_twai_err().bit())
+            .field("jtag_sel_enable_err", &self.jtag_sel_enable_err().bit())
+            .field("soft_dis_jtag_err", &self.soft_dis_jtag_err().bits())
+            .field("dis_pad_jtag_err", &self.dis_pad_jtag_err().bit())
             .field(
                 "dis_download_manual_encrypt_err",
-                &format_args!("{}", self.dis_download_manual_encrypt_err().bit()),
+                &self.dis_download_manual_encrypt_err().bit(),
             )
-            .field(
-                "usb_device_drefh_err",
-                &format_args!("{}", self.usb_device_drefh_err().bits()),
-            )
-            .field(
-                "usb_otg11_drefh_err",
-                &format_args!("{}", self.usb_otg11_drefh_err().bits()),
-            )
-            .field(
-                "usb_phy_sel_err",
-                &format_args!("{}", self.usb_phy_sel_err().bit()),
-            )
+            .field("usb_device_drefh_err", &self.usb_device_drefh_err().bits())
+            .field("usb_otg11_drefh_err", &self.usb_otg11_drefh_err().bits())
+            .field("usb_phy_sel_err", &self.usb_phy_sel_err().bit())
             .field(
                 "huk_gen_state_low_err",
-                &format_args!("{}", self.huk_gen_state_low_err().bits()),
+                &self.huk_gen_state_low_err().bits(),
             )
             .finish()
     }
@@ -207,6 +180,4 @@ impl crate::RegisterSpec for RD_REPEAT_ERR0_SPEC {
 #[doc = "`read()` method returns [`rd_repeat_err0::R`](R) reader structure"]
 impl crate::Readable for RD_REPEAT_ERR0_SPEC {}
 #[doc = "`reset()` method sets RD_REPEAT_ERR0 to value 0"]
-impl crate::Resettable for RD_REPEAT_ERR0_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for RD_REPEAT_ERR0_SPEC {}

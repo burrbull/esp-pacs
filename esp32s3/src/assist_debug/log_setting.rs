@@ -35,12 +35,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("LOG_SETTING")
-            .field("log_ena", &format_args!("{}", self.log_ena().bits()))
-            .field("log_mode", &format_args!("{}", self.log_mode().bits()))
-            .field(
-                "log_mem_loop_enable",
-                &format_args!("{}", self.log_mem_loop_enable().bit()),
-            )
+            .field("log_ena", &self.log_ena().bits())
+            .field("log_mode", &self.log_mode().bits())
+            .field("log_mem_loop_enable", &self.log_mem_loop_enable().bit())
             .finish()
     }
 }
@@ -80,8 +77,6 @@ impl crate::Readable for LOG_SETTING_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`log_setting::W`](W) writer structure"]
 impl crate::Writable for LOG_SETTING_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets LOG_SETTING to value 0x40"]
 impl crate::Resettable for LOG_SETTING_SPEC {

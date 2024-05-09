@@ -44,22 +44,13 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("WIFI_CLK_EN")
-            .field(
-                "wifi_clk_en",
-                &format_args!("{}", self.wifi_clk_en().bits()),
-            )
-            .field(
-                "wifi_clk_wifi_en",
-                &format_args!("{}", self.wifi_clk_wifi_en().bits()),
-            )
+            .field("wifi_clk_en", &self.wifi_clk_en().bits())
+            .field("wifi_clk_wifi_en", &self.wifi_clk_wifi_en().bits())
             .field(
                 "wifi_clk_wifi_bt_common",
-                &format_args!("{}", self.wifi_clk_wifi_bt_common().bits()),
+                &self.wifi_clk_wifi_bt_common().bits(),
             )
-            .field(
-                "wifi_clk_bt_en",
-                &format_args!("{}", self.wifi_clk_bt_en().bits()),
-            )
+            .field("wifi_clk_bt_en", &self.wifi_clk_bt_en().bits())
             .finish()
     }
 }
@@ -105,8 +96,6 @@ impl crate::Readable for WIFI_CLK_EN_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`wifi_clk_en::W`](W) writer structure"]
 impl crate::Writable for WIFI_CLK_EN_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets WIFI_CLK_EN to value 0xfffc_e030"]
 impl crate::Resettable for WIFI_CLK_EN_SPEC {

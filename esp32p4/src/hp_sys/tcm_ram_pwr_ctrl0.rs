@@ -19,7 +19,7 @@ impl core::fmt::Debug for R {
         f.debug_struct("TCM_RAM_PWR_CTRL0")
             .field(
                 "reg_hp_tcm_clk_force_on",
-                &format_args!("{}", self.reg_hp_tcm_clk_force_on().bit()),
+                &self.reg_hp_tcm_clk_force_on().bit(),
             )
             .finish()
     }
@@ -48,10 +48,6 @@ impl crate::Readable for TCM_RAM_PWR_CTRL0_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`tcm_ram_pwr_ctrl0::W`](W) writer structure"]
 impl crate::Writable for TCM_RAM_PWR_CTRL0_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets TCM_RAM_PWR_CTRL0 to value 0"]
-impl crate::Resettable for TCM_RAM_PWR_CTRL0_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for TCM_RAM_PWR_CTRL0_SPEC {}

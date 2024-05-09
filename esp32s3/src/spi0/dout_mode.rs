@@ -89,15 +89,15 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("DOUT_MODE")
-            .field("dout0_mode", &format_args!("{}", self.dout0_mode().bit()))
-            .field("dout1_mode", &format_args!("{}", self.dout1_mode().bit()))
-            .field("dout2_mode", &format_args!("{}", self.dout2_mode().bit()))
-            .field("dout3_mode", &format_args!("{}", self.dout3_mode().bit()))
-            .field("dout4_mode", &format_args!("{}", self.dout4_mode().bit()))
-            .field("dout5_mode", &format_args!("{}", self.dout5_mode().bit()))
-            .field("dout6_mode", &format_args!("{}", self.dout6_mode().bit()))
-            .field("dout7_mode", &format_args!("{}", self.dout7_mode().bit()))
-            .field("douts_mode", &format_args!("{}", self.douts_mode().bit()))
+            .field("dout0_mode", &self.dout0_mode().bit())
+            .field("dout1_mode", &self.dout1_mode().bit())
+            .field("dout2_mode", &self.dout2_mode().bit())
+            .field("dout3_mode", &self.dout3_mode().bit())
+            .field("dout4_mode", &self.dout4_mode().bit())
+            .field("dout5_mode", &self.dout5_mode().bit())
+            .field("dout6_mode", &self.dout6_mode().bit())
+            .field("dout7_mode", &self.dout7_mode().bit())
+            .field("douts_mode", &self.douts_mode().bit())
             .finish()
     }
 }
@@ -173,10 +173,6 @@ impl crate::Readable for DOUT_MODE_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`dout_mode::W`](W) writer structure"]
 impl crate::Writable for DOUT_MODE_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets DOUT_MODE to value 0"]
-impl crate::Resettable for DOUT_MODE_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for DOUT_MODE_SPEC {}

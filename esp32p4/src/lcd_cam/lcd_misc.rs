@@ -91,39 +91,15 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("LCD_MISC")
-            .field(
-                "lcd_wire_mode",
-                &format_args!("{}", self.lcd_wire_mode().bits()),
-            )
-            .field(
-                "lcd_vfk_cyclelen",
-                &format_args!("{}", self.lcd_vfk_cyclelen().bits()),
-            )
-            .field(
-                "lcd_vbk_cyclelen",
-                &format_args!("{}", self.lcd_vbk_cyclelen().bits()),
-            )
-            .field(
-                "lcd_next_frame_en",
-                &format_args!("{}", self.lcd_next_frame_en().bit()),
-            )
-            .field("lcd_bk_en", &format_args!("{}", self.lcd_bk_en().bit()))
-            .field(
-                "lcd_cd_data_set",
-                &format_args!("{}", self.lcd_cd_data_set().bit()),
-            )
-            .field(
-                "lcd_cd_dummy_set",
-                &format_args!("{}", self.lcd_cd_dummy_set().bit()),
-            )
-            .field(
-                "lcd_cd_cmd_set",
-                &format_args!("{}", self.lcd_cd_cmd_set().bit()),
-            )
-            .field(
-                "lcd_cd_idle_edge",
-                &format_args!("{}", self.lcd_cd_idle_edge().bit()),
-            )
+            .field("lcd_wire_mode", &self.lcd_wire_mode().bits())
+            .field("lcd_vfk_cyclelen", &self.lcd_vfk_cyclelen().bits())
+            .field("lcd_vbk_cyclelen", &self.lcd_vbk_cyclelen().bits())
+            .field("lcd_next_frame_en", &self.lcd_next_frame_en().bit())
+            .field("lcd_bk_en", &self.lcd_bk_en().bit())
+            .field("lcd_cd_data_set", &self.lcd_cd_data_set().bit())
+            .field("lcd_cd_dummy_set", &self.lcd_cd_dummy_set().bit())
+            .field("lcd_cd_cmd_set", &self.lcd_cd_cmd_set().bit())
+            .field("lcd_cd_idle_edge", &self.lcd_cd_idle_edge().bit())
             .finish()
     }
 }
@@ -205,8 +181,6 @@ impl crate::Readable for LCD_MISC_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`lcd_misc::W`](W) writer structure"]
 impl crate::Writable for LCD_MISC_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets LCD_MISC to value 0xc0"]
 impl crate::Resettable for LCD_MISC_SPEC {

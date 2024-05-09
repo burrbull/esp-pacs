@@ -22,10 +22,7 @@ impl core::fmt::Debug for R {
         f.debug_struct("BACKUP_BUS_PMS_CONSTRAIN_5")
             .field(
                 "backup_bus_pms_constrain_rtcfast_spltaddr",
-                &format_args!(
-                    "{}",
-                    self.backup_bus_pms_constrain_rtcfast_spltaddr().bits()
-                ),
+                &self.backup_bus_pms_constrain_rtcfast_spltaddr().bits(),
             )
             .finish()
     }
@@ -56,8 +53,6 @@ impl crate::Readable for BACKUP_BUS_PMS_CONSTRAIN_5_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`backup_bus_pms_constrain_5::W`](W) writer structure"]
 impl crate::Writable for BACKUP_BUS_PMS_CONSTRAIN_5_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets BACKUP_BUS_PMS_CONSTRAIN_5 to value 0x07ff"]
 impl crate::Resettable for BACKUP_BUS_PMS_CONSTRAIN_5_SPEC {

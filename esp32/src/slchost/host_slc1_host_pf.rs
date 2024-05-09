@@ -13,10 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("HOST_SLC1_HOST_PF")
-            .field(
-                "host_slc1_pf_data",
-                &format_args!("{}", self.host_slc1_pf_data().bits()),
-            )
+            .field("host_slc1_pf_data", &self.host_slc1_pf_data().bits())
             .finish()
     }
 }
@@ -34,6 +31,4 @@ impl crate::RegisterSpec for HOST_SLC1_HOST_PF_SPEC {
 #[doc = "`read()` method returns [`host_slc1_host_pf::R`](R) reader structure"]
 impl crate::Readable for HOST_SLC1_HOST_PF_SPEC {}
 #[doc = "`reset()` method sets HOST_SLC1_HOST_PF to value 0"]
-impl crate::Resettable for HOST_SLC1_HOST_PF_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for HOST_SLC1_HOST_PF_SPEC {}

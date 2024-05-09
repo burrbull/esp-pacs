@@ -35,15 +35,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("ECC_PD_CTRL")
-            .field("ecc_mem_pd", &format_args!("{}", self.ecc_mem_pd().bit()))
-            .field(
-                "ecc_mem_force_pu",
-                &format_args!("{}", self.ecc_mem_force_pu().bit()),
-            )
-            .field(
-                "ecc_mem_force_pd",
-                &format_args!("{}", self.ecc_mem_force_pd().bit()),
-            )
+            .field("ecc_mem_pd", &self.ecc_mem_pd().bit())
+            .field("ecc_mem_force_pu", &self.ecc_mem_force_pu().bit())
+            .field("ecc_mem_force_pd", &self.ecc_mem_force_pd().bit())
             .finish()
     }
 }
@@ -83,8 +77,6 @@ impl crate::Readable for ECC_PD_CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`ecc_pd_ctrl::W`](W) writer structure"]
 impl crate::Writable for ECC_PD_CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets ECC_PD_CTRL to value 0x02"]
 impl crate::Resettable for ECC_PD_CTRL_SPEC {

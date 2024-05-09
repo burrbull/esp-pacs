@@ -13,7 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("BUSY")
-            .field("state", &format_args!("{}", self.state().bit()))
+            .field("state", &self.state().bit())
             .finish()
     }
 }
@@ -31,6 +31,4 @@ impl crate::RegisterSpec for BUSY_SPEC {
 #[doc = "`read()` method returns [`busy::R`](R) reader structure"]
 impl crate::Readable for BUSY_SPEC {}
 #[doc = "`reset()` method sets BUSY to value 0"]
-impl crate::Resettable for BUSY_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for BUSY_SPEC {}

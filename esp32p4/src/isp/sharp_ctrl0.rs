@@ -44,22 +44,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SHARP_CTRL0")
-            .field(
-                "sharp_threshold_low",
-                &format_args!("{}", self.sharp_threshold_low().bits()),
-            )
-            .field(
-                "sharp_threshold_high",
-                &format_args!("{}", self.sharp_threshold_high().bits()),
-            )
-            .field(
-                "sharp_amount_low",
-                &format_args!("{}", self.sharp_amount_low().bits()),
-            )
-            .field(
-                "sharp_amount_high",
-                &format_args!("{}", self.sharp_amount_high().bits()),
-            )
+            .field("sharp_threshold_low", &self.sharp_threshold_low().bits())
+            .field("sharp_threshold_high", &self.sharp_threshold_high().bits())
+            .field("sharp_amount_low", &self.sharp_amount_low().bits())
+            .field("sharp_amount_high", &self.sharp_amount_high().bits())
             .finish()
     }
 }
@@ -105,10 +93,6 @@ impl crate::Readable for SHARP_CTRL0_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`sharp_ctrl0::W`](W) writer structure"]
 impl crate::Writable for SHARP_CTRL0_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SHARP_CTRL0 to value 0"]
-impl crate::Resettable for SHARP_CTRL0_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for SHARP_CTRL0_SPEC {}

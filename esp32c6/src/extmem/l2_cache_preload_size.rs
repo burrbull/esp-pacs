@@ -15,7 +15,7 @@ impl core::fmt::Debug for R {
         f.debug_struct("L2_CACHE_PRELOAD_SIZE")
             .field(
                 "l2_cache_preload_size",
-                &format_args!("{}", self.l2_cache_preload_size().bits()),
+                &self.l2_cache_preload_size().bits(),
             )
             .finish()
     }
@@ -34,6 +34,4 @@ impl crate::RegisterSpec for L2_CACHE_PRELOAD_SIZE_SPEC {
 #[doc = "`read()` method returns [`l2_cache_preload_size::R`](R) reader structure"]
 impl crate::Readable for L2_CACHE_PRELOAD_SIZE_SPEC {}
 #[doc = "`reset()` method sets L2_CACHE_PRELOAD_SIZE to value 0"]
-impl crate::Resettable for L2_CACHE_PRELOAD_SIZE_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for L2_CACHE_PRELOAD_SIZE_SPEC {}

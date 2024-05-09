@@ -44,22 +44,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SAR_PERI_RESET_CONF")
-            .field(
-                "sar_cocpu_reset",
-                &format_args!("{}", self.sar_cocpu_reset().bit()),
-            )
-            .field(
-                "sar_rtc_i2c_reset",
-                &format_args!("{}", self.sar_rtc_i2c_reset().bit()),
-            )
-            .field(
-                "sar_tsens_reset",
-                &format_args!("{}", self.sar_tsens_reset().bit()),
-            )
-            .field(
-                "sar_saradc_reset",
-                &format_args!("{}", self.sar_saradc_reset().bit()),
-            )
+            .field("sar_cocpu_reset", &self.sar_cocpu_reset().bit())
+            .field("sar_rtc_i2c_reset", &self.sar_rtc_i2c_reset().bit())
+            .field("sar_tsens_reset", &self.sar_tsens_reset().bit())
+            .field("sar_saradc_reset", &self.sar_saradc_reset().bit())
             .finish()
     }
 }
@@ -105,10 +93,6 @@ impl crate::Readable for SAR_PERI_RESET_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`sar_peri_reset_conf::W`](W) writer structure"]
 impl crate::Writable for SAR_PERI_RESET_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SAR_PERI_RESET_CONF to value 0"]
-impl crate::Resettable for SAR_PERI_RESET_CONF_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for SAR_PERI_RESET_CONF_SPEC {}

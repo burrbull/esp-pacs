@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CPU_PERI_RST_EN")
-            .field(
-                "rst_en_dedicated_gpio",
-                &format_args!("{}", self.rst_en_dedicated_gpio().bit()),
-            )
+            .field("rst_en_dedicated_gpio", &self.rst_en_dedicated_gpio().bit())
             .finish()
     }
 }
@@ -48,8 +45,6 @@ impl crate::Readable for CPU_PERI_RST_EN_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`cpu_peri_rst_en::W`](W) writer structure"]
 impl crate::Writable for CPU_PERI_RST_EN_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CPU_PERI_RST_EN to value 0x80"]
 impl crate::Resettable for CPU_PERI_RST_EN_SPEC {

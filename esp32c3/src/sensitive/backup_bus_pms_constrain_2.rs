@@ -91,39 +91,39 @@ impl core::fmt::Debug for R {
         f.debug_struct("BACKUP_BUS_PMS_CONSTRAIN_2")
             .field(
                 "backup_bus_pms_constrain_bt",
-                &format_args!("{}", self.backup_bus_pms_constrain_bt().bits()),
+                &self.backup_bus_pms_constrain_bt().bits(),
             )
             .field(
                 "backup_bus_pms_constrain_i2c_ext0",
-                &format_args!("{}", self.backup_bus_pms_constrain_i2c_ext0().bits()),
+                &self.backup_bus_pms_constrain_i2c_ext0().bits(),
             )
             .field(
                 "backup_bus_pms_constrain_uhci0",
-                &format_args!("{}", self.backup_bus_pms_constrain_uhci0().bits()),
+                &self.backup_bus_pms_constrain_uhci0().bits(),
             )
             .field(
                 "backup_bus_pms_constrain_rmt",
-                &format_args!("{}", self.backup_bus_pms_constrain_rmt().bits()),
+                &self.backup_bus_pms_constrain_rmt().bits(),
             )
             .field(
                 "backup_bus_pms_constrain_ledc",
-                &format_args!("{}", self.backup_bus_pms_constrain_ledc().bits()),
+                &self.backup_bus_pms_constrain_ledc().bits(),
             )
             .field(
                 "backup_bus_pms_constrain_bb",
-                &format_args!("{}", self.backup_bus_pms_constrain_bb().bits()),
+                &self.backup_bus_pms_constrain_bb().bits(),
             )
             .field(
                 "backup_bus_pms_constrain_timergroup",
-                &format_args!("{}", self.backup_bus_pms_constrain_timergroup().bits()),
+                &self.backup_bus_pms_constrain_timergroup().bits(),
             )
             .field(
                 "backup_bus_pms_constrain_timergroup1",
-                &format_args!("{}", self.backup_bus_pms_constrain_timergroup1().bits()),
+                &self.backup_bus_pms_constrain_timergroup1().bits(),
             )
             .field(
                 "backup_bus_pms_constrain_systimer",
-                &format_args!("{}", self.backup_bus_pms_constrain_systimer().bits()),
+                &self.backup_bus_pms_constrain_systimer().bits(),
             )
             .finish()
     }
@@ -218,8 +218,6 @@ impl crate::Readable for BACKUP_BUS_PMS_CONSTRAIN_2_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`backup_bus_pms_constrain_2::W`](W) writer structure"]
 impl crate::Writable for BACKUP_BUS_PMS_CONSTRAIN_2_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets BACKUP_BUS_PMS_CONSTRAIN_2 to value 0xfcc3_0cf3"]
 impl crate::Resettable for BACKUP_BUS_PMS_CONSTRAIN_2_SPEC {

@@ -42,22 +42,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("RNG_CFG")
-            .field(
-                "rng_timer_en",
-                &format_args!("{}", self.rng_timer_en().bit()),
-            )
-            .field(
-                "rng_timer_pscale",
-                &format_args!("{}", self.rng_timer_pscale().bits()),
-            )
-            .field(
-                "rng_sar_enable",
-                &format_args!("{}", self.rng_sar_enable().bit()),
-            )
-            .field(
-                "rng_sar_data",
-                &format_args!("{}", self.rng_sar_data().bits()),
-            )
+            .field("rng_timer_en", &self.rng_timer_en().bit())
+            .field("rng_timer_pscale", &self.rng_timer_pscale().bits())
+            .field("rng_sar_enable", &self.rng_sar_enable().bit())
+            .field("rng_sar_data", &self.rng_sar_data().bits())
             .finish()
     }
 }
@@ -97,8 +85,6 @@ impl crate::Readable for RNG_CFG_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`rng_cfg::W`](W) writer structure"]
 impl crate::Writable for RNG_CFG_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets RNG_CFG to value 0x03"]
 impl crate::Resettable for RNG_CFG_SPEC {

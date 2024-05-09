@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("MS_DLEN")
-            .field(
-                "ms_data_bitlen",
-                &format_args!("{}", self.ms_data_bitlen().bits()),
-            )
+            .field("ms_data_bitlen", &self.ms_data_bitlen().bits())
             .finish()
     }
 }
@@ -48,10 +45,6 @@ impl crate::Readable for MS_DLEN_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`ms_dlen::W`](W) writer structure"]
 impl crate::Writable for MS_DLEN_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets MS_DLEN to value 0"]
-impl crate::Resettable for MS_DLEN_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for MS_DLEN_SPEC {}

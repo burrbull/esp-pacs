@@ -26,14 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("FORCE_WPD_SAR")
-            .field(
-                "force_xpd_sar1",
-                &format_args!("{}", self.force_xpd_sar1().bits()),
-            )
-            .field(
-                "force_xpd_sar2",
-                &format_args!("{}", self.force_xpd_sar2().bits()),
-            )
+            .field("force_xpd_sar1", &self.force_xpd_sar1().bits())
+            .field("force_xpd_sar2", &self.force_xpd_sar2().bits())
             .finish()
     }
 }
@@ -67,10 +61,6 @@ impl crate::Readable for FORCE_WPD_SAR_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`force_wpd_sar::W`](W) writer structure"]
 impl crate::Writable for FORCE_WPD_SAR_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets FORCE_WPD_SAR to value 0"]
-impl crate::Resettable for FORCE_WPD_SAR_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for FORCE_WPD_SAR_SPEC {}

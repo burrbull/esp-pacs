@@ -37,18 +37,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("USB_CTRL")
-            .field(
-                "sw_hw_usb_phy_sel",
-                &format_args!("{}", self.sw_hw_usb_phy_sel().bit()),
-            )
-            .field(
-                "sw_usb_phy_sel",
-                &format_args!("{}", self.sw_usb_phy_sel().bit()),
-            )
-            .field(
-                "usbotg20_in_suspend",
-                &format_args!("{}", self.usbotg20_in_suspend().bit()),
-            )
+            .field("sw_hw_usb_phy_sel", &self.sw_hw_usb_phy_sel().bit())
+            .field("sw_usb_phy_sel", &self.sw_usb_phy_sel().bit())
+            .field("usbotg20_in_suspend", &self.usbotg20_in_suspend().bit())
             .finish()
     }
 }
@@ -94,10 +85,6 @@ impl crate::Readable for USB_CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`usb_ctrl::W`](W) writer structure"]
 impl crate::Writable for USB_CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets USB_CTRL to value 0"]
-impl crate::Resettable for USB_CTRL_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for USB_CTRL_SPEC {}

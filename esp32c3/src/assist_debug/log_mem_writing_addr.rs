@@ -13,10 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("LOG_MEM_WRITING_ADDR")
-            .field(
-                "log_mem_writing_addr",
-                &format_args!("{}", self.log_mem_writing_addr().bits()),
-            )
+            .field("log_mem_writing_addr", &self.log_mem_writing_addr().bits())
             .finish()
     }
 }
@@ -34,6 +31,4 @@ impl crate::RegisterSpec for LOG_MEM_WRITING_ADDR_SPEC {
 #[doc = "`read()` method returns [`log_mem_writing_addr::R`](R) reader structure"]
 impl crate::Readable for LOG_MEM_WRITING_ADDR_SPEC {}
 #[doc = "`reset()` method sets LOG_MEM_WRITING_ADDR to value 0"]
-impl crate::Resettable for LOG_MEM_WRITING_ADDR_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for LOG_MEM_WRITING_ADDR_SPEC {}

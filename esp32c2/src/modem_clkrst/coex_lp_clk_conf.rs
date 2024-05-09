@@ -55,24 +55,15 @@ impl core::fmt::Debug for R {
         f.debug_struct("COEX_LP_CLK_CONF")
             .field(
                 "coex_lpclk_sel_rtc_slow",
-                &format_args!("{}", self.coex_lpclk_sel_rtc_slow().bit()),
+                &self.coex_lpclk_sel_rtc_slow().bit(),
             )
-            .field(
-                "coex_lpclk_sel_8m",
-                &format_args!("{}", self.coex_lpclk_sel_8m().bit()),
-            )
-            .field(
-                "coex_lpclk_sel_xtal",
-                &format_args!("{}", self.coex_lpclk_sel_xtal().bit()),
-            )
+            .field("coex_lpclk_sel_8m", &self.coex_lpclk_sel_8m().bit())
+            .field("coex_lpclk_sel_xtal", &self.coex_lpclk_sel_xtal().bit())
             .field(
                 "coex_lpclk_sel_xtal32k",
-                &format_args!("{}", self.coex_lpclk_sel_xtal32k().bit()),
+                &self.coex_lpclk_sel_xtal32k().bit(),
             )
-            .field(
-                "coex_lpclk_div_num",
-                &format_args!("{}", self.coex_lpclk_div_num().bits()),
-            )
+            .field("coex_lpclk_div_num", &self.coex_lpclk_div_num().bits())
             .finish()
     }
 }
@@ -124,10 +115,6 @@ impl crate::Readable for COEX_LP_CLK_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`coex_lp_clk_conf::W`](W) writer structure"]
 impl crate::Writable for COEX_LP_CLK_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets COEX_LP_CLK_CONF to value 0"]
-impl crate::Resettable for COEX_LP_CLK_CONF_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for COEX_LP_CLK_CONF_SPEC {}

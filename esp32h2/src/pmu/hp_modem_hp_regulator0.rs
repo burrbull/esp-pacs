@@ -73,31 +73,31 @@ impl core::fmt::Debug for R {
         f.debug_struct("HP_MODEM_HP_REGULATOR0")
             .field(
                 "hp_modem_hp_power_det_bypass",
-                &format_args!("{}", self.hp_modem_hp_power_det_bypass().bit()),
+                &self.hp_modem_hp_power_det_bypass().bit(),
             )
             .field(
                 "hp_modem_hp_regulator_slp_mem_xpd",
-                &format_args!("{}", self.hp_modem_hp_regulator_slp_mem_xpd().bit()),
+                &self.hp_modem_hp_regulator_slp_mem_xpd().bit(),
             )
             .field(
                 "hp_modem_hp_regulator_slp_logic_xpd",
-                &format_args!("{}", self.hp_modem_hp_regulator_slp_logic_xpd().bit()),
+                &self.hp_modem_hp_regulator_slp_logic_xpd().bit(),
             )
             .field(
                 "hp_modem_hp_regulator_xpd",
-                &format_args!("{}", self.hp_modem_hp_regulator_xpd().bit()),
+                &self.hp_modem_hp_regulator_xpd().bit(),
             )
             .field(
                 "hp_modem_hp_regulator_slp_mem_dbias",
-                &format_args!("{}", self.hp_modem_hp_regulator_slp_mem_dbias().bits()),
+                &self.hp_modem_hp_regulator_slp_mem_dbias().bits(),
             )
             .field(
                 "hp_modem_hp_regulator_slp_logic_dbias",
-                &format_args!("{}", self.hp_modem_hp_regulator_slp_logic_dbias().bits()),
+                &self.hp_modem_hp_regulator_slp_logic_dbias().bits(),
             )
             .field(
                 "hp_modem_hp_regulator_dbias",
-                &format_args!("{}", self.hp_modem_hp_regulator_dbias().bits()),
+                &self.hp_modem_hp_regulator_dbias().bits(),
             )
             .finish()
     }
@@ -176,8 +176,6 @@ impl crate::Readable for HP_MODEM_HP_REGULATOR0_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`hp_modem_hp_regulator0::W`](W) writer structure"]
 impl crate::Writable for HP_MODEM_HP_REGULATOR0_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets HP_MODEM_HP_REGULATOR0 to value 0x8447_0000"]
 impl crate::Resettable for HP_MODEM_HP_REGULATOR0_SPEC {

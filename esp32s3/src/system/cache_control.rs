@@ -44,22 +44,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CACHE_CONTROL")
-            .field(
-                "icache_clk_on",
-                &format_args!("{}", self.icache_clk_on().bit()),
-            )
-            .field(
-                "icache_reset",
-                &format_args!("{}", self.icache_reset().bit()),
-            )
-            .field(
-                "dcache_clk_on",
-                &format_args!("{}", self.dcache_clk_on().bit()),
-            )
-            .field(
-                "dcache_reset",
-                &format_args!("{}", self.dcache_reset().bit()),
-            )
+            .field("icache_clk_on", &self.icache_clk_on().bit())
+            .field("icache_reset", &self.icache_reset().bit())
+            .field("dcache_clk_on", &self.dcache_clk_on().bit())
+            .field("dcache_reset", &self.dcache_reset().bit())
             .finish()
     }
 }
@@ -105,8 +93,6 @@ impl crate::Readable for CACHE_CONTROL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`cache_control::W`](W) writer structure"]
 impl crate::Writable for CACHE_CONTROL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CACHE_CONTROL to value 0x05"]
 impl crate::Resettable for CACHE_CONTROL_SPEC {

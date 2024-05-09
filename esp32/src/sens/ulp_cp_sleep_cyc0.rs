@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("ULP_CP_SLEEP_CYC0")
-            .field(
-                "sleep_cycles_s0",
-                &format_args!("{}", self.sleep_cycles_s0().bits()),
-            )
+            .field("sleep_cycles_s0", &self.sleep_cycles_s0().bits())
             .finish()
     }
 }
@@ -48,8 +45,6 @@ impl crate::Readable for ULP_CP_SLEEP_CYC0_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`ulp_cp_sleep_cyc0::W`](W) writer structure"]
 impl crate::Writable for ULP_CP_SLEEP_CYC0_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets ULP_CP_SLEEP_CYC0 to value 0xc8"]
 impl crate::Resettable for ULP_CP_SLEEP_CYC0_SPEC {

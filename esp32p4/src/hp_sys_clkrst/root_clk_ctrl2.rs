@@ -46,19 +46,16 @@ impl core::fmt::Debug for R {
         f.debug_struct("ROOT_CLK_CTRL2")
             .field(
                 "sys_clk_div_numerator",
-                &format_args!("{}", self.sys_clk_div_numerator().bits()),
+                &self.sys_clk_div_numerator().bits(),
             )
             .field(
                 "sys_clk_div_denominator",
-                &format_args!("{}", self.sys_clk_div_denominator().bits()),
+                &self.sys_clk_div_denominator().bits(),
             )
-            .field(
-                "apb_clk_div_num",
-                &format_args!("{}", self.apb_clk_div_num().bits()),
-            )
+            .field("apb_clk_div_num", &self.apb_clk_div_num().bits())
             .field(
                 "apb_clk_div_numerator",
-                &format_args!("{}", self.apb_clk_div_numerator().bits()),
+                &self.apb_clk_div_numerator().bits(),
             )
             .finish()
     }
@@ -105,8 +102,6 @@ impl crate::Readable for ROOT_CLK_CTRL2_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`root_clk_ctrl2::W`](W) writer structure"]
 impl crate::Writable for ROOT_CLK_CTRL2_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets ROOT_CLK_CTRL2 to value 0x0001_0000"]
 impl crate::Resettable for ROOT_CLK_CTRL2_SPEC {

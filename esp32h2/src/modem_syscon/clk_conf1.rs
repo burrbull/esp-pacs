@@ -71,31 +71,13 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CLK_CONF1")
-            .field(
-                "clk_fe_16m_en",
-                &format_args!("{}", self.clk_fe_16m_en().bit()),
-            )
-            .field(
-                "clk_fe_32m_en",
-                &format_args!("{}", self.clk_fe_32m_en().bit()),
-            )
-            .field(
-                "clk_fe_sdm_en",
-                &format_args!("{}", self.clk_fe_sdm_en().bit()),
-            )
-            .field(
-                "clk_fe_adc_en",
-                &format_args!("{}", self.clk_fe_adc_en().bit()),
-            )
-            .field(
-                "clk_fe_apb_en",
-                &format_args!("{}", self.clk_fe_apb_en().bit()),
-            )
-            .field(
-                "clk_bt_apb_en",
-                &format_args!("{}", self.clk_bt_apb_en().bit()),
-            )
-            .field("clk_bt_en", &format_args!("{}", self.clk_bt_en().bit()))
+            .field("clk_fe_16m_en", &self.clk_fe_16m_en().bit())
+            .field("clk_fe_32m_en", &self.clk_fe_32m_en().bit())
+            .field("clk_fe_sdm_en", &self.clk_fe_sdm_en().bit())
+            .field("clk_fe_adc_en", &self.clk_fe_adc_en().bit())
+            .field("clk_fe_apb_en", &self.clk_fe_apb_en().bit())
+            .field("clk_bt_apb_en", &self.clk_bt_apb_en().bit())
+            .field("clk_bt_en", &self.clk_bt_en().bit())
             .finish()
     }
 }
@@ -159,10 +141,6 @@ impl crate::Readable for CLK_CONF1_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`clk_conf1::W`](W) writer structure"]
 impl crate::Writable for CLK_CONF1_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CLK_CONF1 to value 0"]
-impl crate::Resettable for CLK_CONF1_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for CLK_CONF1_SPEC {}

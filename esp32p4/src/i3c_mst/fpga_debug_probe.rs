@@ -19,7 +19,7 @@ impl core::fmt::Debug for R {
         f.debug_struct("FPGA_DEBUG_PROBE")
             .field(
                 "reg_i3c_mst_fpga_debug_probe",
-                &format_args!("{}", self.reg_i3c_mst_fpga_debug_probe().bits()),
+                &self.reg_i3c_mst_fpga_debug_probe().bits(),
             )
             .finish()
     }
@@ -50,8 +50,6 @@ impl crate::Readable for FPGA_DEBUG_PROBE_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`fpga_debug_probe::W`](W) writer structure"]
 impl crate::Writable for FPGA_DEBUG_PROBE_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets FPGA_DEBUG_PROBE to value 0x01"]
 impl crate::Resettable for FPGA_DEBUG_PROBE_SPEC {

@@ -22,11 +22,11 @@ impl core::fmt::Debug for R {
         f.debug_struct("L2_CACHE_TAG_MEM_ACS_CONF")
             .field(
                 "l2_cache_tag_mem_rd_en",
-                &format_args!("{}", self.l2_cache_tag_mem_rd_en().bit()),
+                &self.l2_cache_tag_mem_rd_en().bit(),
             )
             .field(
                 "l2_cache_tag_mem_wr_en",
-                &format_args!("{}", self.l2_cache_tag_mem_wr_en().bit()),
+                &self.l2_cache_tag_mem_wr_en().bit(),
             )
             .finish()
     }
@@ -45,6 +45,4 @@ impl crate::RegisterSpec for L2_CACHE_TAG_MEM_ACS_CONF_SPEC {
 #[doc = "`read()` method returns [`l2_cache_tag_mem_acs_conf::R`](R) reader structure"]
 impl crate::Readable for L2_CACHE_TAG_MEM_ACS_CONF_SPEC {}
 #[doc = "`reset()` method sets L2_CACHE_TAG_MEM_ACS_CONF to value 0"]
-impl crate::Resettable for L2_CACHE_TAG_MEM_ACS_CONF_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for L2_CACHE_TAG_MEM_ACS_CONF_SPEC {}

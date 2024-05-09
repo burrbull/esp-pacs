@@ -40,22 +40,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CACHE_LOCK_CTRL")
-            .field(
-                "cache_lock_ena",
-                &format_args!("{}", self.cache_lock_ena().bit()),
-            )
-            .field(
-                "cache_unlock_ena",
-                &format_args!("{}", self.cache_unlock_ena().bit()),
-            )
-            .field(
-                "cache_lock_done",
-                &format_args!("{}", self.cache_lock_done().bit()),
-            )
-            .field(
-                "cache_lock_rgid",
-                &format_args!("{}", self.cache_lock_rgid().bits()),
-            )
+            .field("cache_lock_ena", &self.cache_lock_ena().bit())
+            .field("cache_unlock_ena", &self.cache_unlock_ena().bit())
+            .field("cache_lock_done", &self.cache_lock_done().bit())
+            .field("cache_lock_rgid", &self.cache_lock_rgid().bits())
             .finish()
     }
 }
@@ -89,8 +77,6 @@ impl crate::Readable for CACHE_LOCK_CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`cache_lock_ctrl::W`](W) writer structure"]
 impl crate::Writable for CACHE_LOCK_CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CACHE_LOCK_CTRL to value 0x04"]
 impl crate::Resettable for CACHE_LOCK_CTRL_SPEC {

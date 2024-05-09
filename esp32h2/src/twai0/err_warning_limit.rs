@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("ERR_WARNING_LIMIT")
-            .field(
-                "err_warning_limit",
-                &format_args!("{}", self.err_warning_limit().bits()),
-            )
+            .field("err_warning_limit", &self.err_warning_limit().bits())
             .finish()
     }
 }
@@ -48,8 +45,6 @@ impl crate::Readable for ERR_WARNING_LIMIT_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`err_warning_limit::W`](W) writer structure"]
 impl crate::Writable for ERR_WARNING_LIMIT_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets ERR_WARNING_LIMIT to value 0x60"]
 impl crate::Resettable for ERR_WARNING_LIMIT_SPEC {

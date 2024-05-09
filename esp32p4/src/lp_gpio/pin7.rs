@@ -39,15 +39,15 @@ impl core::fmt::Debug for R {
         f.debug_struct("PIN7")
             .field(
                 "reg_gpio_pin7_wakeup_enable",
-                &format_args!("{}", self.reg_gpio_pin7_wakeup_enable().bit()),
+                &self.reg_gpio_pin7_wakeup_enable().bit(),
             )
             .field(
                 "reg_gpio_pin7_int_type",
-                &format_args!("{}", self.reg_gpio_pin7_int_type().bits()),
+                &self.reg_gpio_pin7_int_type().bits(),
             )
             .field(
                 "reg_gpio_pin7_pad_driver",
-                &format_args!("{}", self.reg_gpio_pin7_pad_driver().bit()),
+                &self.reg_gpio_pin7_pad_driver().bit(),
             )
             .finish()
     }
@@ -94,10 +94,6 @@ impl crate::Readable for PIN7_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`pin7::W`](W) writer structure"]
 impl crate::Writable for PIN7_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets PIN7 to value 0"]
-impl crate::Resettable for PIN7_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for PIN7_SPEC {}

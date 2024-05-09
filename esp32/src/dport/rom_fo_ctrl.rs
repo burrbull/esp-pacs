@@ -35,12 +35,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("ROM_FO_CTRL")
-            .field("pro_rom_fo", &format_args!("{}", self.pro_rom_fo().bit()))
-            .field("app_rom_fo", &format_args!("{}", self.app_rom_fo().bit()))
-            .field(
-                "share_rom_fo",
-                &format_args!("{}", self.share_rom_fo().bits()),
-            )
+            .field("pro_rom_fo", &self.pro_rom_fo().bit())
+            .field("app_rom_fo", &self.app_rom_fo().bit())
+            .field("share_rom_fo", &self.share_rom_fo().bits())
             .finish()
     }
 }
@@ -80,8 +77,6 @@ impl crate::Readable for ROM_FO_CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`rom_fo_ctrl::W`](W) writer structure"]
 impl crate::Writable for ROM_FO_CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets ROM_FO_CTRL to value 0x03"]
 impl crate::Resettable for ROM_FO_CTRL_SPEC {

@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("HP_REGULATOR_CFG")
-            .field(
-                "dig_regulator_en_cal",
-                &format_args!("{}", self.dig_regulator_en_cal().bit()),
-            )
+            .field("dig_regulator_en_cal", &self.dig_regulator_en_cal().bit())
             .finish()
     }
 }
@@ -48,10 +45,6 @@ impl crate::Readable for HP_REGULATOR_CFG_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`hp_regulator_cfg::W`](W) writer structure"]
 impl crate::Writable for HP_REGULATOR_CFG_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets HP_REGULATOR_CFG to value 0"]
-impl crate::Resettable for HP_REGULATOR_CFG_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for HP_REGULATOR_CFG_SPEC {}

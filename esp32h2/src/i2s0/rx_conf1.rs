@@ -44,22 +44,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("RX_CONF1")
-            .field(
-                "rx_tdm_ws_width",
-                &format_args!("{}", self.rx_tdm_ws_width().bits()),
-            )
-            .field(
-                "rx_bits_mod",
-                &format_args!("{}", self.rx_bits_mod().bits()),
-            )
-            .field(
-                "rx_half_sample_bits",
-                &format_args!("{}", self.rx_half_sample_bits().bits()),
-            )
-            .field(
-                "rx_tdm_chan_bits",
-                &format_args!("{}", self.rx_tdm_chan_bits().bits()),
-            )
+            .field("rx_tdm_ws_width", &self.rx_tdm_ws_width().bits())
+            .field("rx_bits_mod", &self.rx_bits_mod().bits())
+            .field("rx_half_sample_bits", &self.rx_half_sample_bits().bits())
+            .field("rx_tdm_chan_bits", &self.rx_tdm_chan_bits().bits())
             .finish()
     }
 }
@@ -105,8 +93,6 @@ impl crate::Readable for RX_CONF1_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`rx_conf1::W`](W) writer structure"]
 impl crate::Writable for RX_CONF1_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets RX_CONF1 to value 0x787b_c000"]
 impl crate::Resettable for RX_CONF1_SPEC {

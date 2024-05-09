@@ -76,32 +76,14 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SAR_TSENS_CTRL")
-            .field("tsens_out", &format_args!("{}", self.tsens_out().bits()))
-            .field("tsens_ready", &format_args!("{}", self.tsens_ready().bit()))
-            .field(
-                "tsens_int_en",
-                &format_args!("{}", self.tsens_int_en().bit()),
-            )
-            .field(
-                "tsens_in_inv",
-                &format_args!("{}", self.tsens_in_inv().bit()),
-            )
-            .field(
-                "tsens_clk_div",
-                &format_args!("{}", self.tsens_clk_div().bits()),
-            )
-            .field(
-                "tsens_power_up",
-                &format_args!("{}", self.tsens_power_up().bit()),
-            )
-            .field(
-                "tsens_power_up_force",
-                &format_args!("{}", self.tsens_power_up_force().bit()),
-            )
-            .field(
-                "tsens_dump_out",
-                &format_args!("{}", self.tsens_dump_out().bit()),
-            )
+            .field("tsens_out", &self.tsens_out().bits())
+            .field("tsens_ready", &self.tsens_ready().bit())
+            .field("tsens_int_en", &self.tsens_int_en().bit())
+            .field("tsens_in_inv", &self.tsens_in_inv().bit())
+            .field("tsens_clk_div", &self.tsens_clk_div().bits())
+            .field("tsens_power_up", &self.tsens_power_up().bit())
+            .field("tsens_power_up_force", &self.tsens_power_up_force().bit())
+            .field("tsens_dump_out", &self.tsens_dump_out().bit())
             .finish()
     }
 }
@@ -159,8 +141,6 @@ impl crate::Readable for SAR_TSENS_CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`sar_tsens_ctrl::W`](W) writer structure"]
 impl crate::Writable for SAR_TSENS_CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SAR_TSENS_CTRL to value 0x0001_9000"]
 impl crate::Resettable for SAR_TSENS_CTRL_SPEC {

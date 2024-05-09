@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("DBUS_PMS_TBL_BOUNDARY2")
-            .field(
-                "dbus_pms_boundary2",
-                &format_args!("{}", self.dbus_pms_boundary2().bits()),
-            )
+            .field("dbus_pms_boundary2", &self.dbus_pms_boundary2().bits())
             .finish()
     }
 }
@@ -48,8 +45,6 @@ impl crate::Readable for DBUS_PMS_TBL_BOUNDARY2_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`dbus_pms_tbl_boundary2::W`](W) writer structure"]
 impl crate::Writable for DBUS_PMS_TBL_BOUNDARY2_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets DBUS_PMS_TBL_BOUNDARY2 to value 0x0800"]
 impl crate::Resettable for DBUS_PMS_TBL_BOUNDARY2_SPEC {

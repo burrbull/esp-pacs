@@ -53,14 +53,11 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("THRES_CTRL")
-            .field(
-                "thres_all_en",
-                &format_args!("{}", self.thres_all_en().bit()),
-            )
-            .field("thres3_en", &format_args!("{}", self.thres3_en().bit()))
-            .field("thres2_en", &format_args!("{}", self.thres2_en().bit()))
-            .field("thres1_en", &format_args!("{}", self.thres1_en().bit()))
-            .field("thres0_en", &format_args!("{}", self.thres0_en().bit()))
+            .field("thres_all_en", &self.thres_all_en().bit())
+            .field("thres3_en", &self.thres3_en().bit())
+            .field("thres2_en", &self.thres2_en().bit())
+            .field("thres1_en", &self.thres1_en().bit())
+            .field("thres0_en", &self.thres0_en().bit())
             .finish()
     }
 }
@@ -112,10 +109,6 @@ impl crate::Readable for THRES_CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`thres_ctrl::W`](W) writer structure"]
 impl crate::Writable for THRES_CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets THRES_CTRL to value 0"]
-impl crate::Resettable for THRES_CTRL_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for THRES_CTRL_SPEC {}

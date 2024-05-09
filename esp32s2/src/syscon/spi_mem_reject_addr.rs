@@ -13,10 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SPI_MEM_REJECT_ADDR")
-            .field(
-                "spi_mem_reject_addr",
-                &format_args!("{}", self.spi_mem_reject_addr().bits()),
-            )
+            .field("spi_mem_reject_addr", &self.spi_mem_reject_addr().bits())
             .finish()
     }
 }
@@ -34,6 +31,4 @@ impl crate::RegisterSpec for SPI_MEM_REJECT_ADDR_SPEC {
 #[doc = "`read()` method returns [`spi_mem_reject_addr::R`](R) reader structure"]
 impl crate::Readable for SPI_MEM_REJECT_ADDR_SPEC {}
 #[doc = "`reset()` method sets SPI_MEM_REJECT_ADDR to value 0"]
-impl crate::Resettable for SPI_MEM_REJECT_ADDR_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for SPI_MEM_REJECT_ADDR_SPEC {}

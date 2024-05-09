@@ -89,30 +89,15 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SAR_DAC_CTRL1")
-            .field("sw_fstep", &format_args!("{}", self.sw_fstep().bits()))
-            .field("sw_tone_en", &format_args!("{}", self.sw_tone_en().bit()))
-            .field(
-                "debug_bit_sel",
-                &format_args!("{}", self.debug_bit_sel().bits()),
-            )
-            .field(
-                "dac_dig_force",
-                &format_args!("{}", self.dac_dig_force().bit()),
-            )
-            .field(
-                "dac_clk_force_low",
-                &format_args!("{}", self.dac_clk_force_low().bit()),
-            )
-            .field(
-                "dac_clk_force_high",
-                &format_args!("{}", self.dac_clk_force_high().bit()),
-            )
-            .field("dac_clk_inv", &format_args!("{}", self.dac_clk_inv().bit()))
-            .field("dac_reset", &format_args!("{}", self.dac_reset().bit()))
-            .field(
-                "dac_clkgate_en",
-                &format_args!("{}", self.dac_clkgate_en().bit()),
-            )
+            .field("sw_fstep", &self.sw_fstep().bits())
+            .field("sw_tone_en", &self.sw_tone_en().bit())
+            .field("debug_bit_sel", &self.debug_bit_sel().bits())
+            .field("dac_dig_force", &self.dac_dig_force().bit())
+            .field("dac_clk_force_low", &self.dac_clk_force_low().bit())
+            .field("dac_clk_force_high", &self.dac_clk_force_high().bit())
+            .field("dac_clk_inv", &self.dac_clk_inv().bit())
+            .field("dac_reset", &self.dac_reset().bit())
+            .field("dac_clkgate_en", &self.dac_clkgate_en().bit())
             .finish()
     }
 }
@@ -188,10 +173,6 @@ impl crate::Readable for SAR_DAC_CTRL1_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`sar_dac_ctrl1::W`](W) writer structure"]
 impl crate::Writable for SAR_DAC_CTRL1_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SAR_DAC_CTRL1 to value 0"]
-impl crate::Resettable for SAR_DAC_CTRL1_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for SAR_DAC_CTRL1_SPEC {}

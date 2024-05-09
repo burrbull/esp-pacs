@@ -83,41 +83,38 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PRO_DCACHE_DBUG3")
-            .field(
-                "pro_mmu_rdata",
-                &format_args!("{}", self.pro_mmu_rdata().bits()),
-            )
+            .field("pro_mmu_rdata", &self.pro_mmu_rdata().bits())
             .field(
                 "pro_cpu_disabled_cache_ia",
-                &format_args!("{}", self.pro_cpu_disabled_cache_ia().bits()),
+                &self.pro_cpu_disabled_cache_ia().bits(),
             )
             .field(
                 "pro_cpu_disabled_cache_ia_opposite",
-                &format_args!("{}", self.pro_cpu_disabled_cache_ia_opposite().bit()),
+                &self.pro_cpu_disabled_cache_ia_opposite().bit(),
             )
             .field(
                 "pro_cpu_disabled_cache_ia_dram1",
-                &format_args!("{}", self.pro_cpu_disabled_cache_ia_dram1().bit()),
+                &self.pro_cpu_disabled_cache_ia_dram1().bit(),
             )
             .field(
                 "pro_cpu_disabled_cache_ia_irom0",
-                &format_args!("{}", self.pro_cpu_disabled_cache_ia_irom0().bit()),
+                &self.pro_cpu_disabled_cache_ia_irom0().bit(),
             )
             .field(
                 "pro_cpu_disabled_cache_ia_iram1",
-                &format_args!("{}", self.pro_cpu_disabled_cache_ia_iram1().bit()),
+                &self.pro_cpu_disabled_cache_ia_iram1().bit(),
             )
             .field(
                 "pro_cpu_disabled_cache_ia_iram0",
-                &format_args!("{}", self.pro_cpu_disabled_cache_ia_iram0().bit()),
+                &self.pro_cpu_disabled_cache_ia_iram0().bit(),
             )
             .field(
                 "pro_cpu_disabled_cache_ia_drom0",
-                &format_args!("{}", self.pro_cpu_disabled_cache_ia_drom0().bit()),
+                &self.pro_cpu_disabled_cache_ia_drom0().bit(),
             )
             .field(
                 "pro_cache_iram0_pid_error",
-                &format_args!("{}", self.pro_cache_iram0_pid_error().bit()),
+                &self.pro_cache_iram0_pid_error().bit(),
             )
             .finish()
     }
@@ -188,10 +185,6 @@ impl crate::Readable for PRO_DCACHE_DBUG3_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`pro_dcache_dbug3::W`](W) writer structure"]
 impl crate::Writable for PRO_DCACHE_DBUG3_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets PRO_DCACHE_DBUG3 to value 0"]
-impl crate::Resettable for PRO_DCACHE_DBUG3_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for PRO_DCACHE_DBUG3_SPEC {}

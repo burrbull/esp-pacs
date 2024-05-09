@@ -19,7 +19,7 @@ impl core::fmt::Debug for R {
         f.debug_struct("CORE_0_VECBASE_OVERRIDE_2")
             .field(
                 "core_0_vecbase_override_world1_value",
-                &format_args!("{}", self.core_0_vecbase_override_world1_value().bits()),
+                &self.core_0_vecbase_override_world1_value().bits(),
             )
             .finish()
     }
@@ -50,10 +50,6 @@ impl crate::Readable for CORE_0_VECBASE_OVERRIDE_2_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`core_0_vecbase_override_2::W`](W) writer structure"]
 impl crate::Writable for CORE_0_VECBASE_OVERRIDE_2_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CORE_0_VECBASE_OVERRIDE_2 to value 0"]
-impl crate::Resettable for CORE_0_VECBASE_OVERRIDE_2_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for CORE_0_VECBASE_OVERRIDE_2_SPEC {}

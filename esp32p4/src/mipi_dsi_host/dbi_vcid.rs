@@ -17,7 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("DBI_VCID")
-            .field("dbi_vcid", &format_args!("{}", self.dbi_vcid().bits()))
+            .field("dbi_vcid", &self.dbi_vcid().bits())
             .finish()
     }
 }
@@ -45,10 +45,6 @@ impl crate::Readable for DBI_VCID_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`dbi_vcid::W`](W) writer structure"]
 impl crate::Writable for DBI_VCID_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets DBI_VCID to value 0"]
-impl crate::Resettable for DBI_VCID_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for DBI_VCID_SPEC {}

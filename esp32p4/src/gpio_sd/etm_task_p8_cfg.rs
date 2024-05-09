@@ -86,14 +86,14 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("ETM_TASK_P8_CFG")
-            .field("gpio32_en", &format_args!("{}", self.gpio32_en().bit()))
-            .field("gpio33_en", &format_args!("{}", self.gpio33_en().bit()))
-            .field("gpio34_en", &format_args!("{}", self.gpio34_en().bit()))
-            .field("gpio35_en", &format_args!("{}", self.gpio35_en().bit()))
-            .field("gpio32_sel", &format_args!("{}", self.gpio32_sel().bits()))
-            .field("gpio33_sel", &format_args!("{}", self.gpio33_sel().bits()))
-            .field("gpio34_sel", &format_args!("{}", self.gpio34_sel().bits()))
-            .field("gpio35_sel", &format_args!("{}", self.gpio35_sel().bits()))
+            .field("gpio32_en", &self.gpio32_en().bit())
+            .field("gpio33_en", &self.gpio33_en().bit())
+            .field("gpio34_en", &self.gpio34_en().bit())
+            .field("gpio35_en", &self.gpio35_en().bit())
+            .field("gpio32_sel", &self.gpio32_sel().bits())
+            .field("gpio33_sel", &self.gpio33_sel().bits())
+            .field("gpio34_sel", &self.gpio34_sel().bits())
+            .field("gpio35_sel", &self.gpio35_sel().bits())
             .finish()
     }
 }
@@ -183,10 +183,6 @@ impl crate::Readable for ETM_TASK_P8_CFG_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`etm_task_p8_cfg::W`](W) writer structure"]
 impl crate::Writable for ETM_TASK_P8_CFG_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets ETM_TASK_P8_CFG to value 0"]
-impl crate::Resettable for ETM_TASK_P8_CFG_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for ETM_TASK_P8_CFG_SPEC {}

@@ -35,18 +35,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("POWER_VDD_SPI_CNTL")
-            .field(
-                "vdd_spi_pwr_wait",
-                &format_args!("{}", self.vdd_spi_pwr_wait().bits()),
-            )
-            .field(
-                "vdd_spi_pwr_sw",
-                &format_args!("{}", self.vdd_spi_pwr_sw().bits()),
-            )
-            .field(
-                "vdd_spi_pwr_sel_sw",
-                &format_args!("{}", self.vdd_spi_pwr_sel_sw().bit()),
-            )
+            .field("vdd_spi_pwr_wait", &self.vdd_spi_pwr_wait().bits())
+            .field("vdd_spi_pwr_sw", &self.vdd_spi_pwr_sw().bits())
+            .field("vdd_spi_pwr_sel_sw", &self.vdd_spi_pwr_sel_sw().bit())
             .finish()
     }
 }
@@ -86,8 +77,6 @@ impl crate::Readable for POWER_VDD_SPI_CNTL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`power_vdd_spi_cntl::W`](W) writer structure"]
 impl crate::Writable for POWER_VDD_SPI_CNTL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets POWER_VDD_SPI_CNTL to value 0x63fc_0000"]
 impl crate::Resettable for POWER_VDD_SPI_CNTL_SPEC {

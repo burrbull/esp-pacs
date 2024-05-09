@@ -53,14 +53,11 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("USER")
-            .field("cs_hold", &format_args!("{}", self.cs_hold().bit()))
-            .field("cs_setup", &format_args!("{}", self.cs_setup().bit()))
-            .field("ck_out_edge", &format_args!("{}", self.ck_out_edge().bit()))
-            .field(
-                "usr_dummy_idle",
-                &format_args!("{}", self.usr_dummy_idle().bit()),
-            )
-            .field("usr_dummy", &format_args!("{}", self.usr_dummy().bit()))
+            .field("cs_hold", &self.cs_hold().bit())
+            .field("cs_setup", &self.cs_setup().bit())
+            .field("ck_out_edge", &self.ck_out_edge().bit())
+            .field("usr_dummy_idle", &self.usr_dummy_idle().bit())
+            .field("usr_dummy", &self.usr_dummy().bit())
             .finish()
     }
 }
@@ -112,10 +109,6 @@ impl crate::Readable for USER_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`user::W`](W) writer structure"]
 impl crate::Writable for USER_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets USER to value 0"]
-impl crate::Resettable for USER_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for USER_SPEC {}

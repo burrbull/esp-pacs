@@ -13,10 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("EXT_WAKEUP_ST")
-            .field(
-                "ext_wakeup_status",
-                &format_args!("{}", self.ext_wakeup_status().bits()),
-            )
+            .field("ext_wakeup_status", &self.ext_wakeup_status().bits())
             .finish()
     }
 }
@@ -34,6 +31,4 @@ impl crate::RegisterSpec for EXT_WAKEUP_ST_SPEC {
 #[doc = "`read()` method returns [`ext_wakeup_st::R`](R) reader structure"]
 impl crate::Readable for EXT_WAKEUP_ST_SPEC {}
 #[doc = "`reset()` method sets EXT_WAKEUP_ST to value 0"]
-impl crate::Resettable for EXT_WAKEUP_ST_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for EXT_WAKEUP_ST_SPEC {}

@@ -13,10 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SET_LINE_CODE_W0")
-            .field(
-                "dw_dte_rate",
-                &format_args!("{}", self.dw_dte_rate().bits()),
-            )
+            .field("dw_dte_rate", &self.dw_dte_rate().bits())
             .finish()
     }
 }
@@ -34,6 +31,4 @@ impl crate::RegisterSpec for SET_LINE_CODE_W0_SPEC {
 #[doc = "`read()` method returns [`set_line_code_w0::R`](R) reader structure"]
 impl crate::Readable for SET_LINE_CODE_W0_SPEC {}
 #[doc = "`reset()` method sets SET_LINE_CODE_W0 to value 0"]
-impl crate::Resettable for SET_LINE_CODE_W0_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for SET_LINE_CODE_W0_SPEC {}

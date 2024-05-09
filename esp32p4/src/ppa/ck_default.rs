@@ -44,21 +44,12 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CK_DEFAULT")
-            .field(
-                "colorkey_default_b",
-                &format_args!("{}", self.colorkey_default_b().bits()),
-            )
-            .field(
-                "colorkey_default_g",
-                &format_args!("{}", self.colorkey_default_g().bits()),
-            )
-            .field(
-                "colorkey_default_r",
-                &format_args!("{}", self.colorkey_default_r().bits()),
-            )
+            .field("colorkey_default_b", &self.colorkey_default_b().bits())
+            .field("colorkey_default_g", &self.colorkey_default_g().bits())
+            .field("colorkey_default_r", &self.colorkey_default_r().bits())
             .field(
                 "colorkey_fg_bg_reverse",
-                &format_args!("{}", self.colorkey_fg_bg_reverse().bit()),
+                &self.colorkey_fg_bg_reverse().bit(),
             )
             .finish()
     }
@@ -105,10 +96,6 @@ impl crate::Readable for CK_DEFAULT_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`ck_default::W`](W) writer structure"]
 impl crate::Writable for CK_DEFAULT_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CK_DEFAULT to value 0"]
-impl crate::Resettable for CK_DEFAULT_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for CK_DEFAULT_SPEC {}

@@ -33,12 +33,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SRAM_USAGE_CONF")
-            .field("cache_usage", &format_args!("{}", self.cache_usage().bit()))
-            .field("sram_usage", &format_args!("{}", self.sram_usage().bits()))
-            .field(
-                "mac_dump_alloc",
-                &format_args!("{}", self.mac_dump_alloc().bit()),
-            )
+            .field("cache_usage", &self.cache_usage().bit())
+            .field("sram_usage", &self.sram_usage().bits())
+            .field("mac_dump_alloc", &self.mac_dump_alloc().bit())
             .finish()
     }
 }
@@ -72,10 +69,6 @@ impl crate::Readable for SRAM_USAGE_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`sram_usage_conf::W`](W) writer structure"]
 impl crate::Writable for SRAM_USAGE_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SRAM_USAGE_CONF to value 0"]
-impl crate::Resettable for SRAM_USAGE_CONF_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for SRAM_USAGE_CONF_SPEC {}

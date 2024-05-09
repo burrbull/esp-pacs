@@ -17,7 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CLOCK_GATE")
-            .field("clk_en", &format_args!("{}", self.clk_en().bit()))
+            .field("clk_en", &self.clk_en().bit())
             .finish()
     }
 }
@@ -45,8 +45,6 @@ impl crate::Readable for CLOCK_GATE_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`clock_gate::W`](W) writer structure"]
 impl crate::Writable for CLOCK_GATE_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CLOCK_GATE to value 0x01"]
 impl crate::Resettable for CLOCK_GATE_SPEC {

@@ -44,10 +44,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("TZ_CFG1")
-            .field("clr_ost", &format_args!("{}", self.clr_ost().bit()))
-            .field("cbcpulse", &format_args!("{}", self.cbcpulse().bits()))
-            .field("force_cbc", &format_args!("{}", self.force_cbc().bit()))
-            .field("force_ost", &format_args!("{}", self.force_ost().bit()))
+            .field("clr_ost", &self.clr_ost().bit())
+            .field("cbcpulse", &self.cbcpulse().bits())
+            .field("force_cbc", &self.force_cbc().bit())
+            .field("force_ost", &self.force_ost().bit())
             .finish()
     }
 }
@@ -93,10 +93,6 @@ impl crate::Readable for TZ_CFG1_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`tz_cfg1::W`](W) writer structure"]
 impl crate::Writable for TZ_CFG1_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets TZ_CFG1 to value 0"]
-impl crate::Resettable for TZ_CFG1_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for TZ_CFG1_SPEC {}

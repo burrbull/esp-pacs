@@ -71,31 +71,13 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("BIAS_CONF")
-            .field("dbg_atten", &format_args!("{}", self.dbg_atten().bits()))
-            .field(
-                "enb_sck_xtal",
-                &format_args!("{}", self.enb_sck_xtal().bit()),
-            )
-            .field(
-                "inc_heartbeat_refresh",
-                &format_args!("{}", self.inc_heartbeat_refresh().bit()),
-            )
-            .field(
-                "dec_heartbeat_period",
-                &format_args!("{}", self.dec_heartbeat_period().bit()),
-            )
-            .field(
-                "inc_heartbeat_period",
-                &format_args!("{}", self.inc_heartbeat_period().bit()),
-            )
-            .field(
-                "dec_heartbeat_width",
-                &format_args!("{}", self.dec_heartbeat_width().bit()),
-            )
-            .field(
-                "rst_bias_i2c",
-                &format_args!("{}", self.rst_bias_i2c().bit()),
-            )
+            .field("dbg_atten", &self.dbg_atten().bits())
+            .field("enb_sck_xtal", &self.enb_sck_xtal().bit())
+            .field("inc_heartbeat_refresh", &self.inc_heartbeat_refresh().bit())
+            .field("dec_heartbeat_period", &self.dec_heartbeat_period().bit())
+            .field("inc_heartbeat_period", &self.inc_heartbeat_period().bit())
+            .field("dec_heartbeat_width", &self.dec_heartbeat_width().bit())
+            .field("rst_bias_i2c", &self.rst_bias_i2c().bit())
             .finish()
     }
 }
@@ -159,10 +141,6 @@ impl crate::Readable for BIAS_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`bias_conf::W`](W) writer structure"]
 impl crate::Writable for BIAS_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets BIAS_CONF to value 0"]
-impl crate::Resettable for BIAS_CONF_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for BIAS_CONF_SPEC {}

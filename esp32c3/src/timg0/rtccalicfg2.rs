@@ -33,17 +33,14 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("RTCCALICFG2")
-            .field(
-                "rtc_cali_timeout",
-                &format_args!("{}", self.rtc_cali_timeout().bit()),
-            )
+            .field("rtc_cali_timeout", &self.rtc_cali_timeout().bit())
             .field(
                 "rtc_cali_timeout_rst_cnt",
-                &format_args!("{}", self.rtc_cali_timeout_rst_cnt().bits()),
+                &self.rtc_cali_timeout_rst_cnt().bits(),
             )
             .field(
                 "rtc_cali_timeout_thres",
-                &format_args!("{}", self.rtc_cali_timeout_thres().bits()),
+                &self.rtc_cali_timeout_thres().bits(),
             )
             .finish()
     }
@@ -78,8 +75,6 @@ impl crate::Readable for RTCCALICFG2_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`rtccalicfg2::W`](W) writer structure"]
 impl crate::Writable for RTCCALICFG2_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets RTCCALICFG2 to value 0xffff_ff98"]
 impl crate::Resettable for RTCCALICFG2_SPEC {

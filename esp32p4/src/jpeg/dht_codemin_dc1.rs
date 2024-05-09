@@ -13,10 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("DHT_CODEMIN_DC1")
-            .field(
-                "dht_codemin_dc1",
-                &format_args!("{}", self.dht_codemin_dc1().bits()),
-            )
+            .field("dht_codemin_dc1", &self.dht_codemin_dc1().bits())
             .finish()
     }
 }
@@ -34,6 +31,4 @@ impl crate::RegisterSpec for DHT_CODEMIN_DC1_SPEC {
 #[doc = "`read()` method returns [`dht_codemin_dc1::R`](R) reader structure"]
 impl crate::Readable for DHT_CODEMIN_DC1_SPEC {}
 #[doc = "`reset()` method sets DHT_CODEMIN_DC1 to value 0"]
-impl crate::Resettable for DHT_CODEMIN_DC1_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for DHT_CODEMIN_DC1_SPEC {}

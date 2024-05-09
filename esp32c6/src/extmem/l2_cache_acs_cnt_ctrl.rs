@@ -118,70 +118,22 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("L2_CACHE_ACS_CNT_CTRL")
-            .field(
-                "l2_ibus0_cnt_ena",
-                &format_args!("{}", self.l2_ibus0_cnt_ena().bit()),
-            )
-            .field(
-                "l2_ibus1_cnt_ena",
-                &format_args!("{}", self.l2_ibus1_cnt_ena().bit()),
-            )
-            .field(
-                "l2_ibus2_cnt_ena",
-                &format_args!("{}", self.l2_ibus2_cnt_ena().bit()),
-            )
-            .field(
-                "l2_ibus3_cnt_ena",
-                &format_args!("{}", self.l2_ibus3_cnt_ena().bit()),
-            )
-            .field(
-                "l2_dbus0_cnt_ena",
-                &format_args!("{}", self.l2_dbus0_cnt_ena().bit()),
-            )
-            .field(
-                "l2_dbus1_cnt_ena",
-                &format_args!("{}", self.l2_dbus1_cnt_ena().bit()),
-            )
-            .field(
-                "l2_dbus2_cnt_ena",
-                &format_args!("{}", self.l2_dbus2_cnt_ena().bit()),
-            )
-            .field(
-                "l2_dbus3_cnt_ena",
-                &format_args!("{}", self.l2_dbus3_cnt_ena().bit()),
-            )
-            .field(
-                "l2_ibus0_cnt_clr",
-                &format_args!("{}", self.l2_ibus0_cnt_clr().bit()),
-            )
-            .field(
-                "l2_ibus1_cnt_clr",
-                &format_args!("{}", self.l2_ibus1_cnt_clr().bit()),
-            )
-            .field(
-                "l2_ibus2_cnt_clr",
-                &format_args!("{}", self.l2_ibus2_cnt_clr().bit()),
-            )
-            .field(
-                "l2_ibus3_cnt_clr",
-                &format_args!("{}", self.l2_ibus3_cnt_clr().bit()),
-            )
-            .field(
-                "l2_dbus0_cnt_clr",
-                &format_args!("{}", self.l2_dbus0_cnt_clr().bit()),
-            )
-            .field(
-                "l2_dbus1_cnt_clr",
-                &format_args!("{}", self.l2_dbus1_cnt_clr().bit()),
-            )
-            .field(
-                "l2_dbus2_cnt_clr",
-                &format_args!("{}", self.l2_dbus2_cnt_clr().bit()),
-            )
-            .field(
-                "l2_dbus3_cnt_clr",
-                &format_args!("{}", self.l2_dbus3_cnt_clr().bit()),
-            )
+            .field("l2_ibus0_cnt_ena", &self.l2_ibus0_cnt_ena().bit())
+            .field("l2_ibus1_cnt_ena", &self.l2_ibus1_cnt_ena().bit())
+            .field("l2_ibus2_cnt_ena", &self.l2_ibus2_cnt_ena().bit())
+            .field("l2_ibus3_cnt_ena", &self.l2_ibus3_cnt_ena().bit())
+            .field("l2_dbus0_cnt_ena", &self.l2_dbus0_cnt_ena().bit())
+            .field("l2_dbus1_cnt_ena", &self.l2_dbus1_cnt_ena().bit())
+            .field("l2_dbus2_cnt_ena", &self.l2_dbus2_cnt_ena().bit())
+            .field("l2_dbus3_cnt_ena", &self.l2_dbus3_cnt_ena().bit())
+            .field("l2_ibus0_cnt_clr", &self.l2_ibus0_cnt_clr().bit())
+            .field("l2_ibus1_cnt_clr", &self.l2_ibus1_cnt_clr().bit())
+            .field("l2_ibus2_cnt_clr", &self.l2_ibus2_cnt_clr().bit())
+            .field("l2_ibus3_cnt_clr", &self.l2_ibus3_cnt_clr().bit())
+            .field("l2_dbus0_cnt_clr", &self.l2_dbus0_cnt_clr().bit())
+            .field("l2_dbus1_cnt_clr", &self.l2_dbus1_cnt_clr().bit())
+            .field("l2_dbus2_cnt_clr", &self.l2_dbus2_cnt_clr().bit())
+            .field("l2_dbus3_cnt_clr", &self.l2_dbus3_cnt_clr().bit())
             .finish()
     }
 }
@@ -199,6 +151,4 @@ impl crate::RegisterSpec for L2_CACHE_ACS_CNT_CTRL_SPEC {
 #[doc = "`read()` method returns [`l2_cache_acs_cnt_ctrl::R`](R) reader structure"]
 impl crate::Readable for L2_CACHE_ACS_CNT_CTRL_SPEC {}
 #[doc = "`reset()` method sets L2_CACHE_ACS_CNT_CTRL to value 0"]
-impl crate::Resettable for L2_CACHE_ACS_CNT_CTRL_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for L2_CACHE_ACS_CNT_CTRL_SPEC {}

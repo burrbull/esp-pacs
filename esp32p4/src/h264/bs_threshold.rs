@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("BS_THRESHOLD")
-            .field(
-                "bs_buffer_threshold",
-                &format_args!("{}", self.bs_buffer_threshold().bits()),
-            )
+            .field("bs_buffer_threshold", &self.bs_buffer_threshold().bits())
             .finish()
     }
 }
@@ -48,8 +45,6 @@ impl crate::Readable for BS_THRESHOLD_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`bs_threshold::W`](W) writer structure"]
 impl crate::Writable for BS_THRESHOLD_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets BS_THRESHOLD to value 0x30"]
 impl crate::Resettable for BS_THRESHOLD_SPEC {

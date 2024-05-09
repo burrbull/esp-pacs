@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("MEM_END_ADDR")
-            .field(
-                "mem_end_addr",
-                &format_args!("{}", self.mem_end_addr().bits()),
-            )
+            .field("mem_end_addr", &self.mem_end_addr().bits())
             .finish()
     }
 }
@@ -48,8 +45,6 @@ impl crate::Readable for MEM_END_ADDR_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`mem_end_addr::W`](W) writer structure"]
 impl crate::Writable for MEM_END_ADDR_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets MEM_END_ADDR to value 0xffff_ffff"]
 impl crate::Resettable for MEM_END_ADDR_SPEC {

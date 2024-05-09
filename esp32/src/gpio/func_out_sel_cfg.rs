@@ -44,10 +44,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("FUNC_OUT_SEL_CFG")
-            .field("out_sel", &format_args!("{}", self.out_sel().bits()))
-            .field("inv_sel", &format_args!("{}", self.inv_sel().bit()))
-            .field("oen_sel", &format_args!("{}", self.oen_sel().bit()))
-            .field("oen_inv_sel", &format_args!("{}", self.oen_inv_sel().bit()))
+            .field("out_sel", &self.out_sel().bits())
+            .field("inv_sel", &self.inv_sel().bit())
+            .field("oen_sel", &self.oen_sel().bit())
+            .field("oen_inv_sel", &self.oen_inv_sel().bit())
             .finish()
     }
 }
@@ -93,10 +93,6 @@ impl crate::Readable for FUNC_OUT_SEL_CFG_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`func_out_sel_cfg::W`](W) writer structure"]
 impl crate::Writable for FUNC_OUT_SEL_CFG_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets FUNC%s_OUT_SEL_CFG to value 0"]
-impl crate::Resettable for FUNC_OUT_SEL_CFG_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for FUNC_OUT_SEL_CFG_SPEC {}

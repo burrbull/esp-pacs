@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SLICE_HEADER_BYTE_LENGTH")
-            .field(
-                "slice_byte_length",
-                &format_args!("{}", self.slice_byte_length().bits()),
-            )
+            .field("slice_byte_length", &self.slice_byte_length().bits())
             .finish()
     }
 }
@@ -48,10 +45,6 @@ impl crate::Readable for SLICE_HEADER_BYTE_LENGTH_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`slice_header_byte_length::W`](W) writer structure"]
 impl crate::Writable for SLICE_HEADER_BYTE_LENGTH_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SLICE_HEADER_BYTE_LENGTH to value 0"]
-impl crate::Resettable for SLICE_HEADER_BYTE_LENGTH_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for SLICE_HEADER_BYTE_LENGTH_SPEC {}

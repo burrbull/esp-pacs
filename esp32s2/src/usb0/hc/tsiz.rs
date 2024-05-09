@@ -44,10 +44,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("TSIZ")
-            .field("xfersize", &format_args!("{}", self.xfersize().bits()))
-            .field("pktcnt", &format_args!("{}", self.pktcnt().bits()))
-            .field("pid", &format_args!("{}", self.pid().bits()))
-            .field("dopng", &format_args!("{}", self.dopng().bit()))
+            .field("xfersize", &self.xfersize().bits())
+            .field("pktcnt", &self.pktcnt().bits())
+            .field("pid", &self.pid().bits())
+            .field("dopng", &self.dopng().bit())
             .finish()
     }
 }
@@ -93,10 +93,6 @@ impl crate::Readable for TSIZ_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`tsiz::W`](W) writer structure"]
 impl crate::Writable for TSIZ_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets TSIZ to value 0"]
-impl crate::Resettable for TSIZ_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for TSIZ_SPEC {}

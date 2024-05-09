@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("VID_NUM_CHUNKS")
-            .field(
-                "vid_num_chunks",
-                &format_args!("{}", self.vid_num_chunks().bits()),
-            )
+            .field("vid_num_chunks", &self.vid_num_chunks().bits())
             .finish()
     }
 }
@@ -48,10 +45,6 @@ impl crate::Readable for VID_NUM_CHUNKS_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`vid_num_chunks::W`](W) writer structure"]
 impl crate::Writable for VID_NUM_CHUNKS_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets VID_NUM_CHUNKS to value 0"]
-impl crate::Resettable for VID_NUM_CHUNKS_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for VID_NUM_CHUNKS_SPEC {}

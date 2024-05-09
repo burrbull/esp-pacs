@@ -152,70 +152,22 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("INT_MSK_SEQ_FRAME_FATAL")
-            .field(
-                "mask_err_f_seq_vc0",
-                &format_args!("{}", self.mask_err_f_seq_vc0().bit()),
-            )
-            .field(
-                "mask_err_f_seq_vc1",
-                &format_args!("{}", self.mask_err_f_seq_vc1().bit()),
-            )
-            .field(
-                "mask_err_f_seq_vc2",
-                &format_args!("{}", self.mask_err_f_seq_vc2().bit()),
-            )
-            .field(
-                "mask_err_f_seq_vc3",
-                &format_args!("{}", self.mask_err_f_seq_vc3().bit()),
-            )
-            .field(
-                "mask_err_f_seq_vc4",
-                &format_args!("{}", self.mask_err_f_seq_vc4().bit()),
-            )
-            .field(
-                "mask_err_f_seq_vc5",
-                &format_args!("{}", self.mask_err_f_seq_vc5().bit()),
-            )
-            .field(
-                "mask_err_f_seq_vc6",
-                &format_args!("{}", self.mask_err_f_seq_vc6().bit()),
-            )
-            .field(
-                "mask_err_f_seq_vc7",
-                &format_args!("{}", self.mask_err_f_seq_vc7().bit()),
-            )
-            .field(
-                "mask_err_f_seq_vc8",
-                &format_args!("{}", self.mask_err_f_seq_vc8().bit()),
-            )
-            .field(
-                "mask_err_f_seq_vc9",
-                &format_args!("{}", self.mask_err_f_seq_vc9().bit()),
-            )
-            .field(
-                "mask_err_f_seq_vc10",
-                &format_args!("{}", self.mask_err_f_seq_vc10().bit()),
-            )
-            .field(
-                "mask_err_f_seq_vc11",
-                &format_args!("{}", self.mask_err_f_seq_vc11().bit()),
-            )
-            .field(
-                "mask_err_f_seq_vc12",
-                &format_args!("{}", self.mask_err_f_seq_vc12().bit()),
-            )
-            .field(
-                "mask_err_f_seq_vc13",
-                &format_args!("{}", self.mask_err_f_seq_vc13().bit()),
-            )
-            .field(
-                "mask_err_f_seq_vc14",
-                &format_args!("{}", self.mask_err_f_seq_vc14().bit()),
-            )
-            .field(
-                "mask_err_f_seq_vc15",
-                &format_args!("{}", self.mask_err_f_seq_vc15().bit()),
-            )
+            .field("mask_err_f_seq_vc0", &self.mask_err_f_seq_vc0().bit())
+            .field("mask_err_f_seq_vc1", &self.mask_err_f_seq_vc1().bit())
+            .field("mask_err_f_seq_vc2", &self.mask_err_f_seq_vc2().bit())
+            .field("mask_err_f_seq_vc3", &self.mask_err_f_seq_vc3().bit())
+            .field("mask_err_f_seq_vc4", &self.mask_err_f_seq_vc4().bit())
+            .field("mask_err_f_seq_vc5", &self.mask_err_f_seq_vc5().bit())
+            .field("mask_err_f_seq_vc6", &self.mask_err_f_seq_vc6().bit())
+            .field("mask_err_f_seq_vc7", &self.mask_err_f_seq_vc7().bit())
+            .field("mask_err_f_seq_vc8", &self.mask_err_f_seq_vc8().bit())
+            .field("mask_err_f_seq_vc9", &self.mask_err_f_seq_vc9().bit())
+            .field("mask_err_f_seq_vc10", &self.mask_err_f_seq_vc10().bit())
+            .field("mask_err_f_seq_vc11", &self.mask_err_f_seq_vc11().bit())
+            .field("mask_err_f_seq_vc12", &self.mask_err_f_seq_vc12().bit())
+            .field("mask_err_f_seq_vc13", &self.mask_err_f_seq_vc13().bit())
+            .field("mask_err_f_seq_vc14", &self.mask_err_f_seq_vc14().bit())
+            .field("mask_err_f_seq_vc15", &self.mask_err_f_seq_vc15().bit())
             .finish()
     }
 }
@@ -333,10 +285,6 @@ impl crate::Readable for INT_MSK_SEQ_FRAME_FATAL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`int_msk_seq_frame_fatal::W`](W) writer structure"]
 impl crate::Writable for INT_MSK_SEQ_FRAME_FATAL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets INT_MSK_SEQ_FRAME_FATAL to value 0"]
-impl crate::Resettable for INT_MSK_SEQ_FRAME_FATAL_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for INT_MSK_SEQ_FRAME_FATAL_SPEC {}

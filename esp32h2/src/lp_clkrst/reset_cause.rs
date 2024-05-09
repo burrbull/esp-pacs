@@ -28,14 +28,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("RESET_CAUSE")
-            .field(
-                "reset_cause",
-                &format_args!("{}", self.reset_cause().bits()),
-            )
-            .field(
-                "core0_reset_flag",
-                &format_args!("{}", self.core0_reset_flag().bit()),
-            )
+            .field("reset_cause", &self.reset_cause().bits())
+            .field("core0_reset_flag", &self.core0_reset_flag().bit())
             .finish()
     }
 }
@@ -75,8 +69,6 @@ impl crate::Readable for RESET_CAUSE_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`reset_cause::W`](W) writer structure"]
 impl crate::Writable for RESET_CAUSE_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets RESET_CAUSE to value 0x20"]
 impl crate::Resettable for RESET_CAUSE_SPEC {

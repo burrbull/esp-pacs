@@ -33,15 +33,15 @@ impl core::fmt::Debug for R {
         f.debug_struct("COMB_PD_SITE2_UNIT0_VT1_CONF2")
             .field(
                 "monitor_edg_mod_vt1_pd_site2_unit0",
-                &format_args!("{}", self.monitor_edg_mod_vt1_pd_site2_unit0().bits()),
+                &self.monitor_edg_mod_vt1_pd_site2_unit0().bits(),
             )
             .field(
                 "delay_ovf_vt1_pd_site2_unit0",
-                &format_args!("{}", self.delay_ovf_vt1_pd_site2_unit0().bit()),
+                &self.delay_ovf_vt1_pd_site2_unit0().bit(),
             )
             .field(
                 "timing_err_cnt_o_vt1_pd_site2_unit0",
-                &format_args!("{}", self.timing_err_cnt_o_vt1_pd_site2_unit0().bits()),
+                &self.timing_err_cnt_o_vt1_pd_site2_unit0().bits(),
             )
             .finish()
     }
@@ -72,10 +72,6 @@ impl crate::Readable for COMB_PD_SITE2_UNIT0_VT1_CONF2_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`comb_pd_site2_unit0_vt1_conf2::W`](W) writer structure"]
 impl crate::Writable for COMB_PD_SITE2_UNIT0_VT1_CONF2_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets COMB_PD_SITE2_UNIT0_VT1_CONF2 to value 0"]
-impl crate::Resettable for COMB_PD_SITE2_UNIT0_VT1_CONF2_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for COMB_PD_SITE2_UNIT0_VT1_CONF2_SPEC {}

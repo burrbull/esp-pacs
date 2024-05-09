@@ -26,15 +26,13 @@ impl core::fmt::Debug for R {
         f.debug_struct("PIF_ACCESS_MONITOR_2")
             .field(
                 "pif_access_monitor_nonword_violate_intr",
-                &format_args!("{}", self.pif_access_monitor_nonword_violate_intr().bit()),
+                &self.pif_access_monitor_nonword_violate_intr().bit(),
             )
             .field(
                 "pif_access_monitor_nonword_violate_status_hsize",
-                &format_args!(
-                    "{}",
-                    self.pif_access_monitor_nonword_violate_status_hsize()
-                        .bits()
-                ),
+                &self
+                    .pif_access_monitor_nonword_violate_status_hsize()
+                    .bits(),
             )
             .finish()
     }
@@ -53,6 +51,4 @@ impl crate::RegisterSpec for PIF_ACCESS_MONITOR_2_SPEC {
 #[doc = "`read()` method returns [`pif_access_monitor_2::R`](R) reader structure"]
 impl crate::Readable for PIF_ACCESS_MONITOR_2_SPEC {}
 #[doc = "`reset()` method sets PIF_ACCESS_MONITOR_2 to value 0"]
-impl crate::Resettable for PIF_ACCESS_MONITOR_2_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for PIF_ACCESS_MONITOR_2_SPEC {}

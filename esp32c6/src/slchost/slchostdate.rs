@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SLCHOSTDATE")
-            .field(
-                "slchost_date",
-                &format_args!("{}", self.slchost_date().bits()),
-            )
+            .field("slchost_date", &self.slchost_date().bits())
             .finish()
     }
 }
@@ -48,8 +45,6 @@ impl crate::Readable for SLCHOSTDATE_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`slchostdate::W`](W) writer structure"]
 impl crate::Writable for SLCHOSTDATE_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SLCHOSTDATE to value 0x2106_0700"]
 impl crate::Resettable for SLCHOSTDATE_SPEC {

@@ -28,11 +28,11 @@ impl core::fmt::Debug for R {
         f.debug_struct("MEM_AUX_CTRL_1")
             .field(
                 "lsc_lut_r_gr_mem_aux_ctrl",
-                &format_args!("{}", self.lsc_lut_r_gr_mem_aux_ctrl().bits()),
+                &self.lsc_lut_r_gr_mem_aux_ctrl().bits(),
             )
             .field(
                 "lsc_lut_gb_b_mem_aux_ctrl",
-                &format_args!("{}", self.lsc_lut_gb_b_mem_aux_ctrl().bits()),
+                &self.lsc_lut_gb_b_mem_aux_ctrl().bits(),
             )
             .finish()
     }
@@ -71,8 +71,6 @@ impl crate::Readable for MEM_AUX_CTRL_1_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`mem_aux_ctrl_1::W`](W) writer structure"]
 impl crate::Writable for MEM_AUX_CTRL_1_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets MEM_AUX_CTRL_1 to value 0x1320_1320"]
 impl crate::Resettable for MEM_AUX_CTRL_1_SPEC {

@@ -71,13 +71,13 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("INT_ENA_RTC_W1TS")
-            .field("slp_wakeup", &format_args!("{}", self.slp_wakeup().bit()))
-            .field("slp_reject", &format_args!("{}", self.slp_reject().bit()))
-            .field("wdt", &format_args!("{}", self.wdt().bit()))
-            .field("brown_out", &format_args!("{}", self.brown_out().bit()))
-            .field("main_timer", &format_args!("{}", self.main_timer().bit()))
-            .field("swd", &format_args!("{}", self.swd().bit()))
-            .field("bbpll_cal", &format_args!("{}", self.bbpll_cal().bit()))
+            .field("slp_wakeup", &self.slp_wakeup().bit())
+            .field("slp_reject", &self.slp_reject().bit())
+            .field("wdt", &self.wdt().bit())
+            .field("brown_out", &self.brown_out().bit())
+            .field("main_timer", &self.main_timer().bit())
+            .field("swd", &self.swd().bit())
+            .field("bbpll_cal", &self.bbpll_cal().bit())
             .finish()
     }
 }
@@ -141,10 +141,7 @@ impl crate::Readable for INT_ENA_RTC_W1TS_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`int_ena_rtc_w1ts::W`](W) writer structure"]
 impl crate::Writable for INT_ENA_RTC_W1TS_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
     const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0x0010_860b;
 }
 #[doc = "`reset()` method sets INT_ENA_RTC_W1TS to value 0"]
-impl crate::Resettable for INT_ENA_RTC_W1TS_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for INT_ENA_RTC_W1TS_SPEC {}

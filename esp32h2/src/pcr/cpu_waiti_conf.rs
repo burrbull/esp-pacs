@@ -40,22 +40,13 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CPU_WAITI_CONF")
-            .field(
-                "cpuperiod_sel",
-                &format_args!("{}", self.cpuperiod_sel().bits()),
-            )
-            .field(
-                "pll_freq_sel",
-                &format_args!("{}", self.pll_freq_sel().bit()),
-            )
+            .field("cpuperiod_sel", &self.cpuperiod_sel().bits())
+            .field("pll_freq_sel", &self.pll_freq_sel().bit())
             .field(
                 "cpu_wait_mode_force_on",
-                &format_args!("{}", self.cpu_wait_mode_force_on().bit()),
+                &self.cpu_wait_mode_force_on().bit(),
             )
-            .field(
-                "cpu_waiti_delay_num",
-                &format_args!("{}", self.cpu_waiti_delay_num().bits()),
-            )
+            .field("cpu_waiti_delay_num", &self.cpu_waiti_delay_num().bits())
             .finish()
     }
 }
@@ -89,8 +80,6 @@ impl crate::Readable for CPU_WAITI_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`cpu_waiti_conf::W`](W) writer structure"]
 impl crate::Writable for CPU_WAITI_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CPU_WAITI_CONF to value 0x0d"]
 impl crate::Resettable for CPU_WAITI_CONF_SPEC {

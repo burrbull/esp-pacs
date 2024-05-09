@@ -69,15 +69,15 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("DOUT_MODE")
-            .field("dout0_mode", &format_args!("{}", self.dout0_mode().bit()))
-            .field("dout1_mode", &format_args!("{}", self.dout1_mode().bit()))
-            .field("dout2_mode", &format_args!("{}", self.dout2_mode().bit()))
-            .field("dout3_mode", &format_args!("{}", self.dout3_mode().bit()))
-            .field("dout4_mode", &format_args!("{}", self.dout4_mode().bit()))
-            .field("dout5_mode", &format_args!("{}", self.dout5_mode().bit()))
-            .field("dout6_mode", &format_args!("{}", self.dout6_mode().bit()))
-            .field("dout7_mode", &format_args!("{}", self.dout7_mode().bit()))
-            .field("d_dqs_mode", &format_args!("{}", self.d_dqs_mode().bit()))
+            .field("dout0_mode", &self.dout0_mode().bit())
+            .field("dout1_mode", &self.dout1_mode().bit())
+            .field("dout2_mode", &self.dout2_mode().bit())
+            .field("dout3_mode", &self.dout3_mode().bit())
+            .field("dout4_mode", &self.dout4_mode().bit())
+            .field("dout5_mode", &self.dout5_mode().bit())
+            .field("dout6_mode", &self.dout6_mode().bit())
+            .field("dout7_mode", &self.dout7_mode().bit())
+            .field("d_dqs_mode", &self.d_dqs_mode().bit())
             .finish()
     }
 }
@@ -95,6 +95,4 @@ impl crate::RegisterSpec for DOUT_MODE_SPEC {
 #[doc = "`read()` method returns [`dout_mode::R`](R) reader structure"]
 impl crate::Readable for DOUT_MODE_SPEC {}
 #[doc = "`reset()` method sets DOUT_MODE to value 0"]
-impl crate::Resettable for DOUT_MODE_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for DOUT_MODE_SPEC {}

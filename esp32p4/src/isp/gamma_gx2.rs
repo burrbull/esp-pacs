@@ -80,38 +80,14 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("GAMMA_GX2")
-            .field(
-                "gamma_g_x0f",
-                &format_args!("{}", self.gamma_g_x0f().bits()),
-            )
-            .field(
-                "gamma_g_x0e",
-                &format_args!("{}", self.gamma_g_x0e().bits()),
-            )
-            .field(
-                "gamma_g_x0d",
-                &format_args!("{}", self.gamma_g_x0d().bits()),
-            )
-            .field(
-                "gamma_g_x0c",
-                &format_args!("{}", self.gamma_g_x0c().bits()),
-            )
-            .field(
-                "gamma_g_x0b",
-                &format_args!("{}", self.gamma_g_x0b().bits()),
-            )
-            .field(
-                "gamma_g_x0a",
-                &format_args!("{}", self.gamma_g_x0a().bits()),
-            )
-            .field(
-                "gamma_g_x09",
-                &format_args!("{}", self.gamma_g_x09().bits()),
-            )
-            .field(
-                "gamma_g_x08",
-                &format_args!("{}", self.gamma_g_x08().bits()),
-            )
+            .field("gamma_g_x0f", &self.gamma_g_x0f().bits())
+            .field("gamma_g_x0e", &self.gamma_g_x0e().bits())
+            .field("gamma_g_x0d", &self.gamma_g_x0d().bits())
+            .field("gamma_g_x0c", &self.gamma_g_x0c().bits())
+            .field("gamma_g_x0b", &self.gamma_g_x0b().bits())
+            .field("gamma_g_x0a", &self.gamma_g_x0a().bits())
+            .field("gamma_g_x09", &self.gamma_g_x09().bits())
+            .field("gamma_g_x08", &self.gamma_g_x08().bits())
             .finish()
     }
 }
@@ -181,8 +157,6 @@ impl crate::Readable for GAMMA_GX2_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`gamma_gx2::W`](W) writer structure"]
 impl crate::Writable for GAMMA_GX2_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets GAMMA_GX2 to value 0x0092_4924"]
 impl crate::Resettable for GAMMA_GX2_SPEC {

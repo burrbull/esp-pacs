@@ -26,11 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CPU_PERIOD_CONF")
-            .field("cpusel_conf", &format_args!("{}", self.cpusel_conf().bit()))
-            .field(
-                "cpuperiod_sel",
-                &format_args!("{}", self.cpuperiod_sel().bits()),
-            )
+            .field("cpusel_conf", &self.cpusel_conf().bit())
+            .field("cpuperiod_sel", &self.cpuperiod_sel().bits())
             .finish()
     }
 }
@@ -64,10 +61,6 @@ impl crate::Readable for CPU_PERIOD_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`cpu_period_conf::W`](W) writer structure"]
 impl crate::Writable for CPU_PERIOD_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CPU_PERIOD_CONF to value 0"]
-impl crate::Resettable for CPU_PERIOD_CONF_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for CPU_PERIOD_CONF_SPEC {}

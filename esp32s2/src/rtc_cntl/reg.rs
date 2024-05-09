@@ -89,33 +89,15 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("REG")
-            .field(
-                "dig_reg_dbias_slp",
-                &format_args!("{}", self.dig_reg_dbias_slp().bits()),
-            )
-            .field(
-                "dig_reg_dbias_wak",
-                &format_args!("{}", self.dig_reg_dbias_wak().bits()),
-            )
-            .field("sck_dcap", &format_args!("{}", self.sck_dcap().bits()))
-            .field("dbias_slp", &format_args!("{}", self.dbias_slp().bits()))
-            .field("dbias_wak", &format_args!("{}", self.dbias_wak().bits()))
-            .field(
-                "dboost_force_pd",
-                &format_args!("{}", self.dboost_force_pd().bit()),
-            )
-            .field(
-                "dboost_force_pu",
-                &format_args!("{}", self.dboost_force_pu().bit()),
-            )
-            .field(
-                "regulator_force_pd",
-                &format_args!("{}", self.regulator_force_pd().bit()),
-            )
-            .field(
-                "regulator_force_pu",
-                &format_args!("{}", self.regulator_force_pu().bit()),
-            )
+            .field("dig_reg_dbias_slp", &self.dig_reg_dbias_slp().bits())
+            .field("dig_reg_dbias_wak", &self.dig_reg_dbias_wak().bits())
+            .field("sck_dcap", &self.sck_dcap().bits())
+            .field("dbias_slp", &self.dbias_slp().bits())
+            .field("dbias_wak", &self.dbias_wak().bits())
+            .field("dboost_force_pd", &self.dboost_force_pd().bit())
+            .field("dboost_force_pu", &self.dboost_force_pu().bit())
+            .field("regulator_force_pd", &self.regulator_force_pd().bit())
+            .field("regulator_force_pu", &self.regulator_force_pu().bit())
             .finish()
     }
 }
@@ -191,8 +173,6 @@ impl crate::Readable for REG_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`reg::W`](W) writer structure"]
 impl crate::Writable for REG_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets REG to value 0xa900_2400"]
 impl crate::Resettable for REG_SPEC {

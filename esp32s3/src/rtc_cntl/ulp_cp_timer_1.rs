@@ -19,7 +19,7 @@ impl core::fmt::Debug for R {
         f.debug_struct("ULP_CP_TIMER_1")
             .field(
                 "ulp_cp_timer_slp_cycle",
-                &format_args!("{}", self.ulp_cp_timer_slp_cycle().bits()),
+                &self.ulp_cp_timer_slp_cycle().bits(),
             )
             .finish()
     }
@@ -48,8 +48,6 @@ impl crate::Readable for ULP_CP_TIMER_1_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`ulp_cp_timer_1::W`](W) writer structure"]
 impl crate::Writable for ULP_CP_TIMER_1_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets ULP_CP_TIMER_1 to value 0xc800"]
 impl crate::Resettable for ULP_CP_TIMER_1_SPEC {

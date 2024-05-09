@@ -19,7 +19,7 @@ impl core::fmt::Debug for R {
         f.debug_struct("EXTER_MEM_START_ADDR0")
             .field(
                 "access_exter_mem_start_addr0",
-                &format_args!("{}", self.access_exter_mem_start_addr0().bits()),
+                &self.access_exter_mem_start_addr0().bits(),
             )
             .finish()
     }
@@ -50,8 +50,6 @@ impl crate::Readable for EXTER_MEM_START_ADDR0_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`exter_mem_start_addr0::W`](W) writer structure"]
 impl crate::Writable for EXTER_MEM_START_ADDR0_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets EXTER_MEM_START_ADDR0 to value 0x3010_0000"]
 impl crate::Resettable for EXTER_MEM_START_ADDR0_SPEC {

@@ -91,40 +91,28 @@ impl core::fmt::Debug for R {
         f.debug_struct("CAM_RGB_YUV")
             .field(
                 "cam_conv_8bits_data_inv",
-                &format_args!("{}", self.cam_conv_8bits_data_inv().bit()),
+                &self.cam_conv_8bits_data_inv().bit(),
             )
             .field(
                 "cam_conv_yuv2yuv_mode",
-                &format_args!("{}", self.cam_conv_yuv2yuv_mode().bits()),
+                &self.cam_conv_yuv2yuv_mode().bits(),
             )
-            .field(
-                "cam_conv_yuv_mode",
-                &format_args!("{}", self.cam_conv_yuv_mode().bits()),
-            )
+            .field("cam_conv_yuv_mode", &self.cam_conv_yuv_mode().bits())
             .field(
                 "cam_conv_protocol_mode",
-                &format_args!("{}", self.cam_conv_protocol_mode().bit()),
+                &self.cam_conv_protocol_mode().bit(),
             )
             .field(
                 "cam_conv_data_out_mode",
-                &format_args!("{}", self.cam_conv_data_out_mode().bit()),
+                &self.cam_conv_data_out_mode().bit(),
             )
-            .field(
-                "cam_conv_data_in_mode",
-                &format_args!("{}", self.cam_conv_data_in_mode().bit()),
-            )
+            .field("cam_conv_data_in_mode", &self.cam_conv_data_in_mode().bit())
             .field(
                 "cam_conv_mode_8bits_on",
-                &format_args!("{}", self.cam_conv_mode_8bits_on().bit()),
+                &self.cam_conv_mode_8bits_on().bit(),
             )
-            .field(
-                "cam_conv_trans_mode",
-                &format_args!("{}", self.cam_conv_trans_mode().bit()),
-            )
-            .field(
-                "cam_conv_enable",
-                &format_args!("{}", self.cam_conv_enable().bit()),
-            )
+            .field("cam_conv_trans_mode", &self.cam_conv_trans_mode().bit())
+            .field("cam_conv_enable", &self.cam_conv_enable().bit())
             .finish()
     }
 }
@@ -200,8 +188,6 @@ impl crate::Readable for CAM_RGB_YUV_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`cam_rgb_yuv::W`](W) writer structure"]
 impl crate::Writable for CAM_RGB_YUV_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CAM_RGB_YUV to value 0x00c0_0000"]
 impl crate::Resettable for CAM_RGB_YUV_SPEC {

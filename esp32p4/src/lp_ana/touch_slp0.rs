@@ -28,14 +28,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("TOUCH_SLP0")
-            .field(
-                "touch_slp_th0",
-                &format_args!("{}", self.touch_slp_th0().bits()),
-            )
-            .field(
-                "touch_slp_pad",
-                &format_args!("{}", self.touch_slp_pad().bits()),
-            )
+            .field("touch_slp_th0", &self.touch_slp_th0().bits())
+            .field("touch_slp_pad", &self.touch_slp_pad().bits())
             .finish()
     }
 }
@@ -75,8 +69,6 @@ impl crate::Readable for TOUCH_SLP0_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`touch_slp0::W`](W) writer structure"]
 impl crate::Writable for TOUCH_SLP0_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets TOUCH_SLP0 to value 0x001e_0000"]
 impl crate::Resettable for TOUCH_SLP0_SPEC {

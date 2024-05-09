@@ -26,11 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CONF")
-            .field("op_code", &format_args!("{}", self.op_code().bits()))
-            .field(
-                "force_no_wr_rd_dis",
-                &format_args!("{}", self.force_no_wr_rd_dis().bit()),
-            )
+            .field("op_code", &self.op_code().bits())
+            .field("force_no_wr_rd_dis", &self.force_no_wr_rd_dis().bit())
             .finish()
     }
 }
@@ -64,8 +61,6 @@ impl crate::Readable for CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`conf::W`](W) writer structure"]
 impl crate::Writable for CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CONF to value 0x0001_0000"]
 impl crate::Resettable for CONF_SPEC {

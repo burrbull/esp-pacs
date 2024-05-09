@@ -50,19 +50,13 @@ impl core::fmt::Debug for R {
         f.debug_struct("MEM_ACCESS_DBUG1")
             .field(
                 "internal_sram_mmu_miss",
-                &format_args!("{}", self.internal_sram_mmu_miss().bits()),
+                &self.internal_sram_mmu_miss().bits(),
             )
-            .field("arb_ia", &format_args!("{}", self.arb_ia().bits()))
-            .field("pidgen_ia", &format_args!("{}", self.pidgen_ia().bits()))
-            .field(
-                "ahb_access_deny",
-                &format_args!("{}", self.ahb_access_deny().bit()),
-            )
-            .field(
-                "ahblite_access_deny",
-                &format_args!("{}", self.ahblite_access_deny().bit()),
-            )
-            .field("ahblite_ia", &format_args!("{}", self.ahblite_ia().bit()))
+            .field("arb_ia", &self.arb_ia().bits())
+            .field("pidgen_ia", &self.pidgen_ia().bits())
+            .field("ahb_access_deny", &self.ahb_access_deny().bit())
+            .field("ahblite_access_deny", &self.ahblite_access_deny().bit())
+            .field("ahblite_ia", &self.ahblite_ia().bit())
             .finish()
     }
 }
@@ -80,6 +74,4 @@ impl crate::RegisterSpec for MEM_ACCESS_DBUG1_SPEC {
 #[doc = "`read()` method returns [`mem_access_dbug1::R`](R) reader structure"]
 impl crate::Readable for MEM_ACCESS_DBUG1_SPEC {}
 #[doc = "`reset()` method sets MEM_ACCESS_DBUG1 to value 0"]
-impl crate::Resettable for MEM_ACCESS_DBUG1_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for MEM_ACCESS_DBUG1_SPEC {}

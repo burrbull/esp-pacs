@@ -35,11 +35,11 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("FIFOTH")
-            .field("tx_wmark", &format_args!("{}", self.tx_wmark().bits()))
-            .field("rx_wmark", &format_args!("{}", self.rx_wmark().bits()))
+            .field("tx_wmark", &self.tx_wmark().bits())
+            .field("rx_wmark", &self.rx_wmark().bits())
             .field(
                 "dma_multiple_transaction_size",
-                &format_args!("{}", self.dma_multiple_transaction_size().bits()),
+                &self.dma_multiple_transaction_size().bits(),
             )
             .finish()
     }
@@ -82,10 +82,6 @@ impl crate::Readable for FIFOTH_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`fifoth::W`](W) writer structure"]
 impl crate::Writable for FIFOTH_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets FIFOTH to value 0"]
-impl crate::Resettable for FIFOTH_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for FIFOTH_SPEC {}

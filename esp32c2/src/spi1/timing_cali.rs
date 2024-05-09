@@ -20,11 +20,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("TIMING_CALI")
-            .field("timing_cali", &format_args!("{}", self.timing_cali().bit()))
-            .field(
-                "extra_dummy_cyclelen",
-                &format_args!("{}", self.extra_dummy_cyclelen().bits()),
-            )
+            .field("timing_cali", &self.timing_cali().bit())
+            .field("extra_dummy_cyclelen", &self.extra_dummy_cyclelen().bits())
             .finish()
     }
 }
@@ -42,6 +39,4 @@ impl crate::RegisterSpec for TIMING_CALI_SPEC {
 #[doc = "`read()` method returns [`timing_cali::R`](R) reader structure"]
 impl crate::Readable for TIMING_CALI_SPEC {}
 #[doc = "`reset()` method sets TIMING_CALI to value 0"]
-impl crate::Resettable for TIMING_CALI_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for TIMING_CALI_SPEC {}

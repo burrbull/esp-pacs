@@ -22,11 +22,11 @@ impl core::fmt::Debug for R {
         f.debug_struct("DPI_LP_CMD_TIM_ACT")
             .field(
                 "invact_lpcmd_time_act",
-                &format_args!("{}", self.invact_lpcmd_time_act().bits()),
+                &self.invact_lpcmd_time_act().bits(),
             )
             .field(
                 "outvact_lpcmd_time_act",
-                &format_args!("{}", self.outvact_lpcmd_time_act().bits()),
+                &self.outvact_lpcmd_time_act().bits(),
             )
             .finish()
     }
@@ -45,6 +45,4 @@ impl crate::RegisterSpec for DPI_LP_CMD_TIM_ACT_SPEC {
 #[doc = "`read()` method returns [`dpi_lp_cmd_tim_act::R`](R) reader structure"]
 impl crate::Readable for DPI_LP_CMD_TIM_ACT_SPEC {}
 #[doc = "`reset()` method sets DPI_LP_CMD_TIM_ACT to value 0"]
-impl crate::Resettable for DPI_LP_CMD_TIM_ACT_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for DPI_LP_CMD_TIM_ACT_SPEC {}

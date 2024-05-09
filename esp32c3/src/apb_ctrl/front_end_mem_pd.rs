@@ -62,30 +62,12 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("FRONT_END_MEM_PD")
-            .field(
-                "agc_mem_force_pu",
-                &format_args!("{}", self.agc_mem_force_pu().bit()),
-            )
-            .field(
-                "agc_mem_force_pd",
-                &format_args!("{}", self.agc_mem_force_pd().bit()),
-            )
-            .field(
-                "pbus_mem_force_pu",
-                &format_args!("{}", self.pbus_mem_force_pu().bit()),
-            )
-            .field(
-                "pbus_mem_force_pd",
-                &format_args!("{}", self.pbus_mem_force_pd().bit()),
-            )
-            .field(
-                "dc_mem_force_pu",
-                &format_args!("{}", self.dc_mem_force_pu().bit()),
-            )
-            .field(
-                "dc_mem_force_pd",
-                &format_args!("{}", self.dc_mem_force_pd().bit()),
-            )
+            .field("agc_mem_force_pu", &self.agc_mem_force_pu().bit())
+            .field("agc_mem_force_pd", &self.agc_mem_force_pd().bit())
+            .field("pbus_mem_force_pu", &self.pbus_mem_force_pu().bit())
+            .field("pbus_mem_force_pd", &self.pbus_mem_force_pd().bit())
+            .field("dc_mem_force_pu", &self.dc_mem_force_pu().bit())
+            .field("dc_mem_force_pd", &self.dc_mem_force_pd().bit())
             .finish()
     }
 }
@@ -143,8 +125,6 @@ impl crate::Readable for FRONT_END_MEM_PD_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`front_end_mem_pd::W`](W) writer structure"]
 impl crate::Writable for FRONT_END_MEM_PD_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets FRONT_END_MEM_PD to value 0x15"]
 impl crate::Resettable for FRONT_END_MEM_PD_SPEC {

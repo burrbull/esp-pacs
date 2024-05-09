@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PERI1_APB_POSTW_EN")
-            .field(
-                "peri1_apb_postw_en",
-                &format_args!("{}", self.peri1_apb_postw_en().bit()),
-            )
+            .field("peri1_apb_postw_en", &self.peri1_apb_postw_en().bit())
             .finish()
     }
 }
@@ -48,10 +45,6 @@ impl crate::Readable for PERI1_APB_POSTW_EN_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`peri1_apb_postw_en::W`](W) writer structure"]
 impl crate::Writable for PERI1_APB_POSTW_EN_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets PERI1_APB_POSTW_EN to value 0"]
-impl crate::Resettable for PERI1_APB_POSTW_EN_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for PERI1_APB_POSTW_EN_SPEC {}

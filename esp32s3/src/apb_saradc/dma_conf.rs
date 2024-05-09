@@ -35,15 +35,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("DMA_CONF")
-            .field(
-                "adc_eof_num",
-                &format_args!("{}", self.adc_eof_num().bits()),
-            )
-            .field(
-                "adc_reset_fsm",
-                &format_args!("{}", self.adc_reset_fsm().bit()),
-            )
-            .field("adc_trans", &format_args!("{}", self.adc_trans().bit()))
+            .field("adc_eof_num", &self.adc_eof_num().bits())
+            .field("adc_reset_fsm", &self.adc_reset_fsm().bit())
+            .field("adc_trans", &self.adc_trans().bit())
             .finish()
     }
 }
@@ -83,8 +77,6 @@ impl crate::Readable for DMA_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`dma_conf::W`](W) writer structure"]
 impl crate::Writable for DMA_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets DMA_CONF to value 0xff"]
 impl crate::Resettable for DMA_CONF_SPEC {

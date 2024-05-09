@@ -26,14 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("AHB_FREQ_CONF")
-            .field(
-                "ahb_ls_div_num",
-                &format_args!("{}", self.ahb_ls_div_num().bits()),
-            )
-            .field(
-                "ahb_hs_div_num",
-                &format_args!("{}", self.ahb_hs_div_num().bits()),
-            )
+            .field("ahb_ls_div_num", &self.ahb_ls_div_num().bits())
+            .field("ahb_hs_div_num", &self.ahb_hs_div_num().bits())
             .finish()
     }
 }
@@ -67,8 +61,6 @@ impl crate::Readable for AHB_FREQ_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`ahb_freq_conf::W`](W) writer structure"]
 impl crate::Writable for AHB_FREQ_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets AHB_FREQ_CONF to value 0x0300"]
 impl crate::Resettable for AHB_FREQ_CONF_SPEC {

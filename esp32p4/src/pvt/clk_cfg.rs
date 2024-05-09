@@ -35,15 +35,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CLK_CFG")
-            .field(
-                "pump_clk_div_num",
-                &format_args!("{}", self.pump_clk_div_num().bits()),
-            )
-            .field(
-                "monitor_clk_pvt_en",
-                &format_args!("{}", self.monitor_clk_pvt_en().bit()),
-            )
-            .field("clk_sel", &format_args!("{}", self.clk_sel().bit()))
+            .field("pump_clk_div_num", &self.pump_clk_div_num().bits())
+            .field("monitor_clk_pvt_en", &self.monitor_clk_pvt_en().bit())
+            .field("clk_sel", &self.clk_sel().bit())
             .finish()
     }
 }
@@ -83,10 +77,6 @@ impl crate::Readable for CLK_CFG_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`clk_cfg::W`](W) writer structure"]
 impl crate::Writable for CLK_CFG_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CLK_CFG to value 0"]
-impl crate::Resettable for CLK_CFG_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for CLK_CFG_SPEC {}

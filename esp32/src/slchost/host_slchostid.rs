@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("HOST_SLCHOSTID")
-            .field(
-                "host_slchost_id",
-                &format_args!("{}", self.host_slchost_id().bits()),
-            )
+            .field("host_slchost_id", &self.host_slchost_id().bits())
             .finish()
     }
 }
@@ -48,8 +45,6 @@ impl crate::Readable for HOST_SLCHOSTID_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`host_slchostid::W`](W) writer structure"]
 impl crate::Writable for HOST_SLCHOSTID_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets HOST_SLCHOSTID to value 0x0600"]
 impl crate::Resettable for HOST_SLCHOSTID_SPEC {

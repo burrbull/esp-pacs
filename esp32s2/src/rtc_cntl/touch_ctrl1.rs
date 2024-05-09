@@ -26,14 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("TOUCH_CTRL1")
-            .field(
-                "touch_sleep_cycles",
-                &format_args!("{}", self.touch_sleep_cycles().bits()),
-            )
-            .field(
-                "touch_meas_num",
-                &format_args!("{}", self.touch_meas_num().bits()),
-            )
+            .field("touch_sleep_cycles", &self.touch_sleep_cycles().bits())
+            .field("touch_meas_num", &self.touch_meas_num().bits())
             .finish()
     }
 }
@@ -67,8 +61,6 @@ impl crate::Readable for TOUCH_CTRL1_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`touch_ctrl1::W`](W) writer structure"]
 impl crate::Writable for TOUCH_CTRL1_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets TOUCH_CTRL1 to value 0x1000_0100"]
 impl crate::Resettable for TOUCH_CTRL1_SPEC {

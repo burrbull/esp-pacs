@@ -13,7 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("RECIVE_SEQ")
-            .field("recive_seq", &format_args!("{}", self.recive_seq().bits()))
+            .field("recive_seq", &self.recive_seq().bits())
             .finish()
     }
 }
@@ -31,6 +31,4 @@ impl crate::RegisterSpec for RECIVE_SEQ_SPEC {
 #[doc = "`read()` method returns [`recive_seq::R`](R) reader structure"]
 impl crate::Readable for RECIVE_SEQ_SPEC {}
 #[doc = "`reset()` method sets RECIVE_SEQ to value 0"]
-impl crate::Resettable for RECIVE_SEQ_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for RECIVE_SEQ_SPEC {}

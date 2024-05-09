@@ -62,27 +62,12 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("RF_PWC")
-            .field(
-                "perif_i2c_rstb",
-                &format_args!("{}", self.perif_i2c_rstb().bit()),
-            )
-            .field(
-                "xpd_perif_i2c",
-                &format_args!("{}", self.xpd_perif_i2c().bit()),
-            )
-            .field(
-                "xpd_txrf_i2c",
-                &format_args!("{}", self.xpd_txrf_i2c().bit()),
-            )
-            .field(
-                "xpd_rfrx_pbus",
-                &format_args!("{}", self.xpd_rfrx_pbus().bit()),
-            )
-            .field(
-                "xpd_ckgen_i2c",
-                &format_args!("{}", self.xpd_ckgen_i2c().bit()),
-            )
-            .field("xpd_pll_i2c", &format_args!("{}", self.xpd_pll_i2c().bit()))
+            .field("perif_i2c_rstb", &self.perif_i2c_rstb().bit())
+            .field("xpd_perif_i2c", &self.xpd_perif_i2c().bit())
+            .field("xpd_txrf_i2c", &self.xpd_txrf_i2c().bit())
+            .field("xpd_rfrx_pbus", &self.xpd_rfrx_pbus().bit())
+            .field("xpd_ckgen_i2c", &self.xpd_ckgen_i2c().bit())
+            .field("xpd_pll_i2c", &self.xpd_pll_i2c().bit())
             .finish()
     }
 }
@@ -140,8 +125,6 @@ impl crate::Readable for RF_PWC_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`rf_pwc::W`](W) writer structure"]
 impl crate::Writable for RF_PWC_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets RF_PWC to value 0x0800_0000"]
 impl crate::Resettable for RF_PWC_SPEC {

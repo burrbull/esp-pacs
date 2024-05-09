@@ -26,14 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CFG_DATA0")
-            .field(
-                "device_id_fn1",
-                &format_args!("{}", self.device_id_fn1().bits()),
-            )
-            .field(
-                "user_id_fn1",
-                &format_args!("{}", self.user_id_fn1().bits()),
-            )
+            .field("device_id_fn1", &self.device_id_fn1().bits())
+            .field("user_id_fn1", &self.user_id_fn1().bits())
             .finish()
     }
 }
@@ -67,8 +61,6 @@ impl crate::Readable for CFG_DATA0_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`cfg_data0::W`](W) writer structure"]
 impl crate::Writable for CFG_DATA0_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CFG_DATA0 to value 0x0092_6666"]
 impl crate::Resettable for CFG_DATA0_SPEC {

@@ -13,10 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("FIFO")
-            .field(
-                "rxfifo_rd_byte",
-                &format_args!("{}", self.rxfifo_rd_byte().bits()),
-            )
+            .field("rxfifo_rd_byte", &self.rxfifo_rd_byte().bits())
             .finish()
     }
 }
@@ -34,6 +31,4 @@ impl crate::RegisterSpec for FIFO_SPEC {
 #[doc = "`read()` method returns [`fifo::R`](R) reader structure"]
 impl crate::Readable for FIFO_SPEC {}
 #[doc = "`reset()` method sets FIFO to value 0"]
-impl crate::Resettable for FIFO_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for FIFO_SPEC {}

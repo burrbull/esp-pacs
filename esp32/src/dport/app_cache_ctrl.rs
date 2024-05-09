@@ -119,55 +119,19 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("APP_CACHE_CTRL")
-            .field(
-                "app_cache_mode",
-                &format_args!("{}", self.app_cache_mode().bit()),
-            )
-            .field(
-                "app_cache_enable",
-                &format_args!("{}", self.app_cache_enable().bit()),
-            )
-            .field(
-                "app_cache_flush_ena",
-                &format_args!("{}", self.app_cache_flush_ena().bit()),
-            )
-            .field(
-                "app_cache_flush_done",
-                &format_args!("{}", self.app_cache_flush_done().bit()),
-            )
-            .field(
-                "app_cache_lock_0_en",
-                &format_args!("{}", self.app_cache_lock_0_en().bit()),
-            )
-            .field(
-                "app_cache_lock_1_en",
-                &format_args!("{}", self.app_cache_lock_1_en().bit()),
-            )
-            .field(
-                "app_cache_lock_2_en",
-                &format_args!("{}", self.app_cache_lock_2_en().bit()),
-            )
-            .field(
-                "app_cache_lock_3_en",
-                &format_args!("{}", self.app_cache_lock_3_en().bit()),
-            )
-            .field(
-                "app_single_iram_ena",
-                &format_args!("{}", self.app_single_iram_ena().bit()),
-            )
-            .field(
-                "app_dram_split",
-                &format_args!("{}", self.app_dram_split().bit()),
-            )
-            .field(
-                "app_ahb_spi_req",
-                &format_args!("{}", self.app_ahb_spi_req().bit()),
-            )
-            .field(
-                "app_slave_req",
-                &format_args!("{}", self.app_slave_req().bit()),
-            )
-            .field("app_dram_hl", &format_args!("{}", self.app_dram_hl().bit()))
+            .field("app_cache_mode", &self.app_cache_mode().bit())
+            .field("app_cache_enable", &self.app_cache_enable().bit())
+            .field("app_cache_flush_ena", &self.app_cache_flush_ena().bit())
+            .field("app_cache_flush_done", &self.app_cache_flush_done().bit())
+            .field("app_cache_lock_0_en", &self.app_cache_lock_0_en().bit())
+            .field("app_cache_lock_1_en", &self.app_cache_lock_1_en().bit())
+            .field("app_cache_lock_2_en", &self.app_cache_lock_2_en().bit())
+            .field("app_cache_lock_3_en", &self.app_cache_lock_3_en().bit())
+            .field("app_single_iram_ena", &self.app_single_iram_ena().bit())
+            .field("app_dram_split", &self.app_dram_split().bit())
+            .field("app_ahb_spi_req", &self.app_ahb_spi_req().bit())
+            .field("app_slave_req", &self.app_slave_req().bit())
+            .field("app_dram_hl", &self.app_dram_hl().bit())
             .finish()
     }
 }
@@ -249,8 +213,6 @@ impl crate::Readable for APP_CACHE_CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`app_cache_ctrl::W`](W) writer structure"]
 impl crate::Writable for APP_CACHE_CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets APP_CACHE_CTRL to value 0x10"]
 impl crate::Resettable for APP_CACHE_CTRL_SPEC {

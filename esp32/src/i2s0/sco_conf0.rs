@@ -44,22 +44,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SCO_CONF0")
-            .field(
-                "sco_with_i2s_en",
-                &format_args!("{}", self.sco_with_i2s_en().bit()),
-            )
-            .field(
-                "sco_no_i2s_en",
-                &format_args!("{}", self.sco_no_i2s_en().bit()),
-            )
-            .field(
-                "cvsd_enc_start",
-                &format_args!("{}", self.cvsd_enc_start().bit()),
-            )
-            .field(
-                "cvsd_enc_reset",
-                &format_args!("{}", self.cvsd_enc_reset().bit()),
-            )
+            .field("sco_with_i2s_en", &self.sco_with_i2s_en().bit())
+            .field("sco_no_i2s_en", &self.sco_no_i2s_en().bit())
+            .field("cvsd_enc_start", &self.cvsd_enc_start().bit())
+            .field("cvsd_enc_reset", &self.cvsd_enc_reset().bit())
             .finish()
     }
 }
@@ -105,10 +93,6 @@ impl crate::Readable for SCO_CONF0_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`sco_conf0::W`](W) writer structure"]
 impl crate::Writable for SCO_CONF0_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SCO_CONF0 to value 0"]
-impl crate::Resettable for SCO_CONF0_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for SCO_CONF0_SPEC {}

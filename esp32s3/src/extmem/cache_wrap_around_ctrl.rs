@@ -28,11 +28,11 @@ impl core::fmt::Debug for R {
         f.debug_struct("CACHE_WRAP_AROUND_CTRL")
             .field(
                 "cache_flash_wrap_around",
-                &format_args!("{}", self.cache_flash_wrap_around().bit()),
+                &self.cache_flash_wrap_around().bit(),
             )
             .field(
                 "cache_sram_rd_wrap_around",
-                &format_args!("{}", self.cache_sram_rd_wrap_around().bit()),
+                &self.cache_sram_rd_wrap_around().bit(),
             )
             .finish()
     }
@@ -71,10 +71,6 @@ impl crate::Readable for CACHE_WRAP_AROUND_CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`cache_wrap_around_ctrl::W`](W) writer structure"]
 impl crate::Writable for CACHE_WRAP_AROUND_CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CACHE_WRAP_AROUND_CTRL to value 0"]
-impl crate::Resettable for CACHE_WRAP_AROUND_CTRL_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for CACHE_WRAP_AROUND_CTRL_SPEC {}

@@ -13,10 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("RX_MESSAGE_CNT")
-            .field(
-                "rx_message_counter",
-                &format_args!("{}", self.rx_message_counter().bits()),
-            )
+            .field("rx_message_counter", &self.rx_message_counter().bits())
             .finish()
     }
 }
@@ -34,6 +31,4 @@ impl crate::RegisterSpec for RX_MESSAGE_CNT_SPEC {
 #[doc = "`read()` method returns [`rx_message_cnt::R`](R) reader structure"]
 impl crate::Readable for RX_MESSAGE_CNT_SPEC {}
 #[doc = "`reset()` method sets RX_MESSAGE_CNT to value 0"]
-impl crate::Resettable for RX_MESSAGE_CNT_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for RX_MESSAGE_CNT_SPEC {}

@@ -28,12 +28,9 @@ impl core::fmt::Debug for R {
         f.debug_struct("DMMU_PAGE_MODE")
             .field(
                 "internal_sram_dmmu_ena",
-                &format_args!("{}", self.internal_sram_dmmu_ena().bit()),
+                &self.internal_sram_dmmu_ena().bit(),
             )
-            .field(
-                "dmmu_page_mode",
-                &format_args!("{}", self.dmmu_page_mode().bits()),
-            )
+            .field("dmmu_page_mode", &self.dmmu_page_mode().bits())
             .finish()
     }
 }
@@ -67,10 +64,6 @@ impl crate::Readable for DMMU_PAGE_MODE_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`dmmu_page_mode::W`](W) writer structure"]
 impl crate::Writable for DMMU_PAGE_MODE_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets DMMU_PAGE_MODE to value 0"]
-impl crate::Resettable for DMMU_PAGE_MODE_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for DMMU_PAGE_MODE_SPEC {}

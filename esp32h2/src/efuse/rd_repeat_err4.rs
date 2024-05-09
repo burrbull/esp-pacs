@@ -27,18 +27,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("RD_REPEAT_ERR4")
-            .field(
-                "hys_en_pad1_err",
-                &format_args!("{}", self.hys_en_pad1_err().bits()),
-            )
-            .field(
-                "rpt4_reserved4_err_1",
-                &format_args!("{}", self.rpt4_reserved4_err_1().bits()),
-            )
-            .field(
-                "rpt4_reserved4_err_0",
-                &format_args!("{}", self.rpt4_reserved4_err_0().bits()),
-            )
+            .field("hys_en_pad1_err", &self.hys_en_pad1_err().bits())
+            .field("rpt4_reserved4_err_1", &self.rpt4_reserved4_err_1().bits())
+            .field("rpt4_reserved4_err_0", &self.rpt4_reserved4_err_0().bits())
             .finish()
     }
 }
@@ -56,6 +47,4 @@ impl crate::RegisterSpec for RD_REPEAT_ERR4_SPEC {
 #[doc = "`read()` method returns [`rd_repeat_err4::R`](R) reader structure"]
 impl crate::Readable for RD_REPEAT_ERR4_SPEC {}
 #[doc = "`reset()` method sets RD_REPEAT_ERR4 to value 0"]
-impl crate::Resettable for RD_REPEAT_ERR4_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for RD_REPEAT_ERR4_SPEC {}

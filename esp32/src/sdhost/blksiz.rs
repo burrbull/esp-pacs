@@ -17,7 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("BLKSIZ")
-            .field("block_size", &format_args!("{}", self.block_size().bits()))
+            .field("block_size", &self.block_size().bits())
             .finish()
     }
 }
@@ -45,8 +45,6 @@ impl crate::Readable for BLKSIZ_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`blksiz::W`](W) writer structure"]
 impl crate::Writable for BLKSIZ_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets BLKSIZ to value 0x0200"]
 impl crate::Resettable for BLKSIZ_SPEC {

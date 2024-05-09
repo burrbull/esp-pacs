@@ -44,15 +44,12 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("INT_RAW")
-            .field(
-                "db_tmp_ready",
-                &format_args!("{}", self.db_tmp_ready().bit()),
-            )
-            .field("rec_ready", &format_args!("{}", self.rec_ready().bit()))
-            .field("frame_done", &format_args!("{}", self.frame_done().bit()))
+            .field("db_tmp_ready", &self.db_tmp_ready().bit())
+            .field("rec_ready", &self.rec_ready().bit())
+            .field("frame_done", &self.frame_done().bit())
             .field(
                 "dma_move_2mb_line_done",
-                &format_args!("{}", self.dma_move_2mb_line_done().bit()),
+                &self.dma_move_2mb_line_done().bit(),
             )
             .finish()
     }
@@ -99,10 +96,6 @@ impl crate::Readable for INT_RAW_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`int_raw::W`](W) writer structure"]
 impl crate::Writable for INT_RAW_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets INT_RAW to value 0"]
-impl crate::Resettable for INT_RAW_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for INT_RAW_SPEC {}

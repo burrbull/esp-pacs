@@ -53,11 +53,11 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CONF1")
-            .field("duty_scale", &format_args!("{}", self.duty_scale().bits()))
-            .field("duty_cycle", &format_args!("{}", self.duty_cycle().bits()))
-            .field("duty_num", &format_args!("{}", self.duty_num().bits()))
-            .field("duty_inc", &format_args!("{}", self.duty_inc().bit()))
-            .field("duty_start", &format_args!("{}", self.duty_start().bit()))
+            .field("duty_scale", &self.duty_scale().bits())
+            .field("duty_cycle", &self.duty_cycle().bits())
+            .field("duty_num", &self.duty_num().bits())
+            .field("duty_inc", &self.duty_inc().bit())
+            .field("duty_start", &self.duty_start().bit())
             .finish()
     }
 }
@@ -109,8 +109,6 @@ impl crate::Readable for CONF1_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`conf1::W`](W) writer structure"]
 impl crate::Writable for CONF1_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CONF1 to value 0x4000_0000"]
 impl crate::Resettable for CONF1_SPEC {

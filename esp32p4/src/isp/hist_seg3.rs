@@ -35,18 +35,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("HIST_SEG3")
-            .field(
-                "hist_seg_14_15",
-                &format_args!("{}", self.hist_seg_14_15().bits()),
-            )
-            .field(
-                "hist_seg_13_14",
-                &format_args!("{}", self.hist_seg_13_14().bits()),
-            )
-            .field(
-                "hist_seg_12_13",
-                &format_args!("{}", self.hist_seg_12_13().bits()),
-            )
+            .field("hist_seg_14_15", &self.hist_seg_14_15().bits())
+            .field("hist_seg_13_14", &self.hist_seg_13_14().bits())
+            .field("hist_seg_12_13", &self.hist_seg_12_13().bits())
             .finish()
     }
 }
@@ -86,8 +77,6 @@ impl crate::Readable for HIST_SEG3_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`hist_seg3::W`](W) writer structure"]
 impl crate::Writable for HIST_SEG3_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets HIST_SEG3 to value 0x00d0_e0f0"]
 impl crate::Resettable for HIST_SEG3_SPEC {

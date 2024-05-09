@@ -17,7 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SAR_SARDATE")
-            .field("sar_date", &format_args!("{}", self.sar_date().bits()))
+            .field("sar_date", &self.sar_date().bits())
             .finish()
     }
 }
@@ -45,8 +45,6 @@ impl crate::Readable for SAR_SARDATE_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`sar_sardate::W`](W) writer structure"]
 impl crate::Writable for SAR_SARDATE_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SAR_SARDATE to value 0x0210_1180"]
 impl crate::Resettable for SAR_SARDATE_SPEC {

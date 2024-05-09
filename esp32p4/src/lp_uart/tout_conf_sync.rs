@@ -35,15 +35,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("TOUT_CONF_SYNC")
-            .field("rx_tout_en", &format_args!("{}", self.rx_tout_en().bit()))
-            .field(
-                "rx_tout_flow_dis",
-                &format_args!("{}", self.rx_tout_flow_dis().bit()),
-            )
-            .field(
-                "rx_tout_thrhd",
-                &format_args!("{}", self.rx_tout_thrhd().bits()),
-            )
+            .field("rx_tout_en", &self.rx_tout_en().bit())
+            .field("rx_tout_flow_dis", &self.rx_tout_flow_dis().bit())
+            .field("rx_tout_thrhd", &self.rx_tout_thrhd().bits())
             .finish()
     }
 }
@@ -83,8 +77,6 @@ impl crate::Readable for TOUT_CONF_SYNC_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`tout_conf_sync::W`](W) writer structure"]
 impl crate::Writable for TOUT_CONF_SYNC_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets TOUT_CONF_SYNC to value 0x28"]
 impl crate::Resettable for TOUT_CONF_SYNC_SPEC {

@@ -33,18 +33,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SYSTIMER_CONF")
-            .field(
-                "systimer_clk_en",
-                &format_args!("{}", self.systimer_clk_en().bit()),
-            )
-            .field(
-                "systimer_rst_en",
-                &format_args!("{}", self.systimer_rst_en().bit()),
-            )
-            .field(
-                "systimer_ready",
-                &format_args!("{}", self.systimer_ready().bit()),
-            )
+            .field("systimer_clk_en", &self.systimer_clk_en().bit())
+            .field("systimer_rst_en", &self.systimer_rst_en().bit())
+            .field("systimer_ready", &self.systimer_ready().bit())
             .finish()
     }
 }
@@ -78,8 +69,6 @@ impl crate::Readable for SYSTIMER_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`systimer_conf::W`](W) writer structure"]
 impl crate::Writable for SYSTIMER_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SYSTIMER_CONF to value 0x05"]
 impl crate::Resettable for SYSTIMER_CONF_SPEC {

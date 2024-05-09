@@ -53,20 +53,11 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("FILTER_CONTROL")
-            .field("filter_en", &format_args!("{}", self.filter_en().bit()))
-            .field("match_comp", &format_args!("{}", self.match_comp().bit()))
-            .field(
-                "match_privilege",
-                &format_args!("{}", self.match_privilege().bit()),
-            )
-            .field(
-                "match_ecause",
-                &format_args!("{}", self.match_ecause().bit()),
-            )
-            .field(
-                "match_interrupt",
-                &format_args!("{}", self.match_interrupt().bit()),
-            )
+            .field("filter_en", &self.filter_en().bit())
+            .field("match_comp", &self.match_comp().bit())
+            .field("match_privilege", &self.match_privilege().bit())
+            .field("match_ecause", &self.match_ecause().bit())
+            .field("match_interrupt", &self.match_interrupt().bit())
             .finish()
     }
 }
@@ -118,10 +109,6 @@ impl crate::Readable for FILTER_CONTROL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`filter_control::W`](W) writer structure"]
 impl crate::Writable for FILTER_CONTROL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets FILTER_CONTROL to value 0"]
-impl crate::Resettable for FILTER_CONTROL_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for FILTER_CONTROL_SPEC {}

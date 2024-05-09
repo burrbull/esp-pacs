@@ -116,48 +116,30 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CONF")
-            .field(
-                "systimer_clk_fo",
-                &format_args!("{}", self.systimer_clk_fo().bit()),
-            )
-            .field("etm_en", &format_args!("{}", self.etm_en().bit()))
-            .field(
-                "target2_work_en",
-                &format_args!("{}", self.target2_work_en().bit()),
-            )
-            .field(
-                "target1_work_en",
-                &format_args!("{}", self.target1_work_en().bit()),
-            )
-            .field(
-                "target0_work_en",
-                &format_args!("{}", self.target0_work_en().bit()),
-            )
+            .field("systimer_clk_fo", &self.systimer_clk_fo().bit())
+            .field("etm_en", &self.etm_en().bit())
+            .field("target2_work_en", &self.target2_work_en().bit())
+            .field("target1_work_en", &self.target1_work_en().bit())
+            .field("target0_work_en", &self.target0_work_en().bit())
             .field(
                 "timer_unit1_core1_stall_en",
-                &format_args!("{}", self.timer_unit1_core1_stall_en().bit()),
+                &self.timer_unit1_core1_stall_en().bit(),
             )
             .field(
                 "timer_unit1_core0_stall_en",
-                &format_args!("{}", self.timer_unit1_core0_stall_en().bit()),
+                &self.timer_unit1_core0_stall_en().bit(),
             )
             .field(
                 "timer_unit0_core1_stall_en",
-                &format_args!("{}", self.timer_unit0_core1_stall_en().bit()),
+                &self.timer_unit0_core1_stall_en().bit(),
             )
             .field(
                 "timer_unit0_core0_stall_en",
-                &format_args!("{}", self.timer_unit0_core0_stall_en().bit()),
+                &self.timer_unit0_core0_stall_en().bit(),
             )
-            .field(
-                "timer_unit1_work_en",
-                &format_args!("{}", self.timer_unit1_work_en().bit()),
-            )
-            .field(
-                "timer_unit0_work_en",
-                &format_args!("{}", self.timer_unit0_work_en().bit()),
-            )
-            .field("clk_en", &format_args!("{}", self.clk_en().bit()))
+            .field("timer_unit1_work_en", &self.timer_unit1_work_en().bit())
+            .field("timer_unit0_work_en", &self.timer_unit0_work_en().bit())
+            .field("clk_en", &self.clk_en().bit())
             .finish()
     }
 }
@@ -251,8 +233,6 @@ impl crate::Readable for CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`conf::W`](W) writer structure"]
 impl crate::Writable for CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CONF to value 0x4600_0000"]
 impl crate::Resettable for CONF_SPEC {

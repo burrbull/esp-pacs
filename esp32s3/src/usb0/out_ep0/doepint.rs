@@ -134,23 +134,20 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("DOEPINT")
-            .field("xfercompl", &format_args!("{}", self.xfercompl().bit()))
-            .field("epdisbld", &format_args!("{}", self.epdisbld().bit()))
-            .field("ahberr", &format_args!("{}", self.ahberr().bit()))
-            .field("setup", &format_args!("{}", self.setup().bit()))
-            .field("outtknepdis", &format_args!("{}", self.outtknepdis().bit()))
-            .field("stsphsercvd", &format_args!("{}", self.stsphsercvd().bit()))
-            .field(
-                "back2backsetup",
-                &format_args!("{}", self.back2backsetup().bit()),
-            )
-            .field("outpkterr", &format_args!("{}", self.outpkterr().bit()))
-            .field("bnaintr", &format_args!("{}", self.bnaintr().bit()))
-            .field("pktdrpsts", &format_args!("{}", self.pktdrpsts().bit()))
-            .field("bbleerr", &format_args!("{}", self.bbleerr().bit()))
-            .field("nakintrpt", &format_args!("{}", self.nakintrpt().bit()))
-            .field("nyepintrpt", &format_args!("{}", self.nyepintrpt().bit()))
-            .field("stuppktrcvd", &format_args!("{}", self.stuppktrcvd().bit()))
+            .field("xfercompl", &self.xfercompl().bit())
+            .field("epdisbld", &self.epdisbld().bit())
+            .field("ahberr", &self.ahberr().bit())
+            .field("setup", &self.setup().bit())
+            .field("outtknepdis", &self.outtknepdis().bit())
+            .field("stsphsercvd", &self.stsphsercvd().bit())
+            .field("back2backsetup", &self.back2backsetup().bit())
+            .field("outpkterr", &self.outpkterr().bit())
+            .field("bnaintr", &self.bnaintr().bit())
+            .field("pktdrpsts", &self.pktdrpsts().bit())
+            .field("bbleerr", &self.bbleerr().bit())
+            .field("nakintrpt", &self.nakintrpt().bit())
+            .field("nyepintrpt", &self.nyepintrpt().bit())
+            .field("stuppktrcvd", &self.stuppktrcvd().bit())
             .finish()
     }
 }
@@ -256,10 +253,6 @@ impl crate::Readable for DOEPINT_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`doepint::W`](W) writer structure"]
 impl crate::Writable for DOEPINT_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets DOEPINT to value 0"]
-impl crate::Resettable for DOEPINT_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for DOEPINT_SPEC {}

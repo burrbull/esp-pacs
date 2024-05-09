@@ -44,19 +44,13 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("DMA_BLOCK_INTERVAL")
-            .field(
-                "dma_block_slot",
-                &format_args!("{}", self.dma_block_slot().bits()),
-            )
-            .field(
-                "dma_block_interval",
-                &format_args!("{}", self.dma_block_interval().bits()),
-            )
+            .field("dma_block_slot", &self.dma_block_slot().bits())
+            .field("dma_block_interval", &self.dma_block_interval().bits())
             .field(
                 "raw_num_total_auto_reload",
-                &format_args!("{}", self.raw_num_total_auto_reload().bit()),
+                &self.raw_num_total_auto_reload().bit(),
             )
-            .field("en", &format_args!("{}", self.en().bit()))
+            .field("en", &self.en().bit())
             .finish()
     }
 }
@@ -104,8 +98,6 @@ impl crate::Readable for DMA_BLOCK_INTERVAL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`dma_block_interval::W`](W) writer structure"]
 impl crate::Writable for DMA_BLOCK_INTERVAL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets DMA_BLOCK_INTERVAL to value 0x3000_2409"]
 impl crate::Resettable for DMA_BLOCK_INTERVAL_SPEC {

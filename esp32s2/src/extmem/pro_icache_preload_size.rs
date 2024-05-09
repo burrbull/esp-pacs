@@ -28,11 +28,11 @@ impl core::fmt::Debug for R {
         f.debug_struct("PRO_ICACHE_PRELOAD_SIZE")
             .field(
                 "pro_icache_preload_size",
-                &format_args!("{}", self.pro_icache_preload_size().bits()),
+                &self.pro_icache_preload_size().bits(),
             )
             .field(
                 "pro_icache_preload_order",
-                &format_args!("{}", self.pro_icache_preload_order().bit()),
+                &self.pro_icache_preload_order().bit(),
             )
             .finish()
     }
@@ -71,8 +71,6 @@ impl crate::Readable for PRO_ICACHE_PRELOAD_SIZE_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`pro_icache_preload_size::W`](W) writer structure"]
 impl crate::Writable for PRO_ICACHE_PRELOAD_SIZE_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets PRO_ICACHE_PRELOAD_SIZE to value 0x0200"]
 impl crate::Resettable for PRO_ICACHE_PRELOAD_SIZE_SPEC {

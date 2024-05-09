@@ -62,38 +62,26 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("RD_REPEAT_ERR1")
-            .field(
-                "rpt4_reserved2_err",
-                &format_args!("{}", self.rpt4_reserved2_err().bits()),
-            )
-            .field(
-                "wdt_delay_sel_err",
-                &format_args!("{}", self.wdt_delay_sel_err().bits()),
-            )
+            .field("rpt4_reserved2_err", &self.rpt4_reserved2_err().bits())
+            .field("wdt_delay_sel_err", &self.wdt_delay_sel_err().bits())
             .field(
                 "spi_boot_crypt_cnt_err",
-                &format_args!("{}", self.spi_boot_crypt_cnt_err().bits()),
+                &self.spi_boot_crypt_cnt_err().bits(),
             )
             .field(
                 "secure_boot_key_revoke0_err",
-                &format_args!("{}", self.secure_boot_key_revoke0_err().bit()),
+                &self.secure_boot_key_revoke0_err().bit(),
             )
             .field(
                 "secure_boot_key_revoke1_err",
-                &format_args!("{}", self.secure_boot_key_revoke1_err().bit()),
+                &self.secure_boot_key_revoke1_err().bit(),
             )
             .field(
                 "secure_boot_key_revoke2_err",
-                &format_args!("{}", self.secure_boot_key_revoke2_err().bit()),
+                &self.secure_boot_key_revoke2_err().bit(),
             )
-            .field(
-                "key_purpose_0_err",
-                &format_args!("{}", self.key_purpose_0_err().bits()),
-            )
-            .field(
-                "key_purpose_1_err",
-                &format_args!("{}", self.key_purpose_1_err().bits()),
-            )
+            .field("key_purpose_0_err", &self.key_purpose_0_err().bits())
+            .field("key_purpose_1_err", &self.key_purpose_1_err().bits())
             .finish()
     }
 }
@@ -111,6 +99,4 @@ impl crate::RegisterSpec for RD_REPEAT_ERR1_SPEC {
 #[doc = "`read()` method returns [`rd_repeat_err1::R`](R) reader structure"]
 impl crate::Readable for RD_REPEAT_ERR1_SPEC {}
 #[doc = "`reset()` method sets RD_REPEAT_ERR1 to value 0"]
-impl crate::Resettable for RD_REPEAT_ERR1_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for RD_REPEAT_ERR1_SPEC {}

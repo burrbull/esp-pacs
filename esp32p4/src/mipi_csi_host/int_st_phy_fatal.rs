@@ -20,14 +20,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("INT_ST_PHY_FATAL")
-            .field(
-                "st_phy_errsotsynchs_0",
-                &format_args!("{}", self.st_phy_errsotsynchs_0().bit()),
-            )
-            .field(
-                "st_phy_errsotsynchs_1",
-                &format_args!("{}", self.st_phy_errsotsynchs_1().bit()),
-            )
+            .field("st_phy_errsotsynchs_0", &self.st_phy_errsotsynchs_0().bit())
+            .field("st_phy_errsotsynchs_1", &self.st_phy_errsotsynchs_1().bit())
             .finish()
     }
 }
@@ -45,6 +39,4 @@ impl crate::RegisterSpec for INT_ST_PHY_FATAL_SPEC {
 #[doc = "`read()` method returns [`int_st_phy_fatal::R`](R) reader structure"]
 impl crate::Readable for INT_ST_PHY_FATAL_SPEC {}
 #[doc = "`reset()` method sets INT_ST_PHY_FATAL to value 0"]
-impl crate::Resettable for INT_ST_PHY_FATAL_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for INT_ST_PHY_FATAL_SPEC {}

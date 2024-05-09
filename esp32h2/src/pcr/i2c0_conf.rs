@@ -33,9 +33,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("I2C0_CONF")
-            .field("i2c0_clk_en", &format_args!("{}", self.i2c0_clk_en().bit()))
-            .field("i2c0_rst_en", &format_args!("{}", self.i2c0_rst_en().bit()))
-            .field("i2c0_ready", &format_args!("{}", self.i2c0_ready().bit()))
+            .field("i2c0_clk_en", &self.i2c0_clk_en().bit())
+            .field("i2c0_rst_en", &self.i2c0_rst_en().bit())
+            .field("i2c0_ready", &self.i2c0_ready().bit())
             .finish()
     }
 }
@@ -69,8 +69,6 @@ impl crate::Readable for I2C0_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`i2c0_conf::W`](W) writer structure"]
 impl crate::Writable for I2C0_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets I2C0_CONF to value 0x05"]
 impl crate::Resettable for I2C0_CONF_SPEC {

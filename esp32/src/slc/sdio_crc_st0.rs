@@ -34,22 +34,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SDIO_CRC_ST0")
-            .field(
-                "dat0_crc_err_cnt",
-                &format_args!("{}", self.dat0_crc_err_cnt().bits()),
-            )
-            .field(
-                "dat1_crc_err_cnt",
-                &format_args!("{}", self.dat1_crc_err_cnt().bits()),
-            )
-            .field(
-                "dat2_crc_err_cnt",
-                &format_args!("{}", self.dat2_crc_err_cnt().bits()),
-            )
-            .field(
-                "dat3_crc_err_cnt",
-                &format_args!("{}", self.dat3_crc_err_cnt().bits()),
-            )
+            .field("dat0_crc_err_cnt", &self.dat0_crc_err_cnt().bits())
+            .field("dat1_crc_err_cnt", &self.dat1_crc_err_cnt().bits())
+            .field("dat2_crc_err_cnt", &self.dat2_crc_err_cnt().bits())
+            .field("dat3_crc_err_cnt", &self.dat3_crc_err_cnt().bits())
             .finish()
     }
 }
@@ -67,6 +55,4 @@ impl crate::RegisterSpec for SDIO_CRC_ST0_SPEC {
 #[doc = "`read()` method returns [`sdio_crc_st0::R`](R) reader structure"]
 impl crate::Readable for SDIO_CRC_ST0_SPEC {}
 #[doc = "`reset()` method sets SDIO_CRC_ST0 to value 0"]
-impl crate::Resettable for SDIO_CRC_ST0_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for SDIO_CRC_ST0_SPEC {}

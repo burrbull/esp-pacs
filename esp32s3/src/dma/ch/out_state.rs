@@ -27,15 +27,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("OUT_STATE")
-            .field(
-                "outlink_dscr_addr",
-                &format_args!("{}", self.outlink_dscr_addr().bits()),
-            )
-            .field(
-                "out_dscr_state",
-                &format_args!("{}", self.out_dscr_state().bits()),
-            )
-            .field("out_state", &format_args!("{}", self.out_state().bits()))
+            .field("outlink_dscr_addr", &self.outlink_dscr_addr().bits())
+            .field("out_dscr_state", &self.out_dscr_state().bits())
+            .field("out_state", &self.out_state().bits())
             .finish()
     }
 }
@@ -53,6 +47,4 @@ impl crate::RegisterSpec for OUT_STATE_SPEC {
 #[doc = "`read()` method returns [`out_state::R`](R) reader structure"]
 impl crate::Readable for OUT_STATE_SPEC {}
 #[doc = "`reset()` method sets OUT_STATE to value 0"]
-impl crate::Resettable for OUT_STATE_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for OUT_STATE_SPEC {}

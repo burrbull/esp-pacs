@@ -34,10 +34,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("DIN_NUM")
-            .field("din0_num", &format_args!("{}", self.din0_num().bit()))
-            .field("din1_num", &format_args!("{}", self.din1_num().bit()))
-            .field("din2_num", &format_args!("{}", self.din2_num().bit()))
-            .field("din3_num", &format_args!("{}", self.din3_num().bit()))
+            .field("din0_num", &self.din0_num().bit())
+            .field("din1_num", &self.din1_num().bit())
+            .field("din2_num", &self.din2_num().bit())
+            .field("din3_num", &self.din3_num().bit())
             .finish()
     }
 }
@@ -55,6 +55,4 @@ impl crate::RegisterSpec for DIN_NUM_SPEC {
 #[doc = "`read()` method returns [`din_num::R`](R) reader structure"]
 impl crate::Readable for DIN_NUM_SPEC {}
 #[doc = "`reset()` method sets DIN_NUM to value 0"]
-impl crate::Resettable for DIN_NUM_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for DIN_NUM_SPEC {}

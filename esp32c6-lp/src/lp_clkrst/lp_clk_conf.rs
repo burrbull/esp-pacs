@@ -35,18 +35,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("LP_CLK_CONF")
-            .field(
-                "slow_clk_sel",
-                &format_args!("{}", self.slow_clk_sel().bits()),
-            )
-            .field(
-                "fast_clk_sel",
-                &format_args!("{}", self.fast_clk_sel().bit()),
-            )
-            .field(
-                "lp_peri_div_num",
-                &format_args!("{}", self.lp_peri_div_num().bits()),
-            )
+            .field("slow_clk_sel", &self.slow_clk_sel().bits())
+            .field("fast_clk_sel", &self.fast_clk_sel().bit())
+            .field("lp_peri_div_num", &self.lp_peri_div_num().bits())
             .finish()
     }
 }
@@ -86,8 +77,6 @@ impl crate::Readable for LP_CLK_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`lp_clk_conf::W`](W) writer structure"]
 impl crate::Writable for LP_CLK_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets LP_CLK_CONF to value 0x04"]
 impl crate::Resettable for LP_CLK_CONF_SPEC {

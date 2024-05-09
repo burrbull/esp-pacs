@@ -62,30 +62,12 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PLL_DIV_CLK_EN")
-            .field(
-                "pll_240m_clk_en",
-                &format_args!("{}", self.pll_240m_clk_en().bit()),
-            )
-            .field(
-                "pll_160m_clk_en",
-                &format_args!("{}", self.pll_160m_clk_en().bit()),
-            )
-            .field(
-                "pll_120m_clk_en",
-                &format_args!("{}", self.pll_120m_clk_en().bit()),
-            )
-            .field(
-                "pll_80m_clk_en",
-                &format_args!("{}", self.pll_80m_clk_en().bit()),
-            )
-            .field(
-                "pll_48m_clk_en",
-                &format_args!("{}", self.pll_48m_clk_en().bit()),
-            )
-            .field(
-                "pll_40m_clk_en",
-                &format_args!("{}", self.pll_40m_clk_en().bit()),
-            )
+            .field("pll_240m_clk_en", &self.pll_240m_clk_en().bit())
+            .field("pll_160m_clk_en", &self.pll_160m_clk_en().bit())
+            .field("pll_120m_clk_en", &self.pll_120m_clk_en().bit())
+            .field("pll_80m_clk_en", &self.pll_80m_clk_en().bit())
+            .field("pll_48m_clk_en", &self.pll_48m_clk_en().bit())
+            .field("pll_40m_clk_en", &self.pll_40m_clk_en().bit())
             .finish()
     }
 }
@@ -143,8 +125,6 @@ impl crate::Readable for PLL_DIV_CLK_EN_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`pll_div_clk_en::W`](W) writer structure"]
 impl crate::Writable for PLL_DIV_CLK_EN_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets PLL_DIV_CLK_EN to value 0x3f"]
 impl crate::Resettable for PLL_DIV_CLK_EN_SPEC {

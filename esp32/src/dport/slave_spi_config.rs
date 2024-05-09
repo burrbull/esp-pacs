@@ -44,22 +44,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SLAVE_SPI_CONFIG")
-            .field(
-                "slave_spi_mask_pro",
-                &format_args!("{}", self.slave_spi_mask_pro().bit()),
-            )
-            .field(
-                "slave_spi_mask_app",
-                &format_args!("{}", self.slave_spi_mask_app().bit()),
-            )
-            .field(
-                "spi_encrypt_enable",
-                &format_args!("{}", self.spi_encrypt_enable().bit()),
-            )
-            .field(
-                "spi_decrypt_enable",
-                &format_args!("{}", self.spi_decrypt_enable().bit()),
-            )
+            .field("slave_spi_mask_pro", &self.slave_spi_mask_pro().bit())
+            .field("slave_spi_mask_app", &self.slave_spi_mask_app().bit())
+            .field("spi_encrypt_enable", &self.spi_encrypt_enable().bit())
+            .field("spi_decrypt_enable", &self.spi_decrypt_enable().bit())
             .finish()
     }
 }
@@ -105,10 +93,6 @@ impl crate::Readable for SLAVE_SPI_CONFIG_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`slave_spi_config::W`](W) writer structure"]
 impl crate::Writable for SLAVE_SPI_CONFIG_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SLAVE_SPI_CONFIG to value 0"]
-impl crate::Resettable for SLAVE_SPI_CONFIG_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for SLAVE_SPI_CONFIG_SPEC {}

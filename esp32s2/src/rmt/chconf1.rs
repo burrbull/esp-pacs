@@ -113,32 +113,17 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CHCONF1")
-            .field("tx_start", &format_args!("{}", self.tx_start().bit()))
-            .field("rx_en", &format_args!("{}", self.rx_en().bit()))
-            .field("mem_owner", &format_args!("{}", self.mem_owner().bit()))
-            .field(
-                "tx_conti_mode",
-                &format_args!("{}", self.tx_conti_mode().bit()),
-            )
-            .field(
-                "rx_filter_en",
-                &format_args!("{}", self.rx_filter_en().bit()),
-            )
-            .field(
-                "rx_filter_thres",
-                &format_args!("{}", self.rx_filter_thres().bits()),
-            )
-            .field(
-                "chk_rx_carrier_en",
-                &format_args!("{}", self.chk_rx_carrier_en().bit()),
-            )
-            .field(
-                "ref_always_on",
-                &format_args!("{}", self.ref_always_on().bit()),
-            )
-            .field("idle_out_lv", &format_args!("{}", self.idle_out_lv().bit()))
-            .field("idle_out_en", &format_args!("{}", self.idle_out_en().bit()))
-            .field("tx_stop", &format_args!("{}", self.tx_stop().bit()))
+            .field("tx_start", &self.tx_start().bit())
+            .field("rx_en", &self.rx_en().bit())
+            .field("mem_owner", &self.mem_owner().bit())
+            .field("tx_conti_mode", &self.tx_conti_mode().bit())
+            .field("rx_filter_en", &self.rx_filter_en().bit())
+            .field("rx_filter_thres", &self.rx_filter_thres().bits())
+            .field("chk_rx_carrier_en", &self.chk_rx_carrier_en().bit())
+            .field("ref_always_on", &self.ref_always_on().bit())
+            .field("idle_out_lv", &self.idle_out_lv().bit())
+            .field("idle_out_en", &self.idle_out_en().bit())
+            .field("tx_stop", &self.tx_stop().bit())
             .finish()
     }
 }
@@ -244,8 +229,6 @@ impl crate::Readable for CHCONF1_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`chconf1::W`](W) writer structure"]
 impl crate::Writable for CHCONF1_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CH%sCONF1 to value 0x0f20"]
 impl crate::Resettable for CHCONF1_SPEC {

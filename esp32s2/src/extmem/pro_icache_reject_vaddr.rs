@@ -13,10 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PRO_ICACHE_REJECT_VADDR")
-            .field(
-                "pro_icache_cpu_vaddr",
-                &format_args!("{}", self.pro_icache_cpu_vaddr().bits()),
-            )
+            .field("pro_icache_cpu_vaddr", &self.pro_icache_cpu_vaddr().bits())
             .finish()
     }
 }
@@ -34,6 +31,4 @@ impl crate::RegisterSpec for PRO_ICACHE_REJECT_VADDR_SPEC {
 #[doc = "`read()` method returns [`pro_icache_reject_vaddr::R`](R) reader structure"]
 impl crate::Readable for PRO_ICACHE_REJECT_VADDR_SPEC {}
 #[doc = "`reset()` method sets PRO_ICACHE_REJECT_VADDR to value 0"]
-impl crate::Resettable for PRO_ICACHE_REJECT_VADDR_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for PRO_ICACHE_REJECT_VADDR_SPEC {}

@@ -24,14 +24,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("RDN_ECO")
-            .field(
-                "pmu_rdn_eco_result",
-                &format_args!("{}", self.pmu_rdn_eco_result().bit()),
-            )
-            .field(
-                "pmu_rdn_eco_en",
-                &format_args!("{}", self.pmu_rdn_eco_en().bit()),
-            )
+            .field("pmu_rdn_eco_result", &self.pmu_rdn_eco_result().bit())
+            .field("pmu_rdn_eco_en", &self.pmu_rdn_eco_en().bit())
             .finish()
     }
 }
@@ -59,10 +53,6 @@ impl crate::Readable for RDN_ECO_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`rdn_eco::W`](W) writer structure"]
 impl crate::Writable for RDN_ECO_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets RDN_ECO to value 0"]
-impl crate::Resettable for RDN_ECO_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for RDN_ECO_SPEC {}

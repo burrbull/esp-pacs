@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PRO_BOOT_LOCATION_1")
-            .field(
-                "pro_boot_remap",
-                &format_args!("{}", self.pro_boot_remap().bit()),
-            )
+            .field("pro_boot_remap", &self.pro_boot_remap().bit())
             .finish()
     }
 }
@@ -48,10 +45,6 @@ impl crate::Readable for PRO_BOOT_LOCATION_1_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`pro_boot_location_1::W`](W) writer structure"]
 impl crate::Writable for PRO_BOOT_LOCATION_1_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets PRO_BOOT_LOCATION_1 to value 0"]
-impl crate::Resettable for PRO_BOOT_LOCATION_1_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for PRO_BOOT_LOCATION_1_SPEC {}

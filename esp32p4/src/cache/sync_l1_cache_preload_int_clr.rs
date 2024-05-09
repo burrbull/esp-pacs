@@ -54,19 +54,19 @@ impl core::fmt::Debug for R {
         f.debug_struct("SYNC_L1_CACHE_PRELOAD_INT_CLR")
             .field(
                 "l1_icache2_pld_done_int_clr",
-                &format_args!("{}", self.l1_icache2_pld_done_int_clr().bit()),
+                &self.l1_icache2_pld_done_int_clr().bit(),
             )
             .field(
                 "l1_icache3_pld_done_int_clr",
-                &format_args!("{}", self.l1_icache3_pld_done_int_clr().bit()),
+                &self.l1_icache3_pld_done_int_clr().bit(),
             )
             .field(
                 "l1_icache2_pld_err_int_clr",
-                &format_args!("{}", self.l1_icache2_pld_err_int_clr().bit()),
+                &self.l1_icache2_pld_err_int_clr().bit(),
             )
             .field(
                 "l1_icache3_pld_err_int_clr",
-                &format_args!("{}", self.l1_icache3_pld_err_int_clr().bit()),
+                &self.l1_icache3_pld_err_int_clr().bit(),
             )
             .finish()
     }
@@ -149,10 +149,6 @@ impl crate::Readable for SYNC_L1_CACHE_PRELOAD_INT_CLR_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`sync_l1_cache_preload_int_clr::W`](W) writer structure"]
 impl crate::Writable for SYNC_L1_CACHE_PRELOAD_INT_CLR_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SYNC_L1_CACHE_PRELOAD_INT_CLR to value 0"]
-impl crate::Resettable for SYNC_L1_CACHE_PRELOAD_INT_CLR_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for SYNC_L1_CACHE_PRELOAD_INT_CLR_SPEC {}

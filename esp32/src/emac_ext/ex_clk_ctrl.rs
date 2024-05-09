@@ -62,21 +62,12 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("EX_CLK_CTRL")
-            .field("ext_en", &format_args!("{}", self.ext_en().bit()))
-            .field("int_en", &format_args!("{}", self.int_en().bit()))
-            .field(
-                "rx_125_clk_en",
-                &format_args!("{}", self.rx_125_clk_en().bit()),
-            )
-            .field(
-                "mii_clk_tx_en",
-                &format_args!("{}", self.mii_clk_tx_en().bit()),
-            )
-            .field(
-                "mii_clk_rx_en",
-                &format_args!("{}", self.mii_clk_rx_en().bit()),
-            )
-            .field("clk_en", &format_args!("{}", self.clk_en().bit()))
+            .field("ext_en", &self.ext_en().bit())
+            .field("int_en", &self.int_en().bit())
+            .field("rx_125_clk_en", &self.rx_125_clk_en().bit())
+            .field("mii_clk_tx_en", &self.mii_clk_tx_en().bit())
+            .field("mii_clk_rx_en", &self.mii_clk_rx_en().bit())
+            .field("clk_en", &self.clk_en().bit())
             .finish()
     }
 }
@@ -134,10 +125,6 @@ impl crate::Readable for EX_CLK_CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`ex_clk_ctrl::W`](W) writer structure"]
 impl crate::Writable for EX_CLK_CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets EX_CLK_CTRL to value 0"]
-impl crate::Resettable for EX_CLK_CTRL_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for EX_CLK_CTRL_SPEC {}

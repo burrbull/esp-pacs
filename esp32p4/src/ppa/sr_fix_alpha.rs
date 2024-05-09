@@ -35,18 +35,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SR_FIX_ALPHA")
-            .field(
-                "sr_rx_fix_alpha",
-                &format_args!("{}", self.sr_rx_fix_alpha().bits()),
-            )
-            .field(
-                "sr_rx_alpha_mod",
-                &format_args!("{}", self.sr_rx_alpha_mod().bits()),
-            )
-            .field(
-                "sr_rx_alpha_inv",
-                &format_args!("{}", self.sr_rx_alpha_inv().bit()),
-            )
+            .field("sr_rx_fix_alpha", &self.sr_rx_fix_alpha().bits())
+            .field("sr_rx_alpha_mod", &self.sr_rx_alpha_mod().bits())
+            .field("sr_rx_alpha_inv", &self.sr_rx_alpha_inv().bit())
             .finish()
     }
 }
@@ -86,8 +77,6 @@ impl crate::Readable for SR_FIX_ALPHA_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`sr_fix_alpha::W`](W) writer structure"]
 impl crate::Writable for SR_FIX_ALPHA_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SR_FIX_ALPHA to value 0x80"]
 impl crate::Resettable for SR_FIX_ALPHA_SPEC {

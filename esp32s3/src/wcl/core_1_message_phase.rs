@@ -34,21 +34,18 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("Core_1_MESSAGE_PHASE")
-            .field(
-                "core_1_message_match",
-                &format_args!("{}", self.core_1_message_match().bit()),
-            )
+            .field("core_1_message_match", &self.core_1_message_match().bit())
             .field(
                 "core_1_message_expect",
-                &format_args!("{}", self.core_1_message_expect().bits()),
+                &self.core_1_message_expect().bits(),
             )
             .field(
                 "core_1_message_dataphase",
-                &format_args!("{}", self.core_1_message_dataphase().bit()),
+                &self.core_1_message_dataphase().bit(),
             )
             .field(
                 "core_1_message_addressphase",
-                &format_args!("{}", self.core_1_message_addressphase().bit()),
+                &self.core_1_message_addressphase().bit(),
             )
             .finish()
     }
@@ -67,6 +64,4 @@ impl crate::RegisterSpec for CORE_1_MESSAGE_PHASE_SPEC {
 #[doc = "`read()` method returns [`core_1_message_phase::R`](R) reader structure"]
 impl crate::Readable for CORE_1_MESSAGE_PHASE_SPEC {}
 #[doc = "`reset()` method sets Core_1_MESSAGE_PHASE to value 0"]
-impl crate::Resettable for CORE_1_MESSAGE_PHASE_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for CORE_1_MESSAGE_PHASE_SPEC {}

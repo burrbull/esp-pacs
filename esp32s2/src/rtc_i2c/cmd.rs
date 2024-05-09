@@ -24,11 +24,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CMD")
-            .field("command", &format_args!("{}", self.command().bits()))
-            .field(
-                "command_done",
-                &format_args!("{}", self.command_done().bit()),
-            )
+            .field("command", &self.command().bits())
+            .field("command_done", &self.command_done().bit())
             .finish()
     }
 }
@@ -56,8 +53,6 @@ impl crate::Readable for CMD_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`cmd::W`](W) writer structure"]
 impl crate::Writable for CMD_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CMD%s to value 0x0903"]
 impl crate::Resettable for CMD_SPEC {

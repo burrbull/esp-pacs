@@ -13,10 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("L2_CACHE_ACS_FAIL_ADDR")
-            .field(
-                "l2_cache_fail_addr",
-                &format_args!("{}", self.l2_cache_fail_addr().bits()),
-            )
+            .field("l2_cache_fail_addr", &self.l2_cache_fail_addr().bits())
             .finish()
     }
 }
@@ -34,6 +31,4 @@ impl crate::RegisterSpec for L2_CACHE_ACS_FAIL_ADDR_SPEC {
 #[doc = "`read()` method returns [`l2_cache_acs_fail_addr::R`](R) reader structure"]
 impl crate::Readable for L2_CACHE_ACS_FAIL_ADDR_SPEC {}
 #[doc = "`reset()` method sets L2_CACHE_ACS_FAIL_ADDR to value 0"]
-impl crate::Resettable for L2_CACHE_ACS_FAIL_ADDR_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for L2_CACHE_ACS_FAIL_ADDR_SPEC {}

@@ -55,33 +55,18 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CACHE_ILG_INT_ST")
-            .field(
-                "icache_sync_op_fault",
-                &format_args!("{}", self.icache_sync_op_fault().bit()),
-            )
+            .field("icache_sync_op_fault", &self.icache_sync_op_fault().bit())
             .field(
                 "icache_preload_op_fault",
-                &format_args!("{}", self.icache_preload_op_fault().bit()),
+                &self.icache_preload_op_fault().bit(),
             )
-            .field(
-                "mmu_entry_fault",
-                &format_args!("{}", self.mmu_entry_fault().bit()),
-            )
-            .field(
-                "ibus_acs_cnt_ovf",
-                &format_args!("{}", self.ibus_acs_cnt_ovf().bit()),
-            )
-            .field(
-                "ibus_acs_miss_cnt_ovf",
-                &format_args!("{}", self.ibus_acs_miss_cnt_ovf().bit()),
-            )
-            .field(
-                "dbus_acs_cnt_ovf",
-                &format_args!("{}", self.dbus_acs_cnt_ovf().bit()),
-            )
+            .field("mmu_entry_fault", &self.mmu_entry_fault().bit())
+            .field("ibus_acs_cnt_ovf", &self.ibus_acs_cnt_ovf().bit())
+            .field("ibus_acs_miss_cnt_ovf", &self.ibus_acs_miss_cnt_ovf().bit())
+            .field("dbus_acs_cnt_ovf", &self.dbus_acs_cnt_ovf().bit())
             .field(
                 "dbus_acs_flash_miss_cnt_ovf",
-                &format_args!("{}", self.dbus_acs_flash_miss_cnt_ovf().bit()),
+                &self.dbus_acs_flash_miss_cnt_ovf().bit(),
             )
             .finish()
     }
@@ -100,6 +85,4 @@ impl crate::RegisterSpec for CACHE_ILG_INT_ST_SPEC {
 #[doc = "`read()` method returns [`cache_ilg_int_st::R`](R) reader structure"]
 impl crate::Readable for CACHE_ILG_INT_ST_SPEC {}
 #[doc = "`reset()` method sets CACHE_ILG_INT_ST to value 0"]
-impl crate::Resettable for CACHE_ILG_INT_ST_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for CACHE_ILG_INT_ST_SPEC {}

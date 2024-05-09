@@ -19,7 +19,7 @@ impl core::fmt::Debug for R {
         f.debug_struct("DEVICE_EN")
             .field(
                 "lp_i2c_ana_mast_i2c_device_en",
-                &format_args!("{}", self.lp_i2c_ana_mast_i2c_device_en().bits()),
+                &self.lp_i2c_ana_mast_i2c_device_en().bits(),
             )
             .finish()
     }
@@ -50,10 +50,6 @@ impl crate::Readable for DEVICE_EN_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`device_en::W`](W) writer structure"]
 impl crate::Writable for DEVICE_EN_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets DEVICE_EN to value 0"]
-impl crate::Resettable for DEVICE_EN_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for DEVICE_EN_SPEC {}

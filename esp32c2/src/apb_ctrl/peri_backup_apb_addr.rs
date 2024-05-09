@@ -19,7 +19,7 @@ impl core::fmt::Debug for R {
         f.debug_struct("PERI_BACKUP_APB_ADDR")
             .field(
                 "backup_apb_start_addr",
-                &format_args!("{}", self.backup_apb_start_addr().bits()),
+                &self.backup_apb_start_addr().bits(),
             )
             .finish()
     }
@@ -48,10 +48,6 @@ impl crate::Readable for PERI_BACKUP_APB_ADDR_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`peri_backup_apb_addr::W`](W) writer structure"]
 impl crate::Writable for PERI_BACKUP_APB_ADDR_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets PERI_BACKUP_APB_ADDR to value 0"]
-impl crate::Resettable for PERI_BACKUP_APB_ADDR_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for PERI_BACKUP_APB_ADDR_SPEC {}

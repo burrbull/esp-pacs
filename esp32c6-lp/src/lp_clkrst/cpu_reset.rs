@@ -46,20 +46,11 @@ impl core::fmt::Debug for R {
         f.debug_struct("CPU_RESET")
             .field(
                 "rtc_wdt_cpu_reset_length",
-                &format_args!("{}", self.rtc_wdt_cpu_reset_length().bits()),
+                &self.rtc_wdt_cpu_reset_length().bits(),
             )
-            .field(
-                "rtc_wdt_cpu_reset_en",
-                &format_args!("{}", self.rtc_wdt_cpu_reset_en().bit()),
-            )
-            .field(
-                "cpu_stall_wait",
-                &format_args!("{}", self.cpu_stall_wait().bits()),
-            )
-            .field(
-                "cpu_stall_en",
-                &format_args!("{}", self.cpu_stall_en().bit()),
-            )
+            .field("rtc_wdt_cpu_reset_en", &self.rtc_wdt_cpu_reset_en().bit())
+            .field("cpu_stall_wait", &self.cpu_stall_wait().bits())
+            .field("cpu_stall_en", &self.cpu_stall_en().bit())
             .finish()
     }
 }
@@ -105,8 +96,6 @@ impl crate::Readable for CPU_RESET_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`cpu_reset::W`](W) writer structure"]
 impl crate::Writable for CPU_RESET_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CPU_RESET to value 0x0440_0000"]
 impl crate::Resettable for CPU_RESET_SPEC {

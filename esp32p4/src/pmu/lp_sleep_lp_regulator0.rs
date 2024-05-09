@@ -46,19 +46,19 @@ impl core::fmt::Debug for R {
         f.debug_struct("LP_SLEEP_LP_REGULATOR0")
             .field(
                 "lp_sleep_lp_regulator_slp_xpd",
-                &format_args!("{}", self.lp_sleep_lp_regulator_slp_xpd().bit()),
+                &self.lp_sleep_lp_regulator_slp_xpd().bit(),
             )
             .field(
                 "lp_sleep_lp_regulator_xpd",
-                &format_args!("{}", self.lp_sleep_lp_regulator_xpd().bit()),
+                &self.lp_sleep_lp_regulator_xpd().bit(),
             )
             .field(
                 "lp_sleep_lp_regulator_slp_dbias",
-                &format_args!("{}", self.lp_sleep_lp_regulator_slp_dbias().bits()),
+                &self.lp_sleep_lp_regulator_slp_dbias().bits(),
             )
             .field(
                 "lp_sleep_lp_regulator_dbias",
-                &format_args!("{}", self.lp_sleep_lp_regulator_dbias().bits()),
+                &self.lp_sleep_lp_regulator_dbias().bits(),
             )
             .finish()
     }
@@ -113,8 +113,6 @@ impl crate::Readable for LP_SLEEP_LP_REGULATOR0_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`lp_sleep_lp_regulator0::W`](W) writer structure"]
 impl crate::Writable for LP_SLEEP_LP_REGULATOR0_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets LP_SLEEP_LP_REGULATOR0 to value 0xc660_0000"]
 impl crate::Resettable for LP_SLEEP_LP_REGULATOR0_SPEC {

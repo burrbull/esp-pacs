@@ -80,35 +80,14 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SLV_RD_BYTE")
-            .field(
-                "slv_data_bytelen",
-                &format_args!("{}", self.slv_data_bytelen().bits()),
-            )
-            .field(
-                "slv_rddma_bytelen_en",
-                &format_args!("{}", self.slv_rddma_bytelen_en().bit()),
-            )
-            .field(
-                "slv_wrdma_bytelen_en",
-                &format_args!("{}", self.slv_wrdma_bytelen_en().bit()),
-            )
-            .field(
-                "slv_rdbuf_bytelen_en",
-                &format_args!("{}", self.slv_rdbuf_bytelen_en().bit()),
-            )
-            .field(
-                "slv_wrbuf_bytelen_en",
-                &format_args!("{}", self.slv_wrbuf_bytelen_en().bit()),
-            )
-            .field(
-                "dma_seg_magic_value",
-                &format_args!("{}", self.dma_seg_magic_value().bits()),
-            )
-            .field(
-                "slv_rd_dma_done",
-                &format_args!("{}", self.slv_rd_dma_done().bit()),
-            )
-            .field("usr_conf", &format_args!("{}", self.usr_conf().bit()))
+            .field("slv_data_bytelen", &self.slv_data_bytelen().bits())
+            .field("slv_rddma_bytelen_en", &self.slv_rddma_bytelen_en().bit())
+            .field("slv_wrdma_bytelen_en", &self.slv_wrdma_bytelen_en().bit())
+            .field("slv_rdbuf_bytelen_en", &self.slv_rdbuf_bytelen_en().bit())
+            .field("slv_wrbuf_bytelen_en", &self.slv_wrbuf_bytelen_en().bit())
+            .field("dma_seg_magic_value", &self.dma_seg_magic_value().bits())
+            .field("slv_rd_dma_done", &self.slv_rd_dma_done().bit())
+            .field("usr_conf", &self.usr_conf().bit())
             .finish()
     }
 }
@@ -178,8 +157,6 @@ impl crate::Readable for SLV_RD_BYTE_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`slv_rd_byte::W`](W) writer structure"]
 impl crate::Writable for SLV_RD_BYTE_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SLV_RD_BYTE to value 0x0a00_0000"]
 impl crate::Resettable for SLV_RD_BYTE_SPEC {

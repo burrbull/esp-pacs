@@ -44,16 +44,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SAR_HALL_CTRL")
-            .field("xpd_hall", &format_args!("{}", self.xpd_hall().bit()))
-            .field(
-                "xpd_hall_force",
-                &format_args!("{}", self.xpd_hall_force().bit()),
-            )
-            .field("hall_phase", &format_args!("{}", self.hall_phase().bit()))
-            .field(
-                "hall_phase_force",
-                &format_args!("{}", self.hall_phase_force().bit()),
-            )
+            .field("xpd_hall", &self.xpd_hall().bit())
+            .field("xpd_hall_force", &self.xpd_hall_force().bit())
+            .field("hall_phase", &self.hall_phase().bit())
+            .field("hall_phase_force", &self.hall_phase_force().bit())
             .finish()
     }
 }
@@ -99,8 +93,6 @@ impl crate::Readable for SAR_HALL_CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`sar_hall_ctrl::W`](W) writer structure"]
 impl crate::Writable for SAR_HALL_CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SAR_HALL_CTRL to value 0xa000_0000"]
 impl crate::Resettable for SAR_HALL_CTRL_SPEC {

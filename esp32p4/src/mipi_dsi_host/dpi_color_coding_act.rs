@@ -20,14 +20,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("DPI_COLOR_CODING_ACT")
-            .field(
-                "dpi_color_coding_act",
-                &format_args!("{}", self.dpi_color_coding_act().bits()),
-            )
-            .field(
-                "loosely18_en_act",
-                &format_args!("{}", self.loosely18_en_act().bit()),
-            )
+            .field("dpi_color_coding_act", &self.dpi_color_coding_act().bits())
+            .field("loosely18_en_act", &self.loosely18_en_act().bit())
             .finish()
     }
 }
@@ -45,6 +39,4 @@ impl crate::RegisterSpec for DPI_COLOR_CODING_ACT_SPEC {
 #[doc = "`read()` method returns [`dpi_color_coding_act::R`](R) reader structure"]
 impl crate::Readable for DPI_COLOR_CODING_ACT_SPEC {}
 #[doc = "`reset()` method sets DPI_COLOR_CODING_ACT to value 0"]
-impl crate::Resettable for DPI_COLOR_CODING_ACT_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for DPI_COLOR_CODING_ACT_SPEC {}

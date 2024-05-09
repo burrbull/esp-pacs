@@ -62,12 +62,12 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("INT_RAW")
-            .field("per_end", &format_args!("{}", self.per_end().bit()))
-            .field("pes_end", &format_args!("{}", self.pes_end().bit()))
-            .field("wpe_end", &format_args!("{}", self.wpe_end().bit()))
-            .field("slv_st_end", &format_args!("{}", self.slv_st_end().bit()))
-            .field("mst_st_end", &format_args!("{}", self.mst_st_end().bit()))
-            .field("brown_out", &format_args!("{}", self.brown_out().bit()))
+            .field("per_end", &self.per_end().bit())
+            .field("pes_end", &self.pes_end().bit())
+            .field("wpe_end", &self.wpe_end().bit())
+            .field("slv_st_end", &self.slv_st_end().bit())
+            .field("mst_st_end", &self.mst_st_end().bit())
+            .field("brown_out", &self.brown_out().bit())
             .finish()
     }
 }
@@ -125,10 +125,6 @@ impl crate::Readable for INT_RAW_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`int_raw::W`](W) writer structure"]
 impl crate::Writable for INT_RAW_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets INT_RAW to value 0"]
-impl crate::Resettable for INT_RAW_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for INT_RAW_SPEC {}

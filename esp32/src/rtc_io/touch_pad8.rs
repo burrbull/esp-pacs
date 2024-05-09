@@ -53,11 +53,11 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("TOUCH_PAD8")
-            .field("to_gpio", &format_args!("{}", self.to_gpio().bit()))
-            .field("xpd", &format_args!("{}", self.xpd().bit()))
-            .field("tie_opt", &format_args!("{}", self.tie_opt().bit()))
-            .field("start", &format_args!("{}", self.start().bit()))
-            .field("dac", &format_args!("{}", self.dac().bits()))
+            .field("to_gpio", &self.to_gpio().bit())
+            .field("xpd", &self.xpd().bit())
+            .field("tie_opt", &self.tie_opt().bit())
+            .field("start", &self.start().bit())
+            .field("dac", &self.dac().bits())
             .finish()
     }
 }
@@ -109,8 +109,6 @@ impl crate::Readable for TOUCH_PAD8_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`touch_pad8::W`](W) writer structure"]
 impl crate::Writable for TOUCH_PAD8_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets TOUCH_PAD8 to value 0x0200_0000"]
 impl crate::Resettable for TOUCH_PAD8_SPEC {

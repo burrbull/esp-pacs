@@ -35,18 +35,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("TOUCH_SLP_THRES")
-            .field(
-                "touch_slp_th",
-                &format_args!("{}", self.touch_slp_th().bits()),
-            )
-            .field(
-                "touch_slp_approach_en",
-                &format_args!("{}", self.touch_slp_approach_en().bit()),
-            )
-            .field(
-                "touch_slp_pad",
-                &format_args!("{}", self.touch_slp_pad().bits()),
-            )
+            .field("touch_slp_th", &self.touch_slp_th().bits())
+            .field("touch_slp_approach_en", &self.touch_slp_approach_en().bit())
+            .field("touch_slp_pad", &self.touch_slp_pad().bits())
             .finish()
     }
 }
@@ -86,8 +77,6 @@ impl crate::Readable for TOUCH_SLP_THRES_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`touch_slp_thres::W`](W) writer structure"]
 impl crate::Writable for TOUCH_SLP_THRES_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets TOUCH_SLP_THRES to value 0x7800_0000"]
 impl crate::Resettable for TOUCH_SLP_THRES_SPEC {

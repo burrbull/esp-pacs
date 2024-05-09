@@ -44,16 +44,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("TX_PCM2PDM_CONF1")
-            .field("tx_pdm_fp", &format_args!("{}", self.tx_pdm_fp().bits()))
-            .field("tx_pdm_fs", &format_args!("{}", self.tx_pdm_fs().bits()))
-            .field(
-                "tx_iir_hp_mult12_5",
-                &format_args!("{}", self.tx_iir_hp_mult12_5().bits()),
-            )
-            .field(
-                "tx_iir_hp_mult12_0",
-                &format_args!("{}", self.tx_iir_hp_mult12_0().bits()),
-            )
+            .field("tx_pdm_fp", &self.tx_pdm_fp().bits())
+            .field("tx_pdm_fs", &self.tx_pdm_fs().bits())
+            .field("tx_iir_hp_mult12_5", &self.tx_iir_hp_mult12_5().bits())
+            .field("tx_iir_hp_mult12_0", &self.tx_iir_hp_mult12_0().bits())
             .finish()
     }
 }
@@ -99,8 +93,6 @@ impl crate::Readable for TX_PCM2PDM_CONF1_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`tx_pcm2pdm_conf1::W`](W) writer structure"]
 impl crate::Writable for TX_PCM2PDM_CONF1_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets TX_PCM2PDM_CONF1 to value 0x03f7_83c0"]
 impl crate::Resettable for TX_PCM2PDM_CONF1_SPEC {

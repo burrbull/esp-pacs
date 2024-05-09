@@ -98,40 +98,16 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CTRL2")
-            .field("setup_time", &format_args!("{}", self.setup_time().bits()))
-            .field("hold_time", &format_args!("{}", self.hold_time().bits()))
-            .field(
-                "ck_out_low_mode",
-                &format_args!("{}", self.ck_out_low_mode().bits()),
-            )
-            .field(
-                "ck_out_high_mode",
-                &format_args!("{}", self.ck_out_high_mode().bits()),
-            )
-            .field(
-                "miso_delay_mode",
-                &format_args!("{}", self.miso_delay_mode().bits()),
-            )
-            .field(
-                "miso_delay_num",
-                &format_args!("{}", self.miso_delay_num().bits()),
-            )
-            .field(
-                "mosi_delay_mode",
-                &format_args!("{}", self.mosi_delay_mode().bits()),
-            )
-            .field(
-                "mosi_delay_num",
-                &format_args!("{}", self.mosi_delay_num().bits()),
-            )
-            .field(
-                "cs_delay_mode",
-                &format_args!("{}", self.cs_delay_mode().bits()),
-            )
-            .field(
-                "cs_delay_num",
-                &format_args!("{}", self.cs_delay_num().bits()),
-            )
+            .field("setup_time", &self.setup_time().bits())
+            .field("hold_time", &self.hold_time().bits())
+            .field("ck_out_low_mode", &self.ck_out_low_mode().bits())
+            .field("ck_out_high_mode", &self.ck_out_high_mode().bits())
+            .field("miso_delay_mode", &self.miso_delay_mode().bits())
+            .field("miso_delay_num", &self.miso_delay_num().bits())
+            .field("mosi_delay_mode", &self.mosi_delay_mode().bits())
+            .field("mosi_delay_num", &self.mosi_delay_num().bits())
+            .field("cs_delay_mode", &self.cs_delay_mode().bits())
+            .field("cs_delay_num", &self.cs_delay_num().bits())
             .finish()
     }
 }
@@ -213,8 +189,6 @@ impl crate::Readable for CTRL2_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`ctrl2::W`](W) writer structure"]
 impl crate::Writable for CTRL2_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CTRL2 to value 0x11"]
 impl crate::Resettable for CTRL2_SPEC {

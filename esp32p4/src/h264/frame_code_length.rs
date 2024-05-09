@@ -13,10 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("FRAME_CODE_LENGTH")
-            .field(
-                "frame_code_length",
-                &format_args!("{}", self.frame_code_length().bits()),
-            )
+            .field("frame_code_length", &self.frame_code_length().bits())
             .finish()
     }
 }
@@ -34,6 +31,4 @@ impl crate::RegisterSpec for FRAME_CODE_LENGTH_SPEC {
 #[doc = "`read()` method returns [`frame_code_length::R`](R) reader structure"]
 impl crate::Readable for FRAME_CODE_LENGTH_SPEC {}
 #[doc = "`reset()` method sets FRAME_CODE_LENGTH to value 0"]
-impl crate::Resettable for FRAME_CODE_LENGTH_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for FRAME_CODE_LENGTH_SPEC {}

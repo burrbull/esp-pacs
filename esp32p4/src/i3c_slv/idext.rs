@@ -17,7 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("IDEXT")
-            .field("idext", &format_args!("{}", self.idext().bits()))
+            .field("idext", &self.idext().bits())
             .finish()
     }
 }
@@ -45,10 +45,6 @@ impl crate::Readable for IDEXT_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`idext::W`](W) writer structure"]
 impl crate::Writable for IDEXT_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets IDEXT to value 0"]
-impl crate::Resettable for IDEXT_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for IDEXT_SPEC {}

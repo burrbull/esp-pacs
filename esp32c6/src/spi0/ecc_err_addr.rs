@@ -20,14 +20,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("ECC_ERR_ADDR")
-            .field(
-                "ecc_err_addr",
-                &format_args!("{}", self.ecc_err_addr().bits()),
-            )
-            .field(
-                "ecc_err_cnt",
-                &format_args!("{}", self.ecc_err_cnt().bits()),
-            )
+            .field("ecc_err_addr", &self.ecc_err_addr().bits())
+            .field("ecc_err_cnt", &self.ecc_err_cnt().bits())
             .finish()
     }
 }
@@ -45,6 +39,4 @@ impl crate::RegisterSpec for ECC_ERR_ADDR_SPEC {
 #[doc = "`read()` method returns [`ecc_err_addr::R`](R) reader structure"]
 impl crate::Readable for ECC_ERR_ADDR_SPEC {}
 #[doc = "`reset()` method sets ECC_ERR_ADDR to value 0"]
-impl crate::Resettable for ECC_ERR_ADDR_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for ECC_ERR_ADDR_SPEC {}

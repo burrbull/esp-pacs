@@ -33,18 +33,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PRO_CACHE_2")
-            .field(
-                "pro_cache_ilg_clr",
-                &format_args!("{}", self.pro_cache_ilg_clr().bit()),
-            )
-            .field(
-                "pro_cache_ilg_en",
-                &format_args!("{}", self.pro_cache_ilg_en().bit()),
-            )
-            .field(
-                "pro_cache_ilg_intr",
-                &format_args!("{}", self.pro_cache_ilg_intr().bit()),
-            )
+            .field("pro_cache_ilg_clr", &self.pro_cache_ilg_clr().bit())
+            .field("pro_cache_ilg_en", &self.pro_cache_ilg_en().bit())
+            .field("pro_cache_ilg_intr", &self.pro_cache_ilg_intr().bit())
             .finish()
     }
 }
@@ -78,10 +69,6 @@ impl crate::Readable for PRO_CACHE_2_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`pro_cache_2::W`](W) writer structure"]
 impl crate::Writable for PRO_CACHE_2_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets PRO_CACHE_2 to value 0"]
-impl crate::Resettable for PRO_CACHE_2_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for PRO_CACHE_2_SPEC {}

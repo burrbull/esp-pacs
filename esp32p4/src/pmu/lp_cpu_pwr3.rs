@@ -13,10 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("LP_CPU_PWR3")
-            .field(
-                "lp_cpu_wakeup_cause",
-                &format_args!("{}", self.lp_cpu_wakeup_cause().bits()),
-            )
+            .field("lp_cpu_wakeup_cause", &self.lp_cpu_wakeup_cause().bits())
             .finish()
     }
 }
@@ -34,6 +31,4 @@ impl crate::RegisterSpec for LP_CPU_PWR3_SPEC {
 #[doc = "`read()` method returns [`lp_cpu_pwr3::R`](R) reader structure"]
 impl crate::Readable for LP_CPU_PWR3_SPEC {}
 #[doc = "`reset()` method sets LP_CPU_PWR3 to value 0"]
-impl crate::Resettable for LP_CPU_PWR3_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for LP_CPU_PWR3_SPEC {}

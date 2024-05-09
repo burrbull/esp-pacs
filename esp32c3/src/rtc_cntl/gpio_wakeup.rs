@@ -141,65 +141,41 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("GPIO_WAKEUP")
-            .field(
-                "gpio_wakeup_status",
-                &format_args!("{}", self.gpio_wakeup_status().bits()),
-            )
+            .field("gpio_wakeup_status", &self.gpio_wakeup_status().bits())
             .field(
                 "gpio_wakeup_status_clr",
-                &format_args!("{}", self.gpio_wakeup_status_clr().bit()),
+                &self.gpio_wakeup_status_clr().bit(),
             )
-            .field(
-                "gpio_pin_clk_gate",
-                &format_args!("{}", self.gpio_pin_clk_gate().bit()),
-            )
-            .field(
-                "gpio_pin5_int_type",
-                &format_args!("{}", self.gpio_pin5_int_type().bits()),
-            )
-            .field(
-                "gpio_pin4_int_type",
-                &format_args!("{}", self.gpio_pin4_int_type().bits()),
-            )
-            .field(
-                "gpio_pin3_int_type",
-                &format_args!("{}", self.gpio_pin3_int_type().bits()),
-            )
-            .field(
-                "gpio_pin2_int_type",
-                &format_args!("{}", self.gpio_pin2_int_type().bits()),
-            )
-            .field(
-                "gpio_pin1_int_type",
-                &format_args!("{}", self.gpio_pin1_int_type().bits()),
-            )
-            .field(
-                "gpio_pin0_int_type",
-                &format_args!("{}", self.gpio_pin0_int_type().bits()),
-            )
+            .field("gpio_pin_clk_gate", &self.gpio_pin_clk_gate().bit())
+            .field("gpio_pin5_int_type", &self.gpio_pin5_int_type().bits())
+            .field("gpio_pin4_int_type", &self.gpio_pin4_int_type().bits())
+            .field("gpio_pin3_int_type", &self.gpio_pin3_int_type().bits())
+            .field("gpio_pin2_int_type", &self.gpio_pin2_int_type().bits())
+            .field("gpio_pin1_int_type", &self.gpio_pin1_int_type().bits())
+            .field("gpio_pin0_int_type", &self.gpio_pin0_int_type().bits())
             .field(
                 "gpio_pin5_wakeup_enable",
-                &format_args!("{}", self.gpio_pin5_wakeup_enable().bit()),
+                &self.gpio_pin5_wakeup_enable().bit(),
             )
             .field(
                 "gpio_pin4_wakeup_enable",
-                &format_args!("{}", self.gpio_pin4_wakeup_enable().bit()),
+                &self.gpio_pin4_wakeup_enable().bit(),
             )
             .field(
                 "gpio_pin3_wakeup_enable",
-                &format_args!("{}", self.gpio_pin3_wakeup_enable().bit()),
+                &self.gpio_pin3_wakeup_enable().bit(),
             )
             .field(
                 "gpio_pin2_wakeup_enable",
-                &format_args!("{}", self.gpio_pin2_wakeup_enable().bit()),
+                &self.gpio_pin2_wakeup_enable().bit(),
             )
             .field(
                 "gpio_pin1_wakeup_enable",
-                &format_args!("{}", self.gpio_pin1_wakeup_enable().bit()),
+                &self.gpio_pin1_wakeup_enable().bit(),
             )
             .field(
                 "gpio_pin0_wakeup_enable",
-                &format_args!("{}", self.gpio_pin0_wakeup_enable().bit()),
+                &self.gpio_pin0_wakeup_enable().bit(),
             )
             .finish()
     }
@@ -306,10 +282,6 @@ impl crate::Readable for GPIO_WAKEUP_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`gpio_wakeup::W`](W) writer structure"]
 impl crate::Writable for GPIO_WAKEUP_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets GPIO_WAKEUP to value 0"]
-impl crate::Resettable for GPIO_WAKEUP_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for GPIO_WAKEUP_SPEC {}

@@ -27,18 +27,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("cali_data")
-            .field(
-                "cali_value_sync2",
-                &format_args!("{}", self.cali_value_sync2().bits()),
-            )
-            .field(
-                "cali_rdy_real",
-                &format_args!("{}", self.cali_rdy_real().bit()),
-            )
-            .field(
-                "cali_rdy_sync2",
-                &format_args!("{}", self.cali_rdy_sync2().bit()),
-            )
+            .field("cali_value_sync2", &self.cali_value_sync2().bits())
+            .field("cali_rdy_real", &self.cali_rdy_real().bit())
+            .field("cali_rdy_sync2", &self.cali_rdy_sync2().bit())
             .finish()
     }
 }
@@ -56,6 +47,4 @@ impl crate::RegisterSpec for CALI_DATA_SPEC {
 #[doc = "`read()` method returns [`cali_data::R`](R) reader structure"]
 impl crate::Readable for CALI_DATA_SPEC {}
 #[doc = "`reset()` method sets cali_data to value 0"]
-impl crate::Resettable for CALI_DATA_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for CALI_DATA_SPEC {}

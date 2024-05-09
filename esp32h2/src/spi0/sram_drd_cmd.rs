@@ -22,11 +22,11 @@ impl core::fmt::Debug for R {
         f.debug_struct("SRAM_DRD_CMD")
             .field(
                 "cache_sram_usr_rd_cmd_value",
-                &format_args!("{}", self.cache_sram_usr_rd_cmd_value().bits()),
+                &self.cache_sram_usr_rd_cmd_value().bits(),
             )
             .field(
                 "cache_sram_usr_rd_cmd_bitlen",
-                &format_args!("{}", self.cache_sram_usr_rd_cmd_bitlen().bits()),
+                &self.cache_sram_usr_rd_cmd_bitlen().bits(),
             )
             .finish()
     }
@@ -45,6 +45,4 @@ impl crate::RegisterSpec for SRAM_DRD_CMD_SPEC {
 #[doc = "`read()` method returns [`sram_drd_cmd::R`](R) reader structure"]
 impl crate::Readable for SRAM_DRD_CMD_SPEC {}
 #[doc = "`reset()` method sets SRAM_DRD_CMD to value 0"]
-impl crate::Resettable for SRAM_DRD_CMD_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for SRAM_DRD_CMD_SPEC {}

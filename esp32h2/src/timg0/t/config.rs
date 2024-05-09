@@ -64,12 +64,12 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CONFIG")
-            .field("use_xtal", &format_args!("{}", self.use_xtal().bit()))
-            .field("alarm_en", &format_args!("{}", self.alarm_en().bit()))
-            .field("divider", &format_args!("{}", self.divider().bits()))
-            .field("autoreload", &format_args!("{}", self.autoreload().bit()))
-            .field("increase", &format_args!("{}", self.increase().bit()))
-            .field("en", &format_args!("{}", self.en().bit()))
+            .field("use_xtal", &self.use_xtal().bit())
+            .field("alarm_en", &self.alarm_en().bit())
+            .field("divider", &self.divider().bits())
+            .field("autoreload", &self.autoreload().bit())
+            .field("increase", &self.increase().bit())
+            .field("en", &self.en().bit())
             .finish()
     }
 }
@@ -133,8 +133,6 @@ impl crate::Readable for CONFIG_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`config::W`](W) writer structure"]
 impl crate::Writable for CONFIG_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CONFIG to value 0x6000_2000"]
 impl crate::Resettable for CONFIG_SPEC {

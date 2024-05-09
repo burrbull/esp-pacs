@@ -26,8 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("TEST_MUX")
-            .field("ent_rtc", &format_args!("{}", self.ent_rtc().bit()))
-            .field("dtest_rtc", &format_args!("{}", self.dtest_rtc().bits()))
+            .field("ent_rtc", &self.ent_rtc().bit())
+            .field("dtest_rtc", &self.dtest_rtc().bits())
             .finish()
     }
 }
@@ -61,10 +61,6 @@ impl crate::Readable for TEST_MUX_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`test_mux::W`](W) writer structure"]
 impl crate::Writable for TEST_MUX_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets TEST_MUX to value 0"]
-impl crate::Resettable for TEST_MUX_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for TEST_MUX_SPEC {}

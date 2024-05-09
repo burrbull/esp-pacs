@@ -19,7 +19,7 @@ impl core::fmt::Debug for R {
         f.debug_struct("H264_REG_INT_MAP")
             .field(
                 "core0_h264_reg_int_map",
-                &format_args!("{}", self.core0_h264_reg_int_map().bits()),
+                &self.core0_h264_reg_int_map().bits(),
             )
             .finish()
     }
@@ -48,10 +48,6 @@ impl crate::Readable for H264_REG_INT_MAP_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`h264_reg_int_map::W`](W) writer structure"]
 impl crate::Writable for H264_REG_INT_MAP_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets H264_REG_INT_MAP to value 0"]
-impl crate::Resettable for H264_REG_INT_MAP_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for H264_REG_INT_MAP_SPEC {}

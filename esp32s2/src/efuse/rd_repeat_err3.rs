@@ -90,54 +90,36 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("RD_REPEAT_ERR3")
-            .field(
-                "dis_download_mode_err",
-                &format_args!("{}", self.dis_download_mode_err().bit()),
-            )
+            .field("dis_download_mode_err", &self.dis_download_mode_err().bit())
             .field(
                 "dis_legacy_spi_boot_err",
-                &format_args!("{}", self.dis_legacy_spi_boot_err().bit()),
+                &self.dis_legacy_spi_boot_err().bit(),
             )
             .field(
                 "uart_print_channel_err",
-                &format_args!("{}", self.uart_print_channel_err().bit()),
+                &self.uart_print_channel_err().bit(),
             )
-            .field(
-                "rpt4_reserved3_err",
-                &format_args!("{}", self.rpt4_reserved3_err().bit()),
-            )
+            .field("rpt4_reserved3_err", &self.rpt4_reserved3_err().bit())
             .field(
                 "dis_usb_download_mode_err",
-                &format_args!("{}", self.dis_usb_download_mode_err().bit()),
+                &self.dis_usb_download_mode_err().bit(),
             )
             .field(
                 "enable_security_download_err",
-                &format_args!("{}", self.enable_security_download_err().bit()),
+                &self.enable_security_download_err().bit(),
             )
             .field(
                 "uart_print_control_err",
-                &format_args!("{}", self.uart_print_control_err().bits()),
+                &self.uart_print_control_err().bits(),
             )
             .field(
                 "pin_power_selection_err",
-                &format_args!("{}", self.pin_power_selection_err().bit()),
+                &self.pin_power_selection_err().bit(),
             )
-            .field(
-                "flash_type_err",
-                &format_args!("{}", self.flash_type_err().bit()),
-            )
-            .field(
-                "force_send_resume_err",
-                &format_args!("{}", self.force_send_resume_err().bit()),
-            )
-            .field(
-                "secure_version_err",
-                &format_args!("{}", self.secure_version_err().bits()),
-            )
-            .field(
-                "rpt4_reserved2_err",
-                &format_args!("{}", self.rpt4_reserved2_err().bits()),
-            )
+            .field("flash_type_err", &self.flash_type_err().bit())
+            .field("force_send_resume_err", &self.force_send_resume_err().bit())
+            .field("secure_version_err", &self.secure_version_err().bits())
+            .field("rpt4_reserved2_err", &self.rpt4_reserved2_err().bits())
             .finish()
     }
 }
@@ -155,6 +137,4 @@ impl crate::RegisterSpec for RD_REPEAT_ERR3_SPEC {
 #[doc = "`read()` method returns [`rd_repeat_err3::R`](R) reader structure"]
 impl crate::Readable for RD_REPEAT_ERR3_SPEC {}
 #[doc = "`reset()` method sets RD_REPEAT_ERR3 to value 0"]
-impl crate::Resettable for RD_REPEAT_ERR3_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for RD_REPEAT_ERR3_SPEC {}

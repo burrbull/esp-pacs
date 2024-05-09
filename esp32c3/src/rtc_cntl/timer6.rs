@@ -26,13 +26,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("TIMER6")
-            .field(
-                "dg_peri_wait_timer",
-                &format_args!("{}", self.dg_peri_wait_timer().bits()),
-            )
+            .field("dg_peri_wait_timer", &self.dg_peri_wait_timer().bits())
             .field(
                 "dg_peri_powerup_timer",
-                &format_args!("{}", self.dg_peri_powerup_timer().bits()),
+                &self.dg_peri_powerup_timer().bits(),
             )
             .finish()
     }
@@ -67,8 +64,6 @@ impl crate::Readable for TIMER6_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`timer6::W`](W) writer structure"]
 impl crate::Writable for TIMER6_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets TIMER6 to value 0x0a08_0000"]
 impl crate::Resettable for TIMER6_SPEC {

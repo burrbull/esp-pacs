@@ -134,56 +134,20 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CONF1")
-            .field(
-                "slc0_check_owner",
-                &format_args!("{}", self.slc0_check_owner().bit()),
-            )
-            .field(
-                "slc0_tx_check_sum_en",
-                &format_args!("{}", self.slc0_tx_check_sum_en().bit()),
-            )
-            .field(
-                "slc0_rx_check_sum_en",
-                &format_args!("{}", self.slc0_rx_check_sum_en().bit()),
-            )
-            .field("cmd_hold_en", &format_args!("{}", self.cmd_hold_en().bit()))
-            .field(
-                "slc0_len_auto_clr",
-                &format_args!("{}", self.slc0_len_auto_clr().bit()),
-            )
-            .field(
-                "slc0_tx_stitch_en",
-                &format_args!("{}", self.slc0_tx_stitch_en().bit()),
-            )
-            .field(
-                "slc0_rx_stitch_en",
-                &format_args!("{}", self.slc0_rx_stitch_en().bit()),
-            )
-            .field(
-                "slc1_check_owner",
-                &format_args!("{}", self.slc1_check_owner().bit()),
-            )
-            .field(
-                "slc1_tx_check_sum_en",
-                &format_args!("{}", self.slc1_tx_check_sum_en().bit()),
-            )
-            .field(
-                "slc1_rx_check_sum_en",
-                &format_args!("{}", self.slc1_rx_check_sum_en().bit()),
-            )
-            .field(
-                "host_int_level_sel",
-                &format_args!("{}", self.host_int_level_sel().bit()),
-            )
-            .field(
-                "slc1_tx_stitch_en",
-                &format_args!("{}", self.slc1_tx_stitch_en().bit()),
-            )
-            .field(
-                "slc1_rx_stitch_en",
-                &format_args!("{}", self.slc1_rx_stitch_en().bit()),
-            )
-            .field("clk_en", &format_args!("{}", self.clk_en().bit()))
+            .field("slc0_check_owner", &self.slc0_check_owner().bit())
+            .field("slc0_tx_check_sum_en", &self.slc0_tx_check_sum_en().bit())
+            .field("slc0_rx_check_sum_en", &self.slc0_rx_check_sum_en().bit())
+            .field("cmd_hold_en", &self.cmd_hold_en().bit())
+            .field("slc0_len_auto_clr", &self.slc0_len_auto_clr().bit())
+            .field("slc0_tx_stitch_en", &self.slc0_tx_stitch_en().bit())
+            .field("slc0_rx_stitch_en", &self.slc0_rx_stitch_en().bit())
+            .field("slc1_check_owner", &self.slc1_check_owner().bit())
+            .field("slc1_tx_check_sum_en", &self.slc1_tx_check_sum_en().bit())
+            .field("slc1_rx_check_sum_en", &self.slc1_rx_check_sum_en().bit())
+            .field("host_int_level_sel", &self.host_int_level_sel().bit())
+            .field("slc1_tx_stitch_en", &self.slc1_tx_stitch_en().bit())
+            .field("slc1_rx_stitch_en", &self.slc1_rx_stitch_en().bit())
+            .field("clk_en", &self.clk_en().bit())
             .finish()
     }
 }
@@ -289,8 +253,6 @@ impl crate::Readable for CONF1_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`conf1::W`](W) writer structure"]
 impl crate::Writable for CONF1_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CONF1 to value 0x0030_0078"]
 impl crate::Resettable for CONF1_SPEC {

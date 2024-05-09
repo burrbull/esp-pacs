@@ -46,20 +46,17 @@ impl core::fmt::Debug for R {
         f.debug_struct("DEV_ADDR_TABLE2_LOC")
             .field(
                 "reg_dat_dev2_static_addr",
-                &format_args!("{}", self.reg_dat_dev2_static_addr().bits()),
+                &self.reg_dat_dev2_static_addr().bits(),
             )
             .field(
                 "reg_dat_dev2_dynamic_addr",
-                &format_args!("{}", self.reg_dat_dev2_dynamic_addr().bits()),
+                &self.reg_dat_dev2_dynamic_addr().bits(),
             )
             .field(
                 "reg_dat_dev2_nack_retry_cnt",
-                &format_args!("{}", self.reg_dat_dev2_nack_retry_cnt().bits()),
+                &self.reg_dat_dev2_nack_retry_cnt().bits(),
             )
-            .field(
-                "reg_dat_dev2_i2c",
-                &format_args!("{}", self.reg_dat_dev2_i2c().bit()),
-            )
+            .field("reg_dat_dev2_i2c", &self.reg_dat_dev2_i2c().bit())
             .finish()
     }
 }
@@ -111,10 +108,6 @@ impl crate::Readable for DEV_ADDR_TABLE2_LOC_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`dev_addr_table2_loc::W`](W) writer structure"]
 impl crate::Writable for DEV_ADDR_TABLE2_LOC_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets DEV_ADDR_TABLE2_LOC to value 0"]
-impl crate::Resettable for DEV_ADDR_TABLE2_LOC_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for DEV_ADDR_TABLE2_LOC_SPEC {}

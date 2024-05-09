@@ -34,22 +34,13 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SLC1HOST_TOKEN_RDATA")
-            .field(
-                "slc1_token0",
-                &format_args!("{}", self.slc1_token0().bits()),
-            )
-            .field(
-                "slc1_rx_pf_valid",
-                &format_args!("{}", self.slc1_rx_pf_valid().bit()),
-            )
+            .field("slc1_token0", &self.slc1_token0().bits())
+            .field("slc1_rx_pf_valid", &self.slc1_rx_pf_valid().bit())
             .field(
                 "hostslchost_slc1_token1",
-                &format_args!("{}", self.hostslchost_slc1_token1().bits()),
+                &self.hostslchost_slc1_token1().bits(),
             )
-            .field(
-                "slc1_rx_pf_eof",
-                &format_args!("{}", self.slc1_rx_pf_eof().bits()),
-            )
+            .field("slc1_rx_pf_eof", &self.slc1_rx_pf_eof().bits())
             .finish()
     }
 }
@@ -67,6 +58,4 @@ impl crate::RegisterSpec for SLC1HOST_TOKEN_RDATA_SPEC {
 #[doc = "`read()` method returns [`slc1host_token_rdata::R`](R) reader structure"]
 impl crate::Readable for SLC1HOST_TOKEN_RDATA_SPEC {}
 #[doc = "`reset()` method sets SLC1HOST_TOKEN_RDATA to value 0"]
-impl crate::Resettable for SLC1HOST_TOKEN_RDATA_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for SLC1HOST_TOKEN_RDATA_SPEC {}

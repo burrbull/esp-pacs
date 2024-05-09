@@ -13,10 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("LOCK_STATUS")
-            .field(
-                "lock_status",
-                &format_args!("{}", self.lock_status().bits()),
-            )
+            .field("lock_status", &self.lock_status().bits())
             .finish()
     }
 }
@@ -34,6 +31,4 @@ impl crate::RegisterSpec for LOCK_STATUS_SPEC {
 #[doc = "`read()` method returns [`lock_status::R`](R) reader structure"]
 impl crate::Readable for LOCK_STATUS_SPEC {}
 #[doc = "`reset()` method sets LOCK_STATUS to value 0"]
-impl crate::Resettable for LOCK_STATUS_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for LOCK_STATUS_SPEC {}

@@ -37,15 +37,15 @@ impl core::fmt::Debug for R {
         f.debug_struct("L1_ICACHE0_PRELOCK_CONF")
             .field(
                 "l1_icache0_prelock_sct0_en",
-                &format_args!("{}", self.l1_icache0_prelock_sct0_en().bit()),
+                &self.l1_icache0_prelock_sct0_en().bit(),
             )
             .field(
                 "l1_icache0_prelock_sct1_en",
-                &format_args!("{}", self.l1_icache0_prelock_sct1_en().bit()),
+                &self.l1_icache0_prelock_sct1_en().bit(),
             )
             .field(
                 "l1_icache0_prelock_rgid",
-                &format_args!("{}", self.l1_icache0_prelock_rgid().bits()),
+                &self.l1_icache0_prelock_rgid().bits(),
             )
             .finish()
     }
@@ -92,10 +92,6 @@ impl crate::Readable for L1_ICACHE0_PRELOCK_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`l1_icache0_prelock_conf::W`](W) writer structure"]
 impl crate::Writable for L1_ICACHE0_PRELOCK_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets L1_ICACHE0_PRELOCK_CONF to value 0"]
-impl crate::Resettable for L1_ICACHE0_PRELOCK_CONF_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for L1_ICACHE0_PRELOCK_CONF_SPEC {}

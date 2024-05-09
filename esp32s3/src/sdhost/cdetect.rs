@@ -13,10 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CDETECT")
-            .field(
-                "card_detect_n",
-                &format_args!("{}", self.card_detect_n().bits()),
-            )
+            .field("card_detect_n", &self.card_detect_n().bits())
             .finish()
     }
 }
@@ -34,6 +31,4 @@ impl crate::RegisterSpec for CDETECT_SPEC {
 #[doc = "`read()` method returns [`cdetect::R`](R) reader structure"]
 impl crate::Readable for CDETECT_SPEC {}
 #[doc = "`reset()` method sets CDETECT to value 0"]
-impl crate::Resettable for CDETECT_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for CDETECT_SPEC {}

@@ -62,12 +62,12 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("EVT_EN2")
-            .field("op0_tee1", &format_args!("{}", self.op0_tee1().bit()))
-            .field("op1_tee1", &format_args!("{}", self.op1_tee1().bit()))
-            .field("op2_tee1", &format_args!("{}", self.op2_tee1().bit()))
-            .field("op0_tee2", &format_args!("{}", self.op0_tee2().bit()))
-            .field("op1_tee2", &format_args!("{}", self.op1_tee2().bit()))
-            .field("op2_tee2", &format_args!("{}", self.op2_tee2().bit()))
+            .field("op0_tee1", &self.op0_tee1().bit())
+            .field("op1_tee1", &self.op1_tee1().bit())
+            .field("op2_tee1", &self.op2_tee1().bit())
+            .field("op0_tee2", &self.op0_tee2().bit())
+            .field("op1_tee2", &self.op1_tee2().bit())
+            .field("op2_tee2", &self.op2_tee2().bit())
             .finish()
     }
 }
@@ -125,10 +125,6 @@ impl crate::Readable for EVT_EN2_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`evt_en2::W`](W) writer structure"]
 impl crate::Writable for EVT_EN2_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets EVT_EN2 to value 0"]
-impl crate::Resettable for EVT_EN2_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for EVT_EN2_SPEC {}

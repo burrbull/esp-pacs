@@ -44,19 +44,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CLK")
-            .field(
-                "mem_force_pd",
-                &format_args!("{}", self.mem_force_pd().bit()),
-            )
-            .field(
-                "mem_clk_force_on",
-                &format_args!("{}", self.mem_clk_force_on().bit()),
-            )
-            .field(
-                "mem_force_pu",
-                &format_args!("{}", self.mem_force_pu().bit()),
-            )
-            .field("en", &format_args!("{}", self.en().bit()))
+            .field("mem_force_pd", &self.mem_force_pd().bit())
+            .field("mem_clk_force_on", &self.mem_clk_force_on().bit())
+            .field("mem_force_pu", &self.mem_force_pu().bit())
+            .field("en", &self.en().bit())
             .finish()
     }
 }
@@ -102,10 +93,6 @@ impl crate::Readable for CLK_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`clk::W`](W) writer structure"]
 impl crate::Writable for CLK_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CLK to value 0"]
-impl crate::Resettable for CLK_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for CLK_SPEC {}

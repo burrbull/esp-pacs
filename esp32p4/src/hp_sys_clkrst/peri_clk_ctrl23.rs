@@ -44,18 +44,15 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PERI_CLK_CTRL23")
-            .field("adc_clk_en", &format_args!("{}", self.adc_clk_en().bit()))
-            .field(
-                "adc_clk_div_num",
-                &format_args!("{}", self.adc_clk_div_num().bits()),
-            )
+            .field("adc_clk_en", &self.adc_clk_en().bit())
+            .field("adc_clk_div_num", &self.adc_clk_div_num().bits())
             .field(
                 "adc_clk_div_numerator",
-                &format_args!("{}", self.adc_clk_div_numerator().bits()),
+                &self.adc_clk_div_numerator().bits(),
             )
             .field(
                 "adc_clk_div_denominator",
-                &format_args!("{}", self.adc_clk_div_denominator().bits()),
+                &self.adc_clk_div_denominator().bits(),
             )
             .finish()
     }
@@ -102,8 +99,6 @@ impl crate::Readable for PERI_CLK_CTRL23_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`peri_clk_ctrl23::W`](W) writer structure"]
 impl crate::Writable for PERI_CLK_CTRL23_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets PERI_CLK_CTRL23 to value 0x08"]
 impl crate::Resettable for PERI_CLK_CTRL23_SPEC {

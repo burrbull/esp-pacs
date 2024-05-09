@@ -26,14 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("TWAI0_CONF")
-            .field(
-                "twai0_clk_en",
-                &format_args!("{}", self.twai0_clk_en().bit()),
-            )
-            .field(
-                "twai0_rst_en",
-                &format_args!("{}", self.twai0_rst_en().bit()),
-            )
+            .field("twai0_clk_en", &self.twai0_clk_en().bit())
+            .field("twai0_rst_en", &self.twai0_rst_en().bit())
             .finish()
     }
 }
@@ -67,8 +61,6 @@ impl crate::Readable for TWAI0_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`twai0_conf::W`](W) writer structure"]
 impl crate::Writable for TWAI0_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets TWAI0_CONF to value 0x01"]
 impl crate::Resettable for TWAI0_CONF_SPEC {

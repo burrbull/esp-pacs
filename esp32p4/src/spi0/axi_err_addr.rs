@@ -13,10 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("AXI_ERR_ADDR")
-            .field(
-                "axi_err_addr",
-                &format_args!("{}", self.axi_err_addr().bits()),
-            )
+            .field("axi_err_addr", &self.axi_err_addr().bits())
             .finish()
     }
 }
@@ -34,6 +31,4 @@ impl crate::RegisterSpec for AXI_ERR_ADDR_SPEC {
 #[doc = "`read()` method returns [`axi_err_addr::R`](R) reader structure"]
 impl crate::Readable for AXI_ERR_ADDR_SPEC {}
 #[doc = "`reset()` method sets AXI_ERR_ADDR to value 0"]
-impl crate::Resettable for AXI_ERR_ADDR_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for AXI_ERR_ADDR_SPEC {}

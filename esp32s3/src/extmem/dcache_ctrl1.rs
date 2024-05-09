@@ -26,14 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("DCACHE_CTRL1")
-            .field(
-                "dcache_shut_core0_bus",
-                &format_args!("{}", self.dcache_shut_core0_bus().bit()),
-            )
-            .field(
-                "dcache_shut_core1_bus",
-                &format_args!("{}", self.dcache_shut_core1_bus().bit()),
-            )
+            .field("dcache_shut_core0_bus", &self.dcache_shut_core0_bus().bit())
+            .field("dcache_shut_core1_bus", &self.dcache_shut_core1_bus().bit())
             .finish()
     }
 }
@@ -67,8 +61,6 @@ impl crate::Readable for DCACHE_CTRL1_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`dcache_ctrl1::W`](W) writer structure"]
 impl crate::Writable for DCACHE_CTRL1_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets DCACHE_CTRL1 to value 0x03"]
 impl crate::Resettable for DCACHE_CTRL1_SPEC {

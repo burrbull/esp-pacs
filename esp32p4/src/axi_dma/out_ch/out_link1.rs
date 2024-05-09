@@ -21,10 +21,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("OUT_LINK1")
-            .field(
-                "outlink_park",
-                &format_args!("{}", self.outlink_park().bit()),
-            )
+            .field("outlink_park", &self.outlink_park().bit())
             .finish()
     }
 }
@@ -64,8 +61,6 @@ impl crate::Readable for OUT_LINK1_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`out_link1::W`](W) writer structure"]
 impl crate::Writable for OUT_LINK1_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets OUT_LINK1 to value 0x08"]
 impl crate::Resettable for OUT_LINK1_SPEC {

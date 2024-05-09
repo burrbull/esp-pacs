@@ -17,7 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CLK_EN0")
-            .field("clk_en", &format_args!("{}", self.clk_en().bit()))
+            .field("clk_en", &self.clk_en().bit())
             .finish()
     }
 }
@@ -45,8 +45,6 @@ impl crate::Readable for CLK_EN0_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`clk_en0::W`](W) writer structure"]
 impl crate::Writable for CLK_EN0_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CLK_EN0 to value 0x01"]
 impl crate::Resettable for CLK_EN0_SPEC {

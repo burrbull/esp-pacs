@@ -110,15 +110,15 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PMS_ATTR")
-            .field("r0_pms_x", &format_args!("{}", self.r0_pms_x().bit()))
-            .field("r1_pms_x", &format_args!("{}", self.r1_pms_x().bit()))
-            .field("r2_pms_x", &format_args!("{}", self.r2_pms_x().bit()))
-            .field("r0_pms_w", &format_args!("{}", self.r0_pms_w().bit()))
-            .field("r1_pms_w", &format_args!("{}", self.r1_pms_w().bit()))
-            .field("r2_pms_w", &format_args!("{}", self.r2_pms_w().bit()))
-            .field("r0_pms_r", &format_args!("{}", self.r0_pms_r().bit()))
-            .field("r1_pms_r", &format_args!("{}", self.r1_pms_r().bit()))
-            .field("r2_pms_r", &format_args!("{}", self.r2_pms_r().bit()))
+            .field("r0_pms_x", &self.r0_pms_x().bit())
+            .field("r1_pms_x", &self.r1_pms_x().bit())
+            .field("r2_pms_x", &self.r2_pms_x().bit())
+            .field("r0_pms_w", &self.r0_pms_w().bit())
+            .field("r1_pms_w", &self.r1_pms_w().bit())
+            .field("r2_pms_w", &self.r2_pms_w().bit())
+            .field("r0_pms_r", &self.r0_pms_r().bit())
+            .field("r1_pms_r", &self.r1_pms_r().bit())
+            .field("r2_pms_r", &self.r2_pms_r().bit())
             .finish()
     }
 }
@@ -224,10 +224,6 @@ impl crate::Readable for PMS_ATTR_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`pms_attr::W`](W) writer structure"]
 impl crate::Writable for PMS_ATTR_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets PMS_ATTR to value 0"]
-impl crate::Resettable for PMS_ATTR_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for PMS_ATTR_SPEC {}

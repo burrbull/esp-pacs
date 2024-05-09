@@ -36,19 +36,19 @@ impl core::fmt::Debug for R {
         f.debug_struct("SAR_TOUCH_STATUS16")
             .field(
                 "touch_approach_pad2_cnt",
-                &format_args!("{}", self.touch_approach_pad2_cnt().bits()),
+                &self.touch_approach_pad2_cnt().bits(),
             )
             .field(
                 "touch_approach_pad1_cnt",
-                &format_args!("{}", self.touch_approach_pad1_cnt().bits()),
+                &self.touch_approach_pad1_cnt().bits(),
             )
             .field(
                 "touch_approach_pad0_cnt",
-                &format_args!("{}", self.touch_approach_pad0_cnt().bits()),
+                &self.touch_approach_pad0_cnt().bits(),
             )
             .field(
                 "touch_slp_approach_cnt",
-                &format_args!("{}", self.touch_slp_approach_cnt().bits()),
+                &self.touch_slp_approach_cnt().bits(),
             )
             .finish()
     }
@@ -67,6 +67,4 @@ impl crate::RegisterSpec for SAR_TOUCH_STATUS16_SPEC {
 #[doc = "`read()` method returns [`sar_touch_status16::R`](R) reader structure"]
 impl crate::Readable for SAR_TOUCH_STATUS16_SPEC {}
 #[doc = "`reset()` method sets SAR_TOUCH_STATUS16 to value 0"]
-impl crate::Resettable for SAR_TOUCH_STATUS16_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for SAR_TOUCH_STATUS16_SPEC {}

@@ -44,22 +44,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CONF_W4")
-            .field(
-                "slchost_conf16",
-                &format_args!("{}", self.slchost_conf16().bits()),
-            )
-            .field(
-                "slchost_conf17",
-                &format_args!("{}", self.slchost_conf17().bits()),
-            )
-            .field(
-                "slchost_conf18",
-                &format_args!("{}", self.slchost_conf18().bits()),
-            )
-            .field(
-                "slchost_conf19",
-                &format_args!("{}", self.slchost_conf19().bits()),
-            )
+            .field("slchost_conf16", &self.slchost_conf16().bits())
+            .field("slchost_conf17", &self.slchost_conf17().bits())
+            .field("slchost_conf18", &self.slchost_conf18().bits())
+            .field("slchost_conf19", &self.slchost_conf19().bits())
             .finish()
     }
 }
@@ -105,8 +93,6 @@ impl crate::Readable for CONF_W4_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`conf_w4::W`](W) writer structure"]
 impl crate::Writable for CONF_W4_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CONF_W4 to value 0x01ff"]
 impl crate::Resettable for CONF_W4_SPEC {

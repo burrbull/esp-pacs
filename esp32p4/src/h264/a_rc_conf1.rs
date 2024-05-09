@@ -53,20 +53,11 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("A_RC_CONF1")
-            .field(
-                "a_chroma_dc_qp_delta",
-                &format_args!("{}", self.a_chroma_dc_qp_delta().bits()),
-            )
-            .field(
-                "a_chroma_qp_delta",
-                &format_args!("{}", self.a_chroma_qp_delta().bits()),
-            )
-            .field("a_qp_min", &format_args!("{}", self.a_qp_min().bits()))
-            .field("a_qp_max", &format_args!("{}", self.a_qp_max().bits()))
-            .field(
-                "a_mad_frame_pred",
-                &format_args!("{}", self.a_mad_frame_pred().bits()),
-            )
+            .field("a_chroma_dc_qp_delta", &self.a_chroma_dc_qp_delta().bits())
+            .field("a_chroma_qp_delta", &self.a_chroma_qp_delta().bits())
+            .field("a_qp_min", &self.a_qp_min().bits())
+            .field("a_qp_max", &self.a_qp_max().bits())
+            .field("a_mad_frame_pred", &self.a_mad_frame_pred().bits())
             .finish()
     }
 }
@@ -118,10 +109,6 @@ impl crate::Readable for A_RC_CONF1_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`a_rc_conf1::W`](W) writer structure"]
 impl crate::Writable for A_RC_CONF1_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets A_RC_CONF1 to value 0"]
-impl crate::Resettable for A_RC_CONF1_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for A_RC_CONF1_SPEC {}

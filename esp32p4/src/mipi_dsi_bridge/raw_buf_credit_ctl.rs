@@ -35,18 +35,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("RAW_BUF_CREDIT_CTL")
-            .field(
-                "credit_thrd",
-                &format_args!("{}", self.credit_thrd().bits()),
-            )
-            .field(
-                "credit_burst_thrd",
-                &format_args!("{}", self.credit_burst_thrd().bits()),
-            )
-            .field(
-                "credit_reset",
-                &format_args!("{}", self.credit_reset().bit()),
-            )
+            .field("credit_thrd", &self.credit_thrd().bits())
+            .field("credit_burst_thrd", &self.credit_burst_thrd().bits())
+            .field("credit_reset", &self.credit_reset().bit())
             .finish()
     }
 }
@@ -86,8 +77,6 @@ impl crate::Readable for RAW_BUF_CREDIT_CTL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`raw_buf_credit_ctl::W`](W) writer structure"]
 impl crate::Writable for RAW_BUF_CREDIT_CTL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets RAW_BUF_CREDIT_CTL to value 0x0320_0400"]
 impl crate::Resettable for RAW_BUF_CREDIT_CTL_SPEC {

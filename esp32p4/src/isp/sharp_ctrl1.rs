@@ -13,10 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SHARP_CTRL1")
-            .field(
-                "sharp_gradient_max",
-                &format_args!("{}", self.sharp_gradient_max().bits()),
-            )
+            .field("sharp_gradient_max", &self.sharp_gradient_max().bits())
             .finish()
     }
 }
@@ -34,6 +31,4 @@ impl crate::RegisterSpec for SHARP_CTRL1_SPEC {
 #[doc = "`read()` method returns [`sharp_ctrl1::R`](R) reader structure"]
 impl crate::Readable for SHARP_CTRL1_SPEC {}
 #[doc = "`reset()` method sets SHARP_CTRL1 to value 0"]
-impl crate::Resettable for SHARP_CTRL1_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for SHARP_CTRL1_SPEC {}

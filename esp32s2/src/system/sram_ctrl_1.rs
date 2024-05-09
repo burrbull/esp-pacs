@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SRAM_CTRL_1")
-            .field(
-                "sram_force_pd",
-                &format_args!("{}", self.sram_force_pd().bits()),
-            )
+            .field("sram_force_pd", &self.sram_force_pd().bits())
             .finish()
     }
 }
@@ -48,10 +45,6 @@ impl crate::Readable for SRAM_CTRL_1_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`sram_ctrl_1::W`](W) writer structure"]
 impl crate::Writable for SRAM_CTRL_1_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SRAM_CTRL_1 to value 0"]
-impl crate::Resettable for SRAM_CTRL_1_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for SRAM_CTRL_1_SPEC {}

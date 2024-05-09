@@ -13,10 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("TXFIFO_START_ADDR")
-            .field(
-                "txfifo_start_addr",
-                &format_args!("{}", self.txfifo_start_addr().bits()),
-            )
+            .field("txfifo_start_addr", &self.txfifo_start_addr().bits())
             .finish()
     }
 }
@@ -34,6 +31,4 @@ impl crate::RegisterSpec for TXFIFO_START_ADDR_SPEC {
 #[doc = "`read()` method returns [`txfifo_start_addr::R`](R) reader structure"]
 impl crate::Readable for TXFIFO_START_ADDR_SPEC {}
 #[doc = "`reset()` method sets TXFIFO_START_ADDR to value 0"]
-impl crate::Resettable for TXFIFO_START_ADDR_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for TXFIFO_START_ADDR_SPEC {}

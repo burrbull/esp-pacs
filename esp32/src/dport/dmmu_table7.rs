@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("DMMU_TABLE7")
-            .field(
-                "dmmu_table7",
-                &format_args!("{}", self.dmmu_table7().bits()),
-            )
+            .field("dmmu_table7", &self.dmmu_table7().bits())
             .finish()
     }
 }
@@ -48,8 +45,6 @@ impl crate::Readable for DMMU_TABLE7_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`dmmu_table7::W`](W) writer structure"]
 impl crate::Writable for DMMU_TABLE7_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets DMMU_TABLE7 to value 0x07"]
 impl crate::Resettable for DMMU_TABLE7_SPEC {

@@ -40,21 +40,15 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("RESET_STATE")
-            .field(
-                "reset_cause_procpu",
-                &format_args!("{}", self.reset_cause_procpu().bits()),
-            )
-            .field(
-                "reset_cause_appcpu",
-                &format_args!("{}", self.reset_cause_appcpu().bits()),
-            )
+            .field("reset_cause_procpu", &self.reset_cause_procpu().bits())
+            .field("reset_cause_appcpu", &self.reset_cause_appcpu().bits())
             .field(
                 "appcpu_stat_vector_sel",
-                &format_args!("{}", self.appcpu_stat_vector_sel().bit()),
+                &self.appcpu_stat_vector_sel().bit(),
             )
             .field(
                 "procpu_stat_vector_sel",
-                &format_args!("{}", self.procpu_stat_vector_sel().bit()),
+                &self.procpu_stat_vector_sel().bit(),
             )
             .finish()
     }
@@ -89,8 +83,6 @@ impl crate::Readable for RESET_STATE_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`reset_state::W`](W) writer structure"]
 impl crate::Writable for RESET_STATE_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets RESET_STATE to value 0x3000"]
 impl crate::Resettable for RESET_STATE_SPEC {

@@ -71,19 +71,13 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CONFIG")
-            .field("flow_err", &format_args!("{}", self.flow_err().bits()))
-            .field(
-                "addr_map_mode",
-                &format_args!("{}", self.addr_map_mode().bit()),
-            )
-            .field(
-                "burst_limit",
-                &format_args!("{}", self.burst_limit().bits()),
-            )
-            .field("tout_thres", &format_args!("{}", self.tout_thres().bits()))
-            .field("size", &format_args!("{}", self.size().bits()))
-            .field("to_mem", &format_args!("{}", self.to_mem().bit()))
-            .field("ena", &format_args!("{}", self.ena().bit()))
+            .field("flow_err", &self.flow_err().bits())
+            .field("addr_map_mode", &self.addr_map_mode().bit())
+            .field("burst_limit", &self.burst_limit().bits())
+            .field("tout_thres", &self.tout_thres().bits())
+            .field("size", &self.size().bits())
+            .field("to_mem", &self.to_mem().bit())
+            .field("ena", &self.ena().bit())
             .finish()
     }
 }
@@ -147,8 +141,6 @@ impl crate::Readable for CONFIG_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`config::W`](W) writer structure"]
 impl crate::Writable for CONFIG_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CONFIG to value 0x6480"]
 impl crate::Resettable for CONFIG_SPEC {

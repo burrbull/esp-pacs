@@ -26,14 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("TOUCH_CTRL")
-            .field(
-                "io_touch_bufsel",
-                &format_args!("{}", self.io_touch_bufsel().bits()),
-            )
-            .field(
-                "io_touch_bufmode",
-                &format_args!("{}", self.io_touch_bufmode().bit()),
-            )
+            .field("io_touch_bufsel", &self.io_touch_bufsel().bits())
+            .field("io_touch_bufmode", &self.io_touch_bufmode().bit())
             .finish()
     }
 }
@@ -67,10 +61,6 @@ impl crate::Readable for TOUCH_CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`touch_ctrl::W`](W) writer structure"]
 impl crate::Writable for TOUCH_CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets TOUCH_CTRL to value 0"]
-impl crate::Resettable for TOUCH_CTRL_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for TOUCH_CTRL_SPEC {}

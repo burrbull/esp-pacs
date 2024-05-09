@@ -26,8 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("HALL_SENS")
-            .field("hall_phase", &format_args!("{}", self.hall_phase().bit()))
-            .field("xpd_hall", &format_args!("{}", self.xpd_hall().bit()))
+            .field("hall_phase", &self.hall_phase().bit())
+            .field("xpd_hall", &self.xpd_hall().bit())
             .finish()
     }
 }
@@ -61,10 +61,6 @@ impl crate::Readable for HALL_SENS_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`hall_sens::W`](W) writer structure"]
 impl crate::Writable for HALL_SENS_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets HALL_SENS to value 0"]
-impl crate::Resettable for HALL_SENS_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for HALL_SENS_SPEC {}

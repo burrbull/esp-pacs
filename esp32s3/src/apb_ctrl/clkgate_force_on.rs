@@ -26,13 +26,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CLKGATE_FORCE_ON")
-            .field(
-                "rom_clkgate_force_on",
-                &format_args!("{}", self.rom_clkgate_force_on().bits()),
-            )
+            .field("rom_clkgate_force_on", &self.rom_clkgate_force_on().bits())
             .field(
                 "sram_clkgate_force_on",
-                &format_args!("{}", self.sram_clkgate_force_on().bits()),
+                &self.sram_clkgate_force_on().bits(),
             )
             .finish()
     }
@@ -67,8 +64,6 @@ impl crate::Readable for CLKGATE_FORCE_ON_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`clkgate_force_on::W`](W) writer structure"]
 impl crate::Writable for CLKGATE_FORCE_ON_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CLKGATE_FORCE_ON to value 0x3fff"]
 impl crate::Resettable for CLKGATE_FORCE_ON_SPEC {

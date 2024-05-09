@@ -13,10 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SLC_APBWIN_RDATA")
-            .field(
-                "slc_apbwin_rdata",
-                &format_args!("{}", self.slc_apbwin_rdata().bits()),
-            )
+            .field("slc_apbwin_rdata", &self.slc_apbwin_rdata().bits())
             .finish()
     }
 }
@@ -34,6 +31,4 @@ impl crate::RegisterSpec for SLC_APBWIN_RDATA_SPEC {
 #[doc = "`read()` method returns [`slc_apbwin_rdata::R`](R) reader structure"]
 impl crate::Readable for SLC_APBWIN_RDATA_SPEC {}
 #[doc = "`reset()` method sets SLC_APBWIN_RDATA to value 0"]
-impl crate::Resettable for SLC_APBWIN_RDATA_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for SLC_APBWIN_RDATA_SPEC {}

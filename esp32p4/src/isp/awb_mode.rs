@@ -26,8 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("AWB_MODE")
-            .field("awb_mode", &format_args!("{}", self.awb_mode().bits()))
-            .field("awb_sample", &format_args!("{}", self.awb_sample().bit()))
+            .field("awb_mode", &self.awb_mode().bits())
+            .field("awb_sample", &self.awb_sample().bit())
             .finish()
     }
 }
@@ -61,8 +61,6 @@ impl crate::Readable for AWB_MODE_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`awb_mode::W`](W) writer structure"]
 impl crate::Writable for AWB_MODE_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets AWB_MODE to value 0x03"]
 impl crate::Resettable for AWB_MODE_SPEC {

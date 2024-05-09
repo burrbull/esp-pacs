@@ -26,14 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("MEDIAN_MATRIX_CTRL")
-            .field(
-                "median_padding_data",
-                &format_args!("{}", self.median_padding_data().bits()),
-            )
-            .field(
-                "median_padding_mode",
-                &format_args!("{}", self.median_padding_mode().bit()),
-            )
+            .field("median_padding_data", &self.median_padding_data().bits())
+            .field("median_padding_mode", &self.median_padding_mode().bit())
             .finish()
     }
 }
@@ -67,10 +61,6 @@ impl crate::Readable for MEDIAN_MATRIX_CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`median_matrix_ctrl::W`](W) writer structure"]
 impl crate::Writable for MEDIAN_MATRIX_CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets MEDIAN_MATRIX_CTRL to value 0"]
-impl crate::Resettable for MEDIAN_MATRIX_CTRL_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for MEDIAN_MATRIX_CTRL_SPEC {}

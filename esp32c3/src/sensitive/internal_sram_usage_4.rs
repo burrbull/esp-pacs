@@ -19,7 +19,7 @@ impl core::fmt::Debug for R {
         f.debug_struct("INTERNAL_SRAM_USAGE_4")
             .field(
                 "internal_sram_usage_log_sram",
-                &format_args!("{}", self.internal_sram_usage_log_sram().bit()),
+                &self.internal_sram_usage_log_sram().bit(),
             )
             .finish()
     }
@@ -50,10 +50,6 @@ impl crate::Readable for INTERNAL_SRAM_USAGE_4_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`internal_sram_usage_4::W`](W) writer structure"]
 impl crate::Writable for INTERNAL_SRAM_USAGE_4_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets INTERNAL_SRAM_USAGE_4 to value 0"]
-impl crate::Resettable for INTERNAL_SRAM_USAGE_4_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for INTERNAL_SRAM_USAGE_4_SPEC {}

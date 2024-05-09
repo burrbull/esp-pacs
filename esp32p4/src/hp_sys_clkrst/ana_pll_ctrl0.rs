@@ -88,46 +88,16 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("ANA_PLL_CTRL0")
-            .field(
-                "plla_cal_end",
-                &format_args!("{}", self.plla_cal_end().bit()),
-            )
-            .field(
-                "plla_cal_stop",
-                &format_args!("{}", self.plla_cal_stop().bit()),
-            )
-            .field(
-                "cpu_pll_cal_end",
-                &format_args!("{}", self.cpu_pll_cal_end().bit()),
-            )
-            .field(
-                "cpu_pll_cal_stop",
-                &format_args!("{}", self.cpu_pll_cal_stop().bit()),
-            )
-            .field(
-                "sdio_pll_cal_end",
-                &format_args!("{}", self.sdio_pll_cal_end().bit()),
-            )
-            .field(
-                "sdio_pll_cal_stop",
-                &format_args!("{}", self.sdio_pll_cal_stop().bit()),
-            )
-            .field(
-                "sys_pll_cal_end",
-                &format_args!("{}", self.sys_pll_cal_end().bit()),
-            )
-            .field(
-                "sys_pll_cal_stop",
-                &format_args!("{}", self.sys_pll_cal_stop().bit()),
-            )
-            .field(
-                "mspi_cal_end",
-                &format_args!("{}", self.mspi_cal_end().bit()),
-            )
-            .field(
-                "mspi_cal_stop",
-                &format_args!("{}", self.mspi_cal_stop().bit()),
-            )
+            .field("plla_cal_end", &self.plla_cal_end().bit())
+            .field("plla_cal_stop", &self.plla_cal_stop().bit())
+            .field("cpu_pll_cal_end", &self.cpu_pll_cal_end().bit())
+            .field("cpu_pll_cal_stop", &self.cpu_pll_cal_stop().bit())
+            .field("sdio_pll_cal_end", &self.sdio_pll_cal_end().bit())
+            .field("sdio_pll_cal_stop", &self.sdio_pll_cal_stop().bit())
+            .field("sys_pll_cal_end", &self.sys_pll_cal_end().bit())
+            .field("sys_pll_cal_stop", &self.sys_pll_cal_stop().bit())
+            .field("mspi_cal_end", &self.mspi_cal_end().bit())
+            .field("mspi_cal_stop", &self.mspi_cal_stop().bit())
             .finish()
     }
 }
@@ -179,10 +149,6 @@ impl crate::Readable for ANA_PLL_CTRL0_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`ana_pll_ctrl0::W`](W) writer structure"]
 impl crate::Writable for ANA_PLL_CTRL0_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets ANA_PLL_CTRL0 to value 0"]
-impl crate::Resettable for ANA_PLL_CTRL0_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for ANA_PLL_CTRL0_SPEC {}

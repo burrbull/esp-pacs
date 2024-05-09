@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("ZERO_DET0_FILTER_CNT")
-            .field(
-                "zero_det0_filter_cnt",
-                &format_args!("{}", self.zero_det0_filter_cnt().bits()),
-            )
+            .field("zero_det0_filter_cnt", &self.zero_det0_filter_cnt().bits())
             .finish()
     }
 }
@@ -48,8 +45,6 @@ impl crate::Readable for ZERO_DET0_FILTER_CNT_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`zero_det0_filter_cnt::W`](W) writer structure"]
 impl crate::Writable for ZERO_DET0_FILTER_CNT_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets ZERO_DET0_FILTER_CNT to value 0xffff_ffff"]
 impl crate::Resettable for ZERO_DET0_FILTER_CNT_SPEC {

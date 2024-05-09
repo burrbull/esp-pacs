@@ -24,13 +24,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("TCM_RDN_ECO_CS")
-            .field(
-                "reg_hp_tcm_rdn_eco_en",
-                &format_args!("{}", self.reg_hp_tcm_rdn_eco_en().bit()),
-            )
+            .field("reg_hp_tcm_rdn_eco_en", &self.reg_hp_tcm_rdn_eco_en().bit())
             .field(
                 "reg_hp_tcm_rdn_eco_result",
-                &format_args!("{}", self.reg_hp_tcm_rdn_eco_result().bit()),
+                &self.reg_hp_tcm_rdn_eco_result().bit(),
             )
             .finish()
     }
@@ -59,10 +56,6 @@ impl crate::Readable for TCM_RDN_ECO_CS_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`tcm_rdn_eco_cs::W`](W) writer structure"]
 impl crate::Writable for TCM_RDN_ECO_CS_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets TCM_RDN_ECO_CS to value 0"]
-impl crate::Resettable for TCM_RDN_ECO_CS_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for TCM_RDN_ECO_CS_SPEC {}

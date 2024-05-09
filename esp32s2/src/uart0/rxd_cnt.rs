@@ -13,10 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("RXD_CNT")
-            .field(
-                "rxd_edge_cnt",
-                &format_args!("{}", self.rxd_edge_cnt().bits()),
-            )
+            .field("rxd_edge_cnt", &self.rxd_edge_cnt().bits())
             .finish()
     }
 }
@@ -34,6 +31,4 @@ impl crate::RegisterSpec for RXD_CNT_SPEC {
 #[doc = "`read()` method returns [`rxd_cnt::R`](R) reader structure"]
 impl crate::Readable for RXD_CNT_SPEC {}
 #[doc = "`reset()` method sets RXD_CNT to value 0"]
-impl crate::Resettable for RXD_CNT_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for RXD_CNT_SPEC {}

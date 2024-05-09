@@ -13,10 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PRO_DCACHE_DBUG1")
-            .field(
-                "pro_ctag_ram_rdata",
-                &format_args!("{}", self.pro_ctag_ram_rdata().bits()),
-            )
+            .field("pro_ctag_ram_rdata", &self.pro_ctag_ram_rdata().bits())
             .finish()
     }
 }
@@ -34,6 +31,4 @@ impl crate::RegisterSpec for PRO_DCACHE_DBUG1_SPEC {
 #[doc = "`read()` method returns [`pro_dcache_dbug1::R`](R) reader structure"]
 impl crate::Readable for PRO_DCACHE_DBUG1_SPEC {}
 #[doc = "`reset()` method sets PRO_DCACHE_DBUG1 to value 0"]
-impl crate::Resettable for PRO_DCACHE_DBUG1_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for PRO_DCACHE_DBUG1_SPEC {}

@@ -73,32 +73,14 @@ impl core::fmt::Debug for R {
         f.debug_struct("PRO_AHB_1")
             .field(
                 "pro_ahb_rtcslow_0_spltaddr",
-                &format_args!("{}", self.pro_ahb_rtcslow_0_spltaddr().bits()),
+                &self.pro_ahb_rtcslow_0_spltaddr().bits(),
             )
-            .field(
-                "pro_ahb_rtcslow_0_l_f",
-                &format_args!("{}", self.pro_ahb_rtcslow_0_l_f().bit()),
-            )
-            .field(
-                "pro_ahb_rtcslow_0_l_r",
-                &format_args!("{}", self.pro_ahb_rtcslow_0_l_r().bit()),
-            )
-            .field(
-                "pro_ahb_rtcslow_0_l_w",
-                &format_args!("{}", self.pro_ahb_rtcslow_0_l_w().bit()),
-            )
-            .field(
-                "pro_ahb_rtcslow_0_h_f",
-                &format_args!("{}", self.pro_ahb_rtcslow_0_h_f().bit()),
-            )
-            .field(
-                "pro_ahb_rtcslow_0_h_r",
-                &format_args!("{}", self.pro_ahb_rtcslow_0_h_r().bit()),
-            )
-            .field(
-                "pro_ahb_rtcslow_0_h_w",
-                &format_args!("{}", self.pro_ahb_rtcslow_0_h_w().bit()),
-            )
+            .field("pro_ahb_rtcslow_0_l_f", &self.pro_ahb_rtcslow_0_l_f().bit())
+            .field("pro_ahb_rtcslow_0_l_r", &self.pro_ahb_rtcslow_0_l_r().bit())
+            .field("pro_ahb_rtcslow_0_l_w", &self.pro_ahb_rtcslow_0_l_w().bit())
+            .field("pro_ahb_rtcslow_0_h_f", &self.pro_ahb_rtcslow_0_h_f().bit())
+            .field("pro_ahb_rtcslow_0_h_r", &self.pro_ahb_rtcslow_0_h_r().bit())
+            .field("pro_ahb_rtcslow_0_h_w", &self.pro_ahb_rtcslow_0_h_w().bit())
             .finish()
     }
 }
@@ -162,8 +144,6 @@ impl crate::Readable for PRO_AHB_1_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`pro_ahb_1::W`](W) writer structure"]
 impl crate::Writable for PRO_AHB_1_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets PRO_AHB_1 to value 0x0001_f800"]
 impl crate::Resettable for PRO_AHB_1_SPEC {

@@ -15,7 +15,7 @@ impl core::fmt::Debug for R {
         f.debug_struct("BUF_LEN")
             .field(
                 "out_cmdfifo_buf_len_hb",
-                &format_args!("{}", self.out_cmdfifo_buf_len_hb().bits()),
+                &self.out_cmdfifo_buf_len_hb().bits(),
             )
             .finish()
     }
@@ -34,6 +34,4 @@ impl crate::RegisterSpec for BUF_LEN_SPEC {
 #[doc = "`read()` method returns [`buf_len::R`](R) reader structure"]
 impl crate::Readable for BUF_LEN_SPEC {}
 #[doc = "`reset()` method sets BUF_LEN to value 0"]
-impl crate::Resettable for BUF_LEN_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for BUF_LEN_SPEC {}

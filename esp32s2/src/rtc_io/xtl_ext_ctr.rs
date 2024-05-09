@@ -17,7 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("XTL_EXT_CTR")
-            .field("sel", &format_args!("{}", self.sel().bits()))
+            .field("sel", &self.sel().bits())
             .finish()
     }
 }
@@ -45,10 +45,6 @@ impl crate::Readable for XTL_EXT_CTR_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`xtl_ext_ctr::W`](W) writer structure"]
 impl crate::Writable for XTL_EXT_CTR_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets XTL_EXT_CTR to value 0"]
-impl crate::Resettable for XTL_EXT_CTR_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for XTL_EXT_CTR_SPEC {}

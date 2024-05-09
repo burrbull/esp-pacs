@@ -17,7 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PWR_UP")
-            .field("shutdownz", &format_args!("{}", self.shutdownz().bit()))
+            .field("shutdownz", &self.shutdownz().bit())
             .finish()
     }
 }
@@ -45,10 +45,6 @@ impl crate::Readable for PWR_UP_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`pwr_up::W`](W) writer structure"]
 impl crate::Writable for PWR_UP_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets PWR_UP to value 0"]
-impl crate::Resettable for PWR_UP_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for PWR_UP_SPEC {}

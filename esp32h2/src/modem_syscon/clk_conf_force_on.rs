@@ -53,20 +53,11 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CLK_CONF_FORCE_ON")
-            .field("clk_etm_fo", &format_args!("{}", self.clk_etm_fo().bit()))
-            .field("clk_zb_fo", &format_args!("{}", self.clk_zb_fo().bit()))
-            .field(
-                "clk_modem_sec_fo",
-                &format_args!("{}", self.clk_modem_sec_fo().bit()),
-            )
-            .field(
-                "clk_ble_timer_fo",
-                &format_args!("{}", self.clk_ble_timer_fo().bit()),
-            )
-            .field(
-                "clk_data_dump_fo",
-                &format_args!("{}", self.clk_data_dump_fo().bit()),
-            )
+            .field("clk_etm_fo", &self.clk_etm_fo().bit())
+            .field("clk_zb_fo", &self.clk_zb_fo().bit())
+            .field("clk_modem_sec_fo", &self.clk_modem_sec_fo().bit())
+            .field("clk_ble_timer_fo", &self.clk_ble_timer_fo().bit())
+            .field("clk_data_dump_fo", &self.clk_data_dump_fo().bit())
             .finish()
     }
 }
@@ -118,10 +109,6 @@ impl crate::Readable for CLK_CONF_FORCE_ON_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`clk_conf_force_on::W`](W) writer structure"]
 impl crate::Writable for CLK_CONF_FORCE_ON_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CLK_CONF_FORCE_ON to value 0"]
-impl crate::Resettable for CLK_CONF_FORCE_ON_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for CLK_CONF_FORCE_ON_SPEC {}

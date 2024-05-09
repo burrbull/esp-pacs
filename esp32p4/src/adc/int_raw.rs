@@ -62,12 +62,12 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("INT_RAW")
-            .field("thres1_low", &format_args!("{}", self.thres1_low().bit()))
-            .field("thres0_low", &format_args!("{}", self.thres0_low().bit()))
-            .field("thres1_high", &format_args!("{}", self.thres1_high().bit()))
-            .field("thres0_high", &format_args!("{}", self.thres0_high().bit()))
-            .field("adc2_done", &format_args!("{}", self.adc2_done().bit()))
-            .field("adc1_done", &format_args!("{}", self.adc1_done().bit()))
+            .field("thres1_low", &self.thres1_low().bit())
+            .field("thres0_low", &self.thres0_low().bit())
+            .field("thres1_high", &self.thres1_high().bit())
+            .field("thres0_high", &self.thres0_high().bit())
+            .field("adc2_done", &self.adc2_done().bit())
+            .field("adc1_done", &self.adc1_done().bit())
             .finish()
     }
 }
@@ -125,10 +125,6 @@ impl crate::Readable for INT_RAW_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`int_raw::W`](W) writer structure"]
 impl crate::Writable for INT_RAW_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets INT_RAW to value 0"]
-impl crate::Resettable for INT_RAW_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for INT_RAW_SPEC {}

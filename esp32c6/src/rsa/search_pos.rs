@@ -17,7 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SEARCH_POS")
-            .field("search_pos", &format_args!("{}", self.search_pos().bits()))
+            .field("search_pos", &self.search_pos().bits())
             .finish()
     }
 }
@@ -45,10 +45,6 @@ impl crate::Readable for SEARCH_POS_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`search_pos::W`](W) writer structure"]
 impl crate::Writable for SEARCH_POS_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SEARCH_POS to value 0"]
-impl crate::Resettable for SEARCH_POS_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for SEARCH_POS_SPEC {}

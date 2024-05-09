@@ -80,14 +80,14 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("INT_ENA")
-            .field("comp0_neg", &format_args!("{}", self.comp0_neg().bit()))
-            .field("comp0_pos", &format_args!("{}", self.comp0_pos().bit()))
-            .field("comp0_all", &format_args!("{}", self.comp0_all().bit()))
-            .field("comp1_neg", &format_args!("{}", self.comp1_neg().bit()))
-            .field("comp1_pos", &format_args!("{}", self.comp1_pos().bit()))
-            .field("comp1_all", &format_args!("{}", self.comp1_all().bit()))
-            .field("bistok", &format_args!("{}", self.bistok().bit()))
-            .field("bistfail", &format_args!("{}", self.bistfail().bit()))
+            .field("comp0_neg", &self.comp0_neg().bit())
+            .field("comp0_pos", &self.comp0_pos().bit())
+            .field("comp0_all", &self.comp0_all().bit())
+            .field("comp1_neg", &self.comp1_neg().bit())
+            .field("comp1_pos", &self.comp1_pos().bit())
+            .field("comp1_all", &self.comp1_all().bit())
+            .field("bistok", &self.bistok().bit())
+            .field("bistfail", &self.bistfail().bit())
             .finish()
     }
 }
@@ -157,8 +157,6 @@ impl crate::Readable for INT_ENA_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`int_ena::W`](W) writer structure"]
 impl crate::Writable for INT_ENA_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets INT_ENA to value 0xff"]
 impl crate::Resettable for INT_ENA_SPEC {

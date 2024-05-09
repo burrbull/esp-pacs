@@ -107,41 +107,17 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PERIP_RST_EN1")
-            .field(
-                "peri_backup_rst",
-                &format_args!("{}", self.peri_backup_rst().bit()),
-            )
-            .field(
-                "crypto_aes_rst",
-                &format_args!("{}", self.crypto_aes_rst().bit()),
-            )
-            .field(
-                "crypto_sha_rst",
-                &format_args!("{}", self.crypto_sha_rst().bit()),
-            )
-            .field(
-                "crypto_rsa_rst",
-                &format_args!("{}", self.crypto_rsa_rst().bit()),
-            )
-            .field(
-                "crypto_ds_rst",
-                &format_args!("{}", self.crypto_ds_rst().bit()),
-            )
-            .field(
-                "crypto_hmac_rst",
-                &format_args!("{}", self.crypto_hmac_rst().bit()),
-            )
-            .field("dma_rst", &format_args!("{}", self.dma_rst().bit()))
-            .field(
-                "sdio_host_rst",
-                &format_args!("{}", self.sdio_host_rst().bit()),
-            )
-            .field("lcd_cam_rst", &format_args!("{}", self.lcd_cam_rst().bit()))
-            .field("uart2_rst", &format_args!("{}", self.uart2_rst().bit()))
-            .field(
-                "usb_device_rst",
-                &format_args!("{}", self.usb_device_rst().bit()),
-            )
+            .field("peri_backup_rst", &self.peri_backup_rst().bit())
+            .field("crypto_aes_rst", &self.crypto_aes_rst().bit())
+            .field("crypto_sha_rst", &self.crypto_sha_rst().bit())
+            .field("crypto_rsa_rst", &self.crypto_rsa_rst().bit())
+            .field("crypto_ds_rst", &self.crypto_ds_rst().bit())
+            .field("crypto_hmac_rst", &self.crypto_hmac_rst().bit())
+            .field("dma_rst", &self.dma_rst().bit())
+            .field("sdio_host_rst", &self.sdio_host_rst().bit())
+            .field("lcd_cam_rst", &self.lcd_cam_rst().bit())
+            .field("uart2_rst", &self.uart2_rst().bit())
+            .field("usb_device_rst", &self.usb_device_rst().bit())
             .finish()
     }
 }
@@ -229,8 +205,6 @@ impl crate::Readable for PERIP_RST_EN1_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`perip_rst_en1::W`](W) writer structure"]
 impl crate::Writable for PERIP_RST_EN1_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets PERIP_RST_EN1 to value 0x01fe"]
 impl crate::Resettable for PERIP_RST_EN1_SPEC {

@@ -62,18 +62,12 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("MULT_CONF")
-            .field("start", &format_args!("{}", self.start().bit()))
-            .field("key_length", &format_args!("{}", self.key_length().bit()))
-            .field(
-                "security_mode",
-                &format_args!("{}", self.security_mode().bit()),
-            )
-            .field("clk_en", &format_args!("{}", self.clk_en().bit()))
-            .field("work_mode", &format_args!("{}", self.work_mode().bits()))
-            .field(
-                "verification_result",
-                &format_args!("{}", self.verification_result().bit()),
-            )
+            .field("start", &self.start().bit())
+            .field("key_length", &self.key_length().bit())
+            .field("security_mode", &self.security_mode().bit())
+            .field("clk_en", &self.clk_en().bit())
+            .field("work_mode", &self.work_mode().bits())
+            .field("verification_result", &self.verification_result().bit())
             .finish()
     }
 }
@@ -131,10 +125,6 @@ impl crate::Readable for MULT_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`mult_conf::W`](W) writer structure"]
 impl crate::Writable for MULT_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets MULT_CONF to value 0"]
-impl crate::Resettable for MULT_CONF_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for MULT_CONF_SPEC {}

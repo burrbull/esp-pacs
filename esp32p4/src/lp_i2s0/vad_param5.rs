@@ -26,14 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("VAD_PARAM5")
-            .field(
-                "param_noise_mean_up0",
-                &format_args!("{}", self.param_noise_mean_up0().bits()),
-            )
-            .field(
-                "param_noise_mean_up1",
-                &format_args!("{}", self.param_noise_mean_up1().bits()),
-            )
+            .field("param_noise_mean_up0", &self.param_noise_mean_up0().bits())
+            .field("param_noise_mean_up1", &self.param_noise_mean_up1().bits())
             .finish()
     }
 }
@@ -67,8 +61,6 @@ impl crate::Readable for VAD_PARAM5_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`vad_param5::W`](W) writer structure"]
 impl crate::Writable for VAD_PARAM5_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets VAD_PARAM5 to value 0x7c28_7d71"]
 impl crate::Resettable for VAD_PARAM5_SPEC {

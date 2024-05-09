@@ -19,7 +19,7 @@ impl core::fmt::Debug for R {
         f.debug_struct("PRO_ICACHE_MEM_SYNC0")
             .field(
                 "pro_icache_memsync_addr",
-                &format_args!("{}", self.pro_icache_memsync_addr().bits()),
+                &self.pro_icache_memsync_addr().bits(),
             )
             .finish()
     }
@@ -50,10 +50,6 @@ impl crate::Readable for PRO_ICACHE_MEM_SYNC0_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`pro_icache_mem_sync0::W`](W) writer structure"]
 impl crate::Writable for PRO_ICACHE_MEM_SYNC0_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets PRO_ICACHE_MEM_SYNC0 to value 0"]
-impl crate::Resettable for PRO_ICACHE_MEM_SYNC0_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for PRO_ICACHE_MEM_SYNC0_SPEC {}

@@ -19,7 +19,7 @@ impl core::fmt::Debug for R {
         f.debug_struct("Core_1_World_TRIGGER_ADDR")
             .field(
                 "core_1_world_trigger_addr",
-                &format_args!("{}", self.core_1_world_trigger_addr().bits()),
+                &self.core_1_world_trigger_addr().bits(),
             )
             .finish()
     }
@@ -50,10 +50,6 @@ impl crate::Readable for CORE_1_WORLD_TRIGGER_ADDR_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`core_1_world_trigger_addr::W`](W) writer structure"]
 impl crate::Writable for CORE_1_WORLD_TRIGGER_ADDR_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets Core_1_World_TRIGGER_ADDR to value 0"]
-impl crate::Resettable for CORE_1_WORLD_TRIGGER_ADDR_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for CORE_1_WORLD_TRIGGER_ADDR_SPEC {}

@@ -26,8 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("EMACWDOGTO")
-            .field("wdogto", &format_args!("{}", self.wdogto().bits()))
-            .field("pwdogen", &format_args!("{}", self.pwdogen().bit()))
+            .field("wdogto", &self.wdogto().bits())
+            .field("pwdogen", &self.pwdogen().bit())
             .finish()
     }
 }
@@ -61,10 +61,6 @@ impl crate::Readable for EMACWDOGTO_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`emacwdogto::W`](W) writer structure"]
 impl crate::Writable for EMACWDOGTO_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets EMACWDOGTO to value 0"]
-impl crate::Resettable for EMACWDOGTO_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for EMACWDOGTO_SPEC {}

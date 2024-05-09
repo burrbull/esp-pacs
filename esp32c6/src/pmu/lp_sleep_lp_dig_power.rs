@@ -26,13 +26,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("LP_SLEEP_LP_DIG_POWER")
-            .field(
-                "lp_sleep_lp_mem_dslp",
-                &format_args!("{}", self.lp_sleep_lp_mem_dslp().bit()),
-            )
+            .field("lp_sleep_lp_mem_dslp", &self.lp_sleep_lp_mem_dslp().bit())
             .field(
                 "lp_sleep_pd_lp_peri_pd_en",
-                &format_args!("{}", self.lp_sleep_pd_lp_peri_pd_en().bit()),
+                &self.lp_sleep_pd_lp_peri_pd_en().bit(),
             )
             .finish()
     }
@@ -69,10 +66,6 @@ impl crate::Readable for LP_SLEEP_LP_DIG_POWER_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`lp_sleep_lp_dig_power::W`](W) writer structure"]
 impl crate::Writable for LP_SLEEP_LP_DIG_POWER_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets LP_SLEEP_LP_DIG_POWER to value 0"]
-impl crate::Resettable for LP_SLEEP_LP_DIG_POWER_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for LP_SLEEP_LP_DIG_POWER_SPEC {}

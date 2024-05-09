@@ -13,10 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("RTC_GPIO_IN")
-            .field(
-                "gpio_in_next",
-                &format_args!("{}", self.gpio_in_next().bits()),
-            )
+            .field("gpio_in_next", &self.gpio_in_next().bits())
             .finish()
     }
 }
@@ -34,6 +31,4 @@ impl crate::RegisterSpec for RTC_GPIO_IN_SPEC {
 #[doc = "`read()` method returns [`rtc_gpio_in::R`](R) reader structure"]
 impl crate::Readable for RTC_GPIO_IN_SPEC {}
 #[doc = "`reset()` method sets RTC_GPIO_IN to value 0"]
-impl crate::Resettable for RTC_GPIO_IN_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for RTC_GPIO_IN_SPEC {}

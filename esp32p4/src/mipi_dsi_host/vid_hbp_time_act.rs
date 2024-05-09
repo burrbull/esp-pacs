@@ -13,10 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("VID_HBP_TIME_ACT")
-            .field(
-                "vid_hbp_time_act",
-                &format_args!("{}", self.vid_hbp_time_act().bits()),
-            )
+            .field("vid_hbp_time_act", &self.vid_hbp_time_act().bits())
             .finish()
     }
 }
@@ -34,6 +31,4 @@ impl crate::RegisterSpec for VID_HBP_TIME_ACT_SPEC {
 #[doc = "`read()` method returns [`vid_hbp_time_act::R`](R) reader structure"]
 impl crate::Readable for VID_HBP_TIME_ACT_SPEC {}
 #[doc = "`reset()` method sets VID_HBP_TIME_ACT to value 0"]
-impl crate::Resettable for VID_HBP_TIME_ACT_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for VID_HBP_TIME_ACT_SPEC {}

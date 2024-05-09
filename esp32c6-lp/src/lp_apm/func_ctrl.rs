@@ -37,14 +37,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("FUNC_CTRL")
-            .field(
-                "m0_pms_func_en",
-                &format_args!("{}", self.m0_pms_func_en().bit()),
-            )
-            .field(
-                "m1_pms_func_en",
-                &format_args!("{}", self.m1_pms_func_en().bit()),
-            )
+            .field("m0_pms_func_en", &self.m0_pms_func_en().bit())
+            .field("m1_pms_func_en", &self.m1_pms_func_en().bit())
             .finish()
     }
 }
@@ -88,8 +82,6 @@ impl crate::Readable for FUNC_CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`func_ctrl::W`](W) writer structure"]
 impl crate::Writable for FUNC_CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets FUNC_CTRL to value 0x03"]
 impl crate::Resettable for FUNC_CTRL_SPEC {

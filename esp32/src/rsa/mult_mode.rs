@@ -17,7 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("MULT_MODE")
-            .field("mult_mode", &format_args!("{}", self.mult_mode().bits()))
+            .field("mult_mode", &self.mult_mode().bits())
             .finish()
     }
 }
@@ -45,10 +45,6 @@ impl crate::Readable for MULT_MODE_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`mult_mode::W`](W) writer structure"]
 impl crate::Writable for MULT_MODE_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets MULT_MODE to value 0"]
-impl crate::Resettable for MULT_MODE_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for MULT_MODE_SPEC {}

@@ -13,10 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("TCM_INT_ST")
-            .field(
-                "tcm_parity_err_int_st",
-                &format_args!("{}", self.tcm_parity_err_int_st().bit()),
-            )
+            .field("tcm_parity_err_int_st", &self.tcm_parity_err_int_st().bit())
             .finish()
     }
 }
@@ -34,6 +31,4 @@ impl crate::RegisterSpec for TCM_INT_ST_SPEC {
 #[doc = "`read()` method returns [`tcm_int_st::R`](R) reader structure"]
 impl crate::Readable for TCM_INT_ST_SPEC {}
 #[doc = "`reset()` method sets TCM_INT_ST to value 0"]
-impl crate::Resettable for TCM_INT_ST_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for TCM_INT_ST_SPEC {}

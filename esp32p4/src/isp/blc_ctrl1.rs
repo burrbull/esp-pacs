@@ -53,26 +53,11 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("BLC_CTRL1")
-            .field(
-                "blc_window_top",
-                &format_args!("{}", self.blc_window_top().bits()),
-            )
-            .field(
-                "blc_window_left",
-                &format_args!("{}", self.blc_window_left().bits()),
-            )
-            .field(
-                "blc_window_vnum",
-                &format_args!("{}", self.blc_window_vnum().bits()),
-            )
-            .field(
-                "blc_window_hnum",
-                &format_args!("{}", self.blc_window_hnum().bits()),
-            )
-            .field(
-                "blc_filter_en",
-                &format_args!("{}", self.blc_filter_en().bit()),
-            )
+            .field("blc_window_top", &self.blc_window_top().bits())
+            .field("blc_window_left", &self.blc_window_left().bits())
+            .field("blc_window_vnum", &self.blc_window_vnum().bits())
+            .field("blc_window_hnum", &self.blc_window_hnum().bits())
+            .field("blc_filter_en", &self.blc_filter_en().bit())
             .finish()
     }
 }
@@ -124,10 +109,6 @@ impl crate::Readable for BLC_CTRL1_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`blc_ctrl1::W`](W) writer structure"]
 impl crate::Writable for BLC_CTRL1_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets BLC_CTRL1 to value 0"]
-impl crate::Resettable for BLC_CTRL1_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for BLC_CTRL1_SPEC {}

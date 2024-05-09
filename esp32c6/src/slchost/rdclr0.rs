@@ -28,11 +28,11 @@ impl core::fmt::Debug for R {
         f.debug_struct("RDCLR0")
             .field(
                 "slchost_slc0_bit7_clraddr",
-                &format_args!("{}", self.slchost_slc0_bit7_clraddr().bits()),
+                &self.slchost_slc0_bit7_clraddr().bits(),
             )
             .field(
                 "slchost_slc0_bit6_clraddr",
-                &format_args!("{}", self.slchost_slc0_bit6_clraddr().bits()),
+                &self.slchost_slc0_bit6_clraddr().bits(),
             )
             .finish()
     }
@@ -67,8 +67,6 @@ impl crate::Readable for RDCLR0_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`rdclr0::W`](W) writer structure"]
 impl crate::Writable for RDCLR0_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets RDCLR0 to value 0x0003_c044"]
 impl crate::Resettable for RDCLR0_SPEC {

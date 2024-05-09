@@ -107,38 +107,20 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("INT_ENA")
-            .field("slv_st_end", &format_args!("{}", self.slv_st_end().bit()))
-            .field("mst_st_end", &format_args!("{}", self.mst_st_end().bit()))
-            .field("ecc_err", &format_args!("{}", self.ecc_err().bit()))
-            .field("pms_reject", &format_args!("{}", self.pms_reject().bit()))
-            .field(
-                "axi_raddr_err",
-                &format_args!("{}", self.axi_raddr_err().bit()),
-            )
-            .field(
-                "axi_wr_flash_err",
-                &format_args!("{}", self.axi_wr_flash_err().bit()),
-            )
+            .field("slv_st_end", &self.slv_st_end().bit())
+            .field("mst_st_end", &self.mst_st_end().bit())
+            .field("ecc_err", &self.ecc_err().bit())
+            .field("pms_reject", &self.pms_reject().bit())
+            .field("axi_raddr_err", &self.axi_raddr_err().bit())
+            .field("axi_wr_flash_err", &self.axi_wr_flash_err().bit())
             .field(
                 "axi_waddr_err_int__ena",
-                &format_args!("{}", self.axi_waddr_err_int__ena().bit()),
+                &self.axi_waddr_err_int__ena().bit(),
             )
-            .field(
-                "dqs0_afifo_ovf",
-                &format_args!("{}", self.dqs0_afifo_ovf().bit()),
-            )
-            .field(
-                "dqs1_afifo_ovf",
-                &format_args!("{}", self.dqs1_afifo_ovf().bit()),
-            )
-            .field(
-                "bus_fifo1_udf",
-                &format_args!("{}", self.bus_fifo1_udf().bit()),
-            )
-            .field(
-                "bus_fifo0_udf",
-                &format_args!("{}", self.bus_fifo0_udf().bit()),
-            )
+            .field("dqs0_afifo_ovf", &self.dqs0_afifo_ovf().bit())
+            .field("dqs1_afifo_ovf", &self.dqs1_afifo_ovf().bit())
+            .field("bus_fifo1_udf", &self.bus_fifo1_udf().bit())
+            .field("bus_fifo0_udf", &self.bus_fifo0_udf().bit())
             .finish()
     }
 }
@@ -226,10 +208,6 @@ impl crate::Readable for INT_ENA_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`int_ena::W`](W) writer structure"]
 impl crate::Writable for INT_ENA_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets INT_ENA to value 0"]
-impl crate::Resettable for INT_ENA_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for INT_ENA_SPEC {}

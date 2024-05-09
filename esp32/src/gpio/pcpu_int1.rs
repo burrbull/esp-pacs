@@ -13,10 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PCPU_INT1")
-            .field(
-                "procpu_int_h",
-                &format_args!("{}", self.procpu_int_h().bits()),
-            )
+            .field("procpu_int_h", &self.procpu_int_h().bits())
             .finish()
     }
 }
@@ -34,6 +31,4 @@ impl crate::RegisterSpec for PCPU_INT1_SPEC {
 #[doc = "`read()` method returns [`pcpu_int1::R`](R) reader structure"]
 impl crate::Readable for PCPU_INT1_SPEC {}
 #[doc = "`reset()` method sets PCPU_INT1 to value 0"]
-impl crate::Resettable for PCPU_INT1_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for PCPU_INT1_SPEC {}

@@ -44,22 +44,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("TOUCH_PWR_CNTL")
-            .field(
-                "touch_wait_cycles",
-                &format_args!("{}", self.touch_wait_cycles().bits()),
-            )
-            .field(
-                "touch_sleep_cycles",
-                &format_args!("{}", self.touch_sleep_cycles().bits()),
-            )
-            .field(
-                "touch_force_done",
-                &format_args!("{}", self.touch_force_done().bit()),
-            )
-            .field(
-                "touch_sleep_timer_en",
-                &format_args!("{}", self.touch_sleep_timer_en().bit()),
-            )
+            .field("touch_wait_cycles", &self.touch_wait_cycles().bits())
+            .field("touch_sleep_cycles", &self.touch_sleep_cycles().bits())
+            .field("touch_force_done", &self.touch_force_done().bit())
+            .field("touch_sleep_timer_en", &self.touch_sleep_timer_en().bit())
             .finish()
     }
 }
@@ -105,8 +93,6 @@ impl crate::Readable for TOUCH_PWR_CNTL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`touch_pwr_cntl::W`](W) writer structure"]
 impl crate::Writable for TOUCH_PWR_CNTL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets TOUCH_PWR_CNTL to value 0x0019_0140"]
 impl crate::Resettable for TOUCH_PWR_CNTL_SPEC {

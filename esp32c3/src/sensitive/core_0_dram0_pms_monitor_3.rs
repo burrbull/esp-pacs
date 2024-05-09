@@ -26,17 +26,11 @@ impl core::fmt::Debug for R {
         f.debug_struct("CORE_0_DRAM0_PMS_MONITOR_3")
             .field(
                 "core_0_dram0_pms_monitor_violate_status_wr",
-                &format_args!(
-                    "{}",
-                    self.core_0_dram0_pms_monitor_violate_status_wr().bit()
-                ),
+                &self.core_0_dram0_pms_monitor_violate_status_wr().bit(),
             )
             .field(
                 "core_0_dram0_pms_monitor_violate_status_byteen",
-                &format_args!(
-                    "{}",
-                    self.core_0_dram0_pms_monitor_violate_status_byteen().bits()
-                ),
+                &self.core_0_dram0_pms_monitor_violate_status_byteen().bits(),
             )
             .finish()
     }
@@ -55,6 +49,4 @@ impl crate::RegisterSpec for CORE_0_DRAM0_PMS_MONITOR_3_SPEC {
 #[doc = "`read()` method returns [`core_0_dram0_pms_monitor_3::R`](R) reader structure"]
 impl crate::Readable for CORE_0_DRAM0_PMS_MONITOR_3_SPEC {}
 #[doc = "`reset()` method sets CORE_0_DRAM0_PMS_MONITOR_3 to value 0"]
-impl crate::Resettable for CORE_0_DRAM0_PMS_MONITOR_3_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for CORE_0_DRAM0_PMS_MONITOR_3_SPEC {}

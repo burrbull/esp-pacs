@@ -38,21 +38,18 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("I2C_BURST_STATUS")
-            .field(
-                "i2c_mst_burst_done",
-                &format_args!("{}", self.i2c_mst_burst_done().bit()),
-            )
+            .field("i2c_mst_burst_done", &self.i2c_mst_burst_done().bit())
             .field(
                 "i2c_mst0_burst_err_flag",
-                &format_args!("{}", self.i2c_mst0_burst_err_flag().bit()),
+                &self.i2c_mst0_burst_err_flag().bit(),
             )
             .field(
                 "i2c_mst1_burst_err_flag",
-                &format_args!("{}", self.i2c_mst1_burst_err_flag().bit()),
+                &self.i2c_mst1_burst_err_flag().bit(),
             )
             .field(
                 "i2c_mst_burst_timeout_cnt",
-                &format_args!("{}", self.i2c_mst_burst_timeout_cnt().bits()),
+                &self.i2c_mst_burst_timeout_cnt().bits(),
             )
             .finish()
     }
@@ -83,8 +80,6 @@ impl crate::Readable for I2C_BURST_STATUS_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`i2c_burst_status::W`](W) writer structure"]
 impl crate::Writable for I2C_BURST_STATUS_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets I2C_BURST_STATUS to value 0x4000_0000"]
 impl crate::Resettable for I2C_BURST_STATUS_SPEC {

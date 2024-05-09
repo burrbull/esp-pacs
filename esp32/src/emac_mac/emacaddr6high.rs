@@ -44,22 +44,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("EMACADDR6HIGH")
-            .field(
-                "mac_address6_hi",
-                &format_args!("{}", self.mac_address6_hi().bits()),
-            )
-            .field(
-                "mask_byte_control6",
-                &format_args!("{}", self.mask_byte_control6().bits()),
-            )
-            .field(
-                "source_address6",
-                &format_args!("{}", self.source_address6().bit()),
-            )
-            .field(
-                "address_enable6",
-                &format_args!("{}", self.address_enable6().bit()),
-            )
+            .field("mac_address6_hi", &self.mac_address6_hi().bits())
+            .field("mask_byte_control6", &self.mask_byte_control6().bits())
+            .field("source_address6", &self.source_address6().bit())
+            .field("address_enable6", &self.address_enable6().bit())
             .finish()
     }
 }
@@ -105,10 +93,6 @@ impl crate::Readable for EMACADDR6HIGH_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`emacaddr6high::W`](W) writer structure"]
 impl crate::Writable for EMACADDR6HIGH_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets EMACADDR6HIGH to value 0"]
-impl crate::Resettable for EMACADDR6HIGH_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for EMACADDR6HIGH_SPEC {}

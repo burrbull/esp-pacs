@@ -17,7 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("IDPARTNO")
-            .field("partno", &format_args!("{}", self.partno().bits()))
+            .field("partno", &self.partno().bits())
             .finish()
     }
 }
@@ -45,10 +45,6 @@ impl crate::Readable for IDPARTNO_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`idpartno::W`](W) writer structure"]
 impl crate::Writable for IDPARTNO_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets IDPARTNO to value 0"]
-impl crate::Resettable for IDPARTNO_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for IDPARTNO_SPEC {}

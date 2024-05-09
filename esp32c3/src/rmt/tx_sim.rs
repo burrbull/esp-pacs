@@ -35,9 +35,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("TX_SIM")
-            .field("tx_sim_ch0", &format_args!("{}", self.tx_sim_ch0().bit()))
-            .field("tx_sim_ch1", &format_args!("{}", self.tx_sim_ch1().bit()))
-            .field("tx_sim_en", &format_args!("{}", self.tx_sim_en().bit()))
+            .field("tx_sim_ch0", &self.tx_sim_ch0().bit())
+            .field("tx_sim_ch1", &self.tx_sim_ch1().bit())
+            .field("tx_sim_en", &self.tx_sim_en().bit())
             .finish()
     }
 }
@@ -77,10 +77,6 @@ impl crate::Readable for TX_SIM_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`tx_sim::W`](W) writer structure"]
 impl crate::Writable for TX_SIM_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets TX_SIM to value 0"]
-impl crate::Resettable for TX_SIM_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for TX_SIM_SPEC {}

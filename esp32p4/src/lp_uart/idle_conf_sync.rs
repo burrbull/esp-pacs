@@ -26,14 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("IDLE_CONF_SYNC")
-            .field(
-                "rx_idle_thrhd",
-                &format_args!("{}", self.rx_idle_thrhd().bits()),
-            )
-            .field(
-                "tx_idle_num",
-                &format_args!("{}", self.tx_idle_num().bits()),
-            )
+            .field("rx_idle_thrhd", &self.rx_idle_thrhd().bits())
+            .field("tx_idle_num", &self.tx_idle_num().bits())
             .finish()
     }
 }
@@ -67,8 +61,6 @@ impl crate::Readable for IDLE_CONF_SYNC_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`idle_conf_sync::W`](W) writer structure"]
 impl crate::Writable for IDLE_CONF_SYNC_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets IDLE_CONF_SYNC to value 0x0004_0100"]
 impl crate::Resettable for IDLE_CONF_SYNC_SPEC {

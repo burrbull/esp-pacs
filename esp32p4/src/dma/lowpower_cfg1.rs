@@ -35,9 +35,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("LOWPOWER_CFG1")
-            .field("glch_lpdly", &format_args!("{}", self.glch_lpdly().bits()))
-            .field("sbiu_lpdly", &format_args!("{}", self.sbiu_lpdly().bits()))
-            .field("mxif_lpdly", &format_args!("{}", self.mxif_lpdly().bits()))
+            .field("glch_lpdly", &self.glch_lpdly().bits())
+            .field("sbiu_lpdly", &self.sbiu_lpdly().bits())
+            .field("mxif_lpdly", &self.mxif_lpdly().bits())
             .finish()
     }
 }
@@ -77,8 +77,6 @@ impl crate::Readable for LOWPOWER_CFG1_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`lowpower_cfg1::W`](W) writer structure"]
 impl crate::Writable for LOWPOWER_CFG1_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets LOWPOWER_CFG1 to value 0x0040_4040"]
 impl crate::Resettable for LOWPOWER_CFG1_SPEC {

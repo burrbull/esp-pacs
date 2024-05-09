@@ -44,19 +44,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("HP_MODEM_BIAS")
-            .field(
-                "hp_modem_xpd_bias",
-                &format_args!("{}", self.hp_modem_xpd_bias().bit()),
-            )
-            .field(
-                "hp_modem_dbg_atten",
-                &format_args!("{}", self.hp_modem_dbg_atten().bits()),
-            )
-            .field(
-                "hp_modem_pd_cur",
-                &format_args!("{}", self.hp_modem_pd_cur().bit()),
-            )
-            .field("sleep", &format_args!("{}", self.sleep().bit()))
+            .field("hp_modem_xpd_bias", &self.hp_modem_xpd_bias().bit())
+            .field("hp_modem_dbg_atten", &self.hp_modem_dbg_atten().bits())
+            .field("hp_modem_pd_cur", &self.hp_modem_pd_cur().bit())
+            .field("sleep", &self.sleep().bit())
             .finish()
     }
 }
@@ -102,10 +93,6 @@ impl crate::Readable for HP_MODEM_BIAS_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`hp_modem_bias::W`](W) writer structure"]
 impl crate::Writable for HP_MODEM_BIAS_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets HP_MODEM_BIAS to value 0"]
-impl crate::Resettable for HP_MODEM_BIAS_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for HP_MODEM_BIAS_SPEC {}

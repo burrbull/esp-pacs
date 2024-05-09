@@ -17,7 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("DPHY_RSTZ")
-            .field("dphy_rstz", &format_args!("{}", self.dphy_rstz().bit()))
+            .field("dphy_rstz", &self.dphy_rstz().bit())
             .finish()
     }
 }
@@ -45,10 +45,6 @@ impl crate::Readable for DPHY_RSTZ_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`dphy_rstz::W`](W) writer structure"]
 impl crate::Writable for DPHY_RSTZ_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets DPHY_RSTZ to value 0"]
-impl crate::Resettable for DPHY_RSTZ_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for DPHY_RSTZ_SPEC {}

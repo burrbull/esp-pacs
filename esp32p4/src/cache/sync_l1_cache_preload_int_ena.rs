@@ -110,52 +110,46 @@ impl core::fmt::Debug for R {
         f.debug_struct("SYNC_L1_CACHE_PRELOAD_INT_ENA")
             .field(
                 "l1_icache0_pld_done_int_ena",
-                &format_args!("{}", self.l1_icache0_pld_done_int_ena().bit()),
+                &self.l1_icache0_pld_done_int_ena().bit(),
             )
             .field(
                 "l1_icache1_pld_done_int_ena",
-                &format_args!("{}", self.l1_icache1_pld_done_int_ena().bit()),
+                &self.l1_icache1_pld_done_int_ena().bit(),
             )
             .field(
                 "l1_icache2_pld_done_int_ena",
-                &format_args!("{}", self.l1_icache2_pld_done_int_ena().bit()),
+                &self.l1_icache2_pld_done_int_ena().bit(),
             )
             .field(
                 "l1_icache3_pld_done_int_ena",
-                &format_args!("{}", self.l1_icache3_pld_done_int_ena().bit()),
+                &self.l1_icache3_pld_done_int_ena().bit(),
             )
             .field(
                 "l1_dcache_pld_done_int_ena",
-                &format_args!("{}", self.l1_dcache_pld_done_int_ena().bit()),
+                &self.l1_dcache_pld_done_int_ena().bit(),
             )
-            .field(
-                "sync_done_int_ena",
-                &format_args!("{}", self.sync_done_int_ena().bit()),
-            )
+            .field("sync_done_int_ena", &self.sync_done_int_ena().bit())
             .field(
                 "l1_icache0_pld_err_int_ena",
-                &format_args!("{}", self.l1_icache0_pld_err_int_ena().bit()),
+                &self.l1_icache0_pld_err_int_ena().bit(),
             )
             .field(
                 "l1_icache1_pld_err_int_ena",
-                &format_args!("{}", self.l1_icache1_pld_err_int_ena().bit()),
+                &self.l1_icache1_pld_err_int_ena().bit(),
             )
             .field(
                 "l1_icache2_pld_err_int_ena",
-                &format_args!("{}", self.l1_icache2_pld_err_int_ena().bit()),
+                &self.l1_icache2_pld_err_int_ena().bit(),
             )
             .field(
                 "l1_icache3_pld_err_int_ena",
-                &format_args!("{}", self.l1_icache3_pld_err_int_ena().bit()),
+                &self.l1_icache3_pld_err_int_ena().bit(),
             )
             .field(
                 "l1_dcache_pld_err_int_ena",
-                &format_args!("{}", self.l1_dcache_pld_err_int_ena().bit()),
+                &self.l1_dcache_pld_err_int_ena().bit(),
             )
-            .field(
-                "sync_err_int_ena",
-                &format_args!("{}", self.sync_err_int_ena().bit()),
-            )
+            .field("sync_err_int_ena", &self.sync_err_int_ena().bit())
             .finish()
     }
 }
@@ -237,10 +231,6 @@ impl crate::Readable for SYNC_L1_CACHE_PRELOAD_INT_ENA_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`sync_l1_cache_preload_int_ena::W`](W) writer structure"]
 impl crate::Writable for SYNC_L1_CACHE_PRELOAD_INT_ENA_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SYNC_L1_CACHE_PRELOAD_INT_ENA to value 0"]
-impl crate::Resettable for SYNC_L1_CACHE_PRELOAD_INT_ENA_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for SYNC_L1_CACHE_PRELOAD_INT_ENA_SPEC {}

@@ -71,31 +71,13 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("FIFO_CONF")
-            .field(
-                "rx_data_num",
-                &format_args!("{}", self.rx_data_num().bits()),
-            )
-            .field(
-                "tx_data_num",
-                &format_args!("{}", self.tx_data_num().bits()),
-            )
-            .field("dscr_en", &format_args!("{}", self.dscr_en().bit()))
-            .field(
-                "tx_fifo_mod",
-                &format_args!("{}", self.tx_fifo_mod().bits()),
-            )
-            .field(
-                "rx_fifo_mod",
-                &format_args!("{}", self.rx_fifo_mod().bits()),
-            )
-            .field(
-                "tx_fifo_mod_force_en",
-                &format_args!("{}", self.tx_fifo_mod_force_en().bit()),
-            )
-            .field(
-                "rx_fifo_mod_force_en",
-                &format_args!("{}", self.rx_fifo_mod_force_en().bit()),
-            )
+            .field("rx_data_num", &self.rx_data_num().bits())
+            .field("tx_data_num", &self.tx_data_num().bits())
+            .field("dscr_en", &self.dscr_en().bit())
+            .field("tx_fifo_mod", &self.tx_fifo_mod().bits())
+            .field("rx_fifo_mod", &self.rx_fifo_mod().bits())
+            .field("tx_fifo_mod_force_en", &self.tx_fifo_mod_force_en().bit())
+            .field("rx_fifo_mod_force_en", &self.rx_fifo_mod_force_en().bit())
             .finish()
     }
 }
@@ -159,8 +141,6 @@ impl crate::Readable for FIFO_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`fifo_conf::W`](W) writer structure"]
 impl crate::Writable for FIFO_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets FIFO_CONF to value 0x1820"]
 impl crate::Resettable for FIFO_CONF_SPEC {

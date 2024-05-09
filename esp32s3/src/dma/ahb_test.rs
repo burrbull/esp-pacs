@@ -26,14 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("AHB_TEST")
-            .field(
-                "ahb_testmode",
-                &format_args!("{}", self.ahb_testmode().bits()),
-            )
-            .field(
-                "ahb_testaddr",
-                &format_args!("{}", self.ahb_testaddr().bits()),
-            )
+            .field("ahb_testmode", &self.ahb_testmode().bits())
+            .field("ahb_testaddr", &self.ahb_testaddr().bits())
             .finish()
     }
 }
@@ -67,10 +61,6 @@ impl crate::Readable for AHB_TEST_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`ahb_test::W`](W) writer structure"]
 impl crate::Writable for AHB_TEST_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets AHB_TEST to value 0"]
-impl crate::Resettable for AHB_TEST_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for AHB_TEST_SPEC {}

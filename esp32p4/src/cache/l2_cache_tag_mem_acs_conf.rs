@@ -28,11 +28,11 @@ impl core::fmt::Debug for R {
         f.debug_struct("L2_CACHE_TAG_MEM_ACS_CONF")
             .field(
                 "l2_cache_tag_mem_rd_en",
-                &format_args!("{}", self.l2_cache_tag_mem_rd_en().bit()),
+                &self.l2_cache_tag_mem_rd_en().bit(),
             )
             .field(
                 "l2_cache_tag_mem_wr_en",
-                &format_args!("{}", self.l2_cache_tag_mem_wr_en().bit()),
+                &self.l2_cache_tag_mem_wr_en().bit(),
             )
             .finish()
     }
@@ -71,8 +71,6 @@ impl crate::Readable for L2_CACHE_TAG_MEM_ACS_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`l2_cache_tag_mem_acs_conf::W`](W) writer structure"]
 impl crate::Writable for L2_CACHE_TAG_MEM_ACS_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets L2_CACHE_TAG_MEM_ACS_CONF to value 0x0030_0000"]
 impl crate::Resettable for L2_CACHE_TAG_MEM_ACS_CONF_SPEC {

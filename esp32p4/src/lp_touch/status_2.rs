@@ -27,15 +27,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("STATUS_2")
-            .field("pad2_data", &format_args!("{}", self.pad2_data().bits()))
-            .field(
-                "pad2_debounce_cnt",
-                &format_args!("{}", self.pad2_debounce_cnt().bits()),
-            )
-            .field(
-                "pad2_neg_noise_cnt",
-                &format_args!("{}", self.pad2_neg_noise_cnt().bits()),
-            )
+            .field("pad2_data", &self.pad2_data().bits())
+            .field("pad2_debounce_cnt", &self.pad2_debounce_cnt().bits())
+            .field("pad2_neg_noise_cnt", &self.pad2_neg_noise_cnt().bits())
             .finish()
     }
 }
@@ -53,6 +47,4 @@ impl crate::RegisterSpec for STATUS_2_SPEC {
 #[doc = "`read()` method returns [`status_2::R`](R) reader structure"]
 impl crate::Readable for STATUS_2_SPEC {}
 #[doc = "`reset()` method sets STATUS_2 to value 0"]
-impl crate::Resettable for STATUS_2_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for STATUS_2_SPEC {}

@@ -28,11 +28,11 @@ impl core::fmt::Debug for R {
         f.debug_struct("SCL_START_HOLD")
             .field(
                 "reg_scl_start_hold_time",
-                &format_args!("{}", self.reg_scl_start_hold_time().bits()),
+                &self.reg_scl_start_hold_time().bits(),
             )
             .field(
                 "reg_start_det_hold_time",
-                &format_args!("{}", self.reg_start_det_hold_time().bits()),
+                &self.reg_start_det_hold_time().bits(),
             )
             .finish()
     }
@@ -67,8 +67,6 @@ impl crate::Readable for SCL_START_HOLD_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`scl_start_hold::W`](W) writer structure"]
 impl crate::Writable for SCL_START_HOLD_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SCL_START_HOLD to value 0x08"]
 impl crate::Resettable for SCL_START_HOLD_SPEC {

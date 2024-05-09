@@ -13,10 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("QUERY_KEY_WRONG")
-            .field(
-                "query_key_wrong",
-                &format_args!("{}", self.query_key_wrong().bits()),
-            )
+            .field("query_key_wrong", &self.query_key_wrong().bits())
             .finish()
     }
 }
@@ -34,6 +31,4 @@ impl crate::RegisterSpec for QUERY_KEY_WRONG_SPEC {
 #[doc = "`read()` method returns [`query_key_wrong::R`](R) reader structure"]
 impl crate::Readable for QUERY_KEY_WRONG_SPEC {}
 #[doc = "`reset()` method sets QUERY_KEY_WRONG to value 0"]
-impl crate::Resettable for QUERY_KEY_WRONG_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for QUERY_KEY_WRONG_SPEC {}

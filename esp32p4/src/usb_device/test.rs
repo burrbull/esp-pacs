@@ -65,13 +65,13 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("TEST")
-            .field("test_enable", &format_args!("{}", self.test_enable().bit()))
-            .field("test_usb_oe", &format_args!("{}", self.test_usb_oe().bit()))
-            .field("test_tx_dp", &format_args!("{}", self.test_tx_dp().bit()))
-            .field("test_tx_dm", &format_args!("{}", self.test_tx_dm().bit()))
-            .field("test_rx_rcv", &format_args!("{}", self.test_rx_rcv().bit()))
-            .field("test_rx_dp", &format_args!("{}", self.test_rx_dp().bit()))
-            .field("test_rx_dm", &format_args!("{}", self.test_rx_dm().bit()))
+            .field("test_enable", &self.test_enable().bit())
+            .field("test_usb_oe", &self.test_usb_oe().bit())
+            .field("test_tx_dp", &self.test_tx_dp().bit())
+            .field("test_tx_dm", &self.test_tx_dm().bit())
+            .field("test_rx_rcv", &self.test_rx_rcv().bit())
+            .field("test_rx_dp", &self.test_rx_dp().bit())
+            .field("test_rx_dm", &self.test_rx_dm().bit())
             .finish()
     }
 }
@@ -117,8 +117,6 @@ impl crate::Readable for TEST_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`test::W`](W) writer structure"]
 impl crate::Writable for TEST_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets TEST to value 0x30"]
 impl crate::Resettable for TEST_SPEC {

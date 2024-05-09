@@ -120,54 +120,45 @@ impl core::fmt::Debug for R {
         f.debug_struct("SAR_COCPU_INT_ENA")
             .field(
                 "sar_cocpu_touch_done_int_ena",
-                &format_args!("{}", self.sar_cocpu_touch_done_int_ena().bit()),
+                &self.sar_cocpu_touch_done_int_ena().bit(),
             )
             .field(
                 "sar_cocpu_touch_inactive_int_ena",
-                &format_args!("{}", self.sar_cocpu_touch_inactive_int_ena().bit()),
+                &self.sar_cocpu_touch_inactive_int_ena().bit(),
             )
             .field(
                 "sar_cocpu_touch_active_int_ena",
-                &format_args!("{}", self.sar_cocpu_touch_active_int_ena().bit()),
+                &self.sar_cocpu_touch_active_int_ena().bit(),
             )
             .field(
                 "sar_cocpu_saradc1_int_ena",
-                &format_args!("{}", self.sar_cocpu_saradc1_int_ena().bit()),
+                &self.sar_cocpu_saradc1_int_ena().bit(),
             )
             .field(
                 "sar_cocpu_saradc2_int_ena",
-                &format_args!("{}", self.sar_cocpu_saradc2_int_ena().bit()),
+                &self.sar_cocpu_saradc2_int_ena().bit(),
             )
             .field(
                 "sar_cocpu_tsens_int_ena",
-                &format_args!("{}", self.sar_cocpu_tsens_int_ena().bit()),
+                &self.sar_cocpu_tsens_int_ena().bit(),
             )
             .field(
                 "sar_cocpu_start_int_ena",
-                &format_args!("{}", self.sar_cocpu_start_int_ena().bit()),
+                &self.sar_cocpu_start_int_ena().bit(),
             )
-            .field(
-                "sar_cocpu_sw_int_ena",
-                &format_args!("{}", self.sar_cocpu_sw_int_ena().bit()),
-            )
-            .field(
-                "sar_cocpu_swd_int_ena",
-                &format_args!("{}", self.sar_cocpu_swd_int_ena().bit()),
-            )
+            .field("sar_cocpu_sw_int_ena", &self.sar_cocpu_sw_int_ena().bit())
+            .field("sar_cocpu_swd_int_ena", &self.sar_cocpu_swd_int_ena().bit())
             .field(
                 "sar_cocpu_touch_timeout_int_ena",
-                &format_args!("{}", self.sar_cocpu_touch_timeout_int_ena().bit()),
+                &self.sar_cocpu_touch_timeout_int_ena().bit(),
             )
             .field(
                 "sar_cocpu_touch_approach_loop_done_int_ena",
-                &format_args!(
-                    "{}",
-                    self.sar_cocpu_touch_approach_loop_done_int_ena().bit()
-                ),
+                &self.sar_cocpu_touch_approach_loop_done_int_ena().bit(),
             )
             .field(
                 "sar_cocpu_touch_scan_done_int_ena",
-                &format_args!("{}", self.sar_cocpu_touch_scan_done_int_ena().bit()),
+                &self.sar_cocpu_touch_scan_done_int_ena().bit(),
             )
             .finish()
     }
@@ -278,10 +269,6 @@ impl crate::Readable for SAR_COCPU_INT_ENA_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`sar_cocpu_int_ena::W`](W) writer structure"]
 impl crate::Writable for SAR_COCPU_INT_ENA_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SAR_COCPU_INT_ENA to value 0"]
-impl crate::Resettable for SAR_COCPU_INT_ENA_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for SAR_COCPU_INT_ENA_SPEC {}

@@ -68,38 +68,14 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("JFIFO_ST")
-            .field(
-                "in_fifo_cnt",
-                &format_args!("{}", self.in_fifo_cnt().bits()),
-            )
-            .field(
-                "in_fifo_empty",
-                &format_args!("{}", self.in_fifo_empty().bit()),
-            )
-            .field(
-                "in_fifo_full",
-                &format_args!("{}", self.in_fifo_full().bit()),
-            )
-            .field(
-                "out_fifo_cnt",
-                &format_args!("{}", self.out_fifo_cnt().bits()),
-            )
-            .field(
-                "out_fifo_empty",
-                &format_args!("{}", self.out_fifo_empty().bit()),
-            )
-            .field(
-                "out_fifo_full",
-                &format_args!("{}", self.out_fifo_full().bit()),
-            )
-            .field(
-                "in_fifo_reset",
-                &format_args!("{}", self.in_fifo_reset().bit()),
-            )
-            .field(
-                "out_fifo_reset",
-                &format_args!("{}", self.out_fifo_reset().bit()),
-            )
+            .field("in_fifo_cnt", &self.in_fifo_cnt().bits())
+            .field("in_fifo_empty", &self.in_fifo_empty().bit())
+            .field("in_fifo_full", &self.in_fifo_full().bit())
+            .field("out_fifo_cnt", &self.out_fifo_cnt().bits())
+            .field("out_fifo_empty", &self.out_fifo_empty().bit())
+            .field("out_fifo_full", &self.out_fifo_full().bit())
+            .field("in_fifo_reset", &self.in_fifo_reset().bit())
+            .field("out_fifo_reset", &self.out_fifo_reset().bit())
             .finish()
     }
 }
@@ -133,8 +109,6 @@ impl crate::Readable for JFIFO_ST_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`jfifo_st::W`](W) writer structure"]
 impl crate::Writable for JFIFO_ST_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets JFIFO_ST to value 0x44"]
 impl crate::Resettable for JFIFO_ST_SPEC {

@@ -37,15 +37,15 @@ impl core::fmt::Debug for R {
         f.debug_struct("DPA_CTRL")
             .field(
                 "spi_crypt_security_level",
-                &format_args!("{}", self.spi_crypt_security_level().bits()),
+                &self.spi_crypt_security_level().bits(),
             )
             .field(
                 "spi_crypt_calc_d_dpa_en",
-                &format_args!("{}", self.spi_crypt_calc_d_dpa_en().bit()),
+                &self.spi_crypt_calc_d_dpa_en().bit(),
             )
             .field(
                 "spi_crypt_dpa_select_register",
-                &format_args!("{}", self.spi_crypt_dpa_select_register().bit()),
+                &self.spi_crypt_dpa_select_register().bit(),
             )
             .finish()
     }
@@ -88,8 +88,6 @@ impl crate::Readable for DPA_CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`dpa_ctrl::W`](W) writer structure"]
 impl crate::Writable for DPA_CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets DPA_CTRL to value 0x0f"]
 impl crate::Resettable for DPA_CTRL_SPEC {

@@ -62,15 +62,12 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("APB_DAC_CTRL")
-            .field(
-                "timer_target",
-                &format_args!("{}", self.timer_target().bits()),
-            )
-            .field("timer_en", &format_args!("{}", self.timer_en().bit()))
-            .field("alter_mode", &format_args!("{}", self.alter_mode().bit()))
-            .field("trans", &format_args!("{}", self.trans().bit()))
-            .field("reset_fifo", &format_args!("{}", self.reset_fifo().bit()))
-            .field("rst", &format_args!("{}", self.rst().bit()))
+            .field("timer_target", &self.timer_target().bits())
+            .field("timer_en", &self.timer_en().bit())
+            .field("alter_mode", &self.alter_mode().bit())
+            .field("trans", &self.trans().bit())
+            .field("reset_fifo", &self.reset_fifo().bit())
+            .field("rst", &self.rst().bit())
             .finish()
     }
 }
@@ -128,8 +125,6 @@ impl crate::Readable for APB_DAC_CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`apb_dac_ctrl::W`](W) writer structure"]
 impl crate::Writable for APB_DAC_CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets APB_DAC_CTRL to value 0x2064"]
 impl crate::Resettable for APB_DAC_CTRL_SPEC {

@@ -114,42 +114,21 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SLAVE")
-            .field("trans_done", &format_args!("{}", self.trans_done().bit()))
-            .field(
-                "int_rd_buf_done_en",
-                &format_args!("{}", self.int_rd_buf_done_en().bit()),
-            )
-            .field(
-                "int_wr_buf_done_en",
-                &format_args!("{}", self.int_wr_buf_done_en().bit()),
-            )
-            .field(
-                "int_rd_dma_done_en",
-                &format_args!("{}", self.int_rd_dma_done_en().bit()),
-            )
-            .field(
-                "int_wr_dma_done_en",
-                &format_args!("{}", self.int_wr_dma_done_en().bit()),
-            )
-            .field(
-                "int_trans_done_en",
-                &format_args!("{}", self.int_trans_done_en().bit()),
-            )
-            .field(
-                "int_dma_seg_trans_en",
-                &format_args!("{}", self.int_dma_seg_trans_en().bit()),
-            )
-            .field(
-                "seg_magic_err_int_en",
-                &format_args!("{}", self.seg_magic_err_int_en().bit()),
-            )
-            .field("trans_cnt", &format_args!("{}", self.trans_cnt().bits()))
+            .field("trans_done", &self.trans_done().bit())
+            .field("int_rd_buf_done_en", &self.int_rd_buf_done_en().bit())
+            .field("int_wr_buf_done_en", &self.int_wr_buf_done_en().bit())
+            .field("int_rd_dma_done_en", &self.int_rd_dma_done_en().bit())
+            .field("int_wr_dma_done_en", &self.int_wr_dma_done_en().bit())
+            .field("int_trans_done_en", &self.int_trans_done_en().bit())
+            .field("int_dma_seg_trans_en", &self.int_dma_seg_trans_en().bit())
+            .field("seg_magic_err_int_en", &self.seg_magic_err_int_en().bit())
+            .field("trans_cnt", &self.trans_cnt().bits())
             .field(
                 "trans_done_auto_clr_en",
-                &format_args!("{}", self.trans_done_auto_clr_en().bit()),
+                &self.trans_done_auto_clr_en().bit(),
             )
-            .field("mode", &format_args!("{}", self.mode().bit()))
-            .field("soft_reset", &format_args!("{}", self.soft_reset().bit()))
+            .field("mode", &self.mode().bit())
+            .field("soft_reset", &self.soft_reset().bit())
             .finish()
     }
 }
@@ -237,8 +216,6 @@ impl crate::Readable for SLAVE_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`slave::W`](W) writer structure"]
 impl crate::Writable for SLAVE_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SLAVE to value 0x0200"]
 impl crate::Resettable for SLAVE_SPEC {

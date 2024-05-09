@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("OUT_CONF1")
-            .field(
-                "out_check_owner",
-                &format_args!("{}", self.out_check_owner().bit()),
-            )
+            .field("out_check_owner", &self.out_check_owner().bit())
             .finish()
     }
 }
@@ -48,10 +45,6 @@ impl crate::Readable for OUT_CONF1_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`out_conf1::W`](W) writer structure"]
 impl crate::Writable for OUT_CONF1_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets OUT_CONF1 to value 0"]
-impl crate::Resettable for OUT_CONF1_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for OUT_CONF1_SPEC {}

@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("DIAG0")
-            .field(
-                "low_power_diag1",
-                &format_args!("{}", self.low_power_diag1().bits()),
-            )
+            .field("low_power_diag1", &self.low_power_diag1().bits())
             .finish()
     }
 }
@@ -48,10 +45,6 @@ impl crate::Readable for DIAG0_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`diag0::W`](W) writer structure"]
 impl crate::Writable for DIAG0_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets DIAG0 to value 0"]
-impl crate::Resettable for DIAG0_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for DIAG0_SPEC {}

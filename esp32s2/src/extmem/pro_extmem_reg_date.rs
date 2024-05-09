@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PRO_EXTMEM_REG_DATE")
-            .field(
-                "pro_extmem_reg_date",
-                &format_args!("{}", self.pro_extmem_reg_date().bits()),
-            )
+            .field("pro_extmem_reg_date", &self.pro_extmem_reg_date().bits())
             .finish()
     }
 }
@@ -48,8 +45,6 @@ impl crate::Readable for PRO_EXTMEM_REG_DATE_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`pro_extmem_reg_date::W`](W) writer structure"]
 impl crate::Writable for PRO_EXTMEM_REG_DATE_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets PRO_EXTMEM_REG_DATE to value 0x0190_4180"]
 impl crate::Resettable for PRO_EXTMEM_REG_DATE_SPEC {

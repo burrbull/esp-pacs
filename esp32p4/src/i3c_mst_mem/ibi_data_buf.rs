@@ -13,7 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("IBI_DATA_BUF")
-            .field("ibi_data", &format_args!("{}", self.ibi_data().bits()))
+            .field("ibi_data", &self.ibi_data().bits())
             .finish()
     }
 }
@@ -31,6 +31,4 @@ impl crate::RegisterSpec for IBI_DATA_BUF_SPEC {
 #[doc = "`read()` method returns [`ibi_data_buf::R`](R) reader structure"]
 impl crate::Readable for IBI_DATA_BUF_SPEC {}
 #[doc = "`reset()` method sets IBI_DATA_BUF to value 0"]
-impl crate::Resettable for IBI_DATA_BUF_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for IBI_DATA_BUF_SPEC {}

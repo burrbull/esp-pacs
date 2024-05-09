@@ -89,33 +89,21 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("ESCO_CONF0")
-            .field("esco_en", &format_args!("{}", self.esco_en().bit()))
-            .field(
-                "esco_chan_mod",
-                &format_args!("{}", self.esco_chan_mod().bit()),
-            )
+            .field("esco_en", &self.esco_en().bit())
+            .field("esco_chan_mod", &self.esco_chan_mod().bit())
             .field(
                 "esco_cvsd_dec_pack_err",
-                &format_args!("{}", self.esco_cvsd_dec_pack_err().bit()),
+                &self.esco_cvsd_dec_pack_err().bit(),
             )
             .field(
                 "esco_cvsd_pack_len_8k",
-                &format_args!("{}", self.esco_cvsd_pack_len_8k().bits()),
+                &self.esco_cvsd_pack_len_8k().bits(),
             )
-            .field(
-                "esco_cvsd_inf_en",
-                &format_args!("{}", self.esco_cvsd_inf_en().bit()),
-            )
-            .field(
-                "cvsd_dec_start",
-                &format_args!("{}", self.cvsd_dec_start().bit()),
-            )
-            .field(
-                "cvsd_dec_reset",
-                &format_args!("{}", self.cvsd_dec_reset().bit()),
-            )
-            .field("plc_en", &format_args!("{}", self.plc_en().bit()))
-            .field("plc2dma_en", &format_args!("{}", self.plc2dma_en().bit()))
+            .field("esco_cvsd_inf_en", &self.esco_cvsd_inf_en().bit())
+            .field("cvsd_dec_start", &self.cvsd_dec_start().bit())
+            .field("cvsd_dec_reset", &self.cvsd_dec_reset().bit())
+            .field("plc_en", &self.plc_en().bit())
+            .field("plc2dma_en", &self.plc2dma_en().bit())
             .finish()
     }
 }
@@ -191,10 +179,6 @@ impl crate::Readable for ESCO_CONF0_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`esco_conf0::W`](W) writer structure"]
 impl crate::Writable for ESCO_CONF0_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets ESCO_CONF0 to value 0"]
-impl crate::Resettable for ESCO_CONF0_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for ESCO_CONF0_SPEC {}

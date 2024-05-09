@@ -17,7 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("WORD1")
-            .field("send_word", &format_args!("{}", self.send_word().bits()))
+            .field("send_word", &self.send_word().bits())
             .finish()
     }
 }
@@ -45,10 +45,6 @@ impl crate::Readable for WORD1_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`word1::W`](W) writer structure"]
 impl crate::Writable for WORD1_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets WORD1 to value 0"]
-impl crate::Resettable for WORD1_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for WORD1_SPEC {}

@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("AE_WINPIXNUM")
-            .field(
-                "ae_subwin_pixnum",
-                &format_args!("{}", self.ae_subwin_pixnum().bits()),
-            )
+            .field("ae_subwin_pixnum", &self.ae_subwin_pixnum().bits())
             .finish()
     }
 }
@@ -48,8 +45,6 @@ impl crate::Readable for AE_WINPIXNUM_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`ae_winpixnum::W`](W) writer structure"]
 impl crate::Writable for AE_WINPIXNUM_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets AE_WINPIXNUM to value 0x0001_4400"]
 impl crate::Resettable for AE_WINPIXNUM_SPEC {

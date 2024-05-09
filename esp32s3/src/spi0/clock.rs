@@ -44,13 +44,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CLOCK")
-            .field("clkcnt_l", &format_args!("{}", self.clkcnt_l().bits()))
-            .field("clkcnt_h", &format_args!("{}", self.clkcnt_h().bits()))
-            .field("clkcnt_n", &format_args!("{}", self.clkcnt_n().bits()))
-            .field(
-                "clk_equ_sysclk",
-                &format_args!("{}", self.clk_equ_sysclk().bit()),
-            )
+            .field("clkcnt_l", &self.clkcnt_l().bits())
+            .field("clkcnt_h", &self.clkcnt_h().bits())
+            .field("clkcnt_n", &self.clkcnt_n().bits())
+            .field("clk_equ_sysclk", &self.clk_equ_sysclk().bit())
             .finish()
     }
 }
@@ -96,8 +93,6 @@ impl crate::Readable for CLOCK_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`clock::W`](W) writer structure"]
 impl crate::Writable for CLOCK_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CLOCK to value 0x0003_0103"]
 impl crate::Resettable for CLOCK_SPEC {

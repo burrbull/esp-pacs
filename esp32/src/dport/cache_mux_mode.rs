@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CACHE_MUX_MODE")
-            .field(
-                "cache_mux_mode",
-                &format_args!("{}", self.cache_mux_mode().bits()),
-            )
+            .field("cache_mux_mode", &self.cache_mux_mode().bits())
             .finish()
     }
 }
@@ -48,10 +45,6 @@ impl crate::Readable for CACHE_MUX_MODE_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`cache_mux_mode::W`](W) writer structure"]
 impl crate::Writable for CACHE_MUX_MODE_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CACHE_MUX_MODE to value 0"]
-impl crate::Resettable for CACHE_MUX_MODE_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for CACHE_MUX_MODE_SPEC {}

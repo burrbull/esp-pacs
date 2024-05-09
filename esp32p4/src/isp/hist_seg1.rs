@@ -44,22 +44,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("HIST_SEG1")
-            .field(
-                "hist_seg_7_8",
-                &format_args!("{}", self.hist_seg_7_8().bits()),
-            )
-            .field(
-                "hist_seg_6_7",
-                &format_args!("{}", self.hist_seg_6_7().bits()),
-            )
-            .field(
-                "hist_seg_5_6",
-                &format_args!("{}", self.hist_seg_5_6().bits()),
-            )
-            .field(
-                "hist_seg_4_5",
-                &format_args!("{}", self.hist_seg_4_5().bits()),
-            )
+            .field("hist_seg_7_8", &self.hist_seg_7_8().bits())
+            .field("hist_seg_6_7", &self.hist_seg_6_7().bits())
+            .field("hist_seg_5_6", &self.hist_seg_5_6().bits())
+            .field("hist_seg_4_5", &self.hist_seg_4_5().bits())
             .finish()
     }
 }
@@ -105,8 +93,6 @@ impl crate::Readable for HIST_SEG1_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`hist_seg1::W`](W) writer structure"]
 impl crate::Writable for HIST_SEG1_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets HIST_SEG1 to value 0x5060_7080"]
 impl crate::Resettable for HIST_SEG1_SPEC {

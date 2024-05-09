@@ -53,26 +53,17 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PERI_CLK_CTRL11")
-            .field(
-                "i2c1_clk_div_num",
-                &format_args!("{}", self.i2c1_clk_div_num().bits()),
-            )
+            .field("i2c1_clk_div_num", &self.i2c1_clk_div_num().bits())
             .field(
                 "i2c1_clk_div_numerator",
-                &format_args!("{}", self.i2c1_clk_div_numerator().bits()),
+                &self.i2c1_clk_div_numerator().bits(),
             )
             .field(
                 "i2c1_clk_div_denominator",
-                &format_args!("{}", self.i2c1_clk_div_denominator().bits()),
+                &self.i2c1_clk_div_denominator().bits(),
             )
-            .field(
-                "i2s0_rx_clk_en",
-                &format_args!("{}", self.i2s0_rx_clk_en().bit()),
-            )
-            .field(
-                "i2s0_rx_clk_src_sel",
-                &format_args!("{}", self.i2s0_rx_clk_src_sel().bits()),
-            )
+            .field("i2s0_rx_clk_en", &self.i2s0_rx_clk_en().bit())
+            .field("i2s0_rx_clk_src_sel", &self.i2s0_rx_clk_src_sel().bits())
             .finish()
     }
 }
@@ -124,10 +115,6 @@ impl crate::Readable for PERI_CLK_CTRL11_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`peri_clk_ctrl11::W`](W) writer structure"]
 impl crate::Writable for PERI_CLK_CTRL11_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets PERI_CLK_CTRL11 to value 0"]
-impl crate::Resettable for PERI_CLK_CTRL11_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for PERI_CLK_CTRL11_SPEC {}

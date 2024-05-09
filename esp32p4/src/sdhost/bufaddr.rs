@@ -13,7 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("BUFADDR")
-            .field("bufaddr", &format_args!("{}", self.bufaddr().bits()))
+            .field("bufaddr", &self.bufaddr().bits())
             .finish()
     }
 }
@@ -31,6 +31,4 @@ impl crate::RegisterSpec for BUFADDR_SPEC {
 #[doc = "`read()` method returns [`bufaddr::R`](R) reader structure"]
 impl crate::Readable for BUFADDR_SPEC {}
 #[doc = "`reset()` method sets BUFADDR to value 0"]
-impl crate::Resettable for BUFADDR_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for BUFADDR_SPEC {}

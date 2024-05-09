@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("BACKUP_DMA_CFG2")
-            .field(
-                "link_addr_aon",
-                &format_args!("{}", self.link_addr_aon().bits()),
-            )
+            .field("link_addr_aon", &self.link_addr_aon().bits())
             .finish()
     }
 }
@@ -48,10 +45,6 @@ impl crate::Readable for BACKUP_DMA_CFG2_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`backup_dma_cfg2::W`](W) writer structure"]
 impl crate::Writable for BACKUP_DMA_CFG2_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets BACKUP_DMA_CFG2 to value 0"]
-impl crate::Resettable for BACKUP_DMA_CFG2_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for BACKUP_DMA_CFG2_SPEC {}

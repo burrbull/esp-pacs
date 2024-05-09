@@ -26,11 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("INTMASK")
-            .field("int_mask", &format_args!("{}", self.int_mask().bits()))
-            .field(
-                "sdio_int_mask",
-                &format_args!("{}", self.sdio_int_mask().bits()),
-            )
+            .field("int_mask", &self.int_mask().bits())
+            .field("sdio_int_mask", &self.sdio_int_mask().bits())
             .finish()
     }
 }
@@ -64,10 +61,6 @@ impl crate::Readable for INTMASK_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`intmask::W`](W) writer structure"]
 impl crate::Writable for INTMASK_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets INTMASK to value 0"]
-impl crate::Resettable for INTMASK_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for INTMASK_SPEC {}

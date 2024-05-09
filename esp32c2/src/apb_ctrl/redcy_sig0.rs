@@ -24,8 +24,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("REDCY_SIG0")
-            .field("redcy_sig0", &format_args!("{}", self.redcy_sig0().bits()))
-            .field("redcy_andor", &format_args!("{}", self.redcy_andor().bit()))
+            .field("redcy_sig0", &self.redcy_sig0().bits())
+            .field("redcy_andor", &self.redcy_andor().bit())
             .finish()
     }
 }
@@ -53,10 +53,6 @@ impl crate::Readable for REDCY_SIG0_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`redcy_sig0::W`](W) writer structure"]
 impl crate::Writable for REDCY_SIG0_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets REDCY_SIG0 to value 0"]
-impl crate::Resettable for REDCY_SIG0_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for REDCY_SIG0_SPEC {}

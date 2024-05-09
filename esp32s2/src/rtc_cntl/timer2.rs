@@ -28,12 +28,9 @@ impl core::fmt::Debug for R {
         f.debug_struct("TIMER2")
             .field(
                 "ulpcp_touch_start_wait",
-                &format_args!("{}", self.ulpcp_touch_start_wait().bits()),
+                &self.ulpcp_touch_start_wait().bits(),
             )
-            .field(
-                "min_time_ck8m_off",
-                &format_args!("{}", self.min_time_ck8m_off().bits()),
-            )
+            .field("min_time_ck8m_off", &self.min_time_ck8m_off().bits())
             .finish()
     }
 }
@@ -67,8 +64,6 @@ impl crate::Readable for TIMER2_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`timer2::W`](W) writer structure"]
 impl crate::Writable for TIMER2_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets TIMER2 to value 0x0108_0000"]
 impl crate::Resettable for TIMER2_SPEC {

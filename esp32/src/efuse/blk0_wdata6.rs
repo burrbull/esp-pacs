@@ -98,37 +98,16 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("BLK0_WDATA6")
-            .field(
-                "coding_scheme",
-                &format_args!("{}", self.coding_scheme().bits()),
-            )
-            .field(
-                "console_debug_disable",
-                &format_args!("{}", self.console_debug_disable().bit()),
-            )
-            .field(
-                "disable_sdio_host",
-                &format_args!("{}", self.disable_sdio_host().bit()),
-            )
-            .field("abs_done_0", &format_args!("{}", self.abs_done_0().bit()))
-            .field("abs_done_1", &format_args!("{}", self.abs_done_1().bit()))
-            .field(
-                "disable_jtag",
-                &format_args!("{}", self.disable_jtag().bit()),
-            )
-            .field(
-                "disable_dl_encrypt",
-                &format_args!("{}", self.disable_dl_encrypt().bit()),
-            )
-            .field(
-                "disable_dl_decrypt",
-                &format_args!("{}", self.disable_dl_decrypt().bit()),
-            )
-            .field(
-                "disable_dl_cache",
-                &format_args!("{}", self.disable_dl_cache().bit()),
-            )
-            .field("key_status", &format_args!("{}", self.key_status().bit()))
+            .field("coding_scheme", &self.coding_scheme().bits())
+            .field("console_debug_disable", &self.console_debug_disable().bit())
+            .field("disable_sdio_host", &self.disable_sdio_host().bit())
+            .field("abs_done_0", &self.abs_done_0().bit())
+            .field("abs_done_1", &self.abs_done_1().bit())
+            .field("disable_jtag", &self.disable_jtag().bit())
+            .field("disable_dl_encrypt", &self.disable_dl_encrypt().bit())
+            .field("disable_dl_decrypt", &self.disable_dl_decrypt().bit())
+            .field("disable_dl_cache", &self.disable_dl_cache().bit())
+            .field("key_status", &self.key_status().bit())
             .finish()
     }
 }
@@ -210,10 +189,6 @@ impl crate::Readable for BLK0_WDATA6_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`blk0_wdata6::W`](W) writer structure"]
 impl crate::Writable for BLK0_WDATA6_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets BLK0_WDATA6 to value 0"]
-impl crate::Resettable for BLK0_WDATA6_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for BLK0_WDATA6_SPEC {}

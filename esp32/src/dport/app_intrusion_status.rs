@@ -13,10 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("APP_INTRUSION_STATUS")
-            .field(
-                "app_intrusion_record",
-                &format_args!("{}", self.app_intrusion_record().bits()),
-            )
+            .field("app_intrusion_record", &self.app_intrusion_record().bits())
             .finish()
     }
 }
@@ -34,6 +31,4 @@ impl crate::RegisterSpec for APP_INTRUSION_STATUS_SPEC {
 #[doc = "`read()` method returns [`app_intrusion_status::R`](R) reader structure"]
 impl crate::Readable for APP_INTRUSION_STATUS_SPEC {}
 #[doc = "`reset()` method sets APP_INTRUSION_STATUS to value 0"]
-impl crate::Resettable for APP_INTRUSION_STATUS_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for APP_INTRUSION_STATUS_SPEC {}

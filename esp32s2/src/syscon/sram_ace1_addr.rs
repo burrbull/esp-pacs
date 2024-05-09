@@ -17,7 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SRAM_ACE1_ADDR")
-            .field("s", &format_args!("{}", self.s().bits()))
+            .field("s", &self.s().bits())
             .finish()
     }
 }
@@ -45,8 +45,6 @@ impl crate::Readable for SRAM_ACE1_ADDR_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`sram_ace1_addr::W`](W) writer structure"]
 impl crate::Writable for SRAM_ACE1_ADDR_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SRAM_ACE1_ADDR to value 0x1000_0000"]
 impl crate::Resettable for SRAM_ACE1_ADDR_SPEC {

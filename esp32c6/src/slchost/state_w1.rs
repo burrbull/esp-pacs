@@ -34,22 +34,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("STATE_W1")
-            .field(
-                "slchost_state4",
-                &format_args!("{}", self.slchost_state4().bits()),
-            )
-            .field(
-                "slchost_state5",
-                &format_args!("{}", self.slchost_state5().bits()),
-            )
-            .field(
-                "slchost_state6",
-                &format_args!("{}", self.slchost_state6().bits()),
-            )
-            .field(
-                "slchost_state7",
-                &format_args!("{}", self.slchost_state7().bits()),
-            )
+            .field("slchost_state4", &self.slchost_state4().bits())
+            .field("slchost_state5", &self.slchost_state5().bits())
+            .field("slchost_state6", &self.slchost_state6().bits())
+            .field("slchost_state7", &self.slchost_state7().bits())
             .finish()
     }
 }
@@ -67,6 +55,4 @@ impl crate::RegisterSpec for STATE_W1_SPEC {
 #[doc = "`read()` method returns [`state_w1::R`](R) reader structure"]
 impl crate::Readable for STATE_W1_SPEC {}
 #[doc = "`reset()` method sets STATE_W1 to value 0"]
-impl crate::Resettable for STATE_W1_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for STATE_W1_SPEC {}

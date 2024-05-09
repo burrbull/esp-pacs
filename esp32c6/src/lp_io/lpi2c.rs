@@ -26,14 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("LPI2C")
-            .field(
-                "lp_i2c_sda_ie",
-                &format_args!("{}", self.lp_i2c_sda_ie().bit()),
-            )
-            .field(
-                "lp_i2c_scl_ie",
-                &format_args!("{}", self.lp_i2c_scl_ie().bit()),
-            )
+            .field("lp_i2c_sda_ie", &self.lp_i2c_sda_ie().bit())
+            .field("lp_i2c_scl_ie", &self.lp_i2c_scl_ie().bit())
             .finish()
     }
 }
@@ -67,8 +61,6 @@ impl crate::Readable for LPI2C_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`lpi2c::W`](W) writer structure"]
 impl crate::Writable for LPI2C_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets LPI2C to value 0xc000_0000"]
 impl crate::Resettable for LPI2C_SPEC {

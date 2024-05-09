@@ -75,34 +75,31 @@ impl core::fmt::Debug for R {
         f.debug_struct("LP_AONCLKRST_RESET_CAUSE")
             .field(
                 "lp_aonclkrst_lpcore_reset_cause",
-                &format_args!("{}", self.lp_aonclkrst_lpcore_reset_cause().bits()),
+                &self.lp_aonclkrst_lpcore_reset_cause().bits(),
             )
             .field(
                 "lp_aonclkrst_lpcore_reset_flag",
-                &format_args!("{}", self.lp_aonclkrst_lpcore_reset_flag().bit()),
+                &self.lp_aonclkrst_lpcore_reset_flag().bit(),
             )
             .field(
                 "lp_aonclkrst_hpcore0_reset_cause",
-                &format_args!("{}", self.lp_aonclkrst_hpcore0_reset_cause().bits()),
+                &self.lp_aonclkrst_hpcore0_reset_cause().bits(),
             )
             .field(
                 "lp_aonclkrst_hpcore0_reset_flag",
-                &format_args!("{}", self.lp_aonclkrst_hpcore0_reset_flag().bit()),
+                &self.lp_aonclkrst_hpcore0_reset_flag().bit(),
             )
             .field(
                 "lp_aonclkrst_hpcore1_reset_cause",
-                &format_args!("{}", self.lp_aonclkrst_hpcore1_reset_cause().bits()),
+                &self.lp_aonclkrst_hpcore1_reset_cause().bits(),
             )
             .field(
                 "lp_aonclkrst_hpcore1_reset_flag",
-                &format_args!("{}", self.lp_aonclkrst_hpcore1_reset_flag().bit()),
+                &self.lp_aonclkrst_hpcore1_reset_flag().bit(),
             )
             .field(
                 "lp_aonclkrst_lpcore_reset_cause_pmu_lp_cpu_mask",
-                &format_args!(
-                    "{}",
-                    self.lp_aonclkrst_lpcore_reset_cause_pmu_lp_cpu_mask().bit()
-                ),
+                &self.lp_aonclkrst_lpcore_reset_cause_pmu_lp_cpu_mask().bit(),
             )
             .finish()
     }
@@ -181,8 +178,6 @@ impl crate::Readable for LP_AONCLKRST_RESET_CAUSE_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`lp_aonclkrst_reset_cause::W`](W) writer structure"]
 impl crate::Writable for LP_AONCLKRST_RESET_CAUSE_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets LP_AONCLKRST_RESET_CAUSE to value 0x0200_0000"]
 impl crate::Resettable for LP_AONCLKRST_RESET_CAUSE_SPEC {

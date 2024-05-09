@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CPU_FREQ_CONF")
-            .field(
-                "cpu_div_num",
-                &format_args!("{}", self.cpu_div_num().bits()),
-            )
+            .field("cpu_div_num", &self.cpu_div_num().bits())
             .finish()
     }
 }
@@ -48,10 +45,6 @@ impl crate::Readable for CPU_FREQ_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`cpu_freq_conf::W`](W) writer structure"]
 impl crate::Writable for CPU_FREQ_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CPU_FREQ_CONF to value 0"]
-impl crate::Resettable for CPU_FREQ_CONF_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for CPU_FREQ_CONF_SPEC {}

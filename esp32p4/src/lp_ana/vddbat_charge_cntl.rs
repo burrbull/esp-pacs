@@ -53,23 +53,17 @@ impl core::fmt::Debug for R {
         f.debug_struct("VDDBAT_CHARGE_CNTL")
             .field(
                 "vddbat_charge_undervoltage_flag",
-                &format_args!("{}", self.vddbat_charge_undervoltage_flag().bit()),
+                &self.vddbat_charge_undervoltage_flag().bit(),
             )
-            .field(
-                "vddbat_charge_charger",
-                &format_args!("{}", self.vddbat_charge_charger().bit()),
-            )
-            .field(
-                "vddbat_charge_cnt_clr",
-                &format_args!("{}", self.vddbat_charge_cnt_clr().bit()),
-            )
+            .field("vddbat_charge_charger", &self.vddbat_charge_charger().bit())
+            .field("vddbat_charge_cnt_clr", &self.vddbat_charge_cnt_clr().bit())
             .field(
                 "vddbat_charge_upvoltage_target",
-                &format_args!("{}", self.vddbat_charge_upvoltage_target().bits()),
+                &self.vddbat_charge_upvoltage_target().bits(),
             )
             .field(
                 "vddbat_charge_undervoltage_target",
-                &format_args!("{}", self.vddbat_charge_undervoltage_target().bits()),
+                &self.vddbat_charge_undervoltage_target().bits(),
             )
             .finish()
     }
@@ -120,8 +114,6 @@ impl crate::Readable for VDDBAT_CHARGE_CNTL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`vddbat_charge_cntl::W`](W) writer structure"]
 impl crate::Writable for VDDBAT_CHARGE_CNTL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets VDDBAT_CHARGE_CNTL to value 0xffc0_0000"]
 impl crate::Resettable for VDDBAT_CHARGE_CNTL_SPEC {

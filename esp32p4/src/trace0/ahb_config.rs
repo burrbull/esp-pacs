@@ -26,8 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("AHB_CONFIG")
-            .field("hburst", &format_args!("{}", self.hburst().bits()))
-            .field("max_incr", &format_args!("{}", self.max_incr().bits()))
+            .field("hburst", &self.hburst().bits())
+            .field("max_incr", &self.max_incr().bits())
             .finish()
     }
 }
@@ -61,10 +61,6 @@ impl crate::Readable for AHB_CONFIG_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`ahb_config::W`](W) writer structure"]
 impl crate::Writable for AHB_CONFIG_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets AHB_CONFIG to value 0"]
-impl crate::Resettable for AHB_CONFIG_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for AHB_CONFIG_SPEC {}

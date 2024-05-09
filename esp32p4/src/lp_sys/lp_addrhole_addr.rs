@@ -13,10 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("LP_ADDRHOLE_ADDR")
-            .field(
-                "lp_addrhole_addr",
-                &format_args!("{}", self.lp_addrhole_addr().bits()),
-            )
+            .field("lp_addrhole_addr", &self.lp_addrhole_addr().bits())
             .finish()
     }
 }
@@ -34,6 +31,4 @@ impl crate::RegisterSpec for LP_ADDRHOLE_ADDR_SPEC {
 #[doc = "`read()` method returns [`lp_addrhole_addr::R`](R) reader structure"]
 impl crate::Readable for LP_ADDRHOLE_ADDR_SPEC {}
 #[doc = "`reset()` method sets LP_ADDRHOLE_ADDR to value 0"]
-impl crate::Resettable for LP_ADDRHOLE_ADDR_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for LP_ADDRHOLE_ADDR_SPEC {}

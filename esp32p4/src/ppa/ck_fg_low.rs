@@ -35,18 +35,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CK_FG_LOW")
-            .field(
-                "colorkey_fg_b_low",
-                &format_args!("{}", self.colorkey_fg_b_low().bits()),
-            )
-            .field(
-                "colorkey_fg_g_low",
-                &format_args!("{}", self.colorkey_fg_g_low().bits()),
-            )
-            .field(
-                "colorkey_fg_r_low",
-                &format_args!("{}", self.colorkey_fg_r_low().bits()),
-            )
+            .field("colorkey_fg_b_low", &self.colorkey_fg_b_low().bits())
+            .field("colorkey_fg_g_low", &self.colorkey_fg_g_low().bits())
+            .field("colorkey_fg_r_low", &self.colorkey_fg_r_low().bits())
             .finish()
     }
 }
@@ -86,8 +77,6 @@ impl crate::Readable for CK_FG_LOW_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`ck_fg_low::W`](W) writer structure"]
 impl crate::Writable for CK_FG_LOW_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CK_FG_LOW to value 0x00ff_ffff"]
 impl crate::Resettable for CK_FG_LOW_SPEC {

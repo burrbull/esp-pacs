@@ -44,22 +44,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CLKDIV")
-            .field(
-                "clk_divider0",
-                &format_args!("{}", self.clk_divider0().bits()),
-            )
-            .field(
-                "clk_divider1",
-                &format_args!("{}", self.clk_divider1().bits()),
-            )
-            .field(
-                "clk_divider2",
-                &format_args!("{}", self.clk_divider2().bits()),
-            )
-            .field(
-                "clk_divider3",
-                &format_args!("{}", self.clk_divider3().bits()),
-            )
+            .field("clk_divider0", &self.clk_divider0().bits())
+            .field("clk_divider1", &self.clk_divider1().bits())
+            .field("clk_divider2", &self.clk_divider2().bits())
+            .field("clk_divider3", &self.clk_divider3().bits())
             .finish()
     }
 }
@@ -105,10 +93,6 @@ impl crate::Readable for CLKDIV_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`clkdiv::W`](W) writer structure"]
 impl crate::Writable for CLKDIV_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CLKDIV to value 0"]
-impl crate::Resettable for CLKDIV_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for CLKDIV_SPEC {}

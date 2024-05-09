@@ -46,10 +46,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CAP_CH_CFG")
-            .field("en", &format_args!("{}", self.en().bit()))
-            .field("mode", &format_args!("{}", self.mode().bits()))
-            .field("prescale", &format_args!("{}", self.prescale().bits()))
-            .field("in_invert", &format_args!("{}", self.in_invert().bit()))
+            .field("en", &self.en().bit())
+            .field("mode", &self.mode().bits())
+            .field("prescale", &self.prescale().bits())
+            .field("in_invert", &self.in_invert().bit())
             .finish()
     }
 }
@@ -101,10 +101,6 @@ impl crate::Readable for CAP_CH_CFG_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`cap_ch_cfg::W`](W) writer structure"]
 impl crate::Writable for CAP_CH_CFG_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CAP_CH%s_CFG to value 0"]
-impl crate::Resettable for CAP_CH_CFG_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for CAP_CH_CFG_SPEC {}

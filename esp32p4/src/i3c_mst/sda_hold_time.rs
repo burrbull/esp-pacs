@@ -28,11 +28,11 @@ impl core::fmt::Debug for R {
         f.debug_struct("SDA_HOLD_TIME")
             .field(
                 "reg_sda_od_tx_hold_time",
-                &format_args!("{}", self.reg_sda_od_tx_hold_time().bits()),
+                &self.reg_sda_od_tx_hold_time().bits(),
             )
             .field(
                 "reg_sda_pp_tx_hold_time",
-                &format_args!("{}", self.reg_sda_pp_tx_hold_time().bits()),
+                &self.reg_sda_pp_tx_hold_time().bits(),
             )
             .finish()
     }
@@ -67,8 +67,6 @@ impl crate::Readable for SDA_HOLD_TIME_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`sda_hold_time::W`](W) writer structure"]
 impl crate::Writable for SDA_HOLD_TIME_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SDA_HOLD_TIME to value 0x01"]
 impl crate::Resettable for SDA_HOLD_TIME_SPEC {

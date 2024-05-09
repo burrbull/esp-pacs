@@ -44,22 +44,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("DBG_CLK_CTRL0")
-            .field(
-                "dbg_ch0_sel",
-                &format_args!("{}", self.dbg_ch0_sel().bits()),
-            )
-            .field(
-                "dbg_ch1_sel",
-                &format_args!("{}", self.dbg_ch1_sel().bits()),
-            )
-            .field(
-                "dbg_ch2_sel",
-                &format_args!("{}", self.dbg_ch2_sel().bits()),
-            )
-            .field(
-                "dbg_ch0_div_num",
-                &format_args!("{}", self.dbg_ch0_div_num().bits()),
-            )
+            .field("dbg_ch0_sel", &self.dbg_ch0_sel().bits())
+            .field("dbg_ch1_sel", &self.dbg_ch1_sel().bits())
+            .field("dbg_ch2_sel", &self.dbg_ch2_sel().bits())
+            .field("dbg_ch0_div_num", &self.dbg_ch0_div_num().bits())
             .finish()
     }
 }
@@ -105,8 +93,6 @@ impl crate::Readable for DBG_CLK_CTRL0_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`dbg_clk_ctrl0::W`](W) writer structure"]
 impl crate::Writable for DBG_CLK_CTRL0_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets DBG_CLK_CTRL0 to value 0x03ff_ffff"]
 impl crate::Resettable for DBG_CLK_CTRL0_SPEC {

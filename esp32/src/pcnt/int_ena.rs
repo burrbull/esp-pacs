@@ -67,38 +67,14 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("INT_ENA")
-            .field(
-                "cnt_thr_event_u0",
-                &format_args!("{}", self.cnt_thr_event_u0().bit()),
-            )
-            .field(
-                "cnt_thr_event_u1",
-                &format_args!("{}", self.cnt_thr_event_u1().bit()),
-            )
-            .field(
-                "cnt_thr_event_u2",
-                &format_args!("{}", self.cnt_thr_event_u2().bit()),
-            )
-            .field(
-                "cnt_thr_event_u3",
-                &format_args!("{}", self.cnt_thr_event_u3().bit()),
-            )
-            .field(
-                "cnt_thr_event_u4",
-                &format_args!("{}", self.cnt_thr_event_u4().bit()),
-            )
-            .field(
-                "cnt_thr_event_u5",
-                &format_args!("{}", self.cnt_thr_event_u5().bit()),
-            )
-            .field(
-                "cnt_thr_event_u6",
-                &format_args!("{}", self.cnt_thr_event_u6().bit()),
-            )
-            .field(
-                "cnt_thr_event_u7",
-                &format_args!("{}", self.cnt_thr_event_u7().bit()),
-            )
+            .field("cnt_thr_event_u0", &self.cnt_thr_event_u0().bit())
+            .field("cnt_thr_event_u1", &self.cnt_thr_event_u1().bit())
+            .field("cnt_thr_event_u2", &self.cnt_thr_event_u2().bit())
+            .field("cnt_thr_event_u3", &self.cnt_thr_event_u3().bit())
+            .field("cnt_thr_event_u4", &self.cnt_thr_event_u4().bit())
+            .field("cnt_thr_event_u5", &self.cnt_thr_event_u5().bit())
+            .field("cnt_thr_event_u6", &self.cnt_thr_event_u6().bit())
+            .field("cnt_thr_event_u7", &self.cnt_thr_event_u7().bit())
             .finish()
     }
 }
@@ -178,10 +154,6 @@ impl crate::Readable for INT_ENA_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`int_ena::W`](W) writer structure"]
 impl crate::Writable for INT_ENA_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets INT_ENA to value 0"]
-impl crate::Resettable for INT_ENA_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for INT_ENA_SPEC {}

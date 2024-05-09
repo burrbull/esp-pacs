@@ -13,10 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("OUT_CRC_FINAL_RESULT")
-            .field(
-                "out_crc_final_result",
-                &format_args!("{}", self.out_crc_final_result().bits()),
-            )
+            .field("out_crc_final_result", &self.out_crc_final_result().bits())
             .finish()
     }
 }
@@ -34,6 +31,4 @@ impl crate::RegisterSpec for OUT_CRC_FINAL_RESULT_SPEC {
 #[doc = "`read()` method returns [`out_crc_final_result::R`](R) reader structure"]
 impl crate::Readable for OUT_CRC_FINAL_RESULT_SPEC {}
 #[doc = "`reset()` method sets OUT_CRC_FINAL_RESULT to value 0"]
-impl crate::Resettable for OUT_CRC_FINAL_RESULT_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for OUT_CRC_FINAL_RESULT_SPEC {}

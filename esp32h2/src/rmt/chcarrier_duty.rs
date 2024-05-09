@@ -26,14 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CHCARRIER_DUTY")
-            .field(
-                "carrier_low",
-                &format_args!("{}", self.carrier_low().bits()),
-            )
-            .field(
-                "carrier_high",
-                &format_args!("{}", self.carrier_high().bits()),
-            )
+            .field("carrier_low", &self.carrier_low().bits())
+            .field("carrier_high", &self.carrier_high().bits())
             .finish()
     }
 }
@@ -67,8 +61,6 @@ impl crate::Readable for CHCARRIER_DUTY_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`chcarrier_duty::W`](W) writer structure"]
 impl crate::Writable for CHCARRIER_DUTY_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CH%sCARRIER_DUTY to value 0x0040_0040"]
 impl crate::Resettable for CHCARRIER_DUTY_SPEC {

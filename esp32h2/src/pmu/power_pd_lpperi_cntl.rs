@@ -62,30 +62,15 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("POWER_PD_LPPERI_CNTL")
-            .field(
-                "force_lp_peri_reset",
-                &format_args!("{}", self.force_lp_peri_reset().bit()),
-            )
-            .field(
-                "force_lp_peri_iso",
-                &format_args!("{}", self.force_lp_peri_iso().bit()),
-            )
-            .field(
-                "force_lp_peri_pu",
-                &format_args!("{}", self.force_lp_peri_pu().bit()),
-            )
+            .field("force_lp_peri_reset", &self.force_lp_peri_reset().bit())
+            .field("force_lp_peri_iso", &self.force_lp_peri_iso().bit())
+            .field("force_lp_peri_pu", &self.force_lp_peri_pu().bit())
             .field(
                 "force_lp_peri_no_reset",
-                &format_args!("{}", self.force_lp_peri_no_reset().bit()),
+                &self.force_lp_peri_no_reset().bit(),
             )
-            .field(
-                "force_lp_peri_no_iso",
-                &format_args!("{}", self.force_lp_peri_no_iso().bit()),
-            )
-            .field(
-                "force_lp_peri_pd",
-                &format_args!("{}", self.force_lp_peri_pd().bit()),
-            )
+            .field("force_lp_peri_no_iso", &self.force_lp_peri_no_iso().bit())
+            .field("force_lp_peri_pd", &self.force_lp_peri_pd().bit())
             .finish()
     }
 }
@@ -145,8 +130,6 @@ impl crate::Readable for POWER_PD_LPPERI_CNTL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`power_pd_lpperi_cntl::W`](W) writer structure"]
 impl crate::Writable for POWER_PD_LPPERI_CNTL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets POWER_PD_LPPERI_CNTL to value 0x1c"]
 impl crate::Resettable for POWER_PD_LPPERI_CNTL_SPEC {

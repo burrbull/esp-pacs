@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("WDTCONFIG3")
-            .field(
-                "wdt_stg2_hold",
-                &format_args!("{}", self.wdt_stg2_hold().bits()),
-            )
+            .field("wdt_stg2_hold", &self.wdt_stg2_hold().bits())
             .finish()
     }
 }
@@ -48,8 +45,6 @@ impl crate::Readable for WDTCONFIG3_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`wdtconfig3::W`](W) writer structure"]
 impl crate::Writable for WDTCONFIG3_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets WDTCONFIG3 to value 0x0fff"]
 impl crate::Resettable for WDTCONFIG3_SPEC {

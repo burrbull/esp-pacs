@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CPU_INTR_FROM_CPU_2")
-            .field(
-                "cpu_intr_from_cpu_2",
-                &format_args!("{}", self.cpu_intr_from_cpu_2().bit()),
-            )
+            .field("cpu_intr_from_cpu_2", &self.cpu_intr_from_cpu_2().bit())
             .finish()
     }
 }
@@ -48,10 +45,6 @@ impl crate::Readable for CPU_INTR_FROM_CPU_2_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`cpu_intr_from_cpu_2::W`](W) writer structure"]
 impl crate::Writable for CPU_INTR_FROM_CPU_2_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CPU_INTR_FROM_CPU_2 to value 0"]
-impl crate::Resettable for CPU_INTR_FROM_CPU_2_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for CPU_INTR_FROM_CPU_2_SPEC {}

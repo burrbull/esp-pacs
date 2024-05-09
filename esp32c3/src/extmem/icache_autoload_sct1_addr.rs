@@ -19,7 +19,7 @@ impl core::fmt::Debug for R {
         f.debug_struct("ICACHE_AUTOLOAD_SCT1_ADDR")
             .field(
                 "icache_autoload_sct1_addr",
-                &format_args!("{}", self.icache_autoload_sct1_addr().bits()),
+                &self.icache_autoload_sct1_addr().bits(),
             )
             .finish()
     }
@@ -50,10 +50,6 @@ impl crate::Readable for ICACHE_AUTOLOAD_SCT1_ADDR_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`icache_autoload_sct1_addr::W`](W) writer structure"]
 impl crate::Writable for ICACHE_AUTOLOAD_SCT1_ADDR_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets ICACHE_AUTOLOAD_SCT1_ADDR to value 0"]
-impl crate::Resettable for ICACHE_AUTOLOAD_SCT1_ADDR_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for ICACHE_AUTOLOAD_SCT1_ADDR_SPEC {}

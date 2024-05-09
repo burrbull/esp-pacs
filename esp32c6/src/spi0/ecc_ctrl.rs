@@ -61,32 +61,20 @@ impl core::fmt::Debug for R {
         f.debug_struct("ECC_CTRL")
             .field(
                 "spi_fmem_ecc_err_int_num",
-                &format_args!("{}", self.spi_fmem_ecc_err_int_num().bits()),
+                &self.spi_fmem_ecc_err_int_num().bits(),
             )
             .field(
                 "spi_fmem_ecc_err_int_en",
-                &format_args!("{}", self.spi_fmem_ecc_err_int_en().bit()),
+                &self.spi_fmem_ecc_err_int_en().bit(),
             )
-            .field(
-                "spi_fmem_page_size",
-                &format_args!("{}", self.spi_fmem_page_size().bits()),
-            )
-            .field(
-                "spi_fmem_ecc_addr_en",
-                &format_args!("{}", self.spi_fmem_ecc_addr_en().bit()),
-            )
-            .field(
-                "usr_ecc_addr_en",
-                &format_args!("{}", self.usr_ecc_addr_en().bit()),
-            )
+            .field("spi_fmem_page_size", &self.spi_fmem_page_size().bits())
+            .field("spi_fmem_ecc_addr_en", &self.spi_fmem_ecc_addr_en().bit())
+            .field("usr_ecc_addr_en", &self.usr_ecc_addr_en().bit())
             .field(
                 "ecc_continue_record_err_en",
-                &format_args!("{}", self.ecc_continue_record_err_en().bit()),
+                &self.ecc_continue_record_err_en().bit(),
             )
-            .field(
-                "ecc_err_bits",
-                &format_args!("{}", self.ecc_err_bits().bits()),
-            )
+            .field("ecc_err_bits", &self.ecc_err_bits().bits())
             .finish()
     }
 }
@@ -114,8 +102,6 @@ impl crate::Readable for ECC_CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`ecc_ctrl::W`](W) writer structure"]
 impl crate::Writable for ECC_CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets ECC_CTRL to value 0x0100_5000"]
 impl crate::Resettable for ECC_CTRL_SPEC {

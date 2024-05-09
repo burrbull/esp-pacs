@@ -48,24 +48,12 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CH_RX_STATUS")
-            .field(
-                "mem_waddr_ex",
-                &format_args!("{}", self.mem_waddr_ex().bits()),
-            )
-            .field(
-                "apb_mem_raddr",
-                &format_args!("{}", self.apb_mem_raddr().bits()),
-            )
-            .field("state", &format_args!("{}", self.state().bits()))
-            .field(
-                "mem_owner_err",
-                &format_args!("{}", self.mem_owner_err().bit()),
-            )
-            .field("mem_full", &format_args!("{}", self.mem_full().bit()))
-            .field(
-                "apb_mem_rd_err",
-                &format_args!("{}", self.apb_mem_rd_err().bit()),
-            )
+            .field("mem_waddr_ex", &self.mem_waddr_ex().bits())
+            .field("apb_mem_raddr", &self.apb_mem_raddr().bits())
+            .field("state", &self.state().bits())
+            .field("mem_owner_err", &self.mem_owner_err().bit())
+            .field("mem_full", &self.mem_full().bit())
+            .field("apb_mem_rd_err", &self.apb_mem_rd_err().bit())
             .finish()
     }
 }
@@ -83,6 +71,4 @@ impl crate::RegisterSpec for CH_RX_STATUS_SPEC {
 #[doc = "`read()` method returns [`ch_rx_status::R`](R) reader structure"]
 impl crate::Readable for CH_RX_STATUS_SPEC {}
 #[doc = "`reset()` method sets CH%s_RX_STATUS to value 0"]
-impl crate::Resettable for CH_RX_STATUS_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for CH_RX_STATUS_SPEC {}

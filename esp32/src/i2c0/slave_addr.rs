@@ -26,11 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SLAVE_ADDR")
-            .field("slave_addr", &format_args!("{}", self.slave_addr().bits()))
-            .field(
-                "addr_10bit_en",
-                &format_args!("{}", self.addr_10bit_en().bit()),
-            )
+            .field("slave_addr", &self.slave_addr().bits())
+            .field("addr_10bit_en", &self.addr_10bit_en().bit())
             .finish()
     }
 }
@@ -64,10 +61,6 @@ impl crate::Readable for SLAVE_ADDR_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`slave_addr::W`](W) writer structure"]
 impl crate::Writable for SLAVE_ADDR_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SLAVE_ADDR to value 0"]
-impl crate::Resettable for SLAVE_ADDR_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for SLAVE_ADDR_SPEC {}

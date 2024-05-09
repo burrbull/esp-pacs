@@ -15,7 +15,7 @@ impl core::fmt::Debug for R {
         f.debug_struct("_1_TX_ERREOF_DES_ADDR")
             .field(
                 "slc1_tx_err_eof_des_addr",
-                &format_args!("{}", self.slc1_tx_err_eof_des_addr().bits()),
+                &self.slc1_tx_err_eof_des_addr().bits(),
             )
             .finish()
     }
@@ -34,6 +34,4 @@ impl crate::RegisterSpec for _1_TX_ERREOF_DES_ADDR_SPEC {
 #[doc = "`read()` method returns [`_1_tx_erreof_des_addr::R`](R) reader structure"]
 impl crate::Readable for _1_TX_ERREOF_DES_ADDR_SPEC {}
 #[doc = "`reset()` method sets _1_TX_ERREOF_DES_ADDR to value 0"]
-impl crate::Resettable for _1_TX_ERREOF_DES_ADDR_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for _1_TX_ERREOF_DES_ADDR_SPEC {}

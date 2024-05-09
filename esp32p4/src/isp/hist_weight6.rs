@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("HIST_WEIGHT6")
-            .field(
-                "hist_weight_44",
-                &format_args!("{}", self.hist_weight_44().bits()),
-            )
+            .field("hist_weight_44", &self.hist_weight_44().bits())
             .finish()
     }
 }
@@ -48,8 +45,6 @@ impl crate::Readable for HIST_WEIGHT6_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`hist_weight6::W`](W) writer structure"]
 impl crate::Writable for HIST_WEIGHT6_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets HIST_WEIGHT6 to value 0x01"]
 impl crate::Resettable for HIST_WEIGHT6_SPEC {

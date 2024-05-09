@@ -76,12 +76,12 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("ETM_TASK_P13_CFG")
-            .field("gpio52_en", &format_args!("{}", self.gpio52_en().bit()))
-            .field("gpio53_en", &format_args!("{}", self.gpio53_en().bit()))
-            .field("gpio54_en", &format_args!("{}", self.gpio54_en().bit()))
-            .field("gpio52_sel", &format_args!("{}", self.gpio52_sel().bits()))
-            .field("gpio53_sel", &format_args!("{}", self.gpio53_sel().bits()))
-            .field("gpio54_sel", &format_args!("{}", self.gpio54_sel().bits()))
+            .field("gpio52_en", &self.gpio52_en().bit())
+            .field("gpio53_en", &self.gpio53_en().bit())
+            .field("gpio54_en", &self.gpio54_en().bit())
+            .field("gpio52_sel", &self.gpio52_sel().bits())
+            .field("gpio53_sel", &self.gpio53_sel().bits())
+            .field("gpio54_sel", &self.gpio54_sel().bits())
             .finish()
     }
 }
@@ -159,10 +159,6 @@ impl crate::Readable for ETM_TASK_P13_CFG_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`etm_task_p13_cfg::W`](W) writer structure"]
 impl crate::Writable for ETM_TASK_P13_CFG_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets ETM_TASK_P13_CFG to value 0"]
-impl crate::Resettable for ETM_TASK_P13_CFG_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for ETM_TASK_P13_CFG_SPEC {}

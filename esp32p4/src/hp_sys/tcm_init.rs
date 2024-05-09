@@ -33,18 +33,12 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("TCM_INIT")
-            .field(
-                "reg_tcm_init_en",
-                &format_args!("{}", self.reg_tcm_init_en().bit()),
-            )
+            .field("reg_tcm_init_en", &self.reg_tcm_init_en().bit())
             .field(
                 "reg_tcm_init_cnt_reset",
-                &format_args!("{}", self.reg_tcm_init_cnt_reset().bit()),
+                &self.reg_tcm_init_cnt_reset().bit(),
             )
-            .field(
-                "reg_tcm_init_done",
-                &format_args!("{}", self.reg_tcm_init_done().bit()),
-            )
+            .field("reg_tcm_init_done", &self.reg_tcm_init_done().bit())
             .finish()
     }
 }
@@ -78,8 +72,6 @@ impl crate::Readable for TCM_INIT_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`tcm_init::W`](W) writer structure"]
 impl crate::Writable for TCM_INIT_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets TCM_INIT to value 0x02"]
 impl crate::Resettable for TCM_INIT_SPEC {

@@ -22,11 +22,11 @@ impl core::fmt::Debug for R {
         f.debug_struct("L2_CACHE_SYNC_PRELOAD_INT_CLR")
             .field(
                 "l2_cache_pld_done_int_clr",
-                &format_args!("{}", self.l2_cache_pld_done_int_clr().bit()),
+                &self.l2_cache_pld_done_int_clr().bit(),
             )
             .field(
                 "l2_cache_pld_err_int_clr",
-                &format_args!("{}", self.l2_cache_pld_err_int_clr().bit()),
+                &self.l2_cache_pld_err_int_clr().bit(),
             )
             .finish()
     }
@@ -45,6 +45,4 @@ impl crate::RegisterSpec for L2_CACHE_SYNC_PRELOAD_INT_CLR_SPEC {
 #[doc = "`read()` method returns [`l2_cache_sync_preload_int_clr::R`](R) reader structure"]
 impl crate::Readable for L2_CACHE_SYNC_PRELOAD_INT_CLR_SPEC {}
 #[doc = "`reset()` method sets L2_CACHE_SYNC_PRELOAD_INT_CLR to value 0"]
-impl crate::Resettable for L2_CACHE_SYNC_PRELOAD_INT_CLR_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for L2_CACHE_SYNC_PRELOAD_INT_CLR_SPEC {}

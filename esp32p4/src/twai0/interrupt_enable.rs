@@ -87,42 +87,27 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("INTERRUPT_ENABLE")
-            .field(
-                "ext_receive_int_ena",
-                &format_args!("{}", self.ext_receive_int_ena().bit()),
-            )
-            .field(
-                "ext_transmit_int_ena",
-                &format_args!("{}", self.ext_transmit_int_ena().bit()),
-            )
+            .field("ext_receive_int_ena", &self.ext_receive_int_ena().bit())
+            .field("ext_transmit_int_ena", &self.ext_transmit_int_ena().bit())
             .field(
                 "ext_err_warning_int_ena",
-                &format_args!("{}", self.ext_err_warning_int_ena().bit()),
+                &self.ext_err_warning_int_ena().bit(),
             )
             .field(
                 "ext_data_overrun_int_ena",
-                &format_args!("{}", self.ext_data_overrun_int_ena().bit()),
+                &self.ext_data_overrun_int_ena().bit(),
             )
             .field(
                 "ts_counter_ovfl_int_ena",
-                &format_args!("{}", self.ts_counter_ovfl_int_ena().bit()),
+                &self.ts_counter_ovfl_int_ena().bit(),
             )
-            .field(
-                "err_passive_int_ena",
-                &format_args!("{}", self.err_passive_int_ena().bit()),
-            )
+            .field("err_passive_int_ena", &self.err_passive_int_ena().bit())
             .field(
                 "arbitration_lost_int_ena",
-                &format_args!("{}", self.arbitration_lost_int_ena().bit()),
+                &self.arbitration_lost_int_ena().bit(),
             )
-            .field(
-                "bus_err_int_ena",
-                &format_args!("{}", self.bus_err_int_ena().bit()),
-            )
-            .field(
-                "idle_int_ena",
-                &format_args!("{}", self.idle_int_ena().bit()),
-            )
+            .field("bus_err_int_ena", &self.bus_err_int_ena().bit())
+            .field("idle_int_ena", &self.idle_int_ena().bit())
             .finish()
     }
 }
@@ -196,10 +181,6 @@ impl crate::Readable for INTERRUPT_ENABLE_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`interrupt_enable::W`](W) writer structure"]
 impl crate::Writable for INTERRUPT_ENABLE_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets INTERRUPT_ENABLE to value 0"]
-impl crate::Resettable for INTERRUPT_ENABLE_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for INTERRUPT_ENABLE_SPEC {}

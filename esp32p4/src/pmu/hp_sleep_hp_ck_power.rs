@@ -44,22 +44,13 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("HP_SLEEP_HP_CK_POWER")
-            .field(
-                "hp_sleep_i2c_iso_en",
-                &format_args!("{}", self.hp_sleep_i2c_iso_en().bit()),
-            )
+            .field("hp_sleep_i2c_iso_en", &self.hp_sleep_i2c_iso_en().bit())
             .field(
                 "hp_sleep_i2c_retention",
-                &format_args!("{}", self.hp_sleep_i2c_retention().bit()),
+                &self.hp_sleep_i2c_retention().bit(),
             )
-            .field(
-                "hp_sleep_xpd_pll_i2c",
-                &format_args!("{}", self.hp_sleep_xpd_pll_i2c().bits()),
-            )
-            .field(
-                "hp_sleep_xpd_pll",
-                &format_args!("{}", self.hp_sleep_xpd_pll().bits()),
-            )
+            .field("hp_sleep_xpd_pll_i2c", &self.hp_sleep_xpd_pll_i2c().bits())
+            .field("hp_sleep_xpd_pll", &self.hp_sleep_xpd_pll().bits())
             .finish()
     }
 }
@@ -107,10 +98,6 @@ impl crate::Readable for HP_SLEEP_HP_CK_POWER_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`hp_sleep_hp_ck_power::W`](W) writer structure"]
 impl crate::Writable for HP_SLEEP_HP_CK_POWER_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets HP_SLEEP_HP_CK_POWER to value 0"]
-impl crate::Resettable for HP_SLEEP_HP_CK_POWER_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for HP_SLEEP_HP_CK_POWER_SPEC {}

@@ -36,20 +36,14 @@ impl core::fmt::Debug for R {
         f.debug_struct("SR_STATUS")
             .field(
                 "sr_rx_dscr_sample_state",
-                &format_args!("{}", self.sr_rx_dscr_sample_state().bits()),
+                &self.sr_rx_dscr_sample_state().bits(),
             )
-            .field(
-                "sr_rx_scan_state",
-                &format_args!("{}", self.sr_rx_scan_state().bits()),
-            )
+            .field("sr_rx_scan_state", &self.sr_rx_scan_state().bits())
             .field(
                 "sr_tx_dscr_sample_state",
-                &format_args!("{}", self.sr_tx_dscr_sample_state().bits()),
+                &self.sr_tx_dscr_sample_state().bits(),
             )
-            .field(
-                "sr_tx_scan_state",
-                &format_args!("{}", self.sr_tx_scan_state().bits()),
-            )
+            .field("sr_tx_scan_state", &self.sr_tx_scan_state().bits())
             .finish()
     }
 }
@@ -67,6 +61,4 @@ impl crate::RegisterSpec for SR_STATUS_SPEC {
 #[doc = "`read()` method returns [`sr_status::R`](R) reader structure"]
 impl crate::Readable for SR_STATUS_SPEC {}
 #[doc = "`reset()` method sets SR_STATUS to value 0"]
-impl crate::Resettable for SR_STATUS_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for SR_STATUS_SPEC {}

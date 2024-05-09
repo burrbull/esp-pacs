@@ -17,7 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SEND_SEQ")
-            .field("send_seq", &format_args!("{}", self.send_seq().bits()))
+            .field("send_seq", &self.send_seq().bits())
             .finish()
     }
 }
@@ -45,8 +45,6 @@ impl crate::Readable for SEND_SEQ_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`send_seq::W`](W) writer structure"]
 impl crate::Writable for SEND_SEQ_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SEND_SEQ to value 0x1234_5678"]
 impl crate::Resettable for SEND_SEQ_SPEC {

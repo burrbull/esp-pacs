@@ -30,11 +30,11 @@ impl core::fmt::Debug for R {
         f.debug_struct("BUS_TIMEOUT")
             .field(
                 "lp_peri_timeout_thres",
-                &format_args!("{}", self.lp_peri_timeout_thres().bits()),
+                &self.lp_peri_timeout_thres().bits(),
             )
             .field(
                 "lp_peri_timeout_protect_en",
-                &format_args!("{}", self.lp_peri_timeout_protect_en().bit()),
+                &self.lp_peri_timeout_protect_en().bit(),
             )
             .finish()
     }
@@ -75,8 +75,6 @@ impl crate::Readable for BUS_TIMEOUT_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`bus_timeout::W`](W) writer structure"]
 impl crate::Writable for BUS_TIMEOUT_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets BUS_TIMEOUT to value 0xbfff_c000"]
 impl crate::Resettable for BUS_TIMEOUT_SPEC {

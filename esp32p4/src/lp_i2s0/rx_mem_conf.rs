@@ -24,14 +24,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("RX_MEM_CONF")
-            .field(
-                "rx_mem_fifo_cnt",
-                &format_args!("{}", self.rx_mem_fifo_cnt().bits()),
-            )
-            .field(
-                "rx_mem_threshold",
-                &format_args!("{}", self.rx_mem_threshold().bits()),
-            )
+            .field("rx_mem_fifo_cnt", &self.rx_mem_fifo_cnt().bits())
+            .field("rx_mem_threshold", &self.rx_mem_threshold().bits())
             .finish()
     }
 }
@@ -59,8 +53,6 @@ impl crate::Readable for RX_MEM_CONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`rx_mem_conf::W`](W) writer structure"]
 impl crate::Writable for RX_MEM_CONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets RX_MEM_CONF to value 0x7e00"]
 impl crate::Resettable for RX_MEM_CONF_SPEC {

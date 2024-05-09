@@ -27,9 +27,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CAP_STATUS")
-            .field("cap0_edge", &format_args!("{}", self.cap0_edge().bit()))
-            .field("cap1_edge", &format_args!("{}", self.cap1_edge().bit()))
-            .field("cap2_edge", &format_args!("{}", self.cap2_edge().bit()))
+            .field("cap0_edge", &self.cap0_edge().bit())
+            .field("cap1_edge", &self.cap1_edge().bit())
+            .field("cap2_edge", &self.cap2_edge().bit())
             .finish()
     }
 }
@@ -47,6 +47,4 @@ impl crate::RegisterSpec for CAP_STATUS_SPEC {
 #[doc = "`read()` method returns [`cap_status::R`](R) reader structure"]
 impl crate::Readable for CAP_STATUS_SPEC {}
 #[doc = "`reset()` method sets CAP_STATUS to value 0"]
-impl crate::Resettable for CAP_STATUS_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for CAP_STATUS_SPEC {}

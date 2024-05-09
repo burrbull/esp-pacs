@@ -179,81 +179,66 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CACHE_DBG_INT_ENA")
-            .field(
-                "cache_dbg_en",
-                &format_args!("{}", self.cache_dbg_en().bit()),
-            )
+            .field("cache_dbg_en", &self.cache_dbg_en().bit())
             .field(
                 "ibus_acs_msk_ic_int_ena",
-                &format_args!("{}", self.ibus_acs_msk_ic_int_ena().bit()),
+                &self.ibus_acs_msk_ic_int_ena().bit(),
             )
-            .field(
-                "ibus_cnt_ovf_int_ena",
-                &format_args!("{}", self.ibus_cnt_ovf_int_ena().bit()),
-            )
+            .field("ibus_cnt_ovf_int_ena", &self.ibus_cnt_ovf_int_ena().bit())
             .field(
                 "ic_sync_size_fault_int_ena",
-                &format_args!("{}", self.ic_sync_size_fault_int_ena().bit()),
+                &self.ic_sync_size_fault_int_ena().bit(),
             )
             .field(
                 "ic_preload_size_fault_int_ena",
-                &format_args!("{}", self.ic_preload_size_fault_int_ena().bit()),
+                &self.ic_preload_size_fault_int_ena().bit(),
             )
-            .field(
-                "icache_reject_int_ena",
-                &format_args!("{}", self.icache_reject_int_ena().bit()),
-            )
+            .field("icache_reject_int_ena", &self.icache_reject_int_ena().bit())
             .field(
                 "icache_set_preload_ilg_int_ena",
-                &format_args!("{}", self.icache_set_preload_ilg_int_ena().bit()),
+                &self.icache_set_preload_ilg_int_ena().bit(),
             )
             .field(
                 "icache_set_sync_ilg_int_ena",
-                &format_args!("{}", self.icache_set_sync_ilg_int_ena().bit()),
+                &self.icache_set_sync_ilg_int_ena().bit(),
             )
             .field(
                 "icache_set_lock_ilg_int_ena",
-                &format_args!("{}", self.icache_set_lock_ilg_int_ena().bit()),
+                &self.icache_set_lock_ilg_int_ena().bit(),
             )
             .field(
                 "dbus_acs_msk_dc_int_ena",
-                &format_args!("{}", self.dbus_acs_msk_dc_int_ena().bit()),
+                &self.dbus_acs_msk_dc_int_ena().bit(),
             )
-            .field(
-                "dbus_cnt_ovf_int_ena",
-                &format_args!("{}", self.dbus_cnt_ovf_int_ena().bit()),
-            )
+            .field("dbus_cnt_ovf_int_ena", &self.dbus_cnt_ovf_int_ena().bit())
             .field(
                 "dc_sync_size_fault_int_ena",
-                &format_args!("{}", self.dc_sync_size_fault_int_ena().bit()),
+                &self.dc_sync_size_fault_int_ena().bit(),
             )
             .field(
                 "dc_preload_size_fault_int_ena",
-                &format_args!("{}", self.dc_preload_size_fault_int_ena().bit()),
+                &self.dc_preload_size_fault_int_ena().bit(),
             )
             .field(
                 "dcache_write_flash_int_ena",
-                &format_args!("{}", self.dcache_write_flash_int_ena().bit()),
+                &self.dcache_write_flash_int_ena().bit(),
             )
-            .field(
-                "dcache_reject_int_ena",
-                &format_args!("{}", self.dcache_reject_int_ena().bit()),
-            )
+            .field("dcache_reject_int_ena", &self.dcache_reject_int_ena().bit())
             .field(
                 "dcache_set_preload_ilg_int_ena",
-                &format_args!("{}", self.dcache_set_preload_ilg_int_ena().bit()),
+                &self.dcache_set_preload_ilg_int_ena().bit(),
             )
             .field(
                 "dcache_set_sync_ilg_int_ena",
-                &format_args!("{}", self.dcache_set_sync_ilg_int_ena().bit()),
+                &self.dcache_set_sync_ilg_int_ena().bit(),
             )
             .field(
                 "dcache_set_lock_ilg_int_ena",
-                &format_args!("{}", self.dcache_set_lock_ilg_int_ena().bit()),
+                &self.dcache_set_lock_ilg_int_ena().bit(),
             )
             .field(
                 "mmu_entry_fault_int_ena",
-                &format_args!("{}", self.mmu_entry_fault_int_ena().bit()),
+                &self.mmu_entry_fault_int_ena().bit(),
             )
             .finish()
     }
@@ -412,8 +397,6 @@ impl crate::Readable for CACHE_DBG_INT_ENA_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`cache_dbg_int_ena::W`](W) writer structure"]
 impl crate::Writable for CACHE_DBG_INT_ENA_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CACHE_DBG_INT_ENA to value 0x01"]
 impl crate::Resettable for CACHE_DBG_INT_ENA_SPEC {

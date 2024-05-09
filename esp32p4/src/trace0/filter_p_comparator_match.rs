@@ -17,7 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("FILTER_P_COMPARATOR_MATCH")
-            .field("p_match", &format_args!("{}", self.p_match().bits()))
+            .field("p_match", &self.p_match().bits())
             .finish()
     }
 }
@@ -45,10 +45,6 @@ impl crate::Readable for FILTER_P_COMPARATOR_MATCH_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`filter_p_comparator_match::W`](W) writer structure"]
 impl crate::Writable for FILTER_P_COMPARATOR_MATCH_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets FILTER_P_COMPARATOR_MATCH to value 0"]
-impl crate::Resettable for FILTER_P_COMPARATOR_MATCH_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for FILTER_P_COMPARATOR_MATCH_SPEC {}

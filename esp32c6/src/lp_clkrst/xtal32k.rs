@@ -44,22 +44,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("XTAL32K")
-            .field(
-                "dres_xtal32k",
-                &format_args!("{}", self.dres_xtal32k().bits()),
-            )
-            .field(
-                "dgm_xtal32k",
-                &format_args!("{}", self.dgm_xtal32k().bits()),
-            )
-            .field(
-                "dbuf_xtal32k",
-                &format_args!("{}", self.dbuf_xtal32k().bit()),
-            )
-            .field(
-                "dac_xtal32k",
-                &format_args!("{}", self.dac_xtal32k().bits()),
-            )
+            .field("dres_xtal32k", &self.dres_xtal32k().bits())
+            .field("dgm_xtal32k", &self.dgm_xtal32k().bits())
+            .field("dbuf_xtal32k", &self.dbuf_xtal32k().bit())
+            .field("dac_xtal32k", &self.dac_xtal32k().bits())
             .finish()
     }
 }
@@ -105,8 +93,6 @@ impl crate::Readable for XTAL32K_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`xtal32k::W`](W) writer structure"]
 impl crate::Writable for XTAL32K_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets XTAL32K to value 0x66c0_0000"]
 impl crate::Resettable for XTAL32K_SPEC {
