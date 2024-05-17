@@ -63,10 +63,7 @@ impl core::fmt::Debug for R {
             .field("record_pro_pdebuginst", &self.record_pro_pdebuginst())
             .field("record_pdebuginst_sz", &self.record_pdebuginst_sz())
             .field("record_pdebuginst_isrc", &self.record_pdebuginst_isrc())
-            .field(
-                "record_pdebuginst_loop_rep",
-                &self.record_pdebuginst_loop_rep(),
-            )
+            .field("record_pdebuginst_loop_rep", &self.record_pdebuginst_loop_rep())
             .field("record_pdebuginst_loop", &self.record_pdebuginst_loop())
             .field("record_pdebuginst_cintl", &self.record_pdebuginst_cintl())
             .finish()

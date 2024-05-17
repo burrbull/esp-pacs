@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("L2_CACHE_ACS_FAIL_CTRL")
-            .field(
-                "l2_cache_acs_fail_check_mode",
-                &self.l2_cache_acs_fail_check_mode(),
-            )
+            .field("l2_cache_acs_fail_check_mode", &self.l2_cache_acs_fail_check_mode())
             .finish()
     }
 }

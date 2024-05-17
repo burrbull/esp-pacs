@@ -25,7 +25,9 @@ impl W {
     ///Bits 0:31 - The bits are used to configure the first start virtual address of data locking, which is combined with PRO_DCACHE_LOCK0_SIZE_REG
     #[inline(always)]
     #[must_use]
-    pub fn pro_dcache_lock0_addr(&mut self) -> PRO_DCACHE_LOCK0_ADDR_W<PRO_DCACHE_LOCK0_ADDR_SPEC> {
+    pub fn pro_dcache_lock0_addr(
+        &mut self,
+    ) -> PRO_DCACHE_LOCK0_ADDR_W<PRO_DCACHE_LOCK0_ADDR_SPEC> {
         PRO_DCACHE_LOCK0_ADDR_W::new(self, 0)
     }
 }

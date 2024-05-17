@@ -25,7 +25,9 @@ impl W {
     ///Bits 0:5 - NA
     #[inline(always)]
     #[must_use]
-    pub fn core0_lp_touch_int_map(&mut self) -> CORE0_LP_TOUCH_INT_MAP_W<LP_TOUCH_INT_MAP_SPEC> {
+    pub fn core0_lp_touch_int_map(
+        &mut self,
+    ) -> CORE0_LP_TOUCH_INT_MAP_W<LP_TOUCH_INT_MAP_SPEC> {
         CORE0_LP_TOUCH_INT_MAP_W::new(self, 0)
     }
 }

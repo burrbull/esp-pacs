@@ -61,13 +61,17 @@ impl W {
     ///Bit 0 - The bit is used to disable core0 ibus access L1-ICache, 0: enable, 1: disable
     #[inline(always)]
     #[must_use]
-    pub fn l1_icache_shut_ibus0(&mut self) -> L1_ICACHE_SHUT_IBUS0_W<L1_ICACHE_CTRL_SPEC> {
+    pub fn l1_icache_shut_ibus0(
+        &mut self,
+    ) -> L1_ICACHE_SHUT_IBUS0_W<L1_ICACHE_CTRL_SPEC> {
         L1_ICACHE_SHUT_IBUS0_W::new(self, 0)
     }
     ///Bit 1 - The bit is used to disable core1 ibus access L1-ICache, 0: enable, 1: disable
     #[inline(always)]
     #[must_use]
-    pub fn l1_icache_shut_ibus1(&mut self) -> L1_ICACHE_SHUT_IBUS1_W<L1_ICACHE_CTRL_SPEC> {
+    pub fn l1_icache_shut_ibus1(
+        &mut self,
+    ) -> L1_ICACHE_SHUT_IBUS1_W<L1_ICACHE_CTRL_SPEC> {
         L1_ICACHE_SHUT_IBUS1_W::new(self, 1)
     }
     ///Bits 8:15 - Reserved

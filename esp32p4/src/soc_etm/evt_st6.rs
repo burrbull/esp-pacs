@@ -133,7 +133,9 @@ pub type DMA2D_EVT_IN_SUC_EOF_CH0_ST_W<'a, REG> = crate::BitWriter<'a, REG>;
 impl R {
     ///Bit 0 - Represents PDMA_AHB_evt_out_fifo_full_ch2 trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
-    pub fn pdma_ahb_evt_out_fifo_full_ch2_st(&self) -> PDMA_AHB_EVT_OUT_FIFO_FULL_CH2_ST_R {
+    pub fn pdma_ahb_evt_out_fifo_full_ch2_st(
+        &self,
+    ) -> PDMA_AHB_EVT_OUT_FIFO_FULL_CH2_ST_R {
         PDMA_AHB_EVT_OUT_FIFO_FULL_CH2_ST_R::new((self.bits & 1) != 0)
     }
     ///Bit 1 - Represents PDMA_AXI_evt_in_done_ch0 trigger status.\\0: Not triggered\\1: Triggered
@@ -168,32 +170,44 @@ impl R {
     }
     ///Bit 7 - Represents PDMA_AXI_evt_in_fifo_empty_ch0 trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
-    pub fn pdma_axi_evt_in_fifo_empty_ch0_st(&self) -> PDMA_AXI_EVT_IN_FIFO_EMPTY_CH0_ST_R {
+    pub fn pdma_axi_evt_in_fifo_empty_ch0_st(
+        &self,
+    ) -> PDMA_AXI_EVT_IN_FIFO_EMPTY_CH0_ST_R {
         PDMA_AXI_EVT_IN_FIFO_EMPTY_CH0_ST_R::new(((self.bits >> 7) & 1) != 0)
     }
     ///Bit 8 - Represents PDMA_AXI_evt_in_fifo_empty_ch1 trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
-    pub fn pdma_axi_evt_in_fifo_empty_ch1_st(&self) -> PDMA_AXI_EVT_IN_FIFO_EMPTY_CH1_ST_R {
+    pub fn pdma_axi_evt_in_fifo_empty_ch1_st(
+        &self,
+    ) -> PDMA_AXI_EVT_IN_FIFO_EMPTY_CH1_ST_R {
         PDMA_AXI_EVT_IN_FIFO_EMPTY_CH1_ST_R::new(((self.bits >> 8) & 1) != 0)
     }
     ///Bit 9 - Represents PDMA_AXI_evt_in_fifo_empty_ch2 trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
-    pub fn pdma_axi_evt_in_fifo_empty_ch2_st(&self) -> PDMA_AXI_EVT_IN_FIFO_EMPTY_CH2_ST_R {
+    pub fn pdma_axi_evt_in_fifo_empty_ch2_st(
+        &self,
+    ) -> PDMA_AXI_EVT_IN_FIFO_EMPTY_CH2_ST_R {
         PDMA_AXI_EVT_IN_FIFO_EMPTY_CH2_ST_R::new(((self.bits >> 9) & 1) != 0)
     }
     ///Bit 10 - Represents PDMA_AXI_evt_in_fifo_full_ch0 trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
-    pub fn pdma_axi_evt_in_fifo_full_ch0_st(&self) -> PDMA_AXI_EVT_IN_FIFO_FULL_CH0_ST_R {
+    pub fn pdma_axi_evt_in_fifo_full_ch0_st(
+        &self,
+    ) -> PDMA_AXI_EVT_IN_FIFO_FULL_CH0_ST_R {
         PDMA_AXI_EVT_IN_FIFO_FULL_CH0_ST_R::new(((self.bits >> 10) & 1) != 0)
     }
     ///Bit 11 - Represents PDMA_AXI_evt_in_fifo_full_ch1 trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
-    pub fn pdma_axi_evt_in_fifo_full_ch1_st(&self) -> PDMA_AXI_EVT_IN_FIFO_FULL_CH1_ST_R {
+    pub fn pdma_axi_evt_in_fifo_full_ch1_st(
+        &self,
+    ) -> PDMA_AXI_EVT_IN_FIFO_FULL_CH1_ST_R {
         PDMA_AXI_EVT_IN_FIFO_FULL_CH1_ST_R::new(((self.bits >> 11) & 1) != 0)
     }
     ///Bit 12 - Represents PDMA_AXI_evt_in_fifo_full_ch2 trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
-    pub fn pdma_axi_evt_in_fifo_full_ch2_st(&self) -> PDMA_AXI_EVT_IN_FIFO_FULL_CH2_ST_R {
+    pub fn pdma_axi_evt_in_fifo_full_ch2_st(
+        &self,
+    ) -> PDMA_AXI_EVT_IN_FIFO_FULL_CH2_ST_R {
         PDMA_AXI_EVT_IN_FIFO_FULL_CH2_ST_R::new(((self.bits >> 12) & 1) != 0)
     }
     ///Bit 13 - Represents PDMA_AXI_evt_out_done_ch0 trigger status.\\0: Not triggered\\1: Triggered
@@ -228,47 +242,65 @@ impl R {
     }
     ///Bit 19 - Represents PDMA_AXI_evt_out_total_eof_ch0 trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
-    pub fn pdma_axi_evt_out_total_eof_ch0_st(&self) -> PDMA_AXI_EVT_OUT_TOTAL_EOF_CH0_ST_R {
+    pub fn pdma_axi_evt_out_total_eof_ch0_st(
+        &self,
+    ) -> PDMA_AXI_EVT_OUT_TOTAL_EOF_CH0_ST_R {
         PDMA_AXI_EVT_OUT_TOTAL_EOF_CH0_ST_R::new(((self.bits >> 19) & 1) != 0)
     }
     ///Bit 20 - Represents PDMA_AXI_evt_out_total_eof_ch1 trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
-    pub fn pdma_axi_evt_out_total_eof_ch1_st(&self) -> PDMA_AXI_EVT_OUT_TOTAL_EOF_CH1_ST_R {
+    pub fn pdma_axi_evt_out_total_eof_ch1_st(
+        &self,
+    ) -> PDMA_AXI_EVT_OUT_TOTAL_EOF_CH1_ST_R {
         PDMA_AXI_EVT_OUT_TOTAL_EOF_CH1_ST_R::new(((self.bits >> 20) & 1) != 0)
     }
     ///Bit 21 - Represents PDMA_AXI_evt_out_total_eof_ch2 trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
-    pub fn pdma_axi_evt_out_total_eof_ch2_st(&self) -> PDMA_AXI_EVT_OUT_TOTAL_EOF_CH2_ST_R {
+    pub fn pdma_axi_evt_out_total_eof_ch2_st(
+        &self,
+    ) -> PDMA_AXI_EVT_OUT_TOTAL_EOF_CH2_ST_R {
         PDMA_AXI_EVT_OUT_TOTAL_EOF_CH2_ST_R::new(((self.bits >> 21) & 1) != 0)
     }
     ///Bit 22 - Represents PDMA_AXI_evt_out_fifo_empty_ch0 trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
-    pub fn pdma_axi_evt_out_fifo_empty_ch0_st(&self) -> PDMA_AXI_EVT_OUT_FIFO_EMPTY_CH0_ST_R {
+    pub fn pdma_axi_evt_out_fifo_empty_ch0_st(
+        &self,
+    ) -> PDMA_AXI_EVT_OUT_FIFO_EMPTY_CH0_ST_R {
         PDMA_AXI_EVT_OUT_FIFO_EMPTY_CH0_ST_R::new(((self.bits >> 22) & 1) != 0)
     }
     ///Bit 23 - Represents PDMA_AXI_evt_out_fifo_empty_ch1 trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
-    pub fn pdma_axi_evt_out_fifo_empty_ch1_st(&self) -> PDMA_AXI_EVT_OUT_FIFO_EMPTY_CH1_ST_R {
+    pub fn pdma_axi_evt_out_fifo_empty_ch1_st(
+        &self,
+    ) -> PDMA_AXI_EVT_OUT_FIFO_EMPTY_CH1_ST_R {
         PDMA_AXI_EVT_OUT_FIFO_EMPTY_CH1_ST_R::new(((self.bits >> 23) & 1) != 0)
     }
     ///Bit 24 - Represents PDMA_AXI_evt_out_fifo_empty_ch2 trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
-    pub fn pdma_axi_evt_out_fifo_empty_ch2_st(&self) -> PDMA_AXI_EVT_OUT_FIFO_EMPTY_CH2_ST_R {
+    pub fn pdma_axi_evt_out_fifo_empty_ch2_st(
+        &self,
+    ) -> PDMA_AXI_EVT_OUT_FIFO_EMPTY_CH2_ST_R {
         PDMA_AXI_EVT_OUT_FIFO_EMPTY_CH2_ST_R::new(((self.bits >> 24) & 1) != 0)
     }
     ///Bit 25 - Represents PDMA_AXI_evt_out_fifo_full_ch0 trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
-    pub fn pdma_axi_evt_out_fifo_full_ch0_st(&self) -> PDMA_AXI_EVT_OUT_FIFO_FULL_CH0_ST_R {
+    pub fn pdma_axi_evt_out_fifo_full_ch0_st(
+        &self,
+    ) -> PDMA_AXI_EVT_OUT_FIFO_FULL_CH0_ST_R {
         PDMA_AXI_EVT_OUT_FIFO_FULL_CH0_ST_R::new(((self.bits >> 25) & 1) != 0)
     }
     ///Bit 26 - Represents PDMA_AXI_evt_out_fifo_full_ch1 trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
-    pub fn pdma_axi_evt_out_fifo_full_ch1_st(&self) -> PDMA_AXI_EVT_OUT_FIFO_FULL_CH1_ST_R {
+    pub fn pdma_axi_evt_out_fifo_full_ch1_st(
+        &self,
+    ) -> PDMA_AXI_EVT_OUT_FIFO_FULL_CH1_ST_R {
         PDMA_AXI_EVT_OUT_FIFO_FULL_CH1_ST_R::new(((self.bits >> 26) & 1) != 0)
     }
     ///Bit 27 - Represents PDMA_AXI_evt_out_fifo_full_ch2 trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
-    pub fn pdma_axi_evt_out_fifo_full_ch2_st(&self) -> PDMA_AXI_EVT_OUT_FIFO_FULL_CH2_ST_R {
+    pub fn pdma_axi_evt_out_fifo_full_ch2_st(
+        &self,
+    ) -> PDMA_AXI_EVT_OUT_FIFO_FULL_CH2_ST_R {
         PDMA_AXI_EVT_OUT_FIFO_FULL_CH2_ST_R::new(((self.bits >> 27) & 1) != 0)
     }
     ///Bit 28 - Represents PMU_evt_sleep_weekup trigger status.\\0: Not triggered\\1: Triggered
@@ -300,18 +332,9 @@ impl core::fmt::Debug for R {
                 "pdma_ahb_evt_out_fifo_full_ch2_st",
                 &self.pdma_ahb_evt_out_fifo_full_ch2_st(),
             )
-            .field(
-                "pdma_axi_evt_in_done_ch0_st",
-                &self.pdma_axi_evt_in_done_ch0_st(),
-            )
-            .field(
-                "pdma_axi_evt_in_done_ch1_st",
-                &self.pdma_axi_evt_in_done_ch1_st(),
-            )
-            .field(
-                "pdma_axi_evt_in_done_ch2_st",
-                &self.pdma_axi_evt_in_done_ch2_st(),
-            )
+            .field("pdma_axi_evt_in_done_ch0_st", &self.pdma_axi_evt_in_done_ch0_st())
+            .field("pdma_axi_evt_in_done_ch1_st", &self.pdma_axi_evt_in_done_ch1_st())
+            .field("pdma_axi_evt_in_done_ch2_st", &self.pdma_axi_evt_in_done_ch2_st())
             .field(
                 "pdma_axi_evt_in_suc_eof_ch0_st",
                 &self.pdma_axi_evt_in_suc_eof_ch0_st(),
@@ -348,30 +371,12 @@ impl core::fmt::Debug for R {
                 "pdma_axi_evt_in_fifo_full_ch2_st",
                 &self.pdma_axi_evt_in_fifo_full_ch2_st(),
             )
-            .field(
-                "pdma_axi_evt_out_done_ch0_st",
-                &self.pdma_axi_evt_out_done_ch0_st(),
-            )
-            .field(
-                "pdma_axi_evt_out_done_ch1_st",
-                &self.pdma_axi_evt_out_done_ch1_st(),
-            )
-            .field(
-                "pdma_axi_evt_out_done_ch2_st",
-                &self.pdma_axi_evt_out_done_ch2_st(),
-            )
-            .field(
-                "pdma_axi_evt_out_eof_ch0_st",
-                &self.pdma_axi_evt_out_eof_ch0_st(),
-            )
-            .field(
-                "pdma_axi_evt_out_eof_ch1_st",
-                &self.pdma_axi_evt_out_eof_ch1_st(),
-            )
-            .field(
-                "pdma_axi_evt_out_eof_ch2_st",
-                &self.pdma_axi_evt_out_eof_ch2_st(),
-            )
+            .field("pdma_axi_evt_out_done_ch0_st", &self.pdma_axi_evt_out_done_ch0_st())
+            .field("pdma_axi_evt_out_done_ch1_st", &self.pdma_axi_evt_out_done_ch1_st())
+            .field("pdma_axi_evt_out_done_ch2_st", &self.pdma_axi_evt_out_done_ch2_st())
+            .field("pdma_axi_evt_out_eof_ch0_st", &self.pdma_axi_evt_out_eof_ch0_st())
+            .field("pdma_axi_evt_out_eof_ch1_st", &self.pdma_axi_evt_out_eof_ch1_st())
+            .field("pdma_axi_evt_out_eof_ch2_st", &self.pdma_axi_evt_out_eof_ch2_st())
             .field(
                 "pdma_axi_evt_out_total_eof_ch0_st",
                 &self.pdma_axi_evt_out_total_eof_ch0_st(),
@@ -411,10 +416,7 @@ impl core::fmt::Debug for R {
             .field("pmu_evt_sleep_weekup_st", &self.pmu_evt_sleep_weekup_st())
             .field("dma2d_evt_in_done_ch0_st", &self.dma2d_evt_in_done_ch0_st())
             .field("dma2d_evt_in_done_ch1_st", &self.dma2d_evt_in_done_ch1_st())
-            .field(
-                "dma2d_evt_in_suc_eof_ch0_st",
-                &self.dma2d_evt_in_suc_eof_ch0_st(),
-            )
+            .field("dma2d_evt_in_suc_eof_ch0_st", &self.dma2d_evt_in_suc_eof_ch0_st())
             .finish()
     }
 }
@@ -430,19 +432,25 @@ impl W {
     ///Bit 1 - Represents PDMA_AXI_evt_in_done_ch0 trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn pdma_axi_evt_in_done_ch0_st(&mut self) -> PDMA_AXI_EVT_IN_DONE_CH0_ST_W<EVT_ST6_SPEC> {
+    pub fn pdma_axi_evt_in_done_ch0_st(
+        &mut self,
+    ) -> PDMA_AXI_EVT_IN_DONE_CH0_ST_W<EVT_ST6_SPEC> {
         PDMA_AXI_EVT_IN_DONE_CH0_ST_W::new(self, 1)
     }
     ///Bit 2 - Represents PDMA_AXI_evt_in_done_ch1 trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn pdma_axi_evt_in_done_ch1_st(&mut self) -> PDMA_AXI_EVT_IN_DONE_CH1_ST_W<EVT_ST6_SPEC> {
+    pub fn pdma_axi_evt_in_done_ch1_st(
+        &mut self,
+    ) -> PDMA_AXI_EVT_IN_DONE_CH1_ST_W<EVT_ST6_SPEC> {
         PDMA_AXI_EVT_IN_DONE_CH1_ST_W::new(self, 2)
     }
     ///Bit 3 - Represents PDMA_AXI_evt_in_done_ch2 trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn pdma_axi_evt_in_done_ch2_st(&mut self) -> PDMA_AXI_EVT_IN_DONE_CH2_ST_W<EVT_ST6_SPEC> {
+    pub fn pdma_axi_evt_in_done_ch2_st(
+        &mut self,
+    ) -> PDMA_AXI_EVT_IN_DONE_CH2_ST_W<EVT_ST6_SPEC> {
         PDMA_AXI_EVT_IN_DONE_CH2_ST_W::new(self, 3)
     }
     ///Bit 4 - Represents PDMA_AXI_evt_in_suc_eof_ch0 trigger status.\\0: Not triggered\\1: Triggered
@@ -520,37 +528,49 @@ impl W {
     ///Bit 13 - Represents PDMA_AXI_evt_out_done_ch0 trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn pdma_axi_evt_out_done_ch0_st(&mut self) -> PDMA_AXI_EVT_OUT_DONE_CH0_ST_W<EVT_ST6_SPEC> {
+    pub fn pdma_axi_evt_out_done_ch0_st(
+        &mut self,
+    ) -> PDMA_AXI_EVT_OUT_DONE_CH0_ST_W<EVT_ST6_SPEC> {
         PDMA_AXI_EVT_OUT_DONE_CH0_ST_W::new(self, 13)
     }
     ///Bit 14 - Represents PDMA_AXI_evt_out_done_ch1 trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn pdma_axi_evt_out_done_ch1_st(&mut self) -> PDMA_AXI_EVT_OUT_DONE_CH1_ST_W<EVT_ST6_SPEC> {
+    pub fn pdma_axi_evt_out_done_ch1_st(
+        &mut self,
+    ) -> PDMA_AXI_EVT_OUT_DONE_CH1_ST_W<EVT_ST6_SPEC> {
         PDMA_AXI_EVT_OUT_DONE_CH1_ST_W::new(self, 14)
     }
     ///Bit 15 - Represents PDMA_AXI_evt_out_done_ch2 trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn pdma_axi_evt_out_done_ch2_st(&mut self) -> PDMA_AXI_EVT_OUT_DONE_CH2_ST_W<EVT_ST6_SPEC> {
+    pub fn pdma_axi_evt_out_done_ch2_st(
+        &mut self,
+    ) -> PDMA_AXI_EVT_OUT_DONE_CH2_ST_W<EVT_ST6_SPEC> {
         PDMA_AXI_EVT_OUT_DONE_CH2_ST_W::new(self, 15)
     }
     ///Bit 16 - Represents PDMA_AXI_evt_out_eof_ch0 trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn pdma_axi_evt_out_eof_ch0_st(&mut self) -> PDMA_AXI_EVT_OUT_EOF_CH0_ST_W<EVT_ST6_SPEC> {
+    pub fn pdma_axi_evt_out_eof_ch0_st(
+        &mut self,
+    ) -> PDMA_AXI_EVT_OUT_EOF_CH0_ST_W<EVT_ST6_SPEC> {
         PDMA_AXI_EVT_OUT_EOF_CH0_ST_W::new(self, 16)
     }
     ///Bit 17 - Represents PDMA_AXI_evt_out_eof_ch1 trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn pdma_axi_evt_out_eof_ch1_st(&mut self) -> PDMA_AXI_EVT_OUT_EOF_CH1_ST_W<EVT_ST6_SPEC> {
+    pub fn pdma_axi_evt_out_eof_ch1_st(
+        &mut self,
+    ) -> PDMA_AXI_EVT_OUT_EOF_CH1_ST_W<EVT_ST6_SPEC> {
         PDMA_AXI_EVT_OUT_EOF_CH1_ST_W::new(self, 17)
     }
     ///Bit 18 - Represents PDMA_AXI_evt_out_eof_ch2 trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn pdma_axi_evt_out_eof_ch2_st(&mut self) -> PDMA_AXI_EVT_OUT_EOF_CH2_ST_W<EVT_ST6_SPEC> {
+    pub fn pdma_axi_evt_out_eof_ch2_st(
+        &mut self,
+    ) -> PDMA_AXI_EVT_OUT_EOF_CH2_ST_W<EVT_ST6_SPEC> {
         PDMA_AXI_EVT_OUT_EOF_CH2_ST_W::new(self, 18)
     }
     ///Bit 19 - Represents PDMA_AXI_evt_out_total_eof_ch0 trigger status.\\0: Not triggered\\1: Triggered
@@ -628,25 +648,33 @@ impl W {
     ///Bit 28 - Represents PMU_evt_sleep_weekup trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn pmu_evt_sleep_weekup_st(&mut self) -> PMU_EVT_SLEEP_WEEKUP_ST_W<EVT_ST6_SPEC> {
+    pub fn pmu_evt_sleep_weekup_st(
+        &mut self,
+    ) -> PMU_EVT_SLEEP_WEEKUP_ST_W<EVT_ST6_SPEC> {
         PMU_EVT_SLEEP_WEEKUP_ST_W::new(self, 28)
     }
     ///Bit 29 - Represents DMA2D_evt_in_done_ch0 trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn dma2d_evt_in_done_ch0_st(&mut self) -> DMA2D_EVT_IN_DONE_CH0_ST_W<EVT_ST6_SPEC> {
+    pub fn dma2d_evt_in_done_ch0_st(
+        &mut self,
+    ) -> DMA2D_EVT_IN_DONE_CH0_ST_W<EVT_ST6_SPEC> {
         DMA2D_EVT_IN_DONE_CH0_ST_W::new(self, 29)
     }
     ///Bit 30 - Represents DMA2D_evt_in_done_ch1 trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn dma2d_evt_in_done_ch1_st(&mut self) -> DMA2D_EVT_IN_DONE_CH1_ST_W<EVT_ST6_SPEC> {
+    pub fn dma2d_evt_in_done_ch1_st(
+        &mut self,
+    ) -> DMA2D_EVT_IN_DONE_CH1_ST_W<EVT_ST6_SPEC> {
         DMA2D_EVT_IN_DONE_CH1_ST_W::new(self, 30)
     }
     ///Bit 31 - Represents DMA2D_evt_in_suc_eof_ch0 trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn dma2d_evt_in_suc_eof_ch0_st(&mut self) -> DMA2D_EVT_IN_SUC_EOF_CH0_ST_W<EVT_ST6_SPEC> {
+    pub fn dma2d_evt_in_suc_eof_ch0_st(
+        &mut self,
+    ) -> DMA2D_EVT_IN_SUC_EOF_CH0_ST_W<EVT_ST6_SPEC> {
         DMA2D_EVT_IN_SUC_EOF_CH0_ST_W::new(self, 31)
     }
 }

@@ -5,33 +5,59 @@ pub type W = crate::W<CORE_X_IRAM0_PMS_CONSTRAIN_1_SPEC>;
 ///Field `CORE_X_IRAM0_PMS_CONSTRAIN_SRAM_WORLD_1_PMS_0` reader - core0/core1's permission of instruction region0 of SRAM in world1
 pub type CORE_X_IRAM0_PMS_CONSTRAIN_SRAM_WORLD_1_PMS_0_R = crate::FieldReader;
 ///Field `CORE_X_IRAM0_PMS_CONSTRAIN_SRAM_WORLD_1_PMS_0` writer - core0/core1's permission of instruction region0 of SRAM in world1
-pub type CORE_X_IRAM0_PMS_CONSTRAIN_SRAM_WORLD_1_PMS_0_W<'a, REG> = crate::FieldWriter<'a, REG, 3>;
+pub type CORE_X_IRAM0_PMS_CONSTRAIN_SRAM_WORLD_1_PMS_0_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    3,
+>;
 ///Field `CORE_X_IRAM0_PMS_CONSTRAIN_SRAM_WORLD_1_PMS_1` reader - core0/core1's permission of instruction region1 of SRAM in world1
 pub type CORE_X_IRAM0_PMS_CONSTRAIN_SRAM_WORLD_1_PMS_1_R = crate::FieldReader;
 ///Field `CORE_X_IRAM0_PMS_CONSTRAIN_SRAM_WORLD_1_PMS_1` writer - core0/core1's permission of instruction region1 of SRAM in world1
-pub type CORE_X_IRAM0_PMS_CONSTRAIN_SRAM_WORLD_1_PMS_1_W<'a, REG> = crate::FieldWriter<'a, REG, 3>;
+pub type CORE_X_IRAM0_PMS_CONSTRAIN_SRAM_WORLD_1_PMS_1_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    3,
+>;
 ///Field `CORE_X_IRAM0_PMS_CONSTRAIN_SRAM_WORLD_1_PMS_2` reader - core0/core1's permission of instruction region2 of SRAM in world1
 pub type CORE_X_IRAM0_PMS_CONSTRAIN_SRAM_WORLD_1_PMS_2_R = crate::FieldReader;
 ///Field `CORE_X_IRAM0_PMS_CONSTRAIN_SRAM_WORLD_1_PMS_2` writer - core0/core1's permission of instruction region2 of SRAM in world1
-pub type CORE_X_IRAM0_PMS_CONSTRAIN_SRAM_WORLD_1_PMS_2_W<'a, REG> = crate::FieldWriter<'a, REG, 3>;
+pub type CORE_X_IRAM0_PMS_CONSTRAIN_SRAM_WORLD_1_PMS_2_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    3,
+>;
 ///Field `CORE_X_IRAM0_PMS_CONSTRAIN_SRAM_WORLD_1_PMS_3` reader - core0/core1's permission of instruction region3 of SRAM in world1
 pub type CORE_X_IRAM0_PMS_CONSTRAIN_SRAM_WORLD_1_PMS_3_R = crate::FieldReader;
 ///Field `CORE_X_IRAM0_PMS_CONSTRAIN_SRAM_WORLD_1_PMS_3` writer - core0/core1's permission of instruction region3 of SRAM in world1
-pub type CORE_X_IRAM0_PMS_CONSTRAIN_SRAM_WORLD_1_PMS_3_W<'a, REG> = crate::FieldWriter<'a, REG, 3>;
+pub type CORE_X_IRAM0_PMS_CONSTRAIN_SRAM_WORLD_1_PMS_3_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    3,
+>;
 ///Field `CORE_X_IRAM0_PMS_CONSTRAIN_SRAM_WORLD_1_CACHEDATAARRAY_PMS_0` reader - core0/core1's permission of icache data sram block0 in world1
 pub type CORE_X_IRAM0_PMS_CONSTRAIN_SRAM_WORLD_1_CACHEDATAARRAY_PMS_0_R = crate::FieldReader;
 ///Field `CORE_X_IRAM0_PMS_CONSTRAIN_SRAM_WORLD_1_CACHEDATAARRAY_PMS_0` writer - core0/core1's permission of icache data sram block0 in world1
-pub type CORE_X_IRAM0_PMS_CONSTRAIN_SRAM_WORLD_1_CACHEDATAARRAY_PMS_0_W<'a, REG> =
-    crate::FieldWriter<'a, REG, 3>;
+pub type CORE_X_IRAM0_PMS_CONSTRAIN_SRAM_WORLD_1_CACHEDATAARRAY_PMS_0_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    3,
+>;
 ///Field `CORE_X_IRAM0_PMS_CONSTRAIN_SRAM_WORLD_1_CACHEDATAARRAY_PMS_1` reader - core0/core1's permission of icache data sram block1 in world1
 pub type CORE_X_IRAM0_PMS_CONSTRAIN_SRAM_WORLD_1_CACHEDATAARRAY_PMS_1_R = crate::FieldReader;
 ///Field `CORE_X_IRAM0_PMS_CONSTRAIN_SRAM_WORLD_1_CACHEDATAARRAY_PMS_1` writer - core0/core1's permission of icache data sram block1 in world1
-pub type CORE_X_IRAM0_PMS_CONSTRAIN_SRAM_WORLD_1_CACHEDATAARRAY_PMS_1_W<'a, REG> =
-    crate::FieldWriter<'a, REG, 3>;
+pub type CORE_X_IRAM0_PMS_CONSTRAIN_SRAM_WORLD_1_CACHEDATAARRAY_PMS_1_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    3,
+>;
 ///Field `CORE_X_IRAM0_PMS_CONSTRAIN_ROM_WORLD_1_PMS` reader - core0/core1's permission of rom in world1
 pub type CORE_X_IRAM0_PMS_CONSTRAIN_ROM_WORLD_1_PMS_R = crate::FieldReader;
 ///Field `CORE_X_IRAM0_PMS_CONSTRAIN_ROM_WORLD_1_PMS` writer - core0/core1's permission of rom in world1
-pub type CORE_X_IRAM0_PMS_CONSTRAIN_ROM_WORLD_1_PMS_W<'a, REG> = crate::FieldWriter<'a, REG, 3>;
+pub type CORE_X_IRAM0_PMS_CONSTRAIN_ROM_WORLD_1_PMS_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    3,
+>;
 impl R {
     ///Bits 0:2 - core0/core1's permission of instruction region0 of SRAM in world1
     #[inline(always)]
@@ -45,21 +71,27 @@ impl R {
     pub fn core_x_iram0_pms_constrain_sram_world_1_pms_1(
         &self,
     ) -> CORE_X_IRAM0_PMS_CONSTRAIN_SRAM_WORLD_1_PMS_1_R {
-        CORE_X_IRAM0_PMS_CONSTRAIN_SRAM_WORLD_1_PMS_1_R::new(((self.bits >> 3) & 7) as u8)
+        CORE_X_IRAM0_PMS_CONSTRAIN_SRAM_WORLD_1_PMS_1_R::new(
+            ((self.bits >> 3) & 7) as u8,
+        )
     }
     ///Bits 6:8 - core0/core1's permission of instruction region2 of SRAM in world1
     #[inline(always)]
     pub fn core_x_iram0_pms_constrain_sram_world_1_pms_2(
         &self,
     ) -> CORE_X_IRAM0_PMS_CONSTRAIN_SRAM_WORLD_1_PMS_2_R {
-        CORE_X_IRAM0_PMS_CONSTRAIN_SRAM_WORLD_1_PMS_2_R::new(((self.bits >> 6) & 7) as u8)
+        CORE_X_IRAM0_PMS_CONSTRAIN_SRAM_WORLD_1_PMS_2_R::new(
+            ((self.bits >> 6) & 7) as u8,
+        )
     }
     ///Bits 9:11 - core0/core1's permission of instruction region3 of SRAM in world1
     #[inline(always)]
     pub fn core_x_iram0_pms_constrain_sram_world_1_pms_3(
         &self,
     ) -> CORE_X_IRAM0_PMS_CONSTRAIN_SRAM_WORLD_1_PMS_3_R {
-        CORE_X_IRAM0_PMS_CONSTRAIN_SRAM_WORLD_1_PMS_3_R::new(((self.bits >> 9) & 7) as u8)
+        CORE_X_IRAM0_PMS_CONSTRAIN_SRAM_WORLD_1_PMS_3_R::new(
+            ((self.bits >> 9) & 7) as u8,
+        )
     }
     ///Bits 12:14 - core0/core1's permission of icache data sram block0 in world1
     #[inline(always)]
@@ -128,7 +160,9 @@ impl W {
     #[must_use]
     pub fn core_x_iram0_pms_constrain_sram_world_1_pms_0(
         &mut self,
-    ) -> CORE_X_IRAM0_PMS_CONSTRAIN_SRAM_WORLD_1_PMS_0_W<CORE_X_IRAM0_PMS_CONSTRAIN_1_SPEC> {
+    ) -> CORE_X_IRAM0_PMS_CONSTRAIN_SRAM_WORLD_1_PMS_0_W<
+        CORE_X_IRAM0_PMS_CONSTRAIN_1_SPEC,
+    > {
         CORE_X_IRAM0_PMS_CONSTRAIN_SRAM_WORLD_1_PMS_0_W::new(self, 0)
     }
     ///Bits 3:5 - core0/core1's permission of instruction region1 of SRAM in world1
@@ -136,7 +170,9 @@ impl W {
     #[must_use]
     pub fn core_x_iram0_pms_constrain_sram_world_1_pms_1(
         &mut self,
-    ) -> CORE_X_IRAM0_PMS_CONSTRAIN_SRAM_WORLD_1_PMS_1_W<CORE_X_IRAM0_PMS_CONSTRAIN_1_SPEC> {
+    ) -> CORE_X_IRAM0_PMS_CONSTRAIN_SRAM_WORLD_1_PMS_1_W<
+        CORE_X_IRAM0_PMS_CONSTRAIN_1_SPEC,
+    > {
         CORE_X_IRAM0_PMS_CONSTRAIN_SRAM_WORLD_1_PMS_1_W::new(self, 3)
     }
     ///Bits 6:8 - core0/core1's permission of instruction region2 of SRAM in world1
@@ -144,7 +180,9 @@ impl W {
     #[must_use]
     pub fn core_x_iram0_pms_constrain_sram_world_1_pms_2(
         &mut self,
-    ) -> CORE_X_IRAM0_PMS_CONSTRAIN_SRAM_WORLD_1_PMS_2_W<CORE_X_IRAM0_PMS_CONSTRAIN_1_SPEC> {
+    ) -> CORE_X_IRAM0_PMS_CONSTRAIN_SRAM_WORLD_1_PMS_2_W<
+        CORE_X_IRAM0_PMS_CONSTRAIN_1_SPEC,
+    > {
         CORE_X_IRAM0_PMS_CONSTRAIN_SRAM_WORLD_1_PMS_2_W::new(self, 6)
     }
     ///Bits 9:11 - core0/core1's permission of instruction region3 of SRAM in world1
@@ -152,7 +190,9 @@ impl W {
     #[must_use]
     pub fn core_x_iram0_pms_constrain_sram_world_1_pms_3(
         &mut self,
-    ) -> CORE_X_IRAM0_PMS_CONSTRAIN_SRAM_WORLD_1_PMS_3_W<CORE_X_IRAM0_PMS_CONSTRAIN_1_SPEC> {
+    ) -> CORE_X_IRAM0_PMS_CONSTRAIN_SRAM_WORLD_1_PMS_3_W<
+        CORE_X_IRAM0_PMS_CONSTRAIN_1_SPEC,
+    > {
         CORE_X_IRAM0_PMS_CONSTRAIN_SRAM_WORLD_1_PMS_3_W::new(self, 9)
     }
     ///Bits 12:14 - core0/core1's permission of icache data sram block0 in world1
@@ -180,7 +220,9 @@ impl W {
     #[must_use]
     pub fn core_x_iram0_pms_constrain_rom_world_1_pms(
         &mut self,
-    ) -> CORE_X_IRAM0_PMS_CONSTRAIN_ROM_WORLD_1_PMS_W<CORE_X_IRAM0_PMS_CONSTRAIN_1_SPEC> {
+    ) -> CORE_X_IRAM0_PMS_CONSTRAIN_ROM_WORLD_1_PMS_W<
+        CORE_X_IRAM0_PMS_CONSTRAIN_1_SPEC,
+    > {
         CORE_X_IRAM0_PMS_CONSTRAIN_ROM_WORLD_1_PMS_W::new(self, 18)
     }
 }

@@ -25,7 +25,9 @@ impl W {
     ///Bits 0:11 - The bit is used to configure the ibus permission control section boundary0
     #[inline(always)]
     #[must_use]
-    pub fn ibus_pms_boundary0(&mut self) -> IBUS_PMS_BOUNDARY0_W<IBUS_PMS_TBL_BOUNDARY0_SPEC> {
+    pub fn ibus_pms_boundary0(
+        &mut self,
+    ) -> IBUS_PMS_BOUNDARY0_W<IBUS_PMS_TBL_BOUNDARY0_SPEC> {
         IBUS_PMS_BOUNDARY0_W::new(self, 0)
     }
 }

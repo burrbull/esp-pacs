@@ -16,9 +16,7 @@ impl R {
 #[cfg(feature = "impl-register-debug")]
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("CIS_CONF_W3")
-            .field("cis_conf_w3", &self.cis_conf_w3())
-            .finish()
+        f.debug_struct("CIS_CONF_W3").field("cis_conf_w3", &self.cis_conf_w3()).finish()
     }
 }
 impl W {

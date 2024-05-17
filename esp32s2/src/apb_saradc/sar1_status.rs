@@ -12,9 +12,7 @@ impl R {
 #[cfg(feature = "impl-register-debug")]
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("SAR1_STATUS")
-            .field("sar1_status", &self.sar1_status())
-            .finish()
+        f.debug_struct("SAR1_STATUS").field("sar1_status", &self.sar1_status()).finish()
     }
 }
 /**digital adc1 status

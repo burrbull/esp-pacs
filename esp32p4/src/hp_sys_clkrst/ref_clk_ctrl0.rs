@@ -67,13 +67,17 @@ impl W {
     ///Bits 16:23 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn ref_240m_clk_div_num(&mut self) -> REF_240M_CLK_DIV_NUM_W<REF_CLK_CTRL0_SPEC> {
+    pub fn ref_240m_clk_div_num(
+        &mut self,
+    ) -> REF_240M_CLK_DIV_NUM_W<REF_CLK_CTRL0_SPEC> {
         REF_240M_CLK_DIV_NUM_W::new(self, 16)
     }
     ///Bits 24:31 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn ref_160m_clk_div_num(&mut self) -> REF_160M_CLK_DIV_NUM_W<REF_CLK_CTRL0_SPEC> {
+    pub fn ref_160m_clk_div_num(
+        &mut self,
+    ) -> REF_160M_CLK_DIV_NUM_W<REF_CLK_CTRL0_SPEC> {
         REF_160M_CLK_DIV_NUM_W::new(self, 24)
     }
 }

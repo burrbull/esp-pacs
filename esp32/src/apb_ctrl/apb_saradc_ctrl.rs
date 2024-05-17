@@ -175,7 +175,9 @@ impl W {
     ///Bit 6
     #[inline(always)]
     #[must_use]
-    pub fn saradc_sar_clk_gated(&mut self) -> SARADC_SAR_CLK_GATED_W<APB_SARADC_CTRL_SPEC> {
+    pub fn saradc_sar_clk_gated(
+        &mut self,
+    ) -> SARADC_SAR_CLK_GATED_W<APB_SARADC_CTRL_SPEC> {
         SARADC_SAR_CLK_GATED_W::new(self, 6)
     }
     ///Bits 7:14 - SAR clock divider
@@ -187,31 +189,41 @@ impl W {
     ///Bits 15:18 - 0 ~ 15 means length 1 ~ 16
     #[inline(always)]
     #[must_use]
-    pub fn saradc_sar1_patt_len(&mut self) -> SARADC_SAR1_PATT_LEN_W<APB_SARADC_CTRL_SPEC> {
+    pub fn saradc_sar1_patt_len(
+        &mut self,
+    ) -> SARADC_SAR1_PATT_LEN_W<APB_SARADC_CTRL_SPEC> {
         SARADC_SAR1_PATT_LEN_W::new(self, 15)
     }
     ///Bits 19:22 - 0 ~ 15 means length 1 ~ 16
     #[inline(always)]
     #[must_use]
-    pub fn saradc_sar2_patt_len(&mut self) -> SARADC_SAR2_PATT_LEN_W<APB_SARADC_CTRL_SPEC> {
+    pub fn saradc_sar2_patt_len(
+        &mut self,
+    ) -> SARADC_SAR2_PATT_LEN_W<APB_SARADC_CTRL_SPEC> {
         SARADC_SAR2_PATT_LEN_W::new(self, 19)
     }
     ///Bit 23 - clear the pointer of pattern table for DIG ADC1 CTRL
     #[inline(always)]
     #[must_use]
-    pub fn saradc_sar1_patt_p_clear(&mut self) -> SARADC_SAR1_PATT_P_CLEAR_W<APB_SARADC_CTRL_SPEC> {
+    pub fn saradc_sar1_patt_p_clear(
+        &mut self,
+    ) -> SARADC_SAR1_PATT_P_CLEAR_W<APB_SARADC_CTRL_SPEC> {
         SARADC_SAR1_PATT_P_CLEAR_W::new(self, 23)
     }
     ///Bit 24 - clear the pointer of pattern table for DIG ADC2 CTRL
     #[inline(always)]
     #[must_use]
-    pub fn saradc_sar2_patt_p_clear(&mut self) -> SARADC_SAR2_PATT_P_CLEAR_W<APB_SARADC_CTRL_SPEC> {
+    pub fn saradc_sar2_patt_p_clear(
+        &mut self,
+    ) -> SARADC_SAR2_PATT_P_CLEAR_W<APB_SARADC_CTRL_SPEC> {
         SARADC_SAR2_PATT_P_CLEAR_W::new(self, 24)
     }
     ///Bit 25 - 1: sar_sel will be coded by the MSB of the 16-bit output data in this case the resolution should not be larger than 11 bits.
     #[inline(always)]
     #[must_use]
-    pub fn saradc_data_sar_sel(&mut self) -> SARADC_DATA_SAR_SEL_W<APB_SARADC_CTRL_SPEC> {
+    pub fn saradc_data_sar_sel(
+        &mut self,
+    ) -> SARADC_DATA_SAR_SEL_W<APB_SARADC_CTRL_SPEC> {
         SARADC_DATA_SAR_SEL_W::new(self, 25)
     }
     ///Bit 26 - 1: I2S input data is from SAR ADC (for DMA) 0: I2S input data is from GPIO matrix

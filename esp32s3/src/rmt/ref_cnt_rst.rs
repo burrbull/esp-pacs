@@ -15,8 +15,7 @@ impl W {
     #[inline(always)]
     #[must_use]
     pub fn ch(&mut self, n: u8) -> CH_W<REF_CNT_RST_SPEC> {
-        #[allow(clippy::no_effect)]
-        [(); 8][n as usize];
+        #[allow(clippy::no_effect)] [(); 8][n as usize];
         CH_W::new(self, n)
     }
     ///Bit 0 - This register is used to reset the clock divider of CHANNEL0.

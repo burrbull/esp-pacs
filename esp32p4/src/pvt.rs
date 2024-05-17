@@ -963,8 +963,9 @@ pub mod dbias_timer;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site0_unit0_vt0_conf1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site0_unit0_vt0_conf1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site0_unit0_vt0_conf1`] module*/
-pub type COMB_PD_SITE0_UNIT0_VT0_CONF1 =
-    crate::Reg<comb_pd_site0_unit0_vt0_conf1::COMB_PD_SITE0_UNIT0_VT0_CONF1_SPEC>;
+pub type COMB_PD_SITE0_UNIT0_VT0_CONF1 = crate::Reg<
+    comb_pd_site0_unit0_vt0_conf1::COMB_PD_SITE0_UNIT0_VT0_CONF1_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site0_unit0_vt0_conf1;
 /**COMB_PD_SITE0_UNIT1_VT0_CONF1 (rw) register accessor: needs desc
@@ -972,8 +973,9 @@ pub mod comb_pd_site0_unit0_vt0_conf1;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site0_unit1_vt0_conf1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site0_unit1_vt0_conf1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site0_unit1_vt0_conf1`] module*/
-pub type COMB_PD_SITE0_UNIT1_VT0_CONF1 =
-    crate::Reg<comb_pd_site0_unit1_vt0_conf1::COMB_PD_SITE0_UNIT1_VT0_CONF1_SPEC>;
+pub type COMB_PD_SITE0_UNIT1_VT0_CONF1 = crate::Reg<
+    comb_pd_site0_unit1_vt0_conf1::COMB_PD_SITE0_UNIT1_VT0_CONF1_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site0_unit1_vt0_conf1;
 /**COMB_PD_SITE0_UNIT2_VT0_CONF1 (rw) register accessor: needs desc
@@ -981,8 +983,9 @@ pub mod comb_pd_site0_unit1_vt0_conf1;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site0_unit2_vt0_conf1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site0_unit2_vt0_conf1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site0_unit2_vt0_conf1`] module*/
-pub type COMB_PD_SITE0_UNIT2_VT0_CONF1 =
-    crate::Reg<comb_pd_site0_unit2_vt0_conf1::COMB_PD_SITE0_UNIT2_VT0_CONF1_SPEC>;
+pub type COMB_PD_SITE0_UNIT2_VT0_CONF1 = crate::Reg<
+    comb_pd_site0_unit2_vt0_conf1::COMB_PD_SITE0_UNIT2_VT0_CONF1_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site0_unit2_vt0_conf1;
 /**COMB_PD_SITE0_UNIT3_VT0_CONF1 (rw) register accessor: needs desc
@@ -990,8 +993,9 @@ pub mod comb_pd_site0_unit2_vt0_conf1;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site0_unit3_vt0_conf1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site0_unit3_vt0_conf1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site0_unit3_vt0_conf1`] module*/
-pub type COMB_PD_SITE0_UNIT3_VT0_CONF1 =
-    crate::Reg<comb_pd_site0_unit3_vt0_conf1::COMB_PD_SITE0_UNIT3_VT0_CONF1_SPEC>;
+pub type COMB_PD_SITE0_UNIT3_VT0_CONF1 = crate::Reg<
+    comb_pd_site0_unit3_vt0_conf1::COMB_PD_SITE0_UNIT3_VT0_CONF1_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site0_unit3_vt0_conf1;
 /**COMB_PD_SITE0_UNIT0_VT1_CONF1 (rw) register accessor: needs desc
@@ -999,8 +1003,9 @@ pub mod comb_pd_site0_unit3_vt0_conf1;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site0_unit0_vt1_conf1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site0_unit0_vt1_conf1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site0_unit0_vt1_conf1`] module*/
-pub type COMB_PD_SITE0_UNIT0_VT1_CONF1 =
-    crate::Reg<comb_pd_site0_unit0_vt1_conf1::COMB_PD_SITE0_UNIT0_VT1_CONF1_SPEC>;
+pub type COMB_PD_SITE0_UNIT0_VT1_CONF1 = crate::Reg<
+    comb_pd_site0_unit0_vt1_conf1::COMB_PD_SITE0_UNIT0_VT1_CONF1_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site0_unit0_vt1_conf1;
 /**COMB_PD_SITE0_UNIT1_VT1_CONF1 (rw) register accessor: needs desc
@@ -1008,8 +1013,9 @@ pub mod comb_pd_site0_unit0_vt1_conf1;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site0_unit1_vt1_conf1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site0_unit1_vt1_conf1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site0_unit1_vt1_conf1`] module*/
-pub type COMB_PD_SITE0_UNIT1_VT1_CONF1 =
-    crate::Reg<comb_pd_site0_unit1_vt1_conf1::COMB_PD_SITE0_UNIT1_VT1_CONF1_SPEC>;
+pub type COMB_PD_SITE0_UNIT1_VT1_CONF1 = crate::Reg<
+    comb_pd_site0_unit1_vt1_conf1::COMB_PD_SITE0_UNIT1_VT1_CONF1_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site0_unit1_vt1_conf1;
 /**COMB_PD_SITE0_UNIT2_VT1_CONF1 (rw) register accessor: needs desc
@@ -1017,8 +1023,9 @@ pub mod comb_pd_site0_unit1_vt1_conf1;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site0_unit2_vt1_conf1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site0_unit2_vt1_conf1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site0_unit2_vt1_conf1`] module*/
-pub type COMB_PD_SITE0_UNIT2_VT1_CONF1 =
-    crate::Reg<comb_pd_site0_unit2_vt1_conf1::COMB_PD_SITE0_UNIT2_VT1_CONF1_SPEC>;
+pub type COMB_PD_SITE0_UNIT2_VT1_CONF1 = crate::Reg<
+    comb_pd_site0_unit2_vt1_conf1::COMB_PD_SITE0_UNIT2_VT1_CONF1_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site0_unit2_vt1_conf1;
 /**COMB_PD_SITE0_UNIT3_VT1_CONF1 (rw) register accessor: needs desc
@@ -1026,8 +1033,9 @@ pub mod comb_pd_site0_unit2_vt1_conf1;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site0_unit3_vt1_conf1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site0_unit3_vt1_conf1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site0_unit3_vt1_conf1`] module*/
-pub type COMB_PD_SITE0_UNIT3_VT1_CONF1 =
-    crate::Reg<comb_pd_site0_unit3_vt1_conf1::COMB_PD_SITE0_UNIT3_VT1_CONF1_SPEC>;
+pub type COMB_PD_SITE0_UNIT3_VT1_CONF1 = crate::Reg<
+    comb_pd_site0_unit3_vt1_conf1::COMB_PD_SITE0_UNIT3_VT1_CONF1_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site0_unit3_vt1_conf1;
 /**COMB_PD_SITE0_UNIT0_VT2_CONF1 (rw) register accessor: needs desc
@@ -1035,8 +1043,9 @@ pub mod comb_pd_site0_unit3_vt1_conf1;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site0_unit0_vt2_conf1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site0_unit0_vt2_conf1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site0_unit0_vt2_conf1`] module*/
-pub type COMB_PD_SITE0_UNIT0_VT2_CONF1 =
-    crate::Reg<comb_pd_site0_unit0_vt2_conf1::COMB_PD_SITE0_UNIT0_VT2_CONF1_SPEC>;
+pub type COMB_PD_SITE0_UNIT0_VT2_CONF1 = crate::Reg<
+    comb_pd_site0_unit0_vt2_conf1::COMB_PD_SITE0_UNIT0_VT2_CONF1_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site0_unit0_vt2_conf1;
 /**COMB_PD_SITE0_UNIT1_VT2_CONF1 (rw) register accessor: needs desc
@@ -1044,8 +1053,9 @@ pub mod comb_pd_site0_unit0_vt2_conf1;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site0_unit1_vt2_conf1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site0_unit1_vt2_conf1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site0_unit1_vt2_conf1`] module*/
-pub type COMB_PD_SITE0_UNIT1_VT2_CONF1 =
-    crate::Reg<comb_pd_site0_unit1_vt2_conf1::COMB_PD_SITE0_UNIT1_VT2_CONF1_SPEC>;
+pub type COMB_PD_SITE0_UNIT1_VT2_CONF1 = crate::Reg<
+    comb_pd_site0_unit1_vt2_conf1::COMB_PD_SITE0_UNIT1_VT2_CONF1_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site0_unit1_vt2_conf1;
 /**COMB_PD_SITE0_UNIT2_VT2_CONF1 (rw) register accessor: needs desc
@@ -1053,8 +1063,9 @@ pub mod comb_pd_site0_unit1_vt2_conf1;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site0_unit2_vt2_conf1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site0_unit2_vt2_conf1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site0_unit2_vt2_conf1`] module*/
-pub type COMB_PD_SITE0_UNIT2_VT2_CONF1 =
-    crate::Reg<comb_pd_site0_unit2_vt2_conf1::COMB_PD_SITE0_UNIT2_VT2_CONF1_SPEC>;
+pub type COMB_PD_SITE0_UNIT2_VT2_CONF1 = crate::Reg<
+    comb_pd_site0_unit2_vt2_conf1::COMB_PD_SITE0_UNIT2_VT2_CONF1_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site0_unit2_vt2_conf1;
 /**COMB_PD_SITE0_UNIT3_VT2_CONF1 (rw) register accessor: needs desc
@@ -1062,8 +1073,9 @@ pub mod comb_pd_site0_unit2_vt2_conf1;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site0_unit3_vt2_conf1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site0_unit3_vt2_conf1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site0_unit3_vt2_conf1`] module*/
-pub type COMB_PD_SITE0_UNIT3_VT2_CONF1 =
-    crate::Reg<comb_pd_site0_unit3_vt2_conf1::COMB_PD_SITE0_UNIT3_VT2_CONF1_SPEC>;
+pub type COMB_PD_SITE0_UNIT3_VT2_CONF1 = crate::Reg<
+    comb_pd_site0_unit3_vt2_conf1::COMB_PD_SITE0_UNIT3_VT2_CONF1_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site0_unit3_vt2_conf1;
 /**COMB_PD_SITE1_UNIT0_VT0_CONF1 (rw) register accessor: needs desc
@@ -1071,8 +1083,9 @@ pub mod comb_pd_site0_unit3_vt2_conf1;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site1_unit0_vt0_conf1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site1_unit0_vt0_conf1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site1_unit0_vt0_conf1`] module*/
-pub type COMB_PD_SITE1_UNIT0_VT0_CONF1 =
-    crate::Reg<comb_pd_site1_unit0_vt0_conf1::COMB_PD_SITE1_UNIT0_VT0_CONF1_SPEC>;
+pub type COMB_PD_SITE1_UNIT0_VT0_CONF1 = crate::Reg<
+    comb_pd_site1_unit0_vt0_conf1::COMB_PD_SITE1_UNIT0_VT0_CONF1_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site1_unit0_vt0_conf1;
 /**COMB_PD_SITE1_UNIT1_VT0_CONF1 (rw) register accessor: needs desc
@@ -1080,8 +1093,9 @@ pub mod comb_pd_site1_unit0_vt0_conf1;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site1_unit1_vt0_conf1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site1_unit1_vt0_conf1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site1_unit1_vt0_conf1`] module*/
-pub type COMB_PD_SITE1_UNIT1_VT0_CONF1 =
-    crate::Reg<comb_pd_site1_unit1_vt0_conf1::COMB_PD_SITE1_UNIT1_VT0_CONF1_SPEC>;
+pub type COMB_PD_SITE1_UNIT1_VT0_CONF1 = crate::Reg<
+    comb_pd_site1_unit1_vt0_conf1::COMB_PD_SITE1_UNIT1_VT0_CONF1_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site1_unit1_vt0_conf1;
 /**COMB_PD_SITE1_UNIT2_VT0_CONF1 (rw) register accessor: needs desc
@@ -1089,8 +1103,9 @@ pub mod comb_pd_site1_unit1_vt0_conf1;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site1_unit2_vt0_conf1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site1_unit2_vt0_conf1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site1_unit2_vt0_conf1`] module*/
-pub type COMB_PD_SITE1_UNIT2_VT0_CONF1 =
-    crate::Reg<comb_pd_site1_unit2_vt0_conf1::COMB_PD_SITE1_UNIT2_VT0_CONF1_SPEC>;
+pub type COMB_PD_SITE1_UNIT2_VT0_CONF1 = crate::Reg<
+    comb_pd_site1_unit2_vt0_conf1::COMB_PD_SITE1_UNIT2_VT0_CONF1_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site1_unit2_vt0_conf1;
 /**COMB_PD_SITE1_UNIT3_VT0_CONF1 (rw) register accessor: needs desc
@@ -1098,8 +1113,9 @@ pub mod comb_pd_site1_unit2_vt0_conf1;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site1_unit3_vt0_conf1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site1_unit3_vt0_conf1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site1_unit3_vt0_conf1`] module*/
-pub type COMB_PD_SITE1_UNIT3_VT0_CONF1 =
-    crate::Reg<comb_pd_site1_unit3_vt0_conf1::COMB_PD_SITE1_UNIT3_VT0_CONF1_SPEC>;
+pub type COMB_PD_SITE1_UNIT3_VT0_CONF1 = crate::Reg<
+    comb_pd_site1_unit3_vt0_conf1::COMB_PD_SITE1_UNIT3_VT0_CONF1_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site1_unit3_vt0_conf1;
 /**COMB_PD_SITE1_UNIT0_VT1_CONF1 (rw) register accessor: needs desc
@@ -1107,8 +1123,9 @@ pub mod comb_pd_site1_unit3_vt0_conf1;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site1_unit0_vt1_conf1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site1_unit0_vt1_conf1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site1_unit0_vt1_conf1`] module*/
-pub type COMB_PD_SITE1_UNIT0_VT1_CONF1 =
-    crate::Reg<comb_pd_site1_unit0_vt1_conf1::COMB_PD_SITE1_UNIT0_VT1_CONF1_SPEC>;
+pub type COMB_PD_SITE1_UNIT0_VT1_CONF1 = crate::Reg<
+    comb_pd_site1_unit0_vt1_conf1::COMB_PD_SITE1_UNIT0_VT1_CONF1_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site1_unit0_vt1_conf1;
 /**COMB_PD_SITE1_UNIT1_VT1_CONF1 (rw) register accessor: needs desc
@@ -1116,8 +1133,9 @@ pub mod comb_pd_site1_unit0_vt1_conf1;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site1_unit1_vt1_conf1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site1_unit1_vt1_conf1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site1_unit1_vt1_conf1`] module*/
-pub type COMB_PD_SITE1_UNIT1_VT1_CONF1 =
-    crate::Reg<comb_pd_site1_unit1_vt1_conf1::COMB_PD_SITE1_UNIT1_VT1_CONF1_SPEC>;
+pub type COMB_PD_SITE1_UNIT1_VT1_CONF1 = crate::Reg<
+    comb_pd_site1_unit1_vt1_conf1::COMB_PD_SITE1_UNIT1_VT1_CONF1_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site1_unit1_vt1_conf1;
 /**COMB_PD_SITE1_UNIT2_VT1_CONF1 (rw) register accessor: needs desc
@@ -1125,8 +1143,9 @@ pub mod comb_pd_site1_unit1_vt1_conf1;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site1_unit2_vt1_conf1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site1_unit2_vt1_conf1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site1_unit2_vt1_conf1`] module*/
-pub type COMB_PD_SITE1_UNIT2_VT1_CONF1 =
-    crate::Reg<comb_pd_site1_unit2_vt1_conf1::COMB_PD_SITE1_UNIT2_VT1_CONF1_SPEC>;
+pub type COMB_PD_SITE1_UNIT2_VT1_CONF1 = crate::Reg<
+    comb_pd_site1_unit2_vt1_conf1::COMB_PD_SITE1_UNIT2_VT1_CONF1_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site1_unit2_vt1_conf1;
 /**COMB_PD_SITE1_UNIT3_VT1_CONF1 (rw) register accessor: needs desc
@@ -1134,8 +1153,9 @@ pub mod comb_pd_site1_unit2_vt1_conf1;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site1_unit3_vt1_conf1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site1_unit3_vt1_conf1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site1_unit3_vt1_conf1`] module*/
-pub type COMB_PD_SITE1_UNIT3_VT1_CONF1 =
-    crate::Reg<comb_pd_site1_unit3_vt1_conf1::COMB_PD_SITE1_UNIT3_VT1_CONF1_SPEC>;
+pub type COMB_PD_SITE1_UNIT3_VT1_CONF1 = crate::Reg<
+    comb_pd_site1_unit3_vt1_conf1::COMB_PD_SITE1_UNIT3_VT1_CONF1_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site1_unit3_vt1_conf1;
 /**COMB_PD_SITE1_UNIT0_VT2_CONF1 (rw) register accessor: needs desc
@@ -1143,8 +1163,9 @@ pub mod comb_pd_site1_unit3_vt1_conf1;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site1_unit0_vt2_conf1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site1_unit0_vt2_conf1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site1_unit0_vt2_conf1`] module*/
-pub type COMB_PD_SITE1_UNIT0_VT2_CONF1 =
-    crate::Reg<comb_pd_site1_unit0_vt2_conf1::COMB_PD_SITE1_UNIT0_VT2_CONF1_SPEC>;
+pub type COMB_PD_SITE1_UNIT0_VT2_CONF1 = crate::Reg<
+    comb_pd_site1_unit0_vt2_conf1::COMB_PD_SITE1_UNIT0_VT2_CONF1_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site1_unit0_vt2_conf1;
 /**COMB_PD_SITE1_UNIT1_VT2_CONF1 (rw) register accessor: needs desc
@@ -1152,8 +1173,9 @@ pub mod comb_pd_site1_unit0_vt2_conf1;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site1_unit1_vt2_conf1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site1_unit1_vt2_conf1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site1_unit1_vt2_conf1`] module*/
-pub type COMB_PD_SITE1_UNIT1_VT2_CONF1 =
-    crate::Reg<comb_pd_site1_unit1_vt2_conf1::COMB_PD_SITE1_UNIT1_VT2_CONF1_SPEC>;
+pub type COMB_PD_SITE1_UNIT1_VT2_CONF1 = crate::Reg<
+    comb_pd_site1_unit1_vt2_conf1::COMB_PD_SITE1_UNIT1_VT2_CONF1_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site1_unit1_vt2_conf1;
 /**COMB_PD_SITE1_UNIT2_VT2_CONF1 (rw) register accessor: needs desc
@@ -1161,8 +1183,9 @@ pub mod comb_pd_site1_unit1_vt2_conf1;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site1_unit2_vt2_conf1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site1_unit2_vt2_conf1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site1_unit2_vt2_conf1`] module*/
-pub type COMB_PD_SITE1_UNIT2_VT2_CONF1 =
-    crate::Reg<comb_pd_site1_unit2_vt2_conf1::COMB_PD_SITE1_UNIT2_VT2_CONF1_SPEC>;
+pub type COMB_PD_SITE1_UNIT2_VT2_CONF1 = crate::Reg<
+    comb_pd_site1_unit2_vt2_conf1::COMB_PD_SITE1_UNIT2_VT2_CONF1_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site1_unit2_vt2_conf1;
 /**COMB_PD_SITE1_UNIT3_VT2_CONF1 (rw) register accessor: needs desc
@@ -1170,8 +1193,9 @@ pub mod comb_pd_site1_unit2_vt2_conf1;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site1_unit3_vt2_conf1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site1_unit3_vt2_conf1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site1_unit3_vt2_conf1`] module*/
-pub type COMB_PD_SITE1_UNIT3_VT2_CONF1 =
-    crate::Reg<comb_pd_site1_unit3_vt2_conf1::COMB_PD_SITE1_UNIT3_VT2_CONF1_SPEC>;
+pub type COMB_PD_SITE1_UNIT3_VT2_CONF1 = crate::Reg<
+    comb_pd_site1_unit3_vt2_conf1::COMB_PD_SITE1_UNIT3_VT2_CONF1_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site1_unit3_vt2_conf1;
 /**COMB_PD_SITE2_UNIT0_VT0_CONF1 (rw) register accessor: needs desc
@@ -1179,8 +1203,9 @@ pub mod comb_pd_site1_unit3_vt2_conf1;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site2_unit0_vt0_conf1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site2_unit0_vt0_conf1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site2_unit0_vt0_conf1`] module*/
-pub type COMB_PD_SITE2_UNIT0_VT0_CONF1 =
-    crate::Reg<comb_pd_site2_unit0_vt0_conf1::COMB_PD_SITE2_UNIT0_VT0_CONF1_SPEC>;
+pub type COMB_PD_SITE2_UNIT0_VT0_CONF1 = crate::Reg<
+    comb_pd_site2_unit0_vt0_conf1::COMB_PD_SITE2_UNIT0_VT0_CONF1_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site2_unit0_vt0_conf1;
 /**COMB_PD_SITE2_UNIT1_VT0_CONF1 (rw) register accessor: needs desc
@@ -1188,8 +1213,9 @@ pub mod comb_pd_site2_unit0_vt0_conf1;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site2_unit1_vt0_conf1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site2_unit1_vt0_conf1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site2_unit1_vt0_conf1`] module*/
-pub type COMB_PD_SITE2_UNIT1_VT0_CONF1 =
-    crate::Reg<comb_pd_site2_unit1_vt0_conf1::COMB_PD_SITE2_UNIT1_VT0_CONF1_SPEC>;
+pub type COMB_PD_SITE2_UNIT1_VT0_CONF1 = crate::Reg<
+    comb_pd_site2_unit1_vt0_conf1::COMB_PD_SITE2_UNIT1_VT0_CONF1_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site2_unit1_vt0_conf1;
 /**COMB_PD_SITE2_UNIT2_VT0_CONF1 (rw) register accessor: needs desc
@@ -1197,8 +1223,9 @@ pub mod comb_pd_site2_unit1_vt0_conf1;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site2_unit2_vt0_conf1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site2_unit2_vt0_conf1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site2_unit2_vt0_conf1`] module*/
-pub type COMB_PD_SITE2_UNIT2_VT0_CONF1 =
-    crate::Reg<comb_pd_site2_unit2_vt0_conf1::COMB_PD_SITE2_UNIT2_VT0_CONF1_SPEC>;
+pub type COMB_PD_SITE2_UNIT2_VT0_CONF1 = crate::Reg<
+    comb_pd_site2_unit2_vt0_conf1::COMB_PD_SITE2_UNIT2_VT0_CONF1_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site2_unit2_vt0_conf1;
 /**COMB_PD_SITE2_UNIT3_VT0_CONF1 (rw) register accessor: needs desc
@@ -1206,8 +1233,9 @@ pub mod comb_pd_site2_unit2_vt0_conf1;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site2_unit3_vt0_conf1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site2_unit3_vt0_conf1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site2_unit3_vt0_conf1`] module*/
-pub type COMB_PD_SITE2_UNIT3_VT0_CONF1 =
-    crate::Reg<comb_pd_site2_unit3_vt0_conf1::COMB_PD_SITE2_UNIT3_VT0_CONF1_SPEC>;
+pub type COMB_PD_SITE2_UNIT3_VT0_CONF1 = crate::Reg<
+    comb_pd_site2_unit3_vt0_conf1::COMB_PD_SITE2_UNIT3_VT0_CONF1_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site2_unit3_vt0_conf1;
 /**COMB_PD_SITE2_UNIT0_VT1_CONF1 (rw) register accessor: needs desc
@@ -1215,8 +1243,9 @@ pub mod comb_pd_site2_unit3_vt0_conf1;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site2_unit0_vt1_conf1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site2_unit0_vt1_conf1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site2_unit0_vt1_conf1`] module*/
-pub type COMB_PD_SITE2_UNIT0_VT1_CONF1 =
-    crate::Reg<comb_pd_site2_unit0_vt1_conf1::COMB_PD_SITE2_UNIT0_VT1_CONF1_SPEC>;
+pub type COMB_PD_SITE2_UNIT0_VT1_CONF1 = crate::Reg<
+    comb_pd_site2_unit0_vt1_conf1::COMB_PD_SITE2_UNIT0_VT1_CONF1_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site2_unit0_vt1_conf1;
 /**COMB_PD_SITE2_UNIT1_VT1_CONF1 (rw) register accessor: needs desc
@@ -1224,8 +1253,9 @@ pub mod comb_pd_site2_unit0_vt1_conf1;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site2_unit1_vt1_conf1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site2_unit1_vt1_conf1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site2_unit1_vt1_conf1`] module*/
-pub type COMB_PD_SITE2_UNIT1_VT1_CONF1 =
-    crate::Reg<comb_pd_site2_unit1_vt1_conf1::COMB_PD_SITE2_UNIT1_VT1_CONF1_SPEC>;
+pub type COMB_PD_SITE2_UNIT1_VT1_CONF1 = crate::Reg<
+    comb_pd_site2_unit1_vt1_conf1::COMB_PD_SITE2_UNIT1_VT1_CONF1_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site2_unit1_vt1_conf1;
 /**COMB_PD_SITE2_UNIT2_VT1_CONF1 (rw) register accessor: needs desc
@@ -1233,8 +1263,9 @@ pub mod comb_pd_site2_unit1_vt1_conf1;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site2_unit2_vt1_conf1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site2_unit2_vt1_conf1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site2_unit2_vt1_conf1`] module*/
-pub type COMB_PD_SITE2_UNIT2_VT1_CONF1 =
-    crate::Reg<comb_pd_site2_unit2_vt1_conf1::COMB_PD_SITE2_UNIT2_VT1_CONF1_SPEC>;
+pub type COMB_PD_SITE2_UNIT2_VT1_CONF1 = crate::Reg<
+    comb_pd_site2_unit2_vt1_conf1::COMB_PD_SITE2_UNIT2_VT1_CONF1_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site2_unit2_vt1_conf1;
 /**COMB_PD_SITE2_UNIT3_VT1_CONF1 (rw) register accessor: needs desc
@@ -1242,8 +1273,9 @@ pub mod comb_pd_site2_unit2_vt1_conf1;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site2_unit3_vt1_conf1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site2_unit3_vt1_conf1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site2_unit3_vt1_conf1`] module*/
-pub type COMB_PD_SITE2_UNIT3_VT1_CONF1 =
-    crate::Reg<comb_pd_site2_unit3_vt1_conf1::COMB_PD_SITE2_UNIT3_VT1_CONF1_SPEC>;
+pub type COMB_PD_SITE2_UNIT3_VT1_CONF1 = crate::Reg<
+    comb_pd_site2_unit3_vt1_conf1::COMB_PD_SITE2_UNIT3_VT1_CONF1_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site2_unit3_vt1_conf1;
 /**COMB_PD_SITE2_UNIT0_VT2_CONF1 (rw) register accessor: needs desc
@@ -1251,8 +1283,9 @@ pub mod comb_pd_site2_unit3_vt1_conf1;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site2_unit0_vt2_conf1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site2_unit0_vt2_conf1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site2_unit0_vt2_conf1`] module*/
-pub type COMB_PD_SITE2_UNIT0_VT2_CONF1 =
-    crate::Reg<comb_pd_site2_unit0_vt2_conf1::COMB_PD_SITE2_UNIT0_VT2_CONF1_SPEC>;
+pub type COMB_PD_SITE2_UNIT0_VT2_CONF1 = crate::Reg<
+    comb_pd_site2_unit0_vt2_conf1::COMB_PD_SITE2_UNIT0_VT2_CONF1_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site2_unit0_vt2_conf1;
 /**COMB_PD_SITE2_UNIT1_VT2_CONF1 (rw) register accessor: needs desc
@@ -1260,8 +1293,9 @@ pub mod comb_pd_site2_unit0_vt2_conf1;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site2_unit1_vt2_conf1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site2_unit1_vt2_conf1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site2_unit1_vt2_conf1`] module*/
-pub type COMB_PD_SITE2_UNIT1_VT2_CONF1 =
-    crate::Reg<comb_pd_site2_unit1_vt2_conf1::COMB_PD_SITE2_UNIT1_VT2_CONF1_SPEC>;
+pub type COMB_PD_SITE2_UNIT1_VT2_CONF1 = crate::Reg<
+    comb_pd_site2_unit1_vt2_conf1::COMB_PD_SITE2_UNIT1_VT2_CONF1_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site2_unit1_vt2_conf1;
 /**COMB_PD_SITE2_UNIT2_VT2_CONF1 (rw) register accessor: needs desc
@@ -1269,8 +1303,9 @@ pub mod comb_pd_site2_unit1_vt2_conf1;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site2_unit2_vt2_conf1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site2_unit2_vt2_conf1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site2_unit2_vt2_conf1`] module*/
-pub type COMB_PD_SITE2_UNIT2_VT2_CONF1 =
-    crate::Reg<comb_pd_site2_unit2_vt2_conf1::COMB_PD_SITE2_UNIT2_VT2_CONF1_SPEC>;
+pub type COMB_PD_SITE2_UNIT2_VT2_CONF1 = crate::Reg<
+    comb_pd_site2_unit2_vt2_conf1::COMB_PD_SITE2_UNIT2_VT2_CONF1_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site2_unit2_vt2_conf1;
 /**COMB_PD_SITE2_UNIT3_VT2_CONF1 (rw) register accessor: needs desc
@@ -1278,8 +1313,9 @@ pub mod comb_pd_site2_unit2_vt2_conf1;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site2_unit3_vt2_conf1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site2_unit3_vt2_conf1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site2_unit3_vt2_conf1`] module*/
-pub type COMB_PD_SITE2_UNIT3_VT2_CONF1 =
-    crate::Reg<comb_pd_site2_unit3_vt2_conf1::COMB_PD_SITE2_UNIT3_VT2_CONF1_SPEC>;
+pub type COMB_PD_SITE2_UNIT3_VT2_CONF1 = crate::Reg<
+    comb_pd_site2_unit3_vt2_conf1::COMB_PD_SITE2_UNIT3_VT2_CONF1_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site2_unit3_vt2_conf1;
 /**COMB_PD_SITE3_UNIT0_VT0_CONF1 (rw) register accessor: needs desc
@@ -1287,8 +1323,9 @@ pub mod comb_pd_site2_unit3_vt2_conf1;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site3_unit0_vt0_conf1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site3_unit0_vt0_conf1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site3_unit0_vt0_conf1`] module*/
-pub type COMB_PD_SITE3_UNIT0_VT0_CONF1 =
-    crate::Reg<comb_pd_site3_unit0_vt0_conf1::COMB_PD_SITE3_UNIT0_VT0_CONF1_SPEC>;
+pub type COMB_PD_SITE3_UNIT0_VT0_CONF1 = crate::Reg<
+    comb_pd_site3_unit0_vt0_conf1::COMB_PD_SITE3_UNIT0_VT0_CONF1_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site3_unit0_vt0_conf1;
 /**COMB_PD_SITE3_UNIT1_VT0_CONF1 (rw) register accessor: needs desc
@@ -1296,8 +1333,9 @@ pub mod comb_pd_site3_unit0_vt0_conf1;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site3_unit1_vt0_conf1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site3_unit1_vt0_conf1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site3_unit1_vt0_conf1`] module*/
-pub type COMB_PD_SITE3_UNIT1_VT0_CONF1 =
-    crate::Reg<comb_pd_site3_unit1_vt0_conf1::COMB_PD_SITE3_UNIT1_VT0_CONF1_SPEC>;
+pub type COMB_PD_SITE3_UNIT1_VT0_CONF1 = crate::Reg<
+    comb_pd_site3_unit1_vt0_conf1::COMB_PD_SITE3_UNIT1_VT0_CONF1_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site3_unit1_vt0_conf1;
 /**COMB_PD_SITE3_UNIT2_VT0_CONF1 (rw) register accessor: needs desc
@@ -1305,8 +1343,9 @@ pub mod comb_pd_site3_unit1_vt0_conf1;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site3_unit2_vt0_conf1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site3_unit2_vt0_conf1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site3_unit2_vt0_conf1`] module*/
-pub type COMB_PD_SITE3_UNIT2_VT0_CONF1 =
-    crate::Reg<comb_pd_site3_unit2_vt0_conf1::COMB_PD_SITE3_UNIT2_VT0_CONF1_SPEC>;
+pub type COMB_PD_SITE3_UNIT2_VT0_CONF1 = crate::Reg<
+    comb_pd_site3_unit2_vt0_conf1::COMB_PD_SITE3_UNIT2_VT0_CONF1_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site3_unit2_vt0_conf1;
 /**COMB_PD_SITE3_UNIT3_VT0_CONF1 (rw) register accessor: needs desc
@@ -1314,8 +1353,9 @@ pub mod comb_pd_site3_unit2_vt0_conf1;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site3_unit3_vt0_conf1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site3_unit3_vt0_conf1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site3_unit3_vt0_conf1`] module*/
-pub type COMB_PD_SITE3_UNIT3_VT0_CONF1 =
-    crate::Reg<comb_pd_site3_unit3_vt0_conf1::COMB_PD_SITE3_UNIT3_VT0_CONF1_SPEC>;
+pub type COMB_PD_SITE3_UNIT3_VT0_CONF1 = crate::Reg<
+    comb_pd_site3_unit3_vt0_conf1::COMB_PD_SITE3_UNIT3_VT0_CONF1_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site3_unit3_vt0_conf1;
 /**COMB_PD_SITE3_UNIT0_VT1_CONF1 (rw) register accessor: needs desc
@@ -1323,8 +1363,9 @@ pub mod comb_pd_site3_unit3_vt0_conf1;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site3_unit0_vt1_conf1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site3_unit0_vt1_conf1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site3_unit0_vt1_conf1`] module*/
-pub type COMB_PD_SITE3_UNIT0_VT1_CONF1 =
-    crate::Reg<comb_pd_site3_unit0_vt1_conf1::COMB_PD_SITE3_UNIT0_VT1_CONF1_SPEC>;
+pub type COMB_PD_SITE3_UNIT0_VT1_CONF1 = crate::Reg<
+    comb_pd_site3_unit0_vt1_conf1::COMB_PD_SITE3_UNIT0_VT1_CONF1_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site3_unit0_vt1_conf1;
 /**COMB_PD_SITE3_UNIT1_VT1_CONF1 (rw) register accessor: needs desc
@@ -1332,8 +1373,9 @@ pub mod comb_pd_site3_unit0_vt1_conf1;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site3_unit1_vt1_conf1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site3_unit1_vt1_conf1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site3_unit1_vt1_conf1`] module*/
-pub type COMB_PD_SITE3_UNIT1_VT1_CONF1 =
-    crate::Reg<comb_pd_site3_unit1_vt1_conf1::COMB_PD_SITE3_UNIT1_VT1_CONF1_SPEC>;
+pub type COMB_PD_SITE3_UNIT1_VT1_CONF1 = crate::Reg<
+    comb_pd_site3_unit1_vt1_conf1::COMB_PD_SITE3_UNIT1_VT1_CONF1_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site3_unit1_vt1_conf1;
 /**COMB_PD_SITE3_UNIT2_VT1_CONF1 (rw) register accessor: needs desc
@@ -1341,8 +1383,9 @@ pub mod comb_pd_site3_unit1_vt1_conf1;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site3_unit2_vt1_conf1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site3_unit2_vt1_conf1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site3_unit2_vt1_conf1`] module*/
-pub type COMB_PD_SITE3_UNIT2_VT1_CONF1 =
-    crate::Reg<comb_pd_site3_unit2_vt1_conf1::COMB_PD_SITE3_UNIT2_VT1_CONF1_SPEC>;
+pub type COMB_PD_SITE3_UNIT2_VT1_CONF1 = crate::Reg<
+    comb_pd_site3_unit2_vt1_conf1::COMB_PD_SITE3_UNIT2_VT1_CONF1_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site3_unit2_vt1_conf1;
 /**COMB_PD_SITE3_UNIT3_VT1_CONF1 (rw) register accessor: needs desc
@@ -1350,8 +1393,9 @@ pub mod comb_pd_site3_unit2_vt1_conf1;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site3_unit3_vt1_conf1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site3_unit3_vt1_conf1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site3_unit3_vt1_conf1`] module*/
-pub type COMB_PD_SITE3_UNIT3_VT1_CONF1 =
-    crate::Reg<comb_pd_site3_unit3_vt1_conf1::COMB_PD_SITE3_UNIT3_VT1_CONF1_SPEC>;
+pub type COMB_PD_SITE3_UNIT3_VT1_CONF1 = crate::Reg<
+    comb_pd_site3_unit3_vt1_conf1::COMB_PD_SITE3_UNIT3_VT1_CONF1_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site3_unit3_vt1_conf1;
 /**COMB_PD_SITE3_UNIT0_VT2_CONF1 (rw) register accessor: needs desc
@@ -1359,8 +1403,9 @@ pub mod comb_pd_site3_unit3_vt1_conf1;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site3_unit0_vt2_conf1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site3_unit0_vt2_conf1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site3_unit0_vt2_conf1`] module*/
-pub type COMB_PD_SITE3_UNIT0_VT2_CONF1 =
-    crate::Reg<comb_pd_site3_unit0_vt2_conf1::COMB_PD_SITE3_UNIT0_VT2_CONF1_SPEC>;
+pub type COMB_PD_SITE3_UNIT0_VT2_CONF1 = crate::Reg<
+    comb_pd_site3_unit0_vt2_conf1::COMB_PD_SITE3_UNIT0_VT2_CONF1_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site3_unit0_vt2_conf1;
 /**COMB_PD_SITE3_UNIT1_VT2_CONF1 (rw) register accessor: needs desc
@@ -1368,8 +1413,9 @@ pub mod comb_pd_site3_unit0_vt2_conf1;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site3_unit1_vt2_conf1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site3_unit1_vt2_conf1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site3_unit1_vt2_conf1`] module*/
-pub type COMB_PD_SITE3_UNIT1_VT2_CONF1 =
-    crate::Reg<comb_pd_site3_unit1_vt2_conf1::COMB_PD_SITE3_UNIT1_VT2_CONF1_SPEC>;
+pub type COMB_PD_SITE3_UNIT1_VT2_CONF1 = crate::Reg<
+    comb_pd_site3_unit1_vt2_conf1::COMB_PD_SITE3_UNIT1_VT2_CONF1_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site3_unit1_vt2_conf1;
 /**COMB_PD_SITE3_UNIT2_VT2_CONF1 (rw) register accessor: needs desc
@@ -1377,8 +1423,9 @@ pub mod comb_pd_site3_unit1_vt2_conf1;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site3_unit2_vt2_conf1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site3_unit2_vt2_conf1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site3_unit2_vt2_conf1`] module*/
-pub type COMB_PD_SITE3_UNIT2_VT2_CONF1 =
-    crate::Reg<comb_pd_site3_unit2_vt2_conf1::COMB_PD_SITE3_UNIT2_VT2_CONF1_SPEC>;
+pub type COMB_PD_SITE3_UNIT2_VT2_CONF1 = crate::Reg<
+    comb_pd_site3_unit2_vt2_conf1::COMB_PD_SITE3_UNIT2_VT2_CONF1_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site3_unit2_vt2_conf1;
 /**COMB_PD_SITE3_UNIT3_VT2_CONF1 (rw) register accessor: needs desc
@@ -1386,8 +1433,9 @@ pub mod comb_pd_site3_unit2_vt2_conf1;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site3_unit3_vt2_conf1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site3_unit3_vt2_conf1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site3_unit3_vt2_conf1`] module*/
-pub type COMB_PD_SITE3_UNIT3_VT2_CONF1 =
-    crate::Reg<comb_pd_site3_unit3_vt2_conf1::COMB_PD_SITE3_UNIT3_VT2_CONF1_SPEC>;
+pub type COMB_PD_SITE3_UNIT3_VT2_CONF1 = crate::Reg<
+    comb_pd_site3_unit3_vt2_conf1::COMB_PD_SITE3_UNIT3_VT2_CONF1_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site3_unit3_vt2_conf1;
 /**COMB_PD_SITE0_UNIT0_VT0_CONF2 (rw) register accessor: needs desc
@@ -1395,8 +1443,9 @@ pub mod comb_pd_site3_unit3_vt2_conf1;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site0_unit0_vt0_conf2::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site0_unit0_vt0_conf2::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site0_unit0_vt0_conf2`] module*/
-pub type COMB_PD_SITE0_UNIT0_VT0_CONF2 =
-    crate::Reg<comb_pd_site0_unit0_vt0_conf2::COMB_PD_SITE0_UNIT0_VT0_CONF2_SPEC>;
+pub type COMB_PD_SITE0_UNIT0_VT0_CONF2 = crate::Reg<
+    comb_pd_site0_unit0_vt0_conf2::COMB_PD_SITE0_UNIT0_VT0_CONF2_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site0_unit0_vt0_conf2;
 /**COMB_PD_SITE0_UNIT1_VT0_CONF2 (rw) register accessor: needs desc
@@ -1404,8 +1453,9 @@ pub mod comb_pd_site0_unit0_vt0_conf2;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site0_unit1_vt0_conf2::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site0_unit1_vt0_conf2::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site0_unit1_vt0_conf2`] module*/
-pub type COMB_PD_SITE0_UNIT1_VT0_CONF2 =
-    crate::Reg<comb_pd_site0_unit1_vt0_conf2::COMB_PD_SITE0_UNIT1_VT0_CONF2_SPEC>;
+pub type COMB_PD_SITE0_UNIT1_VT0_CONF2 = crate::Reg<
+    comb_pd_site0_unit1_vt0_conf2::COMB_PD_SITE0_UNIT1_VT0_CONF2_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site0_unit1_vt0_conf2;
 /**COMB_PD_SITE0_UNIT2_VT0_CONF2 (rw) register accessor: needs desc
@@ -1413,8 +1463,9 @@ pub mod comb_pd_site0_unit1_vt0_conf2;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site0_unit2_vt0_conf2::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site0_unit2_vt0_conf2::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site0_unit2_vt0_conf2`] module*/
-pub type COMB_PD_SITE0_UNIT2_VT0_CONF2 =
-    crate::Reg<comb_pd_site0_unit2_vt0_conf2::COMB_PD_SITE0_UNIT2_VT0_CONF2_SPEC>;
+pub type COMB_PD_SITE0_UNIT2_VT0_CONF2 = crate::Reg<
+    comb_pd_site0_unit2_vt0_conf2::COMB_PD_SITE0_UNIT2_VT0_CONF2_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site0_unit2_vt0_conf2;
 /**COMB_PD_SITE0_UNIT3_VT0_CONF2 (rw) register accessor: needs desc
@@ -1422,8 +1473,9 @@ pub mod comb_pd_site0_unit2_vt0_conf2;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site0_unit3_vt0_conf2::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site0_unit3_vt0_conf2::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site0_unit3_vt0_conf2`] module*/
-pub type COMB_PD_SITE0_UNIT3_VT0_CONF2 =
-    crate::Reg<comb_pd_site0_unit3_vt0_conf2::COMB_PD_SITE0_UNIT3_VT0_CONF2_SPEC>;
+pub type COMB_PD_SITE0_UNIT3_VT0_CONF2 = crate::Reg<
+    comb_pd_site0_unit3_vt0_conf2::COMB_PD_SITE0_UNIT3_VT0_CONF2_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site0_unit3_vt0_conf2;
 /**COMB_PD_SITE0_UNIT0_VT1_CONF2 (rw) register accessor: needs desc
@@ -1431,8 +1483,9 @@ pub mod comb_pd_site0_unit3_vt0_conf2;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site0_unit0_vt1_conf2::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site0_unit0_vt1_conf2::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site0_unit0_vt1_conf2`] module*/
-pub type COMB_PD_SITE0_UNIT0_VT1_CONF2 =
-    crate::Reg<comb_pd_site0_unit0_vt1_conf2::COMB_PD_SITE0_UNIT0_VT1_CONF2_SPEC>;
+pub type COMB_PD_SITE0_UNIT0_VT1_CONF2 = crate::Reg<
+    comb_pd_site0_unit0_vt1_conf2::COMB_PD_SITE0_UNIT0_VT1_CONF2_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site0_unit0_vt1_conf2;
 /**COMB_PD_SITE0_UNIT1_VT1_CONF2 (rw) register accessor: needs desc
@@ -1440,8 +1493,9 @@ pub mod comb_pd_site0_unit0_vt1_conf2;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site0_unit1_vt1_conf2::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site0_unit1_vt1_conf2::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site0_unit1_vt1_conf2`] module*/
-pub type COMB_PD_SITE0_UNIT1_VT1_CONF2 =
-    crate::Reg<comb_pd_site0_unit1_vt1_conf2::COMB_PD_SITE0_UNIT1_VT1_CONF2_SPEC>;
+pub type COMB_PD_SITE0_UNIT1_VT1_CONF2 = crate::Reg<
+    comb_pd_site0_unit1_vt1_conf2::COMB_PD_SITE0_UNIT1_VT1_CONF2_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site0_unit1_vt1_conf2;
 /**COMB_PD_SITE0_UNIT2_VT1_CONF2 (rw) register accessor: needs desc
@@ -1449,8 +1503,9 @@ pub mod comb_pd_site0_unit1_vt1_conf2;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site0_unit2_vt1_conf2::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site0_unit2_vt1_conf2::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site0_unit2_vt1_conf2`] module*/
-pub type COMB_PD_SITE0_UNIT2_VT1_CONF2 =
-    crate::Reg<comb_pd_site0_unit2_vt1_conf2::COMB_PD_SITE0_UNIT2_VT1_CONF2_SPEC>;
+pub type COMB_PD_SITE0_UNIT2_VT1_CONF2 = crate::Reg<
+    comb_pd_site0_unit2_vt1_conf2::COMB_PD_SITE0_UNIT2_VT1_CONF2_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site0_unit2_vt1_conf2;
 /**COMB_PD_SITE0_UNIT3_VT1_CONF2 (rw) register accessor: needs desc
@@ -1458,8 +1513,9 @@ pub mod comb_pd_site0_unit2_vt1_conf2;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site0_unit3_vt1_conf2::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site0_unit3_vt1_conf2::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site0_unit3_vt1_conf2`] module*/
-pub type COMB_PD_SITE0_UNIT3_VT1_CONF2 =
-    crate::Reg<comb_pd_site0_unit3_vt1_conf2::COMB_PD_SITE0_UNIT3_VT1_CONF2_SPEC>;
+pub type COMB_PD_SITE0_UNIT3_VT1_CONF2 = crate::Reg<
+    comb_pd_site0_unit3_vt1_conf2::COMB_PD_SITE0_UNIT3_VT1_CONF2_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site0_unit3_vt1_conf2;
 /**COMB_PD_SITE0_UNIT0_VT2_CONF2 (rw) register accessor: needs desc
@@ -1467,8 +1523,9 @@ pub mod comb_pd_site0_unit3_vt1_conf2;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site0_unit0_vt2_conf2::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site0_unit0_vt2_conf2::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site0_unit0_vt2_conf2`] module*/
-pub type COMB_PD_SITE0_UNIT0_VT2_CONF2 =
-    crate::Reg<comb_pd_site0_unit0_vt2_conf2::COMB_PD_SITE0_UNIT0_VT2_CONF2_SPEC>;
+pub type COMB_PD_SITE0_UNIT0_VT2_CONF2 = crate::Reg<
+    comb_pd_site0_unit0_vt2_conf2::COMB_PD_SITE0_UNIT0_VT2_CONF2_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site0_unit0_vt2_conf2;
 /**COMB_PD_SITE0_UNIT1_VT2_CONF2 (rw) register accessor: needs desc
@@ -1476,8 +1533,9 @@ pub mod comb_pd_site0_unit0_vt2_conf2;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site0_unit1_vt2_conf2::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site0_unit1_vt2_conf2::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site0_unit1_vt2_conf2`] module*/
-pub type COMB_PD_SITE0_UNIT1_VT2_CONF2 =
-    crate::Reg<comb_pd_site0_unit1_vt2_conf2::COMB_PD_SITE0_UNIT1_VT2_CONF2_SPEC>;
+pub type COMB_PD_SITE0_UNIT1_VT2_CONF2 = crate::Reg<
+    comb_pd_site0_unit1_vt2_conf2::COMB_PD_SITE0_UNIT1_VT2_CONF2_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site0_unit1_vt2_conf2;
 /**COMB_PD_SITE0_UNIT2_VT2_CONF2 (rw) register accessor: needs desc
@@ -1485,8 +1543,9 @@ pub mod comb_pd_site0_unit1_vt2_conf2;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site0_unit2_vt2_conf2::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site0_unit2_vt2_conf2::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site0_unit2_vt2_conf2`] module*/
-pub type COMB_PD_SITE0_UNIT2_VT2_CONF2 =
-    crate::Reg<comb_pd_site0_unit2_vt2_conf2::COMB_PD_SITE0_UNIT2_VT2_CONF2_SPEC>;
+pub type COMB_PD_SITE0_UNIT2_VT2_CONF2 = crate::Reg<
+    comb_pd_site0_unit2_vt2_conf2::COMB_PD_SITE0_UNIT2_VT2_CONF2_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site0_unit2_vt2_conf2;
 /**COMB_PD_SITE0_UNIT3_VT2_CONF2 (rw) register accessor: needs desc
@@ -1494,8 +1553,9 @@ pub mod comb_pd_site0_unit2_vt2_conf2;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site0_unit3_vt2_conf2::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site0_unit3_vt2_conf2::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site0_unit3_vt2_conf2`] module*/
-pub type COMB_PD_SITE0_UNIT3_VT2_CONF2 =
-    crate::Reg<comb_pd_site0_unit3_vt2_conf2::COMB_PD_SITE0_UNIT3_VT2_CONF2_SPEC>;
+pub type COMB_PD_SITE0_UNIT3_VT2_CONF2 = crate::Reg<
+    comb_pd_site0_unit3_vt2_conf2::COMB_PD_SITE0_UNIT3_VT2_CONF2_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site0_unit3_vt2_conf2;
 /**COMB_PD_SITE1_UNIT0_VT0_CONF2 (rw) register accessor: needs desc
@@ -1503,8 +1563,9 @@ pub mod comb_pd_site0_unit3_vt2_conf2;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site1_unit0_vt0_conf2::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site1_unit0_vt0_conf2::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site1_unit0_vt0_conf2`] module*/
-pub type COMB_PD_SITE1_UNIT0_VT0_CONF2 =
-    crate::Reg<comb_pd_site1_unit0_vt0_conf2::COMB_PD_SITE1_UNIT0_VT0_CONF2_SPEC>;
+pub type COMB_PD_SITE1_UNIT0_VT0_CONF2 = crate::Reg<
+    comb_pd_site1_unit0_vt0_conf2::COMB_PD_SITE1_UNIT0_VT0_CONF2_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site1_unit0_vt0_conf2;
 /**COMB_PD_SITE1_UNIT1_VT0_CONF2 (rw) register accessor: needs desc
@@ -1512,8 +1573,9 @@ pub mod comb_pd_site1_unit0_vt0_conf2;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site1_unit1_vt0_conf2::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site1_unit1_vt0_conf2::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site1_unit1_vt0_conf2`] module*/
-pub type COMB_PD_SITE1_UNIT1_VT0_CONF2 =
-    crate::Reg<comb_pd_site1_unit1_vt0_conf2::COMB_PD_SITE1_UNIT1_VT0_CONF2_SPEC>;
+pub type COMB_PD_SITE1_UNIT1_VT0_CONF2 = crate::Reg<
+    comb_pd_site1_unit1_vt0_conf2::COMB_PD_SITE1_UNIT1_VT0_CONF2_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site1_unit1_vt0_conf2;
 /**COMB_PD_SITE1_UNIT2_VT0_CONF2 (rw) register accessor: needs desc
@@ -1521,8 +1583,9 @@ pub mod comb_pd_site1_unit1_vt0_conf2;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site1_unit2_vt0_conf2::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site1_unit2_vt0_conf2::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site1_unit2_vt0_conf2`] module*/
-pub type COMB_PD_SITE1_UNIT2_VT0_CONF2 =
-    crate::Reg<comb_pd_site1_unit2_vt0_conf2::COMB_PD_SITE1_UNIT2_VT0_CONF2_SPEC>;
+pub type COMB_PD_SITE1_UNIT2_VT0_CONF2 = crate::Reg<
+    comb_pd_site1_unit2_vt0_conf2::COMB_PD_SITE1_UNIT2_VT0_CONF2_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site1_unit2_vt0_conf2;
 /**COMB_PD_SITE1_UNIT3_VT0_CONF2 (rw) register accessor: needs desc
@@ -1530,8 +1593,9 @@ pub mod comb_pd_site1_unit2_vt0_conf2;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site1_unit3_vt0_conf2::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site1_unit3_vt0_conf2::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site1_unit3_vt0_conf2`] module*/
-pub type COMB_PD_SITE1_UNIT3_VT0_CONF2 =
-    crate::Reg<comb_pd_site1_unit3_vt0_conf2::COMB_PD_SITE1_UNIT3_VT0_CONF2_SPEC>;
+pub type COMB_PD_SITE1_UNIT3_VT0_CONF2 = crate::Reg<
+    comb_pd_site1_unit3_vt0_conf2::COMB_PD_SITE1_UNIT3_VT0_CONF2_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site1_unit3_vt0_conf2;
 /**COMB_PD_SITE1_UNIT0_VT1_CONF2 (rw) register accessor: needs desc
@@ -1539,8 +1603,9 @@ pub mod comb_pd_site1_unit3_vt0_conf2;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site1_unit0_vt1_conf2::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site1_unit0_vt1_conf2::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site1_unit0_vt1_conf2`] module*/
-pub type COMB_PD_SITE1_UNIT0_VT1_CONF2 =
-    crate::Reg<comb_pd_site1_unit0_vt1_conf2::COMB_PD_SITE1_UNIT0_VT1_CONF2_SPEC>;
+pub type COMB_PD_SITE1_UNIT0_VT1_CONF2 = crate::Reg<
+    comb_pd_site1_unit0_vt1_conf2::COMB_PD_SITE1_UNIT0_VT1_CONF2_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site1_unit0_vt1_conf2;
 /**COMB_PD_SITE1_UNIT1_VT1_CONF2 (rw) register accessor: needs desc
@@ -1548,8 +1613,9 @@ pub mod comb_pd_site1_unit0_vt1_conf2;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site1_unit1_vt1_conf2::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site1_unit1_vt1_conf2::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site1_unit1_vt1_conf2`] module*/
-pub type COMB_PD_SITE1_UNIT1_VT1_CONF2 =
-    crate::Reg<comb_pd_site1_unit1_vt1_conf2::COMB_PD_SITE1_UNIT1_VT1_CONF2_SPEC>;
+pub type COMB_PD_SITE1_UNIT1_VT1_CONF2 = crate::Reg<
+    comb_pd_site1_unit1_vt1_conf2::COMB_PD_SITE1_UNIT1_VT1_CONF2_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site1_unit1_vt1_conf2;
 /**COMB_PD_SITE1_UNIT2_VT1_CONF2 (rw) register accessor: needs desc
@@ -1557,8 +1623,9 @@ pub mod comb_pd_site1_unit1_vt1_conf2;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site1_unit2_vt1_conf2::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site1_unit2_vt1_conf2::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site1_unit2_vt1_conf2`] module*/
-pub type COMB_PD_SITE1_UNIT2_VT1_CONF2 =
-    crate::Reg<comb_pd_site1_unit2_vt1_conf2::COMB_PD_SITE1_UNIT2_VT1_CONF2_SPEC>;
+pub type COMB_PD_SITE1_UNIT2_VT1_CONF2 = crate::Reg<
+    comb_pd_site1_unit2_vt1_conf2::COMB_PD_SITE1_UNIT2_VT1_CONF2_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site1_unit2_vt1_conf2;
 /**COMB_PD_SITE1_UNIT3_VT1_CONF2 (rw) register accessor: needs desc
@@ -1566,8 +1633,9 @@ pub mod comb_pd_site1_unit2_vt1_conf2;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site1_unit3_vt1_conf2::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site1_unit3_vt1_conf2::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site1_unit3_vt1_conf2`] module*/
-pub type COMB_PD_SITE1_UNIT3_VT1_CONF2 =
-    crate::Reg<comb_pd_site1_unit3_vt1_conf2::COMB_PD_SITE1_UNIT3_VT1_CONF2_SPEC>;
+pub type COMB_PD_SITE1_UNIT3_VT1_CONF2 = crate::Reg<
+    comb_pd_site1_unit3_vt1_conf2::COMB_PD_SITE1_UNIT3_VT1_CONF2_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site1_unit3_vt1_conf2;
 /**COMB_PD_SITE1_UNIT0_VT2_CONF2 (rw) register accessor: needs desc
@@ -1575,8 +1643,9 @@ pub mod comb_pd_site1_unit3_vt1_conf2;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site1_unit0_vt2_conf2::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site1_unit0_vt2_conf2::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site1_unit0_vt2_conf2`] module*/
-pub type COMB_PD_SITE1_UNIT0_VT2_CONF2 =
-    crate::Reg<comb_pd_site1_unit0_vt2_conf2::COMB_PD_SITE1_UNIT0_VT2_CONF2_SPEC>;
+pub type COMB_PD_SITE1_UNIT0_VT2_CONF2 = crate::Reg<
+    comb_pd_site1_unit0_vt2_conf2::COMB_PD_SITE1_UNIT0_VT2_CONF2_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site1_unit0_vt2_conf2;
 /**COMB_PD_SITE1_UNIT1_VT2_CONF2 (rw) register accessor: needs desc
@@ -1584,8 +1653,9 @@ pub mod comb_pd_site1_unit0_vt2_conf2;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site1_unit1_vt2_conf2::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site1_unit1_vt2_conf2::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site1_unit1_vt2_conf2`] module*/
-pub type COMB_PD_SITE1_UNIT1_VT2_CONF2 =
-    crate::Reg<comb_pd_site1_unit1_vt2_conf2::COMB_PD_SITE1_UNIT1_VT2_CONF2_SPEC>;
+pub type COMB_PD_SITE1_UNIT1_VT2_CONF2 = crate::Reg<
+    comb_pd_site1_unit1_vt2_conf2::COMB_PD_SITE1_UNIT1_VT2_CONF2_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site1_unit1_vt2_conf2;
 /**COMB_PD_SITE1_UNIT2_VT2_CONF2 (rw) register accessor: needs desc
@@ -1593,8 +1663,9 @@ pub mod comb_pd_site1_unit1_vt2_conf2;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site1_unit2_vt2_conf2::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site1_unit2_vt2_conf2::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site1_unit2_vt2_conf2`] module*/
-pub type COMB_PD_SITE1_UNIT2_VT2_CONF2 =
-    crate::Reg<comb_pd_site1_unit2_vt2_conf2::COMB_PD_SITE1_UNIT2_VT2_CONF2_SPEC>;
+pub type COMB_PD_SITE1_UNIT2_VT2_CONF2 = crate::Reg<
+    comb_pd_site1_unit2_vt2_conf2::COMB_PD_SITE1_UNIT2_VT2_CONF2_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site1_unit2_vt2_conf2;
 /**COMB_PD_SITE1_UNIT3_VT2_CONF2 (rw) register accessor: needs desc
@@ -1602,8 +1673,9 @@ pub mod comb_pd_site1_unit2_vt2_conf2;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site1_unit3_vt2_conf2::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site1_unit3_vt2_conf2::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site1_unit3_vt2_conf2`] module*/
-pub type COMB_PD_SITE1_UNIT3_VT2_CONF2 =
-    crate::Reg<comb_pd_site1_unit3_vt2_conf2::COMB_PD_SITE1_UNIT3_VT2_CONF2_SPEC>;
+pub type COMB_PD_SITE1_UNIT3_VT2_CONF2 = crate::Reg<
+    comb_pd_site1_unit3_vt2_conf2::COMB_PD_SITE1_UNIT3_VT2_CONF2_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site1_unit3_vt2_conf2;
 /**COMB_PD_SITE2_UNIT0_VT0_CONF2 (rw) register accessor: needs desc
@@ -1611,8 +1683,9 @@ pub mod comb_pd_site1_unit3_vt2_conf2;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site2_unit0_vt0_conf2::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site2_unit0_vt0_conf2::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site2_unit0_vt0_conf2`] module*/
-pub type COMB_PD_SITE2_UNIT0_VT0_CONF2 =
-    crate::Reg<comb_pd_site2_unit0_vt0_conf2::COMB_PD_SITE2_UNIT0_VT0_CONF2_SPEC>;
+pub type COMB_PD_SITE2_UNIT0_VT0_CONF2 = crate::Reg<
+    comb_pd_site2_unit0_vt0_conf2::COMB_PD_SITE2_UNIT0_VT0_CONF2_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site2_unit0_vt0_conf2;
 /**COMB_PD_SITE2_UNIT1_VT0_CONF2 (rw) register accessor: needs desc
@@ -1620,8 +1693,9 @@ pub mod comb_pd_site2_unit0_vt0_conf2;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site2_unit1_vt0_conf2::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site2_unit1_vt0_conf2::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site2_unit1_vt0_conf2`] module*/
-pub type COMB_PD_SITE2_UNIT1_VT0_CONF2 =
-    crate::Reg<comb_pd_site2_unit1_vt0_conf2::COMB_PD_SITE2_UNIT1_VT0_CONF2_SPEC>;
+pub type COMB_PD_SITE2_UNIT1_VT0_CONF2 = crate::Reg<
+    comb_pd_site2_unit1_vt0_conf2::COMB_PD_SITE2_UNIT1_VT0_CONF2_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site2_unit1_vt0_conf2;
 /**COMB_PD_SITE2_UNIT2_VT0_CONF2 (rw) register accessor: needs desc
@@ -1629,8 +1703,9 @@ pub mod comb_pd_site2_unit1_vt0_conf2;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site2_unit2_vt0_conf2::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site2_unit2_vt0_conf2::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site2_unit2_vt0_conf2`] module*/
-pub type COMB_PD_SITE2_UNIT2_VT0_CONF2 =
-    crate::Reg<comb_pd_site2_unit2_vt0_conf2::COMB_PD_SITE2_UNIT2_VT0_CONF2_SPEC>;
+pub type COMB_PD_SITE2_UNIT2_VT0_CONF2 = crate::Reg<
+    comb_pd_site2_unit2_vt0_conf2::COMB_PD_SITE2_UNIT2_VT0_CONF2_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site2_unit2_vt0_conf2;
 /**COMB_PD_SITE2_UNIT3_VT0_CONF2 (rw) register accessor: needs desc
@@ -1638,8 +1713,9 @@ pub mod comb_pd_site2_unit2_vt0_conf2;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site2_unit3_vt0_conf2::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site2_unit3_vt0_conf2::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site2_unit3_vt0_conf2`] module*/
-pub type COMB_PD_SITE2_UNIT3_VT0_CONF2 =
-    crate::Reg<comb_pd_site2_unit3_vt0_conf2::COMB_PD_SITE2_UNIT3_VT0_CONF2_SPEC>;
+pub type COMB_PD_SITE2_UNIT3_VT0_CONF2 = crate::Reg<
+    comb_pd_site2_unit3_vt0_conf2::COMB_PD_SITE2_UNIT3_VT0_CONF2_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site2_unit3_vt0_conf2;
 /**COMB_PD_SITE2_UNIT0_VT1_CONF2 (rw) register accessor: needs desc
@@ -1647,8 +1723,9 @@ pub mod comb_pd_site2_unit3_vt0_conf2;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site2_unit0_vt1_conf2::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site2_unit0_vt1_conf2::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site2_unit0_vt1_conf2`] module*/
-pub type COMB_PD_SITE2_UNIT0_VT1_CONF2 =
-    crate::Reg<comb_pd_site2_unit0_vt1_conf2::COMB_PD_SITE2_UNIT0_VT1_CONF2_SPEC>;
+pub type COMB_PD_SITE2_UNIT0_VT1_CONF2 = crate::Reg<
+    comb_pd_site2_unit0_vt1_conf2::COMB_PD_SITE2_UNIT0_VT1_CONF2_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site2_unit0_vt1_conf2;
 /**COMB_PD_SITE2_UNIT1_VT1_CONF2 (rw) register accessor: needs desc
@@ -1656,8 +1733,9 @@ pub mod comb_pd_site2_unit0_vt1_conf2;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site2_unit1_vt1_conf2::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site2_unit1_vt1_conf2::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site2_unit1_vt1_conf2`] module*/
-pub type COMB_PD_SITE2_UNIT1_VT1_CONF2 =
-    crate::Reg<comb_pd_site2_unit1_vt1_conf2::COMB_PD_SITE2_UNIT1_VT1_CONF2_SPEC>;
+pub type COMB_PD_SITE2_UNIT1_VT1_CONF2 = crate::Reg<
+    comb_pd_site2_unit1_vt1_conf2::COMB_PD_SITE2_UNIT1_VT1_CONF2_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site2_unit1_vt1_conf2;
 /**COMB_PD_SITE2_UNIT2_VT1_CONF2 (rw) register accessor: needs desc
@@ -1665,8 +1743,9 @@ pub mod comb_pd_site2_unit1_vt1_conf2;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site2_unit2_vt1_conf2::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site2_unit2_vt1_conf2::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site2_unit2_vt1_conf2`] module*/
-pub type COMB_PD_SITE2_UNIT2_VT1_CONF2 =
-    crate::Reg<comb_pd_site2_unit2_vt1_conf2::COMB_PD_SITE2_UNIT2_VT1_CONF2_SPEC>;
+pub type COMB_PD_SITE2_UNIT2_VT1_CONF2 = crate::Reg<
+    comb_pd_site2_unit2_vt1_conf2::COMB_PD_SITE2_UNIT2_VT1_CONF2_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site2_unit2_vt1_conf2;
 /**COMB_PD_SITE2_UNIT3_VT1_CONF2 (rw) register accessor: needs desc
@@ -1674,8 +1753,9 @@ pub mod comb_pd_site2_unit2_vt1_conf2;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site2_unit3_vt1_conf2::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site2_unit3_vt1_conf2::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site2_unit3_vt1_conf2`] module*/
-pub type COMB_PD_SITE2_UNIT3_VT1_CONF2 =
-    crate::Reg<comb_pd_site2_unit3_vt1_conf2::COMB_PD_SITE2_UNIT3_VT1_CONF2_SPEC>;
+pub type COMB_PD_SITE2_UNIT3_VT1_CONF2 = crate::Reg<
+    comb_pd_site2_unit3_vt1_conf2::COMB_PD_SITE2_UNIT3_VT1_CONF2_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site2_unit3_vt1_conf2;
 /**COMB_PD_SITE2_UNIT0_VT2_CONF2 (rw) register accessor: needs desc
@@ -1683,8 +1763,9 @@ pub mod comb_pd_site2_unit3_vt1_conf2;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site2_unit0_vt2_conf2::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site2_unit0_vt2_conf2::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site2_unit0_vt2_conf2`] module*/
-pub type COMB_PD_SITE2_UNIT0_VT2_CONF2 =
-    crate::Reg<comb_pd_site2_unit0_vt2_conf2::COMB_PD_SITE2_UNIT0_VT2_CONF2_SPEC>;
+pub type COMB_PD_SITE2_UNIT0_VT2_CONF2 = crate::Reg<
+    comb_pd_site2_unit0_vt2_conf2::COMB_PD_SITE2_UNIT0_VT2_CONF2_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site2_unit0_vt2_conf2;
 /**COMB_PD_SITE2_UNIT1_VT2_CONF2 (rw) register accessor: needs desc
@@ -1692,8 +1773,9 @@ pub mod comb_pd_site2_unit0_vt2_conf2;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site2_unit1_vt2_conf2::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site2_unit1_vt2_conf2::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site2_unit1_vt2_conf2`] module*/
-pub type COMB_PD_SITE2_UNIT1_VT2_CONF2 =
-    crate::Reg<comb_pd_site2_unit1_vt2_conf2::COMB_PD_SITE2_UNIT1_VT2_CONF2_SPEC>;
+pub type COMB_PD_SITE2_UNIT1_VT2_CONF2 = crate::Reg<
+    comb_pd_site2_unit1_vt2_conf2::COMB_PD_SITE2_UNIT1_VT2_CONF2_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site2_unit1_vt2_conf2;
 /**COMB_PD_SITE2_UNIT2_VT2_CONF2 (rw) register accessor: needs desc
@@ -1701,8 +1783,9 @@ pub mod comb_pd_site2_unit1_vt2_conf2;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site2_unit2_vt2_conf2::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site2_unit2_vt2_conf2::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site2_unit2_vt2_conf2`] module*/
-pub type COMB_PD_SITE2_UNIT2_VT2_CONF2 =
-    crate::Reg<comb_pd_site2_unit2_vt2_conf2::COMB_PD_SITE2_UNIT2_VT2_CONF2_SPEC>;
+pub type COMB_PD_SITE2_UNIT2_VT2_CONF2 = crate::Reg<
+    comb_pd_site2_unit2_vt2_conf2::COMB_PD_SITE2_UNIT2_VT2_CONF2_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site2_unit2_vt2_conf2;
 /**COMB_PD_SITE2_UNIT3_VT2_CONF2 (rw) register accessor: needs desc
@@ -1710,8 +1793,9 @@ pub mod comb_pd_site2_unit2_vt2_conf2;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site2_unit3_vt2_conf2::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site2_unit3_vt2_conf2::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site2_unit3_vt2_conf2`] module*/
-pub type COMB_PD_SITE2_UNIT3_VT2_CONF2 =
-    crate::Reg<comb_pd_site2_unit3_vt2_conf2::COMB_PD_SITE2_UNIT3_VT2_CONF2_SPEC>;
+pub type COMB_PD_SITE2_UNIT3_VT2_CONF2 = crate::Reg<
+    comb_pd_site2_unit3_vt2_conf2::COMB_PD_SITE2_UNIT3_VT2_CONF2_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site2_unit3_vt2_conf2;
 /**COMB_PD_SITE3_UNIT0_VT0_CONF2 (rw) register accessor: needs desc
@@ -1719,8 +1803,9 @@ pub mod comb_pd_site2_unit3_vt2_conf2;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site3_unit0_vt0_conf2::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site3_unit0_vt0_conf2::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site3_unit0_vt0_conf2`] module*/
-pub type COMB_PD_SITE3_UNIT0_VT0_CONF2 =
-    crate::Reg<comb_pd_site3_unit0_vt0_conf2::COMB_PD_SITE3_UNIT0_VT0_CONF2_SPEC>;
+pub type COMB_PD_SITE3_UNIT0_VT0_CONF2 = crate::Reg<
+    comb_pd_site3_unit0_vt0_conf2::COMB_PD_SITE3_UNIT0_VT0_CONF2_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site3_unit0_vt0_conf2;
 /**COMB_PD_SITE3_UNIT1_VT0_CONF2 (rw) register accessor: needs desc
@@ -1728,8 +1813,9 @@ pub mod comb_pd_site3_unit0_vt0_conf2;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site3_unit1_vt0_conf2::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site3_unit1_vt0_conf2::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site3_unit1_vt0_conf2`] module*/
-pub type COMB_PD_SITE3_UNIT1_VT0_CONF2 =
-    crate::Reg<comb_pd_site3_unit1_vt0_conf2::COMB_PD_SITE3_UNIT1_VT0_CONF2_SPEC>;
+pub type COMB_PD_SITE3_UNIT1_VT0_CONF2 = crate::Reg<
+    comb_pd_site3_unit1_vt0_conf2::COMB_PD_SITE3_UNIT1_VT0_CONF2_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site3_unit1_vt0_conf2;
 /**COMB_PD_SITE3_UNIT2_VT0_CONF2 (rw) register accessor: needs desc
@@ -1737,8 +1823,9 @@ pub mod comb_pd_site3_unit1_vt0_conf2;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site3_unit2_vt0_conf2::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site3_unit2_vt0_conf2::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site3_unit2_vt0_conf2`] module*/
-pub type COMB_PD_SITE3_UNIT2_VT0_CONF2 =
-    crate::Reg<comb_pd_site3_unit2_vt0_conf2::COMB_PD_SITE3_UNIT2_VT0_CONF2_SPEC>;
+pub type COMB_PD_SITE3_UNIT2_VT0_CONF2 = crate::Reg<
+    comb_pd_site3_unit2_vt0_conf2::COMB_PD_SITE3_UNIT2_VT0_CONF2_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site3_unit2_vt0_conf2;
 /**COMB_PD_SITE3_UNIT3_VT0_CONF2 (rw) register accessor: needs desc
@@ -1746,8 +1833,9 @@ pub mod comb_pd_site3_unit2_vt0_conf2;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site3_unit3_vt0_conf2::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site3_unit3_vt0_conf2::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site3_unit3_vt0_conf2`] module*/
-pub type COMB_PD_SITE3_UNIT3_VT0_CONF2 =
-    crate::Reg<comb_pd_site3_unit3_vt0_conf2::COMB_PD_SITE3_UNIT3_VT0_CONF2_SPEC>;
+pub type COMB_PD_SITE3_UNIT3_VT0_CONF2 = crate::Reg<
+    comb_pd_site3_unit3_vt0_conf2::COMB_PD_SITE3_UNIT3_VT0_CONF2_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site3_unit3_vt0_conf2;
 /**COMB_PD_SITE3_UNIT0_VT1_CONF2 (rw) register accessor: needs desc
@@ -1755,8 +1843,9 @@ pub mod comb_pd_site3_unit3_vt0_conf2;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site3_unit0_vt1_conf2::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site3_unit0_vt1_conf2::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site3_unit0_vt1_conf2`] module*/
-pub type COMB_PD_SITE3_UNIT0_VT1_CONF2 =
-    crate::Reg<comb_pd_site3_unit0_vt1_conf2::COMB_PD_SITE3_UNIT0_VT1_CONF2_SPEC>;
+pub type COMB_PD_SITE3_UNIT0_VT1_CONF2 = crate::Reg<
+    comb_pd_site3_unit0_vt1_conf2::COMB_PD_SITE3_UNIT0_VT1_CONF2_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site3_unit0_vt1_conf2;
 /**COMB_PD_SITE3_UNIT1_VT1_CONF2 (rw) register accessor: needs desc
@@ -1764,8 +1853,9 @@ pub mod comb_pd_site3_unit0_vt1_conf2;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site3_unit1_vt1_conf2::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site3_unit1_vt1_conf2::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site3_unit1_vt1_conf2`] module*/
-pub type COMB_PD_SITE3_UNIT1_VT1_CONF2 =
-    crate::Reg<comb_pd_site3_unit1_vt1_conf2::COMB_PD_SITE3_UNIT1_VT1_CONF2_SPEC>;
+pub type COMB_PD_SITE3_UNIT1_VT1_CONF2 = crate::Reg<
+    comb_pd_site3_unit1_vt1_conf2::COMB_PD_SITE3_UNIT1_VT1_CONF2_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site3_unit1_vt1_conf2;
 /**COMB_PD_SITE3_UNIT2_VT1_CONF2 (rw) register accessor: needs desc
@@ -1773,8 +1863,9 @@ pub mod comb_pd_site3_unit1_vt1_conf2;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site3_unit2_vt1_conf2::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site3_unit2_vt1_conf2::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site3_unit2_vt1_conf2`] module*/
-pub type COMB_PD_SITE3_UNIT2_VT1_CONF2 =
-    crate::Reg<comb_pd_site3_unit2_vt1_conf2::COMB_PD_SITE3_UNIT2_VT1_CONF2_SPEC>;
+pub type COMB_PD_SITE3_UNIT2_VT1_CONF2 = crate::Reg<
+    comb_pd_site3_unit2_vt1_conf2::COMB_PD_SITE3_UNIT2_VT1_CONF2_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site3_unit2_vt1_conf2;
 /**COMB_PD_SITE3_UNIT3_VT1_CONF2 (rw) register accessor: needs desc
@@ -1782,8 +1873,9 @@ pub mod comb_pd_site3_unit2_vt1_conf2;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site3_unit3_vt1_conf2::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site3_unit3_vt1_conf2::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site3_unit3_vt1_conf2`] module*/
-pub type COMB_PD_SITE3_UNIT3_VT1_CONF2 =
-    crate::Reg<comb_pd_site3_unit3_vt1_conf2::COMB_PD_SITE3_UNIT3_VT1_CONF2_SPEC>;
+pub type COMB_PD_SITE3_UNIT3_VT1_CONF2 = crate::Reg<
+    comb_pd_site3_unit3_vt1_conf2::COMB_PD_SITE3_UNIT3_VT1_CONF2_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site3_unit3_vt1_conf2;
 /**COMB_PD_SITE3_UNIT0_VT2_CONF2 (rw) register accessor: needs desc
@@ -1791,8 +1883,9 @@ pub mod comb_pd_site3_unit3_vt1_conf2;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site3_unit0_vt2_conf2::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site3_unit0_vt2_conf2::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site3_unit0_vt2_conf2`] module*/
-pub type COMB_PD_SITE3_UNIT0_VT2_CONF2 =
-    crate::Reg<comb_pd_site3_unit0_vt2_conf2::COMB_PD_SITE3_UNIT0_VT2_CONF2_SPEC>;
+pub type COMB_PD_SITE3_UNIT0_VT2_CONF2 = crate::Reg<
+    comb_pd_site3_unit0_vt2_conf2::COMB_PD_SITE3_UNIT0_VT2_CONF2_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site3_unit0_vt2_conf2;
 /**COMB_PD_SITE3_UNIT1_VT2_CONF2 (rw) register accessor: needs desc
@@ -1800,8 +1893,9 @@ pub mod comb_pd_site3_unit0_vt2_conf2;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site3_unit1_vt2_conf2::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site3_unit1_vt2_conf2::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site3_unit1_vt2_conf2`] module*/
-pub type COMB_PD_SITE3_UNIT1_VT2_CONF2 =
-    crate::Reg<comb_pd_site3_unit1_vt2_conf2::COMB_PD_SITE3_UNIT1_VT2_CONF2_SPEC>;
+pub type COMB_PD_SITE3_UNIT1_VT2_CONF2 = crate::Reg<
+    comb_pd_site3_unit1_vt2_conf2::COMB_PD_SITE3_UNIT1_VT2_CONF2_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site3_unit1_vt2_conf2;
 /**COMB_PD_SITE3_UNIT2_VT2_CONF2 (rw) register accessor: needs desc
@@ -1809,8 +1903,9 @@ pub mod comb_pd_site3_unit1_vt2_conf2;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site3_unit2_vt2_conf2::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site3_unit2_vt2_conf2::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site3_unit2_vt2_conf2`] module*/
-pub type COMB_PD_SITE3_UNIT2_VT2_CONF2 =
-    crate::Reg<comb_pd_site3_unit2_vt2_conf2::COMB_PD_SITE3_UNIT2_VT2_CONF2_SPEC>;
+pub type COMB_PD_SITE3_UNIT2_VT2_CONF2 = crate::Reg<
+    comb_pd_site3_unit2_vt2_conf2::COMB_PD_SITE3_UNIT2_VT2_CONF2_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site3_unit2_vt2_conf2;
 /**COMB_PD_SITE3_UNIT3_VT2_CONF2 (rw) register accessor: needs desc
@@ -1818,8 +1913,9 @@ pub mod comb_pd_site3_unit2_vt2_conf2;
 You can [`read`](crate::generic::Reg::read) this register and get [`comb_pd_site3_unit3_vt2_conf2::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comb_pd_site3_unit3_vt2_conf2::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@comb_pd_site3_unit3_vt2_conf2`] module*/
-pub type COMB_PD_SITE3_UNIT3_VT2_CONF2 =
-    crate::Reg<comb_pd_site3_unit3_vt2_conf2::COMB_PD_SITE3_UNIT3_VT2_CONF2_SPEC>;
+pub type COMB_PD_SITE3_UNIT3_VT2_CONF2 = crate::Reg<
+    comb_pd_site3_unit3_vt2_conf2::COMB_PD_SITE3_UNIT3_VT2_CONF2_SPEC,
+>;
 ///needs desc
 pub mod comb_pd_site3_unit3_vt2_conf2;
 /**VALUE_UPDATE (rw) register accessor: needs field desc

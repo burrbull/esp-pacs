@@ -93,7 +93,9 @@ impl W {
     ///Bit 3 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn force_cnnt_no_reset(&mut self) -> FORCE_CNNT_NO_RESET_W<POWER_PD_CNNT_CNTL_SPEC> {
+    pub fn force_cnnt_no_reset(
+        &mut self,
+    ) -> FORCE_CNNT_NO_RESET_W<POWER_PD_CNNT_CNTL_SPEC> {
         FORCE_CNNT_NO_RESET_W::new(self, 3)
     }
     ///Bit 4 - need_des

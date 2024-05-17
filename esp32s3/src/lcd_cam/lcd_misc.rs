@@ -107,7 +107,9 @@ impl W {
     ///Bits 1:5 - Set the threshold for Async Tx FIFO full event.
     #[inline(always)]
     #[must_use]
-    pub fn lcd_afifo_threshold_num(&mut self) -> LCD_AFIFO_THRESHOLD_NUM_W<LCD_MISC_SPEC> {
+    pub fn lcd_afifo_threshold_num(
+        &mut self,
+    ) -> LCD_AFIFO_THRESHOLD_NUM_W<LCD_MISC_SPEC> {
         LCD_AFIFO_THRESHOLD_NUM_W::new(self, 1)
     }
     ///Bits 6:11 - Configure the setup cycles in LCD non-RGB mode. Setup cycles expected = this value + 1.

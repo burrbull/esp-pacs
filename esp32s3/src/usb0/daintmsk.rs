@@ -16,8 +16,7 @@ impl R {
     ///NOTE: `n` is number of field in register. `n == 0` corresponds to `INEPMSK0` field
     #[inline(always)]
     pub fn inepmsk(&self, n: u8) -> INEPMSK_R {
-        #[allow(clippy::no_effect)]
-        [(); 7][n as usize];
+        #[allow(clippy::no_effect)] [(); 7][n as usize];
         INEPMSK_R::new(((self.bits >> n) & 1) != 0)
     }
     ///Iterator for array of:
@@ -66,8 +65,7 @@ impl R {
     ///NOTE: `n` is number of field in register. `n == 0` corresponds to `OUTEPMSK0` field
     #[inline(always)]
     pub fn outepmsk(&self, n: u8) -> OUTEPMSK_R {
-        #[allow(clippy::no_effect)]
-        [(); 7][n as usize];
+        #[allow(clippy::no_effect)] [(); 7][n as usize];
         OUTEPMSK_R::new(((self.bits >> (n + 16)) & 1) != 0)
     }
     ///Iterator for array of:
@@ -140,8 +138,7 @@ impl W {
     #[inline(always)]
     #[must_use]
     pub fn inepmsk(&mut self, n: u8) -> INEPMSK_W<DAINTMSK_SPEC> {
-        #[allow(clippy::no_effect)]
-        [(); 7][n as usize];
+        #[allow(clippy::no_effect)] [(); 7][n as usize];
         INEPMSK_W::new(self, n)
     }
     ///Bit 0 - INEPMSK0
@@ -192,8 +189,7 @@ impl W {
     #[inline(always)]
     #[must_use]
     pub fn outepmsk(&mut self, n: u8) -> OUTEPMSK_W<DAINTMSK_SPEC> {
-        #[allow(clippy::no_effect)]
-        [(); 7][n as usize];
+        #[allow(clippy::no_effect)] [(); 7][n as usize];
         OUTEPMSK_W::new(self, n + 16)
     }
     ///Bit 16 - OUTEPMSK0

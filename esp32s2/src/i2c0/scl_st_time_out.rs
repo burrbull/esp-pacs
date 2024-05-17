@@ -16,9 +16,7 @@ impl R {
 #[cfg(feature = "impl-register-debug")]
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("SCL_ST_TIME_OUT")
-            .field("scl_st_to", &self.scl_st_to())
-            .finish()
+        f.debug_struct("SCL_ST_TIME_OUT").field("scl_st_to", &self.scl_st_to()).finish()
     }
 }
 impl W {

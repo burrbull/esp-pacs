@@ -71,7 +71,9 @@ impl RegisterBlock {
     }
     ///0x28 - cpu status register
     #[inline(always)]
-    pub const fn core_0_lastpc_before_exception(&self) -> &CORE_0_LASTPC_BEFORE_EXCEPTION {
+    pub const fn core_0_lastpc_before_exception(
+        &self,
+    ) -> &CORE_0_LASTPC_BEFORE_EXCEPTION {
         &self.core_0_lastpc_before_exception
     }
     ///0x2c - cpu status register
@@ -175,8 +177,9 @@ pub mod core_0_rcd_pdebugsp;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_0_lastpc_before_exception::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_0_lastpc_before_exception`] module*/
-pub type CORE_0_LASTPC_BEFORE_EXCEPTION =
-    crate::Reg<core_0_lastpc_before_exception::CORE_0_LASTPC_BEFORE_EXCEPTION_SPEC>;
+pub type CORE_0_LASTPC_BEFORE_EXCEPTION = crate::Reg<
+    core_0_lastpc_before_exception::CORE_0_LASTPC_BEFORE_EXCEPTION_SPEC,
+>;
 ///cpu status register
 pub mod core_0_lastpc_before_exception;
 /**CORE_0_DEBUG_MODE (r) register accessor: cpu status register

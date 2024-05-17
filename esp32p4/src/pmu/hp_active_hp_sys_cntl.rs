@@ -76,18 +76,9 @@ impl core::fmt::Debug for R {
                 &self.hp_active_hp_power_det_bypass(),
             )
             .field("hp_active_uart_wakeup_en", &self.hp_active_uart_wakeup_en())
-            .field(
-                "hp_active_lp_pad_hold_all",
-                &self.hp_active_lp_pad_hold_all(),
-            )
-            .field(
-                "hp_active_hp_pad_hold_all",
-                &self.hp_active_hp_pad_hold_all(),
-            )
-            .field(
-                "hp_active_dig_pad_slp_sel",
-                &self.hp_active_dig_pad_slp_sel(),
-            )
+            .field("hp_active_lp_pad_hold_all", &self.hp_active_lp_pad_hold_all())
+            .field("hp_active_hp_pad_hold_all", &self.hp_active_hp_pad_hold_all())
+            .field("hp_active_dig_pad_slp_sel", &self.hp_active_dig_pad_slp_sel())
             .field("hp_active_dig_pause_wdt", &self.hp_active_dig_pause_wdt())
             .field("hp_active_dig_cpu_stall", &self.hp_active_dig_cpu_stall())
             .finish()

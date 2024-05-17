@@ -53,10 +53,7 @@ impl core::fmt::Debug for R {
         f.debug_struct("WAKEUP2")
             .field("sar2_wakeup_th_low", &self.sar2_wakeup_th_low())
             .field("sar2_wakeup_th_high", &self.sar2_wakeup_th_high())
-            .field(
-                "sar2_wakeup_over_upper_th",
-                &self.sar2_wakeup_over_upper_th(),
-            )
+            .field("sar2_wakeup_over_upper_th", &self.sar2_wakeup_over_upper_th())
             .field("sar2_wakeup_en", &self.sar2_wakeup_en())
             .field("sar2_wakeup_mode", &self.sar2_wakeup_mode())
             .finish()

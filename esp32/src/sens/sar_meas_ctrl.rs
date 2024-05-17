@@ -103,7 +103,9 @@ impl W {
     ///Bits 12:15
     #[inline(always)]
     #[must_use]
-    pub fn amp_short_ref_gnd_fsm(&mut self) -> AMP_SHORT_REF_GND_FSM_W<SAR_MEAS_CTRL_SPEC> {
+    pub fn amp_short_ref_gnd_fsm(
+        &mut self,
+    ) -> AMP_SHORT_REF_GND_FSM_W<SAR_MEAS_CTRL_SPEC> {
         AMP_SHORT_REF_GND_FSM_W::new(self, 12)
     }
     ///Bits 16:19

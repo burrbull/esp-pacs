@@ -12,9 +12,7 @@ impl R {
 #[cfg(feature = "impl-register-debug")]
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("RECIVE_SEQ")
-            .field("recive_seq", &self.recive_seq())
-            .finish()
+        f.debug_struct("RECIVE_SEQ").field("recive_seq", &self.recive_seq()).finish()
     }
 }
 /**High speed sdio pad bist recive sequence

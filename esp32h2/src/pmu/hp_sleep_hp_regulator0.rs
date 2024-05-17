@@ -25,7 +25,11 @@ pub type HP_SLEEP_HP_REGULATOR_SLP_MEM_DBIAS_W<'a, REG> = crate::FieldWriter<'a,
 ///Field `HP_SLEEP_HP_REGULATOR_SLP_LOGIC_DBIAS` reader - need_des
 pub type HP_SLEEP_HP_REGULATOR_SLP_LOGIC_DBIAS_R = crate::FieldReader;
 ///Field `HP_SLEEP_HP_REGULATOR_SLP_LOGIC_DBIAS` writer - need_des
-pub type HP_SLEEP_HP_REGULATOR_SLP_LOGIC_DBIAS_W<'a, REG> = crate::FieldWriter<'a, REG, 4>;
+pub type HP_SLEEP_HP_REGULATOR_SLP_LOGIC_DBIAS_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    4,
+>;
 ///Field `HP_SLEEP_HP_REGULATOR_DBIAS` reader - need_des
 pub type HP_SLEEP_HP_REGULATOR_DBIAS_R = crate::FieldReader;
 ///Field `HP_SLEEP_HP_REGULATOR_DBIAS` writer - need_des
@@ -38,12 +42,16 @@ impl R {
     }
     ///Bit 16 - need_des
     #[inline(always)]
-    pub fn hp_sleep_hp_regulator_slp_mem_xpd(&self) -> HP_SLEEP_HP_REGULATOR_SLP_MEM_XPD_R {
+    pub fn hp_sleep_hp_regulator_slp_mem_xpd(
+        &self,
+    ) -> HP_SLEEP_HP_REGULATOR_SLP_MEM_XPD_R {
         HP_SLEEP_HP_REGULATOR_SLP_MEM_XPD_R::new(((self.bits >> 16) & 1) != 0)
     }
     ///Bit 17 - need_des
     #[inline(always)]
-    pub fn hp_sleep_hp_regulator_slp_logic_xpd(&self) -> HP_SLEEP_HP_REGULATOR_SLP_LOGIC_XPD_R {
+    pub fn hp_sleep_hp_regulator_slp_logic_xpd(
+        &self,
+    ) -> HP_SLEEP_HP_REGULATOR_SLP_LOGIC_XPD_R {
         HP_SLEEP_HP_REGULATOR_SLP_LOGIC_XPD_R::new(((self.bits >> 17) & 1) != 0)
     }
     ///Bit 18 - need_des
@@ -53,12 +61,16 @@ impl R {
     }
     ///Bits 19:22 - need_des
     #[inline(always)]
-    pub fn hp_sleep_hp_regulator_slp_mem_dbias(&self) -> HP_SLEEP_HP_REGULATOR_SLP_MEM_DBIAS_R {
+    pub fn hp_sleep_hp_regulator_slp_mem_dbias(
+        &self,
+    ) -> HP_SLEEP_HP_REGULATOR_SLP_MEM_DBIAS_R {
         HP_SLEEP_HP_REGULATOR_SLP_MEM_DBIAS_R::new(((self.bits >> 19) & 0x0f) as u8)
     }
     ///Bits 23:26 - need_des
     #[inline(always)]
-    pub fn hp_sleep_hp_regulator_slp_logic_dbias(&self) -> HP_SLEEP_HP_REGULATOR_SLP_LOGIC_DBIAS_R {
+    pub fn hp_sleep_hp_regulator_slp_logic_dbias(
+        &self,
+    ) -> HP_SLEEP_HP_REGULATOR_SLP_LOGIC_DBIAS_R {
         HP_SLEEP_HP_REGULATOR_SLP_LOGIC_DBIAS_R::new(((self.bits >> 23) & 0x0f) as u8)
     }
     ///Bits 27:31 - need_des
@@ -71,10 +83,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("HP_SLEEP_HP_REGULATOR0")
-            .field(
-                "hp_sleep_hp_power_det_bypass",
-                &self.hp_sleep_hp_power_det_bypass(),
-            )
+            .field("hp_sleep_hp_power_det_bypass", &self.hp_sleep_hp_power_det_bypass())
             .field(
                 "hp_sleep_hp_regulator_slp_mem_xpd",
                 &self.hp_sleep_hp_regulator_slp_mem_xpd(),
@@ -83,10 +92,7 @@ impl core::fmt::Debug for R {
                 "hp_sleep_hp_regulator_slp_logic_xpd",
                 &self.hp_sleep_hp_regulator_slp_logic_xpd(),
             )
-            .field(
-                "hp_sleep_hp_regulator_xpd",
-                &self.hp_sleep_hp_regulator_xpd(),
-            )
+            .field("hp_sleep_hp_regulator_xpd", &self.hp_sleep_hp_regulator_xpd())
             .field(
                 "hp_sleep_hp_regulator_slp_mem_dbias",
                 &self.hp_sleep_hp_regulator_slp_mem_dbias(),
@@ -95,10 +101,7 @@ impl core::fmt::Debug for R {
                 "hp_sleep_hp_regulator_slp_logic_dbias",
                 &self.hp_sleep_hp_regulator_slp_logic_dbias(),
             )
-            .field(
-                "hp_sleep_hp_regulator_dbias",
-                &self.hp_sleep_hp_regulator_dbias(),
-            )
+            .field("hp_sleep_hp_regulator_dbias", &self.hp_sleep_hp_regulator_dbias())
             .finish()
     }
 }

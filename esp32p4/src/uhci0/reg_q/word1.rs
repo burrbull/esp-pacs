@@ -16,9 +16,7 @@ impl R {
 #[cfg(feature = "impl-register-debug")]
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("WORD1")
-            .field("send_word", &self.send_word())
-            .finish()
+        f.debug_struct("WORD1").field("send_word", &self.send_word()).finish()
     }
 }
 impl W {

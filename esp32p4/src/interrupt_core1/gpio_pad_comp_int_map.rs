@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("GPIO_PAD_COMP_INT_MAP")
-            .field(
-                "core1_gpio_pad_comp_int_map",
-                &self.core1_gpio_pad_comp_int_map(),
-            )
+            .field("core1_gpio_pad_comp_int_map", &self.core1_gpio_pad_comp_int_map())
             .finish()
     }
 }

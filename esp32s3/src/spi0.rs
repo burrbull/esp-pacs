@@ -413,7 +413,9 @@ pub mod dout_mode;
 You can [`read`](crate::generic::Reg::read) this register and get [`spi_smem_timing_cali::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`spi_smem_timing_cali::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@spi_smem_timing_cali`] module*/
-pub type SPI_SMEM_TIMING_CALI = crate::Reg<spi_smem_timing_cali::SPI_SMEM_TIMING_CALI_SPEC>;
+pub type SPI_SMEM_TIMING_CALI = crate::Reg<
+    spi_smem_timing_cali::SPI_SMEM_TIMING_CALI_SPEC,
+>;
 ///SPI0 Ext_RAM timing compensation register.
 pub mod spi_smem_timing_cali;
 /**SPI_SMEM_DIN_MODE (rw) register accessor: MSPI input timing delay mode control register when accesses to Ext_RAM.

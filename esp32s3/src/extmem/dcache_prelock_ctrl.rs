@@ -35,13 +35,17 @@ impl W {
     ///Bit 0 - The bit is used to enable the first section of prelock function.
     #[inline(always)]
     #[must_use]
-    pub fn dcache_prelock_sct0_en(&mut self) -> DCACHE_PRELOCK_SCT0_EN_W<DCACHE_PRELOCK_CTRL_SPEC> {
+    pub fn dcache_prelock_sct0_en(
+        &mut self,
+    ) -> DCACHE_PRELOCK_SCT0_EN_W<DCACHE_PRELOCK_CTRL_SPEC> {
         DCACHE_PRELOCK_SCT0_EN_W::new(self, 0)
     }
     ///Bit 1 - The bit is used to enable the second section of prelock function.
     #[inline(always)]
     #[must_use]
-    pub fn dcache_prelock_sct1_en(&mut self) -> DCACHE_PRELOCK_SCT1_EN_W<DCACHE_PRELOCK_CTRL_SPEC> {
+    pub fn dcache_prelock_sct1_en(
+        &mut self,
+    ) -> DCACHE_PRELOCK_SCT1_EN_W<DCACHE_PRELOCK_CTRL_SPEC> {
         DCACHE_PRELOCK_SCT1_EN_W::new(self, 1)
     }
 }

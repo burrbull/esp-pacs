@@ -63,17 +63,23 @@ impl R {
     }
     ///Bits 4:5 - BackUp access apb_ctrl permission.
     #[inline(always)]
-    pub fn backup_bus_pms_constrain_apb_ctrl(&self) -> BACKUP_BUS_PMS_CONSTRAIN_APB_CTRL_R {
+    pub fn backup_bus_pms_constrain_apb_ctrl(
+        &self,
+    ) -> BACKUP_BUS_PMS_CONSTRAIN_APB_CTRL_R {
         BACKUP_BUS_PMS_CONSTRAIN_APB_CTRL_R::new(((self.bits >> 4) & 3) as u8)
     }
     ///Bits 6:7 - BackUp access i2c_ext1 permission.
     #[inline(always)]
-    pub fn backup_bus_pms_constrain_i2c_ext1(&self) -> BACKUP_BUS_PMS_CONSTRAIN_I2C_EXT1_R {
+    pub fn backup_bus_pms_constrain_i2c_ext1(
+        &self,
+    ) -> BACKUP_BUS_PMS_CONSTRAIN_I2C_EXT1_R {
         BACKUP_BUS_PMS_CONSTRAIN_I2C_EXT1_R::new(((self.bits >> 6) & 3) as u8)
     }
     ///Bits 8:9 - BackUp access sdio_host permission.
     #[inline(always)]
-    pub fn backup_bus_pms_constrain_sdio_host(&self) -> BACKUP_BUS_PMS_CONSTRAIN_SDIO_HOST_R {
+    pub fn backup_bus_pms_constrain_sdio_host(
+        &self,
+    ) -> BACKUP_BUS_PMS_CONSTRAIN_SDIO_HOST_R {
         BACKUP_BUS_PMS_CONSTRAIN_SDIO_HOST_R::new(((self.bits >> 8) & 3) as u8)
     }
     ///Bits 10:11 - BackUp access can permission.
@@ -103,7 +109,9 @@ impl R {
     }
     ///Bits 26:27 - BackUp access wifimac permission.
     #[inline(always)]
-    pub fn backup_bus_pms_constrain_wifimac(&self) -> BACKUP_BUS_PMS_CONSTRAIN_WIFIMAC_R {
+    pub fn backup_bus_pms_constrain_wifimac(
+        &self,
+    ) -> BACKUP_BUS_PMS_CONSTRAIN_WIFIMAC_R {
         BACKUP_BUS_PMS_CONSTRAIN_WIFIMAC_R::new(((self.bits >> 26) & 3) as u8)
     }
     ///Bits 28:29 - BackUp access pwr permission.
@@ -136,10 +144,7 @@ impl core::fmt::Debug for R {
                 "backup_bus_pms_constrain_sdio_host",
                 &self.backup_bus_pms_constrain_sdio_host(),
             )
-            .field(
-                "backup_bus_pms_constrain_can",
-                &self.backup_bus_pms_constrain_can(),
-            )
+            .field("backup_bus_pms_constrain_can", &self.backup_bus_pms_constrain_can())
             .field(
                 "backup_bus_pms_constrain_pwm1",
                 &self.backup_bus_pms_constrain_pwm1(),
@@ -160,10 +165,7 @@ impl core::fmt::Debug for R {
                 "backup_bus_pms_constrain_wifimac",
                 &self.backup_bus_pms_constrain_wifimac(),
             )
-            .field(
-                "backup_bus_pms_constrain_pwr",
-                &self.backup_bus_pms_constrain_pwr(),
-            )
+            .field("backup_bus_pms_constrain_pwr", &self.backup_bus_pms_constrain_pwr())
             .finish()
     }
 }

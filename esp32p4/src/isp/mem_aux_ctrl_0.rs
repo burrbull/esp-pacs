@@ -41,7 +41,9 @@ impl W {
     ///Bits 16:29 - this field represents this field configures the mem_aux of dpc lut memory
     #[inline(always)]
     #[must_use]
-    pub fn dpc_lut_mem_aux_ctrl(&mut self) -> DPC_LUT_MEM_AUX_CTRL_W<MEM_AUX_CTRL_0_SPEC> {
+    pub fn dpc_lut_mem_aux_ctrl(
+        &mut self,
+    ) -> DPC_LUT_MEM_AUX_CTRL_W<MEM_AUX_CTRL_0_SPEC> {
         DPC_LUT_MEM_AUX_CTRL_W::new(self, 16)
     }
 }

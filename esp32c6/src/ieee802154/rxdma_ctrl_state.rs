@@ -67,7 +67,9 @@ impl W {
     ///Bit 24
     #[inline(always)]
     #[must_use]
-    pub fn rxdma_append_lqi_offset(&mut self) -> RXDMA_APPEND_LQI_OFFSET_W<RXDMA_CTRL_STATE_SPEC> {
+    pub fn rxdma_append_lqi_offset(
+        &mut self,
+    ) -> RXDMA_APPEND_LQI_OFFSET_W<RXDMA_CTRL_STATE_SPEC> {
         RXDMA_APPEND_LQI_OFFSET_W::new(self, 24)
     }
     ///Bit 25

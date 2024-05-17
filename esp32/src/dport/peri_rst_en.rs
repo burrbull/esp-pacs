@@ -16,9 +16,7 @@ impl R {
 #[cfg(feature = "impl-register-debug")]
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("PERI_RST_EN")
-            .field("peri_rst_en", &self.peri_rst_en())
-            .finish()
+        f.debug_struct("PERI_RST_EN").field("peri_rst_en", &self.peri_rst_en()).finish()
     }
 }
 impl W {

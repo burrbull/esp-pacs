@@ -36,8 +36,7 @@ impl R {
     ///NOTE: `n` is number of field in register. `n == 0` corresponds to `CH0_TX_END` field
     #[inline(always)]
     pub fn ch_tx_end(&self, n: u8) -> CH_TX_END_R {
-        #[allow(clippy::no_effect)]
-        [(); 2][n as usize];
+        #[allow(clippy::no_effect)] [(); 2][n as usize];
         CH_TX_END_R::new(((self.bits >> n) & 1) != 0)
     }
     ///Iterator for array of:
@@ -61,8 +60,7 @@ impl R {
     ///NOTE: `n` is number of field in register. `n == 0` corresponds to `CH2_RX_END` field
     #[inline(always)]
     pub fn ch_rx_end(&self, n: u8) -> CH_RX_END_R {
-        #[allow(clippy::no_effect)]
-        [(); 2][n as usize];
+        #[allow(clippy::no_effect)] [(); 2][n as usize];
         CH_RX_END_R::new(((self.bits >> (n + 2)) & 1) != 0)
     }
     ///Iterator for array of:
@@ -86,8 +84,7 @@ impl R {
     ///NOTE: `n` is number of field in register. `n == 0` corresponds to `CH0_TX_ERR` field
     #[inline(always)]
     pub fn ch_tx_err(&self, n: u8) -> CH_TX_ERR_R {
-        #[allow(clippy::no_effect)]
-        [(); 2][n as usize];
+        #[allow(clippy::no_effect)] [(); 2][n as usize];
         CH_TX_ERR_R::new(((self.bits >> (n + 4)) & 1) != 0)
     }
     ///Iterator for array of:
@@ -111,8 +108,7 @@ impl R {
     ///NOTE: `n` is number of field in register. `n == 0` corresponds to `CH2_RX_ERR` field
     #[inline(always)]
     pub fn ch_rx_err(&self, n: u8) -> CH_RX_ERR_R {
-        #[allow(clippy::no_effect)]
-        [(); 2][n as usize];
+        #[allow(clippy::no_effect)] [(); 2][n as usize];
         CH_RX_ERR_R::new(((self.bits >> (n + 6)) & 1) != 0)
     }
     ///Iterator for array of:
@@ -136,8 +132,7 @@ impl R {
     ///NOTE: `n` is number of field in register. `n == 0` corresponds to `CH0_TX_THR_EVENT` field
     #[inline(always)]
     pub fn ch_tx_thr_event(&self, n: u8) -> CH_TX_THR_EVENT_R {
-        #[allow(clippy::no_effect)]
-        [(); 2][n as usize];
+        #[allow(clippy::no_effect)] [(); 2][n as usize];
         CH_TX_THR_EVENT_R::new(((self.bits >> (n + 8)) & 1) != 0)
     }
     ///Iterator for array of:
@@ -161,8 +156,7 @@ impl R {
     ///NOTE: `n` is number of field in register. `n == 0` corresponds to `CH2_RX_THR_EVENT` field
     #[inline(always)]
     pub fn ch_rx_thr_event(&self, n: u8) -> CH_RX_THR_EVENT_R {
-        #[allow(clippy::no_effect)]
-        [(); 2][n as usize];
+        #[allow(clippy::no_effect)] [(); 2][n as usize];
         CH_RX_THR_EVENT_R::new(((self.bits >> (n + 10)) & 1) != 0)
     }
     ///Iterator for array of:
@@ -186,8 +180,7 @@ impl R {
     ///NOTE: `n` is number of field in register. `n == 0` corresponds to `CH0_TX_LOOP` field
     #[inline(always)]
     pub fn ch_tx_loop(&self, n: u8) -> CH_TX_LOOP_R {
-        #[allow(clippy::no_effect)]
-        [(); 2][n as usize];
+        #[allow(clippy::no_effect)] [(); 2][n as usize];
         CH_TX_LOOP_R::new(((self.bits >> (n + 12)) & 1) != 0)
     }
     ///Iterator for array of:
@@ -235,8 +228,7 @@ impl W {
     #[inline(always)]
     #[must_use]
     pub fn ch_tx_end(&mut self, n: u8) -> CH_TX_END_W<INT_ENA_SPEC> {
-        #[allow(clippy::no_effect)]
-        [(); 2][n as usize];
+        #[allow(clippy::no_effect)] [(); 2][n as usize];
         CH_TX_END_W::new(self, n)
     }
     ///Bit 0 - reg_ch0_tx_end_int_ena.
@@ -257,8 +249,7 @@ impl W {
     #[inline(always)]
     #[must_use]
     pub fn ch_rx_end(&mut self, n: u8) -> CH_RX_END_W<INT_ENA_SPEC> {
-        #[allow(clippy::no_effect)]
-        [(); 2][n as usize];
+        #[allow(clippy::no_effect)] [(); 2][n as usize];
         CH_RX_END_W::new(self, n + 2)
     }
     ///Bit 2 - reg_ch2_rx_end_int_ena.
@@ -279,8 +270,7 @@ impl W {
     #[inline(always)]
     #[must_use]
     pub fn ch_tx_err(&mut self, n: u8) -> CH_TX_ERR_W<INT_ENA_SPEC> {
-        #[allow(clippy::no_effect)]
-        [(); 2][n as usize];
+        #[allow(clippy::no_effect)] [(); 2][n as usize];
         CH_TX_ERR_W::new(self, n + 4)
     }
     ///Bit 4 - reg_ch0_err_int_ena.
@@ -301,8 +291,7 @@ impl W {
     #[inline(always)]
     #[must_use]
     pub fn ch_rx_err(&mut self, n: u8) -> CH_RX_ERR_W<INT_ENA_SPEC> {
-        #[allow(clippy::no_effect)]
-        [(); 2][n as usize];
+        #[allow(clippy::no_effect)] [(); 2][n as usize];
         CH_RX_ERR_W::new(self, n + 6)
     }
     ///Bit 6 - reg_ch2_err_int_ena.
@@ -323,8 +312,7 @@ impl W {
     #[inline(always)]
     #[must_use]
     pub fn ch_tx_thr_event(&mut self, n: u8) -> CH_TX_THR_EVENT_W<INT_ENA_SPEC> {
-        #[allow(clippy::no_effect)]
-        [(); 2][n as usize];
+        #[allow(clippy::no_effect)] [(); 2][n as usize];
         CH_TX_THR_EVENT_W::new(self, n + 8)
     }
     ///Bit 8 - reg_ch0_tx_thr_event_int_ena.
@@ -345,8 +333,7 @@ impl W {
     #[inline(always)]
     #[must_use]
     pub fn ch_rx_thr_event(&mut self, n: u8) -> CH_RX_THR_EVENT_W<INT_ENA_SPEC> {
-        #[allow(clippy::no_effect)]
-        [(); 2][n as usize];
+        #[allow(clippy::no_effect)] [(); 2][n as usize];
         CH_RX_THR_EVENT_W::new(self, n + 10)
     }
     ///Bit 10 - reg_ch2_rx_thr_event_int_ena.
@@ -367,8 +354,7 @@ impl W {
     #[inline(always)]
     #[must_use]
     pub fn ch_tx_loop(&mut self, n: u8) -> CH_TX_LOOP_W<INT_ENA_SPEC> {
-        #[allow(clippy::no_effect)]
-        [(); 2][n as usize];
+        #[allow(clippy::no_effect)] [(); 2][n as usize];
         CH_TX_LOOP_W::new(self, n + 12)
     }
     ///Bit 12 - reg_ch0_tx_loop_int_ena.

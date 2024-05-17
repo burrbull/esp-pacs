@@ -9,21 +9,33 @@ pub type ENABLE_SLVIF_COMMONREG_DEC_ERR_INTSIGNAL_W<'a, REG> = crate::BitWriter<
 ///Field `ENABLE_SLVIF_COMMONREG_WR2RO_ERR_INTSIGNAL` reader - NA
 pub type ENABLE_SLVIF_COMMONREG_WR2RO_ERR_INTSIGNAL_R = crate::BitReader;
 ///Field `ENABLE_SLVIF_COMMONREG_WR2RO_ERR_INTSIGNAL` writer - NA
-pub type ENABLE_SLVIF_COMMONREG_WR2RO_ERR_INTSIGNAL_W<'a, REG> = crate::BitWriter<'a, REG>;
+pub type ENABLE_SLVIF_COMMONREG_WR2RO_ERR_INTSIGNAL_W<'a, REG> = crate::BitWriter<
+    'a,
+    REG,
+>;
 ///Field `ENABLE_SLVIF_COMMONREG_RD2WO_ERR_INTSIGNAL` reader - NA
 pub type ENABLE_SLVIF_COMMONREG_RD2WO_ERR_INTSIGNAL_R = crate::BitReader;
 ///Field `ENABLE_SLVIF_COMMONREG_RD2WO_ERR_INTSIGNAL` writer - NA
-pub type ENABLE_SLVIF_COMMONREG_RD2WO_ERR_INTSIGNAL_W<'a, REG> = crate::BitWriter<'a, REG>;
+pub type ENABLE_SLVIF_COMMONREG_RD2WO_ERR_INTSIGNAL_W<'a, REG> = crate::BitWriter<
+    'a,
+    REG,
+>;
 ///Field `ENABLE_SLVIF_COMMONREG_WRONHOLD_ERR_INTSIGNAL` reader - NA
 pub type ENABLE_SLVIF_COMMONREG_WRONHOLD_ERR_INTSIGNAL_R = crate::BitReader;
 ///Field `ENABLE_SLVIF_COMMONREG_WRONHOLD_ERR_INTSIGNAL` writer - NA
-pub type ENABLE_SLVIF_COMMONREG_WRONHOLD_ERR_INTSIGNAL_W<'a, REG> = crate::BitWriter<'a, REG>;
+pub type ENABLE_SLVIF_COMMONREG_WRONHOLD_ERR_INTSIGNAL_W<'a, REG> = crate::BitWriter<
+    'a,
+    REG,
+>;
 ///Field `ENABLE_SLVIF_COMMONREG_WRPARITY_ERR_INTSIGNAL` reader - NA
 pub type ENABLE_SLVIF_COMMONREG_WRPARITY_ERR_INTSIGNAL_R = crate::BitReader;
 ///Field `ENABLE_SLVIF_UNDEFINEDREG_DEC_ERR_INTSIGNAL` reader - NA
 pub type ENABLE_SLVIF_UNDEFINEDREG_DEC_ERR_INTSIGNAL_R = crate::BitReader;
 ///Field `ENABLE_SLVIF_UNDEFINEDREG_DEC_ERR_INTSIGNAL` writer - NA
-pub type ENABLE_SLVIF_UNDEFINEDREG_DEC_ERR_INTSIGNAL_W<'a, REG> = crate::BitWriter<'a, REG>;
+pub type ENABLE_SLVIF_UNDEFINEDREG_DEC_ERR_INTSIGNAL_W<'a, REG> = crate::BitWriter<
+    'a,
+    REG,
+>;
 ///Field `ENABLE_MXIF1_RCH0_ECCPROT_CORRERR_INTSIGNAL` reader - NA
 pub type ENABLE_MXIF1_RCH0_ECCPROT_CORRERR_INTSIGNAL_R = crate::BitReader;
 ///Field `ENABLE_MXIF1_RCH0_ECCPROT_UNCORRERR_INTSIGNAL` reader - NA
@@ -103,7 +115,9 @@ impl R {
     pub fn enable_mxif1_rch0_eccprot_uncorrerr_intsignal(
         &self,
     ) -> ENABLE_MXIF1_RCH0_ECCPROT_UNCORRERR_INTSIGNAL_R {
-        ENABLE_MXIF1_RCH0_ECCPROT_UNCORRERR_INTSIGNAL_R::new(((self.bits >> 10) & 1) != 0)
+        ENABLE_MXIF1_RCH0_ECCPROT_UNCORRERR_INTSIGNAL_R::new(
+            ((self.bits >> 10) & 1) != 0,
+        )
     }
     ///Bit 11 - NA
     #[inline(always)]
@@ -117,7 +131,9 @@ impl R {
     pub fn enable_mxif1_rch1_eccprot_uncorrerr_intsignal(
         &self,
     ) -> ENABLE_MXIF1_RCH1_ECCPROT_UNCORRERR_INTSIGNAL_R {
-        ENABLE_MXIF1_RCH1_ECCPROT_UNCORRERR_INTSIGNAL_R::new(((self.bits >> 12) & 1) != 0)
+        ENABLE_MXIF1_RCH1_ECCPROT_UNCORRERR_INTSIGNAL_R::new(
+            ((self.bits >> 12) & 1) != 0,
+        )
     }
     ///Bit 13 - NA
     #[inline(always)]
@@ -145,7 +161,9 @@ impl R {
     pub fn enable_mxif2_rch0_eccprot_uncorrerr_intsignal(
         &self,
     ) -> ENABLE_MXIF2_RCH0_ECCPROT_UNCORRERR_INTSIGNAL_R {
-        ENABLE_MXIF2_RCH0_ECCPROT_UNCORRERR_INTSIGNAL_R::new(((self.bits >> 16) & 1) != 0)
+        ENABLE_MXIF2_RCH0_ECCPROT_UNCORRERR_INTSIGNAL_R::new(
+            ((self.bits >> 16) & 1) != 0,
+        )
     }
     ///Bit 17 - NA
     #[inline(always)]
@@ -159,7 +177,9 @@ impl R {
     pub fn enable_mxif2_rch1_eccprot_uncorrerr_intsignal(
         &self,
     ) -> ENABLE_MXIF2_RCH1_ECCPROT_UNCORRERR_INTSIGNAL_R {
-        ENABLE_MXIF2_RCH1_ECCPROT_UNCORRERR_INTSIGNAL_R::new(((self.bits >> 18) & 1) != 0)
+        ENABLE_MXIF2_RCH1_ECCPROT_UNCORRERR_INTSIGNAL_R::new(
+            ((self.bits >> 18) & 1) != 0,
+        )
     }
     ///Bit 19 - NA
     #[inline(always)]
@@ -285,7 +305,9 @@ impl W {
     #[must_use]
     pub fn enable_slvif_commonreg_wronhold_err_intsignal(
         &mut self,
-    ) -> ENABLE_SLVIF_COMMONREG_WRONHOLD_ERR_INTSIGNAL_W<COMMONREG_INTSIGNAL_ENABLE0_SPEC> {
+    ) -> ENABLE_SLVIF_COMMONREG_WRONHOLD_ERR_INTSIGNAL_W<
+        COMMONREG_INTSIGNAL_ENABLE0_SPEC,
+    > {
         ENABLE_SLVIF_COMMONREG_WRONHOLD_ERR_INTSIGNAL_W::new(self, 3)
     }
     ///Bit 8 - NA
@@ -293,7 +315,9 @@ impl W {
     #[must_use]
     pub fn enable_slvif_undefinedreg_dec_err_intsignal(
         &mut self,
-    ) -> ENABLE_SLVIF_UNDEFINEDREG_DEC_ERR_INTSIGNAL_W<COMMONREG_INTSIGNAL_ENABLE0_SPEC> {
+    ) -> ENABLE_SLVIF_UNDEFINEDREG_DEC_ERR_INTSIGNAL_W<
+        COMMONREG_INTSIGNAL_ENABLE0_SPEC,
+    > {
         ENABLE_SLVIF_UNDEFINEDREG_DEC_ERR_INTSIGNAL_W::new(self, 8)
     }
 }

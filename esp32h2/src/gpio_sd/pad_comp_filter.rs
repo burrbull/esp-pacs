@@ -25,7 +25,9 @@ impl W {
     ///Bits 0:31 - Zero Detect filter cycle length
     #[inline(always)]
     #[must_use]
-    pub fn zero_det_filter_cnt(&mut self) -> ZERO_DET_FILTER_CNT_W<PAD_COMP_FILTER_SPEC> {
+    pub fn zero_det_filter_cnt(
+        &mut self,
+    ) -> ZERO_DET_FILTER_CNT_W<PAD_COMP_FILTER_SPEC> {
         ZERO_DET_FILTER_CNT_W::new(self, 0)
     }
 }

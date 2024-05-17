@@ -247,7 +247,9 @@ pub mod buffer_thld_ctrl;
 You can [`read`](crate::generic::Reg::read) this register and get [`data_buffer_thld_ctrl::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`data_buffer_thld_ctrl::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@data_buffer_thld_ctrl`] module*/
-pub type DATA_BUFFER_THLD_CTRL = crate::Reg<data_buffer_thld_ctrl::DATA_BUFFER_THLD_CTRL_SPEC>;
+pub type DATA_BUFFER_THLD_CTRL = crate::Reg<
+    data_buffer_thld_ctrl::DATA_BUFFER_THLD_CTRL_SPEC,
+>;
 ///NA
 pub mod data_buffer_thld_ctrl;
 /**IBI_NOTIFY_CTRL (rw) register accessor: NA
@@ -327,8 +329,9 @@ pub mod buffer_status_level;
 You can [`read`](crate::generic::Reg::read) this register and get [`data_buffer_status_level::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@data_buffer_status_level`] module*/
-pub type DATA_BUFFER_STATUS_LEVEL =
-    crate::Reg<data_buffer_status_level::DATA_BUFFER_STATUS_LEVEL_SPEC>;
+pub type DATA_BUFFER_STATUS_LEVEL = crate::Reg<
+    data_buffer_status_level::DATA_BUFFER_STATUS_LEVEL_SPEC,
+>;
 ///DATA_BUFFER_STATUS_LEVEL reflects the status level of the Buffers in the controller.
 pub mod data_buffer_status_level;
 /**PRESENT_STATE0 (r) register accessor: NA
@@ -464,8 +467,9 @@ pub mod bus_free_time;
 You can [`read`](crate::generic::Reg::read) this register and get [`scl_termn_t_ext_low_time::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`scl_termn_t_ext_low_time::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@scl_termn_t_ext_low_time`] module*/
-pub type SCL_TERMN_T_EXT_LOW_TIME =
-    crate::Reg<scl_termn_t_ext_low_time::SCL_TERMN_T_EXT_LOW_TIME_SPEC>;
+pub type SCL_TERMN_T_EXT_LOW_TIME = crate::Reg<
+    scl_termn_t_ext_low_time::SCL_TERMN_T_EXT_LOW_TIME_SPEC,
+>;
 ///NA
 pub mod scl_termn_t_ext_low_time;
 /**VER_ID (rw) register accessor: NA

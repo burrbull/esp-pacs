@@ -9,7 +9,9 @@ pub type DMA_APBPERI_UHCI0_PMS_CONSTRAIN_LOCK_W<'a, REG> = crate::BitWriter<'a, 
 impl R {
     ///Bit 0 - Set 1 to lock uhci0 dma permission Configuration Register.
     #[inline(always)]
-    pub fn dma_apbperi_uhci0_pms_constrain_lock(&self) -> DMA_APBPERI_UHCI0_PMS_CONSTRAIN_LOCK_R {
+    pub fn dma_apbperi_uhci0_pms_constrain_lock(
+        &self,
+    ) -> DMA_APBPERI_UHCI0_PMS_CONSTRAIN_LOCK_R {
         DMA_APBPERI_UHCI0_PMS_CONSTRAIN_LOCK_R::new((self.bits & 1) != 0)
     }
 }

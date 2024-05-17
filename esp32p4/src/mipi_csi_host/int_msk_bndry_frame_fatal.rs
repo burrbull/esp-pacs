@@ -152,70 +152,22 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("INT_MSK_BNDRY_FRAME_FATAL")
-            .field(
-                "mask_err_f_bndry_match_vc0",
-                &self.mask_err_f_bndry_match_vc0(),
-            )
-            .field(
-                "mask_err_f_bndry_match_vc1",
-                &self.mask_err_f_bndry_match_vc1(),
-            )
-            .field(
-                "mask_err_f_bndry_match_vc2",
-                &self.mask_err_f_bndry_match_vc2(),
-            )
-            .field(
-                "mask_err_f_bndry_match_vc3",
-                &self.mask_err_f_bndry_match_vc3(),
-            )
-            .field(
-                "mask_err_f_bndry_match_vc4",
-                &self.mask_err_f_bndry_match_vc4(),
-            )
-            .field(
-                "mask_err_f_bndry_match_vc5",
-                &self.mask_err_f_bndry_match_vc5(),
-            )
-            .field(
-                "mask_err_f_bndry_match_vc6",
-                &self.mask_err_f_bndry_match_vc6(),
-            )
-            .field(
-                "mask_err_f_bndry_match_vc7",
-                &self.mask_err_f_bndry_match_vc7(),
-            )
-            .field(
-                "mask_err_f_bndry_match_vc8",
-                &self.mask_err_f_bndry_match_vc8(),
-            )
-            .field(
-                "mask_err_f_bndry_match_vc9",
-                &self.mask_err_f_bndry_match_vc9(),
-            )
-            .field(
-                "mask_err_f_bndry_match_vc10",
-                &self.mask_err_f_bndry_match_vc10(),
-            )
-            .field(
-                "mask_err_f_bndry_match_vc11",
-                &self.mask_err_f_bndry_match_vc11(),
-            )
-            .field(
-                "mask_err_f_bndry_match_vc12",
-                &self.mask_err_f_bndry_match_vc12(),
-            )
-            .field(
-                "mask_err_f_bndry_match_vc13",
-                &self.mask_err_f_bndry_match_vc13(),
-            )
-            .field(
-                "mask_err_f_bndry_match_vc14",
-                &self.mask_err_f_bndry_match_vc14(),
-            )
-            .field(
-                "mask_err_f_bndry_match_vc15",
-                &self.mask_err_f_bndry_match_vc15(),
-            )
+            .field("mask_err_f_bndry_match_vc0", &self.mask_err_f_bndry_match_vc0())
+            .field("mask_err_f_bndry_match_vc1", &self.mask_err_f_bndry_match_vc1())
+            .field("mask_err_f_bndry_match_vc2", &self.mask_err_f_bndry_match_vc2())
+            .field("mask_err_f_bndry_match_vc3", &self.mask_err_f_bndry_match_vc3())
+            .field("mask_err_f_bndry_match_vc4", &self.mask_err_f_bndry_match_vc4())
+            .field("mask_err_f_bndry_match_vc5", &self.mask_err_f_bndry_match_vc5())
+            .field("mask_err_f_bndry_match_vc6", &self.mask_err_f_bndry_match_vc6())
+            .field("mask_err_f_bndry_match_vc7", &self.mask_err_f_bndry_match_vc7())
+            .field("mask_err_f_bndry_match_vc8", &self.mask_err_f_bndry_match_vc8())
+            .field("mask_err_f_bndry_match_vc9", &self.mask_err_f_bndry_match_vc9())
+            .field("mask_err_f_bndry_match_vc10", &self.mask_err_f_bndry_match_vc10())
+            .field("mask_err_f_bndry_match_vc11", &self.mask_err_f_bndry_match_vc11())
+            .field("mask_err_f_bndry_match_vc12", &self.mask_err_f_bndry_match_vc12())
+            .field("mask_err_f_bndry_match_vc13", &self.mask_err_f_bndry_match_vc13())
+            .field("mask_err_f_bndry_match_vc14", &self.mask_err_f_bndry_match_vc14())
+            .field("mask_err_f_bndry_match_vc15", &self.mask_err_f_bndry_match_vc15())
             .finish()
     }
 }

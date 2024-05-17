@@ -147,7 +147,9 @@ impl W {
     ///Bit 28 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn padbist_rx_clk_src_sel(&mut self) -> PADBIST_RX_CLK_SRC_SEL_W<PERI_CLK_CTRL26_SPEC> {
+    pub fn padbist_rx_clk_src_sel(
+        &mut self,
+    ) -> PADBIST_RX_CLK_SRC_SEL_W<PERI_CLK_CTRL26_SPEC> {
         PADBIST_RX_CLK_SRC_SEL_W::new(self, 28)
     }
     ///Bit 29 - Reserved

@@ -48,52 +48,32 @@ impl RegisterBlock {
     ///0x3cc..0x3e0 - Receive L2 FIFO depth of Rx channel 0
     #[inline(always)]
     pub const fn in_sram_size_ch(&self, n: usize) -> &IN_SRAM_SIZE_CH {
-        #[allow(clippy::no_effect)]
-        [(); 5][n];
-        unsafe {
-            &*(self as *const Self)
-                .cast::<u8>()
-                .add(972)
-                .add(8 * n)
-                .cast()
-        }
+        #[allow(clippy::no_effect)] [(); 5][n];
+        unsafe { &*(self as *const Self).cast::<u8>().add(972).add(8 * n).cast() }
     }
     ///Iterator for array of:
     ///0x3cc..0x3e0 - Receive L2 FIFO depth of Rx channel 0
     #[inline(always)]
     pub fn in_sram_size_ch_iter(&self) -> impl Iterator<Item = &IN_SRAM_SIZE_CH> {
-        (0..5).map(move |n| unsafe {
-            &*(self as *const Self)
-                .cast::<u8>()
-                .add(972)
-                .add(8 * n)
-                .cast()
-        })
+        (0..5)
+            .map(move |n| unsafe {
+                &*(self as *const Self).cast::<u8>().add(972).add(8 * n).cast()
+            })
     }
     ///0x3d0..0x3e4 - Transmit L2 FIFO depth of Tx channel 0
     #[inline(always)]
     pub const fn out_sram_size_ch(&self, n: usize) -> &OUT_SRAM_SIZE_CH {
-        #[allow(clippy::no_effect)]
-        [(); 5][n];
-        unsafe {
-            &*(self as *const Self)
-                .cast::<u8>()
-                .add(976)
-                .add(8 * n)
-                .cast()
-        }
+        #[allow(clippy::no_effect)] [(); 5][n];
+        unsafe { &*(self as *const Self).cast::<u8>().add(976).add(8 * n).cast() }
     }
     ///Iterator for array of:
     ///0x3d0..0x3e4 - Transmit L2 FIFO depth of Tx channel 0
     #[inline(always)]
     pub fn out_sram_size_ch_iter(&self) -> impl Iterator<Item = &OUT_SRAM_SIZE_CH> {
-        (0..5).map(move |n| unsafe {
-            &*(self as *const Self)
-                .cast::<u8>()
-                .add(976)
-                .add(8 * n)
-                .cast()
-        })
+        (0..5)
+            .map(move |n| unsafe {
+                &*(self as *const Self).cast::<u8>().add(976).add(8 * n).cast()
+            })
     }
     ///0x3f4 - Reject address accessing external RAM
     #[inline(always)]
@@ -197,7 +177,9 @@ pub mod extmem_reject_st;
 You can [`read`](crate::generic::Reg::read) this register and get [`extmem_reject_int_raw::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`extmem_reject_int_raw::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@extmem_reject_int_raw`] module*/
-pub type EXTMEM_REJECT_INT_RAW = crate::Reg<extmem_reject_int_raw::EXTMEM_REJECT_INT_RAW_SPEC>;
+pub type EXTMEM_REJECT_INT_RAW = crate::Reg<
+    extmem_reject_int_raw::EXTMEM_REJECT_INT_RAW_SPEC,
+>;
 ///Raw interrupt status of external RAM permission
 pub mod extmem_reject_int_raw;
 /**EXTMEM_REJECT_INT_ST (r) register accessor: Masked interrupt status of external RAM permission
@@ -205,7 +187,9 @@ pub mod extmem_reject_int_raw;
 You can [`read`](crate::generic::Reg::read) this register and get [`extmem_reject_int_st::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@extmem_reject_int_st`] module*/
-pub type EXTMEM_REJECT_INT_ST = crate::Reg<extmem_reject_int_st::EXTMEM_REJECT_INT_ST_SPEC>;
+pub type EXTMEM_REJECT_INT_ST = crate::Reg<
+    extmem_reject_int_st::EXTMEM_REJECT_INT_ST_SPEC,
+>;
 ///Masked interrupt status of external RAM permission
 pub mod extmem_reject_int_st;
 /**EXTMEM_REJECT_INT_ENA (rw) register accessor: Interrupt enable bits of external RAM permission
@@ -213,7 +197,9 @@ pub mod extmem_reject_int_st;
 You can [`read`](crate::generic::Reg::read) this register and get [`extmem_reject_int_ena::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`extmem_reject_int_ena::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@extmem_reject_int_ena`] module*/
-pub type EXTMEM_REJECT_INT_ENA = crate::Reg<extmem_reject_int_ena::EXTMEM_REJECT_INT_ENA_SPEC>;
+pub type EXTMEM_REJECT_INT_ENA = crate::Reg<
+    extmem_reject_int_ena::EXTMEM_REJECT_INT_ENA_SPEC,
+>;
 ///Interrupt enable bits of external RAM permission
 pub mod extmem_reject_int_ena;
 /**EXTMEM_REJECT_INT_CLR (w) register accessor: Interrupt clear bits of external RAM permission
@@ -221,7 +207,9 @@ pub mod extmem_reject_int_ena;
 You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`extmem_reject_int_clr::W`]. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@extmem_reject_int_clr`] module*/
-pub type EXTMEM_REJECT_INT_CLR = crate::Reg<extmem_reject_int_clr::EXTMEM_REJECT_INT_CLR_SPEC>;
+pub type EXTMEM_REJECT_INT_CLR = crate::Reg<
+    extmem_reject_int_clr::EXTMEM_REJECT_INT_CLR_SPEC,
+>;
 ///Interrupt clear bits of external RAM permission
 pub mod extmem_reject_int_clr;
 /**DATE (rw) register accessor: Version control register

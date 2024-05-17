@@ -44,8 +44,7 @@ impl R {
     ///NOTE: `n` is number of field in register. `n == 0` corresponds to `CH0_TX_END` field
     #[inline(always)]
     pub fn ch_tx_end(&self, n: u8) -> CH_TX_END_R {
-        #[allow(clippy::no_effect)]
-        [(); 4][n as usize];
+        #[allow(clippy::no_effect)] [(); 4][n as usize];
         CH_TX_END_R::new(((self.bits >> n) & 1) != 0)
     }
     ///Iterator for array of:
@@ -79,8 +78,7 @@ impl R {
     ///NOTE: `n` is number of field in register. `n == 0` corresponds to `CH0_TX_ERR` field
     #[inline(always)]
     pub fn ch_tx_err(&self, n: u8) -> CH_TX_ERR_R {
-        #[allow(clippy::no_effect)]
-        [(); 4][n as usize];
+        #[allow(clippy::no_effect)] [(); 4][n as usize];
         CH_TX_ERR_R::new(((self.bits >> (n + 4)) & 1) != 0)
     }
     ///Iterator for array of:
@@ -114,8 +112,7 @@ impl R {
     ///NOTE: `n` is number of field in register. `n == 0` corresponds to `CH0_TX_THR_EVENT` field
     #[inline(always)]
     pub fn ch_tx_thr_event(&self, n: u8) -> CH_TX_THR_EVENT_R {
-        #[allow(clippy::no_effect)]
-        [(); 4][n as usize];
+        #[allow(clippy::no_effect)] [(); 4][n as usize];
         CH_TX_THR_EVENT_R::new(((self.bits >> (n + 8)) & 1) != 0)
     }
     ///Iterator for array of:
@@ -149,8 +146,7 @@ impl R {
     ///NOTE: `n` is number of field in register. `n == 0` corresponds to `CH0_TX_LOOP` field
     #[inline(always)]
     pub fn ch_tx_loop(&self, n: u8) -> CH_TX_LOOP_R {
-        #[allow(clippy::no_effect)]
-        [(); 4][n as usize];
+        #[allow(clippy::no_effect)] [(); 4][n as usize];
         CH_TX_LOOP_R::new(((self.bits >> (n + 12)) & 1) != 0)
     }
     ///Iterator for array of:
@@ -184,8 +180,7 @@ impl R {
     ///NOTE: `n` is number of field in register. `n == 0` corresponds to `CH4_RX_END` field
     #[inline(always)]
     pub fn ch_rx_end(&self, n: u8) -> CH_RX_END_R {
-        #[allow(clippy::no_effect)]
-        [(); 4][n as usize];
+        #[allow(clippy::no_effect)] [(); 4][n as usize];
         CH_RX_END_R::new(((self.bits >> (n + 16)) & 1) != 0)
     }
     ///Iterator for array of:
@@ -219,8 +214,7 @@ impl R {
     ///NOTE: `n` is number of field in register. `n == 0` corresponds to `CH4_RX_ERR` field
     #[inline(always)]
     pub fn ch_rx_err(&self, n: u8) -> CH_RX_ERR_R {
-        #[allow(clippy::no_effect)]
-        [(); 4][n as usize];
+        #[allow(clippy::no_effect)] [(); 4][n as usize];
         CH_RX_ERR_R::new(((self.bits >> (n + 20)) & 1) != 0)
     }
     ///Iterator for array of:
@@ -254,8 +248,7 @@ impl R {
     ///NOTE: `n` is number of field in register. `n == 0` corresponds to `CH4_RX_THR_EVENT` field
     #[inline(always)]
     pub fn ch_rx_thr_event(&self, n: u8) -> CH_RX_THR_EVENT_R {
-        #[allow(clippy::no_effect)]
-        [(); 4][n as usize];
+        #[allow(clippy::no_effect)] [(); 4][n as usize];
         CH_RX_THR_EVENT_R::new(((self.bits >> (n + 24)) & 1) != 0)
     }
     ///Iterator for array of:
@@ -339,8 +332,7 @@ impl W {
     #[inline(always)]
     #[must_use]
     pub fn ch_tx_end(&mut self, n: u8) -> CH_TX_END_W<INT_RAW_SPEC> {
-        #[allow(clippy::no_effect)]
-        [(); 4][n as usize];
+        #[allow(clippy::no_effect)] [(); 4][n as usize];
         CH_TX_END_W::new(self, n)
     }
     ///Bit 0 - The interrupt raw bit for CHANNEL0. Triggered when transmission done.
@@ -373,8 +365,7 @@ impl W {
     #[inline(always)]
     #[must_use]
     pub fn ch_tx_err(&mut self, n: u8) -> CH_TX_ERR_W<INT_RAW_SPEC> {
-        #[allow(clippy::no_effect)]
-        [(); 4][n as usize];
+        #[allow(clippy::no_effect)] [(); 4][n as usize];
         CH_TX_ERR_W::new(self, n + 4)
     }
     ///Bit 4 - The interrupt raw bit for CHANNEL0. Triggered when error occurs.
@@ -407,8 +398,7 @@ impl W {
     #[inline(always)]
     #[must_use]
     pub fn ch_tx_thr_event(&mut self, n: u8) -> CH_TX_THR_EVENT_W<INT_RAW_SPEC> {
-        #[allow(clippy::no_effect)]
-        [(); 4][n as usize];
+        #[allow(clippy::no_effect)] [(); 4][n as usize];
         CH_TX_THR_EVENT_W::new(self, n + 8)
     }
     ///Bit 8 - The interrupt raw bit for CHANNEL0. Triggered when transmitter sent more data than configured value.
@@ -441,8 +431,7 @@ impl W {
     #[inline(always)]
     #[must_use]
     pub fn ch_tx_loop(&mut self, n: u8) -> CH_TX_LOOP_W<INT_RAW_SPEC> {
-        #[allow(clippy::no_effect)]
-        [(); 4][n as usize];
+        #[allow(clippy::no_effect)] [(); 4][n as usize];
         CH_TX_LOOP_W::new(self, n + 12)
     }
     ///Bit 12 - The interrupt raw bit for CHANNEL0. Triggered when the loop count reaches the configured threshold value.
@@ -475,8 +464,7 @@ impl W {
     #[inline(always)]
     #[must_use]
     pub fn ch_rx_end(&mut self, n: u8) -> CH_RX_END_W<INT_RAW_SPEC> {
-        #[allow(clippy::no_effect)]
-        [(); 4][n as usize];
+        #[allow(clippy::no_effect)] [(); 4][n as usize];
         CH_RX_END_W::new(self, n + 16)
     }
     ///Bit 16 - The interrupt raw bit for CHANNEL4. Triggered when reception done.
@@ -509,8 +497,7 @@ impl W {
     #[inline(always)]
     #[must_use]
     pub fn ch_rx_err(&mut self, n: u8) -> CH_RX_ERR_W<INT_RAW_SPEC> {
-        #[allow(clippy::no_effect)]
-        [(); 4][n as usize];
+        #[allow(clippy::no_effect)] [(); 4][n as usize];
         CH_RX_ERR_W::new(self, n + 20)
     }
     ///Bit 20 - The interrupt raw bit for CHANNEL4. Triggered when error occurs.
@@ -543,8 +530,7 @@ impl W {
     #[inline(always)]
     #[must_use]
     pub fn ch_rx_thr_event(&mut self, n: u8) -> CH_RX_THR_EVENT_W<INT_RAW_SPEC> {
-        #[allow(clippy::no_effect)]
-        [(); 4][n as usize];
+        #[allow(clippy::no_effect)] [(); 4][n as usize];
         CH_RX_THR_EVENT_W::new(self, n + 24)
     }
     ///Bit 24 - The interrupt raw bit for CHANNEL4. Triggered when receiver receive more data than configured value.

@@ -12,8 +12,7 @@ impl R {
     ///NOTE: `n` is number of field in register. `n == 0` corresponds to `M0_APM` field
     #[inline(always)]
     pub fn m_apm(&self, n: u8) -> M_APM_R {
-        #[allow(clippy::no_effect)]
-        [(); 1][n as usize];
+        #[allow(clippy::no_effect)] [(); 1][n as usize];
         M_APM_R::new(((self.bits >> (n * 0)) & 1) != 0)
     }
     ///Iterator for array of:
@@ -31,9 +30,7 @@ impl R {
 #[cfg(feature = "impl-register-debug")]
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("INT_EN")
-            .field("m0_apm", &self.m0_apm())
-            .finish()
+        f.debug_struct("INT_EN").field("m0_apm", &self.m0_apm()).finish()
     }
 }
 impl W {
@@ -43,8 +40,7 @@ impl W {
     #[inline(always)]
     #[must_use]
     pub fn m_apm(&mut self, n: u8) -> M_APM_W<INT_EN_SPEC> {
-        #[allow(clippy::no_effect)]
-        [(); 1][n as usize];
+        #[allow(clippy::no_effect)] [(); 1][n as usize];
         M_APM_W::new(self, n * 0)
     }
     ///Bit 0 - APM M0 interrupt enable

@@ -5,8 +5,12 @@ pub type W = crate::W<BACKUP_BUS_PMS_CONSTRAIN_5_SPEC>;
 ///Field `BACKUP_BUS_PMS_CONSTRAIN_RTCFAST_SPLTADDR` reader - BackUp access rtcfast_spltaddr permission.
 pub type BACKUP_BUS_PMS_CONSTRAIN_RTCFAST_SPLTADDR_R = crate::FieldReader<u16>;
 ///Field `BACKUP_BUS_PMS_CONSTRAIN_RTCFAST_SPLTADDR` writer - BackUp access rtcfast_spltaddr permission.
-pub type BACKUP_BUS_PMS_CONSTRAIN_RTCFAST_SPLTADDR_W<'a, REG> =
-    crate::FieldWriter<'a, REG, 11, u16>;
+pub type BACKUP_BUS_PMS_CONSTRAIN_RTCFAST_SPLTADDR_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    11,
+    u16,
+>;
 impl R {
     ///Bits 0:10 - BackUp access rtcfast_spltaddr permission.
     #[inline(always)]

@@ -116,47 +116,17 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SYNC_L1_CACHE_PRELOAD_INT_RAW")
-            .field(
-                "l1_icache0_pld_done_int_raw",
-                &self.l1_icache0_pld_done_int_raw(),
-            )
-            .field(
-                "l1_icache1_pld_done_int_raw",
-                &self.l1_icache1_pld_done_int_raw(),
-            )
-            .field(
-                "l1_icache2_pld_done_int_raw",
-                &self.l1_icache2_pld_done_int_raw(),
-            )
-            .field(
-                "l1_icache3_pld_done_int_raw",
-                &self.l1_icache3_pld_done_int_raw(),
-            )
-            .field(
-                "l1_dcache_pld_done_int_raw",
-                &self.l1_dcache_pld_done_int_raw(),
-            )
+            .field("l1_icache0_pld_done_int_raw", &self.l1_icache0_pld_done_int_raw())
+            .field("l1_icache1_pld_done_int_raw", &self.l1_icache1_pld_done_int_raw())
+            .field("l1_icache2_pld_done_int_raw", &self.l1_icache2_pld_done_int_raw())
+            .field("l1_icache3_pld_done_int_raw", &self.l1_icache3_pld_done_int_raw())
+            .field("l1_dcache_pld_done_int_raw", &self.l1_dcache_pld_done_int_raw())
             .field("sync_done_int_raw", &self.sync_done_int_raw())
-            .field(
-                "l1_icache0_pld_err_int_raw",
-                &self.l1_icache0_pld_err_int_raw(),
-            )
-            .field(
-                "l1_icache1_pld_err_int_raw",
-                &self.l1_icache1_pld_err_int_raw(),
-            )
-            .field(
-                "l1_icache2_pld_err_int_raw",
-                &self.l1_icache2_pld_err_int_raw(),
-            )
-            .field(
-                "l1_icache3_pld_err_int_raw",
-                &self.l1_icache3_pld_err_int_raw(),
-            )
-            .field(
-                "l1_dcache_pld_err_int_raw",
-                &self.l1_dcache_pld_err_int_raw(),
-            )
+            .field("l1_icache0_pld_err_int_raw", &self.l1_icache0_pld_err_int_raw())
+            .field("l1_icache1_pld_err_int_raw", &self.l1_icache1_pld_err_int_raw())
+            .field("l1_icache2_pld_err_int_raw", &self.l1_icache2_pld_err_int_raw())
+            .field("l1_icache3_pld_err_int_raw", &self.l1_icache3_pld_err_int_raw())
+            .field("l1_dcache_pld_err_int_raw", &self.l1_dcache_pld_err_int_raw())
             .field("sync_err_int_raw", &self.sync_err_int_raw())
             .finish()
     }
@@ -205,7 +175,9 @@ impl W {
     ///Bit 6 - The raw bit of the interrupt that occurs only when Cache sync-operation is done.
     #[inline(always)]
     #[must_use]
-    pub fn sync_done_int_raw(&mut self) -> SYNC_DONE_INT_RAW_W<SYNC_L1_CACHE_PRELOAD_INT_RAW_SPEC> {
+    pub fn sync_done_int_raw(
+        &mut self,
+    ) -> SYNC_DONE_INT_RAW_W<SYNC_L1_CACHE_PRELOAD_INT_RAW_SPEC> {
         SYNC_DONE_INT_RAW_W::new(self, 6)
     }
     ///Bit 7 - The raw bit of the interrupt that occurs only when L1-ICache0 preload-operation error occurs.
@@ -251,7 +223,9 @@ impl W {
     ///Bit 13 - The raw bit of the interrupt that occurs only when Cache sync-operation error occurs.
     #[inline(always)]
     #[must_use]
-    pub fn sync_err_int_raw(&mut self) -> SYNC_ERR_INT_RAW_W<SYNC_L1_CACHE_PRELOAD_INT_RAW_SPEC> {
+    pub fn sync_err_int_raw(
+        &mut self,
+    ) -> SYNC_ERR_INT_RAW_W<SYNC_L1_CACHE_PRELOAD_INT_RAW_SPEC> {
         SYNC_ERR_INT_RAW_W::new(self, 13)
     }
 }

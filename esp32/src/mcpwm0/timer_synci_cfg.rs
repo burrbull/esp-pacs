@@ -93,19 +93,25 @@ impl W {
     ///Bit 9
     #[inline(always)]
     #[must_use]
-    pub fn external_synci0_invert(&mut self) -> EXTERNAL_SYNCI0_INVERT_W<TIMER_SYNCI_CFG_SPEC> {
+    pub fn external_synci0_invert(
+        &mut self,
+    ) -> EXTERNAL_SYNCI0_INVERT_W<TIMER_SYNCI_CFG_SPEC> {
         EXTERNAL_SYNCI0_INVERT_W::new(self, 9)
     }
     ///Bit 10
     #[inline(always)]
     #[must_use]
-    pub fn external_synci1_invert(&mut self) -> EXTERNAL_SYNCI1_INVERT_W<TIMER_SYNCI_CFG_SPEC> {
+    pub fn external_synci1_invert(
+        &mut self,
+    ) -> EXTERNAL_SYNCI1_INVERT_W<TIMER_SYNCI_CFG_SPEC> {
         EXTERNAL_SYNCI1_INVERT_W::new(self, 10)
     }
     ///Bit 11
     #[inline(always)]
     #[must_use]
-    pub fn external_synci2_invert(&mut self) -> EXTERNAL_SYNCI2_INVERT_W<TIMER_SYNCI_CFG_SPEC> {
+    pub fn external_synci2_invert(
+        &mut self,
+    ) -> EXTERNAL_SYNCI2_INVERT_W<TIMER_SYNCI_CFG_SPEC> {
         EXTERNAL_SYNCI2_INVERT_W::new(self, 11)
     }
 }

@@ -328,7 +328,9 @@ pub mod out_eof_des_addr;
 You can [`read`](crate::generic::Reg::read) this register and get [`out_eof_bfr_des_addr::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@out_eof_bfr_des_addr`] module*/
-pub type OUT_EOF_BFR_DES_ADDR = crate::Reg<out_eof_bfr_des_addr::OUT_EOF_BFR_DES_ADDR_SPEC>;
+pub type OUT_EOF_BFR_DES_ADDR = crate::Reg<
+    out_eof_bfr_des_addr::OUT_EOF_BFR_DES_ADDR_SPEC,
+>;
 ///The last outlink descriptor address when EOF occurs of Tx channel 0
 pub mod out_eof_bfr_des_addr;
 /**OUT_DSCR (r) register accessor: Current inlink descriptor address of Tx channel 0

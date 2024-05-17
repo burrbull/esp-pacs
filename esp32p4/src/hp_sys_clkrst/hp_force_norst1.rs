@@ -275,14 +275,8 @@ impl core::fmt::Debug for R {
             .field("force_norst_lcdcam", &self.force_norst_lcdcam())
             .field("force_norst_adc", &self.force_norst_adc())
             .field("force_norst_bitsrambler", &self.force_norst_bitsrambler())
-            .field(
-                "force_norst_bitsrambler_rx",
-                &self.force_norst_bitsrambler_rx(),
-            )
-            .field(
-                "force_norst_bitsrambler_tx",
-                &self.force_norst_bitsrambler_tx(),
-            )
+            .field("force_norst_bitsrambler_rx", &self.force_norst_bitsrambler_rx())
+            .field("force_norst_bitsrambler_tx", &self.force_norst_bitsrambler_tx())
             .field("force_norst_h264", &self.force_norst_h264())
             .finish()
     }
@@ -363,7 +357,9 @@ impl W {
     ///Bit 12 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn force_norst_intrmtx(&mut self) -> FORCE_NORST_INTRMTX_W<HP_FORCE_NORST1_SPEC> {
+    pub fn force_norst_intrmtx(
+        &mut self,
+    ) -> FORCE_NORST_INTRMTX_W<HP_FORCE_NORST1_SPEC> {
         FORCE_NORST_INTRMTX_W::new(self, 12)
     }
     ///Bit 13 - Reserved
@@ -375,13 +371,17 @@ impl W {
     ///Bit 14 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn force_norst_parlio_rx(&mut self) -> FORCE_NORST_PARLIO_RX_W<HP_FORCE_NORST1_SPEC> {
+    pub fn force_norst_parlio_rx(
+        &mut self,
+    ) -> FORCE_NORST_PARLIO_RX_W<HP_FORCE_NORST1_SPEC> {
         FORCE_NORST_PARLIO_RX_W::new(self, 14)
     }
     ///Bit 15 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn force_norst_parlio_tx(&mut self) -> FORCE_NORST_PARLIO_TX_W<HP_FORCE_NORST1_SPEC> {
+    pub fn force_norst_parlio_tx(
+        &mut self,
+    ) -> FORCE_NORST_PARLIO_TX_W<HP_FORCE_NORST1_SPEC> {
         FORCE_NORST_PARLIO_TX_W::new(self, 15)
     }
     ///Bit 16 - Reserved
@@ -429,7 +429,9 @@ impl W {
     ///Bit 23 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn force_norst_bitsrambler(&mut self) -> FORCE_NORST_BITSRAMBLER_W<HP_FORCE_NORST1_SPEC> {
+    pub fn force_norst_bitsrambler(
+        &mut self,
+    ) -> FORCE_NORST_BITSRAMBLER_W<HP_FORCE_NORST1_SPEC> {
         FORCE_NORST_BITSRAMBLER_W::new(self, 23)
     }
     ///Bit 24 - Reserved

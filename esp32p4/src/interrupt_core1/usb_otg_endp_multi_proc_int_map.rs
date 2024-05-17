@@ -5,11 +5,17 @@ pub type W = crate::W<USB_OTG_ENDP_MULTI_PROC_INT_MAP_SPEC>;
 ///Field `CORE1_USB_OTG_ENDP_MULTI_PROC_INT_MAP` reader - NA
 pub type CORE1_USB_OTG_ENDP_MULTI_PROC_INT_MAP_R = crate::FieldReader;
 ///Field `CORE1_USB_OTG_ENDP_MULTI_PROC_INT_MAP` writer - NA
-pub type CORE1_USB_OTG_ENDP_MULTI_PROC_INT_MAP_W<'a, REG> = crate::FieldWriter<'a, REG, 6>;
+pub type CORE1_USB_OTG_ENDP_MULTI_PROC_INT_MAP_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    6,
+>;
 impl R {
     ///Bits 0:5 - NA
     #[inline(always)]
-    pub fn core1_usb_otg_endp_multi_proc_int_map(&self) -> CORE1_USB_OTG_ENDP_MULTI_PROC_INT_MAP_R {
+    pub fn core1_usb_otg_endp_multi_proc_int_map(
+        &self,
+    ) -> CORE1_USB_OTG_ENDP_MULTI_PROC_INT_MAP_R {
         CORE1_USB_OTG_ENDP_MULTI_PROC_INT_MAP_R::new((self.bits & 0x3f) as u8)
     }
 }

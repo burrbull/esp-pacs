@@ -55,13 +55,17 @@ impl W {
     ///Bits 0:7 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn adc_sar1_clk_div_num(&mut self) -> ADC_SAR1_CLK_DIV_NUM_W<PERI_CLK_CTRL24_SPEC> {
+    pub fn adc_sar1_clk_div_num(
+        &mut self,
+    ) -> ADC_SAR1_CLK_DIV_NUM_W<PERI_CLK_CTRL24_SPEC> {
         ADC_SAR1_CLK_DIV_NUM_W::new(self, 0)
     }
     ///Bits 8:15 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn adc_sar2_clk_div_num(&mut self) -> ADC_SAR2_CLK_DIV_NUM_W<PERI_CLK_CTRL24_SPEC> {
+    pub fn adc_sar2_clk_div_num(
+        &mut self,
+    ) -> ADC_SAR2_CLK_DIV_NUM_W<PERI_CLK_CTRL24_SPEC> {
         ADC_SAR2_CLK_DIV_NUM_W::new(self, 8)
     }
     ///Bits 16:23 - Reserved

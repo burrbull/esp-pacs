@@ -195,10 +195,7 @@ impl core::fmt::Debug for R {
             .field("ck8m_force_pd", &self.ck8m_force_pd())
             .field("ck8m_force_pu", &self.ck8m_force_pu())
             .field("xtal_global_force_gating", &self.xtal_global_force_gating())
-            .field(
-                "xtal_global_force_nogating",
-                &self.xtal_global_force_nogating(),
-            )
+            .field("xtal_global_force_nogating", &self.xtal_global_force_nogating())
             .field("fast_clk_rtc_sel", &self.fast_clk_rtc_sel())
             .field("ana_clk_rtc_sel", &self.ana_clk_rtc_sel())
             .finish()
@@ -214,7 +211,9 @@ impl W {
     ///Bit 2 - efuse_clk_force_nogating
     #[inline(always)]
     #[must_use]
-    pub fn efuse_clk_force_nogating(&mut self) -> EFUSE_CLK_FORCE_NOGATING_W<CLK_CONF_SPEC> {
+    pub fn efuse_clk_force_nogating(
+        &mut self,
+    ) -> EFUSE_CLK_FORCE_NOGATING_W<CLK_CONF_SPEC> {
         EFUSE_CLK_FORCE_NOGATING_W::new(self, 2)
     }
     ///Bit 3 - used to sync reg_ck8m_div_sel bus. Clear vld before set reg_ck8m_div_sel
@@ -298,13 +297,17 @@ impl W {
     ///Bit 27 - force enable xtal clk gating
     #[inline(always)]
     #[must_use]
-    pub fn xtal_global_force_gating(&mut self) -> XTAL_GLOBAL_FORCE_GATING_W<CLK_CONF_SPEC> {
+    pub fn xtal_global_force_gating(
+        &mut self,
+    ) -> XTAL_GLOBAL_FORCE_GATING_W<CLK_CONF_SPEC> {
         XTAL_GLOBAL_FORCE_GATING_W::new(self, 27)
     }
     ///Bit 28 - force bypass xtal clk gating
     #[inline(always)]
     #[must_use]
-    pub fn xtal_global_force_nogating(&mut self) -> XTAL_GLOBAL_FORCE_NOGATING_W<CLK_CONF_SPEC> {
+    pub fn xtal_global_force_nogating(
+        &mut self,
+    ) -> XTAL_GLOBAL_FORCE_NOGATING_W<CLK_CONF_SPEC> {
         XTAL_GLOBAL_FORCE_NOGATING_W::new(self, 28)
     }
     ///Bit 29 - fast_clk_rtc sel. 0: XTAL div 4

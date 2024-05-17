@@ -327,10 +327,7 @@ impl core::fmt::Debug for R {
             .field("mcpwm0_evt_op0_tee2_st", &self.mcpwm0_evt_op0_tee2_st())
             .field("mcpwm0_evt_op1_tee2_st", &self.mcpwm0_evt_op1_tee2_st())
             .field("mcpwm0_evt_op2_tee2_st", &self.mcpwm0_evt_op2_tee2_st())
-            .field(
-                "mcpwm1_evt_timer0_stop_st",
-                &self.mcpwm1_evt_timer0_stop_st(),
-            )
+            .field("mcpwm1_evt_timer0_stop_st", &self.mcpwm1_evt_timer0_stop_st())
             .finish()
     }
 }
@@ -338,25 +335,33 @@ impl W {
     ///Bit 0 - Represents MCPWM0_evt_timer2_tez trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn mcpwm0_evt_timer2_tez_st(&mut self) -> MCPWM0_EVT_TIMER2_TEZ_ST_W<EVT_ST2_SPEC> {
+    pub fn mcpwm0_evt_timer2_tez_st(
+        &mut self,
+    ) -> MCPWM0_EVT_TIMER2_TEZ_ST_W<EVT_ST2_SPEC> {
         MCPWM0_EVT_TIMER2_TEZ_ST_W::new(self, 0)
     }
     ///Bit 1 - Represents MCPWM0_evt_timer0_tep trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn mcpwm0_evt_timer0_tep_st(&mut self) -> MCPWM0_EVT_TIMER0_TEP_ST_W<EVT_ST2_SPEC> {
+    pub fn mcpwm0_evt_timer0_tep_st(
+        &mut self,
+    ) -> MCPWM0_EVT_TIMER0_TEP_ST_W<EVT_ST2_SPEC> {
         MCPWM0_EVT_TIMER0_TEP_ST_W::new(self, 1)
     }
     ///Bit 2 - Represents MCPWM0_evt_timer1_tep trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn mcpwm0_evt_timer1_tep_st(&mut self) -> MCPWM0_EVT_TIMER1_TEP_ST_W<EVT_ST2_SPEC> {
+    pub fn mcpwm0_evt_timer1_tep_st(
+        &mut self,
+    ) -> MCPWM0_EVT_TIMER1_TEP_ST_W<EVT_ST2_SPEC> {
         MCPWM0_EVT_TIMER1_TEP_ST_W::new(self, 2)
     }
     ///Bit 3 - Represents MCPWM0_evt_timer2_tep trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn mcpwm0_evt_timer2_tep_st(&mut self) -> MCPWM0_EVT_TIMER2_TEP_ST_W<EVT_ST2_SPEC> {
+    pub fn mcpwm0_evt_timer2_tep_st(
+        &mut self,
+    ) -> MCPWM0_EVT_TIMER2_TEP_ST_W<EVT_ST2_SPEC> {
         MCPWM0_EVT_TIMER2_TEP_ST_W::new(self, 3)
     }
     ///Bit 4 - Represents MCPWM0_evt_op0_tea trigger status.\\0: Not triggered\\1: Triggered
@@ -524,7 +529,9 @@ impl W {
     ///Bit 31 - Represents MCPWM1_evt_timer0_stop trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn mcpwm1_evt_timer0_stop_st(&mut self) -> MCPWM1_EVT_TIMER0_STOP_ST_W<EVT_ST2_SPEC> {
+    pub fn mcpwm1_evt_timer0_stop_st(
+        &mut self,
+    ) -> MCPWM1_EVT_TIMER0_STOP_ST_W<EVT_ST2_SPEC> {
         MCPWM1_EVT_TIMER0_STOP_ST_W::new(self, 31)
     }
 }

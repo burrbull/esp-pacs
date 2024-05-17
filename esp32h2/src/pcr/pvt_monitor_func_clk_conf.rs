@@ -35,10 +35,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PVT_MONITOR_FUNC_CLK_CONF")
-            .field(
-                "pvt_monitor_func_clk_div_num",
-                &self.pvt_monitor_func_clk_div_num(),
-            )
+            .field("pvt_monitor_func_clk_div_num", &self.pvt_monitor_func_clk_div_num())
             .field("pvt_monitor_func_clk_sel", &self.pvt_monitor_func_clk_sel())
             .field("pvt_monitor_func_clk_en", &self.pvt_monitor_func_clk_en())
             .finish()

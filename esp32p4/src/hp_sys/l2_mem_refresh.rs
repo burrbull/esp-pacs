@@ -113,34 +113,13 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("L2_MEM_REFRESH")
-            .field(
-                "reg_l2_mem_unit0_refersh_en",
-                &self.reg_l2_mem_unit0_refersh_en(),
-            )
-            .field(
-                "reg_l2_mem_unit1_refersh_en",
-                &self.reg_l2_mem_unit1_refersh_en(),
-            )
-            .field(
-                "reg_l2_mem_unit2_refersh_en",
-                &self.reg_l2_mem_unit2_refersh_en(),
-            )
-            .field(
-                "reg_l2_mem_unit3_refersh_en",
-                &self.reg_l2_mem_unit3_refersh_en(),
-            )
-            .field(
-                "reg_l2_mem_unit4_refersh_en",
-                &self.reg_l2_mem_unit4_refersh_en(),
-            )
-            .field(
-                "reg_l2_mem_unit5_refersh_en",
-                &self.reg_l2_mem_unit5_refersh_en(),
-            )
-            .field(
-                "reg_l2_mem_refersh_cnt_reset",
-                &self.reg_l2_mem_refersh_cnt_reset(),
-            )
+            .field("reg_l2_mem_unit0_refersh_en", &self.reg_l2_mem_unit0_refersh_en())
+            .field("reg_l2_mem_unit1_refersh_en", &self.reg_l2_mem_unit1_refersh_en())
+            .field("reg_l2_mem_unit2_refersh_en", &self.reg_l2_mem_unit2_refersh_en())
+            .field("reg_l2_mem_unit3_refersh_en", &self.reg_l2_mem_unit3_refersh_en())
+            .field("reg_l2_mem_unit4_refersh_en", &self.reg_l2_mem_unit4_refersh_en())
+            .field("reg_l2_mem_unit5_refersh_en", &self.reg_l2_mem_unit5_refersh_en())
+            .field("reg_l2_mem_refersh_cnt_reset", &self.reg_l2_mem_refersh_cnt_reset())
             .field(
                 "reg_l2_mem_unit0_refresh_done",
                 &self.reg_l2_mem_unit0_refresh_done(),

@@ -25,7 +25,9 @@ impl W {
     ///Bits 0:27 - Need add description
     #[inline(always)]
     #[must_use]
-    pub fn interrupt_reg_date(&mut self) -> INTERRUPT_REG_DATE_W<INTERRUPT_REG_DATE_SPEC> {
+    pub fn interrupt_reg_date(
+        &mut self,
+    ) -> INTERRUPT_REG_DATE_W<INTERRUPT_REG_DATE_SPEC> {
         INTERRUPT_REG_DATE_W::new(self, 0)
     }
 }

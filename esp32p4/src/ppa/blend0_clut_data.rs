@@ -25,7 +25,9 @@ impl W {
     ///Bits 0:31 - Write and read data to/from CLUT RAM in background plane of blender engine through this field in fifo mode.
     #[inline(always)]
     #[must_use]
-    pub fn rdwr_word_blend0_clut(&mut self) -> RDWR_WORD_BLEND0_CLUT_W<BLEND0_CLUT_DATA_SPEC> {
+    pub fn rdwr_word_blend0_clut(
+        &mut self,
+    ) -> RDWR_WORD_BLEND0_CLUT_W<BLEND0_CLUT_DATA_SPEC> {
         RDWR_WORD_BLEND0_CLUT_W::new(self, 0)
     }
 }

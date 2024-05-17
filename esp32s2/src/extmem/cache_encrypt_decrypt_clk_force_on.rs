@@ -38,10 +38,7 @@ impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CACHE_ENCRYPT_DECRYPT_CLK_FORCE_ON")
             .field("clk_force_on_db_encrypt", &self.clk_force_on_db_encrypt())
-            .field(
-                "clk_force_on_g0cb_decrypt",
-                &self.clk_force_on_g0cb_decrypt(),
-            )
+            .field("clk_force_on_g0cb_decrypt", &self.clk_force_on_g0cb_decrypt())
             .field(
                 "clk_force_on_automatic_encrypt_decrypt",
                 &self.clk_force_on_automatic_encrypt_decrypt(),
@@ -71,7 +68,9 @@ impl W {
     #[must_use]
     pub fn clk_force_on_automatic_encrypt_decrypt(
         &mut self,
-    ) -> CLK_FORCE_ON_AUTOMATIC_ENCRYPT_DECRYPT_W<CACHE_ENCRYPT_DECRYPT_CLK_FORCE_ON_SPEC> {
+    ) -> CLK_FORCE_ON_AUTOMATIC_ENCRYPT_DECRYPT_W<
+        CACHE_ENCRYPT_DECRYPT_CLK_FORCE_ON_SPEC,
+    > {
         CLK_FORCE_ON_AUTOMATIC_ENCRYPT_DECRYPT_W::new(self, 2)
     }
 }

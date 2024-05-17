@@ -13,12 +13,16 @@ pub type BACKUP_BUS_PMS_CONSTRAIN_RTCFAST_H_W<'a, REG> = crate::FieldWriter<'a, 
 impl R {
     ///Bits 0:2 - BackUp access rtcfast_l permission.
     #[inline(always)]
-    pub fn backup_bus_pms_constrain_rtcfast_l(&self) -> BACKUP_BUS_PMS_CONSTRAIN_RTCFAST_L_R {
+    pub fn backup_bus_pms_constrain_rtcfast_l(
+        &self,
+    ) -> BACKUP_BUS_PMS_CONSTRAIN_RTCFAST_L_R {
         BACKUP_BUS_PMS_CONSTRAIN_RTCFAST_L_R::new((self.bits & 7) as u8)
     }
     ///Bits 3:5 - BackUp access rtcfast_h permission.
     #[inline(always)]
-    pub fn backup_bus_pms_constrain_rtcfast_h(&self) -> BACKUP_BUS_PMS_CONSTRAIN_RTCFAST_H_R {
+    pub fn backup_bus_pms_constrain_rtcfast_h(
+        &self,
+    ) -> BACKUP_BUS_PMS_CONSTRAIN_RTCFAST_H_R {
         BACKUP_BUS_PMS_CONSTRAIN_RTCFAST_H_R::new(((self.bits >> 3) & 7) as u8)
     }
 }

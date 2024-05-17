@@ -58,7 +58,9 @@ impl R {
     }
     ///Bits 7:9 - If any bit in SPI_BOOT_ENCRYPT_DECRYPT_CNT is 1, then it indicates a programming error.
     #[inline(always)]
-    pub fn spi_boot_encrypt_decrypt_cnt_err(&self) -> SPI_BOOT_ENCRYPT_DECRYPT_CNT_ERR_R {
+    pub fn spi_boot_encrypt_decrypt_cnt_err(
+        &self,
+    ) -> SPI_BOOT_ENCRYPT_DECRYPT_CNT_ERR_R {
         SPI_BOOT_ENCRYPT_DECRYPT_CNT_ERR_R::new(((self.bits >> 7) & 7) as u8)
     }
     ///Bit 10 - If any bit in XTS_KEY_LENGTH_256 is 1, then it indicates a programming error.
@@ -128,10 +130,7 @@ impl core::fmt::Debug for R {
             .field("force_send_resume_err", &self.force_send_resume_err())
             .field("dis_download_mode_err", &self.dis_download_mode_err())
             .field("dis_direct_boot_err", &self.dis_direct_boot_err())
-            .field(
-                "enable_security_download_err",
-                &self.enable_security_download_err(),
-            )
+            .field("enable_security_download_err", &self.enable_security_download_err())
             .field("flash_tpuw_err", &self.flash_tpuw_err())
             .field("secure_boot_en_err", &self.secure_boot_en_err())
             .field("rpt4_reserved_err", &self.rpt4_reserved_err())

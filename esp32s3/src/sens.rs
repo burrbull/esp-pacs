@@ -957,7 +957,9 @@ pub mod sar_nouse;
 You can [`read`](crate::generic::Reg::read) this register and get [`sar_peri_clk_gate_conf::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sar_peri_clk_gate_conf::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@sar_peri_clk_gate_conf`] module*/
-pub type SAR_PERI_CLK_GATE_CONF = crate::Reg<sar_peri_clk_gate_conf::SAR_PERI_CLK_GATE_CONF_SPEC>;
+pub type SAR_PERI_CLK_GATE_CONF = crate::Reg<
+    sar_peri_clk_gate_conf::SAR_PERI_CLK_GATE_CONF_SPEC,
+>;
 ///the peri clock gate of rtc peri
 pub mod sar_peri_clk_gate_conf;
 /**SAR_PERI_RESET_CONF (rw) register accessor: the peri reset of rtc peri
@@ -973,7 +975,9 @@ pub mod sar_peri_reset_conf;
 You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sar_cocpu_int_ena_w1ts::W`]. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@sar_cocpu_int_ena_w1ts`] module*/
-pub type SAR_COCPU_INT_ENA_W1TS = crate::Reg<sar_cocpu_int_ena_w1ts::SAR_COCPU_INT_ENA_W1TS_SPEC>;
+pub type SAR_COCPU_INT_ENA_W1TS = crate::Reg<
+    sar_cocpu_int_ena_w1ts::SAR_COCPU_INT_ENA_W1TS_SPEC,
+>;
 ///the interrupt enable of ulp
 pub mod sar_cocpu_int_ena_w1ts;
 /**SAR_COCPU_INT_ENA_W1TC (w) register accessor: the interrupt enable clear of ulp
@@ -981,7 +985,9 @@ pub mod sar_cocpu_int_ena_w1ts;
 You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sar_cocpu_int_ena_w1tc::W`]. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@sar_cocpu_int_ena_w1tc`] module*/
-pub type SAR_COCPU_INT_ENA_W1TC = crate::Reg<sar_cocpu_int_ena_w1tc::SAR_COCPU_INT_ENA_W1TC_SPEC>;
+pub type SAR_COCPU_INT_ENA_W1TC = crate::Reg<
+    sar_cocpu_int_ena_w1tc::SAR_COCPU_INT_ENA_W1TC_SPEC,
+>;
 ///the interrupt enable clear of ulp
 pub mod sar_cocpu_int_ena_w1tc;
 /**SAR_DEBUG_CONF (rw) register accessor: rtc peri debug configure

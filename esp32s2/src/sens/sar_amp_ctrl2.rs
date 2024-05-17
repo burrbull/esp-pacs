@@ -84,10 +84,7 @@ impl core::fmt::Debug for R {
             .field("xpd_sar_amp_fsm_idle", &self.xpd_sar_amp_fsm_idle())
             .field("amp_rst_fb_fsm_idle", &self.amp_rst_fb_fsm_idle())
             .field("amp_short_ref_fsm_idle", &self.amp_short_ref_fsm_idle())
-            .field(
-                "amp_short_ref_gnd_fsm_idle",
-                &self.amp_short_ref_gnd_fsm_idle(),
-            )
+            .field("amp_short_ref_gnd_fsm_idle", &self.amp_short_ref_gnd_fsm_idle())
             .field("xpd_sar_fsm_idle", &self.xpd_sar_fsm_idle())
             .field("sar_rstb_fsm_idle", &self.sar_rstb_fsm_idle())
             .field("sar_amp_wait3", &self.sar_amp_wait3())
@@ -98,13 +95,17 @@ impl W {
     ///Bit 0
     #[inline(always)]
     #[must_use]
-    pub fn sar1_dac_xpd_fsm_idle(&mut self) -> SAR1_DAC_XPD_FSM_IDLE_W<SAR_AMP_CTRL2_SPEC> {
+    pub fn sar1_dac_xpd_fsm_idle(
+        &mut self,
+    ) -> SAR1_DAC_XPD_FSM_IDLE_W<SAR_AMP_CTRL2_SPEC> {
         SAR1_DAC_XPD_FSM_IDLE_W::new(self, 0)
     }
     ///Bit 1
     #[inline(always)]
     #[must_use]
-    pub fn xpd_sar_amp_fsm_idle(&mut self) -> XPD_SAR_AMP_FSM_IDLE_W<SAR_AMP_CTRL2_SPEC> {
+    pub fn xpd_sar_amp_fsm_idle(
+        &mut self,
+    ) -> XPD_SAR_AMP_FSM_IDLE_W<SAR_AMP_CTRL2_SPEC> {
         XPD_SAR_AMP_FSM_IDLE_W::new(self, 1)
     }
     ///Bit 2
@@ -116,7 +117,9 @@ impl W {
     ///Bit 3
     #[inline(always)]
     #[must_use]
-    pub fn amp_short_ref_fsm_idle(&mut self) -> AMP_SHORT_REF_FSM_IDLE_W<SAR_AMP_CTRL2_SPEC> {
+    pub fn amp_short_ref_fsm_idle(
+        &mut self,
+    ) -> AMP_SHORT_REF_FSM_IDLE_W<SAR_AMP_CTRL2_SPEC> {
         AMP_SHORT_REF_FSM_IDLE_W::new(self, 3)
     }
     ///Bit 4

@@ -55,7 +55,9 @@ impl W {
     ///Bit 21 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn hp_sleep_i2c_iso_en(&mut self) -> HP_SLEEP_I2C_ISO_EN_W<HP_SLEEP_HP_CK_POWER_SPEC> {
+    pub fn hp_sleep_i2c_iso_en(
+        &mut self,
+    ) -> HP_SLEEP_I2C_ISO_EN_W<HP_SLEEP_HP_CK_POWER_SPEC> {
         HP_SLEEP_I2C_ISO_EN_W::new(self, 21)
     }
     ///Bit 22 - need_des
@@ -69,7 +71,9 @@ impl W {
     ///Bits 23:26 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn hp_sleep_xpd_pll_i2c(&mut self) -> HP_SLEEP_XPD_PLL_I2C_W<HP_SLEEP_HP_CK_POWER_SPEC> {
+    pub fn hp_sleep_xpd_pll_i2c(
+        &mut self,
+    ) -> HP_SLEEP_XPD_PLL_I2C_W<HP_SLEEP_HP_CK_POWER_SPEC> {
         HP_SLEEP_XPD_PLL_I2C_W::new(self, 23)
     }
     ///Bits 27:30 - need_des

@@ -216,20 +216,11 @@ impl core::fmt::Debug for R {
                 "spi_smem_wdummy_dqs_always_out",
                 &self.spi_smem_wdummy_dqs_always_out(),
             )
-            .field(
-                "spi_smem_wdummy_always_out",
-                &self.spi_smem_wdummy_always_out(),
-            )
+            .field("spi_smem_wdummy_always_out", &self.spi_smem_wdummy_always_out())
             .field("sdin_hex", &self.sdin_hex())
             .field("sdout_hex", &self.sdout_hex())
-            .field(
-                "spi_smem_dqs_ie_always_on",
-                &self.spi_smem_dqs_ie_always_on(),
-            )
-            .field(
-                "spi_smem_data_ie_always_on",
-                &self.spi_smem_data_ie_always_on(),
-            )
+            .field("spi_smem_dqs_ie_always_on", &self.spi_smem_dqs_ie_always_on())
+            .field("spi_smem_data_ie_always_on", &self.spi_smem_data_ie_always_on())
             .finish()
     }
 }
@@ -335,7 +326,9 @@ impl W {
     ///Bit 25 - In the dummy phase of an MSPI write data transfer when accesses to external RAM, the level of SPI_IO\[7:0\] is output by the MSPI controller.
     #[inline(always)]
     #[must_use]
-    pub fn spi_smem_wdummy_always_out(&mut self) -> SPI_SMEM_WDUMMY_ALWAYS_OUT_W<SRAM_CMD_SPEC> {
+    pub fn spi_smem_wdummy_always_out(
+        &mut self,
+    ) -> SPI_SMEM_WDUMMY_ALWAYS_OUT_W<SRAM_CMD_SPEC> {
         SPI_SMEM_WDUMMY_ALWAYS_OUT_W::new(self, 25)
     }
     ///Bit 26 - For SPI0 external RAM , din phase apply 16 signals. 1: enable 0: disable.
@@ -353,13 +346,17 @@ impl W {
     ///Bit 30 - When accesses to external RAM, 1: the IE signals of pads connected to SPI_DQS are always 1. 0: Others.
     #[inline(always)]
     #[must_use]
-    pub fn spi_smem_dqs_ie_always_on(&mut self) -> SPI_SMEM_DQS_IE_ALWAYS_ON_W<SRAM_CMD_SPEC> {
+    pub fn spi_smem_dqs_ie_always_on(
+        &mut self,
+    ) -> SPI_SMEM_DQS_IE_ALWAYS_ON_W<SRAM_CMD_SPEC> {
         SPI_SMEM_DQS_IE_ALWAYS_ON_W::new(self, 30)
     }
     ///Bit 31 - When accesses to external RAM, 1: the IE signals of pads connected to SPI_IO\[7:0\] are always 1. 0: Others.
     #[inline(always)]
     #[must_use]
-    pub fn spi_smem_data_ie_always_on(&mut self) -> SPI_SMEM_DATA_IE_ALWAYS_ON_W<SRAM_CMD_SPEC> {
+    pub fn spi_smem_data_ie_always_on(
+        &mut self,
+    ) -> SPI_SMEM_DATA_IE_ALWAYS_ON_W<SRAM_CMD_SPEC> {
         SPI_SMEM_DATA_IE_ALWAYS_ON_W::new(self, 31)
     }
 }

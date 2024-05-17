@@ -67,13 +67,17 @@ impl W {
     ///Bit 4 - The bit is used to enable the interrupt by dcache sync done.
     #[inline(always)]
     #[must_use]
-    pub fn dcache_sync_int_ena(&mut self) -> DCACHE_SYNC_INT_ENA_W<CACHE_SYNC_INT_CTRL_SPEC> {
+    pub fn dcache_sync_int_ena(
+        &mut self,
+    ) -> DCACHE_SYNC_INT_ENA_W<CACHE_SYNC_INT_CTRL_SPEC> {
         DCACHE_SYNC_INT_ENA_W::new(self, 4)
     }
     ///Bit 5 - The bit is used to clear the interrupt by dcache sync done.
     #[inline(always)]
     #[must_use]
-    pub fn dcache_sync_int_clr(&mut self) -> DCACHE_SYNC_INT_CLR_W<CACHE_SYNC_INT_CTRL_SPEC> {
+    pub fn dcache_sync_int_clr(
+        &mut self,
+    ) -> DCACHE_SYNC_INT_CLR_W<CACHE_SYNC_INT_CTRL_SPEC> {
         DCACHE_SYNC_INT_CLR_W::new(self, 5)
     }
 }

@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("TX_ABORT_INTERRUPT_CONTROL")
-            .field(
-                "tx_abort_interrupt_control",
-                &self.tx_abort_interrupt_control(),
-            )
+            .field("tx_abort_interrupt_control", &self.tx_abort_interrupt_control())
             .finish()
     }
 }

@@ -46,14 +46,8 @@ impl core::fmt::Debug for R {
         f.debug_struct("L2_CACHE_ACCESS_ATTR_CTRL")
             .field("l2_cache_access_force_cc", &self.l2_cache_access_force_cc())
             .field("l2_cache_access_force_wb", &self.l2_cache_access_force_wb())
-            .field(
-                "l2_cache_access_force_wma",
-                &self.l2_cache_access_force_wma(),
-            )
-            .field(
-                "l2_cache_access_force_rma",
-                &self.l2_cache_access_force_rma(),
-            )
+            .field("l2_cache_access_force_wma", &self.l2_cache_access_force_wma())
+            .field("l2_cache_access_force_rma", &self.l2_cache_access_force_rma())
             .finish()
     }
 }

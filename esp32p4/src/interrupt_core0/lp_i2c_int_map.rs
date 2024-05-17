@@ -25,7 +25,9 @@ impl W {
     ///Bits 0:5 - NA
     #[inline(always)]
     #[must_use]
-    pub fn core0_lp_i2c_int_map(&mut self) -> CORE0_LP_I2C_INT_MAP_W<LP_I2C_INT_MAP_SPEC> {
+    pub fn core0_lp_i2c_int_map(
+        &mut self,
+    ) -> CORE0_LP_I2C_INT_MAP_W<LP_I2C_INT_MAP_SPEC> {
         CORE0_LP_I2C_INT_MAP_W::new(self, 0)
     }
 }

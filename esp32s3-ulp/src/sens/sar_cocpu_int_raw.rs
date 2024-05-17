@@ -32,7 +32,9 @@ impl R {
     }
     ///Bit 1 - int from touch inactive
     #[inline(always)]
-    pub fn sar_cocpu_touch_inactive_int_raw(&self) -> SAR_COCPU_TOUCH_INACTIVE_INT_RAW_R {
+    pub fn sar_cocpu_touch_inactive_int_raw(
+        &self,
+    ) -> SAR_COCPU_TOUCH_INACTIVE_INT_RAW_R {
         SAR_COCPU_TOUCH_INACTIVE_INT_RAW_R::new(((self.bits >> 1) & 1) != 0)
     }
     ///Bit 2 - int from touch active
@@ -84,7 +86,9 @@ impl R {
     }
     ///Bit 11 - int from touch scan done
     #[inline(always)]
-    pub fn sar_cocpu_touch_scan_done_int_raw(&self) -> SAR_COCPU_TOUCH_SCAN_DONE_INT_RAW_R {
+    pub fn sar_cocpu_touch_scan_done_int_raw(
+        &self,
+    ) -> SAR_COCPU_TOUCH_SCAN_DONE_INT_RAW_R {
         SAR_COCPU_TOUCH_SCAN_DONE_INT_RAW_R::new(((self.bits >> 11) & 1) != 0)
     }
 }
@@ -92,10 +96,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SAR_COCPU_INT_RAW")
-            .field(
-                "sar_cocpu_touch_done_int_raw",
-                &self.sar_cocpu_touch_done_int_raw(),
-            )
+            .field("sar_cocpu_touch_done_int_raw", &self.sar_cocpu_touch_done_int_raw())
             .field(
                 "sar_cocpu_touch_inactive_int_raw",
                 &self.sar_cocpu_touch_inactive_int_raw(),
@@ -104,14 +105,8 @@ impl core::fmt::Debug for R {
                 "sar_cocpu_touch_active_int_raw",
                 &self.sar_cocpu_touch_active_int_raw(),
             )
-            .field(
-                "sar_cocpu_saradc1_int_raw",
-                &self.sar_cocpu_saradc1_int_raw(),
-            )
-            .field(
-                "sar_cocpu_saradc2_int_raw",
-                &self.sar_cocpu_saradc2_int_raw(),
-            )
+            .field("sar_cocpu_saradc1_int_raw", &self.sar_cocpu_saradc1_int_raw())
+            .field("sar_cocpu_saradc2_int_raw", &self.sar_cocpu_saradc2_int_raw())
             .field("sar_cocpu_tsens_int_raw", &self.sar_cocpu_tsens_int_raw())
             .field("sar_cocpu_start_int_raw", &self.sar_cocpu_start_int_raw())
             .field("sar_cocpu_sw_int_raw", &self.sar_cocpu_sw_int_raw())

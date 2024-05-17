@@ -1056,7 +1056,9 @@ pub mod lsc_tablesize;
 You can [`read`](crate::generic::Reg::read) this register and get [`demosaic_matrix_ctrl::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`demosaic_matrix_ctrl::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@demosaic_matrix_ctrl`] module*/
-pub type DEMOSAIC_MATRIX_CTRL = crate::Reg<demosaic_matrix_ctrl::DEMOSAIC_MATRIX_CTRL_SPEC>;
+pub type DEMOSAIC_MATRIX_CTRL = crate::Reg<
+    demosaic_matrix_ctrl::DEMOSAIC_MATRIX_CTRL_SPEC,
+>;
 ///demosaic pix2matrix ctrl
 pub mod demosaic_matrix_ctrl;
 /**DEMOSAIC_GRAD_RATIO (rw) register accessor: demosaic gradient select ratio

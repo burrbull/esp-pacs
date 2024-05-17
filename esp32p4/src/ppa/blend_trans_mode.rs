@@ -69,7 +69,9 @@ impl W {
     ///Bit 2 - This bit is used to enable fix pixel filling. When this mode is enable only Tx channel is work and the output pixel is configured by PPA_OUT_FIX_PIXEL.
     #[inline(always)]
     #[must_use]
-    pub fn blend_fix_pixel_fill_en(&mut self) -> BLEND_FIX_PIXEL_FILL_EN_W<BLEND_TRANS_MODE_SPEC> {
+    pub fn blend_fix_pixel_fill_en(
+        &mut self,
+    ) -> BLEND_FIX_PIXEL_FILL_EN_W<BLEND_TRANS_MODE_SPEC> {
         BLEND_FIX_PIXEL_FILL_EN_W::new(self, 2)
     }
     ///Bit 3 - Set this bit to update the transfer mode. Only the bit is set the transfer mode is valid.

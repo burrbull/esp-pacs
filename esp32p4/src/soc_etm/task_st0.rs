@@ -273,22 +273,30 @@ impl R {
     }
     ///Bit 28 - Represents LEDC_task_duty_scale_update_ch0 trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
-    pub fn ledc_task_duty_scale_update_ch0_st(&self) -> LEDC_TASK_DUTY_SCALE_UPDATE_CH0_ST_R {
+    pub fn ledc_task_duty_scale_update_ch0_st(
+        &self,
+    ) -> LEDC_TASK_DUTY_SCALE_UPDATE_CH0_ST_R {
         LEDC_TASK_DUTY_SCALE_UPDATE_CH0_ST_R::new(((self.bits >> 28) & 1) != 0)
     }
     ///Bit 29 - Represents LEDC_task_duty_scale_update_ch1 trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
-    pub fn ledc_task_duty_scale_update_ch1_st(&self) -> LEDC_TASK_DUTY_SCALE_UPDATE_CH1_ST_R {
+    pub fn ledc_task_duty_scale_update_ch1_st(
+        &self,
+    ) -> LEDC_TASK_DUTY_SCALE_UPDATE_CH1_ST_R {
         LEDC_TASK_DUTY_SCALE_UPDATE_CH1_ST_R::new(((self.bits >> 29) & 1) != 0)
     }
     ///Bit 30 - Represents LEDC_task_duty_scale_update_ch2 trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
-    pub fn ledc_task_duty_scale_update_ch2_st(&self) -> LEDC_TASK_DUTY_SCALE_UPDATE_CH2_ST_R {
+    pub fn ledc_task_duty_scale_update_ch2_st(
+        &self,
+    ) -> LEDC_TASK_DUTY_SCALE_UPDATE_CH2_ST_R {
         LEDC_TASK_DUTY_SCALE_UPDATE_CH2_ST_R::new(((self.bits >> 30) & 1) != 0)
     }
     ///Bit 31 - Represents LEDC_task_duty_scale_update_ch3 trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
-    pub fn ledc_task_duty_scale_update_ch3_st(&self) -> LEDC_TASK_DUTY_SCALE_UPDATE_CH3_ST_R {
+    pub fn ledc_task_duty_scale_update_ch3_st(
+        &self,
+    ) -> LEDC_TASK_DUTY_SCALE_UPDATE_CH3_ST_R {
         LEDC_TASK_DUTY_SCALE_UPDATE_CH3_ST_R::new(((self.bits >> 31) & 1) != 0)
     }
 }
@@ -455,49 +463,65 @@ impl W {
     ///Bit 16 - Represents GPIO_task_ch0_toggle trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn gpio_task_ch0_toggle_st(&mut self) -> GPIO_TASK_CH0_TOGGLE_ST_W<TASK_ST0_SPEC> {
+    pub fn gpio_task_ch0_toggle_st(
+        &mut self,
+    ) -> GPIO_TASK_CH0_TOGGLE_ST_W<TASK_ST0_SPEC> {
         GPIO_TASK_CH0_TOGGLE_ST_W::new(self, 16)
     }
     ///Bit 17 - Represents GPIO_task_ch1_toggle trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn gpio_task_ch1_toggle_st(&mut self) -> GPIO_TASK_CH1_TOGGLE_ST_W<TASK_ST0_SPEC> {
+    pub fn gpio_task_ch1_toggle_st(
+        &mut self,
+    ) -> GPIO_TASK_CH1_TOGGLE_ST_W<TASK_ST0_SPEC> {
         GPIO_TASK_CH1_TOGGLE_ST_W::new(self, 17)
     }
     ///Bit 18 - Represents GPIO_task_ch2_toggle trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn gpio_task_ch2_toggle_st(&mut self) -> GPIO_TASK_CH2_TOGGLE_ST_W<TASK_ST0_SPEC> {
+    pub fn gpio_task_ch2_toggle_st(
+        &mut self,
+    ) -> GPIO_TASK_CH2_TOGGLE_ST_W<TASK_ST0_SPEC> {
         GPIO_TASK_CH2_TOGGLE_ST_W::new(self, 18)
     }
     ///Bit 19 - Represents GPIO_task_ch3_toggle trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn gpio_task_ch3_toggle_st(&mut self) -> GPIO_TASK_CH3_TOGGLE_ST_W<TASK_ST0_SPEC> {
+    pub fn gpio_task_ch3_toggle_st(
+        &mut self,
+    ) -> GPIO_TASK_CH3_TOGGLE_ST_W<TASK_ST0_SPEC> {
         GPIO_TASK_CH3_TOGGLE_ST_W::new(self, 19)
     }
     ///Bit 20 - Represents GPIO_task_ch4_toggle trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn gpio_task_ch4_toggle_st(&mut self) -> GPIO_TASK_CH4_TOGGLE_ST_W<TASK_ST0_SPEC> {
+    pub fn gpio_task_ch4_toggle_st(
+        &mut self,
+    ) -> GPIO_TASK_CH4_TOGGLE_ST_W<TASK_ST0_SPEC> {
         GPIO_TASK_CH4_TOGGLE_ST_W::new(self, 20)
     }
     ///Bit 21 - Represents GPIO_task_ch5_toggle trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn gpio_task_ch5_toggle_st(&mut self) -> GPIO_TASK_CH5_TOGGLE_ST_W<TASK_ST0_SPEC> {
+    pub fn gpio_task_ch5_toggle_st(
+        &mut self,
+    ) -> GPIO_TASK_CH5_TOGGLE_ST_W<TASK_ST0_SPEC> {
         GPIO_TASK_CH5_TOGGLE_ST_W::new(self, 21)
     }
     ///Bit 22 - Represents GPIO_task_ch6_toggle trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn gpio_task_ch6_toggle_st(&mut self) -> GPIO_TASK_CH6_TOGGLE_ST_W<TASK_ST0_SPEC> {
+    pub fn gpio_task_ch6_toggle_st(
+        &mut self,
+    ) -> GPIO_TASK_CH6_TOGGLE_ST_W<TASK_ST0_SPEC> {
         GPIO_TASK_CH6_TOGGLE_ST_W::new(self, 22)
     }
     ///Bit 23 - Represents GPIO_task_ch7_toggle trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn gpio_task_ch7_toggle_st(&mut self) -> GPIO_TASK_CH7_TOGGLE_ST_W<TASK_ST0_SPEC> {
+    pub fn gpio_task_ch7_toggle_st(
+        &mut self,
+    ) -> GPIO_TASK_CH7_TOGGLE_ST_W<TASK_ST0_SPEC> {
         GPIO_TASK_CH7_TOGGLE_ST_W::new(self, 23)
     }
     ///Bit 24 - Represents LEDC_task_timer0_res_update trigger status.\\0: Not triggered\\1: Triggered

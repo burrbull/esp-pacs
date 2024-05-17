@@ -17,7 +17,9 @@ impl R {
     pub fn core_0_dram0_pms_monitor_violate_status_byteen(
         &self,
     ) -> CORE_0_DRAM0_PMS_MONITOR_VIOLATE_STATUS_BYTEEN_R {
-        CORE_0_DRAM0_PMS_MONITOR_VIOLATE_STATUS_BYTEEN_R::new(((self.bits >> 1) & 0xffff) as u16)
+        CORE_0_DRAM0_PMS_MONITOR_VIOLATE_STATUS_BYTEEN_R::new(
+            ((self.bits >> 1) & 0xffff) as u16,
+        )
     }
 }
 #[cfg(feature = "impl-register-debug")]

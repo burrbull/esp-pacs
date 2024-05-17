@@ -161,10 +161,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PERI_CLK_CTRL25")
-            .field(
-                "pvt_peri_group_clk_div_num",
-                &self.pvt_peri_group_clk_div_num(),
-            )
+            .field("pvt_peri_group_clk_div_num", &self.pvt_peri_group_clk_div_num())
             .field("pvt_peri_group1_clk_en", &self.pvt_peri_group1_clk_en())
             .field("pvt_peri_group2_clk_en", &self.pvt_peri_group2_clk_en())
             .field("pvt_peri_group3_clk_en", &self.pvt_peri_group3_clk_en())
@@ -196,25 +193,33 @@ impl W {
     ///Bit 8 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn pvt_peri_group1_clk_en(&mut self) -> PVT_PERI_GROUP1_CLK_EN_W<PERI_CLK_CTRL25_SPEC> {
+    pub fn pvt_peri_group1_clk_en(
+        &mut self,
+    ) -> PVT_PERI_GROUP1_CLK_EN_W<PERI_CLK_CTRL25_SPEC> {
         PVT_PERI_GROUP1_CLK_EN_W::new(self, 8)
     }
     ///Bit 9 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn pvt_peri_group2_clk_en(&mut self) -> PVT_PERI_GROUP2_CLK_EN_W<PERI_CLK_CTRL25_SPEC> {
+    pub fn pvt_peri_group2_clk_en(
+        &mut self,
+    ) -> PVT_PERI_GROUP2_CLK_EN_W<PERI_CLK_CTRL25_SPEC> {
         PVT_PERI_GROUP2_CLK_EN_W::new(self, 9)
     }
     ///Bit 10 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn pvt_peri_group3_clk_en(&mut self) -> PVT_PERI_GROUP3_CLK_EN_W<PERI_CLK_CTRL25_SPEC> {
+    pub fn pvt_peri_group3_clk_en(
+        &mut self,
+    ) -> PVT_PERI_GROUP3_CLK_EN_W<PERI_CLK_CTRL25_SPEC> {
         PVT_PERI_GROUP3_CLK_EN_W::new(self, 10)
     }
     ///Bit 11 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn pvt_peri_group4_clk_en(&mut self) -> PVT_PERI_GROUP4_CLK_EN_W<PERI_CLK_CTRL25_SPEC> {
+    pub fn pvt_peri_group4_clk_en(
+        &mut self,
+    ) -> PVT_PERI_GROUP4_CLK_EN_W<PERI_CLK_CTRL25_SPEC> {
         PVT_PERI_GROUP4_CLK_EN_W::new(self, 11)
     }
     ///Bits 12:13 - Reserved
@@ -268,7 +273,9 @@ impl W {
     ///Bit 21 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn crypto_ecdsa_clk_en(&mut self) -> CRYPTO_ECDSA_CLK_EN_W<PERI_CLK_CTRL25_SPEC> {
+    pub fn crypto_ecdsa_clk_en(
+        &mut self,
+    ) -> CRYPTO_ECDSA_CLK_EN_W<PERI_CLK_CTRL25_SPEC> {
         CRYPTO_ECDSA_CLK_EN_W::new(self, 21)
     }
     ///Bit 22 - Reserved

@@ -128,30 +128,12 @@ impl core::fmt::Debug for R {
             .field("st_err_f_bndry_match_vc7", &self.st_err_f_bndry_match_vc7())
             .field("st_err_f_bndry_match_vc8", &self.st_err_f_bndry_match_vc8())
             .field("st_err_f_bndry_match_vc9", &self.st_err_f_bndry_match_vc9())
-            .field(
-                "st_err_f_bndry_match_vc10",
-                &self.st_err_f_bndry_match_vc10(),
-            )
-            .field(
-                "st_err_f_bndry_match_vc11",
-                &self.st_err_f_bndry_match_vc11(),
-            )
-            .field(
-                "st_err_f_bndry_match_vc12",
-                &self.st_err_f_bndry_match_vc12(),
-            )
-            .field(
-                "st_err_f_bndry_match_vc13",
-                &self.st_err_f_bndry_match_vc13(),
-            )
-            .field(
-                "st_err_f_bndry_match_vc14",
-                &self.st_err_f_bndry_match_vc14(),
-            )
-            .field(
-                "st_err_f_bndry_match_vc15",
-                &self.st_err_f_bndry_match_vc15(),
-            )
+            .field("st_err_f_bndry_match_vc10", &self.st_err_f_bndry_match_vc10())
+            .field("st_err_f_bndry_match_vc11", &self.st_err_f_bndry_match_vc11())
+            .field("st_err_f_bndry_match_vc12", &self.st_err_f_bndry_match_vc12())
+            .field("st_err_f_bndry_match_vc13", &self.st_err_f_bndry_match_vc13())
+            .field("st_err_f_bndry_match_vc14", &self.st_err_f_bndry_match_vc14())
+            .field("st_err_f_bndry_match_vc15", &self.st_err_f_bndry_match_vc15())
             .finish()
     }
 }

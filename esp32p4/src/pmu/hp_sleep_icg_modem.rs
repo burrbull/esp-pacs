@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("HP_SLEEP_ICG_MODEM")
-            .field(
-                "hp_sleep_dig_icg_modem_code",
-                &self.hp_sleep_dig_icg_modem_code(),
-            )
+            .field("hp_sleep_dig_icg_modem_code", &self.hp_sleep_dig_icg_modem_code())
             .finish()
     }
 }

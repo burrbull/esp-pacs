@@ -25,7 +25,9 @@ impl W {
     ///Bits 0:17 - Configure read-protection address 3.
     #[inline(always)]
     #[must_use]
-    pub fn pro_dport_reserve_fifo_3(&mut self) -> PRO_DPORT_RESERVE_FIFO_3_W<PRO_DPORT_5_SPEC> {
+    pub fn pro_dport_reserve_fifo_3(
+        &mut self,
+    ) -> PRO_DPORT_RESERVE_FIFO_3_W<PRO_DPORT_5_SPEC> {
         PRO_DPORT_RESERVE_FIFO_3_W::new(self, 0)
     }
 }

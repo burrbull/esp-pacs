@@ -393,7 +393,9 @@ impl W {
     ///Bit 23
     #[inline(always)]
     #[must_use]
-    pub fn clk_fe_anamode_160m_en(&mut self) -> CLK_FE_ANAMODE_160M_EN_W<CLK_CONF1_SPEC> {
+    pub fn clk_fe_anamode_160m_en(
+        &mut self,
+    ) -> CLK_FE_ANAMODE_160M_EN_W<CLK_CONF1_SPEC> {
         CLK_FE_ANAMODE_160M_EN_W::new(self, 23)
     }
 }

@@ -11,7 +11,9 @@ pub type BACKUP_BUS_PMS_MONITOR_VIOLATE_STATUS_HWRITE_R = crate::BitReader;
 impl R {
     ///Bit 0 - backup_bus_pms_monitor_violate_intr
     #[inline(always)]
-    pub fn backup_bus_pms_monitor_violate_intr(&self) -> BACKUP_BUS_PMS_MONITOR_VIOLATE_INTR_R {
+    pub fn backup_bus_pms_monitor_violate_intr(
+        &self,
+    ) -> BACKUP_BUS_PMS_MONITOR_VIOLATE_INTR_R {
         BACKUP_BUS_PMS_MONITOR_VIOLATE_INTR_R::new((self.bits & 1) != 0)
     }
     ///Bits 1:2 - backup_bus_pms_monitor_violate_status_htrans

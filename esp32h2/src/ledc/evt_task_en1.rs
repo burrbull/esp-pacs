@@ -260,22 +260,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("EVT_TASK_EN1")
-            .field(
-                "task_timer0_res_update_en",
-                &self.task_timer0_res_update_en(),
-            )
-            .field(
-                "task_timer1_res_update_en",
-                &self.task_timer1_res_update_en(),
-            )
-            .field(
-                "task_timer2_res_update_en",
-                &self.task_timer2_res_update_en(),
-            )
-            .field(
-                "task_timer3_res_update_en",
-                &self.task_timer3_res_update_en(),
-            )
+            .field("task_timer0_res_update_en", &self.task_timer0_res_update_en())
+            .field("task_timer1_res_update_en", &self.task_timer1_res_update_en())
+            .field("task_timer2_res_update_en", &self.task_timer2_res_update_en())
+            .field("task_timer3_res_update_en", &self.task_timer3_res_update_en())
             .field("task_timer0_cap_en", &self.task_timer0_cap_en())
             .field("task_timer1_cap_en", &self.task_timer1_cap_en())
             .field("task_timer2_cap_en", &self.task_timer2_cap_en())
@@ -296,22 +284,10 @@ impl core::fmt::Debug for R {
             .field("task_timer1_rst_en", &self.task_timer1_rst_en())
             .field("task_timer2_rst_en", &self.task_timer2_rst_en())
             .field("task_timer3_rst_en", &self.task_timer3_rst_en())
-            .field(
-                "task_timer0_pause_resume_en",
-                &self.task_timer0_pause_resume_en(),
-            )
-            .field(
-                "task_timer1_pause_resume_en",
-                &self.task_timer1_pause_resume_en(),
-            )
-            .field(
-                "task_timer2_pause_resume_en",
-                &self.task_timer2_pause_resume_en(),
-            )
-            .field(
-                "task_timer3_pause_resume_en",
-                &self.task_timer3_pause_resume_en(),
-            )
+            .field("task_timer0_pause_resume_en", &self.task_timer0_pause_resume_en())
+            .field("task_timer1_pause_resume_en", &self.task_timer1_pause_resume_en())
+            .field("task_timer2_pause_resume_en", &self.task_timer2_pause_resume_en())
+            .field("task_timer3_pause_resume_en", &self.task_timer3_pause_resume_en())
             .finish()
     }
 }
@@ -319,25 +295,33 @@ impl W {
     ///Bit 0 - Ledc timer0 res update task enable register, write 1 to enable this task.
     #[inline(always)]
     #[must_use]
-    pub fn task_timer0_res_update_en(&mut self) -> TASK_TIMER0_RES_UPDATE_EN_W<EVT_TASK_EN1_SPEC> {
+    pub fn task_timer0_res_update_en(
+        &mut self,
+    ) -> TASK_TIMER0_RES_UPDATE_EN_W<EVT_TASK_EN1_SPEC> {
         TASK_TIMER0_RES_UPDATE_EN_W::new(self, 0)
     }
     ///Bit 1 - Ledc timer1 res update task enable register, write 1 to enable this task.
     #[inline(always)]
     #[must_use]
-    pub fn task_timer1_res_update_en(&mut self) -> TASK_TIMER1_RES_UPDATE_EN_W<EVT_TASK_EN1_SPEC> {
+    pub fn task_timer1_res_update_en(
+        &mut self,
+    ) -> TASK_TIMER1_RES_UPDATE_EN_W<EVT_TASK_EN1_SPEC> {
         TASK_TIMER1_RES_UPDATE_EN_W::new(self, 1)
     }
     ///Bit 2 - Ledc timer2 res update task enable register, write 1 to enable this task.
     #[inline(always)]
     #[must_use]
-    pub fn task_timer2_res_update_en(&mut self) -> TASK_TIMER2_RES_UPDATE_EN_W<EVT_TASK_EN1_SPEC> {
+    pub fn task_timer2_res_update_en(
+        &mut self,
+    ) -> TASK_TIMER2_RES_UPDATE_EN_W<EVT_TASK_EN1_SPEC> {
         TASK_TIMER2_RES_UPDATE_EN_W::new(self, 2)
     }
     ///Bit 3 - Ledc timer3 res update task enable register, write 1 to enable this task.
     #[inline(always)]
     #[must_use]
-    pub fn task_timer3_res_update_en(&mut self) -> TASK_TIMER3_RES_UPDATE_EN_W<EVT_TASK_EN1_SPEC> {
+    pub fn task_timer3_res_update_en(
+        &mut self,
+    ) -> TASK_TIMER3_RES_UPDATE_EN_W<EVT_TASK_EN1_SPEC> {
         TASK_TIMER3_RES_UPDATE_EN_W::new(self, 3)
     }
     ///Bit 4 - Ledc timer0 capture task enable register, write 1 to enable this task.
@@ -367,73 +351,97 @@ impl W {
     ///Bit 8 - Ledc ch0 signal out disable task enable register, write 1 to enable this task.
     #[inline(always)]
     #[must_use]
-    pub fn task_sig_out_dis_ch0_en(&mut self) -> TASK_SIG_OUT_DIS_CH0_EN_W<EVT_TASK_EN1_SPEC> {
+    pub fn task_sig_out_dis_ch0_en(
+        &mut self,
+    ) -> TASK_SIG_OUT_DIS_CH0_EN_W<EVT_TASK_EN1_SPEC> {
         TASK_SIG_OUT_DIS_CH0_EN_W::new(self, 8)
     }
     ///Bit 9 - Ledc ch1 signal out disable task enable register, write 1 to enable this task.
     #[inline(always)]
     #[must_use]
-    pub fn task_sig_out_dis_ch1_en(&mut self) -> TASK_SIG_OUT_DIS_CH1_EN_W<EVT_TASK_EN1_SPEC> {
+    pub fn task_sig_out_dis_ch1_en(
+        &mut self,
+    ) -> TASK_SIG_OUT_DIS_CH1_EN_W<EVT_TASK_EN1_SPEC> {
         TASK_SIG_OUT_DIS_CH1_EN_W::new(self, 9)
     }
     ///Bit 10 - Ledc ch2 signal out disable task enable register, write 1 to enable this task.
     #[inline(always)]
     #[must_use]
-    pub fn task_sig_out_dis_ch2_en(&mut self) -> TASK_SIG_OUT_DIS_CH2_EN_W<EVT_TASK_EN1_SPEC> {
+    pub fn task_sig_out_dis_ch2_en(
+        &mut self,
+    ) -> TASK_SIG_OUT_DIS_CH2_EN_W<EVT_TASK_EN1_SPEC> {
         TASK_SIG_OUT_DIS_CH2_EN_W::new(self, 10)
     }
     ///Bit 11 - Ledc ch3 signal out disable task enable register, write 1 to enable this task.
     #[inline(always)]
     #[must_use]
-    pub fn task_sig_out_dis_ch3_en(&mut self) -> TASK_SIG_OUT_DIS_CH3_EN_W<EVT_TASK_EN1_SPEC> {
+    pub fn task_sig_out_dis_ch3_en(
+        &mut self,
+    ) -> TASK_SIG_OUT_DIS_CH3_EN_W<EVT_TASK_EN1_SPEC> {
         TASK_SIG_OUT_DIS_CH3_EN_W::new(self, 11)
     }
     ///Bit 12 - Ledc ch4 signal out disable task enable register, write 1 to enable this task.
     #[inline(always)]
     #[must_use]
-    pub fn task_sig_out_dis_ch4_en(&mut self) -> TASK_SIG_OUT_DIS_CH4_EN_W<EVT_TASK_EN1_SPEC> {
+    pub fn task_sig_out_dis_ch4_en(
+        &mut self,
+    ) -> TASK_SIG_OUT_DIS_CH4_EN_W<EVT_TASK_EN1_SPEC> {
         TASK_SIG_OUT_DIS_CH4_EN_W::new(self, 12)
     }
     ///Bit 13 - Ledc ch5 signal out disable task enable register, write 1 to enable this task.
     #[inline(always)]
     #[must_use]
-    pub fn task_sig_out_dis_ch5_en(&mut self) -> TASK_SIG_OUT_DIS_CH5_EN_W<EVT_TASK_EN1_SPEC> {
+    pub fn task_sig_out_dis_ch5_en(
+        &mut self,
+    ) -> TASK_SIG_OUT_DIS_CH5_EN_W<EVT_TASK_EN1_SPEC> {
         TASK_SIG_OUT_DIS_CH5_EN_W::new(self, 13)
     }
     ///Bit 16 - Ledc ch0 overflow count reset task enable register, write 1 to enable this task.
     #[inline(always)]
     #[must_use]
-    pub fn task_ovf_cnt_rst_ch0_en(&mut self) -> TASK_OVF_CNT_RST_CH0_EN_W<EVT_TASK_EN1_SPEC> {
+    pub fn task_ovf_cnt_rst_ch0_en(
+        &mut self,
+    ) -> TASK_OVF_CNT_RST_CH0_EN_W<EVT_TASK_EN1_SPEC> {
         TASK_OVF_CNT_RST_CH0_EN_W::new(self, 16)
     }
     ///Bit 17 - Ledc ch1 overflow count reset task enable register, write 1 to enable this task.
     #[inline(always)]
     #[must_use]
-    pub fn task_ovf_cnt_rst_ch1_en(&mut self) -> TASK_OVF_CNT_RST_CH1_EN_W<EVT_TASK_EN1_SPEC> {
+    pub fn task_ovf_cnt_rst_ch1_en(
+        &mut self,
+    ) -> TASK_OVF_CNT_RST_CH1_EN_W<EVT_TASK_EN1_SPEC> {
         TASK_OVF_CNT_RST_CH1_EN_W::new(self, 17)
     }
     ///Bit 18 - Ledc ch2 overflow count reset task enable register, write 1 to enable this task.
     #[inline(always)]
     #[must_use]
-    pub fn task_ovf_cnt_rst_ch2_en(&mut self) -> TASK_OVF_CNT_RST_CH2_EN_W<EVT_TASK_EN1_SPEC> {
+    pub fn task_ovf_cnt_rst_ch2_en(
+        &mut self,
+    ) -> TASK_OVF_CNT_RST_CH2_EN_W<EVT_TASK_EN1_SPEC> {
         TASK_OVF_CNT_RST_CH2_EN_W::new(self, 18)
     }
     ///Bit 19 - Ledc ch3 overflow count reset task enable register, write 1 to enable this task.
     #[inline(always)]
     #[must_use]
-    pub fn task_ovf_cnt_rst_ch3_en(&mut self) -> TASK_OVF_CNT_RST_CH3_EN_W<EVT_TASK_EN1_SPEC> {
+    pub fn task_ovf_cnt_rst_ch3_en(
+        &mut self,
+    ) -> TASK_OVF_CNT_RST_CH3_EN_W<EVT_TASK_EN1_SPEC> {
         TASK_OVF_CNT_RST_CH3_EN_W::new(self, 19)
     }
     ///Bit 20 - Ledc ch4 overflow count reset task enable register, write 1 to enable this task.
     #[inline(always)]
     #[must_use]
-    pub fn task_ovf_cnt_rst_ch4_en(&mut self) -> TASK_OVF_CNT_RST_CH4_EN_W<EVT_TASK_EN1_SPEC> {
+    pub fn task_ovf_cnt_rst_ch4_en(
+        &mut self,
+    ) -> TASK_OVF_CNT_RST_CH4_EN_W<EVT_TASK_EN1_SPEC> {
         TASK_OVF_CNT_RST_CH4_EN_W::new(self, 20)
     }
     ///Bit 21 - Ledc ch5 overflow count reset task enable register, write 1 to enable this task.
     #[inline(always)]
     #[must_use]
-    pub fn task_ovf_cnt_rst_ch5_en(&mut self) -> TASK_OVF_CNT_RST_CH5_EN_W<EVT_TASK_EN1_SPEC> {
+    pub fn task_ovf_cnt_rst_ch5_en(
+        &mut self,
+    ) -> TASK_OVF_CNT_RST_CH5_EN_W<EVT_TASK_EN1_SPEC> {
         TASK_OVF_CNT_RST_CH5_EN_W::new(self, 21)
     }
     ///Bit 24 - Ledc timer0 reset task enable register, write 1 to enable this task.

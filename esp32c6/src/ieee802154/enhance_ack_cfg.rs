@@ -5,7 +5,12 @@ pub type W = crate::W<ENHANCE_ACK_CFG_SPEC>;
 ///Field `TX_ENH_ACK_GENERATE_DONE_NOTIFY` reader -
 pub type TX_ENH_ACK_GENERATE_DONE_NOTIFY_R = crate::FieldReader<u32>;
 ///Field `TX_ENH_ACK_GENERATE_DONE_NOTIFY` writer -
-pub type TX_ENH_ACK_GENERATE_DONE_NOTIFY_W<'a, REG> = crate::FieldWriter<'a, REG, 32, u32>;
+pub type TX_ENH_ACK_GENERATE_DONE_NOTIFY_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    32,
+    u32,
+>;
 impl R {
     ///Bits 0:31
     #[inline(always)]

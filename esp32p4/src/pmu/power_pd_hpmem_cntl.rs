@@ -75,7 +75,9 @@ impl W {
     ///Bit 0 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn force_hp_mem_reset(&mut self) -> FORCE_HP_MEM_RESET_W<POWER_PD_HPMEM_CNTL_SPEC> {
+    pub fn force_hp_mem_reset(
+        &mut self,
+    ) -> FORCE_HP_MEM_RESET_W<POWER_PD_HPMEM_CNTL_SPEC> {
         FORCE_HP_MEM_RESET_W::new(self, 0)
     }
     ///Bit 1 - need_des
@@ -93,13 +95,17 @@ impl W {
     ///Bit 3 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn force_hp_mem_no_reset(&mut self) -> FORCE_HP_MEM_NO_RESET_W<POWER_PD_HPMEM_CNTL_SPEC> {
+    pub fn force_hp_mem_no_reset(
+        &mut self,
+    ) -> FORCE_HP_MEM_NO_RESET_W<POWER_PD_HPMEM_CNTL_SPEC> {
         FORCE_HP_MEM_NO_RESET_W::new(self, 3)
     }
     ///Bit 4 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn force_hp_mem_no_iso(&mut self) -> FORCE_HP_MEM_NO_ISO_W<POWER_PD_HPMEM_CNTL_SPEC> {
+    pub fn force_hp_mem_no_iso(
+        &mut self,
+    ) -> FORCE_HP_MEM_NO_ISO_W<POWER_PD_HPMEM_CNTL_SPEC> {
         FORCE_HP_MEM_NO_ISO_W::new(self, 4)
     }
     ///Bit 5 - need_des

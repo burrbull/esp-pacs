@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("DMA2D_OUT_CH2_INT_MAP")
-            .field(
-                "core1_dma2d_out_ch2_int_map",
-                &self.core1_dma2d_out_ch2_int_map(),
-            )
+            .field("core1_dma2d_out_ch2_int_map", &self.core1_dma2d_out_ch2_int_map())
             .finish()
     }
 }

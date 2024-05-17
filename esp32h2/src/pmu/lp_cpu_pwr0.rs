@@ -93,10 +93,7 @@ impl core::fmt::Debug for R {
             .field("lp_cpu_slp_stall_wait", &self.lp_cpu_slp_stall_wait())
             .field("lp_cpu_slp_stall_en", &self.lp_cpu_slp_stall_en())
             .field("lp_cpu_slp_reset_en", &self.lp_cpu_slp_reset_en())
-            .field(
-                "lp_cpu_slp_bypass_intr_en",
-                &self.lp_cpu_slp_bypass_intr_en(),
-            )
+            .field("lp_cpu_slp_bypass_intr_en", &self.lp_cpu_slp_bypass_intr_en())
             .finish()
     }
 }
@@ -110,19 +107,25 @@ impl W {
     ///Bit 19 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn lp_cpu_slp_waiti_flag_en(&mut self) -> LP_CPU_SLP_WAITI_FLAG_EN_W<LP_CPU_PWR0_SPEC> {
+    pub fn lp_cpu_slp_waiti_flag_en(
+        &mut self,
+    ) -> LP_CPU_SLP_WAITI_FLAG_EN_W<LP_CPU_PWR0_SPEC> {
         LP_CPU_SLP_WAITI_FLAG_EN_W::new(self, 19)
     }
     ///Bit 20 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn lp_cpu_slp_stall_flag_en(&mut self) -> LP_CPU_SLP_STALL_FLAG_EN_W<LP_CPU_PWR0_SPEC> {
+    pub fn lp_cpu_slp_stall_flag_en(
+        &mut self,
+    ) -> LP_CPU_SLP_STALL_FLAG_EN_W<LP_CPU_PWR0_SPEC> {
         LP_CPU_SLP_STALL_FLAG_EN_W::new(self, 20)
     }
     ///Bits 21:28 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn lp_cpu_slp_stall_wait(&mut self) -> LP_CPU_SLP_STALL_WAIT_W<LP_CPU_PWR0_SPEC> {
+    pub fn lp_cpu_slp_stall_wait(
+        &mut self,
+    ) -> LP_CPU_SLP_STALL_WAIT_W<LP_CPU_PWR0_SPEC> {
         LP_CPU_SLP_STALL_WAIT_W::new(self, 21)
     }
     ///Bit 29 - need_des
@@ -140,7 +143,9 @@ impl W {
     ///Bit 31 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn lp_cpu_slp_bypass_intr_en(&mut self) -> LP_CPU_SLP_BYPASS_INTR_EN_W<LP_CPU_PWR0_SPEC> {
+    pub fn lp_cpu_slp_bypass_intr_en(
+        &mut self,
+    ) -> LP_CPU_SLP_BYPASS_INTR_EN_W<LP_CPU_PWR0_SPEC> {
         LP_CPU_SLP_BYPASS_INTR_EN_W::new(self, 31)
     }
 }

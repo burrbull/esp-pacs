@@ -35,13 +35,17 @@ impl W {
     ///Bits 0:8 - It is used to adjust sda drive point after scl neg under open drain speed
     #[inline(always)]
     #[must_use]
-    pub fn reg_sda_od_tx_hold_time(&mut self) -> REG_SDA_OD_TX_HOLD_TIME_W<SDA_HOLD_TIME_SPEC> {
+    pub fn reg_sda_od_tx_hold_time(
+        &mut self,
+    ) -> REG_SDA_OD_TX_HOLD_TIME_W<SDA_HOLD_TIME_SPEC> {
         REG_SDA_OD_TX_HOLD_TIME_W::new(self, 0)
     }
     ///Bits 9:13 - It is used to adjust sda dirve point after scl neg under push pull speed
     #[inline(always)]
     #[must_use]
-    pub fn reg_sda_pp_tx_hold_time(&mut self) -> REG_SDA_PP_TX_HOLD_TIME_W<SDA_HOLD_TIME_SPEC> {
+    pub fn reg_sda_pp_tx_hold_time(
+        &mut self,
+    ) -> REG_SDA_PP_TX_HOLD_TIME_W<SDA_HOLD_TIME_SPEC> {
         REG_SDA_PP_TX_HOLD_TIME_W::new(self, 9)
     }
 }

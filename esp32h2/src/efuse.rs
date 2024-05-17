@@ -1619,7 +1619,9 @@ pub mod wr_tim_conf2;
 You can [`read`](crate::generic::Reg::read) this register and get [`wr_tim_conf0_rs_bypass::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`wr_tim_conf0_rs_bypass::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@wr_tim_conf0_rs_bypass`] module*/
-pub type WR_TIM_CONF0_RS_BYPASS = crate::Reg<wr_tim_conf0_rs_bypass::WR_TIM_CONF0_RS_BYPASS_SPEC>;
+pub type WR_TIM_CONF0_RS_BYPASS = crate::Reg<
+    wr_tim_conf0_rs_bypass::WR_TIM_CONF0_RS_BYPASS_SPEC,
+>;
 ///Configurarion register0 of eFuse programming time parameters and rs bypass operation.
 pub mod wr_tim_conf0_rs_bypass;
 /**DATE (rw) register accessor: eFuse version register.

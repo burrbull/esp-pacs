@@ -35,13 +35,17 @@ impl W {
     ///Bits 0:15 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn pmu_wait_xtl_stable(&mut self) -> PMU_WAIT_XTL_STABLE_W<POWER_CK_WAIT_CNTL_SPEC> {
+    pub fn pmu_wait_xtl_stable(
+        &mut self,
+    ) -> PMU_WAIT_XTL_STABLE_W<POWER_CK_WAIT_CNTL_SPEC> {
         PMU_WAIT_XTL_STABLE_W::new(self, 0)
     }
     ///Bits 16:31 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn pmu_wait_pll_stable(&mut self) -> PMU_WAIT_PLL_STABLE_W<POWER_CK_WAIT_CNTL_SPEC> {
+    pub fn pmu_wait_pll_stable(
+        &mut self,
+    ) -> PMU_WAIT_PLL_STABLE_W<POWER_CK_WAIT_CNTL_SPEC> {
         PMU_WAIT_PLL_STABLE_W::new(self, 16)
     }
 }

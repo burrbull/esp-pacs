@@ -26,10 +26,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("DATE")
-            .field(
-                "lp_i2c_ana_mast_i2c_mat_date",
-                &self.lp_i2c_ana_mast_i2c_mat_date(),
-            )
+            .field("lp_i2c_ana_mast_i2c_mat_date", &self.lp_i2c_ana_mast_i2c_mat_date())
             .field(
                 "lp_i2c_ana_mast_i2c_mat_clk_en",
                 &self.lp_i2c_ana_mast_i2c_mat_clk_en(),
@@ -41,7 +38,9 @@ impl W {
     ///Bits 0:27 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn lp_i2c_ana_mast_i2c_mat_date(&mut self) -> LP_I2C_ANA_MAST_I2C_MAT_DATE_W<DATE_SPEC> {
+    pub fn lp_i2c_ana_mast_i2c_mat_date(
+        &mut self,
+    ) -> LP_I2C_ANA_MAST_I2C_MAT_DATE_W<DATE_SPEC> {
         LP_I2C_ANA_MAST_I2C_MAT_DATE_W::new(self, 0)
     }
     ///Bit 28 - need_des

@@ -46,7 +46,9 @@ impl R {
     }
     ///Bits 3:4 - The field is used to configure trigger mode of autoload operation on L1-ICache1. 0/3: miss-trigger, 1: hit-trigger, 2: miss-hit-trigger.
     #[inline(always)]
-    pub fn l1_icache1_autoload_trigger_mode(&self) -> L1_ICACHE1_AUTOLOAD_TRIGGER_MODE_R {
+    pub fn l1_icache1_autoload_trigger_mode(
+        &self,
+    ) -> L1_ICACHE1_AUTOLOAD_TRIGGER_MODE_R {
         L1_ICACHE1_AUTOLOAD_TRIGGER_MODE_R::new(((self.bits >> 3) & 3) as u8)
     }
     ///Bit 8 - The bit is used to enable the first section for autoload operation on L1-ICache1.
@@ -71,22 +73,13 @@ impl core::fmt::Debug for R {
         f.debug_struct("L1_ICACHE1_AUTOLOAD_CTRL")
             .field("l1_icache1_autoload_ena", &self.l1_icache1_autoload_ena())
             .field("l1_icache1_autoload_done", &self.l1_icache1_autoload_done())
-            .field(
-                "l1_icache1_autoload_order",
-                &self.l1_icache1_autoload_order(),
-            )
+            .field("l1_icache1_autoload_order", &self.l1_icache1_autoload_order())
             .field(
                 "l1_icache1_autoload_trigger_mode",
                 &self.l1_icache1_autoload_trigger_mode(),
             )
-            .field(
-                "l1_icache1_autoload_sct0_ena",
-                &self.l1_icache1_autoload_sct0_ena(),
-            )
-            .field(
-                "l1_icache1_autoload_sct1_ena",
-                &self.l1_icache1_autoload_sct1_ena(),
-            )
+            .field("l1_icache1_autoload_sct0_ena", &self.l1_icache1_autoload_sct0_ena())
+            .field("l1_icache1_autoload_sct1_ena", &self.l1_icache1_autoload_sct1_ena())
             .field("l1_icache1_autoload_rgid", &self.l1_icache1_autoload_rgid())
             .finish()
     }

@@ -37,10 +37,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PIN1")
-            .field(
-                "reg_gpio_pin1_wakeup_enable",
-                &self.reg_gpio_pin1_wakeup_enable(),
-            )
+            .field("reg_gpio_pin1_wakeup_enable", &self.reg_gpio_pin1_wakeup_enable())
             .field("reg_gpio_pin1_int_type", &self.reg_gpio_pin1_int_type())
             .field("reg_gpio_pin1_pad_driver", &self.reg_gpio_pin1_pad_driver())
             .finish()
@@ -50,7 +47,9 @@ impl W {
     ///Bit 0 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn reg_gpio_pin1_wakeup_enable(&mut self) -> REG_GPIO_PIN1_WAKEUP_ENABLE_W<PIN1_SPEC> {
+    pub fn reg_gpio_pin1_wakeup_enable(
+        &mut self,
+    ) -> REG_GPIO_PIN1_WAKEUP_ENABLE_W<PIN1_SPEC> {
         REG_GPIO_PIN1_WAKEUP_ENABLE_W::new(self, 0)
     }
     ///Bits 1:3 - Reserved
@@ -68,7 +67,9 @@ impl W {
     ///Bit 5 - need des
     #[inline(always)]
     #[must_use]
-    pub fn reg_gpi1_pin0_edge_wakeup_clr(&mut self) -> REG_GPI1_PIN0_EDGE_WAKEUP_CLR_W<PIN1_SPEC> {
+    pub fn reg_gpi1_pin0_edge_wakeup_clr(
+        &mut self,
+    ) -> REG_GPI1_PIN0_EDGE_WAKEUP_CLR_W<PIN1_SPEC> {
         REG_GPI1_PIN0_EDGE_WAKEUP_CLR_W::new(self, 5)
     }
 }

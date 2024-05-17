@@ -36,19 +36,25 @@ impl W {
     ///Bit 28 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn hp_modem_sys_clk_slp_sel(&mut self) -> HP_MODEM_SYS_CLK_SLP_SEL_W<HP_MODEM_SYSCLK_SPEC> {
+    pub fn hp_modem_sys_clk_slp_sel(
+        &mut self,
+    ) -> HP_MODEM_SYS_CLK_SLP_SEL_W<HP_MODEM_SYSCLK_SPEC> {
         HP_MODEM_SYS_CLK_SLP_SEL_W::new(self, 28)
     }
     ///Bit 29 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn hp_modem_icg_slp_sel(&mut self) -> HP_MODEM_ICG_SLP_SEL_W<HP_MODEM_SYSCLK_SPEC> {
+    pub fn hp_modem_icg_slp_sel(
+        &mut self,
+    ) -> HP_MODEM_ICG_SLP_SEL_W<HP_MODEM_SYSCLK_SPEC> {
         HP_MODEM_ICG_SLP_SEL_W::new(self, 29)
     }
     ///Bits 30:31 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn hp_modem_dig_sys_clk_sel(&mut self) -> HP_MODEM_DIG_SYS_CLK_SEL_W<HP_MODEM_SYSCLK_SPEC> {
+    pub fn hp_modem_dig_sys_clk_sel(
+        &mut self,
+    ) -> HP_MODEM_DIG_SYS_CLK_SEL_W<HP_MODEM_SYSCLK_SPEC> {
         HP_MODEM_DIG_SYS_CLK_SEL_W::new(self, 30)
     }
 }

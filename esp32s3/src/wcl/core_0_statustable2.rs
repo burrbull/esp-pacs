@@ -45,13 +45,17 @@ impl W {
     ///Bit 0 - This bit is used to confirm world before enter entry 2
     #[inline(always)]
     #[must_use]
-    pub fn core_0_from_world_2(&mut self) -> CORE_0_FROM_WORLD_2_W<CORE_0_STATUSTABLE2_SPEC> {
+    pub fn core_0_from_world_2(
+        &mut self,
+    ) -> CORE_0_FROM_WORLD_2_W<CORE_0_STATUSTABLE2_SPEC> {
         CORE_0_FROM_WORLD_2_W::new(self, 0)
     }
     ///Bits 1:4 - This filed is used to confirm in which entry before enter entry 2
     #[inline(always)]
     #[must_use]
-    pub fn core_0_from_entry_2(&mut self) -> CORE_0_FROM_ENTRY_2_W<CORE_0_STATUSTABLE2_SPEC> {
+    pub fn core_0_from_entry_2(
+        &mut self,
+    ) -> CORE_0_FROM_ENTRY_2_W<CORE_0_STATUSTABLE2_SPEC> {
         CORE_0_FROM_ENTRY_2_W::new(self, 1)
     }
     ///Bit 5 - This bit is used to confirm whether the current state is in entry 2

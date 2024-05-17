@@ -51,7 +51,9 @@ impl W {
     ///Bit 26 - Enable the proximity mode of touch sleep pad.
     #[inline(always)]
     #[must_use]
-    pub fn touch_slp_approach_en(&mut self) -> TOUCH_SLP_APPROACH_EN_W<TOUCH_SLP_THRES_SPEC> {
+    pub fn touch_slp_approach_en(
+        &mut self,
+    ) -> TOUCH_SLP_APPROACH_EN_W<TOUCH_SLP_THRES_SPEC> {
         TOUCH_SLP_APPROACH_EN_W::new(self, 26)
     }
     ///Bits 27:31 - Select sleep pad.

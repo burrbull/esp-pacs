@@ -16,9 +16,7 @@ impl R {
 #[cfg(feature = "impl-register-debug")]
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("CAP_TIMER_PHASE")
-            .field("cap_phase", &self.cap_phase())
-            .finish()
+        f.debug_struct("CAP_TIMER_PHASE").field("cap_phase", &self.cap_phase()).finish()
     }
 }
 impl W {

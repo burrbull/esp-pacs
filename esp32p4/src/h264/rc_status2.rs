@@ -12,9 +12,7 @@ impl R {
 #[cfg(feature = "impl-register-debug")]
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("RC_STATUS2")
-            .field("frame_qp_sum", &self.frame_qp_sum())
-            .finish()
+        f.debug_struct("RC_STATUS2").field("frame_qp_sum", &self.frame_qp_sum()).finish()
     }
 }
 /**Rate control status register2.

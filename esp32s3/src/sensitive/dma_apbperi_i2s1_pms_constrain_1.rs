@@ -5,29 +5,51 @@ pub type W = crate::W<DMA_APBPERI_I2S1_PMS_CONSTRAIN_1_SPEC>;
 ///Field `DMA_APBPERI_I2S1_PMS_CONSTRAIN_SRAM_PMS_0` reader - i2s1's permission(store,load) in data region0 of SRAM
 pub type DMA_APBPERI_I2S1_PMS_CONSTRAIN_SRAM_PMS_0_R = crate::FieldReader;
 ///Field `DMA_APBPERI_I2S1_PMS_CONSTRAIN_SRAM_PMS_0` writer - i2s1's permission(store,load) in data region0 of SRAM
-pub type DMA_APBPERI_I2S1_PMS_CONSTRAIN_SRAM_PMS_0_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
+pub type DMA_APBPERI_I2S1_PMS_CONSTRAIN_SRAM_PMS_0_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 ///Field `DMA_APBPERI_I2S1_PMS_CONSTRAIN_SRAM_PMS_1` reader - i2s1's permission(store,load) in data region1 of SRAM
 pub type DMA_APBPERI_I2S1_PMS_CONSTRAIN_SRAM_PMS_1_R = crate::FieldReader;
 ///Field `DMA_APBPERI_I2S1_PMS_CONSTRAIN_SRAM_PMS_1` writer - i2s1's permission(store,load) in data region1 of SRAM
-pub type DMA_APBPERI_I2S1_PMS_CONSTRAIN_SRAM_PMS_1_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
+pub type DMA_APBPERI_I2S1_PMS_CONSTRAIN_SRAM_PMS_1_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 ///Field `DMA_APBPERI_I2S1_PMS_CONSTRAIN_SRAM_PMS_2` reader - i2s1's permission(store,load) in data region2 of SRAM
 pub type DMA_APBPERI_I2S1_PMS_CONSTRAIN_SRAM_PMS_2_R = crate::FieldReader;
 ///Field `DMA_APBPERI_I2S1_PMS_CONSTRAIN_SRAM_PMS_2` writer - i2s1's permission(store,load) in data region2 of SRAM
-pub type DMA_APBPERI_I2S1_PMS_CONSTRAIN_SRAM_PMS_2_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
+pub type DMA_APBPERI_I2S1_PMS_CONSTRAIN_SRAM_PMS_2_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 ///Field `DMA_APBPERI_I2S1_PMS_CONSTRAIN_SRAM_PMS_3` reader - i2s1's permission(store,load) in data region3 of SRAM
 pub type DMA_APBPERI_I2S1_PMS_CONSTRAIN_SRAM_PMS_3_R = crate::FieldReader;
 ///Field `DMA_APBPERI_I2S1_PMS_CONSTRAIN_SRAM_PMS_3` writer - i2s1's permission(store,load) in data region3 of SRAM
-pub type DMA_APBPERI_I2S1_PMS_CONSTRAIN_SRAM_PMS_3_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
+pub type DMA_APBPERI_I2S1_PMS_CONSTRAIN_SRAM_PMS_3_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 ///Field `DMA_APBPERI_I2S1_PMS_CONSTRAIN_SRAM_CACHEDATAARRAY_PMS_0` reader - i2s1's permission(store,load) in dcache data sram block0
 pub type DMA_APBPERI_I2S1_PMS_CONSTRAIN_SRAM_CACHEDATAARRAY_PMS_0_R = crate::FieldReader;
 ///Field `DMA_APBPERI_I2S1_PMS_CONSTRAIN_SRAM_CACHEDATAARRAY_PMS_0` writer - i2s1's permission(store,load) in dcache data sram block0
-pub type DMA_APBPERI_I2S1_PMS_CONSTRAIN_SRAM_CACHEDATAARRAY_PMS_0_W<'a, REG> =
-    crate::FieldWriter<'a, REG, 2>;
+pub type DMA_APBPERI_I2S1_PMS_CONSTRAIN_SRAM_CACHEDATAARRAY_PMS_0_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 ///Field `DMA_APBPERI_I2S1_PMS_CONSTRAIN_SRAM_CACHEDATAARRAY_PMS_1` reader - i2s1's permission(store,load) in dcache data sram block1
 pub type DMA_APBPERI_I2S1_PMS_CONSTRAIN_SRAM_CACHEDATAARRAY_PMS_1_R = crate::FieldReader;
 ///Field `DMA_APBPERI_I2S1_PMS_CONSTRAIN_SRAM_CACHEDATAARRAY_PMS_1` writer - i2s1's permission(store,load) in dcache data sram block1
-pub type DMA_APBPERI_I2S1_PMS_CONSTRAIN_SRAM_CACHEDATAARRAY_PMS_1_W<'a, REG> =
-    crate::FieldWriter<'a, REG, 2>;
+pub type DMA_APBPERI_I2S1_PMS_CONSTRAIN_SRAM_CACHEDATAARRAY_PMS_1_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 impl R {
     ///Bits 0:1 - i2s1's permission(store,load) in data region0 of SRAM
     #[inline(always)]
@@ -113,7 +135,9 @@ impl W {
     #[must_use]
     pub fn dma_apbperi_i2s1_pms_constrain_sram_pms_0(
         &mut self,
-    ) -> DMA_APBPERI_I2S1_PMS_CONSTRAIN_SRAM_PMS_0_W<DMA_APBPERI_I2S1_PMS_CONSTRAIN_1_SPEC> {
+    ) -> DMA_APBPERI_I2S1_PMS_CONSTRAIN_SRAM_PMS_0_W<
+        DMA_APBPERI_I2S1_PMS_CONSTRAIN_1_SPEC,
+    > {
         DMA_APBPERI_I2S1_PMS_CONSTRAIN_SRAM_PMS_0_W::new(self, 0)
     }
     ///Bits 2:3 - i2s1's permission(store,load) in data region1 of SRAM
@@ -121,7 +145,9 @@ impl W {
     #[must_use]
     pub fn dma_apbperi_i2s1_pms_constrain_sram_pms_1(
         &mut self,
-    ) -> DMA_APBPERI_I2S1_PMS_CONSTRAIN_SRAM_PMS_1_W<DMA_APBPERI_I2S1_PMS_CONSTRAIN_1_SPEC> {
+    ) -> DMA_APBPERI_I2S1_PMS_CONSTRAIN_SRAM_PMS_1_W<
+        DMA_APBPERI_I2S1_PMS_CONSTRAIN_1_SPEC,
+    > {
         DMA_APBPERI_I2S1_PMS_CONSTRAIN_SRAM_PMS_1_W::new(self, 2)
     }
     ///Bits 4:5 - i2s1's permission(store,load) in data region2 of SRAM
@@ -129,7 +155,9 @@ impl W {
     #[must_use]
     pub fn dma_apbperi_i2s1_pms_constrain_sram_pms_2(
         &mut self,
-    ) -> DMA_APBPERI_I2S1_PMS_CONSTRAIN_SRAM_PMS_2_W<DMA_APBPERI_I2S1_PMS_CONSTRAIN_1_SPEC> {
+    ) -> DMA_APBPERI_I2S1_PMS_CONSTRAIN_SRAM_PMS_2_W<
+        DMA_APBPERI_I2S1_PMS_CONSTRAIN_1_SPEC,
+    > {
         DMA_APBPERI_I2S1_PMS_CONSTRAIN_SRAM_PMS_2_W::new(self, 4)
     }
     ///Bits 6:7 - i2s1's permission(store,load) in data region3 of SRAM
@@ -137,7 +165,9 @@ impl W {
     #[must_use]
     pub fn dma_apbperi_i2s1_pms_constrain_sram_pms_3(
         &mut self,
-    ) -> DMA_APBPERI_I2S1_PMS_CONSTRAIN_SRAM_PMS_3_W<DMA_APBPERI_I2S1_PMS_CONSTRAIN_1_SPEC> {
+    ) -> DMA_APBPERI_I2S1_PMS_CONSTRAIN_SRAM_PMS_3_W<
+        DMA_APBPERI_I2S1_PMS_CONSTRAIN_1_SPEC,
+    > {
         DMA_APBPERI_I2S1_PMS_CONSTRAIN_SRAM_PMS_3_W::new(self, 6)
     }
     ///Bits 8:9 - i2s1's permission(store,load) in dcache data sram block0

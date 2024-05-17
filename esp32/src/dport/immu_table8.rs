@@ -16,9 +16,7 @@ impl R {
 #[cfg(feature = "impl-register-debug")]
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("IMMU_TABLE8")
-            .field("immu_table8", &self.immu_table8())
-            .finish()
+        f.debug_struct("IMMU_TABLE8").field("immu_table8", &self.immu_table8()).finish()
     }
 }
 impl W {

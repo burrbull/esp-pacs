@@ -25,7 +25,9 @@ impl W {
     ///Bits 0:3 - This filed is used to set the max value of clear write_buffer
     #[inline(always)]
     #[must_use]
-    pub fn core_1_message_max(&mut self) -> CORE_1_MESSAGE_MAX_W<CORE_1_MESSAGE_MAX_SPEC> {
+    pub fn core_1_message_max(
+        &mut self,
+    ) -> CORE_1_MESSAGE_MAX_W<CORE_1_MESSAGE_MAX_SPEC> {
         CORE_1_MESSAGE_MAX_W::new(self, 0)
     }
 }

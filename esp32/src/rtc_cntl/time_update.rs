@@ -16,9 +16,7 @@ impl R {
 #[cfg(feature = "impl-register-debug")]
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("TIME_UPDATE")
-            .field("time_valid", &self.time_valid())
-            .finish()
+        f.debug_struct("TIME_UPDATE").field("time_valid", &self.time_valid()).finish()
     }
 }
 impl W {

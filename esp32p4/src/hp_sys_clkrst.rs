@@ -794,7 +794,9 @@ pub mod hp_force_norst1;
 You can [`read`](crate::generic::Reg::read) this register and get [`hpwdt_core0_rst_ctrl0::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`hpwdt_core0_rst_ctrl0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@hpwdt_core0_rst_ctrl0`] module*/
-pub type HPWDT_CORE0_RST_CTRL0 = crate::Reg<hpwdt_core0_rst_ctrl0::HPWDT_CORE0_RST_CTRL0_SPEC>;
+pub type HPWDT_CORE0_RST_CTRL0 = crate::Reg<
+    hpwdt_core0_rst_ctrl0::HPWDT_CORE0_RST_CTRL0_SPEC,
+>;
 ///Reserved
 pub mod hpwdt_core0_rst_ctrl0;
 /**HPWDT_CORE1_RST_CTRL0 (rw) register accessor: Reserved
@@ -802,7 +804,9 @@ pub mod hpwdt_core0_rst_ctrl0;
 You can [`read`](crate::generic::Reg::read) this register and get [`hpwdt_core1_rst_ctrl0::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`hpwdt_core1_rst_ctrl0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@hpwdt_core1_rst_ctrl0`] module*/
-pub type HPWDT_CORE1_RST_CTRL0 = crate::Reg<hpwdt_core1_rst_ctrl0::HPWDT_CORE1_RST_CTRL0_SPEC>;
+pub type HPWDT_CORE1_RST_CTRL0 = crate::Reg<
+    hpwdt_core1_rst_ctrl0::HPWDT_CORE1_RST_CTRL0_SPEC,
+>;
 ///Reserved
 pub mod hpwdt_core1_rst_ctrl0;
 /**CPU_SRC_FREQ0 (r) register accessor: CPU Source Frequency
@@ -842,7 +846,8 @@ pub mod dbg_clk_ctrl1;
 You can [`read`](crate::generic::Reg::read) this register and get [`hpcore_wdt_reset_source0::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`hpcore_wdt_reset_source0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@hpcore_wdt_reset_source0`] module*/
-pub type HPCORE_WDT_RESET_SOURCE0 =
-    crate::Reg<hpcore_wdt_reset_source0::HPCORE_WDT_RESET_SOURCE0_SPEC>;
+pub type HPCORE_WDT_RESET_SOURCE0 = crate::Reg<
+    hpcore_wdt_reset_source0::HPCORE_WDT_RESET_SOURCE0_SPEC,
+>;
 ///Reserved
 pub mod hpcore_wdt_reset_source0;

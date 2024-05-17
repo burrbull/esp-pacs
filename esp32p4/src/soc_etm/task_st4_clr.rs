@@ -98,19 +98,25 @@ impl W {
     ///Bit 3 - Configures whether or not to clear MCPWM0_task_cap0 trigger status.\\0: Invalid, No effect\\1: Clear
     #[inline(always)]
     #[must_use]
-    pub fn mcpwm0_task_cap0_st_clr(&mut self) -> MCPWM0_TASK_CAP0_ST_CLR_W<TASK_ST4_CLR_SPEC> {
+    pub fn mcpwm0_task_cap0_st_clr(
+        &mut self,
+    ) -> MCPWM0_TASK_CAP0_ST_CLR_W<TASK_ST4_CLR_SPEC> {
         MCPWM0_TASK_CAP0_ST_CLR_W::new(self, 3)
     }
     ///Bit 4 - Configures whether or not to clear MCPWM0_task_cap1 trigger status.\\0: Invalid, No effect\\1: Clear
     #[inline(always)]
     #[must_use]
-    pub fn mcpwm0_task_cap1_st_clr(&mut self) -> MCPWM0_TASK_CAP1_ST_CLR_W<TASK_ST4_CLR_SPEC> {
+    pub fn mcpwm0_task_cap1_st_clr(
+        &mut self,
+    ) -> MCPWM0_TASK_CAP1_ST_CLR_W<TASK_ST4_CLR_SPEC> {
         MCPWM0_TASK_CAP1_ST_CLR_W::new(self, 4)
     }
     ///Bit 5 - Configures whether or not to clear MCPWM0_task_cap2 trigger status.\\0: Invalid, No effect\\1: Clear
     #[inline(always)]
     #[must_use]
-    pub fn mcpwm0_task_cap2_st_clr(&mut self) -> MCPWM0_TASK_CAP2_ST_CLR_W<TASK_ST4_CLR_SPEC> {
+    pub fn mcpwm0_task_cap2_st_clr(
+        &mut self,
+    ) -> MCPWM0_TASK_CAP2_ST_CLR_W<TASK_ST4_CLR_SPEC> {
         MCPWM0_TASK_CAP2_ST_CLR_W::new(self, 5)
     }
     ///Bit 6 - Configures whether or not to clear MCPWM1_task_cmpr0_a_up trigger status.\\0: Invalid, No effect\\1: Clear
@@ -268,43 +274,57 @@ impl W {
     ///Bit 25 - Configures whether or not to clear MCPWM1_task_cap0 trigger status.\\0: Invalid, No effect\\1: Clear
     #[inline(always)]
     #[must_use]
-    pub fn mcpwm1_task_cap0_st_clr(&mut self) -> MCPWM1_TASK_CAP0_ST_CLR_W<TASK_ST4_CLR_SPEC> {
+    pub fn mcpwm1_task_cap0_st_clr(
+        &mut self,
+    ) -> MCPWM1_TASK_CAP0_ST_CLR_W<TASK_ST4_CLR_SPEC> {
         MCPWM1_TASK_CAP0_ST_CLR_W::new(self, 25)
     }
     ///Bit 26 - Configures whether or not to clear MCPWM1_task_cap1 trigger status.\\0: Invalid, No effect\\1: Clear
     #[inline(always)]
     #[must_use]
-    pub fn mcpwm1_task_cap1_st_clr(&mut self) -> MCPWM1_TASK_CAP1_ST_CLR_W<TASK_ST4_CLR_SPEC> {
+    pub fn mcpwm1_task_cap1_st_clr(
+        &mut self,
+    ) -> MCPWM1_TASK_CAP1_ST_CLR_W<TASK_ST4_CLR_SPEC> {
         MCPWM1_TASK_CAP1_ST_CLR_W::new(self, 26)
     }
     ///Bit 27 - Configures whether or not to clear MCPWM1_task_cap2 trigger status.\\0: Invalid, No effect\\1: Clear
     #[inline(always)]
     #[must_use]
-    pub fn mcpwm1_task_cap2_st_clr(&mut self) -> MCPWM1_TASK_CAP2_ST_CLR_W<TASK_ST4_CLR_SPEC> {
+    pub fn mcpwm1_task_cap2_st_clr(
+        &mut self,
+    ) -> MCPWM1_TASK_CAP2_ST_CLR_W<TASK_ST4_CLR_SPEC> {
         MCPWM1_TASK_CAP2_ST_CLR_W::new(self, 27)
     }
     ///Bit 28 - Configures whether or not to clear ADC_task_sample0 trigger status.\\0: Invalid, No effect\\1: Clear
     #[inline(always)]
     #[must_use]
-    pub fn adc_task_sample0_st_clr(&mut self) -> ADC_TASK_SAMPLE0_ST_CLR_W<TASK_ST4_CLR_SPEC> {
+    pub fn adc_task_sample0_st_clr(
+        &mut self,
+    ) -> ADC_TASK_SAMPLE0_ST_CLR_W<TASK_ST4_CLR_SPEC> {
         ADC_TASK_SAMPLE0_ST_CLR_W::new(self, 28)
     }
     ///Bit 29 - Configures whether or not to clear ADC_task_sample1 trigger status.\\0: Invalid, No effect\\1: Clear
     #[inline(always)]
     #[must_use]
-    pub fn adc_task_sample1_st_clr(&mut self) -> ADC_TASK_SAMPLE1_ST_CLR_W<TASK_ST4_CLR_SPEC> {
+    pub fn adc_task_sample1_st_clr(
+        &mut self,
+    ) -> ADC_TASK_SAMPLE1_ST_CLR_W<TASK_ST4_CLR_SPEC> {
         ADC_TASK_SAMPLE1_ST_CLR_W::new(self, 29)
     }
     ///Bit 30 - Configures whether or not to clear ADC_task_start0 trigger status.\\0: Invalid, No effect\\1: Clear
     #[inline(always)]
     #[must_use]
-    pub fn adc_task_start0_st_clr(&mut self) -> ADC_TASK_START0_ST_CLR_W<TASK_ST4_CLR_SPEC> {
+    pub fn adc_task_start0_st_clr(
+        &mut self,
+    ) -> ADC_TASK_START0_ST_CLR_W<TASK_ST4_CLR_SPEC> {
         ADC_TASK_START0_ST_CLR_W::new(self, 30)
     }
     ///Bit 31 - Configures whether or not to clear ADC_task_stop0 trigger status.\\0: Invalid, No effect\\1: Clear
     #[inline(always)]
     #[must_use]
-    pub fn adc_task_stop0_st_clr(&mut self) -> ADC_TASK_STOP0_ST_CLR_W<TASK_ST4_CLR_SPEC> {
+    pub fn adc_task_stop0_st_clr(
+        &mut self,
+    ) -> ADC_TASK_STOP0_ST_CLR_W<TASK_ST4_CLR_SPEC> {
         ADC_TASK_STOP0_ST_CLR_W::new(self, 31)
     }
 }

@@ -25,7 +25,9 @@ impl W {
     ///Bit 0
     #[inline(always)]
     #[must_use]
-    pub fn host_slc_func1_mdstat(&mut self) -> HOST_SLC_FUNC1_MDSTAT_W<HOST_SLCHOST_FUNC2_2_SPEC> {
+    pub fn host_slc_func1_mdstat(
+        &mut self,
+    ) -> HOST_SLC_FUNC1_MDSTAT_W<HOST_SLCHOST_FUNC2_2_SPEC> {
         HOST_SLC_FUNC1_MDSTAT_W::new(self, 0)
     }
 }

@@ -125,54 +125,18 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("INT_ST")
-            .field(
-                "_0p1a_cnt_target0_reach_0_hp",
-                &self._0p1a_cnt_target0_reach_0_hp(),
-            )
-            .field(
-                "_0p1a_cnt_target1_reach_0_hp",
-                &self._0p1a_cnt_target1_reach_0_hp(),
-            )
-            .field(
-                "_0p1a_cnt_target0_reach_1_hp",
-                &self._0p1a_cnt_target0_reach_1_hp(),
-            )
-            .field(
-                "_0p1a_cnt_target1_reach_1_hp",
-                &self._0p1a_cnt_target1_reach_1_hp(),
-            )
-            .field(
-                "_0p2a_cnt_target0_reach_0_hp",
-                &self._0p2a_cnt_target0_reach_0_hp(),
-            )
-            .field(
-                "_0p2a_cnt_target1_reach_0_hp",
-                &self._0p2a_cnt_target1_reach_0_hp(),
-            )
-            .field(
-                "_0p2a_cnt_target0_reach_1_hp",
-                &self._0p2a_cnt_target0_reach_1_hp(),
-            )
-            .field(
-                "_0p2a_cnt_target1_reach_1_hp",
-                &self._0p2a_cnt_target1_reach_1_hp(),
-            )
-            .field(
-                "_0p3a_cnt_target0_reach_0_hp",
-                &self._0p3a_cnt_target0_reach_0_hp(),
-            )
-            .field(
-                "_0p3a_cnt_target1_reach_0_hp",
-                &self._0p3a_cnt_target1_reach_0_hp(),
-            )
-            .field(
-                "_0p3a_cnt_target0_reach_1_hp",
-                &self._0p3a_cnt_target0_reach_1_hp(),
-            )
-            .field(
-                "_0p3a_cnt_target1_reach_1_hp",
-                &self._0p3a_cnt_target1_reach_1_hp(),
-            )
+            .field("_0p1a_cnt_target0_reach_0_hp", &self._0p1a_cnt_target0_reach_0_hp())
+            .field("_0p1a_cnt_target1_reach_0_hp", &self._0p1a_cnt_target1_reach_0_hp())
+            .field("_0p1a_cnt_target0_reach_1_hp", &self._0p1a_cnt_target0_reach_1_hp())
+            .field("_0p1a_cnt_target1_reach_1_hp", &self._0p1a_cnt_target1_reach_1_hp())
+            .field("_0p2a_cnt_target0_reach_0_hp", &self._0p2a_cnt_target0_reach_0_hp())
+            .field("_0p2a_cnt_target1_reach_0_hp", &self._0p2a_cnt_target1_reach_0_hp())
+            .field("_0p2a_cnt_target0_reach_1_hp", &self._0p2a_cnt_target0_reach_1_hp())
+            .field("_0p2a_cnt_target1_reach_1_hp", &self._0p2a_cnt_target1_reach_1_hp())
+            .field("_0p3a_cnt_target0_reach_0_hp", &self._0p3a_cnt_target0_reach_0_hp())
+            .field("_0p3a_cnt_target1_reach_0_hp", &self._0p3a_cnt_target1_reach_0_hp())
+            .field("_0p3a_cnt_target0_reach_1_hp", &self._0p3a_cnt_target0_reach_1_hp())
+            .field("_0p3a_cnt_target1_reach_1_hp", &self._0p3a_cnt_target1_reach_1_hp())
             .field("lp_cpu_exc", &self.lp_cpu_exc())
             .field("sdio_idle", &self.sdio_idle())
             .field("sw", &self.sw())

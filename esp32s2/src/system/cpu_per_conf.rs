@@ -67,7 +67,9 @@ impl W {
     ///Bit 3 - Set this bit to force on CPU wait mode. In this mode, the clock gate of CPU is turned off until any interrupts happen. This mode could also be force on via WAITI instruction.
     #[inline(always)]
     #[must_use]
-    pub fn cpu_wait_mode_force_on(&mut self) -> CPU_WAIT_MODE_FORCE_ON_W<CPU_PER_CONF_SPEC> {
+    pub fn cpu_wait_mode_force_on(
+        &mut self,
+    ) -> CPU_WAIT_MODE_FORCE_ON_W<CPU_PER_CONF_SPEC> {
         CPU_WAIT_MODE_FORCE_ON_W::new(self, 3)
     }
     ///Bits 4:7 - Sets the number of delay cycles to enter CPU wait mode after a WAITI instruction.

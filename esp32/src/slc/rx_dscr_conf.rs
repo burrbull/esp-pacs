@@ -135,13 +135,17 @@ impl W {
     ///Bit 0
     #[inline(always)]
     #[must_use]
-    pub fn slc0_token_no_replace(&mut self) -> SLC0_TOKEN_NO_REPLACE_W<RX_DSCR_CONF_SPEC> {
+    pub fn slc0_token_no_replace(
+        &mut self,
+    ) -> SLC0_TOKEN_NO_REPLACE_W<RX_DSCR_CONF_SPEC> {
         SLC0_TOKEN_NO_REPLACE_W::new(self, 0)
     }
     ///Bit 1
     #[inline(always)]
     #[must_use]
-    pub fn slc0_infor_no_replace(&mut self) -> SLC0_INFOR_NO_REPLACE_W<RX_DSCR_CONF_SPEC> {
+    pub fn slc0_infor_no_replace(
+        &mut self,
+    ) -> SLC0_INFOR_NO_REPLACE_W<RX_DSCR_CONF_SPEC> {
         SLC0_INFOR_NO_REPLACE_W::new(self, 1)
     }
     ///Bit 2
@@ -165,19 +169,25 @@ impl W {
     ///Bits 5:15
     #[inline(always)]
     #[must_use]
-    pub fn slc0_rd_retry_threshold(&mut self) -> SLC0_RD_RETRY_THRESHOLD_W<RX_DSCR_CONF_SPEC> {
+    pub fn slc0_rd_retry_threshold(
+        &mut self,
+    ) -> SLC0_RD_RETRY_THRESHOLD_W<RX_DSCR_CONF_SPEC> {
         SLC0_RD_RETRY_THRESHOLD_W::new(self, 5)
     }
     ///Bit 16
     #[inline(always)]
     #[must_use]
-    pub fn slc1_token_no_replace(&mut self) -> SLC1_TOKEN_NO_REPLACE_W<RX_DSCR_CONF_SPEC> {
+    pub fn slc1_token_no_replace(
+        &mut self,
+    ) -> SLC1_TOKEN_NO_REPLACE_W<RX_DSCR_CONF_SPEC> {
         SLC1_TOKEN_NO_REPLACE_W::new(self, 16)
     }
     ///Bit 17
     #[inline(always)]
     #[must_use]
-    pub fn slc1_infor_no_replace(&mut self) -> SLC1_INFOR_NO_REPLACE_W<RX_DSCR_CONF_SPEC> {
+    pub fn slc1_infor_no_replace(
+        &mut self,
+    ) -> SLC1_INFOR_NO_REPLACE_W<RX_DSCR_CONF_SPEC> {
         SLC1_INFOR_NO_REPLACE_W::new(self, 17)
     }
     ///Bit 18
@@ -201,7 +211,9 @@ impl W {
     ///Bits 21:31
     #[inline(always)]
     #[must_use]
-    pub fn slc1_rd_retry_threshold(&mut self) -> SLC1_RD_RETRY_THRESHOLD_W<RX_DSCR_CONF_SPEC> {
+    pub fn slc1_rd_retry_threshold(
+        &mut self,
+    ) -> SLC1_RD_RETRY_THRESHOLD_W<RX_DSCR_CONF_SPEC> {
         SLC1_RD_RETRY_THRESHOLD_W::new(self, 21)
     }
 }

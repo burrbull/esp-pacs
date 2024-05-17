@@ -57,8 +57,7 @@ impl RegisterBlock {
     ///0x10..0x20 - Channel %s configure register 0
     #[inline(always)]
     pub const fn chconf0(&self, n: usize) -> &CHCONF0 {
-        #[allow(clippy::no_effect)]
-        [(); 4][n];
+        #[allow(clippy::no_effect)] [(); 4][n];
         unsafe { &*(self as *const Self).cast::<u8>().add(16).add(8 * n).cast() }
     }
     ///Iterator for array of:
@@ -66,7 +65,9 @@ impl RegisterBlock {
     #[inline(always)]
     pub fn chconf0_iter(&self) -> impl Iterator<Item = &CHCONF0> {
         (0..4)
-            .map(move |n| unsafe { &*(self as *const Self).cast::<u8>().add(16).add(8 * n).cast() })
+            .map(move |n| unsafe {
+                &*(self as *const Self).cast::<u8>().add(16).add(8 * n).cast()
+            })
     }
     ///0x10 - Channel 0 configure register 0
     #[inline(always)]
@@ -91,8 +92,7 @@ impl RegisterBlock {
     ///0x14..0x24 - Channel %s configure register 1
     #[inline(always)]
     pub const fn chconf1(&self, n: usize) -> &CHCONF1 {
-        #[allow(clippy::no_effect)]
-        [(); 4][n];
+        #[allow(clippy::no_effect)] [(); 4][n];
         unsafe { &*(self as *const Self).cast::<u8>().add(20).add(8 * n).cast() }
     }
     ///Iterator for array of:
@@ -100,7 +100,9 @@ impl RegisterBlock {
     #[inline(always)]
     pub fn chconf1_iter(&self) -> impl Iterator<Item = &CHCONF1> {
         (0..4)
-            .map(move |n| unsafe { &*(self as *const Self).cast::<u8>().add(20).add(8 * n).cast() })
+            .map(move |n| unsafe {
+                &*(self as *const Self).cast::<u8>().add(20).add(8 * n).cast()
+            })
     }
     ///0x14 - Channel 0 configure register 1
     #[inline(always)]

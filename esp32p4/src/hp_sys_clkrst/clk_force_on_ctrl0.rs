@@ -170,40 +170,19 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CLK_FORCE_ON_CTRL0")
-            .field(
-                "cpuicm_gated_clk_force_on",
-                &self.cpuicm_gated_clk_force_on(),
-            )
+            .field("cpuicm_gated_clk_force_on", &self.cpuicm_gated_clk_force_on())
             .field("tcm_cpu_clk_force_on", &self.tcm_cpu_clk_force_on())
             .field("busmon_cpu_clk_force_on", &self.busmon_cpu_clk_force_on())
             .field("l1cache_cpu_clk_force_on", &self.l1cache_cpu_clk_force_on())
-            .field(
-                "l1cache_d_cpu_clk_force_on",
-                &self.l1cache_d_cpu_clk_force_on(),
-            )
-            .field(
-                "l1cache_i0_cpu_clk_force_on",
-                &self.l1cache_i0_cpu_clk_force_on(),
-            )
-            .field(
-                "l1cache_i1_cpu_clk_force_on",
-                &self.l1cache_i1_cpu_clk_force_on(),
-            )
+            .field("l1cache_d_cpu_clk_force_on", &self.l1cache_d_cpu_clk_force_on())
+            .field("l1cache_i0_cpu_clk_force_on", &self.l1cache_i0_cpu_clk_force_on())
+            .field("l1cache_i1_cpu_clk_force_on", &self.l1cache_i1_cpu_clk_force_on())
             .field("trace_cpu_clk_force_on", &self.trace_cpu_clk_force_on())
             .field("trace_sys_clk_force_on", &self.trace_sys_clk_force_on())
             .field("l1cache_mem_clk_force_on", &self.l1cache_mem_clk_force_on())
-            .field(
-                "l1cache_d_mem_clk_force_on",
-                &self.l1cache_d_mem_clk_force_on(),
-            )
-            .field(
-                "l1cache_i0_mem_clk_force_on",
-                &self.l1cache_i0_mem_clk_force_on(),
-            )
-            .field(
-                "l1cache_i1_mem_clk_force_on",
-                &self.l1cache_i1_mem_clk_force_on(),
-            )
+            .field("l1cache_d_mem_clk_force_on", &self.l1cache_d_mem_clk_force_on())
+            .field("l1cache_i0_mem_clk_force_on", &self.l1cache_i0_mem_clk_force_on())
+            .field("l1cache_i1_mem_clk_force_on", &self.l1cache_i1_mem_clk_force_on())
             .field("l2cache_mem_clk_force_on", &self.l2cache_mem_clk_force_on())
             .field("l2mem_mem_clk_force_on", &self.l2mem_mem_clk_force_on())
             .field("sar1_clk_force_on", &self.sar1_clk_force_on())
@@ -224,7 +203,9 @@ impl W {
     ///Bit 1 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn tcm_cpu_clk_force_on(&mut self) -> TCM_CPU_CLK_FORCE_ON_W<CLK_FORCE_ON_CTRL0_SPEC> {
+    pub fn tcm_cpu_clk_force_on(
+        &mut self,
+    ) -> TCM_CPU_CLK_FORCE_ON_W<CLK_FORCE_ON_CTRL0_SPEC> {
         TCM_CPU_CLK_FORCE_ON_W::new(self, 1)
     }
     ///Bit 2 - Reserved
@@ -270,13 +251,17 @@ impl W {
     ///Bit 7 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn trace_cpu_clk_force_on(&mut self) -> TRACE_CPU_CLK_FORCE_ON_W<CLK_FORCE_ON_CTRL0_SPEC> {
+    pub fn trace_cpu_clk_force_on(
+        &mut self,
+    ) -> TRACE_CPU_CLK_FORCE_ON_W<CLK_FORCE_ON_CTRL0_SPEC> {
         TRACE_CPU_CLK_FORCE_ON_W::new(self, 7)
     }
     ///Bit 8 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn trace_sys_clk_force_on(&mut self) -> TRACE_SYS_CLK_FORCE_ON_W<CLK_FORCE_ON_CTRL0_SPEC> {
+    pub fn trace_sys_clk_force_on(
+        &mut self,
+    ) -> TRACE_SYS_CLK_FORCE_ON_W<CLK_FORCE_ON_CTRL0_SPEC> {
         TRACE_SYS_CLK_FORCE_ON_W::new(self, 8)
     }
     ///Bit 9 - Reserved
@@ -322,7 +307,9 @@ impl W {
     ///Bit 14 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn l2mem_mem_clk_force_on(&mut self) -> L2MEM_MEM_CLK_FORCE_ON_W<CLK_FORCE_ON_CTRL0_SPEC> {
+    pub fn l2mem_mem_clk_force_on(
+        &mut self,
+    ) -> L2MEM_MEM_CLK_FORCE_ON_W<CLK_FORCE_ON_CTRL0_SPEC> {
         L2MEM_MEM_CLK_FORCE_ON_W::new(self, 14)
     }
     ///Bit 15 - Reserved
@@ -340,7 +327,9 @@ impl W {
     ///Bit 17 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn gmac_tx_clk_force_on(&mut self) -> GMAC_TX_CLK_FORCE_ON_W<CLK_FORCE_ON_CTRL0_SPEC> {
+    pub fn gmac_tx_clk_force_on(
+        &mut self,
+    ) -> GMAC_TX_CLK_FORCE_ON_W<CLK_FORCE_ON_CTRL0_SPEC> {
         GMAC_TX_CLK_FORCE_ON_W::new(self, 17)
     }
 }

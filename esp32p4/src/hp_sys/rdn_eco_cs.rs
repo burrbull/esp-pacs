@@ -25,10 +25,7 @@ impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("RDN_ECO_CS")
             .field("reg_hp_sys_rdn_eco_en", &self.reg_hp_sys_rdn_eco_en())
-            .field(
-                "reg_hp_sys_rdn_eco_result",
-                &self.reg_hp_sys_rdn_eco_result(),
-            )
+            .field("reg_hp_sys_rdn_eco_result", &self.reg_hp_sys_rdn_eco_result())
             .finish()
     }
 }

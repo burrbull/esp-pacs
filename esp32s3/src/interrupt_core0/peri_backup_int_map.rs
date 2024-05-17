@@ -25,7 +25,9 @@ impl W {
     ///Bits 0:4 - this register used to map peri_backup interrupt to one of core0's external interrupt
     #[inline(always)]
     #[must_use]
-    pub fn peri_backup_int_map(&mut self) -> PERI_BACKUP_INT_MAP_W<PERI_BACKUP_INT_MAP_SPEC> {
+    pub fn peri_backup_int_map(
+        &mut self,
+    ) -> PERI_BACKUP_INT_MAP_W<PERI_BACKUP_INT_MAP_SPEC> {
         PERI_BACKUP_INT_MAP_W::new(self, 0)
     }
 }

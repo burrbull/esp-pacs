@@ -13,10 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CORE_0_DRAM0_EXCEPTION_MONITOR_2")
-            .field(
-                "core_0_dram0_recording_pc_0",
-                &self.core_0_dram0_recording_pc_0(),
-            )
+            .field("core_0_dram0_recording_pc_0", &self.core_0_dram0_recording_pc_0())
             .finish()
     }
 }

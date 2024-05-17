@@ -41,7 +41,9 @@ impl W {
     ///Bits 9:15 - reg_scl_wait_high_period
     #[inline(always)]
     #[must_use]
-    pub fn scl_wait_high_period(&mut self) -> SCL_WAIT_HIGH_PERIOD_W<SCL_HIGH_PERIOD_SPEC> {
+    pub fn scl_wait_high_period(
+        &mut self,
+    ) -> SCL_WAIT_HIGH_PERIOD_W<SCL_HIGH_PERIOD_SPEC> {
         SCL_WAIT_HIGH_PERIOD_W::new(self, 9)
     }
 }

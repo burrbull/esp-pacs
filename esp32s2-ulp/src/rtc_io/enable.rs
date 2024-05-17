@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("ENABLE")
-            .field(
-                "reg_rtcio_reg_gpio_enable",
-                &self.reg_rtcio_reg_gpio_enable(),
-            )
+            .field("reg_rtcio_reg_gpio_enable", &self.reg_rtcio_reg_gpio_enable())
             .finish()
     }
 }
@@ -28,7 +25,9 @@ impl W {
     ///Bits 10:31 - GPIO0 ~ 21 output enable. Bit10 corresponds to GPIO0, bit11 corresponds to GPIO1, etc. If the bit is set to 1, it means this GPIO pad is output.
     #[inline(always)]
     #[must_use]
-    pub fn reg_rtcio_reg_gpio_enable(&mut self) -> REG_RTCIO_REG_GPIO_ENABLE_W<ENABLE_SPEC> {
+    pub fn reg_rtcio_reg_gpio_enable(
+        &mut self,
+    ) -> REG_RTCIO_REG_GPIO_ENABLE_W<ENABLE_SPEC> {
         REG_RTCIO_REG_GPIO_ENABLE_W::new(self, 10)
     }
 }

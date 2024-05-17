@@ -73,18 +73,12 @@ impl core::fmt::Debug for R {
             .field("spi_smem_cs_hold", &self.spi_smem_cs_hold())
             .field("spi_smem_cs_setup_time", &self.spi_smem_cs_setup_time())
             .field("spi_smem_cs_hold_time", &self.spi_smem_cs_hold_time())
-            .field(
-                "spi_smem_ecc_cs_hold_time",
-                &self.spi_smem_ecc_cs_hold_time(),
-            )
+            .field("spi_smem_ecc_cs_hold_time", &self.spi_smem_ecc_cs_hold_time())
             .field(
                 "spi_smem_ecc_skip_page_corner",
                 &self.spi_smem_ecc_skip_page_corner(),
             )
-            .field(
-                "spi_smem_ecc_16to18_byte_en",
-                &self.spi_smem_ecc_16to18_byte_en(),
-            )
+            .field("spi_smem_ecc_16to18_byte_en", &self.spi_smem_ecc_16to18_byte_en())
             .field("spi_smem_cs_hold_delay", &self.spi_smem_cs_hold_delay())
             .field("spi_smem_split_trans_en", &self.spi_smem_split_trans_en())
             .finish()

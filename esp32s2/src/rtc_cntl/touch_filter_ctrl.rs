@@ -117,13 +117,17 @@ impl W {
     ///Bits 15:18 - Negative threshold counter limit.
     #[inline(always)]
     #[must_use]
-    pub fn touch_neg_noise_limit(&mut self) -> TOUCH_NEG_NOISE_LIMIT_W<TOUCH_FILTER_CTRL_SPEC> {
+    pub fn touch_neg_noise_limit(
+        &mut self,
+    ) -> TOUCH_NEG_NOISE_LIMIT_W<TOUCH_FILTER_CTRL_SPEC> {
         TOUCH_NEG_NOISE_LIMIT_W::new(self, 15)
     }
     ///Bits 19:20 - Negative noise threshold.
     #[inline(always)]
     #[must_use]
-    pub fn touch_neg_noise_thres(&mut self) -> TOUCH_NEG_NOISE_THRES_W<TOUCH_FILTER_CTRL_SPEC> {
+    pub fn touch_neg_noise_thres(
+        &mut self,
+    ) -> TOUCH_NEG_NOISE_THRES_W<TOUCH_FILTER_CTRL_SPEC> {
         TOUCH_NEG_NOISE_THRES_W::new(self, 19)
     }
     ///Bits 21:22 - Active noise threshold.

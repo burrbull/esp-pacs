@@ -109,10 +109,7 @@ impl core::fmt::Debug for R {
             .field("l1_icache_cachesize_128k", &self.l1_icache_cachesize_128k())
             .field("l1_icache_cachesize_256k", &self.l1_icache_cachesize_256k())
             .field("l1_icache_cachesize_512k", &self.l1_icache_cachesize_512k())
-            .field(
-                "l1_icache_cachesize_1024k",
-                &self.l1_icache_cachesize_1024k(),
-            )
+            .field("l1_icache_cachesize_1024k", &self.l1_icache_cachesize_1024k())
             .finish()
     }
 }

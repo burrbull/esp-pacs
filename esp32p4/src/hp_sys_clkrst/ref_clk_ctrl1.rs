@@ -125,7 +125,9 @@ impl W {
     ///Bits 0:7 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn ref_120m_clk_div_num(&mut self) -> REF_120M_CLK_DIV_NUM_W<REF_CLK_CTRL1_SPEC> {
+    pub fn ref_120m_clk_div_num(
+        &mut self,
+    ) -> REF_120M_CLK_DIV_NUM_W<REF_CLK_CTRL1_SPEC> {
         REF_120M_CLK_DIV_NUM_W::new(self, 0)
     }
     ///Bits 8:15 - Reserved

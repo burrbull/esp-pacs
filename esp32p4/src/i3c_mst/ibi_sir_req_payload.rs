@@ -25,7 +25,9 @@ impl W {
     ///Bits 0:31 - NA
     #[inline(always)]
     #[must_use]
-    pub fn reg_sir_req_payload(&mut self) -> REG_SIR_REQ_PAYLOAD_W<IBI_SIR_REQ_PAYLOAD_SPEC> {
+    pub fn reg_sir_req_payload(
+        &mut self,
+    ) -> REG_SIR_REQ_PAYLOAD_W<IBI_SIR_REQ_PAYLOAD_SPEC> {
         REG_SIR_REQ_PAYLOAD_W::new(self, 0)
     }
 }

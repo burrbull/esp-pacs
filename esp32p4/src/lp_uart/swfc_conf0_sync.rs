@@ -117,7 +117,9 @@ impl W {
     ///Bit 16 - In software flow control mode, UART Tx is disabled once UART Rx receives XOFF. In this status, UART Tx can not transmit XOFF even the received data number is larger than UART_XOFF_THRESHOLD. Set this bit to enable UART Tx can transmit XON/XOFF when UART Tx is disabled.
     #[inline(always)]
     #[must_use]
-    pub fn xon_xoff_still_send(&mut self) -> XON_XOFF_STILL_SEND_W<SWFC_CONF0_SYNC_SPEC> {
+    pub fn xon_xoff_still_send(
+        &mut self,
+    ) -> XON_XOFF_STILL_SEND_W<SWFC_CONF0_SYNC_SPEC> {
         XON_XOFF_STILL_SEND_W::new(self, 16)
     }
     ///Bit 17 - Set this bit to enable software flow control. It is used with register sw_xon or sw_xoff.

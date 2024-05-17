@@ -25,7 +25,9 @@ impl W {
     ///Bits 0:4 - CORE0_LP_BLE_TIMER_INTR mapping register
     #[inline(always)]
     #[must_use]
-    pub fn lp_ble_timer_intr_map(&mut self) -> LP_BLE_TIMER_INTR_MAP_W<LP_BLE_TIMER_INTR_MAP_SPEC> {
+    pub fn lp_ble_timer_intr_map(
+        &mut self,
+    ) -> LP_BLE_TIMER_INTR_MAP_W<LP_BLE_TIMER_INTR_MAP_SPEC> {
         LP_BLE_TIMER_INTR_MAP_W::new(self, 0)
     }
 }

@@ -64,22 +64,10 @@ impl core::fmt::Debug for R {
         f.debug_struct("INT_ENA")
             .field("cocpu_saradc1_int_ena", &self.cocpu_saradc1_int_ena())
             .field("cocpu_saradc2_int_ena", &self.cocpu_saradc2_int_ena())
-            .field(
-                "cocpu_saradc1_error_int_ena",
-                &self.cocpu_saradc1_error_int_ena(),
-            )
-            .field(
-                "cocpu_saradc2_error_int_ena",
-                &self.cocpu_saradc2_error_int_ena(),
-            )
-            .field(
-                "cocpu_saradc1_wake_int_ena",
-                &self.cocpu_saradc1_wake_int_ena(),
-            )
-            .field(
-                "cocpu_saradc2_wake_int_ena",
-                &self.cocpu_saradc2_wake_int_ena(),
-            )
+            .field("cocpu_saradc1_error_int_ena", &self.cocpu_saradc1_error_int_ena())
+            .field("cocpu_saradc2_error_int_ena", &self.cocpu_saradc2_error_int_ena())
+            .field("cocpu_saradc1_wake_int_ena", &self.cocpu_saradc1_wake_int_ena())
+            .field("cocpu_saradc2_wake_int_ena", &self.cocpu_saradc2_wake_int_ena())
             .finish()
     }
 }
@@ -99,25 +87,33 @@ impl W {
     ///Bit 2 - An errro occurs from ADC1, int enable.
     #[inline(always)]
     #[must_use]
-    pub fn cocpu_saradc1_error_int_ena(&mut self) -> COCPU_SARADC1_ERROR_INT_ENA_W<INT_ENA_SPEC> {
+    pub fn cocpu_saradc1_error_int_ena(
+        &mut self,
+    ) -> COCPU_SARADC1_ERROR_INT_ENA_W<INT_ENA_SPEC> {
         COCPU_SARADC1_ERROR_INT_ENA_W::new(self, 2)
     }
     ///Bit 3 - An errro occurs from ADC2, int enable.
     #[inline(always)]
     #[must_use]
-    pub fn cocpu_saradc2_error_int_ena(&mut self) -> COCPU_SARADC2_ERROR_INT_ENA_W<INT_ENA_SPEC> {
+    pub fn cocpu_saradc2_error_int_ena(
+        &mut self,
+    ) -> COCPU_SARADC2_ERROR_INT_ENA_W<INT_ENA_SPEC> {
         COCPU_SARADC2_ERROR_INT_ENA_W::new(self, 3)
     }
     ///Bit 4 - A wakeup event is triggered from ADC1, int enable.
     #[inline(always)]
     #[must_use]
-    pub fn cocpu_saradc1_wake_int_ena(&mut self) -> COCPU_SARADC1_WAKE_INT_ENA_W<INT_ENA_SPEC> {
+    pub fn cocpu_saradc1_wake_int_ena(
+        &mut self,
+    ) -> COCPU_SARADC1_WAKE_INT_ENA_W<INT_ENA_SPEC> {
         COCPU_SARADC1_WAKE_INT_ENA_W::new(self, 4)
     }
     ///Bit 5 - A wakeup event is triggered from ADC2, int enable.
     #[inline(always)]
     #[must_use]
-    pub fn cocpu_saradc2_wake_int_ena(&mut self) -> COCPU_SARADC2_WAKE_INT_ENA_W<INT_ENA_SPEC> {
+    pub fn cocpu_saradc2_wake_int_ena(
+        &mut self,
+    ) -> COCPU_SARADC2_WAKE_INT_ENA_W<INT_ENA_SPEC> {
         COCPU_SARADC2_WAKE_INT_ENA_W::new(self, 5)
     }
 }

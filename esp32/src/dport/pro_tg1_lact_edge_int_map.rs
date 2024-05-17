@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PRO_TG1_LACT_EDGE_INT_MAP")
-            .field(
-                "pro_tg1_lact_edge_int_map",
-                &self.pro_tg1_lact_edge_int_map(),
-            )
+            .field("pro_tg1_lact_edge_int_map", &self.pro_tg1_lact_edge_int_map())
             .finish()
     }
 }

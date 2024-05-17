@@ -12,8 +12,7 @@ impl R {
     ///NOTE: `n` is number of field in register. `n == 0` corresponds to `SEL0` field
     #[inline(always)]
     pub fn sel(&self, n: u8) -> SEL_R {
-        #[allow(clippy::no_effect)]
-        [(); 8][n as usize];
+        #[allow(clippy::no_effect)] [(); 8][n as usize];
         SEL_R::new(((self.bits >> n) & 1) != 0)
     }
     ///Iterator for array of:
@@ -85,8 +84,7 @@ impl W {
     #[inline(always)]
     #[must_use]
     pub fn sel(&mut self, n: u8) -> SEL_W<OUT_CPU_SPEC> {
-        #[allow(clippy::no_effect)]
-        [(); 8][n as usize];
+        #[allow(clippy::no_effect)] [(); 8][n as usize];
         SEL_W::new(self, n)
     }
     ///Bit 0 - Select GPIO out value configured by registers or CPU instructions for channel 0. 0: Configured by registers. 1: configured by CPU instructions.

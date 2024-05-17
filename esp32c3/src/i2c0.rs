@@ -378,7 +378,9 @@ pub mod scl_st_time_out;
 You can [`read`](crate::generic::Reg::read) this register and get [`scl_main_st_time_out::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`scl_main_st_time_out::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@scl_main_st_time_out`] module*/
-pub type SCL_MAIN_ST_TIME_OUT = crate::Reg<scl_main_st_time_out::SCL_MAIN_ST_TIME_OUT_SPEC>;
+pub type SCL_MAIN_ST_TIME_OUT = crate::Reg<
+    scl_main_st_time_out::SCL_MAIN_ST_TIME_OUT_SPEC,
+>;
 ///I2C_SCL_MAIN_ST_TIME_OUT_REG
 pub mod scl_main_st_time_out;
 /**SCL_SP_CONF (rw) register accessor: I2C_SCL_SP_CONF_REG

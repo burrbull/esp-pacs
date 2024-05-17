@@ -194,41 +194,23 @@ impl core::fmt::Debug for R {
             .field("dbus0_acs_cnt_ovf_st", &self.dbus0_acs_cnt_ovf_st())
             .field("dbus1_acs_cnt_ovf_st", &self.dbus1_acs_cnt_ovf_st())
             .field("dbus2_acs_cnt_ovf_st", &self.dbus2_acs_cnt_ovf_st())
-            .field(
-                "dbus0_acs_miss_cnt_ovf_st",
-                &self.dbus0_acs_miss_cnt_ovf_st(),
-            )
-            .field(
-                "dbus1_acs_miss_cnt_ovf_st",
-                &self.dbus1_acs_miss_cnt_ovf_st(),
-            )
-            .field(
-                "dbus2_acs_miss_cnt_ovf_st",
-                &self.dbus2_acs_miss_cnt_ovf_st(),
-            )
+            .field("dbus0_acs_miss_cnt_ovf_st", &self.dbus0_acs_miss_cnt_ovf_st())
+            .field("dbus1_acs_miss_cnt_ovf_st", &self.dbus1_acs_miss_cnt_ovf_st())
+            .field("dbus2_acs_miss_cnt_ovf_st", &self.dbus2_acs_miss_cnt_ovf_st())
             .field("dbus0_acs_wb_cnt_ovf_st", &self.dbus0_acs_wb_cnt_ovf_st())
             .field("dbus1_acs_wb_cnt_ovf_st", &self.dbus1_acs_wb_cnt_ovf_st())
             .field("dbus2_acs_wb_cnt_ovf_st", &self.dbus2_acs_wb_cnt_ovf_st())
             .field("dbus0_abandon_cnt_ovf_st", &self.dbus0_abandon_cnt_ovf_st())
             .field("dbus1_abandon_cnt_ovf_st", &self.dbus1_abandon_cnt_ovf_st())
             .field("dbus2_abandon_cnt_ovf_st", &self.dbus2_abandon_cnt_ovf_st())
-            .field(
-                "dc_preload_miss_cnt_ovf_st",
-                &self.dc_preload_miss_cnt_ovf_st(),
-            )
-            .field(
-                "dc_preload_evict_cnt_ovf_st",
-                &self.dc_preload_evict_cnt_ovf_st(),
-            )
+            .field("dc_preload_miss_cnt_ovf_st", &self.dc_preload_miss_cnt_ovf_st())
+            .field("dc_preload_evict_cnt_ovf_st", &self.dc_preload_evict_cnt_ovf_st())
             .field("dc_preload_cnt_ovf_st", &self.dc_preload_cnt_ovf_st())
             .field("dc_sync_size_fault_st", &self.dc_sync_size_fault_st())
             .field("dc_preload_size_fault_st", &self.dc_preload_size_fault_st())
             .field("dcache_write_flash_st", &self.dcache_write_flash_st())
             .field("dcache_reject_st", &self.dcache_reject_st())
-            .field(
-                "dcache_set_preload_ilg_st",
-                &self.dcache_set_preload_ilg_st(),
-            )
+            .field("dcache_set_preload_ilg_st", &self.dcache_set_preload_ilg_st())
             .field("dcache_set_sync_ilg_st", &self.dcache_set_sync_ilg_st())
             .field("dcache_set_lock_ilg_st", &self.dcache_set_lock_ilg_st())
             .field("mmu_entry_fault_st", &self.mmu_entry_fault_st())

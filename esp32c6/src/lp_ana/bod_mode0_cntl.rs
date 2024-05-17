@@ -80,10 +80,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("BOD_MODE0_CNTL")
-            .field(
-                "bod_mode0_close_flash_ena",
-                &self.bod_mode0_close_flash_ena(),
-            )
+            .field("bod_mode0_close_flash_ena", &self.bod_mode0_close_flash_ena())
             .field("bod_mode0_pd_rf_ena", &self.bod_mode0_pd_rf_ena())
             .field("bod_mode0_intr_wait", &self.bod_mode0_intr_wait())
             .field("bod_mode0_reset_wait", &self.bod_mode0_reset_wait())
@@ -118,7 +115,9 @@ impl W {
     ///Bits 18:27 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn bod_mode0_reset_wait(&mut self) -> BOD_MODE0_RESET_WAIT_W<BOD_MODE0_CNTL_SPEC> {
+    pub fn bod_mode0_reset_wait(
+        &mut self,
+    ) -> BOD_MODE0_RESET_WAIT_W<BOD_MODE0_CNTL_SPEC> {
         BOD_MODE0_RESET_WAIT_W::new(self, 18)
     }
     ///Bit 28 - need_des

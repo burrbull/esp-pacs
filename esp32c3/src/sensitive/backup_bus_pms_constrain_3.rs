@@ -38,7 +38,9 @@ impl R {
     }
     ///Bits 4:5 - backup_bus_pms_constrain_apb_ctrl
     #[inline(always)]
-    pub fn backup_bus_pms_constrain_apb_ctrl(&self) -> BACKUP_BUS_PMS_CONSTRAIN_APB_CTRL_R {
+    pub fn backup_bus_pms_constrain_apb_ctrl(
+        &self,
+    ) -> BACKUP_BUS_PMS_CONSTRAIN_APB_CTRL_R {
         BACKUP_BUS_PMS_CONSTRAIN_APB_CTRL_R::new(((self.bits >> 4) & 3) as u8)
     }
     ///Bits 10:11 - backup_bus_pms_constrain_can
@@ -58,7 +60,9 @@ impl R {
     }
     ///Bits 26:27 - backup_bus_pms_constrain_wifimac
     #[inline(always)]
-    pub fn backup_bus_pms_constrain_wifimac(&self) -> BACKUP_BUS_PMS_CONSTRAIN_WIFIMAC_R {
+    pub fn backup_bus_pms_constrain_wifimac(
+        &self,
+    ) -> BACKUP_BUS_PMS_CONSTRAIN_WIFIMAC_R {
         BACKUP_BUS_PMS_CONSTRAIN_WIFIMAC_R::new(((self.bits >> 26) & 3) as u8)
     }
     ///Bits 28:29 - backup_bus_pms_constrain_pwr
@@ -79,10 +83,7 @@ impl core::fmt::Debug for R {
                 "backup_bus_pms_constrain_apb_ctrl",
                 &self.backup_bus_pms_constrain_apb_ctrl(),
             )
-            .field(
-                "backup_bus_pms_constrain_can",
-                &self.backup_bus_pms_constrain_can(),
-            )
+            .field("backup_bus_pms_constrain_can", &self.backup_bus_pms_constrain_can())
             .field(
                 "backup_bus_pms_constrain_i2s1",
                 &self.backup_bus_pms_constrain_i2s1(),
@@ -95,10 +96,7 @@ impl core::fmt::Debug for R {
                 "backup_bus_pms_constrain_wifimac",
                 &self.backup_bus_pms_constrain_wifimac(),
             )
-            .field(
-                "backup_bus_pms_constrain_pwr",
-                &self.backup_bus_pms_constrain_pwr(),
-            )
+            .field("backup_bus_pms_constrain_pwr", &self.backup_bus_pms_constrain_pwr())
             .finish()
     }
 }

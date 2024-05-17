@@ -16,9 +16,7 @@ impl R {
 #[cfg(feature = "impl-register-debug")]
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("RND_ECO_HIGH")
-            .field("redcy_high", &self.redcy_high())
-            .finish()
+        f.debug_struct("RND_ECO_HIGH").field("redcy_high", &self.redcy_high()).finish()
     }
 }
 impl W {

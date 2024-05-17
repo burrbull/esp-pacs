@@ -87,10 +87,7 @@ impl core::fmt::Debug for R {
             .field("_0pxa_tieh_sel_1_err", &self._0pxa_tieh_sel_1_err())
             .field("_0pxa_tieh_sel_2_err", &self._0pxa_tieh_sel_2_err())
             .field("_0pxa_tieh_sel_3_err", &self._0pxa_tieh_sel_3_err())
-            .field(
-                "km_disable_deploy_mode_err",
-                &self.km_disable_deploy_mode_err(),
-            )
+            .field("km_disable_deploy_mode_err", &self.km_disable_deploy_mode_err())
             .field("usb_device_drefl_err", &self.usb_device_drefl_err())
             .field("usb_otg11_drefl_err", &self.usb_otg11_drefl_err())
             .field("hp_pwr_src_sel_err", &self.hp_pwr_src_sel_err())

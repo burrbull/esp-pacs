@@ -133,22 +133,30 @@ pub type LEDC_TASK_TIMER3_RESUME_ST_W<'a, REG> = crate::BitWriter<'a, REG>;
 impl R {
     ///Bit 0 - Represents LEDC_task_duty_scale_update_ch4 trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
-    pub fn ledc_task_duty_scale_update_ch4_st(&self) -> LEDC_TASK_DUTY_SCALE_UPDATE_CH4_ST_R {
+    pub fn ledc_task_duty_scale_update_ch4_st(
+        &self,
+    ) -> LEDC_TASK_DUTY_SCALE_UPDATE_CH4_ST_R {
         LEDC_TASK_DUTY_SCALE_UPDATE_CH4_ST_R::new((self.bits & 1) != 0)
     }
     ///Bit 1 - Represents LEDC_task_duty_scale_update_ch5 trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
-    pub fn ledc_task_duty_scale_update_ch5_st(&self) -> LEDC_TASK_DUTY_SCALE_UPDATE_CH5_ST_R {
+    pub fn ledc_task_duty_scale_update_ch5_st(
+        &self,
+    ) -> LEDC_TASK_DUTY_SCALE_UPDATE_CH5_ST_R {
         LEDC_TASK_DUTY_SCALE_UPDATE_CH5_ST_R::new(((self.bits >> 1) & 1) != 0)
     }
     ///Bit 2 - Represents LEDC_task_duty_scale_update_ch6 trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
-    pub fn ledc_task_duty_scale_update_ch6_st(&self) -> LEDC_TASK_DUTY_SCALE_UPDATE_CH6_ST_R {
+    pub fn ledc_task_duty_scale_update_ch6_st(
+        &self,
+    ) -> LEDC_TASK_DUTY_SCALE_UPDATE_CH6_ST_R {
         LEDC_TASK_DUTY_SCALE_UPDATE_CH6_ST_R::new(((self.bits >> 2) & 1) != 0)
     }
     ///Bit 3 - Represents LEDC_task_duty_scale_update_ch7 trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
-    pub fn ledc_task_duty_scale_update_ch7_st(&self) -> LEDC_TASK_DUTY_SCALE_UPDATE_CH7_ST_R {
+    pub fn ledc_task_duty_scale_update_ch7_st(
+        &self,
+    ) -> LEDC_TASK_DUTY_SCALE_UPDATE_CH7_ST_R {
         LEDC_TASK_DUTY_SCALE_UPDATE_CH7_ST_R::new(((self.bits >> 3) & 1) != 0)
     }
     ///Bit 4 - Represents LEDC_task_timer0_cap trigger status.\\0: Not triggered\\1: Triggered
@@ -316,90 +324,30 @@ impl core::fmt::Debug for R {
             .field("ledc_task_timer1_cap_st", &self.ledc_task_timer1_cap_st())
             .field("ledc_task_timer2_cap_st", &self.ledc_task_timer2_cap_st())
             .field("ledc_task_timer3_cap_st", &self.ledc_task_timer3_cap_st())
-            .field(
-                "ledc_task_sig_out_dis_ch0_st",
-                &self.ledc_task_sig_out_dis_ch0_st(),
-            )
-            .field(
-                "ledc_task_sig_out_dis_ch1_st",
-                &self.ledc_task_sig_out_dis_ch1_st(),
-            )
-            .field(
-                "ledc_task_sig_out_dis_ch2_st",
-                &self.ledc_task_sig_out_dis_ch2_st(),
-            )
-            .field(
-                "ledc_task_sig_out_dis_ch3_st",
-                &self.ledc_task_sig_out_dis_ch3_st(),
-            )
-            .field(
-                "ledc_task_sig_out_dis_ch4_st",
-                &self.ledc_task_sig_out_dis_ch4_st(),
-            )
-            .field(
-                "ledc_task_sig_out_dis_ch5_st",
-                &self.ledc_task_sig_out_dis_ch5_st(),
-            )
-            .field(
-                "ledc_task_sig_out_dis_ch6_st",
-                &self.ledc_task_sig_out_dis_ch6_st(),
-            )
-            .field(
-                "ledc_task_sig_out_dis_ch7_st",
-                &self.ledc_task_sig_out_dis_ch7_st(),
-            )
-            .field(
-                "ledc_task_ovf_cnt_rst_ch0_st",
-                &self.ledc_task_ovf_cnt_rst_ch0_st(),
-            )
-            .field(
-                "ledc_task_ovf_cnt_rst_ch1_st",
-                &self.ledc_task_ovf_cnt_rst_ch1_st(),
-            )
-            .field(
-                "ledc_task_ovf_cnt_rst_ch2_st",
-                &self.ledc_task_ovf_cnt_rst_ch2_st(),
-            )
-            .field(
-                "ledc_task_ovf_cnt_rst_ch3_st",
-                &self.ledc_task_ovf_cnt_rst_ch3_st(),
-            )
-            .field(
-                "ledc_task_ovf_cnt_rst_ch4_st",
-                &self.ledc_task_ovf_cnt_rst_ch4_st(),
-            )
-            .field(
-                "ledc_task_ovf_cnt_rst_ch5_st",
-                &self.ledc_task_ovf_cnt_rst_ch5_st(),
-            )
-            .field(
-                "ledc_task_ovf_cnt_rst_ch6_st",
-                &self.ledc_task_ovf_cnt_rst_ch6_st(),
-            )
-            .field(
-                "ledc_task_ovf_cnt_rst_ch7_st",
-                &self.ledc_task_ovf_cnt_rst_ch7_st(),
-            )
+            .field("ledc_task_sig_out_dis_ch0_st", &self.ledc_task_sig_out_dis_ch0_st())
+            .field("ledc_task_sig_out_dis_ch1_st", &self.ledc_task_sig_out_dis_ch1_st())
+            .field("ledc_task_sig_out_dis_ch2_st", &self.ledc_task_sig_out_dis_ch2_st())
+            .field("ledc_task_sig_out_dis_ch3_st", &self.ledc_task_sig_out_dis_ch3_st())
+            .field("ledc_task_sig_out_dis_ch4_st", &self.ledc_task_sig_out_dis_ch4_st())
+            .field("ledc_task_sig_out_dis_ch5_st", &self.ledc_task_sig_out_dis_ch5_st())
+            .field("ledc_task_sig_out_dis_ch6_st", &self.ledc_task_sig_out_dis_ch6_st())
+            .field("ledc_task_sig_out_dis_ch7_st", &self.ledc_task_sig_out_dis_ch7_st())
+            .field("ledc_task_ovf_cnt_rst_ch0_st", &self.ledc_task_ovf_cnt_rst_ch0_st())
+            .field("ledc_task_ovf_cnt_rst_ch1_st", &self.ledc_task_ovf_cnt_rst_ch1_st())
+            .field("ledc_task_ovf_cnt_rst_ch2_st", &self.ledc_task_ovf_cnt_rst_ch2_st())
+            .field("ledc_task_ovf_cnt_rst_ch3_st", &self.ledc_task_ovf_cnt_rst_ch3_st())
+            .field("ledc_task_ovf_cnt_rst_ch4_st", &self.ledc_task_ovf_cnt_rst_ch4_st())
+            .field("ledc_task_ovf_cnt_rst_ch5_st", &self.ledc_task_ovf_cnt_rst_ch5_st())
+            .field("ledc_task_ovf_cnt_rst_ch6_st", &self.ledc_task_ovf_cnt_rst_ch6_st())
+            .field("ledc_task_ovf_cnt_rst_ch7_st", &self.ledc_task_ovf_cnt_rst_ch7_st())
             .field("ledc_task_timer0_rst_st", &self.ledc_task_timer0_rst_st())
             .field("ledc_task_timer1_rst_st", &self.ledc_task_timer1_rst_st())
             .field("ledc_task_timer2_rst_st", &self.ledc_task_timer2_rst_st())
             .field("ledc_task_timer3_rst_st", &self.ledc_task_timer3_rst_st())
-            .field(
-                "ledc_task_timer0_resume_st",
-                &self.ledc_task_timer0_resume_st(),
-            )
-            .field(
-                "ledc_task_timer1_resume_st",
-                &self.ledc_task_timer1_resume_st(),
-            )
-            .field(
-                "ledc_task_timer2_resume_st",
-                &self.ledc_task_timer2_resume_st(),
-            )
-            .field(
-                "ledc_task_timer3_resume_st",
-                &self.ledc_task_timer3_resume_st(),
-            )
+            .field("ledc_task_timer0_resume_st", &self.ledc_task_timer0_resume_st())
+            .field("ledc_task_timer1_resume_st", &self.ledc_task_timer1_resume_st())
+            .field("ledc_task_timer2_resume_st", &self.ledc_task_timer2_resume_st())
+            .field("ledc_task_timer3_resume_st", &self.ledc_task_timer3_resume_st())
             .finish()
     }
 }
@@ -439,25 +387,33 @@ impl W {
     ///Bit 4 - Represents LEDC_task_timer0_cap trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn ledc_task_timer0_cap_st(&mut self) -> LEDC_TASK_TIMER0_CAP_ST_W<TASK_ST1_SPEC> {
+    pub fn ledc_task_timer0_cap_st(
+        &mut self,
+    ) -> LEDC_TASK_TIMER0_CAP_ST_W<TASK_ST1_SPEC> {
         LEDC_TASK_TIMER0_CAP_ST_W::new(self, 4)
     }
     ///Bit 5 - Represents LEDC_task_timer1_cap trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn ledc_task_timer1_cap_st(&mut self) -> LEDC_TASK_TIMER1_CAP_ST_W<TASK_ST1_SPEC> {
+    pub fn ledc_task_timer1_cap_st(
+        &mut self,
+    ) -> LEDC_TASK_TIMER1_CAP_ST_W<TASK_ST1_SPEC> {
         LEDC_TASK_TIMER1_CAP_ST_W::new(self, 5)
     }
     ///Bit 6 - Represents LEDC_task_timer2_cap trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn ledc_task_timer2_cap_st(&mut self) -> LEDC_TASK_TIMER2_CAP_ST_W<TASK_ST1_SPEC> {
+    pub fn ledc_task_timer2_cap_st(
+        &mut self,
+    ) -> LEDC_TASK_TIMER2_CAP_ST_W<TASK_ST1_SPEC> {
         LEDC_TASK_TIMER2_CAP_ST_W::new(self, 6)
     }
     ///Bit 7 - Represents LEDC_task_timer3_cap trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn ledc_task_timer3_cap_st(&mut self) -> LEDC_TASK_TIMER3_CAP_ST_W<TASK_ST1_SPEC> {
+    pub fn ledc_task_timer3_cap_st(
+        &mut self,
+    ) -> LEDC_TASK_TIMER3_CAP_ST_W<TASK_ST1_SPEC> {
         LEDC_TASK_TIMER3_CAP_ST_W::new(self, 7)
     }
     ///Bit 8 - Represents LEDC_task_sig_out_dis_ch0 trigger status.\\0: Not triggered\\1: Triggered
@@ -591,49 +547,65 @@ impl W {
     ///Bit 24 - Represents LEDC_task_timer0_rst trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn ledc_task_timer0_rst_st(&mut self) -> LEDC_TASK_TIMER0_RST_ST_W<TASK_ST1_SPEC> {
+    pub fn ledc_task_timer0_rst_st(
+        &mut self,
+    ) -> LEDC_TASK_TIMER0_RST_ST_W<TASK_ST1_SPEC> {
         LEDC_TASK_TIMER0_RST_ST_W::new(self, 24)
     }
     ///Bit 25 - Represents LEDC_task_timer1_rst trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn ledc_task_timer1_rst_st(&mut self) -> LEDC_TASK_TIMER1_RST_ST_W<TASK_ST1_SPEC> {
+    pub fn ledc_task_timer1_rst_st(
+        &mut self,
+    ) -> LEDC_TASK_TIMER1_RST_ST_W<TASK_ST1_SPEC> {
         LEDC_TASK_TIMER1_RST_ST_W::new(self, 25)
     }
     ///Bit 26 - Represents LEDC_task_timer2_rst trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn ledc_task_timer2_rst_st(&mut self) -> LEDC_TASK_TIMER2_RST_ST_W<TASK_ST1_SPEC> {
+    pub fn ledc_task_timer2_rst_st(
+        &mut self,
+    ) -> LEDC_TASK_TIMER2_RST_ST_W<TASK_ST1_SPEC> {
         LEDC_TASK_TIMER2_RST_ST_W::new(self, 26)
     }
     ///Bit 27 - Represents LEDC_task_timer3_rst trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn ledc_task_timer3_rst_st(&mut self) -> LEDC_TASK_TIMER3_RST_ST_W<TASK_ST1_SPEC> {
+    pub fn ledc_task_timer3_rst_st(
+        &mut self,
+    ) -> LEDC_TASK_TIMER3_RST_ST_W<TASK_ST1_SPEC> {
         LEDC_TASK_TIMER3_RST_ST_W::new(self, 27)
     }
     ///Bit 28 - Represents LEDC_task_timer0_resume trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn ledc_task_timer0_resume_st(&mut self) -> LEDC_TASK_TIMER0_RESUME_ST_W<TASK_ST1_SPEC> {
+    pub fn ledc_task_timer0_resume_st(
+        &mut self,
+    ) -> LEDC_TASK_TIMER0_RESUME_ST_W<TASK_ST1_SPEC> {
         LEDC_TASK_TIMER0_RESUME_ST_W::new(self, 28)
     }
     ///Bit 29 - Represents LEDC_task_timer1_resume trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn ledc_task_timer1_resume_st(&mut self) -> LEDC_TASK_TIMER1_RESUME_ST_W<TASK_ST1_SPEC> {
+    pub fn ledc_task_timer1_resume_st(
+        &mut self,
+    ) -> LEDC_TASK_TIMER1_RESUME_ST_W<TASK_ST1_SPEC> {
         LEDC_TASK_TIMER1_RESUME_ST_W::new(self, 29)
     }
     ///Bit 30 - Represents LEDC_task_timer2_resume trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn ledc_task_timer2_resume_st(&mut self) -> LEDC_TASK_TIMER2_RESUME_ST_W<TASK_ST1_SPEC> {
+    pub fn ledc_task_timer2_resume_st(
+        &mut self,
+    ) -> LEDC_TASK_TIMER2_RESUME_ST_W<TASK_ST1_SPEC> {
         LEDC_TASK_TIMER2_RESUME_ST_W::new(self, 30)
     }
     ///Bit 31 - Represents LEDC_task_timer3_resume trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn ledc_task_timer3_resume_st(&mut self) -> LEDC_TASK_TIMER3_RESUME_ST_W<TASK_ST1_SPEC> {
+    pub fn ledc_task_timer3_resume_st(
+        &mut self,
+    ) -> LEDC_TASK_TIMER3_RESUME_ST_W<TASK_ST1_SPEC> {
         LEDC_TASK_TIMER3_RESUME_ST_W::new(self, 31)
     }
 }

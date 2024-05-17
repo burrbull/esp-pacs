@@ -53,14 +53,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("HP_MODEM_SYSCLK")
-            .field(
-                "hp_modem_dig_sys_clk_no_div",
-                &self.hp_modem_dig_sys_clk_no_div(),
-            )
-            .field(
-                "hp_modem_icg_sys_clock_en",
-                &self.hp_modem_icg_sys_clock_en(),
-            )
+            .field("hp_modem_dig_sys_clk_no_div", &self.hp_modem_dig_sys_clk_no_div())
+            .field("hp_modem_icg_sys_clock_en", &self.hp_modem_icg_sys_clock_en())
             .field("hp_modem_sys_clk_slp_sel", &self.hp_modem_sys_clk_slp_sel())
             .field("hp_modem_icg_slp_sel", &self.hp_modem_icg_slp_sel())
             .field("hp_modem_dig_sys_clk_sel", &self.hp_modem_dig_sys_clk_sel())
@@ -87,19 +81,25 @@ impl W {
     ///Bit 28 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn hp_modem_sys_clk_slp_sel(&mut self) -> HP_MODEM_SYS_CLK_SLP_SEL_W<HP_MODEM_SYSCLK_SPEC> {
+    pub fn hp_modem_sys_clk_slp_sel(
+        &mut self,
+    ) -> HP_MODEM_SYS_CLK_SLP_SEL_W<HP_MODEM_SYSCLK_SPEC> {
         HP_MODEM_SYS_CLK_SLP_SEL_W::new(self, 28)
     }
     ///Bit 29 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn hp_modem_icg_slp_sel(&mut self) -> HP_MODEM_ICG_SLP_SEL_W<HP_MODEM_SYSCLK_SPEC> {
+    pub fn hp_modem_icg_slp_sel(
+        &mut self,
+    ) -> HP_MODEM_ICG_SLP_SEL_W<HP_MODEM_SYSCLK_SPEC> {
         HP_MODEM_ICG_SLP_SEL_W::new(self, 29)
     }
     ///Bits 30:31 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn hp_modem_dig_sys_clk_sel(&mut self) -> HP_MODEM_DIG_SYS_CLK_SEL_W<HP_MODEM_SYSCLK_SPEC> {
+    pub fn hp_modem_dig_sys_clk_sel(
+        &mut self,
+    ) -> HP_MODEM_DIG_SYS_CLK_SEL_W<HP_MODEM_SYSCLK_SPEC> {
         HP_MODEM_DIG_SYS_CLK_SEL_W::new(self, 30)
     }
 }

@@ -119,66 +119,21 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("L1_CACHE_TAG_MEM_POWER_CTRL")
-            .field(
-                "l1_icache0_tag_mem_force_on",
-                &self.l1_icache0_tag_mem_force_on(),
-            )
-            .field(
-                "l1_icache0_tag_mem_force_pd",
-                &self.l1_icache0_tag_mem_force_pd(),
-            )
-            .field(
-                "l1_icache0_tag_mem_force_pu",
-                &self.l1_icache0_tag_mem_force_pu(),
-            )
-            .field(
-                "l1_icache1_tag_mem_force_on",
-                &self.l1_icache1_tag_mem_force_on(),
-            )
-            .field(
-                "l1_icache1_tag_mem_force_pd",
-                &self.l1_icache1_tag_mem_force_pd(),
-            )
-            .field(
-                "l1_icache1_tag_mem_force_pu",
-                &self.l1_icache1_tag_mem_force_pu(),
-            )
-            .field(
-                "l1_icache2_tag_mem_force_on",
-                &self.l1_icache2_tag_mem_force_on(),
-            )
-            .field(
-                "l1_icache2_tag_mem_force_pd",
-                &self.l1_icache2_tag_mem_force_pd(),
-            )
-            .field(
-                "l1_icache2_tag_mem_force_pu",
-                &self.l1_icache2_tag_mem_force_pu(),
-            )
-            .field(
-                "l1_icache3_tag_mem_force_on",
-                &self.l1_icache3_tag_mem_force_on(),
-            )
-            .field(
-                "l1_icache3_tag_mem_force_pd",
-                &self.l1_icache3_tag_mem_force_pd(),
-            )
-            .field(
-                "l1_icache3_tag_mem_force_pu",
-                &self.l1_icache3_tag_mem_force_pu(),
-            )
-            .field(
-                "l1_cache_tag_mem_force_on",
-                &self.l1_cache_tag_mem_force_on(),
-            )
-            .field(
-                "l1_cache_tag_mem_force_pd",
-                &self.l1_cache_tag_mem_force_pd(),
-            )
-            .field(
-                "l1_cache_tag_mem_force_pu",
-                &self.l1_cache_tag_mem_force_pu(),
-            )
+            .field("l1_icache0_tag_mem_force_on", &self.l1_icache0_tag_mem_force_on())
+            .field("l1_icache0_tag_mem_force_pd", &self.l1_icache0_tag_mem_force_pd())
+            .field("l1_icache0_tag_mem_force_pu", &self.l1_icache0_tag_mem_force_pu())
+            .field("l1_icache1_tag_mem_force_on", &self.l1_icache1_tag_mem_force_on())
+            .field("l1_icache1_tag_mem_force_pd", &self.l1_icache1_tag_mem_force_pd())
+            .field("l1_icache1_tag_mem_force_pu", &self.l1_icache1_tag_mem_force_pu())
+            .field("l1_icache2_tag_mem_force_on", &self.l1_icache2_tag_mem_force_on())
+            .field("l1_icache2_tag_mem_force_pd", &self.l1_icache2_tag_mem_force_pd())
+            .field("l1_icache2_tag_mem_force_pu", &self.l1_icache2_tag_mem_force_pu())
+            .field("l1_icache3_tag_mem_force_on", &self.l1_icache3_tag_mem_force_on())
+            .field("l1_icache3_tag_mem_force_pd", &self.l1_icache3_tag_mem_force_pd())
+            .field("l1_icache3_tag_mem_force_pu", &self.l1_icache3_tag_mem_force_pu())
+            .field("l1_cache_tag_mem_force_on", &self.l1_cache_tag_mem_force_on())
+            .field("l1_cache_tag_mem_force_pd", &self.l1_cache_tag_mem_force_pd())
+            .field("l1_cache_tag_mem_force_pu", &self.l1_cache_tag_mem_force_pu())
             .finish()
     }
 }

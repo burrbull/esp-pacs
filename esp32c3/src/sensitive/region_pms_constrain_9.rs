@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("REGION_PMS_CONSTRAIN_9")
-            .field(
-                "region_pms_constrain_addr_6",
-                &self.region_pms_constrain_addr_6(),
-            )
+            .field("region_pms_constrain_addr_6", &self.region_pms_constrain_addr_6())
             .finish()
     }
 }

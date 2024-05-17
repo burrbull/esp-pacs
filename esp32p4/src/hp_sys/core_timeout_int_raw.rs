@@ -62,30 +62,12 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CORE_TIMEOUT_INT_RAW")
-            .field(
-                "core0_ahb_timeout_int_raw",
-                &self.core0_ahb_timeout_int_raw(),
-            )
-            .field(
-                "core1_ahb_timeout_int_raw",
-                &self.core1_ahb_timeout_int_raw(),
-            )
-            .field(
-                "core0_ibus_timeout_int_raw",
-                &self.core0_ibus_timeout_int_raw(),
-            )
-            .field(
-                "core1_ibus_timeout_int_raw",
-                &self.core1_ibus_timeout_int_raw(),
-            )
-            .field(
-                "core0_dbus_timeout_int_raw",
-                &self.core0_dbus_timeout_int_raw(),
-            )
-            .field(
-                "core1_dbus_timeout_int_raw",
-                &self.core1_dbus_timeout_int_raw(),
-            )
+            .field("core0_ahb_timeout_int_raw", &self.core0_ahb_timeout_int_raw())
+            .field("core1_ahb_timeout_int_raw", &self.core1_ahb_timeout_int_raw())
+            .field("core0_ibus_timeout_int_raw", &self.core0_ibus_timeout_int_raw())
+            .field("core1_ibus_timeout_int_raw", &self.core1_ibus_timeout_int_raw())
+            .field("core0_dbus_timeout_int_raw", &self.core0_dbus_timeout_int_raw())
+            .field("core1_dbus_timeout_int_raw", &self.core1_dbus_timeout_int_raw())
             .finish()
     }
 }

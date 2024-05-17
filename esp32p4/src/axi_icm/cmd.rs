@@ -73,10 +73,7 @@ impl core::fmt::Debug for R {
             .field("icm_reg_rd_wr_chan", &self.icm_reg_rd_wr_chan())
             .field("icm_reg_axi_master_port", &self.icm_reg_axi_master_port())
             .field("icm_reg_axi_err_bit", &self.icm_reg_axi_err_bit())
-            .field(
-                "icm_reg_axi_soft_reset_bit",
-                &self.icm_reg_axi_soft_reset_bit(),
-            )
+            .field("icm_reg_axi_soft_reset_bit", &self.icm_reg_axi_soft_reset_bit())
             .field("icm_reg_axi_rd_wr_cmd", &self.icm_reg_axi_rd_wr_cmd())
             .field("icm_reg_axi_cmd_en", &self.icm_reg_axi_cmd_en())
             .finish()
@@ -104,7 +101,9 @@ impl W {
     ///Bit 29 - NA
     #[inline(always)]
     #[must_use]
-    pub fn icm_reg_axi_soft_reset_bit(&mut self) -> ICM_REG_AXI_SOFT_RESET_BIT_W<CMD_SPEC> {
+    pub fn icm_reg_axi_soft_reset_bit(
+        &mut self,
+    ) -> ICM_REG_AXI_SOFT_RESET_BIT_W<CMD_SPEC> {
         ICM_REG_AXI_SOFT_RESET_BIT_W::new(self, 29)
     }
     ///Bit 30 - NA

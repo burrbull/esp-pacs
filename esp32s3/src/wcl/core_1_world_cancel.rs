@@ -12,7 +12,9 @@ impl W {
     ///Bits 0:31 - This field is used to cancel switch world configuration,if the trigger address and update configuration complete,can use this register to cancel world switch. can write any value, the hardware only checks the write operation of this register and does not case about its value
     #[inline(always)]
     #[must_use]
-    pub fn core_1_world_cancel(&mut self) -> CORE_1_WORLD_CANCEL_W<CORE_1_WORLD_CANCEL_SPEC> {
+    pub fn core_1_world_cancel(
+        &mut self,
+    ) -> CORE_1_WORLD_CANCEL_W<CORE_1_WORLD_CANCEL_SPEC> {
         CORE_1_WORLD_CANCEL_W::new(self, 0)
     }
 }

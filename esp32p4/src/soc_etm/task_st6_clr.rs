@@ -72,7 +72,9 @@ impl W {
     ///Bit 4 - Configures whether or not to clear PMU_task_sleep_req trigger status.\\0: Invalid, No effect\\1: Clear
     #[inline(always)]
     #[must_use]
-    pub fn pmu_task_sleep_req_st_clr(&mut self) -> PMU_TASK_SLEEP_REQ_ST_CLR_W<TASK_ST6_CLR_SPEC> {
+    pub fn pmu_task_sleep_req_st_clr(
+        &mut self,
+    ) -> PMU_TASK_SLEEP_REQ_ST_CLR_W<TASK_ST6_CLR_SPEC> {
         PMU_TASK_SLEEP_REQ_ST_CLR_W::new(self, 4)
     }
     ///Bit 5 - Configures whether or not to clear DMA2D_task_in_start_ch0 trigger status.\\0: Invalid, No effect\\1: Clear

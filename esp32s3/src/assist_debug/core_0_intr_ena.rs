@@ -152,14 +152,8 @@ impl core::fmt::Debug for R {
                 "core_0_area_pif_1_wr_intr_ena",
                 &self.core_0_area_pif_1_wr_intr_ena(),
             )
-            .field(
-                "core_0_sp_spill_min_intr_ena",
-                &self.core_0_sp_spill_min_intr_ena(),
-            )
-            .field(
-                "core_0_sp_spill_max_intr_ena",
-                &self.core_0_sp_spill_max_intr_ena(),
-            )
+            .field("core_0_sp_spill_min_intr_ena", &self.core_0_sp_spill_min_intr_ena())
+            .field("core_0_sp_spill_max_intr_ena", &self.core_0_sp_spill_max_intr_ena())
             .field(
                 "core_0_iram0_exception_monitor_intr_ena",
                 &self.core_0_iram0_exception_monitor_intr_ena(),

@@ -107,7 +107,9 @@ impl W {
     ///Bit 30 - 1: ULP-coprocessor is started by SW
     #[inline(always)]
     #[must_use]
-    pub fn ulp_cp_force_start_top(&mut self) -> ULP_CP_FORCE_START_TOP_W<ULP_CP_CTRL_SPEC> {
+    pub fn ulp_cp_force_start_top(
+        &mut self,
+    ) -> ULP_CP_FORCE_START_TOP_W<ULP_CP_CTRL_SPEC> {
         ULP_CP_FORCE_START_TOP_W::new(self, 30)
     }
     ///Bit 31 - Write 1 to start ULP-coprocessor

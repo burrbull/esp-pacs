@@ -291,19 +291,25 @@ impl W {
     ///Bit 6
     #[inline(always)]
     #[must_use]
-    pub fn clk_wifibb_40x1_fo(&mut self) -> CLK_WIFIBB_40X1_FO_W<CLK_CONF1_FORCE_ON_SPEC> {
+    pub fn clk_wifibb_40x1_fo(
+        &mut self,
+    ) -> CLK_WIFIBB_40X1_FO_W<CLK_CONF1_FORCE_ON_SPEC> {
         CLK_WIFIBB_40X1_FO_W::new(self, 6)
     }
     ///Bit 7
     #[inline(always)]
     #[must_use]
-    pub fn clk_wifibb_80x1_fo(&mut self) -> CLK_WIFIBB_80X1_FO_W<CLK_CONF1_FORCE_ON_SPEC> {
+    pub fn clk_wifibb_80x1_fo(
+        &mut self,
+    ) -> CLK_WIFIBB_80X1_FO_W<CLK_CONF1_FORCE_ON_SPEC> {
         CLK_WIFIBB_80X1_FO_W::new(self, 7)
     }
     ///Bit 8
     #[inline(always)]
     #[must_use]
-    pub fn clk_wifibb_160x1_fo(&mut self) -> CLK_WIFIBB_160X1_FO_W<CLK_CONF1_FORCE_ON_SPEC> {
+    pub fn clk_wifibb_160x1_fo(
+        &mut self,
+    ) -> CLK_WIFIBB_160X1_FO_W<CLK_CONF1_FORCE_ON_SPEC> {
         CLK_WIFIBB_160X1_FO_W::new(self, 8)
     }
     ///Bit 9
@@ -345,7 +351,9 @@ impl W {
     ///Bit 15
     #[inline(always)]
     #[must_use]
-    pub fn clk_fe_cal_160m_fo(&mut self) -> CLK_FE_CAL_160M_FO_W<CLK_CONF1_FORCE_ON_SPEC> {
+    pub fn clk_fe_cal_160m_fo(
+        &mut self,
+    ) -> CLK_FE_CAL_160M_FO_W<CLK_CONF1_FORCE_ON_SPEC> {
         CLK_FE_CAL_160M_FO_W::new(self, 15)
     }
     ///Bit 16
@@ -369,7 +377,9 @@ impl W {
     ///Bit 19
     #[inline(always)]
     #[must_use]
-    pub fn clk_wifibb_480m_fo(&mut self) -> CLK_WIFIBB_480M_FO_W<CLK_CONF1_FORCE_ON_SPEC> {
+    pub fn clk_wifibb_480m_fo(
+        &mut self,
+    ) -> CLK_WIFIBB_480M_FO_W<CLK_CONF1_FORCE_ON_SPEC> {
         CLK_WIFIBB_480M_FO_W::new(self, 19)
     }
     ///Bit 20
@@ -381,19 +391,25 @@ impl W {
     ///Bit 21
     #[inline(always)]
     #[must_use]
-    pub fn clk_fe_anamode_40m_fo(&mut self) -> CLK_FE_ANAMODE_40M_FO_W<CLK_CONF1_FORCE_ON_SPEC> {
+    pub fn clk_fe_anamode_40m_fo(
+        &mut self,
+    ) -> CLK_FE_ANAMODE_40M_FO_W<CLK_CONF1_FORCE_ON_SPEC> {
         CLK_FE_ANAMODE_40M_FO_W::new(self, 21)
     }
     ///Bit 22
     #[inline(always)]
     #[must_use]
-    pub fn clk_fe_anamode_80m_fo(&mut self) -> CLK_FE_ANAMODE_80M_FO_W<CLK_CONF1_FORCE_ON_SPEC> {
+    pub fn clk_fe_anamode_80m_fo(
+        &mut self,
+    ) -> CLK_FE_ANAMODE_80M_FO_W<CLK_CONF1_FORCE_ON_SPEC> {
         CLK_FE_ANAMODE_80M_FO_W::new(self, 22)
     }
     ///Bit 23
     #[inline(always)]
     #[must_use]
-    pub fn clk_fe_anamode_160m_fo(&mut self) -> CLK_FE_ANAMODE_160M_FO_W<CLK_CONF1_FORCE_ON_SPEC> {
+    pub fn clk_fe_anamode_160m_fo(
+        &mut self,
+    ) -> CLK_FE_ANAMODE_160M_FO_W<CLK_CONF1_FORCE_ON_SPEC> {
         CLK_FE_ANAMODE_160M_FO_W::new(self, 23)
     }
 }

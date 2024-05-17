@@ -13,10 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PRO_CACHE_MMU_FAULT_VADDR")
-            .field(
-                "pro_cache_mmu_fault_vaddr",
-                &self.pro_cache_mmu_fault_vaddr(),
-            )
+            .field("pro_cache_mmu_fault_vaddr", &self.pro_cache_mmu_fault_vaddr())
             .finish()
     }
 }

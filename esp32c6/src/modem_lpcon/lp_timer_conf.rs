@@ -53,14 +53,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("LP_TIMER_CONF")
-            .field(
-                "clk_lp_timer_sel_osc_slow",
-                &self.clk_lp_timer_sel_osc_slow(),
-            )
-            .field(
-                "clk_lp_timer_sel_osc_fast",
-                &self.clk_lp_timer_sel_osc_fast(),
-            )
+            .field("clk_lp_timer_sel_osc_slow", &self.clk_lp_timer_sel_osc_slow())
+            .field("clk_lp_timer_sel_osc_fast", &self.clk_lp_timer_sel_osc_fast())
             .field("clk_lp_timer_sel_xtal", &self.clk_lp_timer_sel_xtal())
             .field("clk_lp_timer_sel_xtal32k", &self.clk_lp_timer_sel_xtal32k())
             .field("clk_lp_timer_div_num", &self.clk_lp_timer_div_num())
@@ -71,31 +65,41 @@ impl W {
     ///Bit 0
     #[inline(always)]
     #[must_use]
-    pub fn clk_lp_timer_sel_osc_slow(&mut self) -> CLK_LP_TIMER_SEL_OSC_SLOW_W<LP_TIMER_CONF_SPEC> {
+    pub fn clk_lp_timer_sel_osc_slow(
+        &mut self,
+    ) -> CLK_LP_TIMER_SEL_OSC_SLOW_W<LP_TIMER_CONF_SPEC> {
         CLK_LP_TIMER_SEL_OSC_SLOW_W::new(self, 0)
     }
     ///Bit 1
     #[inline(always)]
     #[must_use]
-    pub fn clk_lp_timer_sel_osc_fast(&mut self) -> CLK_LP_TIMER_SEL_OSC_FAST_W<LP_TIMER_CONF_SPEC> {
+    pub fn clk_lp_timer_sel_osc_fast(
+        &mut self,
+    ) -> CLK_LP_TIMER_SEL_OSC_FAST_W<LP_TIMER_CONF_SPEC> {
         CLK_LP_TIMER_SEL_OSC_FAST_W::new(self, 1)
     }
     ///Bit 2
     #[inline(always)]
     #[must_use]
-    pub fn clk_lp_timer_sel_xtal(&mut self) -> CLK_LP_TIMER_SEL_XTAL_W<LP_TIMER_CONF_SPEC> {
+    pub fn clk_lp_timer_sel_xtal(
+        &mut self,
+    ) -> CLK_LP_TIMER_SEL_XTAL_W<LP_TIMER_CONF_SPEC> {
         CLK_LP_TIMER_SEL_XTAL_W::new(self, 2)
     }
     ///Bit 3
     #[inline(always)]
     #[must_use]
-    pub fn clk_lp_timer_sel_xtal32k(&mut self) -> CLK_LP_TIMER_SEL_XTAL32K_W<LP_TIMER_CONF_SPEC> {
+    pub fn clk_lp_timer_sel_xtal32k(
+        &mut self,
+    ) -> CLK_LP_TIMER_SEL_XTAL32K_W<LP_TIMER_CONF_SPEC> {
         CLK_LP_TIMER_SEL_XTAL32K_W::new(self, 3)
     }
     ///Bits 4:15
     #[inline(always)]
     #[must_use]
-    pub fn clk_lp_timer_div_num(&mut self) -> CLK_LP_TIMER_DIV_NUM_W<LP_TIMER_CONF_SPEC> {
+    pub fn clk_lp_timer_div_num(
+        &mut self,
+    ) -> CLK_LP_TIMER_DIV_NUM_W<LP_TIMER_CONF_SPEC> {
         CLK_LP_TIMER_DIV_NUM_W::new(self, 4)
     }
 }

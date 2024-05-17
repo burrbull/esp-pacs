@@ -42,10 +42,7 @@ impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("INT_ST")
             .field("vddbat_charge_upvoltage", &self.vddbat_charge_upvoltage())
-            .field(
-                "vddbat_charge_undervoltage",
-                &self.vddbat_charge_undervoltage(),
-            )
+            .field("vddbat_charge_undervoltage", &self.vddbat_charge_undervoltage())
             .field("vddbat_upvoltage", &self.vddbat_upvoltage())
             .field("vddbat_undervoltage", &self.vddbat_undervoltage())
             .field("bod_mode0", &self.bod_mode0())

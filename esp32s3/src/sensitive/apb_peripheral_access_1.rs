@@ -9,7 +9,9 @@ pub type APB_PERIPHERAL_ACCESS_SPLIT_BURST_W<'a, REG> = crate::BitWriter<'a, REG
 impl R {
     ///Bit 0 - Set 1 to support split function for AHB access to APB peripherals.
     #[inline(always)]
-    pub fn apb_peripheral_access_split_burst(&self) -> APB_PERIPHERAL_ACCESS_SPLIT_BURST_R {
+    pub fn apb_peripheral_access_split_burst(
+        &self,
+    ) -> APB_PERIPHERAL_ACCESS_SPLIT_BURST_R {
         APB_PERIPHERAL_ACCESS_SPLIT_BURST_R::new((self.bits & 1) != 0)
     }
 }

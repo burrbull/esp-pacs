@@ -53,13 +53,17 @@ impl W {
     ///Bit 29 - ULP-coprocessor wakeup by GPIO enable
     #[inline(always)]
     #[must_use]
-    pub fn ulp_cp_gpio_wakeup_ena(&mut self) -> ULP_CP_GPIO_WAKEUP_ENA_W<ULP_CP_TIMER_SPEC> {
+    pub fn ulp_cp_gpio_wakeup_ena(
+        &mut self,
+    ) -> ULP_CP_GPIO_WAKEUP_ENA_W<ULP_CP_TIMER_SPEC> {
         ULP_CP_GPIO_WAKEUP_ENA_W::new(self, 29)
     }
     ///Bit 30 - ULP-coprocessor wakeup by GPIO state clear
     #[inline(always)]
     #[must_use]
-    pub fn ulp_cp_gpio_wakeup_clr(&mut self) -> ULP_CP_GPIO_WAKEUP_CLR_W<ULP_CP_TIMER_SPEC> {
+    pub fn ulp_cp_gpio_wakeup_clr(
+        &mut self,
+    ) -> ULP_CP_GPIO_WAKEUP_CLR_W<ULP_CP_TIMER_SPEC> {
         ULP_CP_GPIO_WAKEUP_CLR_W::new(self, 30)
     }
     ///Bit 31 - ULP-coprocessor timer enable bit

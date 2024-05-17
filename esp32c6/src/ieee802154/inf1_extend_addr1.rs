@@ -25,7 +25,9 @@ impl W {
     ///Bits 0:31
     #[inline(always)]
     #[must_use]
-    pub fn mac_inf1_extend_addr1(&mut self) -> MAC_INF1_EXTEND_ADDR1_W<INF1_EXTEND_ADDR1_SPEC> {
+    pub fn mac_inf1_extend_addr1(
+        &mut self,
+    ) -> MAC_INF1_EXTEND_ADDR1_W<INF1_EXTEND_ADDR1_SPEC> {
         MAC_INF1_EXTEND_ADDR1_W::new(self, 0)
     }
 }

@@ -51,13 +51,17 @@ impl W {
     ///Bits 8:15 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn cam_clk_div_numerator(&mut self) -> CAM_CLK_DIV_NUMERATOR_W<PERI_CLK_CTRL120_SPEC> {
+    pub fn cam_clk_div_numerator(
+        &mut self,
+    ) -> CAM_CLK_DIV_NUMERATOR_W<PERI_CLK_CTRL120_SPEC> {
         CAM_CLK_DIV_NUMERATOR_W::new(self, 8)
     }
     ///Bits 16:23 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn cam_clk_div_denominator(&mut self) -> CAM_CLK_DIV_DENOMINATOR_W<PERI_CLK_CTRL120_SPEC> {
+    pub fn cam_clk_div_denominator(
+        &mut self,
+    ) -> CAM_CLK_DIV_DENOMINATOR_W<PERI_CLK_CTRL120_SPEC> {
         CAM_CLK_DIV_DENOMINATOR_W::new(self, 16)
     }
 }

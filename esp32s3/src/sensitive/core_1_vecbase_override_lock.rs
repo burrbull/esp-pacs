@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CORE_1_VECBASE_OVERRIDE_LOCK")
-            .field(
-                "core_1_vecbase_override_lock",
-                &self.core_1_vecbase_override_lock(),
-            )
+            .field("core_1_vecbase_override_lock", &self.core_1_vecbase_override_lock())
             .finish()
     }
 }

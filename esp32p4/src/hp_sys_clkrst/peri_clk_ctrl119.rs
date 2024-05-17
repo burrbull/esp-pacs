@@ -71,10 +71,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PERI_CLK_CTRL119")
-            .field(
-                "parlio_tx_clk_div_numerator",
-                &self.parlio_tx_clk_div_numerator(),
-            )
+            .field("parlio_tx_clk_div_numerator", &self.parlio_tx_clk_div_numerator())
             .field(
                 "parlio_tx_clk_div_denominator",
                 &self.parlio_tx_clk_div_denominator(),
@@ -107,7 +104,9 @@ impl W {
     ///Bits 16:17 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn i3c_mst_clk_src_sel(&mut self) -> I3C_MST_CLK_SRC_SEL_W<PERI_CLK_CTRL119_SPEC> {
+    pub fn i3c_mst_clk_src_sel(
+        &mut self,
+    ) -> I3C_MST_CLK_SRC_SEL_W<PERI_CLK_CTRL119_SPEC> {
         I3C_MST_CLK_SRC_SEL_W::new(self, 16)
     }
     ///Bit 18 - Reserved
@@ -119,7 +118,9 @@ impl W {
     ///Bits 19:26 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn i3c_mst_clk_div_num(&mut self) -> I3C_MST_CLK_DIV_NUM_W<PERI_CLK_CTRL119_SPEC> {
+    pub fn i3c_mst_clk_div_num(
+        &mut self,
+    ) -> I3C_MST_CLK_DIV_NUM_W<PERI_CLK_CTRL119_SPEC> {
         I3C_MST_CLK_DIV_NUM_W::new(self, 19)
     }
     ///Bits 27:28 - Reserved

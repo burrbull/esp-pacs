@@ -274,92 +274,128 @@ impl RegisterBlock {
     }
     ///0x38 - spi2 dma permission configuration register 0.
     #[inline(always)]
-    pub const fn dma_apbperi_spi2_pms_constrain_0(&self) -> &DMA_APBPERI_SPI2_PMS_CONSTRAIN_0 {
+    pub const fn dma_apbperi_spi2_pms_constrain_0(
+        &self,
+    ) -> &DMA_APBPERI_SPI2_PMS_CONSTRAIN_0 {
         &self.dma_apbperi_spi2_pms_constrain_0
     }
     ///0x3c - spi2 dma permission configuration register 1.
     #[inline(always)]
-    pub const fn dma_apbperi_spi2_pms_constrain_1(&self) -> &DMA_APBPERI_SPI2_PMS_CONSTRAIN_1 {
+    pub const fn dma_apbperi_spi2_pms_constrain_1(
+        &self,
+    ) -> &DMA_APBPERI_SPI2_PMS_CONSTRAIN_1 {
         &self.dma_apbperi_spi2_pms_constrain_1
     }
     ///0x40 - spi3 dma permission configuration register 0.
     #[inline(always)]
-    pub const fn dma_apbperi_spi3_pms_constrain_0(&self) -> &DMA_APBPERI_SPI3_PMS_CONSTRAIN_0 {
+    pub const fn dma_apbperi_spi3_pms_constrain_0(
+        &self,
+    ) -> &DMA_APBPERI_SPI3_PMS_CONSTRAIN_0 {
         &self.dma_apbperi_spi3_pms_constrain_0
     }
     ///0x44 - spi3 dma permission configuration register 1.
     #[inline(always)]
-    pub const fn dma_apbperi_spi3_pms_constrain_1(&self) -> &DMA_APBPERI_SPI3_PMS_CONSTRAIN_1 {
+    pub const fn dma_apbperi_spi3_pms_constrain_1(
+        &self,
+    ) -> &DMA_APBPERI_SPI3_PMS_CONSTRAIN_1 {
         &self.dma_apbperi_spi3_pms_constrain_1
     }
     ///0x48 - uhci0 dma permission configuration register 0.
     #[inline(always)]
-    pub const fn dma_apbperi_uhci0_pms_constrain_0(&self) -> &DMA_APBPERI_UHCI0_PMS_CONSTRAIN_0 {
+    pub const fn dma_apbperi_uhci0_pms_constrain_0(
+        &self,
+    ) -> &DMA_APBPERI_UHCI0_PMS_CONSTRAIN_0 {
         &self.dma_apbperi_uhci0_pms_constrain_0
     }
     ///0x4c - uhci0 dma permission configuration register 1.
     #[inline(always)]
-    pub const fn dma_apbperi_uhci0_pms_constrain_1(&self) -> &DMA_APBPERI_UHCI0_PMS_CONSTRAIN_1 {
+    pub const fn dma_apbperi_uhci0_pms_constrain_1(
+        &self,
+    ) -> &DMA_APBPERI_UHCI0_PMS_CONSTRAIN_1 {
         &self.dma_apbperi_uhci0_pms_constrain_1
     }
     ///0x50 - i2s0 dma permission configuration register 0.
     #[inline(always)]
-    pub const fn dma_apbperi_i2s0_pms_constrain_0(&self) -> &DMA_APBPERI_I2S0_PMS_CONSTRAIN_0 {
+    pub const fn dma_apbperi_i2s0_pms_constrain_0(
+        &self,
+    ) -> &DMA_APBPERI_I2S0_PMS_CONSTRAIN_0 {
         &self.dma_apbperi_i2s0_pms_constrain_0
     }
     ///0x54 - i2s0 dma permission configuration register 1.
     #[inline(always)]
-    pub const fn dma_apbperi_i2s0_pms_constrain_1(&self) -> &DMA_APBPERI_I2S0_PMS_CONSTRAIN_1 {
+    pub const fn dma_apbperi_i2s0_pms_constrain_1(
+        &self,
+    ) -> &DMA_APBPERI_I2S0_PMS_CONSTRAIN_1 {
         &self.dma_apbperi_i2s0_pms_constrain_1
     }
     ///0x58 - i2s1 dma permission configuration register 0.
     #[inline(always)]
-    pub const fn dma_apbperi_i2s1_pms_constrain_0(&self) -> &DMA_APBPERI_I2S1_PMS_CONSTRAIN_0 {
+    pub const fn dma_apbperi_i2s1_pms_constrain_0(
+        &self,
+    ) -> &DMA_APBPERI_I2S1_PMS_CONSTRAIN_0 {
         &self.dma_apbperi_i2s1_pms_constrain_0
     }
     ///0x5c - i2s1 dma permission configuration register 1.
     #[inline(always)]
-    pub const fn dma_apbperi_i2s1_pms_constrain_1(&self) -> &DMA_APBPERI_I2S1_PMS_CONSTRAIN_1 {
+    pub const fn dma_apbperi_i2s1_pms_constrain_1(
+        &self,
+    ) -> &DMA_APBPERI_I2S1_PMS_CONSTRAIN_1 {
         &self.dma_apbperi_i2s1_pms_constrain_1
     }
     ///0x60 - mac dma permission configuration register 0.
     #[inline(always)]
-    pub const fn dma_apbperi_mac_pms_constrain_0(&self) -> &DMA_APBPERI_MAC_PMS_CONSTRAIN_0 {
+    pub const fn dma_apbperi_mac_pms_constrain_0(
+        &self,
+    ) -> &DMA_APBPERI_MAC_PMS_CONSTRAIN_0 {
         &self.dma_apbperi_mac_pms_constrain_0
     }
     ///0x64 - mac dma permission configuration register 1.
     #[inline(always)]
-    pub const fn dma_apbperi_mac_pms_constrain_1(&self) -> &DMA_APBPERI_MAC_PMS_CONSTRAIN_1 {
+    pub const fn dma_apbperi_mac_pms_constrain_1(
+        &self,
+    ) -> &DMA_APBPERI_MAC_PMS_CONSTRAIN_1 {
         &self.dma_apbperi_mac_pms_constrain_1
     }
     ///0x68 - backup dma permission configuration register 0.
     #[inline(always)]
-    pub const fn dma_apbperi_backup_pms_constrain_0(&self) -> &DMA_APBPERI_BACKUP_PMS_CONSTRAIN_0 {
+    pub const fn dma_apbperi_backup_pms_constrain_0(
+        &self,
+    ) -> &DMA_APBPERI_BACKUP_PMS_CONSTRAIN_0 {
         &self.dma_apbperi_backup_pms_constrain_0
     }
     ///0x6c - backup dma permission configuration register 1.
     #[inline(always)]
-    pub const fn dma_apbperi_backup_pms_constrain_1(&self) -> &DMA_APBPERI_BACKUP_PMS_CONSTRAIN_1 {
+    pub const fn dma_apbperi_backup_pms_constrain_1(
+        &self,
+    ) -> &DMA_APBPERI_BACKUP_PMS_CONSTRAIN_1 {
         &self.dma_apbperi_backup_pms_constrain_1
     }
     ///0x70 - aes dma permission configuration register 0.
     #[inline(always)]
-    pub const fn dma_apbperi_aes_pms_constrain_0(&self) -> &DMA_APBPERI_AES_PMS_CONSTRAIN_0 {
+    pub const fn dma_apbperi_aes_pms_constrain_0(
+        &self,
+    ) -> &DMA_APBPERI_AES_PMS_CONSTRAIN_0 {
         &self.dma_apbperi_aes_pms_constrain_0
     }
     ///0x74 - aes dma permission configuration register 1.
     #[inline(always)]
-    pub const fn dma_apbperi_aes_pms_constrain_1(&self) -> &DMA_APBPERI_AES_PMS_CONSTRAIN_1 {
+    pub const fn dma_apbperi_aes_pms_constrain_1(
+        &self,
+    ) -> &DMA_APBPERI_AES_PMS_CONSTRAIN_1 {
         &self.dma_apbperi_aes_pms_constrain_1
     }
     ///0x78 - sha dma permission configuration register 0.
     #[inline(always)]
-    pub const fn dma_apbperi_sha_pms_constrain_0(&self) -> &DMA_APBPERI_SHA_PMS_CONSTRAIN_0 {
+    pub const fn dma_apbperi_sha_pms_constrain_0(
+        &self,
+    ) -> &DMA_APBPERI_SHA_PMS_CONSTRAIN_0 {
         &self.dma_apbperi_sha_pms_constrain_0
     }
     ///0x7c - sha dma permission configuration register 1.
     #[inline(always)]
-    pub const fn dma_apbperi_sha_pms_constrain_1(&self) -> &DMA_APBPERI_SHA_PMS_CONSTRAIN_1 {
+    pub const fn dma_apbperi_sha_pms_constrain_1(
+        &self,
+    ) -> &DMA_APBPERI_SHA_PMS_CONSTRAIN_1 {
         &self.dma_apbperi_sha_pms_constrain_1
     }
     ///0x80 - adc_dac dma permission configuration register 0.
@@ -378,12 +414,16 @@ impl RegisterBlock {
     }
     ///0x88 - rmt dma permission configuration register 0.
     #[inline(always)]
-    pub const fn dma_apbperi_rmt_pms_constrain_0(&self) -> &DMA_APBPERI_RMT_PMS_CONSTRAIN_0 {
+    pub const fn dma_apbperi_rmt_pms_constrain_0(
+        &self,
+    ) -> &DMA_APBPERI_RMT_PMS_CONSTRAIN_0 {
         &self.dma_apbperi_rmt_pms_constrain_0
     }
     ///0x8c - rmt dma permission configuration register 1.
     #[inline(always)]
-    pub const fn dma_apbperi_rmt_pms_constrain_1(&self) -> &DMA_APBPERI_RMT_PMS_CONSTRAIN_1 {
+    pub const fn dma_apbperi_rmt_pms_constrain_1(
+        &self,
+    ) -> &DMA_APBPERI_RMT_PMS_CONSTRAIN_1 {
         &self.dma_apbperi_rmt_pms_constrain_1
     }
     ///0x90 - lcd_cam dma permission configuration register 0.
@@ -402,32 +442,44 @@ impl RegisterBlock {
     }
     ///0x98 - usb dma permission configuration register 0.
     #[inline(always)]
-    pub const fn dma_apbperi_usb_pms_constrain_0(&self) -> &DMA_APBPERI_USB_PMS_CONSTRAIN_0 {
+    pub const fn dma_apbperi_usb_pms_constrain_0(
+        &self,
+    ) -> &DMA_APBPERI_USB_PMS_CONSTRAIN_0 {
         &self.dma_apbperi_usb_pms_constrain_0
     }
     ///0x9c - usb dma permission configuration register 1.
     #[inline(always)]
-    pub const fn dma_apbperi_usb_pms_constrain_1(&self) -> &DMA_APBPERI_USB_PMS_CONSTRAIN_1 {
+    pub const fn dma_apbperi_usb_pms_constrain_1(
+        &self,
+    ) -> &DMA_APBPERI_USB_PMS_CONSTRAIN_1 {
         &self.dma_apbperi_usb_pms_constrain_1
     }
     ///0xa0 - lc dma permission configuration register 0.
     #[inline(always)]
-    pub const fn dma_apbperi_lc_pms_constrain_0(&self) -> &DMA_APBPERI_LC_PMS_CONSTRAIN_0 {
+    pub const fn dma_apbperi_lc_pms_constrain_0(
+        &self,
+    ) -> &DMA_APBPERI_LC_PMS_CONSTRAIN_0 {
         &self.dma_apbperi_lc_pms_constrain_0
     }
     ///0xa4 - lc dma permission configuration register 1.
     #[inline(always)]
-    pub const fn dma_apbperi_lc_pms_constrain_1(&self) -> &DMA_APBPERI_LC_PMS_CONSTRAIN_1 {
+    pub const fn dma_apbperi_lc_pms_constrain_1(
+        &self,
+    ) -> &DMA_APBPERI_LC_PMS_CONSTRAIN_1 {
         &self.dma_apbperi_lc_pms_constrain_1
     }
     ///0xa8 - sdio dma permission configuration register 0.
     #[inline(always)]
-    pub const fn dma_apbperi_sdio_pms_constrain_0(&self) -> &DMA_APBPERI_SDIO_PMS_CONSTRAIN_0 {
+    pub const fn dma_apbperi_sdio_pms_constrain_0(
+        &self,
+    ) -> &DMA_APBPERI_SDIO_PMS_CONSTRAIN_0 {
         &self.dma_apbperi_sdio_pms_constrain_0
     }
     ///0xac - sdio dma permission configuration register 1.
     #[inline(always)]
-    pub const fn dma_apbperi_sdio_pms_constrain_1(&self) -> &DMA_APBPERI_SDIO_PMS_CONSTRAIN_1 {
+    pub const fn dma_apbperi_sdio_pms_constrain_1(
+        &self,
+    ) -> &DMA_APBPERI_SDIO_PMS_CONSTRAIN_1 {
         &self.dma_apbperi_sdio_pms_constrain_1
     }
     ///0xb0 - dma permission monitor configuration register 0.
@@ -714,27 +766,37 @@ impl RegisterBlock {
     }
     ///0x188 - Core0 region permission register 10.
     #[inline(always)]
-    pub const fn core_0_region_pms_constrain_10(&self) -> &CORE_0_REGION_PMS_CONSTRAIN_10 {
+    pub const fn core_0_region_pms_constrain_10(
+        &self,
+    ) -> &CORE_0_REGION_PMS_CONSTRAIN_10 {
         &self.core_0_region_pms_constrain_10
     }
     ///0x18c - Core0 region permission register 11.
     #[inline(always)]
-    pub const fn core_0_region_pms_constrain_11(&self) -> &CORE_0_REGION_PMS_CONSTRAIN_11 {
+    pub const fn core_0_region_pms_constrain_11(
+        &self,
+    ) -> &CORE_0_REGION_PMS_CONSTRAIN_11 {
         &self.core_0_region_pms_constrain_11
     }
     ///0x190 - Core0 region permission register 12.
     #[inline(always)]
-    pub const fn core_0_region_pms_constrain_12(&self) -> &CORE_0_REGION_PMS_CONSTRAIN_12 {
+    pub const fn core_0_region_pms_constrain_12(
+        &self,
+    ) -> &CORE_0_REGION_PMS_CONSTRAIN_12 {
         &self.core_0_region_pms_constrain_12
     }
     ///0x194 - Core0 region permission register 13.
     #[inline(always)]
-    pub const fn core_0_region_pms_constrain_13(&self) -> &CORE_0_REGION_PMS_CONSTRAIN_13 {
+    pub const fn core_0_region_pms_constrain_13(
+        &self,
+    ) -> &CORE_0_REGION_PMS_CONSTRAIN_13 {
         &self.core_0_region_pms_constrain_13
     }
     ///0x198 - Core0 region permission register 14.
     #[inline(always)]
-    pub const fn core_0_region_pms_constrain_14(&self) -> &CORE_0_REGION_PMS_CONSTRAIN_14 {
+    pub const fn core_0_region_pms_constrain_14(
+        &self,
+    ) -> &CORE_0_REGION_PMS_CONSTRAIN_14 {
         &self.core_0_region_pms_constrain_14
     }
     ///0x19c - Core0 permission report register 0.
@@ -933,27 +995,37 @@ impl RegisterBlock {
     }
     ///0x234 - core1 region permission register 10.
     #[inline(always)]
-    pub const fn core_1_region_pms_constrain_10(&self) -> &CORE_1_REGION_PMS_CONSTRAIN_10 {
+    pub const fn core_1_region_pms_constrain_10(
+        &self,
+    ) -> &CORE_1_REGION_PMS_CONSTRAIN_10 {
         &self.core_1_region_pms_constrain_10
     }
     ///0x238 - core1 region permission register 11.
     #[inline(always)]
-    pub const fn core_1_region_pms_constrain_11(&self) -> &CORE_1_REGION_PMS_CONSTRAIN_11 {
+    pub const fn core_1_region_pms_constrain_11(
+        &self,
+    ) -> &CORE_1_REGION_PMS_CONSTRAIN_11 {
         &self.core_1_region_pms_constrain_11
     }
     ///0x23c - core1 region permission register 12.
     #[inline(always)]
-    pub const fn core_1_region_pms_constrain_12(&self) -> &CORE_1_REGION_PMS_CONSTRAIN_12 {
+    pub const fn core_1_region_pms_constrain_12(
+        &self,
+    ) -> &CORE_1_REGION_PMS_CONSTRAIN_12 {
         &self.core_1_region_pms_constrain_12
     }
     ///0x240 - core1 region permission register 13.
     #[inline(always)]
-    pub const fn core_1_region_pms_constrain_13(&self) -> &CORE_1_REGION_PMS_CONSTRAIN_13 {
+    pub const fn core_1_region_pms_constrain_13(
+        &self,
+    ) -> &CORE_1_REGION_PMS_CONSTRAIN_13 {
         &self.core_1_region_pms_constrain_13
     }
     ///0x244 - core1 region permission register 14.
     #[inline(always)]
-    pub const fn core_1_region_pms_constrain_14(&self) -> &CORE_1_REGION_PMS_CONSTRAIN_14 {
+    pub const fn core_1_region_pms_constrain_14(
+        &self,
+    ) -> &CORE_1_REGION_PMS_CONSTRAIN_14 {
         &self.core_1_region_pms_constrain_14
     }
     ///0x248 - core1 permission report register 0.
@@ -1221,8 +1293,9 @@ impl RegisterBlock {
 You can [`read`](crate::generic::Reg::read) this register and get [`cache_dataarray_connect_0::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`cache_dataarray_connect_0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@cache_dataarray_connect_0`] module*/
-pub type CACHE_DATAARRAY_CONNECT_0 =
-    crate::Reg<cache_dataarray_connect_0::CACHE_DATAARRAY_CONNECT_0_SPEC>;
+pub type CACHE_DATAARRAY_CONNECT_0 = crate::Reg<
+    cache_dataarray_connect_0::CACHE_DATAARRAY_CONNECT_0_SPEC,
+>;
 ///Cache data array configuration register 0.
 pub mod cache_dataarray_connect_0;
 /**CACHE_DATAARRAY_CONNECT_1 (rw) register accessor: Cache data array configuration register 1.
@@ -1230,8 +1303,9 @@ pub mod cache_dataarray_connect_0;
 You can [`read`](crate::generic::Reg::read) this register and get [`cache_dataarray_connect_1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`cache_dataarray_connect_1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@cache_dataarray_connect_1`] module*/
-pub type CACHE_DATAARRAY_CONNECT_1 =
-    crate::Reg<cache_dataarray_connect_1::CACHE_DATAARRAY_CONNECT_1_SPEC>;
+pub type CACHE_DATAARRAY_CONNECT_1 = crate::Reg<
+    cache_dataarray_connect_1::CACHE_DATAARRAY_CONNECT_1_SPEC,
+>;
 ///Cache data array configuration register 1.
 pub mod cache_dataarray_connect_1;
 /**APB_PERIPHERAL_ACCESS_0 (rw) register accessor: APB peripheral configuration register 0.
@@ -1239,8 +1313,9 @@ pub mod cache_dataarray_connect_1;
 You can [`read`](crate::generic::Reg::read) this register and get [`apb_peripheral_access_0::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`apb_peripheral_access_0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@apb_peripheral_access_0`] module*/
-pub type APB_PERIPHERAL_ACCESS_0 =
-    crate::Reg<apb_peripheral_access_0::APB_PERIPHERAL_ACCESS_0_SPEC>;
+pub type APB_PERIPHERAL_ACCESS_0 = crate::Reg<
+    apb_peripheral_access_0::APB_PERIPHERAL_ACCESS_0_SPEC,
+>;
 ///APB peripheral configuration register 0.
 pub mod apb_peripheral_access_0;
 /**APB_PERIPHERAL_ACCESS_1 (rw) register accessor: APB peripheral configuration register 1.
@@ -1248,8 +1323,9 @@ pub mod apb_peripheral_access_0;
 You can [`read`](crate::generic::Reg::read) this register and get [`apb_peripheral_access_1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`apb_peripheral_access_1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@apb_peripheral_access_1`] module*/
-pub type APB_PERIPHERAL_ACCESS_1 =
-    crate::Reg<apb_peripheral_access_1::APB_PERIPHERAL_ACCESS_1_SPEC>;
+pub type APB_PERIPHERAL_ACCESS_1 = crate::Reg<
+    apb_peripheral_access_1::APB_PERIPHERAL_ACCESS_1_SPEC,
+>;
 ///APB peripheral configuration register 1.
 pub mod apb_peripheral_access_1;
 /**INTERNAL_SRAM_USAGE_0 (rw) register accessor: Internal SRAM configuration register 0.
@@ -1257,7 +1333,9 @@ pub mod apb_peripheral_access_1;
 You can [`read`](crate::generic::Reg::read) this register and get [`internal_sram_usage_0::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`internal_sram_usage_0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@internal_sram_usage_0`] module*/
-pub type INTERNAL_SRAM_USAGE_0 = crate::Reg<internal_sram_usage_0::INTERNAL_SRAM_USAGE_0_SPEC>;
+pub type INTERNAL_SRAM_USAGE_0 = crate::Reg<
+    internal_sram_usage_0::INTERNAL_SRAM_USAGE_0_SPEC,
+>;
 ///Internal SRAM configuration register 0.
 pub mod internal_sram_usage_0;
 /**INTERNAL_SRAM_USAGE_1 (rw) register accessor: Internal SRAM configuration register 1.
@@ -1265,7 +1343,9 @@ pub mod internal_sram_usage_0;
 You can [`read`](crate::generic::Reg::read) this register and get [`internal_sram_usage_1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`internal_sram_usage_1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@internal_sram_usage_1`] module*/
-pub type INTERNAL_SRAM_USAGE_1 = crate::Reg<internal_sram_usage_1::INTERNAL_SRAM_USAGE_1_SPEC>;
+pub type INTERNAL_SRAM_USAGE_1 = crate::Reg<
+    internal_sram_usage_1::INTERNAL_SRAM_USAGE_1_SPEC,
+>;
 ///Internal SRAM configuration register 1.
 pub mod internal_sram_usage_1;
 /**INTERNAL_SRAM_USAGE_2 (rw) register accessor: Internal SRAM configuration register 2.
@@ -1273,7 +1353,9 @@ pub mod internal_sram_usage_1;
 You can [`read`](crate::generic::Reg::read) this register and get [`internal_sram_usage_2::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`internal_sram_usage_2::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@internal_sram_usage_2`] module*/
-pub type INTERNAL_SRAM_USAGE_2 = crate::Reg<internal_sram_usage_2::INTERNAL_SRAM_USAGE_2_SPEC>;
+pub type INTERNAL_SRAM_USAGE_2 = crate::Reg<
+    internal_sram_usage_2::INTERNAL_SRAM_USAGE_2_SPEC,
+>;
 ///Internal SRAM configuration register 2.
 pub mod internal_sram_usage_2;
 /**INTERNAL_SRAM_USAGE_3 (rw) register accessor: Internal SRAM configuration register 3.
@@ -1281,7 +1363,9 @@ pub mod internal_sram_usage_2;
 You can [`read`](crate::generic::Reg::read) this register and get [`internal_sram_usage_3::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`internal_sram_usage_3::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@internal_sram_usage_3`] module*/
-pub type INTERNAL_SRAM_USAGE_3 = crate::Reg<internal_sram_usage_3::INTERNAL_SRAM_USAGE_3_SPEC>;
+pub type INTERNAL_SRAM_USAGE_3 = crate::Reg<
+    internal_sram_usage_3::INTERNAL_SRAM_USAGE_3_SPEC,
+>;
 ///Internal SRAM configuration register 3.
 pub mod internal_sram_usage_3;
 /**INTERNAL_SRAM_USAGE_4 (rw) register accessor: Internal SRAM configuration register 4.
@@ -1289,7 +1373,9 @@ pub mod internal_sram_usage_3;
 You can [`read`](crate::generic::Reg::read) this register and get [`internal_sram_usage_4::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`internal_sram_usage_4::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@internal_sram_usage_4`] module*/
-pub type INTERNAL_SRAM_USAGE_4 = crate::Reg<internal_sram_usage_4::INTERNAL_SRAM_USAGE_4_SPEC>;
+pub type INTERNAL_SRAM_USAGE_4 = crate::Reg<
+    internal_sram_usage_4::INTERNAL_SRAM_USAGE_4_SPEC,
+>;
 ///Internal SRAM configuration register 4.
 pub mod internal_sram_usage_4;
 /**RETENTION_DISABLE (rw) register accessor: Retention configuration register.
@@ -1337,8 +1423,9 @@ pub mod cache_mmu_access_1;
 You can [`read`](crate::generic::Reg::read) this register and get [`dma_apbperi_spi2_pms_constrain_0::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`dma_apbperi_spi2_pms_constrain_0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dma_apbperi_spi2_pms_constrain_0`] module*/
-pub type DMA_APBPERI_SPI2_PMS_CONSTRAIN_0 =
-    crate::Reg<dma_apbperi_spi2_pms_constrain_0::DMA_APBPERI_SPI2_PMS_CONSTRAIN_0_SPEC>;
+pub type DMA_APBPERI_SPI2_PMS_CONSTRAIN_0 = crate::Reg<
+    dma_apbperi_spi2_pms_constrain_0::DMA_APBPERI_SPI2_PMS_CONSTRAIN_0_SPEC,
+>;
 ///spi2 dma permission configuration register 0.
 pub mod dma_apbperi_spi2_pms_constrain_0;
 /**DMA_APBPERI_SPI2_PMS_CONSTRAIN_1 (rw) register accessor: spi2 dma permission configuration register 1.
@@ -1346,8 +1433,9 @@ pub mod dma_apbperi_spi2_pms_constrain_0;
 You can [`read`](crate::generic::Reg::read) this register and get [`dma_apbperi_spi2_pms_constrain_1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`dma_apbperi_spi2_pms_constrain_1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dma_apbperi_spi2_pms_constrain_1`] module*/
-pub type DMA_APBPERI_SPI2_PMS_CONSTRAIN_1 =
-    crate::Reg<dma_apbperi_spi2_pms_constrain_1::DMA_APBPERI_SPI2_PMS_CONSTRAIN_1_SPEC>;
+pub type DMA_APBPERI_SPI2_PMS_CONSTRAIN_1 = crate::Reg<
+    dma_apbperi_spi2_pms_constrain_1::DMA_APBPERI_SPI2_PMS_CONSTRAIN_1_SPEC,
+>;
 ///spi2 dma permission configuration register 1.
 pub mod dma_apbperi_spi2_pms_constrain_1;
 /**DMA_APBPERI_SPI3_PMS_CONSTRAIN_0 (rw) register accessor: spi3 dma permission configuration register 0.
@@ -1355,8 +1443,9 @@ pub mod dma_apbperi_spi2_pms_constrain_1;
 You can [`read`](crate::generic::Reg::read) this register and get [`dma_apbperi_spi3_pms_constrain_0::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`dma_apbperi_spi3_pms_constrain_0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dma_apbperi_spi3_pms_constrain_0`] module*/
-pub type DMA_APBPERI_SPI3_PMS_CONSTRAIN_0 =
-    crate::Reg<dma_apbperi_spi3_pms_constrain_0::DMA_APBPERI_SPI3_PMS_CONSTRAIN_0_SPEC>;
+pub type DMA_APBPERI_SPI3_PMS_CONSTRAIN_0 = crate::Reg<
+    dma_apbperi_spi3_pms_constrain_0::DMA_APBPERI_SPI3_PMS_CONSTRAIN_0_SPEC,
+>;
 ///spi3 dma permission configuration register 0.
 pub mod dma_apbperi_spi3_pms_constrain_0;
 /**DMA_APBPERI_SPI3_PMS_CONSTRAIN_1 (rw) register accessor: spi3 dma permission configuration register 1.
@@ -1364,8 +1453,9 @@ pub mod dma_apbperi_spi3_pms_constrain_0;
 You can [`read`](crate::generic::Reg::read) this register and get [`dma_apbperi_spi3_pms_constrain_1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`dma_apbperi_spi3_pms_constrain_1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dma_apbperi_spi3_pms_constrain_1`] module*/
-pub type DMA_APBPERI_SPI3_PMS_CONSTRAIN_1 =
-    crate::Reg<dma_apbperi_spi3_pms_constrain_1::DMA_APBPERI_SPI3_PMS_CONSTRAIN_1_SPEC>;
+pub type DMA_APBPERI_SPI3_PMS_CONSTRAIN_1 = crate::Reg<
+    dma_apbperi_spi3_pms_constrain_1::DMA_APBPERI_SPI3_PMS_CONSTRAIN_1_SPEC,
+>;
 ///spi3 dma permission configuration register 1.
 pub mod dma_apbperi_spi3_pms_constrain_1;
 /**DMA_APBPERI_UHCI0_PMS_CONSTRAIN_0 (rw) register accessor: uhci0 dma permission configuration register 0.
@@ -1373,8 +1463,9 @@ pub mod dma_apbperi_spi3_pms_constrain_1;
 You can [`read`](crate::generic::Reg::read) this register and get [`dma_apbperi_uhci0_pms_constrain_0::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`dma_apbperi_uhci0_pms_constrain_0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dma_apbperi_uhci0_pms_constrain_0`] module*/
-pub type DMA_APBPERI_UHCI0_PMS_CONSTRAIN_0 =
-    crate::Reg<dma_apbperi_uhci0_pms_constrain_0::DMA_APBPERI_UHCI0_PMS_CONSTRAIN_0_SPEC>;
+pub type DMA_APBPERI_UHCI0_PMS_CONSTRAIN_0 = crate::Reg<
+    dma_apbperi_uhci0_pms_constrain_0::DMA_APBPERI_UHCI0_PMS_CONSTRAIN_0_SPEC,
+>;
 ///uhci0 dma permission configuration register 0.
 pub mod dma_apbperi_uhci0_pms_constrain_0;
 /**DMA_APBPERI_UHCI0_PMS_CONSTRAIN_1 (rw) register accessor: uhci0 dma permission configuration register 1.
@@ -1382,8 +1473,9 @@ pub mod dma_apbperi_uhci0_pms_constrain_0;
 You can [`read`](crate::generic::Reg::read) this register and get [`dma_apbperi_uhci0_pms_constrain_1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`dma_apbperi_uhci0_pms_constrain_1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dma_apbperi_uhci0_pms_constrain_1`] module*/
-pub type DMA_APBPERI_UHCI0_PMS_CONSTRAIN_1 =
-    crate::Reg<dma_apbperi_uhci0_pms_constrain_1::DMA_APBPERI_UHCI0_PMS_CONSTRAIN_1_SPEC>;
+pub type DMA_APBPERI_UHCI0_PMS_CONSTRAIN_1 = crate::Reg<
+    dma_apbperi_uhci0_pms_constrain_1::DMA_APBPERI_UHCI0_PMS_CONSTRAIN_1_SPEC,
+>;
 ///uhci0 dma permission configuration register 1.
 pub mod dma_apbperi_uhci0_pms_constrain_1;
 /**DMA_APBPERI_I2S0_PMS_CONSTRAIN_0 (rw) register accessor: i2s0 dma permission configuration register 0.
@@ -1391,8 +1483,9 @@ pub mod dma_apbperi_uhci0_pms_constrain_1;
 You can [`read`](crate::generic::Reg::read) this register and get [`dma_apbperi_i2s0_pms_constrain_0::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`dma_apbperi_i2s0_pms_constrain_0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dma_apbperi_i2s0_pms_constrain_0`] module*/
-pub type DMA_APBPERI_I2S0_PMS_CONSTRAIN_0 =
-    crate::Reg<dma_apbperi_i2s0_pms_constrain_0::DMA_APBPERI_I2S0_PMS_CONSTRAIN_0_SPEC>;
+pub type DMA_APBPERI_I2S0_PMS_CONSTRAIN_0 = crate::Reg<
+    dma_apbperi_i2s0_pms_constrain_0::DMA_APBPERI_I2S0_PMS_CONSTRAIN_0_SPEC,
+>;
 ///i2s0 dma permission configuration register 0.
 pub mod dma_apbperi_i2s0_pms_constrain_0;
 /**DMA_APBPERI_I2S0_PMS_CONSTRAIN_1 (rw) register accessor: i2s0 dma permission configuration register 1.
@@ -1400,8 +1493,9 @@ pub mod dma_apbperi_i2s0_pms_constrain_0;
 You can [`read`](crate::generic::Reg::read) this register and get [`dma_apbperi_i2s0_pms_constrain_1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`dma_apbperi_i2s0_pms_constrain_1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dma_apbperi_i2s0_pms_constrain_1`] module*/
-pub type DMA_APBPERI_I2S0_PMS_CONSTRAIN_1 =
-    crate::Reg<dma_apbperi_i2s0_pms_constrain_1::DMA_APBPERI_I2S0_PMS_CONSTRAIN_1_SPEC>;
+pub type DMA_APBPERI_I2S0_PMS_CONSTRAIN_1 = crate::Reg<
+    dma_apbperi_i2s0_pms_constrain_1::DMA_APBPERI_I2S0_PMS_CONSTRAIN_1_SPEC,
+>;
 ///i2s0 dma permission configuration register 1.
 pub mod dma_apbperi_i2s0_pms_constrain_1;
 /**DMA_APBPERI_I2S1_PMS_CONSTRAIN_0 (rw) register accessor: i2s1 dma permission configuration register 0.
@@ -1409,8 +1503,9 @@ pub mod dma_apbperi_i2s0_pms_constrain_1;
 You can [`read`](crate::generic::Reg::read) this register and get [`dma_apbperi_i2s1_pms_constrain_0::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`dma_apbperi_i2s1_pms_constrain_0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dma_apbperi_i2s1_pms_constrain_0`] module*/
-pub type DMA_APBPERI_I2S1_PMS_CONSTRAIN_0 =
-    crate::Reg<dma_apbperi_i2s1_pms_constrain_0::DMA_APBPERI_I2S1_PMS_CONSTRAIN_0_SPEC>;
+pub type DMA_APBPERI_I2S1_PMS_CONSTRAIN_0 = crate::Reg<
+    dma_apbperi_i2s1_pms_constrain_0::DMA_APBPERI_I2S1_PMS_CONSTRAIN_0_SPEC,
+>;
 ///i2s1 dma permission configuration register 0.
 pub mod dma_apbperi_i2s1_pms_constrain_0;
 /**DMA_APBPERI_I2S1_PMS_CONSTRAIN_1 (rw) register accessor: i2s1 dma permission configuration register 1.
@@ -1418,8 +1513,9 @@ pub mod dma_apbperi_i2s1_pms_constrain_0;
 You can [`read`](crate::generic::Reg::read) this register and get [`dma_apbperi_i2s1_pms_constrain_1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`dma_apbperi_i2s1_pms_constrain_1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dma_apbperi_i2s1_pms_constrain_1`] module*/
-pub type DMA_APBPERI_I2S1_PMS_CONSTRAIN_1 =
-    crate::Reg<dma_apbperi_i2s1_pms_constrain_1::DMA_APBPERI_I2S1_PMS_CONSTRAIN_1_SPEC>;
+pub type DMA_APBPERI_I2S1_PMS_CONSTRAIN_1 = crate::Reg<
+    dma_apbperi_i2s1_pms_constrain_1::DMA_APBPERI_I2S1_PMS_CONSTRAIN_1_SPEC,
+>;
 ///i2s1 dma permission configuration register 1.
 pub mod dma_apbperi_i2s1_pms_constrain_1;
 /**DMA_APBPERI_MAC_PMS_CONSTRAIN_0 (rw) register accessor: mac dma permission configuration register 0.
@@ -1427,8 +1523,9 @@ pub mod dma_apbperi_i2s1_pms_constrain_1;
 You can [`read`](crate::generic::Reg::read) this register and get [`dma_apbperi_mac_pms_constrain_0::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`dma_apbperi_mac_pms_constrain_0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dma_apbperi_mac_pms_constrain_0`] module*/
-pub type DMA_APBPERI_MAC_PMS_CONSTRAIN_0 =
-    crate::Reg<dma_apbperi_mac_pms_constrain_0::DMA_APBPERI_MAC_PMS_CONSTRAIN_0_SPEC>;
+pub type DMA_APBPERI_MAC_PMS_CONSTRAIN_0 = crate::Reg<
+    dma_apbperi_mac_pms_constrain_0::DMA_APBPERI_MAC_PMS_CONSTRAIN_0_SPEC,
+>;
 ///mac dma permission configuration register 0.
 pub mod dma_apbperi_mac_pms_constrain_0;
 /**DMA_APBPERI_MAC_PMS_CONSTRAIN_1 (rw) register accessor: mac dma permission configuration register 1.
@@ -1436,8 +1533,9 @@ pub mod dma_apbperi_mac_pms_constrain_0;
 You can [`read`](crate::generic::Reg::read) this register and get [`dma_apbperi_mac_pms_constrain_1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`dma_apbperi_mac_pms_constrain_1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dma_apbperi_mac_pms_constrain_1`] module*/
-pub type DMA_APBPERI_MAC_PMS_CONSTRAIN_1 =
-    crate::Reg<dma_apbperi_mac_pms_constrain_1::DMA_APBPERI_MAC_PMS_CONSTRAIN_1_SPEC>;
+pub type DMA_APBPERI_MAC_PMS_CONSTRAIN_1 = crate::Reg<
+    dma_apbperi_mac_pms_constrain_1::DMA_APBPERI_MAC_PMS_CONSTRAIN_1_SPEC,
+>;
 ///mac dma permission configuration register 1.
 pub mod dma_apbperi_mac_pms_constrain_1;
 /**DMA_APBPERI_BACKUP_PMS_CONSTRAIN_0 (rw) register accessor: backup dma permission configuration register 0.
@@ -1445,8 +1543,9 @@ pub mod dma_apbperi_mac_pms_constrain_1;
 You can [`read`](crate::generic::Reg::read) this register and get [`dma_apbperi_backup_pms_constrain_0::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`dma_apbperi_backup_pms_constrain_0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dma_apbperi_backup_pms_constrain_0`] module*/
-pub type DMA_APBPERI_BACKUP_PMS_CONSTRAIN_0 =
-    crate::Reg<dma_apbperi_backup_pms_constrain_0::DMA_APBPERI_BACKUP_PMS_CONSTRAIN_0_SPEC>;
+pub type DMA_APBPERI_BACKUP_PMS_CONSTRAIN_0 = crate::Reg<
+    dma_apbperi_backup_pms_constrain_0::DMA_APBPERI_BACKUP_PMS_CONSTRAIN_0_SPEC,
+>;
 ///backup dma permission configuration register 0.
 pub mod dma_apbperi_backup_pms_constrain_0;
 /**DMA_APBPERI_BACKUP_PMS_CONSTRAIN_1 (rw) register accessor: backup dma permission configuration register 1.
@@ -1454,8 +1553,9 @@ pub mod dma_apbperi_backup_pms_constrain_0;
 You can [`read`](crate::generic::Reg::read) this register and get [`dma_apbperi_backup_pms_constrain_1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`dma_apbperi_backup_pms_constrain_1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dma_apbperi_backup_pms_constrain_1`] module*/
-pub type DMA_APBPERI_BACKUP_PMS_CONSTRAIN_1 =
-    crate::Reg<dma_apbperi_backup_pms_constrain_1::DMA_APBPERI_BACKUP_PMS_CONSTRAIN_1_SPEC>;
+pub type DMA_APBPERI_BACKUP_PMS_CONSTRAIN_1 = crate::Reg<
+    dma_apbperi_backup_pms_constrain_1::DMA_APBPERI_BACKUP_PMS_CONSTRAIN_1_SPEC,
+>;
 ///backup dma permission configuration register 1.
 pub mod dma_apbperi_backup_pms_constrain_1;
 /**DMA_APBPERI_AES_PMS_CONSTRAIN_0 (rw) register accessor: aes dma permission configuration register 0.
@@ -1463,8 +1563,9 @@ pub mod dma_apbperi_backup_pms_constrain_1;
 You can [`read`](crate::generic::Reg::read) this register and get [`dma_apbperi_aes_pms_constrain_0::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`dma_apbperi_aes_pms_constrain_0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dma_apbperi_aes_pms_constrain_0`] module*/
-pub type DMA_APBPERI_AES_PMS_CONSTRAIN_0 =
-    crate::Reg<dma_apbperi_aes_pms_constrain_0::DMA_APBPERI_AES_PMS_CONSTRAIN_0_SPEC>;
+pub type DMA_APBPERI_AES_PMS_CONSTRAIN_0 = crate::Reg<
+    dma_apbperi_aes_pms_constrain_0::DMA_APBPERI_AES_PMS_CONSTRAIN_0_SPEC,
+>;
 ///aes dma permission configuration register 0.
 pub mod dma_apbperi_aes_pms_constrain_0;
 /**DMA_APBPERI_AES_PMS_CONSTRAIN_1 (rw) register accessor: aes dma permission configuration register 1.
@@ -1472,8 +1573,9 @@ pub mod dma_apbperi_aes_pms_constrain_0;
 You can [`read`](crate::generic::Reg::read) this register and get [`dma_apbperi_aes_pms_constrain_1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`dma_apbperi_aes_pms_constrain_1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dma_apbperi_aes_pms_constrain_1`] module*/
-pub type DMA_APBPERI_AES_PMS_CONSTRAIN_1 =
-    crate::Reg<dma_apbperi_aes_pms_constrain_1::DMA_APBPERI_AES_PMS_CONSTRAIN_1_SPEC>;
+pub type DMA_APBPERI_AES_PMS_CONSTRAIN_1 = crate::Reg<
+    dma_apbperi_aes_pms_constrain_1::DMA_APBPERI_AES_PMS_CONSTRAIN_1_SPEC,
+>;
 ///aes dma permission configuration register 1.
 pub mod dma_apbperi_aes_pms_constrain_1;
 /**DMA_APBPERI_SHA_PMS_CONSTRAIN_0 (rw) register accessor: sha dma permission configuration register 0.
@@ -1481,8 +1583,9 @@ pub mod dma_apbperi_aes_pms_constrain_1;
 You can [`read`](crate::generic::Reg::read) this register and get [`dma_apbperi_sha_pms_constrain_0::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`dma_apbperi_sha_pms_constrain_0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dma_apbperi_sha_pms_constrain_0`] module*/
-pub type DMA_APBPERI_SHA_PMS_CONSTRAIN_0 =
-    crate::Reg<dma_apbperi_sha_pms_constrain_0::DMA_APBPERI_SHA_PMS_CONSTRAIN_0_SPEC>;
+pub type DMA_APBPERI_SHA_PMS_CONSTRAIN_0 = crate::Reg<
+    dma_apbperi_sha_pms_constrain_0::DMA_APBPERI_SHA_PMS_CONSTRAIN_0_SPEC,
+>;
 ///sha dma permission configuration register 0.
 pub mod dma_apbperi_sha_pms_constrain_0;
 /**DMA_APBPERI_SHA_PMS_CONSTRAIN_1 (rw) register accessor: sha dma permission configuration register 1.
@@ -1490,8 +1593,9 @@ pub mod dma_apbperi_sha_pms_constrain_0;
 You can [`read`](crate::generic::Reg::read) this register and get [`dma_apbperi_sha_pms_constrain_1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`dma_apbperi_sha_pms_constrain_1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dma_apbperi_sha_pms_constrain_1`] module*/
-pub type DMA_APBPERI_SHA_PMS_CONSTRAIN_1 =
-    crate::Reg<dma_apbperi_sha_pms_constrain_1::DMA_APBPERI_SHA_PMS_CONSTRAIN_1_SPEC>;
+pub type DMA_APBPERI_SHA_PMS_CONSTRAIN_1 = crate::Reg<
+    dma_apbperi_sha_pms_constrain_1::DMA_APBPERI_SHA_PMS_CONSTRAIN_1_SPEC,
+>;
 ///sha dma permission configuration register 1.
 pub mod dma_apbperi_sha_pms_constrain_1;
 /**DMA_APBPERI_ADC_DAC_PMS_CONSTRAIN_0 (rw) register accessor: adc_dac dma permission configuration register 0.
@@ -1499,8 +1603,9 @@ pub mod dma_apbperi_sha_pms_constrain_1;
 You can [`read`](crate::generic::Reg::read) this register and get [`dma_apbperi_adc_dac_pms_constrain_0::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`dma_apbperi_adc_dac_pms_constrain_0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dma_apbperi_adc_dac_pms_constrain_0`] module*/
-pub type DMA_APBPERI_ADC_DAC_PMS_CONSTRAIN_0 =
-    crate::Reg<dma_apbperi_adc_dac_pms_constrain_0::DMA_APBPERI_ADC_DAC_PMS_CONSTRAIN_0_SPEC>;
+pub type DMA_APBPERI_ADC_DAC_PMS_CONSTRAIN_0 = crate::Reg<
+    dma_apbperi_adc_dac_pms_constrain_0::DMA_APBPERI_ADC_DAC_PMS_CONSTRAIN_0_SPEC,
+>;
 ///adc_dac dma permission configuration register 0.
 pub mod dma_apbperi_adc_dac_pms_constrain_0;
 /**DMA_APBPERI_ADC_DAC_PMS_CONSTRAIN_1 (rw) register accessor: adc_dac dma permission configuration register 1.
@@ -1508,8 +1613,9 @@ pub mod dma_apbperi_adc_dac_pms_constrain_0;
 You can [`read`](crate::generic::Reg::read) this register and get [`dma_apbperi_adc_dac_pms_constrain_1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`dma_apbperi_adc_dac_pms_constrain_1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dma_apbperi_adc_dac_pms_constrain_1`] module*/
-pub type DMA_APBPERI_ADC_DAC_PMS_CONSTRAIN_1 =
-    crate::Reg<dma_apbperi_adc_dac_pms_constrain_1::DMA_APBPERI_ADC_DAC_PMS_CONSTRAIN_1_SPEC>;
+pub type DMA_APBPERI_ADC_DAC_PMS_CONSTRAIN_1 = crate::Reg<
+    dma_apbperi_adc_dac_pms_constrain_1::DMA_APBPERI_ADC_DAC_PMS_CONSTRAIN_1_SPEC,
+>;
 ///adc_dac dma permission configuration register 1.
 pub mod dma_apbperi_adc_dac_pms_constrain_1;
 /**DMA_APBPERI_RMT_PMS_CONSTRAIN_0 (rw) register accessor: rmt dma permission configuration register 0.
@@ -1517,8 +1623,9 @@ pub mod dma_apbperi_adc_dac_pms_constrain_1;
 You can [`read`](crate::generic::Reg::read) this register and get [`dma_apbperi_rmt_pms_constrain_0::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`dma_apbperi_rmt_pms_constrain_0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dma_apbperi_rmt_pms_constrain_0`] module*/
-pub type DMA_APBPERI_RMT_PMS_CONSTRAIN_0 =
-    crate::Reg<dma_apbperi_rmt_pms_constrain_0::DMA_APBPERI_RMT_PMS_CONSTRAIN_0_SPEC>;
+pub type DMA_APBPERI_RMT_PMS_CONSTRAIN_0 = crate::Reg<
+    dma_apbperi_rmt_pms_constrain_0::DMA_APBPERI_RMT_PMS_CONSTRAIN_0_SPEC,
+>;
 ///rmt dma permission configuration register 0.
 pub mod dma_apbperi_rmt_pms_constrain_0;
 /**DMA_APBPERI_RMT_PMS_CONSTRAIN_1 (rw) register accessor: rmt dma permission configuration register 1.
@@ -1526,8 +1633,9 @@ pub mod dma_apbperi_rmt_pms_constrain_0;
 You can [`read`](crate::generic::Reg::read) this register and get [`dma_apbperi_rmt_pms_constrain_1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`dma_apbperi_rmt_pms_constrain_1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dma_apbperi_rmt_pms_constrain_1`] module*/
-pub type DMA_APBPERI_RMT_PMS_CONSTRAIN_1 =
-    crate::Reg<dma_apbperi_rmt_pms_constrain_1::DMA_APBPERI_RMT_PMS_CONSTRAIN_1_SPEC>;
+pub type DMA_APBPERI_RMT_PMS_CONSTRAIN_1 = crate::Reg<
+    dma_apbperi_rmt_pms_constrain_1::DMA_APBPERI_RMT_PMS_CONSTRAIN_1_SPEC,
+>;
 ///rmt dma permission configuration register 1.
 pub mod dma_apbperi_rmt_pms_constrain_1;
 /**DMA_APBPERI_LCD_CAM_PMS_CONSTRAIN_0 (rw) register accessor: lcd_cam dma permission configuration register 0.
@@ -1535,8 +1643,9 @@ pub mod dma_apbperi_rmt_pms_constrain_1;
 You can [`read`](crate::generic::Reg::read) this register and get [`dma_apbperi_lcd_cam_pms_constrain_0::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`dma_apbperi_lcd_cam_pms_constrain_0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dma_apbperi_lcd_cam_pms_constrain_0`] module*/
-pub type DMA_APBPERI_LCD_CAM_PMS_CONSTRAIN_0 =
-    crate::Reg<dma_apbperi_lcd_cam_pms_constrain_0::DMA_APBPERI_LCD_CAM_PMS_CONSTRAIN_0_SPEC>;
+pub type DMA_APBPERI_LCD_CAM_PMS_CONSTRAIN_0 = crate::Reg<
+    dma_apbperi_lcd_cam_pms_constrain_0::DMA_APBPERI_LCD_CAM_PMS_CONSTRAIN_0_SPEC,
+>;
 ///lcd_cam dma permission configuration register 0.
 pub mod dma_apbperi_lcd_cam_pms_constrain_0;
 /**DMA_APBPERI_LCD_CAM_PMS_CONSTRAIN_1 (rw) register accessor: lcd_cam dma permission configuration register 1.
@@ -1544,8 +1653,9 @@ pub mod dma_apbperi_lcd_cam_pms_constrain_0;
 You can [`read`](crate::generic::Reg::read) this register and get [`dma_apbperi_lcd_cam_pms_constrain_1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`dma_apbperi_lcd_cam_pms_constrain_1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dma_apbperi_lcd_cam_pms_constrain_1`] module*/
-pub type DMA_APBPERI_LCD_CAM_PMS_CONSTRAIN_1 =
-    crate::Reg<dma_apbperi_lcd_cam_pms_constrain_1::DMA_APBPERI_LCD_CAM_PMS_CONSTRAIN_1_SPEC>;
+pub type DMA_APBPERI_LCD_CAM_PMS_CONSTRAIN_1 = crate::Reg<
+    dma_apbperi_lcd_cam_pms_constrain_1::DMA_APBPERI_LCD_CAM_PMS_CONSTRAIN_1_SPEC,
+>;
 ///lcd_cam dma permission configuration register 1.
 pub mod dma_apbperi_lcd_cam_pms_constrain_1;
 /**DMA_APBPERI_USB_PMS_CONSTRAIN_0 (rw) register accessor: usb dma permission configuration register 0.
@@ -1553,8 +1663,9 @@ pub mod dma_apbperi_lcd_cam_pms_constrain_1;
 You can [`read`](crate::generic::Reg::read) this register and get [`dma_apbperi_usb_pms_constrain_0::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`dma_apbperi_usb_pms_constrain_0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dma_apbperi_usb_pms_constrain_0`] module*/
-pub type DMA_APBPERI_USB_PMS_CONSTRAIN_0 =
-    crate::Reg<dma_apbperi_usb_pms_constrain_0::DMA_APBPERI_USB_PMS_CONSTRAIN_0_SPEC>;
+pub type DMA_APBPERI_USB_PMS_CONSTRAIN_0 = crate::Reg<
+    dma_apbperi_usb_pms_constrain_0::DMA_APBPERI_USB_PMS_CONSTRAIN_0_SPEC,
+>;
 ///usb dma permission configuration register 0.
 pub mod dma_apbperi_usb_pms_constrain_0;
 /**DMA_APBPERI_USB_PMS_CONSTRAIN_1 (rw) register accessor: usb dma permission configuration register 1.
@@ -1562,8 +1673,9 @@ pub mod dma_apbperi_usb_pms_constrain_0;
 You can [`read`](crate::generic::Reg::read) this register and get [`dma_apbperi_usb_pms_constrain_1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`dma_apbperi_usb_pms_constrain_1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dma_apbperi_usb_pms_constrain_1`] module*/
-pub type DMA_APBPERI_USB_PMS_CONSTRAIN_1 =
-    crate::Reg<dma_apbperi_usb_pms_constrain_1::DMA_APBPERI_USB_PMS_CONSTRAIN_1_SPEC>;
+pub type DMA_APBPERI_USB_PMS_CONSTRAIN_1 = crate::Reg<
+    dma_apbperi_usb_pms_constrain_1::DMA_APBPERI_USB_PMS_CONSTRAIN_1_SPEC,
+>;
 ///usb dma permission configuration register 1.
 pub mod dma_apbperi_usb_pms_constrain_1;
 /**DMA_APBPERI_LC_PMS_CONSTRAIN_0 (rw) register accessor: lc dma permission configuration register 0.
@@ -1571,8 +1683,9 @@ pub mod dma_apbperi_usb_pms_constrain_1;
 You can [`read`](crate::generic::Reg::read) this register and get [`dma_apbperi_lc_pms_constrain_0::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`dma_apbperi_lc_pms_constrain_0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dma_apbperi_lc_pms_constrain_0`] module*/
-pub type DMA_APBPERI_LC_PMS_CONSTRAIN_0 =
-    crate::Reg<dma_apbperi_lc_pms_constrain_0::DMA_APBPERI_LC_PMS_CONSTRAIN_0_SPEC>;
+pub type DMA_APBPERI_LC_PMS_CONSTRAIN_0 = crate::Reg<
+    dma_apbperi_lc_pms_constrain_0::DMA_APBPERI_LC_PMS_CONSTRAIN_0_SPEC,
+>;
 ///lc dma permission configuration register 0.
 pub mod dma_apbperi_lc_pms_constrain_0;
 /**DMA_APBPERI_LC_PMS_CONSTRAIN_1 (rw) register accessor: lc dma permission configuration register 1.
@@ -1580,8 +1693,9 @@ pub mod dma_apbperi_lc_pms_constrain_0;
 You can [`read`](crate::generic::Reg::read) this register and get [`dma_apbperi_lc_pms_constrain_1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`dma_apbperi_lc_pms_constrain_1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dma_apbperi_lc_pms_constrain_1`] module*/
-pub type DMA_APBPERI_LC_PMS_CONSTRAIN_1 =
-    crate::Reg<dma_apbperi_lc_pms_constrain_1::DMA_APBPERI_LC_PMS_CONSTRAIN_1_SPEC>;
+pub type DMA_APBPERI_LC_PMS_CONSTRAIN_1 = crate::Reg<
+    dma_apbperi_lc_pms_constrain_1::DMA_APBPERI_LC_PMS_CONSTRAIN_1_SPEC,
+>;
 ///lc dma permission configuration register 1.
 pub mod dma_apbperi_lc_pms_constrain_1;
 /**DMA_APBPERI_SDIO_PMS_CONSTRAIN_0 (rw) register accessor: sdio dma permission configuration register 0.
@@ -1589,8 +1703,9 @@ pub mod dma_apbperi_lc_pms_constrain_1;
 You can [`read`](crate::generic::Reg::read) this register and get [`dma_apbperi_sdio_pms_constrain_0::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`dma_apbperi_sdio_pms_constrain_0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dma_apbperi_sdio_pms_constrain_0`] module*/
-pub type DMA_APBPERI_SDIO_PMS_CONSTRAIN_0 =
-    crate::Reg<dma_apbperi_sdio_pms_constrain_0::DMA_APBPERI_SDIO_PMS_CONSTRAIN_0_SPEC>;
+pub type DMA_APBPERI_SDIO_PMS_CONSTRAIN_0 = crate::Reg<
+    dma_apbperi_sdio_pms_constrain_0::DMA_APBPERI_SDIO_PMS_CONSTRAIN_0_SPEC,
+>;
 ///sdio dma permission configuration register 0.
 pub mod dma_apbperi_sdio_pms_constrain_0;
 /**DMA_APBPERI_SDIO_PMS_CONSTRAIN_1 (rw) register accessor: sdio dma permission configuration register 1.
@@ -1598,8 +1713,9 @@ pub mod dma_apbperi_sdio_pms_constrain_0;
 You can [`read`](crate::generic::Reg::read) this register and get [`dma_apbperi_sdio_pms_constrain_1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`dma_apbperi_sdio_pms_constrain_1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dma_apbperi_sdio_pms_constrain_1`] module*/
-pub type DMA_APBPERI_SDIO_PMS_CONSTRAIN_1 =
-    crate::Reg<dma_apbperi_sdio_pms_constrain_1::DMA_APBPERI_SDIO_PMS_CONSTRAIN_1_SPEC>;
+pub type DMA_APBPERI_SDIO_PMS_CONSTRAIN_1 = crate::Reg<
+    dma_apbperi_sdio_pms_constrain_1::DMA_APBPERI_SDIO_PMS_CONSTRAIN_1_SPEC,
+>;
 ///sdio dma permission configuration register 1.
 pub mod dma_apbperi_sdio_pms_constrain_1;
 /**DMA_APBPERI_PMS_MONITOR_0 (rw) register accessor: dma permission monitor configuration register 0.
@@ -1607,8 +1723,9 @@ pub mod dma_apbperi_sdio_pms_constrain_1;
 You can [`read`](crate::generic::Reg::read) this register and get [`dma_apbperi_pms_monitor_0::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`dma_apbperi_pms_monitor_0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dma_apbperi_pms_monitor_0`] module*/
-pub type DMA_APBPERI_PMS_MONITOR_0 =
-    crate::Reg<dma_apbperi_pms_monitor_0::DMA_APBPERI_PMS_MONITOR_0_SPEC>;
+pub type DMA_APBPERI_PMS_MONITOR_0 = crate::Reg<
+    dma_apbperi_pms_monitor_0::DMA_APBPERI_PMS_MONITOR_0_SPEC,
+>;
 ///dma permission monitor configuration register 0.
 pub mod dma_apbperi_pms_monitor_0;
 /**DMA_APBPERI_PMS_MONITOR_1 (rw) register accessor: dma permission monitor configuration register 1.
@@ -1616,8 +1733,9 @@ pub mod dma_apbperi_pms_monitor_0;
 You can [`read`](crate::generic::Reg::read) this register and get [`dma_apbperi_pms_monitor_1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`dma_apbperi_pms_monitor_1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dma_apbperi_pms_monitor_1`] module*/
-pub type DMA_APBPERI_PMS_MONITOR_1 =
-    crate::Reg<dma_apbperi_pms_monitor_1::DMA_APBPERI_PMS_MONITOR_1_SPEC>;
+pub type DMA_APBPERI_PMS_MONITOR_1 = crate::Reg<
+    dma_apbperi_pms_monitor_1::DMA_APBPERI_PMS_MONITOR_1_SPEC,
+>;
 ///dma permission monitor configuration register 1.
 pub mod dma_apbperi_pms_monitor_1;
 /**DMA_APBPERI_PMS_MONITOR_2 (r) register accessor: dma permission monitor configuration register 2.
@@ -1625,8 +1743,9 @@ pub mod dma_apbperi_pms_monitor_1;
 You can [`read`](crate::generic::Reg::read) this register and get [`dma_apbperi_pms_monitor_2::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dma_apbperi_pms_monitor_2`] module*/
-pub type DMA_APBPERI_PMS_MONITOR_2 =
-    crate::Reg<dma_apbperi_pms_monitor_2::DMA_APBPERI_PMS_MONITOR_2_SPEC>;
+pub type DMA_APBPERI_PMS_MONITOR_2 = crate::Reg<
+    dma_apbperi_pms_monitor_2::DMA_APBPERI_PMS_MONITOR_2_SPEC,
+>;
 ///dma permission monitor configuration register 2.
 pub mod dma_apbperi_pms_monitor_2;
 /**DMA_APBPERI_PMS_MONITOR_3 (r) register accessor: dma permission monitor configuration register 3.
@@ -1634,8 +1753,9 @@ pub mod dma_apbperi_pms_monitor_2;
 You can [`read`](crate::generic::Reg::read) this register and get [`dma_apbperi_pms_monitor_3::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dma_apbperi_pms_monitor_3`] module*/
-pub type DMA_APBPERI_PMS_MONITOR_3 =
-    crate::Reg<dma_apbperi_pms_monitor_3::DMA_APBPERI_PMS_MONITOR_3_SPEC>;
+pub type DMA_APBPERI_PMS_MONITOR_3 = crate::Reg<
+    dma_apbperi_pms_monitor_3::DMA_APBPERI_PMS_MONITOR_3_SPEC,
+>;
 ///dma permission monitor configuration register 3.
 pub mod dma_apbperi_pms_monitor_3;
 /**CORE_X_IRAM0_DRAM0_DMA_SPLIT_LINE_CONSTRAIN_0 (rw) register accessor: sram split line configuration register 0
@@ -1703,8 +1823,9 @@ pub mod core_x_iram0_dram0_dma_split_line_constrain_5;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_x_iram0_pms_constrain_0::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_x_iram0_pms_constrain_0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_x_iram0_pms_constrain_0`] module*/
-pub type CORE_X_IRAM0_PMS_CONSTRAIN_0 =
-    crate::Reg<core_x_iram0_pms_constrain_0::CORE_X_IRAM0_PMS_CONSTRAIN_0_SPEC>;
+pub type CORE_X_IRAM0_PMS_CONSTRAIN_0 = crate::Reg<
+    core_x_iram0_pms_constrain_0::CORE_X_IRAM0_PMS_CONSTRAIN_0_SPEC,
+>;
 ///corex iram0 permission configuration register 0
 pub mod core_x_iram0_pms_constrain_0;
 /**CORE_X_IRAM0_PMS_CONSTRAIN_1 (rw) register accessor: corex iram0 permission configuration register 0
@@ -1712,8 +1833,9 @@ pub mod core_x_iram0_pms_constrain_0;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_x_iram0_pms_constrain_1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_x_iram0_pms_constrain_1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_x_iram0_pms_constrain_1`] module*/
-pub type CORE_X_IRAM0_PMS_CONSTRAIN_1 =
-    crate::Reg<core_x_iram0_pms_constrain_1::CORE_X_IRAM0_PMS_CONSTRAIN_1_SPEC>;
+pub type CORE_X_IRAM0_PMS_CONSTRAIN_1 = crate::Reg<
+    core_x_iram0_pms_constrain_1::CORE_X_IRAM0_PMS_CONSTRAIN_1_SPEC,
+>;
 ///corex iram0 permission configuration register 0
 pub mod core_x_iram0_pms_constrain_1;
 /**CORE_X_IRAM0_PMS_CONSTRAIN_2 (rw) register accessor: corex iram0 permission configuration register 1
@@ -1721,8 +1843,9 @@ pub mod core_x_iram0_pms_constrain_1;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_x_iram0_pms_constrain_2::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_x_iram0_pms_constrain_2::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_x_iram0_pms_constrain_2`] module*/
-pub type CORE_X_IRAM0_PMS_CONSTRAIN_2 =
-    crate::Reg<core_x_iram0_pms_constrain_2::CORE_X_IRAM0_PMS_CONSTRAIN_2_SPEC>;
+pub type CORE_X_IRAM0_PMS_CONSTRAIN_2 = crate::Reg<
+    core_x_iram0_pms_constrain_2::CORE_X_IRAM0_PMS_CONSTRAIN_2_SPEC,
+>;
 ///corex iram0 permission configuration register 1
 pub mod core_x_iram0_pms_constrain_2;
 /**CORE_0_IRAM0_PMS_MONITOR_0 (rw) register accessor: core0 iram0 permission monitor configuration register 0
@@ -1730,8 +1853,9 @@ pub mod core_x_iram0_pms_constrain_2;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_0_iram0_pms_monitor_0::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_0_iram0_pms_monitor_0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_0_iram0_pms_monitor_0`] module*/
-pub type CORE_0_IRAM0_PMS_MONITOR_0 =
-    crate::Reg<core_0_iram0_pms_monitor_0::CORE_0_IRAM0_PMS_MONITOR_0_SPEC>;
+pub type CORE_0_IRAM0_PMS_MONITOR_0 = crate::Reg<
+    core_0_iram0_pms_monitor_0::CORE_0_IRAM0_PMS_MONITOR_0_SPEC,
+>;
 ///core0 iram0 permission monitor configuration register 0
 pub mod core_0_iram0_pms_monitor_0;
 /**CORE_0_IRAM0_PMS_MONITOR_1 (rw) register accessor: core0 iram0 permission monitor configuration register 1
@@ -1739,8 +1863,9 @@ pub mod core_0_iram0_pms_monitor_0;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_0_iram0_pms_monitor_1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_0_iram0_pms_monitor_1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_0_iram0_pms_monitor_1`] module*/
-pub type CORE_0_IRAM0_PMS_MONITOR_1 =
-    crate::Reg<core_0_iram0_pms_monitor_1::CORE_0_IRAM0_PMS_MONITOR_1_SPEC>;
+pub type CORE_0_IRAM0_PMS_MONITOR_1 = crate::Reg<
+    core_0_iram0_pms_monitor_1::CORE_0_IRAM0_PMS_MONITOR_1_SPEC,
+>;
 ///core0 iram0 permission monitor configuration register 1
 pub mod core_0_iram0_pms_monitor_1;
 /**CORE_0_IRAM0_PMS_MONITOR_2 (r) register accessor: core0 iram0 permission monitor configuration register 2
@@ -1748,8 +1873,9 @@ pub mod core_0_iram0_pms_monitor_1;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_0_iram0_pms_monitor_2::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_0_iram0_pms_monitor_2`] module*/
-pub type CORE_0_IRAM0_PMS_MONITOR_2 =
-    crate::Reg<core_0_iram0_pms_monitor_2::CORE_0_IRAM0_PMS_MONITOR_2_SPEC>;
+pub type CORE_0_IRAM0_PMS_MONITOR_2 = crate::Reg<
+    core_0_iram0_pms_monitor_2::CORE_0_IRAM0_PMS_MONITOR_2_SPEC,
+>;
 ///core0 iram0 permission monitor configuration register 2
 pub mod core_0_iram0_pms_monitor_2;
 /**CORE_1_IRAM0_PMS_MONITOR_0 (rw) register accessor: core1 iram0 permission monitor configuration register 0
@@ -1757,8 +1883,9 @@ pub mod core_0_iram0_pms_monitor_2;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_1_iram0_pms_monitor_0::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_1_iram0_pms_monitor_0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_1_iram0_pms_monitor_0`] module*/
-pub type CORE_1_IRAM0_PMS_MONITOR_0 =
-    crate::Reg<core_1_iram0_pms_monitor_0::CORE_1_IRAM0_PMS_MONITOR_0_SPEC>;
+pub type CORE_1_IRAM0_PMS_MONITOR_0 = crate::Reg<
+    core_1_iram0_pms_monitor_0::CORE_1_IRAM0_PMS_MONITOR_0_SPEC,
+>;
 ///core1 iram0 permission monitor configuration register 0
 pub mod core_1_iram0_pms_monitor_0;
 /**CORE_1_IRAM0_PMS_MONITOR_1 (rw) register accessor: core1 iram0 permission monitor configuration register 1
@@ -1766,8 +1893,9 @@ pub mod core_1_iram0_pms_monitor_0;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_1_iram0_pms_monitor_1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_1_iram0_pms_monitor_1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_1_iram0_pms_monitor_1`] module*/
-pub type CORE_1_IRAM0_PMS_MONITOR_1 =
-    crate::Reg<core_1_iram0_pms_monitor_1::CORE_1_IRAM0_PMS_MONITOR_1_SPEC>;
+pub type CORE_1_IRAM0_PMS_MONITOR_1 = crate::Reg<
+    core_1_iram0_pms_monitor_1::CORE_1_IRAM0_PMS_MONITOR_1_SPEC,
+>;
 ///core1 iram0 permission monitor configuration register 1
 pub mod core_1_iram0_pms_monitor_1;
 /**CORE_1_IRAM0_PMS_MONITOR_2 (r) register accessor: core1 iram0 permission monitor configuration register 2
@@ -1775,8 +1903,9 @@ pub mod core_1_iram0_pms_monitor_1;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_1_iram0_pms_monitor_2::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_1_iram0_pms_monitor_2`] module*/
-pub type CORE_1_IRAM0_PMS_MONITOR_2 =
-    crate::Reg<core_1_iram0_pms_monitor_2::CORE_1_IRAM0_PMS_MONITOR_2_SPEC>;
+pub type CORE_1_IRAM0_PMS_MONITOR_2 = crate::Reg<
+    core_1_iram0_pms_monitor_2::CORE_1_IRAM0_PMS_MONITOR_2_SPEC,
+>;
 ///core1 iram0 permission monitor configuration register 2
 pub mod core_1_iram0_pms_monitor_2;
 /**CORE_X_DRAM0_PMS_CONSTRAIN_0 (rw) register accessor: corex dram0 permission configuration register 0
@@ -1784,8 +1913,9 @@ pub mod core_1_iram0_pms_monitor_2;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_x_dram0_pms_constrain_0::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_x_dram0_pms_constrain_0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_x_dram0_pms_constrain_0`] module*/
-pub type CORE_X_DRAM0_PMS_CONSTRAIN_0 =
-    crate::Reg<core_x_dram0_pms_constrain_0::CORE_X_DRAM0_PMS_CONSTRAIN_0_SPEC>;
+pub type CORE_X_DRAM0_PMS_CONSTRAIN_0 = crate::Reg<
+    core_x_dram0_pms_constrain_0::CORE_X_DRAM0_PMS_CONSTRAIN_0_SPEC,
+>;
 ///corex dram0 permission configuration register 0
 pub mod core_x_dram0_pms_constrain_0;
 /**CORE_X_DRAM0_PMS_CONSTRAIN_1 (rw) register accessor: corex dram0 permission configuration register 1
@@ -1793,8 +1923,9 @@ pub mod core_x_dram0_pms_constrain_0;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_x_dram0_pms_constrain_1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_x_dram0_pms_constrain_1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_x_dram0_pms_constrain_1`] module*/
-pub type CORE_X_DRAM0_PMS_CONSTRAIN_1 =
-    crate::Reg<core_x_dram0_pms_constrain_1::CORE_X_DRAM0_PMS_CONSTRAIN_1_SPEC>;
+pub type CORE_X_DRAM0_PMS_CONSTRAIN_1 = crate::Reg<
+    core_x_dram0_pms_constrain_1::CORE_X_DRAM0_PMS_CONSTRAIN_1_SPEC,
+>;
 ///corex dram0 permission configuration register 1
 pub mod core_x_dram0_pms_constrain_1;
 /**CORE_0_DRAM0_PMS_MONITOR_0 (rw) register accessor: core0 dram0 permission monitor configuration register 0
@@ -1802,8 +1933,9 @@ pub mod core_x_dram0_pms_constrain_1;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_0_dram0_pms_monitor_0::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_0_dram0_pms_monitor_0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_0_dram0_pms_monitor_0`] module*/
-pub type CORE_0_DRAM0_PMS_MONITOR_0 =
-    crate::Reg<core_0_dram0_pms_monitor_0::CORE_0_DRAM0_PMS_MONITOR_0_SPEC>;
+pub type CORE_0_DRAM0_PMS_MONITOR_0 = crate::Reg<
+    core_0_dram0_pms_monitor_0::CORE_0_DRAM0_PMS_MONITOR_0_SPEC,
+>;
 ///core0 dram0 permission monitor configuration register 0
 pub mod core_0_dram0_pms_monitor_0;
 /**CORE_0_DRAM0_PMS_MONITOR_1 (rw) register accessor: core0 dram0 permission monitor configuration register 1
@@ -1811,8 +1943,9 @@ pub mod core_0_dram0_pms_monitor_0;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_0_dram0_pms_monitor_1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_0_dram0_pms_monitor_1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_0_dram0_pms_monitor_1`] module*/
-pub type CORE_0_DRAM0_PMS_MONITOR_1 =
-    crate::Reg<core_0_dram0_pms_monitor_1::CORE_0_DRAM0_PMS_MONITOR_1_SPEC>;
+pub type CORE_0_DRAM0_PMS_MONITOR_1 = crate::Reg<
+    core_0_dram0_pms_monitor_1::CORE_0_DRAM0_PMS_MONITOR_1_SPEC,
+>;
 ///core0 dram0 permission monitor configuration register 1
 pub mod core_0_dram0_pms_monitor_1;
 /**CORE_0_DRAM0_PMS_MONITOR_2 (r) register accessor: core0 dram0 permission monitor configuration register 2.
@@ -1820,8 +1953,9 @@ pub mod core_0_dram0_pms_monitor_1;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_0_dram0_pms_monitor_2::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_0_dram0_pms_monitor_2`] module*/
-pub type CORE_0_DRAM0_PMS_MONITOR_2 =
-    crate::Reg<core_0_dram0_pms_monitor_2::CORE_0_DRAM0_PMS_MONITOR_2_SPEC>;
+pub type CORE_0_DRAM0_PMS_MONITOR_2 = crate::Reg<
+    core_0_dram0_pms_monitor_2::CORE_0_DRAM0_PMS_MONITOR_2_SPEC,
+>;
 ///core0 dram0 permission monitor configuration register 2.
 pub mod core_0_dram0_pms_monitor_2;
 /**CORE_0_DRAM0_PMS_MONITOR_3 (r) register accessor: core0 dram0 permission monitor configuration register 3.
@@ -1829,8 +1963,9 @@ pub mod core_0_dram0_pms_monitor_2;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_0_dram0_pms_monitor_3::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_0_dram0_pms_monitor_3`] module*/
-pub type CORE_0_DRAM0_PMS_MONITOR_3 =
-    crate::Reg<core_0_dram0_pms_monitor_3::CORE_0_DRAM0_PMS_MONITOR_3_SPEC>;
+pub type CORE_0_DRAM0_PMS_MONITOR_3 = crate::Reg<
+    core_0_dram0_pms_monitor_3::CORE_0_DRAM0_PMS_MONITOR_3_SPEC,
+>;
 ///core0 dram0 permission monitor configuration register 3.
 pub mod core_0_dram0_pms_monitor_3;
 /**CORE_1_DRAM0_PMS_MONITOR_0 (rw) register accessor: core1 dram0 permission monitor configuration register 0
@@ -1838,8 +1973,9 @@ pub mod core_0_dram0_pms_monitor_3;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_1_dram0_pms_monitor_0::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_1_dram0_pms_monitor_0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_1_dram0_pms_monitor_0`] module*/
-pub type CORE_1_DRAM0_PMS_MONITOR_0 =
-    crate::Reg<core_1_dram0_pms_monitor_0::CORE_1_DRAM0_PMS_MONITOR_0_SPEC>;
+pub type CORE_1_DRAM0_PMS_MONITOR_0 = crate::Reg<
+    core_1_dram0_pms_monitor_0::CORE_1_DRAM0_PMS_MONITOR_0_SPEC,
+>;
 ///core1 dram0 permission monitor configuration register 0
 pub mod core_1_dram0_pms_monitor_0;
 /**CORE_1_DRAM0_PMS_MONITOR_1 (rw) register accessor: core1 dram0 permission monitor configuration register 1
@@ -1847,8 +1983,9 @@ pub mod core_1_dram0_pms_monitor_0;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_1_dram0_pms_monitor_1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_1_dram0_pms_monitor_1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_1_dram0_pms_monitor_1`] module*/
-pub type CORE_1_DRAM0_PMS_MONITOR_1 =
-    crate::Reg<core_1_dram0_pms_monitor_1::CORE_1_DRAM0_PMS_MONITOR_1_SPEC>;
+pub type CORE_1_DRAM0_PMS_MONITOR_1 = crate::Reg<
+    core_1_dram0_pms_monitor_1::CORE_1_DRAM0_PMS_MONITOR_1_SPEC,
+>;
 ///core1 dram0 permission monitor configuration register 1
 pub mod core_1_dram0_pms_monitor_1;
 /**CORE_1_DRAM0_PMS_MONITOR_2 (r) register accessor: core1 dram0 permission monitor configuration register 2.
@@ -1856,8 +1993,9 @@ pub mod core_1_dram0_pms_monitor_1;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_1_dram0_pms_monitor_2::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_1_dram0_pms_monitor_2`] module*/
-pub type CORE_1_DRAM0_PMS_MONITOR_2 =
-    crate::Reg<core_1_dram0_pms_monitor_2::CORE_1_DRAM0_PMS_MONITOR_2_SPEC>;
+pub type CORE_1_DRAM0_PMS_MONITOR_2 = crate::Reg<
+    core_1_dram0_pms_monitor_2::CORE_1_DRAM0_PMS_MONITOR_2_SPEC,
+>;
 ///core1 dram0 permission monitor configuration register 2.
 pub mod core_1_dram0_pms_monitor_2;
 /**CORE_1_DRAM0_PMS_MONITOR_3 (r) register accessor: core1 dram0 permission monitor configuration register 3.
@@ -1865,8 +2003,9 @@ pub mod core_1_dram0_pms_monitor_2;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_1_dram0_pms_monitor_3::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_1_dram0_pms_monitor_3`] module*/
-pub type CORE_1_DRAM0_PMS_MONITOR_3 =
-    crate::Reg<core_1_dram0_pms_monitor_3::CORE_1_DRAM0_PMS_MONITOR_3_SPEC>;
+pub type CORE_1_DRAM0_PMS_MONITOR_3 = crate::Reg<
+    core_1_dram0_pms_monitor_3::CORE_1_DRAM0_PMS_MONITOR_3_SPEC,
+>;
 ///core1 dram0 permission monitor configuration register 3.
 pub mod core_1_dram0_pms_monitor_3;
 /**CORE_0_PIF_PMS_CONSTRAIN_0 (rw) register accessor: Core0 access peripherals permission configuration register 0.
@@ -1874,8 +2013,9 @@ pub mod core_1_dram0_pms_monitor_3;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_0_pif_pms_constrain_0::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_0_pif_pms_constrain_0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_0_pif_pms_constrain_0`] module*/
-pub type CORE_0_PIF_PMS_CONSTRAIN_0 =
-    crate::Reg<core_0_pif_pms_constrain_0::CORE_0_PIF_PMS_CONSTRAIN_0_SPEC>;
+pub type CORE_0_PIF_PMS_CONSTRAIN_0 = crate::Reg<
+    core_0_pif_pms_constrain_0::CORE_0_PIF_PMS_CONSTRAIN_0_SPEC,
+>;
 ///Core0 access peripherals permission configuration register 0.
 pub mod core_0_pif_pms_constrain_0;
 /**CORE_0_PIF_PMS_CONSTRAIN_1 (rw) register accessor: Core0 access peripherals permission configuration register 1.
@@ -1883,8 +2023,9 @@ pub mod core_0_pif_pms_constrain_0;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_0_pif_pms_constrain_1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_0_pif_pms_constrain_1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_0_pif_pms_constrain_1`] module*/
-pub type CORE_0_PIF_PMS_CONSTRAIN_1 =
-    crate::Reg<core_0_pif_pms_constrain_1::CORE_0_PIF_PMS_CONSTRAIN_1_SPEC>;
+pub type CORE_0_PIF_PMS_CONSTRAIN_1 = crate::Reg<
+    core_0_pif_pms_constrain_1::CORE_0_PIF_PMS_CONSTRAIN_1_SPEC,
+>;
 ///Core0 access peripherals permission configuration register 1.
 pub mod core_0_pif_pms_constrain_1;
 /**CORE_0_PIF_PMS_CONSTRAIN_2 (rw) register accessor: Core0 access peripherals permission configuration register 2.
@@ -1892,8 +2033,9 @@ pub mod core_0_pif_pms_constrain_1;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_0_pif_pms_constrain_2::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_0_pif_pms_constrain_2::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_0_pif_pms_constrain_2`] module*/
-pub type CORE_0_PIF_PMS_CONSTRAIN_2 =
-    crate::Reg<core_0_pif_pms_constrain_2::CORE_0_PIF_PMS_CONSTRAIN_2_SPEC>;
+pub type CORE_0_PIF_PMS_CONSTRAIN_2 = crate::Reg<
+    core_0_pif_pms_constrain_2::CORE_0_PIF_PMS_CONSTRAIN_2_SPEC,
+>;
 ///Core0 access peripherals permission configuration register 2.
 pub mod core_0_pif_pms_constrain_2;
 /**CORE_0_PIF_PMS_CONSTRAIN_3 (rw) register accessor: Core0 access peripherals permission configuration register 3.
@@ -1901,8 +2043,9 @@ pub mod core_0_pif_pms_constrain_2;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_0_pif_pms_constrain_3::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_0_pif_pms_constrain_3::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_0_pif_pms_constrain_3`] module*/
-pub type CORE_0_PIF_PMS_CONSTRAIN_3 =
-    crate::Reg<core_0_pif_pms_constrain_3::CORE_0_PIF_PMS_CONSTRAIN_3_SPEC>;
+pub type CORE_0_PIF_PMS_CONSTRAIN_3 = crate::Reg<
+    core_0_pif_pms_constrain_3::CORE_0_PIF_PMS_CONSTRAIN_3_SPEC,
+>;
 ///Core0 access peripherals permission configuration register 3.
 pub mod core_0_pif_pms_constrain_3;
 /**CORE_0_PIF_PMS_CONSTRAIN_4 (rw) register accessor: Core0 access peripherals permission configuration register 4.
@@ -1910,8 +2053,9 @@ pub mod core_0_pif_pms_constrain_3;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_0_pif_pms_constrain_4::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_0_pif_pms_constrain_4::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_0_pif_pms_constrain_4`] module*/
-pub type CORE_0_PIF_PMS_CONSTRAIN_4 =
-    crate::Reg<core_0_pif_pms_constrain_4::CORE_0_PIF_PMS_CONSTRAIN_4_SPEC>;
+pub type CORE_0_PIF_PMS_CONSTRAIN_4 = crate::Reg<
+    core_0_pif_pms_constrain_4::CORE_0_PIF_PMS_CONSTRAIN_4_SPEC,
+>;
 ///Core0 access peripherals permission configuration register 4.
 pub mod core_0_pif_pms_constrain_4;
 /**CORE_0_PIF_PMS_CONSTRAIN_5 (rw) register accessor: Core0 access peripherals permission configuration register 5.
@@ -1919,8 +2063,9 @@ pub mod core_0_pif_pms_constrain_4;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_0_pif_pms_constrain_5::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_0_pif_pms_constrain_5::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_0_pif_pms_constrain_5`] module*/
-pub type CORE_0_PIF_PMS_CONSTRAIN_5 =
-    crate::Reg<core_0_pif_pms_constrain_5::CORE_0_PIF_PMS_CONSTRAIN_5_SPEC>;
+pub type CORE_0_PIF_PMS_CONSTRAIN_5 = crate::Reg<
+    core_0_pif_pms_constrain_5::CORE_0_PIF_PMS_CONSTRAIN_5_SPEC,
+>;
 ///Core0 access peripherals permission configuration register 5.
 pub mod core_0_pif_pms_constrain_5;
 /**CORE_0_PIF_PMS_CONSTRAIN_6 (rw) register accessor: Core0 access peripherals permission configuration register 6.
@@ -1928,8 +2073,9 @@ pub mod core_0_pif_pms_constrain_5;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_0_pif_pms_constrain_6::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_0_pif_pms_constrain_6::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_0_pif_pms_constrain_6`] module*/
-pub type CORE_0_PIF_PMS_CONSTRAIN_6 =
-    crate::Reg<core_0_pif_pms_constrain_6::CORE_0_PIF_PMS_CONSTRAIN_6_SPEC>;
+pub type CORE_0_PIF_PMS_CONSTRAIN_6 = crate::Reg<
+    core_0_pif_pms_constrain_6::CORE_0_PIF_PMS_CONSTRAIN_6_SPEC,
+>;
 ///Core0 access peripherals permission configuration register 6.
 pub mod core_0_pif_pms_constrain_6;
 /**CORE_0_PIF_PMS_CONSTRAIN_7 (rw) register accessor: Core0 access peripherals permission configuration register 7.
@@ -1937,8 +2083,9 @@ pub mod core_0_pif_pms_constrain_6;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_0_pif_pms_constrain_7::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_0_pif_pms_constrain_7::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_0_pif_pms_constrain_7`] module*/
-pub type CORE_0_PIF_PMS_CONSTRAIN_7 =
-    crate::Reg<core_0_pif_pms_constrain_7::CORE_0_PIF_PMS_CONSTRAIN_7_SPEC>;
+pub type CORE_0_PIF_PMS_CONSTRAIN_7 = crate::Reg<
+    core_0_pif_pms_constrain_7::CORE_0_PIF_PMS_CONSTRAIN_7_SPEC,
+>;
 ///Core0 access peripherals permission configuration register 7.
 pub mod core_0_pif_pms_constrain_7;
 /**CORE_0_PIF_PMS_CONSTRAIN_8 (rw) register accessor: Core0 access peripherals permission configuration register 8.
@@ -1946,8 +2093,9 @@ pub mod core_0_pif_pms_constrain_7;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_0_pif_pms_constrain_8::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_0_pif_pms_constrain_8::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_0_pif_pms_constrain_8`] module*/
-pub type CORE_0_PIF_PMS_CONSTRAIN_8 =
-    crate::Reg<core_0_pif_pms_constrain_8::CORE_0_PIF_PMS_CONSTRAIN_8_SPEC>;
+pub type CORE_0_PIF_PMS_CONSTRAIN_8 = crate::Reg<
+    core_0_pif_pms_constrain_8::CORE_0_PIF_PMS_CONSTRAIN_8_SPEC,
+>;
 ///Core0 access peripherals permission configuration register 8.
 pub mod core_0_pif_pms_constrain_8;
 /**CORE_0_PIF_PMS_CONSTRAIN_9 (rw) register accessor: Core0 access peripherals permission configuration register 9.
@@ -1955,8 +2103,9 @@ pub mod core_0_pif_pms_constrain_8;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_0_pif_pms_constrain_9::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_0_pif_pms_constrain_9::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_0_pif_pms_constrain_9`] module*/
-pub type CORE_0_PIF_PMS_CONSTRAIN_9 =
-    crate::Reg<core_0_pif_pms_constrain_9::CORE_0_PIF_PMS_CONSTRAIN_9_SPEC>;
+pub type CORE_0_PIF_PMS_CONSTRAIN_9 = crate::Reg<
+    core_0_pif_pms_constrain_9::CORE_0_PIF_PMS_CONSTRAIN_9_SPEC,
+>;
 ///Core0 access peripherals permission configuration register 9.
 pub mod core_0_pif_pms_constrain_9;
 /**CORE_0_PIF_PMS_CONSTRAIN_10 (rw) register accessor: Core0 access peripherals permission configuration register 10.
@@ -1964,8 +2113,9 @@ pub mod core_0_pif_pms_constrain_9;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_0_pif_pms_constrain_10::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_0_pif_pms_constrain_10::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_0_pif_pms_constrain_10`] module*/
-pub type CORE_0_PIF_PMS_CONSTRAIN_10 =
-    crate::Reg<core_0_pif_pms_constrain_10::CORE_0_PIF_PMS_CONSTRAIN_10_SPEC>;
+pub type CORE_0_PIF_PMS_CONSTRAIN_10 = crate::Reg<
+    core_0_pif_pms_constrain_10::CORE_0_PIF_PMS_CONSTRAIN_10_SPEC,
+>;
 ///Core0 access peripherals permission configuration register 10.
 pub mod core_0_pif_pms_constrain_10;
 /**CORE_0_PIF_PMS_CONSTRAIN_11 (rw) register accessor: Core0 access peripherals permission configuration register 11.
@@ -1973,8 +2123,9 @@ pub mod core_0_pif_pms_constrain_10;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_0_pif_pms_constrain_11::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_0_pif_pms_constrain_11::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_0_pif_pms_constrain_11`] module*/
-pub type CORE_0_PIF_PMS_CONSTRAIN_11 =
-    crate::Reg<core_0_pif_pms_constrain_11::CORE_0_PIF_PMS_CONSTRAIN_11_SPEC>;
+pub type CORE_0_PIF_PMS_CONSTRAIN_11 = crate::Reg<
+    core_0_pif_pms_constrain_11::CORE_0_PIF_PMS_CONSTRAIN_11_SPEC,
+>;
 ///Core0 access peripherals permission configuration register 11.
 pub mod core_0_pif_pms_constrain_11;
 /**CORE_0_PIF_PMS_CONSTRAIN_12 (rw) register accessor: Core0 access peripherals permission configuration register 12.
@@ -1982,8 +2133,9 @@ pub mod core_0_pif_pms_constrain_11;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_0_pif_pms_constrain_12::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_0_pif_pms_constrain_12::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_0_pif_pms_constrain_12`] module*/
-pub type CORE_0_PIF_PMS_CONSTRAIN_12 =
-    crate::Reg<core_0_pif_pms_constrain_12::CORE_0_PIF_PMS_CONSTRAIN_12_SPEC>;
+pub type CORE_0_PIF_PMS_CONSTRAIN_12 = crate::Reg<
+    core_0_pif_pms_constrain_12::CORE_0_PIF_PMS_CONSTRAIN_12_SPEC,
+>;
 ///Core0 access peripherals permission configuration register 12.
 pub mod core_0_pif_pms_constrain_12;
 /**CORE_0_PIF_PMS_CONSTRAIN_13 (rw) register accessor: Core0 access peripherals permission configuration register 13.
@@ -1991,8 +2143,9 @@ pub mod core_0_pif_pms_constrain_12;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_0_pif_pms_constrain_13::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_0_pif_pms_constrain_13::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_0_pif_pms_constrain_13`] module*/
-pub type CORE_0_PIF_PMS_CONSTRAIN_13 =
-    crate::Reg<core_0_pif_pms_constrain_13::CORE_0_PIF_PMS_CONSTRAIN_13_SPEC>;
+pub type CORE_0_PIF_PMS_CONSTRAIN_13 = crate::Reg<
+    core_0_pif_pms_constrain_13::CORE_0_PIF_PMS_CONSTRAIN_13_SPEC,
+>;
 ///Core0 access peripherals permission configuration register 13.
 pub mod core_0_pif_pms_constrain_13;
 /**CORE_0_PIF_PMS_CONSTRAIN_14 (rw) register accessor: Core0 access peripherals permission configuration register 14.
@@ -2000,8 +2153,9 @@ pub mod core_0_pif_pms_constrain_13;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_0_pif_pms_constrain_14::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_0_pif_pms_constrain_14::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_0_pif_pms_constrain_14`] module*/
-pub type CORE_0_PIF_PMS_CONSTRAIN_14 =
-    crate::Reg<core_0_pif_pms_constrain_14::CORE_0_PIF_PMS_CONSTRAIN_14_SPEC>;
+pub type CORE_0_PIF_PMS_CONSTRAIN_14 = crate::Reg<
+    core_0_pif_pms_constrain_14::CORE_0_PIF_PMS_CONSTRAIN_14_SPEC,
+>;
 ///Core0 access peripherals permission configuration register 14.
 pub mod core_0_pif_pms_constrain_14;
 /**CORE_0_REGION_PMS_CONSTRAIN_0 (rw) register accessor: Core0 region permission register 0.
@@ -2009,8 +2163,9 @@ pub mod core_0_pif_pms_constrain_14;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_0_region_pms_constrain_0::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_0_region_pms_constrain_0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_0_region_pms_constrain_0`] module*/
-pub type CORE_0_REGION_PMS_CONSTRAIN_0 =
-    crate::Reg<core_0_region_pms_constrain_0::CORE_0_REGION_PMS_CONSTRAIN_0_SPEC>;
+pub type CORE_0_REGION_PMS_CONSTRAIN_0 = crate::Reg<
+    core_0_region_pms_constrain_0::CORE_0_REGION_PMS_CONSTRAIN_0_SPEC,
+>;
 ///Core0 region permission register 0.
 pub mod core_0_region_pms_constrain_0;
 /**CORE_0_REGION_PMS_CONSTRAIN_1 (rw) register accessor: Core0 region permission register 1.
@@ -2018,8 +2173,9 @@ pub mod core_0_region_pms_constrain_0;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_0_region_pms_constrain_1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_0_region_pms_constrain_1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_0_region_pms_constrain_1`] module*/
-pub type CORE_0_REGION_PMS_CONSTRAIN_1 =
-    crate::Reg<core_0_region_pms_constrain_1::CORE_0_REGION_PMS_CONSTRAIN_1_SPEC>;
+pub type CORE_0_REGION_PMS_CONSTRAIN_1 = crate::Reg<
+    core_0_region_pms_constrain_1::CORE_0_REGION_PMS_CONSTRAIN_1_SPEC,
+>;
 ///Core0 region permission register 1.
 pub mod core_0_region_pms_constrain_1;
 /**CORE_0_REGION_PMS_CONSTRAIN_2 (rw) register accessor: Core0 region permission register 2.
@@ -2027,8 +2183,9 @@ pub mod core_0_region_pms_constrain_1;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_0_region_pms_constrain_2::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_0_region_pms_constrain_2::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_0_region_pms_constrain_2`] module*/
-pub type CORE_0_REGION_PMS_CONSTRAIN_2 =
-    crate::Reg<core_0_region_pms_constrain_2::CORE_0_REGION_PMS_CONSTRAIN_2_SPEC>;
+pub type CORE_0_REGION_PMS_CONSTRAIN_2 = crate::Reg<
+    core_0_region_pms_constrain_2::CORE_0_REGION_PMS_CONSTRAIN_2_SPEC,
+>;
 ///Core0 region permission register 2.
 pub mod core_0_region_pms_constrain_2;
 /**CORE_0_REGION_PMS_CONSTRAIN_3 (rw) register accessor: Core0 region permission register 3.
@@ -2036,8 +2193,9 @@ pub mod core_0_region_pms_constrain_2;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_0_region_pms_constrain_3::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_0_region_pms_constrain_3::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_0_region_pms_constrain_3`] module*/
-pub type CORE_0_REGION_PMS_CONSTRAIN_3 =
-    crate::Reg<core_0_region_pms_constrain_3::CORE_0_REGION_PMS_CONSTRAIN_3_SPEC>;
+pub type CORE_0_REGION_PMS_CONSTRAIN_3 = crate::Reg<
+    core_0_region_pms_constrain_3::CORE_0_REGION_PMS_CONSTRAIN_3_SPEC,
+>;
 ///Core0 region permission register 3.
 pub mod core_0_region_pms_constrain_3;
 /**CORE_0_REGION_PMS_CONSTRAIN_4 (rw) register accessor: Core0 region permission register 4.
@@ -2045,8 +2203,9 @@ pub mod core_0_region_pms_constrain_3;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_0_region_pms_constrain_4::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_0_region_pms_constrain_4::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_0_region_pms_constrain_4`] module*/
-pub type CORE_0_REGION_PMS_CONSTRAIN_4 =
-    crate::Reg<core_0_region_pms_constrain_4::CORE_0_REGION_PMS_CONSTRAIN_4_SPEC>;
+pub type CORE_0_REGION_PMS_CONSTRAIN_4 = crate::Reg<
+    core_0_region_pms_constrain_4::CORE_0_REGION_PMS_CONSTRAIN_4_SPEC,
+>;
 ///Core0 region permission register 4.
 pub mod core_0_region_pms_constrain_4;
 /**CORE_0_REGION_PMS_CONSTRAIN_5 (rw) register accessor: Core0 region permission register 5.
@@ -2054,8 +2213,9 @@ pub mod core_0_region_pms_constrain_4;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_0_region_pms_constrain_5::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_0_region_pms_constrain_5::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_0_region_pms_constrain_5`] module*/
-pub type CORE_0_REGION_PMS_CONSTRAIN_5 =
-    crate::Reg<core_0_region_pms_constrain_5::CORE_0_REGION_PMS_CONSTRAIN_5_SPEC>;
+pub type CORE_0_REGION_PMS_CONSTRAIN_5 = crate::Reg<
+    core_0_region_pms_constrain_5::CORE_0_REGION_PMS_CONSTRAIN_5_SPEC,
+>;
 ///Core0 region permission register 5.
 pub mod core_0_region_pms_constrain_5;
 /**CORE_0_REGION_PMS_CONSTRAIN_6 (rw) register accessor: Core0 region permission register 6.
@@ -2063,8 +2223,9 @@ pub mod core_0_region_pms_constrain_5;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_0_region_pms_constrain_6::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_0_region_pms_constrain_6::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_0_region_pms_constrain_6`] module*/
-pub type CORE_0_REGION_PMS_CONSTRAIN_6 =
-    crate::Reg<core_0_region_pms_constrain_6::CORE_0_REGION_PMS_CONSTRAIN_6_SPEC>;
+pub type CORE_0_REGION_PMS_CONSTRAIN_6 = crate::Reg<
+    core_0_region_pms_constrain_6::CORE_0_REGION_PMS_CONSTRAIN_6_SPEC,
+>;
 ///Core0 region permission register 6.
 pub mod core_0_region_pms_constrain_6;
 /**CORE_0_REGION_PMS_CONSTRAIN_7 (rw) register accessor: Core0 region permission register 7.
@@ -2072,8 +2233,9 @@ pub mod core_0_region_pms_constrain_6;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_0_region_pms_constrain_7::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_0_region_pms_constrain_7::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_0_region_pms_constrain_7`] module*/
-pub type CORE_0_REGION_PMS_CONSTRAIN_7 =
-    crate::Reg<core_0_region_pms_constrain_7::CORE_0_REGION_PMS_CONSTRAIN_7_SPEC>;
+pub type CORE_0_REGION_PMS_CONSTRAIN_7 = crate::Reg<
+    core_0_region_pms_constrain_7::CORE_0_REGION_PMS_CONSTRAIN_7_SPEC,
+>;
 ///Core0 region permission register 7.
 pub mod core_0_region_pms_constrain_7;
 /**CORE_0_REGION_PMS_CONSTRAIN_8 (rw) register accessor: Core0 region permission register 8.
@@ -2081,8 +2243,9 @@ pub mod core_0_region_pms_constrain_7;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_0_region_pms_constrain_8::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_0_region_pms_constrain_8::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_0_region_pms_constrain_8`] module*/
-pub type CORE_0_REGION_PMS_CONSTRAIN_8 =
-    crate::Reg<core_0_region_pms_constrain_8::CORE_0_REGION_PMS_CONSTRAIN_8_SPEC>;
+pub type CORE_0_REGION_PMS_CONSTRAIN_8 = crate::Reg<
+    core_0_region_pms_constrain_8::CORE_0_REGION_PMS_CONSTRAIN_8_SPEC,
+>;
 ///Core0 region permission register 8.
 pub mod core_0_region_pms_constrain_8;
 /**CORE_0_REGION_PMS_CONSTRAIN_9 (rw) register accessor: Core0 region permission register 9.
@@ -2090,8 +2253,9 @@ pub mod core_0_region_pms_constrain_8;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_0_region_pms_constrain_9::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_0_region_pms_constrain_9::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_0_region_pms_constrain_9`] module*/
-pub type CORE_0_REGION_PMS_CONSTRAIN_9 =
-    crate::Reg<core_0_region_pms_constrain_9::CORE_0_REGION_PMS_CONSTRAIN_9_SPEC>;
+pub type CORE_0_REGION_PMS_CONSTRAIN_9 = crate::Reg<
+    core_0_region_pms_constrain_9::CORE_0_REGION_PMS_CONSTRAIN_9_SPEC,
+>;
 ///Core0 region permission register 9.
 pub mod core_0_region_pms_constrain_9;
 /**CORE_0_REGION_PMS_CONSTRAIN_10 (rw) register accessor: Core0 region permission register 10.
@@ -2099,8 +2263,9 @@ pub mod core_0_region_pms_constrain_9;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_0_region_pms_constrain_10::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_0_region_pms_constrain_10::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_0_region_pms_constrain_10`] module*/
-pub type CORE_0_REGION_PMS_CONSTRAIN_10 =
-    crate::Reg<core_0_region_pms_constrain_10::CORE_0_REGION_PMS_CONSTRAIN_10_SPEC>;
+pub type CORE_0_REGION_PMS_CONSTRAIN_10 = crate::Reg<
+    core_0_region_pms_constrain_10::CORE_0_REGION_PMS_CONSTRAIN_10_SPEC,
+>;
 ///Core0 region permission register 10.
 pub mod core_0_region_pms_constrain_10;
 /**CORE_0_REGION_PMS_CONSTRAIN_11 (rw) register accessor: Core0 region permission register 11.
@@ -2108,8 +2273,9 @@ pub mod core_0_region_pms_constrain_10;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_0_region_pms_constrain_11::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_0_region_pms_constrain_11::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_0_region_pms_constrain_11`] module*/
-pub type CORE_0_REGION_PMS_CONSTRAIN_11 =
-    crate::Reg<core_0_region_pms_constrain_11::CORE_0_REGION_PMS_CONSTRAIN_11_SPEC>;
+pub type CORE_0_REGION_PMS_CONSTRAIN_11 = crate::Reg<
+    core_0_region_pms_constrain_11::CORE_0_REGION_PMS_CONSTRAIN_11_SPEC,
+>;
 ///Core0 region permission register 11.
 pub mod core_0_region_pms_constrain_11;
 /**CORE_0_REGION_PMS_CONSTRAIN_12 (rw) register accessor: Core0 region permission register 12.
@@ -2117,8 +2283,9 @@ pub mod core_0_region_pms_constrain_11;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_0_region_pms_constrain_12::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_0_region_pms_constrain_12::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_0_region_pms_constrain_12`] module*/
-pub type CORE_0_REGION_PMS_CONSTRAIN_12 =
-    crate::Reg<core_0_region_pms_constrain_12::CORE_0_REGION_PMS_CONSTRAIN_12_SPEC>;
+pub type CORE_0_REGION_PMS_CONSTRAIN_12 = crate::Reg<
+    core_0_region_pms_constrain_12::CORE_0_REGION_PMS_CONSTRAIN_12_SPEC,
+>;
 ///Core0 region permission register 12.
 pub mod core_0_region_pms_constrain_12;
 /**CORE_0_REGION_PMS_CONSTRAIN_13 (rw) register accessor: Core0 region permission register 13.
@@ -2126,8 +2293,9 @@ pub mod core_0_region_pms_constrain_12;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_0_region_pms_constrain_13::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_0_region_pms_constrain_13::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_0_region_pms_constrain_13`] module*/
-pub type CORE_0_REGION_PMS_CONSTRAIN_13 =
-    crate::Reg<core_0_region_pms_constrain_13::CORE_0_REGION_PMS_CONSTRAIN_13_SPEC>;
+pub type CORE_0_REGION_PMS_CONSTRAIN_13 = crate::Reg<
+    core_0_region_pms_constrain_13::CORE_0_REGION_PMS_CONSTRAIN_13_SPEC,
+>;
 ///Core0 region permission register 13.
 pub mod core_0_region_pms_constrain_13;
 /**CORE_0_REGION_PMS_CONSTRAIN_14 (rw) register accessor: Core0 region permission register 14.
@@ -2135,8 +2303,9 @@ pub mod core_0_region_pms_constrain_13;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_0_region_pms_constrain_14::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_0_region_pms_constrain_14::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_0_region_pms_constrain_14`] module*/
-pub type CORE_0_REGION_PMS_CONSTRAIN_14 =
-    crate::Reg<core_0_region_pms_constrain_14::CORE_0_REGION_PMS_CONSTRAIN_14_SPEC>;
+pub type CORE_0_REGION_PMS_CONSTRAIN_14 = crate::Reg<
+    core_0_region_pms_constrain_14::CORE_0_REGION_PMS_CONSTRAIN_14_SPEC,
+>;
 ///Core0 region permission register 14.
 pub mod core_0_region_pms_constrain_14;
 /**CORE_0_PIF_PMS_MONITOR_0 (rw) register accessor: Core0 permission report register 0.
@@ -2144,8 +2313,9 @@ pub mod core_0_region_pms_constrain_14;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_0_pif_pms_monitor_0::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_0_pif_pms_monitor_0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_0_pif_pms_monitor_0`] module*/
-pub type CORE_0_PIF_PMS_MONITOR_0 =
-    crate::Reg<core_0_pif_pms_monitor_0::CORE_0_PIF_PMS_MONITOR_0_SPEC>;
+pub type CORE_0_PIF_PMS_MONITOR_0 = crate::Reg<
+    core_0_pif_pms_monitor_0::CORE_0_PIF_PMS_MONITOR_0_SPEC,
+>;
 ///Core0 permission report register 0.
 pub mod core_0_pif_pms_monitor_0;
 /**CORE_0_PIF_PMS_MONITOR_1 (rw) register accessor: Core0 permission report register 1.
@@ -2153,8 +2323,9 @@ pub mod core_0_pif_pms_monitor_0;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_0_pif_pms_monitor_1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_0_pif_pms_monitor_1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_0_pif_pms_monitor_1`] module*/
-pub type CORE_0_PIF_PMS_MONITOR_1 =
-    crate::Reg<core_0_pif_pms_monitor_1::CORE_0_PIF_PMS_MONITOR_1_SPEC>;
+pub type CORE_0_PIF_PMS_MONITOR_1 = crate::Reg<
+    core_0_pif_pms_monitor_1::CORE_0_PIF_PMS_MONITOR_1_SPEC,
+>;
 ///Core0 permission report register 1.
 pub mod core_0_pif_pms_monitor_1;
 /**CORE_0_PIF_PMS_MONITOR_2 (r) register accessor: Core0 permission report register 2.
@@ -2162,8 +2333,9 @@ pub mod core_0_pif_pms_monitor_1;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_0_pif_pms_monitor_2::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_0_pif_pms_monitor_2`] module*/
-pub type CORE_0_PIF_PMS_MONITOR_2 =
-    crate::Reg<core_0_pif_pms_monitor_2::CORE_0_PIF_PMS_MONITOR_2_SPEC>;
+pub type CORE_0_PIF_PMS_MONITOR_2 = crate::Reg<
+    core_0_pif_pms_monitor_2::CORE_0_PIF_PMS_MONITOR_2_SPEC,
+>;
 ///Core0 permission report register 2.
 pub mod core_0_pif_pms_monitor_2;
 /**CORE_0_PIF_PMS_MONITOR_3 (r) register accessor: Core0 permission report register 3.
@@ -2171,8 +2343,9 @@ pub mod core_0_pif_pms_monitor_2;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_0_pif_pms_monitor_3::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_0_pif_pms_monitor_3`] module*/
-pub type CORE_0_PIF_PMS_MONITOR_3 =
-    crate::Reg<core_0_pif_pms_monitor_3::CORE_0_PIF_PMS_MONITOR_3_SPEC>;
+pub type CORE_0_PIF_PMS_MONITOR_3 = crate::Reg<
+    core_0_pif_pms_monitor_3::CORE_0_PIF_PMS_MONITOR_3_SPEC,
+>;
 ///Core0 permission report register 3.
 pub mod core_0_pif_pms_monitor_3;
 /**CORE_0_PIF_PMS_MONITOR_4 (rw) register accessor: Core0 permission report register 4.
@@ -2180,8 +2353,9 @@ pub mod core_0_pif_pms_monitor_3;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_0_pif_pms_monitor_4::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_0_pif_pms_monitor_4::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_0_pif_pms_monitor_4`] module*/
-pub type CORE_0_PIF_PMS_MONITOR_4 =
-    crate::Reg<core_0_pif_pms_monitor_4::CORE_0_PIF_PMS_MONITOR_4_SPEC>;
+pub type CORE_0_PIF_PMS_MONITOR_4 = crate::Reg<
+    core_0_pif_pms_monitor_4::CORE_0_PIF_PMS_MONITOR_4_SPEC,
+>;
 ///Core0 permission report register 4.
 pub mod core_0_pif_pms_monitor_4;
 /**CORE_0_PIF_PMS_MONITOR_5 (r) register accessor: Core0 permission report register 5.
@@ -2189,8 +2363,9 @@ pub mod core_0_pif_pms_monitor_4;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_0_pif_pms_monitor_5::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_0_pif_pms_monitor_5`] module*/
-pub type CORE_0_PIF_PMS_MONITOR_5 =
-    crate::Reg<core_0_pif_pms_monitor_5::CORE_0_PIF_PMS_MONITOR_5_SPEC>;
+pub type CORE_0_PIF_PMS_MONITOR_5 = crate::Reg<
+    core_0_pif_pms_monitor_5::CORE_0_PIF_PMS_MONITOR_5_SPEC,
+>;
 ///Core0 permission report register 5.
 pub mod core_0_pif_pms_monitor_5;
 /**CORE_0_PIF_PMS_MONITOR_6 (r) register accessor: Core0 permission report register 6.
@@ -2198,8 +2373,9 @@ pub mod core_0_pif_pms_monitor_5;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_0_pif_pms_monitor_6::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_0_pif_pms_monitor_6`] module*/
-pub type CORE_0_PIF_PMS_MONITOR_6 =
-    crate::Reg<core_0_pif_pms_monitor_6::CORE_0_PIF_PMS_MONITOR_6_SPEC>;
+pub type CORE_0_PIF_PMS_MONITOR_6 = crate::Reg<
+    core_0_pif_pms_monitor_6::CORE_0_PIF_PMS_MONITOR_6_SPEC,
+>;
 ///Core0 permission report register 6.
 pub mod core_0_pif_pms_monitor_6;
 /**CORE_0_VECBASE_OVERRIDE_LOCK (rw) register accessor: core0 vecbase override configuration register 0
@@ -2207,8 +2383,9 @@ pub mod core_0_pif_pms_monitor_6;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_0_vecbase_override_lock::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_0_vecbase_override_lock::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_0_vecbase_override_lock`] module*/
-pub type CORE_0_VECBASE_OVERRIDE_LOCK =
-    crate::Reg<core_0_vecbase_override_lock::CORE_0_VECBASE_OVERRIDE_LOCK_SPEC>;
+pub type CORE_0_VECBASE_OVERRIDE_LOCK = crate::Reg<
+    core_0_vecbase_override_lock::CORE_0_VECBASE_OVERRIDE_LOCK_SPEC,
+>;
 ///core0 vecbase override configuration register 0
 pub mod core_0_vecbase_override_lock;
 /**CORE_0_VECBASE_OVERRIDE_0 (rw) register accessor: core0 vecbase override configuration register 0
@@ -2216,8 +2393,9 @@ pub mod core_0_vecbase_override_lock;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_0_vecbase_override_0::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_0_vecbase_override_0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_0_vecbase_override_0`] module*/
-pub type CORE_0_VECBASE_OVERRIDE_0 =
-    crate::Reg<core_0_vecbase_override_0::CORE_0_VECBASE_OVERRIDE_0_SPEC>;
+pub type CORE_0_VECBASE_OVERRIDE_0 = crate::Reg<
+    core_0_vecbase_override_0::CORE_0_VECBASE_OVERRIDE_0_SPEC,
+>;
 ///core0 vecbase override configuration register 0
 pub mod core_0_vecbase_override_0;
 /**CORE_0_VECBASE_OVERRIDE_1 (rw) register accessor: core0 vecbase override configuration register 1
@@ -2225,8 +2403,9 @@ pub mod core_0_vecbase_override_0;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_0_vecbase_override_1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_0_vecbase_override_1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_0_vecbase_override_1`] module*/
-pub type CORE_0_VECBASE_OVERRIDE_1 =
-    crate::Reg<core_0_vecbase_override_1::CORE_0_VECBASE_OVERRIDE_1_SPEC>;
+pub type CORE_0_VECBASE_OVERRIDE_1 = crate::Reg<
+    core_0_vecbase_override_1::CORE_0_VECBASE_OVERRIDE_1_SPEC,
+>;
 ///core0 vecbase override configuration register 1
 pub mod core_0_vecbase_override_1;
 /**CORE_0_VECBASE_OVERRIDE_2 (rw) register accessor: core0 vecbase override configuration register 1
@@ -2234,8 +2413,9 @@ pub mod core_0_vecbase_override_1;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_0_vecbase_override_2::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_0_vecbase_override_2::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_0_vecbase_override_2`] module*/
-pub type CORE_0_VECBASE_OVERRIDE_2 =
-    crate::Reg<core_0_vecbase_override_2::CORE_0_VECBASE_OVERRIDE_2_SPEC>;
+pub type CORE_0_VECBASE_OVERRIDE_2 = crate::Reg<
+    core_0_vecbase_override_2::CORE_0_VECBASE_OVERRIDE_2_SPEC,
+>;
 ///core0 vecbase override configuration register 1
 pub mod core_0_vecbase_override_2;
 /**CORE_0_TOOMANYEXCEPTIONS_M_OVERRIDE_0 (rw) register accessor: core0 toomanyexception override configuration register 0.
@@ -2243,8 +2423,9 @@ pub mod core_0_vecbase_override_2;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_0_toomanyexceptions_m_override_0::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_0_toomanyexceptions_m_override_0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_0_toomanyexceptions_m_override_0`] module*/
-pub type CORE_0_TOOMANYEXCEPTIONS_M_OVERRIDE_0 =
-    crate::Reg<core_0_toomanyexceptions_m_override_0::CORE_0_TOOMANYEXCEPTIONS_M_OVERRIDE_0_SPEC>;
+pub type CORE_0_TOOMANYEXCEPTIONS_M_OVERRIDE_0 = crate::Reg<
+    core_0_toomanyexceptions_m_override_0::CORE_0_TOOMANYEXCEPTIONS_M_OVERRIDE_0_SPEC,
+>;
 ///core0 toomanyexception override configuration register 0.
 pub mod core_0_toomanyexceptions_m_override_0;
 /**CORE_0_TOOMANYEXCEPTIONS_M_OVERRIDE_1 (rw) register accessor: core0 toomanyexception override configuration register 1.
@@ -2252,8 +2433,9 @@ pub mod core_0_toomanyexceptions_m_override_0;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_0_toomanyexceptions_m_override_1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_0_toomanyexceptions_m_override_1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_0_toomanyexceptions_m_override_1`] module*/
-pub type CORE_0_TOOMANYEXCEPTIONS_M_OVERRIDE_1 =
-    crate::Reg<core_0_toomanyexceptions_m_override_1::CORE_0_TOOMANYEXCEPTIONS_M_OVERRIDE_1_SPEC>;
+pub type CORE_0_TOOMANYEXCEPTIONS_M_OVERRIDE_1 = crate::Reg<
+    core_0_toomanyexceptions_m_override_1::CORE_0_TOOMANYEXCEPTIONS_M_OVERRIDE_1_SPEC,
+>;
 ///core0 toomanyexception override configuration register 1.
 pub mod core_0_toomanyexceptions_m_override_1;
 /**CORE_1_PIF_PMS_CONSTRAIN_0 (rw) register accessor: Core1 access peripherals permission configuration register 0.
@@ -2261,8 +2443,9 @@ pub mod core_0_toomanyexceptions_m_override_1;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_1_pif_pms_constrain_0::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_1_pif_pms_constrain_0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_1_pif_pms_constrain_0`] module*/
-pub type CORE_1_PIF_PMS_CONSTRAIN_0 =
-    crate::Reg<core_1_pif_pms_constrain_0::CORE_1_PIF_PMS_CONSTRAIN_0_SPEC>;
+pub type CORE_1_PIF_PMS_CONSTRAIN_0 = crate::Reg<
+    core_1_pif_pms_constrain_0::CORE_1_PIF_PMS_CONSTRAIN_0_SPEC,
+>;
 ///Core1 access peripherals permission configuration register 0.
 pub mod core_1_pif_pms_constrain_0;
 /**CORE_1_PIF_PMS_CONSTRAIN_1 (rw) register accessor: Core1 access peripherals permission configuration register 1.
@@ -2270,8 +2453,9 @@ pub mod core_1_pif_pms_constrain_0;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_1_pif_pms_constrain_1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_1_pif_pms_constrain_1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_1_pif_pms_constrain_1`] module*/
-pub type CORE_1_PIF_PMS_CONSTRAIN_1 =
-    crate::Reg<core_1_pif_pms_constrain_1::CORE_1_PIF_PMS_CONSTRAIN_1_SPEC>;
+pub type CORE_1_PIF_PMS_CONSTRAIN_1 = crate::Reg<
+    core_1_pif_pms_constrain_1::CORE_1_PIF_PMS_CONSTRAIN_1_SPEC,
+>;
 ///Core1 access peripherals permission configuration register 1.
 pub mod core_1_pif_pms_constrain_1;
 /**CORE_1_PIF_PMS_CONSTRAIN_2 (rw) register accessor: Core1 access peripherals permission configuration register 2.
@@ -2279,8 +2463,9 @@ pub mod core_1_pif_pms_constrain_1;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_1_pif_pms_constrain_2::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_1_pif_pms_constrain_2::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_1_pif_pms_constrain_2`] module*/
-pub type CORE_1_PIF_PMS_CONSTRAIN_2 =
-    crate::Reg<core_1_pif_pms_constrain_2::CORE_1_PIF_PMS_CONSTRAIN_2_SPEC>;
+pub type CORE_1_PIF_PMS_CONSTRAIN_2 = crate::Reg<
+    core_1_pif_pms_constrain_2::CORE_1_PIF_PMS_CONSTRAIN_2_SPEC,
+>;
 ///Core1 access peripherals permission configuration register 2.
 pub mod core_1_pif_pms_constrain_2;
 /**CORE_1_PIF_PMS_CONSTRAIN_3 (rw) register accessor: Core1 access peripherals permission configuration register 3.
@@ -2288,8 +2473,9 @@ pub mod core_1_pif_pms_constrain_2;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_1_pif_pms_constrain_3::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_1_pif_pms_constrain_3::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_1_pif_pms_constrain_3`] module*/
-pub type CORE_1_PIF_PMS_CONSTRAIN_3 =
-    crate::Reg<core_1_pif_pms_constrain_3::CORE_1_PIF_PMS_CONSTRAIN_3_SPEC>;
+pub type CORE_1_PIF_PMS_CONSTRAIN_3 = crate::Reg<
+    core_1_pif_pms_constrain_3::CORE_1_PIF_PMS_CONSTRAIN_3_SPEC,
+>;
 ///Core1 access peripherals permission configuration register 3.
 pub mod core_1_pif_pms_constrain_3;
 /**CORE_1_PIF_PMS_CONSTRAIN_4 (rw) register accessor: Core1 access peripherals permission configuration register 4.
@@ -2297,8 +2483,9 @@ pub mod core_1_pif_pms_constrain_3;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_1_pif_pms_constrain_4::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_1_pif_pms_constrain_4::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_1_pif_pms_constrain_4`] module*/
-pub type CORE_1_PIF_PMS_CONSTRAIN_4 =
-    crate::Reg<core_1_pif_pms_constrain_4::CORE_1_PIF_PMS_CONSTRAIN_4_SPEC>;
+pub type CORE_1_PIF_PMS_CONSTRAIN_4 = crate::Reg<
+    core_1_pif_pms_constrain_4::CORE_1_PIF_PMS_CONSTRAIN_4_SPEC,
+>;
 ///Core1 access peripherals permission configuration register 4.
 pub mod core_1_pif_pms_constrain_4;
 /**CORE_1_PIF_PMS_CONSTRAIN_5 (rw) register accessor: Core1 access peripherals permission configuration register 5.
@@ -2306,8 +2493,9 @@ pub mod core_1_pif_pms_constrain_4;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_1_pif_pms_constrain_5::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_1_pif_pms_constrain_5::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_1_pif_pms_constrain_5`] module*/
-pub type CORE_1_PIF_PMS_CONSTRAIN_5 =
-    crate::Reg<core_1_pif_pms_constrain_5::CORE_1_PIF_PMS_CONSTRAIN_5_SPEC>;
+pub type CORE_1_PIF_PMS_CONSTRAIN_5 = crate::Reg<
+    core_1_pif_pms_constrain_5::CORE_1_PIF_PMS_CONSTRAIN_5_SPEC,
+>;
 ///Core1 access peripherals permission configuration register 5.
 pub mod core_1_pif_pms_constrain_5;
 /**CORE_1_PIF_PMS_CONSTRAIN_6 (rw) register accessor: Core1 access peripherals permission configuration register 6.
@@ -2315,8 +2503,9 @@ pub mod core_1_pif_pms_constrain_5;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_1_pif_pms_constrain_6::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_1_pif_pms_constrain_6::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_1_pif_pms_constrain_6`] module*/
-pub type CORE_1_PIF_PMS_CONSTRAIN_6 =
-    crate::Reg<core_1_pif_pms_constrain_6::CORE_1_PIF_PMS_CONSTRAIN_6_SPEC>;
+pub type CORE_1_PIF_PMS_CONSTRAIN_6 = crate::Reg<
+    core_1_pif_pms_constrain_6::CORE_1_PIF_PMS_CONSTRAIN_6_SPEC,
+>;
 ///Core1 access peripherals permission configuration register 6.
 pub mod core_1_pif_pms_constrain_6;
 /**CORE_1_PIF_PMS_CONSTRAIN_7 (rw) register accessor: Core1 access peripherals permission configuration register 7.
@@ -2324,8 +2513,9 @@ pub mod core_1_pif_pms_constrain_6;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_1_pif_pms_constrain_7::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_1_pif_pms_constrain_7::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_1_pif_pms_constrain_7`] module*/
-pub type CORE_1_PIF_PMS_CONSTRAIN_7 =
-    crate::Reg<core_1_pif_pms_constrain_7::CORE_1_PIF_PMS_CONSTRAIN_7_SPEC>;
+pub type CORE_1_PIF_PMS_CONSTRAIN_7 = crate::Reg<
+    core_1_pif_pms_constrain_7::CORE_1_PIF_PMS_CONSTRAIN_7_SPEC,
+>;
 ///Core1 access peripherals permission configuration register 7.
 pub mod core_1_pif_pms_constrain_7;
 /**CORE_1_PIF_PMS_CONSTRAIN_8 (rw) register accessor: Core1 access peripherals permission configuration register 8.
@@ -2333,8 +2523,9 @@ pub mod core_1_pif_pms_constrain_7;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_1_pif_pms_constrain_8::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_1_pif_pms_constrain_8::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_1_pif_pms_constrain_8`] module*/
-pub type CORE_1_PIF_PMS_CONSTRAIN_8 =
-    crate::Reg<core_1_pif_pms_constrain_8::CORE_1_PIF_PMS_CONSTRAIN_8_SPEC>;
+pub type CORE_1_PIF_PMS_CONSTRAIN_8 = crate::Reg<
+    core_1_pif_pms_constrain_8::CORE_1_PIF_PMS_CONSTRAIN_8_SPEC,
+>;
 ///Core1 access peripherals permission configuration register 8.
 pub mod core_1_pif_pms_constrain_8;
 /**CORE_1_PIF_PMS_CONSTRAIN_9 (rw) register accessor: Core1 access peripherals permission configuration register 9.
@@ -2342,8 +2533,9 @@ pub mod core_1_pif_pms_constrain_8;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_1_pif_pms_constrain_9::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_1_pif_pms_constrain_9::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_1_pif_pms_constrain_9`] module*/
-pub type CORE_1_PIF_PMS_CONSTRAIN_9 =
-    crate::Reg<core_1_pif_pms_constrain_9::CORE_1_PIF_PMS_CONSTRAIN_9_SPEC>;
+pub type CORE_1_PIF_PMS_CONSTRAIN_9 = crate::Reg<
+    core_1_pif_pms_constrain_9::CORE_1_PIF_PMS_CONSTRAIN_9_SPEC,
+>;
 ///Core1 access peripherals permission configuration register 9.
 pub mod core_1_pif_pms_constrain_9;
 /**CORE_1_PIF_PMS_CONSTRAIN_10 (rw) register accessor: core1 access peripherals permission configuration register 10.
@@ -2351,8 +2543,9 @@ pub mod core_1_pif_pms_constrain_9;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_1_pif_pms_constrain_10::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_1_pif_pms_constrain_10::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_1_pif_pms_constrain_10`] module*/
-pub type CORE_1_PIF_PMS_CONSTRAIN_10 =
-    crate::Reg<core_1_pif_pms_constrain_10::CORE_1_PIF_PMS_CONSTRAIN_10_SPEC>;
+pub type CORE_1_PIF_PMS_CONSTRAIN_10 = crate::Reg<
+    core_1_pif_pms_constrain_10::CORE_1_PIF_PMS_CONSTRAIN_10_SPEC,
+>;
 ///core1 access peripherals permission configuration register 10.
 pub mod core_1_pif_pms_constrain_10;
 /**CORE_1_PIF_PMS_CONSTRAIN_11 (rw) register accessor: core1 access peripherals permission configuration register 11.
@@ -2360,8 +2553,9 @@ pub mod core_1_pif_pms_constrain_10;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_1_pif_pms_constrain_11::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_1_pif_pms_constrain_11::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_1_pif_pms_constrain_11`] module*/
-pub type CORE_1_PIF_PMS_CONSTRAIN_11 =
-    crate::Reg<core_1_pif_pms_constrain_11::CORE_1_PIF_PMS_CONSTRAIN_11_SPEC>;
+pub type CORE_1_PIF_PMS_CONSTRAIN_11 = crate::Reg<
+    core_1_pif_pms_constrain_11::CORE_1_PIF_PMS_CONSTRAIN_11_SPEC,
+>;
 ///core1 access peripherals permission configuration register 11.
 pub mod core_1_pif_pms_constrain_11;
 /**CORE_1_PIF_PMS_CONSTRAIN_12 (rw) register accessor: core1 access peripherals permission configuration register 12.
@@ -2369,8 +2563,9 @@ pub mod core_1_pif_pms_constrain_11;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_1_pif_pms_constrain_12::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_1_pif_pms_constrain_12::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_1_pif_pms_constrain_12`] module*/
-pub type CORE_1_PIF_PMS_CONSTRAIN_12 =
-    crate::Reg<core_1_pif_pms_constrain_12::CORE_1_PIF_PMS_CONSTRAIN_12_SPEC>;
+pub type CORE_1_PIF_PMS_CONSTRAIN_12 = crate::Reg<
+    core_1_pif_pms_constrain_12::CORE_1_PIF_PMS_CONSTRAIN_12_SPEC,
+>;
 ///core1 access peripherals permission configuration register 12.
 pub mod core_1_pif_pms_constrain_12;
 /**CORE_1_PIF_PMS_CONSTRAIN_13 (rw) register accessor: core1 access peripherals permission configuration register 13.
@@ -2378,8 +2573,9 @@ pub mod core_1_pif_pms_constrain_12;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_1_pif_pms_constrain_13::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_1_pif_pms_constrain_13::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_1_pif_pms_constrain_13`] module*/
-pub type CORE_1_PIF_PMS_CONSTRAIN_13 =
-    crate::Reg<core_1_pif_pms_constrain_13::CORE_1_PIF_PMS_CONSTRAIN_13_SPEC>;
+pub type CORE_1_PIF_PMS_CONSTRAIN_13 = crate::Reg<
+    core_1_pif_pms_constrain_13::CORE_1_PIF_PMS_CONSTRAIN_13_SPEC,
+>;
 ///core1 access peripherals permission configuration register 13.
 pub mod core_1_pif_pms_constrain_13;
 /**CORE_1_PIF_PMS_CONSTRAIN_14 (rw) register accessor: core1 access peripherals permission configuration register 14.
@@ -2387,8 +2583,9 @@ pub mod core_1_pif_pms_constrain_13;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_1_pif_pms_constrain_14::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_1_pif_pms_constrain_14::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_1_pif_pms_constrain_14`] module*/
-pub type CORE_1_PIF_PMS_CONSTRAIN_14 =
-    crate::Reg<core_1_pif_pms_constrain_14::CORE_1_PIF_PMS_CONSTRAIN_14_SPEC>;
+pub type CORE_1_PIF_PMS_CONSTRAIN_14 = crate::Reg<
+    core_1_pif_pms_constrain_14::CORE_1_PIF_PMS_CONSTRAIN_14_SPEC,
+>;
 ///core1 access peripherals permission configuration register 14.
 pub mod core_1_pif_pms_constrain_14;
 /**CORE_1_REGION_PMS_CONSTRAIN_0 (rw) register accessor: core1 region permission register 0.
@@ -2396,8 +2593,9 @@ pub mod core_1_pif_pms_constrain_14;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_1_region_pms_constrain_0::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_1_region_pms_constrain_0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_1_region_pms_constrain_0`] module*/
-pub type CORE_1_REGION_PMS_CONSTRAIN_0 =
-    crate::Reg<core_1_region_pms_constrain_0::CORE_1_REGION_PMS_CONSTRAIN_0_SPEC>;
+pub type CORE_1_REGION_PMS_CONSTRAIN_0 = crate::Reg<
+    core_1_region_pms_constrain_0::CORE_1_REGION_PMS_CONSTRAIN_0_SPEC,
+>;
 ///core1 region permission register 0.
 pub mod core_1_region_pms_constrain_0;
 /**CORE_1_REGION_PMS_CONSTRAIN_1 (rw) register accessor: core1 region permission register 1.
@@ -2405,8 +2603,9 @@ pub mod core_1_region_pms_constrain_0;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_1_region_pms_constrain_1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_1_region_pms_constrain_1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_1_region_pms_constrain_1`] module*/
-pub type CORE_1_REGION_PMS_CONSTRAIN_1 =
-    crate::Reg<core_1_region_pms_constrain_1::CORE_1_REGION_PMS_CONSTRAIN_1_SPEC>;
+pub type CORE_1_REGION_PMS_CONSTRAIN_1 = crate::Reg<
+    core_1_region_pms_constrain_1::CORE_1_REGION_PMS_CONSTRAIN_1_SPEC,
+>;
 ///core1 region permission register 1.
 pub mod core_1_region_pms_constrain_1;
 /**CORE_1_REGION_PMS_CONSTRAIN_2 (rw) register accessor: core1 region permission register 2.
@@ -2414,8 +2613,9 @@ pub mod core_1_region_pms_constrain_1;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_1_region_pms_constrain_2::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_1_region_pms_constrain_2::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_1_region_pms_constrain_2`] module*/
-pub type CORE_1_REGION_PMS_CONSTRAIN_2 =
-    crate::Reg<core_1_region_pms_constrain_2::CORE_1_REGION_PMS_CONSTRAIN_2_SPEC>;
+pub type CORE_1_REGION_PMS_CONSTRAIN_2 = crate::Reg<
+    core_1_region_pms_constrain_2::CORE_1_REGION_PMS_CONSTRAIN_2_SPEC,
+>;
 ///core1 region permission register 2.
 pub mod core_1_region_pms_constrain_2;
 /**CORE_1_REGION_PMS_CONSTRAIN_3 (rw) register accessor: core1 region permission register 3.
@@ -2423,8 +2623,9 @@ pub mod core_1_region_pms_constrain_2;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_1_region_pms_constrain_3::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_1_region_pms_constrain_3::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_1_region_pms_constrain_3`] module*/
-pub type CORE_1_REGION_PMS_CONSTRAIN_3 =
-    crate::Reg<core_1_region_pms_constrain_3::CORE_1_REGION_PMS_CONSTRAIN_3_SPEC>;
+pub type CORE_1_REGION_PMS_CONSTRAIN_3 = crate::Reg<
+    core_1_region_pms_constrain_3::CORE_1_REGION_PMS_CONSTRAIN_3_SPEC,
+>;
 ///core1 region permission register 3.
 pub mod core_1_region_pms_constrain_3;
 /**CORE_1_REGION_PMS_CONSTRAIN_4 (rw) register accessor: core1 region permission register 4.
@@ -2432,8 +2633,9 @@ pub mod core_1_region_pms_constrain_3;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_1_region_pms_constrain_4::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_1_region_pms_constrain_4::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_1_region_pms_constrain_4`] module*/
-pub type CORE_1_REGION_PMS_CONSTRAIN_4 =
-    crate::Reg<core_1_region_pms_constrain_4::CORE_1_REGION_PMS_CONSTRAIN_4_SPEC>;
+pub type CORE_1_REGION_PMS_CONSTRAIN_4 = crate::Reg<
+    core_1_region_pms_constrain_4::CORE_1_REGION_PMS_CONSTRAIN_4_SPEC,
+>;
 ///core1 region permission register 4.
 pub mod core_1_region_pms_constrain_4;
 /**CORE_1_REGION_PMS_CONSTRAIN_5 (rw) register accessor: core1 region permission register 5.
@@ -2441,8 +2643,9 @@ pub mod core_1_region_pms_constrain_4;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_1_region_pms_constrain_5::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_1_region_pms_constrain_5::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_1_region_pms_constrain_5`] module*/
-pub type CORE_1_REGION_PMS_CONSTRAIN_5 =
-    crate::Reg<core_1_region_pms_constrain_5::CORE_1_REGION_PMS_CONSTRAIN_5_SPEC>;
+pub type CORE_1_REGION_PMS_CONSTRAIN_5 = crate::Reg<
+    core_1_region_pms_constrain_5::CORE_1_REGION_PMS_CONSTRAIN_5_SPEC,
+>;
 ///core1 region permission register 5.
 pub mod core_1_region_pms_constrain_5;
 /**CORE_1_REGION_PMS_CONSTRAIN_6 (rw) register accessor: core1 region permission register 6.
@@ -2450,8 +2653,9 @@ pub mod core_1_region_pms_constrain_5;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_1_region_pms_constrain_6::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_1_region_pms_constrain_6::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_1_region_pms_constrain_6`] module*/
-pub type CORE_1_REGION_PMS_CONSTRAIN_6 =
-    crate::Reg<core_1_region_pms_constrain_6::CORE_1_REGION_PMS_CONSTRAIN_6_SPEC>;
+pub type CORE_1_REGION_PMS_CONSTRAIN_6 = crate::Reg<
+    core_1_region_pms_constrain_6::CORE_1_REGION_PMS_CONSTRAIN_6_SPEC,
+>;
 ///core1 region permission register 6.
 pub mod core_1_region_pms_constrain_6;
 /**CORE_1_REGION_PMS_CONSTRAIN_7 (rw) register accessor: core1 region permission register 7.
@@ -2459,8 +2663,9 @@ pub mod core_1_region_pms_constrain_6;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_1_region_pms_constrain_7::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_1_region_pms_constrain_7::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_1_region_pms_constrain_7`] module*/
-pub type CORE_1_REGION_PMS_CONSTRAIN_7 =
-    crate::Reg<core_1_region_pms_constrain_7::CORE_1_REGION_PMS_CONSTRAIN_7_SPEC>;
+pub type CORE_1_REGION_PMS_CONSTRAIN_7 = crate::Reg<
+    core_1_region_pms_constrain_7::CORE_1_REGION_PMS_CONSTRAIN_7_SPEC,
+>;
 ///core1 region permission register 7.
 pub mod core_1_region_pms_constrain_7;
 /**CORE_1_REGION_PMS_CONSTRAIN_8 (rw) register accessor: core1 region permission register 8.
@@ -2468,8 +2673,9 @@ pub mod core_1_region_pms_constrain_7;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_1_region_pms_constrain_8::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_1_region_pms_constrain_8::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_1_region_pms_constrain_8`] module*/
-pub type CORE_1_REGION_PMS_CONSTRAIN_8 =
-    crate::Reg<core_1_region_pms_constrain_8::CORE_1_REGION_PMS_CONSTRAIN_8_SPEC>;
+pub type CORE_1_REGION_PMS_CONSTRAIN_8 = crate::Reg<
+    core_1_region_pms_constrain_8::CORE_1_REGION_PMS_CONSTRAIN_8_SPEC,
+>;
 ///core1 region permission register 8.
 pub mod core_1_region_pms_constrain_8;
 /**CORE_1_REGION_PMS_CONSTRAIN_9 (rw) register accessor: core1 region permission register 9.
@@ -2477,8 +2683,9 @@ pub mod core_1_region_pms_constrain_8;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_1_region_pms_constrain_9::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_1_region_pms_constrain_9::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_1_region_pms_constrain_9`] module*/
-pub type CORE_1_REGION_PMS_CONSTRAIN_9 =
-    crate::Reg<core_1_region_pms_constrain_9::CORE_1_REGION_PMS_CONSTRAIN_9_SPEC>;
+pub type CORE_1_REGION_PMS_CONSTRAIN_9 = crate::Reg<
+    core_1_region_pms_constrain_9::CORE_1_REGION_PMS_CONSTRAIN_9_SPEC,
+>;
 ///core1 region permission register 9.
 pub mod core_1_region_pms_constrain_9;
 /**CORE_1_REGION_PMS_CONSTRAIN_10 (rw) register accessor: core1 region permission register 10.
@@ -2486,8 +2693,9 @@ pub mod core_1_region_pms_constrain_9;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_1_region_pms_constrain_10::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_1_region_pms_constrain_10::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_1_region_pms_constrain_10`] module*/
-pub type CORE_1_REGION_PMS_CONSTRAIN_10 =
-    crate::Reg<core_1_region_pms_constrain_10::CORE_1_REGION_PMS_CONSTRAIN_10_SPEC>;
+pub type CORE_1_REGION_PMS_CONSTRAIN_10 = crate::Reg<
+    core_1_region_pms_constrain_10::CORE_1_REGION_PMS_CONSTRAIN_10_SPEC,
+>;
 ///core1 region permission register 10.
 pub mod core_1_region_pms_constrain_10;
 /**CORE_1_REGION_PMS_CONSTRAIN_11 (rw) register accessor: core1 region permission register 11.
@@ -2495,8 +2703,9 @@ pub mod core_1_region_pms_constrain_10;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_1_region_pms_constrain_11::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_1_region_pms_constrain_11::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_1_region_pms_constrain_11`] module*/
-pub type CORE_1_REGION_PMS_CONSTRAIN_11 =
-    crate::Reg<core_1_region_pms_constrain_11::CORE_1_REGION_PMS_CONSTRAIN_11_SPEC>;
+pub type CORE_1_REGION_PMS_CONSTRAIN_11 = crate::Reg<
+    core_1_region_pms_constrain_11::CORE_1_REGION_PMS_CONSTRAIN_11_SPEC,
+>;
 ///core1 region permission register 11.
 pub mod core_1_region_pms_constrain_11;
 /**CORE_1_REGION_PMS_CONSTRAIN_12 (rw) register accessor: core1 region permission register 12.
@@ -2504,8 +2713,9 @@ pub mod core_1_region_pms_constrain_11;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_1_region_pms_constrain_12::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_1_region_pms_constrain_12::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_1_region_pms_constrain_12`] module*/
-pub type CORE_1_REGION_PMS_CONSTRAIN_12 =
-    crate::Reg<core_1_region_pms_constrain_12::CORE_1_REGION_PMS_CONSTRAIN_12_SPEC>;
+pub type CORE_1_REGION_PMS_CONSTRAIN_12 = crate::Reg<
+    core_1_region_pms_constrain_12::CORE_1_REGION_PMS_CONSTRAIN_12_SPEC,
+>;
 ///core1 region permission register 12.
 pub mod core_1_region_pms_constrain_12;
 /**CORE_1_REGION_PMS_CONSTRAIN_13 (rw) register accessor: core1 region permission register 13.
@@ -2513,8 +2723,9 @@ pub mod core_1_region_pms_constrain_12;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_1_region_pms_constrain_13::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_1_region_pms_constrain_13::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_1_region_pms_constrain_13`] module*/
-pub type CORE_1_REGION_PMS_CONSTRAIN_13 =
-    crate::Reg<core_1_region_pms_constrain_13::CORE_1_REGION_PMS_CONSTRAIN_13_SPEC>;
+pub type CORE_1_REGION_PMS_CONSTRAIN_13 = crate::Reg<
+    core_1_region_pms_constrain_13::CORE_1_REGION_PMS_CONSTRAIN_13_SPEC,
+>;
 ///core1 region permission register 13.
 pub mod core_1_region_pms_constrain_13;
 /**CORE_1_REGION_PMS_CONSTRAIN_14 (rw) register accessor: core1 region permission register 14.
@@ -2522,8 +2733,9 @@ pub mod core_1_region_pms_constrain_13;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_1_region_pms_constrain_14::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_1_region_pms_constrain_14::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_1_region_pms_constrain_14`] module*/
-pub type CORE_1_REGION_PMS_CONSTRAIN_14 =
-    crate::Reg<core_1_region_pms_constrain_14::CORE_1_REGION_PMS_CONSTRAIN_14_SPEC>;
+pub type CORE_1_REGION_PMS_CONSTRAIN_14 = crate::Reg<
+    core_1_region_pms_constrain_14::CORE_1_REGION_PMS_CONSTRAIN_14_SPEC,
+>;
 ///core1 region permission register 14.
 pub mod core_1_region_pms_constrain_14;
 /**CORE_1_PIF_PMS_MONITOR_0 (rw) register accessor: core1 permission report register 0.
@@ -2531,8 +2743,9 @@ pub mod core_1_region_pms_constrain_14;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_1_pif_pms_monitor_0::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_1_pif_pms_monitor_0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_1_pif_pms_monitor_0`] module*/
-pub type CORE_1_PIF_PMS_MONITOR_0 =
-    crate::Reg<core_1_pif_pms_monitor_0::CORE_1_PIF_PMS_MONITOR_0_SPEC>;
+pub type CORE_1_PIF_PMS_MONITOR_0 = crate::Reg<
+    core_1_pif_pms_monitor_0::CORE_1_PIF_PMS_MONITOR_0_SPEC,
+>;
 ///core1 permission report register 0.
 pub mod core_1_pif_pms_monitor_0;
 /**CORE_1_PIF_PMS_MONITOR_1 (rw) register accessor: core1 permission report register 1.
@@ -2540,8 +2753,9 @@ pub mod core_1_pif_pms_monitor_0;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_1_pif_pms_monitor_1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_1_pif_pms_monitor_1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_1_pif_pms_monitor_1`] module*/
-pub type CORE_1_PIF_PMS_MONITOR_1 =
-    crate::Reg<core_1_pif_pms_monitor_1::CORE_1_PIF_PMS_MONITOR_1_SPEC>;
+pub type CORE_1_PIF_PMS_MONITOR_1 = crate::Reg<
+    core_1_pif_pms_monitor_1::CORE_1_PIF_PMS_MONITOR_1_SPEC,
+>;
 ///core1 permission report register 1.
 pub mod core_1_pif_pms_monitor_1;
 /**CORE_1_PIF_PMS_MONITOR_2 (r) register accessor: core1 permission report register 2.
@@ -2549,8 +2763,9 @@ pub mod core_1_pif_pms_monitor_1;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_1_pif_pms_monitor_2::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_1_pif_pms_monitor_2`] module*/
-pub type CORE_1_PIF_PMS_MONITOR_2 =
-    crate::Reg<core_1_pif_pms_monitor_2::CORE_1_PIF_PMS_MONITOR_2_SPEC>;
+pub type CORE_1_PIF_PMS_MONITOR_2 = crate::Reg<
+    core_1_pif_pms_monitor_2::CORE_1_PIF_PMS_MONITOR_2_SPEC,
+>;
 ///core1 permission report register 2.
 pub mod core_1_pif_pms_monitor_2;
 /**CORE_1_PIF_PMS_MONITOR_3 (r) register accessor: core1 permission report register 3.
@@ -2558,8 +2773,9 @@ pub mod core_1_pif_pms_monitor_2;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_1_pif_pms_monitor_3::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_1_pif_pms_monitor_3`] module*/
-pub type CORE_1_PIF_PMS_MONITOR_3 =
-    crate::Reg<core_1_pif_pms_monitor_3::CORE_1_PIF_PMS_MONITOR_3_SPEC>;
+pub type CORE_1_PIF_PMS_MONITOR_3 = crate::Reg<
+    core_1_pif_pms_monitor_3::CORE_1_PIF_PMS_MONITOR_3_SPEC,
+>;
 ///core1 permission report register 3.
 pub mod core_1_pif_pms_monitor_3;
 /**CORE_1_PIF_PMS_MONITOR_4 (rw) register accessor: core1 permission report register 4.
@@ -2567,8 +2783,9 @@ pub mod core_1_pif_pms_monitor_3;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_1_pif_pms_monitor_4::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_1_pif_pms_monitor_4::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_1_pif_pms_monitor_4`] module*/
-pub type CORE_1_PIF_PMS_MONITOR_4 =
-    crate::Reg<core_1_pif_pms_monitor_4::CORE_1_PIF_PMS_MONITOR_4_SPEC>;
+pub type CORE_1_PIF_PMS_MONITOR_4 = crate::Reg<
+    core_1_pif_pms_monitor_4::CORE_1_PIF_PMS_MONITOR_4_SPEC,
+>;
 ///core1 permission report register 4.
 pub mod core_1_pif_pms_monitor_4;
 /**CORE_1_PIF_PMS_MONITOR_5 (r) register accessor: core1 permission report register 5.
@@ -2576,8 +2793,9 @@ pub mod core_1_pif_pms_monitor_4;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_1_pif_pms_monitor_5::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_1_pif_pms_monitor_5`] module*/
-pub type CORE_1_PIF_PMS_MONITOR_5 =
-    crate::Reg<core_1_pif_pms_monitor_5::CORE_1_PIF_PMS_MONITOR_5_SPEC>;
+pub type CORE_1_PIF_PMS_MONITOR_5 = crate::Reg<
+    core_1_pif_pms_monitor_5::CORE_1_PIF_PMS_MONITOR_5_SPEC,
+>;
 ///core1 permission report register 5.
 pub mod core_1_pif_pms_monitor_5;
 /**CORE_1_PIF_PMS_MONITOR_6 (r) register accessor: core1 permission report register 6.
@@ -2585,8 +2803,9 @@ pub mod core_1_pif_pms_monitor_5;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_1_pif_pms_monitor_6::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_1_pif_pms_monitor_6`] module*/
-pub type CORE_1_PIF_PMS_MONITOR_6 =
-    crate::Reg<core_1_pif_pms_monitor_6::CORE_1_PIF_PMS_MONITOR_6_SPEC>;
+pub type CORE_1_PIF_PMS_MONITOR_6 = crate::Reg<
+    core_1_pif_pms_monitor_6::CORE_1_PIF_PMS_MONITOR_6_SPEC,
+>;
 ///core1 permission report register 6.
 pub mod core_1_pif_pms_monitor_6;
 /**CORE_1_VECBASE_OVERRIDE_LOCK (rw) register accessor: core1 vecbase override configuration register 0
@@ -2594,8 +2813,9 @@ pub mod core_1_pif_pms_monitor_6;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_1_vecbase_override_lock::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_1_vecbase_override_lock::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_1_vecbase_override_lock`] module*/
-pub type CORE_1_VECBASE_OVERRIDE_LOCK =
-    crate::Reg<core_1_vecbase_override_lock::CORE_1_VECBASE_OVERRIDE_LOCK_SPEC>;
+pub type CORE_1_VECBASE_OVERRIDE_LOCK = crate::Reg<
+    core_1_vecbase_override_lock::CORE_1_VECBASE_OVERRIDE_LOCK_SPEC,
+>;
 ///core1 vecbase override configuration register 0
 pub mod core_1_vecbase_override_lock;
 /**CORE_1_VECBASE_OVERRIDE_0 (rw) register accessor: core1 vecbase override configuration register 0
@@ -2603,8 +2823,9 @@ pub mod core_1_vecbase_override_lock;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_1_vecbase_override_0::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_1_vecbase_override_0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_1_vecbase_override_0`] module*/
-pub type CORE_1_VECBASE_OVERRIDE_0 =
-    crate::Reg<core_1_vecbase_override_0::CORE_1_VECBASE_OVERRIDE_0_SPEC>;
+pub type CORE_1_VECBASE_OVERRIDE_0 = crate::Reg<
+    core_1_vecbase_override_0::CORE_1_VECBASE_OVERRIDE_0_SPEC,
+>;
 ///core1 vecbase override configuration register 0
 pub mod core_1_vecbase_override_0;
 /**CORE_1_VECBASE_OVERRIDE_1 (rw) register accessor: core1 vecbase override configuration register 1
@@ -2612,8 +2833,9 @@ pub mod core_1_vecbase_override_0;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_1_vecbase_override_1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_1_vecbase_override_1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_1_vecbase_override_1`] module*/
-pub type CORE_1_VECBASE_OVERRIDE_1 =
-    crate::Reg<core_1_vecbase_override_1::CORE_1_VECBASE_OVERRIDE_1_SPEC>;
+pub type CORE_1_VECBASE_OVERRIDE_1 = crate::Reg<
+    core_1_vecbase_override_1::CORE_1_VECBASE_OVERRIDE_1_SPEC,
+>;
 ///core1 vecbase override configuration register 1
 pub mod core_1_vecbase_override_1;
 /**CORE_1_VECBASE_OVERRIDE_2 (rw) register accessor: core1 vecbase override configuration register 1
@@ -2621,8 +2843,9 @@ pub mod core_1_vecbase_override_1;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_1_vecbase_override_2::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_1_vecbase_override_2::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_1_vecbase_override_2`] module*/
-pub type CORE_1_VECBASE_OVERRIDE_2 =
-    crate::Reg<core_1_vecbase_override_2::CORE_1_VECBASE_OVERRIDE_2_SPEC>;
+pub type CORE_1_VECBASE_OVERRIDE_2 = crate::Reg<
+    core_1_vecbase_override_2::CORE_1_VECBASE_OVERRIDE_2_SPEC,
+>;
 ///core1 vecbase override configuration register 1
 pub mod core_1_vecbase_override_2;
 /**CORE_1_TOOMANYEXCEPTIONS_M_OVERRIDE_0 (rw) register accessor: core1 toomanyexception override configuration register 0.
@@ -2630,8 +2853,9 @@ pub mod core_1_vecbase_override_2;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_1_toomanyexceptions_m_override_0::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_1_toomanyexceptions_m_override_0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_1_toomanyexceptions_m_override_0`] module*/
-pub type CORE_1_TOOMANYEXCEPTIONS_M_OVERRIDE_0 =
-    crate::Reg<core_1_toomanyexceptions_m_override_0::CORE_1_TOOMANYEXCEPTIONS_M_OVERRIDE_0_SPEC>;
+pub type CORE_1_TOOMANYEXCEPTIONS_M_OVERRIDE_0 = crate::Reg<
+    core_1_toomanyexceptions_m_override_0::CORE_1_TOOMANYEXCEPTIONS_M_OVERRIDE_0_SPEC,
+>;
 ///core1 toomanyexception override configuration register 0.
 pub mod core_1_toomanyexceptions_m_override_0;
 /**CORE_1_TOOMANYEXCEPTIONS_M_OVERRIDE_1 (rw) register accessor: core1 toomanyexception override configuration register 1.
@@ -2639,8 +2863,9 @@ pub mod core_1_toomanyexceptions_m_override_0;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_1_toomanyexceptions_m_override_1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_1_toomanyexceptions_m_override_1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_1_toomanyexceptions_m_override_1`] module*/
-pub type CORE_1_TOOMANYEXCEPTIONS_M_OVERRIDE_1 =
-    crate::Reg<core_1_toomanyexceptions_m_override_1::CORE_1_TOOMANYEXCEPTIONS_M_OVERRIDE_1_SPEC>;
+pub type CORE_1_TOOMANYEXCEPTIONS_M_OVERRIDE_1 = crate::Reg<
+    core_1_toomanyexceptions_m_override_1::CORE_1_TOOMANYEXCEPTIONS_M_OVERRIDE_1_SPEC,
+>;
 ///core1 toomanyexception override configuration register 1.
 pub mod core_1_toomanyexceptions_m_override_1;
 /**BACKUP_BUS_PMS_CONSTRAIN_0 (rw) register accessor: BackUp access peripherals permission configuration register 0.
@@ -2648,8 +2873,9 @@ pub mod core_1_toomanyexceptions_m_override_1;
 You can [`read`](crate::generic::Reg::read) this register and get [`backup_bus_pms_constrain_0::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`backup_bus_pms_constrain_0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@backup_bus_pms_constrain_0`] module*/
-pub type BACKUP_BUS_PMS_CONSTRAIN_0 =
-    crate::Reg<backup_bus_pms_constrain_0::BACKUP_BUS_PMS_CONSTRAIN_0_SPEC>;
+pub type BACKUP_BUS_PMS_CONSTRAIN_0 = crate::Reg<
+    backup_bus_pms_constrain_0::BACKUP_BUS_PMS_CONSTRAIN_0_SPEC,
+>;
 ///BackUp access peripherals permission configuration register 0.
 pub mod backup_bus_pms_constrain_0;
 /**BACKUP_BUS_PMS_CONSTRAIN_1 (rw) register accessor: BackUp access peripherals permission configuration register 1.
@@ -2657,8 +2883,9 @@ pub mod backup_bus_pms_constrain_0;
 You can [`read`](crate::generic::Reg::read) this register and get [`backup_bus_pms_constrain_1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`backup_bus_pms_constrain_1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@backup_bus_pms_constrain_1`] module*/
-pub type BACKUP_BUS_PMS_CONSTRAIN_1 =
-    crate::Reg<backup_bus_pms_constrain_1::BACKUP_BUS_PMS_CONSTRAIN_1_SPEC>;
+pub type BACKUP_BUS_PMS_CONSTRAIN_1 = crate::Reg<
+    backup_bus_pms_constrain_1::BACKUP_BUS_PMS_CONSTRAIN_1_SPEC,
+>;
 ///BackUp access peripherals permission configuration register 1.
 pub mod backup_bus_pms_constrain_1;
 /**BACKUP_BUS_PMS_CONSTRAIN_2 (rw) register accessor: BackUp access peripherals permission configuration register 2.
@@ -2666,8 +2893,9 @@ pub mod backup_bus_pms_constrain_1;
 You can [`read`](crate::generic::Reg::read) this register and get [`backup_bus_pms_constrain_2::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`backup_bus_pms_constrain_2::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@backup_bus_pms_constrain_2`] module*/
-pub type BACKUP_BUS_PMS_CONSTRAIN_2 =
-    crate::Reg<backup_bus_pms_constrain_2::BACKUP_BUS_PMS_CONSTRAIN_2_SPEC>;
+pub type BACKUP_BUS_PMS_CONSTRAIN_2 = crate::Reg<
+    backup_bus_pms_constrain_2::BACKUP_BUS_PMS_CONSTRAIN_2_SPEC,
+>;
 ///BackUp access peripherals permission configuration register 2.
 pub mod backup_bus_pms_constrain_2;
 /**BACKUP_BUS_PMS_CONSTRAIN_3 (rw) register accessor: BackUp access peripherals permission configuration register 3.
@@ -2675,8 +2903,9 @@ pub mod backup_bus_pms_constrain_2;
 You can [`read`](crate::generic::Reg::read) this register and get [`backup_bus_pms_constrain_3::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`backup_bus_pms_constrain_3::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@backup_bus_pms_constrain_3`] module*/
-pub type BACKUP_BUS_PMS_CONSTRAIN_3 =
-    crate::Reg<backup_bus_pms_constrain_3::BACKUP_BUS_PMS_CONSTRAIN_3_SPEC>;
+pub type BACKUP_BUS_PMS_CONSTRAIN_3 = crate::Reg<
+    backup_bus_pms_constrain_3::BACKUP_BUS_PMS_CONSTRAIN_3_SPEC,
+>;
 ///BackUp access peripherals permission configuration register 3.
 pub mod backup_bus_pms_constrain_3;
 /**BACKUP_BUS_PMS_CONSTRAIN_4 (rw) register accessor: BackUp access peripherals permission configuration register 4.
@@ -2684,8 +2913,9 @@ pub mod backup_bus_pms_constrain_3;
 You can [`read`](crate::generic::Reg::read) this register and get [`backup_bus_pms_constrain_4::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`backup_bus_pms_constrain_4::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@backup_bus_pms_constrain_4`] module*/
-pub type BACKUP_BUS_PMS_CONSTRAIN_4 =
-    crate::Reg<backup_bus_pms_constrain_4::BACKUP_BUS_PMS_CONSTRAIN_4_SPEC>;
+pub type BACKUP_BUS_PMS_CONSTRAIN_4 = crate::Reg<
+    backup_bus_pms_constrain_4::BACKUP_BUS_PMS_CONSTRAIN_4_SPEC,
+>;
 ///BackUp access peripherals permission configuration register 4.
 pub mod backup_bus_pms_constrain_4;
 /**BACKUP_BUS_PMS_CONSTRAIN_5 (rw) register accessor: BackUp access peripherals permission configuration register 5.
@@ -2693,8 +2923,9 @@ pub mod backup_bus_pms_constrain_4;
 You can [`read`](crate::generic::Reg::read) this register and get [`backup_bus_pms_constrain_5::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`backup_bus_pms_constrain_5::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@backup_bus_pms_constrain_5`] module*/
-pub type BACKUP_BUS_PMS_CONSTRAIN_5 =
-    crate::Reg<backup_bus_pms_constrain_5::BACKUP_BUS_PMS_CONSTRAIN_5_SPEC>;
+pub type BACKUP_BUS_PMS_CONSTRAIN_5 = crate::Reg<
+    backup_bus_pms_constrain_5::BACKUP_BUS_PMS_CONSTRAIN_5_SPEC,
+>;
 ///BackUp access peripherals permission configuration register 5.
 pub mod backup_bus_pms_constrain_5;
 /**BACKUP_BUS_PMS_CONSTRAIN_6 (rw) register accessor: BackUp access peripherals permission configuration register 6.
@@ -2702,8 +2933,9 @@ pub mod backup_bus_pms_constrain_5;
 You can [`read`](crate::generic::Reg::read) this register and get [`backup_bus_pms_constrain_6::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`backup_bus_pms_constrain_6::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@backup_bus_pms_constrain_6`] module*/
-pub type BACKUP_BUS_PMS_CONSTRAIN_6 =
-    crate::Reg<backup_bus_pms_constrain_6::BACKUP_BUS_PMS_CONSTRAIN_6_SPEC>;
+pub type BACKUP_BUS_PMS_CONSTRAIN_6 = crate::Reg<
+    backup_bus_pms_constrain_6::BACKUP_BUS_PMS_CONSTRAIN_6_SPEC,
+>;
 ///BackUp access peripherals permission configuration register 6.
 pub mod backup_bus_pms_constrain_6;
 /**BACKUP_BUS_PMS_MONITOR_0 (rw) register accessor: BackUp permission report register 0.
@@ -2711,8 +2943,9 @@ pub mod backup_bus_pms_constrain_6;
 You can [`read`](crate::generic::Reg::read) this register and get [`backup_bus_pms_monitor_0::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`backup_bus_pms_monitor_0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@backup_bus_pms_monitor_0`] module*/
-pub type BACKUP_BUS_PMS_MONITOR_0 =
-    crate::Reg<backup_bus_pms_monitor_0::BACKUP_BUS_PMS_MONITOR_0_SPEC>;
+pub type BACKUP_BUS_PMS_MONITOR_0 = crate::Reg<
+    backup_bus_pms_monitor_0::BACKUP_BUS_PMS_MONITOR_0_SPEC,
+>;
 ///BackUp permission report register 0.
 pub mod backup_bus_pms_monitor_0;
 /**BACKUP_BUS_PMS_MONITOR_1 (rw) register accessor: BackUp permission report register 1.
@@ -2720,8 +2953,9 @@ pub mod backup_bus_pms_monitor_0;
 You can [`read`](crate::generic::Reg::read) this register and get [`backup_bus_pms_monitor_1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`backup_bus_pms_monitor_1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@backup_bus_pms_monitor_1`] module*/
-pub type BACKUP_BUS_PMS_MONITOR_1 =
-    crate::Reg<backup_bus_pms_monitor_1::BACKUP_BUS_PMS_MONITOR_1_SPEC>;
+pub type BACKUP_BUS_PMS_MONITOR_1 = crate::Reg<
+    backup_bus_pms_monitor_1::BACKUP_BUS_PMS_MONITOR_1_SPEC,
+>;
 ///BackUp permission report register 1.
 pub mod backup_bus_pms_monitor_1;
 /**BACKUP_BUS_PMS_MONITOR_2 (r) register accessor: BackUp permission report register 2.
@@ -2729,8 +2963,9 @@ pub mod backup_bus_pms_monitor_1;
 You can [`read`](crate::generic::Reg::read) this register and get [`backup_bus_pms_monitor_2::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@backup_bus_pms_monitor_2`] module*/
-pub type BACKUP_BUS_PMS_MONITOR_2 =
-    crate::Reg<backup_bus_pms_monitor_2::BACKUP_BUS_PMS_MONITOR_2_SPEC>;
+pub type BACKUP_BUS_PMS_MONITOR_2 = crate::Reg<
+    backup_bus_pms_monitor_2::BACKUP_BUS_PMS_MONITOR_2_SPEC,
+>;
 ///BackUp permission report register 2.
 pub mod backup_bus_pms_monitor_2;
 /**BACKUP_BUS_PMS_MONITOR_3 (r) register accessor: BackUp permission report register 3.
@@ -2738,8 +2973,9 @@ pub mod backup_bus_pms_monitor_2;
 You can [`read`](crate::generic::Reg::read) this register and get [`backup_bus_pms_monitor_3::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@backup_bus_pms_monitor_3`] module*/
-pub type BACKUP_BUS_PMS_MONITOR_3 =
-    crate::Reg<backup_bus_pms_monitor_3::BACKUP_BUS_PMS_MONITOR_3_SPEC>;
+pub type BACKUP_BUS_PMS_MONITOR_3 = crate::Reg<
+    backup_bus_pms_monitor_3::BACKUP_BUS_PMS_MONITOR_3_SPEC,
+>;
 ///BackUp permission report register 3.
 pub mod backup_bus_pms_monitor_3;
 /**EDMA_BOUNDARY_LOCK (rw) register accessor: EDMA boundary lock register.
@@ -2859,7 +3095,9 @@ pub mod edma_pms_i2s1;
 You can [`read`](crate::generic::Reg::read) this register and get [`edma_pms_lcd_cam_lock::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`edma_pms_lcd_cam_lock::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@edma_pms_lcd_cam_lock`] module*/
-pub type EDMA_PMS_LCD_CAM_LOCK = crate::Reg<edma_pms_lcd_cam_lock::EDMA_PMS_LCD_CAM_LOCK_SPEC>;
+pub type EDMA_PMS_LCD_CAM_LOCK = crate::Reg<
+    edma_pms_lcd_cam_lock::EDMA_PMS_LCD_CAM_LOCK_SPEC,
+>;
 ///EDMA-LCD/CAM permission lock register.
 pub mod edma_pms_lcd_cam_lock;
 /**EDMA_PMS_LCD_CAM (rw) register accessor: EDMA-LCD/CAM permission control register.
@@ -2907,7 +3145,9 @@ pub mod edma_pms_sha;
 You can [`read`](crate::generic::Reg::read) this register and get [`edma_pms_adc_dac_lock::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`edma_pms_adc_dac_lock::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@edma_pms_adc_dac_lock`] module*/
-pub type EDMA_PMS_ADC_DAC_LOCK = crate::Reg<edma_pms_adc_dac_lock::EDMA_PMS_ADC_DAC_LOCK_SPEC>;
+pub type EDMA_PMS_ADC_DAC_LOCK = crate::Reg<
+    edma_pms_adc_dac_lock::EDMA_PMS_ADC_DAC_LOCK_SPEC,
+>;
 ///EDMA-ADC/DAC permission lock register.
 pub mod edma_pms_adc_dac_lock;
 /**EDMA_PMS_ADC_DAC (rw) register accessor: EDMA-ADC/DAC permission control register.

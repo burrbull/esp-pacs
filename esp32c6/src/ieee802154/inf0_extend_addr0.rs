@@ -25,7 +25,9 @@ impl W {
     ///Bits 0:31
     #[inline(always)]
     #[must_use]
-    pub fn mac_inf0_extend_addr0(&mut self) -> MAC_INF0_EXTEND_ADDR0_W<INF0_EXTEND_ADDR0_SPEC> {
+    pub fn mac_inf0_extend_addr0(
+        &mut self,
+    ) -> MAC_INF0_EXTEND_ADDR0_W<INF0_EXTEND_ADDR0_SPEC> {
         MAC_INF0_EXTEND_ADDR0_W::new(self, 0)
     }
 }

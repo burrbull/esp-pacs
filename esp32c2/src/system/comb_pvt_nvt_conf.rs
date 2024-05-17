@@ -43,13 +43,17 @@ impl W {
     ///Bit 6 - reg_comb_err_cnt_clr_nvt
     #[inline(always)]
     #[must_use]
-    pub fn comb_err_cnt_clr_nvt(&mut self) -> COMB_ERR_CNT_CLR_NVT_W<COMB_PVT_NVT_CONF_SPEC> {
+    pub fn comb_err_cnt_clr_nvt(
+        &mut self,
+    ) -> COMB_ERR_CNT_CLR_NVT_W<COMB_PVT_NVT_CONF_SPEC> {
         COMB_ERR_CNT_CLR_NVT_W::new(self, 6)
     }
     ///Bit 7 - reg_comb_pvt_monitor_en_nvt
     #[inline(always)]
     #[must_use]
-    pub fn comb_pvt_monitor_en_nvt(&mut self) -> COMB_PVT_MONITOR_EN_NVT_W<COMB_PVT_NVT_CONF_SPEC> {
+    pub fn comb_pvt_monitor_en_nvt(
+        &mut self,
+    ) -> COMB_PVT_MONITOR_EN_NVT_W<COMB_PVT_NVT_CONF_SPEC> {
         COMB_PVT_MONITOR_EN_NVT_W::new(self, 7)
     }
 }

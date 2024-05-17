@@ -72,23 +72,14 @@ impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("DEBUG_CTRL")
             .field("debug_signal_sel", &self.debug_signal_sel())
-            .field(
-                "debug_trigger_state_select",
-                &self.debug_trigger_state_select(),
-            )
+            .field("debug_trigger_state_select", &self.debug_trigger_state_select())
             .field("debug_ser_debug_sel", &self.debug_ser_debug_sel())
             .field(
                 "debug_trigger_state_match_value",
                 &self.debug_trigger_state_match_value(),
             )
-            .field(
-                "debug_trigger_pulse_select",
-                &self.debug_trigger_pulse_select(),
-            )
-            .field(
-                "debug_state_match_dump_en",
-                &self.debug_state_match_dump_en(),
-            )
+            .field("debug_trigger_pulse_select", &self.debug_trigger_pulse_select())
+            .field("debug_state_match_dump_en", &self.debug_state_match_dump_en())
             .field("debug_trigger_dump_en", &self.debug_trigger_dump_en())
             .finish()
     }
@@ -103,7 +94,9 @@ impl W {
     ///Bits 8:11
     #[inline(always)]
     #[must_use]
-    pub fn debug_trigger_state_select(&mut self) -> DEBUG_TRIGGER_STATE_SELECT_W<DEBUG_CTRL_SPEC> {
+    pub fn debug_trigger_state_select(
+        &mut self,
+    ) -> DEBUG_TRIGGER_STATE_SELECT_W<DEBUG_CTRL_SPEC> {
         DEBUG_TRIGGER_STATE_SELECT_W::new(self, 8)
     }
     ///Bits 12:15
@@ -123,13 +116,17 @@ impl W {
     ///Bits 24:26
     #[inline(always)]
     #[must_use]
-    pub fn debug_trigger_pulse_select(&mut self) -> DEBUG_TRIGGER_PULSE_SELECT_W<DEBUG_CTRL_SPEC> {
+    pub fn debug_trigger_pulse_select(
+        &mut self,
+    ) -> DEBUG_TRIGGER_PULSE_SELECT_W<DEBUG_CTRL_SPEC> {
         DEBUG_TRIGGER_PULSE_SELECT_W::new(self, 24)
     }
     ///Bit 30
     #[inline(always)]
     #[must_use]
-    pub fn debug_state_match_dump_en(&mut self) -> DEBUG_STATE_MATCH_DUMP_EN_W<DEBUG_CTRL_SPEC> {
+    pub fn debug_state_match_dump_en(
+        &mut self,
+    ) -> DEBUG_STATE_MATCH_DUMP_EN_W<DEBUG_CTRL_SPEC> {
         DEBUG_STATE_MATCH_DUMP_EN_W::new(self, 30)
     }
     ///Bit 31

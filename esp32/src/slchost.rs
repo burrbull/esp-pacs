@@ -405,7 +405,9 @@ impl RegisterBlock {
 You can [`read`](crate::generic::Reg::read) this register and get [`host_slchost_func2_0::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`host_slchost_func2_0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@host_slchost_func2_0`] module*/
-pub type HOST_SLCHOST_FUNC2_0 = crate::Reg<host_slchost_func2_0::HOST_SLCHOST_FUNC2_0_SPEC>;
+pub type HOST_SLCHOST_FUNC2_0 = crate::Reg<
+    host_slchost_func2_0::HOST_SLCHOST_FUNC2_0_SPEC,
+>;
 ///
 pub mod host_slchost_func2_0;
 /**HOST_SLCHOST_FUNC2_1 (rw) register accessor:
@@ -413,7 +415,9 @@ pub mod host_slchost_func2_0;
 You can [`read`](crate::generic::Reg::read) this register and get [`host_slchost_func2_1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`host_slchost_func2_1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@host_slchost_func2_1`] module*/
-pub type HOST_SLCHOST_FUNC2_1 = crate::Reg<host_slchost_func2_1::HOST_SLCHOST_FUNC2_1_SPEC>;
+pub type HOST_SLCHOST_FUNC2_1 = crate::Reg<
+    host_slchost_func2_1::HOST_SLCHOST_FUNC2_1_SPEC,
+>;
 ///
 pub mod host_slchost_func2_1;
 /**HOST_SLCHOST_FUNC2_2 (rw) register accessor:
@@ -421,7 +425,9 @@ pub mod host_slchost_func2_1;
 You can [`read`](crate::generic::Reg::read) this register and get [`host_slchost_func2_2::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`host_slchost_func2_2::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@host_slchost_func2_2`] module*/
-pub type HOST_SLCHOST_FUNC2_2 = crate::Reg<host_slchost_func2_2::HOST_SLCHOST_FUNC2_2_SPEC>;
+pub type HOST_SLCHOST_FUNC2_2 = crate::Reg<
+    host_slchost_func2_2::HOST_SLCHOST_FUNC2_2_SPEC,
+>;
 ///
 pub mod host_slchost_func2_2;
 /**HOST_SLCHOST_GPIO_STATUS0 (r) register accessor:
@@ -429,8 +435,9 @@ pub mod host_slchost_func2_2;
 You can [`read`](crate::generic::Reg::read) this register and get [`host_slchost_gpio_status0::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@host_slchost_gpio_status0`] module*/
-pub type HOST_SLCHOST_GPIO_STATUS0 =
-    crate::Reg<host_slchost_gpio_status0::HOST_SLCHOST_GPIO_STATUS0_SPEC>;
+pub type HOST_SLCHOST_GPIO_STATUS0 = crate::Reg<
+    host_slchost_gpio_status0::HOST_SLCHOST_GPIO_STATUS0_SPEC,
+>;
 ///
 pub mod host_slchost_gpio_status0;
 /**HOST_SLCHOST_GPIO_STATUS1 (r) register accessor:
@@ -438,8 +445,9 @@ pub mod host_slchost_gpio_status0;
 You can [`read`](crate::generic::Reg::read) this register and get [`host_slchost_gpio_status1::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@host_slchost_gpio_status1`] module*/
-pub type HOST_SLCHOST_GPIO_STATUS1 =
-    crate::Reg<host_slchost_gpio_status1::HOST_SLCHOST_GPIO_STATUS1_SPEC>;
+pub type HOST_SLCHOST_GPIO_STATUS1 = crate::Reg<
+    host_slchost_gpio_status1::HOST_SLCHOST_GPIO_STATUS1_SPEC,
+>;
 ///
 pub mod host_slchost_gpio_status1;
 /**HOST_SLCHOST_GPIO_IN0 (r) register accessor:
@@ -447,7 +455,9 @@ pub mod host_slchost_gpio_status1;
 You can [`read`](crate::generic::Reg::read) this register and get [`host_slchost_gpio_in0::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@host_slchost_gpio_in0`] module*/
-pub type HOST_SLCHOST_GPIO_IN0 = crate::Reg<host_slchost_gpio_in0::HOST_SLCHOST_GPIO_IN0_SPEC>;
+pub type HOST_SLCHOST_GPIO_IN0 = crate::Reg<
+    host_slchost_gpio_in0::HOST_SLCHOST_GPIO_IN0_SPEC,
+>;
 ///
 pub mod host_slchost_gpio_in0;
 /**HOST_SLCHOST_GPIO_IN1 (r) register accessor:
@@ -455,7 +465,9 @@ pub mod host_slchost_gpio_in0;
 You can [`read`](crate::generic::Reg::read) this register and get [`host_slchost_gpio_in1::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@host_slchost_gpio_in1`] module*/
-pub type HOST_SLCHOST_GPIO_IN1 = crate::Reg<host_slchost_gpio_in1::HOST_SLCHOST_GPIO_IN1_SPEC>;
+pub type HOST_SLCHOST_GPIO_IN1 = crate::Reg<
+    host_slchost_gpio_in1::HOST_SLCHOST_GPIO_IN1_SPEC,
+>;
 ///
 pub mod host_slchost_gpio_in1;
 /**HOST_SLC0HOST_TOKEN_RDATA (r) register accessor:
@@ -463,8 +475,9 @@ pub mod host_slchost_gpio_in1;
 You can [`read`](crate::generic::Reg::read) this register and get [`host_slc0host_token_rdata::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@host_slc0host_token_rdata`] module*/
-pub type HOST_SLC0HOST_TOKEN_RDATA =
-    crate::Reg<host_slc0host_token_rdata::HOST_SLC0HOST_TOKEN_RDATA_SPEC>;
+pub type HOST_SLC0HOST_TOKEN_RDATA = crate::Reg<
+    host_slc0host_token_rdata::HOST_SLC0HOST_TOKEN_RDATA_SPEC,
+>;
 ///
 pub mod host_slc0host_token_rdata;
 /**HOST_SLC0_HOST_PF (r) register accessor:
@@ -488,7 +501,9 @@ pub mod host_slc1_host_pf;
 You can [`read`](crate::generic::Reg::read) this register and get [`host_slc0host_int_raw::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@host_slc0host_int_raw`] module*/
-pub type HOST_SLC0HOST_INT_RAW = crate::Reg<host_slc0host_int_raw::HOST_SLC0HOST_INT_RAW_SPEC>;
+pub type HOST_SLC0HOST_INT_RAW = crate::Reg<
+    host_slc0host_int_raw::HOST_SLC0HOST_INT_RAW_SPEC,
+>;
 ///
 pub mod host_slc0host_int_raw;
 /**HOST_SLC1HOST_INT_RAW (r) register accessor:
@@ -496,7 +511,9 @@ pub mod host_slc0host_int_raw;
 You can [`read`](crate::generic::Reg::read) this register and get [`host_slc1host_int_raw::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@host_slc1host_int_raw`] module*/
-pub type HOST_SLC1HOST_INT_RAW = crate::Reg<host_slc1host_int_raw::HOST_SLC1HOST_INT_RAW_SPEC>;
+pub type HOST_SLC1HOST_INT_RAW = crate::Reg<
+    host_slc1host_int_raw::HOST_SLC1HOST_INT_RAW_SPEC,
+>;
 ///
 pub mod host_slc1host_int_raw;
 /**HOST_SLC0HOST_INT_ST (r) register accessor:
@@ -504,7 +521,9 @@ pub mod host_slc1host_int_raw;
 You can [`read`](crate::generic::Reg::read) this register and get [`host_slc0host_int_st::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@host_slc0host_int_st`] module*/
-pub type HOST_SLC0HOST_INT_ST = crate::Reg<host_slc0host_int_st::HOST_SLC0HOST_INT_ST_SPEC>;
+pub type HOST_SLC0HOST_INT_ST = crate::Reg<
+    host_slc0host_int_st::HOST_SLC0HOST_INT_ST_SPEC,
+>;
 ///
 pub mod host_slc0host_int_st;
 /**HOST_SLC1HOST_INT_ST (r) register accessor:
@@ -512,7 +531,9 @@ pub mod host_slc0host_int_st;
 You can [`read`](crate::generic::Reg::read) this register and get [`host_slc1host_int_st::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@host_slc1host_int_st`] module*/
-pub type HOST_SLC1HOST_INT_ST = crate::Reg<host_slc1host_int_st::HOST_SLC1HOST_INT_ST_SPEC>;
+pub type HOST_SLC1HOST_INT_ST = crate::Reg<
+    host_slc1host_int_st::HOST_SLC1HOST_INT_ST_SPEC,
+>;
 ///
 pub mod host_slc1host_int_st;
 /**HOST_SLCHOST_PKT_LEN (r) register accessor:
@@ -520,7 +541,9 @@ pub mod host_slc1host_int_st;
 You can [`read`](crate::generic::Reg::read) this register and get [`host_slchost_pkt_len::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@host_slchost_pkt_len`] module*/
-pub type HOST_SLCHOST_PKT_LEN = crate::Reg<host_slchost_pkt_len::HOST_SLCHOST_PKT_LEN_SPEC>;
+pub type HOST_SLCHOST_PKT_LEN = crate::Reg<
+    host_slchost_pkt_len::HOST_SLCHOST_PKT_LEN_SPEC,
+>;
 ///
 pub mod host_slchost_pkt_len;
 /**HOST_SLCHOST_STATE_W0 (r) register accessor:
@@ -528,7 +551,9 @@ pub mod host_slchost_pkt_len;
 You can [`read`](crate::generic::Reg::read) this register and get [`host_slchost_state_w0::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@host_slchost_state_w0`] module*/
-pub type HOST_SLCHOST_STATE_W0 = crate::Reg<host_slchost_state_w0::HOST_SLCHOST_STATE_W0_SPEC>;
+pub type HOST_SLCHOST_STATE_W0 = crate::Reg<
+    host_slchost_state_w0::HOST_SLCHOST_STATE_W0_SPEC,
+>;
 ///
 pub mod host_slchost_state_w0;
 /**HOST_SLCHOST_STATE_W1 (r) register accessor:
@@ -536,7 +561,9 @@ pub mod host_slchost_state_w0;
 You can [`read`](crate::generic::Reg::read) this register and get [`host_slchost_state_w1::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@host_slchost_state_w1`] module*/
-pub type HOST_SLCHOST_STATE_W1 = crate::Reg<host_slchost_state_w1::HOST_SLCHOST_STATE_W1_SPEC>;
+pub type HOST_SLCHOST_STATE_W1 = crate::Reg<
+    host_slchost_state_w1::HOST_SLCHOST_STATE_W1_SPEC,
+>;
 ///
 pub mod host_slchost_state_w1;
 /**HOST_SLCHOST_CONF_W0 (rw) register accessor:
@@ -544,7 +571,9 @@ pub mod host_slchost_state_w1;
 You can [`read`](crate::generic::Reg::read) this register and get [`host_slchost_conf_w0::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`host_slchost_conf_w0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@host_slchost_conf_w0`] module*/
-pub type HOST_SLCHOST_CONF_W0 = crate::Reg<host_slchost_conf_w0::HOST_SLCHOST_CONF_W0_SPEC>;
+pub type HOST_SLCHOST_CONF_W0 = crate::Reg<
+    host_slchost_conf_w0::HOST_SLCHOST_CONF_W0_SPEC,
+>;
 ///
 pub mod host_slchost_conf_w0;
 /**HOST_SLCHOST_CONF_W1 (rw) register accessor:
@@ -552,7 +581,9 @@ pub mod host_slchost_conf_w0;
 You can [`read`](crate::generic::Reg::read) this register and get [`host_slchost_conf_w1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`host_slchost_conf_w1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@host_slchost_conf_w1`] module*/
-pub type HOST_SLCHOST_CONF_W1 = crate::Reg<host_slchost_conf_w1::HOST_SLCHOST_CONF_W1_SPEC>;
+pub type HOST_SLCHOST_CONF_W1 = crate::Reg<
+    host_slchost_conf_w1::HOST_SLCHOST_CONF_W1_SPEC,
+>;
 ///
 pub mod host_slchost_conf_w1;
 /**HOST_SLCHOST_CONF_W2 (rw) register accessor:
@@ -560,7 +591,9 @@ pub mod host_slchost_conf_w1;
 You can [`read`](crate::generic::Reg::read) this register and get [`host_slchost_conf_w2::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`host_slchost_conf_w2::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@host_slchost_conf_w2`] module*/
-pub type HOST_SLCHOST_CONF_W2 = crate::Reg<host_slchost_conf_w2::HOST_SLCHOST_CONF_W2_SPEC>;
+pub type HOST_SLCHOST_CONF_W2 = crate::Reg<
+    host_slchost_conf_w2::HOST_SLCHOST_CONF_W2_SPEC,
+>;
 ///
 pub mod host_slchost_conf_w2;
 /**HOST_SLCHOST_CONF_W3 (rw) register accessor:
@@ -568,7 +601,9 @@ pub mod host_slchost_conf_w2;
 You can [`read`](crate::generic::Reg::read) this register and get [`host_slchost_conf_w3::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`host_slchost_conf_w3::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@host_slchost_conf_w3`] module*/
-pub type HOST_SLCHOST_CONF_W3 = crate::Reg<host_slchost_conf_w3::HOST_SLCHOST_CONF_W3_SPEC>;
+pub type HOST_SLCHOST_CONF_W3 = crate::Reg<
+    host_slchost_conf_w3::HOST_SLCHOST_CONF_W3_SPEC,
+>;
 ///
 pub mod host_slchost_conf_w3;
 /**HOST_SLCHOST_CONF_W4 (rw) register accessor:
@@ -576,7 +611,9 @@ pub mod host_slchost_conf_w3;
 You can [`read`](crate::generic::Reg::read) this register and get [`host_slchost_conf_w4::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`host_slchost_conf_w4::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@host_slchost_conf_w4`] module*/
-pub type HOST_SLCHOST_CONF_W4 = crate::Reg<host_slchost_conf_w4::HOST_SLCHOST_CONF_W4_SPEC>;
+pub type HOST_SLCHOST_CONF_W4 = crate::Reg<
+    host_slchost_conf_w4::HOST_SLCHOST_CONF_W4_SPEC,
+>;
 ///
 pub mod host_slchost_conf_w4;
 /**HOST_SLCHOST_CONF_W5 (rw) register accessor:
@@ -584,7 +621,9 @@ pub mod host_slchost_conf_w4;
 You can [`read`](crate::generic::Reg::read) this register and get [`host_slchost_conf_w5::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`host_slchost_conf_w5::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@host_slchost_conf_w5`] module*/
-pub type HOST_SLCHOST_CONF_W5 = crate::Reg<host_slchost_conf_w5::HOST_SLCHOST_CONF_W5_SPEC>;
+pub type HOST_SLCHOST_CONF_W5 = crate::Reg<
+    host_slchost_conf_w5::HOST_SLCHOST_CONF_W5_SPEC,
+>;
 ///
 pub mod host_slchost_conf_w5;
 /**HOST_SLCHOST_WIN_CMD (rw) register accessor:
@@ -592,7 +631,9 @@ pub mod host_slchost_conf_w5;
 You can [`read`](crate::generic::Reg::read) this register and get [`host_slchost_win_cmd::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`host_slchost_win_cmd::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@host_slchost_win_cmd`] module*/
-pub type HOST_SLCHOST_WIN_CMD = crate::Reg<host_slchost_win_cmd::HOST_SLCHOST_WIN_CMD_SPEC>;
+pub type HOST_SLCHOST_WIN_CMD = crate::Reg<
+    host_slchost_win_cmd::HOST_SLCHOST_WIN_CMD_SPEC,
+>;
 ///
 pub mod host_slchost_win_cmd;
 /**HOST_SLCHOST_CONF_W6 (rw) register accessor:
@@ -600,7 +641,9 @@ pub mod host_slchost_win_cmd;
 You can [`read`](crate::generic::Reg::read) this register and get [`host_slchost_conf_w6::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`host_slchost_conf_w6::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@host_slchost_conf_w6`] module*/
-pub type HOST_SLCHOST_CONF_W6 = crate::Reg<host_slchost_conf_w6::HOST_SLCHOST_CONF_W6_SPEC>;
+pub type HOST_SLCHOST_CONF_W6 = crate::Reg<
+    host_slchost_conf_w6::HOST_SLCHOST_CONF_W6_SPEC,
+>;
 ///
 pub mod host_slchost_conf_w6;
 /**HOST_SLCHOST_CONF_W7 (rw) register accessor:
@@ -608,7 +651,9 @@ pub mod host_slchost_conf_w6;
 You can [`read`](crate::generic::Reg::read) this register and get [`host_slchost_conf_w7::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`host_slchost_conf_w7::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@host_slchost_conf_w7`] module*/
-pub type HOST_SLCHOST_CONF_W7 = crate::Reg<host_slchost_conf_w7::HOST_SLCHOST_CONF_W7_SPEC>;
+pub type HOST_SLCHOST_CONF_W7 = crate::Reg<
+    host_slchost_conf_w7::HOST_SLCHOST_CONF_W7_SPEC,
+>;
 ///
 pub mod host_slchost_conf_w7;
 /**HOST_SLCHOST_PKT_LEN0 (r) register accessor:
@@ -616,7 +661,9 @@ pub mod host_slchost_conf_w7;
 You can [`read`](crate::generic::Reg::read) this register and get [`host_slchost_pkt_len0::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@host_slchost_pkt_len0`] module*/
-pub type HOST_SLCHOST_PKT_LEN0 = crate::Reg<host_slchost_pkt_len0::HOST_SLCHOST_PKT_LEN0_SPEC>;
+pub type HOST_SLCHOST_PKT_LEN0 = crate::Reg<
+    host_slchost_pkt_len0::HOST_SLCHOST_PKT_LEN0_SPEC,
+>;
 ///
 pub mod host_slchost_pkt_len0;
 /**HOST_SLCHOST_PKT_LEN1 (r) register accessor:
@@ -624,7 +671,9 @@ pub mod host_slchost_pkt_len0;
 You can [`read`](crate::generic::Reg::read) this register and get [`host_slchost_pkt_len1::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@host_slchost_pkt_len1`] module*/
-pub type HOST_SLCHOST_PKT_LEN1 = crate::Reg<host_slchost_pkt_len1::HOST_SLCHOST_PKT_LEN1_SPEC>;
+pub type HOST_SLCHOST_PKT_LEN1 = crate::Reg<
+    host_slchost_pkt_len1::HOST_SLCHOST_PKT_LEN1_SPEC,
+>;
 ///
 pub mod host_slchost_pkt_len1;
 /**HOST_SLCHOST_PKT_LEN2 (r) register accessor:
@@ -632,7 +681,9 @@ pub mod host_slchost_pkt_len1;
 You can [`read`](crate::generic::Reg::read) this register and get [`host_slchost_pkt_len2::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@host_slchost_pkt_len2`] module*/
-pub type HOST_SLCHOST_PKT_LEN2 = crate::Reg<host_slchost_pkt_len2::HOST_SLCHOST_PKT_LEN2_SPEC>;
+pub type HOST_SLCHOST_PKT_LEN2 = crate::Reg<
+    host_slchost_pkt_len2::HOST_SLCHOST_PKT_LEN2_SPEC,
+>;
 ///
 pub mod host_slchost_pkt_len2;
 /**HOST_SLCHOST_CONF_W8 (rw) register accessor:
@@ -640,7 +691,9 @@ pub mod host_slchost_pkt_len2;
 You can [`read`](crate::generic::Reg::read) this register and get [`host_slchost_conf_w8::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`host_slchost_conf_w8::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@host_slchost_conf_w8`] module*/
-pub type HOST_SLCHOST_CONF_W8 = crate::Reg<host_slchost_conf_w8::HOST_SLCHOST_CONF_W8_SPEC>;
+pub type HOST_SLCHOST_CONF_W8 = crate::Reg<
+    host_slchost_conf_w8::HOST_SLCHOST_CONF_W8_SPEC,
+>;
 ///
 pub mod host_slchost_conf_w8;
 /**HOST_SLCHOST_CONF_W9 (rw) register accessor:
@@ -648,7 +701,9 @@ pub mod host_slchost_conf_w8;
 You can [`read`](crate::generic::Reg::read) this register and get [`host_slchost_conf_w9::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`host_slchost_conf_w9::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@host_slchost_conf_w9`] module*/
-pub type HOST_SLCHOST_CONF_W9 = crate::Reg<host_slchost_conf_w9::HOST_SLCHOST_CONF_W9_SPEC>;
+pub type HOST_SLCHOST_CONF_W9 = crate::Reg<
+    host_slchost_conf_w9::HOST_SLCHOST_CONF_W9_SPEC,
+>;
 ///
 pub mod host_slchost_conf_w9;
 /**HOST_SLCHOST_CONF_W10 (rw) register accessor:
@@ -656,7 +711,9 @@ pub mod host_slchost_conf_w9;
 You can [`read`](crate::generic::Reg::read) this register and get [`host_slchost_conf_w10::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`host_slchost_conf_w10::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@host_slchost_conf_w10`] module*/
-pub type HOST_SLCHOST_CONF_W10 = crate::Reg<host_slchost_conf_w10::HOST_SLCHOST_CONF_W10_SPEC>;
+pub type HOST_SLCHOST_CONF_W10 = crate::Reg<
+    host_slchost_conf_w10::HOST_SLCHOST_CONF_W10_SPEC,
+>;
 ///
 pub mod host_slchost_conf_w10;
 /**HOST_SLCHOST_CONF_W11 (rw) register accessor:
@@ -664,7 +721,9 @@ pub mod host_slchost_conf_w10;
 You can [`read`](crate::generic::Reg::read) this register and get [`host_slchost_conf_w11::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`host_slchost_conf_w11::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@host_slchost_conf_w11`] module*/
-pub type HOST_SLCHOST_CONF_W11 = crate::Reg<host_slchost_conf_w11::HOST_SLCHOST_CONF_W11_SPEC>;
+pub type HOST_SLCHOST_CONF_W11 = crate::Reg<
+    host_slchost_conf_w11::HOST_SLCHOST_CONF_W11_SPEC,
+>;
 ///
 pub mod host_slchost_conf_w11;
 /**HOST_SLCHOST_CONF_W12 (rw) register accessor:
@@ -672,7 +731,9 @@ pub mod host_slchost_conf_w11;
 You can [`read`](crate::generic::Reg::read) this register and get [`host_slchost_conf_w12::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`host_slchost_conf_w12::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@host_slchost_conf_w12`] module*/
-pub type HOST_SLCHOST_CONF_W12 = crate::Reg<host_slchost_conf_w12::HOST_SLCHOST_CONF_W12_SPEC>;
+pub type HOST_SLCHOST_CONF_W12 = crate::Reg<
+    host_slchost_conf_w12::HOST_SLCHOST_CONF_W12_SPEC,
+>;
 ///
 pub mod host_slchost_conf_w12;
 /**HOST_SLCHOST_CONF_W13 (rw) register accessor:
@@ -680,7 +741,9 @@ pub mod host_slchost_conf_w12;
 You can [`read`](crate::generic::Reg::read) this register and get [`host_slchost_conf_w13::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`host_slchost_conf_w13::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@host_slchost_conf_w13`] module*/
-pub type HOST_SLCHOST_CONF_W13 = crate::Reg<host_slchost_conf_w13::HOST_SLCHOST_CONF_W13_SPEC>;
+pub type HOST_SLCHOST_CONF_W13 = crate::Reg<
+    host_slchost_conf_w13::HOST_SLCHOST_CONF_W13_SPEC,
+>;
 ///
 pub mod host_slchost_conf_w13;
 /**HOST_SLCHOST_CONF_W14 (rw) register accessor:
@@ -688,7 +751,9 @@ pub mod host_slchost_conf_w13;
 You can [`read`](crate::generic::Reg::read) this register and get [`host_slchost_conf_w14::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`host_slchost_conf_w14::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@host_slchost_conf_w14`] module*/
-pub type HOST_SLCHOST_CONF_W14 = crate::Reg<host_slchost_conf_w14::HOST_SLCHOST_CONF_W14_SPEC>;
+pub type HOST_SLCHOST_CONF_W14 = crate::Reg<
+    host_slchost_conf_w14::HOST_SLCHOST_CONF_W14_SPEC,
+>;
 ///
 pub mod host_slchost_conf_w14;
 /**HOST_SLCHOST_CONF_W15 (rw) register accessor:
@@ -696,7 +761,9 @@ pub mod host_slchost_conf_w14;
 You can [`read`](crate::generic::Reg::read) this register and get [`host_slchost_conf_w15::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`host_slchost_conf_w15::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@host_slchost_conf_w15`] module*/
-pub type HOST_SLCHOST_CONF_W15 = crate::Reg<host_slchost_conf_w15::HOST_SLCHOST_CONF_W15_SPEC>;
+pub type HOST_SLCHOST_CONF_W15 = crate::Reg<
+    host_slchost_conf_w15::HOST_SLCHOST_CONF_W15_SPEC,
+>;
 ///
 pub mod host_slchost_conf_w15;
 /**HOST_SLCHOST_CHECK_SUM0 (r) register accessor:
@@ -704,8 +771,9 @@ pub mod host_slchost_conf_w15;
 You can [`read`](crate::generic::Reg::read) this register and get [`host_slchost_check_sum0::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@host_slchost_check_sum0`] module*/
-pub type HOST_SLCHOST_CHECK_SUM0 =
-    crate::Reg<host_slchost_check_sum0::HOST_SLCHOST_CHECK_SUM0_SPEC>;
+pub type HOST_SLCHOST_CHECK_SUM0 = crate::Reg<
+    host_slchost_check_sum0::HOST_SLCHOST_CHECK_SUM0_SPEC,
+>;
 ///
 pub mod host_slchost_check_sum0;
 /**HOST_SLCHOST_CHECK_SUM1 (r) register accessor:
@@ -713,8 +781,9 @@ pub mod host_slchost_check_sum0;
 You can [`read`](crate::generic::Reg::read) this register and get [`host_slchost_check_sum1::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@host_slchost_check_sum1`] module*/
-pub type HOST_SLCHOST_CHECK_SUM1 =
-    crate::Reg<host_slchost_check_sum1::HOST_SLCHOST_CHECK_SUM1_SPEC>;
+pub type HOST_SLCHOST_CHECK_SUM1 = crate::Reg<
+    host_slchost_check_sum1::HOST_SLCHOST_CHECK_SUM1_SPEC,
+>;
 ///
 pub mod host_slchost_check_sum1;
 /**HOST_SLC1HOST_TOKEN_RDATA (r) register accessor:
@@ -722,8 +791,9 @@ pub mod host_slchost_check_sum1;
 You can [`read`](crate::generic::Reg::read) this register and get [`host_slc1host_token_rdata::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@host_slc1host_token_rdata`] module*/
-pub type HOST_SLC1HOST_TOKEN_RDATA =
-    crate::Reg<host_slc1host_token_rdata::HOST_SLC1HOST_TOKEN_RDATA_SPEC>;
+pub type HOST_SLC1HOST_TOKEN_RDATA = crate::Reg<
+    host_slc1host_token_rdata::HOST_SLC1HOST_TOKEN_RDATA_SPEC,
+>;
 ///
 pub mod host_slc1host_token_rdata;
 /**HOST_SLC0HOST_TOKEN_WDATA (rw) register accessor:
@@ -731,8 +801,9 @@ pub mod host_slc1host_token_rdata;
 You can [`read`](crate::generic::Reg::read) this register and get [`host_slc0host_token_wdata::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`host_slc0host_token_wdata::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@host_slc0host_token_wdata`] module*/
-pub type HOST_SLC0HOST_TOKEN_WDATA =
-    crate::Reg<host_slc0host_token_wdata::HOST_SLC0HOST_TOKEN_WDATA_SPEC>;
+pub type HOST_SLC0HOST_TOKEN_WDATA = crate::Reg<
+    host_slc0host_token_wdata::HOST_SLC0HOST_TOKEN_WDATA_SPEC,
+>;
 ///
 pub mod host_slc0host_token_wdata;
 /**HOST_SLC1HOST_TOKEN_WDATA (rw) register accessor:
@@ -740,8 +811,9 @@ pub mod host_slc0host_token_wdata;
 You can [`read`](crate::generic::Reg::read) this register and get [`host_slc1host_token_wdata::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`host_slc1host_token_wdata::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@host_slc1host_token_wdata`] module*/
-pub type HOST_SLC1HOST_TOKEN_WDATA =
-    crate::Reg<host_slc1host_token_wdata::HOST_SLC1HOST_TOKEN_WDATA_SPEC>;
+pub type HOST_SLC1HOST_TOKEN_WDATA = crate::Reg<
+    host_slc1host_token_wdata::HOST_SLC1HOST_TOKEN_WDATA_SPEC,
+>;
 ///
 pub mod host_slc1host_token_wdata;
 /**HOST_SLCHOST_TOKEN_CON (w) register accessor:
@@ -749,7 +821,9 @@ pub mod host_slc1host_token_wdata;
 You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`host_slchost_token_con::W`]. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@host_slchost_token_con`] module*/
-pub type HOST_SLCHOST_TOKEN_CON = crate::Reg<host_slchost_token_con::HOST_SLCHOST_TOKEN_CON_SPEC>;
+pub type HOST_SLCHOST_TOKEN_CON = crate::Reg<
+    host_slchost_token_con::HOST_SLCHOST_TOKEN_CON_SPEC,
+>;
 ///
 pub mod host_slchost_token_con;
 /**HOST_SLC0HOST_INT_CLR (w) register accessor:
@@ -757,7 +831,9 @@ pub mod host_slchost_token_con;
 You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`host_slc0host_int_clr::W`]. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@host_slc0host_int_clr`] module*/
-pub type HOST_SLC0HOST_INT_CLR = crate::Reg<host_slc0host_int_clr::HOST_SLC0HOST_INT_CLR_SPEC>;
+pub type HOST_SLC0HOST_INT_CLR = crate::Reg<
+    host_slc0host_int_clr::HOST_SLC0HOST_INT_CLR_SPEC,
+>;
 ///
 pub mod host_slc0host_int_clr;
 /**HOST_SLC1HOST_INT_CLR (w) register accessor:
@@ -765,7 +841,9 @@ pub mod host_slc0host_int_clr;
 You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`host_slc1host_int_clr::W`]. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@host_slc1host_int_clr`] module*/
-pub type HOST_SLC1HOST_INT_CLR = crate::Reg<host_slc1host_int_clr::HOST_SLC1HOST_INT_CLR_SPEC>;
+pub type HOST_SLC1HOST_INT_CLR = crate::Reg<
+    host_slc1host_int_clr::HOST_SLC1HOST_INT_CLR_SPEC,
+>;
 ///
 pub mod host_slc1host_int_clr;
 /**HOST_SLC0HOST_FUNC1_INT_ENA (rw) register accessor:
@@ -773,8 +851,9 @@ pub mod host_slc1host_int_clr;
 You can [`read`](crate::generic::Reg::read) this register and get [`host_slc0host_func1_int_ena::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`host_slc0host_func1_int_ena::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@host_slc0host_func1_int_ena`] module*/
-pub type HOST_SLC0HOST_FUNC1_INT_ENA =
-    crate::Reg<host_slc0host_func1_int_ena::HOST_SLC0HOST_FUNC1_INT_ENA_SPEC>;
+pub type HOST_SLC0HOST_FUNC1_INT_ENA = crate::Reg<
+    host_slc0host_func1_int_ena::HOST_SLC0HOST_FUNC1_INT_ENA_SPEC,
+>;
 ///
 pub mod host_slc0host_func1_int_ena;
 /**HOST_SLC1HOST_FUNC1_INT_ENA (rw) register accessor:
@@ -782,8 +861,9 @@ pub mod host_slc0host_func1_int_ena;
 You can [`read`](crate::generic::Reg::read) this register and get [`host_slc1host_func1_int_ena::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`host_slc1host_func1_int_ena::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@host_slc1host_func1_int_ena`] module*/
-pub type HOST_SLC1HOST_FUNC1_INT_ENA =
-    crate::Reg<host_slc1host_func1_int_ena::HOST_SLC1HOST_FUNC1_INT_ENA_SPEC>;
+pub type HOST_SLC1HOST_FUNC1_INT_ENA = crate::Reg<
+    host_slc1host_func1_int_ena::HOST_SLC1HOST_FUNC1_INT_ENA_SPEC,
+>;
 ///
 pub mod host_slc1host_func1_int_ena;
 /**HOST_SLC0HOST_FUNC2_INT_ENA (rw) register accessor:
@@ -791,8 +871,9 @@ pub mod host_slc1host_func1_int_ena;
 You can [`read`](crate::generic::Reg::read) this register and get [`host_slc0host_func2_int_ena::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`host_slc0host_func2_int_ena::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@host_slc0host_func2_int_ena`] module*/
-pub type HOST_SLC0HOST_FUNC2_INT_ENA =
-    crate::Reg<host_slc0host_func2_int_ena::HOST_SLC0HOST_FUNC2_INT_ENA_SPEC>;
+pub type HOST_SLC0HOST_FUNC2_INT_ENA = crate::Reg<
+    host_slc0host_func2_int_ena::HOST_SLC0HOST_FUNC2_INT_ENA_SPEC,
+>;
 ///
 pub mod host_slc0host_func2_int_ena;
 /**HOST_SLC1HOST_FUNC2_INT_ENA (rw) register accessor:
@@ -800,8 +881,9 @@ pub mod host_slc0host_func2_int_ena;
 You can [`read`](crate::generic::Reg::read) this register and get [`host_slc1host_func2_int_ena::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`host_slc1host_func2_int_ena::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@host_slc1host_func2_int_ena`] module*/
-pub type HOST_SLC1HOST_FUNC2_INT_ENA =
-    crate::Reg<host_slc1host_func2_int_ena::HOST_SLC1HOST_FUNC2_INT_ENA_SPEC>;
+pub type HOST_SLC1HOST_FUNC2_INT_ENA = crate::Reg<
+    host_slc1host_func2_int_ena::HOST_SLC1HOST_FUNC2_INT_ENA_SPEC,
+>;
 ///
 pub mod host_slc1host_func2_int_ena;
 /**HOST_SLC0HOST_INT_ENA (rw) register accessor:
@@ -809,7 +891,9 @@ pub mod host_slc1host_func2_int_ena;
 You can [`read`](crate::generic::Reg::read) this register and get [`host_slc0host_int_ena::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`host_slc0host_int_ena::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@host_slc0host_int_ena`] module*/
-pub type HOST_SLC0HOST_INT_ENA = crate::Reg<host_slc0host_int_ena::HOST_SLC0HOST_INT_ENA_SPEC>;
+pub type HOST_SLC0HOST_INT_ENA = crate::Reg<
+    host_slc0host_int_ena::HOST_SLC0HOST_INT_ENA_SPEC,
+>;
 ///
 pub mod host_slc0host_int_ena;
 /**HOST_SLC1HOST_INT_ENA (rw) register accessor:
@@ -817,7 +901,9 @@ pub mod host_slc0host_int_ena;
 You can [`read`](crate::generic::Reg::read) this register and get [`host_slc1host_int_ena::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`host_slc1host_int_ena::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@host_slc1host_int_ena`] module*/
-pub type HOST_SLC1HOST_INT_ENA = crate::Reg<host_slc1host_int_ena::HOST_SLC1HOST_INT_ENA_SPEC>;
+pub type HOST_SLC1HOST_INT_ENA = crate::Reg<
+    host_slc1host_int_ena::HOST_SLC1HOST_INT_ENA_SPEC,
+>;
 ///
 pub mod host_slc1host_int_ena;
 /**HOST_SLC0HOST_RX_INFOR (rw) register accessor:
@@ -825,7 +911,9 @@ pub mod host_slc1host_int_ena;
 You can [`read`](crate::generic::Reg::read) this register and get [`host_slc0host_rx_infor::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`host_slc0host_rx_infor::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@host_slc0host_rx_infor`] module*/
-pub type HOST_SLC0HOST_RX_INFOR = crate::Reg<host_slc0host_rx_infor::HOST_SLC0HOST_RX_INFOR_SPEC>;
+pub type HOST_SLC0HOST_RX_INFOR = crate::Reg<
+    host_slc0host_rx_infor::HOST_SLC0HOST_RX_INFOR_SPEC,
+>;
 ///
 pub mod host_slc0host_rx_infor;
 /**HOST_SLC1HOST_RX_INFOR (rw) register accessor:
@@ -833,7 +921,9 @@ pub mod host_slc0host_rx_infor;
 You can [`read`](crate::generic::Reg::read) this register and get [`host_slc1host_rx_infor::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`host_slc1host_rx_infor::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@host_slc1host_rx_infor`] module*/
-pub type HOST_SLC1HOST_RX_INFOR = crate::Reg<host_slc1host_rx_infor::HOST_SLC1HOST_RX_INFOR_SPEC>;
+pub type HOST_SLC1HOST_RX_INFOR = crate::Reg<
+    host_slc1host_rx_infor::HOST_SLC1HOST_RX_INFOR_SPEC,
+>;
 ///
 pub mod host_slc1host_rx_infor;
 /**HOST_SLC0HOST_LEN_WD (rw) register accessor:
@@ -841,7 +931,9 @@ pub mod host_slc1host_rx_infor;
 You can [`read`](crate::generic::Reg::read) this register and get [`host_slc0host_len_wd::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`host_slc0host_len_wd::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@host_slc0host_len_wd`] module*/
-pub type HOST_SLC0HOST_LEN_WD = crate::Reg<host_slc0host_len_wd::HOST_SLC0HOST_LEN_WD_SPEC>;
+pub type HOST_SLC0HOST_LEN_WD = crate::Reg<
+    host_slc0host_len_wd::HOST_SLC0HOST_LEN_WD_SPEC,
+>;
 ///
 pub mod host_slc0host_len_wd;
 /**HOST_SLC_APBWIN_WDATA (rw) register accessor:
@@ -849,7 +941,9 @@ pub mod host_slc0host_len_wd;
 You can [`read`](crate::generic::Reg::read) this register and get [`host_slc_apbwin_wdata::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`host_slc_apbwin_wdata::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@host_slc_apbwin_wdata`] module*/
-pub type HOST_SLC_APBWIN_WDATA = crate::Reg<host_slc_apbwin_wdata::HOST_SLC_APBWIN_WDATA_SPEC>;
+pub type HOST_SLC_APBWIN_WDATA = crate::Reg<
+    host_slc_apbwin_wdata::HOST_SLC_APBWIN_WDATA_SPEC,
+>;
 ///
 pub mod host_slc_apbwin_wdata;
 /**HOST_SLC_APBWIN_CONF (rw) register accessor:
@@ -857,7 +951,9 @@ pub mod host_slc_apbwin_wdata;
 You can [`read`](crate::generic::Reg::read) this register and get [`host_slc_apbwin_conf::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`host_slc_apbwin_conf::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@host_slc_apbwin_conf`] module*/
-pub type HOST_SLC_APBWIN_CONF = crate::Reg<host_slc_apbwin_conf::HOST_SLC_APBWIN_CONF_SPEC>;
+pub type HOST_SLC_APBWIN_CONF = crate::Reg<
+    host_slc_apbwin_conf::HOST_SLC_APBWIN_CONF_SPEC,
+>;
 ///
 pub mod host_slc_apbwin_conf;
 /**HOST_SLC_APBWIN_RDATA (r) register accessor:
@@ -865,7 +961,9 @@ pub mod host_slc_apbwin_conf;
 You can [`read`](crate::generic::Reg::read) this register and get [`host_slc_apbwin_rdata::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@host_slc_apbwin_rdata`] module*/
-pub type HOST_SLC_APBWIN_RDATA = crate::Reg<host_slc_apbwin_rdata::HOST_SLC_APBWIN_RDATA_SPEC>;
+pub type HOST_SLC_APBWIN_RDATA = crate::Reg<
+    host_slc_apbwin_rdata::HOST_SLC_APBWIN_RDATA_SPEC,
+>;
 ///
 pub mod host_slc_apbwin_rdata;
 /**HOST_SLCHOST_RDCLR0 (rw) register accessor:
@@ -889,7 +987,9 @@ pub mod host_slchost_rdclr1;
 You can [`read`](crate::generic::Reg::read) this register and get [`host_slc0host_int_ena1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`host_slc0host_int_ena1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@host_slc0host_int_ena1`] module*/
-pub type HOST_SLC0HOST_INT_ENA1 = crate::Reg<host_slc0host_int_ena1::HOST_SLC0HOST_INT_ENA1_SPEC>;
+pub type HOST_SLC0HOST_INT_ENA1 = crate::Reg<
+    host_slc0host_int_ena1::HOST_SLC0HOST_INT_ENA1_SPEC,
+>;
 ///
 pub mod host_slc0host_int_ena1;
 /**HOST_SLC1HOST_INT_ENA1 (rw) register accessor:
@@ -897,7 +997,9 @@ pub mod host_slc0host_int_ena1;
 You can [`read`](crate::generic::Reg::read) this register and get [`host_slc1host_int_ena1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`host_slc1host_int_ena1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@host_slc1host_int_ena1`] module*/
-pub type HOST_SLC1HOST_INT_ENA1 = crate::Reg<host_slc1host_int_ena1::HOST_SLC1HOST_INT_ENA1_SPEC>;
+pub type HOST_SLC1HOST_INT_ENA1 = crate::Reg<
+    host_slc1host_int_ena1::HOST_SLC1HOST_INT_ENA1_SPEC,
+>;
 ///
 pub mod host_slc1host_int_ena1;
 /**HOST_SLCHOSTDATE (rw) register accessor:

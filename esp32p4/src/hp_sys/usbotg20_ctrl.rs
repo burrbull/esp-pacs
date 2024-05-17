@@ -145,7 +145,9 @@ impl W {
     ///Bit 16 - N/A
     #[inline(always)]
     #[must_use]
-    pub fn phy_suspend_force_en(&mut self) -> PHY_SUSPEND_FORCE_EN_W<USBOTG20_CTRL_SPEC> {
+    pub fn phy_suspend_force_en(
+        &mut self,
+    ) -> PHY_SUSPEND_FORCE_EN_W<USBOTG20_CTRL_SPEC> {
         PHY_SUSPEND_FORCE_EN_W::new(self, 16)
     }
     ///Bit 17 - N/A
@@ -181,7 +183,9 @@ impl W {
     ///Bit 22 - N/A
     #[inline(always)]
     #[must_use]
-    pub fn otg_phy_txbitstuff_en(&mut self) -> OTG_PHY_TXBITSTUFF_EN_W<USBOTG20_CTRL_SPEC> {
+    pub fn otg_phy_txbitstuff_en(
+        &mut self,
+    ) -> OTG_PHY_TXBITSTUFF_EN_W<USBOTG20_CTRL_SPEC> {
         OTG_PHY_TXBITSTUFF_EN_W::new(self, 22)
     }
     ///Bit 23 - N/A

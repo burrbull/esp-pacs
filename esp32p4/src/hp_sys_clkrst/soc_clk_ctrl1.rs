@@ -325,14 +325,8 @@ impl core::fmt::Debug for R {
             .field("crypto_sys_clk_en", &self.crypto_sys_clk_en())
             .field("key_manager_sys_clk_en", &self.key_manager_sys_clk_en())
             .field("bitsrambler_sys_clk_en", &self.bitsrambler_sys_clk_en())
-            .field(
-                "bitsrambler_rx_sys_clk_en",
-                &self.bitsrambler_rx_sys_clk_en(),
-            )
-            .field(
-                "bitsrambler_tx_sys_clk_en",
-                &self.bitsrambler_tx_sys_clk_en(),
-            )
+            .field("bitsrambler_rx_sys_clk_en", &self.bitsrambler_rx_sys_clk_en())
+            .field("bitsrambler_tx_sys_clk_en", &self.bitsrambler_tx_sys_clk_en())
             .field("h264_sys_clk_en", &self.h264_sys_clk_en())
             .finish()
     }
@@ -431,13 +425,17 @@ impl W {
     ///Bit 15 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn usb_otg11_sys_clk_en(&mut self) -> USB_OTG11_SYS_CLK_EN_W<SOC_CLK_CTRL1_SPEC> {
+    pub fn usb_otg11_sys_clk_en(
+        &mut self,
+    ) -> USB_OTG11_SYS_CLK_EN_W<SOC_CLK_CTRL1_SPEC> {
         USB_OTG11_SYS_CLK_EN_W::new(self, 15)
     }
     ///Bit 16 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn usb_otg20_sys_clk_en(&mut self) -> USB_OTG20_SYS_CLK_EN_W<SOC_CLK_CTRL1_SPEC> {
+    pub fn usb_otg20_sys_clk_en(
+        &mut self,
+    ) -> USB_OTG20_SYS_CLK_EN_W<SOC_CLK_CTRL1_SPEC> {
         USB_OTG20_SYS_CLK_EN_W::new(self, 16)
     }
     ///Bit 17 - Reserved
@@ -503,25 +501,33 @@ impl W {
     ///Bit 27 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn key_manager_sys_clk_en(&mut self) -> KEY_MANAGER_SYS_CLK_EN_W<SOC_CLK_CTRL1_SPEC> {
+    pub fn key_manager_sys_clk_en(
+        &mut self,
+    ) -> KEY_MANAGER_SYS_CLK_EN_W<SOC_CLK_CTRL1_SPEC> {
         KEY_MANAGER_SYS_CLK_EN_W::new(self, 27)
     }
     ///Bit 28 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn bitsrambler_sys_clk_en(&mut self) -> BITSRAMBLER_SYS_CLK_EN_W<SOC_CLK_CTRL1_SPEC> {
+    pub fn bitsrambler_sys_clk_en(
+        &mut self,
+    ) -> BITSRAMBLER_SYS_CLK_EN_W<SOC_CLK_CTRL1_SPEC> {
         BITSRAMBLER_SYS_CLK_EN_W::new(self, 28)
     }
     ///Bit 29 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn bitsrambler_rx_sys_clk_en(&mut self) -> BITSRAMBLER_RX_SYS_CLK_EN_W<SOC_CLK_CTRL1_SPEC> {
+    pub fn bitsrambler_rx_sys_clk_en(
+        &mut self,
+    ) -> BITSRAMBLER_RX_SYS_CLK_EN_W<SOC_CLK_CTRL1_SPEC> {
         BITSRAMBLER_RX_SYS_CLK_EN_W::new(self, 29)
     }
     ///Bit 30 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn bitsrambler_tx_sys_clk_en(&mut self) -> BITSRAMBLER_TX_SYS_CLK_EN_W<SOC_CLK_CTRL1_SPEC> {
+    pub fn bitsrambler_tx_sys_clk_en(
+        &mut self,
+    ) -> BITSRAMBLER_TX_SYS_CLK_EN_W<SOC_CLK_CTRL1_SPEC> {
         BITSRAMBLER_TX_SYS_CLK_EN_W::new(self, 30)
     }
     ///Bit 31 - Reserved

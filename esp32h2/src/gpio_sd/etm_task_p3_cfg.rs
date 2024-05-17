@@ -16,8 +16,7 @@ impl R {
     ///NOTE: `n` is number of field in register. `n == 0` corresponds to `GPIO12_EN` field
     #[inline(always)]
     pub fn gpio_en(&self, n: u8) -> GPIO_EN_R {
-        #[allow(clippy::no_effect)]
-        [(); 4][n as usize];
+        #[allow(clippy::no_effect)] [(); 4][n as usize];
         GPIO_EN_R::new(((self.bits >> (n * 8)) & 1) != 0)
     }
     ///Iterator for array of:
@@ -51,8 +50,7 @@ impl R {
     ///NOTE: `n` is number of field in register. `n == 0` corresponds to `GPIO12_SEL` field
     #[inline(always)]
     pub fn gpio_sel(&self, n: u8) -> GPIO_SEL_R {
-        #[allow(clippy::no_effect)]
-        [(); 4][n as usize];
+        #[allow(clippy::no_effect)] [(); 4][n as usize];
         GPIO_SEL_R::new(((self.bits >> (n * 8 + 1)) & 7) as u8)
     }
     ///Iterator for array of:
@@ -104,8 +102,7 @@ impl W {
     #[inline(always)]
     #[must_use]
     pub fn gpio_en(&mut self, n: u8) -> GPIO_EN_W<ETM_TASK_P3_CFG_SPEC> {
-        #[allow(clippy::no_effect)]
-        [(); 4][n as usize];
+        #[allow(clippy::no_effect)] [(); 4][n as usize];
         GPIO_EN_W::new(self, n * 8)
     }
     ///Bit 0 - Enable bit of GPIO response etm task.
@@ -138,8 +135,7 @@ impl W {
     #[inline(always)]
     #[must_use]
     pub fn gpio_sel(&mut self, n: u8) -> GPIO_SEL_W<ETM_TASK_P3_CFG_SPEC> {
-        #[allow(clippy::no_effect)]
-        [(); 4][n as usize];
+        #[allow(clippy::no_effect)] [(); 4][n as usize];
         GPIO_SEL_W::new(self, n * 8 + 1)
     }
     ///Bits 1:3 - GPIO choose a etm task channel.

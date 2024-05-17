@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("ICACHE_AUTOLOAD_SCT0_SIZE")
-            .field(
-                "icache_autoload_sct0_size",
-                &self.icache_autoload_sct0_size(),
-            )
+            .field("icache_autoload_sct0_size", &self.icache_autoload_sct0_size())
             .finish()
     }
 }

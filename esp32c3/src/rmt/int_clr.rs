@@ -27,8 +27,7 @@ impl W {
     #[inline(always)]
     #[must_use]
     pub fn ch_tx_end(&mut self, n: u8) -> CH_TX_END_W<INT_CLR_SPEC> {
-        #[allow(clippy::no_effect)]
-        [(); 2][n as usize];
+        #[allow(clippy::no_effect)] [(); 2][n as usize];
         CH_TX_END_W::new(self, n)
     }
     ///Bit 0 - reg_ch0_tx_end_int_clr.
@@ -49,8 +48,7 @@ impl W {
     #[inline(always)]
     #[must_use]
     pub fn ch_rx_end(&mut self, n: u8) -> CH_RX_END_W<INT_CLR_SPEC> {
-        #[allow(clippy::no_effect)]
-        [(); 2][n as usize];
+        #[allow(clippy::no_effect)] [(); 2][n as usize];
         CH_RX_END_W::new(self, n + 2)
     }
     ///Bit 2 - reg_ch2_rx_end_int_clr.
@@ -71,8 +69,7 @@ impl W {
     #[inline(always)]
     #[must_use]
     pub fn ch_tx_err(&mut self, n: u8) -> CH_TX_ERR_W<INT_CLR_SPEC> {
-        #[allow(clippy::no_effect)]
-        [(); 2][n as usize];
+        #[allow(clippy::no_effect)] [(); 2][n as usize];
         CH_TX_ERR_W::new(self, n + 4)
     }
     ///Bit 4 - reg_ch0_err_int_clr.
@@ -93,8 +90,7 @@ impl W {
     #[inline(always)]
     #[must_use]
     pub fn ch_rx_err(&mut self, n: u8) -> CH_RX_ERR_W<INT_CLR_SPEC> {
-        #[allow(clippy::no_effect)]
-        [(); 2][n as usize];
+        #[allow(clippy::no_effect)] [(); 2][n as usize];
         CH_RX_ERR_W::new(self, n + 6)
     }
     ///Bit 6 - reg_ch2_err_int_clr.
@@ -115,8 +111,7 @@ impl W {
     #[inline(always)]
     #[must_use]
     pub fn ch_tx_thr_event(&mut self, n: u8) -> CH_TX_THR_EVENT_W<INT_CLR_SPEC> {
-        #[allow(clippy::no_effect)]
-        [(); 2][n as usize];
+        #[allow(clippy::no_effect)] [(); 2][n as usize];
         CH_TX_THR_EVENT_W::new(self, n + 8)
     }
     ///Bit 8 - reg_ch0_tx_thr_event_int_clr.
@@ -137,8 +132,7 @@ impl W {
     #[inline(always)]
     #[must_use]
     pub fn ch_rx_thr_event(&mut self, n: u8) -> CH_RX_THR_EVENT_W<INT_CLR_SPEC> {
-        #[allow(clippy::no_effect)]
-        [(); 2][n as usize];
+        #[allow(clippy::no_effect)] [(); 2][n as usize];
         CH_RX_THR_EVENT_W::new(self, n + 10)
     }
     ///Bit 10 - reg_ch2_rx_thr_event_int_clr.
@@ -159,8 +153,7 @@ impl W {
     #[inline(always)]
     #[must_use]
     pub fn ch_tx_loop(&mut self, n: u8) -> CH_TX_LOOP_W<INT_CLR_SPEC> {
-        #[allow(clippy::no_effect)]
-        [(); 2][n as usize];
+        #[allow(clippy::no_effect)] [(); 2][n as usize];
         CH_TX_LOOP_W::new(self, n + 12)
     }
     ///Bit 12 - reg_ch0_tx_loop_int_clr.

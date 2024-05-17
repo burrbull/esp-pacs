@@ -9,7 +9,9 @@ pub type DMA_APBPERI_SDIO_PMS_CONSTRAIN_LOCK_W<'a, REG> = crate::BitWriter<'a, R
 impl R {
     ///Bit 0 - Set 1 to lock sdio dma permission Configuration Register.
     #[inline(always)]
-    pub fn dma_apbperi_sdio_pms_constrain_lock(&self) -> DMA_APBPERI_SDIO_PMS_CONSTRAIN_LOCK_R {
+    pub fn dma_apbperi_sdio_pms_constrain_lock(
+        &self,
+    ) -> DMA_APBPERI_SDIO_PMS_CONSTRAIN_LOCK_R {
         DMA_APBPERI_SDIO_PMS_CONSTRAIN_LOCK_R::new((self.bits & 1) != 0)
     }
 }

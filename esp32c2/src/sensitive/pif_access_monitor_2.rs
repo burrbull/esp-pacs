@@ -17,7 +17,9 @@ impl R {
     pub fn pif_access_monitor_nonword_violate_status_hsize(
         &self,
     ) -> PIF_ACCESS_MONITOR_NONWORD_VIOLATE_STATUS_HSIZE_R {
-        PIF_ACCESS_MONITOR_NONWORD_VIOLATE_STATUS_HSIZE_R::new(((self.bits >> 1) & 3) as u8)
+        PIF_ACCESS_MONITOR_NONWORD_VIOLATE_STATUS_HSIZE_R::new(
+            ((self.bits >> 1) & 3) as u8,
+        )
     }
 }
 #[cfg(feature = "impl-register-debug")]

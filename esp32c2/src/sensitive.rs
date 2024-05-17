@@ -135,8 +135,9 @@ pub mod rom_table;
 You can [`read`](crate::generic::Reg::read) this register and get [`apb_peripheral_access_0::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`apb_peripheral_access_0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@apb_peripheral_access_0`] module*/
-pub type APB_PERIPHERAL_ACCESS_0 =
-    crate::Reg<apb_peripheral_access_0::APB_PERIPHERAL_ACCESS_0_SPEC>;
+pub type APB_PERIPHERAL_ACCESS_0 = crate::Reg<
+    apb_peripheral_access_0::APB_PERIPHERAL_ACCESS_0_SPEC,
+>;
 ///register description
 pub mod apb_peripheral_access_0;
 /**APB_PERIPHERAL_ACCESS_1 (rw) register accessor: register description
@@ -144,8 +145,9 @@ pub mod apb_peripheral_access_0;
 You can [`read`](crate::generic::Reg::read) this register and get [`apb_peripheral_access_1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`apb_peripheral_access_1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@apb_peripheral_access_1`] module*/
-pub type APB_PERIPHERAL_ACCESS_1 =
-    crate::Reg<apb_peripheral_access_1::APB_PERIPHERAL_ACCESS_1_SPEC>;
+pub type APB_PERIPHERAL_ACCESS_1 = crate::Reg<
+    apb_peripheral_access_1::APB_PERIPHERAL_ACCESS_1_SPEC,
+>;
 ///register description
 pub mod apb_peripheral_access_1;
 /**INTERNAL_SRAM_USAGE_0 (rw) register accessor: register description
@@ -153,7 +155,9 @@ pub mod apb_peripheral_access_1;
 You can [`read`](crate::generic::Reg::read) this register and get [`internal_sram_usage_0::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`internal_sram_usage_0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@internal_sram_usage_0`] module*/
-pub type INTERNAL_SRAM_USAGE_0 = crate::Reg<internal_sram_usage_0::INTERNAL_SRAM_USAGE_0_SPEC>;
+pub type INTERNAL_SRAM_USAGE_0 = crate::Reg<
+    internal_sram_usage_0::INTERNAL_SRAM_USAGE_0_SPEC,
+>;
 ///register description
 pub mod internal_sram_usage_0;
 /**INTERNAL_SRAM_USAGE_1 (rw) register accessor: register description
@@ -161,7 +165,9 @@ pub mod internal_sram_usage_0;
 You can [`read`](crate::generic::Reg::read) this register and get [`internal_sram_usage_1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`internal_sram_usage_1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@internal_sram_usage_1`] module*/
-pub type INTERNAL_SRAM_USAGE_1 = crate::Reg<internal_sram_usage_1::INTERNAL_SRAM_USAGE_1_SPEC>;
+pub type INTERNAL_SRAM_USAGE_1 = crate::Reg<
+    internal_sram_usage_1::INTERNAL_SRAM_USAGE_1_SPEC,
+>;
 ///register description
 pub mod internal_sram_usage_1;
 /**INTERNAL_SRAM_USAGE_3 (rw) register accessor: register description
@@ -169,7 +175,9 @@ pub mod internal_sram_usage_1;
 You can [`read`](crate::generic::Reg::read) this register and get [`internal_sram_usage_3::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`internal_sram_usage_3::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@internal_sram_usage_3`] module*/
-pub type INTERNAL_SRAM_USAGE_3 = crate::Reg<internal_sram_usage_3::INTERNAL_SRAM_USAGE_3_SPEC>;
+pub type INTERNAL_SRAM_USAGE_3 = crate::Reg<
+    internal_sram_usage_3::INTERNAL_SRAM_USAGE_3_SPEC,
+>;
 ///register description
 pub mod internal_sram_usage_3;
 /**CACHE_TAG_ACCESS_0 (rw) register accessor: register description
@@ -209,7 +217,9 @@ pub mod cache_mmu_access_1;
 You can [`read`](crate::generic::Reg::read) this register and get [`pif_access_monitor_0::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pif_access_monitor_0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pif_access_monitor_0`] module*/
-pub type PIF_ACCESS_MONITOR_0 = crate::Reg<pif_access_monitor_0::PIF_ACCESS_MONITOR_0_SPEC>;
+pub type PIF_ACCESS_MONITOR_0 = crate::Reg<
+    pif_access_monitor_0::PIF_ACCESS_MONITOR_0_SPEC,
+>;
 ///register description
 pub mod pif_access_monitor_0;
 /**PIF_ACCESS_MONITOR_1 (rw) register accessor: register description
@@ -217,7 +227,9 @@ pub mod pif_access_monitor_0;
 You can [`read`](crate::generic::Reg::read) this register and get [`pif_access_monitor_1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pif_access_monitor_1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pif_access_monitor_1`] module*/
-pub type PIF_ACCESS_MONITOR_1 = crate::Reg<pif_access_monitor_1::PIF_ACCESS_MONITOR_1_SPEC>;
+pub type PIF_ACCESS_MONITOR_1 = crate::Reg<
+    pif_access_monitor_1::PIF_ACCESS_MONITOR_1_SPEC,
+>;
 ///register description
 pub mod pif_access_monitor_1;
 /**PIF_ACCESS_MONITOR_2 (r) register accessor: register description
@@ -225,7 +237,9 @@ pub mod pif_access_monitor_1;
 You can [`read`](crate::generic::Reg::read) this register and get [`pif_access_monitor_2::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pif_access_monitor_2`] module*/
-pub type PIF_ACCESS_MONITOR_2 = crate::Reg<pif_access_monitor_2::PIF_ACCESS_MONITOR_2_SPEC>;
+pub type PIF_ACCESS_MONITOR_2 = crate::Reg<
+    pif_access_monitor_2::PIF_ACCESS_MONITOR_2_SPEC,
+>;
 ///register description
 pub mod pif_access_monitor_2;
 /**PIF_ACCESS_MONITOR_3 (r) register accessor: register description
@@ -233,7 +247,9 @@ pub mod pif_access_monitor_2;
 You can [`read`](crate::generic::Reg::read) this register and get [`pif_access_monitor_3::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pif_access_monitor_3`] module*/
-pub type PIF_ACCESS_MONITOR_3 = crate::Reg<pif_access_monitor_3::PIF_ACCESS_MONITOR_3_SPEC>;
+pub type PIF_ACCESS_MONITOR_3 = crate::Reg<
+    pif_access_monitor_3::PIF_ACCESS_MONITOR_3_SPEC,
+>;
 ///register description
 pub mod pif_access_monitor_3;
 /**XTS_AES_KEY_UPDATE (rw) register accessor: register description

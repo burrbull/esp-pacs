@@ -102,10 +102,7 @@ impl core::fmt::Debug for R {
                 "lp_aonclkrst_clk_core_efuse_oen",
                 &self.lp_aonclkrst_clk_core_efuse_oen(),
             )
-            .field(
-                "lp_aonclkrst_clk_lp_bus_oen",
-                &self.lp_aonclkrst_clk_lp_bus_oen(),
-            )
+            .field("lp_aonclkrst_clk_lp_bus_oen", &self.lp_aonclkrst_clk_lp_bus_oen())
             .field(
                 "lp_aonclkrst_clk_aon_slow_oen",
                 &self.lp_aonclkrst_clk_aon_slow_oen(),
@@ -114,30 +111,12 @@ impl core::fmt::Debug for R {
                 "lp_aonclkrst_clk_aon_fast_oen",
                 &self.lp_aonclkrst_clk_aon_fast_oen(),
             )
-            .field(
-                "lp_aonclkrst_clk_slow_oen",
-                &self.lp_aonclkrst_clk_slow_oen(),
-            )
-            .field(
-                "lp_aonclkrst_clk_fast_oen",
-                &self.lp_aonclkrst_clk_fast_oen(),
-            )
-            .field(
-                "lp_aonclkrst_clk_fosc_oen",
-                &self.lp_aonclkrst_clk_fosc_oen(),
-            )
-            .field(
-                "lp_aonclkrst_clk_rc32k_oen",
-                &self.lp_aonclkrst_clk_rc32k_oen(),
-            )
-            .field(
-                "lp_aonclkrst_clk_sxtal_oen",
-                &self.lp_aonclkrst_clk_sxtal_oen(),
-            )
-            .field(
-                "lp_aonclkrst_clk_sosc_oen",
-                &self.lp_aonclkrst_clk_sosc_oen(),
-            )
+            .field("lp_aonclkrst_clk_slow_oen", &self.lp_aonclkrst_clk_slow_oen())
+            .field("lp_aonclkrst_clk_fast_oen", &self.lp_aonclkrst_clk_fast_oen())
+            .field("lp_aonclkrst_clk_fosc_oen", &self.lp_aonclkrst_clk_fosc_oen())
+            .field("lp_aonclkrst_clk_rc32k_oen", &self.lp_aonclkrst_clk_rc32k_oen())
+            .field("lp_aonclkrst_clk_sxtal_oen", &self.lp_aonclkrst_clk_sxtal_oen())
+            .field("lp_aonclkrst_clk_sosc_oen", &self.lp_aonclkrst_clk_sosc_oen())
             .finish()
     }
 }

@@ -25,7 +25,9 @@ impl W {
     ///Bits 0:4
     #[inline(always)]
     #[must_use]
-    pub fn app_cache_ia_int_map(&mut self) -> APP_CACHE_IA_INT_MAP_W<APP_CACHE_IA_INT_MAP_SPEC> {
+    pub fn app_cache_ia_int_map(
+        &mut self,
+    ) -> APP_CACHE_IA_INT_MAP_W<APP_CACHE_IA_INT_MAP_SPEC> {
         APP_CACHE_IA_INT_MAP_W::new(self, 0)
     }
 }

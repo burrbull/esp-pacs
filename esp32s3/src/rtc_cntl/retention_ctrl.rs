@@ -109,7 +109,9 @@ impl W {
     ///Bits 20:23 - wait clk off cycle
     #[inline(always)]
     #[must_use]
-    pub fn retention_clkoff_wait(&mut self) -> RETENTION_CLKOFF_WAIT_W<RETENTION_CTRL_SPEC> {
+    pub fn retention_clkoff_wait(
+        &mut self,
+    ) -> RETENTION_CLKOFF_WAIT_W<RETENTION_CTRL_SPEC> {
         RETENTION_CLKOFF_WAIT_W::new(self, 20)
     }
     ///Bit 24 - enable retention

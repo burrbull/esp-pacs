@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("DCACHE_ATOMIC_OPERATE_ENA")
-            .field(
-                "dcache_atomic_operate_ena",
-                &self.dcache_atomic_operate_ena(),
-            )
+            .field("dcache_atomic_operate_ena", &self.dcache_atomic_operate_ena())
             .finish()
     }
 }

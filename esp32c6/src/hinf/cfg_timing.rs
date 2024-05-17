@@ -77,7 +77,9 @@ impl W {
     ///Bits 10:15 - configure cycles to lower data after voltage is changed to 1.8V.
     #[inline(always)]
     #[must_use]
-    pub fn pst_end_data_low_value(&mut self) -> PST_END_DATA_LOW_VALUE_W<CFG_TIMING_SPEC> {
+    pub fn pst_end_data_low_value(
+        &mut self,
+    ) -> PST_END_DATA_LOW_VALUE_W<CFG_TIMING_SPEC> {
         PST_END_DATA_LOW_VALUE_W::new(self, 10)
     }
     ///Bits 16:26 - Configure the number of cycles of module clk to judge sdclk has stopped

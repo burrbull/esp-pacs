@@ -139,7 +139,9 @@ pub mod log_mem_end;
 You can [`read`](crate::generic::Reg::read) this register and get [`log_mem_current_addr::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@log_mem_current_addr`] module*/
-pub type LOG_MEM_CURRENT_ADDR = crate::Reg<log_mem_current_addr::LOG_MEM_CURRENT_ADDR_SPEC>;
+pub type LOG_MEM_CURRENT_ADDR = crate::Reg<
+    log_mem_current_addr::LOG_MEM_CURRENT_ADDR_SPEC,
+>;
 ///current writing address.
 pub mod log_mem_current_addr;
 /**LOG_MEM_ADDR_UPDATE (w) register accessor: writing address update

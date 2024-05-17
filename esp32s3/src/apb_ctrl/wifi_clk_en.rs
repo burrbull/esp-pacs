@@ -16,9 +16,7 @@ impl R {
 #[cfg(feature = "impl-register-debug")]
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("WIFI_CLK_EN")
-            .field("wifi_clk_en", &self.wifi_clk_en())
-            .finish()
+        f.debug_struct("WIFI_CLK_EN").field("wifi_clk_en", &self.wifi_clk_en()).finish()
     }
 }
 impl W {

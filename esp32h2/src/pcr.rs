@@ -689,8 +689,9 @@ pub mod timergroup0_conf;
 You can [`read`](crate::generic::Reg::read) this register and get [`timergroup0_timer_clk_conf::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`timergroup0_timer_clk_conf::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@timergroup0_timer_clk_conf`] module*/
-pub type TIMERGROUP0_TIMER_CLK_CONF =
-    crate::Reg<timergroup0_timer_clk_conf::TIMERGROUP0_TIMER_CLK_CONF_SPEC>;
+pub type TIMERGROUP0_TIMER_CLK_CONF = crate::Reg<
+    timergroup0_timer_clk_conf::TIMERGROUP0_TIMER_CLK_CONF_SPEC,
+>;
 ///TIMERGROUP0_TIMER_CLK configuration register
 pub mod timergroup0_timer_clk_conf;
 /**TIMERGROUP0_WDT_CLK_CONF (rw) register accessor: TIMERGROUP0_WDT_CLK configuration register
@@ -698,8 +699,9 @@ pub mod timergroup0_timer_clk_conf;
 You can [`read`](crate::generic::Reg::read) this register and get [`timergroup0_wdt_clk_conf::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`timergroup0_wdt_clk_conf::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@timergroup0_wdt_clk_conf`] module*/
-pub type TIMERGROUP0_WDT_CLK_CONF =
-    crate::Reg<timergroup0_wdt_clk_conf::TIMERGROUP0_WDT_CLK_CONF_SPEC>;
+pub type TIMERGROUP0_WDT_CLK_CONF = crate::Reg<
+    timergroup0_wdt_clk_conf::TIMERGROUP0_WDT_CLK_CONF_SPEC,
+>;
 ///TIMERGROUP0_WDT_CLK configuration register
 pub mod timergroup0_wdt_clk_conf;
 /**TIMERGROUP1_CONF (rw) register accessor: TIMERGROUP1 configuration register
@@ -715,8 +717,9 @@ pub mod timergroup1_conf;
 You can [`read`](crate::generic::Reg::read) this register and get [`timergroup1_timer_clk_conf::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`timergroup1_timer_clk_conf::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@timergroup1_timer_clk_conf`] module*/
-pub type TIMERGROUP1_TIMER_CLK_CONF =
-    crate::Reg<timergroup1_timer_clk_conf::TIMERGROUP1_TIMER_CLK_CONF_SPEC>;
+pub type TIMERGROUP1_TIMER_CLK_CONF = crate::Reg<
+    timergroup1_timer_clk_conf::TIMERGROUP1_TIMER_CLK_CONF_SPEC,
+>;
 ///TIMERGROUP1_TIMER_CLK configuration register
 pub mod timergroup1_timer_clk_conf;
 /**TIMERGROUP1_WDT_CLK_CONF (rw) register accessor: TIMERGROUP1_WDT_CLK configuration register
@@ -724,8 +727,9 @@ pub mod timergroup1_timer_clk_conf;
 You can [`read`](crate::generic::Reg::read) this register and get [`timergroup1_wdt_clk_conf::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`timergroup1_wdt_clk_conf::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@timergroup1_wdt_clk_conf`] module*/
-pub type TIMERGROUP1_WDT_CLK_CONF =
-    crate::Reg<timergroup1_wdt_clk_conf::TIMERGROUP1_WDT_CLK_CONF_SPEC>;
+pub type TIMERGROUP1_WDT_CLK_CONF = crate::Reg<
+    timergroup1_wdt_clk_conf::TIMERGROUP1_WDT_CLK_CONF_SPEC,
+>;
 ///TIMERGROUP1_WDT_CLK configuration register
 pub mod timergroup1_wdt_clk_conf;
 /**SYSTIMER_CONF (rw) register accessor: SYSTIMER configuration register
@@ -741,7 +745,9 @@ pub mod systimer_conf;
 You can [`read`](crate::generic::Reg::read) this register and get [`systimer_func_clk_conf::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`systimer_func_clk_conf::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@systimer_func_clk_conf`] module*/
-pub type SYSTIMER_FUNC_CLK_CONF = crate::Reg<systimer_func_clk_conf::SYSTIMER_FUNC_CLK_CONF_SPEC>;
+pub type SYSTIMER_FUNC_CLK_CONF = crate::Reg<
+    systimer_func_clk_conf::SYSTIMER_FUNC_CLK_CONF_SPEC,
+>;
 ///SYSTIMER_FUNC_CLK configuration register
 pub mod systimer_func_clk_conf;
 /**TWAI0_CONF (rw) register accessor: TWAI0 configuration register
@@ -781,7 +787,9 @@ pub mod i2s_tx_clkm_conf;
 You can [`read`](crate::generic::Reg::read) this register and get [`i2s_tx_clkm_div_conf::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`i2s_tx_clkm_div_conf::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@i2s_tx_clkm_div_conf`] module*/
-pub type I2S_TX_CLKM_DIV_CONF = crate::Reg<i2s_tx_clkm_div_conf::I2S_TX_CLKM_DIV_CONF_SPEC>;
+pub type I2S_TX_CLKM_DIV_CONF = crate::Reg<
+    i2s_tx_clkm_div_conf::I2S_TX_CLKM_DIV_CONF_SPEC,
+>;
 ///I2S_TX_CLKM_DIV configuration register
 pub mod i2s_tx_clkm_div_conf;
 /**I2S_RX_CLKM_CONF (rw) register accessor: I2S_RX_CLKM configuration register
@@ -797,7 +805,9 @@ pub mod i2s_rx_clkm_conf;
 You can [`read`](crate::generic::Reg::read) this register and get [`i2s_rx_clkm_div_conf::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`i2s_rx_clkm_div_conf::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@i2s_rx_clkm_div_conf`] module*/
-pub type I2S_RX_CLKM_DIV_CONF = crate::Reg<i2s_rx_clkm_div_conf::I2S_RX_CLKM_DIV_CONF_SPEC>;
+pub type I2S_RX_CLKM_DIV_CONF = crate::Reg<
+    i2s_rx_clkm_div_conf::I2S_RX_CLKM_DIV_CONF_SPEC,
+>;
 ///I2S_RX_CLKM_DIV configuration register
 pub mod i2s_rx_clkm_div_conf;
 /**SARADC_CONF (rw) register accessor: SARADC configuration register
@@ -909,8 +919,9 @@ pub mod pvt_monitor_conf;
 You can [`read`](crate::generic::Reg::read) this register and get [`pvt_monitor_func_clk_conf::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pvt_monitor_func_clk_conf::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pvt_monitor_func_clk_conf`] module*/
-pub type PVT_MONITOR_FUNC_CLK_CONF =
-    crate::Reg<pvt_monitor_func_clk_conf::PVT_MONITOR_FUNC_CLK_CONF_SPEC>;
+pub type PVT_MONITOR_FUNC_CLK_CONF = crate::Reg<
+    pvt_monitor_func_clk_conf::PVT_MONITOR_FUNC_CLK_CONF_SPEC,
+>;
 ///PVT_MONITOR function clock configuration register
 pub mod pvt_monitor_func_clk_conf;
 /**GDMA_CONF (rw) register accessor: GDMA configuration register

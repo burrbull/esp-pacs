@@ -25,7 +25,9 @@ impl W {
     ///Bits 0:4 - This register is used to map I2C_EXT1_INTR interrupt signal to one of the CPU interrupts.
     #[inline(always)]
     #[must_use]
-    pub fn pro_i2c_ext1_intr_map(&mut self) -> PRO_I2C_EXT1_INTR_MAP_W<PRO_I2C_EXT1_INTR_MAP_SPEC> {
+    pub fn pro_i2c_ext1_intr_map(
+        &mut self,
+    ) -> PRO_I2C_EXT1_INTR_MAP_W<PRO_I2C_EXT1_INTR_MAP_SPEC> {
         PRO_I2C_EXT1_INTR_MAP_W::new(self, 0)
     }
 }

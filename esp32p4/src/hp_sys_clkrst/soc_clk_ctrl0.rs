@@ -383,19 +383,25 @@ impl W {
     ///Bit 8 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn l1cache_d_cpu_clk_en(&mut self) -> L1CACHE_D_CPU_CLK_EN_W<SOC_CLK_CTRL0_SPEC> {
+    pub fn l1cache_d_cpu_clk_en(
+        &mut self,
+    ) -> L1CACHE_D_CPU_CLK_EN_W<SOC_CLK_CTRL0_SPEC> {
         L1CACHE_D_CPU_CLK_EN_W::new(self, 8)
     }
     ///Bit 9 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn l1cache_i0_cpu_clk_en(&mut self) -> L1CACHE_I0_CPU_CLK_EN_W<SOC_CLK_CTRL0_SPEC> {
+    pub fn l1cache_i0_cpu_clk_en(
+        &mut self,
+    ) -> L1CACHE_I0_CPU_CLK_EN_W<SOC_CLK_CTRL0_SPEC> {
         L1CACHE_I0_CPU_CLK_EN_W::new(self, 9)
     }
     ///Bit 10 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn l1cache_i1_cpu_clk_en(&mut self) -> L1CACHE_I1_CPU_CLK_EN_W<SOC_CLK_CTRL0_SPEC> {
+    pub fn l1cache_i1_cpu_clk_en(
+        &mut self,
+    ) -> L1CACHE_I1_CPU_CLK_EN_W<SOC_CLK_CTRL0_SPEC> {
         L1CACHE_I1_CPU_CLK_EN_W::new(self, 10)
     }
     ///Bit 11 - Reserved
@@ -431,19 +437,25 @@ impl W {
     ///Bit 16 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn l1cache_d_mem_clk_en(&mut self) -> L1CACHE_D_MEM_CLK_EN_W<SOC_CLK_CTRL0_SPEC> {
+    pub fn l1cache_d_mem_clk_en(
+        &mut self,
+    ) -> L1CACHE_D_MEM_CLK_EN_W<SOC_CLK_CTRL0_SPEC> {
         L1CACHE_D_MEM_CLK_EN_W::new(self, 16)
     }
     ///Bit 17 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn l1cache_i0_mem_clk_en(&mut self) -> L1CACHE_I0_MEM_CLK_EN_W<SOC_CLK_CTRL0_SPEC> {
+    pub fn l1cache_i0_mem_clk_en(
+        &mut self,
+    ) -> L1CACHE_I0_MEM_CLK_EN_W<SOC_CLK_CTRL0_SPEC> {
         L1CACHE_I0_MEM_CLK_EN_W::new(self, 17)
     }
     ///Bit 18 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn l1cache_i1_mem_clk_en(&mut self) -> L1CACHE_I1_MEM_CLK_EN_W<SOC_CLK_CTRL0_SPEC> {
+    pub fn l1cache_i1_mem_clk_en(
+        &mut self,
+    ) -> L1CACHE_I1_MEM_CLK_EN_W<SOC_CLK_CTRL0_SPEC> {
         L1CACHE_I1_MEM_CLK_EN_W::new(self, 18)
     }
     ///Bit 19 - Reserved

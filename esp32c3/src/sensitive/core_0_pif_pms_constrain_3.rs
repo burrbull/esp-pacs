@@ -5,31 +5,59 @@ pub type W = crate::W<CORE_0_PIF_PMS_CONSTRAIN_3_SPEC>;
 ///Field `CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_SPI_2` reader - core_0_pif_pms_constrain_world_0_spi_2
 pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_SPI_2_R = crate::FieldReader;
 ///Field `CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_SPI_2` writer - core_0_pif_pms_constrain_world_0_spi_2
-pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_SPI_2_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
+pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_SPI_2_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 ///Field `CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_APB_CTRL` reader - core_0_pif_pms_constrain_world_0_apb_ctrl
 pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_APB_CTRL_R = crate::FieldReader;
 ///Field `CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_APB_CTRL` writer - core_0_pif_pms_constrain_world_0_apb_ctrl
-pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_APB_CTRL_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
+pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_APB_CTRL_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 ///Field `CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_CAN` reader - core_0_pif_pms_constrain_world_0_can
 pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_CAN_R = crate::FieldReader;
 ///Field `CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_CAN` writer - core_0_pif_pms_constrain_world_0_can
-pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_CAN_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
+pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_CAN_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 ///Field `CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_I2S1` reader - core_0_pif_pms_constrain_world_0_i2s1
 pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_I2S1_R = crate::FieldReader;
 ///Field `CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_I2S1` writer - core_0_pif_pms_constrain_world_0_i2s1
-pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_I2S1_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
+pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_I2S1_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 ///Field `CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_RWBT` reader - core_0_pif_pms_constrain_world_0_rwbt
 pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_RWBT_R = crate::FieldReader;
 ///Field `CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_RWBT` writer - core_0_pif_pms_constrain_world_0_rwbt
-pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_RWBT_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
+pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_RWBT_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 ///Field `CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_WIFIMAC` reader - core_0_pif_pms_constrain_world_0_wifimac
 pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_WIFIMAC_R = crate::FieldReader;
 ///Field `CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_WIFIMAC` writer - core_0_pif_pms_constrain_world_0_wifimac
-pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_WIFIMAC_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
+pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_WIFIMAC_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 ///Field `CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_PWR` reader - core_0_pif_pms_constrain_world_0_pwr
 pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_PWR_R = crate::FieldReader;
 ///Field `CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_PWR` writer - core_0_pif_pms_constrain_world_0_pwr
-pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_PWR_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
+pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_PWR_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 impl R {
     ///Bits 0:1 - core_0_pif_pms_constrain_world_0_spi_2
     #[inline(always)]
@@ -47,17 +75,23 @@ impl R {
     }
     ///Bits 10:11 - core_0_pif_pms_constrain_world_0_can
     #[inline(always)]
-    pub fn core_0_pif_pms_constrain_world_0_can(&self) -> CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_CAN_R {
+    pub fn core_0_pif_pms_constrain_world_0_can(
+        &self,
+    ) -> CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_CAN_R {
         CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_CAN_R::new(((self.bits >> 10) & 3) as u8)
     }
     ///Bits 14:15 - core_0_pif_pms_constrain_world_0_i2s1
     #[inline(always)]
-    pub fn core_0_pif_pms_constrain_world_0_i2s1(&self) -> CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_I2S1_R {
+    pub fn core_0_pif_pms_constrain_world_0_i2s1(
+        &self,
+    ) -> CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_I2S1_R {
         CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_I2S1_R::new(((self.bits >> 14) & 3) as u8)
     }
     ///Bits 22:23 - core_0_pif_pms_constrain_world_0_rwbt
     #[inline(always)]
-    pub fn core_0_pif_pms_constrain_world_0_rwbt(&self) -> CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_RWBT_R {
+    pub fn core_0_pif_pms_constrain_world_0_rwbt(
+        &self,
+    ) -> CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_RWBT_R {
         CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_RWBT_R::new(((self.bits >> 22) & 3) as u8)
     }
     ///Bits 26:27 - core_0_pif_pms_constrain_world_0_wifimac
@@ -69,7 +103,9 @@ impl R {
     }
     ///Bits 28:29 - core_0_pif_pms_constrain_world_0_pwr
     #[inline(always)]
-    pub fn core_0_pif_pms_constrain_world_0_pwr(&self) -> CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_PWR_R {
+    pub fn core_0_pif_pms_constrain_world_0_pwr(
+        &self,
+    ) -> CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_PWR_R {
         CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_PWR_R::new(((self.bits >> 28) & 3) as u8)
     }
 }

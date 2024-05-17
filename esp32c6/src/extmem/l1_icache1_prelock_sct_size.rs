@@ -20,14 +20,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("L1_ICACHE1_PRELOCK_SCT_SIZE")
-            .field(
-                "l1_icache1_prelock_sct0_size",
-                &self.l1_icache1_prelock_sct0_size(),
-            )
-            .field(
-                "l1_icache1_prelock_sct1_size",
-                &self.l1_icache1_prelock_sct1_size(),
-            )
+            .field("l1_icache1_prelock_sct0_size", &self.l1_icache1_prelock_sct0_size())
+            .field("l1_icache1_prelock_sct1_size", &self.l1_icache1_prelock_sct1_size())
             .finish()
     }
 }

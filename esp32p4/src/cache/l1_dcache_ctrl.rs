@@ -71,13 +71,17 @@ impl W {
     ///Bit 0 - The bit is used to disable core0 dbus access L1-DCache, 0: enable, 1: disable
     #[inline(always)]
     #[must_use]
-    pub fn l1_dcache_shut_dbus0(&mut self) -> L1_DCACHE_SHUT_DBUS0_W<L1_DCACHE_CTRL_SPEC> {
+    pub fn l1_dcache_shut_dbus0(
+        &mut self,
+    ) -> L1_DCACHE_SHUT_DBUS0_W<L1_DCACHE_CTRL_SPEC> {
         L1_DCACHE_SHUT_DBUS0_W::new(self, 0)
     }
     ///Bit 1 - The bit is used to disable core1 dbus access L1-DCache, 0: enable, 1: disable
     #[inline(always)]
     #[must_use]
-    pub fn l1_dcache_shut_dbus1(&mut self) -> L1_DCACHE_SHUT_DBUS1_W<L1_DCACHE_CTRL_SPEC> {
+    pub fn l1_dcache_shut_dbus1(
+        &mut self,
+    ) -> L1_DCACHE_SHUT_DBUS1_W<L1_DCACHE_CTRL_SPEC> {
         L1_DCACHE_SHUT_DBUS1_W::new(self, 1)
     }
     ///Bit 4 - The bit is used to disable DMA access L1-DCache, 0: enable, 1: disable

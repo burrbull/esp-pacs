@@ -65,17 +65,23 @@ impl R {
     }
     ///Bit 8 - NA
     #[inline(always)]
-    pub fn icm_reg_axi_hwcfg_low_power_inf_en(&self) -> ICM_REG_AXI_HWCFG_LOW_POWER_INF_EN_R {
+    pub fn icm_reg_axi_hwcfg_low_power_inf_en(
+        &self,
+    ) -> ICM_REG_AXI_HWCFG_LOW_POWER_INF_EN_R {
         ICM_REG_AXI_HWCFG_LOW_POWER_INF_EN_R::new(((self.bits >> 8) & 1) != 0)
     }
     ///Bits 12:16 - NA
     #[inline(always)]
-    pub fn icm_reg_axi_hwcfg_axi_num_masters(&self) -> ICM_REG_AXI_HWCFG_AXI_NUM_MASTERS_R {
+    pub fn icm_reg_axi_hwcfg_axi_num_masters(
+        &self,
+    ) -> ICM_REG_AXI_HWCFG_AXI_NUM_MASTERS_R {
         ICM_REG_AXI_HWCFG_AXI_NUM_MASTERS_R::new(((self.bits >> 12) & 0x1f) as u8)
     }
     ///Bits 20:24 - NA
     #[inline(always)]
-    pub fn icm_reg_axi_hwcfg_axi_num_slaves(&self) -> ICM_REG_AXI_HWCFG_AXI_NUM_SLAVES_R {
+    pub fn icm_reg_axi_hwcfg_axi_num_slaves(
+        &self,
+    ) -> ICM_REG_AXI_HWCFG_AXI_NUM_SLAVES_R {
         ICM_REG_AXI_HWCFG_AXI_NUM_SLAVES_R::new(((self.bits >> 20) & 0x1f) as u8)
     }
 }
@@ -95,10 +101,7 @@ impl core::fmt::Debug for R {
                 "icm_reg_axi_hwcfg_axi4_support",
                 &self.icm_reg_axi_hwcfg_axi4_support(),
             )
-            .field(
-                "icm_reg_axi_hwcfg_lock_en",
-                &self.icm_reg_axi_hwcfg_lock_en(),
-            )
+            .field("icm_reg_axi_hwcfg_lock_en", &self.icm_reg_axi_hwcfg_lock_en())
             .field(
                 "icm_reg_axi_hwcfg_trust_zone_en",
                 &self.icm_reg_axi_hwcfg_trust_zone_en(),
@@ -107,10 +110,7 @@ impl core::fmt::Debug for R {
                 "icm_reg_axi_hwcfg_decoder_type",
                 &self.icm_reg_axi_hwcfg_decoder_type(),
             )
-            .field(
-                "icm_reg_axi_hwcfg_remap_en",
-                &self.icm_reg_axi_hwcfg_remap_en(),
-            )
+            .field("icm_reg_axi_hwcfg_remap_en", &self.icm_reg_axi_hwcfg_remap_en())
             .field(
                 "icm_reg_axi_hwcfg_bi_dir_cmd_en",
                 &self.icm_reg_axi_hwcfg_bi_dir_cmd_en(),

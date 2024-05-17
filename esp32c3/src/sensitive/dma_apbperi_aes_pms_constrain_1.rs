@@ -5,43 +5,67 @@ pub type W = crate::W<DMA_APBPERI_AES_PMS_CONSTRAIN_1_SPEC>;
 ///Field `DMA_APBPERI_AES_PMS_CONSTRAIN_SRAM_WORLD_0_PMS_0` reader - dma_apbperi_aes_pms_constrain_sram_world_0_pms_0
 pub type DMA_APBPERI_AES_PMS_CONSTRAIN_SRAM_WORLD_0_PMS_0_R = crate::FieldReader;
 ///Field `DMA_APBPERI_AES_PMS_CONSTRAIN_SRAM_WORLD_0_PMS_0` writer - dma_apbperi_aes_pms_constrain_sram_world_0_pms_0
-pub type DMA_APBPERI_AES_PMS_CONSTRAIN_SRAM_WORLD_0_PMS_0_W<'a, REG> =
-    crate::FieldWriter<'a, REG, 2>;
+pub type DMA_APBPERI_AES_PMS_CONSTRAIN_SRAM_WORLD_0_PMS_0_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 ///Field `DMA_APBPERI_AES_PMS_CONSTRAIN_SRAM_WORLD_0_PMS_1` reader - dma_apbperi_aes_pms_constrain_sram_world_0_pms_1
 pub type DMA_APBPERI_AES_PMS_CONSTRAIN_SRAM_WORLD_0_PMS_1_R = crate::FieldReader;
 ///Field `DMA_APBPERI_AES_PMS_CONSTRAIN_SRAM_WORLD_0_PMS_1` writer - dma_apbperi_aes_pms_constrain_sram_world_0_pms_1
-pub type DMA_APBPERI_AES_PMS_CONSTRAIN_SRAM_WORLD_0_PMS_1_W<'a, REG> =
-    crate::FieldWriter<'a, REG, 2>;
+pub type DMA_APBPERI_AES_PMS_CONSTRAIN_SRAM_WORLD_0_PMS_1_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 ///Field `DMA_APBPERI_AES_PMS_CONSTRAIN_SRAM_WORLD_0_PMS_2` reader - dma_apbperi_aes_pms_constrain_sram_world_0_pms_2
 pub type DMA_APBPERI_AES_PMS_CONSTRAIN_SRAM_WORLD_0_PMS_2_R = crate::FieldReader;
 ///Field `DMA_APBPERI_AES_PMS_CONSTRAIN_SRAM_WORLD_0_PMS_2` writer - dma_apbperi_aes_pms_constrain_sram_world_0_pms_2
-pub type DMA_APBPERI_AES_PMS_CONSTRAIN_SRAM_WORLD_0_PMS_2_W<'a, REG> =
-    crate::FieldWriter<'a, REG, 2>;
+pub type DMA_APBPERI_AES_PMS_CONSTRAIN_SRAM_WORLD_0_PMS_2_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 ///Field `DMA_APBPERI_AES_PMS_CONSTRAIN_SRAM_WORLD_0_PMS_3` reader - dma_apbperi_aes_pms_constrain_sram_world_0_pms_3
 pub type DMA_APBPERI_AES_PMS_CONSTRAIN_SRAM_WORLD_0_PMS_3_R = crate::FieldReader;
 ///Field `DMA_APBPERI_AES_PMS_CONSTRAIN_SRAM_WORLD_0_PMS_3` writer - dma_apbperi_aes_pms_constrain_sram_world_0_pms_3
-pub type DMA_APBPERI_AES_PMS_CONSTRAIN_SRAM_WORLD_0_PMS_3_W<'a, REG> =
-    crate::FieldWriter<'a, REG, 2>;
+pub type DMA_APBPERI_AES_PMS_CONSTRAIN_SRAM_WORLD_0_PMS_3_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 ///Field `DMA_APBPERI_AES_PMS_CONSTRAIN_SRAM_WORLD_1_PMS_0` reader - dma_apbperi_aes_pms_constrain_sram_world_1_pms_0
 pub type DMA_APBPERI_AES_PMS_CONSTRAIN_SRAM_WORLD_1_PMS_0_R = crate::FieldReader;
 ///Field `DMA_APBPERI_AES_PMS_CONSTRAIN_SRAM_WORLD_1_PMS_0` writer - dma_apbperi_aes_pms_constrain_sram_world_1_pms_0
-pub type DMA_APBPERI_AES_PMS_CONSTRAIN_SRAM_WORLD_1_PMS_0_W<'a, REG> =
-    crate::FieldWriter<'a, REG, 2>;
+pub type DMA_APBPERI_AES_PMS_CONSTRAIN_SRAM_WORLD_1_PMS_0_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 ///Field `DMA_APBPERI_AES_PMS_CONSTRAIN_SRAM_WORLD_1_PMS_1` reader - dma_apbperi_aes_pms_constrain_sram_world_1_pms_1
 pub type DMA_APBPERI_AES_PMS_CONSTRAIN_SRAM_WORLD_1_PMS_1_R = crate::FieldReader;
 ///Field `DMA_APBPERI_AES_PMS_CONSTRAIN_SRAM_WORLD_1_PMS_1` writer - dma_apbperi_aes_pms_constrain_sram_world_1_pms_1
-pub type DMA_APBPERI_AES_PMS_CONSTRAIN_SRAM_WORLD_1_PMS_1_W<'a, REG> =
-    crate::FieldWriter<'a, REG, 2>;
+pub type DMA_APBPERI_AES_PMS_CONSTRAIN_SRAM_WORLD_1_PMS_1_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 ///Field `DMA_APBPERI_AES_PMS_CONSTRAIN_SRAM_WORLD_1_PMS_2` reader - dma_apbperi_aes_pms_constrain_sram_world_1_pms_2
 pub type DMA_APBPERI_AES_PMS_CONSTRAIN_SRAM_WORLD_1_PMS_2_R = crate::FieldReader;
 ///Field `DMA_APBPERI_AES_PMS_CONSTRAIN_SRAM_WORLD_1_PMS_2` writer - dma_apbperi_aes_pms_constrain_sram_world_1_pms_2
-pub type DMA_APBPERI_AES_PMS_CONSTRAIN_SRAM_WORLD_1_PMS_2_W<'a, REG> =
-    crate::FieldWriter<'a, REG, 2>;
+pub type DMA_APBPERI_AES_PMS_CONSTRAIN_SRAM_WORLD_1_PMS_2_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 ///Field `DMA_APBPERI_AES_PMS_CONSTRAIN_SRAM_WORLD_1_PMS_3` reader - dma_apbperi_aes_pms_constrain_sram_world_1_pms_3
 pub type DMA_APBPERI_AES_PMS_CONSTRAIN_SRAM_WORLD_1_PMS_3_R = crate::FieldReader;
 ///Field `DMA_APBPERI_AES_PMS_CONSTRAIN_SRAM_WORLD_1_PMS_3` writer - dma_apbperi_aes_pms_constrain_sram_world_1_pms_3
-pub type DMA_APBPERI_AES_PMS_CONSTRAIN_SRAM_WORLD_1_PMS_3_W<'a, REG> =
-    crate::FieldWriter<'a, REG, 2>;
+pub type DMA_APBPERI_AES_PMS_CONSTRAIN_SRAM_WORLD_1_PMS_3_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 impl R {
     ///Bits 0:1 - dma_apbperi_aes_pms_constrain_sram_world_0_pms_0
     #[inline(always)]
@@ -55,49 +79,63 @@ impl R {
     pub fn dma_apbperi_aes_pms_constrain_sram_world_0_pms_1(
         &self,
     ) -> DMA_APBPERI_AES_PMS_CONSTRAIN_SRAM_WORLD_0_PMS_1_R {
-        DMA_APBPERI_AES_PMS_CONSTRAIN_SRAM_WORLD_0_PMS_1_R::new(((self.bits >> 2) & 3) as u8)
+        DMA_APBPERI_AES_PMS_CONSTRAIN_SRAM_WORLD_0_PMS_1_R::new(
+            ((self.bits >> 2) & 3) as u8,
+        )
     }
     ///Bits 4:5 - dma_apbperi_aes_pms_constrain_sram_world_0_pms_2
     #[inline(always)]
     pub fn dma_apbperi_aes_pms_constrain_sram_world_0_pms_2(
         &self,
     ) -> DMA_APBPERI_AES_PMS_CONSTRAIN_SRAM_WORLD_0_PMS_2_R {
-        DMA_APBPERI_AES_PMS_CONSTRAIN_SRAM_WORLD_0_PMS_2_R::new(((self.bits >> 4) & 3) as u8)
+        DMA_APBPERI_AES_PMS_CONSTRAIN_SRAM_WORLD_0_PMS_2_R::new(
+            ((self.bits >> 4) & 3) as u8,
+        )
     }
     ///Bits 6:7 - dma_apbperi_aes_pms_constrain_sram_world_0_pms_3
     #[inline(always)]
     pub fn dma_apbperi_aes_pms_constrain_sram_world_0_pms_3(
         &self,
     ) -> DMA_APBPERI_AES_PMS_CONSTRAIN_SRAM_WORLD_0_PMS_3_R {
-        DMA_APBPERI_AES_PMS_CONSTRAIN_SRAM_WORLD_0_PMS_3_R::new(((self.bits >> 6) & 3) as u8)
+        DMA_APBPERI_AES_PMS_CONSTRAIN_SRAM_WORLD_0_PMS_3_R::new(
+            ((self.bits >> 6) & 3) as u8,
+        )
     }
     ///Bits 12:13 - dma_apbperi_aes_pms_constrain_sram_world_1_pms_0
     #[inline(always)]
     pub fn dma_apbperi_aes_pms_constrain_sram_world_1_pms_0(
         &self,
     ) -> DMA_APBPERI_AES_PMS_CONSTRAIN_SRAM_WORLD_1_PMS_0_R {
-        DMA_APBPERI_AES_PMS_CONSTRAIN_SRAM_WORLD_1_PMS_0_R::new(((self.bits >> 12) & 3) as u8)
+        DMA_APBPERI_AES_PMS_CONSTRAIN_SRAM_WORLD_1_PMS_0_R::new(
+            ((self.bits >> 12) & 3) as u8,
+        )
     }
     ///Bits 14:15 - dma_apbperi_aes_pms_constrain_sram_world_1_pms_1
     #[inline(always)]
     pub fn dma_apbperi_aes_pms_constrain_sram_world_1_pms_1(
         &self,
     ) -> DMA_APBPERI_AES_PMS_CONSTRAIN_SRAM_WORLD_1_PMS_1_R {
-        DMA_APBPERI_AES_PMS_CONSTRAIN_SRAM_WORLD_1_PMS_1_R::new(((self.bits >> 14) & 3) as u8)
+        DMA_APBPERI_AES_PMS_CONSTRAIN_SRAM_WORLD_1_PMS_1_R::new(
+            ((self.bits >> 14) & 3) as u8,
+        )
     }
     ///Bits 16:17 - dma_apbperi_aes_pms_constrain_sram_world_1_pms_2
     #[inline(always)]
     pub fn dma_apbperi_aes_pms_constrain_sram_world_1_pms_2(
         &self,
     ) -> DMA_APBPERI_AES_PMS_CONSTRAIN_SRAM_WORLD_1_PMS_2_R {
-        DMA_APBPERI_AES_PMS_CONSTRAIN_SRAM_WORLD_1_PMS_2_R::new(((self.bits >> 16) & 3) as u8)
+        DMA_APBPERI_AES_PMS_CONSTRAIN_SRAM_WORLD_1_PMS_2_R::new(
+            ((self.bits >> 16) & 3) as u8,
+        )
     }
     ///Bits 18:19 - dma_apbperi_aes_pms_constrain_sram_world_1_pms_3
     #[inline(always)]
     pub fn dma_apbperi_aes_pms_constrain_sram_world_1_pms_3(
         &self,
     ) -> DMA_APBPERI_AES_PMS_CONSTRAIN_SRAM_WORLD_1_PMS_3_R {
-        DMA_APBPERI_AES_PMS_CONSTRAIN_SRAM_WORLD_1_PMS_3_R::new(((self.bits >> 18) & 3) as u8)
+        DMA_APBPERI_AES_PMS_CONSTRAIN_SRAM_WORLD_1_PMS_3_R::new(
+            ((self.bits >> 18) & 3) as u8,
+        )
     }
 }
 #[cfg(feature = "impl-register-debug")]
@@ -145,8 +183,9 @@ impl W {
     #[must_use]
     pub fn dma_apbperi_aes_pms_constrain_sram_world_0_pms_0(
         &mut self,
-    ) -> DMA_APBPERI_AES_PMS_CONSTRAIN_SRAM_WORLD_0_PMS_0_W<DMA_APBPERI_AES_PMS_CONSTRAIN_1_SPEC>
-    {
+    ) -> DMA_APBPERI_AES_PMS_CONSTRAIN_SRAM_WORLD_0_PMS_0_W<
+        DMA_APBPERI_AES_PMS_CONSTRAIN_1_SPEC,
+    > {
         DMA_APBPERI_AES_PMS_CONSTRAIN_SRAM_WORLD_0_PMS_0_W::new(self, 0)
     }
     ///Bits 2:3 - dma_apbperi_aes_pms_constrain_sram_world_0_pms_1
@@ -154,8 +193,9 @@ impl W {
     #[must_use]
     pub fn dma_apbperi_aes_pms_constrain_sram_world_0_pms_1(
         &mut self,
-    ) -> DMA_APBPERI_AES_PMS_CONSTRAIN_SRAM_WORLD_0_PMS_1_W<DMA_APBPERI_AES_PMS_CONSTRAIN_1_SPEC>
-    {
+    ) -> DMA_APBPERI_AES_PMS_CONSTRAIN_SRAM_WORLD_0_PMS_1_W<
+        DMA_APBPERI_AES_PMS_CONSTRAIN_1_SPEC,
+    > {
         DMA_APBPERI_AES_PMS_CONSTRAIN_SRAM_WORLD_0_PMS_1_W::new(self, 2)
     }
     ///Bits 4:5 - dma_apbperi_aes_pms_constrain_sram_world_0_pms_2
@@ -163,8 +203,9 @@ impl W {
     #[must_use]
     pub fn dma_apbperi_aes_pms_constrain_sram_world_0_pms_2(
         &mut self,
-    ) -> DMA_APBPERI_AES_PMS_CONSTRAIN_SRAM_WORLD_0_PMS_2_W<DMA_APBPERI_AES_PMS_CONSTRAIN_1_SPEC>
-    {
+    ) -> DMA_APBPERI_AES_PMS_CONSTRAIN_SRAM_WORLD_0_PMS_2_W<
+        DMA_APBPERI_AES_PMS_CONSTRAIN_1_SPEC,
+    > {
         DMA_APBPERI_AES_PMS_CONSTRAIN_SRAM_WORLD_0_PMS_2_W::new(self, 4)
     }
     ///Bits 6:7 - dma_apbperi_aes_pms_constrain_sram_world_0_pms_3
@@ -172,8 +213,9 @@ impl W {
     #[must_use]
     pub fn dma_apbperi_aes_pms_constrain_sram_world_0_pms_3(
         &mut self,
-    ) -> DMA_APBPERI_AES_PMS_CONSTRAIN_SRAM_WORLD_0_PMS_3_W<DMA_APBPERI_AES_PMS_CONSTRAIN_1_SPEC>
-    {
+    ) -> DMA_APBPERI_AES_PMS_CONSTRAIN_SRAM_WORLD_0_PMS_3_W<
+        DMA_APBPERI_AES_PMS_CONSTRAIN_1_SPEC,
+    > {
         DMA_APBPERI_AES_PMS_CONSTRAIN_SRAM_WORLD_0_PMS_3_W::new(self, 6)
     }
     ///Bits 12:13 - dma_apbperi_aes_pms_constrain_sram_world_1_pms_0
@@ -181,8 +223,9 @@ impl W {
     #[must_use]
     pub fn dma_apbperi_aes_pms_constrain_sram_world_1_pms_0(
         &mut self,
-    ) -> DMA_APBPERI_AES_PMS_CONSTRAIN_SRAM_WORLD_1_PMS_0_W<DMA_APBPERI_AES_PMS_CONSTRAIN_1_SPEC>
-    {
+    ) -> DMA_APBPERI_AES_PMS_CONSTRAIN_SRAM_WORLD_1_PMS_0_W<
+        DMA_APBPERI_AES_PMS_CONSTRAIN_1_SPEC,
+    > {
         DMA_APBPERI_AES_PMS_CONSTRAIN_SRAM_WORLD_1_PMS_0_W::new(self, 12)
     }
     ///Bits 14:15 - dma_apbperi_aes_pms_constrain_sram_world_1_pms_1
@@ -190,8 +233,9 @@ impl W {
     #[must_use]
     pub fn dma_apbperi_aes_pms_constrain_sram_world_1_pms_1(
         &mut self,
-    ) -> DMA_APBPERI_AES_PMS_CONSTRAIN_SRAM_WORLD_1_PMS_1_W<DMA_APBPERI_AES_PMS_CONSTRAIN_1_SPEC>
-    {
+    ) -> DMA_APBPERI_AES_PMS_CONSTRAIN_SRAM_WORLD_1_PMS_1_W<
+        DMA_APBPERI_AES_PMS_CONSTRAIN_1_SPEC,
+    > {
         DMA_APBPERI_AES_PMS_CONSTRAIN_SRAM_WORLD_1_PMS_1_W::new(self, 14)
     }
     ///Bits 16:17 - dma_apbperi_aes_pms_constrain_sram_world_1_pms_2
@@ -199,8 +243,9 @@ impl W {
     #[must_use]
     pub fn dma_apbperi_aes_pms_constrain_sram_world_1_pms_2(
         &mut self,
-    ) -> DMA_APBPERI_AES_PMS_CONSTRAIN_SRAM_WORLD_1_PMS_2_W<DMA_APBPERI_AES_PMS_CONSTRAIN_1_SPEC>
-    {
+    ) -> DMA_APBPERI_AES_PMS_CONSTRAIN_SRAM_WORLD_1_PMS_2_W<
+        DMA_APBPERI_AES_PMS_CONSTRAIN_1_SPEC,
+    > {
         DMA_APBPERI_AES_PMS_CONSTRAIN_SRAM_WORLD_1_PMS_2_W::new(self, 16)
     }
     ///Bits 18:19 - dma_apbperi_aes_pms_constrain_sram_world_1_pms_3
@@ -208,8 +253,9 @@ impl W {
     #[must_use]
     pub fn dma_apbperi_aes_pms_constrain_sram_world_1_pms_3(
         &mut self,
-    ) -> DMA_APBPERI_AES_PMS_CONSTRAIN_SRAM_WORLD_1_PMS_3_W<DMA_APBPERI_AES_PMS_CONSTRAIN_1_SPEC>
-    {
+    ) -> DMA_APBPERI_AES_PMS_CONSTRAIN_SRAM_WORLD_1_PMS_3_W<
+        DMA_APBPERI_AES_PMS_CONSTRAIN_1_SPEC,
+    > {
         DMA_APBPERI_AES_PMS_CONSTRAIN_SRAM_WORLD_1_PMS_3_W::new(self, 18)
     }
 }

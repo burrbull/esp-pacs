@@ -106,24 +106,15 @@ impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PRO_CPU_RECORD_PDEBUGLS0STAT")
             .field("record_pro_pdebugls0stat", &self.record_pro_pdebugls0stat())
-            .field(
-                "record_pdebugls0stat_type",
-                &self.record_pdebugls0stat_type(),
-            )
+            .field("record_pdebugls0stat_type", &self.record_pdebugls0stat_type())
             .field("record_pdebugls0stat_sz", &self.record_pdebugls0stat_sz())
-            .field(
-                "record_pdebugls0stat_dtlbm",
-                &self.record_pdebugls0stat_dtlbm(),
-            )
+            .field("record_pdebugls0stat_dtlbm", &self.record_pdebugls0stat_dtlbm())
             .field("record_pdebugls0stat_dcm", &self.record_pdebugls0stat_dcm())
             .field("record_pdebugls0stat_dch", &self.record_pdebugls0stat_dch())
             .field("record_pdebugls0stat_uc", &self.record_pdebugls0stat_uc())
             .field("record_pdebugls0stat_wb", &self.record_pdebugls0stat_wb())
             .field("record_pdebugls0stat_coh", &self.record_pdebugls0stat_coh())
-            .field(
-                "record_pdebugls0stat_stcoh",
-                &self.record_pdebugls0stat_stcoh(),
-            )
+            .field("record_pdebugls0stat_stcoh", &self.record_pdebugls0stat_stcoh())
             .field("record_pdebugls0stat_tgt", &self.record_pdebugls0stat_tgt())
             .finish()
     }

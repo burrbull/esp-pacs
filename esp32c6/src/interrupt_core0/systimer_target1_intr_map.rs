@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SYSTIMER_TARGET1_INTR_MAP")
-            .field(
-                "systimer_target1_intr_map",
-                &self.systimer_target1_intr_map(),
-            )
+            .field("systimer_target1_intr_map", &self.systimer_target1_intr_map())
             .finish()
     }
 }

@@ -64,10 +64,7 @@ impl core::fmt::Debug for R {
             .field("spi_fmem_page_size", &self.spi_fmem_page_size())
             .field("spi_fmem_ecc_addr_en", &self.spi_fmem_ecc_addr_en())
             .field("usr_ecc_addr_en", &self.usr_ecc_addr_en())
-            .field(
-                "ecc_continue_record_err_en",
-                &self.ecc_continue_record_err_en(),
-            )
+            .field("ecc_continue_record_err_en", &self.ecc_continue_record_err_en())
             .field("ecc_err_bits", &self.ecc_err_bits())
             .finish()
     }

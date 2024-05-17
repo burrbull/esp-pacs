@@ -181,43 +181,57 @@ impl W {
     ///Bits 22:23 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn timergrp0_t0_src_sel(&mut self) -> TIMERGRP0_T0_SRC_SEL_W<PERI_CLK_CTRL20_SPEC> {
+    pub fn timergrp0_t0_src_sel(
+        &mut self,
+    ) -> TIMERGRP0_T0_SRC_SEL_W<PERI_CLK_CTRL20_SPEC> {
         TIMERGRP0_T0_SRC_SEL_W::new(self, 22)
     }
     ///Bit 24 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn timergrp0_t0_clk_en(&mut self) -> TIMERGRP0_T0_CLK_EN_W<PERI_CLK_CTRL20_SPEC> {
+    pub fn timergrp0_t0_clk_en(
+        &mut self,
+    ) -> TIMERGRP0_T0_CLK_EN_W<PERI_CLK_CTRL20_SPEC> {
         TIMERGRP0_T0_CLK_EN_W::new(self, 24)
     }
     ///Bits 25:26 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn timergrp0_t1_src_sel(&mut self) -> TIMERGRP0_T1_SRC_SEL_W<PERI_CLK_CTRL20_SPEC> {
+    pub fn timergrp0_t1_src_sel(
+        &mut self,
+    ) -> TIMERGRP0_T1_SRC_SEL_W<PERI_CLK_CTRL20_SPEC> {
         TIMERGRP0_T1_SRC_SEL_W::new(self, 25)
     }
     ///Bit 27 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn timergrp0_t1_clk_en(&mut self) -> TIMERGRP0_T1_CLK_EN_W<PERI_CLK_CTRL20_SPEC> {
+    pub fn timergrp0_t1_clk_en(
+        &mut self,
+    ) -> TIMERGRP0_T1_CLK_EN_W<PERI_CLK_CTRL20_SPEC> {
         TIMERGRP0_T1_CLK_EN_W::new(self, 27)
     }
     ///Bits 28:29 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn timergrp0_wdt_src_sel(&mut self) -> TIMERGRP0_WDT_SRC_SEL_W<PERI_CLK_CTRL20_SPEC> {
+    pub fn timergrp0_wdt_src_sel(
+        &mut self,
+    ) -> TIMERGRP0_WDT_SRC_SEL_W<PERI_CLK_CTRL20_SPEC> {
         TIMERGRP0_WDT_SRC_SEL_W::new(self, 28)
     }
     ///Bit 30 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn timergrp0_wdt_clk_en(&mut self) -> TIMERGRP0_WDT_CLK_EN_W<PERI_CLK_CTRL20_SPEC> {
+    pub fn timergrp0_wdt_clk_en(
+        &mut self,
+    ) -> TIMERGRP0_WDT_CLK_EN_W<PERI_CLK_CTRL20_SPEC> {
         TIMERGRP0_WDT_CLK_EN_W::new(self, 30)
     }
     ///Bit 31 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn timergrp0_tgrt_clk_en(&mut self) -> TIMERGRP0_TGRT_CLK_EN_W<PERI_CLK_CTRL20_SPEC> {
+    pub fn timergrp0_tgrt_clk_en(
+        &mut self,
+    ) -> TIMERGRP0_TGRT_CLK_EN_W<PERI_CLK_CTRL20_SPEC> {
         TIMERGRP0_TGRT_CLK_EN_W::new(self, 31)
     }
 }

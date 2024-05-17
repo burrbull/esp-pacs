@@ -256,14 +256,8 @@ impl core::fmt::Debug for R {
             .field("slc0_token1_0to1_int_raw", &self.slc0_token1_0to1_int_raw())
             .field("slc0host_rx_sof_int_raw", &self.slc0host_rx_sof_int_raw())
             .field("slc0host_rx_eof_int_raw", &self.slc0host_rx_eof_int_raw())
-            .field(
-                "slc0host_rx_start_int_raw",
-                &self.slc0host_rx_start_int_raw(),
-            )
-            .field(
-                "slc0host_tx_start_int_raw",
-                &self.slc0host_tx_start_int_raw(),
-            )
+            .field("slc0host_rx_start_int_raw", &self.slc0host_rx_start_int_raw())
+            .field("slc0host_tx_start_int_raw", &self.slc0host_tx_start_int_raw())
             .field("slc0_rx_udf_int_raw", &self.slc0_rx_udf_int_raw())
             .field("slc0_tx_ovf_int_raw", &self.slc0_tx_ovf_int_raw())
             .field("slc0_rx_pf_valid_int_raw", &self.slc0_rx_pf_valid_int_raw())
@@ -271,14 +265,8 @@ impl core::fmt::Debug for R {
             .field("slc0_ext_bit1_int_raw", &self.slc0_ext_bit1_int_raw())
             .field("slc0_ext_bit2_int_raw", &self.slc0_ext_bit2_int_raw())
             .field("slc0_ext_bit3_int_raw", &self.slc0_ext_bit3_int_raw())
-            .field(
-                "slc0_rx_new_packet_int_raw",
-                &self.slc0_rx_new_packet_int_raw(),
-            )
-            .field(
-                "slc0_host_rd_retry_int_raw",
-                &self.slc0_host_rd_retry_int_raw(),
-            )
+            .field("slc0_rx_new_packet_int_raw", &self.slc0_rx_new_packet_int_raw())
+            .field("slc0_host_rd_retry_int_raw", &self.slc0_host_rd_retry_int_raw())
             .field("gpio_sdio_int_raw", &self.gpio_sdio_int_raw())
             .finish()
     }
@@ -383,13 +371,17 @@ impl W {
     ///Bit 12 - *******Description***********
     #[inline(always)]
     #[must_use]
-    pub fn slc0host_rx_sof_int_raw(&mut self) -> SLC0HOST_RX_SOF_INT_RAW_W<SLC0HOST_INT_RAW_SPEC> {
+    pub fn slc0host_rx_sof_int_raw(
+        &mut self,
+    ) -> SLC0HOST_RX_SOF_INT_RAW_W<SLC0HOST_INT_RAW_SPEC> {
         SLC0HOST_RX_SOF_INT_RAW_W::new(self, 12)
     }
     ///Bit 13 - *******Description***********
     #[inline(always)]
     #[must_use]
-    pub fn slc0host_rx_eof_int_raw(&mut self) -> SLC0HOST_RX_EOF_INT_RAW_W<SLC0HOST_INT_RAW_SPEC> {
+    pub fn slc0host_rx_eof_int_raw(
+        &mut self,
+    ) -> SLC0HOST_RX_EOF_INT_RAW_W<SLC0HOST_INT_RAW_SPEC> {
         SLC0HOST_RX_EOF_INT_RAW_W::new(self, 13)
     }
     ///Bit 14 - *******Description***********
@@ -411,13 +403,17 @@ impl W {
     ///Bit 16 - *******Description***********
     #[inline(always)]
     #[must_use]
-    pub fn slc0_rx_udf_int_raw(&mut self) -> SLC0_RX_UDF_INT_RAW_W<SLC0HOST_INT_RAW_SPEC> {
+    pub fn slc0_rx_udf_int_raw(
+        &mut self,
+    ) -> SLC0_RX_UDF_INT_RAW_W<SLC0HOST_INT_RAW_SPEC> {
         SLC0_RX_UDF_INT_RAW_W::new(self, 16)
     }
     ///Bit 17 - *******Description***********
     #[inline(always)]
     #[must_use]
-    pub fn slc0_tx_ovf_int_raw(&mut self) -> SLC0_TX_OVF_INT_RAW_W<SLC0HOST_INT_RAW_SPEC> {
+    pub fn slc0_tx_ovf_int_raw(
+        &mut self,
+    ) -> SLC0_TX_OVF_INT_RAW_W<SLC0HOST_INT_RAW_SPEC> {
         SLC0_TX_OVF_INT_RAW_W::new(self, 17)
     }
     ///Bit 18 - *******Description***********
@@ -431,25 +427,33 @@ impl W {
     ///Bit 19 - *******Description***********
     #[inline(always)]
     #[must_use]
-    pub fn slc0_ext_bit0_int_raw(&mut self) -> SLC0_EXT_BIT0_INT_RAW_W<SLC0HOST_INT_RAW_SPEC> {
+    pub fn slc0_ext_bit0_int_raw(
+        &mut self,
+    ) -> SLC0_EXT_BIT0_INT_RAW_W<SLC0HOST_INT_RAW_SPEC> {
         SLC0_EXT_BIT0_INT_RAW_W::new(self, 19)
     }
     ///Bit 20 - *******Description***********
     #[inline(always)]
     #[must_use]
-    pub fn slc0_ext_bit1_int_raw(&mut self) -> SLC0_EXT_BIT1_INT_RAW_W<SLC0HOST_INT_RAW_SPEC> {
+    pub fn slc0_ext_bit1_int_raw(
+        &mut self,
+    ) -> SLC0_EXT_BIT1_INT_RAW_W<SLC0HOST_INT_RAW_SPEC> {
         SLC0_EXT_BIT1_INT_RAW_W::new(self, 20)
     }
     ///Bit 21 - *******Description***********
     #[inline(always)]
     #[must_use]
-    pub fn slc0_ext_bit2_int_raw(&mut self) -> SLC0_EXT_BIT2_INT_RAW_W<SLC0HOST_INT_RAW_SPEC> {
+    pub fn slc0_ext_bit2_int_raw(
+        &mut self,
+    ) -> SLC0_EXT_BIT2_INT_RAW_W<SLC0HOST_INT_RAW_SPEC> {
         SLC0_EXT_BIT2_INT_RAW_W::new(self, 21)
     }
     ///Bit 22 - *******Description***********
     #[inline(always)]
     #[must_use]
-    pub fn slc0_ext_bit3_int_raw(&mut self) -> SLC0_EXT_BIT3_INT_RAW_W<SLC0HOST_INT_RAW_SPEC> {
+    pub fn slc0_ext_bit3_int_raw(
+        &mut self,
+    ) -> SLC0_EXT_BIT3_INT_RAW_W<SLC0HOST_INT_RAW_SPEC> {
         SLC0_EXT_BIT3_INT_RAW_W::new(self, 22)
     }
     ///Bit 23 - *******Description***********

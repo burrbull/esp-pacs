@@ -33,7 +33,9 @@ impl W {
     ///Bit 22 - clear ext wakeup1 status
     #[inline(always)]
     #[must_use]
-    pub fn ext_wakeup1_status_clr(&mut self) -> EXT_WAKEUP1_STATUS_CLR_W<EXT_WAKEUP1_SPEC> {
+    pub fn ext_wakeup1_status_clr(
+        &mut self,
+    ) -> EXT_WAKEUP1_STATUS_CLR_W<EXT_WAKEUP1_SPEC> {
         EXT_WAKEUP1_STATUS_CLR_W::new(self, 22)
     }
 }

@@ -44,87 +44,121 @@ impl R {
     }
     ///Bit 1 - NA
     #[inline(always)]
-    pub fn slvif_commonreg_wr2ro_err_intstat(&self) -> SLVIF_COMMONREG_WR2RO_ERR_INTSTAT_R {
+    pub fn slvif_commonreg_wr2ro_err_intstat(
+        &self,
+    ) -> SLVIF_COMMONREG_WR2RO_ERR_INTSTAT_R {
         SLVIF_COMMONREG_WR2RO_ERR_INTSTAT_R::new(((self.bits >> 1) & 1) != 0)
     }
     ///Bit 2 - NA
     #[inline(always)]
-    pub fn slvif_commonreg_rd2wo_err_intstat(&self) -> SLVIF_COMMONREG_RD2WO_ERR_INTSTAT_R {
+    pub fn slvif_commonreg_rd2wo_err_intstat(
+        &self,
+    ) -> SLVIF_COMMONREG_RD2WO_ERR_INTSTAT_R {
         SLVIF_COMMONREG_RD2WO_ERR_INTSTAT_R::new(((self.bits >> 2) & 1) != 0)
     }
     ///Bit 3 - NA
     #[inline(always)]
-    pub fn slvif_commonreg_wronhold_err_intstat(&self) -> SLVIF_COMMONREG_WRONHOLD_ERR_INTSTAT_R {
+    pub fn slvif_commonreg_wronhold_err_intstat(
+        &self,
+    ) -> SLVIF_COMMONREG_WRONHOLD_ERR_INTSTAT_R {
         SLVIF_COMMONREG_WRONHOLD_ERR_INTSTAT_R::new(((self.bits >> 3) & 1) != 0)
     }
     ///Bit 7 - NA
     #[inline(always)]
-    pub fn slvif_commonreg_wrparity_err_intstat(&self) -> SLVIF_COMMONREG_WRPARITY_ERR_INTSTAT_R {
+    pub fn slvif_commonreg_wrparity_err_intstat(
+        &self,
+    ) -> SLVIF_COMMONREG_WRPARITY_ERR_INTSTAT_R {
         SLVIF_COMMONREG_WRPARITY_ERR_INTSTAT_R::new(((self.bits >> 7) & 1) != 0)
     }
     ///Bit 8 - NA
     #[inline(always)]
-    pub fn slvif_undefinedreg_dec_err_intstat(&self) -> SLVIF_UNDEFINEDREG_DEC_ERR_INTSTAT_R {
+    pub fn slvif_undefinedreg_dec_err_intstat(
+        &self,
+    ) -> SLVIF_UNDEFINEDREG_DEC_ERR_INTSTAT_R {
         SLVIF_UNDEFINEDREG_DEC_ERR_INTSTAT_R::new(((self.bits >> 8) & 1) != 0)
     }
     ///Bit 9 - NA
     #[inline(always)]
-    pub fn mxif1_rch0_eccprot_correrr_intstat(&self) -> MXIF1_RCH0_ECCPROT_CORRERR_INTSTAT_R {
+    pub fn mxif1_rch0_eccprot_correrr_intstat(
+        &self,
+    ) -> MXIF1_RCH0_ECCPROT_CORRERR_INTSTAT_R {
         MXIF1_RCH0_ECCPROT_CORRERR_INTSTAT_R::new(((self.bits >> 9) & 1) != 0)
     }
     ///Bit 10 - NA
     #[inline(always)]
-    pub fn mxif1_rch0_eccprot_uncorrerr_intstat(&self) -> MXIF1_RCH0_ECCPROT_UNCORRERR_INTSTAT_R {
+    pub fn mxif1_rch0_eccprot_uncorrerr_intstat(
+        &self,
+    ) -> MXIF1_RCH0_ECCPROT_UNCORRERR_INTSTAT_R {
         MXIF1_RCH0_ECCPROT_UNCORRERR_INTSTAT_R::new(((self.bits >> 10) & 1) != 0)
     }
     ///Bit 11 - NA
     #[inline(always)]
-    pub fn mxif1_rch1_eccprot_correrr_intstat(&self) -> MXIF1_RCH1_ECCPROT_CORRERR_INTSTAT_R {
+    pub fn mxif1_rch1_eccprot_correrr_intstat(
+        &self,
+    ) -> MXIF1_RCH1_ECCPROT_CORRERR_INTSTAT_R {
         MXIF1_RCH1_ECCPROT_CORRERR_INTSTAT_R::new(((self.bits >> 11) & 1) != 0)
     }
     ///Bit 12 - NA
     #[inline(always)]
-    pub fn mxif1_rch1_eccprot_uncorrerr_intstat(&self) -> MXIF1_RCH1_ECCPROT_UNCORRERR_INTSTAT_R {
+    pub fn mxif1_rch1_eccprot_uncorrerr_intstat(
+        &self,
+    ) -> MXIF1_RCH1_ECCPROT_UNCORRERR_INTSTAT_R {
         MXIF1_RCH1_ECCPROT_UNCORRERR_INTSTAT_R::new(((self.bits >> 12) & 1) != 0)
     }
     ///Bit 13 - NA
     #[inline(always)]
-    pub fn mxif1_bch_eccprot_correrr_intstat(&self) -> MXIF1_BCH_ECCPROT_CORRERR_INTSTAT_R {
+    pub fn mxif1_bch_eccprot_correrr_intstat(
+        &self,
+    ) -> MXIF1_BCH_ECCPROT_CORRERR_INTSTAT_R {
         MXIF1_BCH_ECCPROT_CORRERR_INTSTAT_R::new(((self.bits >> 13) & 1) != 0)
     }
     ///Bit 14 - NA
     #[inline(always)]
-    pub fn mxif1_bch_eccprot_uncorrerr_intstat(&self) -> MXIF1_BCH_ECCPROT_UNCORRERR_INTSTAT_R {
+    pub fn mxif1_bch_eccprot_uncorrerr_intstat(
+        &self,
+    ) -> MXIF1_BCH_ECCPROT_UNCORRERR_INTSTAT_R {
         MXIF1_BCH_ECCPROT_UNCORRERR_INTSTAT_R::new(((self.bits >> 14) & 1) != 0)
     }
     ///Bit 15 - NA
     #[inline(always)]
-    pub fn mxif2_rch0_eccprot_correrr_intstat(&self) -> MXIF2_RCH0_ECCPROT_CORRERR_INTSTAT_R {
+    pub fn mxif2_rch0_eccprot_correrr_intstat(
+        &self,
+    ) -> MXIF2_RCH0_ECCPROT_CORRERR_INTSTAT_R {
         MXIF2_RCH0_ECCPROT_CORRERR_INTSTAT_R::new(((self.bits >> 15) & 1) != 0)
     }
     ///Bit 16 - NA
     #[inline(always)]
-    pub fn mxif2_rch0_eccprot_uncorrerr_intstat(&self) -> MXIF2_RCH0_ECCPROT_UNCORRERR_INTSTAT_R {
+    pub fn mxif2_rch0_eccprot_uncorrerr_intstat(
+        &self,
+    ) -> MXIF2_RCH0_ECCPROT_UNCORRERR_INTSTAT_R {
         MXIF2_RCH0_ECCPROT_UNCORRERR_INTSTAT_R::new(((self.bits >> 16) & 1) != 0)
     }
     ///Bit 17 - NA
     #[inline(always)]
-    pub fn mxif2_rch1_eccprot_correrr_intstat(&self) -> MXIF2_RCH1_ECCPROT_CORRERR_INTSTAT_R {
+    pub fn mxif2_rch1_eccprot_correrr_intstat(
+        &self,
+    ) -> MXIF2_RCH1_ECCPROT_CORRERR_INTSTAT_R {
         MXIF2_RCH1_ECCPROT_CORRERR_INTSTAT_R::new(((self.bits >> 17) & 1) != 0)
     }
     ///Bit 18 - NA
     #[inline(always)]
-    pub fn mxif2_rch1_eccprot_uncorrerr_intstat(&self) -> MXIF2_RCH1_ECCPROT_UNCORRERR_INTSTAT_R {
+    pub fn mxif2_rch1_eccprot_uncorrerr_intstat(
+        &self,
+    ) -> MXIF2_RCH1_ECCPROT_UNCORRERR_INTSTAT_R {
         MXIF2_RCH1_ECCPROT_UNCORRERR_INTSTAT_R::new(((self.bits >> 18) & 1) != 0)
     }
     ///Bit 19 - NA
     #[inline(always)]
-    pub fn mxif2_bch_eccprot_correrr_intstat(&self) -> MXIF2_BCH_ECCPROT_CORRERR_INTSTAT_R {
+    pub fn mxif2_bch_eccprot_correrr_intstat(
+        &self,
+    ) -> MXIF2_BCH_ECCPROT_CORRERR_INTSTAT_R {
         MXIF2_BCH_ECCPROT_CORRERR_INTSTAT_R::new(((self.bits >> 19) & 1) != 0)
     }
     ///Bit 20 - NA
     #[inline(always)]
-    pub fn mxif2_bch_eccprot_uncorrerr_intstat(&self) -> MXIF2_BCH_ECCPROT_UNCORRERR_INTSTAT_R {
+    pub fn mxif2_bch_eccprot_uncorrerr_intstat(
+        &self,
+    ) -> MXIF2_BCH_ECCPROT_UNCORRERR_INTSTAT_R {
         MXIF2_BCH_ECCPROT_UNCORRERR_INTSTAT_R::new(((self.bits >> 20) & 1) != 0)
     }
 }

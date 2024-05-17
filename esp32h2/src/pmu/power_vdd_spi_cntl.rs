@@ -57,7 +57,9 @@ impl W {
     ///Bit 31 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn vdd_spi_pwr_sel_sw(&mut self) -> VDD_SPI_PWR_SEL_SW_W<POWER_VDD_SPI_CNTL_SPEC> {
+    pub fn vdd_spi_pwr_sel_sw(
+        &mut self,
+    ) -> VDD_SPI_PWR_SEL_SW_W<POWER_VDD_SPI_CNTL_SPEC> {
         VDD_SPI_PWR_SEL_SW_W::new(self, 31)
     }
 }

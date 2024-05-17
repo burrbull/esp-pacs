@@ -12,9 +12,7 @@ impl R {
 #[cfg(feature = "impl-register-debug")]
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("STATUS4")
-            .field("hfm_bitstream", &self.hfm_bitstream())
-            .finish()
+        f.debug_struct("STATUS4").field("hfm_bitstream", &self.hfm_bitstream()).finish()
     }
 }
 /**Trace and Debug registers

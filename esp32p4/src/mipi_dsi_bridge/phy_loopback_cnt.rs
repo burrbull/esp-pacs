@@ -35,13 +35,17 @@ impl W {
     ///Bits 0:7 - hs_loopback test check cnt
     #[inline(always)]
     #[must_use]
-    pub fn phy_hs_check_cnt_th(&mut self) -> PHY_HS_CHECK_CNT_TH_W<PHY_LOOPBACK_CNT_SPEC> {
+    pub fn phy_hs_check_cnt_th(
+        &mut self,
+    ) -> PHY_HS_CHECK_CNT_TH_W<PHY_LOOPBACK_CNT_SPEC> {
         PHY_HS_CHECK_CNT_TH_W::new(self, 0)
     }
     ///Bits 16:23 - lp_loopback test check cnt
     #[inline(always)]
     #[must_use]
-    pub fn phy_lp_check_cnt_th(&mut self) -> PHY_LP_CHECK_CNT_TH_W<PHY_LOOPBACK_CNT_SPEC> {
+    pub fn phy_lp_check_cnt_th(
+        &mut self,
+    ) -> PHY_LP_CHECK_CNT_TH_W<PHY_LOOPBACK_CNT_SPEC> {
         PHY_LP_CHECK_CNT_TH_W::new(self, 16)
     }
 }

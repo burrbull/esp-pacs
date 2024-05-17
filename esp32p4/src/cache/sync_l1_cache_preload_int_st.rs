@@ -90,43 +90,16 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SYNC_L1_CACHE_PRELOAD_INT_ST")
-            .field(
-                "l1_icache0_pld_done_int_st",
-                &self.l1_icache0_pld_done_int_st(),
-            )
-            .field(
-                "l1_icache1_pld_done_int_st",
-                &self.l1_icache1_pld_done_int_st(),
-            )
-            .field(
-                "l1_icache2_pld_done_int_st",
-                &self.l1_icache2_pld_done_int_st(),
-            )
-            .field(
-                "l1_icache3_pld_done_int_st",
-                &self.l1_icache3_pld_done_int_st(),
-            )
-            .field(
-                "l1_dcache_pld_done_int_st",
-                &self.l1_dcache_pld_done_int_st(),
-            )
+            .field("l1_icache0_pld_done_int_st", &self.l1_icache0_pld_done_int_st())
+            .field("l1_icache1_pld_done_int_st", &self.l1_icache1_pld_done_int_st())
+            .field("l1_icache2_pld_done_int_st", &self.l1_icache2_pld_done_int_st())
+            .field("l1_icache3_pld_done_int_st", &self.l1_icache3_pld_done_int_st())
+            .field("l1_dcache_pld_done_int_st", &self.l1_dcache_pld_done_int_st())
             .field("sync_done_int_st", &self.sync_done_int_st())
-            .field(
-                "l1_icache0_pld_err_int_st",
-                &self.l1_icache0_pld_err_int_st(),
-            )
-            .field(
-                "l1_icache1_pld_err_int_st",
-                &self.l1_icache1_pld_err_int_st(),
-            )
-            .field(
-                "l1_icache2_pld_err_int_st",
-                &self.l1_icache2_pld_err_int_st(),
-            )
-            .field(
-                "l1_icache3_pld_err_int_st",
-                &self.l1_icache3_pld_err_int_st(),
-            )
+            .field("l1_icache0_pld_err_int_st", &self.l1_icache0_pld_err_int_st())
+            .field("l1_icache1_pld_err_int_st", &self.l1_icache1_pld_err_int_st())
+            .field("l1_icache2_pld_err_int_st", &self.l1_icache2_pld_err_int_st())
+            .field("l1_icache3_pld_err_int_st", &self.l1_icache3_pld_err_int_st())
             .field("l1_dcache_pld_err_int_st", &self.l1_dcache_pld_err_int_st())
             .field("sync_err_int_st", &self.sync_err_int_st())
             .finish()

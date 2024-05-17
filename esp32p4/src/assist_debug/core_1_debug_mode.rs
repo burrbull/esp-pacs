@@ -21,10 +21,7 @@ impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CORE_1_DEBUG_MODE")
             .field("core_1_debug_mode", &self.core_1_debug_mode())
-            .field(
-                "core_1_debug_module_active",
-                &self.core_1_debug_module_active(),
-            )
+            .field("core_1_debug_module_active", &self.core_1_debug_module_active())
             .finish()
     }
 }

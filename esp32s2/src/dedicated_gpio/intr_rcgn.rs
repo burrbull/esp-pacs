@@ -12,8 +12,7 @@ impl R {
     ///NOTE: `n` is number of field in register. `n == 0` corresponds to `INTR_MODE_CH0` field
     #[inline(always)]
     pub fn intr_mode_ch(&self, n: u8) -> INTR_MODE_CH_R {
-        #[allow(clippy::no_effect)]
-        [(); 8][n as usize];
+        #[allow(clippy::no_effect)] [(); 8][n as usize];
         INTR_MODE_CH_R::new(((self.bits >> (n * 3)) & 7) as u8)
     }
     ///Iterator for array of:
@@ -85,8 +84,7 @@ impl W {
     #[inline(always)]
     #[must_use]
     pub fn intr_mode_ch(&mut self, n: u8) -> INTR_MODE_CH_W<INTR_RCGN_SPEC> {
-        #[allow(clippy::no_effect)]
-        [(); 8][n as usize];
+        #[allow(clippy::no_effect)] [(); 8][n as usize];
         INTR_MODE_CH_W::new(self, n * 3)
     }
     ///Bits 0:2 - Configure channel 0 interrupt generate mode. 0/1: do not generate interrupt. 2: low level trigger. 3: high level trigger. 4: falling edge trigger. 5: raising edge trigger. 6/7: falling and raising edge trigger.

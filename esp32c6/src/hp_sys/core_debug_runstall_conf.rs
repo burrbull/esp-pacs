@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CORE_DEBUG_RUNSTALL_CONF")
-            .field(
-                "core_debug_runstall_enable",
-                &self.core_debug_runstall_enable(),
-            )
+            .field("core_debug_runstall_enable", &self.core_debug_runstall_enable())
             .finish()
     }
 }

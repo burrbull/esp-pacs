@@ -295,19 +295,25 @@ impl W {
     ///Bit 10 - set this bit high to enable timer0 period update task receive
     #[inline(always)]
     #[must_use]
-    pub fn task_timer0_period_up_en(&mut self) -> TASK_TIMER0_PERIOD_UP_EN_W<TASK_EN_SPEC> {
+    pub fn task_timer0_period_up_en(
+        &mut self,
+    ) -> TASK_TIMER0_PERIOD_UP_EN_W<TASK_EN_SPEC> {
         TASK_TIMER0_PERIOD_UP_EN_W::new(self, 10)
     }
     ///Bit 11 - set this bit high to enable timer1 period update task receive
     #[inline(always)]
     #[must_use]
-    pub fn task_timer1_period_up_en(&mut self) -> TASK_TIMER1_PERIOD_UP_EN_W<TASK_EN_SPEC> {
+    pub fn task_timer1_period_up_en(
+        &mut self,
+    ) -> TASK_TIMER1_PERIOD_UP_EN_W<TASK_EN_SPEC> {
         TASK_TIMER1_PERIOD_UP_EN_W::new(self, 11)
     }
     ///Bit 12 - set this bit high to enable timer2 period update task receive
     #[inline(always)]
     #[must_use]
-    pub fn task_timer2_period_up_en(&mut self) -> TASK_TIMER2_PERIOD_UP_EN_W<TASK_EN_SPEC> {
+    pub fn task_timer2_period_up_en(
+        &mut self,
+    ) -> TASK_TIMER2_PERIOD_UP_EN_W<TASK_EN_SPEC> {
         TASK_TIMER2_PERIOD_UP_EN_W::new(self, 12)
     }
     ///Bit 13 - set this bit high to enable one shot trip0 task receive

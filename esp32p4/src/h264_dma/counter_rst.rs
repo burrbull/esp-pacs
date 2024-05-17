@@ -55,25 +55,33 @@ impl W {
     ///Bit 0 - Write 1 then write 0 to this bit to reset rx ch0 counter.
     #[inline(always)]
     #[must_use]
-    pub fn rx_ch0_exter_counter_rst(&mut self) -> RX_CH0_EXTER_COUNTER_RST_W<COUNTER_RST_SPEC> {
+    pub fn rx_ch0_exter_counter_rst(
+        &mut self,
+    ) -> RX_CH0_EXTER_COUNTER_RST_W<COUNTER_RST_SPEC> {
         RX_CH0_EXTER_COUNTER_RST_W::new(self, 0)
     }
     ///Bit 1 - Write 1 then write 0 to this bit to reset rx ch1 counter.
     #[inline(always)]
     #[must_use]
-    pub fn rx_ch1_exter_counter_rst(&mut self) -> RX_CH1_EXTER_COUNTER_RST_W<COUNTER_RST_SPEC> {
+    pub fn rx_ch1_exter_counter_rst(
+        &mut self,
+    ) -> RX_CH1_EXTER_COUNTER_RST_W<COUNTER_RST_SPEC> {
         RX_CH1_EXTER_COUNTER_RST_W::new(self, 1)
     }
     ///Bit 2 - Write 1 then write 0 to this bit to reset rx ch2 counter.
     #[inline(always)]
     #[must_use]
-    pub fn rx_ch2_inter_counter_rst(&mut self) -> RX_CH2_INTER_COUNTER_RST_W<COUNTER_RST_SPEC> {
+    pub fn rx_ch2_inter_counter_rst(
+        &mut self,
+    ) -> RX_CH2_INTER_COUNTER_RST_W<COUNTER_RST_SPEC> {
         RX_CH2_INTER_COUNTER_RST_W::new(self, 2)
     }
     ///Bit 3 - Write 1 then write 0 to this bit to reset rx ch5 counter.
     #[inline(always)]
     #[must_use]
-    pub fn rx_ch5_inter_counter_rst(&mut self) -> RX_CH5_INTER_COUNTER_RST_W<COUNTER_RST_SPEC> {
+    pub fn rx_ch5_inter_counter_rst(
+        &mut self,
+    ) -> RX_CH5_INTER_COUNTER_RST_W<COUNTER_RST_SPEC> {
         RX_CH5_INTER_COUNTER_RST_W::new(self, 3)
     }
 }

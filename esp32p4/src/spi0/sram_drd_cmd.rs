@@ -26,14 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SRAM_DRD_CMD")
-            .field(
-                "cache_sram_usr_rd_cmd_value",
-                &self.cache_sram_usr_rd_cmd_value(),
-            )
-            .field(
-                "cache_sram_usr_rd_cmd_bitlen",
-                &self.cache_sram_usr_rd_cmd_bitlen(),
-            )
+            .field("cache_sram_usr_rd_cmd_value", &self.cache_sram_usr_rd_cmd_value())
+            .field("cache_sram_usr_rd_cmd_bitlen", &self.cache_sram_usr_rd_cmd_bitlen())
             .finish()
     }
 }

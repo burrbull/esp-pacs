@@ -65,18 +65,9 @@ impl core::fmt::Debug for R {
             .field("rpt4_reserved2_err", &self.rpt4_reserved2_err())
             .field("wdt_delay_sel_err", &self.wdt_delay_sel_err())
             .field("spi_boot_crypt_cnt_err", &self.spi_boot_crypt_cnt_err())
-            .field(
-                "secure_boot_key_revoke0_err",
-                &self.secure_boot_key_revoke0_err(),
-            )
-            .field(
-                "secure_boot_key_revoke1_err",
-                &self.secure_boot_key_revoke1_err(),
-            )
-            .field(
-                "secure_boot_key_revoke2_err",
-                &self.secure_boot_key_revoke2_err(),
-            )
+            .field("secure_boot_key_revoke0_err", &self.secure_boot_key_revoke0_err())
+            .field("secure_boot_key_revoke1_err", &self.secure_boot_key_revoke1_err())
+            .field("secure_boot_key_revoke2_err", &self.secure_boot_key_revoke2_err())
             .field("key_purpose_0_err", &self.key_purpose_0_err())
             .field("key_purpose_1_err", &self.key_purpose_1_err())
             .finish()

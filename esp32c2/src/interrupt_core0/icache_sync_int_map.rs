@@ -25,7 +25,9 @@ impl W {
     ///Bits 0:4 - Need add description
     #[inline(always)]
     #[must_use]
-    pub fn icache_sync_int_map(&mut self) -> ICACHE_SYNC_INT_MAP_W<ICACHE_SYNC_INT_MAP_SPEC> {
+    pub fn icache_sync_int_map(
+        &mut self,
+    ) -> ICACHE_SYNC_INT_MAP_W<ICACHE_SYNC_INT_MAP_SPEC> {
         ICACHE_SYNC_INT_MAP_W::new(self, 0)
     }
 }

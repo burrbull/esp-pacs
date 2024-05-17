@@ -45,13 +45,17 @@ impl W {
     ///Bit 0 - 1: SPI1 flash ACE section %s read accessible. 0: Not allowed.
     #[inline(always)]
     #[must_use]
-    pub fn spi_fmem_pms_rd_attr(&mut self) -> SPI_FMEM_PMS_RD_ATTR_W<SPI_FMEM_PMS_ATTR_SPEC> {
+    pub fn spi_fmem_pms_rd_attr(
+        &mut self,
+    ) -> SPI_FMEM_PMS_RD_ATTR_W<SPI_FMEM_PMS_ATTR_SPEC> {
         SPI_FMEM_PMS_RD_ATTR_W::new(self, 0)
     }
     ///Bit 1 - 1: SPI1 flash ACE section %s write accessible. 0: Not allowed.
     #[inline(always)]
     #[must_use]
-    pub fn spi_fmem_pms_wr_attr(&mut self) -> SPI_FMEM_PMS_WR_ATTR_W<SPI_FMEM_PMS_ATTR_SPEC> {
+    pub fn spi_fmem_pms_wr_attr(
+        &mut self,
+    ) -> SPI_FMEM_PMS_WR_ATTR_W<SPI_FMEM_PMS_ATTR_SPEC> {
         SPI_FMEM_PMS_WR_ATTR_W::new(self, 1)
     }
     ///Bit 2 - SPI1 flash ACE section %s ECC mode, 1: enable ECC mode. 0: Disable it. The flash ACE section %s is configured by registers SPI_FMEM_PMS%s_ADDR_REG and SPI_FMEM_PMS%s_SIZE_REG.

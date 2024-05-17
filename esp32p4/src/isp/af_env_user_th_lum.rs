@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("AF_ENV_USER_TH_LUM")
-            .field(
-                "af_env_user_threshold_lum",
-                &self.af_env_user_threshold_lum(),
-            )
+            .field("af_env_user_threshold_lum", &self.af_env_user_threshold_lum())
             .finish()
     }
 }

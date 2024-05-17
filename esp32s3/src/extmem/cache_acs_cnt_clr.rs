@@ -14,13 +14,17 @@ impl W {
     ///Bit 0 - The bit is used to clear dcache counter.
     #[inline(always)]
     #[must_use]
-    pub fn dcache_acs_cnt_clr(&mut self) -> DCACHE_ACS_CNT_CLR_W<CACHE_ACS_CNT_CLR_SPEC> {
+    pub fn dcache_acs_cnt_clr(
+        &mut self,
+    ) -> DCACHE_ACS_CNT_CLR_W<CACHE_ACS_CNT_CLR_SPEC> {
         DCACHE_ACS_CNT_CLR_W::new(self, 0)
     }
     ///Bit 1 - The bit is used to clear icache counter.
     #[inline(always)]
     #[must_use]
-    pub fn icache_acs_cnt_clr(&mut self) -> ICACHE_ACS_CNT_CLR_W<CACHE_ACS_CNT_CLR_SPEC> {
+    pub fn icache_acs_cnt_clr(
+        &mut self,
+    ) -> ICACHE_ACS_CNT_CLR_W<CACHE_ACS_CNT_CLR_SPEC> {
         ICACHE_ACS_CNT_CLR_W::new(self, 1)
     }
 }

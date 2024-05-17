@@ -34,14 +34,8 @@ impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PRO_CPU_RECORD_PDEBUGSTATUS")
             .field("record_pro_pdebugstatus", &self.record_pro_pdebugstatus())
-            .field(
-                "record_pdebugstatus_bbcause",
-                &self.record_pdebugstatus_bbcause(),
-            )
-            .field(
-                "record_pdebugstatus_insntype",
-                &self.record_pdebugstatus_insntype(),
-            )
+            .field("record_pdebugstatus_bbcause", &self.record_pdebugstatus_bbcause())
+            .field("record_pdebugstatus_insntype", &self.record_pdebugstatus_insntype())
             .finish()
     }
 }

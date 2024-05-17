@@ -115,7 +115,9 @@ impl W {
     ///Bit 23 - 1: dump out &amp; power up controlled by SW 0: by FSM
     #[inline(always)]
     #[must_use]
-    pub fn sar_tsens_power_up_force(&mut self) -> SAR_TSENS_POWER_UP_FORCE_W<SAR_TSENS_CTRL_SPEC> {
+    pub fn sar_tsens_power_up_force(
+        &mut self,
+    ) -> SAR_TSENS_POWER_UP_FORCE_W<SAR_TSENS_CTRL_SPEC> {
         SAR_TSENS_POWER_UP_FORCE_W::new(self, 23)
     }
     ///Bit 24 - temperature sensor dump out only active when reg_tsens_power_up_force = 1

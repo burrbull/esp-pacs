@@ -52,22 +52,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SYNC_L1_CACHE_PRELOAD_INT_CLR")
-            .field(
-                "l1_icache2_pld_done_int_clr",
-                &self.l1_icache2_pld_done_int_clr(),
-            )
-            .field(
-                "l1_icache3_pld_done_int_clr",
-                &self.l1_icache3_pld_done_int_clr(),
-            )
-            .field(
-                "l1_icache2_pld_err_int_clr",
-                &self.l1_icache2_pld_err_int_clr(),
-            )
-            .field(
-                "l1_icache3_pld_err_int_clr",
-                &self.l1_icache3_pld_err_int_clr(),
-            )
+            .field("l1_icache2_pld_done_int_clr", &self.l1_icache2_pld_done_int_clr())
+            .field("l1_icache3_pld_done_int_clr", &self.l1_icache3_pld_done_int_clr())
+            .field("l1_icache2_pld_err_int_clr", &self.l1_icache2_pld_err_int_clr())
+            .field("l1_icache3_pld_err_int_clr", &self.l1_icache3_pld_err_int_clr())
             .finish()
     }
 }
@@ -99,7 +87,9 @@ impl W {
     ///Bit 6 - The bit is used to clear interrupt that occurs only when Cache sync-operation is done.
     #[inline(always)]
     #[must_use]
-    pub fn sync_done_int_clr(&mut self) -> SYNC_DONE_INT_CLR_W<SYNC_L1_CACHE_PRELOAD_INT_CLR_SPEC> {
+    pub fn sync_done_int_clr(
+        &mut self,
+    ) -> SYNC_DONE_INT_CLR_W<SYNC_L1_CACHE_PRELOAD_INT_CLR_SPEC> {
         SYNC_DONE_INT_CLR_W::new(self, 6)
     }
     ///Bit 7 - The bit is used to clear interrupt of L1-ICache0 preload-operation error.
@@ -129,7 +119,9 @@ impl W {
     ///Bit 13 - The bit is used to clear interrupt of Cache sync-operation error.
     #[inline(always)]
     #[must_use]
-    pub fn sync_err_int_clr(&mut self) -> SYNC_ERR_INT_CLR_W<SYNC_L1_CACHE_PRELOAD_INT_CLR_SPEC> {
+    pub fn sync_err_int_clr(
+        &mut self,
+    ) -> SYNC_ERR_INT_CLR_W<SYNC_L1_CACHE_PRELOAD_INT_CLR_SPEC> {
         SYNC_ERR_INT_CLR_W::new(self, 13)
     }
 }

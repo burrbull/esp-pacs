@@ -55,7 +55,9 @@ impl W {
     ///Bit 0
     #[inline(always)]
     #[must_use]
-    pub fn pro_cache_tag_force_on(&mut self) -> PRO_CACHE_TAG_FORCE_ON_W<TAG_FO_CTRL_SPEC> {
+    pub fn pro_cache_tag_force_on(
+        &mut self,
+    ) -> PRO_CACHE_TAG_FORCE_ON_W<TAG_FO_CTRL_SPEC> {
         PRO_CACHE_TAG_FORCE_ON_W::new(self, 0)
     }
     ///Bit 1
@@ -67,7 +69,9 @@ impl W {
     ///Bit 8
     #[inline(always)]
     #[must_use]
-    pub fn app_cache_tag_force_on(&mut self) -> APP_CACHE_TAG_FORCE_ON_W<TAG_FO_CTRL_SPEC> {
+    pub fn app_cache_tag_force_on(
+        &mut self,
+    ) -> APP_CACHE_TAG_FORCE_ON_W<TAG_FO_CTRL_SPEC> {
         APP_CACHE_TAG_FORCE_ON_W::new(self, 8)
     }
     ///Bit 9

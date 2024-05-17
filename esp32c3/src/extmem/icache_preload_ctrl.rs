@@ -43,13 +43,17 @@ impl W {
     ///Bit 0 - The bit is used to enable preload operation. It will be cleared by hardware after preload operation done.
     #[inline(always)]
     #[must_use]
-    pub fn icache_preload_ena(&mut self) -> ICACHE_PRELOAD_ENA_W<ICACHE_PRELOAD_CTRL_SPEC> {
+    pub fn icache_preload_ena(
+        &mut self,
+    ) -> ICACHE_PRELOAD_ENA_W<ICACHE_PRELOAD_CTRL_SPEC> {
         ICACHE_PRELOAD_ENA_W::new(self, 0)
     }
     ///Bit 2 - The bit is used to configure the direction of preload operation. 1: descending, 0: ascending.
     #[inline(always)]
     #[must_use]
-    pub fn icache_preload_order(&mut self) -> ICACHE_PRELOAD_ORDER_W<ICACHE_PRELOAD_CTRL_SPEC> {
+    pub fn icache_preload_order(
+        &mut self,
+    ) -> ICACHE_PRELOAD_ORDER_W<ICACHE_PRELOAD_CTRL_SPEC> {
         ICACHE_PRELOAD_ORDER_W::new(self, 2)
     }
 }

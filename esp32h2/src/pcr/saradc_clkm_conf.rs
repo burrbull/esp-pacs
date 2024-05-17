@@ -77,7 +77,9 @@ impl W {
     ///Bits 12:19 - The integral part of the frequency divider factor of the saradc function clock.
     #[inline(always)]
     #[must_use]
-    pub fn saradc_clkm_div_num(&mut self) -> SARADC_CLKM_DIV_NUM_W<SARADC_CLKM_CONF_SPEC> {
+    pub fn saradc_clkm_div_num(
+        &mut self,
+    ) -> SARADC_CLKM_DIV_NUM_W<SARADC_CLKM_CONF_SPEC> {
         SARADC_CLKM_DIV_NUM_W::new(self, 12)
     }
     ///Bits 20:21 - set this field to select clock-source. 0(default): XTAL, 1: 240MHz, 2: FOSC, 3: reserved.

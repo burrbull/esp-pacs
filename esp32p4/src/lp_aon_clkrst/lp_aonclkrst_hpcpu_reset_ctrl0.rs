@@ -9,7 +9,11 @@ pub type LP_AONCLKRST_HPCORE0_LOCKUP_RESET_EN_W<'a, REG> = crate::BitWriter<'a, 
 ///Field `LP_AONCLKRST_LP_WDT_HPCORE0_RESET_LENGTH` reader - need_des
 pub type LP_AONCLKRST_LP_WDT_HPCORE0_RESET_LENGTH_R = crate::FieldReader;
 ///Field `LP_AONCLKRST_LP_WDT_HPCORE0_RESET_LENGTH` writer - need_des
-pub type LP_AONCLKRST_LP_WDT_HPCORE0_RESET_LENGTH_W<'a, REG> = crate::FieldWriter<'a, REG, 3>;
+pub type LP_AONCLKRST_LP_WDT_HPCORE0_RESET_LENGTH_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    3,
+>;
 ///Field `LP_AONCLKRST_LP_WDT_HPCORE0_RESET_EN` reader - write 1 to enable lp_wdt reset hpcore0 feature, write 0 to disable lp_wdt reset hpcore0 feature
 pub type LP_AONCLKRST_LP_WDT_HPCORE0_RESET_EN_R = crate::BitReader;
 ///Field `LP_AONCLKRST_LP_WDT_HPCORE0_RESET_EN` writer - write 1 to enable lp_wdt reset hpcore0 feature, write 0 to disable lp_wdt reset hpcore0 feature
@@ -39,7 +43,11 @@ pub type LP_AONCLKRST_HPCORE1_LOCKUP_RESET_EN_W<'a, REG> = crate::BitWriter<'a, 
 ///Field `LP_AONCLKRST_LP_WDT_HPCORE1_RESET_LENGTH` reader - need_des
 pub type LP_AONCLKRST_LP_WDT_HPCORE1_RESET_LENGTH_R = crate::FieldReader;
 ///Field `LP_AONCLKRST_LP_WDT_HPCORE1_RESET_LENGTH` writer - need_des
-pub type LP_AONCLKRST_LP_WDT_HPCORE1_RESET_LENGTH_W<'a, REG> = crate::FieldWriter<'a, REG, 3>;
+pub type LP_AONCLKRST_LP_WDT_HPCORE1_RESET_LENGTH_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    3,
+>;
 ///Field `LP_AONCLKRST_LP_WDT_HPCORE1_RESET_EN` reader - write 1 to enable lp_wdt reset hpcore1 feature, write 0 to disable lp_wdt reset hpcore1 feature
 pub type LP_AONCLKRST_LP_WDT_HPCORE1_RESET_EN_R = crate::BitReader;
 ///Field `LP_AONCLKRST_LP_WDT_HPCORE1_RESET_EN` writer - write 1 to enable lp_wdt reset hpcore1 feature, write 0 to disable lp_wdt reset hpcore1 feature
@@ -65,7 +73,9 @@ pub type LP_AONCLKRST_HPCORE1_STAT_VECTOR_SEL_W<'a, REG> = crate::BitWriter<'a, 
 impl R {
     ///Bit 0 - write 1 to enable hpcore0 lockup reset feature, write 0 to disable hpcore0 lockup reset feature
     #[inline(always)]
-    pub fn lp_aonclkrst_hpcore0_lockup_reset_en(&self) -> LP_AONCLKRST_HPCORE0_LOCKUP_RESET_EN_R {
+    pub fn lp_aonclkrst_hpcore0_lockup_reset_en(
+        &self,
+    ) -> LP_AONCLKRST_HPCORE0_LOCKUP_RESET_EN_R {
         LP_AONCLKRST_HPCORE0_LOCKUP_RESET_EN_R::new((self.bits & 1) != 0)
     }
     ///Bits 1:3 - need_des
@@ -77,7 +87,9 @@ impl R {
     }
     ///Bit 4 - write 1 to enable lp_wdt reset hpcore0 feature, write 0 to disable lp_wdt reset hpcore0 feature
     #[inline(always)]
-    pub fn lp_aonclkrst_lp_wdt_hpcore0_reset_en(&self) -> LP_AONCLKRST_LP_WDT_HPCORE0_RESET_EN_R {
+    pub fn lp_aonclkrst_lp_wdt_hpcore0_reset_en(
+        &self,
+    ) -> LP_AONCLKRST_LP_WDT_HPCORE0_RESET_EN_R {
         LP_AONCLKRST_LP_WDT_HPCORE0_RESET_EN_R::new(((self.bits >> 4) & 1) != 0)
     }
     ///Bits 5:11 - need_des
@@ -99,12 +111,16 @@ impl R {
     }
     ///Bit 15 - 1'b1: boot from HP TCM ROM: 0x4FC00000 1'b0: boot from LP TCM RAM: 0x50108000
     #[inline(always)]
-    pub fn lp_aonclkrst_hpcore0_stat_vector_sel(&self) -> LP_AONCLKRST_HPCORE0_STAT_VECTOR_SEL_R {
+    pub fn lp_aonclkrst_hpcore0_stat_vector_sel(
+        &self,
+    ) -> LP_AONCLKRST_HPCORE0_STAT_VECTOR_SEL_R {
         LP_AONCLKRST_HPCORE0_STAT_VECTOR_SEL_R::new(((self.bits >> 15) & 1) != 0)
     }
     ///Bit 16 - write 1 to enable hpcore1 lockup reset feature, write 0 to disable hpcore1 lockup reset feature
     #[inline(always)]
-    pub fn lp_aonclkrst_hpcore1_lockup_reset_en(&self) -> LP_AONCLKRST_HPCORE1_LOCKUP_RESET_EN_R {
+    pub fn lp_aonclkrst_hpcore1_lockup_reset_en(
+        &self,
+    ) -> LP_AONCLKRST_HPCORE1_LOCKUP_RESET_EN_R {
         LP_AONCLKRST_HPCORE1_LOCKUP_RESET_EN_R::new(((self.bits >> 16) & 1) != 0)
     }
     ///Bits 17:19 - need_des
@@ -116,7 +132,9 @@ impl R {
     }
     ///Bit 20 - write 1 to enable lp_wdt reset hpcore1 feature, write 0 to disable lp_wdt reset hpcore1 feature
     #[inline(always)]
-    pub fn lp_aonclkrst_lp_wdt_hpcore1_reset_en(&self) -> LP_AONCLKRST_LP_WDT_HPCORE1_RESET_EN_R {
+    pub fn lp_aonclkrst_lp_wdt_hpcore1_reset_en(
+        &self,
+    ) -> LP_AONCLKRST_LP_WDT_HPCORE1_RESET_EN_R {
         LP_AONCLKRST_LP_WDT_HPCORE1_RESET_EN_R::new(((self.bits >> 20) & 1) != 0)
     }
     ///Bits 21:27 - need_des
@@ -138,7 +156,9 @@ impl R {
     }
     ///Bit 31 - 1'b1: boot from HP TCM ROM: 0x4FC00000 1'b0: boot from LP TCM RAM: 0x50108000
     #[inline(always)]
-    pub fn lp_aonclkrst_hpcore1_stat_vector_sel(&self) -> LP_AONCLKRST_HPCORE1_STAT_VECTOR_SEL_R {
+    pub fn lp_aonclkrst_hpcore1_stat_vector_sel(
+        &self,
+    ) -> LP_AONCLKRST_HPCORE1_STAT_VECTOR_SEL_R {
         LP_AONCLKRST_HPCORE1_STAT_VECTOR_SEL_R::new(((self.bits >> 31) & 1) != 0)
     }
 }
@@ -219,7 +239,9 @@ impl W {
     #[must_use]
     pub fn lp_aonclkrst_lp_wdt_hpcore0_reset_length(
         &mut self,
-    ) -> LP_AONCLKRST_LP_WDT_HPCORE0_RESET_LENGTH_W<LP_AONCLKRST_HPCPU_RESET_CTRL0_SPEC> {
+    ) -> LP_AONCLKRST_LP_WDT_HPCORE0_RESET_LENGTH_W<
+        LP_AONCLKRST_HPCPU_RESET_CTRL0_SPEC,
+    > {
         LP_AONCLKRST_LP_WDT_HPCORE0_RESET_LENGTH_W::new(self, 1)
     }
     ///Bit 4 - write 1 to enable lp_wdt reset hpcore0 feature, write 0 to disable lp_wdt reset hpcore0 feature
@@ -283,7 +305,9 @@ impl W {
     #[must_use]
     pub fn lp_aonclkrst_lp_wdt_hpcore1_reset_length(
         &mut self,
-    ) -> LP_AONCLKRST_LP_WDT_HPCORE1_RESET_LENGTH_W<LP_AONCLKRST_HPCPU_RESET_CTRL0_SPEC> {
+    ) -> LP_AONCLKRST_LP_WDT_HPCORE1_RESET_LENGTH_W<
+        LP_AONCLKRST_HPCPU_RESET_CTRL0_SPEC,
+    > {
         LP_AONCLKRST_LP_WDT_HPCORE1_RESET_LENGTH_W::new(self, 17)
     }
     ///Bit 20 - write 1 to enable lp_wdt reset hpcore1 feature, write 0 to disable lp_wdt reset hpcore1 feature

@@ -163,7 +163,9 @@ impl W {
     ///Bits 4:11 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn flash_core_clk_div_num(&mut self) -> FLASH_CORE_CLK_DIV_NUM_W<PERI_CLK_CTRL00_SPEC> {
+    pub fn flash_core_clk_div_num(
+        &mut self,
+    ) -> FLASH_CORE_CLK_DIV_NUM_W<PERI_CLK_CTRL00_SPEC> {
         FLASH_CORE_CLK_DIV_NUM_W::new(self, 4)
     }
     ///Bits 12:13 - Reserved
@@ -187,19 +189,25 @@ impl W {
     ///Bits 16:23 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn psram_core_clk_div_num(&mut self) -> PSRAM_CORE_CLK_DIV_NUM_W<PERI_CLK_CTRL00_SPEC> {
+    pub fn psram_core_clk_div_num(
+        &mut self,
+    ) -> PSRAM_CORE_CLK_DIV_NUM_W<PERI_CLK_CTRL00_SPEC> {
         PSRAM_CORE_CLK_DIV_NUM_W::new(self, 16)
     }
     ///Bit 24 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn pad_emac_ref_clk_en(&mut self) -> PAD_EMAC_REF_CLK_EN_W<PERI_CLK_CTRL00_SPEC> {
+    pub fn pad_emac_ref_clk_en(
+        &mut self,
+    ) -> PAD_EMAC_REF_CLK_EN_W<PERI_CLK_CTRL00_SPEC> {
         PAD_EMAC_REF_CLK_EN_W::new(self, 24)
     }
     ///Bits 25:26 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn emac_rmii_clk_src_sel(&mut self) -> EMAC_RMII_CLK_SRC_SEL_W<PERI_CLK_CTRL00_SPEC> {
+    pub fn emac_rmii_clk_src_sel(
+        &mut self,
+    ) -> EMAC_RMII_CLK_SRC_SEL_W<PERI_CLK_CTRL00_SPEC> {
         EMAC_RMII_CLK_SRC_SEL_W::new(self, 25)
     }
     ///Bit 27 - Reserved
@@ -211,7 +219,9 @@ impl W {
     ///Bit 28 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn emac_rx_clk_src_sel(&mut self) -> EMAC_RX_CLK_SRC_SEL_W<PERI_CLK_CTRL00_SPEC> {
+    pub fn emac_rx_clk_src_sel(
+        &mut self,
+    ) -> EMAC_RX_CLK_SRC_SEL_W<PERI_CLK_CTRL00_SPEC> {
         EMAC_RX_CLK_SRC_SEL_W::new(self, 28)
     }
     ///Bit 29 - Reserved

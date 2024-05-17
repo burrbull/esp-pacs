@@ -122,20 +122,11 @@ impl core::fmt::Debug for R {
             .field("sleep_switch_modem_end", &self.sleep_switch_modem_end())
             .field("modem_switch_sleep_end", &self.modem_switch_sleep_end())
             .field("active_switch_sleep_end", &self.active_switch_sleep_end())
-            .field(
-                "modem_switch_active_start",
-                &self.modem_switch_active_start(),
-            )
-            .field(
-                "sleep_switch_active_start",
-                &self.sleep_switch_active_start(),
-            )
+            .field("modem_switch_active_start", &self.modem_switch_active_start())
+            .field("sleep_switch_active_start", &self.sleep_switch_active_start())
             .field("sleep_switch_modem_start", &self.sleep_switch_modem_start())
             .field("modem_switch_sleep_start", &self.modem_switch_sleep_start())
-            .field(
-                "active_switch_sleep_start",
-                &self.active_switch_sleep_start(),
-            )
+            .field("active_switch_sleep_start", &self.active_switch_sleep_start())
             .field("hp_sw_trigger", &self.hp_sw_trigger())
             .finish()
     }
@@ -150,61 +141,81 @@ impl W {
     ///Bit 21 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn modem_switch_active_end(&mut self) -> MODEM_SWITCH_ACTIVE_END_W<LP_INT_RAW_SPEC> {
+    pub fn modem_switch_active_end(
+        &mut self,
+    ) -> MODEM_SWITCH_ACTIVE_END_W<LP_INT_RAW_SPEC> {
         MODEM_SWITCH_ACTIVE_END_W::new(self, 21)
     }
     ///Bit 22 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn sleep_switch_active_end(&mut self) -> SLEEP_SWITCH_ACTIVE_END_W<LP_INT_RAW_SPEC> {
+    pub fn sleep_switch_active_end(
+        &mut self,
+    ) -> SLEEP_SWITCH_ACTIVE_END_W<LP_INT_RAW_SPEC> {
         SLEEP_SWITCH_ACTIVE_END_W::new(self, 22)
     }
     ///Bit 23 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn sleep_switch_modem_end(&mut self) -> SLEEP_SWITCH_MODEM_END_W<LP_INT_RAW_SPEC> {
+    pub fn sleep_switch_modem_end(
+        &mut self,
+    ) -> SLEEP_SWITCH_MODEM_END_W<LP_INT_RAW_SPEC> {
         SLEEP_SWITCH_MODEM_END_W::new(self, 23)
     }
     ///Bit 24 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn modem_switch_sleep_end(&mut self) -> MODEM_SWITCH_SLEEP_END_W<LP_INT_RAW_SPEC> {
+    pub fn modem_switch_sleep_end(
+        &mut self,
+    ) -> MODEM_SWITCH_SLEEP_END_W<LP_INT_RAW_SPEC> {
         MODEM_SWITCH_SLEEP_END_W::new(self, 24)
     }
     ///Bit 25 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn active_switch_sleep_end(&mut self) -> ACTIVE_SWITCH_SLEEP_END_W<LP_INT_RAW_SPEC> {
+    pub fn active_switch_sleep_end(
+        &mut self,
+    ) -> ACTIVE_SWITCH_SLEEP_END_W<LP_INT_RAW_SPEC> {
         ACTIVE_SWITCH_SLEEP_END_W::new(self, 25)
     }
     ///Bit 26 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn modem_switch_active_start(&mut self) -> MODEM_SWITCH_ACTIVE_START_W<LP_INT_RAW_SPEC> {
+    pub fn modem_switch_active_start(
+        &mut self,
+    ) -> MODEM_SWITCH_ACTIVE_START_W<LP_INT_RAW_SPEC> {
         MODEM_SWITCH_ACTIVE_START_W::new(self, 26)
     }
     ///Bit 27 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn sleep_switch_active_start(&mut self) -> SLEEP_SWITCH_ACTIVE_START_W<LP_INT_RAW_SPEC> {
+    pub fn sleep_switch_active_start(
+        &mut self,
+    ) -> SLEEP_SWITCH_ACTIVE_START_W<LP_INT_RAW_SPEC> {
         SLEEP_SWITCH_ACTIVE_START_W::new(self, 27)
     }
     ///Bit 28 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn sleep_switch_modem_start(&mut self) -> SLEEP_SWITCH_MODEM_START_W<LP_INT_RAW_SPEC> {
+    pub fn sleep_switch_modem_start(
+        &mut self,
+    ) -> SLEEP_SWITCH_MODEM_START_W<LP_INT_RAW_SPEC> {
         SLEEP_SWITCH_MODEM_START_W::new(self, 28)
     }
     ///Bit 29 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn modem_switch_sleep_start(&mut self) -> MODEM_SWITCH_SLEEP_START_W<LP_INT_RAW_SPEC> {
+    pub fn modem_switch_sleep_start(
+        &mut self,
+    ) -> MODEM_SWITCH_SLEEP_START_W<LP_INT_RAW_SPEC> {
         MODEM_SWITCH_SLEEP_START_W::new(self, 29)
     }
     ///Bit 30 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn active_switch_sleep_start(&mut self) -> ACTIVE_SWITCH_SLEEP_START_W<LP_INT_RAW_SPEC> {
+    pub fn active_switch_sleep_start(
+        &mut self,
+    ) -> ACTIVE_SWITCH_SLEEP_START_W<LP_INT_RAW_SPEC> {
         ACTIVE_SWITCH_SLEEP_START_W::new(self, 30)
     }
     ///Bit 31 - need_des

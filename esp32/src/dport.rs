@@ -2363,7 +2363,9 @@ pub mod pro_cache_ctrl1;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_cache_lock_0_addr::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_cache_lock_0_addr::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_cache_lock_0_addr`] module*/
-pub type PRO_CACHE_LOCK_0_ADDR = crate::Reg<pro_cache_lock_0_addr::PRO_CACHE_LOCK_0_ADDR_SPEC>;
+pub type PRO_CACHE_LOCK_0_ADDR = crate::Reg<
+    pro_cache_lock_0_addr::PRO_CACHE_LOCK_0_ADDR_SPEC,
+>;
 ///
 pub mod pro_cache_lock_0_addr;
 /**PRO_CACHE_LOCK_1_ADDR (rw) register accessor:
@@ -2371,7 +2373,9 @@ pub mod pro_cache_lock_0_addr;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_cache_lock_1_addr::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_cache_lock_1_addr::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_cache_lock_1_addr`] module*/
-pub type PRO_CACHE_LOCK_1_ADDR = crate::Reg<pro_cache_lock_1_addr::PRO_CACHE_LOCK_1_ADDR_SPEC>;
+pub type PRO_CACHE_LOCK_1_ADDR = crate::Reg<
+    pro_cache_lock_1_addr::PRO_CACHE_LOCK_1_ADDR_SPEC,
+>;
 ///
 pub mod pro_cache_lock_1_addr;
 /**PRO_CACHE_LOCK_2_ADDR (rw) register accessor:
@@ -2379,7 +2383,9 @@ pub mod pro_cache_lock_1_addr;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_cache_lock_2_addr::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_cache_lock_2_addr::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_cache_lock_2_addr`] module*/
-pub type PRO_CACHE_LOCK_2_ADDR = crate::Reg<pro_cache_lock_2_addr::PRO_CACHE_LOCK_2_ADDR_SPEC>;
+pub type PRO_CACHE_LOCK_2_ADDR = crate::Reg<
+    pro_cache_lock_2_addr::PRO_CACHE_LOCK_2_ADDR_SPEC,
+>;
 ///
 pub mod pro_cache_lock_2_addr;
 /**PRO_CACHE_LOCK_3_ADDR (rw) register accessor:
@@ -2387,7 +2393,9 @@ pub mod pro_cache_lock_2_addr;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_cache_lock_3_addr::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_cache_lock_3_addr::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_cache_lock_3_addr`] module*/
-pub type PRO_CACHE_LOCK_3_ADDR = crate::Reg<pro_cache_lock_3_addr::PRO_CACHE_LOCK_3_ADDR_SPEC>;
+pub type PRO_CACHE_LOCK_3_ADDR = crate::Reg<
+    pro_cache_lock_3_addr::PRO_CACHE_LOCK_3_ADDR_SPEC,
+>;
 ///
 pub mod pro_cache_lock_3_addr;
 /**APP_CACHE_CTRL (rw) register accessor:
@@ -2411,7 +2419,9 @@ pub mod app_cache_ctrl1;
 You can [`read`](crate::generic::Reg::read) this register and get [`app_cache_lock_0_addr::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`app_cache_lock_0_addr::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@app_cache_lock_0_addr`] module*/
-pub type APP_CACHE_LOCK_0_ADDR = crate::Reg<app_cache_lock_0_addr::APP_CACHE_LOCK_0_ADDR_SPEC>;
+pub type APP_CACHE_LOCK_0_ADDR = crate::Reg<
+    app_cache_lock_0_addr::APP_CACHE_LOCK_0_ADDR_SPEC,
+>;
 ///
 pub mod app_cache_lock_0_addr;
 /**APP_CACHE_LOCK_1_ADDR (rw) register accessor:
@@ -2419,7 +2429,9 @@ pub mod app_cache_lock_0_addr;
 You can [`read`](crate::generic::Reg::read) this register and get [`app_cache_lock_1_addr::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`app_cache_lock_1_addr::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@app_cache_lock_1_addr`] module*/
-pub type APP_CACHE_LOCK_1_ADDR = crate::Reg<app_cache_lock_1_addr::APP_CACHE_LOCK_1_ADDR_SPEC>;
+pub type APP_CACHE_LOCK_1_ADDR = crate::Reg<
+    app_cache_lock_1_addr::APP_CACHE_LOCK_1_ADDR_SPEC,
+>;
 ///
 pub mod app_cache_lock_1_addr;
 /**APP_CACHE_LOCK_2_ADDR (rw) register accessor:
@@ -2427,7 +2439,9 @@ pub mod app_cache_lock_1_addr;
 You can [`read`](crate::generic::Reg::read) this register and get [`app_cache_lock_2_addr::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`app_cache_lock_2_addr::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@app_cache_lock_2_addr`] module*/
-pub type APP_CACHE_LOCK_2_ADDR = crate::Reg<app_cache_lock_2_addr::APP_CACHE_LOCK_2_ADDR_SPEC>;
+pub type APP_CACHE_LOCK_2_ADDR = crate::Reg<
+    app_cache_lock_2_addr::APP_CACHE_LOCK_2_ADDR_SPEC,
+>;
 ///
 pub mod app_cache_lock_2_addr;
 /**APP_CACHE_LOCK_3_ADDR (rw) register accessor:
@@ -2435,7 +2449,9 @@ pub mod app_cache_lock_2_addr;
 You can [`read`](crate::generic::Reg::read) this register and get [`app_cache_lock_3_addr::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`app_cache_lock_3_addr::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@app_cache_lock_3_addr`] module*/
-pub type APP_CACHE_LOCK_3_ADDR = crate::Reg<app_cache_lock_3_addr::APP_CACHE_LOCK_3_ADDR_SPEC>;
+pub type APP_CACHE_LOCK_3_ADDR = crate::Reg<
+    app_cache_lock_3_addr::APP_CACHE_LOCK_3_ADDR_SPEC,
+>;
 ///
 pub mod app_cache_lock_3_addr;
 /**TRACEMEM_MUX_MODE (rw) register accessor:
@@ -2851,8 +2867,9 @@ pub mod pro_uhci1_intr_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_tg_t0_level_int_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_tg_t0_level_int_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_tg_t0_level_int_map`] module*/
-pub type PRO_TG_T0_LEVEL_INT_MAP =
-    crate::Reg<pro_tg_t0_level_int_map::PRO_TG_T0_LEVEL_INT_MAP_SPEC>;
+pub type PRO_TG_T0_LEVEL_INT_MAP = crate::Reg<
+    pro_tg_t0_level_int_map::PRO_TG_T0_LEVEL_INT_MAP_SPEC,
+>;
 ///
 pub mod pro_tg_t0_level_int_map;
 /**PRO_TG_T1_LEVEL_INT_MAP (rw) register accessor:
@@ -2860,8 +2877,9 @@ pub mod pro_tg_t0_level_int_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_tg_t1_level_int_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_tg_t1_level_int_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_tg_t1_level_int_map`] module*/
-pub type PRO_TG_T1_LEVEL_INT_MAP =
-    crate::Reg<pro_tg_t1_level_int_map::PRO_TG_T1_LEVEL_INT_MAP_SPEC>;
+pub type PRO_TG_T1_LEVEL_INT_MAP = crate::Reg<
+    pro_tg_t1_level_int_map::PRO_TG_T1_LEVEL_INT_MAP_SPEC,
+>;
 ///
 pub mod pro_tg_t1_level_int_map;
 /**PRO_TG_WDT_LEVEL_INT_MAP (rw) register accessor:
@@ -2869,8 +2887,9 @@ pub mod pro_tg_t1_level_int_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_tg_wdt_level_int_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_tg_wdt_level_int_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_tg_wdt_level_int_map`] module*/
-pub type PRO_TG_WDT_LEVEL_INT_MAP =
-    crate::Reg<pro_tg_wdt_level_int_map::PRO_TG_WDT_LEVEL_INT_MAP_SPEC>;
+pub type PRO_TG_WDT_LEVEL_INT_MAP = crate::Reg<
+    pro_tg_wdt_level_int_map::PRO_TG_WDT_LEVEL_INT_MAP_SPEC,
+>;
 ///
 pub mod pro_tg_wdt_level_int_map;
 /**PRO_TG_LACT_LEVEL_INT_MAP (rw) register accessor:
@@ -2878,8 +2897,9 @@ pub mod pro_tg_wdt_level_int_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_tg_lact_level_int_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_tg_lact_level_int_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_tg_lact_level_int_map`] module*/
-pub type PRO_TG_LACT_LEVEL_INT_MAP =
-    crate::Reg<pro_tg_lact_level_int_map::PRO_TG_LACT_LEVEL_INT_MAP_SPEC>;
+pub type PRO_TG_LACT_LEVEL_INT_MAP = crate::Reg<
+    pro_tg_lact_level_int_map::PRO_TG_LACT_LEVEL_INT_MAP_SPEC,
+>;
 ///
 pub mod pro_tg_lact_level_int_map;
 /**PRO_TG1_T0_LEVEL_INT_MAP (rw) register accessor:
@@ -2887,8 +2907,9 @@ pub mod pro_tg_lact_level_int_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_tg1_t0_level_int_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_tg1_t0_level_int_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_tg1_t0_level_int_map`] module*/
-pub type PRO_TG1_T0_LEVEL_INT_MAP =
-    crate::Reg<pro_tg1_t0_level_int_map::PRO_TG1_T0_LEVEL_INT_MAP_SPEC>;
+pub type PRO_TG1_T0_LEVEL_INT_MAP = crate::Reg<
+    pro_tg1_t0_level_int_map::PRO_TG1_T0_LEVEL_INT_MAP_SPEC,
+>;
 ///
 pub mod pro_tg1_t0_level_int_map;
 /**PRO_TG1_T1_LEVEL_INT_MAP (rw) register accessor:
@@ -2896,8 +2917,9 @@ pub mod pro_tg1_t0_level_int_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_tg1_t1_level_int_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_tg1_t1_level_int_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_tg1_t1_level_int_map`] module*/
-pub type PRO_TG1_T1_LEVEL_INT_MAP =
-    crate::Reg<pro_tg1_t1_level_int_map::PRO_TG1_T1_LEVEL_INT_MAP_SPEC>;
+pub type PRO_TG1_T1_LEVEL_INT_MAP = crate::Reg<
+    pro_tg1_t1_level_int_map::PRO_TG1_T1_LEVEL_INT_MAP_SPEC,
+>;
 ///
 pub mod pro_tg1_t1_level_int_map;
 /**PRO_TG1_WDT_LEVEL_INT_MAP (rw) register accessor:
@@ -2905,8 +2927,9 @@ pub mod pro_tg1_t1_level_int_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_tg1_wdt_level_int_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_tg1_wdt_level_int_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_tg1_wdt_level_int_map`] module*/
-pub type PRO_TG1_WDT_LEVEL_INT_MAP =
-    crate::Reg<pro_tg1_wdt_level_int_map::PRO_TG1_WDT_LEVEL_INT_MAP_SPEC>;
+pub type PRO_TG1_WDT_LEVEL_INT_MAP = crate::Reg<
+    pro_tg1_wdt_level_int_map::PRO_TG1_WDT_LEVEL_INT_MAP_SPEC,
+>;
 ///
 pub mod pro_tg1_wdt_level_int_map;
 /**PRO_TG1_LACT_LEVEL_INT_MAP (rw) register accessor:
@@ -2914,8 +2937,9 @@ pub mod pro_tg1_wdt_level_int_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_tg1_lact_level_int_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_tg1_lact_level_int_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_tg1_lact_level_int_map`] module*/
-pub type PRO_TG1_LACT_LEVEL_INT_MAP =
-    crate::Reg<pro_tg1_lact_level_int_map::PRO_TG1_LACT_LEVEL_INT_MAP_SPEC>;
+pub type PRO_TG1_LACT_LEVEL_INT_MAP = crate::Reg<
+    pro_tg1_lact_level_int_map::PRO_TG1_LACT_LEVEL_INT_MAP_SPEC,
+>;
 ///
 pub mod pro_tg1_lact_level_int_map;
 /**PRO_GPIO_INTERRUPT_MAP (rw) register accessor:
@@ -2923,7 +2947,9 @@ pub mod pro_tg1_lact_level_int_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_gpio_interrupt_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_gpio_interrupt_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_gpio_interrupt_map`] module*/
-pub type PRO_GPIO_INTERRUPT_MAP = crate::Reg<pro_gpio_interrupt_map::PRO_GPIO_INTERRUPT_MAP_SPEC>;
+pub type PRO_GPIO_INTERRUPT_MAP = crate::Reg<
+    pro_gpio_interrupt_map::PRO_GPIO_INTERRUPT_MAP_SPEC,
+>;
 ///
 pub mod pro_gpio_interrupt_map;
 /**PRO_GPIO_INTERRUPT_NMI_MAP (rw) register accessor:
@@ -2931,8 +2957,9 @@ pub mod pro_gpio_interrupt_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_gpio_interrupt_nmi_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_gpio_interrupt_nmi_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_gpio_interrupt_nmi_map`] module*/
-pub type PRO_GPIO_INTERRUPT_NMI_MAP =
-    crate::Reg<pro_gpio_interrupt_nmi_map::PRO_GPIO_INTERRUPT_NMI_MAP_SPEC>;
+pub type PRO_GPIO_INTERRUPT_NMI_MAP = crate::Reg<
+    pro_gpio_interrupt_nmi_map::PRO_GPIO_INTERRUPT_NMI_MAP_SPEC,
+>;
 ///
 pub mod pro_gpio_interrupt_nmi_map;
 /**PRO_CPU_INTR_FROM_CPU_0_MAP (rw) register accessor:
@@ -2940,8 +2967,9 @@ pub mod pro_gpio_interrupt_nmi_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_cpu_intr_from_cpu_0_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_cpu_intr_from_cpu_0_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_cpu_intr_from_cpu_0_map`] module*/
-pub type PRO_CPU_INTR_FROM_CPU_0_MAP =
-    crate::Reg<pro_cpu_intr_from_cpu_0_map::PRO_CPU_INTR_FROM_CPU_0_MAP_SPEC>;
+pub type PRO_CPU_INTR_FROM_CPU_0_MAP = crate::Reg<
+    pro_cpu_intr_from_cpu_0_map::PRO_CPU_INTR_FROM_CPU_0_MAP_SPEC,
+>;
 ///
 pub mod pro_cpu_intr_from_cpu_0_map;
 /**PRO_CPU_INTR_FROM_CPU_1_MAP (rw) register accessor:
@@ -2949,8 +2977,9 @@ pub mod pro_cpu_intr_from_cpu_0_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_cpu_intr_from_cpu_1_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_cpu_intr_from_cpu_1_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_cpu_intr_from_cpu_1_map`] module*/
-pub type PRO_CPU_INTR_FROM_CPU_1_MAP =
-    crate::Reg<pro_cpu_intr_from_cpu_1_map::PRO_CPU_INTR_FROM_CPU_1_MAP_SPEC>;
+pub type PRO_CPU_INTR_FROM_CPU_1_MAP = crate::Reg<
+    pro_cpu_intr_from_cpu_1_map::PRO_CPU_INTR_FROM_CPU_1_MAP_SPEC,
+>;
 ///
 pub mod pro_cpu_intr_from_cpu_1_map;
 /**PRO_CPU_INTR_FROM_CPU_2_MAP (rw) register accessor:
@@ -2958,8 +2987,9 @@ pub mod pro_cpu_intr_from_cpu_1_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_cpu_intr_from_cpu_2_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_cpu_intr_from_cpu_2_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_cpu_intr_from_cpu_2_map`] module*/
-pub type PRO_CPU_INTR_FROM_CPU_2_MAP =
-    crate::Reg<pro_cpu_intr_from_cpu_2_map::PRO_CPU_INTR_FROM_CPU_2_MAP_SPEC>;
+pub type PRO_CPU_INTR_FROM_CPU_2_MAP = crate::Reg<
+    pro_cpu_intr_from_cpu_2_map::PRO_CPU_INTR_FROM_CPU_2_MAP_SPEC,
+>;
 ///
 pub mod pro_cpu_intr_from_cpu_2_map;
 /**PRO_CPU_INTR_FROM_CPU_3_MAP (rw) register accessor:
@@ -2967,8 +2997,9 @@ pub mod pro_cpu_intr_from_cpu_2_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_cpu_intr_from_cpu_3_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_cpu_intr_from_cpu_3_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_cpu_intr_from_cpu_3_map`] module*/
-pub type PRO_CPU_INTR_FROM_CPU_3_MAP =
-    crate::Reg<pro_cpu_intr_from_cpu_3_map::PRO_CPU_INTR_FROM_CPU_3_MAP_SPEC>;
+pub type PRO_CPU_INTR_FROM_CPU_3_MAP = crate::Reg<
+    pro_cpu_intr_from_cpu_3_map::PRO_CPU_INTR_FROM_CPU_3_MAP_SPEC,
+>;
 ///
 pub mod pro_cpu_intr_from_cpu_3_map;
 /**PRO_SPI_INTR_0_MAP (rw) register accessor:
@@ -3048,8 +3079,9 @@ pub mod pro_uart2_intr_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_sdio_host_interrupt_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_sdio_host_interrupt_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_sdio_host_interrupt_map`] module*/
-pub type PRO_SDIO_HOST_INTERRUPT_MAP =
-    crate::Reg<pro_sdio_host_interrupt_map::PRO_SDIO_HOST_INTERRUPT_MAP_SPEC>;
+pub type PRO_SDIO_HOST_INTERRUPT_MAP = crate::Reg<
+    pro_sdio_host_interrupt_map::PRO_SDIO_HOST_INTERRUPT_MAP_SPEC,
+>;
 ///
 pub mod pro_sdio_host_interrupt_map;
 /**PRO_EMAC_INT_MAP (rw) register accessor:
@@ -3121,7 +3153,9 @@ pub mod pro_can_int_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_rtc_core_intr_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_rtc_core_intr_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_rtc_core_intr_map`] module*/
-pub type PRO_RTC_CORE_INTR_MAP = crate::Reg<pro_rtc_core_intr_map::PRO_RTC_CORE_INTR_MAP_SPEC>;
+pub type PRO_RTC_CORE_INTR_MAP = crate::Reg<
+    pro_rtc_core_intr_map::PRO_RTC_CORE_INTR_MAP_SPEC,
+>;
 ///
 pub mod pro_rtc_core_intr_map;
 /**PRO_RMT_INTR_MAP (rw) register accessor:
@@ -3145,7 +3179,9 @@ pub mod pro_pcnt_intr_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_i2c_ext0_intr_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_i2c_ext0_intr_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_i2c_ext0_intr_map`] module*/
-pub type PRO_I2C_EXT0_INTR_MAP = crate::Reg<pro_i2c_ext0_intr_map::PRO_I2C_EXT0_INTR_MAP_SPEC>;
+pub type PRO_I2C_EXT0_INTR_MAP = crate::Reg<
+    pro_i2c_ext0_intr_map::PRO_I2C_EXT0_INTR_MAP_SPEC,
+>;
 ///
 pub mod pro_i2c_ext0_intr_map;
 /**PRO_I2C_EXT1_INTR_MAP (rw) register accessor:
@@ -3153,7 +3189,9 @@ pub mod pro_i2c_ext0_intr_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_i2c_ext1_intr_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_i2c_ext1_intr_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_i2c_ext1_intr_map`] module*/
-pub type PRO_I2C_EXT1_INTR_MAP = crate::Reg<pro_i2c_ext1_intr_map::PRO_I2C_EXT1_INTR_MAP_SPEC>;
+pub type PRO_I2C_EXT1_INTR_MAP = crate::Reg<
+    pro_i2c_ext1_intr_map::PRO_I2C_EXT1_INTR_MAP_SPEC,
+>;
 ///
 pub mod pro_i2c_ext1_intr_map;
 /**PRO_RSA_INTR_MAP (rw) register accessor:
@@ -3169,7 +3207,9 @@ pub mod pro_rsa_intr_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_spi1_dma_int_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_spi1_dma_int_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_spi1_dma_int_map`] module*/
-pub type PRO_SPI1_DMA_INT_MAP = crate::Reg<pro_spi1_dma_int_map::PRO_SPI1_DMA_INT_MAP_SPEC>;
+pub type PRO_SPI1_DMA_INT_MAP = crate::Reg<
+    pro_spi1_dma_int_map::PRO_SPI1_DMA_INT_MAP_SPEC,
+>;
 ///
 pub mod pro_spi1_dma_int_map;
 /**PRO_SPI2_DMA_INT_MAP (rw) register accessor:
@@ -3177,7 +3217,9 @@ pub mod pro_spi1_dma_int_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_spi2_dma_int_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_spi2_dma_int_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_spi2_dma_int_map`] module*/
-pub type PRO_SPI2_DMA_INT_MAP = crate::Reg<pro_spi2_dma_int_map::PRO_SPI2_DMA_INT_MAP_SPEC>;
+pub type PRO_SPI2_DMA_INT_MAP = crate::Reg<
+    pro_spi2_dma_int_map::PRO_SPI2_DMA_INT_MAP_SPEC,
+>;
 ///
 pub mod pro_spi2_dma_int_map;
 /**PRO_SPI3_DMA_INT_MAP (rw) register accessor:
@@ -3185,7 +3227,9 @@ pub mod pro_spi2_dma_int_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_spi3_dma_int_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_spi3_dma_int_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_spi3_dma_int_map`] module*/
-pub type PRO_SPI3_DMA_INT_MAP = crate::Reg<pro_spi3_dma_int_map::PRO_SPI3_DMA_INT_MAP_SPEC>;
+pub type PRO_SPI3_DMA_INT_MAP = crate::Reg<
+    pro_spi3_dma_int_map::PRO_SPI3_DMA_INT_MAP_SPEC,
+>;
 ///
 pub mod pro_spi3_dma_int_map;
 /**PRO_WDG_INT_MAP (rw) register accessor:
@@ -3217,7 +3261,9 @@ pub mod pro_timer_int2_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_tg_t0_edge_int_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_tg_t0_edge_int_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_tg_t0_edge_int_map`] module*/
-pub type PRO_TG_T0_EDGE_INT_MAP = crate::Reg<pro_tg_t0_edge_int_map::PRO_TG_T0_EDGE_INT_MAP_SPEC>;
+pub type PRO_TG_T0_EDGE_INT_MAP = crate::Reg<
+    pro_tg_t0_edge_int_map::PRO_TG_T0_EDGE_INT_MAP_SPEC,
+>;
 ///
 pub mod pro_tg_t0_edge_int_map;
 /**PRO_TG_T1_EDGE_INT_MAP (rw) register accessor:
@@ -3225,7 +3271,9 @@ pub mod pro_tg_t0_edge_int_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_tg_t1_edge_int_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_tg_t1_edge_int_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_tg_t1_edge_int_map`] module*/
-pub type PRO_TG_T1_EDGE_INT_MAP = crate::Reg<pro_tg_t1_edge_int_map::PRO_TG_T1_EDGE_INT_MAP_SPEC>;
+pub type PRO_TG_T1_EDGE_INT_MAP = crate::Reg<
+    pro_tg_t1_edge_int_map::PRO_TG_T1_EDGE_INT_MAP_SPEC,
+>;
 ///
 pub mod pro_tg_t1_edge_int_map;
 /**PRO_TG_WDT_EDGE_INT_MAP (rw) register accessor:
@@ -3233,8 +3281,9 @@ pub mod pro_tg_t1_edge_int_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_tg_wdt_edge_int_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_tg_wdt_edge_int_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_tg_wdt_edge_int_map`] module*/
-pub type PRO_TG_WDT_EDGE_INT_MAP =
-    crate::Reg<pro_tg_wdt_edge_int_map::PRO_TG_WDT_EDGE_INT_MAP_SPEC>;
+pub type PRO_TG_WDT_EDGE_INT_MAP = crate::Reg<
+    pro_tg_wdt_edge_int_map::PRO_TG_WDT_EDGE_INT_MAP_SPEC,
+>;
 ///
 pub mod pro_tg_wdt_edge_int_map;
 /**PRO_TG_LACT_EDGE_INT_MAP (rw) register accessor:
@@ -3242,8 +3291,9 @@ pub mod pro_tg_wdt_edge_int_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_tg_lact_edge_int_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_tg_lact_edge_int_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_tg_lact_edge_int_map`] module*/
-pub type PRO_TG_LACT_EDGE_INT_MAP =
-    crate::Reg<pro_tg_lact_edge_int_map::PRO_TG_LACT_EDGE_INT_MAP_SPEC>;
+pub type PRO_TG_LACT_EDGE_INT_MAP = crate::Reg<
+    pro_tg_lact_edge_int_map::PRO_TG_LACT_EDGE_INT_MAP_SPEC,
+>;
 ///
 pub mod pro_tg_lact_edge_int_map;
 /**PRO_TG1_T0_EDGE_INT_MAP (rw) register accessor:
@@ -3251,8 +3301,9 @@ pub mod pro_tg_lact_edge_int_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_tg1_t0_edge_int_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_tg1_t0_edge_int_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_tg1_t0_edge_int_map`] module*/
-pub type PRO_TG1_T0_EDGE_INT_MAP =
-    crate::Reg<pro_tg1_t0_edge_int_map::PRO_TG1_T0_EDGE_INT_MAP_SPEC>;
+pub type PRO_TG1_T0_EDGE_INT_MAP = crate::Reg<
+    pro_tg1_t0_edge_int_map::PRO_TG1_T0_EDGE_INT_MAP_SPEC,
+>;
 ///
 pub mod pro_tg1_t0_edge_int_map;
 /**PRO_TG1_T1_EDGE_INT_MAP (rw) register accessor:
@@ -3260,8 +3311,9 @@ pub mod pro_tg1_t0_edge_int_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_tg1_t1_edge_int_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_tg1_t1_edge_int_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_tg1_t1_edge_int_map`] module*/
-pub type PRO_TG1_T1_EDGE_INT_MAP =
-    crate::Reg<pro_tg1_t1_edge_int_map::PRO_TG1_T1_EDGE_INT_MAP_SPEC>;
+pub type PRO_TG1_T1_EDGE_INT_MAP = crate::Reg<
+    pro_tg1_t1_edge_int_map::PRO_TG1_T1_EDGE_INT_MAP_SPEC,
+>;
 ///
 pub mod pro_tg1_t1_edge_int_map;
 /**PRO_TG1_WDT_EDGE_INT_MAP (rw) register accessor:
@@ -3269,8 +3321,9 @@ pub mod pro_tg1_t1_edge_int_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_tg1_wdt_edge_int_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_tg1_wdt_edge_int_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_tg1_wdt_edge_int_map`] module*/
-pub type PRO_TG1_WDT_EDGE_INT_MAP =
-    crate::Reg<pro_tg1_wdt_edge_int_map::PRO_TG1_WDT_EDGE_INT_MAP_SPEC>;
+pub type PRO_TG1_WDT_EDGE_INT_MAP = crate::Reg<
+    pro_tg1_wdt_edge_int_map::PRO_TG1_WDT_EDGE_INT_MAP_SPEC,
+>;
 ///
 pub mod pro_tg1_wdt_edge_int_map;
 /**PRO_TG1_LACT_EDGE_INT_MAP (rw) register accessor:
@@ -3278,8 +3331,9 @@ pub mod pro_tg1_wdt_edge_int_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_tg1_lact_edge_int_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_tg1_lact_edge_int_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_tg1_lact_edge_int_map`] module*/
-pub type PRO_TG1_LACT_EDGE_INT_MAP =
-    crate::Reg<pro_tg1_lact_edge_int_map::PRO_TG1_LACT_EDGE_INT_MAP_SPEC>;
+pub type PRO_TG1_LACT_EDGE_INT_MAP = crate::Reg<
+    pro_tg1_lact_edge_int_map::PRO_TG1_LACT_EDGE_INT_MAP_SPEC,
+>;
 ///
 pub mod pro_tg1_lact_edge_int_map;
 /**PRO_MMU_IA_INT_MAP (rw) register accessor:
@@ -3303,7 +3357,9 @@ pub mod pro_mpu_ia_int_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_cache_ia_int_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_cache_ia_int_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_cache_ia_int_map`] module*/
-pub type PRO_CACHE_IA_INT_MAP = crate::Reg<pro_cache_ia_int_map::PRO_CACHE_IA_INT_MAP_SPEC>;
+pub type PRO_CACHE_IA_INT_MAP = crate::Reg<
+    pro_cache_ia_int_map::PRO_CACHE_IA_INT_MAP_SPEC,
+>;
 ///
 pub mod pro_cache_ia_int_map;
 /**APP_MAC_INTR_MAP (rw) register accessor:
@@ -3423,8 +3479,9 @@ pub mod app_uhci1_intr_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`app_tg_t0_level_int_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`app_tg_t0_level_int_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@app_tg_t0_level_int_map`] module*/
-pub type APP_TG_T0_LEVEL_INT_MAP =
-    crate::Reg<app_tg_t0_level_int_map::APP_TG_T0_LEVEL_INT_MAP_SPEC>;
+pub type APP_TG_T0_LEVEL_INT_MAP = crate::Reg<
+    app_tg_t0_level_int_map::APP_TG_T0_LEVEL_INT_MAP_SPEC,
+>;
 ///
 pub mod app_tg_t0_level_int_map;
 /**APP_TG_T1_LEVEL_INT_MAP (rw) register accessor:
@@ -3432,8 +3489,9 @@ pub mod app_tg_t0_level_int_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`app_tg_t1_level_int_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`app_tg_t1_level_int_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@app_tg_t1_level_int_map`] module*/
-pub type APP_TG_T1_LEVEL_INT_MAP =
-    crate::Reg<app_tg_t1_level_int_map::APP_TG_T1_LEVEL_INT_MAP_SPEC>;
+pub type APP_TG_T1_LEVEL_INT_MAP = crate::Reg<
+    app_tg_t1_level_int_map::APP_TG_T1_LEVEL_INT_MAP_SPEC,
+>;
 ///
 pub mod app_tg_t1_level_int_map;
 /**APP_TG_WDT_LEVEL_INT_MAP (rw) register accessor:
@@ -3441,8 +3499,9 @@ pub mod app_tg_t1_level_int_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`app_tg_wdt_level_int_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`app_tg_wdt_level_int_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@app_tg_wdt_level_int_map`] module*/
-pub type APP_TG_WDT_LEVEL_INT_MAP =
-    crate::Reg<app_tg_wdt_level_int_map::APP_TG_WDT_LEVEL_INT_MAP_SPEC>;
+pub type APP_TG_WDT_LEVEL_INT_MAP = crate::Reg<
+    app_tg_wdt_level_int_map::APP_TG_WDT_LEVEL_INT_MAP_SPEC,
+>;
 ///
 pub mod app_tg_wdt_level_int_map;
 /**APP_TG_LACT_LEVEL_INT_MAP (rw) register accessor:
@@ -3450,8 +3509,9 @@ pub mod app_tg_wdt_level_int_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`app_tg_lact_level_int_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`app_tg_lact_level_int_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@app_tg_lact_level_int_map`] module*/
-pub type APP_TG_LACT_LEVEL_INT_MAP =
-    crate::Reg<app_tg_lact_level_int_map::APP_TG_LACT_LEVEL_INT_MAP_SPEC>;
+pub type APP_TG_LACT_LEVEL_INT_MAP = crate::Reg<
+    app_tg_lact_level_int_map::APP_TG_LACT_LEVEL_INT_MAP_SPEC,
+>;
 ///
 pub mod app_tg_lact_level_int_map;
 /**APP_TG1_T0_LEVEL_INT_MAP (rw) register accessor:
@@ -3459,8 +3519,9 @@ pub mod app_tg_lact_level_int_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`app_tg1_t0_level_int_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`app_tg1_t0_level_int_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@app_tg1_t0_level_int_map`] module*/
-pub type APP_TG1_T0_LEVEL_INT_MAP =
-    crate::Reg<app_tg1_t0_level_int_map::APP_TG1_T0_LEVEL_INT_MAP_SPEC>;
+pub type APP_TG1_T0_LEVEL_INT_MAP = crate::Reg<
+    app_tg1_t0_level_int_map::APP_TG1_T0_LEVEL_INT_MAP_SPEC,
+>;
 ///
 pub mod app_tg1_t0_level_int_map;
 /**APP_TG1_T1_LEVEL_INT_MAP (rw) register accessor:
@@ -3468,8 +3529,9 @@ pub mod app_tg1_t0_level_int_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`app_tg1_t1_level_int_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`app_tg1_t1_level_int_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@app_tg1_t1_level_int_map`] module*/
-pub type APP_TG1_T1_LEVEL_INT_MAP =
-    crate::Reg<app_tg1_t1_level_int_map::APP_TG1_T1_LEVEL_INT_MAP_SPEC>;
+pub type APP_TG1_T1_LEVEL_INT_MAP = crate::Reg<
+    app_tg1_t1_level_int_map::APP_TG1_T1_LEVEL_INT_MAP_SPEC,
+>;
 ///
 pub mod app_tg1_t1_level_int_map;
 /**APP_TG1_WDT_LEVEL_INT_MAP (rw) register accessor:
@@ -3477,8 +3539,9 @@ pub mod app_tg1_t1_level_int_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`app_tg1_wdt_level_int_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`app_tg1_wdt_level_int_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@app_tg1_wdt_level_int_map`] module*/
-pub type APP_TG1_WDT_LEVEL_INT_MAP =
-    crate::Reg<app_tg1_wdt_level_int_map::APP_TG1_WDT_LEVEL_INT_MAP_SPEC>;
+pub type APP_TG1_WDT_LEVEL_INT_MAP = crate::Reg<
+    app_tg1_wdt_level_int_map::APP_TG1_WDT_LEVEL_INT_MAP_SPEC,
+>;
 ///
 pub mod app_tg1_wdt_level_int_map;
 /**APP_TG1_LACT_LEVEL_INT_MAP (rw) register accessor:
@@ -3486,8 +3549,9 @@ pub mod app_tg1_wdt_level_int_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`app_tg1_lact_level_int_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`app_tg1_lact_level_int_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@app_tg1_lact_level_int_map`] module*/
-pub type APP_TG1_LACT_LEVEL_INT_MAP =
-    crate::Reg<app_tg1_lact_level_int_map::APP_TG1_LACT_LEVEL_INT_MAP_SPEC>;
+pub type APP_TG1_LACT_LEVEL_INT_MAP = crate::Reg<
+    app_tg1_lact_level_int_map::APP_TG1_LACT_LEVEL_INT_MAP_SPEC,
+>;
 ///
 pub mod app_tg1_lact_level_int_map;
 /**APP_GPIO_INTERRUPT_MAP (rw) register accessor:
@@ -3495,7 +3559,9 @@ pub mod app_tg1_lact_level_int_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`app_gpio_interrupt_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`app_gpio_interrupt_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@app_gpio_interrupt_map`] module*/
-pub type APP_GPIO_INTERRUPT_MAP = crate::Reg<app_gpio_interrupt_map::APP_GPIO_INTERRUPT_MAP_SPEC>;
+pub type APP_GPIO_INTERRUPT_MAP = crate::Reg<
+    app_gpio_interrupt_map::APP_GPIO_INTERRUPT_MAP_SPEC,
+>;
 ///
 pub mod app_gpio_interrupt_map;
 /**APP_GPIO_INTERRUPT_NMI_MAP (rw) register accessor:
@@ -3503,8 +3569,9 @@ pub mod app_gpio_interrupt_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`app_gpio_interrupt_nmi_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`app_gpio_interrupt_nmi_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@app_gpio_interrupt_nmi_map`] module*/
-pub type APP_GPIO_INTERRUPT_NMI_MAP =
-    crate::Reg<app_gpio_interrupt_nmi_map::APP_GPIO_INTERRUPT_NMI_MAP_SPEC>;
+pub type APP_GPIO_INTERRUPT_NMI_MAP = crate::Reg<
+    app_gpio_interrupt_nmi_map::APP_GPIO_INTERRUPT_NMI_MAP_SPEC,
+>;
 ///
 pub mod app_gpio_interrupt_nmi_map;
 /**APP_CPU_INTR_FROM_CPU_0_MAP (rw) register accessor:
@@ -3512,8 +3579,9 @@ pub mod app_gpio_interrupt_nmi_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`app_cpu_intr_from_cpu_0_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`app_cpu_intr_from_cpu_0_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@app_cpu_intr_from_cpu_0_map`] module*/
-pub type APP_CPU_INTR_FROM_CPU_0_MAP =
-    crate::Reg<app_cpu_intr_from_cpu_0_map::APP_CPU_INTR_FROM_CPU_0_MAP_SPEC>;
+pub type APP_CPU_INTR_FROM_CPU_0_MAP = crate::Reg<
+    app_cpu_intr_from_cpu_0_map::APP_CPU_INTR_FROM_CPU_0_MAP_SPEC,
+>;
 ///
 pub mod app_cpu_intr_from_cpu_0_map;
 /**APP_CPU_INTR_FROM_CPU_1_MAP (rw) register accessor:
@@ -3521,8 +3589,9 @@ pub mod app_cpu_intr_from_cpu_0_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`app_cpu_intr_from_cpu_1_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`app_cpu_intr_from_cpu_1_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@app_cpu_intr_from_cpu_1_map`] module*/
-pub type APP_CPU_INTR_FROM_CPU_1_MAP =
-    crate::Reg<app_cpu_intr_from_cpu_1_map::APP_CPU_INTR_FROM_CPU_1_MAP_SPEC>;
+pub type APP_CPU_INTR_FROM_CPU_1_MAP = crate::Reg<
+    app_cpu_intr_from_cpu_1_map::APP_CPU_INTR_FROM_CPU_1_MAP_SPEC,
+>;
 ///
 pub mod app_cpu_intr_from_cpu_1_map;
 /**APP_CPU_INTR_FROM_CPU_2_MAP (rw) register accessor:
@@ -3530,8 +3599,9 @@ pub mod app_cpu_intr_from_cpu_1_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`app_cpu_intr_from_cpu_2_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`app_cpu_intr_from_cpu_2_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@app_cpu_intr_from_cpu_2_map`] module*/
-pub type APP_CPU_INTR_FROM_CPU_2_MAP =
-    crate::Reg<app_cpu_intr_from_cpu_2_map::APP_CPU_INTR_FROM_CPU_2_MAP_SPEC>;
+pub type APP_CPU_INTR_FROM_CPU_2_MAP = crate::Reg<
+    app_cpu_intr_from_cpu_2_map::APP_CPU_INTR_FROM_CPU_2_MAP_SPEC,
+>;
 ///
 pub mod app_cpu_intr_from_cpu_2_map;
 /**APP_CPU_INTR_FROM_CPU_3_MAP (rw) register accessor:
@@ -3539,8 +3609,9 @@ pub mod app_cpu_intr_from_cpu_2_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`app_cpu_intr_from_cpu_3_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`app_cpu_intr_from_cpu_3_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@app_cpu_intr_from_cpu_3_map`] module*/
-pub type APP_CPU_INTR_FROM_CPU_3_MAP =
-    crate::Reg<app_cpu_intr_from_cpu_3_map::APP_CPU_INTR_FROM_CPU_3_MAP_SPEC>;
+pub type APP_CPU_INTR_FROM_CPU_3_MAP = crate::Reg<
+    app_cpu_intr_from_cpu_3_map::APP_CPU_INTR_FROM_CPU_3_MAP_SPEC,
+>;
 ///
 pub mod app_cpu_intr_from_cpu_3_map;
 /**APP_SPI_INTR_0_MAP (rw) register accessor:
@@ -3620,8 +3691,9 @@ pub mod app_uart2_intr_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`app_sdio_host_interrupt_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`app_sdio_host_interrupt_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@app_sdio_host_interrupt_map`] module*/
-pub type APP_SDIO_HOST_INTERRUPT_MAP =
-    crate::Reg<app_sdio_host_interrupt_map::APP_SDIO_HOST_INTERRUPT_MAP_SPEC>;
+pub type APP_SDIO_HOST_INTERRUPT_MAP = crate::Reg<
+    app_sdio_host_interrupt_map::APP_SDIO_HOST_INTERRUPT_MAP_SPEC,
+>;
 ///
 pub mod app_sdio_host_interrupt_map;
 /**APP_EMAC_INT_MAP (rw) register accessor:
@@ -3693,7 +3765,9 @@ pub mod app_can_int_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`app_rtc_core_intr_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`app_rtc_core_intr_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@app_rtc_core_intr_map`] module*/
-pub type APP_RTC_CORE_INTR_MAP = crate::Reg<app_rtc_core_intr_map::APP_RTC_CORE_INTR_MAP_SPEC>;
+pub type APP_RTC_CORE_INTR_MAP = crate::Reg<
+    app_rtc_core_intr_map::APP_RTC_CORE_INTR_MAP_SPEC,
+>;
 ///
 pub mod app_rtc_core_intr_map;
 /**APP_RMT_INTR_MAP (rw) register accessor:
@@ -3717,7 +3791,9 @@ pub mod app_pcnt_intr_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`app_i2c_ext0_intr_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`app_i2c_ext0_intr_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@app_i2c_ext0_intr_map`] module*/
-pub type APP_I2C_EXT0_INTR_MAP = crate::Reg<app_i2c_ext0_intr_map::APP_I2C_EXT0_INTR_MAP_SPEC>;
+pub type APP_I2C_EXT0_INTR_MAP = crate::Reg<
+    app_i2c_ext0_intr_map::APP_I2C_EXT0_INTR_MAP_SPEC,
+>;
 ///
 pub mod app_i2c_ext0_intr_map;
 /**APP_I2C_EXT1_INTR_MAP (rw) register accessor:
@@ -3725,7 +3801,9 @@ pub mod app_i2c_ext0_intr_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`app_i2c_ext1_intr_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`app_i2c_ext1_intr_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@app_i2c_ext1_intr_map`] module*/
-pub type APP_I2C_EXT1_INTR_MAP = crate::Reg<app_i2c_ext1_intr_map::APP_I2C_EXT1_INTR_MAP_SPEC>;
+pub type APP_I2C_EXT1_INTR_MAP = crate::Reg<
+    app_i2c_ext1_intr_map::APP_I2C_EXT1_INTR_MAP_SPEC,
+>;
 ///
 pub mod app_i2c_ext1_intr_map;
 /**APP_RSA_INTR_MAP (rw) register accessor:
@@ -3741,7 +3819,9 @@ pub mod app_rsa_intr_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`app_spi1_dma_int_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`app_spi1_dma_int_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@app_spi1_dma_int_map`] module*/
-pub type APP_SPI1_DMA_INT_MAP = crate::Reg<app_spi1_dma_int_map::APP_SPI1_DMA_INT_MAP_SPEC>;
+pub type APP_SPI1_DMA_INT_MAP = crate::Reg<
+    app_spi1_dma_int_map::APP_SPI1_DMA_INT_MAP_SPEC,
+>;
 ///
 pub mod app_spi1_dma_int_map;
 /**APP_SPI2_DMA_INT_MAP (rw) register accessor:
@@ -3749,7 +3829,9 @@ pub mod app_spi1_dma_int_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`app_spi2_dma_int_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`app_spi2_dma_int_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@app_spi2_dma_int_map`] module*/
-pub type APP_SPI2_DMA_INT_MAP = crate::Reg<app_spi2_dma_int_map::APP_SPI2_DMA_INT_MAP_SPEC>;
+pub type APP_SPI2_DMA_INT_MAP = crate::Reg<
+    app_spi2_dma_int_map::APP_SPI2_DMA_INT_MAP_SPEC,
+>;
 ///
 pub mod app_spi2_dma_int_map;
 /**APP_SPI3_DMA_INT_MAP (rw) register accessor:
@@ -3757,7 +3839,9 @@ pub mod app_spi2_dma_int_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`app_spi3_dma_int_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`app_spi3_dma_int_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@app_spi3_dma_int_map`] module*/
-pub type APP_SPI3_DMA_INT_MAP = crate::Reg<app_spi3_dma_int_map::APP_SPI3_DMA_INT_MAP_SPEC>;
+pub type APP_SPI3_DMA_INT_MAP = crate::Reg<
+    app_spi3_dma_int_map::APP_SPI3_DMA_INT_MAP_SPEC,
+>;
 ///
 pub mod app_spi3_dma_int_map;
 /**APP_WDG_INT_MAP (rw) register accessor:
@@ -3789,7 +3873,9 @@ pub mod app_timer_int2_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`app_tg_t0_edge_int_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`app_tg_t0_edge_int_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@app_tg_t0_edge_int_map`] module*/
-pub type APP_TG_T0_EDGE_INT_MAP = crate::Reg<app_tg_t0_edge_int_map::APP_TG_T0_EDGE_INT_MAP_SPEC>;
+pub type APP_TG_T0_EDGE_INT_MAP = crate::Reg<
+    app_tg_t0_edge_int_map::APP_TG_T0_EDGE_INT_MAP_SPEC,
+>;
 ///
 pub mod app_tg_t0_edge_int_map;
 /**APP_TG_T1_EDGE_INT_MAP (rw) register accessor:
@@ -3797,7 +3883,9 @@ pub mod app_tg_t0_edge_int_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`app_tg_t1_edge_int_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`app_tg_t1_edge_int_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@app_tg_t1_edge_int_map`] module*/
-pub type APP_TG_T1_EDGE_INT_MAP = crate::Reg<app_tg_t1_edge_int_map::APP_TG_T1_EDGE_INT_MAP_SPEC>;
+pub type APP_TG_T1_EDGE_INT_MAP = crate::Reg<
+    app_tg_t1_edge_int_map::APP_TG_T1_EDGE_INT_MAP_SPEC,
+>;
 ///
 pub mod app_tg_t1_edge_int_map;
 /**APP_TG_WDT_EDGE_INT_MAP (rw) register accessor:
@@ -3805,8 +3893,9 @@ pub mod app_tg_t1_edge_int_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`app_tg_wdt_edge_int_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`app_tg_wdt_edge_int_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@app_tg_wdt_edge_int_map`] module*/
-pub type APP_TG_WDT_EDGE_INT_MAP =
-    crate::Reg<app_tg_wdt_edge_int_map::APP_TG_WDT_EDGE_INT_MAP_SPEC>;
+pub type APP_TG_WDT_EDGE_INT_MAP = crate::Reg<
+    app_tg_wdt_edge_int_map::APP_TG_WDT_EDGE_INT_MAP_SPEC,
+>;
 ///
 pub mod app_tg_wdt_edge_int_map;
 /**APP_TG_LACT_EDGE_INT_MAP (rw) register accessor:
@@ -3814,8 +3903,9 @@ pub mod app_tg_wdt_edge_int_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`app_tg_lact_edge_int_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`app_tg_lact_edge_int_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@app_tg_lact_edge_int_map`] module*/
-pub type APP_TG_LACT_EDGE_INT_MAP =
-    crate::Reg<app_tg_lact_edge_int_map::APP_TG_LACT_EDGE_INT_MAP_SPEC>;
+pub type APP_TG_LACT_EDGE_INT_MAP = crate::Reg<
+    app_tg_lact_edge_int_map::APP_TG_LACT_EDGE_INT_MAP_SPEC,
+>;
 ///
 pub mod app_tg_lact_edge_int_map;
 /**APP_TG1_T0_EDGE_INT_MAP (rw) register accessor:
@@ -3823,8 +3913,9 @@ pub mod app_tg_lact_edge_int_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`app_tg1_t0_edge_int_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`app_tg1_t0_edge_int_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@app_tg1_t0_edge_int_map`] module*/
-pub type APP_TG1_T0_EDGE_INT_MAP =
-    crate::Reg<app_tg1_t0_edge_int_map::APP_TG1_T0_EDGE_INT_MAP_SPEC>;
+pub type APP_TG1_T0_EDGE_INT_MAP = crate::Reg<
+    app_tg1_t0_edge_int_map::APP_TG1_T0_EDGE_INT_MAP_SPEC,
+>;
 ///
 pub mod app_tg1_t0_edge_int_map;
 /**APP_TG1_T1_EDGE_INT_MAP (rw) register accessor:
@@ -3832,8 +3923,9 @@ pub mod app_tg1_t0_edge_int_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`app_tg1_t1_edge_int_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`app_tg1_t1_edge_int_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@app_tg1_t1_edge_int_map`] module*/
-pub type APP_TG1_T1_EDGE_INT_MAP =
-    crate::Reg<app_tg1_t1_edge_int_map::APP_TG1_T1_EDGE_INT_MAP_SPEC>;
+pub type APP_TG1_T1_EDGE_INT_MAP = crate::Reg<
+    app_tg1_t1_edge_int_map::APP_TG1_T1_EDGE_INT_MAP_SPEC,
+>;
 ///
 pub mod app_tg1_t1_edge_int_map;
 /**APP_TG1_WDT_EDGE_INT_MAP (rw) register accessor:
@@ -3841,8 +3933,9 @@ pub mod app_tg1_t1_edge_int_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`app_tg1_wdt_edge_int_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`app_tg1_wdt_edge_int_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@app_tg1_wdt_edge_int_map`] module*/
-pub type APP_TG1_WDT_EDGE_INT_MAP =
-    crate::Reg<app_tg1_wdt_edge_int_map::APP_TG1_WDT_EDGE_INT_MAP_SPEC>;
+pub type APP_TG1_WDT_EDGE_INT_MAP = crate::Reg<
+    app_tg1_wdt_edge_int_map::APP_TG1_WDT_EDGE_INT_MAP_SPEC,
+>;
 ///
 pub mod app_tg1_wdt_edge_int_map;
 /**APP_TG1_LACT_EDGE_INT_MAP (rw) register accessor:
@@ -3850,8 +3943,9 @@ pub mod app_tg1_wdt_edge_int_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`app_tg1_lact_edge_int_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`app_tg1_lact_edge_int_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@app_tg1_lact_edge_int_map`] module*/
-pub type APP_TG1_LACT_EDGE_INT_MAP =
-    crate::Reg<app_tg1_lact_edge_int_map::APP_TG1_LACT_EDGE_INT_MAP_SPEC>;
+pub type APP_TG1_LACT_EDGE_INT_MAP = crate::Reg<
+    app_tg1_lact_edge_int_map::APP_TG1_LACT_EDGE_INT_MAP_SPEC,
+>;
 ///
 pub mod app_tg1_lact_edge_int_map;
 /**APP_MMU_IA_INT_MAP (rw) register accessor:
@@ -3875,7 +3969,9 @@ pub mod app_mpu_ia_int_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`app_cache_ia_int_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`app_cache_ia_int_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@app_cache_ia_int_map`] module*/
-pub type APP_CACHE_IA_INT_MAP = crate::Reg<app_cache_ia_int_map::APP_CACHE_IA_INT_MAP_SPEC>;
+pub type APP_CACHE_IA_INT_MAP = crate::Reg<
+    app_cache_ia_int_map::APP_CACHE_IA_INT_MAP_SPEC,
+>;
 ///
 pub mod app_cache_ia_int_map;
 /**AHBLITE_MPU_TABLE_UART (rw) register accessor:
@@ -3883,7 +3979,9 @@ pub mod app_cache_ia_int_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`ahblite_mpu_table_uart::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`ahblite_mpu_table_uart::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@ahblite_mpu_table_uart`] module*/
-pub type AHBLITE_MPU_TABLE_UART = crate::Reg<ahblite_mpu_table_uart::AHBLITE_MPU_TABLE_UART_SPEC>;
+pub type AHBLITE_MPU_TABLE_UART = crate::Reg<
+    ahblite_mpu_table_uart::AHBLITE_MPU_TABLE_UART_SPEC,
+>;
 ///
 pub mod ahblite_mpu_table_uart;
 /**AHBLITE_MPU_TABLE_SPI1 (rw) register accessor:
@@ -3891,7 +3989,9 @@ pub mod ahblite_mpu_table_uart;
 You can [`read`](crate::generic::Reg::read) this register and get [`ahblite_mpu_table_spi1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`ahblite_mpu_table_spi1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@ahblite_mpu_table_spi1`] module*/
-pub type AHBLITE_MPU_TABLE_SPI1 = crate::Reg<ahblite_mpu_table_spi1::AHBLITE_MPU_TABLE_SPI1_SPEC>;
+pub type AHBLITE_MPU_TABLE_SPI1 = crate::Reg<
+    ahblite_mpu_table_spi1::AHBLITE_MPU_TABLE_SPI1_SPEC,
+>;
 ///
 pub mod ahblite_mpu_table_spi1;
 /**AHBLITE_MPU_TABLE_SPI0 (rw) register accessor:
@@ -3899,7 +3999,9 @@ pub mod ahblite_mpu_table_spi1;
 You can [`read`](crate::generic::Reg::read) this register and get [`ahblite_mpu_table_spi0::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`ahblite_mpu_table_spi0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@ahblite_mpu_table_spi0`] module*/
-pub type AHBLITE_MPU_TABLE_SPI0 = crate::Reg<ahblite_mpu_table_spi0::AHBLITE_MPU_TABLE_SPI0_SPEC>;
+pub type AHBLITE_MPU_TABLE_SPI0 = crate::Reg<
+    ahblite_mpu_table_spi0::AHBLITE_MPU_TABLE_SPI0_SPEC,
+>;
 ///
 pub mod ahblite_mpu_table_spi0;
 /**AHBLITE_MPU_TABLE_GPIO (rw) register accessor:
@@ -3907,7 +4009,9 @@ pub mod ahblite_mpu_table_spi0;
 You can [`read`](crate::generic::Reg::read) this register and get [`ahblite_mpu_table_gpio::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`ahblite_mpu_table_gpio::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@ahblite_mpu_table_gpio`] module*/
-pub type AHBLITE_MPU_TABLE_GPIO = crate::Reg<ahblite_mpu_table_gpio::AHBLITE_MPU_TABLE_GPIO_SPEC>;
+pub type AHBLITE_MPU_TABLE_GPIO = crate::Reg<
+    ahblite_mpu_table_gpio::AHBLITE_MPU_TABLE_GPIO_SPEC,
+>;
 ///
 pub mod ahblite_mpu_table_gpio;
 /**AHBLITE_MPU_TABLE_FE2 (rw) register accessor:
@@ -3915,7 +4019,9 @@ pub mod ahblite_mpu_table_gpio;
 You can [`read`](crate::generic::Reg::read) this register and get [`ahblite_mpu_table_fe2::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`ahblite_mpu_table_fe2::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@ahblite_mpu_table_fe2`] module*/
-pub type AHBLITE_MPU_TABLE_FE2 = crate::Reg<ahblite_mpu_table_fe2::AHBLITE_MPU_TABLE_FE2_SPEC>;
+pub type AHBLITE_MPU_TABLE_FE2 = crate::Reg<
+    ahblite_mpu_table_fe2::AHBLITE_MPU_TABLE_FE2_SPEC,
+>;
 ///
 pub mod ahblite_mpu_table_fe2;
 /**AHBLITE_MPU_TABLE_FE (rw) register accessor:
@@ -3923,7 +4029,9 @@ pub mod ahblite_mpu_table_fe2;
 You can [`read`](crate::generic::Reg::read) this register and get [`ahblite_mpu_table_fe::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`ahblite_mpu_table_fe::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@ahblite_mpu_table_fe`] module*/
-pub type AHBLITE_MPU_TABLE_FE = crate::Reg<ahblite_mpu_table_fe::AHBLITE_MPU_TABLE_FE_SPEC>;
+pub type AHBLITE_MPU_TABLE_FE = crate::Reg<
+    ahblite_mpu_table_fe::AHBLITE_MPU_TABLE_FE_SPEC,
+>;
 ///
 pub mod ahblite_mpu_table_fe;
 /**AHBLITE_MPU_TABLE_TIMER (rw) register accessor:
@@ -3931,8 +4039,9 @@ pub mod ahblite_mpu_table_fe;
 You can [`read`](crate::generic::Reg::read) this register and get [`ahblite_mpu_table_timer::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`ahblite_mpu_table_timer::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@ahblite_mpu_table_timer`] module*/
-pub type AHBLITE_MPU_TABLE_TIMER =
-    crate::Reg<ahblite_mpu_table_timer::AHBLITE_MPU_TABLE_TIMER_SPEC>;
+pub type AHBLITE_MPU_TABLE_TIMER = crate::Reg<
+    ahblite_mpu_table_timer::AHBLITE_MPU_TABLE_TIMER_SPEC,
+>;
 ///
 pub mod ahblite_mpu_table_timer;
 /**AHBLITE_MPU_TABLE_RTC (rw) register accessor:
@@ -3940,7 +4049,9 @@ pub mod ahblite_mpu_table_timer;
 You can [`read`](crate::generic::Reg::read) this register and get [`ahblite_mpu_table_rtc::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`ahblite_mpu_table_rtc::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@ahblite_mpu_table_rtc`] module*/
-pub type AHBLITE_MPU_TABLE_RTC = crate::Reg<ahblite_mpu_table_rtc::AHBLITE_MPU_TABLE_RTC_SPEC>;
+pub type AHBLITE_MPU_TABLE_RTC = crate::Reg<
+    ahblite_mpu_table_rtc::AHBLITE_MPU_TABLE_RTC_SPEC,
+>;
 ///
 pub mod ahblite_mpu_table_rtc;
 /**AHBLITE_MPU_TABLE_IO_MUX (rw) register accessor:
@@ -3948,8 +4059,9 @@ pub mod ahblite_mpu_table_rtc;
 You can [`read`](crate::generic::Reg::read) this register and get [`ahblite_mpu_table_io_mux::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`ahblite_mpu_table_io_mux::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@ahblite_mpu_table_io_mux`] module*/
-pub type AHBLITE_MPU_TABLE_IO_MUX =
-    crate::Reg<ahblite_mpu_table_io_mux::AHBLITE_MPU_TABLE_IO_MUX_SPEC>;
+pub type AHBLITE_MPU_TABLE_IO_MUX = crate::Reg<
+    ahblite_mpu_table_io_mux::AHBLITE_MPU_TABLE_IO_MUX_SPEC,
+>;
 ///
 pub mod ahblite_mpu_table_io_mux;
 /**AHBLITE_MPU_TABLE_WDG (rw) register accessor:
@@ -3957,7 +4069,9 @@ pub mod ahblite_mpu_table_io_mux;
 You can [`read`](crate::generic::Reg::read) this register and get [`ahblite_mpu_table_wdg::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`ahblite_mpu_table_wdg::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@ahblite_mpu_table_wdg`] module*/
-pub type AHBLITE_MPU_TABLE_WDG = crate::Reg<ahblite_mpu_table_wdg::AHBLITE_MPU_TABLE_WDG_SPEC>;
+pub type AHBLITE_MPU_TABLE_WDG = crate::Reg<
+    ahblite_mpu_table_wdg::AHBLITE_MPU_TABLE_WDG_SPEC,
+>;
 ///
 pub mod ahblite_mpu_table_wdg;
 /**AHBLITE_MPU_TABLE_HINF (rw) register accessor:
@@ -3965,7 +4079,9 @@ pub mod ahblite_mpu_table_wdg;
 You can [`read`](crate::generic::Reg::read) this register and get [`ahblite_mpu_table_hinf::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`ahblite_mpu_table_hinf::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@ahblite_mpu_table_hinf`] module*/
-pub type AHBLITE_MPU_TABLE_HINF = crate::Reg<ahblite_mpu_table_hinf::AHBLITE_MPU_TABLE_HINF_SPEC>;
+pub type AHBLITE_MPU_TABLE_HINF = crate::Reg<
+    ahblite_mpu_table_hinf::AHBLITE_MPU_TABLE_HINF_SPEC,
+>;
 ///
 pub mod ahblite_mpu_table_hinf;
 /**AHBLITE_MPU_TABLE_UHCI1 (rw) register accessor:
@@ -3973,8 +4089,9 @@ pub mod ahblite_mpu_table_hinf;
 You can [`read`](crate::generic::Reg::read) this register and get [`ahblite_mpu_table_uhci1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`ahblite_mpu_table_uhci1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@ahblite_mpu_table_uhci1`] module*/
-pub type AHBLITE_MPU_TABLE_UHCI1 =
-    crate::Reg<ahblite_mpu_table_uhci1::AHBLITE_MPU_TABLE_UHCI1_SPEC>;
+pub type AHBLITE_MPU_TABLE_UHCI1 = crate::Reg<
+    ahblite_mpu_table_uhci1::AHBLITE_MPU_TABLE_UHCI1_SPEC,
+>;
 ///
 pub mod ahblite_mpu_table_uhci1;
 /**AHBLITE_MPU_TABLE_MISC (rw) register accessor:
@@ -3982,7 +4099,9 @@ pub mod ahblite_mpu_table_uhci1;
 You can [`read`](crate::generic::Reg::read) this register and get [`ahblite_mpu_table_misc::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`ahblite_mpu_table_misc::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@ahblite_mpu_table_misc`] module*/
-pub type AHBLITE_MPU_TABLE_MISC = crate::Reg<ahblite_mpu_table_misc::AHBLITE_MPU_TABLE_MISC_SPEC>;
+pub type AHBLITE_MPU_TABLE_MISC = crate::Reg<
+    ahblite_mpu_table_misc::AHBLITE_MPU_TABLE_MISC_SPEC,
+>;
 ///
 pub mod ahblite_mpu_table_misc;
 /**AHBLITE_MPU_TABLE_I2C (rw) register accessor:
@@ -3990,7 +4109,9 @@ pub mod ahblite_mpu_table_misc;
 You can [`read`](crate::generic::Reg::read) this register and get [`ahblite_mpu_table_i2c::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`ahblite_mpu_table_i2c::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@ahblite_mpu_table_i2c`] module*/
-pub type AHBLITE_MPU_TABLE_I2C = crate::Reg<ahblite_mpu_table_i2c::AHBLITE_MPU_TABLE_I2C_SPEC>;
+pub type AHBLITE_MPU_TABLE_I2C = crate::Reg<
+    ahblite_mpu_table_i2c::AHBLITE_MPU_TABLE_I2C_SPEC,
+>;
 ///
 pub mod ahblite_mpu_table_i2c;
 /**AHBLITE_MPU_TABLE_I2S0 (rw) register accessor:
@@ -3998,7 +4119,9 @@ pub mod ahblite_mpu_table_i2c;
 You can [`read`](crate::generic::Reg::read) this register and get [`ahblite_mpu_table_i2s0::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`ahblite_mpu_table_i2s0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@ahblite_mpu_table_i2s0`] module*/
-pub type AHBLITE_MPU_TABLE_I2S0 = crate::Reg<ahblite_mpu_table_i2s0::AHBLITE_MPU_TABLE_I2S0_SPEC>;
+pub type AHBLITE_MPU_TABLE_I2S0 = crate::Reg<
+    ahblite_mpu_table_i2s0::AHBLITE_MPU_TABLE_I2S0_SPEC,
+>;
 ///
 pub mod ahblite_mpu_table_i2s0;
 /**AHBLITE_MPU_TABLE_UART1 (rw) register accessor:
@@ -4006,8 +4129,9 @@ pub mod ahblite_mpu_table_i2s0;
 You can [`read`](crate::generic::Reg::read) this register and get [`ahblite_mpu_table_uart1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`ahblite_mpu_table_uart1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@ahblite_mpu_table_uart1`] module*/
-pub type AHBLITE_MPU_TABLE_UART1 =
-    crate::Reg<ahblite_mpu_table_uart1::AHBLITE_MPU_TABLE_UART1_SPEC>;
+pub type AHBLITE_MPU_TABLE_UART1 = crate::Reg<
+    ahblite_mpu_table_uart1::AHBLITE_MPU_TABLE_UART1_SPEC,
+>;
 ///
 pub mod ahblite_mpu_table_uart1;
 /**AHBLITE_MPU_TABLE_BT (rw) register accessor:
@@ -4015,7 +4139,9 @@ pub mod ahblite_mpu_table_uart1;
 You can [`read`](crate::generic::Reg::read) this register and get [`ahblite_mpu_table_bt::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`ahblite_mpu_table_bt::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@ahblite_mpu_table_bt`] module*/
-pub type AHBLITE_MPU_TABLE_BT = crate::Reg<ahblite_mpu_table_bt::AHBLITE_MPU_TABLE_BT_SPEC>;
+pub type AHBLITE_MPU_TABLE_BT = crate::Reg<
+    ahblite_mpu_table_bt::AHBLITE_MPU_TABLE_BT_SPEC,
+>;
 ///
 pub mod ahblite_mpu_table_bt;
 /**AHBLITE_MPU_TABLE_BT_BUFFER (rw) register accessor:
@@ -4023,8 +4149,9 @@ pub mod ahblite_mpu_table_bt;
 You can [`read`](crate::generic::Reg::read) this register and get [`ahblite_mpu_table_bt_buffer::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`ahblite_mpu_table_bt_buffer::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@ahblite_mpu_table_bt_buffer`] module*/
-pub type AHBLITE_MPU_TABLE_BT_BUFFER =
-    crate::Reg<ahblite_mpu_table_bt_buffer::AHBLITE_MPU_TABLE_BT_BUFFER_SPEC>;
+pub type AHBLITE_MPU_TABLE_BT_BUFFER = crate::Reg<
+    ahblite_mpu_table_bt_buffer::AHBLITE_MPU_TABLE_BT_BUFFER_SPEC,
+>;
 ///
 pub mod ahblite_mpu_table_bt_buffer;
 /**AHBLITE_MPU_TABLE_I2C_EXT0 (rw) register accessor:
@@ -4032,8 +4159,9 @@ pub mod ahblite_mpu_table_bt_buffer;
 You can [`read`](crate::generic::Reg::read) this register and get [`ahblite_mpu_table_i2c_ext0::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`ahblite_mpu_table_i2c_ext0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@ahblite_mpu_table_i2c_ext0`] module*/
-pub type AHBLITE_MPU_TABLE_I2C_EXT0 =
-    crate::Reg<ahblite_mpu_table_i2c_ext0::AHBLITE_MPU_TABLE_I2C_EXT0_SPEC>;
+pub type AHBLITE_MPU_TABLE_I2C_EXT0 = crate::Reg<
+    ahblite_mpu_table_i2c_ext0::AHBLITE_MPU_TABLE_I2C_EXT0_SPEC,
+>;
 ///
 pub mod ahblite_mpu_table_i2c_ext0;
 /**AHBLITE_MPU_TABLE_UHCI0 (rw) register accessor:
@@ -4041,8 +4169,9 @@ pub mod ahblite_mpu_table_i2c_ext0;
 You can [`read`](crate::generic::Reg::read) this register and get [`ahblite_mpu_table_uhci0::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`ahblite_mpu_table_uhci0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@ahblite_mpu_table_uhci0`] module*/
-pub type AHBLITE_MPU_TABLE_UHCI0 =
-    crate::Reg<ahblite_mpu_table_uhci0::AHBLITE_MPU_TABLE_UHCI0_SPEC>;
+pub type AHBLITE_MPU_TABLE_UHCI0 = crate::Reg<
+    ahblite_mpu_table_uhci0::AHBLITE_MPU_TABLE_UHCI0_SPEC,
+>;
 ///
 pub mod ahblite_mpu_table_uhci0;
 /**AHBLITE_MPU_TABLE_SLCHOST (rw) register accessor:
@@ -4050,8 +4179,9 @@ pub mod ahblite_mpu_table_uhci0;
 You can [`read`](crate::generic::Reg::read) this register and get [`ahblite_mpu_table_slchost::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`ahblite_mpu_table_slchost::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@ahblite_mpu_table_slchost`] module*/
-pub type AHBLITE_MPU_TABLE_SLCHOST =
-    crate::Reg<ahblite_mpu_table_slchost::AHBLITE_MPU_TABLE_SLCHOST_SPEC>;
+pub type AHBLITE_MPU_TABLE_SLCHOST = crate::Reg<
+    ahblite_mpu_table_slchost::AHBLITE_MPU_TABLE_SLCHOST_SPEC,
+>;
 ///
 pub mod ahblite_mpu_table_slchost;
 /**AHBLITE_MPU_TABLE_RMT (rw) register accessor:
@@ -4059,7 +4189,9 @@ pub mod ahblite_mpu_table_slchost;
 You can [`read`](crate::generic::Reg::read) this register and get [`ahblite_mpu_table_rmt::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`ahblite_mpu_table_rmt::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@ahblite_mpu_table_rmt`] module*/
-pub type AHBLITE_MPU_TABLE_RMT = crate::Reg<ahblite_mpu_table_rmt::AHBLITE_MPU_TABLE_RMT_SPEC>;
+pub type AHBLITE_MPU_TABLE_RMT = crate::Reg<
+    ahblite_mpu_table_rmt::AHBLITE_MPU_TABLE_RMT_SPEC,
+>;
 ///
 pub mod ahblite_mpu_table_rmt;
 /**AHBLITE_MPU_TABLE_PCNT (rw) register accessor:
@@ -4067,7 +4199,9 @@ pub mod ahblite_mpu_table_rmt;
 You can [`read`](crate::generic::Reg::read) this register and get [`ahblite_mpu_table_pcnt::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`ahblite_mpu_table_pcnt::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@ahblite_mpu_table_pcnt`] module*/
-pub type AHBLITE_MPU_TABLE_PCNT = crate::Reg<ahblite_mpu_table_pcnt::AHBLITE_MPU_TABLE_PCNT_SPEC>;
+pub type AHBLITE_MPU_TABLE_PCNT = crate::Reg<
+    ahblite_mpu_table_pcnt::AHBLITE_MPU_TABLE_PCNT_SPEC,
+>;
 ///
 pub mod ahblite_mpu_table_pcnt;
 /**AHBLITE_MPU_TABLE_SLC (rw) register accessor:
@@ -4075,7 +4209,9 @@ pub mod ahblite_mpu_table_pcnt;
 You can [`read`](crate::generic::Reg::read) this register and get [`ahblite_mpu_table_slc::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`ahblite_mpu_table_slc::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@ahblite_mpu_table_slc`] module*/
-pub type AHBLITE_MPU_TABLE_SLC = crate::Reg<ahblite_mpu_table_slc::AHBLITE_MPU_TABLE_SLC_SPEC>;
+pub type AHBLITE_MPU_TABLE_SLC = crate::Reg<
+    ahblite_mpu_table_slc::AHBLITE_MPU_TABLE_SLC_SPEC,
+>;
 ///
 pub mod ahblite_mpu_table_slc;
 /**AHBLITE_MPU_TABLE_LEDC (rw) register accessor:
@@ -4083,7 +4219,9 @@ pub mod ahblite_mpu_table_slc;
 You can [`read`](crate::generic::Reg::read) this register and get [`ahblite_mpu_table_ledc::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`ahblite_mpu_table_ledc::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@ahblite_mpu_table_ledc`] module*/
-pub type AHBLITE_MPU_TABLE_LEDC = crate::Reg<ahblite_mpu_table_ledc::AHBLITE_MPU_TABLE_LEDC_SPEC>;
+pub type AHBLITE_MPU_TABLE_LEDC = crate::Reg<
+    ahblite_mpu_table_ledc::AHBLITE_MPU_TABLE_LEDC_SPEC,
+>;
 ///
 pub mod ahblite_mpu_table_ledc;
 /**AHBLITE_MPU_TABLE_EFUSE (rw) register accessor:
@@ -4091,8 +4229,9 @@ pub mod ahblite_mpu_table_ledc;
 You can [`read`](crate::generic::Reg::read) this register and get [`ahblite_mpu_table_efuse::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`ahblite_mpu_table_efuse::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@ahblite_mpu_table_efuse`] module*/
-pub type AHBLITE_MPU_TABLE_EFUSE =
-    crate::Reg<ahblite_mpu_table_efuse::AHBLITE_MPU_TABLE_EFUSE_SPEC>;
+pub type AHBLITE_MPU_TABLE_EFUSE = crate::Reg<
+    ahblite_mpu_table_efuse::AHBLITE_MPU_TABLE_EFUSE_SPEC,
+>;
 ///
 pub mod ahblite_mpu_table_efuse;
 /**AHBLITE_MPU_TABLE_SPI_ENCRYPT (rw) register accessor:
@@ -4100,8 +4239,9 @@ pub mod ahblite_mpu_table_efuse;
 You can [`read`](crate::generic::Reg::read) this register and get [`ahblite_mpu_table_spi_encrypt::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`ahblite_mpu_table_spi_encrypt::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@ahblite_mpu_table_spi_encrypt`] module*/
-pub type AHBLITE_MPU_TABLE_SPI_ENCRYPT =
-    crate::Reg<ahblite_mpu_table_spi_encrypt::AHBLITE_MPU_TABLE_SPI_ENCRYPT_SPEC>;
+pub type AHBLITE_MPU_TABLE_SPI_ENCRYPT = crate::Reg<
+    ahblite_mpu_table_spi_encrypt::AHBLITE_MPU_TABLE_SPI_ENCRYPT_SPEC,
+>;
 ///
 pub mod ahblite_mpu_table_spi_encrypt;
 /**AHBLITE_MPU_TABLE_BB (rw) register accessor:
@@ -4109,7 +4249,9 @@ pub mod ahblite_mpu_table_spi_encrypt;
 You can [`read`](crate::generic::Reg::read) this register and get [`ahblite_mpu_table_bb::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`ahblite_mpu_table_bb::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@ahblite_mpu_table_bb`] module*/
-pub type AHBLITE_MPU_TABLE_BB = crate::Reg<ahblite_mpu_table_bb::AHBLITE_MPU_TABLE_BB_SPEC>;
+pub type AHBLITE_MPU_TABLE_BB = crate::Reg<
+    ahblite_mpu_table_bb::AHBLITE_MPU_TABLE_BB_SPEC,
+>;
 ///
 pub mod ahblite_mpu_table_bb;
 /**AHBLITE_MPU_TABLE_PWM0 (rw) register accessor:
@@ -4117,7 +4259,9 @@ pub mod ahblite_mpu_table_bb;
 You can [`read`](crate::generic::Reg::read) this register and get [`ahblite_mpu_table_pwm0::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`ahblite_mpu_table_pwm0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@ahblite_mpu_table_pwm0`] module*/
-pub type AHBLITE_MPU_TABLE_PWM0 = crate::Reg<ahblite_mpu_table_pwm0::AHBLITE_MPU_TABLE_PWM0_SPEC>;
+pub type AHBLITE_MPU_TABLE_PWM0 = crate::Reg<
+    ahblite_mpu_table_pwm0::AHBLITE_MPU_TABLE_PWM0_SPEC,
+>;
 ///
 pub mod ahblite_mpu_table_pwm0;
 /**AHBLITE_MPU_TABLE_TIMERGROUP (rw) register accessor:
@@ -4125,8 +4269,9 @@ pub mod ahblite_mpu_table_pwm0;
 You can [`read`](crate::generic::Reg::read) this register and get [`ahblite_mpu_table_timergroup::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`ahblite_mpu_table_timergroup::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@ahblite_mpu_table_timergroup`] module*/
-pub type AHBLITE_MPU_TABLE_TIMERGROUP =
-    crate::Reg<ahblite_mpu_table_timergroup::AHBLITE_MPU_TABLE_TIMERGROUP_SPEC>;
+pub type AHBLITE_MPU_TABLE_TIMERGROUP = crate::Reg<
+    ahblite_mpu_table_timergroup::AHBLITE_MPU_TABLE_TIMERGROUP_SPEC,
+>;
 ///
 pub mod ahblite_mpu_table_timergroup;
 /**AHBLITE_MPU_TABLE_TIMERGROUP1 (rw) register accessor:
@@ -4134,8 +4279,9 @@ pub mod ahblite_mpu_table_timergroup;
 You can [`read`](crate::generic::Reg::read) this register and get [`ahblite_mpu_table_timergroup1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`ahblite_mpu_table_timergroup1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@ahblite_mpu_table_timergroup1`] module*/
-pub type AHBLITE_MPU_TABLE_TIMERGROUP1 =
-    crate::Reg<ahblite_mpu_table_timergroup1::AHBLITE_MPU_TABLE_TIMERGROUP1_SPEC>;
+pub type AHBLITE_MPU_TABLE_TIMERGROUP1 = crate::Reg<
+    ahblite_mpu_table_timergroup1::AHBLITE_MPU_TABLE_TIMERGROUP1_SPEC,
+>;
 ///
 pub mod ahblite_mpu_table_timergroup1;
 /**AHBLITE_MPU_TABLE_SPI2 (rw) register accessor:
@@ -4143,7 +4289,9 @@ pub mod ahblite_mpu_table_timergroup1;
 You can [`read`](crate::generic::Reg::read) this register and get [`ahblite_mpu_table_spi2::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`ahblite_mpu_table_spi2::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@ahblite_mpu_table_spi2`] module*/
-pub type AHBLITE_MPU_TABLE_SPI2 = crate::Reg<ahblite_mpu_table_spi2::AHBLITE_MPU_TABLE_SPI2_SPEC>;
+pub type AHBLITE_MPU_TABLE_SPI2 = crate::Reg<
+    ahblite_mpu_table_spi2::AHBLITE_MPU_TABLE_SPI2_SPEC,
+>;
 ///
 pub mod ahblite_mpu_table_spi2;
 /**AHBLITE_MPU_TABLE_SPI3 (rw) register accessor:
@@ -4151,7 +4299,9 @@ pub mod ahblite_mpu_table_spi2;
 You can [`read`](crate::generic::Reg::read) this register and get [`ahblite_mpu_table_spi3::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`ahblite_mpu_table_spi3::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@ahblite_mpu_table_spi3`] module*/
-pub type AHBLITE_MPU_TABLE_SPI3 = crate::Reg<ahblite_mpu_table_spi3::AHBLITE_MPU_TABLE_SPI3_SPEC>;
+pub type AHBLITE_MPU_TABLE_SPI3 = crate::Reg<
+    ahblite_mpu_table_spi3::AHBLITE_MPU_TABLE_SPI3_SPEC,
+>;
 ///
 pub mod ahblite_mpu_table_spi3;
 /**AHBLITE_MPU_TABLE_APB_CTRL (rw) register accessor:
@@ -4159,8 +4309,9 @@ pub mod ahblite_mpu_table_spi3;
 You can [`read`](crate::generic::Reg::read) this register and get [`ahblite_mpu_table_apb_ctrl::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`ahblite_mpu_table_apb_ctrl::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@ahblite_mpu_table_apb_ctrl`] module*/
-pub type AHBLITE_MPU_TABLE_APB_CTRL =
-    crate::Reg<ahblite_mpu_table_apb_ctrl::AHBLITE_MPU_TABLE_APB_CTRL_SPEC>;
+pub type AHBLITE_MPU_TABLE_APB_CTRL = crate::Reg<
+    ahblite_mpu_table_apb_ctrl::AHBLITE_MPU_TABLE_APB_CTRL_SPEC,
+>;
 ///
 pub mod ahblite_mpu_table_apb_ctrl;
 /**AHBLITE_MPU_TABLE_I2C_EXT1 (rw) register accessor:
@@ -4168,8 +4319,9 @@ pub mod ahblite_mpu_table_apb_ctrl;
 You can [`read`](crate::generic::Reg::read) this register and get [`ahblite_mpu_table_i2c_ext1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`ahblite_mpu_table_i2c_ext1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@ahblite_mpu_table_i2c_ext1`] module*/
-pub type AHBLITE_MPU_TABLE_I2C_EXT1 =
-    crate::Reg<ahblite_mpu_table_i2c_ext1::AHBLITE_MPU_TABLE_I2C_EXT1_SPEC>;
+pub type AHBLITE_MPU_TABLE_I2C_EXT1 = crate::Reg<
+    ahblite_mpu_table_i2c_ext1::AHBLITE_MPU_TABLE_I2C_EXT1_SPEC,
+>;
 ///
 pub mod ahblite_mpu_table_i2c_ext1;
 /**AHBLITE_MPU_TABLE_SDIO_HOST (rw) register accessor:
@@ -4177,8 +4329,9 @@ pub mod ahblite_mpu_table_i2c_ext1;
 You can [`read`](crate::generic::Reg::read) this register and get [`ahblite_mpu_table_sdio_host::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`ahblite_mpu_table_sdio_host::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@ahblite_mpu_table_sdio_host`] module*/
-pub type AHBLITE_MPU_TABLE_SDIO_HOST =
-    crate::Reg<ahblite_mpu_table_sdio_host::AHBLITE_MPU_TABLE_SDIO_HOST_SPEC>;
+pub type AHBLITE_MPU_TABLE_SDIO_HOST = crate::Reg<
+    ahblite_mpu_table_sdio_host::AHBLITE_MPU_TABLE_SDIO_HOST_SPEC,
+>;
 ///
 pub mod ahblite_mpu_table_sdio_host;
 /**AHBLITE_MPU_TABLE_EMAC (rw) register accessor:
@@ -4186,7 +4339,9 @@ pub mod ahblite_mpu_table_sdio_host;
 You can [`read`](crate::generic::Reg::read) this register and get [`ahblite_mpu_table_emac::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`ahblite_mpu_table_emac::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@ahblite_mpu_table_emac`] module*/
-pub type AHBLITE_MPU_TABLE_EMAC = crate::Reg<ahblite_mpu_table_emac::AHBLITE_MPU_TABLE_EMAC_SPEC>;
+pub type AHBLITE_MPU_TABLE_EMAC = crate::Reg<
+    ahblite_mpu_table_emac::AHBLITE_MPU_TABLE_EMAC_SPEC,
+>;
 ///
 pub mod ahblite_mpu_table_emac;
 /**AHBLITE_MPU_TABLE_CAN (rw) register accessor:
@@ -4194,7 +4349,9 @@ pub mod ahblite_mpu_table_emac;
 You can [`read`](crate::generic::Reg::read) this register and get [`ahblite_mpu_table_can::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`ahblite_mpu_table_can::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@ahblite_mpu_table_can`] module*/
-pub type AHBLITE_MPU_TABLE_CAN = crate::Reg<ahblite_mpu_table_can::AHBLITE_MPU_TABLE_CAN_SPEC>;
+pub type AHBLITE_MPU_TABLE_CAN = crate::Reg<
+    ahblite_mpu_table_can::AHBLITE_MPU_TABLE_CAN_SPEC,
+>;
 ///
 pub mod ahblite_mpu_table_can;
 /**AHBLITE_MPU_TABLE_PWM1 (rw) register accessor:
@@ -4202,7 +4359,9 @@ pub mod ahblite_mpu_table_can;
 You can [`read`](crate::generic::Reg::read) this register and get [`ahblite_mpu_table_pwm1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`ahblite_mpu_table_pwm1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@ahblite_mpu_table_pwm1`] module*/
-pub type AHBLITE_MPU_TABLE_PWM1 = crate::Reg<ahblite_mpu_table_pwm1::AHBLITE_MPU_TABLE_PWM1_SPEC>;
+pub type AHBLITE_MPU_TABLE_PWM1 = crate::Reg<
+    ahblite_mpu_table_pwm1::AHBLITE_MPU_TABLE_PWM1_SPEC,
+>;
 ///
 pub mod ahblite_mpu_table_pwm1;
 /**AHBLITE_MPU_TABLE_I2S1 (rw) register accessor:
@@ -4210,7 +4369,9 @@ pub mod ahblite_mpu_table_pwm1;
 You can [`read`](crate::generic::Reg::read) this register and get [`ahblite_mpu_table_i2s1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`ahblite_mpu_table_i2s1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@ahblite_mpu_table_i2s1`] module*/
-pub type AHBLITE_MPU_TABLE_I2S1 = crate::Reg<ahblite_mpu_table_i2s1::AHBLITE_MPU_TABLE_I2S1_SPEC>;
+pub type AHBLITE_MPU_TABLE_I2S1 = crate::Reg<
+    ahblite_mpu_table_i2s1::AHBLITE_MPU_TABLE_I2S1_SPEC,
+>;
 ///
 pub mod ahblite_mpu_table_i2s1;
 /**AHBLITE_MPU_TABLE_UART2 (rw) register accessor:
@@ -4218,8 +4379,9 @@ pub mod ahblite_mpu_table_i2s1;
 You can [`read`](crate::generic::Reg::read) this register and get [`ahblite_mpu_table_uart2::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`ahblite_mpu_table_uart2::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@ahblite_mpu_table_uart2`] module*/
-pub type AHBLITE_MPU_TABLE_UART2 =
-    crate::Reg<ahblite_mpu_table_uart2::AHBLITE_MPU_TABLE_UART2_SPEC>;
+pub type AHBLITE_MPU_TABLE_UART2 = crate::Reg<
+    ahblite_mpu_table_uart2::AHBLITE_MPU_TABLE_UART2_SPEC,
+>;
 ///
 pub mod ahblite_mpu_table_uart2;
 /**AHBLITE_MPU_TABLE_PWM2 (rw) register accessor:
@@ -4227,7 +4389,9 @@ pub mod ahblite_mpu_table_uart2;
 You can [`read`](crate::generic::Reg::read) this register and get [`ahblite_mpu_table_pwm2::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`ahblite_mpu_table_pwm2::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@ahblite_mpu_table_pwm2`] module*/
-pub type AHBLITE_MPU_TABLE_PWM2 = crate::Reg<ahblite_mpu_table_pwm2::AHBLITE_MPU_TABLE_PWM2_SPEC>;
+pub type AHBLITE_MPU_TABLE_PWM2 = crate::Reg<
+    ahblite_mpu_table_pwm2::AHBLITE_MPU_TABLE_PWM2_SPEC,
+>;
 ///
 pub mod ahblite_mpu_table_pwm2;
 /**AHBLITE_MPU_TABLE_PWM3 (rw) register accessor:
@@ -4235,7 +4399,9 @@ pub mod ahblite_mpu_table_pwm2;
 You can [`read`](crate::generic::Reg::read) this register and get [`ahblite_mpu_table_pwm3::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`ahblite_mpu_table_pwm3::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@ahblite_mpu_table_pwm3`] module*/
-pub type AHBLITE_MPU_TABLE_PWM3 = crate::Reg<ahblite_mpu_table_pwm3::AHBLITE_MPU_TABLE_PWM3_SPEC>;
+pub type AHBLITE_MPU_TABLE_PWM3 = crate::Reg<
+    ahblite_mpu_table_pwm3::AHBLITE_MPU_TABLE_PWM3_SPEC,
+>;
 ///
 pub mod ahblite_mpu_table_pwm3;
 /**AHBLITE_MPU_TABLE_RWBT (rw) register accessor:
@@ -4243,7 +4409,9 @@ pub mod ahblite_mpu_table_pwm3;
 You can [`read`](crate::generic::Reg::read) this register and get [`ahblite_mpu_table_rwbt::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`ahblite_mpu_table_rwbt::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@ahblite_mpu_table_rwbt`] module*/
-pub type AHBLITE_MPU_TABLE_RWBT = crate::Reg<ahblite_mpu_table_rwbt::AHBLITE_MPU_TABLE_RWBT_SPEC>;
+pub type AHBLITE_MPU_TABLE_RWBT = crate::Reg<
+    ahblite_mpu_table_rwbt::AHBLITE_MPU_TABLE_RWBT_SPEC,
+>;
 ///
 pub mod ahblite_mpu_table_rwbt;
 /**AHBLITE_MPU_TABLE_BTMAC (rw) register accessor:
@@ -4251,8 +4419,9 @@ pub mod ahblite_mpu_table_rwbt;
 You can [`read`](crate::generic::Reg::read) this register and get [`ahblite_mpu_table_btmac::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`ahblite_mpu_table_btmac::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@ahblite_mpu_table_btmac`] module*/
-pub type AHBLITE_MPU_TABLE_BTMAC =
-    crate::Reg<ahblite_mpu_table_btmac::AHBLITE_MPU_TABLE_BTMAC_SPEC>;
+pub type AHBLITE_MPU_TABLE_BTMAC = crate::Reg<
+    ahblite_mpu_table_btmac::AHBLITE_MPU_TABLE_BTMAC_SPEC,
+>;
 ///
 pub mod ahblite_mpu_table_btmac;
 /**AHBLITE_MPU_TABLE_WIFIMAC (rw) register accessor:
@@ -4260,8 +4429,9 @@ pub mod ahblite_mpu_table_btmac;
 You can [`read`](crate::generic::Reg::read) this register and get [`ahblite_mpu_table_wifimac::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`ahblite_mpu_table_wifimac::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@ahblite_mpu_table_wifimac`] module*/
-pub type AHBLITE_MPU_TABLE_WIFIMAC =
-    crate::Reg<ahblite_mpu_table_wifimac::AHBLITE_MPU_TABLE_WIFIMAC_SPEC>;
+pub type AHBLITE_MPU_TABLE_WIFIMAC = crate::Reg<
+    ahblite_mpu_table_wifimac::AHBLITE_MPU_TABLE_WIFIMAC_SPEC,
+>;
 ///
 pub mod ahblite_mpu_table_wifimac;
 /**AHBLITE_MPU_TABLE_PWR (rw) register accessor:
@@ -4269,7 +4439,9 @@ pub mod ahblite_mpu_table_wifimac;
 You can [`read`](crate::generic::Reg::read) this register and get [`ahblite_mpu_table_pwr::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`ahblite_mpu_table_pwr::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@ahblite_mpu_table_pwr`] module*/
-pub type AHBLITE_MPU_TABLE_PWR = crate::Reg<ahblite_mpu_table_pwr::AHBLITE_MPU_TABLE_PWR_SPEC>;
+pub type AHBLITE_MPU_TABLE_PWR = crate::Reg<
+    ahblite_mpu_table_pwr::AHBLITE_MPU_TABLE_PWR_SPEC,
+>;
 ///
 pub mod ahblite_mpu_table_pwr;
 /**MEM_ACCESS_DBUG0 (r) register accessor:
@@ -4461,7 +4633,9 @@ pub mod pro_cpu_record_ctrl;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_cpu_record_status::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_cpu_record_status`] module*/
-pub type PRO_CPU_RECORD_STATUS = crate::Reg<pro_cpu_record_status::PRO_CPU_RECORD_STATUS_SPEC>;
+pub type PRO_CPU_RECORD_STATUS = crate::Reg<
+    pro_cpu_record_status::PRO_CPU_RECORD_STATUS_SPEC,
+>;
 ///
 pub mod pro_cpu_record_status;
 /**PRO_CPU_RECORD_PID (r) register accessor:
@@ -4477,8 +4651,9 @@ pub mod pro_cpu_record_pid;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_cpu_record_pdebuginst::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_cpu_record_pdebuginst::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_cpu_record_pdebuginst`] module*/
-pub type PRO_CPU_RECORD_PDEBUGINST =
-    crate::Reg<pro_cpu_record_pdebuginst::PRO_CPU_RECORD_PDEBUGINST_SPEC>;
+pub type PRO_CPU_RECORD_PDEBUGINST = crate::Reg<
+    pro_cpu_record_pdebuginst::PRO_CPU_RECORD_PDEBUGINST_SPEC,
+>;
 ///
 pub mod pro_cpu_record_pdebuginst;
 /**PRO_CPU_RECORD_PDEBUGSTATUS (rw) register accessor:
@@ -4486,8 +4661,9 @@ pub mod pro_cpu_record_pdebuginst;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_cpu_record_pdebugstatus::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_cpu_record_pdebugstatus::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_cpu_record_pdebugstatus`] module*/
-pub type PRO_CPU_RECORD_PDEBUGSTATUS =
-    crate::Reg<pro_cpu_record_pdebugstatus::PRO_CPU_RECORD_PDEBUGSTATUS_SPEC>;
+pub type PRO_CPU_RECORD_PDEBUGSTATUS = crate::Reg<
+    pro_cpu_record_pdebugstatus::PRO_CPU_RECORD_PDEBUGSTATUS_SPEC,
+>;
 ///
 pub mod pro_cpu_record_pdebugstatus;
 /**PRO_CPU_RECORD_PDEBUGDATA (rw) register accessor:
@@ -4495,8 +4671,9 @@ pub mod pro_cpu_record_pdebugstatus;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_cpu_record_pdebugdata::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_cpu_record_pdebugdata::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_cpu_record_pdebugdata`] module*/
-pub type PRO_CPU_RECORD_PDEBUGDATA =
-    crate::Reg<pro_cpu_record_pdebugdata::PRO_CPU_RECORD_PDEBUGDATA_SPEC>;
+pub type PRO_CPU_RECORD_PDEBUGDATA = crate::Reg<
+    pro_cpu_record_pdebugdata::PRO_CPU_RECORD_PDEBUGDATA_SPEC,
+>;
 ///
 pub mod pro_cpu_record_pdebugdata;
 /**PRO_CPU_RECORD_PDEBUGPC (r) register accessor:
@@ -4504,8 +4681,9 @@ pub mod pro_cpu_record_pdebugdata;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_cpu_record_pdebugpc::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_cpu_record_pdebugpc`] module*/
-pub type PRO_CPU_RECORD_PDEBUGPC =
-    crate::Reg<pro_cpu_record_pdebugpc::PRO_CPU_RECORD_PDEBUGPC_SPEC>;
+pub type PRO_CPU_RECORD_PDEBUGPC = crate::Reg<
+    pro_cpu_record_pdebugpc::PRO_CPU_RECORD_PDEBUGPC_SPEC,
+>;
 ///
 pub mod pro_cpu_record_pdebugpc;
 /**PRO_CPU_RECORD_PDEBUGLS0STAT (rw) register accessor:
@@ -4513,8 +4691,9 @@ pub mod pro_cpu_record_pdebugpc;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_cpu_record_pdebugls0stat::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_cpu_record_pdebugls0stat::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_cpu_record_pdebugls0stat`] module*/
-pub type PRO_CPU_RECORD_PDEBUGLS0STAT =
-    crate::Reg<pro_cpu_record_pdebugls0stat::PRO_CPU_RECORD_PDEBUGLS0STAT_SPEC>;
+pub type PRO_CPU_RECORD_PDEBUGLS0STAT = crate::Reg<
+    pro_cpu_record_pdebugls0stat::PRO_CPU_RECORD_PDEBUGLS0STAT_SPEC,
+>;
 ///
 pub mod pro_cpu_record_pdebugls0stat;
 /**PRO_CPU_RECORD_PDEBUGLS0ADDR (r) register accessor:
@@ -4522,8 +4701,9 @@ pub mod pro_cpu_record_pdebugls0stat;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_cpu_record_pdebugls0addr::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_cpu_record_pdebugls0addr`] module*/
-pub type PRO_CPU_RECORD_PDEBUGLS0ADDR =
-    crate::Reg<pro_cpu_record_pdebugls0addr::PRO_CPU_RECORD_PDEBUGLS0ADDR_SPEC>;
+pub type PRO_CPU_RECORD_PDEBUGLS0ADDR = crate::Reg<
+    pro_cpu_record_pdebugls0addr::PRO_CPU_RECORD_PDEBUGLS0ADDR_SPEC,
+>;
 ///
 pub mod pro_cpu_record_pdebugls0addr;
 /**PRO_CPU_RECORD_PDEBUGLS0DATA (r) register accessor:
@@ -4531,8 +4711,9 @@ pub mod pro_cpu_record_pdebugls0addr;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_cpu_record_pdebugls0data::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_cpu_record_pdebugls0data`] module*/
-pub type PRO_CPU_RECORD_PDEBUGLS0DATA =
-    crate::Reg<pro_cpu_record_pdebugls0data::PRO_CPU_RECORD_PDEBUGLS0DATA_SPEC>;
+pub type PRO_CPU_RECORD_PDEBUGLS0DATA = crate::Reg<
+    pro_cpu_record_pdebugls0data::PRO_CPU_RECORD_PDEBUGLS0DATA_SPEC,
+>;
 ///
 pub mod pro_cpu_record_pdebugls0data;
 /**APP_CPU_RECORD_CTRL (rw) register accessor:
@@ -4548,7 +4729,9 @@ pub mod app_cpu_record_ctrl;
 You can [`read`](crate::generic::Reg::read) this register and get [`app_cpu_record_status::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@app_cpu_record_status`] module*/
-pub type APP_CPU_RECORD_STATUS = crate::Reg<app_cpu_record_status::APP_CPU_RECORD_STATUS_SPEC>;
+pub type APP_CPU_RECORD_STATUS = crate::Reg<
+    app_cpu_record_status::APP_CPU_RECORD_STATUS_SPEC,
+>;
 ///
 pub mod app_cpu_record_status;
 /**APP_CPU_RECORD_PID (r) register accessor:
@@ -4564,8 +4747,9 @@ pub mod app_cpu_record_pid;
 You can [`read`](crate::generic::Reg::read) this register and get [`app_cpu_record_pdebuginst::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@app_cpu_record_pdebuginst`] module*/
-pub type APP_CPU_RECORD_PDEBUGINST =
-    crate::Reg<app_cpu_record_pdebuginst::APP_CPU_RECORD_PDEBUGINST_SPEC>;
+pub type APP_CPU_RECORD_PDEBUGINST = crate::Reg<
+    app_cpu_record_pdebuginst::APP_CPU_RECORD_PDEBUGINST_SPEC,
+>;
 ///
 pub mod app_cpu_record_pdebuginst;
 /**APP_CPU_RECORD_PDEBUGSTATUS (r) register accessor:
@@ -4573,8 +4757,9 @@ pub mod app_cpu_record_pdebuginst;
 You can [`read`](crate::generic::Reg::read) this register and get [`app_cpu_record_pdebugstatus::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@app_cpu_record_pdebugstatus`] module*/
-pub type APP_CPU_RECORD_PDEBUGSTATUS =
-    crate::Reg<app_cpu_record_pdebugstatus::APP_CPU_RECORD_PDEBUGSTATUS_SPEC>;
+pub type APP_CPU_RECORD_PDEBUGSTATUS = crate::Reg<
+    app_cpu_record_pdebugstatus::APP_CPU_RECORD_PDEBUGSTATUS_SPEC,
+>;
 ///
 pub mod app_cpu_record_pdebugstatus;
 /**APP_CPU_RECORD_PDEBUGDATA (r) register accessor:
@@ -4582,8 +4767,9 @@ pub mod app_cpu_record_pdebugstatus;
 You can [`read`](crate::generic::Reg::read) this register and get [`app_cpu_record_pdebugdata::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@app_cpu_record_pdebugdata`] module*/
-pub type APP_CPU_RECORD_PDEBUGDATA =
-    crate::Reg<app_cpu_record_pdebugdata::APP_CPU_RECORD_PDEBUGDATA_SPEC>;
+pub type APP_CPU_RECORD_PDEBUGDATA = crate::Reg<
+    app_cpu_record_pdebugdata::APP_CPU_RECORD_PDEBUGDATA_SPEC,
+>;
 ///
 pub mod app_cpu_record_pdebugdata;
 /**APP_CPU_RECORD_PDEBUGPC (r) register accessor:
@@ -4591,8 +4777,9 @@ pub mod app_cpu_record_pdebugdata;
 You can [`read`](crate::generic::Reg::read) this register and get [`app_cpu_record_pdebugpc::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@app_cpu_record_pdebugpc`] module*/
-pub type APP_CPU_RECORD_PDEBUGPC =
-    crate::Reg<app_cpu_record_pdebugpc::APP_CPU_RECORD_PDEBUGPC_SPEC>;
+pub type APP_CPU_RECORD_PDEBUGPC = crate::Reg<
+    app_cpu_record_pdebugpc::APP_CPU_RECORD_PDEBUGPC_SPEC,
+>;
 ///
 pub mod app_cpu_record_pdebugpc;
 /**APP_CPU_RECORD_PDEBUGLS0STAT (r) register accessor:
@@ -4600,8 +4787,9 @@ pub mod app_cpu_record_pdebugpc;
 You can [`read`](crate::generic::Reg::read) this register and get [`app_cpu_record_pdebugls0stat::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@app_cpu_record_pdebugls0stat`] module*/
-pub type APP_CPU_RECORD_PDEBUGLS0STAT =
-    crate::Reg<app_cpu_record_pdebugls0stat::APP_CPU_RECORD_PDEBUGLS0STAT_SPEC>;
+pub type APP_CPU_RECORD_PDEBUGLS0STAT = crate::Reg<
+    app_cpu_record_pdebugls0stat::APP_CPU_RECORD_PDEBUGLS0STAT_SPEC,
+>;
 ///
 pub mod app_cpu_record_pdebugls0stat;
 /**APP_CPU_RECORD_PDEBUGLS0ADDR (r) register accessor:
@@ -4609,8 +4797,9 @@ pub mod app_cpu_record_pdebugls0stat;
 You can [`read`](crate::generic::Reg::read) this register and get [`app_cpu_record_pdebugls0addr::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@app_cpu_record_pdebugls0addr`] module*/
-pub type APP_CPU_RECORD_PDEBUGLS0ADDR =
-    crate::Reg<app_cpu_record_pdebugls0addr::APP_CPU_RECORD_PDEBUGLS0ADDR_SPEC>;
+pub type APP_CPU_RECORD_PDEBUGLS0ADDR = crate::Reg<
+    app_cpu_record_pdebugls0addr::APP_CPU_RECORD_PDEBUGLS0ADDR_SPEC,
+>;
 ///
 pub mod app_cpu_record_pdebugls0addr;
 /**APP_CPU_RECORD_PDEBUGLS0DATA (r) register accessor:
@@ -4618,8 +4807,9 @@ pub mod app_cpu_record_pdebugls0addr;
 You can [`read`](crate::generic::Reg::read) this register and get [`app_cpu_record_pdebugls0data::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@app_cpu_record_pdebugls0data`] module*/
-pub type APP_CPU_RECORD_PDEBUGLS0DATA =
-    crate::Reg<app_cpu_record_pdebugls0data::APP_CPU_RECORD_PDEBUGLS0DATA_SPEC>;
+pub type APP_CPU_RECORD_PDEBUGLS0DATA = crate::Reg<
+    app_cpu_record_pdebugls0data::APP_CPU_RECORD_PDEBUGLS0DATA_SPEC,
+>;
 ///
 pub mod app_cpu_record_pdebugls0data;
 /**RSA_PD_CTRL (rw) register accessor:
@@ -5123,7 +5313,9 @@ pub mod pro_intrusion_ctrl;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_intrusion_status::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_intrusion_status`] module*/
-pub type PRO_INTRUSION_STATUS = crate::Reg<pro_intrusion_status::PRO_INTRUSION_STATUS_SPEC>;
+pub type PRO_INTRUSION_STATUS = crate::Reg<
+    pro_intrusion_status::PRO_INTRUSION_STATUS_SPEC,
+>;
 ///
 pub mod pro_intrusion_status;
 /**APP_INTRUSION_CTRL (rw) register accessor:
@@ -5139,7 +5331,9 @@ pub mod app_intrusion_ctrl;
 You can [`read`](crate::generic::Reg::read) this register and get [`app_intrusion_status::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@app_intrusion_status`] module*/
-pub type APP_INTRUSION_STATUS = crate::Reg<app_intrusion_status::APP_INTRUSION_STATUS_SPEC>;
+pub type APP_INTRUSION_STATUS = crate::Reg<
+    app_intrusion_status::APP_INTRUSION_STATUS_SPEC,
+>;
 ///
 pub mod app_intrusion_status;
 /**FRONT_END_MEM_PD (rw) register accessor:

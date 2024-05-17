@@ -162,18 +162,9 @@ impl core::fmt::Debug for R {
                 "spi_smem_wdummy_dqs_always_out",
                 &self.spi_smem_wdummy_dqs_always_out(),
             )
-            .field(
-                "spi_smem_wdummy_always_out",
-                &self.spi_smem_wdummy_always_out(),
-            )
-            .field(
-                "spi_smem_dqs_ie_always_on",
-                &self.spi_smem_dqs_ie_always_on(),
-            )
-            .field(
-                "spi_smem_data_ie_always_on",
-                &self.spi_smem_data_ie_always_on(),
-            )
+            .field("spi_smem_wdummy_always_out", &self.spi_smem_wdummy_always_out())
+            .field("spi_smem_dqs_ie_always_on", &self.spi_smem_dqs_ie_always_on())
+            .field("spi_smem_data_ie_always_on", &self.spi_smem_data_ie_always_on())
             .finish()
     }
 }

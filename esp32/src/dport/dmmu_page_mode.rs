@@ -35,7 +35,9 @@ impl W {
     ///Bit 0
     #[inline(always)]
     #[must_use]
-    pub fn internal_sram_dmmu_ena(&mut self) -> INTERNAL_SRAM_DMMU_ENA_W<DMMU_PAGE_MODE_SPEC> {
+    pub fn internal_sram_dmmu_ena(
+        &mut self,
+    ) -> INTERNAL_SRAM_DMMU_ENA_W<DMMU_PAGE_MODE_SPEC> {
         INTERNAL_SRAM_DMMU_ENA_W::new(self, 0)
     }
     ///Bits 1:2

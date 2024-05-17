@@ -96,20 +96,11 @@ impl core::fmt::Debug for R {
             .field("sleep_switch_modem_end", &self.sleep_switch_modem_end())
             .field("modem_switch_sleep_end", &self.modem_switch_sleep_end())
             .field("active_switch_sleep_end", &self.active_switch_sleep_end())
-            .field(
-                "modem_switch_active_start",
-                &self.modem_switch_active_start(),
-            )
-            .field(
-                "sleep_switch_active_start",
-                &self.sleep_switch_active_start(),
-            )
+            .field("modem_switch_active_start", &self.modem_switch_active_start())
+            .field("sleep_switch_active_start", &self.sleep_switch_active_start())
             .field("sleep_switch_modem_start", &self.sleep_switch_modem_start())
             .field("modem_switch_sleep_start", &self.modem_switch_sleep_start())
-            .field(
-                "active_switch_sleep_start",
-                &self.active_switch_sleep_start(),
-            )
+            .field("active_switch_sleep_start", &self.active_switch_sleep_start())
             .field("hp_sw_trigger", &self.hp_sw_trigger())
             .finish()
     }

@@ -117,10 +117,7 @@ impl core::fmt::Debug for R {
             .field("ch1_dst_msize", &self.ch1_dst_msize())
             .field("ch1_ar_cache", &self.ch1_ar_cache())
             .field("ch1_aw_cache", &self.ch1_aw_cache())
-            .field(
-                "ch1_nonposted_lastwrite_en",
-                &self.ch1_nonposted_lastwrite_en(),
-            )
+            .field("ch1_nonposted_lastwrite_en", &self.ch1_nonposted_lastwrite_en())
             .finish()
     }
 }
@@ -188,7 +185,9 @@ impl W {
     ///Bit 30 - NA
     #[inline(always)]
     #[must_use]
-    pub fn ch1_nonposted_lastwrite_en(&mut self) -> CH1_NONPOSTED_LASTWRITE_EN_W<CTL0_SPEC> {
+    pub fn ch1_nonposted_lastwrite_en(
+        &mut self,
+    ) -> CH1_NONPOSTED_LASTWRITE_EN_W<CTL0_SPEC> {
         CH1_NONPOSTED_LASTWRITE_EN_W::new(self, 30)
     }
 }

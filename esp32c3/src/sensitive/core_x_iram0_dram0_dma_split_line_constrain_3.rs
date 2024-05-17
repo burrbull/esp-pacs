@@ -21,22 +21,30 @@ pub type CORE_X_IRAM0_SRAM_LINE_1_SPLITADDR_W<'a, REG> = crate::FieldWriter<'a, 
 impl R {
     ///Bits 0:1 - core_x_iram0_sram_line_1_category_0
     #[inline(always)]
-    pub fn core_x_iram0_sram_line_1_category_0(&self) -> CORE_X_IRAM0_SRAM_LINE_1_CATEGORY_0_R {
+    pub fn core_x_iram0_sram_line_1_category_0(
+        &self,
+    ) -> CORE_X_IRAM0_SRAM_LINE_1_CATEGORY_0_R {
         CORE_X_IRAM0_SRAM_LINE_1_CATEGORY_0_R::new((self.bits & 3) as u8)
     }
     ///Bits 2:3 - core_x_iram0_sram_line_1_category_1
     #[inline(always)]
-    pub fn core_x_iram0_sram_line_1_category_1(&self) -> CORE_X_IRAM0_SRAM_LINE_1_CATEGORY_1_R {
+    pub fn core_x_iram0_sram_line_1_category_1(
+        &self,
+    ) -> CORE_X_IRAM0_SRAM_LINE_1_CATEGORY_1_R {
         CORE_X_IRAM0_SRAM_LINE_1_CATEGORY_1_R::new(((self.bits >> 2) & 3) as u8)
     }
     ///Bits 4:5 - core_x_iram0_sram_line_1_category_2
     #[inline(always)]
-    pub fn core_x_iram0_sram_line_1_category_2(&self) -> CORE_X_IRAM0_SRAM_LINE_1_CATEGORY_2_R {
+    pub fn core_x_iram0_sram_line_1_category_2(
+        &self,
+    ) -> CORE_X_IRAM0_SRAM_LINE_1_CATEGORY_2_R {
         CORE_X_IRAM0_SRAM_LINE_1_CATEGORY_2_R::new(((self.bits >> 4) & 3) as u8)
     }
     ///Bits 14:21 - core_x_iram0_sram_line_1_splitaddr
     #[inline(always)]
-    pub fn core_x_iram0_sram_line_1_splitaddr(&self) -> CORE_X_IRAM0_SRAM_LINE_1_SPLITADDR_R {
+    pub fn core_x_iram0_sram_line_1_splitaddr(
+        &self,
+    ) -> CORE_X_IRAM0_SRAM_LINE_1_SPLITADDR_R {
         CORE_X_IRAM0_SRAM_LINE_1_SPLITADDR_R::new(((self.bits >> 14) & 0xff) as u8)
     }
 }
@@ -69,8 +77,9 @@ impl W {
     #[must_use]
     pub fn core_x_iram0_sram_line_1_category_0(
         &mut self,
-    ) -> CORE_X_IRAM0_SRAM_LINE_1_CATEGORY_0_W<CORE_X_IRAM0_DRAM0_DMA_SPLIT_LINE_CONSTRAIN_3_SPEC>
-    {
+    ) -> CORE_X_IRAM0_SRAM_LINE_1_CATEGORY_0_W<
+        CORE_X_IRAM0_DRAM0_DMA_SPLIT_LINE_CONSTRAIN_3_SPEC,
+    > {
         CORE_X_IRAM0_SRAM_LINE_1_CATEGORY_0_W::new(self, 0)
     }
     ///Bits 2:3 - core_x_iram0_sram_line_1_category_1
@@ -78,8 +87,9 @@ impl W {
     #[must_use]
     pub fn core_x_iram0_sram_line_1_category_1(
         &mut self,
-    ) -> CORE_X_IRAM0_SRAM_LINE_1_CATEGORY_1_W<CORE_X_IRAM0_DRAM0_DMA_SPLIT_LINE_CONSTRAIN_3_SPEC>
-    {
+    ) -> CORE_X_IRAM0_SRAM_LINE_1_CATEGORY_1_W<
+        CORE_X_IRAM0_DRAM0_DMA_SPLIT_LINE_CONSTRAIN_3_SPEC,
+    > {
         CORE_X_IRAM0_SRAM_LINE_1_CATEGORY_1_W::new(self, 2)
     }
     ///Bits 4:5 - core_x_iram0_sram_line_1_category_2
@@ -87,8 +97,9 @@ impl W {
     #[must_use]
     pub fn core_x_iram0_sram_line_1_category_2(
         &mut self,
-    ) -> CORE_X_IRAM0_SRAM_LINE_1_CATEGORY_2_W<CORE_X_IRAM0_DRAM0_DMA_SPLIT_LINE_CONSTRAIN_3_SPEC>
-    {
+    ) -> CORE_X_IRAM0_SRAM_LINE_1_CATEGORY_2_W<
+        CORE_X_IRAM0_DRAM0_DMA_SPLIT_LINE_CONSTRAIN_3_SPEC,
+    > {
         CORE_X_IRAM0_SRAM_LINE_1_CATEGORY_2_W::new(self, 4)
     }
     ///Bits 14:21 - core_x_iram0_sram_line_1_splitaddr
@@ -96,8 +107,9 @@ impl W {
     #[must_use]
     pub fn core_x_iram0_sram_line_1_splitaddr(
         &mut self,
-    ) -> CORE_X_IRAM0_SRAM_LINE_1_SPLITADDR_W<CORE_X_IRAM0_DRAM0_DMA_SPLIT_LINE_CONSTRAIN_3_SPEC>
-    {
+    ) -> CORE_X_IRAM0_SRAM_LINE_1_SPLITADDR_W<
+        CORE_X_IRAM0_DRAM0_DMA_SPLIT_LINE_CONSTRAIN_3_SPEC,
+    > {
         CORE_X_IRAM0_SRAM_LINE_1_SPLITADDR_W::new(self, 14)
     }
 }

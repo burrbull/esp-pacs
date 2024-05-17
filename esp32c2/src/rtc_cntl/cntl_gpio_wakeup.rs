@@ -171,7 +171,9 @@ impl W {
     ///Bit 6 - Need add desc
     #[inline(always)]
     #[must_use]
-    pub fn gpio_wakeup_status_clr(&mut self) -> GPIO_WAKEUP_STATUS_CLR_W<CNTL_GPIO_WAKEUP_SPEC> {
+    pub fn gpio_wakeup_status_clr(
+        &mut self,
+    ) -> GPIO_WAKEUP_STATUS_CLR_W<CNTL_GPIO_WAKEUP_SPEC> {
         GPIO_WAKEUP_STATUS_CLR_W::new(self, 6)
     }
     ///Bit 7 - Need add desc
@@ -219,37 +221,49 @@ impl W {
     ///Bit 26 - Need add desc
     #[inline(always)]
     #[must_use]
-    pub fn gpio_pin5_wakeup_enable(&mut self) -> GPIO_PIN5_WAKEUP_ENABLE_W<CNTL_GPIO_WAKEUP_SPEC> {
+    pub fn gpio_pin5_wakeup_enable(
+        &mut self,
+    ) -> GPIO_PIN5_WAKEUP_ENABLE_W<CNTL_GPIO_WAKEUP_SPEC> {
         GPIO_PIN5_WAKEUP_ENABLE_W::new(self, 26)
     }
     ///Bit 27 - Need add desc
     #[inline(always)]
     #[must_use]
-    pub fn gpio_pin4_wakeup_enable(&mut self) -> GPIO_PIN4_WAKEUP_ENABLE_W<CNTL_GPIO_WAKEUP_SPEC> {
+    pub fn gpio_pin4_wakeup_enable(
+        &mut self,
+    ) -> GPIO_PIN4_WAKEUP_ENABLE_W<CNTL_GPIO_WAKEUP_SPEC> {
         GPIO_PIN4_WAKEUP_ENABLE_W::new(self, 27)
     }
     ///Bit 28 - Need add desc
     #[inline(always)]
     #[must_use]
-    pub fn gpio_pin3_wakeup_enable(&mut self) -> GPIO_PIN3_WAKEUP_ENABLE_W<CNTL_GPIO_WAKEUP_SPEC> {
+    pub fn gpio_pin3_wakeup_enable(
+        &mut self,
+    ) -> GPIO_PIN3_WAKEUP_ENABLE_W<CNTL_GPIO_WAKEUP_SPEC> {
         GPIO_PIN3_WAKEUP_ENABLE_W::new(self, 28)
     }
     ///Bit 29 - Need add desc
     #[inline(always)]
     #[must_use]
-    pub fn gpio_pin2_wakeup_enable(&mut self) -> GPIO_PIN2_WAKEUP_ENABLE_W<CNTL_GPIO_WAKEUP_SPEC> {
+    pub fn gpio_pin2_wakeup_enable(
+        &mut self,
+    ) -> GPIO_PIN2_WAKEUP_ENABLE_W<CNTL_GPIO_WAKEUP_SPEC> {
         GPIO_PIN2_WAKEUP_ENABLE_W::new(self, 29)
     }
     ///Bit 30 - Need add desc
     #[inline(always)]
     #[must_use]
-    pub fn gpio_pin1_wakeup_enable(&mut self) -> GPIO_PIN1_WAKEUP_ENABLE_W<CNTL_GPIO_WAKEUP_SPEC> {
+    pub fn gpio_pin1_wakeup_enable(
+        &mut self,
+    ) -> GPIO_PIN1_WAKEUP_ENABLE_W<CNTL_GPIO_WAKEUP_SPEC> {
         GPIO_PIN1_WAKEUP_ENABLE_W::new(self, 30)
     }
     ///Bit 31 - Need add desc
     #[inline(always)]
     #[must_use]
-    pub fn gpio_pin0_wakeup_enable(&mut self) -> GPIO_PIN0_WAKEUP_ENABLE_W<CNTL_GPIO_WAKEUP_SPEC> {
+    pub fn gpio_pin0_wakeup_enable(
+        &mut self,
+    ) -> GPIO_PIN0_WAKEUP_ENABLE_W<CNTL_GPIO_WAKEUP_SPEC> {
         GPIO_PIN0_WAKEUP_ENABLE_W::new(self, 31)
     }
 }

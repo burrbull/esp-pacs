@@ -181,7 +181,9 @@ pub mod regdma_link_3_addr;
 You can [`read`](crate::generic::Reg::read) this register and get [`regdma_link_mac_addr::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`regdma_link_mac_addr::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@regdma_link_mac_addr`] module*/
-pub type REGDMA_LINK_MAC_ADDR = crate::Reg<regdma_link_mac_addr::REGDMA_LINK_MAC_ADDR_SPEC>;
+pub type REGDMA_LINK_MAC_ADDR = crate::Reg<
+    regdma_link_mac_addr::REGDMA_LINK_MAC_ADDR_SPEC,
+>;
 ///Link_mac_addr
 pub mod regdma_link_mac_addr;
 /**REGDMA_CURRENT_LINK_ADDR (r) register accessor: current link addr
@@ -189,8 +191,9 @@ pub mod regdma_link_mac_addr;
 You can [`read`](crate::generic::Reg::read) this register and get [`regdma_current_link_addr::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@regdma_current_link_addr`] module*/
-pub type REGDMA_CURRENT_LINK_ADDR =
-    crate::Reg<regdma_current_link_addr::REGDMA_CURRENT_LINK_ADDR_SPEC>;
+pub type REGDMA_CURRENT_LINK_ADDR = crate::Reg<
+    regdma_current_link_addr::REGDMA_CURRENT_LINK_ADDR_SPEC,
+>;
 ///current link addr
 pub mod regdma_current_link_addr;
 /**REGDMA_BACKUP_ADDR (r) register accessor: Backup addr

@@ -95,7 +95,9 @@ impl W {
     ///Bit 3 - NA
     #[inline(always)]
     #[must_use]
-    pub fn reg_tx_data_buf_buf_rst(&mut self) -> REG_TX_DATA_BUF_BUF_RST_W<RESET_CTRL_SPEC> {
+    pub fn reg_tx_data_buf_buf_rst(
+        &mut self,
+    ) -> REG_TX_DATA_BUF_BUF_RST_W<RESET_CTRL_SPEC> {
         REG_TX_DATA_BUF_BUF_RST_W::new(self, 3)
     }
     ///Bit 4 - NA
@@ -113,7 +115,9 @@ impl W {
     ///Bit 6 - NA
     #[inline(always)]
     #[must_use]
-    pub fn reg_ibi_status_buf_rst(&mut self) -> REG_IBI_STATUS_BUF_RST_W<RESET_CTRL_SPEC> {
+    pub fn reg_ibi_status_buf_rst(
+        &mut self,
+    ) -> REG_IBI_STATUS_BUF_RST_W<RESET_CTRL_SPEC> {
         REG_IBI_STATUS_BUF_RST_W::new(self, 6)
     }
 }

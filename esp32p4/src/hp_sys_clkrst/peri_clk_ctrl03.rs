@@ -72,14 +72,8 @@ impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PERI_CLK_CTRL03")
             .field("mipi_dsi_dphy_cfg_clk_en", &self.mipi_dsi_dphy_cfg_clk_en())
-            .field(
-                "mipi_dsi_dphy_pll_refclk_en",
-                &self.mipi_dsi_dphy_pll_refclk_en(),
-            )
-            .field(
-                "mipi_csi_dphy_clk_src_sel",
-                &self.mipi_csi_dphy_clk_src_sel(),
-            )
+            .field("mipi_dsi_dphy_pll_refclk_en", &self.mipi_dsi_dphy_pll_refclk_en())
+            .field("mipi_csi_dphy_clk_src_sel", &self.mipi_csi_dphy_clk_src_sel())
             .field("mipi_csi_dphy_cfg_clk_en", &self.mipi_csi_dphy_cfg_clk_en())
             .field("mipi_dsi_dpiclk_src_sel", &self.mipi_dsi_dpiclk_src_sel())
             .field("mipi_dsi_dpiclk_en", &self.mipi_dsi_dpiclk_en())
@@ -91,7 +85,9 @@ impl W {
     ///Bit 0 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn mipi_dsi_dphy_cfg_clk_en(&mut self) -> MIPI_DSI_DPHY_CFG_CLK_EN_W<PERI_CLK_CTRL03_SPEC> {
+    pub fn mipi_dsi_dphy_cfg_clk_en(
+        &mut self,
+    ) -> MIPI_DSI_DPHY_CFG_CLK_EN_W<PERI_CLK_CTRL03_SPEC> {
         MIPI_DSI_DPHY_CFG_CLK_EN_W::new(self, 0)
     }
     ///Bit 1 - Reserved
@@ -113,13 +109,17 @@ impl W {
     ///Bit 4 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn mipi_csi_dphy_cfg_clk_en(&mut self) -> MIPI_CSI_DPHY_CFG_CLK_EN_W<PERI_CLK_CTRL03_SPEC> {
+    pub fn mipi_csi_dphy_cfg_clk_en(
+        &mut self,
+    ) -> MIPI_CSI_DPHY_CFG_CLK_EN_W<PERI_CLK_CTRL03_SPEC> {
         MIPI_CSI_DPHY_CFG_CLK_EN_W::new(self, 4)
     }
     ///Bits 5:6 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn mipi_dsi_dpiclk_src_sel(&mut self) -> MIPI_DSI_DPICLK_SRC_SEL_W<PERI_CLK_CTRL03_SPEC> {
+    pub fn mipi_dsi_dpiclk_src_sel(
+        &mut self,
+    ) -> MIPI_DSI_DPICLK_SRC_SEL_W<PERI_CLK_CTRL03_SPEC> {
         MIPI_DSI_DPICLK_SRC_SEL_W::new(self, 5)
     }
     ///Bit 7 - Reserved
@@ -131,7 +131,9 @@ impl W {
     ///Bits 8:15 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn mipi_dsi_dpiclk_div_num(&mut self) -> MIPI_DSI_DPICLK_DIV_NUM_W<PERI_CLK_CTRL03_SPEC> {
+    pub fn mipi_dsi_dpiclk_div_num(
+        &mut self,
+    ) -> MIPI_DSI_DPICLK_DIV_NUM_W<PERI_CLK_CTRL03_SPEC> {
         MIPI_DSI_DPICLK_DIV_NUM_W::new(self, 8)
     }
 }

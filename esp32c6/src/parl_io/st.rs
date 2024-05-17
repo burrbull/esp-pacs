@@ -12,9 +12,7 @@ impl R {
 #[cfg(feature = "impl-register-debug")]
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("ST")
-            .field("tx_ready", &self.tx_ready())
-            .finish()
+        f.debug_struct("ST").field("tx_ready", &self.tx_ready()).finish()
     }
 }
 /**Parallel IO module status register0.

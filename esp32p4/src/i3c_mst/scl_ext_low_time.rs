@@ -44,22 +44,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SCL_EXT_LOW_TIME")
-            .field(
-                "reg_i3c_mst_ext_low_period1",
-                &self.reg_i3c_mst_ext_low_period1(),
-            )
-            .field(
-                "reg_i3c_mst_ext_low_period2",
-                &self.reg_i3c_mst_ext_low_period2(),
-            )
-            .field(
-                "reg_i3c_mst_ext_low_period3",
-                &self.reg_i3c_mst_ext_low_period3(),
-            )
-            .field(
-                "reg_i3c_mst_ext_low_period4",
-                &self.reg_i3c_mst_ext_low_period4(),
-            )
+            .field("reg_i3c_mst_ext_low_period1", &self.reg_i3c_mst_ext_low_period1())
+            .field("reg_i3c_mst_ext_low_period2", &self.reg_i3c_mst_ext_low_period2())
+            .field("reg_i3c_mst_ext_low_period3", &self.reg_i3c_mst_ext_low_period3())
+            .field("reg_i3c_mst_ext_low_period4", &self.reg_i3c_mst_ext_low_period4())
             .finish()
     }
 }

@@ -108,24 +108,12 @@ impl core::fmt::Debug for R {
             .field("tx_dscr_hb_err_st", &self.tx_dscr_hb_err_st())
             .field("y_rx_scal_equal_0_err_st", &self.y_rx_scal_equal_0_err_st())
             .field("rx_dscr_vb_err_st", &self.rx_dscr_vb_err_st())
-            .field(
-                "ydst_len_too_samll_err_st",
-                &self.ydst_len_too_samll_err_st(),
-            )
-            .field(
-                "ydst_len_too_large_err_st",
-                &self.ydst_len_too_large_err_st(),
-            )
+            .field("ydst_len_too_samll_err_st", &self.ydst_len_too_samll_err_st())
+            .field("ydst_len_too_large_err_st", &self.ydst_len_too_large_err_st())
             .field("x_rx_scal_equal_0_err_st", &self.x_rx_scal_equal_0_err_st())
             .field("rx_dscr_hb_err_st", &self.rx_dscr_hb_err_st())
-            .field(
-                "xdst_len_too_samll_err_st",
-                &self.xdst_len_too_samll_err_st(),
-            )
-            .field(
-                "xdst_len_too_large_err_st",
-                &self.xdst_len_too_large_err_st(),
-            )
+            .field("xdst_len_too_samll_err_st", &self.xdst_len_too_samll_err_st())
+            .field("xdst_len_too_large_err_st", &self.xdst_len_too_large_err_st())
             .field("x_yuv420_rx_scale_err_st", &self.x_yuv420_rx_scale_err_st())
             .field("y_yuv420_rx_scale_err_st", &self.y_yuv420_rx_scale_err_st())
             .field("x_yuv420_tx_scale_err_st", &self.x_yuv420_tx_scale_err_st())

@@ -62,12 +62,16 @@ impl R {
     }
     ///Bits 2:3 - backup_bus_pms_constrain_g0spi_1
     #[inline(always)]
-    pub fn backup_bus_pms_constrain_g0spi_1(&self) -> BACKUP_BUS_PMS_CONSTRAIN_G0SPI_1_R {
+    pub fn backup_bus_pms_constrain_g0spi_1(
+        &self,
+    ) -> BACKUP_BUS_PMS_CONSTRAIN_G0SPI_1_R {
         BACKUP_BUS_PMS_CONSTRAIN_G0SPI_1_R::new(((self.bits >> 2) & 3) as u8)
     }
     ///Bits 4:5 - backup_bus_pms_constrain_g0spi_0
     #[inline(always)]
-    pub fn backup_bus_pms_constrain_g0spi_0(&self) -> BACKUP_BUS_PMS_CONSTRAIN_G0SPI_0_R {
+    pub fn backup_bus_pms_constrain_g0spi_0(
+        &self,
+    ) -> BACKUP_BUS_PMS_CONSTRAIN_G0SPI_0_R {
         BACKUP_BUS_PMS_CONSTRAIN_G0SPI_0_R::new(((self.bits >> 4) & 3) as u8)
     }
     ///Bits 6:7 - backup_bus_pms_constrain_gpio
@@ -141,38 +145,23 @@ impl core::fmt::Debug for R {
                 "backup_bus_pms_constrain_gpio",
                 &self.backup_bus_pms_constrain_gpio(),
             )
-            .field(
-                "backup_bus_pms_constrain_fe2",
-                &self.backup_bus_pms_constrain_fe2(),
-            )
-            .field(
-                "backup_bus_pms_constrain_fe",
-                &self.backup_bus_pms_constrain_fe(),
-            )
+            .field("backup_bus_pms_constrain_fe2", &self.backup_bus_pms_constrain_fe2())
+            .field("backup_bus_pms_constrain_fe", &self.backup_bus_pms_constrain_fe())
             .field(
                 "backup_bus_pms_constrain_timer",
                 &self.backup_bus_pms_constrain_timer(),
             )
-            .field(
-                "backup_bus_pms_constrain_rtc",
-                &self.backup_bus_pms_constrain_rtc(),
-            )
+            .field("backup_bus_pms_constrain_rtc", &self.backup_bus_pms_constrain_rtc())
             .field(
                 "backup_bus_pms_constrain_io_mux",
                 &self.backup_bus_pms_constrain_io_mux(),
             )
-            .field(
-                "backup_bus_pms_constrain_wdg",
-                &self.backup_bus_pms_constrain_wdg(),
-            )
+            .field("backup_bus_pms_constrain_wdg", &self.backup_bus_pms_constrain_wdg())
             .field(
                 "backup_bus_pms_constrain_misc",
                 &self.backup_bus_pms_constrain_misc(),
             )
-            .field(
-                "backup_bus_pms_constrain_i2c",
-                &self.backup_bus_pms_constrain_i2c(),
-            )
+            .field("backup_bus_pms_constrain_i2c", &self.backup_bus_pms_constrain_i2c())
             .field(
                 "backup_bus_pms_constrain_uart1",
                 &self.backup_bus_pms_constrain_uart1(),

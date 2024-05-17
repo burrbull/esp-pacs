@@ -25,7 +25,9 @@ impl W {
     ///Bits 0:31 - ECO high register
     #[inline(always)]
     #[must_use]
-    pub fn registerrnd_eco_high(&mut self) -> REGISTERRND_ECO_HIGH_W<REGISTERRND_ECO_HIGH_SPEC> {
+    pub fn registerrnd_eco_high(
+        &mut self,
+    ) -> REGISTERRND_ECO_HIGH_W<REGISTERRND_ECO_HIGH_SPEC> {
         REGISTERRND_ECO_HIGH_W::new(self, 0)
     }
 }

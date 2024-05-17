@@ -84,10 +84,7 @@ impl core::fmt::Debug for R {
             .field("xpd_sar_amp_fsm_idle", &self.xpd_sar_amp_fsm_idle())
             .field("amp_rst_fb_fsm_idle", &self.amp_rst_fb_fsm_idle())
             .field("amp_short_ref_fsm_idle", &self.amp_short_ref_fsm_idle())
-            .field(
-                "amp_short_ref_gnd_fsm_idle",
-                &self.amp_short_ref_gnd_fsm_idle(),
-            )
+            .field("amp_short_ref_gnd_fsm_idle", &self.amp_short_ref_gnd_fsm_idle())
             .field("xpd_sar_fsm_idle", &self.xpd_sar_fsm_idle())
             .field("sar_rstb_fsm_idle", &self.sar_rstb_fsm_idle())
             .field("sar_amp_wait3", &self.sar_amp_wait3())
@@ -116,13 +113,17 @@ impl W {
     ///Bit 3 - N/A
     #[inline(always)]
     #[must_use]
-    pub fn amp_short_ref_fsm_idle(&mut self) -> AMP_SHORT_REF_FSM_IDLE_W<AMP_CTRL2_SPEC> {
+    pub fn amp_short_ref_fsm_idle(
+        &mut self,
+    ) -> AMP_SHORT_REF_FSM_IDLE_W<AMP_CTRL2_SPEC> {
         AMP_SHORT_REF_FSM_IDLE_W::new(self, 3)
     }
     ///Bit 4 - N/A
     #[inline(always)]
     #[must_use]
-    pub fn amp_short_ref_gnd_fsm_idle(&mut self) -> AMP_SHORT_REF_GND_FSM_IDLE_W<AMP_CTRL2_SPEC> {
+    pub fn amp_short_ref_gnd_fsm_idle(
+        &mut self,
+    ) -> AMP_SHORT_REF_GND_FSM_IDLE_W<AMP_CTRL2_SPEC> {
         AMP_SHORT_REF_GND_FSM_IDLE_W::new(self, 4)
     }
     ///Bit 5 - N/A

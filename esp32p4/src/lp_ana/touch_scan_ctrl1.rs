@@ -45,10 +45,7 @@ impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("TOUCH_SCAN_CTRL1")
             .field("touch_shield_pad_en", &self.touch_shield_pad_en())
-            .field(
-                "touch_inactive_connection",
-                &self.touch_inactive_connection(),
-            )
+            .field("touch_inactive_connection", &self.touch_inactive_connection())
             .field("touch_scan_pad_map", &self.touch_scan_pad_map())
             .field("touch_xpd_wait", &self.touch_xpd_wait())
             .finish()
@@ -58,7 +55,9 @@ impl W {
     ///Bit 0 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn touch_shield_pad_en(&mut self) -> TOUCH_SHIELD_PAD_EN_W<TOUCH_SCAN_CTRL1_SPEC> {
+    pub fn touch_shield_pad_en(
+        &mut self,
+    ) -> TOUCH_SHIELD_PAD_EN_W<TOUCH_SCAN_CTRL1_SPEC> {
         TOUCH_SHIELD_PAD_EN_W::new(self, 0)
     }
     ///Bit 1 - need_des

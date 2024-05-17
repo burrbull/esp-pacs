@@ -12,9 +12,7 @@ impl R {
 #[cfg(feature = "impl-register-debug")]
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("OUT_DSCR")
-            .field("outlink_dscr", &self.outlink_dscr())
-            .finish()
+        f.debug_struct("OUT_DSCR").field("outlink_dscr", &self.outlink_dscr()).finish()
     }
 }
 /**DMA_OUT_DSCR_CH0_REG.

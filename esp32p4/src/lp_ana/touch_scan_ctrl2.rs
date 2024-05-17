@@ -89,7 +89,9 @@ impl W {
     ///Bits 28:29 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn freq_scan_cnt_limit(&mut self) -> FREQ_SCAN_CNT_LIMIT_W<TOUCH_SCAN_CTRL2_SPEC> {
+    pub fn freq_scan_cnt_limit(
+        &mut self,
+    ) -> FREQ_SCAN_CNT_LIMIT_W<TOUCH_SCAN_CTRL2_SPEC> {
         FREQ_SCAN_CNT_LIMIT_W::new(self, 28)
     }
 }

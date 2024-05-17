@@ -84,8 +84,7 @@ impl R {
     ///NOTE: `n` is number of field in register. `n == 0` corresponds to `DOUT0_MODE` field
     #[inline(always)]
     pub fn dout_mode(&self, n: u8) -> DOUT_MODE_R {
-        #[allow(clippy::no_effect)]
-        [(); 16][n as usize];
+        #[allow(clippy::no_effect)] [(); 16][n as usize];
         DOUT_MODE_R::new(((self.bits >> (n * 2)) & 3) as u8)
     }
     ///Iterator for array of:
@@ -205,8 +204,7 @@ impl W {
     #[inline(always)]
     #[must_use]
     pub fn dout_mode(&mut self, n: u8) -> DOUT_MODE_W<LCD_DATA_DOUT_MODE_SPEC> {
-        #[allow(clippy::no_effect)]
-        [(); 16][n as usize];
+        #[allow(clippy::no_effect)] [(); 16][n as usize];
         DOUT_MODE_W::new(self, n * 2)
     }
     ///Bits 0:1 - The output data bit 0 is delayed by module clock LCD_CLK. 0: output without delay. 1: delayed by the rising edge of LCD_CLK. 2: delayed by the falling edge of LCD_CLK.

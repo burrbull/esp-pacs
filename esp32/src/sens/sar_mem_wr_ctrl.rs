@@ -49,7 +49,9 @@ impl W {
     ///Bit 22
     #[inline(always)]
     #[must_use]
-    pub fn rtc_mem_wr_offst_clr(&mut self) -> RTC_MEM_WR_OFFST_CLR_W<SAR_MEM_WR_CTRL_SPEC> {
+    pub fn rtc_mem_wr_offst_clr(
+        &mut self,
+    ) -> RTC_MEM_WR_OFFST_CLR_W<SAR_MEM_WR_CTRL_SPEC> {
         RTC_MEM_WR_OFFST_CLR_W::new(self, 22)
     }
 }

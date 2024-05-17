@@ -81,13 +81,17 @@ impl W {
     ///Bit 20 - Configure the down sampling rate of PDM RX filter group1 module. 1: The down sampling rate is 128. 0: down sampling rate is 64.
     #[inline(always)]
     #[must_use]
-    pub fn rx_pdm_sinc_dsr_16_en(&mut self) -> RX_PDM_SINC_DSR_16_EN_W<RX_PDM_CONF_SPEC> {
+    pub fn rx_pdm_sinc_dsr_16_en(
+        &mut self,
+    ) -> RX_PDM_SINC_DSR_16_EN_W<RX_PDM_CONF_SPEC> {
         RX_PDM_SINC_DSR_16_EN_W::new(self, 20)
     }
     ///Bits 21:24 - Configure PDM RX amplify number.
     #[inline(always)]
     #[must_use]
-    pub fn rx_pdm2pcm_amplify_num(&mut self) -> RX_PDM2PCM_AMPLIFY_NUM_W<RX_PDM_CONF_SPEC> {
+    pub fn rx_pdm2pcm_amplify_num(
+        &mut self,
+    ) -> RX_PDM2PCM_AMPLIFY_NUM_W<RX_PDM_CONF_SPEC> {
         RX_PDM2PCM_AMPLIFY_NUM_W::new(self, 21)
     }
     ///Bit 25 - I2S PDM RX bypass hp filter or not.

@@ -12,8 +12,7 @@ impl R {
     ///NOTE: `n` is number of field in register. `n == 0` corresponds to `CNT_THR_EVENT_U0` field
     #[inline(always)]
     pub fn cnt_thr_event_u(&self, n: u8) -> CNT_THR_EVENT_U_R {
-        #[allow(clippy::no_effect)]
-        [(); 4][n as usize];
+        #[allow(clippy::no_effect)] [(); 4][n as usize];
         CNT_THR_EVENT_U_R::new(((self.bits >> n) & 1) != 0)
     }
     ///Iterator for array of:
@@ -61,8 +60,7 @@ impl W {
     #[inline(always)]
     #[must_use]
     pub fn cnt_thr_event_u(&mut self, n: u8) -> CNT_THR_EVENT_U_W<INT_ENA_SPEC> {
-        #[allow(clippy::no_effect)]
-        [(); 4][n as usize];
+        #[allow(clippy::no_effect)] [(); 4][n as usize];
         CNT_THR_EVENT_U_W::new(self, n)
     }
     ///Bit 0 - The interrupt enable bit for the PCNT_CNT_THR_EVENT_U0_INT interrupt.

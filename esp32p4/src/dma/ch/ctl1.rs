@@ -116,14 +116,8 @@ impl core::fmt::Debug for R {
             .field("ch1_src_stat_en", &self.ch1_src_stat_en())
             .field("ch1_dst_stat_en", &self.ch1_dst_stat_en())
             .field("ch1_ioc_blktfr", &self.ch1_ioc_blktfr())
-            .field(
-                "ch1_shadowreg_or_lli_last",
-                &self.ch1_shadowreg_or_lli_last(),
-            )
-            .field(
-                "ch1_shadowreg_or_lli_valid",
-                &self.ch1_shadowreg_or_lli_valid(),
-            )
+            .field("ch1_shadowreg_or_lli_last", &self.ch1_shadowreg_or_lli_last())
+            .field("ch1_shadowreg_or_lli_valid", &self.ch1_shadowreg_or_lli_valid())
             .finish()
     }
 }
@@ -185,13 +179,17 @@ impl W {
     ///Bit 30 - NA
     #[inline(always)]
     #[must_use]
-    pub fn ch1_shadowreg_or_lli_last(&mut self) -> CH1_SHADOWREG_OR_LLI_LAST_W<CTL1_SPEC> {
+    pub fn ch1_shadowreg_or_lli_last(
+        &mut self,
+    ) -> CH1_SHADOWREG_OR_LLI_LAST_W<CTL1_SPEC> {
         CH1_SHADOWREG_OR_LLI_LAST_W::new(self, 30)
     }
     ///Bit 31 - NA
     #[inline(always)]
     #[must_use]
-    pub fn ch1_shadowreg_or_lli_valid(&mut self) -> CH1_SHADOWREG_OR_LLI_VALID_W<CTL1_SPEC> {
+    pub fn ch1_shadowreg_or_lli_valid(
+        &mut self,
+    ) -> CH1_SHADOWREG_OR_LLI_VALID_W<CTL1_SPEC> {
         CH1_SHADOWREG_OR_LLI_VALID_W::new(self, 31)
     }
 }

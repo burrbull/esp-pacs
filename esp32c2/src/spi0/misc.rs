@@ -65,10 +65,7 @@ impl core::fmt::Debug for R {
             .field("trans_end", &self.trans_end())
             .field("trans_end_int_ena", &self.trans_end_int_ena())
             .field("cspi_st_trans_end", &self.cspi_st_trans_end())
-            .field(
-                "cspi_st_trans_end_int_ena",
-                &self.cspi_st_trans_end_int_ena(),
-            )
+            .field("cspi_st_trans_end_int_ena", &self.cspi_st_trans_end_int_ena())
             .field("ck_idle_edge", &self.ck_idle_edge())
             .field("cs_keep_active", &self.cs_keep_active())
             .finish()
@@ -96,7 +93,9 @@ impl W {
     ///Bit 6 - The bit is used to enable the interrupt of spi0_slv_st controlled transmitting is done.
     #[inline(always)]
     #[must_use]
-    pub fn cspi_st_trans_end_int_ena(&mut self) -> CSPI_ST_TRANS_END_INT_ENA_W<MISC_SPEC> {
+    pub fn cspi_st_trans_end_int_ena(
+        &mut self,
+    ) -> CSPI_ST_TRANS_END_INT_ENA_W<MISC_SPEC> {
         CSPI_ST_TRANS_END_INT_ENA_W::new(self, 6)
     }
     ///Bit 9 - 1: spi clk line is high when idle 0: spi clk line is low when idle

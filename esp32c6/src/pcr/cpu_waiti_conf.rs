@@ -51,7 +51,9 @@ impl W {
     ///Bit 3 - Set 1 to force cpu_waiti_clk enable.
     #[inline(always)]
     #[must_use]
-    pub fn cpu_wait_mode_force_on(&mut self) -> CPU_WAIT_MODE_FORCE_ON_W<CPU_WAITI_CONF_SPEC> {
+    pub fn cpu_wait_mode_force_on(
+        &mut self,
+    ) -> CPU_WAIT_MODE_FORCE_ON_W<CPU_WAITI_CONF_SPEC> {
         CPU_WAIT_MODE_FORCE_ON_W::new(self, 3)
     }
     ///Bits 4:7 - This field used to set delay cycle when cpu enter waiti mode, after delay waiti_clk will close

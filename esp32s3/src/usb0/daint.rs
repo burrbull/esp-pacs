@@ -10,8 +10,7 @@ impl R {
     ///NOTE: `n` is number of field in register. `n == 0` corresponds to `INEPINT0` field
     #[inline(always)]
     pub fn inepint(&self, n: u8) -> INEPINT_R {
-        #[allow(clippy::no_effect)]
-        [(); 7][n as usize];
+        #[allow(clippy::no_effect)] [(); 7][n as usize];
         INEPINT_R::new(((self.bits >> n) & 1) != 0)
     }
     ///Iterator for array of:
@@ -60,8 +59,7 @@ impl R {
     ///NOTE: `n` is number of field in register. `n == 0` corresponds to `OUTEPINT0` field
     #[inline(always)]
     pub fn outepint(&self, n: u8) -> OUTEPINT_R {
-        #[allow(clippy::no_effect)]
-        [(); 7][n as usize];
+        #[allow(clippy::no_effect)] [(); 7][n as usize];
         OUTEPINT_R::new(((self.bits >> (n + 16)) & 1) != 0)
     }
     ///Iterator for array of:

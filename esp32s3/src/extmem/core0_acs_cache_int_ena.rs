@@ -73,13 +73,17 @@ impl W {
     ///Bit 1 - The bit is used to enable interrupt by ibus trying to write icache
     #[inline(always)]
     #[must_use]
-    pub fn core0_ibus_wr_ic(&mut self) -> CORE0_IBUS_WR_IC_W<CORE0_ACS_CACHE_INT_ENA_SPEC> {
+    pub fn core0_ibus_wr_ic(
+        &mut self,
+    ) -> CORE0_IBUS_WR_IC_W<CORE0_ACS_CACHE_INT_ENA_SPEC> {
         CORE0_IBUS_WR_IC_W::new(self, 1)
     }
     ///Bit 2 - The bit is used to enable interrupt by authentication fail.
     #[inline(always)]
     #[must_use]
-    pub fn core0_ibus_reject(&mut self) -> CORE0_IBUS_REJECT_W<CORE0_ACS_CACHE_INT_ENA_SPEC> {
+    pub fn core0_ibus_reject(
+        &mut self,
+    ) -> CORE0_IBUS_REJECT_W<CORE0_ACS_CACHE_INT_ENA_SPEC> {
         CORE0_IBUS_REJECT_W::new(self, 2)
     }
     ///Bit 3 - The bit is used to enable interrupt by cpu access dcache while the corresponding dbus is disabled which include speculative access.
@@ -93,7 +97,9 @@ impl W {
     ///Bit 4 - The bit is used to enable interrupt by authentication fail.
     #[inline(always)]
     #[must_use]
-    pub fn core0_dbus_reject(&mut self) -> CORE0_DBUS_REJECT_W<CORE0_ACS_CACHE_INT_ENA_SPEC> {
+    pub fn core0_dbus_reject(
+        &mut self,
+    ) -> CORE0_DBUS_REJECT_W<CORE0_ACS_CACHE_INT_ENA_SPEC> {
         CORE0_DBUS_REJECT_W::new(self, 4)
     }
 }

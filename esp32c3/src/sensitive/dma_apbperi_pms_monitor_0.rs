@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("DMA_APBPERI_PMS_MONITOR_0")
-            .field(
-                "dma_apbperi_pms_monitor_lock",
-                &self.dma_apbperi_pms_monitor_lock(),
-            )
+            .field("dma_apbperi_pms_monitor_lock", &self.dma_apbperi_pms_monitor_lock())
             .finish()
     }
 }

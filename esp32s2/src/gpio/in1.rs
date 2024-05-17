@@ -12,9 +12,7 @@ impl R {
 #[cfg(feature = "impl-register-debug")]
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("IN1")
-            .field("in_data1_next", &self.in_data1_next())
-            .finish()
+        f.debug_struct("IN1").field("in_data1_next", &self.in_data1_next()).finish()
     }
 }
 /**GPIO32 ~ 53 input register

@@ -123,7 +123,9 @@ impl W {
     ///Bits 1:6 - time from start cocpu to pull down reset
     #[inline(always)]
     #[must_use]
-    pub fn cocpu_start_2_reset_dis(&mut self) -> COCPU_START_2_RESET_DIS_W<COCPU_CTRL_SPEC> {
+    pub fn cocpu_start_2_reset_dis(
+        &mut self,
+    ) -> COCPU_START_2_RESET_DIS_W<COCPU_CTRL_SPEC> {
         COCPU_START_2_RESET_DIS_W::new(self, 1)
     }
     ///Bits 7:12 - time from start cocpu to give start interrupt

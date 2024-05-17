@@ -309,8 +309,9 @@ pub mod filter_ctrl0;
 You can [`read`](crate::generic::Reg::read) this register and get [`apb_saradc1_data_status::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@apb_saradc1_data_status`] module*/
-pub type APB_SARADC1_DATA_STATUS =
-    crate::Reg<apb_saradc1_data_status::APB_SARADC1_DATA_STATUS_SPEC>;
+pub type APB_SARADC1_DATA_STATUS = crate::Reg<
+    apb_saradc1_data_status::APB_SARADC1_DATA_STATUS_SPEC,
+>;
 ///get apb saradc sample data
 pub mod apb_saradc1_data_status;
 /**THRES0_CTRL (rw) register accessor: configure apb saradc thres monitor
@@ -390,8 +391,9 @@ pub mod clkm_conf;
 You can [`read`](crate::generic::Reg::read) this register and get [`apb_saradc2_data_status::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@apb_saradc2_data_status`] module*/
-pub type APB_SARADC2_DATA_STATUS =
-    crate::Reg<apb_saradc2_data_status::APB_SARADC2_DATA_STATUS_SPEC>;
+pub type APB_SARADC2_DATA_STATUS = crate::Reg<
+    apb_saradc2_data_status::APB_SARADC2_DATA_STATUS_SPEC,
+>;
 ///get apb saradc2 sample data
 pub mod apb_saradc2_data_status;
 /**CTRL_DATE (rw) register accessor: version

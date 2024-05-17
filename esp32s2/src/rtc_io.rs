@@ -205,7 +205,9 @@ pub mod rtc_gpio_enable;
 You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`rtc_gpio_enable_w1ts::W`]. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@rtc_gpio_enable_w1ts`] module*/
-pub type RTC_GPIO_ENABLE_W1TS = crate::Reg<rtc_gpio_enable_w1ts::RTC_GPIO_ENABLE_W1TS_SPEC>;
+pub type RTC_GPIO_ENABLE_W1TS = crate::Reg<
+    rtc_gpio_enable_w1ts::RTC_GPIO_ENABLE_W1TS_SPEC,
+>;
 ///RTC GPIO output enable bit set register
 pub mod rtc_gpio_enable_w1ts;
 /**ENABLE_W1TC (w) register accessor: RTC GPIO output enable bit clear register
@@ -229,7 +231,9 @@ pub mod rtc_gpio_status;
 You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`rtc_gpio_status_w1ts::W`]. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@rtc_gpio_status_w1ts`] module*/
-pub type RTC_GPIO_STATUS_W1TS = crate::Reg<rtc_gpio_status_w1ts::RTC_GPIO_STATUS_W1TS_SPEC>;
+pub type RTC_GPIO_STATUS_W1TS = crate::Reg<
+    rtc_gpio_status_w1ts::RTC_GPIO_STATUS_W1TS_SPEC,
+>;
 ///RTC GPIO interrupt status bit set register
 pub mod rtc_gpio_status_w1ts;
 /**RTC_GPIO_STATUS_W1TC (w) register accessor: RTC GPIO interrupt status bit clear register
@@ -237,7 +241,9 @@ pub mod rtc_gpio_status_w1ts;
 You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`rtc_gpio_status_w1tc::W`]. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@rtc_gpio_status_w1tc`] module*/
-pub type RTC_GPIO_STATUS_W1TC = crate::Reg<rtc_gpio_status_w1tc::RTC_GPIO_STATUS_W1TC_SPEC>;
+pub type RTC_GPIO_STATUS_W1TC = crate::Reg<
+    rtc_gpio_status_w1tc::RTC_GPIO_STATUS_W1TC_SPEC,
+>;
 ///RTC GPIO interrupt status bit clear register
 pub mod rtc_gpio_status_w1tc;
 /**RTC_GPIO_IN (r) register accessor: RTC GPIO input register

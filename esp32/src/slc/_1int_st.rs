@@ -202,15 +202,9 @@ impl core::fmt::Debug for R {
             .field("slc1_tohost_int_st", &self.slc1_tohost_int_st())
             .field("slc1_tx_dscr_err_int_st", &self.slc1_tx_dscr_err_int_st())
             .field("slc1_rx_dscr_err_int_st", &self.slc1_rx_dscr_err_int_st())
-            .field(
-                "slc1_tx_dscr_empty_int_st",
-                &self.slc1_tx_dscr_empty_int_st(),
-            )
+            .field("slc1_tx_dscr_empty_int_st", &self.slc1_tx_dscr_empty_int_st())
             .field("slc1_host_rd_ack_int_st", &self.slc1_host_rd_ack_int_st())
-            .field(
-                "slc1_wr_retry_done_int_st",
-                &self.slc1_wr_retry_done_int_st(),
-            )
+            .field("slc1_wr_retry_done_int_st", &self.slc1_wr_retry_done_int_st())
             .field("slc1_tx_err_eof_int_st", &self.slc1_tx_err_eof_int_st())
             .finish()
     }

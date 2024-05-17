@@ -9,7 +9,9 @@ pub type CORE_0_REGION_PMS_CONSTRAIN_LOCK_W<'a, REG> = crate::BitWriter<'a, REG>
 impl R {
     ///Bit 0 - Set 1 to lock core0 region permission registers.
     #[inline(always)]
-    pub fn core_0_region_pms_constrain_lock(&self) -> CORE_0_REGION_PMS_CONSTRAIN_LOCK_R {
+    pub fn core_0_region_pms_constrain_lock(
+        &self,
+    ) -> CORE_0_REGION_PMS_CONSTRAIN_LOCK_R {
         CORE_0_REGION_PMS_CONSTRAIN_LOCK_R::new((self.bits & 1) != 0)
     }
 }

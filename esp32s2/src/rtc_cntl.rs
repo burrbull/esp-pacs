@@ -154,7 +154,7 @@ impl RegisterBlock {
         &self.ana_conf
     }
     /**0x38 - Indicates the CPU reset source. For more information about the reset cause, please refer to Table \ref{table:resetreasons} in Chapter \ref{module:ResetandClock} \textit{
-    ameref{module:ResetandClock}}.*/
+ameref{module:ResetandClock}}.*/
     #[inline(always)]
     pub const fn reset_state(&self) -> &RESET_STATE {
         &self.reset_state

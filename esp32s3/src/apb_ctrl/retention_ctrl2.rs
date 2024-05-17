@@ -61,13 +61,17 @@ impl W {
     ///Bits 13:20 - ******* Description ***********
     #[inline(always)]
     #[must_use]
-    pub fn ret_icache_vld_size(&mut self) -> RET_ICACHE_VLD_SIZE_W<RETENTION_CTRL2_SPEC> {
+    pub fn ret_icache_vld_size(
+        &mut self,
+    ) -> RET_ICACHE_VLD_SIZE_W<RETENTION_CTRL2_SPEC> {
         RET_ICACHE_VLD_SIZE_W::new(self, 13)
     }
     ///Bits 22:29 - ******* Description ***********
     #[inline(always)]
     #[must_use]
-    pub fn ret_icache_start_point(&mut self) -> RET_ICACHE_START_POINT_W<RETENTION_CTRL2_SPEC> {
+    pub fn ret_icache_start_point(
+        &mut self,
+    ) -> RET_ICACHE_START_POINT_W<RETENTION_CTRL2_SPEC> {
         RET_ICACHE_START_POINT_W::new(self, 22)
     }
     ///Bit 31 - ******* Description ***********

@@ -12,9 +12,7 @@ impl R {
 #[cfg(feature = "impl-register-debug")]
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("CPUSDIO_INT")
-            .field("sdio_int", &self.sdio_int())
-            .finish()
+        f.debug_struct("CPUSDIO_INT").field("sdio_int", &self.sdio_int()).finish()
     }
 }
 /**GPIO0 ~ 31 CPU SDIO interrupt status register

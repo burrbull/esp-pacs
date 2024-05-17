@@ -103,19 +103,25 @@ impl W {
     ///Bit 0 - 1: enabled, when the receive buffer status is 'full' the TWAI controller requests the respective interrupt. 0: disable
     #[inline(always)]
     #[must_use]
-    pub fn ext_receive_int_ena(&mut self) -> EXT_RECEIVE_INT_ENA_W<INTERRUPT_ENABLE_SPEC> {
+    pub fn ext_receive_int_ena(
+        &mut self,
+    ) -> EXT_RECEIVE_INT_ENA_W<INTERRUPT_ENABLE_SPEC> {
         EXT_RECEIVE_INT_ENA_W::new(self, 0)
     }
     ///Bit 1 - 1: enabled, when a message has been successfully transmitted or the transmit buffer is accessible again (e.g. after an abort transmission command), the TWAI controller requests the respective interrupt. 0: disable
     #[inline(always)]
     #[must_use]
-    pub fn ext_transmit_int_ena(&mut self) -> EXT_TRANSMIT_INT_ENA_W<INTERRUPT_ENABLE_SPEC> {
+    pub fn ext_transmit_int_ena(
+        &mut self,
+    ) -> EXT_TRANSMIT_INT_ENA_W<INTERRUPT_ENABLE_SPEC> {
         EXT_TRANSMIT_INT_ENA_W::new(self, 1)
     }
     ///Bit 2 - 1: enabled, if the error or bus status change (see status register. Table 14), the TWAI controllerrequests the respective interrupt. 0: disable
     #[inline(always)]
     #[must_use]
-    pub fn ext_err_warning_int_ena(&mut self) -> EXT_ERR_WARNING_INT_ENA_W<INTERRUPT_ENABLE_SPEC> {
+    pub fn ext_err_warning_int_ena(
+        &mut self,
+    ) -> EXT_ERR_WARNING_INT_ENA_W<INTERRUPT_ENABLE_SPEC> {
         EXT_ERR_WARNING_INT_ENA_W::new(self, 2)
     }
     ///Bit 3 - 1: enabled, if the data overrun status bit is set (see status register. Table 14), the TWAI controllerrequests the respective interrupt. 0: disable
@@ -129,13 +135,17 @@ impl W {
     ///Bit 4 - enable the timestamp counter overflow interrupt request.
     #[inline(always)]
     #[must_use]
-    pub fn ts_counter_ovfl_int_ena(&mut self) -> TS_COUNTER_OVFL_INT_ENA_W<INTERRUPT_ENABLE_SPEC> {
+    pub fn ts_counter_ovfl_int_ena(
+        &mut self,
+    ) -> TS_COUNTER_OVFL_INT_ENA_W<INTERRUPT_ENABLE_SPEC> {
         TS_COUNTER_OVFL_INT_ENA_W::new(self, 4)
     }
     ///Bit 5 - 1: enabled, if the error status of the TWAI controller changes from error active to error passive or vice versa, the respective interrupt is requested. 0: disable
     #[inline(always)]
     #[must_use]
-    pub fn err_passive_int_ena(&mut self) -> ERR_PASSIVE_INT_ENA_W<INTERRUPT_ENABLE_SPEC> {
+    pub fn err_passive_int_ena(
+        &mut self,
+    ) -> ERR_PASSIVE_INT_ENA_W<INTERRUPT_ENABLE_SPEC> {
         ERR_PASSIVE_INT_ENA_W::new(self, 5)
     }
     ///Bit 6 - 1: enabled, if the TWAI controller has lost arbitration, the respective interrupt is requested. 0: disable

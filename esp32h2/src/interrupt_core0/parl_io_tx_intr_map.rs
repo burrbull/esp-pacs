@@ -25,7 +25,9 @@ impl W {
     ///Bits 0:4 - CORE0_PARL_IO_TX_INTR mapping register
     #[inline(always)]
     #[must_use]
-    pub fn parl_io_tx_intr_map(&mut self) -> PARL_IO_TX_INTR_MAP_W<PARL_IO_TX_INTR_MAP_SPEC> {
+    pub fn parl_io_tx_intr_map(
+        &mut self,
+    ) -> PARL_IO_TX_INTR_MAP_W<PARL_IO_TX_INTR_MAP_SPEC> {
         PARL_IO_TX_INTR_MAP_W::new(self, 0)
     }
 }

@@ -163,7 +163,9 @@ impl W {
     ///Bit 6 - clear rtc gpio wakeup flag
     #[inline(always)]
     #[must_use]
-    pub fn gpio_wakeup_status_clr(&mut self) -> GPIO_WAKEUP_STATUS_CLR_W<GPIO_WAKEUP_SPEC> {
+    pub fn gpio_wakeup_status_clr(
+        &mut self,
+    ) -> GPIO_WAKEUP_STATUS_CLR_W<GPIO_WAKEUP_SPEC> {
         GPIO_WAKEUP_STATUS_CLR_W::new(self, 6)
     }
     ///Bit 7 - enable rtc io clk gate
@@ -211,37 +213,49 @@ impl W {
     ///Bit 26 - enable wakeup from rtc gpio5
     #[inline(always)]
     #[must_use]
-    pub fn gpio_pin5_wakeup_enable(&mut self) -> GPIO_PIN5_WAKEUP_ENABLE_W<GPIO_WAKEUP_SPEC> {
+    pub fn gpio_pin5_wakeup_enable(
+        &mut self,
+    ) -> GPIO_PIN5_WAKEUP_ENABLE_W<GPIO_WAKEUP_SPEC> {
         GPIO_PIN5_WAKEUP_ENABLE_W::new(self, 26)
     }
     ///Bit 27 - enable wakeup from rtc gpio4
     #[inline(always)]
     #[must_use]
-    pub fn gpio_pin4_wakeup_enable(&mut self) -> GPIO_PIN4_WAKEUP_ENABLE_W<GPIO_WAKEUP_SPEC> {
+    pub fn gpio_pin4_wakeup_enable(
+        &mut self,
+    ) -> GPIO_PIN4_WAKEUP_ENABLE_W<GPIO_WAKEUP_SPEC> {
         GPIO_PIN4_WAKEUP_ENABLE_W::new(self, 27)
     }
     ///Bit 28 - enable wakeup from rtc gpio3
     #[inline(always)]
     #[must_use]
-    pub fn gpio_pin3_wakeup_enable(&mut self) -> GPIO_PIN3_WAKEUP_ENABLE_W<GPIO_WAKEUP_SPEC> {
+    pub fn gpio_pin3_wakeup_enable(
+        &mut self,
+    ) -> GPIO_PIN3_WAKEUP_ENABLE_W<GPIO_WAKEUP_SPEC> {
         GPIO_PIN3_WAKEUP_ENABLE_W::new(self, 28)
     }
     ///Bit 29 - enable wakeup from rtc gpio2
     #[inline(always)]
     #[must_use]
-    pub fn gpio_pin2_wakeup_enable(&mut self) -> GPIO_PIN2_WAKEUP_ENABLE_W<GPIO_WAKEUP_SPEC> {
+    pub fn gpio_pin2_wakeup_enable(
+        &mut self,
+    ) -> GPIO_PIN2_WAKEUP_ENABLE_W<GPIO_WAKEUP_SPEC> {
         GPIO_PIN2_WAKEUP_ENABLE_W::new(self, 29)
     }
     ///Bit 30 - enable wakeup from rtc gpio1
     #[inline(always)]
     #[must_use]
-    pub fn gpio_pin1_wakeup_enable(&mut self) -> GPIO_PIN1_WAKEUP_ENABLE_W<GPIO_WAKEUP_SPEC> {
+    pub fn gpio_pin1_wakeup_enable(
+        &mut self,
+    ) -> GPIO_PIN1_WAKEUP_ENABLE_W<GPIO_WAKEUP_SPEC> {
         GPIO_PIN1_WAKEUP_ENABLE_W::new(self, 30)
     }
     ///Bit 31 - enable wakeup from rtc gpio0
     #[inline(always)]
     #[must_use]
-    pub fn gpio_pin0_wakeup_enable(&mut self) -> GPIO_PIN0_WAKEUP_ENABLE_W<GPIO_WAKEUP_SPEC> {
+    pub fn gpio_pin0_wakeup_enable(
+        &mut self,
+    ) -> GPIO_PIN0_WAKEUP_ENABLE_W<GPIO_WAKEUP_SPEC> {
         GPIO_PIN0_WAKEUP_ENABLE_W::new(self, 31)
     }
 }

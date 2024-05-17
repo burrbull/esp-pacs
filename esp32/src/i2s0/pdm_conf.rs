@@ -125,10 +125,7 @@ impl core::fmt::Debug for R {
             .field("tx_pdm_hp_in_shift", &self.tx_pdm_hp_in_shift())
             .field("tx_pdm_lp_in_shift", &self.tx_pdm_lp_in_shift())
             .field("tx_pdm_sinc_in_shift", &self.tx_pdm_sinc_in_shift())
-            .field(
-                "tx_pdm_sigmadelta_in_shift",
-                &self.tx_pdm_sigmadelta_in_shift(),
-            )
+            .field("tx_pdm_sigmadelta_in_shift", &self.tx_pdm_sigmadelta_in_shift())
             .field("rx_pdm_sinc_dsr_16_en", &self.rx_pdm_sinc_dsr_16_en())
             .field("tx_pdm_hp_bypass", &self.tx_pdm_hp_bypass())
             .finish()
@@ -192,7 +189,9 @@ impl W {
     ///Bits 22:23
     #[inline(always)]
     #[must_use]
-    pub fn tx_pdm_sigmadelta_in_shift(&mut self) -> TX_PDM_SIGMADELTA_IN_SHIFT_W<PDM_CONF_SPEC> {
+    pub fn tx_pdm_sigmadelta_in_shift(
+        &mut self,
+    ) -> TX_PDM_SIGMADELTA_IN_SHIFT_W<PDM_CONF_SPEC> {
         TX_PDM_SIGMADELTA_IN_SHIFT_W::new(self, 22)
     }
     ///Bit 24

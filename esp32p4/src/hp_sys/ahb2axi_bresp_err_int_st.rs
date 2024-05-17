@@ -13,10 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("AHB2AXI_BRESP_ERR_INT_ST")
-            .field(
-                "cpu_icm_h2x_bresp_err_int_st",
-                &self.cpu_icm_h2x_bresp_err_int_st(),
-            )
+            .field("cpu_icm_h2x_bresp_err_int_st", &self.cpu_icm_h2x_bresp_err_int_st())
             .finish()
     }
 }

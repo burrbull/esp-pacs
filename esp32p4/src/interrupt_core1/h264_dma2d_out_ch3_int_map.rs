@@ -9,7 +9,9 @@ pub type CORE1_H264_DMA2D_OUT_CH3_INT_MAP_W<'a, REG> = crate::FieldWriter<'a, RE
 impl R {
     ///Bits 0:5 - NA
     #[inline(always)]
-    pub fn core1_h264_dma2d_out_ch3_int_map(&self) -> CORE1_H264_DMA2D_OUT_CH3_INT_MAP_R {
+    pub fn core1_h264_dma2d_out_ch3_int_map(
+        &self,
+    ) -> CORE1_H264_DMA2D_OUT_CH3_INT_MAP_R {
         CORE1_H264_DMA2D_OUT_CH3_INT_MAP_R::new((self.bits & 0x3f) as u8)
     }
 }

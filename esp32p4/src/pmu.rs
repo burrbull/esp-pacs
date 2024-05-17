@@ -829,7 +829,9 @@ pub mod hp_active_dig_power;
 You can [`read`](crate::generic::Reg::read) this register and get [`hp_active_icg_hp_func::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`hp_active_icg_hp_func::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@hp_active_icg_hp_func`] module*/
-pub type HP_ACTIVE_ICG_HP_FUNC = crate::Reg<hp_active_icg_hp_func::HP_ACTIVE_ICG_HP_FUNC_SPEC>;
+pub type HP_ACTIVE_ICG_HP_FUNC = crate::Reg<
+    hp_active_icg_hp_func::HP_ACTIVE_ICG_HP_FUNC_SPEC,
+>;
 ///need_des
 pub mod hp_active_icg_hp_func;
 /**HP_ACTIVE_ICG_HP_APB (rw) register accessor: need_des
@@ -837,7 +839,9 @@ pub mod hp_active_icg_hp_func;
 You can [`read`](crate::generic::Reg::read) this register and get [`hp_active_icg_hp_apb::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`hp_active_icg_hp_apb::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@hp_active_icg_hp_apb`] module*/
-pub type HP_ACTIVE_ICG_HP_APB = crate::Reg<hp_active_icg_hp_apb::HP_ACTIVE_ICG_HP_APB_SPEC>;
+pub type HP_ACTIVE_ICG_HP_APB = crate::Reg<
+    hp_active_icg_hp_apb::HP_ACTIVE_ICG_HP_APB_SPEC,
+>;
 ///need_des
 pub mod hp_active_icg_hp_apb;
 /**HP_ACTIVE_ICG_MODEM (rw) register accessor: need_des
@@ -853,7 +857,9 @@ pub mod hp_active_icg_modem;
 You can [`read`](crate::generic::Reg::read) this register and get [`hp_active_hp_sys_cntl::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`hp_active_hp_sys_cntl::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@hp_active_hp_sys_cntl`] module*/
-pub type HP_ACTIVE_HP_SYS_CNTL = crate::Reg<hp_active_hp_sys_cntl::HP_ACTIVE_HP_SYS_CNTL_SPEC>;
+pub type HP_ACTIVE_HP_SYS_CNTL = crate::Reg<
+    hp_active_hp_sys_cntl::HP_ACTIVE_HP_SYS_CNTL_SPEC,
+>;
 ///need_des
 pub mod hp_active_hp_sys_cntl;
 /**HP_ACTIVE_HP_CK_POWER (rw) register accessor: need_des
@@ -861,7 +867,9 @@ pub mod hp_active_hp_sys_cntl;
 You can [`read`](crate::generic::Reg::read) this register and get [`hp_active_hp_ck_power::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`hp_active_hp_ck_power::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@hp_active_hp_ck_power`] module*/
-pub type HP_ACTIVE_HP_CK_POWER = crate::Reg<hp_active_hp_ck_power::HP_ACTIVE_HP_CK_POWER_SPEC>;
+pub type HP_ACTIVE_HP_CK_POWER = crate::Reg<
+    hp_active_hp_ck_power::HP_ACTIVE_HP_CK_POWER_SPEC,
+>;
 ///need_des
 pub mod hp_active_hp_ck_power;
 /**HP_ACTIVE_BIAS (rw) register accessor: need_des
@@ -885,7 +893,9 @@ pub mod hp_active_backup;
 You can [`read`](crate::generic::Reg::read) this register and get [`hp_active_backup_clk::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`hp_active_backup_clk::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@hp_active_backup_clk`] module*/
-pub type HP_ACTIVE_BACKUP_CLK = crate::Reg<hp_active_backup_clk::HP_ACTIVE_BACKUP_CLK_SPEC>;
+pub type HP_ACTIVE_BACKUP_CLK = crate::Reg<
+    hp_active_backup_clk::HP_ACTIVE_BACKUP_CLK_SPEC,
+>;
 ///need_des
 pub mod hp_active_backup_clk;
 /**HP_ACTIVE_SYSCLK (rw) register accessor: need_des
@@ -901,8 +911,9 @@ pub mod hp_active_sysclk;
 You can [`read`](crate::generic::Reg::read) this register and get [`hp_active_hp_regulator0::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`hp_active_hp_regulator0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@hp_active_hp_regulator0`] module*/
-pub type HP_ACTIVE_HP_REGULATOR0 =
-    crate::Reg<hp_active_hp_regulator0::HP_ACTIVE_HP_REGULATOR0_SPEC>;
+pub type HP_ACTIVE_HP_REGULATOR0 = crate::Reg<
+    hp_active_hp_regulator0::HP_ACTIVE_HP_REGULATOR0_SPEC,
+>;
 ///need_des
 pub mod hp_active_hp_regulator0;
 /**HP_ACTIVE_HP_REGULATOR1 (rw) register accessor: need_des
@@ -910,8 +921,9 @@ pub mod hp_active_hp_regulator0;
 You can [`read`](crate::generic::Reg::read) this register and get [`hp_active_hp_regulator1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`hp_active_hp_regulator1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@hp_active_hp_regulator1`] module*/
-pub type HP_ACTIVE_HP_REGULATOR1 =
-    crate::Reg<hp_active_hp_regulator1::HP_ACTIVE_HP_REGULATOR1_SPEC>;
+pub type HP_ACTIVE_HP_REGULATOR1 = crate::Reg<
+    hp_active_hp_regulator1::HP_ACTIVE_HP_REGULATOR1_SPEC,
+>;
 ///need_des
 pub mod hp_active_hp_regulator1;
 /**HP_ACTIVE_XTAL (rw) register accessor: need_des
@@ -935,7 +947,9 @@ pub mod hp_modem_dig_power;
 You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`hp_modem_icg_hp_func::W`]. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@hp_modem_icg_hp_func`] module*/
-pub type HP_MODEM_ICG_HP_FUNC = crate::Reg<hp_modem_icg_hp_func::HP_MODEM_ICG_HP_FUNC_SPEC>;
+pub type HP_MODEM_ICG_HP_FUNC = crate::Reg<
+    hp_modem_icg_hp_func::HP_MODEM_ICG_HP_FUNC_SPEC,
+>;
 ///need_des
 pub mod hp_modem_icg_hp_func;
 /**HP_MODEM_ICG_HP_APB (w) register accessor: need_des
@@ -959,7 +973,9 @@ pub mod hp_modem_icg_modem;
 You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`hp_modem_hp_sys_cntl::W`]. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@hp_modem_hp_sys_cntl`] module*/
-pub type HP_MODEM_HP_SYS_CNTL = crate::Reg<hp_modem_hp_sys_cntl::HP_MODEM_HP_SYS_CNTL_SPEC>;
+pub type HP_MODEM_HP_SYS_CNTL = crate::Reg<
+    hp_modem_hp_sys_cntl::HP_MODEM_HP_SYS_CNTL_SPEC,
+>;
 ///need_des
 pub mod hp_modem_hp_sys_cntl;
 /**HP_MODEM_HP_CK_POWER (w) register accessor: need_des
@@ -967,7 +983,9 @@ pub mod hp_modem_hp_sys_cntl;
 You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`hp_modem_hp_ck_power::W`]. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@hp_modem_hp_ck_power`] module*/
-pub type HP_MODEM_HP_CK_POWER = crate::Reg<hp_modem_hp_ck_power::HP_MODEM_HP_CK_POWER_SPEC>;
+pub type HP_MODEM_HP_CK_POWER = crate::Reg<
+    hp_modem_hp_ck_power::HP_MODEM_HP_CK_POWER_SPEC,
+>;
 ///need_des
 pub mod hp_modem_hp_ck_power;
 /**HP_MODEM_BIAS (w) register accessor: need_des
@@ -1007,7 +1025,9 @@ pub mod hp_modem_sysclk;
 You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`hp_modem_hp_regulator0::W`]. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@hp_modem_hp_regulator0`] module*/
-pub type HP_MODEM_HP_REGULATOR0 = crate::Reg<hp_modem_hp_regulator0::HP_MODEM_HP_REGULATOR0_SPEC>;
+pub type HP_MODEM_HP_REGULATOR0 = crate::Reg<
+    hp_modem_hp_regulator0::HP_MODEM_HP_REGULATOR0_SPEC,
+>;
 ///need_des
 pub mod hp_modem_hp_regulator0;
 /**HP_MODEM_HP_REGULATOR1 (w) register accessor: need_des
@@ -1015,7 +1035,9 @@ pub mod hp_modem_hp_regulator0;
 You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`hp_modem_hp_regulator1::W`]. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@hp_modem_hp_regulator1`] module*/
-pub type HP_MODEM_HP_REGULATOR1 = crate::Reg<hp_modem_hp_regulator1::HP_MODEM_HP_REGULATOR1_SPEC>;
+pub type HP_MODEM_HP_REGULATOR1 = crate::Reg<
+    hp_modem_hp_regulator1::HP_MODEM_HP_REGULATOR1_SPEC,
+>;
 ///need_des
 pub mod hp_modem_hp_regulator1;
 /**HP_MODEM_XTAL (w) register accessor: need_des
@@ -1039,7 +1061,9 @@ pub mod hp_sleep_dig_power;
 You can [`read`](crate::generic::Reg::read) this register and get [`hp_sleep_icg_hp_func::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`hp_sleep_icg_hp_func::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@hp_sleep_icg_hp_func`] module*/
-pub type HP_SLEEP_ICG_HP_FUNC = crate::Reg<hp_sleep_icg_hp_func::HP_SLEEP_ICG_HP_FUNC_SPEC>;
+pub type HP_SLEEP_ICG_HP_FUNC = crate::Reg<
+    hp_sleep_icg_hp_func::HP_SLEEP_ICG_HP_FUNC_SPEC,
+>;
 ///need_des
 pub mod hp_sleep_icg_hp_func;
 /**HP_SLEEP_ICG_HP_APB (rw) register accessor: need_des
@@ -1063,7 +1087,9 @@ pub mod hp_sleep_icg_modem;
 You can [`read`](crate::generic::Reg::read) this register and get [`hp_sleep_hp_sys_cntl::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`hp_sleep_hp_sys_cntl::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@hp_sleep_hp_sys_cntl`] module*/
-pub type HP_SLEEP_HP_SYS_CNTL = crate::Reg<hp_sleep_hp_sys_cntl::HP_SLEEP_HP_SYS_CNTL_SPEC>;
+pub type HP_SLEEP_HP_SYS_CNTL = crate::Reg<
+    hp_sleep_hp_sys_cntl::HP_SLEEP_HP_SYS_CNTL_SPEC,
+>;
 ///need_des
 pub mod hp_sleep_hp_sys_cntl;
 /**HP_SLEEP_HP_CK_POWER (rw) register accessor: need_des
@@ -1071,7 +1097,9 @@ pub mod hp_sleep_hp_sys_cntl;
 You can [`read`](crate::generic::Reg::read) this register and get [`hp_sleep_hp_ck_power::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`hp_sleep_hp_ck_power::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@hp_sleep_hp_ck_power`] module*/
-pub type HP_SLEEP_HP_CK_POWER = crate::Reg<hp_sleep_hp_ck_power::HP_SLEEP_HP_CK_POWER_SPEC>;
+pub type HP_SLEEP_HP_CK_POWER = crate::Reg<
+    hp_sleep_hp_ck_power::HP_SLEEP_HP_CK_POWER_SPEC,
+>;
 ///need_des
 pub mod hp_sleep_hp_ck_power;
 /**HP_SLEEP_BIAS (rw) register accessor: need_des
@@ -1111,7 +1139,9 @@ pub mod hp_sleep_sysclk;
 You can [`read`](crate::generic::Reg::read) this register and get [`hp_sleep_hp_regulator0::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`hp_sleep_hp_regulator0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@hp_sleep_hp_regulator0`] module*/
-pub type HP_SLEEP_HP_REGULATOR0 = crate::Reg<hp_sleep_hp_regulator0::HP_SLEEP_HP_REGULATOR0_SPEC>;
+pub type HP_SLEEP_HP_REGULATOR0 = crate::Reg<
+    hp_sleep_hp_regulator0::HP_SLEEP_HP_REGULATOR0_SPEC,
+>;
 ///need_des
 pub mod hp_sleep_hp_regulator0;
 /**HP_SLEEP_HP_REGULATOR1 (rw) register accessor: need_des
@@ -1119,7 +1149,9 @@ pub mod hp_sleep_hp_regulator0;
 You can [`read`](crate::generic::Reg::read) this register and get [`hp_sleep_hp_regulator1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`hp_sleep_hp_regulator1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@hp_sleep_hp_regulator1`] module*/
-pub type HP_SLEEP_HP_REGULATOR1 = crate::Reg<hp_sleep_hp_regulator1::HP_SLEEP_HP_REGULATOR1_SPEC>;
+pub type HP_SLEEP_HP_REGULATOR1 = crate::Reg<
+    hp_sleep_hp_regulator1::HP_SLEEP_HP_REGULATOR1_SPEC,
+>;
 ///need_des
 pub mod hp_sleep_hp_regulator1;
 /**HP_SLEEP_XTAL (rw) register accessor: need_des
@@ -1135,7 +1167,9 @@ pub mod hp_sleep_xtal;
 You can [`read`](crate::generic::Reg::read) this register and get [`hp_sleep_lp_regulator0::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`hp_sleep_lp_regulator0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@hp_sleep_lp_regulator0`] module*/
-pub type HP_SLEEP_LP_REGULATOR0 = crate::Reg<hp_sleep_lp_regulator0::HP_SLEEP_LP_REGULATOR0_SPEC>;
+pub type HP_SLEEP_LP_REGULATOR0 = crate::Reg<
+    hp_sleep_lp_regulator0::HP_SLEEP_LP_REGULATOR0_SPEC,
+>;
 ///need_des
 pub mod hp_sleep_lp_regulator0;
 /**HP_SLEEP_LP_REGULATOR1 (rw) register accessor: need_des
@@ -1143,7 +1177,9 @@ pub mod hp_sleep_lp_regulator0;
 You can [`read`](crate::generic::Reg::read) this register and get [`hp_sleep_lp_regulator1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`hp_sleep_lp_regulator1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@hp_sleep_lp_regulator1`] module*/
-pub type HP_SLEEP_LP_REGULATOR1 = crate::Reg<hp_sleep_lp_regulator1::HP_SLEEP_LP_REGULATOR1_SPEC>;
+pub type HP_SLEEP_LP_REGULATOR1 = crate::Reg<
+    hp_sleep_lp_regulator1::HP_SLEEP_LP_REGULATOR1_SPEC,
+>;
 ///need_des
 pub mod hp_sleep_lp_regulator1;
 /**HP_SLEEP_LP_DCDC_RESERVE (w) register accessor: need_des
@@ -1151,8 +1187,9 @@ pub mod hp_sleep_lp_regulator1;
 You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`hp_sleep_lp_dcdc_reserve::W`]. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@hp_sleep_lp_dcdc_reserve`] module*/
-pub type HP_SLEEP_LP_DCDC_RESERVE =
-    crate::Reg<hp_sleep_lp_dcdc_reserve::HP_SLEEP_LP_DCDC_RESERVE_SPEC>;
+pub type HP_SLEEP_LP_DCDC_RESERVE = crate::Reg<
+    hp_sleep_lp_dcdc_reserve::HP_SLEEP_LP_DCDC_RESERVE_SPEC,
+>;
 ///need_des
 pub mod hp_sleep_lp_dcdc_reserve;
 /**HP_SLEEP_LP_DIG_POWER (rw) register accessor: need_des
@@ -1160,7 +1197,9 @@ pub mod hp_sleep_lp_dcdc_reserve;
 You can [`read`](crate::generic::Reg::read) this register and get [`hp_sleep_lp_dig_power::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`hp_sleep_lp_dig_power::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@hp_sleep_lp_dig_power`] module*/
-pub type HP_SLEEP_LP_DIG_POWER = crate::Reg<hp_sleep_lp_dig_power::HP_SLEEP_LP_DIG_POWER_SPEC>;
+pub type HP_SLEEP_LP_DIG_POWER = crate::Reg<
+    hp_sleep_lp_dig_power::HP_SLEEP_LP_DIG_POWER_SPEC,
+>;
 ///need_des
 pub mod hp_sleep_lp_dig_power;
 /**HP_SLEEP_LP_CK_POWER (rw) register accessor: need_des
@@ -1168,7 +1207,9 @@ pub mod hp_sleep_lp_dig_power;
 You can [`read`](crate::generic::Reg::read) this register and get [`hp_sleep_lp_ck_power::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`hp_sleep_lp_ck_power::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@hp_sleep_lp_ck_power`] module*/
-pub type HP_SLEEP_LP_CK_POWER = crate::Reg<hp_sleep_lp_ck_power::HP_SLEEP_LP_CK_POWER_SPEC>;
+pub type HP_SLEEP_LP_CK_POWER = crate::Reg<
+    hp_sleep_lp_ck_power::HP_SLEEP_LP_CK_POWER_SPEC,
+>;
 ///need_des
 pub mod hp_sleep_lp_ck_power;
 /**LP_SLEEP_LP_BIAS_RESERVE (w) register accessor: need_des
@@ -1176,8 +1217,9 @@ pub mod hp_sleep_lp_ck_power;
 You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`lp_sleep_lp_bias_reserve::W`]. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@lp_sleep_lp_bias_reserve`] module*/
-pub type LP_SLEEP_LP_BIAS_RESERVE =
-    crate::Reg<lp_sleep_lp_bias_reserve::LP_SLEEP_LP_BIAS_RESERVE_SPEC>;
+pub type LP_SLEEP_LP_BIAS_RESERVE = crate::Reg<
+    lp_sleep_lp_bias_reserve::LP_SLEEP_LP_BIAS_RESERVE_SPEC,
+>;
 ///need_des
 pub mod lp_sleep_lp_bias_reserve;
 /**LP_SLEEP_LP_REGULATOR0 (rw) register accessor: need_des
@@ -1185,7 +1227,9 @@ pub mod lp_sleep_lp_bias_reserve;
 You can [`read`](crate::generic::Reg::read) this register and get [`lp_sleep_lp_regulator0::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`lp_sleep_lp_regulator0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@lp_sleep_lp_regulator0`] module*/
-pub type LP_SLEEP_LP_REGULATOR0 = crate::Reg<lp_sleep_lp_regulator0::LP_SLEEP_LP_REGULATOR0_SPEC>;
+pub type LP_SLEEP_LP_REGULATOR0 = crate::Reg<
+    lp_sleep_lp_regulator0::LP_SLEEP_LP_REGULATOR0_SPEC,
+>;
 ///need_des
 pub mod lp_sleep_lp_regulator0;
 /**LP_SLEEP_LP_REGULATOR1 (rw) register accessor: need_des
@@ -1193,7 +1237,9 @@ pub mod lp_sleep_lp_regulator0;
 You can [`read`](crate::generic::Reg::read) this register and get [`lp_sleep_lp_regulator1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`lp_sleep_lp_regulator1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@lp_sleep_lp_regulator1`] module*/
-pub type LP_SLEEP_LP_REGULATOR1 = crate::Reg<lp_sleep_lp_regulator1::LP_SLEEP_LP_REGULATOR1_SPEC>;
+pub type LP_SLEEP_LP_REGULATOR1 = crate::Reg<
+    lp_sleep_lp_regulator1::LP_SLEEP_LP_REGULATOR1_SPEC,
+>;
 ///need_des
 pub mod lp_sleep_lp_regulator1;
 /**LP_SLEEP_XTAL (rw) register accessor: need_des
@@ -1209,7 +1255,9 @@ pub mod lp_sleep_xtal;
 You can [`read`](crate::generic::Reg::read) this register and get [`lp_sleep_lp_dig_power::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`lp_sleep_lp_dig_power::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@lp_sleep_lp_dig_power`] module*/
-pub type LP_SLEEP_LP_DIG_POWER = crate::Reg<lp_sleep_lp_dig_power::LP_SLEEP_LP_DIG_POWER_SPEC>;
+pub type LP_SLEEP_LP_DIG_POWER = crate::Reg<
+    lp_sleep_lp_dig_power::LP_SLEEP_LP_DIG_POWER_SPEC,
+>;
 ///need_des
 pub mod lp_sleep_lp_dig_power;
 /**LP_SLEEP_LP_CK_POWER (rw) register accessor: need_des
@@ -1217,7 +1265,9 @@ pub mod lp_sleep_lp_dig_power;
 You can [`read`](crate::generic::Reg::read) this register and get [`lp_sleep_lp_ck_power::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`lp_sleep_lp_ck_power::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@lp_sleep_lp_ck_power`] module*/
-pub type LP_SLEEP_LP_CK_POWER = crate::Reg<lp_sleep_lp_ck_power::LP_SLEEP_LP_CK_POWER_SPEC>;
+pub type LP_SLEEP_LP_CK_POWER = crate::Reg<
+    lp_sleep_lp_ck_power::LP_SLEEP_LP_CK_POWER_SPEC,
+>;
 ///need_des
 pub mod lp_sleep_lp_ck_power;
 /**LP_SLEEP_BIAS (rw) register accessor: need_des
@@ -1369,7 +1419,9 @@ pub mod power_dcdc_switch;
 You can [`read`](crate::generic::Reg::read) this register and get [`power_pd_lpperi_cntl::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`power_pd_lpperi_cntl::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@power_pd_lpperi_cntl`] module*/
-pub type POWER_PD_LPPERI_CNTL = crate::Reg<power_pd_lpperi_cntl::POWER_PD_LPPERI_CNTL_SPEC>;
+pub type POWER_PD_LPPERI_CNTL = crate::Reg<
+    power_pd_lpperi_cntl::POWER_PD_LPPERI_CNTL_SPEC,
+>;
 ///need_des
 pub mod power_pd_lpperi_cntl;
 /**POWER_PD_LPPERI_MASK (rw) register accessor: need_des
@@ -1377,7 +1429,9 @@ pub mod power_pd_lpperi_cntl;
 You can [`read`](crate::generic::Reg::read) this register and get [`power_pd_lpperi_mask::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`power_pd_lpperi_mask::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@power_pd_lpperi_mask`] module*/
-pub type POWER_PD_LPPERI_MASK = crate::Reg<power_pd_lpperi_mask::POWER_PD_LPPERI_MASK_SPEC>;
+pub type POWER_PD_LPPERI_MASK = crate::Reg<
+    power_pd_lpperi_mask::POWER_PD_LPPERI_MASK_SPEC,
+>;
 ///need_des
 pub mod power_pd_lpperi_mask;
 /**POWER_HP_PAD (rw) register accessor: need_des

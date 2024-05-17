@@ -103,13 +103,17 @@ impl W {
     ///Bits 10:17 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn i2c0_clk_div_numerator(&mut self) -> I2C0_CLK_DIV_NUMERATOR_W<PERI_CLK_CTRL10_SPEC> {
+    pub fn i2c0_clk_div_numerator(
+        &mut self,
+    ) -> I2C0_CLK_DIV_NUMERATOR_W<PERI_CLK_CTRL10_SPEC> {
         I2C0_CLK_DIV_NUMERATOR_W::new(self, 10)
     }
     ///Bits 18:25 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn i2c0_clk_div_denominator(&mut self) -> I2C0_CLK_DIV_DENOMINATOR_W<PERI_CLK_CTRL10_SPEC> {
+    pub fn i2c0_clk_div_denominator(
+        &mut self,
+    ) -> I2C0_CLK_DIV_DENOMINATOR_W<PERI_CLK_CTRL10_SPEC> {
         I2C0_CLK_DIV_DENOMINATOR_W::new(self, 18)
     }
     ///Bit 26 - Reserved

@@ -49,7 +49,9 @@ pub type TOUCH_DEBOUNCE_LIMIT_W<'a, REG> = crate::FieldWriter<'a, REG, 3>;
 impl R {
     ///Bit 0 - Reserved
     #[inline(always)]
-    pub fn touch_neg_noise_disupdate_baseline_en(&self) -> TOUCH_NEG_NOISE_DISUPDATE_BASELINE_EN_R {
+    pub fn touch_neg_noise_disupdate_baseline_en(
+        &self,
+    ) -> TOUCH_NEG_NOISE_DISUPDATE_BASELINE_EN_R {
         TOUCH_NEG_NOISE_DISUPDATE_BASELINE_EN_R::new((self.bits & 1) != 0)
     }
     ///Bits 1:2 - need_des
@@ -142,7 +144,9 @@ impl W {
     ///Bits 3:4 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn touch_neg_noise_thres(&mut self) -> TOUCH_NEG_NOISE_THRES_W<TOUCH_FILTER1_SPEC> {
+    pub fn touch_neg_noise_thres(
+        &mut self,
+    ) -> TOUCH_NEG_NOISE_THRES_W<TOUCH_FILTER1_SPEC> {
         TOUCH_NEG_NOISE_THRES_W::new(self, 3)
     }
     ///Bits 5:6 - need_des
@@ -178,19 +182,25 @@ impl W {
     ///Bits 17:20 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn touch_neg_noise_limit(&mut self) -> TOUCH_NEG_NOISE_LIMIT_W<TOUCH_FILTER1_SPEC> {
+    pub fn touch_neg_noise_limit(
+        &mut self,
+    ) -> TOUCH_NEG_NOISE_LIMIT_W<TOUCH_FILTER1_SPEC> {
         TOUCH_NEG_NOISE_LIMIT_W::new(self, 17)
     }
     ///Bits 21:28 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn touch_approach_limit(&mut self) -> TOUCH_APPROACH_LIMIT_W<TOUCH_FILTER1_SPEC> {
+    pub fn touch_approach_limit(
+        &mut self,
+    ) -> TOUCH_APPROACH_LIMIT_W<TOUCH_FILTER1_SPEC> {
         TOUCH_APPROACH_LIMIT_W::new(self, 21)
     }
     ///Bits 29:31 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn touch_debounce_limit(&mut self) -> TOUCH_DEBOUNCE_LIMIT_W<TOUCH_FILTER1_SPEC> {
+    pub fn touch_debounce_limit(
+        &mut self,
+    ) -> TOUCH_DEBOUNCE_LIMIT_W<TOUCH_FILTER1_SPEC> {
         TOUCH_DEBOUNCE_LIMIT_W::new(self, 29)
     }
 }

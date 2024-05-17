@@ -315,19 +315,25 @@ impl W {
     ///Bit 23 - rtc main state machine is in wait 8m state
     #[inline(always)]
     #[must_use]
-    pub fn main_state_in_wait_8m(&mut self) -> MAIN_STATE_IN_WAIT_8M_W<LOW_POWER_ST_SPEC> {
+    pub fn main_state_in_wait_8m(
+        &mut self,
+    ) -> MAIN_STATE_IN_WAIT_8M_W<LOW_POWER_ST_SPEC> {
         MAIN_STATE_IN_WAIT_8M_W::new(self, 23)
     }
     ///Bit 24 - rtc main state machine is in wait pll state
     #[inline(always)]
     #[must_use]
-    pub fn main_state_in_wait_pll(&mut self) -> MAIN_STATE_IN_WAIT_PLL_W<LOW_POWER_ST_SPEC> {
+    pub fn main_state_in_wait_pll(
+        &mut self,
+    ) -> MAIN_STATE_IN_WAIT_PLL_W<LOW_POWER_ST_SPEC> {
         MAIN_STATE_IN_WAIT_PLL_W::new(self, 24)
     }
     ///Bit 25 - rtc main state machine is in wait xtal state
     #[inline(always)]
     #[must_use]
-    pub fn main_state_in_wait_xtl(&mut self) -> MAIN_STATE_IN_WAIT_XTL_W<LOW_POWER_ST_SPEC> {
+    pub fn main_state_in_wait_xtl(
+        &mut self,
+    ) -> MAIN_STATE_IN_WAIT_XTL_W<LOW_POWER_ST_SPEC> {
         MAIN_STATE_IN_WAIT_XTL_W::new(self, 25)
     }
     ///Bit 26 - rtc main state machine is in sleep state

@@ -178,7 +178,9 @@ pub mod sec_dpa_conf;
 You can [`read`](crate::generic::Reg::read) this register and get [`cpu_peri_timeout_conf::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`cpu_peri_timeout_conf::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@cpu_peri_timeout_conf`] module*/
-pub type CPU_PERI_TIMEOUT_CONF = crate::Reg<cpu_peri_timeout_conf::CPU_PERI_TIMEOUT_CONF_SPEC>;
+pub type CPU_PERI_TIMEOUT_CONF = crate::Reg<
+    cpu_peri_timeout_conf::CPU_PERI_TIMEOUT_CONF_SPEC,
+>;
 ///CPU_PERI_TIMEOUT configuration register
 pub mod cpu_peri_timeout_conf;
 /**CPU_PERI_TIMEOUT_ADDR (r) register accessor: CPU_PERI_TIMEOUT_ADDR register
@@ -186,7 +188,9 @@ pub mod cpu_peri_timeout_conf;
 You can [`read`](crate::generic::Reg::read) this register and get [`cpu_peri_timeout_addr::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@cpu_peri_timeout_addr`] module*/
-pub type CPU_PERI_TIMEOUT_ADDR = crate::Reg<cpu_peri_timeout_addr::CPU_PERI_TIMEOUT_ADDR_SPEC>;
+pub type CPU_PERI_TIMEOUT_ADDR = crate::Reg<
+    cpu_peri_timeout_addr::CPU_PERI_TIMEOUT_ADDR_SPEC,
+>;
 ///CPU_PERI_TIMEOUT_ADDR register
 pub mod cpu_peri_timeout_addr;
 /**CPU_PERI_TIMEOUT_UID (r) register accessor: CPU_PERI_TIMEOUT_UID register
@@ -194,7 +198,9 @@ pub mod cpu_peri_timeout_addr;
 You can [`read`](crate::generic::Reg::read) this register and get [`cpu_peri_timeout_uid::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@cpu_peri_timeout_uid`] module*/
-pub type CPU_PERI_TIMEOUT_UID = crate::Reg<cpu_peri_timeout_uid::CPU_PERI_TIMEOUT_UID_SPEC>;
+pub type CPU_PERI_TIMEOUT_UID = crate::Reg<
+    cpu_peri_timeout_uid::CPU_PERI_TIMEOUT_UID_SPEC,
+>;
 ///CPU_PERI_TIMEOUT_UID register
 pub mod cpu_peri_timeout_uid;
 /**HP_PERI_TIMEOUT_CONF (rw) register accessor: HP_PERI_TIMEOUT configuration register
@@ -202,7 +208,9 @@ pub mod cpu_peri_timeout_uid;
 You can [`read`](crate::generic::Reg::read) this register and get [`hp_peri_timeout_conf::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`hp_peri_timeout_conf::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@hp_peri_timeout_conf`] module*/
-pub type HP_PERI_TIMEOUT_CONF = crate::Reg<hp_peri_timeout_conf::HP_PERI_TIMEOUT_CONF_SPEC>;
+pub type HP_PERI_TIMEOUT_CONF = crate::Reg<
+    hp_peri_timeout_conf::HP_PERI_TIMEOUT_CONF_SPEC,
+>;
 ///HP_PERI_TIMEOUT configuration register
 pub mod hp_peri_timeout_conf;
 /**HP_PERI_TIMEOUT_ADDR (r) register accessor: HP_PERI_TIMEOUT_ADDR register
@@ -210,7 +218,9 @@ pub mod hp_peri_timeout_conf;
 You can [`read`](crate::generic::Reg::read) this register and get [`hp_peri_timeout_addr::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@hp_peri_timeout_addr`] module*/
-pub type HP_PERI_TIMEOUT_ADDR = crate::Reg<hp_peri_timeout_addr::HP_PERI_TIMEOUT_ADDR_SPEC>;
+pub type HP_PERI_TIMEOUT_ADDR = crate::Reg<
+    hp_peri_timeout_addr::HP_PERI_TIMEOUT_ADDR_SPEC,
+>;
 ///HP_PERI_TIMEOUT_ADDR register
 pub mod hp_peri_timeout_addr;
 /**HP_PERI_TIMEOUT_UID (r) register accessor: HP_PERI_TIMEOUT_UID register
@@ -226,8 +236,9 @@ pub mod hp_peri_timeout_uid;
 You can [`read`](crate::generic::Reg::read) this register and get [`modem_peri_timeout_conf::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`modem_peri_timeout_conf::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@modem_peri_timeout_conf`] module*/
-pub type MODEM_PERI_TIMEOUT_CONF =
-    crate::Reg<modem_peri_timeout_conf::MODEM_PERI_TIMEOUT_CONF_SPEC>;
+pub type MODEM_PERI_TIMEOUT_CONF = crate::Reg<
+    modem_peri_timeout_conf::MODEM_PERI_TIMEOUT_CONF_SPEC,
+>;
 ///MODEM_PERI_TIMEOUT configuration register
 pub mod modem_peri_timeout_conf;
 /**MODEM_PERI_TIMEOUT_ADDR (r) register accessor: MODEM_PERI_TIMEOUT_ADDR register
@@ -235,8 +246,9 @@ pub mod modem_peri_timeout_conf;
 You can [`read`](crate::generic::Reg::read) this register and get [`modem_peri_timeout_addr::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@modem_peri_timeout_addr`] module*/
-pub type MODEM_PERI_TIMEOUT_ADDR =
-    crate::Reg<modem_peri_timeout_addr::MODEM_PERI_TIMEOUT_ADDR_SPEC>;
+pub type MODEM_PERI_TIMEOUT_ADDR = crate::Reg<
+    modem_peri_timeout_addr::MODEM_PERI_TIMEOUT_ADDR_SPEC,
+>;
 ///MODEM_PERI_TIMEOUT_ADDR register
 pub mod modem_peri_timeout_addr;
 /**MODEM_PERI_TIMEOUT_UID (r) register accessor: MODEM_PERI_TIMEOUT_UID register
@@ -244,7 +256,9 @@ pub mod modem_peri_timeout_addr;
 You can [`read`](crate::generic::Reg::read) this register and get [`modem_peri_timeout_uid::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@modem_peri_timeout_uid`] module*/
-pub type MODEM_PERI_TIMEOUT_UID = crate::Reg<modem_peri_timeout_uid::MODEM_PERI_TIMEOUT_UID_SPEC>;
+pub type MODEM_PERI_TIMEOUT_UID = crate::Reg<
+    modem_peri_timeout_uid::MODEM_PERI_TIMEOUT_UID_SPEC,
+>;
 ///MODEM_PERI_TIMEOUT_UID register
 pub mod modem_peri_timeout_uid;
 /**SDIO_CTRL (rw) register accessor: SDIO Control configuration register
@@ -284,8 +298,9 @@ pub mod rom_table;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_debug_runstall_conf::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_debug_runstall_conf::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_debug_runstall_conf`] module*/
-pub type CORE_DEBUG_RUNSTALL_CONF =
-    crate::Reg<core_debug_runstall_conf::CORE_DEBUG_RUNSTALL_CONF_SPEC>;
+pub type CORE_DEBUG_RUNSTALL_CONF = crate::Reg<
+    core_debug_runstall_conf::CORE_DEBUG_RUNSTALL_CONF_SPEC,
+>;
 ///Core Debug runstall configure register
 pub mod core_debug_runstall_conf;
 /**MEM_TEST_CONF (rw) register accessor: MEM_TEST configuration register

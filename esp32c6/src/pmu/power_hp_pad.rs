@@ -35,7 +35,9 @@ impl W {
     ///Bit 0 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn force_hp_pad_no_iso_all(&mut self) -> FORCE_HP_PAD_NO_ISO_ALL_W<POWER_HP_PAD_SPEC> {
+    pub fn force_hp_pad_no_iso_all(
+        &mut self,
+    ) -> FORCE_HP_PAD_NO_ISO_ALL_W<POWER_HP_PAD_SPEC> {
         FORCE_HP_PAD_NO_ISO_ALL_W::new(self, 0)
     }
     ///Bit 1 - need_des

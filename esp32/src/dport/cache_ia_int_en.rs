@@ -131,19 +131,13 @@ impl core::fmt::Debug for R {
             .field("cache_ia_int_app_iram1", &self.cache_ia_int_app_iram1())
             .field("cache_ia_int_app_irom0", &self.cache_ia_int_app_irom0())
             .field("cache_ia_int_app_dram1", &self.cache_ia_int_app_dram1())
-            .field(
-                "cache_ia_int_app_opposite",
-                &self.cache_ia_int_app_opposite(),
-            )
+            .field("cache_ia_int_app_opposite", &self.cache_ia_int_app_opposite())
             .field("cache_ia_int_pro_drom0", &self.cache_ia_int_pro_drom0())
             .field("cache_ia_int_pro_iram0", &self.cache_ia_int_pro_iram0())
             .field("cache_ia_int_pro_iram1", &self.cache_ia_int_pro_iram1())
             .field("cache_ia_int_pro_irom0", &self.cache_ia_int_pro_irom0())
             .field("cache_ia_int_pro_dram1", &self.cache_ia_int_pro_dram1())
-            .field(
-                "cache_ia_int_pro_opposite",
-                &self.cache_ia_int_pro_opposite(),
-            )
+            .field("cache_ia_int_pro_opposite", &self.cache_ia_int_pro_opposite())
             .finish()
     }
 }
@@ -157,31 +151,41 @@ impl W {
     ///Bit 0 - APP CPU invalid access to DROM0 when cache is disabled
     #[inline(always)]
     #[must_use]
-    pub fn cache_ia_int_app_drom0(&mut self) -> CACHE_IA_INT_APP_DROM0_W<CACHE_IA_INT_EN_SPEC> {
+    pub fn cache_ia_int_app_drom0(
+        &mut self,
+    ) -> CACHE_IA_INT_APP_DROM0_W<CACHE_IA_INT_EN_SPEC> {
         CACHE_IA_INT_APP_DROM0_W::new(self, 0)
     }
     ///Bit 1 - APP CPU invalid access to IRAM0 when cache is disabled
     #[inline(always)]
     #[must_use]
-    pub fn cache_ia_int_app_iram0(&mut self) -> CACHE_IA_INT_APP_IRAM0_W<CACHE_IA_INT_EN_SPEC> {
+    pub fn cache_ia_int_app_iram0(
+        &mut self,
+    ) -> CACHE_IA_INT_APP_IRAM0_W<CACHE_IA_INT_EN_SPEC> {
         CACHE_IA_INT_APP_IRAM0_W::new(self, 1)
     }
     ///Bit 2 - APP CPU invalid access to IRAM1 when cache is disabled
     #[inline(always)]
     #[must_use]
-    pub fn cache_ia_int_app_iram1(&mut self) -> CACHE_IA_INT_APP_IRAM1_W<CACHE_IA_INT_EN_SPEC> {
+    pub fn cache_ia_int_app_iram1(
+        &mut self,
+    ) -> CACHE_IA_INT_APP_IRAM1_W<CACHE_IA_INT_EN_SPEC> {
         CACHE_IA_INT_APP_IRAM1_W::new(self, 2)
     }
     ///Bit 3 - APP CPU invalid access to IROM0 when cache is disabled
     #[inline(always)]
     #[must_use]
-    pub fn cache_ia_int_app_irom0(&mut self) -> CACHE_IA_INT_APP_IROM0_W<CACHE_IA_INT_EN_SPEC> {
+    pub fn cache_ia_int_app_irom0(
+        &mut self,
+    ) -> CACHE_IA_INT_APP_IROM0_W<CACHE_IA_INT_EN_SPEC> {
         CACHE_IA_INT_APP_IROM0_W::new(self, 3)
     }
     ///Bit 4 - APP CPU invalid access to DRAM1 when cache is disabled
     #[inline(always)]
     #[must_use]
-    pub fn cache_ia_int_app_dram1(&mut self) -> CACHE_IA_INT_APP_DRAM1_W<CACHE_IA_INT_EN_SPEC> {
+    pub fn cache_ia_int_app_dram1(
+        &mut self,
+    ) -> CACHE_IA_INT_APP_DRAM1_W<CACHE_IA_INT_EN_SPEC> {
         CACHE_IA_INT_APP_DRAM1_W::new(self, 4)
     }
     ///Bit 5 - APP CPU invalid access to APP CPU cache when cache disabled
@@ -195,31 +199,41 @@ impl W {
     ///Bit 14 - PRO CPU invalid access to DROM0 when cache is disabled
     #[inline(always)]
     #[must_use]
-    pub fn cache_ia_int_pro_drom0(&mut self) -> CACHE_IA_INT_PRO_DROM0_W<CACHE_IA_INT_EN_SPEC> {
+    pub fn cache_ia_int_pro_drom0(
+        &mut self,
+    ) -> CACHE_IA_INT_PRO_DROM0_W<CACHE_IA_INT_EN_SPEC> {
         CACHE_IA_INT_PRO_DROM0_W::new(self, 14)
     }
     ///Bit 15 - PRO CPU invalid access to IRAM0 when cache is disabled
     #[inline(always)]
     #[must_use]
-    pub fn cache_ia_int_pro_iram0(&mut self) -> CACHE_IA_INT_PRO_IRAM0_W<CACHE_IA_INT_EN_SPEC> {
+    pub fn cache_ia_int_pro_iram0(
+        &mut self,
+    ) -> CACHE_IA_INT_PRO_IRAM0_W<CACHE_IA_INT_EN_SPEC> {
         CACHE_IA_INT_PRO_IRAM0_W::new(self, 15)
     }
     ///Bit 16 - PRO CPU invalid access to IRAM1 when cache is disabled
     #[inline(always)]
     #[must_use]
-    pub fn cache_ia_int_pro_iram1(&mut self) -> CACHE_IA_INT_PRO_IRAM1_W<CACHE_IA_INT_EN_SPEC> {
+    pub fn cache_ia_int_pro_iram1(
+        &mut self,
+    ) -> CACHE_IA_INT_PRO_IRAM1_W<CACHE_IA_INT_EN_SPEC> {
         CACHE_IA_INT_PRO_IRAM1_W::new(self, 16)
     }
     ///Bit 17 - PRO CPU invalid access to IROM0 when cache is disabled
     #[inline(always)]
     #[must_use]
-    pub fn cache_ia_int_pro_irom0(&mut self) -> CACHE_IA_INT_PRO_IROM0_W<CACHE_IA_INT_EN_SPEC> {
+    pub fn cache_ia_int_pro_irom0(
+        &mut self,
+    ) -> CACHE_IA_INT_PRO_IROM0_W<CACHE_IA_INT_EN_SPEC> {
         CACHE_IA_INT_PRO_IROM0_W::new(self, 17)
     }
     ///Bit 18 - PRO CPU invalid access to DRAM1 when cache is disabled
     #[inline(always)]
     #[must_use]
-    pub fn cache_ia_int_pro_dram1(&mut self) -> CACHE_IA_INT_PRO_DRAM1_W<CACHE_IA_INT_EN_SPEC> {
+    pub fn cache_ia_int_pro_dram1(
+        &mut self,
+    ) -> CACHE_IA_INT_PRO_DRAM1_W<CACHE_IA_INT_EN_SPEC> {
         CACHE_IA_INT_PRO_DRAM1_W::new(self, 18)
     }
     ///Bit 19 - PRO CPU invalid access to APP CPU cache when cache disabled

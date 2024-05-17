@@ -15,8 +15,7 @@ impl W {
     #[inline(always)]
     #[must_use]
     pub fn gpio(&mut self, n: u8) -> GPIO_W<INTR_CLR_SPEC> {
-        #[allow(clippy::no_effect)]
-        [(); 8][n as usize];
+        #[allow(clippy::no_effect)] [(); 8][n as usize];
         GPIO_W::new(self, n)
     }
     ///Bit 0 - Set this bit to clear the DEDIC_GPIO0_INT_RAW interrupt.

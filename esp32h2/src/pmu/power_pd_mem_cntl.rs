@@ -67,7 +67,9 @@ impl W {
     ///Bits 24:27 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn force_hp_mem_no_iso(&mut self) -> FORCE_HP_MEM_NO_ISO_W<POWER_PD_MEM_CNTL_SPEC> {
+    pub fn force_hp_mem_no_iso(
+        &mut self,
+    ) -> FORCE_HP_MEM_NO_ISO_W<POWER_PD_MEM_CNTL_SPEC> {
         FORCE_HP_MEM_NO_ISO_W::new(self, 24)
     }
     ///Bits 28:31 - need_des

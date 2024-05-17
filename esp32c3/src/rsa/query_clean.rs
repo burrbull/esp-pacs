@@ -12,9 +12,7 @@ impl R {
 #[cfg(feature = "impl-register-debug")]
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("QUERY_CLEAN")
-            .field("query_clean", &self.query_clean())
-            .finish()
+        f.debug_struct("QUERY_CLEAN").field("query_clean", &self.query_clean()).finish()
     }
 }
 /**RSA query clean register

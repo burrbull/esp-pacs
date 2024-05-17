@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("L1_DCACHE_AUTOLOAD_SCT2_SIZE")
-            .field(
-                "l1_dcache_autoload_sct2_size",
-                &self.l1_dcache_autoload_sct2_size(),
-            )
+            .field("l1_dcache_autoload_sct2_size", &self.l1_dcache_autoload_sct2_size())
             .finish()
     }
 }

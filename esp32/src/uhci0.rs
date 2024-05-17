@@ -339,7 +339,9 @@ pub mod state1;
 You can [`read`](crate::generic::Reg::read) this register and get [`dma_out_eof_des_addr::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dma_out_eof_des_addr`] module*/
-pub type DMA_OUT_EOF_DES_ADDR = crate::Reg<dma_out_eof_des_addr::DMA_OUT_EOF_DES_ADDR_SPEC>;
+pub type DMA_OUT_EOF_DES_ADDR = crate::Reg<
+    dma_out_eof_des_addr::DMA_OUT_EOF_DES_ADDR_SPEC,
+>;
 ///
 pub mod dma_out_eof_des_addr;
 /**DMA_IN_SUC_EOF_DES_ADDR (r) register accessor:
@@ -347,8 +349,9 @@ pub mod dma_out_eof_des_addr;
 You can [`read`](crate::generic::Reg::read) this register and get [`dma_in_suc_eof_des_addr::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dma_in_suc_eof_des_addr`] module*/
-pub type DMA_IN_SUC_EOF_DES_ADDR =
-    crate::Reg<dma_in_suc_eof_des_addr::DMA_IN_SUC_EOF_DES_ADDR_SPEC>;
+pub type DMA_IN_SUC_EOF_DES_ADDR = crate::Reg<
+    dma_in_suc_eof_des_addr::DMA_IN_SUC_EOF_DES_ADDR_SPEC,
+>;
 ///
 pub mod dma_in_suc_eof_des_addr;
 /**DMA_IN_ERR_EOF_DES_ADDR (r) register accessor:
@@ -356,8 +359,9 @@ pub mod dma_in_suc_eof_des_addr;
 You can [`read`](crate::generic::Reg::read) this register and get [`dma_in_err_eof_des_addr::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dma_in_err_eof_des_addr`] module*/
-pub type DMA_IN_ERR_EOF_DES_ADDR =
-    crate::Reg<dma_in_err_eof_des_addr::DMA_IN_ERR_EOF_DES_ADDR_SPEC>;
+pub type DMA_IN_ERR_EOF_DES_ADDR = crate::Reg<
+    dma_in_err_eof_des_addr::DMA_IN_ERR_EOF_DES_ADDR_SPEC,
+>;
 ///
 pub mod dma_in_err_eof_des_addr;
 /**DMA_OUT_EOF_BFR_DES_ADDR (r) register accessor:
@@ -365,8 +369,9 @@ pub mod dma_in_err_eof_des_addr;
 You can [`read`](crate::generic::Reg::read) this register and get [`dma_out_eof_bfr_des_addr::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dma_out_eof_bfr_des_addr`] module*/
-pub type DMA_OUT_EOF_BFR_DES_ADDR =
-    crate::Reg<dma_out_eof_bfr_des_addr::DMA_OUT_EOF_BFR_DES_ADDR_SPEC>;
+pub type DMA_OUT_EOF_BFR_DES_ADDR = crate::Reg<
+    dma_out_eof_bfr_des_addr::DMA_OUT_EOF_BFR_DES_ADDR_SPEC,
+>;
 ///
 pub mod dma_out_eof_bfr_des_addr;
 /**AHB_TEST (rw) register accessor:

@@ -93,14 +93,8 @@ impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CTRL1")
             .field("clk_mode", &self.clk_mode())
-            .field(
-                "spi_ar_size0_1_support_en",
-                &self.spi_ar_size0_1_support_en(),
-            )
-            .field(
-                "spi_aw_size0_1_support_en",
-                &self.spi_aw_size0_1_support_en(),
-            )
+            .field("spi_ar_size0_1_support_en", &self.spi_ar_size0_1_support_en())
+            .field("spi_aw_size0_1_support_en", &self.spi_aw_size0_1_support_en())
             .field("spi_axi_rdata_back_fast", &self.spi_axi_rdata_back_fast())
             .field("rresp_ecc_err_en", &self.rresp_ecc_err_en())
             .field("ar_splice_en", &self.ar_splice_en())
@@ -121,13 +115,17 @@ impl W {
     ///Bit 21 - 1: MSPI supports ARSIZE 0~3. When ARSIZE =0~2, MSPI read address is 4*n and reply the real AXI read data back. 0: When ARSIZE 0~1, MSPI reply SLV_ERR.
     #[inline(always)]
     #[must_use]
-    pub fn spi_ar_size0_1_support_en(&mut self) -> SPI_AR_SIZE0_1_SUPPORT_EN_W<CTRL1_SPEC> {
+    pub fn spi_ar_size0_1_support_en(
+        &mut self,
+    ) -> SPI_AR_SIZE0_1_SUPPORT_EN_W<CTRL1_SPEC> {
         SPI_AR_SIZE0_1_SUPPORT_EN_W::new(self, 21)
     }
     ///Bit 22 - 1: MSPI supports AWSIZE 0~3. 0: When AWSIZE 0~1, MSPI reply SLV_ERR.
     #[inline(always)]
     #[must_use]
-    pub fn spi_aw_size0_1_support_en(&mut self) -> SPI_AW_SIZE0_1_SUPPORT_EN_W<CTRL1_SPEC> {
+    pub fn spi_aw_size0_1_support_en(
+        &mut self,
+    ) -> SPI_AW_SIZE0_1_SUPPORT_EN_W<CTRL1_SPEC> {
         SPI_AW_SIZE0_1_SUPPORT_EN_W::new(self, 22)
     }
     ///Bit 24 - 1: RRESP is SLV_ERR when there is a ECC error in AXI read data. 0: RRESP is OKAY when there is a ECC error in AXI read data. The ECC error information is recorded in SPI_MEM_ECC_ERR_ADDR_REG.

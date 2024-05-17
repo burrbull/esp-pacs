@@ -13,7 +13,9 @@ pub type CORE_0_IRAM0_PMS_MONITOR_VIOLATE_STATUS_ADDR_R = crate::FieldReader<u32
 impl R {
     ///Bit 0 - core_0_iram0_pms_monitor_violate_intr
     #[inline(always)]
-    pub fn core_0_iram0_pms_monitor_violate_intr(&self) -> CORE_0_IRAM0_PMS_MONITOR_VIOLATE_INTR_R {
+    pub fn core_0_iram0_pms_monitor_violate_intr(
+        &self,
+    ) -> CORE_0_IRAM0_PMS_MONITOR_VIOLATE_INTR_R {
         CORE_0_IRAM0_PMS_MONITOR_VIOLATE_INTR_R::new((self.bits & 1) != 0)
     }
     ///Bit 1 - core_0_iram0_pms_monitor_violate_status_wr
@@ -28,21 +30,27 @@ impl R {
     pub fn core_0_iram0_pms_monitor_violate_status_loadstore(
         &self,
     ) -> CORE_0_IRAM0_PMS_MONITOR_VIOLATE_STATUS_LOADSTORE_R {
-        CORE_0_IRAM0_PMS_MONITOR_VIOLATE_STATUS_LOADSTORE_R::new(((self.bits >> 2) & 1) != 0)
+        CORE_0_IRAM0_PMS_MONITOR_VIOLATE_STATUS_LOADSTORE_R::new(
+            ((self.bits >> 2) & 1) != 0,
+        )
     }
     ///Bits 3:4 - core_0_iram0_pms_monitor_violate_status_world
     #[inline(always)]
     pub fn core_0_iram0_pms_monitor_violate_status_world(
         &self,
     ) -> CORE_0_IRAM0_PMS_MONITOR_VIOLATE_STATUS_WORLD_R {
-        CORE_0_IRAM0_PMS_MONITOR_VIOLATE_STATUS_WORLD_R::new(((self.bits >> 3) & 3) as u8)
+        CORE_0_IRAM0_PMS_MONITOR_VIOLATE_STATUS_WORLD_R::new(
+            ((self.bits >> 3) & 3) as u8,
+        )
     }
     ///Bits 5:28 - core_0_iram0_pms_monitor_violate_status_addr
     #[inline(always)]
     pub fn core_0_iram0_pms_monitor_violate_status_addr(
         &self,
     ) -> CORE_0_IRAM0_PMS_MONITOR_VIOLATE_STATUS_ADDR_R {
-        CORE_0_IRAM0_PMS_MONITOR_VIOLATE_STATUS_ADDR_R::new((self.bits >> 5) & 0x00ff_ffff)
+        CORE_0_IRAM0_PMS_MONITOR_VIOLATE_STATUS_ADDR_R::new(
+            (self.bits >> 5) & 0x00ff_ffff,
+        )
     }
 }
 #[cfg(feature = "impl-register-debug")]

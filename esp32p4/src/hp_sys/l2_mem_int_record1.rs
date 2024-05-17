@@ -41,18 +41,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("L2_MEM_INT_RECORD1")
-            .field(
-                "reg_l2_mem_ecc_err_int_addr",
-                &self.reg_l2_mem_ecc_err_int_addr(),
-            )
-            .field(
-                "reg_l2_mem_ecc_one_bit_err",
-                &self.reg_l2_mem_ecc_one_bit_err(),
-            )
-            .field(
-                "reg_l2_mem_ecc_two_bit_err",
-                &self.reg_l2_mem_ecc_two_bit_err(),
-            )
+            .field("reg_l2_mem_ecc_err_int_addr", &self.reg_l2_mem_ecc_err_int_addr())
+            .field("reg_l2_mem_ecc_one_bit_err", &self.reg_l2_mem_ecc_one_bit_err())
+            .field("reg_l2_mem_ecc_two_bit_err", &self.reg_l2_mem_ecc_two_bit_err())
             .field("reg_l2_mem_ecc_err_bit", &self.reg_l2_mem_ecc_err_bit())
             .field("reg_l2_cache_err_bank", &self.reg_l2_cache_err_bank())
             .finish()

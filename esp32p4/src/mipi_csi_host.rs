@@ -442,8 +442,9 @@ pub mod int_force_phy;
 You can [`read`](crate::generic::Reg::read) this register and get [`int_st_bndry_frame_fatal::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@int_st_bndry_frame_fatal`] module*/
-pub type INT_ST_BNDRY_FRAME_FATAL =
-    crate::Reg<int_st_bndry_frame_fatal::INT_ST_BNDRY_FRAME_FATAL_SPEC>;
+pub type INT_ST_BNDRY_FRAME_FATAL = crate::Reg<
+    int_st_bndry_frame_fatal::INT_ST_BNDRY_FRAME_FATAL_SPEC,
+>;
 ///NA
 pub mod int_st_bndry_frame_fatal;
 /**INT_MSK_BNDRY_FRAME_FATAL (rw) register accessor: NA
@@ -451,8 +452,9 @@ pub mod int_st_bndry_frame_fatal;
 You can [`read`](crate::generic::Reg::read) this register and get [`int_msk_bndry_frame_fatal::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`int_msk_bndry_frame_fatal::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@int_msk_bndry_frame_fatal`] module*/
-pub type INT_MSK_BNDRY_FRAME_FATAL =
-    crate::Reg<int_msk_bndry_frame_fatal::INT_MSK_BNDRY_FRAME_FATAL_SPEC>;
+pub type INT_MSK_BNDRY_FRAME_FATAL = crate::Reg<
+    int_msk_bndry_frame_fatal::INT_MSK_BNDRY_FRAME_FATAL_SPEC,
+>;
 ///NA
 pub mod int_msk_bndry_frame_fatal;
 /**INT_FORCE_BNDRY_FRAME_FATAL (rw) register accessor: NA
@@ -460,8 +462,9 @@ pub mod int_msk_bndry_frame_fatal;
 You can [`read`](crate::generic::Reg::read) this register and get [`int_force_bndry_frame_fatal::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`int_force_bndry_frame_fatal::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@int_force_bndry_frame_fatal`] module*/
-pub type INT_FORCE_BNDRY_FRAME_FATAL =
-    crate::Reg<int_force_bndry_frame_fatal::INT_FORCE_BNDRY_FRAME_FATAL_SPEC>;
+pub type INT_FORCE_BNDRY_FRAME_FATAL = crate::Reg<
+    int_force_bndry_frame_fatal::INT_FORCE_BNDRY_FRAME_FATAL_SPEC,
+>;
 ///NA
 pub mod int_force_bndry_frame_fatal;
 /**INT_ST_SEQ_FRAME_FATAL (r) register accessor: NA
@@ -469,7 +472,9 @@ pub mod int_force_bndry_frame_fatal;
 You can [`read`](crate::generic::Reg::read) this register and get [`int_st_seq_frame_fatal::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@int_st_seq_frame_fatal`] module*/
-pub type INT_ST_SEQ_FRAME_FATAL = crate::Reg<int_st_seq_frame_fatal::INT_ST_SEQ_FRAME_FATAL_SPEC>;
+pub type INT_ST_SEQ_FRAME_FATAL = crate::Reg<
+    int_st_seq_frame_fatal::INT_ST_SEQ_FRAME_FATAL_SPEC,
+>;
 ///NA
 pub mod int_st_seq_frame_fatal;
 /**INT_MSK_SEQ_FRAME_FATAL (rw) register accessor: NA
@@ -477,8 +482,9 @@ pub mod int_st_seq_frame_fatal;
 You can [`read`](crate::generic::Reg::read) this register and get [`int_msk_seq_frame_fatal::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`int_msk_seq_frame_fatal::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@int_msk_seq_frame_fatal`] module*/
-pub type INT_MSK_SEQ_FRAME_FATAL =
-    crate::Reg<int_msk_seq_frame_fatal::INT_MSK_SEQ_FRAME_FATAL_SPEC>;
+pub type INT_MSK_SEQ_FRAME_FATAL = crate::Reg<
+    int_msk_seq_frame_fatal::INT_MSK_SEQ_FRAME_FATAL_SPEC,
+>;
 ///NA
 pub mod int_msk_seq_frame_fatal;
 /**INT_FORCE_SEQ_FRAME_FATAL (rw) register accessor: NA
@@ -486,8 +492,9 @@ pub mod int_msk_seq_frame_fatal;
 You can [`read`](crate::generic::Reg::read) this register and get [`int_force_seq_frame_fatal::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`int_force_seq_frame_fatal::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@int_force_seq_frame_fatal`] module*/
-pub type INT_FORCE_SEQ_FRAME_FATAL =
-    crate::Reg<int_force_seq_frame_fatal::INT_FORCE_SEQ_FRAME_FATAL_SPEC>;
+pub type INT_FORCE_SEQ_FRAME_FATAL = crate::Reg<
+    int_force_seq_frame_fatal::INT_FORCE_SEQ_FRAME_FATAL_SPEC,
+>;
 ///NA
 pub mod int_force_seq_frame_fatal;
 /**INT_ST_CRC_FRAME_FATAL (r) register accessor: NA
@@ -495,7 +502,9 @@ pub mod int_force_seq_frame_fatal;
 You can [`read`](crate::generic::Reg::read) this register and get [`int_st_crc_frame_fatal::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@int_st_crc_frame_fatal`] module*/
-pub type INT_ST_CRC_FRAME_FATAL = crate::Reg<int_st_crc_frame_fatal::INT_ST_CRC_FRAME_FATAL_SPEC>;
+pub type INT_ST_CRC_FRAME_FATAL = crate::Reg<
+    int_st_crc_frame_fatal::INT_ST_CRC_FRAME_FATAL_SPEC,
+>;
 ///NA
 pub mod int_st_crc_frame_fatal;
 /**INT_MSK_CRC_FRAME_FATAL (rw) register accessor: NA
@@ -503,8 +512,9 @@ pub mod int_st_crc_frame_fatal;
 You can [`read`](crate::generic::Reg::read) this register and get [`int_msk_crc_frame_fatal::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`int_msk_crc_frame_fatal::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@int_msk_crc_frame_fatal`] module*/
-pub type INT_MSK_CRC_FRAME_FATAL =
-    crate::Reg<int_msk_crc_frame_fatal::INT_MSK_CRC_FRAME_FATAL_SPEC>;
+pub type INT_MSK_CRC_FRAME_FATAL = crate::Reg<
+    int_msk_crc_frame_fatal::INT_MSK_CRC_FRAME_FATAL_SPEC,
+>;
 ///NA
 pub mod int_msk_crc_frame_fatal;
 /**INT_FORCE_CRC_FRAME_FATAL (rw) register accessor: NA
@@ -512,8 +522,9 @@ pub mod int_msk_crc_frame_fatal;
 You can [`read`](crate::generic::Reg::read) this register and get [`int_force_crc_frame_fatal::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`int_force_crc_frame_fatal::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@int_force_crc_frame_fatal`] module*/
-pub type INT_FORCE_CRC_FRAME_FATAL =
-    crate::Reg<int_force_crc_frame_fatal::INT_FORCE_CRC_FRAME_FATAL_SPEC>;
+pub type INT_FORCE_CRC_FRAME_FATAL = crate::Reg<
+    int_force_crc_frame_fatal::INT_FORCE_CRC_FRAME_FATAL_SPEC,
+>;
 ///NA
 pub mod int_force_crc_frame_fatal;
 /**INT_ST_PLD_CRC_FATAL (r) register accessor: NA
@@ -521,7 +532,9 @@ pub mod int_force_crc_frame_fatal;
 You can [`read`](crate::generic::Reg::read) this register and get [`int_st_pld_crc_fatal::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@int_st_pld_crc_fatal`] module*/
-pub type INT_ST_PLD_CRC_FATAL = crate::Reg<int_st_pld_crc_fatal::INT_ST_PLD_CRC_FATAL_SPEC>;
+pub type INT_ST_PLD_CRC_FATAL = crate::Reg<
+    int_st_pld_crc_fatal::INT_ST_PLD_CRC_FATAL_SPEC,
+>;
 ///NA
 pub mod int_st_pld_crc_fatal;
 /**INT_MSK_PLD_CRC_FATAL (rw) register accessor: NA
@@ -529,7 +542,9 @@ pub mod int_st_pld_crc_fatal;
 You can [`read`](crate::generic::Reg::read) this register and get [`int_msk_pld_crc_fatal::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`int_msk_pld_crc_fatal::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@int_msk_pld_crc_fatal`] module*/
-pub type INT_MSK_PLD_CRC_FATAL = crate::Reg<int_msk_pld_crc_fatal::INT_MSK_PLD_CRC_FATAL_SPEC>;
+pub type INT_MSK_PLD_CRC_FATAL = crate::Reg<
+    int_msk_pld_crc_fatal::INT_MSK_PLD_CRC_FATAL_SPEC,
+>;
 ///NA
 pub mod int_msk_pld_crc_fatal;
 /**INT_FORCE_PLD_CRC_FATAL (rw) register accessor: NA
@@ -537,8 +552,9 @@ pub mod int_msk_pld_crc_fatal;
 You can [`read`](crate::generic::Reg::read) this register and get [`int_force_pld_crc_fatal::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`int_force_pld_crc_fatal::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@int_force_pld_crc_fatal`] module*/
-pub type INT_FORCE_PLD_CRC_FATAL =
-    crate::Reg<int_force_pld_crc_fatal::INT_FORCE_PLD_CRC_FATAL_SPEC>;
+pub type INT_FORCE_PLD_CRC_FATAL = crate::Reg<
+    int_force_pld_crc_fatal::INT_FORCE_PLD_CRC_FATAL_SPEC,
+>;
 ///NA
 pub mod int_force_pld_crc_fatal;
 /**INT_ST_DATA_ID (r) register accessor: NA
@@ -570,7 +586,9 @@ pub mod int_force_data_id;
 You can [`read`](crate::generic::Reg::read) this register and get [`int_st_ecc_corrected::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@int_st_ecc_corrected`] module*/
-pub type INT_ST_ECC_CORRECTED = crate::Reg<int_st_ecc_corrected::INT_ST_ECC_CORRECTED_SPEC>;
+pub type INT_ST_ECC_CORRECTED = crate::Reg<
+    int_st_ecc_corrected::INT_ST_ECC_CORRECTED_SPEC,
+>;
 ///NA
 pub mod int_st_ecc_corrected;
 /**INT_MSK_ECC_CORRECTED (rw) register accessor: NA
@@ -578,7 +596,9 @@ pub mod int_st_ecc_corrected;
 You can [`read`](crate::generic::Reg::read) this register and get [`int_msk_ecc_corrected::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`int_msk_ecc_corrected::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@int_msk_ecc_corrected`] module*/
-pub type INT_MSK_ECC_CORRECTED = crate::Reg<int_msk_ecc_corrected::INT_MSK_ECC_CORRECTED_SPEC>;
+pub type INT_MSK_ECC_CORRECTED = crate::Reg<
+    int_msk_ecc_corrected::INT_MSK_ECC_CORRECTED_SPEC,
+>;
 ///NA
 pub mod int_msk_ecc_corrected;
 /**INT_FORCE_ECC_CORRECTED (rw) register accessor: NA
@@ -586,8 +606,9 @@ pub mod int_msk_ecc_corrected;
 You can [`read`](crate::generic::Reg::read) this register and get [`int_force_ecc_corrected::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`int_force_ecc_corrected::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@int_force_ecc_corrected`] module*/
-pub type INT_FORCE_ECC_CORRECTED =
-    crate::Reg<int_force_ecc_corrected::INT_FORCE_ECC_CORRECTED_SPEC>;
+pub type INT_FORCE_ECC_CORRECTED = crate::Reg<
+    int_force_ecc_corrected::INT_FORCE_ECC_CORRECTED_SPEC,
+>;
 ///NA
 pub mod int_force_ecc_corrected;
 /**SCRAMBLING (rw) register accessor: NA

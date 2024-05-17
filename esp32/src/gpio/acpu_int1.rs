@@ -12,9 +12,7 @@ impl R {
 #[cfg(feature = "impl-register-debug")]
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("ACPU_INT1")
-            .field("appcpu_int_h", &self.appcpu_int_h())
-            .finish()
+        f.debug_struct("ACPU_INT1").field("appcpu_int_h", &self.appcpu_int_h()).finish()
     }
 }
 /**

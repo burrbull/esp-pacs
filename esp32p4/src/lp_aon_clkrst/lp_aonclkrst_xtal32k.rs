@@ -44,15 +44,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("LP_AONCLKRST_XTAL32K")
-            .field(
-                "lp_aonclkrst_dres_xtal32k",
-                &self.lp_aonclkrst_dres_xtal32k(),
-            )
+            .field("lp_aonclkrst_dres_xtal32k", &self.lp_aonclkrst_dres_xtal32k())
             .field("lp_aonclkrst_dgm_xtal32k", &self.lp_aonclkrst_dgm_xtal32k())
-            .field(
-                "lp_aonclkrst_dbuf_xtal32k",
-                &self.lp_aonclkrst_dbuf_xtal32k(),
-            )
+            .field("lp_aonclkrst_dbuf_xtal32k", &self.lp_aonclkrst_dbuf_xtal32k())
             .field("lp_aonclkrst_dac_xtal32k", &self.lp_aonclkrst_dac_xtal32k())
             .finish()
     }

@@ -46,10 +46,7 @@ impl core::fmt::Debug for R {
         f.debug_struct("DMA_BLOCK_INTERVAL")
             .field("dma_block_slot", &self.dma_block_slot())
             .field("dma_block_interval", &self.dma_block_interval())
-            .field(
-                "raw_num_total_auto_reload",
-                &self.raw_num_total_auto_reload(),
-            )
+            .field("raw_num_total_auto_reload", &self.raw_num_total_auto_reload())
             .field("en", &self.en())
             .finish()
     }
@@ -64,7 +61,9 @@ impl W {
     ///Bits 10:27 - this field configures the max block_interval_cnt, block_interval_cnt increased by 1 when block_slot_cnt if full
     #[inline(always)]
     #[must_use]
-    pub fn dma_block_interval(&mut self) -> DMA_BLOCK_INTERVAL_W<DMA_BLOCK_INTERVAL_SPEC> {
+    pub fn dma_block_interval(
+        &mut self,
+    ) -> DMA_BLOCK_INTERVAL_W<DMA_BLOCK_INTERVAL_SPEC> {
         DMA_BLOCK_INTERVAL_W::new(self, 10)
     }
     ///Bit 28 - this bit configures enable of auto reload reg_raw_num_total, 0: disable, 1: enable

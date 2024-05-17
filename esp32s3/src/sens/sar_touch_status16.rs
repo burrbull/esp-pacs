@@ -34,22 +34,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SAR_TOUCH_STATUS16")
-            .field(
-                "sar_touch_approach_pad2_cnt",
-                &self.sar_touch_approach_pad2_cnt(),
-            )
-            .field(
-                "sar_touch_approach_pad1_cnt",
-                &self.sar_touch_approach_pad1_cnt(),
-            )
-            .field(
-                "sar_touch_approach_pad0_cnt",
-                &self.sar_touch_approach_pad0_cnt(),
-            )
-            .field(
-                "sar_touch_slp_approach_cnt",
-                &self.sar_touch_slp_approach_cnt(),
-            )
+            .field("sar_touch_approach_pad2_cnt", &self.sar_touch_approach_pad2_cnt())
+            .field("sar_touch_approach_pad1_cnt", &self.sar_touch_approach_pad1_cnt())
+            .field("sar_touch_approach_pad0_cnt", &self.sar_touch_approach_pad0_cnt())
+            .field("sar_touch_slp_approach_cnt", &self.sar_touch_slp_approach_cnt())
             .finish()
     }
 }

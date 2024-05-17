@@ -16,9 +16,7 @@ impl R {
 #[cfg(feature = "impl-register-debug")]
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("LP_STORE8")
-            .field("lp_scratch8", &self.lp_scratch8())
-            .finish()
+        f.debug_struct("LP_STORE8").field("lp_scratch8", &self.lp_scratch8()).finish()
     }
 }
 impl W {

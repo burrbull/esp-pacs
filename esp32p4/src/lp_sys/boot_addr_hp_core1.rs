@@ -25,7 +25,9 @@ impl W {
     ///Bits 0:31 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn boot_addr_hp_core1(&mut self) -> BOOT_ADDR_HP_CORE1_W<BOOT_ADDR_HP_CORE1_SPEC> {
+    pub fn boot_addr_hp_core1(
+        &mut self,
+    ) -> BOOT_ADDR_HP_CORE1_W<BOOT_ADDR_HP_CORE1_SPEC> {
         BOOT_ADDR_HP_CORE1_W::new(self, 0)
     }
 }

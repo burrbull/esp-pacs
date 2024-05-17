@@ -16,9 +16,7 @@ impl R {
 #[cfg(feature = "impl-register-debug")]
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("DMMU_TABLE4")
-            .field("dmmu_table4", &self.dmmu_table4())
-            .finish()
+        f.debug_struct("DMMU_TABLE4").field("dmmu_table4", &self.dmmu_table4()).finish()
     }
 }
 impl W {

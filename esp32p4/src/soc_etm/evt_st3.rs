@@ -296,14 +296,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("EVT_ST3")
-            .field(
-                "mcpwm1_evt_timer1_stop_st",
-                &self.mcpwm1_evt_timer1_stop_st(),
-            )
-            .field(
-                "mcpwm1_evt_timer2_stop_st",
-                &self.mcpwm1_evt_timer2_stop_st(),
-            )
+            .field("mcpwm1_evt_timer1_stop_st", &self.mcpwm1_evt_timer1_stop_st())
+            .field("mcpwm1_evt_timer2_stop_st", &self.mcpwm1_evt_timer2_stop_st())
             .field("mcpwm1_evt_timer0_tez_st", &self.mcpwm1_evt_timer0_tez_st())
             .field("mcpwm1_evt_timer1_tez_st", &self.mcpwm1_evt_timer1_tez_st())
             .field("mcpwm1_evt_timer2_tez_st", &self.mcpwm1_evt_timer2_tez_st())
@@ -341,49 +335,65 @@ impl W {
     ///Bit 0 - Represents MCPWM1_evt_timer1_stop trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn mcpwm1_evt_timer1_stop_st(&mut self) -> MCPWM1_EVT_TIMER1_STOP_ST_W<EVT_ST3_SPEC> {
+    pub fn mcpwm1_evt_timer1_stop_st(
+        &mut self,
+    ) -> MCPWM1_EVT_TIMER1_STOP_ST_W<EVT_ST3_SPEC> {
         MCPWM1_EVT_TIMER1_STOP_ST_W::new(self, 0)
     }
     ///Bit 1 - Represents MCPWM1_evt_timer2_stop trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn mcpwm1_evt_timer2_stop_st(&mut self) -> MCPWM1_EVT_TIMER2_STOP_ST_W<EVT_ST3_SPEC> {
+    pub fn mcpwm1_evt_timer2_stop_st(
+        &mut self,
+    ) -> MCPWM1_EVT_TIMER2_STOP_ST_W<EVT_ST3_SPEC> {
         MCPWM1_EVT_TIMER2_STOP_ST_W::new(self, 1)
     }
     ///Bit 2 - Represents MCPWM1_evt_timer0_tez trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn mcpwm1_evt_timer0_tez_st(&mut self) -> MCPWM1_EVT_TIMER0_TEZ_ST_W<EVT_ST3_SPEC> {
+    pub fn mcpwm1_evt_timer0_tez_st(
+        &mut self,
+    ) -> MCPWM1_EVT_TIMER0_TEZ_ST_W<EVT_ST3_SPEC> {
         MCPWM1_EVT_TIMER0_TEZ_ST_W::new(self, 2)
     }
     ///Bit 3 - Represents MCPWM1_evt_timer1_tez trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn mcpwm1_evt_timer1_tez_st(&mut self) -> MCPWM1_EVT_TIMER1_TEZ_ST_W<EVT_ST3_SPEC> {
+    pub fn mcpwm1_evt_timer1_tez_st(
+        &mut self,
+    ) -> MCPWM1_EVT_TIMER1_TEZ_ST_W<EVT_ST3_SPEC> {
         MCPWM1_EVT_TIMER1_TEZ_ST_W::new(self, 3)
     }
     ///Bit 4 - Represents MCPWM1_evt_timer2_tez trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn mcpwm1_evt_timer2_tez_st(&mut self) -> MCPWM1_EVT_TIMER2_TEZ_ST_W<EVT_ST3_SPEC> {
+    pub fn mcpwm1_evt_timer2_tez_st(
+        &mut self,
+    ) -> MCPWM1_EVT_TIMER2_TEZ_ST_W<EVT_ST3_SPEC> {
         MCPWM1_EVT_TIMER2_TEZ_ST_W::new(self, 4)
     }
     ///Bit 5 - Represents MCPWM1_evt_timer0_tep trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn mcpwm1_evt_timer0_tep_st(&mut self) -> MCPWM1_EVT_TIMER0_TEP_ST_W<EVT_ST3_SPEC> {
+    pub fn mcpwm1_evt_timer0_tep_st(
+        &mut self,
+    ) -> MCPWM1_EVT_TIMER0_TEP_ST_W<EVT_ST3_SPEC> {
         MCPWM1_EVT_TIMER0_TEP_ST_W::new(self, 5)
     }
     ///Bit 6 - Represents MCPWM1_evt_timer1_tep trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn mcpwm1_evt_timer1_tep_st(&mut self) -> MCPWM1_EVT_TIMER1_TEP_ST_W<EVT_ST3_SPEC> {
+    pub fn mcpwm1_evt_timer1_tep_st(
+        &mut self,
+    ) -> MCPWM1_EVT_TIMER1_TEP_ST_W<EVT_ST3_SPEC> {
         MCPWM1_EVT_TIMER1_TEP_ST_W::new(self, 6)
     }
     ///Bit 7 - Represents MCPWM1_evt_timer2_tep trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn mcpwm1_evt_timer2_tep_st(&mut self) -> MCPWM1_EVT_TIMER2_TEP_ST_W<EVT_ST3_SPEC> {
+    pub fn mcpwm1_evt_timer2_tep_st(
+        &mut self,
+    ) -> MCPWM1_EVT_TIMER2_TEP_ST_W<EVT_ST3_SPEC> {
         MCPWM1_EVT_TIMER2_TEP_ST_W::new(self, 7)
     }
     ///Bit 8 - Represents MCPWM1_evt_op0_tea trigger status.\\0: Not triggered\\1: Triggered

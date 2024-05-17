@@ -24,8 +24,7 @@ impl R {
     ///NOTE: `n` is number of field in register. `n == 0` corresponds to `HSTIMER0_OVF` field
     #[inline(always)]
     pub fn hstimer_ovf(&self, n: u8) -> HSTIMER_OVF_R {
-        #[allow(clippy::no_effect)]
-        [(); 4][n as usize];
+        #[allow(clippy::no_effect)] [(); 4][n as usize];
         HSTIMER_OVF_R::new(((self.bits >> n) & 1) != 0)
     }
     ///Iterator for array of:
@@ -59,8 +58,7 @@ impl R {
     ///NOTE: `n` is number of field in register. `n == 0` corresponds to `LSTIMER0_OVF` field
     #[inline(always)]
     pub fn lstimer_ovf(&self, n: u8) -> LSTIMER_OVF_R {
-        #[allow(clippy::no_effect)]
-        [(); 4][n as usize];
+        #[allow(clippy::no_effect)] [(); 4][n as usize];
         LSTIMER_OVF_R::new(((self.bits >> (n + 4)) & 1) != 0)
     }
     ///Iterator for array of:
@@ -94,14 +92,15 @@ impl R {
     ///NOTE: `n` is number of field in register. `n == 0` corresponds to `DUTY_CHNG_END_HSCH0` field
     #[inline(always)]
     pub fn duty_chng_end_hsch(&self, n: u8) -> DUTY_CHNG_END_HSCH_R {
-        #[allow(clippy::no_effect)]
-        [(); 8][n as usize];
+        #[allow(clippy::no_effect)] [(); 8][n as usize];
         DUTY_CHNG_END_HSCH_R::new(((self.bits >> (n + 8)) & 1) != 0)
     }
     ///Iterator for array of:
     ///The interrupt enable bit for high speed channel (0-7) duty change done interrupt.
     #[inline(always)]
-    pub fn duty_chng_end_hsch_iter(&self) -> impl Iterator<Item = DUTY_CHNG_END_HSCH_R> + '_ {
+    pub fn duty_chng_end_hsch_iter(
+        &self,
+    ) -> impl Iterator<Item = DUTY_CHNG_END_HSCH_R> + '_ {
         (0..8).map(move |n| DUTY_CHNG_END_HSCH_R::new(((self.bits >> (n + 8)) & 1) != 0))
     }
     ///Bit 8 - The interrupt enable bit for high speed channel 0 duty change done interrupt.
@@ -149,15 +148,17 @@ impl R {
     ///NOTE: `n` is number of field in register. `n == 0` corresponds to `DUTY_CHNG_END_LSCH0` field
     #[inline(always)]
     pub fn duty_chng_end_lsch(&self, n: u8) -> DUTY_CHNG_END_LSCH_R {
-        #[allow(clippy::no_effect)]
-        [(); 8][n as usize];
+        #[allow(clippy::no_effect)] [(); 8][n as usize];
         DUTY_CHNG_END_LSCH_R::new(((self.bits >> (n + 16)) & 1) != 0)
     }
     ///Iterator for array of:
     ///The interrupt enable bit for low speed channel (0-7) duty change done interrupt.
     #[inline(always)]
-    pub fn duty_chng_end_lsch_iter(&self) -> impl Iterator<Item = DUTY_CHNG_END_LSCH_R> + '_ {
-        (0..8).map(move |n| DUTY_CHNG_END_LSCH_R::new(((self.bits >> (n + 16)) & 1) != 0))
+    pub fn duty_chng_end_lsch_iter(
+        &self,
+    ) -> impl Iterator<Item = DUTY_CHNG_END_LSCH_R> + '_ {
+        (0..8)
+            .map(move |n| DUTY_CHNG_END_LSCH_R::new(((self.bits >> (n + 16)) & 1) != 0))
     }
     ///Bit 16 - The interrupt enable bit for low speed channel 0 duty change done interrupt.
     #[inline(always)]
@@ -238,8 +239,7 @@ impl W {
     #[inline(always)]
     #[must_use]
     pub fn hstimer_ovf(&mut self, n: u8) -> HSTIMER_OVF_W<INT_ENA_SPEC> {
-        #[allow(clippy::no_effect)]
-        [(); 4][n as usize];
+        #[allow(clippy::no_effect)] [(); 4][n as usize];
         HSTIMER_OVF_W::new(self, n)
     }
     ///Bit 0 - The interrupt enable bit for high speed channel0 counter overflow interrupt.
@@ -272,8 +272,7 @@ impl W {
     #[inline(always)]
     #[must_use]
     pub fn lstimer_ovf(&mut self, n: u8) -> LSTIMER_OVF_W<INT_ENA_SPEC> {
-        #[allow(clippy::no_effect)]
-        [(); 4][n as usize];
+        #[allow(clippy::no_effect)] [(); 4][n as usize];
         LSTIMER_OVF_W::new(self, n + 4)
     }
     ///Bit 4 - The interrupt enable bit for low speed channel0 counter overflow interrupt.
@@ -306,8 +305,7 @@ impl W {
     #[inline(always)]
     #[must_use]
     pub fn duty_chng_end_hsch(&mut self, n: u8) -> DUTY_CHNG_END_HSCH_W<INT_ENA_SPEC> {
-        #[allow(clippy::no_effect)]
-        [(); 8][n as usize];
+        #[allow(clippy::no_effect)] [(); 8][n as usize];
         DUTY_CHNG_END_HSCH_W::new(self, n + 8)
     }
     ///Bit 8 - The interrupt enable bit for high speed channel 0 duty change done interrupt.
@@ -364,8 +362,7 @@ impl W {
     #[inline(always)]
     #[must_use]
     pub fn duty_chng_end_lsch(&mut self, n: u8) -> DUTY_CHNG_END_LSCH_W<INT_ENA_SPEC> {
-        #[allow(clippy::no_effect)]
-        [(); 8][n as usize];
+        #[allow(clippy::no_effect)] [(); 8][n as usize];
         DUTY_CHNG_END_LSCH_W::new(self, n + 16)
     }
     ///Bit 16 - The interrupt enable bit for low speed channel 0 duty change done interrupt.

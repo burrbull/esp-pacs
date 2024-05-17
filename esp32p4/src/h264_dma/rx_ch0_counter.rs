@@ -12,9 +12,7 @@ impl R {
 #[cfg(feature = "impl-register-debug")]
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("RX_CH0_COUNTER")
-            .field("rx_ch0_cnt", &self.rx_ch0_cnt())
-            .finish()
+        f.debug_struct("RX_CH0_COUNTER").field("rx_ch0_cnt", &self.rx_ch0_cnt()).finish()
     }
 }
 /**rx ch0 counter register

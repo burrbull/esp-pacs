@@ -25,7 +25,9 @@ impl W {
     ///Bits 0:15
     #[inline(always)]
     #[must_use]
-    pub fn mac_inf3_short_addr(&mut self) -> MAC_INF3_SHORT_ADDR_W<INF3_SHORT_ADDR_SPEC> {
+    pub fn mac_inf3_short_addr(
+        &mut self,
+    ) -> MAC_INF3_SHORT_ADDR_W<INF3_SHORT_ADDR_SPEC> {
         MAC_INF3_SHORT_ADDR_W::new(self, 0)
     }
 }

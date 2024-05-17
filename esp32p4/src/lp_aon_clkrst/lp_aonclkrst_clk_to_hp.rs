@@ -44,15 +44,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("LP_AONCLKRST_CLK_TO_HP")
-            .field(
-                "lp_aonclkrst_icg_hp_xtal32k",
-                &self.lp_aonclkrst_icg_hp_xtal32k(),
-            )
+            .field("lp_aonclkrst_icg_hp_xtal32k", &self.lp_aonclkrst_icg_hp_xtal32k())
             .field("lp_aonclkrst_icg_hp_sosc", &self.lp_aonclkrst_icg_hp_sosc())
-            .field(
-                "lp_aonclkrst_icg_hp_osc32k",
-                &self.lp_aonclkrst_icg_hp_osc32k(),
-            )
+            .field("lp_aonclkrst_icg_hp_osc32k", &self.lp_aonclkrst_icg_hp_osc32k())
             .field("lp_aonclkrst_icg_hp_fosc", &self.lp_aonclkrst_icg_hp_fosc())
             .finish()
     }

@@ -12,9 +12,7 @@ impl R {
 #[cfg(feature = "impl-register-debug")]
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("RD_KEY1_DATA5")
-            .field("key1_data5", &self.key1_data5())
-            .finish()
+        f.debug_struct("RD_KEY1_DATA5").field("key1_data5", &self.key1_data5()).finish()
     }
 }
 /**Register $n of BLOCK5 (KEY1).

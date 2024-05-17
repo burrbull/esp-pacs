@@ -28,10 +28,7 @@ impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("ERR_CODE_CAP")
             .field("err_capture_code_segment", &self.err_capture_code_segment())
-            .field(
-                "err_capture_code_direction",
-                &self.err_capture_code_direction(),
-            )
+            .field("err_capture_code_direction", &self.err_capture_code_direction())
             .field("err_capture_code_type", &self.err_capture_code_type())
             .finish()
     }

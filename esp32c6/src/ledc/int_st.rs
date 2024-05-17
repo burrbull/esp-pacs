@@ -12,8 +12,7 @@ impl R {
     ///NOTE: `n` is number of field in register. `n == 0` corresponds to `TIMER0_OVF` field
     #[inline(always)]
     pub fn timer_ovf(&self, n: u8) -> TIMER_OVF_R {
-        #[allow(clippy::no_effect)]
-        [(); 4][n as usize];
+        #[allow(clippy::no_effect)] [(); 4][n as usize];
         TIMER_OVF_R::new(((self.bits >> n) & 1) != 0)
     }
     ///Iterator for array of:
@@ -47,14 +46,15 @@ impl R {
     ///NOTE: `n` is number of field in register. `n == 0` corresponds to `DUTY_CHNG_END_CH0` field
     #[inline(always)]
     pub fn duty_chng_end_ch(&self, n: u8) -> DUTY_CHNG_END_CH_R {
-        #[allow(clippy::no_effect)]
-        [(); 6][n as usize];
+        #[allow(clippy::no_effect)] [(); 6][n as usize];
         DUTY_CHNG_END_CH_R::new(((self.bits >> (n + 4)) & 1) != 0)
     }
     ///Iterator for array of:
     ///This is the masked interrupt status bit for the DUTY_CHNG_END_CH(0-5) interrupt when LEDC.INT_ENA.DUTY_CHNG_END_CHx is set to 1.
     #[inline(always)]
-    pub fn duty_chng_end_ch_iter(&self) -> impl Iterator<Item = DUTY_CHNG_END_CH_R> + '_ {
+    pub fn duty_chng_end_ch_iter(
+        &self,
+    ) -> impl Iterator<Item = DUTY_CHNG_END_CH_R> + '_ {
         (0..6).map(move |n| DUTY_CHNG_END_CH_R::new(((self.bits >> (n + 4)) & 1) != 0))
     }
     ///Bit 4 - This is the masked interrupt status bit for the DUTY_CHNG_END_CH0 interrupt when LEDC.INT_ENA.DUTY_CHNG_END_CHx is set to 1.
@@ -92,8 +92,7 @@ impl R {
     ///NOTE: `n` is number of field in register. `n == 0` corresponds to `OVF_CNT_CH0` field
     #[inline(always)]
     pub fn ovf_cnt_ch(&self, n: u8) -> OVF_CNT_CH_R {
-        #[allow(clippy::no_effect)]
-        [(); 6][n as usize];
+        #[allow(clippy::no_effect)] [(); 6][n as usize];
         OVF_CNT_CH_R::new(((self.bits >> (n + 12)) & 1) != 0)
     }
     ///Iterator for array of:

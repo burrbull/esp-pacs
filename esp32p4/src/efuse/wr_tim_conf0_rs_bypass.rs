@@ -47,13 +47,17 @@ impl W {
     ///Bit 0 - Set this bit to bypass reed solomon correction step.
     #[inline(always)]
     #[must_use]
-    pub fn bypass_rs_correction(&mut self) -> BYPASS_RS_CORRECTION_W<WR_TIM_CONF0_RS_BYPASS_SPEC> {
+    pub fn bypass_rs_correction(
+        &mut self,
+    ) -> BYPASS_RS_CORRECTION_W<WR_TIM_CONF0_RS_BYPASS_SPEC> {
         BYPASS_RS_CORRECTION_W::new(self, 0)
     }
     ///Bits 1:11 - Configures block number of programming twice operation.
     #[inline(always)]
     #[must_use]
-    pub fn bypass_rs_blk_num(&mut self) -> BYPASS_RS_BLK_NUM_W<WR_TIM_CONF0_RS_BYPASS_SPEC> {
+    pub fn bypass_rs_blk_num(
+        &mut self,
+    ) -> BYPASS_RS_BLK_NUM_W<WR_TIM_CONF0_RS_BYPASS_SPEC> {
         BYPASS_RS_BLK_NUM_W::new(self, 1)
     }
     ///Bit 12 - Set this bit to update multi-bit register signals.

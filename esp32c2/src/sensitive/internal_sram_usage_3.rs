@@ -13,7 +13,9 @@ pub type INTERNAL_SRAM_ALLOC_MAC_DUMP_W<'a, REG> = crate::BitWriter<'a, REG>;
 impl R {
     ///Bits 0:2 - Need add description
     #[inline(always)]
-    pub fn internal_sram_usage_mac_dump_sram(&self) -> INTERNAL_SRAM_USAGE_MAC_DUMP_SRAM_R {
+    pub fn internal_sram_usage_mac_dump_sram(
+        &self,
+    ) -> INTERNAL_SRAM_USAGE_MAC_DUMP_SRAM_R {
         INTERNAL_SRAM_USAGE_MAC_DUMP_SRAM_R::new((self.bits & 7) as u8)
     }
     ///Bit 3 - Need add description
@@ -30,10 +32,7 @@ impl core::fmt::Debug for R {
                 "internal_sram_usage_mac_dump_sram",
                 &self.internal_sram_usage_mac_dump_sram(),
             )
-            .field(
-                "internal_sram_alloc_mac_dump",
-                &self.internal_sram_alloc_mac_dump(),
-            )
+            .field("internal_sram_alloc_mac_dump", &self.internal_sram_alloc_mac_dump())
             .finish()
     }
 }

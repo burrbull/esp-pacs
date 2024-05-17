@@ -25,7 +25,9 @@ impl W {
     ///Bit 31 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn power_glitch_reset_ena(&mut self) -> POWER_GLITCH_RESET_ENA_W<PG_GLITCH_CNTL_SPEC> {
+    pub fn power_glitch_reset_ena(
+        &mut self,
+    ) -> POWER_GLITCH_RESET_ENA_W<PG_GLITCH_CNTL_SPEC> {
         POWER_GLITCH_RESET_ENA_W::new(self, 31)
     }
 }

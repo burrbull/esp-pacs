@@ -63,7 +63,9 @@ impl W {
     ///Bit 12 - When set, periodic calibration is enabled.
     #[inline(always)]
     #[must_use]
-    pub fn rtc_cali_start_cycling(&mut self) -> RTC_CALI_START_CYCLING_W<RTCCALICFG_SPEC> {
+    pub fn rtc_cali_start_cycling(
+        &mut self,
+    ) -> RTC_CALI_START_CYCLING_W<RTCCALICFG_SPEC> {
         RTC_CALI_START_CYCLING_W::new(self, 12)
     }
     ///Bits 13:14 - Used to select the clock to be calibrated. 0: RTC_CLK. 1: RTC20M_D256_CLK. 2: XTAL32K_CLK.

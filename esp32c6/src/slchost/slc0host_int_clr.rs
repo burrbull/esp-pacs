@@ -158,13 +158,17 @@ impl W {
     ///Bit 12 - *******Description***********
     #[inline(always)]
     #[must_use]
-    pub fn slc0host_rx_sof_int_clr(&mut self) -> SLC0HOST_RX_SOF_INT_CLR_W<SLC0HOST_INT_CLR_SPEC> {
+    pub fn slc0host_rx_sof_int_clr(
+        &mut self,
+    ) -> SLC0HOST_RX_SOF_INT_CLR_W<SLC0HOST_INT_CLR_SPEC> {
         SLC0HOST_RX_SOF_INT_CLR_W::new(self, 12)
     }
     ///Bit 13 - *******Description***********
     #[inline(always)]
     #[must_use]
-    pub fn slc0host_rx_eof_int_clr(&mut self) -> SLC0HOST_RX_EOF_INT_CLR_W<SLC0HOST_INT_CLR_SPEC> {
+    pub fn slc0host_rx_eof_int_clr(
+        &mut self,
+    ) -> SLC0HOST_RX_EOF_INT_CLR_W<SLC0HOST_INT_CLR_SPEC> {
         SLC0HOST_RX_EOF_INT_CLR_W::new(self, 13)
     }
     ///Bit 14 - *******Description***********
@@ -186,13 +190,17 @@ impl W {
     ///Bit 16 - *******Description***********
     #[inline(always)]
     #[must_use]
-    pub fn slc0_rx_udf_int_clr(&mut self) -> SLC0_RX_UDF_INT_CLR_W<SLC0HOST_INT_CLR_SPEC> {
+    pub fn slc0_rx_udf_int_clr(
+        &mut self,
+    ) -> SLC0_RX_UDF_INT_CLR_W<SLC0HOST_INT_CLR_SPEC> {
         SLC0_RX_UDF_INT_CLR_W::new(self, 16)
     }
     ///Bit 17 - *******Description***********
     #[inline(always)]
     #[must_use]
-    pub fn slc0_tx_ovf_int_clr(&mut self) -> SLC0_TX_OVF_INT_CLR_W<SLC0HOST_INT_CLR_SPEC> {
+    pub fn slc0_tx_ovf_int_clr(
+        &mut self,
+    ) -> SLC0_TX_OVF_INT_CLR_W<SLC0HOST_INT_CLR_SPEC> {
         SLC0_TX_OVF_INT_CLR_W::new(self, 17)
     }
     ///Bit 18 - *******Description***********
@@ -206,25 +214,33 @@ impl W {
     ///Bit 19 - *******Description***********
     #[inline(always)]
     #[must_use]
-    pub fn slc0_ext_bit0_int_clr(&mut self) -> SLC0_EXT_BIT0_INT_CLR_W<SLC0HOST_INT_CLR_SPEC> {
+    pub fn slc0_ext_bit0_int_clr(
+        &mut self,
+    ) -> SLC0_EXT_BIT0_INT_CLR_W<SLC0HOST_INT_CLR_SPEC> {
         SLC0_EXT_BIT0_INT_CLR_W::new(self, 19)
     }
     ///Bit 20 - *******Description***********
     #[inline(always)]
     #[must_use]
-    pub fn slc0_ext_bit1_int_clr(&mut self) -> SLC0_EXT_BIT1_INT_CLR_W<SLC0HOST_INT_CLR_SPEC> {
+    pub fn slc0_ext_bit1_int_clr(
+        &mut self,
+    ) -> SLC0_EXT_BIT1_INT_CLR_W<SLC0HOST_INT_CLR_SPEC> {
         SLC0_EXT_BIT1_INT_CLR_W::new(self, 20)
     }
     ///Bit 21 - *******Description***********
     #[inline(always)]
     #[must_use]
-    pub fn slc0_ext_bit2_int_clr(&mut self) -> SLC0_EXT_BIT2_INT_CLR_W<SLC0HOST_INT_CLR_SPEC> {
+    pub fn slc0_ext_bit2_int_clr(
+        &mut self,
+    ) -> SLC0_EXT_BIT2_INT_CLR_W<SLC0HOST_INT_CLR_SPEC> {
         SLC0_EXT_BIT2_INT_CLR_W::new(self, 21)
     }
     ///Bit 22 - *******Description***********
     #[inline(always)]
     #[must_use]
-    pub fn slc0_ext_bit3_int_clr(&mut self) -> SLC0_EXT_BIT3_INT_CLR_W<SLC0HOST_INT_CLR_SPEC> {
+    pub fn slc0_ext_bit3_int_clr(
+        &mut self,
+    ) -> SLC0_EXT_BIT3_INT_CLR_W<SLC0HOST_INT_CLR_SPEC> {
         SLC0_EXT_BIT3_INT_CLR_W::new(self, 22)
     }
     ///Bit 23 - *******Description***********

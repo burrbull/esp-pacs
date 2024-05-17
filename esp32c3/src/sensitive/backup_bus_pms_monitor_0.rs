@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("BACKUP_BUS_PMS_MONITOR_0")
-            .field(
-                "backup_bus_pms_monitor_lock",
-                &self.backup_bus_pms_monitor_lock(),
-            )
+            .field("backup_bus_pms_monitor_lock", &self.backup_bus_pms_monitor_lock())
             .finish()
     }
 }

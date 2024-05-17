@@ -48,13 +48,17 @@ impl W {
     ///Bits 0:2 - Set the security level of spi mem cryption. 0: Shut off cryption DPA funtion. 1-7: The bigger the number is, the more secure the cryption is. (Note that the performance of cryption will decrease together with this number increasing)
     #[inline(always)]
     #[must_use]
-    pub fn spi_crypt_security_level(&mut self) -> SPI_CRYPT_SECURITY_LEVEL_W<DPA_CTRL_SPEC> {
+    pub fn spi_crypt_security_level(
+        &mut self,
+    ) -> SPI_CRYPT_SECURITY_LEVEL_W<DPA_CTRL_SPEC> {
         SPI_CRYPT_SECURITY_LEVEL_W::new(self, 0)
     }
     ///Bit 3 - Only available when SPI_CRYPT_SECURITY_LEVEL is not 0. 1: Enable DPA in the calculation that using key 1 or key 2. 0: Enable DPA only in the calculation that using key 1.
     #[inline(always)]
     #[must_use]
-    pub fn spi_crypt_calc_d_dpa_en(&mut self) -> SPI_CRYPT_CALC_D_DPA_EN_W<DPA_CTRL_SPEC> {
+    pub fn spi_crypt_calc_d_dpa_en(
+        &mut self,
+    ) -> SPI_CRYPT_CALC_D_DPA_EN_W<DPA_CTRL_SPEC> {
         SPI_CRYPT_CALC_D_DPA_EN_W::new(self, 3)
     }
     ///Bit 4 - 1: MSPI XTS DPA clock gate is controlled by SPI_CRYPT_CALC_D_DPA_EN and SPI_CRYPT_SECURITY_LEVEL. 0: Controlled by efuse bits.

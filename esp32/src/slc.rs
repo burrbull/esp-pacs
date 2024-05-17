@@ -766,7 +766,9 @@ pub mod _0_tx_eof_des_addr;
 You can [`read`](crate::generic::Reg::read) this register and get [`_0_to_eof_bfr_des_addr::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@_0_to_eof_bfr_des_addr`] module*/
-pub type _0_TO_EOF_BFR_DES_ADDR = crate::Reg<_0_to_eof_bfr_des_addr::_0_TO_EOF_BFR_DES_ADDR_SPEC>;
+pub type _0_TO_EOF_BFR_DES_ADDR = crate::Reg<
+    _0_to_eof_bfr_des_addr::_0_TO_EOF_BFR_DES_ADDR_SPEC,
+>;
 ///
 pub mod _0_to_eof_bfr_des_addr;
 /**_1_TO_EOF_DES_ADDR (r) register accessor:
@@ -790,7 +792,9 @@ pub mod _1_tx_eof_des_addr;
 You can [`read`](crate::generic::Reg::read) this register and get [`_1_to_eof_bfr_des_addr::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@_1_to_eof_bfr_des_addr`] module*/
-pub type _1_TO_EOF_BFR_DES_ADDR = crate::Reg<_1_to_eof_bfr_des_addr::_1_TO_EOF_BFR_DES_ADDR_SPEC>;
+pub type _1_TO_EOF_BFR_DES_ADDR = crate::Reg<
+    _1_to_eof_bfr_des_addr::_1_TO_EOF_BFR_DES_ADDR_SPEC,
+>;
 ///
 pub mod _1_to_eof_bfr_des_addr;
 /**AHB_TEST (rw) register accessor:
@@ -918,7 +922,9 @@ pub mod _1_rxlink_dscr_bf1;
 You can [`read`](crate::generic::Reg::read) this register and get [`_0_tx_erreof_des_addr::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@_0_tx_erreof_des_addr`] module*/
-pub type _0_TX_ERREOF_DES_ADDR = crate::Reg<_0_tx_erreof_des_addr::_0_TX_ERREOF_DES_ADDR_SPEC>;
+pub type _0_TX_ERREOF_DES_ADDR = crate::Reg<
+    _0_tx_erreof_des_addr::_0_TX_ERREOF_DES_ADDR_SPEC,
+>;
 ///
 pub mod _0_tx_erreof_des_addr;
 /**_1_TX_ERREOF_DES_ADDR (r) register accessor:
@@ -926,7 +932,9 @@ pub mod _0_tx_erreof_des_addr;
 You can [`read`](crate::generic::Reg::read) this register and get [`_1_tx_erreof_des_addr::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@_1_tx_erreof_des_addr`] module*/
-pub type _1_TX_ERREOF_DES_ADDR = crate::Reg<_1_tx_erreof_des_addr::_1_TX_ERREOF_DES_ADDR_SPEC>;
+pub type _1_TX_ERREOF_DES_ADDR = crate::Reg<
+    _1_tx_erreof_des_addr::_1_TX_ERREOF_DES_ADDR_SPEC,
+>;
 ///
 pub mod _1_tx_erreof_des_addr;
 /**TOKEN_LAT (r) register accessor:

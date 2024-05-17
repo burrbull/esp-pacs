@@ -61,13 +61,17 @@ impl W {
     ///Bits 13:21 - ******* Description ***********
     #[inline(always)]
     #[must_use]
-    pub fn ret_dcache_vld_size(&mut self) -> RET_DCACHE_VLD_SIZE_W<RETENTION_CTRL3_SPEC> {
+    pub fn ret_dcache_vld_size(
+        &mut self,
+    ) -> RET_DCACHE_VLD_SIZE_W<RETENTION_CTRL3_SPEC> {
         RET_DCACHE_VLD_SIZE_W::new(self, 13)
     }
     ///Bits 22:30 - ******* Description ***********
     #[inline(always)]
     #[must_use]
-    pub fn ret_dcache_start_point(&mut self) -> RET_DCACHE_START_POINT_W<RETENTION_CTRL3_SPEC> {
+    pub fn ret_dcache_start_point(
+        &mut self,
+    ) -> RET_DCACHE_START_POINT_W<RETENTION_CTRL3_SPEC> {
         RET_DCACHE_START_POINT_W::new(self, 22)
     }
     ///Bit 31 - ******* Description ***********

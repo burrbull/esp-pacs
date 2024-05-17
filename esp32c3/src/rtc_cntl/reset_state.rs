@@ -131,49 +131,65 @@ impl W {
     ///Bit 12 - APP CPU state vector sel
     #[inline(always)]
     #[must_use]
-    pub fn stat_vector_sel_appcpu(&mut self) -> STAT_VECTOR_SEL_APPCPU_W<RESET_STATE_SPEC> {
+    pub fn stat_vector_sel_appcpu(
+        &mut self,
+    ) -> STAT_VECTOR_SEL_APPCPU_W<RESET_STATE_SPEC> {
         STAT_VECTOR_SEL_APPCPU_W::new(self, 12)
     }
     ///Bit 13 - PRO CPU state vector sel
     #[inline(always)]
     #[must_use]
-    pub fn stat_vector_sel_procpu(&mut self) -> STAT_VECTOR_SEL_PROCPU_W<RESET_STATE_SPEC> {
+    pub fn stat_vector_sel_procpu(
+        &mut self,
+    ) -> STAT_VECTOR_SEL_PROCPU_W<RESET_STATE_SPEC> {
         STAT_VECTOR_SEL_PROCPU_W::new(self, 13)
     }
     ///Bit 16 - clear PRO CPU reset_flag
     #[inline(always)]
     #[must_use]
-    pub fn all_reset_flag_clr_procpu(&mut self) -> ALL_RESET_FLAG_CLR_PROCPU_W<RESET_STATE_SPEC> {
+    pub fn all_reset_flag_clr_procpu(
+        &mut self,
+    ) -> ALL_RESET_FLAG_CLR_PROCPU_W<RESET_STATE_SPEC> {
         ALL_RESET_FLAG_CLR_PROCPU_W::new(self, 16)
     }
     ///Bit 17 - clear APP CPU reset flag
     #[inline(always)]
     #[must_use]
-    pub fn all_reset_flag_clr_appcpu(&mut self) -> ALL_RESET_FLAG_CLR_APPCPU_W<RESET_STATE_SPEC> {
+    pub fn all_reset_flag_clr_appcpu(
+        &mut self,
+    ) -> ALL_RESET_FLAG_CLR_APPCPU_W<RESET_STATE_SPEC> {
         ALL_RESET_FLAG_CLR_APPCPU_W::new(self, 17)
     }
     ///Bit 18 - APPCPU OcdHaltOnReset
     #[inline(always)]
     #[must_use]
-    pub fn ocd_halt_on_reset_appcpu(&mut self) -> OCD_HALT_ON_RESET_APPCPU_W<RESET_STATE_SPEC> {
+    pub fn ocd_halt_on_reset_appcpu(
+        &mut self,
+    ) -> OCD_HALT_ON_RESET_APPCPU_W<RESET_STATE_SPEC> {
         OCD_HALT_ON_RESET_APPCPU_W::new(self, 18)
     }
     ///Bit 19 - PROCPU OcdHaltOnReset
     #[inline(always)]
     #[must_use]
-    pub fn ocd_halt_on_reset_procpu(&mut self) -> OCD_HALT_ON_RESET_PROCPU_W<RESET_STATE_SPEC> {
+    pub fn ocd_halt_on_reset_procpu(
+        &mut self,
+    ) -> OCD_HALT_ON_RESET_PROCPU_W<RESET_STATE_SPEC> {
         OCD_HALT_ON_RESET_PROCPU_W::new(self, 19)
     }
     ///Bit 22 - configure jtag reset configure
     #[inline(always)]
     #[must_use]
-    pub fn jtag_reset_flag_clr_procpu(&mut self) -> JTAG_RESET_FLAG_CLR_PROCPU_W<RESET_STATE_SPEC> {
+    pub fn jtag_reset_flag_clr_procpu(
+        &mut self,
+    ) -> JTAG_RESET_FLAG_CLR_PROCPU_W<RESET_STATE_SPEC> {
         JTAG_RESET_FLAG_CLR_PROCPU_W::new(self, 22)
     }
     ///Bit 23 - configure jtag reset configure
     #[inline(always)]
     #[must_use]
-    pub fn jtag_reset_flag_clr_appcpu(&mut self) -> JTAG_RESET_FLAG_CLR_APPCPU_W<RESET_STATE_SPEC> {
+    pub fn jtag_reset_flag_clr_appcpu(
+        &mut self,
+    ) -> JTAG_RESET_FLAG_CLR_APPCPU_W<RESET_STATE_SPEC> {
         JTAG_RESET_FLAG_CLR_APPCPU_W::new(self, 23)
     }
     ///Bit 24 - configure dreset configure

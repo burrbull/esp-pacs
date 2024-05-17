@@ -25,7 +25,9 @@ impl W {
     ///Bits 0:1 - This field to used to set world to enter, 2'b01 means WORLD0, 2'b10 means WORLD1
     #[inline(always)]
     #[must_use]
-    pub fn core_0_world_prepare(&mut self) -> CORE_0_WORLD_PREPARE_W<CORE_0_WORLD_PREPARE_SPEC> {
+    pub fn core_0_world_prepare(
+        &mut self,
+    ) -> CORE_0_WORLD_PREPARE_W<CORE_0_WORLD_PREPARE_SPEC> {
         CORE_0_WORLD_PREPARE_W::new(self, 0)
     }
 }

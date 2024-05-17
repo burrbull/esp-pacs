@@ -55,7 +55,9 @@ impl W {
     ///Bits 12:19 - Integral I2S clock divider value
     #[inline(always)]
     #[must_use]
-    pub fn i2s_rx_clkm_div_num(&mut self) -> I2S_RX_CLKM_DIV_NUM_W<I2S_RX_CLKM_CONF_SPEC> {
+    pub fn i2s_rx_clkm_div_num(
+        &mut self,
+    ) -> I2S_RX_CLKM_DIV_NUM_W<I2S_RX_CLKM_CONF_SPEC> {
         I2S_RX_CLKM_DIV_NUM_W::new(self, 12)
     }
     ///Bits 20:21 - Select I2S Rx module source clock. 0: no clock. 1: APLL. 2: CLK160. 3: I2S_MCLK_in.

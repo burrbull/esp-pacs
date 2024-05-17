@@ -9,7 +9,11 @@ pub type HP_MODEM_HP_REGULATOR_XPD_W<'a, REG> = crate::BitWriter<'a, REG>;
 ///Field `HP_MODEM_HP_REGULATOR_SLP_MEM_DBIAS` writer - need_des
 pub type HP_MODEM_HP_REGULATOR_SLP_MEM_DBIAS_W<'a, REG> = crate::FieldWriter<'a, REG, 4>;
 ///Field `HP_MODEM_HP_REGULATOR_SLP_LOGIC_DBIAS` writer - need_des
-pub type HP_MODEM_HP_REGULATOR_SLP_LOGIC_DBIAS_W<'a, REG> = crate::FieldWriter<'a, REG, 4>;
+pub type HP_MODEM_HP_REGULATOR_SLP_LOGIC_DBIAS_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    4,
+>;
 ///Field `HP_MODEM_HP_REGULATOR_DBIAS` writer - need_des
 pub type HP_MODEM_HP_REGULATOR_DBIAS_W<'a, REG> = crate::FieldWriter<'a, REG, 5>;
 #[cfg(feature = "impl-register-debug")]

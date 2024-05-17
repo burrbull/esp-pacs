@@ -20,10 +20,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PRO_CACHE_MMU_FAULT_CONTENT")
-            .field(
-                "pro_cache_mmu_fault_content",
-                &self.pro_cache_mmu_fault_content(),
-            )
+            .field("pro_cache_mmu_fault_content", &self.pro_cache_mmu_fault_content())
             .field("pro_cache_mmu_fault_code", &self.pro_cache_mmu_fault_code())
             .finish()
     }

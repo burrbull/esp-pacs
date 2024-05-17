@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("MODEM_PERI_TIMEOUT_INTR_MAP")
-            .field(
-                "modem_peri_timeout_intr_map",
-                &self.modem_peri_timeout_intr_map(),
-            )
+            .field("modem_peri_timeout_intr_map", &self.modem_peri_timeout_intr_map())
             .finish()
     }
 }

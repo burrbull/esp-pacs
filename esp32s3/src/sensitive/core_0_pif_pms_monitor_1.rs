@@ -13,12 +13,16 @@ pub type CORE_0_PIF_PMS_MONITOR_VIOLATE_EN_W<'a, REG> = crate::BitWriter<'a, REG
 impl R {
     ///Bit 0 - Set 1 to clear interrupt that core0 initiate illegal PIF bus access.
     #[inline(always)]
-    pub fn core_0_pif_pms_monitor_violate_clr(&self) -> CORE_0_PIF_PMS_MONITOR_VIOLATE_CLR_R {
+    pub fn core_0_pif_pms_monitor_violate_clr(
+        &self,
+    ) -> CORE_0_PIF_PMS_MONITOR_VIOLATE_CLR_R {
         CORE_0_PIF_PMS_MONITOR_VIOLATE_CLR_R::new((self.bits & 1) != 0)
     }
     ///Bit 1 - Set 1 to enable interrupt that core0 initiate illegal PIF bus access.
     #[inline(always)]
-    pub fn core_0_pif_pms_monitor_violate_en(&self) -> CORE_0_PIF_PMS_MONITOR_VIOLATE_EN_R {
+    pub fn core_0_pif_pms_monitor_violate_en(
+        &self,
+    ) -> CORE_0_PIF_PMS_MONITOR_VIOLATE_EN_R {
         CORE_0_PIF_PMS_MONITOR_VIOLATE_EN_R::new(((self.bits >> 1) & 1) != 0)
     }
 }

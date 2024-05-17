@@ -71,10 +71,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PRO_IRAM0_2")
-            .field(
-                "pro_iram0_sram_4_spltaddr",
-                &self.pro_iram0_sram_4_spltaddr(),
-            )
+            .field("pro_iram0_sram_4_spltaddr", &self.pro_iram0_sram_4_spltaddr())
             .field("pro_iram0_sram_4_l_f", &self.pro_iram0_sram_4_l_f())
             .field("pro_iram0_sram_4_l_r", &self.pro_iram0_sram_4_l_r())
             .field("pro_iram0_sram_4_l_w", &self.pro_iram0_sram_4_l_w())
@@ -88,7 +85,9 @@ impl W {
     ///Bits 0:16 - Configure the split address of SRAM Block 4-21 for IBUS access.
     #[inline(always)]
     #[must_use]
-    pub fn pro_iram0_sram_4_spltaddr(&mut self) -> PRO_IRAM0_SRAM_4_SPLTADDR_W<PRO_IRAM0_2_SPEC> {
+    pub fn pro_iram0_sram_4_spltaddr(
+        &mut self,
+    ) -> PRO_IRAM0_SRAM_4_SPLTADDR_W<PRO_IRAM0_2_SPEC> {
         PRO_IRAM0_SRAM_4_SPLTADDR_W::new(self, 0)
     }
     ///Bit 17 - Setting to 1 grants IBUS permission to fetch SRAM Block 4-21 low address region.

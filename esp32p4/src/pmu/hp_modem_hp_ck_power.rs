@@ -18,7 +18,9 @@ impl W {
     ///Bit 21 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn hp_modem_i2c_iso_en(&mut self) -> HP_MODEM_I2C_ISO_EN_W<HP_MODEM_HP_CK_POWER_SPEC> {
+    pub fn hp_modem_i2c_iso_en(
+        &mut self,
+    ) -> HP_MODEM_I2C_ISO_EN_W<HP_MODEM_HP_CK_POWER_SPEC> {
         HP_MODEM_I2C_ISO_EN_W::new(self, 21)
     }
     ///Bit 22 - need_des
@@ -32,7 +34,9 @@ impl W {
     ///Bits 23:26 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn hp_modem_xpd_pll_i2c(&mut self) -> HP_MODEM_XPD_PLL_I2C_W<HP_MODEM_HP_CK_POWER_SPEC> {
+    pub fn hp_modem_xpd_pll_i2c(
+        &mut self,
+    ) -> HP_MODEM_XPD_PLL_I2C_W<HP_MODEM_HP_CK_POWER_SPEC> {
         HP_MODEM_XPD_PLL_I2C_W::new(self, 23)
     }
     ///Bits 27:30 - need_des

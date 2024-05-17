@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("ANA_CONF1")
-            .field(
-                "lp_i2c_ana_mast_ana_conf1",
-                &self.lp_i2c_ana_mast_ana_conf1(),
-            )
+            .field("lp_i2c_ana_mast_ana_conf1", &self.lp_i2c_ana_mast_ana_conf1())
             .finish()
     }
 }
@@ -28,7 +25,9 @@ impl W {
     ///Bits 0:23 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn lp_i2c_ana_mast_ana_conf1(&mut self) -> LP_I2C_ANA_MAST_ANA_CONF1_W<ANA_CONF1_SPEC> {
+    pub fn lp_i2c_ana_mast_ana_conf1(
+        &mut self,
+    ) -> LP_I2C_ANA_MAST_ANA_CONF1_W<ANA_CONF1_SPEC> {
         LP_I2C_ANA_MAST_ANA_CONF1_W::new(self, 0)
     }
 }

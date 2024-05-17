@@ -28,31 +28,41 @@ impl W {
     ///Bit 0 - The bit is used to clear interrupt by sync configurations fault.
     #[inline(always)]
     #[must_use]
-    pub fn icache_sync_op_fault(&mut self) -> ICACHE_SYNC_OP_FAULT_W<CACHE_ILG_INT_CLR_SPEC> {
+    pub fn icache_sync_op_fault(
+        &mut self,
+    ) -> ICACHE_SYNC_OP_FAULT_W<CACHE_ILG_INT_CLR_SPEC> {
         ICACHE_SYNC_OP_FAULT_W::new(self, 0)
     }
     ///Bit 1 - The bit is used to clear interrupt by preload configurations fault.
     #[inline(always)]
     #[must_use]
-    pub fn icache_preload_op_fault(&mut self) -> ICACHE_PRELOAD_OP_FAULT_W<CACHE_ILG_INT_CLR_SPEC> {
+    pub fn icache_preload_op_fault(
+        &mut self,
+    ) -> ICACHE_PRELOAD_OP_FAULT_W<CACHE_ILG_INT_CLR_SPEC> {
         ICACHE_PRELOAD_OP_FAULT_W::new(self, 1)
     }
     ///Bit 2 - The bit is used to clear interrupt by sync configurations fault.
     #[inline(always)]
     #[must_use]
-    pub fn dcache_sync_op_fault(&mut self) -> DCACHE_SYNC_OP_FAULT_W<CACHE_ILG_INT_CLR_SPEC> {
+    pub fn dcache_sync_op_fault(
+        &mut self,
+    ) -> DCACHE_SYNC_OP_FAULT_W<CACHE_ILG_INT_CLR_SPEC> {
         DCACHE_SYNC_OP_FAULT_W::new(self, 2)
     }
     ///Bit 3 - The bit is used to clear interrupt by preload configurations fault.
     #[inline(always)]
     #[must_use]
-    pub fn dcache_preload_op_fault(&mut self) -> DCACHE_PRELOAD_OP_FAULT_W<CACHE_ILG_INT_CLR_SPEC> {
+    pub fn dcache_preload_op_fault(
+        &mut self,
+    ) -> DCACHE_PRELOAD_OP_FAULT_W<CACHE_ILG_INT_CLR_SPEC> {
         DCACHE_PRELOAD_OP_FAULT_W::new(self, 3)
     }
     ///Bit 4 - The bit is used to clear interrupt by dcache trying to write flash.
     #[inline(always)]
     #[must_use]
-    pub fn dcache_write_flash(&mut self) -> DCACHE_WRITE_FLASH_W<CACHE_ILG_INT_CLR_SPEC> {
+    pub fn dcache_write_flash(
+        &mut self,
+    ) -> DCACHE_WRITE_FLASH_W<CACHE_ILG_INT_CLR_SPEC> {
         DCACHE_WRITE_FLASH_W::new(self, 4)
     }
     ///Bit 5 - The bit is used to clear interrupt by mmu entry fault.

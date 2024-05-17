@@ -26,14 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("HPCORE_WDT_RESET_SOURCE0")
-            .field(
-                "hpcore0_wdt_reset_source_sel",
-                &self.hpcore0_wdt_reset_source_sel(),
-            )
-            .field(
-                "hpcore1_wdt_reset_source_sel",
-                &self.hpcore1_wdt_reset_source_sel(),
-            )
+            .field("hpcore0_wdt_reset_source_sel", &self.hpcore0_wdt_reset_source_sel())
+            .field("hpcore1_wdt_reset_source_sel", &self.hpcore1_wdt_reset_source_sel())
             .finish()
     }
 }

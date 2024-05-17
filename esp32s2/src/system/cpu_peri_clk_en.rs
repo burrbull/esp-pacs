@@ -25,7 +25,9 @@ impl W {
     ///Bit 7 - Set this bit to enable clock of DEDICATED GPIO module.
     #[inline(always)]
     #[must_use]
-    pub fn clk_en_dedicated_gpio(&mut self) -> CLK_EN_DEDICATED_GPIO_W<CPU_PERI_CLK_EN_SPEC> {
+    pub fn clk_en_dedicated_gpio(
+        &mut self,
+    ) -> CLK_EN_DEDICATED_GPIO_W<CPU_PERI_CLK_EN_SPEC> {
         CLK_EN_DEDICATED_GPIO_W::new(self, 7)
     }
 }

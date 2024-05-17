@@ -51,7 +51,9 @@ impl W {
     ///Bit 1 - The enable signal for CPU peripheral access interrupt.
     #[inline(always)]
     #[must_use]
-    pub fn cpu_peri_byte_error_en(&mut self) -> CPU_PERI_BYTE_ERROR_EN_W<CPU_PERIPHERAL_INTR_SPEC> {
+    pub fn cpu_peri_byte_error_en(
+        &mut self,
+    ) -> CPU_PERI_BYTE_ERROR_EN_W<CPU_PERIPHERAL_INTR_SPEC> {
         CPU_PERI_BYTE_ERROR_EN_W::new(self, 1)
     }
 }

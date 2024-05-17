@@ -89,7 +89,9 @@ impl W {
     ///Bit 15 - clear all touch active status
     #[inline(always)]
     #[must_use]
-    pub fn sar_touch_status_clr(&mut self) -> SAR_TOUCH_STATUS_CLR_W<SAR_TOUCH_CONF_SPEC> {
+    pub fn sar_touch_status_clr(
+        &mut self,
+    ) -> SAR_TOUCH_STATUS_CLR_W<SAR_TOUCH_CONF_SPEC> {
         SAR_TOUCH_STATUS_CLR_W::new(self, 15)
     }
     ///Bits 16:17 - 3: smooth data 2: baseline 1,0: raw_data
@@ -101,19 +103,25 @@ impl W {
     ///Bits 20:23 - indicate which pad is approach pad2
     #[inline(always)]
     #[must_use]
-    pub fn sar_touch_approach_pad2(&mut self) -> SAR_TOUCH_APPROACH_PAD2_W<SAR_TOUCH_CONF_SPEC> {
+    pub fn sar_touch_approach_pad2(
+        &mut self,
+    ) -> SAR_TOUCH_APPROACH_PAD2_W<SAR_TOUCH_CONF_SPEC> {
         SAR_TOUCH_APPROACH_PAD2_W::new(self, 20)
     }
     ///Bits 24:27 - indicate which pad is approach pad1
     #[inline(always)]
     #[must_use]
-    pub fn sar_touch_approach_pad1(&mut self) -> SAR_TOUCH_APPROACH_PAD1_W<SAR_TOUCH_CONF_SPEC> {
+    pub fn sar_touch_approach_pad1(
+        &mut self,
+    ) -> SAR_TOUCH_APPROACH_PAD1_W<SAR_TOUCH_CONF_SPEC> {
         SAR_TOUCH_APPROACH_PAD1_W::new(self, 24)
     }
     ///Bits 28:31 - indicate which pad is approach pad0
     #[inline(always)]
     #[must_use]
-    pub fn sar_touch_approach_pad0(&mut self) -> SAR_TOUCH_APPROACH_PAD0_W<SAR_TOUCH_CONF_SPEC> {
+    pub fn sar_touch_approach_pad0(
+        &mut self,
+    ) -> SAR_TOUCH_APPROACH_PAD0_W<SAR_TOUCH_CONF_SPEC> {
         SAR_TOUCH_APPROACH_PAD0_W::new(self, 28)
     }
 }

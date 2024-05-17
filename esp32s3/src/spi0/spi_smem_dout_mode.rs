@@ -105,55 +105,73 @@ impl W {
     ///Bit 0 - SPI_D output delay mode. 0: No delay. 1: Delay one cycle at MSPI_CORE_CLK negative edge.
     #[inline(always)]
     #[must_use]
-    pub fn spi_smem_dout0_mode(&mut self) -> SPI_SMEM_DOUT0_MODE_W<SPI_SMEM_DOUT_MODE_SPEC> {
+    pub fn spi_smem_dout0_mode(
+        &mut self,
+    ) -> SPI_SMEM_DOUT0_MODE_W<SPI_SMEM_DOUT_MODE_SPEC> {
         SPI_SMEM_DOUT0_MODE_W::new(self, 0)
     }
     ///Bit 1 - SPI_Q output delay mode. 0: No delay. 1: Delay one cycle at MSPI_CORE_CLK negative edge.
     #[inline(always)]
     #[must_use]
-    pub fn spi_smem_dout1_mode(&mut self) -> SPI_SMEM_DOUT1_MODE_W<SPI_SMEM_DOUT_MODE_SPEC> {
+    pub fn spi_smem_dout1_mode(
+        &mut self,
+    ) -> SPI_SMEM_DOUT1_MODE_W<SPI_SMEM_DOUT_MODE_SPEC> {
         SPI_SMEM_DOUT1_MODE_W::new(self, 1)
     }
     ///Bit 2 - SPI_WP output delay mode. 0: No delay. 1: Delay one cycle at MSPI_CORE_CLK negative edge.
     #[inline(always)]
     #[must_use]
-    pub fn spi_smem_dout2_mode(&mut self) -> SPI_SMEM_DOUT2_MODE_W<SPI_SMEM_DOUT_MODE_SPEC> {
+    pub fn spi_smem_dout2_mode(
+        &mut self,
+    ) -> SPI_SMEM_DOUT2_MODE_W<SPI_SMEM_DOUT_MODE_SPEC> {
         SPI_SMEM_DOUT2_MODE_W::new(self, 2)
     }
     ///Bit 3 - SPI_HD output delay mode. 0: No delay. 1: Delay one cycle at MSPI_CORE_CLK negative edge.
     #[inline(always)]
     #[must_use]
-    pub fn spi_smem_dout3_mode(&mut self) -> SPI_SMEM_DOUT3_MODE_W<SPI_SMEM_DOUT_MODE_SPEC> {
+    pub fn spi_smem_dout3_mode(
+        &mut self,
+    ) -> SPI_SMEM_DOUT3_MODE_W<SPI_SMEM_DOUT_MODE_SPEC> {
         SPI_SMEM_DOUT3_MODE_W::new(self, 3)
     }
     ///Bit 4 - SPI_IO4 output delay mode. 0: No delay. 1: Delay one cycle at MSPI_CORE_CLK negative edge.
     #[inline(always)]
     #[must_use]
-    pub fn spi_smem_dout4_mode(&mut self) -> SPI_SMEM_DOUT4_MODE_W<SPI_SMEM_DOUT_MODE_SPEC> {
+    pub fn spi_smem_dout4_mode(
+        &mut self,
+    ) -> SPI_SMEM_DOUT4_MODE_W<SPI_SMEM_DOUT_MODE_SPEC> {
         SPI_SMEM_DOUT4_MODE_W::new(self, 4)
     }
     ///Bit 5 - SPI_IO5 output delay mode. 0: No delay. 1: Delay one cycle at MSPI_CORE_CLK negative edge.
     #[inline(always)]
     #[must_use]
-    pub fn spi_smem_dout5_mode(&mut self) -> SPI_SMEM_DOUT5_MODE_W<SPI_SMEM_DOUT_MODE_SPEC> {
+    pub fn spi_smem_dout5_mode(
+        &mut self,
+    ) -> SPI_SMEM_DOUT5_MODE_W<SPI_SMEM_DOUT_MODE_SPEC> {
         SPI_SMEM_DOUT5_MODE_W::new(self, 5)
     }
     ///Bit 6 - SPI_IO6 output delay mode. 0: No delay. 1: Delay one cycle at MSPI_CORE_CLK negative edge.
     #[inline(always)]
     #[must_use]
-    pub fn spi_smem_dout6_mode(&mut self) -> SPI_SMEM_DOUT6_MODE_W<SPI_SMEM_DOUT_MODE_SPEC> {
+    pub fn spi_smem_dout6_mode(
+        &mut self,
+    ) -> SPI_SMEM_DOUT6_MODE_W<SPI_SMEM_DOUT_MODE_SPEC> {
         SPI_SMEM_DOUT6_MODE_W::new(self, 6)
     }
     ///Bit 7 - SPI_IO7 output delay mode. 0: No delay. 1: Delay one cycle at MSPI_CORE_CLK negative edge.
     #[inline(always)]
     #[must_use]
-    pub fn spi_smem_dout7_mode(&mut self) -> SPI_SMEM_DOUT7_MODE_W<SPI_SMEM_DOUT_MODE_SPEC> {
+    pub fn spi_smem_dout7_mode(
+        &mut self,
+    ) -> SPI_SMEM_DOUT7_MODE_W<SPI_SMEM_DOUT_MODE_SPEC> {
         SPI_SMEM_DOUT7_MODE_W::new(self, 7)
     }
     ///Bit 8 - SPI_DQS output delay mode. 0: No delay. 1: Delay one cycle at MSPI_CORE_CLK negative edge.
     #[inline(always)]
     #[must_use]
-    pub fn spi_smem_douts_mode(&mut self) -> SPI_SMEM_DOUTS_MODE_W<SPI_SMEM_DOUT_MODE_SPEC> {
+    pub fn spi_smem_douts_mode(
+        &mut self,
+    ) -> SPI_SMEM_DOUTS_MODE_W<SPI_SMEM_DOUT_MODE_SPEC> {
         SPI_SMEM_DOUTS_MODE_W::new(self, 8)
     }
 }

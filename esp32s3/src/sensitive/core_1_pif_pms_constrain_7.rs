@@ -5,51 +5,99 @@ pub type W = crate::W<CORE_1_PIF_PMS_CONSTRAIN_7_SPEC>;
 ///Field `CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_SPI_2` reader - Core1 access spi_2 permission in world1.
 pub type CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_SPI_2_R = crate::FieldReader;
 ///Field `CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_SPI_2` writer - Core1 access spi_2 permission in world1.
-pub type CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_SPI_2_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
+pub type CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_SPI_2_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 ///Field `CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_SPI_3` reader - Core1 access spi_3 permission in world1.
 pub type CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_SPI_3_R = crate::FieldReader;
 ///Field `CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_SPI_3` writer - Core1 access spi_3 permission in world1.
-pub type CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_SPI_3_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
+pub type CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_SPI_3_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 ///Field `CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_APB_CTRL` reader - Core1 access apb_ctrl permission in world1.
 pub type CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_APB_CTRL_R = crate::FieldReader;
 ///Field `CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_APB_CTRL` writer - Core1 access apb_ctrl permission in world1.
-pub type CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_APB_CTRL_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
+pub type CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_APB_CTRL_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 ///Field `CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_I2C_EXT1` reader - Core1 access i2c_ext1 permission in world1.
 pub type CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_I2C_EXT1_R = crate::FieldReader;
 ///Field `CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_I2C_EXT1` writer - Core1 access i2c_ext1 permission in world1.
-pub type CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_I2C_EXT1_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
+pub type CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_I2C_EXT1_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 ///Field `CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_SDIO_HOST` reader - Core1 access sdio_host permission in world1.
 pub type CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_SDIO_HOST_R = crate::FieldReader;
 ///Field `CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_SDIO_HOST` writer - Core1 access sdio_host permission in world1.
-pub type CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_SDIO_HOST_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
+pub type CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_SDIO_HOST_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 ///Field `CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_CAN` reader - Core1 access can permission in world1.
 pub type CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_CAN_R = crate::FieldReader;
 ///Field `CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_CAN` writer - Core1 access can permission in world1.
-pub type CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_CAN_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
+pub type CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_CAN_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 ///Field `CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_PWM1` reader - Core1 access pwm1 permission in world1.
 pub type CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_PWM1_R = crate::FieldReader;
 ///Field `CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_PWM1` writer - Core1 access pwm1 permission in world1.
-pub type CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_PWM1_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
+pub type CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_PWM1_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 ///Field `CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_I2S1` reader - Core1 access i2s1 permission in world1.
 pub type CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_I2S1_R = crate::FieldReader;
 ///Field `CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_I2S1` writer - Core1 access i2s1 permission in world1.
-pub type CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_I2S1_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
+pub type CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_I2S1_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 ///Field `CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_UART2` reader - Core1 access uart2 permission in world1.
 pub type CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_UART2_R = crate::FieldReader;
 ///Field `CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_UART2` writer - Core1 access uart2 permission in world1.
-pub type CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_UART2_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
+pub type CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_UART2_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 ///Field `CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_RWBT` reader - Core1 access rwbt permission in world1.
 pub type CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_RWBT_R = crate::FieldReader;
 ///Field `CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_RWBT` writer - Core1 access rwbt permission in world1.
-pub type CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_RWBT_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
+pub type CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_RWBT_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 ///Field `CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_WIFIMAC` reader - Core1 access wifimac permission in world1.
 pub type CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_WIFIMAC_R = crate::FieldReader;
 ///Field `CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_WIFIMAC` writer - Core1 access wifimac permission in world1.
-pub type CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_WIFIMAC_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
+pub type CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_WIFIMAC_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 ///Field `CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_PWR` reader - Core1 access pwr permission in world1.
 pub type CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_PWR_R = crate::FieldReader;
 ///Field `CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_PWR` writer - Core1 access pwr permission in world1.
-pub type CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_PWR_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
+pub type CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_PWR_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 impl R {
     ///Bits 0:1 - Core1 access spi_2 permission in world1.
     #[inline(always)]
@@ -88,17 +136,23 @@ impl R {
     }
     ///Bits 10:11 - Core1 access can permission in world1.
     #[inline(always)]
-    pub fn core_1_pif_pms_constrain_world_1_can(&self) -> CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_CAN_R {
+    pub fn core_1_pif_pms_constrain_world_1_can(
+        &self,
+    ) -> CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_CAN_R {
         CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_CAN_R::new(((self.bits >> 10) & 3) as u8)
     }
     ///Bits 12:13 - Core1 access pwm1 permission in world1.
     #[inline(always)]
-    pub fn core_1_pif_pms_constrain_world_1_pwm1(&self) -> CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_PWM1_R {
+    pub fn core_1_pif_pms_constrain_world_1_pwm1(
+        &self,
+    ) -> CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_PWM1_R {
         CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_PWM1_R::new(((self.bits >> 12) & 3) as u8)
     }
     ///Bits 14:15 - Core1 access i2s1 permission in world1.
     #[inline(always)]
-    pub fn core_1_pif_pms_constrain_world_1_i2s1(&self) -> CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_I2S1_R {
+    pub fn core_1_pif_pms_constrain_world_1_i2s1(
+        &self,
+    ) -> CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_I2S1_R {
         CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_I2S1_R::new(((self.bits >> 14) & 3) as u8)
     }
     ///Bits 16:17 - Core1 access uart2 permission in world1.
@@ -110,7 +164,9 @@ impl R {
     }
     ///Bits 22:23 - Core1 access rwbt permission in world1.
     #[inline(always)]
-    pub fn core_1_pif_pms_constrain_world_1_rwbt(&self) -> CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_RWBT_R {
+    pub fn core_1_pif_pms_constrain_world_1_rwbt(
+        &self,
+    ) -> CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_RWBT_R {
         CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_RWBT_R::new(((self.bits >> 22) & 3) as u8)
     }
     ///Bits 26:27 - Core1 access wifimac permission in world1.
@@ -122,7 +178,9 @@ impl R {
     }
     ///Bits 28:29 - Core1 access pwr permission in world1.
     #[inline(always)]
-    pub fn core_1_pif_pms_constrain_world_1_pwr(&self) -> CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_PWR_R {
+    pub fn core_1_pif_pms_constrain_world_1_pwr(
+        &self,
+    ) -> CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_PWR_R {
         CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_PWR_R::new(((self.bits >> 28) & 3) as u8)
     }
 }

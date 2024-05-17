@@ -128,30 +128,12 @@ impl core::fmt::Debug for R {
             .field("st_err_ecc_corrected_vc7", &self.st_err_ecc_corrected_vc7())
             .field("st_err_ecc_corrected_vc8", &self.st_err_ecc_corrected_vc8())
             .field("st_err_ecc_corrected_vc9", &self.st_err_ecc_corrected_vc9())
-            .field(
-                "st_err_ecc_corrected_vc10",
-                &self.st_err_ecc_corrected_vc10(),
-            )
-            .field(
-                "st_err_ecc_corrected_vc11",
-                &self.st_err_ecc_corrected_vc11(),
-            )
-            .field(
-                "st_err_ecc_corrected_vc12",
-                &self.st_err_ecc_corrected_vc12(),
-            )
-            .field(
-                "st_err_ecc_corrected_vc13",
-                &self.st_err_ecc_corrected_vc13(),
-            )
-            .field(
-                "st_err_ecc_corrected_vc14",
-                &self.st_err_ecc_corrected_vc14(),
-            )
-            .field(
-                "st_err_ecc_corrected_vc15",
-                &self.st_err_ecc_corrected_vc15(),
-            )
+            .field("st_err_ecc_corrected_vc10", &self.st_err_ecc_corrected_vc10())
+            .field("st_err_ecc_corrected_vc11", &self.st_err_ecc_corrected_vc11())
+            .field("st_err_ecc_corrected_vc12", &self.st_err_ecc_corrected_vc12())
+            .field("st_err_ecc_corrected_vc13", &self.st_err_ecc_corrected_vc13())
+            .field("st_err_ecc_corrected_vc14", &self.st_err_ecc_corrected_vc14())
+            .field("st_err_ecc_corrected_vc15", &self.st_err_ecc_corrected_vc15())
             .finish()
     }
 }

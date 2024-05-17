@@ -172,7 +172,9 @@ impl W {
     ///Bit 11 - Software should appropriately write to this bit after the power-on reset or any other reset to the CE-ATA device. After reset, the CE-ATA device's interrupt is usually disabled (nIEN = 1). If the host enables the CE-ATA device's interrupt, then software should set this bit.
     #[inline(always)]
     #[must_use]
-    pub fn ceata_device_interrupt_status(&mut self) -> CEATA_DEVICE_INTERRUPT_STATUS_W<CTRL_SPEC> {
+    pub fn ceata_device_interrupt_status(
+        &mut self,
+    ) -> CEATA_DEVICE_INTERRUPT_STATUS_W<CTRL_SPEC> {
         CEATA_DEVICE_INTERRUPT_STATUS_W::new(self, 11)
     }
 }

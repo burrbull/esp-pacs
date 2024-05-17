@@ -125,17 +125,23 @@ impl R {
     }
     ///Bit 12 - Represents DMA2D_task_out_dscr_ready_ch0 trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
-    pub fn dma2d_task_out_dscr_ready_ch0_st(&self) -> DMA2D_TASK_OUT_DSCR_READY_CH0_ST_R {
+    pub fn dma2d_task_out_dscr_ready_ch0_st(
+        &self,
+    ) -> DMA2D_TASK_OUT_DSCR_READY_CH0_ST_R {
         DMA2D_TASK_OUT_DSCR_READY_CH0_ST_R::new(((self.bits >> 12) & 1) != 0)
     }
     ///Bit 13 - Represents DMA2D_task_out_dscr_ready_ch1 trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
-    pub fn dma2d_task_out_dscr_ready_ch1_st(&self) -> DMA2D_TASK_OUT_DSCR_READY_CH1_ST_R {
+    pub fn dma2d_task_out_dscr_ready_ch1_st(
+        &self,
+    ) -> DMA2D_TASK_OUT_DSCR_READY_CH1_ST_R {
         DMA2D_TASK_OUT_DSCR_READY_CH1_ST_R::new(((self.bits >> 13) & 1) != 0)
     }
     ///Bit 14 - Represents DMA2D_task_out_dscr_ready_ch2 trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
-    pub fn dma2d_task_out_dscr_ready_ch2_st(&self) -> DMA2D_TASK_OUT_DSCR_READY_CH2_ST_R {
+    pub fn dma2d_task_out_dscr_ready_ch2_st(
+        &self,
+    ) -> DMA2D_TASK_OUT_DSCR_READY_CH2_ST_R {
         DMA2D_TASK_OUT_DSCR_READY_CH2_ST_R::new(((self.bits >> 14) & 1) != 0)
     }
 }
@@ -160,14 +166,8 @@ impl core::fmt::Debug for R {
                 &self.pdma_axi_task_out_start_ch2_st(),
             )
             .field("pmu_task_sleep_req_st", &self.pmu_task_sleep_req_st())
-            .field(
-                "dma2d_task_in_start_ch0_st",
-                &self.dma2d_task_in_start_ch0_st(),
-            )
-            .field(
-                "dma2d_task_in_start_ch1_st",
-                &self.dma2d_task_in_start_ch1_st(),
-            )
+            .field("dma2d_task_in_start_ch0_st", &self.dma2d_task_in_start_ch0_st())
+            .field("dma2d_task_in_start_ch1_st", &self.dma2d_task_in_start_ch1_st())
             .field(
                 "dma2d_task_in_dscr_ready_ch0_st",
                 &self.dma2d_task_in_dscr_ready_ch0_st(),
@@ -176,18 +176,9 @@ impl core::fmt::Debug for R {
                 "dma2d_task_in_dscr_ready_ch1_st",
                 &self.dma2d_task_in_dscr_ready_ch1_st(),
             )
-            .field(
-                "dma2d_task_out_start_ch0_st",
-                &self.dma2d_task_out_start_ch0_st(),
-            )
-            .field(
-                "dma2d_task_out_start_ch1_st",
-                &self.dma2d_task_out_start_ch1_st(),
-            )
-            .field(
-                "dma2d_task_out_start_ch2_st",
-                &self.dma2d_task_out_start_ch2_st(),
-            )
+            .field("dma2d_task_out_start_ch0_st", &self.dma2d_task_out_start_ch0_st())
+            .field("dma2d_task_out_start_ch1_st", &self.dma2d_task_out_start_ch1_st())
+            .field("dma2d_task_out_start_ch2_st", &self.dma2d_task_out_start_ch2_st())
             .field(
                 "dma2d_task_out_dscr_ready_ch0_st",
                 &self.dma2d_task_out_dscr_ready_ch0_st(),
@@ -245,13 +236,17 @@ impl W {
     ///Bit 5 - Represents DMA2D_task_in_start_ch0 trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn dma2d_task_in_start_ch0_st(&mut self) -> DMA2D_TASK_IN_START_CH0_ST_W<TASK_ST6_SPEC> {
+    pub fn dma2d_task_in_start_ch0_st(
+        &mut self,
+    ) -> DMA2D_TASK_IN_START_CH0_ST_W<TASK_ST6_SPEC> {
         DMA2D_TASK_IN_START_CH0_ST_W::new(self, 5)
     }
     ///Bit 6 - Represents DMA2D_task_in_start_ch1 trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn dma2d_task_in_start_ch1_st(&mut self) -> DMA2D_TASK_IN_START_CH1_ST_W<TASK_ST6_SPEC> {
+    pub fn dma2d_task_in_start_ch1_st(
+        &mut self,
+    ) -> DMA2D_TASK_IN_START_CH1_ST_W<TASK_ST6_SPEC> {
         DMA2D_TASK_IN_START_CH1_ST_W::new(self, 6)
     }
     ///Bit 7 - Represents DMA2D_task_in_dscr_ready_ch0 trigger status.\\0: Not triggered\\1: Triggered
@@ -273,19 +268,25 @@ impl W {
     ///Bit 9 - Represents DMA2D_task_out_start_ch0 trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn dma2d_task_out_start_ch0_st(&mut self) -> DMA2D_TASK_OUT_START_CH0_ST_W<TASK_ST6_SPEC> {
+    pub fn dma2d_task_out_start_ch0_st(
+        &mut self,
+    ) -> DMA2D_TASK_OUT_START_CH0_ST_W<TASK_ST6_SPEC> {
         DMA2D_TASK_OUT_START_CH0_ST_W::new(self, 9)
     }
     ///Bit 10 - Represents DMA2D_task_out_start_ch1 trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn dma2d_task_out_start_ch1_st(&mut self) -> DMA2D_TASK_OUT_START_CH1_ST_W<TASK_ST6_SPEC> {
+    pub fn dma2d_task_out_start_ch1_st(
+        &mut self,
+    ) -> DMA2D_TASK_OUT_START_CH1_ST_W<TASK_ST6_SPEC> {
         DMA2D_TASK_OUT_START_CH1_ST_W::new(self, 10)
     }
     ///Bit 11 - Represents DMA2D_task_out_start_ch2 trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn dma2d_task_out_start_ch2_st(&mut self) -> DMA2D_TASK_OUT_START_CH2_ST_W<TASK_ST6_SPEC> {
+    pub fn dma2d_task_out_start_ch2_st(
+        &mut self,
+    ) -> DMA2D_TASK_OUT_START_CH2_ST_W<TASK_ST6_SPEC> {
         DMA2D_TASK_OUT_START_CH2_ST_W::new(self, 11)
     }
     ///Bit 12 - Represents DMA2D_task_out_dscr_ready_ch0 trigger status.\\0: Not triggered\\1: Triggered

@@ -88,10 +88,7 @@ impl core::fmt::Debug for R {
             .field("key_purpose_4", &self.key_purpose_4())
             .field("key_purpose_5", &self.key_purpose_5())
             .field("sec_dpa_level", &self.sec_dpa_level())
-            .field(
-                "ecdsa_force_use_hardware_k",
-                &self.ecdsa_force_use_hardware_k(),
-            )
+            .field("ecdsa_force_use_hardware_k", &self.ecdsa_force_use_hardware_k())
             .field("crypt_dpa_enable", &self.crypt_dpa_enable())
             .field("secure_boot_en", &self.secure_boot_en())
             .field(

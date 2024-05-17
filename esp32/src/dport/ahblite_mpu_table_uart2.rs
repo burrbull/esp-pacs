@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("AHBLITE_MPU_TABLE_UART2")
-            .field(
-                "uart2_access_grant_config",
-                &self.uart2_access_grant_config(),
-            )
+            .field("uart2_access_grant_config", &self.uart2_access_grant_config())
             .finish()
     }
 }

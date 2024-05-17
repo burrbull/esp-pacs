@@ -109,7 +109,9 @@ impl W {
     ///Bits 27:28 - Force enable adc en_pad to analog circuit 2'b11: force enable .
     #[inline(always)]
     #[must_use]
-    pub fn sar2_en_pad_force_enable(&mut self) -> SAR2_EN_PAD_FORCE_ENABLE_W<READER2_CTRL_SPEC> {
+    pub fn sar2_en_pad_force_enable(
+        &mut self,
+    ) -> SAR2_EN_PAD_FORCE_ENABLE_W<READER2_CTRL_SPEC> {
         SAR2_EN_PAD_FORCE_ENABLE_W::new(self, 27)
     }
     ///Bit 29 - Invert SAR ADC2 data.

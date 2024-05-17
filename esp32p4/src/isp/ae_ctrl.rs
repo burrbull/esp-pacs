@@ -18,9 +18,7 @@ impl R {
 #[cfg(feature = "impl-register-debug")]
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("AE_CTRL")
-            .field("ae_select", &self.ae_select())
-            .finish()
+        f.debug_struct("AE_CTRL").field("ae_select", &self.ae_select()).finish()
     }
 }
 impl W {

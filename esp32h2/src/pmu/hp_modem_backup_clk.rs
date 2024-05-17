@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("HP_MODEM_BACKUP_CLK")
-            .field(
-                "hp_modem_backup_icg_func_en",
-                &self.hp_modem_backup_icg_func_en(),
-            )
+            .field("hp_modem_backup_icg_func_en", &self.hp_modem_backup_icg_func_en())
             .finish()
     }
 }

@@ -25,7 +25,9 @@ impl W {
     ///Bit 0 - The interrupt enable bit for the EXTMEM_REJECT_INT interrupt.
     #[inline(always)]
     #[must_use]
-    pub fn extmem_reject_int_ena(&mut self) -> EXTMEM_REJECT_INT_ENA_W<EXTMEM_REJECT_INT_ENA_SPEC> {
+    pub fn extmem_reject_int_ena(
+        &mut self,
+    ) -> EXTMEM_REJECT_INT_ENA_W<EXTMEM_REJECT_INT_ENA_SPEC> {
         EXTMEM_REJECT_INT_ENA_W::new(self, 0)
     }
 }

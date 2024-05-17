@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CORE_1_VECBASE_OVERRIDE_0")
-            .field(
-                "core_1_vecbase_world_mask",
-                &self.core_1_vecbase_world_mask(),
-            )
+            .field("core_1_vecbase_world_mask", &self.core_1_vecbase_world_mask())
             .finish()
     }
 }

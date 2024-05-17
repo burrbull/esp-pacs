@@ -21,7 +21,10 @@ pub type SAR_COCPU_SWD_INT_CLR_W<'a, REG> = crate::BitWriter<'a, REG>;
 ///Field `SAR_COCPU_TOUCH_TIMEOUT_INT_CLR` writer - int clear of timeout done
 pub type SAR_COCPU_TOUCH_TIMEOUT_INT_CLR_W<'a, REG> = crate::BitWriter<'a, REG>;
 ///Field `SAR_COCPU_TOUCH_APPROACH_LOOP_DONE_INT_CLR` writer - int clear of approach loop done
-pub type SAR_COCPU_TOUCH_APPROACH_LOOP_DONE_INT_CLR_W<'a, REG> = crate::BitWriter<'a, REG>;
+pub type SAR_COCPU_TOUCH_APPROACH_LOOP_DONE_INT_CLR_W<'a, REG> = crate::BitWriter<
+    'a,
+    REG,
+>;
 ///Field `SAR_COCPU_TOUCH_SCAN_DONE_INT_CLR` writer - int clear of touch scan done
 pub type SAR_COCPU_TOUCH_SCAN_DONE_INT_CLR_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[cfg(feature = "impl-register-debug")]
@@ -74,25 +77,33 @@ impl W {
     ///Bit 5 - int clear of tsens
     #[inline(always)]
     #[must_use]
-    pub fn sar_cocpu_tsens_int_clr(&mut self) -> SAR_COCPU_TSENS_INT_CLR_W<SAR_COCPU_INT_CLR_SPEC> {
+    pub fn sar_cocpu_tsens_int_clr(
+        &mut self,
+    ) -> SAR_COCPU_TSENS_INT_CLR_W<SAR_COCPU_INT_CLR_SPEC> {
         SAR_COCPU_TSENS_INT_CLR_W::new(self, 5)
     }
     ///Bit 6 - int clear of start
     #[inline(always)]
     #[must_use]
-    pub fn sar_cocpu_start_int_clr(&mut self) -> SAR_COCPU_START_INT_CLR_W<SAR_COCPU_INT_CLR_SPEC> {
+    pub fn sar_cocpu_start_int_clr(
+        &mut self,
+    ) -> SAR_COCPU_START_INT_CLR_W<SAR_COCPU_INT_CLR_SPEC> {
         SAR_COCPU_START_INT_CLR_W::new(self, 6)
     }
     ///Bit 7 - int clear of software
     #[inline(always)]
     #[must_use]
-    pub fn sar_cocpu_sw_int_clr(&mut self) -> SAR_COCPU_SW_INT_CLR_W<SAR_COCPU_INT_CLR_SPEC> {
+    pub fn sar_cocpu_sw_int_clr(
+        &mut self,
+    ) -> SAR_COCPU_SW_INT_CLR_W<SAR_COCPU_INT_CLR_SPEC> {
         SAR_COCPU_SW_INT_CLR_W::new(self, 7)
     }
     ///Bit 8 - int clear of super watch dog
     #[inline(always)]
     #[must_use]
-    pub fn sar_cocpu_swd_int_clr(&mut self) -> SAR_COCPU_SWD_INT_CLR_W<SAR_COCPU_INT_CLR_SPEC> {
+    pub fn sar_cocpu_swd_int_clr(
+        &mut self,
+    ) -> SAR_COCPU_SWD_INT_CLR_W<SAR_COCPU_INT_CLR_SPEC> {
         SAR_COCPU_SWD_INT_CLR_W::new(self, 8)
     }
     ///Bit 9 - int clear of timeout done

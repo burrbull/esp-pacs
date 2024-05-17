@@ -117,7 +117,9 @@ impl W {
     ///Bit 2
     #[inline(always)]
     #[must_use]
-    pub fn esco_cvsd_dec_pack_err(&mut self) -> ESCO_CVSD_DEC_PACK_ERR_W<ESCO_CONF0_SPEC> {
+    pub fn esco_cvsd_dec_pack_err(
+        &mut self,
+    ) -> ESCO_CVSD_DEC_PACK_ERR_W<ESCO_CONF0_SPEC> {
         ESCO_CVSD_DEC_PACK_ERR_W::new(self, 2)
     }
     ///Bits 3:7

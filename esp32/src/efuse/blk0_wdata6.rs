@@ -121,7 +121,9 @@ impl W {
     ///Bit 2
     #[inline(always)]
     #[must_use]
-    pub fn console_debug_disable(&mut self) -> CONSOLE_DEBUG_DISABLE_W<BLK0_WDATA6_SPEC> {
+    pub fn console_debug_disable(
+        &mut self,
+    ) -> CONSOLE_DEBUG_DISABLE_W<BLK0_WDATA6_SPEC> {
         CONSOLE_DEBUG_DISABLE_W::new(self, 2)
     }
     ///Bit 3

@@ -25,7 +25,9 @@ impl W {
     ///Bit 31 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn tcm_parity_err_int_raw(&mut self) -> TCM_PARITY_ERR_INT_RAW_W<TCM_INT_RAW_SPEC> {
+    pub fn tcm_parity_err_int_raw(
+        &mut self,
+    ) -> TCM_PARITY_ERR_INT_RAW_W<TCM_INT_RAW_SPEC> {
         TCM_PARITY_ERR_INT_RAW_W::new(self, 31)
     }
 }

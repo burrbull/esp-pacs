@@ -152,70 +152,22 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("INT_FORCE_ECC_CORRECTED")
-            .field(
-                "force_err_ecc_corrected_vc0",
-                &self.force_err_ecc_corrected_vc0(),
-            )
-            .field(
-                "force_err_ecc_corrected_vc1",
-                &self.force_err_ecc_corrected_vc1(),
-            )
-            .field(
-                "force_err_ecc_corrected_vc2",
-                &self.force_err_ecc_corrected_vc2(),
-            )
-            .field(
-                "force_err_ecc_corrected_vc3",
-                &self.force_err_ecc_corrected_vc3(),
-            )
-            .field(
-                "force_err_ecc_corrected_vc4",
-                &self.force_err_ecc_corrected_vc4(),
-            )
-            .field(
-                "force_err_ecc_corrected_vc5",
-                &self.force_err_ecc_corrected_vc5(),
-            )
-            .field(
-                "force_err_ecc_corrected_vc6",
-                &self.force_err_ecc_corrected_vc6(),
-            )
-            .field(
-                "force_err_ecc_corrected_vc7",
-                &self.force_err_ecc_corrected_vc7(),
-            )
-            .field(
-                "force_err_ecc_corrected_vc8",
-                &self.force_err_ecc_corrected_vc8(),
-            )
-            .field(
-                "force_err_ecc_corrected_vc9",
-                &self.force_err_ecc_corrected_vc9(),
-            )
-            .field(
-                "force_err_ecc_corrected_vc10",
-                &self.force_err_ecc_corrected_vc10(),
-            )
-            .field(
-                "force_err_ecc_corrected_vc11",
-                &self.force_err_ecc_corrected_vc11(),
-            )
-            .field(
-                "force_err_ecc_corrected_vc12",
-                &self.force_err_ecc_corrected_vc12(),
-            )
-            .field(
-                "force_err_ecc_corrected_vc13",
-                &self.force_err_ecc_corrected_vc13(),
-            )
-            .field(
-                "force_err_ecc_corrected_vc14",
-                &self.force_err_ecc_corrected_vc14(),
-            )
-            .field(
-                "force_err_ecc_corrected_vc15",
-                &self.force_err_ecc_corrected_vc15(),
-            )
+            .field("force_err_ecc_corrected_vc0", &self.force_err_ecc_corrected_vc0())
+            .field("force_err_ecc_corrected_vc1", &self.force_err_ecc_corrected_vc1())
+            .field("force_err_ecc_corrected_vc2", &self.force_err_ecc_corrected_vc2())
+            .field("force_err_ecc_corrected_vc3", &self.force_err_ecc_corrected_vc3())
+            .field("force_err_ecc_corrected_vc4", &self.force_err_ecc_corrected_vc4())
+            .field("force_err_ecc_corrected_vc5", &self.force_err_ecc_corrected_vc5())
+            .field("force_err_ecc_corrected_vc6", &self.force_err_ecc_corrected_vc6())
+            .field("force_err_ecc_corrected_vc7", &self.force_err_ecc_corrected_vc7())
+            .field("force_err_ecc_corrected_vc8", &self.force_err_ecc_corrected_vc8())
+            .field("force_err_ecc_corrected_vc9", &self.force_err_ecc_corrected_vc9())
+            .field("force_err_ecc_corrected_vc10", &self.force_err_ecc_corrected_vc10())
+            .field("force_err_ecc_corrected_vc11", &self.force_err_ecc_corrected_vc11())
+            .field("force_err_ecc_corrected_vc12", &self.force_err_ecc_corrected_vc12())
+            .field("force_err_ecc_corrected_vc13", &self.force_err_ecc_corrected_vc13())
+            .field("force_err_ecc_corrected_vc14", &self.force_err_ecc_corrected_vc14())
+            .field("force_err_ecc_corrected_vc15", &self.force_err_ecc_corrected_vc15())
             .finish()
     }
 }

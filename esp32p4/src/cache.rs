@@ -989,7 +989,9 @@ impl RegisterBlock {
     }
     ///0x248 - Cache Sync/Preload Operation exception register
     #[inline(always)]
-    pub const fn sync_l1_cache_preload_exception(&self) -> &SYNC_L1_CACHE_PRELOAD_EXCEPTION {
+    pub const fn sync_l1_cache_preload_exception(
+        &self,
+    ) -> &SYNC_L1_CACHE_PRELOAD_EXCEPTION {
         &self.sync_l1_cache_preload_exception
     }
     ///0x24c - Cache Sync Reset control register
@@ -1004,7 +1006,9 @@ impl RegisterBlock {
     }
     ///0x254 - Cache Autoload buffer clear control register
     #[inline(always)]
-    pub const fn l1_cache_autoload_buf_clr_ctrl(&self) -> &L1_CACHE_AUTOLOAD_BUF_CLR_CTRL {
+    pub const fn l1_cache_autoload_buf_clr_ctrl(
+        &self,
+    ) -> &L1_CACHE_AUTOLOAD_BUF_CLR_CTRL {
         &self.l1_cache_autoload_buf_clr_ctrl
     }
     ///0x258 - Unallocate request buffer clear registers
@@ -1429,7 +1433,9 @@ impl RegisterBlock {
     }
     ///0x3a8 - Cache Sync/Preload Operation exception register
     #[inline(always)]
-    pub const fn l2_cache_sync_preload_exception(&self) -> &L2_CACHE_SYNC_PRELOAD_EXCEPTION {
+    pub const fn l2_cache_sync_preload_exception(
+        &self,
+    ) -> &L2_CACHE_SYNC_PRELOAD_EXCEPTION {
         &self.l2_cache_sync_preload_exception
     }
     ///0x3ac - Cache Sync Reset control register
@@ -1444,7 +1450,9 @@ impl RegisterBlock {
     }
     ///0x3b4 - Cache Autoload buffer clear control register
     #[inline(always)]
-    pub const fn l2_cache_autoload_buf_clr_ctrl(&self) -> &L2_CACHE_AUTOLOAD_BUF_CLR_CTRL {
+    pub const fn l2_cache_autoload_buf_clr_ctrl(
+        &self,
+    ) -> &L2_CACHE_AUTOLOAD_BUF_CLR_CTRL {
         &self.l2_cache_autoload_buf_clr_ctrl
     }
     ///0x3b8 - Unallocate request buffer clear registers
@@ -1539,7 +1547,9 @@ pub mod l1_dcache_ctrl;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_bypass_cache_conf::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l1_bypass_cache_conf::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_bypass_cache_conf`] module*/
-pub type L1_BYPASS_CACHE_CONF = crate::Reg<l1_bypass_cache_conf::L1_BYPASS_CACHE_CONF_SPEC>;
+pub type L1_BYPASS_CACHE_CONF = crate::Reg<
+    l1_bypass_cache_conf::L1_BYPASS_CACHE_CONF_SPEC,
+>;
 ///Bypass Cache configure register
 pub mod l1_bypass_cache_conf;
 /**L1_CACHE_ATOMIC_CONF (rw) register accessor: L1 Cache atomic feature configure register
@@ -1547,7 +1557,9 @@ pub mod l1_bypass_cache_conf;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_cache_atomic_conf::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l1_cache_atomic_conf::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_cache_atomic_conf`] module*/
-pub type L1_CACHE_ATOMIC_CONF = crate::Reg<l1_cache_atomic_conf::L1_CACHE_ATOMIC_CONF_SPEC>;
+pub type L1_CACHE_ATOMIC_CONF = crate::Reg<
+    l1_cache_atomic_conf::L1_CACHE_ATOMIC_CONF_SPEC,
+>;
 ///L1 Cache atomic feature configure register
 pub mod l1_cache_atomic_conf;
 /**L1_ICACHE_CACHESIZE_CONF (r) register accessor: L1 instruction Cache CacheSize mode configure register
@@ -1555,8 +1567,9 @@ pub mod l1_cache_atomic_conf;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_icache_cachesize_conf::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_icache_cachesize_conf`] module*/
-pub type L1_ICACHE_CACHESIZE_CONF =
-    crate::Reg<l1_icache_cachesize_conf::L1_ICACHE_CACHESIZE_CONF_SPEC>;
+pub type L1_ICACHE_CACHESIZE_CONF = crate::Reg<
+    l1_icache_cachesize_conf::L1_ICACHE_CACHESIZE_CONF_SPEC,
+>;
 ///L1 instruction Cache CacheSize mode configure register
 pub mod l1_icache_cachesize_conf;
 /**L1_ICACHE_BLOCKSIZE_CONF (r) register accessor: L1 instruction Cache BlockSize mode configure register
@@ -1564,8 +1577,9 @@ pub mod l1_icache_cachesize_conf;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_icache_blocksize_conf::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_icache_blocksize_conf`] module*/
-pub type L1_ICACHE_BLOCKSIZE_CONF =
-    crate::Reg<l1_icache_blocksize_conf::L1_ICACHE_BLOCKSIZE_CONF_SPEC>;
+pub type L1_ICACHE_BLOCKSIZE_CONF = crate::Reg<
+    l1_icache_blocksize_conf::L1_ICACHE_BLOCKSIZE_CONF_SPEC,
+>;
 ///L1 instruction Cache BlockSize mode configure register
 pub mod l1_icache_blocksize_conf;
 /**L1_DCACHE_CACHESIZE_CONF (r) register accessor: L1 data Cache CacheSize mode configure register
@@ -1573,8 +1587,9 @@ pub mod l1_icache_blocksize_conf;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_dcache_cachesize_conf::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_dcache_cachesize_conf`] module*/
-pub type L1_DCACHE_CACHESIZE_CONF =
-    crate::Reg<l1_dcache_cachesize_conf::L1_DCACHE_CACHESIZE_CONF_SPEC>;
+pub type L1_DCACHE_CACHESIZE_CONF = crate::Reg<
+    l1_dcache_cachesize_conf::L1_DCACHE_CACHESIZE_CONF_SPEC,
+>;
 ///L1 data Cache CacheSize mode configure register
 pub mod l1_dcache_cachesize_conf;
 /**L1_DCACHE_BLOCKSIZE_CONF (r) register accessor: L1 data Cache BlockSize mode configure register
@@ -1582,8 +1597,9 @@ pub mod l1_dcache_cachesize_conf;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_dcache_blocksize_conf::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_dcache_blocksize_conf`] module*/
-pub type L1_DCACHE_BLOCKSIZE_CONF =
-    crate::Reg<l1_dcache_blocksize_conf::L1_DCACHE_BLOCKSIZE_CONF_SPEC>;
+pub type L1_DCACHE_BLOCKSIZE_CONF = crate::Reg<
+    l1_dcache_blocksize_conf::L1_DCACHE_BLOCKSIZE_CONF_SPEC,
+>;
 ///L1 data Cache BlockSize mode configure register
 pub mod l1_dcache_blocksize_conf;
 /**L1_CACHE_WRAP_AROUND_CTRL (rw) register accessor: Cache wrap around control register
@@ -1591,8 +1607,9 @@ pub mod l1_dcache_blocksize_conf;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_cache_wrap_around_ctrl::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l1_cache_wrap_around_ctrl::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_cache_wrap_around_ctrl`] module*/
-pub type L1_CACHE_WRAP_AROUND_CTRL =
-    crate::Reg<l1_cache_wrap_around_ctrl::L1_CACHE_WRAP_AROUND_CTRL_SPEC>;
+pub type L1_CACHE_WRAP_AROUND_CTRL = crate::Reg<
+    l1_cache_wrap_around_ctrl::L1_CACHE_WRAP_AROUND_CTRL_SPEC,
+>;
 ///Cache wrap around control register
 pub mod l1_cache_wrap_around_ctrl;
 /**L1_CACHE_TAG_MEM_POWER_CTRL (rw) register accessor: Cache tag memory power control register
@@ -1600,8 +1617,9 @@ pub mod l1_cache_wrap_around_ctrl;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_cache_tag_mem_power_ctrl::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l1_cache_tag_mem_power_ctrl::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_cache_tag_mem_power_ctrl`] module*/
-pub type L1_CACHE_TAG_MEM_POWER_CTRL =
-    crate::Reg<l1_cache_tag_mem_power_ctrl::L1_CACHE_TAG_MEM_POWER_CTRL_SPEC>;
+pub type L1_CACHE_TAG_MEM_POWER_CTRL = crate::Reg<
+    l1_cache_tag_mem_power_ctrl::L1_CACHE_TAG_MEM_POWER_CTRL_SPEC,
+>;
 ///Cache tag memory power control register
 pub mod l1_cache_tag_mem_power_ctrl;
 /**L1_CACHE_DATA_MEM_POWER_CTRL (rw) register accessor: Cache data memory power control register
@@ -1609,8 +1627,9 @@ pub mod l1_cache_tag_mem_power_ctrl;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_cache_data_mem_power_ctrl::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l1_cache_data_mem_power_ctrl::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_cache_data_mem_power_ctrl`] module*/
-pub type L1_CACHE_DATA_MEM_POWER_CTRL =
-    crate::Reg<l1_cache_data_mem_power_ctrl::L1_CACHE_DATA_MEM_POWER_CTRL_SPEC>;
+pub type L1_CACHE_DATA_MEM_POWER_CTRL = crate::Reg<
+    l1_cache_data_mem_power_ctrl::L1_CACHE_DATA_MEM_POWER_CTRL_SPEC,
+>;
 ///Cache data memory power control register
 pub mod l1_cache_data_mem_power_ctrl;
 /**L1_CACHE_FREEZE_CTRL (rw) register accessor: Cache Freeze control register
@@ -1618,7 +1637,9 @@ pub mod l1_cache_data_mem_power_ctrl;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_cache_freeze_ctrl::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l1_cache_freeze_ctrl::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_cache_freeze_ctrl`] module*/
-pub type L1_CACHE_FREEZE_CTRL = crate::Reg<l1_cache_freeze_ctrl::L1_CACHE_FREEZE_CTRL_SPEC>;
+pub type L1_CACHE_FREEZE_CTRL = crate::Reg<
+    l1_cache_freeze_ctrl::L1_CACHE_FREEZE_CTRL_SPEC,
+>;
 ///Cache Freeze control register
 pub mod l1_cache_freeze_ctrl;
 /**L1_CACHE_DATA_MEM_ACS_CONF (rw) register accessor: Cache data memory access configure register
@@ -1626,8 +1647,9 @@ pub mod l1_cache_freeze_ctrl;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_cache_data_mem_acs_conf::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l1_cache_data_mem_acs_conf::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_cache_data_mem_acs_conf`] module*/
-pub type L1_CACHE_DATA_MEM_ACS_CONF =
-    crate::Reg<l1_cache_data_mem_acs_conf::L1_CACHE_DATA_MEM_ACS_CONF_SPEC>;
+pub type L1_CACHE_DATA_MEM_ACS_CONF = crate::Reg<
+    l1_cache_data_mem_acs_conf::L1_CACHE_DATA_MEM_ACS_CONF_SPEC,
+>;
 ///Cache data memory access configure register
 pub mod l1_cache_data_mem_acs_conf;
 /**L1_CACHE_TAG_MEM_ACS_CONF (rw) register accessor: Cache tag memory access configure register
@@ -1635,8 +1657,9 @@ pub mod l1_cache_data_mem_acs_conf;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_cache_tag_mem_acs_conf::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l1_cache_tag_mem_acs_conf::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_cache_tag_mem_acs_conf`] module*/
-pub type L1_CACHE_TAG_MEM_ACS_CONF =
-    crate::Reg<l1_cache_tag_mem_acs_conf::L1_CACHE_TAG_MEM_ACS_CONF_SPEC>;
+pub type L1_CACHE_TAG_MEM_ACS_CONF = crate::Reg<
+    l1_cache_tag_mem_acs_conf::L1_CACHE_TAG_MEM_ACS_CONF_SPEC,
+>;
 ///Cache tag memory access configure register
 pub mod l1_cache_tag_mem_acs_conf;
 /**L1_ICACHE0_PRELOCK_CONF (rw) register accessor: L1 instruction Cache 0 prelock configure register
@@ -1644,8 +1667,9 @@ pub mod l1_cache_tag_mem_acs_conf;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_icache0_prelock_conf::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l1_icache0_prelock_conf::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_icache0_prelock_conf`] module*/
-pub type L1_ICACHE0_PRELOCK_CONF =
-    crate::Reg<l1_icache0_prelock_conf::L1_ICACHE0_PRELOCK_CONF_SPEC>;
+pub type L1_ICACHE0_PRELOCK_CONF = crate::Reg<
+    l1_icache0_prelock_conf::L1_ICACHE0_PRELOCK_CONF_SPEC,
+>;
 ///L1 instruction Cache 0 prelock configure register
 pub mod l1_icache0_prelock_conf;
 /**L1_ICACHE0_PRELOCK_SCT0_ADDR (rw) register accessor: L1 instruction Cache 0 prelock section0 address configure register
@@ -1653,8 +1677,9 @@ pub mod l1_icache0_prelock_conf;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_icache0_prelock_sct0_addr::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l1_icache0_prelock_sct0_addr::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_icache0_prelock_sct0_addr`] module*/
-pub type L1_ICACHE0_PRELOCK_SCT0_ADDR =
-    crate::Reg<l1_icache0_prelock_sct0_addr::L1_ICACHE0_PRELOCK_SCT0_ADDR_SPEC>;
+pub type L1_ICACHE0_PRELOCK_SCT0_ADDR = crate::Reg<
+    l1_icache0_prelock_sct0_addr::L1_ICACHE0_PRELOCK_SCT0_ADDR_SPEC,
+>;
 ///L1 instruction Cache 0 prelock section0 address configure register
 pub mod l1_icache0_prelock_sct0_addr;
 /**L1_ICACHE0_PRELOCK_SCT1_ADDR (rw) register accessor: L1 instruction Cache 0 prelock section1 address configure register
@@ -1662,8 +1687,9 @@ pub mod l1_icache0_prelock_sct0_addr;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_icache0_prelock_sct1_addr::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l1_icache0_prelock_sct1_addr::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_icache0_prelock_sct1_addr`] module*/
-pub type L1_ICACHE0_PRELOCK_SCT1_ADDR =
-    crate::Reg<l1_icache0_prelock_sct1_addr::L1_ICACHE0_PRELOCK_SCT1_ADDR_SPEC>;
+pub type L1_ICACHE0_PRELOCK_SCT1_ADDR = crate::Reg<
+    l1_icache0_prelock_sct1_addr::L1_ICACHE0_PRELOCK_SCT1_ADDR_SPEC,
+>;
 ///L1 instruction Cache 0 prelock section1 address configure register
 pub mod l1_icache0_prelock_sct1_addr;
 /**L1_ICACHE0_PRELOCK_SCT_SIZE (rw) register accessor: L1 instruction Cache 0 prelock section size configure register
@@ -1671,8 +1697,9 @@ pub mod l1_icache0_prelock_sct1_addr;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_icache0_prelock_sct_size::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l1_icache0_prelock_sct_size::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_icache0_prelock_sct_size`] module*/
-pub type L1_ICACHE0_PRELOCK_SCT_SIZE =
-    crate::Reg<l1_icache0_prelock_sct_size::L1_ICACHE0_PRELOCK_SCT_SIZE_SPEC>;
+pub type L1_ICACHE0_PRELOCK_SCT_SIZE = crate::Reg<
+    l1_icache0_prelock_sct_size::L1_ICACHE0_PRELOCK_SCT_SIZE_SPEC,
+>;
 ///L1 instruction Cache 0 prelock section size configure register
 pub mod l1_icache0_prelock_sct_size;
 /**L1_ICACHE1_PRELOCK_CONF (rw) register accessor: L1 instruction Cache 1 prelock configure register
@@ -1680,8 +1707,9 @@ pub mod l1_icache0_prelock_sct_size;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_icache1_prelock_conf::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l1_icache1_prelock_conf::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_icache1_prelock_conf`] module*/
-pub type L1_ICACHE1_PRELOCK_CONF =
-    crate::Reg<l1_icache1_prelock_conf::L1_ICACHE1_PRELOCK_CONF_SPEC>;
+pub type L1_ICACHE1_PRELOCK_CONF = crate::Reg<
+    l1_icache1_prelock_conf::L1_ICACHE1_PRELOCK_CONF_SPEC,
+>;
 ///L1 instruction Cache 1 prelock configure register
 pub mod l1_icache1_prelock_conf;
 /**L1_ICACHE1_PRELOCK_SCT0_ADDR (rw) register accessor: L1 instruction Cache 1 prelock section0 address configure register
@@ -1689,8 +1717,9 @@ pub mod l1_icache1_prelock_conf;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_icache1_prelock_sct0_addr::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l1_icache1_prelock_sct0_addr::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_icache1_prelock_sct0_addr`] module*/
-pub type L1_ICACHE1_PRELOCK_SCT0_ADDR =
-    crate::Reg<l1_icache1_prelock_sct0_addr::L1_ICACHE1_PRELOCK_SCT0_ADDR_SPEC>;
+pub type L1_ICACHE1_PRELOCK_SCT0_ADDR = crate::Reg<
+    l1_icache1_prelock_sct0_addr::L1_ICACHE1_PRELOCK_SCT0_ADDR_SPEC,
+>;
 ///L1 instruction Cache 1 prelock section0 address configure register
 pub mod l1_icache1_prelock_sct0_addr;
 /**L1_ICACHE1_PRELOCK_SCT1_ADDR (rw) register accessor: L1 instruction Cache 1 prelock section1 address configure register
@@ -1698,8 +1727,9 @@ pub mod l1_icache1_prelock_sct0_addr;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_icache1_prelock_sct1_addr::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l1_icache1_prelock_sct1_addr::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_icache1_prelock_sct1_addr`] module*/
-pub type L1_ICACHE1_PRELOCK_SCT1_ADDR =
-    crate::Reg<l1_icache1_prelock_sct1_addr::L1_ICACHE1_PRELOCK_SCT1_ADDR_SPEC>;
+pub type L1_ICACHE1_PRELOCK_SCT1_ADDR = crate::Reg<
+    l1_icache1_prelock_sct1_addr::L1_ICACHE1_PRELOCK_SCT1_ADDR_SPEC,
+>;
 ///L1 instruction Cache 1 prelock section1 address configure register
 pub mod l1_icache1_prelock_sct1_addr;
 /**L1_ICACHE1_PRELOCK_SCT_SIZE (rw) register accessor: L1 instruction Cache 1 prelock section size configure register
@@ -1707,8 +1737,9 @@ pub mod l1_icache1_prelock_sct1_addr;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_icache1_prelock_sct_size::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l1_icache1_prelock_sct_size::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_icache1_prelock_sct_size`] module*/
-pub type L1_ICACHE1_PRELOCK_SCT_SIZE =
-    crate::Reg<l1_icache1_prelock_sct_size::L1_ICACHE1_PRELOCK_SCT_SIZE_SPEC>;
+pub type L1_ICACHE1_PRELOCK_SCT_SIZE = crate::Reg<
+    l1_icache1_prelock_sct_size::L1_ICACHE1_PRELOCK_SCT_SIZE_SPEC,
+>;
 ///L1 instruction Cache 1 prelock section size configure register
 pub mod l1_icache1_prelock_sct_size;
 /**L1_ICACHE2_PRELOCK_CONF (r) register accessor: L1 instruction Cache 2 prelock configure register
@@ -1716,8 +1747,9 @@ pub mod l1_icache1_prelock_sct_size;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_icache2_prelock_conf::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_icache2_prelock_conf`] module*/
-pub type L1_ICACHE2_PRELOCK_CONF =
-    crate::Reg<l1_icache2_prelock_conf::L1_ICACHE2_PRELOCK_CONF_SPEC>;
+pub type L1_ICACHE2_PRELOCK_CONF = crate::Reg<
+    l1_icache2_prelock_conf::L1_ICACHE2_PRELOCK_CONF_SPEC,
+>;
 ///L1 instruction Cache 2 prelock configure register
 pub mod l1_icache2_prelock_conf;
 /**L1_ICACHE2_PRELOCK_SCT0_ADDR (r) register accessor: L1 instruction Cache 2 prelock section0 address configure register
@@ -1725,8 +1757,9 @@ pub mod l1_icache2_prelock_conf;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_icache2_prelock_sct0_addr::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_icache2_prelock_sct0_addr`] module*/
-pub type L1_ICACHE2_PRELOCK_SCT0_ADDR =
-    crate::Reg<l1_icache2_prelock_sct0_addr::L1_ICACHE2_PRELOCK_SCT0_ADDR_SPEC>;
+pub type L1_ICACHE2_PRELOCK_SCT0_ADDR = crate::Reg<
+    l1_icache2_prelock_sct0_addr::L1_ICACHE2_PRELOCK_SCT0_ADDR_SPEC,
+>;
 ///L1 instruction Cache 2 prelock section0 address configure register
 pub mod l1_icache2_prelock_sct0_addr;
 /**L1_ICACHE2_PRELOCK_SCT1_ADDR (r) register accessor: L1 instruction Cache 2 prelock section1 address configure register
@@ -1734,8 +1767,9 @@ pub mod l1_icache2_prelock_sct0_addr;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_icache2_prelock_sct1_addr::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_icache2_prelock_sct1_addr`] module*/
-pub type L1_ICACHE2_PRELOCK_SCT1_ADDR =
-    crate::Reg<l1_icache2_prelock_sct1_addr::L1_ICACHE2_PRELOCK_SCT1_ADDR_SPEC>;
+pub type L1_ICACHE2_PRELOCK_SCT1_ADDR = crate::Reg<
+    l1_icache2_prelock_sct1_addr::L1_ICACHE2_PRELOCK_SCT1_ADDR_SPEC,
+>;
 ///L1 instruction Cache 2 prelock section1 address configure register
 pub mod l1_icache2_prelock_sct1_addr;
 /**L1_ICACHE2_PRELOCK_SCT_SIZE (r) register accessor: L1 instruction Cache 2 prelock section size configure register
@@ -1743,8 +1777,9 @@ pub mod l1_icache2_prelock_sct1_addr;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_icache2_prelock_sct_size::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_icache2_prelock_sct_size`] module*/
-pub type L1_ICACHE2_PRELOCK_SCT_SIZE =
-    crate::Reg<l1_icache2_prelock_sct_size::L1_ICACHE2_PRELOCK_SCT_SIZE_SPEC>;
+pub type L1_ICACHE2_PRELOCK_SCT_SIZE = crate::Reg<
+    l1_icache2_prelock_sct_size::L1_ICACHE2_PRELOCK_SCT_SIZE_SPEC,
+>;
 ///L1 instruction Cache 2 prelock section size configure register
 pub mod l1_icache2_prelock_sct_size;
 /**L1_ICACHE3_PRELOCK_CONF (r) register accessor: L1 instruction Cache 3 prelock configure register
@@ -1752,8 +1787,9 @@ pub mod l1_icache2_prelock_sct_size;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_icache3_prelock_conf::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_icache3_prelock_conf`] module*/
-pub type L1_ICACHE3_PRELOCK_CONF =
-    crate::Reg<l1_icache3_prelock_conf::L1_ICACHE3_PRELOCK_CONF_SPEC>;
+pub type L1_ICACHE3_PRELOCK_CONF = crate::Reg<
+    l1_icache3_prelock_conf::L1_ICACHE3_PRELOCK_CONF_SPEC,
+>;
 ///L1 instruction Cache 3 prelock configure register
 pub mod l1_icache3_prelock_conf;
 /**L1_ICACHE3_PRELOCK_SCT0_ADDR (r) register accessor: L1 instruction Cache 3 prelock section0 address configure register
@@ -1761,8 +1797,9 @@ pub mod l1_icache3_prelock_conf;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_icache3_prelock_sct0_addr::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_icache3_prelock_sct0_addr`] module*/
-pub type L1_ICACHE3_PRELOCK_SCT0_ADDR =
-    crate::Reg<l1_icache3_prelock_sct0_addr::L1_ICACHE3_PRELOCK_SCT0_ADDR_SPEC>;
+pub type L1_ICACHE3_PRELOCK_SCT0_ADDR = crate::Reg<
+    l1_icache3_prelock_sct0_addr::L1_ICACHE3_PRELOCK_SCT0_ADDR_SPEC,
+>;
 ///L1 instruction Cache 3 prelock section0 address configure register
 pub mod l1_icache3_prelock_sct0_addr;
 /**L1_ICACHE3_PRELOCK_SCT1_ADDR (r) register accessor: L1 instruction Cache 3 prelock section1 address configure register
@@ -1770,8 +1807,9 @@ pub mod l1_icache3_prelock_sct0_addr;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_icache3_prelock_sct1_addr::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_icache3_prelock_sct1_addr`] module*/
-pub type L1_ICACHE3_PRELOCK_SCT1_ADDR =
-    crate::Reg<l1_icache3_prelock_sct1_addr::L1_ICACHE3_PRELOCK_SCT1_ADDR_SPEC>;
+pub type L1_ICACHE3_PRELOCK_SCT1_ADDR = crate::Reg<
+    l1_icache3_prelock_sct1_addr::L1_ICACHE3_PRELOCK_SCT1_ADDR_SPEC,
+>;
 ///L1 instruction Cache 3 prelock section1 address configure register
 pub mod l1_icache3_prelock_sct1_addr;
 /**L1_ICACHE3_PRELOCK_SCT_SIZE (r) register accessor: L1 instruction Cache 3 prelock section size configure register
@@ -1779,8 +1817,9 @@ pub mod l1_icache3_prelock_sct1_addr;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_icache3_prelock_sct_size::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_icache3_prelock_sct_size`] module*/
-pub type L1_ICACHE3_PRELOCK_SCT_SIZE =
-    crate::Reg<l1_icache3_prelock_sct_size::L1_ICACHE3_PRELOCK_SCT_SIZE_SPEC>;
+pub type L1_ICACHE3_PRELOCK_SCT_SIZE = crate::Reg<
+    l1_icache3_prelock_sct_size::L1_ICACHE3_PRELOCK_SCT_SIZE_SPEC,
+>;
 ///L1 instruction Cache 3 prelock section size configure register
 pub mod l1_icache3_prelock_sct_size;
 /**L1_DCACHE_PRELOCK_CONF (rw) register accessor: L1 data Cache prelock configure register
@@ -1788,7 +1827,9 @@ pub mod l1_icache3_prelock_sct_size;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_dcache_prelock_conf::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l1_dcache_prelock_conf::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_dcache_prelock_conf`] module*/
-pub type L1_DCACHE_PRELOCK_CONF = crate::Reg<l1_dcache_prelock_conf::L1_DCACHE_PRELOCK_CONF_SPEC>;
+pub type L1_DCACHE_PRELOCK_CONF = crate::Reg<
+    l1_dcache_prelock_conf::L1_DCACHE_PRELOCK_CONF_SPEC,
+>;
 ///L1 data Cache prelock configure register
 pub mod l1_dcache_prelock_conf;
 /**L1_DCACHE_PRELOCK_SCT0_ADDR (rw) register accessor: L1 data Cache prelock section0 address configure register
@@ -1796,8 +1837,9 @@ pub mod l1_dcache_prelock_conf;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_dcache_prelock_sct0_addr::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l1_dcache_prelock_sct0_addr::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_dcache_prelock_sct0_addr`] module*/
-pub type L1_DCACHE_PRELOCK_SCT0_ADDR =
-    crate::Reg<l1_dcache_prelock_sct0_addr::L1_DCACHE_PRELOCK_SCT0_ADDR_SPEC>;
+pub type L1_DCACHE_PRELOCK_SCT0_ADDR = crate::Reg<
+    l1_dcache_prelock_sct0_addr::L1_DCACHE_PRELOCK_SCT0_ADDR_SPEC,
+>;
 ///L1 data Cache prelock section0 address configure register
 pub mod l1_dcache_prelock_sct0_addr;
 /**L1_DCACHE_PRELOCK_SCT1_ADDR (rw) register accessor: L1 data Cache prelock section1 address configure register
@@ -1805,8 +1847,9 @@ pub mod l1_dcache_prelock_sct0_addr;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_dcache_prelock_sct1_addr::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l1_dcache_prelock_sct1_addr::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_dcache_prelock_sct1_addr`] module*/
-pub type L1_DCACHE_PRELOCK_SCT1_ADDR =
-    crate::Reg<l1_dcache_prelock_sct1_addr::L1_DCACHE_PRELOCK_SCT1_ADDR_SPEC>;
+pub type L1_DCACHE_PRELOCK_SCT1_ADDR = crate::Reg<
+    l1_dcache_prelock_sct1_addr::L1_DCACHE_PRELOCK_SCT1_ADDR_SPEC,
+>;
 ///L1 data Cache prelock section1 address configure register
 pub mod l1_dcache_prelock_sct1_addr;
 /**L1_DCACHE_PRELOCK_SCT_SIZE (rw) register accessor: L1 data Cache prelock section size configure register
@@ -1814,8 +1857,9 @@ pub mod l1_dcache_prelock_sct1_addr;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_dcache_prelock_sct_size::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l1_dcache_prelock_sct_size::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_dcache_prelock_sct_size`] module*/
-pub type L1_DCACHE_PRELOCK_SCT_SIZE =
-    crate::Reg<l1_dcache_prelock_sct_size::L1_DCACHE_PRELOCK_SCT_SIZE_SPEC>;
+pub type L1_DCACHE_PRELOCK_SCT_SIZE = crate::Reg<
+    l1_dcache_prelock_sct_size::L1_DCACHE_PRELOCK_SCT_SIZE_SPEC,
+>;
 ///L1 data Cache prelock section size configure register
 pub mod l1_dcache_prelock_sct_size;
 /**LOCK_CTRL (rw) register accessor: Lock-class (manual lock) operation control register
@@ -1887,8 +1931,9 @@ pub mod sync_size;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_icache0_preload_ctrl::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l1_icache0_preload_ctrl::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_icache0_preload_ctrl`] module*/
-pub type L1_ICACHE0_PRELOAD_CTRL =
-    crate::Reg<l1_icache0_preload_ctrl::L1_ICACHE0_PRELOAD_CTRL_SPEC>;
+pub type L1_ICACHE0_PRELOAD_CTRL = crate::Reg<
+    l1_icache0_preload_ctrl::L1_ICACHE0_PRELOAD_CTRL_SPEC,
+>;
 ///L1 instruction Cache 0 preload-operation control register
 pub mod l1_icache0_preload_ctrl;
 /**L1_ICACHE0_PRELOAD_ADDR (rw) register accessor: L1 instruction Cache 0 preload address configure register
@@ -1896,8 +1941,9 @@ pub mod l1_icache0_preload_ctrl;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_icache0_preload_addr::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l1_icache0_preload_addr::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_icache0_preload_addr`] module*/
-pub type L1_ICACHE0_PRELOAD_ADDR =
-    crate::Reg<l1_icache0_preload_addr::L1_ICACHE0_PRELOAD_ADDR_SPEC>;
+pub type L1_ICACHE0_PRELOAD_ADDR = crate::Reg<
+    l1_icache0_preload_addr::L1_ICACHE0_PRELOAD_ADDR_SPEC,
+>;
 ///L1 instruction Cache 0 preload address configure register
 pub mod l1_icache0_preload_addr;
 /**L1_ICACHE0_PRELOAD_SIZE (rw) register accessor: L1 instruction Cache 0 preload size configure register
@@ -1905,8 +1951,9 @@ pub mod l1_icache0_preload_addr;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_icache0_preload_size::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l1_icache0_preload_size::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_icache0_preload_size`] module*/
-pub type L1_ICACHE0_PRELOAD_SIZE =
-    crate::Reg<l1_icache0_preload_size::L1_ICACHE0_PRELOAD_SIZE_SPEC>;
+pub type L1_ICACHE0_PRELOAD_SIZE = crate::Reg<
+    l1_icache0_preload_size::L1_ICACHE0_PRELOAD_SIZE_SPEC,
+>;
 ///L1 instruction Cache 0 preload size configure register
 pub mod l1_icache0_preload_size;
 /**L1_ICACHE1_PRELOAD_CTRL (rw) register accessor: L1 instruction Cache 1 preload-operation control register
@@ -1914,8 +1961,9 @@ pub mod l1_icache0_preload_size;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_icache1_preload_ctrl::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l1_icache1_preload_ctrl::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_icache1_preload_ctrl`] module*/
-pub type L1_ICACHE1_PRELOAD_CTRL =
-    crate::Reg<l1_icache1_preload_ctrl::L1_ICACHE1_PRELOAD_CTRL_SPEC>;
+pub type L1_ICACHE1_PRELOAD_CTRL = crate::Reg<
+    l1_icache1_preload_ctrl::L1_ICACHE1_PRELOAD_CTRL_SPEC,
+>;
 ///L1 instruction Cache 1 preload-operation control register
 pub mod l1_icache1_preload_ctrl;
 /**L1_ICACHE1_PRELOAD_ADDR (rw) register accessor: L1 instruction Cache 1 preload address configure register
@@ -1923,8 +1971,9 @@ pub mod l1_icache1_preload_ctrl;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_icache1_preload_addr::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l1_icache1_preload_addr::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_icache1_preload_addr`] module*/
-pub type L1_ICACHE1_PRELOAD_ADDR =
-    crate::Reg<l1_icache1_preload_addr::L1_ICACHE1_PRELOAD_ADDR_SPEC>;
+pub type L1_ICACHE1_PRELOAD_ADDR = crate::Reg<
+    l1_icache1_preload_addr::L1_ICACHE1_PRELOAD_ADDR_SPEC,
+>;
 ///L1 instruction Cache 1 preload address configure register
 pub mod l1_icache1_preload_addr;
 /**L1_ICACHE1_PRELOAD_SIZE (rw) register accessor: L1 instruction Cache 1 preload size configure register
@@ -1932,8 +1981,9 @@ pub mod l1_icache1_preload_addr;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_icache1_preload_size::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l1_icache1_preload_size::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_icache1_preload_size`] module*/
-pub type L1_ICACHE1_PRELOAD_SIZE =
-    crate::Reg<l1_icache1_preload_size::L1_ICACHE1_PRELOAD_SIZE_SPEC>;
+pub type L1_ICACHE1_PRELOAD_SIZE = crate::Reg<
+    l1_icache1_preload_size::L1_ICACHE1_PRELOAD_SIZE_SPEC,
+>;
 ///L1 instruction Cache 1 preload size configure register
 pub mod l1_icache1_preload_size;
 /**L1_ICACHE2_PRELOAD_CTRL (r) register accessor: L1 instruction Cache 2 preload-operation control register
@@ -1941,8 +1991,9 @@ pub mod l1_icache1_preload_size;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_icache2_preload_ctrl::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_icache2_preload_ctrl`] module*/
-pub type L1_ICACHE2_PRELOAD_CTRL =
-    crate::Reg<l1_icache2_preload_ctrl::L1_ICACHE2_PRELOAD_CTRL_SPEC>;
+pub type L1_ICACHE2_PRELOAD_CTRL = crate::Reg<
+    l1_icache2_preload_ctrl::L1_ICACHE2_PRELOAD_CTRL_SPEC,
+>;
 ///L1 instruction Cache 2 preload-operation control register
 pub mod l1_icache2_preload_ctrl;
 /**L1_ICACHE2_PRELOAD_ADDR (r) register accessor: L1 instruction Cache 2 preload address configure register
@@ -1950,8 +2001,9 @@ pub mod l1_icache2_preload_ctrl;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_icache2_preload_addr::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_icache2_preload_addr`] module*/
-pub type L1_ICACHE2_PRELOAD_ADDR =
-    crate::Reg<l1_icache2_preload_addr::L1_ICACHE2_PRELOAD_ADDR_SPEC>;
+pub type L1_ICACHE2_PRELOAD_ADDR = crate::Reg<
+    l1_icache2_preload_addr::L1_ICACHE2_PRELOAD_ADDR_SPEC,
+>;
 ///L1 instruction Cache 2 preload address configure register
 pub mod l1_icache2_preload_addr;
 /**L1_ICACHE2_PRELOAD_SIZE (r) register accessor: L1 instruction Cache 2 preload size configure register
@@ -1959,8 +2011,9 @@ pub mod l1_icache2_preload_addr;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_icache2_preload_size::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_icache2_preload_size`] module*/
-pub type L1_ICACHE2_PRELOAD_SIZE =
-    crate::Reg<l1_icache2_preload_size::L1_ICACHE2_PRELOAD_SIZE_SPEC>;
+pub type L1_ICACHE2_PRELOAD_SIZE = crate::Reg<
+    l1_icache2_preload_size::L1_ICACHE2_PRELOAD_SIZE_SPEC,
+>;
 ///L1 instruction Cache 2 preload size configure register
 pub mod l1_icache2_preload_size;
 /**L1_ICACHE3_PRELOAD_CTRL (r) register accessor: L1 instruction Cache 3 preload-operation control register
@@ -1968,8 +2021,9 @@ pub mod l1_icache2_preload_size;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_icache3_preload_ctrl::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_icache3_preload_ctrl`] module*/
-pub type L1_ICACHE3_PRELOAD_CTRL =
-    crate::Reg<l1_icache3_preload_ctrl::L1_ICACHE3_PRELOAD_CTRL_SPEC>;
+pub type L1_ICACHE3_PRELOAD_CTRL = crate::Reg<
+    l1_icache3_preload_ctrl::L1_ICACHE3_PRELOAD_CTRL_SPEC,
+>;
 ///L1 instruction Cache 3 preload-operation control register
 pub mod l1_icache3_preload_ctrl;
 /**L1_ICACHE3_PRELOAD_ADDR (r) register accessor: L1 instruction Cache 3 preload address configure register
@@ -1977,8 +2031,9 @@ pub mod l1_icache3_preload_ctrl;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_icache3_preload_addr::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_icache3_preload_addr`] module*/
-pub type L1_ICACHE3_PRELOAD_ADDR =
-    crate::Reg<l1_icache3_preload_addr::L1_ICACHE3_PRELOAD_ADDR_SPEC>;
+pub type L1_ICACHE3_PRELOAD_ADDR = crate::Reg<
+    l1_icache3_preload_addr::L1_ICACHE3_PRELOAD_ADDR_SPEC,
+>;
 ///L1 instruction Cache 3 preload address configure register
 pub mod l1_icache3_preload_addr;
 /**L1_ICACHE3_PRELOAD_SIZE (r) register accessor: L1 instruction Cache 3 preload size configure register
@@ -1986,8 +2041,9 @@ pub mod l1_icache3_preload_addr;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_icache3_preload_size::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_icache3_preload_size`] module*/
-pub type L1_ICACHE3_PRELOAD_SIZE =
-    crate::Reg<l1_icache3_preload_size::L1_ICACHE3_PRELOAD_SIZE_SPEC>;
+pub type L1_ICACHE3_PRELOAD_SIZE = crate::Reg<
+    l1_icache3_preload_size::L1_ICACHE3_PRELOAD_SIZE_SPEC,
+>;
 ///L1 instruction Cache 3 preload size configure register
 pub mod l1_icache3_preload_size;
 /**L1_DCACHE_PRELOAD_CTRL (rw) register accessor: L1 data Cache preload-operation control register
@@ -1995,7 +2051,9 @@ pub mod l1_icache3_preload_size;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_dcache_preload_ctrl::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l1_dcache_preload_ctrl::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_dcache_preload_ctrl`] module*/
-pub type L1_DCACHE_PRELOAD_CTRL = crate::Reg<l1_dcache_preload_ctrl::L1_DCACHE_PRELOAD_CTRL_SPEC>;
+pub type L1_DCACHE_PRELOAD_CTRL = crate::Reg<
+    l1_dcache_preload_ctrl::L1_DCACHE_PRELOAD_CTRL_SPEC,
+>;
 ///L1 data Cache preload-operation control register
 pub mod l1_dcache_preload_ctrl;
 /**L1_DCACHE_PRELOAD_ADDR (rw) register accessor: L1 data Cache preload address configure register
@@ -2003,7 +2061,9 @@ pub mod l1_dcache_preload_ctrl;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_dcache_preload_addr::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l1_dcache_preload_addr::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_dcache_preload_addr`] module*/
-pub type L1_DCACHE_PRELOAD_ADDR = crate::Reg<l1_dcache_preload_addr::L1_DCACHE_PRELOAD_ADDR_SPEC>;
+pub type L1_DCACHE_PRELOAD_ADDR = crate::Reg<
+    l1_dcache_preload_addr::L1_DCACHE_PRELOAD_ADDR_SPEC,
+>;
 ///L1 data Cache preload address configure register
 pub mod l1_dcache_preload_addr;
 /**L1_DCACHE_PRELOAD_SIZE (rw) register accessor: L1 data Cache preload size configure register
@@ -2011,7 +2071,9 @@ pub mod l1_dcache_preload_addr;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_dcache_preload_size::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l1_dcache_preload_size::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_dcache_preload_size`] module*/
-pub type L1_DCACHE_PRELOAD_SIZE = crate::Reg<l1_dcache_preload_size::L1_DCACHE_PRELOAD_SIZE_SPEC>;
+pub type L1_DCACHE_PRELOAD_SIZE = crate::Reg<
+    l1_dcache_preload_size::L1_DCACHE_PRELOAD_SIZE_SPEC,
+>;
 ///L1 data Cache preload size configure register
 pub mod l1_dcache_preload_size;
 /**L1_ICACHE0_AUTOLOAD_CTRL (rw) register accessor: L1 instruction Cache 0 autoload-operation control register
@@ -2019,8 +2081,9 @@ pub mod l1_dcache_preload_size;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_icache0_autoload_ctrl::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l1_icache0_autoload_ctrl::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_icache0_autoload_ctrl`] module*/
-pub type L1_ICACHE0_AUTOLOAD_CTRL =
-    crate::Reg<l1_icache0_autoload_ctrl::L1_ICACHE0_AUTOLOAD_CTRL_SPEC>;
+pub type L1_ICACHE0_AUTOLOAD_CTRL = crate::Reg<
+    l1_icache0_autoload_ctrl::L1_ICACHE0_AUTOLOAD_CTRL_SPEC,
+>;
 ///L1 instruction Cache 0 autoload-operation control register
 pub mod l1_icache0_autoload_ctrl;
 /**L1_ICACHE0_AUTOLOAD_SCT0_ADDR (rw) register accessor: L1 instruction Cache 0 autoload section 0 address configure register
@@ -2028,8 +2091,9 @@ pub mod l1_icache0_autoload_ctrl;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_icache0_autoload_sct0_addr::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l1_icache0_autoload_sct0_addr::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_icache0_autoload_sct0_addr`] module*/
-pub type L1_ICACHE0_AUTOLOAD_SCT0_ADDR =
-    crate::Reg<l1_icache0_autoload_sct0_addr::L1_ICACHE0_AUTOLOAD_SCT0_ADDR_SPEC>;
+pub type L1_ICACHE0_AUTOLOAD_SCT0_ADDR = crate::Reg<
+    l1_icache0_autoload_sct0_addr::L1_ICACHE0_AUTOLOAD_SCT0_ADDR_SPEC,
+>;
 ///L1 instruction Cache 0 autoload section 0 address configure register
 pub mod l1_icache0_autoload_sct0_addr;
 /**L1_ICACHE0_AUTOLOAD_SCT0_SIZE (rw) register accessor: L1 instruction Cache 0 autoload section 0 size configure register
@@ -2037,8 +2101,9 @@ pub mod l1_icache0_autoload_sct0_addr;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_icache0_autoload_sct0_size::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l1_icache0_autoload_sct0_size::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_icache0_autoload_sct0_size`] module*/
-pub type L1_ICACHE0_AUTOLOAD_SCT0_SIZE =
-    crate::Reg<l1_icache0_autoload_sct0_size::L1_ICACHE0_AUTOLOAD_SCT0_SIZE_SPEC>;
+pub type L1_ICACHE0_AUTOLOAD_SCT0_SIZE = crate::Reg<
+    l1_icache0_autoload_sct0_size::L1_ICACHE0_AUTOLOAD_SCT0_SIZE_SPEC,
+>;
 ///L1 instruction Cache 0 autoload section 0 size configure register
 pub mod l1_icache0_autoload_sct0_size;
 /**L1_ICACHE0_AUTOLOAD_SCT1_ADDR (rw) register accessor: L1 instruction Cache 0 autoload section 1 address configure register
@@ -2046,8 +2111,9 @@ pub mod l1_icache0_autoload_sct0_size;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_icache0_autoload_sct1_addr::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l1_icache0_autoload_sct1_addr::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_icache0_autoload_sct1_addr`] module*/
-pub type L1_ICACHE0_AUTOLOAD_SCT1_ADDR =
-    crate::Reg<l1_icache0_autoload_sct1_addr::L1_ICACHE0_AUTOLOAD_SCT1_ADDR_SPEC>;
+pub type L1_ICACHE0_AUTOLOAD_SCT1_ADDR = crate::Reg<
+    l1_icache0_autoload_sct1_addr::L1_ICACHE0_AUTOLOAD_SCT1_ADDR_SPEC,
+>;
 ///L1 instruction Cache 0 autoload section 1 address configure register
 pub mod l1_icache0_autoload_sct1_addr;
 /**L1_ICACHE0_AUTOLOAD_SCT1_SIZE (rw) register accessor: L1 instruction Cache 0 autoload section 1 size configure register
@@ -2055,8 +2121,9 @@ pub mod l1_icache0_autoload_sct1_addr;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_icache0_autoload_sct1_size::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l1_icache0_autoload_sct1_size::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_icache0_autoload_sct1_size`] module*/
-pub type L1_ICACHE0_AUTOLOAD_SCT1_SIZE =
-    crate::Reg<l1_icache0_autoload_sct1_size::L1_ICACHE0_AUTOLOAD_SCT1_SIZE_SPEC>;
+pub type L1_ICACHE0_AUTOLOAD_SCT1_SIZE = crate::Reg<
+    l1_icache0_autoload_sct1_size::L1_ICACHE0_AUTOLOAD_SCT1_SIZE_SPEC,
+>;
 ///L1 instruction Cache 0 autoload section 1 size configure register
 pub mod l1_icache0_autoload_sct1_size;
 /**L1_ICACHE1_AUTOLOAD_CTRL (rw) register accessor: L1 instruction Cache 1 autoload-operation control register
@@ -2064,8 +2131,9 @@ pub mod l1_icache0_autoload_sct1_size;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_icache1_autoload_ctrl::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l1_icache1_autoload_ctrl::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_icache1_autoload_ctrl`] module*/
-pub type L1_ICACHE1_AUTOLOAD_CTRL =
-    crate::Reg<l1_icache1_autoload_ctrl::L1_ICACHE1_AUTOLOAD_CTRL_SPEC>;
+pub type L1_ICACHE1_AUTOLOAD_CTRL = crate::Reg<
+    l1_icache1_autoload_ctrl::L1_ICACHE1_AUTOLOAD_CTRL_SPEC,
+>;
 ///L1 instruction Cache 1 autoload-operation control register
 pub mod l1_icache1_autoload_ctrl;
 /**L1_ICACHE1_AUTOLOAD_SCT0_ADDR (rw) register accessor: L1 instruction Cache 1 autoload section 0 address configure register
@@ -2073,8 +2141,9 @@ pub mod l1_icache1_autoload_ctrl;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_icache1_autoload_sct0_addr::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l1_icache1_autoload_sct0_addr::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_icache1_autoload_sct0_addr`] module*/
-pub type L1_ICACHE1_AUTOLOAD_SCT0_ADDR =
-    crate::Reg<l1_icache1_autoload_sct0_addr::L1_ICACHE1_AUTOLOAD_SCT0_ADDR_SPEC>;
+pub type L1_ICACHE1_AUTOLOAD_SCT0_ADDR = crate::Reg<
+    l1_icache1_autoload_sct0_addr::L1_ICACHE1_AUTOLOAD_SCT0_ADDR_SPEC,
+>;
 ///L1 instruction Cache 1 autoload section 0 address configure register
 pub mod l1_icache1_autoload_sct0_addr;
 /**L1_ICACHE1_AUTOLOAD_SCT0_SIZE (rw) register accessor: L1 instruction Cache 1 autoload section 0 size configure register
@@ -2082,8 +2151,9 @@ pub mod l1_icache1_autoload_sct0_addr;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_icache1_autoload_sct0_size::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l1_icache1_autoload_sct0_size::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_icache1_autoload_sct0_size`] module*/
-pub type L1_ICACHE1_AUTOLOAD_SCT0_SIZE =
-    crate::Reg<l1_icache1_autoload_sct0_size::L1_ICACHE1_AUTOLOAD_SCT0_SIZE_SPEC>;
+pub type L1_ICACHE1_AUTOLOAD_SCT0_SIZE = crate::Reg<
+    l1_icache1_autoload_sct0_size::L1_ICACHE1_AUTOLOAD_SCT0_SIZE_SPEC,
+>;
 ///L1 instruction Cache 1 autoload section 0 size configure register
 pub mod l1_icache1_autoload_sct0_size;
 /**L1_ICACHE1_AUTOLOAD_SCT1_ADDR (rw) register accessor: L1 instruction Cache 1 autoload section 1 address configure register
@@ -2091,8 +2161,9 @@ pub mod l1_icache1_autoload_sct0_size;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_icache1_autoload_sct1_addr::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l1_icache1_autoload_sct1_addr::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_icache1_autoload_sct1_addr`] module*/
-pub type L1_ICACHE1_AUTOLOAD_SCT1_ADDR =
-    crate::Reg<l1_icache1_autoload_sct1_addr::L1_ICACHE1_AUTOLOAD_SCT1_ADDR_SPEC>;
+pub type L1_ICACHE1_AUTOLOAD_SCT1_ADDR = crate::Reg<
+    l1_icache1_autoload_sct1_addr::L1_ICACHE1_AUTOLOAD_SCT1_ADDR_SPEC,
+>;
 ///L1 instruction Cache 1 autoload section 1 address configure register
 pub mod l1_icache1_autoload_sct1_addr;
 /**L1_ICACHE1_AUTOLOAD_SCT1_SIZE (rw) register accessor: L1 instruction Cache 1 autoload section 1 size configure register
@@ -2100,8 +2171,9 @@ pub mod l1_icache1_autoload_sct1_addr;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_icache1_autoload_sct1_size::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l1_icache1_autoload_sct1_size::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_icache1_autoload_sct1_size`] module*/
-pub type L1_ICACHE1_AUTOLOAD_SCT1_SIZE =
-    crate::Reg<l1_icache1_autoload_sct1_size::L1_ICACHE1_AUTOLOAD_SCT1_SIZE_SPEC>;
+pub type L1_ICACHE1_AUTOLOAD_SCT1_SIZE = crate::Reg<
+    l1_icache1_autoload_sct1_size::L1_ICACHE1_AUTOLOAD_SCT1_SIZE_SPEC,
+>;
 ///L1 instruction Cache 1 autoload section 1 size configure register
 pub mod l1_icache1_autoload_sct1_size;
 /**L1_ICACHE2_AUTOLOAD_CTRL (r) register accessor: L1 instruction Cache 2 autoload-operation control register
@@ -2109,8 +2181,9 @@ pub mod l1_icache1_autoload_sct1_size;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_icache2_autoload_ctrl::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_icache2_autoload_ctrl`] module*/
-pub type L1_ICACHE2_AUTOLOAD_CTRL =
-    crate::Reg<l1_icache2_autoload_ctrl::L1_ICACHE2_AUTOLOAD_CTRL_SPEC>;
+pub type L1_ICACHE2_AUTOLOAD_CTRL = crate::Reg<
+    l1_icache2_autoload_ctrl::L1_ICACHE2_AUTOLOAD_CTRL_SPEC,
+>;
 ///L1 instruction Cache 2 autoload-operation control register
 pub mod l1_icache2_autoload_ctrl;
 /**L1_ICACHE2_AUTOLOAD_SCT0_ADDR (r) register accessor: L1 instruction Cache 2 autoload section 0 address configure register
@@ -2118,8 +2191,9 @@ pub mod l1_icache2_autoload_ctrl;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_icache2_autoload_sct0_addr::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_icache2_autoload_sct0_addr`] module*/
-pub type L1_ICACHE2_AUTOLOAD_SCT0_ADDR =
-    crate::Reg<l1_icache2_autoload_sct0_addr::L1_ICACHE2_AUTOLOAD_SCT0_ADDR_SPEC>;
+pub type L1_ICACHE2_AUTOLOAD_SCT0_ADDR = crate::Reg<
+    l1_icache2_autoload_sct0_addr::L1_ICACHE2_AUTOLOAD_SCT0_ADDR_SPEC,
+>;
 ///L1 instruction Cache 2 autoload section 0 address configure register
 pub mod l1_icache2_autoload_sct0_addr;
 /**L1_ICACHE2_AUTOLOAD_SCT0_SIZE (r) register accessor: L1 instruction Cache 2 autoload section 0 size configure register
@@ -2127,8 +2201,9 @@ pub mod l1_icache2_autoload_sct0_addr;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_icache2_autoload_sct0_size::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_icache2_autoload_sct0_size`] module*/
-pub type L1_ICACHE2_AUTOLOAD_SCT0_SIZE =
-    crate::Reg<l1_icache2_autoload_sct0_size::L1_ICACHE2_AUTOLOAD_SCT0_SIZE_SPEC>;
+pub type L1_ICACHE2_AUTOLOAD_SCT0_SIZE = crate::Reg<
+    l1_icache2_autoload_sct0_size::L1_ICACHE2_AUTOLOAD_SCT0_SIZE_SPEC,
+>;
 ///L1 instruction Cache 2 autoload section 0 size configure register
 pub mod l1_icache2_autoload_sct0_size;
 /**L1_ICACHE2_AUTOLOAD_SCT1_ADDR (r) register accessor: L1 instruction Cache 2 autoload section 1 address configure register
@@ -2136,8 +2211,9 @@ pub mod l1_icache2_autoload_sct0_size;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_icache2_autoload_sct1_addr::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_icache2_autoload_sct1_addr`] module*/
-pub type L1_ICACHE2_AUTOLOAD_SCT1_ADDR =
-    crate::Reg<l1_icache2_autoload_sct1_addr::L1_ICACHE2_AUTOLOAD_SCT1_ADDR_SPEC>;
+pub type L1_ICACHE2_AUTOLOAD_SCT1_ADDR = crate::Reg<
+    l1_icache2_autoload_sct1_addr::L1_ICACHE2_AUTOLOAD_SCT1_ADDR_SPEC,
+>;
 ///L1 instruction Cache 2 autoload section 1 address configure register
 pub mod l1_icache2_autoload_sct1_addr;
 /**L1_ICACHE2_AUTOLOAD_SCT1_SIZE (r) register accessor: L1 instruction Cache 2 autoload section 1 size configure register
@@ -2145,8 +2221,9 @@ pub mod l1_icache2_autoload_sct1_addr;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_icache2_autoload_sct1_size::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_icache2_autoload_sct1_size`] module*/
-pub type L1_ICACHE2_AUTOLOAD_SCT1_SIZE =
-    crate::Reg<l1_icache2_autoload_sct1_size::L1_ICACHE2_AUTOLOAD_SCT1_SIZE_SPEC>;
+pub type L1_ICACHE2_AUTOLOAD_SCT1_SIZE = crate::Reg<
+    l1_icache2_autoload_sct1_size::L1_ICACHE2_AUTOLOAD_SCT1_SIZE_SPEC,
+>;
 ///L1 instruction Cache 2 autoload section 1 size configure register
 pub mod l1_icache2_autoload_sct1_size;
 /**L1_ICACHE3_AUTOLOAD_CTRL (r) register accessor: L1 instruction Cache 3 autoload-operation control register
@@ -2154,8 +2231,9 @@ pub mod l1_icache2_autoload_sct1_size;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_icache3_autoload_ctrl::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_icache3_autoload_ctrl`] module*/
-pub type L1_ICACHE3_AUTOLOAD_CTRL =
-    crate::Reg<l1_icache3_autoload_ctrl::L1_ICACHE3_AUTOLOAD_CTRL_SPEC>;
+pub type L1_ICACHE3_AUTOLOAD_CTRL = crate::Reg<
+    l1_icache3_autoload_ctrl::L1_ICACHE3_AUTOLOAD_CTRL_SPEC,
+>;
 ///L1 instruction Cache 3 autoload-operation control register
 pub mod l1_icache3_autoload_ctrl;
 /**L1_ICACHE3_AUTOLOAD_SCT0_ADDR (r) register accessor: L1 instruction Cache 3 autoload section 0 address configure register
@@ -2163,8 +2241,9 @@ pub mod l1_icache3_autoload_ctrl;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_icache3_autoload_sct0_addr::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_icache3_autoload_sct0_addr`] module*/
-pub type L1_ICACHE3_AUTOLOAD_SCT0_ADDR =
-    crate::Reg<l1_icache3_autoload_sct0_addr::L1_ICACHE3_AUTOLOAD_SCT0_ADDR_SPEC>;
+pub type L1_ICACHE3_AUTOLOAD_SCT0_ADDR = crate::Reg<
+    l1_icache3_autoload_sct0_addr::L1_ICACHE3_AUTOLOAD_SCT0_ADDR_SPEC,
+>;
 ///L1 instruction Cache 3 autoload section 0 address configure register
 pub mod l1_icache3_autoload_sct0_addr;
 /**L1_ICACHE3_AUTOLOAD_SCT0_SIZE (r) register accessor: L1 instruction Cache 3 autoload section 0 size configure register
@@ -2172,8 +2251,9 @@ pub mod l1_icache3_autoload_sct0_addr;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_icache3_autoload_sct0_size::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_icache3_autoload_sct0_size`] module*/
-pub type L1_ICACHE3_AUTOLOAD_SCT0_SIZE =
-    crate::Reg<l1_icache3_autoload_sct0_size::L1_ICACHE3_AUTOLOAD_SCT0_SIZE_SPEC>;
+pub type L1_ICACHE3_AUTOLOAD_SCT0_SIZE = crate::Reg<
+    l1_icache3_autoload_sct0_size::L1_ICACHE3_AUTOLOAD_SCT0_SIZE_SPEC,
+>;
 ///L1 instruction Cache 3 autoload section 0 size configure register
 pub mod l1_icache3_autoload_sct0_size;
 /**L1_ICACHE3_AUTOLOAD_SCT1_ADDR (r) register accessor: L1 instruction Cache 3 autoload section 1 address configure register
@@ -2181,8 +2261,9 @@ pub mod l1_icache3_autoload_sct0_size;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_icache3_autoload_sct1_addr::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_icache3_autoload_sct1_addr`] module*/
-pub type L1_ICACHE3_AUTOLOAD_SCT1_ADDR =
-    crate::Reg<l1_icache3_autoload_sct1_addr::L1_ICACHE3_AUTOLOAD_SCT1_ADDR_SPEC>;
+pub type L1_ICACHE3_AUTOLOAD_SCT1_ADDR = crate::Reg<
+    l1_icache3_autoload_sct1_addr::L1_ICACHE3_AUTOLOAD_SCT1_ADDR_SPEC,
+>;
 ///L1 instruction Cache 3 autoload section 1 address configure register
 pub mod l1_icache3_autoload_sct1_addr;
 /**L1_ICACHE3_AUTOLOAD_SCT1_SIZE (r) register accessor: L1 instruction Cache 3 autoload section 1 size configure register
@@ -2190,8 +2271,9 @@ pub mod l1_icache3_autoload_sct1_addr;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_icache3_autoload_sct1_size::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_icache3_autoload_sct1_size`] module*/
-pub type L1_ICACHE3_AUTOLOAD_SCT1_SIZE =
-    crate::Reg<l1_icache3_autoload_sct1_size::L1_ICACHE3_AUTOLOAD_SCT1_SIZE_SPEC>;
+pub type L1_ICACHE3_AUTOLOAD_SCT1_SIZE = crate::Reg<
+    l1_icache3_autoload_sct1_size::L1_ICACHE3_AUTOLOAD_SCT1_SIZE_SPEC,
+>;
 ///L1 instruction Cache 3 autoload section 1 size configure register
 pub mod l1_icache3_autoload_sct1_size;
 /**L1_DCACHE_AUTOLOAD_CTRL (rw) register accessor: L1 data Cache autoload-operation control register
@@ -2199,8 +2281,9 @@ pub mod l1_icache3_autoload_sct1_size;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_dcache_autoload_ctrl::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l1_dcache_autoload_ctrl::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_dcache_autoload_ctrl`] module*/
-pub type L1_DCACHE_AUTOLOAD_CTRL =
-    crate::Reg<l1_dcache_autoload_ctrl::L1_DCACHE_AUTOLOAD_CTRL_SPEC>;
+pub type L1_DCACHE_AUTOLOAD_CTRL = crate::Reg<
+    l1_dcache_autoload_ctrl::L1_DCACHE_AUTOLOAD_CTRL_SPEC,
+>;
 ///L1 data Cache autoload-operation control register
 pub mod l1_dcache_autoload_ctrl;
 /**L1_DCACHE_AUTOLOAD_SCT0_ADDR (rw) register accessor: L1 data Cache autoload section 0 address configure register
@@ -2208,8 +2291,9 @@ pub mod l1_dcache_autoload_ctrl;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_dcache_autoload_sct0_addr::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l1_dcache_autoload_sct0_addr::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_dcache_autoload_sct0_addr`] module*/
-pub type L1_DCACHE_AUTOLOAD_SCT0_ADDR =
-    crate::Reg<l1_dcache_autoload_sct0_addr::L1_DCACHE_AUTOLOAD_SCT0_ADDR_SPEC>;
+pub type L1_DCACHE_AUTOLOAD_SCT0_ADDR = crate::Reg<
+    l1_dcache_autoload_sct0_addr::L1_DCACHE_AUTOLOAD_SCT0_ADDR_SPEC,
+>;
 ///L1 data Cache autoload section 0 address configure register
 pub mod l1_dcache_autoload_sct0_addr;
 /**L1_DCACHE_AUTOLOAD_SCT0_SIZE (rw) register accessor: L1 data Cache autoload section 0 size configure register
@@ -2217,8 +2301,9 @@ pub mod l1_dcache_autoload_sct0_addr;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_dcache_autoload_sct0_size::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l1_dcache_autoload_sct0_size::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_dcache_autoload_sct0_size`] module*/
-pub type L1_DCACHE_AUTOLOAD_SCT0_SIZE =
-    crate::Reg<l1_dcache_autoload_sct0_size::L1_DCACHE_AUTOLOAD_SCT0_SIZE_SPEC>;
+pub type L1_DCACHE_AUTOLOAD_SCT0_SIZE = crate::Reg<
+    l1_dcache_autoload_sct0_size::L1_DCACHE_AUTOLOAD_SCT0_SIZE_SPEC,
+>;
 ///L1 data Cache autoload section 0 size configure register
 pub mod l1_dcache_autoload_sct0_size;
 /**L1_DCACHE_AUTOLOAD_SCT1_ADDR (rw) register accessor: L1 data Cache autoload section 1 address configure register
@@ -2226,8 +2311,9 @@ pub mod l1_dcache_autoload_sct0_size;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_dcache_autoload_sct1_addr::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l1_dcache_autoload_sct1_addr::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_dcache_autoload_sct1_addr`] module*/
-pub type L1_DCACHE_AUTOLOAD_SCT1_ADDR =
-    crate::Reg<l1_dcache_autoload_sct1_addr::L1_DCACHE_AUTOLOAD_SCT1_ADDR_SPEC>;
+pub type L1_DCACHE_AUTOLOAD_SCT1_ADDR = crate::Reg<
+    l1_dcache_autoload_sct1_addr::L1_DCACHE_AUTOLOAD_SCT1_ADDR_SPEC,
+>;
 ///L1 data Cache autoload section 1 address configure register
 pub mod l1_dcache_autoload_sct1_addr;
 /**L1_DCACHE_AUTOLOAD_SCT1_SIZE (rw) register accessor: L1 data Cache autoload section 1 size configure register
@@ -2235,8 +2321,9 @@ pub mod l1_dcache_autoload_sct1_addr;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_dcache_autoload_sct1_size::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l1_dcache_autoload_sct1_size::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_dcache_autoload_sct1_size`] module*/
-pub type L1_DCACHE_AUTOLOAD_SCT1_SIZE =
-    crate::Reg<l1_dcache_autoload_sct1_size::L1_DCACHE_AUTOLOAD_SCT1_SIZE_SPEC>;
+pub type L1_DCACHE_AUTOLOAD_SCT1_SIZE = crate::Reg<
+    l1_dcache_autoload_sct1_size::L1_DCACHE_AUTOLOAD_SCT1_SIZE_SPEC,
+>;
 ///L1 data Cache autoload section 1 size configure register
 pub mod l1_dcache_autoload_sct1_size;
 /**L1_DCACHE_AUTOLOAD_SCT2_ADDR (rw) register accessor: L1 data Cache autoload section 2 address configure register
@@ -2244,8 +2331,9 @@ pub mod l1_dcache_autoload_sct1_size;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_dcache_autoload_sct2_addr::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l1_dcache_autoload_sct2_addr::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_dcache_autoload_sct2_addr`] module*/
-pub type L1_DCACHE_AUTOLOAD_SCT2_ADDR =
-    crate::Reg<l1_dcache_autoload_sct2_addr::L1_DCACHE_AUTOLOAD_SCT2_ADDR_SPEC>;
+pub type L1_DCACHE_AUTOLOAD_SCT2_ADDR = crate::Reg<
+    l1_dcache_autoload_sct2_addr::L1_DCACHE_AUTOLOAD_SCT2_ADDR_SPEC,
+>;
 ///L1 data Cache autoload section 2 address configure register
 pub mod l1_dcache_autoload_sct2_addr;
 /**L1_DCACHE_AUTOLOAD_SCT2_SIZE (rw) register accessor: L1 data Cache autoload section 2 size configure register
@@ -2253,8 +2341,9 @@ pub mod l1_dcache_autoload_sct2_addr;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_dcache_autoload_sct2_size::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l1_dcache_autoload_sct2_size::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_dcache_autoload_sct2_size`] module*/
-pub type L1_DCACHE_AUTOLOAD_SCT2_SIZE =
-    crate::Reg<l1_dcache_autoload_sct2_size::L1_DCACHE_AUTOLOAD_SCT2_SIZE_SPEC>;
+pub type L1_DCACHE_AUTOLOAD_SCT2_SIZE = crate::Reg<
+    l1_dcache_autoload_sct2_size::L1_DCACHE_AUTOLOAD_SCT2_SIZE_SPEC,
+>;
 ///L1 data Cache autoload section 2 size configure register
 pub mod l1_dcache_autoload_sct2_size;
 /**L1_DCACHE_AUTOLOAD_SCT3_ADDR (rw) register accessor: L1 data Cache autoload section 1 address configure register
@@ -2262,8 +2351,9 @@ pub mod l1_dcache_autoload_sct2_size;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_dcache_autoload_sct3_addr::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l1_dcache_autoload_sct3_addr::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_dcache_autoload_sct3_addr`] module*/
-pub type L1_DCACHE_AUTOLOAD_SCT3_ADDR =
-    crate::Reg<l1_dcache_autoload_sct3_addr::L1_DCACHE_AUTOLOAD_SCT3_ADDR_SPEC>;
+pub type L1_DCACHE_AUTOLOAD_SCT3_ADDR = crate::Reg<
+    l1_dcache_autoload_sct3_addr::L1_DCACHE_AUTOLOAD_SCT3_ADDR_SPEC,
+>;
 ///L1 data Cache autoload section 1 address configure register
 pub mod l1_dcache_autoload_sct3_addr;
 /**L1_DCACHE_AUTOLOAD_SCT3_SIZE (rw) register accessor: L1 data Cache autoload section 1 size configure register
@@ -2271,8 +2361,9 @@ pub mod l1_dcache_autoload_sct3_addr;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_dcache_autoload_sct3_size::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l1_dcache_autoload_sct3_size::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_dcache_autoload_sct3_size`] module*/
-pub type L1_DCACHE_AUTOLOAD_SCT3_SIZE =
-    crate::Reg<l1_dcache_autoload_sct3_size::L1_DCACHE_AUTOLOAD_SCT3_SIZE_SPEC>;
+pub type L1_DCACHE_AUTOLOAD_SCT3_SIZE = crate::Reg<
+    l1_dcache_autoload_sct3_size::L1_DCACHE_AUTOLOAD_SCT3_SIZE_SPEC,
+>;
 ///L1 data Cache autoload section 1 size configure register
 pub mod l1_dcache_autoload_sct3_size;
 /**L1_CACHE_ACS_CNT_INT_ENA (rw) register accessor: Cache Access Counter Interrupt enable register
@@ -2280,8 +2371,9 @@ pub mod l1_dcache_autoload_sct3_size;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_cache_acs_cnt_int_ena::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l1_cache_acs_cnt_int_ena::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_cache_acs_cnt_int_ena`] module*/
-pub type L1_CACHE_ACS_CNT_INT_ENA =
-    crate::Reg<l1_cache_acs_cnt_int_ena::L1_CACHE_ACS_CNT_INT_ENA_SPEC>;
+pub type L1_CACHE_ACS_CNT_INT_ENA = crate::Reg<
+    l1_cache_acs_cnt_int_ena::L1_CACHE_ACS_CNT_INT_ENA_SPEC,
+>;
 ///Cache Access Counter Interrupt enable register
 pub mod l1_cache_acs_cnt_int_ena;
 /**L1_CACHE_ACS_CNT_INT_CLR (rw) register accessor: Cache Access Counter Interrupt clear register
@@ -2289,8 +2381,9 @@ pub mod l1_cache_acs_cnt_int_ena;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_cache_acs_cnt_int_clr::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l1_cache_acs_cnt_int_clr::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_cache_acs_cnt_int_clr`] module*/
-pub type L1_CACHE_ACS_CNT_INT_CLR =
-    crate::Reg<l1_cache_acs_cnt_int_clr::L1_CACHE_ACS_CNT_INT_CLR_SPEC>;
+pub type L1_CACHE_ACS_CNT_INT_CLR = crate::Reg<
+    l1_cache_acs_cnt_int_clr::L1_CACHE_ACS_CNT_INT_CLR_SPEC,
+>;
 ///Cache Access Counter Interrupt clear register
 pub mod l1_cache_acs_cnt_int_clr;
 /**L1_CACHE_ACS_CNT_INT_RAW (rw) register accessor: Cache Access Counter Interrupt raw register
@@ -2298,8 +2391,9 @@ pub mod l1_cache_acs_cnt_int_clr;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_cache_acs_cnt_int_raw::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l1_cache_acs_cnt_int_raw::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_cache_acs_cnt_int_raw`] module*/
-pub type L1_CACHE_ACS_CNT_INT_RAW =
-    crate::Reg<l1_cache_acs_cnt_int_raw::L1_CACHE_ACS_CNT_INT_RAW_SPEC>;
+pub type L1_CACHE_ACS_CNT_INT_RAW = crate::Reg<
+    l1_cache_acs_cnt_int_raw::L1_CACHE_ACS_CNT_INT_RAW_SPEC,
+>;
 ///Cache Access Counter Interrupt raw register
 pub mod l1_cache_acs_cnt_int_raw;
 /**L1_CACHE_ACS_CNT_INT_ST (r) register accessor: Cache Access Counter Interrupt status register
@@ -2307,8 +2401,9 @@ pub mod l1_cache_acs_cnt_int_raw;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_cache_acs_cnt_int_st::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_cache_acs_cnt_int_st`] module*/
-pub type L1_CACHE_ACS_CNT_INT_ST =
-    crate::Reg<l1_cache_acs_cnt_int_st::L1_CACHE_ACS_CNT_INT_ST_SPEC>;
+pub type L1_CACHE_ACS_CNT_INT_ST = crate::Reg<
+    l1_cache_acs_cnt_int_st::L1_CACHE_ACS_CNT_INT_ST_SPEC,
+>;
 ///Cache Access Counter Interrupt status register
 pub mod l1_cache_acs_cnt_int_st;
 /**L1_CACHE_ACS_FAIL_CTRL (rw) register accessor: Cache Access Fail Configuration register
@@ -2316,7 +2411,9 @@ pub mod l1_cache_acs_cnt_int_st;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_cache_acs_fail_ctrl::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l1_cache_acs_fail_ctrl::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_cache_acs_fail_ctrl`] module*/
-pub type L1_CACHE_ACS_FAIL_CTRL = crate::Reg<l1_cache_acs_fail_ctrl::L1_CACHE_ACS_FAIL_CTRL_SPEC>;
+pub type L1_CACHE_ACS_FAIL_CTRL = crate::Reg<
+    l1_cache_acs_fail_ctrl::L1_CACHE_ACS_FAIL_CTRL_SPEC,
+>;
 ///Cache Access Fail Configuration register
 pub mod l1_cache_acs_fail_ctrl;
 /**L1_CACHE_ACS_FAIL_INT_ENA (rw) register accessor: Cache Access Fail Interrupt enable register
@@ -2324,8 +2421,9 @@ pub mod l1_cache_acs_fail_ctrl;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_cache_acs_fail_int_ena::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l1_cache_acs_fail_int_ena::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_cache_acs_fail_int_ena`] module*/
-pub type L1_CACHE_ACS_FAIL_INT_ENA =
-    crate::Reg<l1_cache_acs_fail_int_ena::L1_CACHE_ACS_FAIL_INT_ENA_SPEC>;
+pub type L1_CACHE_ACS_FAIL_INT_ENA = crate::Reg<
+    l1_cache_acs_fail_int_ena::L1_CACHE_ACS_FAIL_INT_ENA_SPEC,
+>;
 ///Cache Access Fail Interrupt enable register
 pub mod l1_cache_acs_fail_int_ena;
 /**L1_CACHE_ACS_FAIL_INT_CLR (rw) register accessor: L1-Cache Access Fail Interrupt clear register
@@ -2333,8 +2431,9 @@ pub mod l1_cache_acs_fail_int_ena;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_cache_acs_fail_int_clr::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l1_cache_acs_fail_int_clr::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_cache_acs_fail_int_clr`] module*/
-pub type L1_CACHE_ACS_FAIL_INT_CLR =
-    crate::Reg<l1_cache_acs_fail_int_clr::L1_CACHE_ACS_FAIL_INT_CLR_SPEC>;
+pub type L1_CACHE_ACS_FAIL_INT_CLR = crate::Reg<
+    l1_cache_acs_fail_int_clr::L1_CACHE_ACS_FAIL_INT_CLR_SPEC,
+>;
 ///L1-Cache Access Fail Interrupt clear register
 pub mod l1_cache_acs_fail_int_clr;
 /**L1_CACHE_ACS_FAIL_INT_RAW (rw) register accessor: Cache Access Fail Interrupt raw register
@@ -2342,8 +2441,9 @@ pub mod l1_cache_acs_fail_int_clr;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_cache_acs_fail_int_raw::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l1_cache_acs_fail_int_raw::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_cache_acs_fail_int_raw`] module*/
-pub type L1_CACHE_ACS_FAIL_INT_RAW =
-    crate::Reg<l1_cache_acs_fail_int_raw::L1_CACHE_ACS_FAIL_INT_RAW_SPEC>;
+pub type L1_CACHE_ACS_FAIL_INT_RAW = crate::Reg<
+    l1_cache_acs_fail_int_raw::L1_CACHE_ACS_FAIL_INT_RAW_SPEC,
+>;
 ///Cache Access Fail Interrupt raw register
 pub mod l1_cache_acs_fail_int_raw;
 /**L1_CACHE_ACS_FAIL_INT_ST (r) register accessor: Cache Access Fail Interrupt status register
@@ -2351,8 +2451,9 @@ pub mod l1_cache_acs_fail_int_raw;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_cache_acs_fail_int_st::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_cache_acs_fail_int_st`] module*/
-pub type L1_CACHE_ACS_FAIL_INT_ST =
-    crate::Reg<l1_cache_acs_fail_int_st::L1_CACHE_ACS_FAIL_INT_ST_SPEC>;
+pub type L1_CACHE_ACS_FAIL_INT_ST = crate::Reg<
+    l1_cache_acs_fail_int_st::L1_CACHE_ACS_FAIL_INT_ST_SPEC,
+>;
 ///Cache Access Fail Interrupt status register
 pub mod l1_cache_acs_fail_int_st;
 /**L1_CACHE_ACS_CNT_CTRL (rw) register accessor: Cache Access Counter enable and clear register
@@ -2360,7 +2461,9 @@ pub mod l1_cache_acs_fail_int_st;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_cache_acs_cnt_ctrl::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l1_cache_acs_cnt_ctrl::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_cache_acs_cnt_ctrl`] module*/
-pub type L1_CACHE_ACS_CNT_CTRL = crate::Reg<l1_cache_acs_cnt_ctrl::L1_CACHE_ACS_CNT_CTRL_SPEC>;
+pub type L1_CACHE_ACS_CNT_CTRL = crate::Reg<
+    l1_cache_acs_cnt_ctrl::L1_CACHE_ACS_CNT_CTRL_SPEC,
+>;
 ///Cache Access Counter enable and clear register
 pub mod l1_cache_acs_cnt_ctrl;
 /**L1_IBUS0_ACS_HIT_CNT (r) register accessor: L1-ICache bus0 Hit-Access Counter register
@@ -2368,7 +2471,9 @@ pub mod l1_cache_acs_cnt_ctrl;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_ibus0_acs_hit_cnt::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_ibus0_acs_hit_cnt`] module*/
-pub type L1_IBUS0_ACS_HIT_CNT = crate::Reg<l1_ibus0_acs_hit_cnt::L1_IBUS0_ACS_HIT_CNT_SPEC>;
+pub type L1_IBUS0_ACS_HIT_CNT = crate::Reg<
+    l1_ibus0_acs_hit_cnt::L1_IBUS0_ACS_HIT_CNT_SPEC,
+>;
 ///L1-ICache bus0 Hit-Access Counter register
 pub mod l1_ibus0_acs_hit_cnt;
 /**L1_IBUS0_ACS_MISS_CNT (r) register accessor: L1-ICache bus0 Miss-Access Counter register
@@ -2376,7 +2481,9 @@ pub mod l1_ibus0_acs_hit_cnt;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_ibus0_acs_miss_cnt::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_ibus0_acs_miss_cnt`] module*/
-pub type L1_IBUS0_ACS_MISS_CNT = crate::Reg<l1_ibus0_acs_miss_cnt::L1_IBUS0_ACS_MISS_CNT_SPEC>;
+pub type L1_IBUS0_ACS_MISS_CNT = crate::Reg<
+    l1_ibus0_acs_miss_cnt::L1_IBUS0_ACS_MISS_CNT_SPEC,
+>;
 ///L1-ICache bus0 Miss-Access Counter register
 pub mod l1_ibus0_acs_miss_cnt;
 /**L1_IBUS0_ACS_CONFLICT_CNT (r) register accessor: L1-ICache bus0 Conflict-Access Counter register
@@ -2384,8 +2491,9 @@ pub mod l1_ibus0_acs_miss_cnt;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_ibus0_acs_conflict_cnt::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_ibus0_acs_conflict_cnt`] module*/
-pub type L1_IBUS0_ACS_CONFLICT_CNT =
-    crate::Reg<l1_ibus0_acs_conflict_cnt::L1_IBUS0_ACS_CONFLICT_CNT_SPEC>;
+pub type L1_IBUS0_ACS_CONFLICT_CNT = crate::Reg<
+    l1_ibus0_acs_conflict_cnt::L1_IBUS0_ACS_CONFLICT_CNT_SPEC,
+>;
 ///L1-ICache bus0 Conflict-Access Counter register
 pub mod l1_ibus0_acs_conflict_cnt;
 /**L1_IBUS0_ACS_NXTLVL_RD_CNT (r) register accessor: L1-ICache bus0 Next-Level-Access Counter register
@@ -2393,8 +2501,9 @@ pub mod l1_ibus0_acs_conflict_cnt;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_ibus0_acs_nxtlvl_rd_cnt::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_ibus0_acs_nxtlvl_rd_cnt`] module*/
-pub type L1_IBUS0_ACS_NXTLVL_RD_CNT =
-    crate::Reg<l1_ibus0_acs_nxtlvl_rd_cnt::L1_IBUS0_ACS_NXTLVL_RD_CNT_SPEC>;
+pub type L1_IBUS0_ACS_NXTLVL_RD_CNT = crate::Reg<
+    l1_ibus0_acs_nxtlvl_rd_cnt::L1_IBUS0_ACS_NXTLVL_RD_CNT_SPEC,
+>;
 ///L1-ICache bus0 Next-Level-Access Counter register
 pub mod l1_ibus0_acs_nxtlvl_rd_cnt;
 /**L1_IBUS1_ACS_HIT_CNT (r) register accessor: L1-ICache bus1 Hit-Access Counter register
@@ -2402,7 +2511,9 @@ pub mod l1_ibus0_acs_nxtlvl_rd_cnt;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_ibus1_acs_hit_cnt::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_ibus1_acs_hit_cnt`] module*/
-pub type L1_IBUS1_ACS_HIT_CNT = crate::Reg<l1_ibus1_acs_hit_cnt::L1_IBUS1_ACS_HIT_CNT_SPEC>;
+pub type L1_IBUS1_ACS_HIT_CNT = crate::Reg<
+    l1_ibus1_acs_hit_cnt::L1_IBUS1_ACS_HIT_CNT_SPEC,
+>;
 ///L1-ICache bus1 Hit-Access Counter register
 pub mod l1_ibus1_acs_hit_cnt;
 /**L1_IBUS1_ACS_MISS_CNT (r) register accessor: L1-ICache bus1 Miss-Access Counter register
@@ -2410,7 +2521,9 @@ pub mod l1_ibus1_acs_hit_cnt;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_ibus1_acs_miss_cnt::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_ibus1_acs_miss_cnt`] module*/
-pub type L1_IBUS1_ACS_MISS_CNT = crate::Reg<l1_ibus1_acs_miss_cnt::L1_IBUS1_ACS_MISS_CNT_SPEC>;
+pub type L1_IBUS1_ACS_MISS_CNT = crate::Reg<
+    l1_ibus1_acs_miss_cnt::L1_IBUS1_ACS_MISS_CNT_SPEC,
+>;
 ///L1-ICache bus1 Miss-Access Counter register
 pub mod l1_ibus1_acs_miss_cnt;
 /**L1_IBUS1_ACS_CONFLICT_CNT (r) register accessor: L1-ICache bus1 Conflict-Access Counter register
@@ -2418,8 +2531,9 @@ pub mod l1_ibus1_acs_miss_cnt;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_ibus1_acs_conflict_cnt::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_ibus1_acs_conflict_cnt`] module*/
-pub type L1_IBUS1_ACS_CONFLICT_CNT =
-    crate::Reg<l1_ibus1_acs_conflict_cnt::L1_IBUS1_ACS_CONFLICT_CNT_SPEC>;
+pub type L1_IBUS1_ACS_CONFLICT_CNT = crate::Reg<
+    l1_ibus1_acs_conflict_cnt::L1_IBUS1_ACS_CONFLICT_CNT_SPEC,
+>;
 ///L1-ICache bus1 Conflict-Access Counter register
 pub mod l1_ibus1_acs_conflict_cnt;
 /**L1_IBUS1_ACS_NXTLVL_RD_CNT (r) register accessor: L1-ICache bus1 Next-Level-Access Counter register
@@ -2427,8 +2541,9 @@ pub mod l1_ibus1_acs_conflict_cnt;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_ibus1_acs_nxtlvl_rd_cnt::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_ibus1_acs_nxtlvl_rd_cnt`] module*/
-pub type L1_IBUS1_ACS_NXTLVL_RD_CNT =
-    crate::Reg<l1_ibus1_acs_nxtlvl_rd_cnt::L1_IBUS1_ACS_NXTLVL_RD_CNT_SPEC>;
+pub type L1_IBUS1_ACS_NXTLVL_RD_CNT = crate::Reg<
+    l1_ibus1_acs_nxtlvl_rd_cnt::L1_IBUS1_ACS_NXTLVL_RD_CNT_SPEC,
+>;
 ///L1-ICache bus1 Next-Level-Access Counter register
 pub mod l1_ibus1_acs_nxtlvl_rd_cnt;
 /**L1_IBUS2_ACS_HIT_CNT (r) register accessor: L1-ICache bus2 Hit-Access Counter register
@@ -2436,7 +2551,9 @@ pub mod l1_ibus1_acs_nxtlvl_rd_cnt;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_ibus2_acs_hit_cnt::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_ibus2_acs_hit_cnt`] module*/
-pub type L1_IBUS2_ACS_HIT_CNT = crate::Reg<l1_ibus2_acs_hit_cnt::L1_IBUS2_ACS_HIT_CNT_SPEC>;
+pub type L1_IBUS2_ACS_HIT_CNT = crate::Reg<
+    l1_ibus2_acs_hit_cnt::L1_IBUS2_ACS_HIT_CNT_SPEC,
+>;
 ///L1-ICache bus2 Hit-Access Counter register
 pub mod l1_ibus2_acs_hit_cnt;
 /**L1_IBUS2_ACS_MISS_CNT (r) register accessor: L1-ICache bus2 Miss-Access Counter register
@@ -2444,7 +2561,9 @@ pub mod l1_ibus2_acs_hit_cnt;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_ibus2_acs_miss_cnt::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_ibus2_acs_miss_cnt`] module*/
-pub type L1_IBUS2_ACS_MISS_CNT = crate::Reg<l1_ibus2_acs_miss_cnt::L1_IBUS2_ACS_MISS_CNT_SPEC>;
+pub type L1_IBUS2_ACS_MISS_CNT = crate::Reg<
+    l1_ibus2_acs_miss_cnt::L1_IBUS2_ACS_MISS_CNT_SPEC,
+>;
 ///L1-ICache bus2 Miss-Access Counter register
 pub mod l1_ibus2_acs_miss_cnt;
 /**L1_IBUS2_ACS_CONFLICT_CNT (r) register accessor: L1-ICache bus2 Conflict-Access Counter register
@@ -2452,8 +2571,9 @@ pub mod l1_ibus2_acs_miss_cnt;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_ibus2_acs_conflict_cnt::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_ibus2_acs_conflict_cnt`] module*/
-pub type L1_IBUS2_ACS_CONFLICT_CNT =
-    crate::Reg<l1_ibus2_acs_conflict_cnt::L1_IBUS2_ACS_CONFLICT_CNT_SPEC>;
+pub type L1_IBUS2_ACS_CONFLICT_CNT = crate::Reg<
+    l1_ibus2_acs_conflict_cnt::L1_IBUS2_ACS_CONFLICT_CNT_SPEC,
+>;
 ///L1-ICache bus2 Conflict-Access Counter register
 pub mod l1_ibus2_acs_conflict_cnt;
 /**L1_IBUS2_ACS_NXTLVL_RD_CNT (r) register accessor: L1-ICache bus2 Next-Level-Access Counter register
@@ -2461,8 +2581,9 @@ pub mod l1_ibus2_acs_conflict_cnt;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_ibus2_acs_nxtlvl_rd_cnt::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_ibus2_acs_nxtlvl_rd_cnt`] module*/
-pub type L1_IBUS2_ACS_NXTLVL_RD_CNT =
-    crate::Reg<l1_ibus2_acs_nxtlvl_rd_cnt::L1_IBUS2_ACS_NXTLVL_RD_CNT_SPEC>;
+pub type L1_IBUS2_ACS_NXTLVL_RD_CNT = crate::Reg<
+    l1_ibus2_acs_nxtlvl_rd_cnt::L1_IBUS2_ACS_NXTLVL_RD_CNT_SPEC,
+>;
 ///L1-ICache bus2 Next-Level-Access Counter register
 pub mod l1_ibus2_acs_nxtlvl_rd_cnt;
 /**L1_IBUS3_ACS_HIT_CNT (r) register accessor: L1-ICache bus3 Hit-Access Counter register
@@ -2470,7 +2591,9 @@ pub mod l1_ibus2_acs_nxtlvl_rd_cnt;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_ibus3_acs_hit_cnt::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_ibus3_acs_hit_cnt`] module*/
-pub type L1_IBUS3_ACS_HIT_CNT = crate::Reg<l1_ibus3_acs_hit_cnt::L1_IBUS3_ACS_HIT_CNT_SPEC>;
+pub type L1_IBUS3_ACS_HIT_CNT = crate::Reg<
+    l1_ibus3_acs_hit_cnt::L1_IBUS3_ACS_HIT_CNT_SPEC,
+>;
 ///L1-ICache bus3 Hit-Access Counter register
 pub mod l1_ibus3_acs_hit_cnt;
 /**L1_IBUS3_ACS_MISS_CNT (r) register accessor: L1-ICache bus3 Miss-Access Counter register
@@ -2478,7 +2601,9 @@ pub mod l1_ibus3_acs_hit_cnt;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_ibus3_acs_miss_cnt::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_ibus3_acs_miss_cnt`] module*/
-pub type L1_IBUS3_ACS_MISS_CNT = crate::Reg<l1_ibus3_acs_miss_cnt::L1_IBUS3_ACS_MISS_CNT_SPEC>;
+pub type L1_IBUS3_ACS_MISS_CNT = crate::Reg<
+    l1_ibus3_acs_miss_cnt::L1_IBUS3_ACS_MISS_CNT_SPEC,
+>;
 ///L1-ICache bus3 Miss-Access Counter register
 pub mod l1_ibus3_acs_miss_cnt;
 /**L1_IBUS3_ACS_CONFLICT_CNT (r) register accessor: L1-ICache bus3 Conflict-Access Counter register
@@ -2486,8 +2611,9 @@ pub mod l1_ibus3_acs_miss_cnt;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_ibus3_acs_conflict_cnt::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_ibus3_acs_conflict_cnt`] module*/
-pub type L1_IBUS3_ACS_CONFLICT_CNT =
-    crate::Reg<l1_ibus3_acs_conflict_cnt::L1_IBUS3_ACS_CONFLICT_CNT_SPEC>;
+pub type L1_IBUS3_ACS_CONFLICT_CNT = crate::Reg<
+    l1_ibus3_acs_conflict_cnt::L1_IBUS3_ACS_CONFLICT_CNT_SPEC,
+>;
 ///L1-ICache bus3 Conflict-Access Counter register
 pub mod l1_ibus3_acs_conflict_cnt;
 /**L1_IBUS3_ACS_NXTLVL_RD_CNT (r) register accessor: L1-ICache bus3 Next-Level-Access Counter register
@@ -2495,8 +2621,9 @@ pub mod l1_ibus3_acs_conflict_cnt;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_ibus3_acs_nxtlvl_rd_cnt::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_ibus3_acs_nxtlvl_rd_cnt`] module*/
-pub type L1_IBUS3_ACS_NXTLVL_RD_CNT =
-    crate::Reg<l1_ibus3_acs_nxtlvl_rd_cnt::L1_IBUS3_ACS_NXTLVL_RD_CNT_SPEC>;
+pub type L1_IBUS3_ACS_NXTLVL_RD_CNT = crate::Reg<
+    l1_ibus3_acs_nxtlvl_rd_cnt::L1_IBUS3_ACS_NXTLVL_RD_CNT_SPEC,
+>;
 ///L1-ICache bus3 Next-Level-Access Counter register
 pub mod l1_ibus3_acs_nxtlvl_rd_cnt;
 /**L1_DBUS0_ACS_HIT_CNT (r) register accessor: L1-DCache bus0 Hit-Access Counter register
@@ -2504,7 +2631,9 @@ pub mod l1_ibus3_acs_nxtlvl_rd_cnt;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_dbus0_acs_hit_cnt::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_dbus0_acs_hit_cnt`] module*/
-pub type L1_DBUS0_ACS_HIT_CNT = crate::Reg<l1_dbus0_acs_hit_cnt::L1_DBUS0_ACS_HIT_CNT_SPEC>;
+pub type L1_DBUS0_ACS_HIT_CNT = crate::Reg<
+    l1_dbus0_acs_hit_cnt::L1_DBUS0_ACS_HIT_CNT_SPEC,
+>;
 ///L1-DCache bus0 Hit-Access Counter register
 pub mod l1_dbus0_acs_hit_cnt;
 /**L1_DBUS0_ACS_MISS_CNT (r) register accessor: L1-DCache bus0 Miss-Access Counter register
@@ -2512,7 +2641,9 @@ pub mod l1_dbus0_acs_hit_cnt;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_dbus0_acs_miss_cnt::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_dbus0_acs_miss_cnt`] module*/
-pub type L1_DBUS0_ACS_MISS_CNT = crate::Reg<l1_dbus0_acs_miss_cnt::L1_DBUS0_ACS_MISS_CNT_SPEC>;
+pub type L1_DBUS0_ACS_MISS_CNT = crate::Reg<
+    l1_dbus0_acs_miss_cnt::L1_DBUS0_ACS_MISS_CNT_SPEC,
+>;
 ///L1-DCache bus0 Miss-Access Counter register
 pub mod l1_dbus0_acs_miss_cnt;
 /**L1_DBUS0_ACS_CONFLICT_CNT (r) register accessor: L1-DCache bus0 Conflict-Access Counter register
@@ -2520,8 +2651,9 @@ pub mod l1_dbus0_acs_miss_cnt;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_dbus0_acs_conflict_cnt::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_dbus0_acs_conflict_cnt`] module*/
-pub type L1_DBUS0_ACS_CONFLICT_CNT =
-    crate::Reg<l1_dbus0_acs_conflict_cnt::L1_DBUS0_ACS_CONFLICT_CNT_SPEC>;
+pub type L1_DBUS0_ACS_CONFLICT_CNT = crate::Reg<
+    l1_dbus0_acs_conflict_cnt::L1_DBUS0_ACS_CONFLICT_CNT_SPEC,
+>;
 ///L1-DCache bus0 Conflict-Access Counter register
 pub mod l1_dbus0_acs_conflict_cnt;
 /**L1_DBUS0_ACS_NXTLVL_RD_CNT (r) register accessor: L1-DCache bus0 Next-Level-Access Counter register
@@ -2529,8 +2661,9 @@ pub mod l1_dbus0_acs_conflict_cnt;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_dbus0_acs_nxtlvl_rd_cnt::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_dbus0_acs_nxtlvl_rd_cnt`] module*/
-pub type L1_DBUS0_ACS_NXTLVL_RD_CNT =
-    crate::Reg<l1_dbus0_acs_nxtlvl_rd_cnt::L1_DBUS0_ACS_NXTLVL_RD_CNT_SPEC>;
+pub type L1_DBUS0_ACS_NXTLVL_RD_CNT = crate::Reg<
+    l1_dbus0_acs_nxtlvl_rd_cnt::L1_DBUS0_ACS_NXTLVL_RD_CNT_SPEC,
+>;
 ///L1-DCache bus0 Next-Level-Access Counter register
 pub mod l1_dbus0_acs_nxtlvl_rd_cnt;
 /**L1_DBUS0_ACS_NXTLVL_WR_CNT (r) register accessor: L1-DCache bus0 WB-Access Counter register
@@ -2538,8 +2671,9 @@ pub mod l1_dbus0_acs_nxtlvl_rd_cnt;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_dbus0_acs_nxtlvl_wr_cnt::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_dbus0_acs_nxtlvl_wr_cnt`] module*/
-pub type L1_DBUS0_ACS_NXTLVL_WR_CNT =
-    crate::Reg<l1_dbus0_acs_nxtlvl_wr_cnt::L1_DBUS0_ACS_NXTLVL_WR_CNT_SPEC>;
+pub type L1_DBUS0_ACS_NXTLVL_WR_CNT = crate::Reg<
+    l1_dbus0_acs_nxtlvl_wr_cnt::L1_DBUS0_ACS_NXTLVL_WR_CNT_SPEC,
+>;
 ///L1-DCache bus0 WB-Access Counter register
 pub mod l1_dbus0_acs_nxtlvl_wr_cnt;
 /**L1_DBUS1_ACS_HIT_CNT (r) register accessor: L1-DCache bus1 Hit-Access Counter register
@@ -2547,7 +2681,9 @@ pub mod l1_dbus0_acs_nxtlvl_wr_cnt;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_dbus1_acs_hit_cnt::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_dbus1_acs_hit_cnt`] module*/
-pub type L1_DBUS1_ACS_HIT_CNT = crate::Reg<l1_dbus1_acs_hit_cnt::L1_DBUS1_ACS_HIT_CNT_SPEC>;
+pub type L1_DBUS1_ACS_HIT_CNT = crate::Reg<
+    l1_dbus1_acs_hit_cnt::L1_DBUS1_ACS_HIT_CNT_SPEC,
+>;
 ///L1-DCache bus1 Hit-Access Counter register
 pub mod l1_dbus1_acs_hit_cnt;
 /**L1_DBUS1_ACS_MISS_CNT (r) register accessor: L1-DCache bus1 Miss-Access Counter register
@@ -2555,7 +2691,9 @@ pub mod l1_dbus1_acs_hit_cnt;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_dbus1_acs_miss_cnt::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_dbus1_acs_miss_cnt`] module*/
-pub type L1_DBUS1_ACS_MISS_CNT = crate::Reg<l1_dbus1_acs_miss_cnt::L1_DBUS1_ACS_MISS_CNT_SPEC>;
+pub type L1_DBUS1_ACS_MISS_CNT = crate::Reg<
+    l1_dbus1_acs_miss_cnt::L1_DBUS1_ACS_MISS_CNT_SPEC,
+>;
 ///L1-DCache bus1 Miss-Access Counter register
 pub mod l1_dbus1_acs_miss_cnt;
 /**L1_DBUS1_ACS_CONFLICT_CNT (r) register accessor: L1-DCache bus1 Conflict-Access Counter register
@@ -2563,8 +2701,9 @@ pub mod l1_dbus1_acs_miss_cnt;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_dbus1_acs_conflict_cnt::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_dbus1_acs_conflict_cnt`] module*/
-pub type L1_DBUS1_ACS_CONFLICT_CNT =
-    crate::Reg<l1_dbus1_acs_conflict_cnt::L1_DBUS1_ACS_CONFLICT_CNT_SPEC>;
+pub type L1_DBUS1_ACS_CONFLICT_CNT = crate::Reg<
+    l1_dbus1_acs_conflict_cnt::L1_DBUS1_ACS_CONFLICT_CNT_SPEC,
+>;
 ///L1-DCache bus1 Conflict-Access Counter register
 pub mod l1_dbus1_acs_conflict_cnt;
 /**L1_DBUS1_ACS_NXTLVL_RD_CNT (r) register accessor: L1-DCache bus1 Next-Level-Access Counter register
@@ -2572,8 +2711,9 @@ pub mod l1_dbus1_acs_conflict_cnt;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_dbus1_acs_nxtlvl_rd_cnt::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_dbus1_acs_nxtlvl_rd_cnt`] module*/
-pub type L1_DBUS1_ACS_NXTLVL_RD_CNT =
-    crate::Reg<l1_dbus1_acs_nxtlvl_rd_cnt::L1_DBUS1_ACS_NXTLVL_RD_CNT_SPEC>;
+pub type L1_DBUS1_ACS_NXTLVL_RD_CNT = crate::Reg<
+    l1_dbus1_acs_nxtlvl_rd_cnt::L1_DBUS1_ACS_NXTLVL_RD_CNT_SPEC,
+>;
 ///L1-DCache bus1 Next-Level-Access Counter register
 pub mod l1_dbus1_acs_nxtlvl_rd_cnt;
 /**L1_DBUS1_ACS_NXTLVL_WR_CNT (r) register accessor: L1-DCache bus1 WB-Access Counter register
@@ -2581,8 +2721,9 @@ pub mod l1_dbus1_acs_nxtlvl_rd_cnt;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_dbus1_acs_nxtlvl_wr_cnt::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_dbus1_acs_nxtlvl_wr_cnt`] module*/
-pub type L1_DBUS1_ACS_NXTLVL_WR_CNT =
-    crate::Reg<l1_dbus1_acs_nxtlvl_wr_cnt::L1_DBUS1_ACS_NXTLVL_WR_CNT_SPEC>;
+pub type L1_DBUS1_ACS_NXTLVL_WR_CNT = crate::Reg<
+    l1_dbus1_acs_nxtlvl_wr_cnt::L1_DBUS1_ACS_NXTLVL_WR_CNT_SPEC,
+>;
 ///L1-DCache bus1 WB-Access Counter register
 pub mod l1_dbus1_acs_nxtlvl_wr_cnt;
 /**L1_DBUS2_ACS_HIT_CNT (r) register accessor: L1-DCache bus2 Hit-Access Counter register
@@ -2590,7 +2731,9 @@ pub mod l1_dbus1_acs_nxtlvl_wr_cnt;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_dbus2_acs_hit_cnt::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_dbus2_acs_hit_cnt`] module*/
-pub type L1_DBUS2_ACS_HIT_CNT = crate::Reg<l1_dbus2_acs_hit_cnt::L1_DBUS2_ACS_HIT_CNT_SPEC>;
+pub type L1_DBUS2_ACS_HIT_CNT = crate::Reg<
+    l1_dbus2_acs_hit_cnt::L1_DBUS2_ACS_HIT_CNT_SPEC,
+>;
 ///L1-DCache bus2 Hit-Access Counter register
 pub mod l1_dbus2_acs_hit_cnt;
 /**L1_DBUS2_ACS_MISS_CNT (r) register accessor: L1-DCache bus2 Miss-Access Counter register
@@ -2598,7 +2741,9 @@ pub mod l1_dbus2_acs_hit_cnt;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_dbus2_acs_miss_cnt::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_dbus2_acs_miss_cnt`] module*/
-pub type L1_DBUS2_ACS_MISS_CNT = crate::Reg<l1_dbus2_acs_miss_cnt::L1_DBUS2_ACS_MISS_CNT_SPEC>;
+pub type L1_DBUS2_ACS_MISS_CNT = crate::Reg<
+    l1_dbus2_acs_miss_cnt::L1_DBUS2_ACS_MISS_CNT_SPEC,
+>;
 ///L1-DCache bus2 Miss-Access Counter register
 pub mod l1_dbus2_acs_miss_cnt;
 /**L1_DBUS2_ACS_CONFLICT_CNT (r) register accessor: L1-DCache bus2 Conflict-Access Counter register
@@ -2606,8 +2751,9 @@ pub mod l1_dbus2_acs_miss_cnt;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_dbus2_acs_conflict_cnt::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_dbus2_acs_conflict_cnt`] module*/
-pub type L1_DBUS2_ACS_CONFLICT_CNT =
-    crate::Reg<l1_dbus2_acs_conflict_cnt::L1_DBUS2_ACS_CONFLICT_CNT_SPEC>;
+pub type L1_DBUS2_ACS_CONFLICT_CNT = crate::Reg<
+    l1_dbus2_acs_conflict_cnt::L1_DBUS2_ACS_CONFLICT_CNT_SPEC,
+>;
 ///L1-DCache bus2 Conflict-Access Counter register
 pub mod l1_dbus2_acs_conflict_cnt;
 /**L1_DBUS2_ACS_NXTLVL_RD_CNT (r) register accessor: L1-DCache bus2 Next-Level-Access Counter register
@@ -2615,8 +2761,9 @@ pub mod l1_dbus2_acs_conflict_cnt;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_dbus2_acs_nxtlvl_rd_cnt::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_dbus2_acs_nxtlvl_rd_cnt`] module*/
-pub type L1_DBUS2_ACS_NXTLVL_RD_CNT =
-    crate::Reg<l1_dbus2_acs_nxtlvl_rd_cnt::L1_DBUS2_ACS_NXTLVL_RD_CNT_SPEC>;
+pub type L1_DBUS2_ACS_NXTLVL_RD_CNT = crate::Reg<
+    l1_dbus2_acs_nxtlvl_rd_cnt::L1_DBUS2_ACS_NXTLVL_RD_CNT_SPEC,
+>;
 ///L1-DCache bus2 Next-Level-Access Counter register
 pub mod l1_dbus2_acs_nxtlvl_rd_cnt;
 /**L1_DBUS2_ACS_NXTLVL_WR_CNT (r) register accessor: L1-DCache bus2 WB-Access Counter register
@@ -2624,8 +2771,9 @@ pub mod l1_dbus2_acs_nxtlvl_rd_cnt;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_dbus2_acs_nxtlvl_wr_cnt::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_dbus2_acs_nxtlvl_wr_cnt`] module*/
-pub type L1_DBUS2_ACS_NXTLVL_WR_CNT =
-    crate::Reg<l1_dbus2_acs_nxtlvl_wr_cnt::L1_DBUS2_ACS_NXTLVL_WR_CNT_SPEC>;
+pub type L1_DBUS2_ACS_NXTLVL_WR_CNT = crate::Reg<
+    l1_dbus2_acs_nxtlvl_wr_cnt::L1_DBUS2_ACS_NXTLVL_WR_CNT_SPEC,
+>;
 ///L1-DCache bus2 WB-Access Counter register
 pub mod l1_dbus2_acs_nxtlvl_wr_cnt;
 /**L1_DBUS3_ACS_HIT_CNT (r) register accessor: L1-DCache bus3 Hit-Access Counter register
@@ -2633,7 +2781,9 @@ pub mod l1_dbus2_acs_nxtlvl_wr_cnt;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_dbus3_acs_hit_cnt::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_dbus3_acs_hit_cnt`] module*/
-pub type L1_DBUS3_ACS_HIT_CNT = crate::Reg<l1_dbus3_acs_hit_cnt::L1_DBUS3_ACS_HIT_CNT_SPEC>;
+pub type L1_DBUS3_ACS_HIT_CNT = crate::Reg<
+    l1_dbus3_acs_hit_cnt::L1_DBUS3_ACS_HIT_CNT_SPEC,
+>;
 ///L1-DCache bus3 Hit-Access Counter register
 pub mod l1_dbus3_acs_hit_cnt;
 /**L1_DBUS3_ACS_MISS_CNT (r) register accessor: L1-DCache bus3 Miss-Access Counter register
@@ -2641,7 +2791,9 @@ pub mod l1_dbus3_acs_hit_cnt;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_dbus3_acs_miss_cnt::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_dbus3_acs_miss_cnt`] module*/
-pub type L1_DBUS3_ACS_MISS_CNT = crate::Reg<l1_dbus3_acs_miss_cnt::L1_DBUS3_ACS_MISS_CNT_SPEC>;
+pub type L1_DBUS3_ACS_MISS_CNT = crate::Reg<
+    l1_dbus3_acs_miss_cnt::L1_DBUS3_ACS_MISS_CNT_SPEC,
+>;
 ///L1-DCache bus3 Miss-Access Counter register
 pub mod l1_dbus3_acs_miss_cnt;
 /**L1_DBUS3_ACS_CONFLICT_CNT (r) register accessor: L1-DCache bus3 Conflict-Access Counter register
@@ -2649,8 +2801,9 @@ pub mod l1_dbus3_acs_miss_cnt;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_dbus3_acs_conflict_cnt::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_dbus3_acs_conflict_cnt`] module*/
-pub type L1_DBUS3_ACS_CONFLICT_CNT =
-    crate::Reg<l1_dbus3_acs_conflict_cnt::L1_DBUS3_ACS_CONFLICT_CNT_SPEC>;
+pub type L1_DBUS3_ACS_CONFLICT_CNT = crate::Reg<
+    l1_dbus3_acs_conflict_cnt::L1_DBUS3_ACS_CONFLICT_CNT_SPEC,
+>;
 ///L1-DCache bus3 Conflict-Access Counter register
 pub mod l1_dbus3_acs_conflict_cnt;
 /**L1_DBUS3_ACS_NXTLVL_RD_CNT (r) register accessor: L1-DCache bus3 Next-Level-Access Counter register
@@ -2658,8 +2811,9 @@ pub mod l1_dbus3_acs_conflict_cnt;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_dbus3_acs_nxtlvl_rd_cnt::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_dbus3_acs_nxtlvl_rd_cnt`] module*/
-pub type L1_DBUS3_ACS_NXTLVL_RD_CNT =
-    crate::Reg<l1_dbus3_acs_nxtlvl_rd_cnt::L1_DBUS3_ACS_NXTLVL_RD_CNT_SPEC>;
+pub type L1_DBUS3_ACS_NXTLVL_RD_CNT = crate::Reg<
+    l1_dbus3_acs_nxtlvl_rd_cnt::L1_DBUS3_ACS_NXTLVL_RD_CNT_SPEC,
+>;
 ///L1-DCache bus3 Next-Level-Access Counter register
 pub mod l1_dbus3_acs_nxtlvl_rd_cnt;
 /**L1_DBUS3_ACS_NXTLVL_WR_CNT (r) register accessor: L1-DCache bus3 WB-Access Counter register
@@ -2667,8 +2821,9 @@ pub mod l1_dbus3_acs_nxtlvl_rd_cnt;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_dbus3_acs_nxtlvl_wr_cnt::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_dbus3_acs_nxtlvl_wr_cnt`] module*/
-pub type L1_DBUS3_ACS_NXTLVL_WR_CNT =
-    crate::Reg<l1_dbus3_acs_nxtlvl_wr_cnt::L1_DBUS3_ACS_NXTLVL_WR_CNT_SPEC>;
+pub type L1_DBUS3_ACS_NXTLVL_WR_CNT = crate::Reg<
+    l1_dbus3_acs_nxtlvl_wr_cnt::L1_DBUS3_ACS_NXTLVL_WR_CNT_SPEC,
+>;
 ///L1-DCache bus3 WB-Access Counter register
 pub mod l1_dbus3_acs_nxtlvl_wr_cnt;
 /**L1_ICACHE0_ACS_FAIL_ID_ATTR (r) register accessor: L1-ICache0 Access Fail ID/attribution information register
@@ -2676,8 +2831,9 @@ pub mod l1_dbus3_acs_nxtlvl_wr_cnt;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_icache0_acs_fail_id_attr::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_icache0_acs_fail_id_attr`] module*/
-pub type L1_ICACHE0_ACS_FAIL_ID_ATTR =
-    crate::Reg<l1_icache0_acs_fail_id_attr::L1_ICACHE0_ACS_FAIL_ID_ATTR_SPEC>;
+pub type L1_ICACHE0_ACS_FAIL_ID_ATTR = crate::Reg<
+    l1_icache0_acs_fail_id_attr::L1_ICACHE0_ACS_FAIL_ID_ATTR_SPEC,
+>;
 ///L1-ICache0 Access Fail ID/attribution information register
 pub mod l1_icache0_acs_fail_id_attr;
 /**L1_ICACHE0_ACS_FAIL_ADDR (r) register accessor: L1-ICache0 Access Fail Address information register
@@ -2685,8 +2841,9 @@ pub mod l1_icache0_acs_fail_id_attr;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_icache0_acs_fail_addr::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_icache0_acs_fail_addr`] module*/
-pub type L1_ICACHE0_ACS_FAIL_ADDR =
-    crate::Reg<l1_icache0_acs_fail_addr::L1_ICACHE0_ACS_FAIL_ADDR_SPEC>;
+pub type L1_ICACHE0_ACS_FAIL_ADDR = crate::Reg<
+    l1_icache0_acs_fail_addr::L1_ICACHE0_ACS_FAIL_ADDR_SPEC,
+>;
 ///L1-ICache0 Access Fail Address information register
 pub mod l1_icache0_acs_fail_addr;
 /**L1_ICACHE1_ACS_FAIL_ID_ATTR (r) register accessor: L1-ICache0 Access Fail ID/attribution information register
@@ -2694,8 +2851,9 @@ pub mod l1_icache0_acs_fail_addr;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_icache1_acs_fail_id_attr::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_icache1_acs_fail_id_attr`] module*/
-pub type L1_ICACHE1_ACS_FAIL_ID_ATTR =
-    crate::Reg<l1_icache1_acs_fail_id_attr::L1_ICACHE1_ACS_FAIL_ID_ATTR_SPEC>;
+pub type L1_ICACHE1_ACS_FAIL_ID_ATTR = crate::Reg<
+    l1_icache1_acs_fail_id_attr::L1_ICACHE1_ACS_FAIL_ID_ATTR_SPEC,
+>;
 ///L1-ICache0 Access Fail ID/attribution information register
 pub mod l1_icache1_acs_fail_id_attr;
 /**L1_ICACHE1_ACS_FAIL_ADDR (r) register accessor: L1-ICache0 Access Fail Address information register
@@ -2703,8 +2861,9 @@ pub mod l1_icache1_acs_fail_id_attr;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_icache1_acs_fail_addr::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_icache1_acs_fail_addr`] module*/
-pub type L1_ICACHE1_ACS_FAIL_ADDR =
-    crate::Reg<l1_icache1_acs_fail_addr::L1_ICACHE1_ACS_FAIL_ADDR_SPEC>;
+pub type L1_ICACHE1_ACS_FAIL_ADDR = crate::Reg<
+    l1_icache1_acs_fail_addr::L1_ICACHE1_ACS_FAIL_ADDR_SPEC,
+>;
 ///L1-ICache0 Access Fail Address information register
 pub mod l1_icache1_acs_fail_addr;
 /**L1_ICACHE2_ACS_FAIL_ID_ATTR (r) register accessor: L1-ICache0 Access Fail ID/attribution information register
@@ -2712,8 +2871,9 @@ pub mod l1_icache1_acs_fail_addr;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_icache2_acs_fail_id_attr::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_icache2_acs_fail_id_attr`] module*/
-pub type L1_ICACHE2_ACS_FAIL_ID_ATTR =
-    crate::Reg<l1_icache2_acs_fail_id_attr::L1_ICACHE2_ACS_FAIL_ID_ATTR_SPEC>;
+pub type L1_ICACHE2_ACS_FAIL_ID_ATTR = crate::Reg<
+    l1_icache2_acs_fail_id_attr::L1_ICACHE2_ACS_FAIL_ID_ATTR_SPEC,
+>;
 ///L1-ICache0 Access Fail ID/attribution information register
 pub mod l1_icache2_acs_fail_id_attr;
 /**L1_ICACHE2_ACS_FAIL_ADDR (r) register accessor: L1-ICache0 Access Fail Address information register
@@ -2721,8 +2881,9 @@ pub mod l1_icache2_acs_fail_id_attr;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_icache2_acs_fail_addr::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_icache2_acs_fail_addr`] module*/
-pub type L1_ICACHE2_ACS_FAIL_ADDR =
-    crate::Reg<l1_icache2_acs_fail_addr::L1_ICACHE2_ACS_FAIL_ADDR_SPEC>;
+pub type L1_ICACHE2_ACS_FAIL_ADDR = crate::Reg<
+    l1_icache2_acs_fail_addr::L1_ICACHE2_ACS_FAIL_ADDR_SPEC,
+>;
 ///L1-ICache0 Access Fail Address information register
 pub mod l1_icache2_acs_fail_addr;
 /**L1_ICACHE3_ACS_FAIL_ID_ATTR (r) register accessor: L1-ICache0 Access Fail ID/attribution information register
@@ -2730,8 +2891,9 @@ pub mod l1_icache2_acs_fail_addr;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_icache3_acs_fail_id_attr::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_icache3_acs_fail_id_attr`] module*/
-pub type L1_ICACHE3_ACS_FAIL_ID_ATTR =
-    crate::Reg<l1_icache3_acs_fail_id_attr::L1_ICACHE3_ACS_FAIL_ID_ATTR_SPEC>;
+pub type L1_ICACHE3_ACS_FAIL_ID_ATTR = crate::Reg<
+    l1_icache3_acs_fail_id_attr::L1_ICACHE3_ACS_FAIL_ID_ATTR_SPEC,
+>;
 ///L1-ICache0 Access Fail ID/attribution information register
 pub mod l1_icache3_acs_fail_id_attr;
 /**L1_ICACHE3_ACS_FAIL_ADDR (r) register accessor: L1-ICache0 Access Fail Address information register
@@ -2739,8 +2901,9 @@ pub mod l1_icache3_acs_fail_id_attr;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_icache3_acs_fail_addr::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_icache3_acs_fail_addr`] module*/
-pub type L1_ICACHE3_ACS_FAIL_ADDR =
-    crate::Reg<l1_icache3_acs_fail_addr::L1_ICACHE3_ACS_FAIL_ADDR_SPEC>;
+pub type L1_ICACHE3_ACS_FAIL_ADDR = crate::Reg<
+    l1_icache3_acs_fail_addr::L1_ICACHE3_ACS_FAIL_ADDR_SPEC,
+>;
 ///L1-ICache0 Access Fail Address information register
 pub mod l1_icache3_acs_fail_addr;
 /**L1_DCACHE_ACS_FAIL_ID_ATTR (r) register accessor: L1-DCache Access Fail ID/attribution information register
@@ -2748,8 +2911,9 @@ pub mod l1_icache3_acs_fail_addr;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_dcache_acs_fail_id_attr::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_dcache_acs_fail_id_attr`] module*/
-pub type L1_DCACHE_ACS_FAIL_ID_ATTR =
-    crate::Reg<l1_dcache_acs_fail_id_attr::L1_DCACHE_ACS_FAIL_ID_ATTR_SPEC>;
+pub type L1_DCACHE_ACS_FAIL_ID_ATTR = crate::Reg<
+    l1_dcache_acs_fail_id_attr::L1_DCACHE_ACS_FAIL_ID_ATTR_SPEC,
+>;
 ///L1-DCache Access Fail ID/attribution information register
 pub mod l1_dcache_acs_fail_id_attr;
 /**L1_DCACHE_ACS_FAIL_ADDR (r) register accessor: L1-DCache Access Fail Address information register
@@ -2757,8 +2921,9 @@ pub mod l1_dcache_acs_fail_id_attr;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_dcache_acs_fail_addr::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_dcache_acs_fail_addr`] module*/
-pub type L1_DCACHE_ACS_FAIL_ADDR =
-    crate::Reg<l1_dcache_acs_fail_addr::L1_DCACHE_ACS_FAIL_ADDR_SPEC>;
+pub type L1_DCACHE_ACS_FAIL_ADDR = crate::Reg<
+    l1_dcache_acs_fail_addr::L1_DCACHE_ACS_FAIL_ADDR_SPEC,
+>;
 ///L1-DCache Access Fail Address information register
 pub mod l1_dcache_acs_fail_addr;
 /**SYNC_L1_CACHE_PRELOAD_INT_ENA (rw) register accessor: L1-Cache Access Fail Interrupt enable register
@@ -2766,8 +2931,9 @@ pub mod l1_dcache_acs_fail_addr;
 You can [`read`](crate::generic::Reg::read) this register and get [`sync_l1_cache_preload_int_ena::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sync_l1_cache_preload_int_ena::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@sync_l1_cache_preload_int_ena`] module*/
-pub type SYNC_L1_CACHE_PRELOAD_INT_ENA =
-    crate::Reg<sync_l1_cache_preload_int_ena::SYNC_L1_CACHE_PRELOAD_INT_ENA_SPEC>;
+pub type SYNC_L1_CACHE_PRELOAD_INT_ENA = crate::Reg<
+    sync_l1_cache_preload_int_ena::SYNC_L1_CACHE_PRELOAD_INT_ENA_SPEC,
+>;
 ///L1-Cache Access Fail Interrupt enable register
 pub mod sync_l1_cache_preload_int_ena;
 /**SYNC_L1_CACHE_PRELOAD_INT_CLR (rw) register accessor: Sync Preload operation Interrupt clear register
@@ -2775,8 +2941,9 @@ pub mod sync_l1_cache_preload_int_ena;
 You can [`read`](crate::generic::Reg::read) this register and get [`sync_l1_cache_preload_int_clr::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sync_l1_cache_preload_int_clr::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@sync_l1_cache_preload_int_clr`] module*/
-pub type SYNC_L1_CACHE_PRELOAD_INT_CLR =
-    crate::Reg<sync_l1_cache_preload_int_clr::SYNC_L1_CACHE_PRELOAD_INT_CLR_SPEC>;
+pub type SYNC_L1_CACHE_PRELOAD_INT_CLR = crate::Reg<
+    sync_l1_cache_preload_int_clr::SYNC_L1_CACHE_PRELOAD_INT_CLR_SPEC,
+>;
 ///Sync Preload operation Interrupt clear register
 pub mod sync_l1_cache_preload_int_clr;
 /**SYNC_L1_CACHE_PRELOAD_INT_RAW (rw) register accessor: Sync Preload operation Interrupt raw register
@@ -2784,8 +2951,9 @@ pub mod sync_l1_cache_preload_int_clr;
 You can [`read`](crate::generic::Reg::read) this register and get [`sync_l1_cache_preload_int_raw::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sync_l1_cache_preload_int_raw::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@sync_l1_cache_preload_int_raw`] module*/
-pub type SYNC_L1_CACHE_PRELOAD_INT_RAW =
-    crate::Reg<sync_l1_cache_preload_int_raw::SYNC_L1_CACHE_PRELOAD_INT_RAW_SPEC>;
+pub type SYNC_L1_CACHE_PRELOAD_INT_RAW = crate::Reg<
+    sync_l1_cache_preload_int_raw::SYNC_L1_CACHE_PRELOAD_INT_RAW_SPEC,
+>;
 ///Sync Preload operation Interrupt raw register
 pub mod sync_l1_cache_preload_int_raw;
 /**SYNC_L1_CACHE_PRELOAD_INT_ST (r) register accessor: L1-Cache Access Fail Interrupt status register
@@ -2793,8 +2961,9 @@ pub mod sync_l1_cache_preload_int_raw;
 You can [`read`](crate::generic::Reg::read) this register and get [`sync_l1_cache_preload_int_st::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@sync_l1_cache_preload_int_st`] module*/
-pub type SYNC_L1_CACHE_PRELOAD_INT_ST =
-    crate::Reg<sync_l1_cache_preload_int_st::SYNC_L1_CACHE_PRELOAD_INT_ST_SPEC>;
+pub type SYNC_L1_CACHE_PRELOAD_INT_ST = crate::Reg<
+    sync_l1_cache_preload_int_st::SYNC_L1_CACHE_PRELOAD_INT_ST_SPEC,
+>;
 ///L1-Cache Access Fail Interrupt status register
 pub mod sync_l1_cache_preload_int_st;
 /**SYNC_L1_CACHE_PRELOAD_EXCEPTION (r) register accessor: Cache Sync/Preload Operation exception register
@@ -2802,8 +2971,9 @@ pub mod sync_l1_cache_preload_int_st;
 You can [`read`](crate::generic::Reg::read) this register and get [`sync_l1_cache_preload_exception::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@sync_l1_cache_preload_exception`] module*/
-pub type SYNC_L1_CACHE_PRELOAD_EXCEPTION =
-    crate::Reg<sync_l1_cache_preload_exception::SYNC_L1_CACHE_PRELOAD_EXCEPTION_SPEC>;
+pub type SYNC_L1_CACHE_PRELOAD_EXCEPTION = crate::Reg<
+    sync_l1_cache_preload_exception::SYNC_L1_CACHE_PRELOAD_EXCEPTION_SPEC,
+>;
 ///Cache Sync/Preload Operation exception register
 pub mod sync_l1_cache_preload_exception;
 /**L1_CACHE_SYNC_RST_CTRL (rw) register accessor: Cache Sync Reset control register
@@ -2811,7 +2981,9 @@ pub mod sync_l1_cache_preload_exception;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_cache_sync_rst_ctrl::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l1_cache_sync_rst_ctrl::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_cache_sync_rst_ctrl`] module*/
-pub type L1_CACHE_SYNC_RST_CTRL = crate::Reg<l1_cache_sync_rst_ctrl::L1_CACHE_SYNC_RST_CTRL_SPEC>;
+pub type L1_CACHE_SYNC_RST_CTRL = crate::Reg<
+    l1_cache_sync_rst_ctrl::L1_CACHE_SYNC_RST_CTRL_SPEC,
+>;
 ///Cache Sync Reset control register
 pub mod l1_cache_sync_rst_ctrl;
 /**L1_CACHE_PRELOAD_RST_CTRL (rw) register accessor: Cache Preload Reset control register
@@ -2819,8 +2991,9 @@ pub mod l1_cache_sync_rst_ctrl;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_cache_preload_rst_ctrl::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l1_cache_preload_rst_ctrl::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_cache_preload_rst_ctrl`] module*/
-pub type L1_CACHE_PRELOAD_RST_CTRL =
-    crate::Reg<l1_cache_preload_rst_ctrl::L1_CACHE_PRELOAD_RST_CTRL_SPEC>;
+pub type L1_CACHE_PRELOAD_RST_CTRL = crate::Reg<
+    l1_cache_preload_rst_ctrl::L1_CACHE_PRELOAD_RST_CTRL_SPEC,
+>;
 ///Cache Preload Reset control register
 pub mod l1_cache_preload_rst_ctrl;
 /**L1_CACHE_AUTOLOAD_BUF_CLR_CTRL (rw) register accessor: Cache Autoload buffer clear control register
@@ -2828,8 +3001,9 @@ pub mod l1_cache_preload_rst_ctrl;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_cache_autoload_buf_clr_ctrl::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l1_cache_autoload_buf_clr_ctrl::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_cache_autoload_buf_clr_ctrl`] module*/
-pub type L1_CACHE_AUTOLOAD_BUF_CLR_CTRL =
-    crate::Reg<l1_cache_autoload_buf_clr_ctrl::L1_CACHE_AUTOLOAD_BUF_CLR_CTRL_SPEC>;
+pub type L1_CACHE_AUTOLOAD_BUF_CLR_CTRL = crate::Reg<
+    l1_cache_autoload_buf_clr_ctrl::L1_CACHE_AUTOLOAD_BUF_CLR_CTRL_SPEC,
+>;
 ///Cache Autoload buffer clear control register
 pub mod l1_cache_autoload_buf_clr_ctrl;
 /**L1_UNALLOCATE_BUFFER_CLEAR (rw) register accessor: Unallocate request buffer clear registers
@@ -2837,8 +3011,9 @@ pub mod l1_cache_autoload_buf_clr_ctrl;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_unallocate_buffer_clear::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l1_unallocate_buffer_clear::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_unallocate_buffer_clear`] module*/
-pub type L1_UNALLOCATE_BUFFER_CLEAR =
-    crate::Reg<l1_unallocate_buffer_clear::L1_UNALLOCATE_BUFFER_CLEAR_SPEC>;
+pub type L1_UNALLOCATE_BUFFER_CLEAR = crate::Reg<
+    l1_unallocate_buffer_clear::L1_UNALLOCATE_BUFFER_CLEAR_SPEC,
+>;
 ///Unallocate request buffer clear registers
 pub mod l1_unallocate_buffer_clear;
 /**L1_CACHE_OBJECT_CTRL (rw) register accessor: Cache Tag and Data memory Object control register
@@ -2846,7 +3021,9 @@ pub mod l1_unallocate_buffer_clear;
 You can [`read`](crate::generic::Reg::read) this register and get [`l1_cache_object_ctrl::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l1_cache_object_ctrl::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l1_cache_object_ctrl`] module*/
-pub type L1_CACHE_OBJECT_CTRL = crate::Reg<l1_cache_object_ctrl::L1_CACHE_OBJECT_CTRL_SPEC>;
+pub type L1_CACHE_OBJECT_CTRL = crate::Reg<
+    l1_cache_object_ctrl::L1_CACHE_OBJECT_CTRL_SPEC,
+>;
 ///Cache Tag and Data memory Object control register
 pub mod l1_cache_object_ctrl;
 /**L1_CACHE_WAY_OBJECT (rw) register accessor: Cache Tag and Data memory way register
@@ -2894,7 +3071,9 @@ pub mod l2_cache_ctrl;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_bypass_cache_conf::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l2_bypass_cache_conf::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_bypass_cache_conf`] module*/
-pub type L2_BYPASS_CACHE_CONF = crate::Reg<l2_bypass_cache_conf::L2_BYPASS_CACHE_CONF_SPEC>;
+pub type L2_BYPASS_CACHE_CONF = crate::Reg<
+    l2_bypass_cache_conf::L2_BYPASS_CACHE_CONF_SPEC,
+>;
 ///Bypass Cache configure register
 pub mod l2_bypass_cache_conf;
 /**L2_CACHE_CACHESIZE_CONF (rw) register accessor: L2 Cache CacheSize mode configure register
@@ -2902,8 +3081,9 @@ pub mod l2_bypass_cache_conf;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_cache_cachesize_conf::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l2_cache_cachesize_conf::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_cache_cachesize_conf`] module*/
-pub type L2_CACHE_CACHESIZE_CONF =
-    crate::Reg<l2_cache_cachesize_conf::L2_CACHE_CACHESIZE_CONF_SPEC>;
+pub type L2_CACHE_CACHESIZE_CONF = crate::Reg<
+    l2_cache_cachesize_conf::L2_CACHE_CACHESIZE_CONF_SPEC,
+>;
 ///L2 Cache CacheSize mode configure register
 pub mod l2_cache_cachesize_conf;
 /**L2_CACHE_BLOCKSIZE_CONF (rw) register accessor: L2 Cache BlockSize mode configure register
@@ -2911,8 +3091,9 @@ pub mod l2_cache_cachesize_conf;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_cache_blocksize_conf::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l2_cache_blocksize_conf::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_cache_blocksize_conf`] module*/
-pub type L2_CACHE_BLOCKSIZE_CONF =
-    crate::Reg<l2_cache_blocksize_conf::L2_CACHE_BLOCKSIZE_CONF_SPEC>;
+pub type L2_CACHE_BLOCKSIZE_CONF = crate::Reg<
+    l2_cache_blocksize_conf::L2_CACHE_BLOCKSIZE_CONF_SPEC,
+>;
 ///L2 Cache BlockSize mode configure register
 pub mod l2_cache_blocksize_conf;
 /**L2_CACHE_WRAP_AROUND_CTRL (rw) register accessor: Cache wrap around control register
@@ -2920,8 +3101,9 @@ pub mod l2_cache_blocksize_conf;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_cache_wrap_around_ctrl::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l2_cache_wrap_around_ctrl::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_cache_wrap_around_ctrl`] module*/
-pub type L2_CACHE_WRAP_AROUND_CTRL =
-    crate::Reg<l2_cache_wrap_around_ctrl::L2_CACHE_WRAP_AROUND_CTRL_SPEC>;
+pub type L2_CACHE_WRAP_AROUND_CTRL = crate::Reg<
+    l2_cache_wrap_around_ctrl::L2_CACHE_WRAP_AROUND_CTRL_SPEC,
+>;
 ///Cache wrap around control register
 pub mod l2_cache_wrap_around_ctrl;
 /**L2_CACHE_TAG_MEM_POWER_CTRL (rw) register accessor: Cache tag memory power control register
@@ -2929,8 +3111,9 @@ pub mod l2_cache_wrap_around_ctrl;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_cache_tag_mem_power_ctrl::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l2_cache_tag_mem_power_ctrl::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_cache_tag_mem_power_ctrl`] module*/
-pub type L2_CACHE_TAG_MEM_POWER_CTRL =
-    crate::Reg<l2_cache_tag_mem_power_ctrl::L2_CACHE_TAG_MEM_POWER_CTRL_SPEC>;
+pub type L2_CACHE_TAG_MEM_POWER_CTRL = crate::Reg<
+    l2_cache_tag_mem_power_ctrl::L2_CACHE_TAG_MEM_POWER_CTRL_SPEC,
+>;
 ///Cache tag memory power control register
 pub mod l2_cache_tag_mem_power_ctrl;
 /**L2_CACHE_DATA_MEM_POWER_CTRL (rw) register accessor: Cache data memory power control register
@@ -2938,8 +3121,9 @@ pub mod l2_cache_tag_mem_power_ctrl;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_cache_data_mem_power_ctrl::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l2_cache_data_mem_power_ctrl::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_cache_data_mem_power_ctrl`] module*/
-pub type L2_CACHE_DATA_MEM_POWER_CTRL =
-    crate::Reg<l2_cache_data_mem_power_ctrl::L2_CACHE_DATA_MEM_POWER_CTRL_SPEC>;
+pub type L2_CACHE_DATA_MEM_POWER_CTRL = crate::Reg<
+    l2_cache_data_mem_power_ctrl::L2_CACHE_DATA_MEM_POWER_CTRL_SPEC,
+>;
 ///Cache data memory power control register
 pub mod l2_cache_data_mem_power_ctrl;
 /**L2_CACHE_FREEZE_CTRL (rw) register accessor: Cache Freeze control register
@@ -2947,7 +3131,9 @@ pub mod l2_cache_data_mem_power_ctrl;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_cache_freeze_ctrl::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l2_cache_freeze_ctrl::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_cache_freeze_ctrl`] module*/
-pub type L2_CACHE_FREEZE_CTRL = crate::Reg<l2_cache_freeze_ctrl::L2_CACHE_FREEZE_CTRL_SPEC>;
+pub type L2_CACHE_FREEZE_CTRL = crate::Reg<
+    l2_cache_freeze_ctrl::L2_CACHE_FREEZE_CTRL_SPEC,
+>;
 ///Cache Freeze control register
 pub mod l2_cache_freeze_ctrl;
 /**L2_CACHE_DATA_MEM_ACS_CONF (rw) register accessor: Cache data memory access configure register
@@ -2955,8 +3141,9 @@ pub mod l2_cache_freeze_ctrl;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_cache_data_mem_acs_conf::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l2_cache_data_mem_acs_conf::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_cache_data_mem_acs_conf`] module*/
-pub type L2_CACHE_DATA_MEM_ACS_CONF =
-    crate::Reg<l2_cache_data_mem_acs_conf::L2_CACHE_DATA_MEM_ACS_CONF_SPEC>;
+pub type L2_CACHE_DATA_MEM_ACS_CONF = crate::Reg<
+    l2_cache_data_mem_acs_conf::L2_CACHE_DATA_MEM_ACS_CONF_SPEC,
+>;
 ///Cache data memory access configure register
 pub mod l2_cache_data_mem_acs_conf;
 /**L2_CACHE_TAG_MEM_ACS_CONF (rw) register accessor: Cache tag memory access configure register
@@ -2964,8 +3151,9 @@ pub mod l2_cache_data_mem_acs_conf;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_cache_tag_mem_acs_conf::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l2_cache_tag_mem_acs_conf::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_cache_tag_mem_acs_conf`] module*/
-pub type L2_CACHE_TAG_MEM_ACS_CONF =
-    crate::Reg<l2_cache_tag_mem_acs_conf::L2_CACHE_TAG_MEM_ACS_CONF_SPEC>;
+pub type L2_CACHE_TAG_MEM_ACS_CONF = crate::Reg<
+    l2_cache_tag_mem_acs_conf::L2_CACHE_TAG_MEM_ACS_CONF_SPEC,
+>;
 ///Cache tag memory access configure register
 pub mod l2_cache_tag_mem_acs_conf;
 /**L2_CACHE_PRELOCK_CONF (rw) register accessor: L2 Cache prelock configure register
@@ -2973,7 +3161,9 @@ pub mod l2_cache_tag_mem_acs_conf;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_cache_prelock_conf::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l2_cache_prelock_conf::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_cache_prelock_conf`] module*/
-pub type L2_CACHE_PRELOCK_CONF = crate::Reg<l2_cache_prelock_conf::L2_CACHE_PRELOCK_CONF_SPEC>;
+pub type L2_CACHE_PRELOCK_CONF = crate::Reg<
+    l2_cache_prelock_conf::L2_CACHE_PRELOCK_CONF_SPEC,
+>;
 ///L2 Cache prelock configure register
 pub mod l2_cache_prelock_conf;
 /**L2_CACHE_PRELOCK_SCT0_ADDR (rw) register accessor: L2 Cache prelock section0 address configure register
@@ -2981,8 +3171,9 @@ pub mod l2_cache_prelock_conf;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_cache_prelock_sct0_addr::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l2_cache_prelock_sct0_addr::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_cache_prelock_sct0_addr`] module*/
-pub type L2_CACHE_PRELOCK_SCT0_ADDR =
-    crate::Reg<l2_cache_prelock_sct0_addr::L2_CACHE_PRELOCK_SCT0_ADDR_SPEC>;
+pub type L2_CACHE_PRELOCK_SCT0_ADDR = crate::Reg<
+    l2_cache_prelock_sct0_addr::L2_CACHE_PRELOCK_SCT0_ADDR_SPEC,
+>;
 ///L2 Cache prelock section0 address configure register
 pub mod l2_cache_prelock_sct0_addr;
 /**L2_CACHE_PRELOCK_SCT1_ADDR (rw) register accessor: L2 Cache prelock section1 address configure register
@@ -2990,8 +3181,9 @@ pub mod l2_cache_prelock_sct0_addr;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_cache_prelock_sct1_addr::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l2_cache_prelock_sct1_addr::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_cache_prelock_sct1_addr`] module*/
-pub type L2_CACHE_PRELOCK_SCT1_ADDR =
-    crate::Reg<l2_cache_prelock_sct1_addr::L2_CACHE_PRELOCK_SCT1_ADDR_SPEC>;
+pub type L2_CACHE_PRELOCK_SCT1_ADDR = crate::Reg<
+    l2_cache_prelock_sct1_addr::L2_CACHE_PRELOCK_SCT1_ADDR_SPEC,
+>;
 ///L2 Cache prelock section1 address configure register
 pub mod l2_cache_prelock_sct1_addr;
 /**L2_CACHE_PRELOCK_SCT_SIZE (rw) register accessor: L2 Cache prelock section size configure register
@@ -2999,8 +3191,9 @@ pub mod l2_cache_prelock_sct1_addr;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_cache_prelock_sct_size::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l2_cache_prelock_sct_size::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_cache_prelock_sct_size`] module*/
-pub type L2_CACHE_PRELOCK_SCT_SIZE =
-    crate::Reg<l2_cache_prelock_sct_size::L2_CACHE_PRELOCK_SCT_SIZE_SPEC>;
+pub type L2_CACHE_PRELOCK_SCT_SIZE = crate::Reg<
+    l2_cache_prelock_sct_size::L2_CACHE_PRELOCK_SCT_SIZE_SPEC,
+>;
 ///L2 Cache prelock section size configure register
 pub mod l2_cache_prelock_sct_size;
 /**L2_CACHE_PRELOAD_CTRL (rw) register accessor: L2 Cache preload-operation control register
@@ -3008,7 +3201,9 @@ pub mod l2_cache_prelock_sct_size;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_cache_preload_ctrl::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l2_cache_preload_ctrl::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_cache_preload_ctrl`] module*/
-pub type L2_CACHE_PRELOAD_CTRL = crate::Reg<l2_cache_preload_ctrl::L2_CACHE_PRELOAD_CTRL_SPEC>;
+pub type L2_CACHE_PRELOAD_CTRL = crate::Reg<
+    l2_cache_preload_ctrl::L2_CACHE_PRELOAD_CTRL_SPEC,
+>;
 ///L2 Cache preload-operation control register
 pub mod l2_cache_preload_ctrl;
 /**L2_CACHE_PRELOAD_ADDR (rw) register accessor: L2 Cache preload address configure register
@@ -3016,7 +3211,9 @@ pub mod l2_cache_preload_ctrl;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_cache_preload_addr::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l2_cache_preload_addr::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_cache_preload_addr`] module*/
-pub type L2_CACHE_PRELOAD_ADDR = crate::Reg<l2_cache_preload_addr::L2_CACHE_PRELOAD_ADDR_SPEC>;
+pub type L2_CACHE_PRELOAD_ADDR = crate::Reg<
+    l2_cache_preload_addr::L2_CACHE_PRELOAD_ADDR_SPEC,
+>;
 ///L2 Cache preload address configure register
 pub mod l2_cache_preload_addr;
 /**L2_CACHE_PRELOAD_SIZE (rw) register accessor: L2 Cache preload size configure register
@@ -3024,7 +3221,9 @@ pub mod l2_cache_preload_addr;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_cache_preload_size::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l2_cache_preload_size::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_cache_preload_size`] module*/
-pub type L2_CACHE_PRELOAD_SIZE = crate::Reg<l2_cache_preload_size::L2_CACHE_PRELOAD_SIZE_SPEC>;
+pub type L2_CACHE_PRELOAD_SIZE = crate::Reg<
+    l2_cache_preload_size::L2_CACHE_PRELOAD_SIZE_SPEC,
+>;
 ///L2 Cache preload size configure register
 pub mod l2_cache_preload_size;
 /**L2_CACHE_AUTOLOAD_CTRL (rw) register accessor: L2 Cache autoload-operation control register
@@ -3032,7 +3231,9 @@ pub mod l2_cache_preload_size;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_cache_autoload_ctrl::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l2_cache_autoload_ctrl::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_cache_autoload_ctrl`] module*/
-pub type L2_CACHE_AUTOLOAD_CTRL = crate::Reg<l2_cache_autoload_ctrl::L2_CACHE_AUTOLOAD_CTRL_SPEC>;
+pub type L2_CACHE_AUTOLOAD_CTRL = crate::Reg<
+    l2_cache_autoload_ctrl::L2_CACHE_AUTOLOAD_CTRL_SPEC,
+>;
 ///L2 Cache autoload-operation control register
 pub mod l2_cache_autoload_ctrl;
 /**L2_CACHE_AUTOLOAD_SCT0_ADDR (rw) register accessor: L2 Cache autoload section 0 address configure register
@@ -3040,8 +3241,9 @@ pub mod l2_cache_autoload_ctrl;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_cache_autoload_sct0_addr::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l2_cache_autoload_sct0_addr::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_cache_autoload_sct0_addr`] module*/
-pub type L2_CACHE_AUTOLOAD_SCT0_ADDR =
-    crate::Reg<l2_cache_autoload_sct0_addr::L2_CACHE_AUTOLOAD_SCT0_ADDR_SPEC>;
+pub type L2_CACHE_AUTOLOAD_SCT0_ADDR = crate::Reg<
+    l2_cache_autoload_sct0_addr::L2_CACHE_AUTOLOAD_SCT0_ADDR_SPEC,
+>;
 ///L2 Cache autoload section 0 address configure register
 pub mod l2_cache_autoload_sct0_addr;
 /**L2_CACHE_AUTOLOAD_SCT0_SIZE (rw) register accessor: L2 Cache autoload section 0 size configure register
@@ -3049,8 +3251,9 @@ pub mod l2_cache_autoload_sct0_addr;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_cache_autoload_sct0_size::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l2_cache_autoload_sct0_size::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_cache_autoload_sct0_size`] module*/
-pub type L2_CACHE_AUTOLOAD_SCT0_SIZE =
-    crate::Reg<l2_cache_autoload_sct0_size::L2_CACHE_AUTOLOAD_SCT0_SIZE_SPEC>;
+pub type L2_CACHE_AUTOLOAD_SCT0_SIZE = crate::Reg<
+    l2_cache_autoload_sct0_size::L2_CACHE_AUTOLOAD_SCT0_SIZE_SPEC,
+>;
 ///L2 Cache autoload section 0 size configure register
 pub mod l2_cache_autoload_sct0_size;
 /**L2_CACHE_AUTOLOAD_SCT1_ADDR (rw) register accessor: L2 Cache autoload section 1 address configure register
@@ -3058,8 +3261,9 @@ pub mod l2_cache_autoload_sct0_size;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_cache_autoload_sct1_addr::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l2_cache_autoload_sct1_addr::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_cache_autoload_sct1_addr`] module*/
-pub type L2_CACHE_AUTOLOAD_SCT1_ADDR =
-    crate::Reg<l2_cache_autoload_sct1_addr::L2_CACHE_AUTOLOAD_SCT1_ADDR_SPEC>;
+pub type L2_CACHE_AUTOLOAD_SCT1_ADDR = crate::Reg<
+    l2_cache_autoload_sct1_addr::L2_CACHE_AUTOLOAD_SCT1_ADDR_SPEC,
+>;
 ///L2 Cache autoload section 1 address configure register
 pub mod l2_cache_autoload_sct1_addr;
 /**L2_CACHE_AUTOLOAD_SCT1_SIZE (rw) register accessor: L2 Cache autoload section 1 size configure register
@@ -3067,8 +3271,9 @@ pub mod l2_cache_autoload_sct1_addr;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_cache_autoload_sct1_size::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l2_cache_autoload_sct1_size::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_cache_autoload_sct1_size`] module*/
-pub type L2_CACHE_AUTOLOAD_SCT1_SIZE =
-    crate::Reg<l2_cache_autoload_sct1_size::L2_CACHE_AUTOLOAD_SCT1_SIZE_SPEC>;
+pub type L2_CACHE_AUTOLOAD_SCT1_SIZE = crate::Reg<
+    l2_cache_autoload_sct1_size::L2_CACHE_AUTOLOAD_SCT1_SIZE_SPEC,
+>;
 ///L2 Cache autoload section 1 size configure register
 pub mod l2_cache_autoload_sct1_size;
 /**L2_CACHE_AUTOLOAD_SCT2_ADDR (rw) register accessor: L2 Cache autoload section 2 address configure register
@@ -3076,8 +3281,9 @@ pub mod l2_cache_autoload_sct1_size;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_cache_autoload_sct2_addr::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l2_cache_autoload_sct2_addr::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_cache_autoload_sct2_addr`] module*/
-pub type L2_CACHE_AUTOLOAD_SCT2_ADDR =
-    crate::Reg<l2_cache_autoload_sct2_addr::L2_CACHE_AUTOLOAD_SCT2_ADDR_SPEC>;
+pub type L2_CACHE_AUTOLOAD_SCT2_ADDR = crate::Reg<
+    l2_cache_autoload_sct2_addr::L2_CACHE_AUTOLOAD_SCT2_ADDR_SPEC,
+>;
 ///L2 Cache autoload section 2 address configure register
 pub mod l2_cache_autoload_sct2_addr;
 /**L2_CACHE_AUTOLOAD_SCT2_SIZE (rw) register accessor: L2 Cache autoload section 2 size configure register
@@ -3085,8 +3291,9 @@ pub mod l2_cache_autoload_sct2_addr;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_cache_autoload_sct2_size::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l2_cache_autoload_sct2_size::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_cache_autoload_sct2_size`] module*/
-pub type L2_CACHE_AUTOLOAD_SCT2_SIZE =
-    crate::Reg<l2_cache_autoload_sct2_size::L2_CACHE_AUTOLOAD_SCT2_SIZE_SPEC>;
+pub type L2_CACHE_AUTOLOAD_SCT2_SIZE = crate::Reg<
+    l2_cache_autoload_sct2_size::L2_CACHE_AUTOLOAD_SCT2_SIZE_SPEC,
+>;
 ///L2 Cache autoload section 2 size configure register
 pub mod l2_cache_autoload_sct2_size;
 /**L2_CACHE_AUTOLOAD_SCT3_ADDR (rw) register accessor: L2 Cache autoload section 3 address configure register
@@ -3094,8 +3301,9 @@ pub mod l2_cache_autoload_sct2_size;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_cache_autoload_sct3_addr::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l2_cache_autoload_sct3_addr::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_cache_autoload_sct3_addr`] module*/
-pub type L2_CACHE_AUTOLOAD_SCT3_ADDR =
-    crate::Reg<l2_cache_autoload_sct3_addr::L2_CACHE_AUTOLOAD_SCT3_ADDR_SPEC>;
+pub type L2_CACHE_AUTOLOAD_SCT3_ADDR = crate::Reg<
+    l2_cache_autoload_sct3_addr::L2_CACHE_AUTOLOAD_SCT3_ADDR_SPEC,
+>;
 ///L2 Cache autoload section 3 address configure register
 pub mod l2_cache_autoload_sct3_addr;
 /**L2_CACHE_AUTOLOAD_SCT3_SIZE (rw) register accessor: L2 Cache autoload section 3 size configure register
@@ -3103,8 +3311,9 @@ pub mod l2_cache_autoload_sct3_addr;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_cache_autoload_sct3_size::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l2_cache_autoload_sct3_size::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_cache_autoload_sct3_size`] module*/
-pub type L2_CACHE_AUTOLOAD_SCT3_SIZE =
-    crate::Reg<l2_cache_autoload_sct3_size::L2_CACHE_AUTOLOAD_SCT3_SIZE_SPEC>;
+pub type L2_CACHE_AUTOLOAD_SCT3_SIZE = crate::Reg<
+    l2_cache_autoload_sct3_size::L2_CACHE_AUTOLOAD_SCT3_SIZE_SPEC,
+>;
 ///L2 Cache autoload section 3 size configure register
 pub mod l2_cache_autoload_sct3_size;
 /**L2_CACHE_ACS_CNT_INT_ENA (rw) register accessor: Cache Access Counter Interrupt enable register
@@ -3112,8 +3321,9 @@ pub mod l2_cache_autoload_sct3_size;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_cache_acs_cnt_int_ena::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l2_cache_acs_cnt_int_ena::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_cache_acs_cnt_int_ena`] module*/
-pub type L2_CACHE_ACS_CNT_INT_ENA =
-    crate::Reg<l2_cache_acs_cnt_int_ena::L2_CACHE_ACS_CNT_INT_ENA_SPEC>;
+pub type L2_CACHE_ACS_CNT_INT_ENA = crate::Reg<
+    l2_cache_acs_cnt_int_ena::L2_CACHE_ACS_CNT_INT_ENA_SPEC,
+>;
 ///Cache Access Counter Interrupt enable register
 pub mod l2_cache_acs_cnt_int_ena;
 /**L2_CACHE_ACS_CNT_INT_CLR (rw) register accessor: Cache Access Counter Interrupt clear register
@@ -3121,8 +3331,9 @@ pub mod l2_cache_acs_cnt_int_ena;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_cache_acs_cnt_int_clr::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l2_cache_acs_cnt_int_clr::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_cache_acs_cnt_int_clr`] module*/
-pub type L2_CACHE_ACS_CNT_INT_CLR =
-    crate::Reg<l2_cache_acs_cnt_int_clr::L2_CACHE_ACS_CNT_INT_CLR_SPEC>;
+pub type L2_CACHE_ACS_CNT_INT_CLR = crate::Reg<
+    l2_cache_acs_cnt_int_clr::L2_CACHE_ACS_CNT_INT_CLR_SPEC,
+>;
 ///Cache Access Counter Interrupt clear register
 pub mod l2_cache_acs_cnt_int_clr;
 /**L2_CACHE_ACS_CNT_INT_RAW (rw) register accessor: Cache Access Counter Interrupt raw register
@@ -3130,8 +3341,9 @@ pub mod l2_cache_acs_cnt_int_clr;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_cache_acs_cnt_int_raw::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l2_cache_acs_cnt_int_raw::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_cache_acs_cnt_int_raw`] module*/
-pub type L2_CACHE_ACS_CNT_INT_RAW =
-    crate::Reg<l2_cache_acs_cnt_int_raw::L2_CACHE_ACS_CNT_INT_RAW_SPEC>;
+pub type L2_CACHE_ACS_CNT_INT_RAW = crate::Reg<
+    l2_cache_acs_cnt_int_raw::L2_CACHE_ACS_CNT_INT_RAW_SPEC,
+>;
 ///Cache Access Counter Interrupt raw register
 pub mod l2_cache_acs_cnt_int_raw;
 /**L2_CACHE_ACS_CNT_INT_ST (r) register accessor: Cache Access Counter Interrupt status register
@@ -3139,8 +3351,9 @@ pub mod l2_cache_acs_cnt_int_raw;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_cache_acs_cnt_int_st::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_cache_acs_cnt_int_st`] module*/
-pub type L2_CACHE_ACS_CNT_INT_ST =
-    crate::Reg<l2_cache_acs_cnt_int_st::L2_CACHE_ACS_CNT_INT_ST_SPEC>;
+pub type L2_CACHE_ACS_CNT_INT_ST = crate::Reg<
+    l2_cache_acs_cnt_int_st::L2_CACHE_ACS_CNT_INT_ST_SPEC,
+>;
 ///Cache Access Counter Interrupt status register
 pub mod l2_cache_acs_cnt_int_st;
 /**L2_CACHE_ACS_FAIL_CTRL (rw) register accessor: Cache Access Fail Configuration register
@@ -3148,7 +3361,9 @@ pub mod l2_cache_acs_cnt_int_st;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_cache_acs_fail_ctrl::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l2_cache_acs_fail_ctrl::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_cache_acs_fail_ctrl`] module*/
-pub type L2_CACHE_ACS_FAIL_CTRL = crate::Reg<l2_cache_acs_fail_ctrl::L2_CACHE_ACS_FAIL_CTRL_SPEC>;
+pub type L2_CACHE_ACS_FAIL_CTRL = crate::Reg<
+    l2_cache_acs_fail_ctrl::L2_CACHE_ACS_FAIL_CTRL_SPEC,
+>;
 ///Cache Access Fail Configuration register
 pub mod l2_cache_acs_fail_ctrl;
 /**L2_CACHE_ACS_FAIL_INT_ENA (rw) register accessor: Cache Access Fail Interrupt enable register
@@ -3156,8 +3371,9 @@ pub mod l2_cache_acs_fail_ctrl;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_cache_acs_fail_int_ena::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l2_cache_acs_fail_int_ena::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_cache_acs_fail_int_ena`] module*/
-pub type L2_CACHE_ACS_FAIL_INT_ENA =
-    crate::Reg<l2_cache_acs_fail_int_ena::L2_CACHE_ACS_FAIL_INT_ENA_SPEC>;
+pub type L2_CACHE_ACS_FAIL_INT_ENA = crate::Reg<
+    l2_cache_acs_fail_int_ena::L2_CACHE_ACS_FAIL_INT_ENA_SPEC,
+>;
 ///Cache Access Fail Interrupt enable register
 pub mod l2_cache_acs_fail_int_ena;
 /**L2_CACHE_ACS_FAIL_INT_CLR (w) register accessor: L1-Cache Access Fail Interrupt clear register
@@ -3165,8 +3381,9 @@ pub mod l2_cache_acs_fail_int_ena;
 You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l2_cache_acs_fail_int_clr::W`]. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_cache_acs_fail_int_clr`] module*/
-pub type L2_CACHE_ACS_FAIL_INT_CLR =
-    crate::Reg<l2_cache_acs_fail_int_clr::L2_CACHE_ACS_FAIL_INT_CLR_SPEC>;
+pub type L2_CACHE_ACS_FAIL_INT_CLR = crate::Reg<
+    l2_cache_acs_fail_int_clr::L2_CACHE_ACS_FAIL_INT_CLR_SPEC,
+>;
 ///L1-Cache Access Fail Interrupt clear register
 pub mod l2_cache_acs_fail_int_clr;
 /**L2_CACHE_ACS_FAIL_INT_RAW (rw) register accessor: Cache Access Fail Interrupt raw register
@@ -3174,8 +3391,9 @@ pub mod l2_cache_acs_fail_int_clr;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_cache_acs_fail_int_raw::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l2_cache_acs_fail_int_raw::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_cache_acs_fail_int_raw`] module*/
-pub type L2_CACHE_ACS_FAIL_INT_RAW =
-    crate::Reg<l2_cache_acs_fail_int_raw::L2_CACHE_ACS_FAIL_INT_RAW_SPEC>;
+pub type L2_CACHE_ACS_FAIL_INT_RAW = crate::Reg<
+    l2_cache_acs_fail_int_raw::L2_CACHE_ACS_FAIL_INT_RAW_SPEC,
+>;
 ///Cache Access Fail Interrupt raw register
 pub mod l2_cache_acs_fail_int_raw;
 /**L2_CACHE_ACS_FAIL_INT_ST (r) register accessor: Cache Access Fail Interrupt status register
@@ -3183,8 +3401,9 @@ pub mod l2_cache_acs_fail_int_raw;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_cache_acs_fail_int_st::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_cache_acs_fail_int_st`] module*/
-pub type L2_CACHE_ACS_FAIL_INT_ST =
-    crate::Reg<l2_cache_acs_fail_int_st::L2_CACHE_ACS_FAIL_INT_ST_SPEC>;
+pub type L2_CACHE_ACS_FAIL_INT_ST = crate::Reg<
+    l2_cache_acs_fail_int_st::L2_CACHE_ACS_FAIL_INT_ST_SPEC,
+>;
 ///Cache Access Fail Interrupt status register
 pub mod l2_cache_acs_fail_int_st;
 /**L2_CACHE_ACS_CNT_CTRL (rw) register accessor: Cache Access Counter enable and clear register
@@ -3192,7 +3411,9 @@ pub mod l2_cache_acs_fail_int_st;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_cache_acs_cnt_ctrl::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l2_cache_acs_cnt_ctrl::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_cache_acs_cnt_ctrl`] module*/
-pub type L2_CACHE_ACS_CNT_CTRL = crate::Reg<l2_cache_acs_cnt_ctrl::L2_CACHE_ACS_CNT_CTRL_SPEC>;
+pub type L2_CACHE_ACS_CNT_CTRL = crate::Reg<
+    l2_cache_acs_cnt_ctrl::L2_CACHE_ACS_CNT_CTRL_SPEC,
+>;
 ///Cache Access Counter enable and clear register
 pub mod l2_cache_acs_cnt_ctrl;
 /**L2_IBUS0_ACS_HIT_CNT (r) register accessor: L2-Cache bus0 Hit-Access Counter register
@@ -3200,7 +3421,9 @@ pub mod l2_cache_acs_cnt_ctrl;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_ibus0_acs_hit_cnt::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_ibus0_acs_hit_cnt`] module*/
-pub type L2_IBUS0_ACS_HIT_CNT = crate::Reg<l2_ibus0_acs_hit_cnt::L2_IBUS0_ACS_HIT_CNT_SPEC>;
+pub type L2_IBUS0_ACS_HIT_CNT = crate::Reg<
+    l2_ibus0_acs_hit_cnt::L2_IBUS0_ACS_HIT_CNT_SPEC,
+>;
 ///L2-Cache bus0 Hit-Access Counter register
 pub mod l2_ibus0_acs_hit_cnt;
 /**L2_IBUS0_ACS_MISS_CNT (r) register accessor: L2-Cache bus0 Miss-Access Counter register
@@ -3208,7 +3431,9 @@ pub mod l2_ibus0_acs_hit_cnt;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_ibus0_acs_miss_cnt::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_ibus0_acs_miss_cnt`] module*/
-pub type L2_IBUS0_ACS_MISS_CNT = crate::Reg<l2_ibus0_acs_miss_cnt::L2_IBUS0_ACS_MISS_CNT_SPEC>;
+pub type L2_IBUS0_ACS_MISS_CNT = crate::Reg<
+    l2_ibus0_acs_miss_cnt::L2_IBUS0_ACS_MISS_CNT_SPEC,
+>;
 ///L2-Cache bus0 Miss-Access Counter register
 pub mod l2_ibus0_acs_miss_cnt;
 /**L2_IBUS0_ACS_CONFLICT_CNT (r) register accessor: L2-Cache bus0 Conflict-Access Counter register
@@ -3216,8 +3441,9 @@ pub mod l2_ibus0_acs_miss_cnt;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_ibus0_acs_conflict_cnt::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_ibus0_acs_conflict_cnt`] module*/
-pub type L2_IBUS0_ACS_CONFLICT_CNT =
-    crate::Reg<l2_ibus0_acs_conflict_cnt::L2_IBUS0_ACS_CONFLICT_CNT_SPEC>;
+pub type L2_IBUS0_ACS_CONFLICT_CNT = crate::Reg<
+    l2_ibus0_acs_conflict_cnt::L2_IBUS0_ACS_CONFLICT_CNT_SPEC,
+>;
 ///L2-Cache bus0 Conflict-Access Counter register
 pub mod l2_ibus0_acs_conflict_cnt;
 /**L2_IBUS0_ACS_NXTLVL_RD_CNT (r) register accessor: L2-Cache bus0 Next-Level-Access Counter register
@@ -3225,8 +3451,9 @@ pub mod l2_ibus0_acs_conflict_cnt;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_ibus0_acs_nxtlvl_rd_cnt::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_ibus0_acs_nxtlvl_rd_cnt`] module*/
-pub type L2_IBUS0_ACS_NXTLVL_RD_CNT =
-    crate::Reg<l2_ibus0_acs_nxtlvl_rd_cnt::L2_IBUS0_ACS_NXTLVL_RD_CNT_SPEC>;
+pub type L2_IBUS0_ACS_NXTLVL_RD_CNT = crate::Reg<
+    l2_ibus0_acs_nxtlvl_rd_cnt::L2_IBUS0_ACS_NXTLVL_RD_CNT_SPEC,
+>;
 ///L2-Cache bus0 Next-Level-Access Counter register
 pub mod l2_ibus0_acs_nxtlvl_rd_cnt;
 /**L2_IBUS1_ACS_HIT_CNT (r) register accessor: L2-Cache bus1 Hit-Access Counter register
@@ -3234,7 +3461,9 @@ pub mod l2_ibus0_acs_nxtlvl_rd_cnt;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_ibus1_acs_hit_cnt::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_ibus1_acs_hit_cnt`] module*/
-pub type L2_IBUS1_ACS_HIT_CNT = crate::Reg<l2_ibus1_acs_hit_cnt::L2_IBUS1_ACS_HIT_CNT_SPEC>;
+pub type L2_IBUS1_ACS_HIT_CNT = crate::Reg<
+    l2_ibus1_acs_hit_cnt::L2_IBUS1_ACS_HIT_CNT_SPEC,
+>;
 ///L2-Cache bus1 Hit-Access Counter register
 pub mod l2_ibus1_acs_hit_cnt;
 /**L2_IBUS1_ACS_MISS_CNT (r) register accessor: L2-Cache bus1 Miss-Access Counter register
@@ -3242,7 +3471,9 @@ pub mod l2_ibus1_acs_hit_cnt;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_ibus1_acs_miss_cnt::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_ibus1_acs_miss_cnt`] module*/
-pub type L2_IBUS1_ACS_MISS_CNT = crate::Reg<l2_ibus1_acs_miss_cnt::L2_IBUS1_ACS_MISS_CNT_SPEC>;
+pub type L2_IBUS1_ACS_MISS_CNT = crate::Reg<
+    l2_ibus1_acs_miss_cnt::L2_IBUS1_ACS_MISS_CNT_SPEC,
+>;
 ///L2-Cache bus1 Miss-Access Counter register
 pub mod l2_ibus1_acs_miss_cnt;
 /**L2_IBUS1_ACS_CONFLICT_CNT (r) register accessor: L2-Cache bus1 Conflict-Access Counter register
@@ -3250,8 +3481,9 @@ pub mod l2_ibus1_acs_miss_cnt;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_ibus1_acs_conflict_cnt::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_ibus1_acs_conflict_cnt`] module*/
-pub type L2_IBUS1_ACS_CONFLICT_CNT =
-    crate::Reg<l2_ibus1_acs_conflict_cnt::L2_IBUS1_ACS_CONFLICT_CNT_SPEC>;
+pub type L2_IBUS1_ACS_CONFLICT_CNT = crate::Reg<
+    l2_ibus1_acs_conflict_cnt::L2_IBUS1_ACS_CONFLICT_CNT_SPEC,
+>;
 ///L2-Cache bus1 Conflict-Access Counter register
 pub mod l2_ibus1_acs_conflict_cnt;
 /**L2_IBUS1_ACS_NXTLVL_RD_CNT (r) register accessor: L2-Cache bus1 Next-Level-Access Counter register
@@ -3259,8 +3491,9 @@ pub mod l2_ibus1_acs_conflict_cnt;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_ibus1_acs_nxtlvl_rd_cnt::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_ibus1_acs_nxtlvl_rd_cnt`] module*/
-pub type L2_IBUS1_ACS_NXTLVL_RD_CNT =
-    crate::Reg<l2_ibus1_acs_nxtlvl_rd_cnt::L2_IBUS1_ACS_NXTLVL_RD_CNT_SPEC>;
+pub type L2_IBUS1_ACS_NXTLVL_RD_CNT = crate::Reg<
+    l2_ibus1_acs_nxtlvl_rd_cnt::L2_IBUS1_ACS_NXTLVL_RD_CNT_SPEC,
+>;
 ///L2-Cache bus1 Next-Level-Access Counter register
 pub mod l2_ibus1_acs_nxtlvl_rd_cnt;
 /**L2_IBUS2_ACS_HIT_CNT (r) register accessor: L2-Cache bus2 Hit-Access Counter register
@@ -3268,7 +3501,9 @@ pub mod l2_ibus1_acs_nxtlvl_rd_cnt;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_ibus2_acs_hit_cnt::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_ibus2_acs_hit_cnt`] module*/
-pub type L2_IBUS2_ACS_HIT_CNT = crate::Reg<l2_ibus2_acs_hit_cnt::L2_IBUS2_ACS_HIT_CNT_SPEC>;
+pub type L2_IBUS2_ACS_HIT_CNT = crate::Reg<
+    l2_ibus2_acs_hit_cnt::L2_IBUS2_ACS_HIT_CNT_SPEC,
+>;
 ///L2-Cache bus2 Hit-Access Counter register
 pub mod l2_ibus2_acs_hit_cnt;
 /**L2_IBUS2_ACS_MISS_CNT (r) register accessor: L2-Cache bus2 Miss-Access Counter register
@@ -3276,7 +3511,9 @@ pub mod l2_ibus2_acs_hit_cnt;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_ibus2_acs_miss_cnt::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_ibus2_acs_miss_cnt`] module*/
-pub type L2_IBUS2_ACS_MISS_CNT = crate::Reg<l2_ibus2_acs_miss_cnt::L2_IBUS2_ACS_MISS_CNT_SPEC>;
+pub type L2_IBUS2_ACS_MISS_CNT = crate::Reg<
+    l2_ibus2_acs_miss_cnt::L2_IBUS2_ACS_MISS_CNT_SPEC,
+>;
 ///L2-Cache bus2 Miss-Access Counter register
 pub mod l2_ibus2_acs_miss_cnt;
 /**L2_IBUS2_ACS_CONFLICT_CNT (r) register accessor: L2-Cache bus2 Conflict-Access Counter register
@@ -3284,8 +3521,9 @@ pub mod l2_ibus2_acs_miss_cnt;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_ibus2_acs_conflict_cnt::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_ibus2_acs_conflict_cnt`] module*/
-pub type L2_IBUS2_ACS_CONFLICT_CNT =
-    crate::Reg<l2_ibus2_acs_conflict_cnt::L2_IBUS2_ACS_CONFLICT_CNT_SPEC>;
+pub type L2_IBUS2_ACS_CONFLICT_CNT = crate::Reg<
+    l2_ibus2_acs_conflict_cnt::L2_IBUS2_ACS_CONFLICT_CNT_SPEC,
+>;
 ///L2-Cache bus2 Conflict-Access Counter register
 pub mod l2_ibus2_acs_conflict_cnt;
 /**L2_IBUS2_ACS_NXTLVL_RD_CNT (r) register accessor: L2-Cache bus2 Next-Level-Access Counter register
@@ -3293,8 +3531,9 @@ pub mod l2_ibus2_acs_conflict_cnt;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_ibus2_acs_nxtlvl_rd_cnt::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_ibus2_acs_nxtlvl_rd_cnt`] module*/
-pub type L2_IBUS2_ACS_NXTLVL_RD_CNT =
-    crate::Reg<l2_ibus2_acs_nxtlvl_rd_cnt::L2_IBUS2_ACS_NXTLVL_RD_CNT_SPEC>;
+pub type L2_IBUS2_ACS_NXTLVL_RD_CNT = crate::Reg<
+    l2_ibus2_acs_nxtlvl_rd_cnt::L2_IBUS2_ACS_NXTLVL_RD_CNT_SPEC,
+>;
 ///L2-Cache bus2 Next-Level-Access Counter register
 pub mod l2_ibus2_acs_nxtlvl_rd_cnt;
 /**L2_IBUS3_ACS_HIT_CNT (r) register accessor: L2-Cache bus3 Hit-Access Counter register
@@ -3302,7 +3541,9 @@ pub mod l2_ibus2_acs_nxtlvl_rd_cnt;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_ibus3_acs_hit_cnt::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_ibus3_acs_hit_cnt`] module*/
-pub type L2_IBUS3_ACS_HIT_CNT = crate::Reg<l2_ibus3_acs_hit_cnt::L2_IBUS3_ACS_HIT_CNT_SPEC>;
+pub type L2_IBUS3_ACS_HIT_CNT = crate::Reg<
+    l2_ibus3_acs_hit_cnt::L2_IBUS3_ACS_HIT_CNT_SPEC,
+>;
 ///L2-Cache bus3 Hit-Access Counter register
 pub mod l2_ibus3_acs_hit_cnt;
 /**L2_IBUS3_ACS_MISS_CNT (r) register accessor: L2-Cache bus3 Miss-Access Counter register
@@ -3310,7 +3551,9 @@ pub mod l2_ibus3_acs_hit_cnt;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_ibus3_acs_miss_cnt::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_ibus3_acs_miss_cnt`] module*/
-pub type L2_IBUS3_ACS_MISS_CNT = crate::Reg<l2_ibus3_acs_miss_cnt::L2_IBUS3_ACS_MISS_CNT_SPEC>;
+pub type L2_IBUS3_ACS_MISS_CNT = crate::Reg<
+    l2_ibus3_acs_miss_cnt::L2_IBUS3_ACS_MISS_CNT_SPEC,
+>;
 ///L2-Cache bus3 Miss-Access Counter register
 pub mod l2_ibus3_acs_miss_cnt;
 /**L2_IBUS3_ACS_CONFLICT_CNT (r) register accessor: L2-Cache bus3 Conflict-Access Counter register
@@ -3318,8 +3561,9 @@ pub mod l2_ibus3_acs_miss_cnt;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_ibus3_acs_conflict_cnt::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_ibus3_acs_conflict_cnt`] module*/
-pub type L2_IBUS3_ACS_CONFLICT_CNT =
-    crate::Reg<l2_ibus3_acs_conflict_cnt::L2_IBUS3_ACS_CONFLICT_CNT_SPEC>;
+pub type L2_IBUS3_ACS_CONFLICT_CNT = crate::Reg<
+    l2_ibus3_acs_conflict_cnt::L2_IBUS3_ACS_CONFLICT_CNT_SPEC,
+>;
 ///L2-Cache bus3 Conflict-Access Counter register
 pub mod l2_ibus3_acs_conflict_cnt;
 /**L2_IBUS3_ACS_NXTLVL_RD_CNT (r) register accessor: L2-Cache bus3 Next-Level-Access Counter register
@@ -3327,8 +3571,9 @@ pub mod l2_ibus3_acs_conflict_cnt;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_ibus3_acs_nxtlvl_rd_cnt::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_ibus3_acs_nxtlvl_rd_cnt`] module*/
-pub type L2_IBUS3_ACS_NXTLVL_RD_CNT =
-    crate::Reg<l2_ibus3_acs_nxtlvl_rd_cnt::L2_IBUS3_ACS_NXTLVL_RD_CNT_SPEC>;
+pub type L2_IBUS3_ACS_NXTLVL_RD_CNT = crate::Reg<
+    l2_ibus3_acs_nxtlvl_rd_cnt::L2_IBUS3_ACS_NXTLVL_RD_CNT_SPEC,
+>;
 ///L2-Cache bus3 Next-Level-Access Counter register
 pub mod l2_ibus3_acs_nxtlvl_rd_cnt;
 /**L2_DBUS0_ACS_HIT_CNT (r) register accessor: L2-Cache bus0 Hit-Access Counter register
@@ -3336,7 +3581,9 @@ pub mod l2_ibus3_acs_nxtlvl_rd_cnt;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_dbus0_acs_hit_cnt::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_dbus0_acs_hit_cnt`] module*/
-pub type L2_DBUS0_ACS_HIT_CNT = crate::Reg<l2_dbus0_acs_hit_cnt::L2_DBUS0_ACS_HIT_CNT_SPEC>;
+pub type L2_DBUS0_ACS_HIT_CNT = crate::Reg<
+    l2_dbus0_acs_hit_cnt::L2_DBUS0_ACS_HIT_CNT_SPEC,
+>;
 ///L2-Cache bus0 Hit-Access Counter register
 pub mod l2_dbus0_acs_hit_cnt;
 /**L2_DBUS0_ACS_MISS_CNT (r) register accessor: L2-Cache bus0 Miss-Access Counter register
@@ -3344,7 +3591,9 @@ pub mod l2_dbus0_acs_hit_cnt;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_dbus0_acs_miss_cnt::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_dbus0_acs_miss_cnt`] module*/
-pub type L2_DBUS0_ACS_MISS_CNT = crate::Reg<l2_dbus0_acs_miss_cnt::L2_DBUS0_ACS_MISS_CNT_SPEC>;
+pub type L2_DBUS0_ACS_MISS_CNT = crate::Reg<
+    l2_dbus0_acs_miss_cnt::L2_DBUS0_ACS_MISS_CNT_SPEC,
+>;
 ///L2-Cache bus0 Miss-Access Counter register
 pub mod l2_dbus0_acs_miss_cnt;
 /**L2_DBUS0_ACS_CONFLICT_CNT (r) register accessor: L2-Cache bus0 Conflict-Access Counter register
@@ -3352,8 +3601,9 @@ pub mod l2_dbus0_acs_miss_cnt;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_dbus0_acs_conflict_cnt::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_dbus0_acs_conflict_cnt`] module*/
-pub type L2_DBUS0_ACS_CONFLICT_CNT =
-    crate::Reg<l2_dbus0_acs_conflict_cnt::L2_DBUS0_ACS_CONFLICT_CNT_SPEC>;
+pub type L2_DBUS0_ACS_CONFLICT_CNT = crate::Reg<
+    l2_dbus0_acs_conflict_cnt::L2_DBUS0_ACS_CONFLICT_CNT_SPEC,
+>;
 ///L2-Cache bus0 Conflict-Access Counter register
 pub mod l2_dbus0_acs_conflict_cnt;
 /**L2_DBUS0_ACS_NXTLVL_RD_CNT (r) register accessor: L2-Cache bus0 Next-Level-Access Counter register
@@ -3361,8 +3611,9 @@ pub mod l2_dbus0_acs_conflict_cnt;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_dbus0_acs_nxtlvl_rd_cnt::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_dbus0_acs_nxtlvl_rd_cnt`] module*/
-pub type L2_DBUS0_ACS_NXTLVL_RD_CNT =
-    crate::Reg<l2_dbus0_acs_nxtlvl_rd_cnt::L2_DBUS0_ACS_NXTLVL_RD_CNT_SPEC>;
+pub type L2_DBUS0_ACS_NXTLVL_RD_CNT = crate::Reg<
+    l2_dbus0_acs_nxtlvl_rd_cnt::L2_DBUS0_ACS_NXTLVL_RD_CNT_SPEC,
+>;
 ///L2-Cache bus0 Next-Level-Access Counter register
 pub mod l2_dbus0_acs_nxtlvl_rd_cnt;
 /**L2_DBUS0_ACS_NXTLVL_WR_CNT (r) register accessor: L2-Cache bus0 WB-Access Counter register
@@ -3370,8 +3621,9 @@ pub mod l2_dbus0_acs_nxtlvl_rd_cnt;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_dbus0_acs_nxtlvl_wr_cnt::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_dbus0_acs_nxtlvl_wr_cnt`] module*/
-pub type L2_DBUS0_ACS_NXTLVL_WR_CNT =
-    crate::Reg<l2_dbus0_acs_nxtlvl_wr_cnt::L2_DBUS0_ACS_NXTLVL_WR_CNT_SPEC>;
+pub type L2_DBUS0_ACS_NXTLVL_WR_CNT = crate::Reg<
+    l2_dbus0_acs_nxtlvl_wr_cnt::L2_DBUS0_ACS_NXTLVL_WR_CNT_SPEC,
+>;
 ///L2-Cache bus0 WB-Access Counter register
 pub mod l2_dbus0_acs_nxtlvl_wr_cnt;
 /**L2_DBUS1_ACS_HIT_CNT (r) register accessor: L2-Cache bus1 Hit-Access Counter register
@@ -3379,7 +3631,9 @@ pub mod l2_dbus0_acs_nxtlvl_wr_cnt;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_dbus1_acs_hit_cnt::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_dbus1_acs_hit_cnt`] module*/
-pub type L2_DBUS1_ACS_HIT_CNT = crate::Reg<l2_dbus1_acs_hit_cnt::L2_DBUS1_ACS_HIT_CNT_SPEC>;
+pub type L2_DBUS1_ACS_HIT_CNT = crate::Reg<
+    l2_dbus1_acs_hit_cnt::L2_DBUS1_ACS_HIT_CNT_SPEC,
+>;
 ///L2-Cache bus1 Hit-Access Counter register
 pub mod l2_dbus1_acs_hit_cnt;
 /**L2_DBUS1_ACS_MISS_CNT (r) register accessor: L2-Cache bus1 Miss-Access Counter register
@@ -3387,7 +3641,9 @@ pub mod l2_dbus1_acs_hit_cnt;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_dbus1_acs_miss_cnt::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_dbus1_acs_miss_cnt`] module*/
-pub type L2_DBUS1_ACS_MISS_CNT = crate::Reg<l2_dbus1_acs_miss_cnt::L2_DBUS1_ACS_MISS_CNT_SPEC>;
+pub type L2_DBUS1_ACS_MISS_CNT = crate::Reg<
+    l2_dbus1_acs_miss_cnt::L2_DBUS1_ACS_MISS_CNT_SPEC,
+>;
 ///L2-Cache bus1 Miss-Access Counter register
 pub mod l2_dbus1_acs_miss_cnt;
 /**L2_DBUS1_ACS_CONFLICT_CNT (r) register accessor: L2-Cache bus1 Conflict-Access Counter register
@@ -3395,8 +3651,9 @@ pub mod l2_dbus1_acs_miss_cnt;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_dbus1_acs_conflict_cnt::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_dbus1_acs_conflict_cnt`] module*/
-pub type L2_DBUS1_ACS_CONFLICT_CNT =
-    crate::Reg<l2_dbus1_acs_conflict_cnt::L2_DBUS1_ACS_CONFLICT_CNT_SPEC>;
+pub type L2_DBUS1_ACS_CONFLICT_CNT = crate::Reg<
+    l2_dbus1_acs_conflict_cnt::L2_DBUS1_ACS_CONFLICT_CNT_SPEC,
+>;
 ///L2-Cache bus1 Conflict-Access Counter register
 pub mod l2_dbus1_acs_conflict_cnt;
 /**L2_DBUS1_ACS_NXTLVL_RD_CNT (r) register accessor: L2-Cache bus1 Next-Level-Access Counter register
@@ -3404,8 +3661,9 @@ pub mod l2_dbus1_acs_conflict_cnt;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_dbus1_acs_nxtlvl_rd_cnt::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_dbus1_acs_nxtlvl_rd_cnt`] module*/
-pub type L2_DBUS1_ACS_NXTLVL_RD_CNT =
-    crate::Reg<l2_dbus1_acs_nxtlvl_rd_cnt::L2_DBUS1_ACS_NXTLVL_RD_CNT_SPEC>;
+pub type L2_DBUS1_ACS_NXTLVL_RD_CNT = crate::Reg<
+    l2_dbus1_acs_nxtlvl_rd_cnt::L2_DBUS1_ACS_NXTLVL_RD_CNT_SPEC,
+>;
 ///L2-Cache bus1 Next-Level-Access Counter register
 pub mod l2_dbus1_acs_nxtlvl_rd_cnt;
 /**L2_DBUS1_ACS_NXTLVL_WR_CNT (r) register accessor: L2-Cache bus1 WB-Access Counter register
@@ -3413,8 +3671,9 @@ pub mod l2_dbus1_acs_nxtlvl_rd_cnt;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_dbus1_acs_nxtlvl_wr_cnt::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_dbus1_acs_nxtlvl_wr_cnt`] module*/
-pub type L2_DBUS1_ACS_NXTLVL_WR_CNT =
-    crate::Reg<l2_dbus1_acs_nxtlvl_wr_cnt::L2_DBUS1_ACS_NXTLVL_WR_CNT_SPEC>;
+pub type L2_DBUS1_ACS_NXTLVL_WR_CNT = crate::Reg<
+    l2_dbus1_acs_nxtlvl_wr_cnt::L2_DBUS1_ACS_NXTLVL_WR_CNT_SPEC,
+>;
 ///L2-Cache bus1 WB-Access Counter register
 pub mod l2_dbus1_acs_nxtlvl_wr_cnt;
 /**L2_DBUS2_ACS_HIT_CNT (r) register accessor: L2-Cache bus2 Hit-Access Counter register
@@ -3422,7 +3681,9 @@ pub mod l2_dbus1_acs_nxtlvl_wr_cnt;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_dbus2_acs_hit_cnt::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_dbus2_acs_hit_cnt`] module*/
-pub type L2_DBUS2_ACS_HIT_CNT = crate::Reg<l2_dbus2_acs_hit_cnt::L2_DBUS2_ACS_HIT_CNT_SPEC>;
+pub type L2_DBUS2_ACS_HIT_CNT = crate::Reg<
+    l2_dbus2_acs_hit_cnt::L2_DBUS2_ACS_HIT_CNT_SPEC,
+>;
 ///L2-Cache bus2 Hit-Access Counter register
 pub mod l2_dbus2_acs_hit_cnt;
 /**L2_DBUS2_ACS_MISS_CNT (r) register accessor: L2-Cache bus2 Miss-Access Counter register
@@ -3430,7 +3691,9 @@ pub mod l2_dbus2_acs_hit_cnt;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_dbus2_acs_miss_cnt::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_dbus2_acs_miss_cnt`] module*/
-pub type L2_DBUS2_ACS_MISS_CNT = crate::Reg<l2_dbus2_acs_miss_cnt::L2_DBUS2_ACS_MISS_CNT_SPEC>;
+pub type L2_DBUS2_ACS_MISS_CNT = crate::Reg<
+    l2_dbus2_acs_miss_cnt::L2_DBUS2_ACS_MISS_CNT_SPEC,
+>;
 ///L2-Cache bus2 Miss-Access Counter register
 pub mod l2_dbus2_acs_miss_cnt;
 /**L2_DBUS2_ACS_CONFLICT_CNT (r) register accessor: L2-Cache bus2 Conflict-Access Counter register
@@ -3438,8 +3701,9 @@ pub mod l2_dbus2_acs_miss_cnt;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_dbus2_acs_conflict_cnt::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_dbus2_acs_conflict_cnt`] module*/
-pub type L2_DBUS2_ACS_CONFLICT_CNT =
-    crate::Reg<l2_dbus2_acs_conflict_cnt::L2_DBUS2_ACS_CONFLICT_CNT_SPEC>;
+pub type L2_DBUS2_ACS_CONFLICT_CNT = crate::Reg<
+    l2_dbus2_acs_conflict_cnt::L2_DBUS2_ACS_CONFLICT_CNT_SPEC,
+>;
 ///L2-Cache bus2 Conflict-Access Counter register
 pub mod l2_dbus2_acs_conflict_cnt;
 /**L2_DBUS2_ACS_NXTLVL_RD_CNT (r) register accessor: L2-Cache bus2 Next-Level-Access Counter register
@@ -3447,8 +3711,9 @@ pub mod l2_dbus2_acs_conflict_cnt;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_dbus2_acs_nxtlvl_rd_cnt::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_dbus2_acs_nxtlvl_rd_cnt`] module*/
-pub type L2_DBUS2_ACS_NXTLVL_RD_CNT =
-    crate::Reg<l2_dbus2_acs_nxtlvl_rd_cnt::L2_DBUS2_ACS_NXTLVL_RD_CNT_SPEC>;
+pub type L2_DBUS2_ACS_NXTLVL_RD_CNT = crate::Reg<
+    l2_dbus2_acs_nxtlvl_rd_cnt::L2_DBUS2_ACS_NXTLVL_RD_CNT_SPEC,
+>;
 ///L2-Cache bus2 Next-Level-Access Counter register
 pub mod l2_dbus2_acs_nxtlvl_rd_cnt;
 /**L2_DBUS2_ACS_NXTLVL_WR_CNT (r) register accessor: L2-Cache bus2 WB-Access Counter register
@@ -3456,8 +3721,9 @@ pub mod l2_dbus2_acs_nxtlvl_rd_cnt;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_dbus2_acs_nxtlvl_wr_cnt::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_dbus2_acs_nxtlvl_wr_cnt`] module*/
-pub type L2_DBUS2_ACS_NXTLVL_WR_CNT =
-    crate::Reg<l2_dbus2_acs_nxtlvl_wr_cnt::L2_DBUS2_ACS_NXTLVL_WR_CNT_SPEC>;
+pub type L2_DBUS2_ACS_NXTLVL_WR_CNT = crate::Reg<
+    l2_dbus2_acs_nxtlvl_wr_cnt::L2_DBUS2_ACS_NXTLVL_WR_CNT_SPEC,
+>;
 ///L2-Cache bus2 WB-Access Counter register
 pub mod l2_dbus2_acs_nxtlvl_wr_cnt;
 /**L2_DBUS3_ACS_HIT_CNT (r) register accessor: L2-Cache bus3 Hit-Access Counter register
@@ -3465,7 +3731,9 @@ pub mod l2_dbus2_acs_nxtlvl_wr_cnt;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_dbus3_acs_hit_cnt::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_dbus3_acs_hit_cnt`] module*/
-pub type L2_DBUS3_ACS_HIT_CNT = crate::Reg<l2_dbus3_acs_hit_cnt::L2_DBUS3_ACS_HIT_CNT_SPEC>;
+pub type L2_DBUS3_ACS_HIT_CNT = crate::Reg<
+    l2_dbus3_acs_hit_cnt::L2_DBUS3_ACS_HIT_CNT_SPEC,
+>;
 ///L2-Cache bus3 Hit-Access Counter register
 pub mod l2_dbus3_acs_hit_cnt;
 /**L2_DBUS3_ACS_MISS_CNT (r) register accessor: L2-Cache bus3 Miss-Access Counter register
@@ -3473,7 +3741,9 @@ pub mod l2_dbus3_acs_hit_cnt;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_dbus3_acs_miss_cnt::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_dbus3_acs_miss_cnt`] module*/
-pub type L2_DBUS3_ACS_MISS_CNT = crate::Reg<l2_dbus3_acs_miss_cnt::L2_DBUS3_ACS_MISS_CNT_SPEC>;
+pub type L2_DBUS3_ACS_MISS_CNT = crate::Reg<
+    l2_dbus3_acs_miss_cnt::L2_DBUS3_ACS_MISS_CNT_SPEC,
+>;
 ///L2-Cache bus3 Miss-Access Counter register
 pub mod l2_dbus3_acs_miss_cnt;
 /**L2_DBUS3_ACS_CONFLICT_CNT (r) register accessor: L2-Cache bus3 Conflict-Access Counter register
@@ -3481,8 +3751,9 @@ pub mod l2_dbus3_acs_miss_cnt;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_dbus3_acs_conflict_cnt::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_dbus3_acs_conflict_cnt`] module*/
-pub type L2_DBUS3_ACS_CONFLICT_CNT =
-    crate::Reg<l2_dbus3_acs_conflict_cnt::L2_DBUS3_ACS_CONFLICT_CNT_SPEC>;
+pub type L2_DBUS3_ACS_CONFLICT_CNT = crate::Reg<
+    l2_dbus3_acs_conflict_cnt::L2_DBUS3_ACS_CONFLICT_CNT_SPEC,
+>;
 ///L2-Cache bus3 Conflict-Access Counter register
 pub mod l2_dbus3_acs_conflict_cnt;
 /**L2_DBUS3_ACS_NXTLVL_RD_CNT (r) register accessor: L2-Cache bus3 Next-Level-Access Counter register
@@ -3490,8 +3761,9 @@ pub mod l2_dbus3_acs_conflict_cnt;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_dbus3_acs_nxtlvl_rd_cnt::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_dbus3_acs_nxtlvl_rd_cnt`] module*/
-pub type L2_DBUS3_ACS_NXTLVL_RD_CNT =
-    crate::Reg<l2_dbus3_acs_nxtlvl_rd_cnt::L2_DBUS3_ACS_NXTLVL_RD_CNT_SPEC>;
+pub type L2_DBUS3_ACS_NXTLVL_RD_CNT = crate::Reg<
+    l2_dbus3_acs_nxtlvl_rd_cnt::L2_DBUS3_ACS_NXTLVL_RD_CNT_SPEC,
+>;
 ///L2-Cache bus3 Next-Level-Access Counter register
 pub mod l2_dbus3_acs_nxtlvl_rd_cnt;
 /**L2_DBUS3_ACS_NXTLVL_WR_CNT (r) register accessor: L2-Cache bus3 WB-Access Counter register
@@ -3499,8 +3771,9 @@ pub mod l2_dbus3_acs_nxtlvl_rd_cnt;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_dbus3_acs_nxtlvl_wr_cnt::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_dbus3_acs_nxtlvl_wr_cnt`] module*/
-pub type L2_DBUS3_ACS_NXTLVL_WR_CNT =
-    crate::Reg<l2_dbus3_acs_nxtlvl_wr_cnt::L2_DBUS3_ACS_NXTLVL_WR_CNT_SPEC>;
+pub type L2_DBUS3_ACS_NXTLVL_WR_CNT = crate::Reg<
+    l2_dbus3_acs_nxtlvl_wr_cnt::L2_DBUS3_ACS_NXTLVL_WR_CNT_SPEC,
+>;
 ///L2-Cache bus3 WB-Access Counter register
 pub mod l2_dbus3_acs_nxtlvl_wr_cnt;
 /**L2_CACHE_ACS_FAIL_ID_ATTR (r) register accessor: L2-Cache Access Fail ID/attribution information register
@@ -3508,8 +3781,9 @@ pub mod l2_dbus3_acs_nxtlvl_wr_cnt;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_cache_acs_fail_id_attr::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_cache_acs_fail_id_attr`] module*/
-pub type L2_CACHE_ACS_FAIL_ID_ATTR =
-    crate::Reg<l2_cache_acs_fail_id_attr::L2_CACHE_ACS_FAIL_ID_ATTR_SPEC>;
+pub type L2_CACHE_ACS_FAIL_ID_ATTR = crate::Reg<
+    l2_cache_acs_fail_id_attr::L2_CACHE_ACS_FAIL_ID_ATTR_SPEC,
+>;
 ///L2-Cache Access Fail ID/attribution information register
 pub mod l2_cache_acs_fail_id_attr;
 /**L2_CACHE_ACS_FAIL_ADDR (r) register accessor: L2-Cache Access Fail Address information register
@@ -3517,7 +3791,9 @@ pub mod l2_cache_acs_fail_id_attr;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_cache_acs_fail_addr::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_cache_acs_fail_addr`] module*/
-pub type L2_CACHE_ACS_FAIL_ADDR = crate::Reg<l2_cache_acs_fail_addr::L2_CACHE_ACS_FAIL_ADDR_SPEC>;
+pub type L2_CACHE_ACS_FAIL_ADDR = crate::Reg<
+    l2_cache_acs_fail_addr::L2_CACHE_ACS_FAIL_ADDR_SPEC,
+>;
 ///L2-Cache Access Fail Address information register
 pub mod l2_cache_acs_fail_addr;
 /**L2_CACHE_SYNC_PRELOAD_INT_ENA (rw) register accessor: L1-Cache Access Fail Interrupt enable register
@@ -3525,8 +3801,9 @@ pub mod l2_cache_acs_fail_addr;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_cache_sync_preload_int_ena::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l2_cache_sync_preload_int_ena::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_cache_sync_preload_int_ena`] module*/
-pub type L2_CACHE_SYNC_PRELOAD_INT_ENA =
-    crate::Reg<l2_cache_sync_preload_int_ena::L2_CACHE_SYNC_PRELOAD_INT_ENA_SPEC>;
+pub type L2_CACHE_SYNC_PRELOAD_INT_ENA = crate::Reg<
+    l2_cache_sync_preload_int_ena::L2_CACHE_SYNC_PRELOAD_INT_ENA_SPEC,
+>;
 ///L1-Cache Access Fail Interrupt enable register
 pub mod l2_cache_sync_preload_int_ena;
 /**L2_CACHE_SYNC_PRELOAD_INT_CLR (w) register accessor: Sync Preload operation Interrupt clear register
@@ -3534,8 +3811,9 @@ pub mod l2_cache_sync_preload_int_ena;
 You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l2_cache_sync_preload_int_clr::W`]. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_cache_sync_preload_int_clr`] module*/
-pub type L2_CACHE_SYNC_PRELOAD_INT_CLR =
-    crate::Reg<l2_cache_sync_preload_int_clr::L2_CACHE_SYNC_PRELOAD_INT_CLR_SPEC>;
+pub type L2_CACHE_SYNC_PRELOAD_INT_CLR = crate::Reg<
+    l2_cache_sync_preload_int_clr::L2_CACHE_SYNC_PRELOAD_INT_CLR_SPEC,
+>;
 ///Sync Preload operation Interrupt clear register
 pub mod l2_cache_sync_preload_int_clr;
 /**L2_CACHE_SYNC_PRELOAD_INT_RAW (rw) register accessor: Sync Preload operation Interrupt raw register
@@ -3543,8 +3821,9 @@ pub mod l2_cache_sync_preload_int_clr;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_cache_sync_preload_int_raw::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l2_cache_sync_preload_int_raw::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_cache_sync_preload_int_raw`] module*/
-pub type L2_CACHE_SYNC_PRELOAD_INT_RAW =
-    crate::Reg<l2_cache_sync_preload_int_raw::L2_CACHE_SYNC_PRELOAD_INT_RAW_SPEC>;
+pub type L2_CACHE_SYNC_PRELOAD_INT_RAW = crate::Reg<
+    l2_cache_sync_preload_int_raw::L2_CACHE_SYNC_PRELOAD_INT_RAW_SPEC,
+>;
 ///Sync Preload operation Interrupt raw register
 pub mod l2_cache_sync_preload_int_raw;
 /**L2_CACHE_SYNC_PRELOAD_INT_ST (r) register accessor: L1-Cache Access Fail Interrupt status register
@@ -3552,8 +3831,9 @@ pub mod l2_cache_sync_preload_int_raw;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_cache_sync_preload_int_st::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_cache_sync_preload_int_st`] module*/
-pub type L2_CACHE_SYNC_PRELOAD_INT_ST =
-    crate::Reg<l2_cache_sync_preload_int_st::L2_CACHE_SYNC_PRELOAD_INT_ST_SPEC>;
+pub type L2_CACHE_SYNC_PRELOAD_INT_ST = crate::Reg<
+    l2_cache_sync_preload_int_st::L2_CACHE_SYNC_PRELOAD_INT_ST_SPEC,
+>;
 ///L1-Cache Access Fail Interrupt status register
 pub mod l2_cache_sync_preload_int_st;
 /**L2_CACHE_SYNC_PRELOAD_EXCEPTION (r) register accessor: Cache Sync/Preload Operation exception register
@@ -3561,8 +3841,9 @@ pub mod l2_cache_sync_preload_int_st;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_cache_sync_preload_exception::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_cache_sync_preload_exception`] module*/
-pub type L2_CACHE_SYNC_PRELOAD_EXCEPTION =
-    crate::Reg<l2_cache_sync_preload_exception::L2_CACHE_SYNC_PRELOAD_EXCEPTION_SPEC>;
+pub type L2_CACHE_SYNC_PRELOAD_EXCEPTION = crate::Reg<
+    l2_cache_sync_preload_exception::L2_CACHE_SYNC_PRELOAD_EXCEPTION_SPEC,
+>;
 ///Cache Sync/Preload Operation exception register
 pub mod l2_cache_sync_preload_exception;
 /**L2_CACHE_SYNC_RST_CTRL (rw) register accessor: Cache Sync Reset control register
@@ -3570,7 +3851,9 @@ pub mod l2_cache_sync_preload_exception;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_cache_sync_rst_ctrl::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l2_cache_sync_rst_ctrl::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_cache_sync_rst_ctrl`] module*/
-pub type L2_CACHE_SYNC_RST_CTRL = crate::Reg<l2_cache_sync_rst_ctrl::L2_CACHE_SYNC_RST_CTRL_SPEC>;
+pub type L2_CACHE_SYNC_RST_CTRL = crate::Reg<
+    l2_cache_sync_rst_ctrl::L2_CACHE_SYNC_RST_CTRL_SPEC,
+>;
 ///Cache Sync Reset control register
 pub mod l2_cache_sync_rst_ctrl;
 /**L2_CACHE_PRELOAD_RST_CTRL (rw) register accessor: Cache Preload Reset control register
@@ -3578,8 +3861,9 @@ pub mod l2_cache_sync_rst_ctrl;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_cache_preload_rst_ctrl::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l2_cache_preload_rst_ctrl::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_cache_preload_rst_ctrl`] module*/
-pub type L2_CACHE_PRELOAD_RST_CTRL =
-    crate::Reg<l2_cache_preload_rst_ctrl::L2_CACHE_PRELOAD_RST_CTRL_SPEC>;
+pub type L2_CACHE_PRELOAD_RST_CTRL = crate::Reg<
+    l2_cache_preload_rst_ctrl::L2_CACHE_PRELOAD_RST_CTRL_SPEC,
+>;
 ///Cache Preload Reset control register
 pub mod l2_cache_preload_rst_ctrl;
 /**L2_CACHE_AUTOLOAD_BUF_CLR_CTRL (rw) register accessor: Cache Autoload buffer clear control register
@@ -3587,8 +3871,9 @@ pub mod l2_cache_preload_rst_ctrl;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_cache_autoload_buf_clr_ctrl::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l2_cache_autoload_buf_clr_ctrl::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_cache_autoload_buf_clr_ctrl`] module*/
-pub type L2_CACHE_AUTOLOAD_BUF_CLR_CTRL =
-    crate::Reg<l2_cache_autoload_buf_clr_ctrl::L2_CACHE_AUTOLOAD_BUF_CLR_CTRL_SPEC>;
+pub type L2_CACHE_AUTOLOAD_BUF_CLR_CTRL = crate::Reg<
+    l2_cache_autoload_buf_clr_ctrl::L2_CACHE_AUTOLOAD_BUF_CLR_CTRL_SPEC,
+>;
 ///Cache Autoload buffer clear control register
 pub mod l2_cache_autoload_buf_clr_ctrl;
 /**L2_UNALLOCATE_BUFFER_CLEAR (rw) register accessor: Unallocate request buffer clear registers
@@ -3596,8 +3881,9 @@ pub mod l2_cache_autoload_buf_clr_ctrl;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_unallocate_buffer_clear::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l2_unallocate_buffer_clear::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_unallocate_buffer_clear`] module*/
-pub type L2_UNALLOCATE_BUFFER_CLEAR =
-    crate::Reg<l2_unallocate_buffer_clear::L2_UNALLOCATE_BUFFER_CLEAR_SPEC>;
+pub type L2_UNALLOCATE_BUFFER_CLEAR = crate::Reg<
+    l2_unallocate_buffer_clear::L2_UNALLOCATE_BUFFER_CLEAR_SPEC,
+>;
 ///Unallocate request buffer clear registers
 pub mod l2_unallocate_buffer_clear;
 /**L2_CACHE_ACCESS_ATTR_CTRL (rw) register accessor: L2 cache access attribute control register
@@ -3605,8 +3891,9 @@ pub mod l2_unallocate_buffer_clear;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_cache_access_attr_ctrl::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l2_cache_access_attr_ctrl::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_cache_access_attr_ctrl`] module*/
-pub type L2_CACHE_ACCESS_ATTR_CTRL =
-    crate::Reg<l2_cache_access_attr_ctrl::L2_CACHE_ACCESS_ATTR_CTRL_SPEC>;
+pub type L2_CACHE_ACCESS_ATTR_CTRL = crate::Reg<
+    l2_cache_access_attr_ctrl::L2_CACHE_ACCESS_ATTR_CTRL_SPEC,
+>;
 ///L2 cache access attribute control register
 pub mod l2_cache_access_attr_ctrl;
 /**L2_CACHE_OBJECT_CTRL (rw) register accessor: Cache Tag and Data memory Object control register
@@ -3614,7 +3901,9 @@ pub mod l2_cache_access_attr_ctrl;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_cache_object_ctrl::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l2_cache_object_ctrl::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_cache_object_ctrl`] module*/
-pub type L2_CACHE_OBJECT_CTRL = crate::Reg<l2_cache_object_ctrl::L2_CACHE_OBJECT_CTRL_SPEC>;
+pub type L2_CACHE_OBJECT_CTRL = crate::Reg<
+    l2_cache_object_ctrl::L2_CACHE_OBJECT_CTRL_SPEC,
+>;
 ///Cache Tag and Data memory Object control register
 pub mod l2_cache_object_ctrl;
 /**L2_CACHE_WAY_OBJECT (rw) register accessor: Cache Tag and Data memory way register

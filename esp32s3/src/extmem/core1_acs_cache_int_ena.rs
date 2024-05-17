@@ -58,18 +58,12 @@ impl core::fmt::Debug for R {
                 &self.core1_ibus_acs_msk_ic_int_ena(),
             )
             .field("core1_ibus_wr_ic_int_ena", &self.core1_ibus_wr_ic_int_ena())
-            .field(
-                "core1_ibus_reject_int_ena",
-                &self.core1_ibus_reject_int_ena(),
-            )
+            .field("core1_ibus_reject_int_ena", &self.core1_ibus_reject_int_ena())
             .field(
                 "core1_dbus_acs_msk_dc_int_ena",
                 &self.core1_dbus_acs_msk_dc_int_ena(),
             )
-            .field(
-                "core1_dbus_reject_int_ena",
-                &self.core1_dbus_reject_int_ena(),
-            )
+            .field("core1_dbus_reject_int_ena", &self.core1_dbus_reject_int_ena())
             .finish()
     }
 }

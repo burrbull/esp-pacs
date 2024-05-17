@@ -236,14 +236,8 @@ impl core::fmt::Debug for R {
                 "host_slc0_token1_0to1_int_raw",
                 &self.host_slc0_token1_0to1_int_raw(),
             )
-            .field(
-                "host_slc0host_rx_sof_int_raw",
-                &self.host_slc0host_rx_sof_int_raw(),
-            )
-            .field(
-                "host_slc0host_rx_eof_int_raw",
-                &self.host_slc0host_rx_eof_int_raw(),
-            )
+            .field("host_slc0host_rx_sof_int_raw", &self.host_slc0host_rx_sof_int_raw())
+            .field("host_slc0host_rx_eof_int_raw", &self.host_slc0host_rx_eof_int_raw())
             .field(
                 "host_slc0host_rx_start_int_raw",
                 &self.host_slc0host_rx_start_int_raw(),
@@ -258,22 +252,10 @@ impl core::fmt::Debug for R {
                 "host_slc0_rx_pf_valid_int_raw",
                 &self.host_slc0_rx_pf_valid_int_raw(),
             )
-            .field(
-                "host_slc0_ext_bit0_int_raw",
-                &self.host_slc0_ext_bit0_int_raw(),
-            )
-            .field(
-                "host_slc0_ext_bit1_int_raw",
-                &self.host_slc0_ext_bit1_int_raw(),
-            )
-            .field(
-                "host_slc0_ext_bit2_int_raw",
-                &self.host_slc0_ext_bit2_int_raw(),
-            )
-            .field(
-                "host_slc0_ext_bit3_int_raw",
-                &self.host_slc0_ext_bit3_int_raw(),
-            )
+            .field("host_slc0_ext_bit0_int_raw", &self.host_slc0_ext_bit0_int_raw())
+            .field("host_slc0_ext_bit1_int_raw", &self.host_slc0_ext_bit1_int_raw())
+            .field("host_slc0_ext_bit2_int_raw", &self.host_slc0_ext_bit2_int_raw())
+            .field("host_slc0_ext_bit3_int_raw", &self.host_slc0_ext_bit3_int_raw())
             .field(
                 "host_slc0_rx_new_packet_int_raw",
                 &self.host_slc0_rx_new_packet_int_raw(),

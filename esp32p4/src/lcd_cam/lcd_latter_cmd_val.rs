@@ -25,7 +25,9 @@ impl W {
     ///Bits 0:31 - The LCD write command value of latter cmd cycle.
     #[inline(always)]
     #[must_use]
-    pub fn lcd_latter_cmd_value(&mut self) -> LCD_LATTER_CMD_VALUE_W<LCD_LATTER_CMD_VAL_SPEC> {
+    pub fn lcd_latter_cmd_value(
+        &mut self,
+    ) -> LCD_LATTER_CMD_VALUE_W<LCD_LATTER_CMD_VAL_SPEC> {
         LCD_LATTER_CMD_VALUE_W::new(self, 0)
     }
 }

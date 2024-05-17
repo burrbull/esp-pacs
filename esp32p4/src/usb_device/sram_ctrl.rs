@@ -16,9 +16,7 @@ impl R {
 #[cfg(feature = "impl-register-debug")]
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("SRAM_CTRL")
-            .field("mem_aux_ctrl", &self.mem_aux_ctrl())
-            .finish()
+        f.debug_struct("SRAM_CTRL").field("mem_aux_ctrl", &self.mem_aux_ctrl()).finish()
     }
 }
 impl W {

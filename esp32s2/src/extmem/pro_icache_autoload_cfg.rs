@@ -73,20 +73,11 @@ impl core::fmt::Debug for R {
         f.debug_struct("PRO_ICACHE_AUTOLOAD_CFG")
             .field("pro_icache_autoload_mode", &self.pro_icache_autoload_mode())
             .field("pro_icache_autoload_step", &self.pro_icache_autoload_step())
-            .field(
-                "pro_icache_autoload_order",
-                &self.pro_icache_autoload_order(),
-            )
+            .field("pro_icache_autoload_order", &self.pro_icache_autoload_order())
             .field("pro_icache_autoload_rqst", &self.pro_icache_autoload_rqst())
             .field("pro_icache_autoload_size", &self.pro_icache_autoload_size())
-            .field(
-                "pro_icache_autoload_sct0_ena",
-                &self.pro_icache_autoload_sct0_ena(),
-            )
-            .field(
-                "pro_icache_autoload_sct1_ena",
-                &self.pro_icache_autoload_sct1_ena(),
-            )
+            .field("pro_icache_autoload_sct0_ena", &self.pro_icache_autoload_sct0_ena())
+            .field("pro_icache_autoload_sct1_ena", &self.pro_icache_autoload_sct1_ena())
             .finish()
     }
 }

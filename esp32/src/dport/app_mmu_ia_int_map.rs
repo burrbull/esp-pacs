@@ -25,7 +25,9 @@ impl W {
     ///Bits 0:4
     #[inline(always)]
     #[must_use]
-    pub fn app_mmu_ia_int_map(&mut self) -> APP_MMU_IA_INT_MAP_W<APP_MMU_IA_INT_MAP_SPEC> {
+    pub fn app_mmu_ia_int_map(
+        &mut self,
+    ) -> APP_MMU_IA_INT_MAP_W<APP_MMU_IA_INT_MAP_SPEC> {
         APP_MMU_IA_INT_MAP_W::new(self, 0)
     }
 }

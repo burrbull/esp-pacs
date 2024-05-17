@@ -45,19 +45,25 @@ impl W {
     ///Bit 0 - The bit is used to disable dbus0, 0: enable, 1: disable
     #[inline(always)]
     #[must_use]
-    pub fn pro_dcache_mask_bus0(&mut self) -> PRO_DCACHE_MASK_BUS0_W<PRO_DCACHE_CTRL1_SPEC> {
+    pub fn pro_dcache_mask_bus0(
+        &mut self,
+    ) -> PRO_DCACHE_MASK_BUS0_W<PRO_DCACHE_CTRL1_SPEC> {
         PRO_DCACHE_MASK_BUS0_W::new(self, 0)
     }
     ///Bit 1 - The bit is used to disable dbus1, 0: enable, 1: disable
     #[inline(always)]
     #[must_use]
-    pub fn pro_dcache_mask_bus1(&mut self) -> PRO_DCACHE_MASK_BUS1_W<PRO_DCACHE_CTRL1_SPEC> {
+    pub fn pro_dcache_mask_bus1(
+        &mut self,
+    ) -> PRO_DCACHE_MASK_BUS1_W<PRO_DCACHE_CTRL1_SPEC> {
         PRO_DCACHE_MASK_BUS1_W::new(self, 1)
     }
     ///Bit 2 - The bit is used to disable dbus2, 0: enable, 1: disable
     #[inline(always)]
     #[must_use]
-    pub fn pro_dcache_mask_bus2(&mut self) -> PRO_DCACHE_MASK_BUS2_W<PRO_DCACHE_CTRL1_SPEC> {
+    pub fn pro_dcache_mask_bus2(
+        &mut self,
+    ) -> PRO_DCACHE_MASK_BUS2_W<PRO_DCACHE_CTRL1_SPEC> {
         PRO_DCACHE_MASK_BUS2_W::new(self, 2)
     }
 }

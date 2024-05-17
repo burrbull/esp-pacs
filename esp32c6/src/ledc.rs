@@ -77,27 +77,17 @@ impl RegisterBlock {
     ///0x100..0x118 - Ledc ch%s gamma ram write register.
     #[inline(always)]
     pub const fn ch_gamma_wr(&self, n: usize) -> &CH_GAMMA_WR {
-        #[allow(clippy::no_effect)]
-        [(); 6][n];
-        unsafe {
-            &*(self as *const Self)
-                .cast::<u8>()
-                .add(256)
-                .add(16 * n)
-                .cast()
-        }
+        #[allow(clippy::no_effect)] [(); 6][n];
+        unsafe { &*(self as *const Self).cast::<u8>().add(256).add(16 * n).cast() }
     }
     ///Iterator for array of:
     ///0x100..0x118 - Ledc ch%s gamma ram write register.
     #[inline(always)]
     pub fn ch_gamma_wr_iter(&self) -> impl Iterator<Item = &CH_GAMMA_WR> {
-        (0..6).map(move |n| unsafe {
-            &*(self as *const Self)
-                .cast::<u8>()
-                .add(256)
-                .add(16 * n)
-                .cast()
-        })
+        (0..6)
+            .map(move |n| unsafe {
+                &*(self as *const Self).cast::<u8>().add(256).add(16 * n).cast()
+            })
     }
     ///0x100 - Ledc ch0 gamma ram write register.
     #[inline(always)]
@@ -132,27 +122,17 @@ impl RegisterBlock {
     ///0x104..0x11c - Ledc ch%s gamma ram write address register.
     #[inline(always)]
     pub const fn ch_gamma_wr_addr(&self, n: usize) -> &CH_GAMMA_WR_ADDR {
-        #[allow(clippy::no_effect)]
-        [(); 6][n];
-        unsafe {
-            &*(self as *const Self)
-                .cast::<u8>()
-                .add(260)
-                .add(16 * n)
-                .cast()
-        }
+        #[allow(clippy::no_effect)] [(); 6][n];
+        unsafe { &*(self as *const Self).cast::<u8>().add(260).add(16 * n).cast() }
     }
     ///Iterator for array of:
     ///0x104..0x11c - Ledc ch%s gamma ram write address register.
     #[inline(always)]
     pub fn ch_gamma_wr_addr_iter(&self) -> impl Iterator<Item = &CH_GAMMA_WR_ADDR> {
-        (0..6).map(move |n| unsafe {
-            &*(self as *const Self)
-                .cast::<u8>()
-                .add(260)
-                .add(16 * n)
-                .cast()
-        })
+        (0..6)
+            .map(move |n| unsafe {
+                &*(self as *const Self).cast::<u8>().add(260).add(16 * n).cast()
+            })
     }
     ///0x104 - Ledc ch0 gamma ram write address register.
     #[inline(always)]
@@ -187,27 +167,17 @@ impl RegisterBlock {
     ///0x108..0x120 - Ledc ch%s gamma ram read address register.
     #[inline(always)]
     pub const fn ch_gamma_rd_addr(&self, n: usize) -> &CH_GAMMA_RD_ADDR {
-        #[allow(clippy::no_effect)]
-        [(); 6][n];
-        unsafe {
-            &*(self as *const Self)
-                .cast::<u8>()
-                .add(264)
-                .add(16 * n)
-                .cast()
-        }
+        #[allow(clippy::no_effect)] [(); 6][n];
+        unsafe { &*(self as *const Self).cast::<u8>().add(264).add(16 * n).cast() }
     }
     ///Iterator for array of:
     ///0x108..0x120 - Ledc ch%s gamma ram read address register.
     #[inline(always)]
     pub fn ch_gamma_rd_addr_iter(&self) -> impl Iterator<Item = &CH_GAMMA_RD_ADDR> {
-        (0..6).map(move |n| unsafe {
-            &*(self as *const Self)
-                .cast::<u8>()
-                .add(264)
-                .add(16 * n)
-                .cast()
-        })
+        (0..6)
+            .map(move |n| unsafe {
+                &*(self as *const Self).cast::<u8>().add(264).add(16 * n).cast()
+            })
     }
     ///0x108 - Ledc ch0 gamma ram read address register.
     #[inline(always)]
@@ -242,27 +212,17 @@ impl RegisterBlock {
     ///0x10c..0x124 - Ledc ch%s gamma ram read data register.
     #[inline(always)]
     pub const fn ch_gamma_rd_data(&self, n: usize) -> &CH_GAMMA_RD_DATA {
-        #[allow(clippy::no_effect)]
-        [(); 6][n];
-        unsafe {
-            &*(self as *const Self)
-                .cast::<u8>()
-                .add(268)
-                .add(16 * n)
-                .cast()
-        }
+        #[allow(clippy::no_effect)] [(); 6][n];
+        unsafe { &*(self as *const Self).cast::<u8>().add(268).add(16 * n).cast() }
     }
     ///Iterator for array of:
     ///0x10c..0x124 - Ledc ch%s gamma ram read data register.
     #[inline(always)]
     pub fn ch_gamma_rd_data_iter(&self) -> impl Iterator<Item = &CH_GAMMA_RD_DATA> {
-        (0..6).map(move |n| unsafe {
-            &*(self as *const Self)
-                .cast::<u8>()
-                .add(268)
-                .add(16 * n)
-                .cast()
-        })
+        (0..6)
+            .map(move |n| unsafe {
+                &*(self as *const Self).cast::<u8>().add(268).add(16 * n).cast()
+            })
     }
     ///0x10c - Ledc ch0 gamma ram read data register.
     #[inline(always)]

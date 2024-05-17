@@ -145,13 +145,17 @@ impl W {
     ///Bit 5
     #[inline(always)]
     #[must_use]
-    pub fn clk_i2c_mst_mem_fo(&mut self) -> CLK_I2C_MST_MEM_FO_W<CLK_CONF_FORCE_ON_SPEC> {
+    pub fn clk_i2c_mst_mem_fo(
+        &mut self,
+    ) -> CLK_I2C_MST_MEM_FO_W<CLK_CONF_FORCE_ON_SPEC> {
         CLK_I2C_MST_MEM_FO_W::new(self, 5)
     }
     ///Bit 6
     #[inline(always)]
     #[must_use]
-    pub fn clk_chan_freq_mem_fo(&mut self) -> CLK_CHAN_FREQ_MEM_FO_W<CLK_CONF_FORCE_ON_SPEC> {
+    pub fn clk_chan_freq_mem_fo(
+        &mut self,
+    ) -> CLK_CHAN_FREQ_MEM_FO_W<CLK_CONF_FORCE_ON_SPEC> {
         CLK_CHAN_FREQ_MEM_FO_W::new(self, 6)
     }
     ///Bit 7

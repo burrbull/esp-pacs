@@ -122,7 +122,9 @@ impl R {
     }
     ///Bit 14 - NA
     #[inline(always)]
-    pub fn ch1_slvif_multiblktype_err_intstat(&self) -> CH1_SLVIF_MULTIBLKTYPE_ERR_INTSTAT_R {
+    pub fn ch1_slvif_multiblktype_err_intstat(
+        &self,
+    ) -> CH1_SLVIF_MULTIBLKTYPE_ERR_INTSTAT_R {
         CH1_SLVIF_MULTIBLKTYPE_ERR_INTSTAT_R::new(((self.bits >> 14) & 1) != 0)
     }
     ///Bit 16 - NA
@@ -192,39 +194,18 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("INTSTATUS0")
-            .field(
-                "ch1_block_tfr_done_intstat",
-                &self.ch1_block_tfr_done_intstat(),
-            )
+            .field("ch1_block_tfr_done_intstat", &self.ch1_block_tfr_done_intstat())
             .field("ch1_dma_tfr_done_intstat", &self.ch1_dma_tfr_done_intstat())
-            .field(
-                "ch1_src_transcomp_intstat",
-                &self.ch1_src_transcomp_intstat(),
-            )
-            .field(
-                "ch1_dst_transcomp_intstat",
-                &self.ch1_dst_transcomp_intstat(),
-            )
+            .field("ch1_src_transcomp_intstat", &self.ch1_src_transcomp_intstat())
+            .field("ch1_dst_transcomp_intstat", &self.ch1_dst_transcomp_intstat())
             .field("ch1_src_dec_err_intstat", &self.ch1_src_dec_err_intstat())
             .field("ch1_dst_dec_err_intstat", &self.ch1_dst_dec_err_intstat())
             .field("ch1_src_slv_err_intstat", &self.ch1_src_slv_err_intstat())
             .field("ch1_dst_slv_err_intstat", &self.ch1_dst_slv_err_intstat())
-            .field(
-                "ch1_lli_rd_dec_err_intstat",
-                &self.ch1_lli_rd_dec_err_intstat(),
-            )
-            .field(
-                "ch1_lli_wr_dec_err_intstat",
-                &self.ch1_lli_wr_dec_err_intstat(),
-            )
-            .field(
-                "ch1_lli_rd_slv_err_intstat",
-                &self.ch1_lli_rd_slv_err_intstat(),
-            )
-            .field(
-                "ch1_lli_wr_slv_err_intstat",
-                &self.ch1_lli_wr_slv_err_intstat(),
-            )
+            .field("ch1_lli_rd_dec_err_intstat", &self.ch1_lli_rd_dec_err_intstat())
+            .field("ch1_lli_wr_dec_err_intstat", &self.ch1_lli_wr_dec_err_intstat())
+            .field("ch1_lli_rd_slv_err_intstat", &self.ch1_lli_rd_slv_err_intstat())
+            .field("ch1_lli_wr_slv_err_intstat", &self.ch1_lli_wr_slv_err_intstat())
             .field(
                 "ch1_shadowreg_or_lli_invalid_err_intstat",
                 &self.ch1_shadowreg_or_lli_invalid_err_intstat(),
@@ -233,18 +214,9 @@ impl core::fmt::Debug for R {
                 "ch1_slvif_multiblktype_err_intstat",
                 &self.ch1_slvif_multiblktype_err_intstat(),
             )
-            .field(
-                "ch1_slvif_dec_err_intstat",
-                &self.ch1_slvif_dec_err_intstat(),
-            )
-            .field(
-                "ch1_slvif_wr2ro_err_intstat",
-                &self.ch1_slvif_wr2ro_err_intstat(),
-            )
-            .field(
-                "ch1_slvif_rd2rwo_err_intstat",
-                &self.ch1_slvif_rd2rwo_err_intstat(),
-            )
+            .field("ch1_slvif_dec_err_intstat", &self.ch1_slvif_dec_err_intstat())
+            .field("ch1_slvif_wr2ro_err_intstat", &self.ch1_slvif_wr2ro_err_intstat())
+            .field("ch1_slvif_rd2rwo_err_intstat", &self.ch1_slvif_rd2rwo_err_intstat())
             .field(
                 "ch1_slvif_wronchen_err_intstat",
                 &self.ch1_slvif_wronchen_err_intstat(),
@@ -261,14 +233,8 @@ impl core::fmt::Debug for R {
                 "ch1_slvif_wrparity_err_intstat",
                 &self.ch1_slvif_wrparity_err_intstat(),
             )
-            .field(
-                "ch1_ch_lock_cleared_intstat",
-                &self.ch1_ch_lock_cleared_intstat(),
-            )
-            .field(
-                "ch1_ch_src_suspended_intstat",
-                &self.ch1_ch_src_suspended_intstat(),
-            )
+            .field("ch1_ch_lock_cleared_intstat", &self.ch1_ch_lock_cleared_intstat())
+            .field("ch1_ch_src_suspended_intstat", &self.ch1_ch_src_suspended_intstat())
             .field("ch1_ch_suspended_intstat", &self.ch1_ch_suspended_intstat())
             .field("ch1_ch_disabled_intstat", &self.ch1_ch_disabled_intstat())
             .field("ch1_ch_aborted_intstat", &self.ch1_ch_aborted_intstat())

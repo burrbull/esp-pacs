@@ -55,10 +55,7 @@ impl core::fmt::Debug for R {
             .field("vddbat_charger", &self.vddbat_charger())
             .field("vddbat_cnt_clr", &self.vddbat_cnt_clr())
             .field("vddbat_upvoltage_target", &self.vddbat_upvoltage_target())
-            .field(
-                "vddbat_undervoltage_target",
-                &self.vddbat_undervoltage_target(),
-            )
+            .field("vddbat_undervoltage_target", &self.vddbat_undervoltage_target())
             .finish()
     }
 }
@@ -78,7 +75,9 @@ impl W {
     ///Bits 12:21 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn vddbat_upvoltage_target(&mut self) -> VDDBAT_UPVOLTAGE_TARGET_W<VDDBAT_BOD_CNTL_SPEC> {
+    pub fn vddbat_upvoltage_target(
+        &mut self,
+    ) -> VDDBAT_UPVOLTAGE_TARGET_W<VDDBAT_BOD_CNTL_SPEC> {
         VDDBAT_UPVOLTAGE_TARGET_W::new(self, 12)
     }
     ///Bits 22:31 - need_des

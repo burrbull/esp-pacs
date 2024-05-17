@@ -60,14 +60,8 @@ impl core::fmt::Debug for R {
         f.debug_struct("SER_AFIFO_CONFIG")
             .field("serial_in_afifo_reset_wr", &self.serial_in_afifo_reset_wr())
             .field("serial_in_afifo_reset_rd", &self.serial_in_afifo_reset_rd())
-            .field(
-                "serial_out_afifo_reset_wr",
-                &self.serial_out_afifo_reset_wr(),
-            )
-            .field(
-                "serial_out_afifo_reset_rd",
-                &self.serial_out_afifo_reset_rd(),
-            )
+            .field("serial_out_afifo_reset_wr", &self.serial_out_afifo_reset_wr())
+            .field("serial_out_afifo_reset_rd", &self.serial_out_afifo_reset_rd())
             .field("serial_out_afifo_rempty", &self.serial_out_afifo_rempty())
             .field("serial_in_afifo_wfull", &self.serial_in_afifo_wfull())
             .finish()

@@ -305,7 +305,9 @@ impl RegisterBlock {
     }
     ///0xb8 - This description will be updated in the near future.
     #[inline(always)]
-    pub const fn cache_encrypt_decrypt_clk_force_on(&self) -> &CACHE_ENCRYPT_DECRYPT_CLK_FORCE_ON {
+    pub const fn cache_encrypt_decrypt_clk_force_on(
+        &self,
+    ) -> &CACHE_ENCRYPT_DECRYPT_CLK_FORCE_ON {
         &self.cache_encrypt_decrypt_clk_force_on
     }
     ///0xbc - This description will be updated in the near future.
@@ -425,7 +427,9 @@ pub mod icache_ctrl1;
 You can [`read`](crate::generic::Reg::read) this register and get [`icache_tag_power_ctrl::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`icache_tag_power_ctrl::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@icache_tag_power_ctrl`] module*/
-pub type ICACHE_TAG_POWER_CTRL = crate::Reg<icache_tag_power_ctrl::ICACHE_TAG_POWER_CTRL_SPEC>;
+pub type ICACHE_TAG_POWER_CTRL = crate::Reg<
+    icache_tag_power_ctrl::ICACHE_TAG_POWER_CTRL_SPEC,
+>;
 ///This description will be updated in the near future.
 pub mod icache_tag_power_ctrl;
 /**ICACHE_PRELOCK_CTRL (rw) register accessor: This description will be updated in the near future.
@@ -441,8 +445,9 @@ pub mod icache_prelock_ctrl;
 You can [`read`](crate::generic::Reg::read) this register and get [`icache_prelock_sct0_addr::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`icache_prelock_sct0_addr::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@icache_prelock_sct0_addr`] module*/
-pub type ICACHE_PRELOCK_SCT0_ADDR =
-    crate::Reg<icache_prelock_sct0_addr::ICACHE_PRELOCK_SCT0_ADDR_SPEC>;
+pub type ICACHE_PRELOCK_SCT0_ADDR = crate::Reg<
+    icache_prelock_sct0_addr::ICACHE_PRELOCK_SCT0_ADDR_SPEC,
+>;
 ///This description will be updated in the near future.
 pub mod icache_prelock_sct0_addr;
 /**ICACHE_PRELOCK_SCT1_ADDR (rw) register accessor: This description will be updated in the near future.
@@ -450,8 +455,9 @@ pub mod icache_prelock_sct0_addr;
 You can [`read`](crate::generic::Reg::read) this register and get [`icache_prelock_sct1_addr::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`icache_prelock_sct1_addr::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@icache_prelock_sct1_addr`] module*/
-pub type ICACHE_PRELOCK_SCT1_ADDR =
-    crate::Reg<icache_prelock_sct1_addr::ICACHE_PRELOCK_SCT1_ADDR_SPEC>;
+pub type ICACHE_PRELOCK_SCT1_ADDR = crate::Reg<
+    icache_prelock_sct1_addr::ICACHE_PRELOCK_SCT1_ADDR_SPEC,
+>;
 ///This description will be updated in the near future.
 pub mod icache_prelock_sct1_addr;
 /**ICACHE_PRELOCK_SCT_SIZE (rw) register accessor: This description will be updated in the near future.
@@ -459,8 +465,9 @@ pub mod icache_prelock_sct1_addr;
 You can [`read`](crate::generic::Reg::read) this register and get [`icache_prelock_sct_size::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`icache_prelock_sct_size::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@icache_prelock_sct_size`] module*/
-pub type ICACHE_PRELOCK_SCT_SIZE =
-    crate::Reg<icache_prelock_sct_size::ICACHE_PRELOCK_SCT_SIZE_SPEC>;
+pub type ICACHE_PRELOCK_SCT_SIZE = crate::Reg<
+    icache_prelock_sct_size::ICACHE_PRELOCK_SCT_SIZE_SPEC,
+>;
 ///This description will be updated in the near future.
 pub mod icache_prelock_sct_size;
 /**ICACHE_LOCK_CTRL (rw) register accessor: This description will be updated in the near future.
@@ -540,7 +547,9 @@ pub mod icache_preload_size;
 You can [`read`](crate::generic::Reg::read) this register and get [`icache_autoload_ctrl::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`icache_autoload_ctrl::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@icache_autoload_ctrl`] module*/
-pub type ICACHE_AUTOLOAD_CTRL = crate::Reg<icache_autoload_ctrl::ICACHE_AUTOLOAD_CTRL_SPEC>;
+pub type ICACHE_AUTOLOAD_CTRL = crate::Reg<
+    icache_autoload_ctrl::ICACHE_AUTOLOAD_CTRL_SPEC,
+>;
 ///This description will be updated in the near future.
 pub mod icache_autoload_ctrl;
 /**ICACHE_AUTOLOAD_SCT0_ADDR (rw) register accessor: This description will be updated in the near future.
@@ -548,8 +557,9 @@ pub mod icache_autoload_ctrl;
 You can [`read`](crate::generic::Reg::read) this register and get [`icache_autoload_sct0_addr::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`icache_autoload_sct0_addr::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@icache_autoload_sct0_addr`] module*/
-pub type ICACHE_AUTOLOAD_SCT0_ADDR =
-    crate::Reg<icache_autoload_sct0_addr::ICACHE_AUTOLOAD_SCT0_ADDR_SPEC>;
+pub type ICACHE_AUTOLOAD_SCT0_ADDR = crate::Reg<
+    icache_autoload_sct0_addr::ICACHE_AUTOLOAD_SCT0_ADDR_SPEC,
+>;
 ///This description will be updated in the near future.
 pub mod icache_autoload_sct0_addr;
 /**ICACHE_AUTOLOAD_SCT0_SIZE (rw) register accessor: This description will be updated in the near future.
@@ -557,8 +567,9 @@ pub mod icache_autoload_sct0_addr;
 You can [`read`](crate::generic::Reg::read) this register and get [`icache_autoload_sct0_size::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`icache_autoload_sct0_size::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@icache_autoload_sct0_size`] module*/
-pub type ICACHE_AUTOLOAD_SCT0_SIZE =
-    crate::Reg<icache_autoload_sct0_size::ICACHE_AUTOLOAD_SCT0_SIZE_SPEC>;
+pub type ICACHE_AUTOLOAD_SCT0_SIZE = crate::Reg<
+    icache_autoload_sct0_size::ICACHE_AUTOLOAD_SCT0_SIZE_SPEC,
+>;
 ///This description will be updated in the near future.
 pub mod icache_autoload_sct0_size;
 /**ICACHE_AUTOLOAD_SCT1_ADDR (rw) register accessor: This description will be updated in the near future.
@@ -566,8 +577,9 @@ pub mod icache_autoload_sct0_size;
 You can [`read`](crate::generic::Reg::read) this register and get [`icache_autoload_sct1_addr::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`icache_autoload_sct1_addr::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@icache_autoload_sct1_addr`] module*/
-pub type ICACHE_AUTOLOAD_SCT1_ADDR =
-    crate::Reg<icache_autoload_sct1_addr::ICACHE_AUTOLOAD_SCT1_ADDR_SPEC>;
+pub type ICACHE_AUTOLOAD_SCT1_ADDR = crate::Reg<
+    icache_autoload_sct1_addr::ICACHE_AUTOLOAD_SCT1_ADDR_SPEC,
+>;
 ///This description will be updated in the near future.
 pub mod icache_autoload_sct1_addr;
 /**ICACHE_AUTOLOAD_SCT1_SIZE (rw) register accessor: This description will be updated in the near future.
@@ -575,8 +587,9 @@ pub mod icache_autoload_sct1_addr;
 You can [`read`](crate::generic::Reg::read) this register and get [`icache_autoload_sct1_size::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`icache_autoload_sct1_size::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@icache_autoload_sct1_size`] module*/
-pub type ICACHE_AUTOLOAD_SCT1_SIZE =
-    crate::Reg<icache_autoload_sct1_size::ICACHE_AUTOLOAD_SCT1_SIZE_SPEC>;
+pub type ICACHE_AUTOLOAD_SCT1_SIZE = crate::Reg<
+    icache_autoload_sct1_size::ICACHE_AUTOLOAD_SCT1_SIZE_SPEC,
+>;
 ///This description will be updated in the near future.
 pub mod icache_autoload_sct1_size;
 /**IBUS_TO_FLASH_START_VADDR (rw) register accessor: This description will be updated in the near future.
@@ -584,8 +597,9 @@ pub mod icache_autoload_sct1_size;
 You can [`read`](crate::generic::Reg::read) this register and get [`ibus_to_flash_start_vaddr::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`ibus_to_flash_start_vaddr::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@ibus_to_flash_start_vaddr`] module*/
-pub type IBUS_TO_FLASH_START_VADDR =
-    crate::Reg<ibus_to_flash_start_vaddr::IBUS_TO_FLASH_START_VADDR_SPEC>;
+pub type IBUS_TO_FLASH_START_VADDR = crate::Reg<
+    ibus_to_flash_start_vaddr::IBUS_TO_FLASH_START_VADDR_SPEC,
+>;
 ///This description will be updated in the near future.
 pub mod ibus_to_flash_start_vaddr;
 /**IBUS_TO_FLASH_END_VADDR (rw) register accessor: This description will be updated in the near future.
@@ -593,8 +607,9 @@ pub mod ibus_to_flash_start_vaddr;
 You can [`read`](crate::generic::Reg::read) this register and get [`ibus_to_flash_end_vaddr::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`ibus_to_flash_end_vaddr::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@ibus_to_flash_end_vaddr`] module*/
-pub type IBUS_TO_FLASH_END_VADDR =
-    crate::Reg<ibus_to_flash_end_vaddr::IBUS_TO_FLASH_END_VADDR_SPEC>;
+pub type IBUS_TO_FLASH_END_VADDR = crate::Reg<
+    ibus_to_flash_end_vaddr::IBUS_TO_FLASH_END_VADDR_SPEC,
+>;
 ///This description will be updated in the near future.
 pub mod ibus_to_flash_end_vaddr;
 /**DBUS_TO_FLASH_START_VADDR (rw) register accessor: This description will be updated in the near future.
@@ -602,8 +617,9 @@ pub mod ibus_to_flash_end_vaddr;
 You can [`read`](crate::generic::Reg::read) this register and get [`dbus_to_flash_start_vaddr::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`dbus_to_flash_start_vaddr::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dbus_to_flash_start_vaddr`] module*/
-pub type DBUS_TO_FLASH_START_VADDR =
-    crate::Reg<dbus_to_flash_start_vaddr::DBUS_TO_FLASH_START_VADDR_SPEC>;
+pub type DBUS_TO_FLASH_START_VADDR = crate::Reg<
+    dbus_to_flash_start_vaddr::DBUS_TO_FLASH_START_VADDR_SPEC,
+>;
 ///This description will be updated in the near future.
 pub mod dbus_to_flash_start_vaddr;
 /**DBUS_TO_FLASH_END_VADDR (rw) register accessor: This description will be updated in the near future.
@@ -611,8 +627,9 @@ pub mod dbus_to_flash_start_vaddr;
 You can [`read`](crate::generic::Reg::read) this register and get [`dbus_to_flash_end_vaddr::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`dbus_to_flash_end_vaddr::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dbus_to_flash_end_vaddr`] module*/
-pub type DBUS_TO_FLASH_END_VADDR =
-    crate::Reg<dbus_to_flash_end_vaddr::DBUS_TO_FLASH_END_VADDR_SPEC>;
+pub type DBUS_TO_FLASH_END_VADDR = crate::Reg<
+    dbus_to_flash_end_vaddr::DBUS_TO_FLASH_END_VADDR_SPEC,
+>;
 ///This description will be updated in the near future.
 pub mod dbus_to_flash_end_vaddr;
 /**CACHE_ACS_CNT_CLR (w) register accessor: This description will be updated in the near future.
@@ -644,8 +661,9 @@ pub mod ibus_acs_cnt;
 You can [`read`](crate::generic::Reg::read) this register and get [`dbus_acs_flash_miss_cnt::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dbus_acs_flash_miss_cnt`] module*/
-pub type DBUS_ACS_FLASH_MISS_CNT =
-    crate::Reg<dbus_acs_flash_miss_cnt::DBUS_ACS_FLASH_MISS_CNT_SPEC>;
+pub type DBUS_ACS_FLASH_MISS_CNT = crate::Reg<
+    dbus_acs_flash_miss_cnt::DBUS_ACS_FLASH_MISS_CNT_SPEC,
+>;
 ///This description will be updated in the near future.
 pub mod dbus_acs_flash_miss_cnt;
 /**DBUS_ACS_CNT (r) register accessor: This description will be updated in the near future.
@@ -685,8 +703,9 @@ pub mod cache_ilg_int_st;
 You can [`read`](crate::generic::Reg::read) this register and get [`core0_acs_cache_int_ena::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core0_acs_cache_int_ena::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core0_acs_cache_int_ena`] module*/
-pub type CORE0_ACS_CACHE_INT_ENA =
-    crate::Reg<core0_acs_cache_int_ena::CORE0_ACS_CACHE_INT_ENA_SPEC>;
+pub type CORE0_ACS_CACHE_INT_ENA = crate::Reg<
+    core0_acs_cache_int_ena::CORE0_ACS_CACHE_INT_ENA_SPEC,
+>;
 ///This description will be updated in the near future.
 pub mod core0_acs_cache_int_ena;
 /**CORE0_ACS_CACHE_INT_CLR (w) register accessor: This description will be updated in the near future.
@@ -694,8 +713,9 @@ pub mod core0_acs_cache_int_ena;
 You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core0_acs_cache_int_clr::W`]. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core0_acs_cache_int_clr`] module*/
-pub type CORE0_ACS_CACHE_INT_CLR =
-    crate::Reg<core0_acs_cache_int_clr::CORE0_ACS_CACHE_INT_CLR_SPEC>;
+pub type CORE0_ACS_CACHE_INT_CLR = crate::Reg<
+    core0_acs_cache_int_clr::CORE0_ACS_CACHE_INT_CLR_SPEC,
+>;
 ///This description will be updated in the near future.
 pub mod core0_acs_cache_int_clr;
 /**CORE0_ACS_CACHE_INT_ST (r) register accessor: This description will be updated in the near future.
@@ -703,7 +723,9 @@ pub mod core0_acs_cache_int_clr;
 You can [`read`](crate::generic::Reg::read) this register and get [`core0_acs_cache_int_st::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core0_acs_cache_int_st`] module*/
-pub type CORE0_ACS_CACHE_INT_ST = crate::Reg<core0_acs_cache_int_st::CORE0_ACS_CACHE_INT_ST_SPEC>;
+pub type CORE0_ACS_CACHE_INT_ST = crate::Reg<
+    core0_acs_cache_int_st::CORE0_ACS_CACHE_INT_ST_SPEC,
+>;
 ///This description will be updated in the near future.
 pub mod core0_acs_cache_int_st;
 /**CORE0_DBUS_REJECT_ST (r) register accessor: This description will be updated in the near future.
@@ -711,7 +733,9 @@ pub mod core0_acs_cache_int_st;
 You can [`read`](crate::generic::Reg::read) this register and get [`core0_dbus_reject_st::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core0_dbus_reject_st`] module*/
-pub type CORE0_DBUS_REJECT_ST = crate::Reg<core0_dbus_reject_st::CORE0_DBUS_REJECT_ST_SPEC>;
+pub type CORE0_DBUS_REJECT_ST = crate::Reg<
+    core0_dbus_reject_st::CORE0_DBUS_REJECT_ST_SPEC,
+>;
 ///This description will be updated in the near future.
 pub mod core0_dbus_reject_st;
 /**CORE0_DBUS_REJECT_VADDR (r) register accessor: This description will be updated in the near future.
@@ -719,8 +743,9 @@ pub mod core0_dbus_reject_st;
 You can [`read`](crate::generic::Reg::read) this register and get [`core0_dbus_reject_vaddr::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core0_dbus_reject_vaddr`] module*/
-pub type CORE0_DBUS_REJECT_VADDR =
-    crate::Reg<core0_dbus_reject_vaddr::CORE0_DBUS_REJECT_VADDR_SPEC>;
+pub type CORE0_DBUS_REJECT_VADDR = crate::Reg<
+    core0_dbus_reject_vaddr::CORE0_DBUS_REJECT_VADDR_SPEC,
+>;
 ///This description will be updated in the near future.
 pub mod core0_dbus_reject_vaddr;
 /**CORE0_IBUS_REJECT_ST (r) register accessor: This description will be updated in the near future.
@@ -728,7 +753,9 @@ pub mod core0_dbus_reject_vaddr;
 You can [`read`](crate::generic::Reg::read) this register and get [`core0_ibus_reject_st::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core0_ibus_reject_st`] module*/
-pub type CORE0_IBUS_REJECT_ST = crate::Reg<core0_ibus_reject_st::CORE0_IBUS_REJECT_ST_SPEC>;
+pub type CORE0_IBUS_REJECT_ST = crate::Reg<
+    core0_ibus_reject_st::CORE0_IBUS_REJECT_ST_SPEC,
+>;
 ///This description will be updated in the near future.
 pub mod core0_ibus_reject_st;
 /**CORE0_IBUS_REJECT_VADDR (r) register accessor: This description will be updated in the near future.
@@ -736,8 +763,9 @@ pub mod core0_ibus_reject_st;
 You can [`read`](crate::generic::Reg::read) this register and get [`core0_ibus_reject_vaddr::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core0_ibus_reject_vaddr`] module*/
-pub type CORE0_IBUS_REJECT_VADDR =
-    crate::Reg<core0_ibus_reject_vaddr::CORE0_IBUS_REJECT_VADDR_SPEC>;
+pub type CORE0_IBUS_REJECT_VADDR = crate::Reg<
+    core0_ibus_reject_vaddr::CORE0_IBUS_REJECT_VADDR_SPEC,
+>;
 ///This description will be updated in the near future.
 pub mod core0_ibus_reject_vaddr;
 /**CACHE_MMU_FAULT_CONTENT (r) register accessor: This description will be updated in the near future.
@@ -745,8 +773,9 @@ pub mod core0_ibus_reject_vaddr;
 You can [`read`](crate::generic::Reg::read) this register and get [`cache_mmu_fault_content::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@cache_mmu_fault_content`] module*/
-pub type CACHE_MMU_FAULT_CONTENT =
-    crate::Reg<cache_mmu_fault_content::CACHE_MMU_FAULT_CONTENT_SPEC>;
+pub type CACHE_MMU_FAULT_CONTENT = crate::Reg<
+    cache_mmu_fault_content::CACHE_MMU_FAULT_CONTENT_SPEC,
+>;
 ///This description will be updated in the near future.
 pub mod cache_mmu_fault_content;
 /**CACHE_MMU_FAULT_VADDR (r) register accessor: This description will be updated in the near future.
@@ -754,7 +783,9 @@ pub mod cache_mmu_fault_content;
 You can [`read`](crate::generic::Reg::read) this register and get [`cache_mmu_fault_vaddr::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@cache_mmu_fault_vaddr`] module*/
-pub type CACHE_MMU_FAULT_VADDR = crate::Reg<cache_mmu_fault_vaddr::CACHE_MMU_FAULT_VADDR_SPEC>;
+pub type CACHE_MMU_FAULT_VADDR = crate::Reg<
+    cache_mmu_fault_vaddr::CACHE_MMU_FAULT_VADDR_SPEC,
+>;
 ///This description will be updated in the near future.
 pub mod cache_mmu_fault_vaddr;
 /**CACHE_WRAP_AROUND_CTRL (rw) register accessor: This description will be updated in the near future.
@@ -762,7 +793,9 @@ pub mod cache_mmu_fault_vaddr;
 You can [`read`](crate::generic::Reg::read) this register and get [`cache_wrap_around_ctrl::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`cache_wrap_around_ctrl::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@cache_wrap_around_ctrl`] module*/
-pub type CACHE_WRAP_AROUND_CTRL = crate::Reg<cache_wrap_around_ctrl::CACHE_WRAP_AROUND_CTRL_SPEC>;
+pub type CACHE_WRAP_AROUND_CTRL = crate::Reg<
+    cache_wrap_around_ctrl::CACHE_WRAP_AROUND_CTRL_SPEC,
+>;
 ///This description will be updated in the near future.
 pub mod cache_wrap_around_ctrl;
 /**CACHE_MMU_POWER_CTRL (rw) register accessor: This description will be updated in the near future.
@@ -770,7 +803,9 @@ pub mod cache_wrap_around_ctrl;
 You can [`read`](crate::generic::Reg::read) this register and get [`cache_mmu_power_ctrl::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`cache_mmu_power_ctrl::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@cache_mmu_power_ctrl`] module*/
-pub type CACHE_MMU_POWER_CTRL = crate::Reg<cache_mmu_power_ctrl::CACHE_MMU_POWER_CTRL_SPEC>;
+pub type CACHE_MMU_POWER_CTRL = crate::Reg<
+    cache_mmu_power_ctrl::CACHE_MMU_POWER_CTRL_SPEC,
+>;
 ///This description will be updated in the near future.
 pub mod cache_mmu_power_ctrl;
 /**CACHE_STATE (r) register accessor: This description will be updated in the near future.
@@ -786,8 +821,9 @@ pub mod cache_state;
 You can [`read`](crate::generic::Reg::read) this register and get [`cache_encrypt_decrypt_record_disable::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`cache_encrypt_decrypt_record_disable::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@cache_encrypt_decrypt_record_disable`] module*/
-pub type CACHE_ENCRYPT_DECRYPT_RECORD_DISABLE =
-    crate::Reg<cache_encrypt_decrypt_record_disable::CACHE_ENCRYPT_DECRYPT_RECORD_DISABLE_SPEC>;
+pub type CACHE_ENCRYPT_DECRYPT_RECORD_DISABLE = crate::Reg<
+    cache_encrypt_decrypt_record_disable::CACHE_ENCRYPT_DECRYPT_RECORD_DISABLE_SPEC,
+>;
 ///This description will be updated in the near future.
 pub mod cache_encrypt_decrypt_record_disable;
 /**CACHE_ENCRYPT_DECRYPT_CLK_FORCE_ON (rw) register accessor: This description will be updated in the near future.
@@ -795,8 +831,9 @@ pub mod cache_encrypt_decrypt_record_disable;
 You can [`read`](crate::generic::Reg::read) this register and get [`cache_encrypt_decrypt_clk_force_on::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`cache_encrypt_decrypt_clk_force_on::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@cache_encrypt_decrypt_clk_force_on`] module*/
-pub type CACHE_ENCRYPT_DECRYPT_CLK_FORCE_ON =
-    crate::Reg<cache_encrypt_decrypt_clk_force_on::CACHE_ENCRYPT_DECRYPT_CLK_FORCE_ON_SPEC>;
+pub type CACHE_ENCRYPT_DECRYPT_CLK_FORCE_ON = crate::Reg<
+    cache_encrypt_decrypt_clk_force_on::CACHE_ENCRYPT_DECRYPT_CLK_FORCE_ON_SPEC,
+>;
 ///This description will be updated in the near future.
 pub mod cache_encrypt_decrypt_clk_force_on;
 /**CACHE_PRELOAD_INT_CTRL (rw) register accessor: This description will be updated in the near future.
@@ -804,7 +841,9 @@ pub mod cache_encrypt_decrypt_clk_force_on;
 You can [`read`](crate::generic::Reg::read) this register and get [`cache_preload_int_ctrl::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`cache_preload_int_ctrl::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@cache_preload_int_ctrl`] module*/
-pub type CACHE_PRELOAD_INT_CTRL = crate::Reg<cache_preload_int_ctrl::CACHE_PRELOAD_INT_CTRL_SPEC>;
+pub type CACHE_PRELOAD_INT_CTRL = crate::Reg<
+    cache_preload_int_ctrl::CACHE_PRELOAD_INT_CTRL_SPEC,
+>;
 ///This description will be updated in the near future.
 pub mod cache_preload_int_ctrl;
 /**CACHE_SYNC_INT_CTRL (rw) register accessor: This description will be updated in the near future.
@@ -844,8 +883,9 @@ pub mod icache_freeze;
 You can [`read`](crate::generic::Reg::read) this register and get [`icache_atomic_operate_ena::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`icache_atomic_operate_ena::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@icache_atomic_operate_ena`] module*/
-pub type ICACHE_ATOMIC_OPERATE_ENA =
-    crate::Reg<icache_atomic_operate_ena::ICACHE_ATOMIC_OPERATE_ENA_SPEC>;
+pub type ICACHE_ATOMIC_OPERATE_ENA = crate::Reg<
+    icache_atomic_operate_ena::ICACHE_ATOMIC_OPERATE_ENA_SPEC,
+>;
 ///This description will be updated in the near future.
 pub mod icache_atomic_operate_ena;
 /**CACHE_REQUEST (rw) register accessor: This description will be updated in the near future.
@@ -869,7 +909,9 @@ pub mod ibus_pms_tbl_lock;
 You can [`read`](crate::generic::Reg::read) this register and get [`ibus_pms_tbl_boundary0::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`ibus_pms_tbl_boundary0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@ibus_pms_tbl_boundary0`] module*/
-pub type IBUS_PMS_TBL_BOUNDARY0 = crate::Reg<ibus_pms_tbl_boundary0::IBUS_PMS_TBL_BOUNDARY0_SPEC>;
+pub type IBUS_PMS_TBL_BOUNDARY0 = crate::Reg<
+    ibus_pms_tbl_boundary0::IBUS_PMS_TBL_BOUNDARY0_SPEC,
+>;
 ///This description will be updated in the near future.
 pub mod ibus_pms_tbl_boundary0;
 /**IBUS_PMS_TBL_BOUNDARY1 (rw) register accessor: This description will be updated in the near future.
@@ -877,7 +919,9 @@ pub mod ibus_pms_tbl_boundary0;
 You can [`read`](crate::generic::Reg::read) this register and get [`ibus_pms_tbl_boundary1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`ibus_pms_tbl_boundary1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@ibus_pms_tbl_boundary1`] module*/
-pub type IBUS_PMS_TBL_BOUNDARY1 = crate::Reg<ibus_pms_tbl_boundary1::IBUS_PMS_TBL_BOUNDARY1_SPEC>;
+pub type IBUS_PMS_TBL_BOUNDARY1 = crate::Reg<
+    ibus_pms_tbl_boundary1::IBUS_PMS_TBL_BOUNDARY1_SPEC,
+>;
 ///This description will be updated in the near future.
 pub mod ibus_pms_tbl_boundary1;
 /**IBUS_PMS_TBL_BOUNDARY2 (rw) register accessor: This description will be updated in the near future.
@@ -885,7 +929,9 @@ pub mod ibus_pms_tbl_boundary1;
 You can [`read`](crate::generic::Reg::read) this register and get [`ibus_pms_tbl_boundary2::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`ibus_pms_tbl_boundary2::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@ibus_pms_tbl_boundary2`] module*/
-pub type IBUS_PMS_TBL_BOUNDARY2 = crate::Reg<ibus_pms_tbl_boundary2::IBUS_PMS_TBL_BOUNDARY2_SPEC>;
+pub type IBUS_PMS_TBL_BOUNDARY2 = crate::Reg<
+    ibus_pms_tbl_boundary2::IBUS_PMS_TBL_BOUNDARY2_SPEC,
+>;
 ///This description will be updated in the near future.
 pub mod ibus_pms_tbl_boundary2;
 /**IBUS_PMS_TBL_ATTR (rw) register accessor: This description will be updated in the near future.
@@ -909,7 +955,9 @@ pub mod dbus_pms_tbl_lock;
 You can [`read`](crate::generic::Reg::read) this register and get [`dbus_pms_tbl_boundary0::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`dbus_pms_tbl_boundary0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dbus_pms_tbl_boundary0`] module*/
-pub type DBUS_PMS_TBL_BOUNDARY0 = crate::Reg<dbus_pms_tbl_boundary0::DBUS_PMS_TBL_BOUNDARY0_SPEC>;
+pub type DBUS_PMS_TBL_BOUNDARY0 = crate::Reg<
+    dbus_pms_tbl_boundary0::DBUS_PMS_TBL_BOUNDARY0_SPEC,
+>;
 ///This description will be updated in the near future.
 pub mod dbus_pms_tbl_boundary0;
 /**DBUS_PMS_TBL_BOUNDARY1 (rw) register accessor: This description will be updated in the near future.
@@ -917,7 +965,9 @@ pub mod dbus_pms_tbl_boundary0;
 You can [`read`](crate::generic::Reg::read) this register and get [`dbus_pms_tbl_boundary1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`dbus_pms_tbl_boundary1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dbus_pms_tbl_boundary1`] module*/
-pub type DBUS_PMS_TBL_BOUNDARY1 = crate::Reg<dbus_pms_tbl_boundary1::DBUS_PMS_TBL_BOUNDARY1_SPEC>;
+pub type DBUS_PMS_TBL_BOUNDARY1 = crate::Reg<
+    dbus_pms_tbl_boundary1::DBUS_PMS_TBL_BOUNDARY1_SPEC,
+>;
 ///This description will be updated in the near future.
 pub mod dbus_pms_tbl_boundary1;
 /**DBUS_PMS_TBL_BOUNDARY2 (rw) register accessor: This description will be updated in the near future.
@@ -925,7 +975,9 @@ pub mod dbus_pms_tbl_boundary1;
 You can [`read`](crate::generic::Reg::read) this register and get [`dbus_pms_tbl_boundary2::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`dbus_pms_tbl_boundary2::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dbus_pms_tbl_boundary2`] module*/
-pub type DBUS_PMS_TBL_BOUNDARY2 = crate::Reg<dbus_pms_tbl_boundary2::DBUS_PMS_TBL_BOUNDARY2_SPEC>;
+pub type DBUS_PMS_TBL_BOUNDARY2 = crate::Reg<
+    dbus_pms_tbl_boundary2::DBUS_PMS_TBL_BOUNDARY2_SPEC,
+>;
 ///This description will be updated in the near future.
 pub mod dbus_pms_tbl_boundary2;
 /**DBUS_PMS_TBL_ATTR (rw) register accessor: This description will be updated in the near future.

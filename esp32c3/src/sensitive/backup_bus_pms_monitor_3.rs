@@ -5,7 +5,9 @@ pub type BACKUP_BUS_PMS_MONITOR_VIOLATE_HADDR_R = crate::FieldReader<u32>;
 impl R {
     ///Bits 0:31 - backup_bus_pms_monitor_violate_haddr
     #[inline(always)]
-    pub fn backup_bus_pms_monitor_violate_haddr(&self) -> BACKUP_BUS_PMS_MONITOR_VIOLATE_HADDR_R {
+    pub fn backup_bus_pms_monitor_violate_haddr(
+        &self,
+    ) -> BACKUP_BUS_PMS_MONITOR_VIOLATE_HADDR_R {
         BACKUP_BUS_PMS_MONITOR_VIOLATE_HADDR_R::new(self.bits)
     }
 }

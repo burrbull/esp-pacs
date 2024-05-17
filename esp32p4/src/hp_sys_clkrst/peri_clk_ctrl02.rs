@@ -119,10 +119,7 @@ impl core::fmt::Debug for R {
             .field("sdio_ls_slf_clk_en", &self.sdio_ls_slf_clk_en())
             .field("sdio_ls_drv_clk_en", &self.sdio_ls_drv_clk_en())
             .field("sdio_ls_sam_clk_en", &self.sdio_ls_sam_clk_en())
-            .field(
-                "mipi_dsi_dphy_clk_src_sel",
-                &self.mipi_dsi_dphy_clk_src_sel(),
-            )
+            .field("mipi_dsi_dphy_clk_src_sel", &self.mipi_dsi_dphy_clk_src_sel())
             .finish()
     }
 }
@@ -130,7 +127,9 @@ impl W {
     ///Bits 0:7 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn sdio_ls_clk_div_num(&mut self) -> SDIO_LS_CLK_DIV_NUM_W<PERI_CLK_CTRL02_SPEC> {
+    pub fn sdio_ls_clk_div_num(
+        &mut self,
+    ) -> SDIO_LS_CLK_DIV_NUM_W<PERI_CLK_CTRL02_SPEC> {
         SDIO_LS_CLK_DIV_NUM_W::new(self, 0)
     }
     ///Bit 8 - Reserved
@@ -162,19 +161,25 @@ impl W {
     ///Bits 21:22 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn sdio_ls_slf_clk_edge_sel(&mut self) -> SDIO_LS_SLF_CLK_EDGE_SEL_W<PERI_CLK_CTRL02_SPEC> {
+    pub fn sdio_ls_slf_clk_edge_sel(
+        &mut self,
+    ) -> SDIO_LS_SLF_CLK_EDGE_SEL_W<PERI_CLK_CTRL02_SPEC> {
         SDIO_LS_SLF_CLK_EDGE_SEL_W::new(self, 21)
     }
     ///Bits 23:24 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn sdio_ls_drv_clk_edge_sel(&mut self) -> SDIO_LS_DRV_CLK_EDGE_SEL_W<PERI_CLK_CTRL02_SPEC> {
+    pub fn sdio_ls_drv_clk_edge_sel(
+        &mut self,
+    ) -> SDIO_LS_DRV_CLK_EDGE_SEL_W<PERI_CLK_CTRL02_SPEC> {
         SDIO_LS_DRV_CLK_EDGE_SEL_W::new(self, 23)
     }
     ///Bits 25:26 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn sdio_ls_sam_clk_edge_sel(&mut self) -> SDIO_LS_SAM_CLK_EDGE_SEL_W<PERI_CLK_CTRL02_SPEC> {
+    pub fn sdio_ls_sam_clk_edge_sel(
+        &mut self,
+    ) -> SDIO_LS_SAM_CLK_EDGE_SEL_W<PERI_CLK_CTRL02_SPEC> {
         SDIO_LS_SAM_CLK_EDGE_SEL_W::new(self, 25)
     }
     ///Bit 27 - Reserved

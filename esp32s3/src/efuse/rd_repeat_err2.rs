@@ -59,7 +59,9 @@ impl R {
     }
     ///Bit 21 - If any bits in this filed are 1, then it indicates a programming error.
     #[inline(always)]
-    pub fn secure_boot_aggressive_revoke_err(&self) -> SECURE_BOOT_AGGRESSIVE_REVOKE_ERR_R {
+    pub fn secure_boot_aggressive_revoke_err(
+        &self,
+    ) -> SECURE_BOOT_AGGRESSIVE_REVOKE_ERR_R {
         SECURE_BOOT_AGGRESSIVE_REVOKE_ERR_R::new(((self.bits >> 21) & 1) != 0)
     }
     ///Bit 22 - If any bits in this filed are 1, then it indicates a programming error.

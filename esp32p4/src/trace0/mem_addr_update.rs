@@ -12,7 +12,9 @@ impl W {
     ///Bit 0 - when set, the will \hyperref\[fielddesc:TRACEMEMCURRENTADDR\]{TRACE_MEM_CURRENT_ADDR} update to \hyperref\[fielddesc:TRACEMEMSTARTADDR\]{TRACE_MEM_START_ADDR}.
     #[inline(always)]
     #[must_use]
-    pub fn mem_current_addr_update(&mut self) -> MEM_CURRENT_ADDR_UPDATE_W<MEM_ADDR_UPDATE_SPEC> {
+    pub fn mem_current_addr_update(
+        &mut self,
+    ) -> MEM_CURRENT_ADDR_UPDATE_W<MEM_ADDR_UPDATE_SPEC> {
         MEM_CURRENT_ADDR_UPDATE_W::new(self, 0)
     }
 }

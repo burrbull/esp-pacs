@@ -47,14 +47,8 @@ impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CPUCORE0_CFG")
             .field("cpu_core0_sw_stall", &self.cpu_core0_sw_stall())
-            .field(
-                "cpu_core0_ocd_halt_on_reset",
-                &self.cpu_core0_ocd_halt_on_reset(),
-            )
-            .field(
-                "cpu_core0_stat_vector_sel",
-                &self.cpu_core0_stat_vector_sel(),
-            )
+            .field("cpu_core0_ocd_halt_on_reset", &self.cpu_core0_ocd_halt_on_reset())
+            .field("cpu_core0_stat_vector_sel", &self.cpu_core0_stat_vector_sel())
             .field("cpu_core0_dreset_mask", &self.cpu_core0_dreset_mask())
             .finish()
     }
@@ -83,13 +77,17 @@ impl W {
     ///Bit 30 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn cpu_core0_stat_vector_sel(&mut self) -> CPU_CORE0_STAT_VECTOR_SEL_W<CPUCORE0_CFG_SPEC> {
+    pub fn cpu_core0_stat_vector_sel(
+        &mut self,
+    ) -> CPU_CORE0_STAT_VECTOR_SEL_W<CPUCORE0_CFG_SPEC> {
         CPU_CORE0_STAT_VECTOR_SEL_W::new(self, 30)
     }
     ///Bit 31 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn cpu_core0_dreset_mask(&mut self) -> CPU_CORE0_DRESET_MASK_W<CPUCORE0_CFG_SPEC> {
+    pub fn cpu_core0_dreset_mask(
+        &mut self,
+    ) -> CPU_CORE0_DRESET_MASK_W<CPUCORE0_CFG_SPEC> {
         CPU_CORE0_DRESET_MASK_W::new(self, 31)
     }
 }

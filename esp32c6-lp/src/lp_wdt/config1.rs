@@ -16,9 +16,7 @@ impl R {
 #[cfg(feature = "impl-register-debug")]
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("CONFIG1")
-            .field("wdt_stg0_hold", &self.wdt_stg0_hold())
-            .finish()
+        f.debug_struct("CONFIG1").field("wdt_stg0_hold", &self.wdt_stg0_hold()).finish()
     }
 }
 impl W {

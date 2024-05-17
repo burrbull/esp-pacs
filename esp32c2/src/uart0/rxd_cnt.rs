@@ -12,9 +12,7 @@ impl R {
 #[cfg(feature = "impl-register-debug")]
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("RXD_CNT")
-            .field("rxd_edge_cnt", &self.rxd_edge_cnt())
-            .finish()
+        f.debug_struct("RXD_CNT").field("rxd_edge_cnt", &self.rxd_edge_cnt()).finish()
     }
 }
 /**Autobaud edge change count register

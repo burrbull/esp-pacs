@@ -170,30 +170,12 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("EVT_TASK_EN2")
-            .field(
-                "task_gamma_restart_ch0_en",
-                &self.task_gamma_restart_ch0_en(),
-            )
-            .field(
-                "task_gamma_restart_ch1_en",
-                &self.task_gamma_restart_ch1_en(),
-            )
-            .field(
-                "task_gamma_restart_ch2_en",
-                &self.task_gamma_restart_ch2_en(),
-            )
-            .field(
-                "task_gamma_restart_ch3_en",
-                &self.task_gamma_restart_ch3_en(),
-            )
-            .field(
-                "task_gamma_restart_ch4_en",
-                &self.task_gamma_restart_ch4_en(),
-            )
-            .field(
-                "task_gamma_restart_ch5_en",
-                &self.task_gamma_restart_ch5_en(),
-            )
+            .field("task_gamma_restart_ch0_en", &self.task_gamma_restart_ch0_en())
+            .field("task_gamma_restart_ch1_en", &self.task_gamma_restart_ch1_en())
+            .field("task_gamma_restart_ch2_en", &self.task_gamma_restart_ch2_en())
+            .field("task_gamma_restart_ch3_en", &self.task_gamma_restart_ch3_en())
+            .field("task_gamma_restart_ch4_en", &self.task_gamma_restart_ch4_en())
+            .field("task_gamma_restart_ch5_en", &self.task_gamma_restart_ch5_en())
             .field("task_gamma_pause_ch0_en", &self.task_gamma_pause_ch0_en())
             .field("task_gamma_pause_ch1_en", &self.task_gamma_pause_ch1_en())
             .field("task_gamma_pause_ch2_en", &self.task_gamma_pause_ch2_en())
@@ -213,109 +195,145 @@ impl W {
     ///Bit 0 - Ledc ch0 gamma restart task enable register, write 1 to enable this task.
     #[inline(always)]
     #[must_use]
-    pub fn task_gamma_restart_ch0_en(&mut self) -> TASK_GAMMA_RESTART_CH0_EN_W<EVT_TASK_EN2_SPEC> {
+    pub fn task_gamma_restart_ch0_en(
+        &mut self,
+    ) -> TASK_GAMMA_RESTART_CH0_EN_W<EVT_TASK_EN2_SPEC> {
         TASK_GAMMA_RESTART_CH0_EN_W::new(self, 0)
     }
     ///Bit 1 - Ledc ch1 gamma restart task enable register, write 1 to enable this task.
     #[inline(always)]
     #[must_use]
-    pub fn task_gamma_restart_ch1_en(&mut self) -> TASK_GAMMA_RESTART_CH1_EN_W<EVT_TASK_EN2_SPEC> {
+    pub fn task_gamma_restart_ch1_en(
+        &mut self,
+    ) -> TASK_GAMMA_RESTART_CH1_EN_W<EVT_TASK_EN2_SPEC> {
         TASK_GAMMA_RESTART_CH1_EN_W::new(self, 1)
     }
     ///Bit 2 - Ledc ch2 gamma restart task enable register, write 1 to enable this task.
     #[inline(always)]
     #[must_use]
-    pub fn task_gamma_restart_ch2_en(&mut self) -> TASK_GAMMA_RESTART_CH2_EN_W<EVT_TASK_EN2_SPEC> {
+    pub fn task_gamma_restart_ch2_en(
+        &mut self,
+    ) -> TASK_GAMMA_RESTART_CH2_EN_W<EVT_TASK_EN2_SPEC> {
         TASK_GAMMA_RESTART_CH2_EN_W::new(self, 2)
     }
     ///Bit 3 - Ledc ch3 gamma restart task enable register, write 1 to enable this task.
     #[inline(always)]
     #[must_use]
-    pub fn task_gamma_restart_ch3_en(&mut self) -> TASK_GAMMA_RESTART_CH3_EN_W<EVT_TASK_EN2_SPEC> {
+    pub fn task_gamma_restart_ch3_en(
+        &mut self,
+    ) -> TASK_GAMMA_RESTART_CH3_EN_W<EVT_TASK_EN2_SPEC> {
         TASK_GAMMA_RESTART_CH3_EN_W::new(self, 3)
     }
     ///Bit 4 - Ledc ch4 gamma restart task enable register, write 1 to enable this task.
     #[inline(always)]
     #[must_use]
-    pub fn task_gamma_restart_ch4_en(&mut self) -> TASK_GAMMA_RESTART_CH4_EN_W<EVT_TASK_EN2_SPEC> {
+    pub fn task_gamma_restart_ch4_en(
+        &mut self,
+    ) -> TASK_GAMMA_RESTART_CH4_EN_W<EVT_TASK_EN2_SPEC> {
         TASK_GAMMA_RESTART_CH4_EN_W::new(self, 4)
     }
     ///Bit 5 - Ledc ch5 gamma restart task enable register, write 1 to enable this task.
     #[inline(always)]
     #[must_use]
-    pub fn task_gamma_restart_ch5_en(&mut self) -> TASK_GAMMA_RESTART_CH5_EN_W<EVT_TASK_EN2_SPEC> {
+    pub fn task_gamma_restart_ch5_en(
+        &mut self,
+    ) -> TASK_GAMMA_RESTART_CH5_EN_W<EVT_TASK_EN2_SPEC> {
         TASK_GAMMA_RESTART_CH5_EN_W::new(self, 5)
     }
     ///Bit 8 - Ledc ch0 gamma pause task enable register, write 1 to enable this task.
     #[inline(always)]
     #[must_use]
-    pub fn task_gamma_pause_ch0_en(&mut self) -> TASK_GAMMA_PAUSE_CH0_EN_W<EVT_TASK_EN2_SPEC> {
+    pub fn task_gamma_pause_ch0_en(
+        &mut self,
+    ) -> TASK_GAMMA_PAUSE_CH0_EN_W<EVT_TASK_EN2_SPEC> {
         TASK_GAMMA_PAUSE_CH0_EN_W::new(self, 8)
     }
     ///Bit 9 - Ledc ch1 gamma pause task enable register, write 1 to enable this task.
     #[inline(always)]
     #[must_use]
-    pub fn task_gamma_pause_ch1_en(&mut self) -> TASK_GAMMA_PAUSE_CH1_EN_W<EVT_TASK_EN2_SPEC> {
+    pub fn task_gamma_pause_ch1_en(
+        &mut self,
+    ) -> TASK_GAMMA_PAUSE_CH1_EN_W<EVT_TASK_EN2_SPEC> {
         TASK_GAMMA_PAUSE_CH1_EN_W::new(self, 9)
     }
     ///Bit 10 - Ledc ch2 gamma pause task enable register, write 1 to enable this task.
     #[inline(always)]
     #[must_use]
-    pub fn task_gamma_pause_ch2_en(&mut self) -> TASK_GAMMA_PAUSE_CH2_EN_W<EVT_TASK_EN2_SPEC> {
+    pub fn task_gamma_pause_ch2_en(
+        &mut self,
+    ) -> TASK_GAMMA_PAUSE_CH2_EN_W<EVT_TASK_EN2_SPEC> {
         TASK_GAMMA_PAUSE_CH2_EN_W::new(self, 10)
     }
     ///Bit 11 - Ledc ch3 gamma pause task enable register, write 1 to enable this task.
     #[inline(always)]
     #[must_use]
-    pub fn task_gamma_pause_ch3_en(&mut self) -> TASK_GAMMA_PAUSE_CH3_EN_W<EVT_TASK_EN2_SPEC> {
+    pub fn task_gamma_pause_ch3_en(
+        &mut self,
+    ) -> TASK_GAMMA_PAUSE_CH3_EN_W<EVT_TASK_EN2_SPEC> {
         TASK_GAMMA_PAUSE_CH3_EN_W::new(self, 11)
     }
     ///Bit 12 - Ledc ch4 gamma pause task enable register, write 1 to enable this task.
     #[inline(always)]
     #[must_use]
-    pub fn task_gamma_pause_ch4_en(&mut self) -> TASK_GAMMA_PAUSE_CH4_EN_W<EVT_TASK_EN2_SPEC> {
+    pub fn task_gamma_pause_ch4_en(
+        &mut self,
+    ) -> TASK_GAMMA_PAUSE_CH4_EN_W<EVT_TASK_EN2_SPEC> {
         TASK_GAMMA_PAUSE_CH4_EN_W::new(self, 12)
     }
     ///Bit 13 - Ledc ch5 gamma pause task enable register, write 1 to enable this task.
     #[inline(always)]
     #[must_use]
-    pub fn task_gamma_pause_ch5_en(&mut self) -> TASK_GAMMA_PAUSE_CH5_EN_W<EVT_TASK_EN2_SPEC> {
+    pub fn task_gamma_pause_ch5_en(
+        &mut self,
+    ) -> TASK_GAMMA_PAUSE_CH5_EN_W<EVT_TASK_EN2_SPEC> {
         TASK_GAMMA_PAUSE_CH5_EN_W::new(self, 13)
     }
     ///Bit 16 - Ledc ch0 gamma resume task enable register, write 1 to enable this task.
     #[inline(always)]
     #[must_use]
-    pub fn task_gamma_resume_ch0_en(&mut self) -> TASK_GAMMA_RESUME_CH0_EN_W<EVT_TASK_EN2_SPEC> {
+    pub fn task_gamma_resume_ch0_en(
+        &mut self,
+    ) -> TASK_GAMMA_RESUME_CH0_EN_W<EVT_TASK_EN2_SPEC> {
         TASK_GAMMA_RESUME_CH0_EN_W::new(self, 16)
     }
     ///Bit 17 - Ledc ch1 gamma resume task enable register, write 1 to enable this task.
     #[inline(always)]
     #[must_use]
-    pub fn task_gamma_resume_ch1_en(&mut self) -> TASK_GAMMA_RESUME_CH1_EN_W<EVT_TASK_EN2_SPEC> {
+    pub fn task_gamma_resume_ch1_en(
+        &mut self,
+    ) -> TASK_GAMMA_RESUME_CH1_EN_W<EVT_TASK_EN2_SPEC> {
         TASK_GAMMA_RESUME_CH1_EN_W::new(self, 17)
     }
     ///Bit 18 - Ledc ch2 gamma resume task enable register, write 1 to enable this task.
     #[inline(always)]
     #[must_use]
-    pub fn task_gamma_resume_ch2_en(&mut self) -> TASK_GAMMA_RESUME_CH2_EN_W<EVT_TASK_EN2_SPEC> {
+    pub fn task_gamma_resume_ch2_en(
+        &mut self,
+    ) -> TASK_GAMMA_RESUME_CH2_EN_W<EVT_TASK_EN2_SPEC> {
         TASK_GAMMA_RESUME_CH2_EN_W::new(self, 18)
     }
     ///Bit 19 - Ledc ch3 gamma resume task enable register, write 1 to enable this task.
     #[inline(always)]
     #[must_use]
-    pub fn task_gamma_resume_ch3_en(&mut self) -> TASK_GAMMA_RESUME_CH3_EN_W<EVT_TASK_EN2_SPEC> {
+    pub fn task_gamma_resume_ch3_en(
+        &mut self,
+    ) -> TASK_GAMMA_RESUME_CH3_EN_W<EVT_TASK_EN2_SPEC> {
         TASK_GAMMA_RESUME_CH3_EN_W::new(self, 19)
     }
     ///Bit 20 - Ledc ch4 gamma resume task enable register, write 1 to enable this task.
     #[inline(always)]
     #[must_use]
-    pub fn task_gamma_resume_ch4_en(&mut self) -> TASK_GAMMA_RESUME_CH4_EN_W<EVT_TASK_EN2_SPEC> {
+    pub fn task_gamma_resume_ch4_en(
+        &mut self,
+    ) -> TASK_GAMMA_RESUME_CH4_EN_W<EVT_TASK_EN2_SPEC> {
         TASK_GAMMA_RESUME_CH4_EN_W::new(self, 20)
     }
     ///Bit 21 - Ledc ch5 gamma resume task enable register, write 1 to enable this task.
     #[inline(always)]
     #[must_use]
-    pub fn task_gamma_resume_ch5_en(&mut self) -> TASK_GAMMA_RESUME_CH5_EN_W<EVT_TASK_EN2_SPEC> {
+    pub fn task_gamma_resume_ch5_en(
+        &mut self,
+    ) -> TASK_GAMMA_RESUME_CH5_EN_W<EVT_TASK_EN2_SPEC> {
         TASK_GAMMA_RESUME_CH5_EN_W::new(self, 21)
     }
 }

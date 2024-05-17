@@ -114,10 +114,7 @@ impl core::fmt::Debug for R {
             .field("fdin_quad", &self.fdin_quad())
             .field("fdout_quad", &self.fdout_quad())
             .field("faddr_quad", &self.faddr_quad())
-            .field(
-                "spi_same_aw_ar_addr_chk_en",
-                &self.spi_same_aw_ar_addr_chk_en(),
-            )
+            .field("spi_same_aw_ar_addr_chk_en", &self.spi_same_aw_ar_addr_chk_en())
             .field("spi_close_axi_inf_en", &self.spi_close_axi_inf_en())
             .finish()
     }

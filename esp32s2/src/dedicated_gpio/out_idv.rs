@@ -15,8 +15,7 @@ impl W {
     #[inline(always)]
     #[must_use]
     pub fn ch(&mut self, n: u8) -> CH_W<OUT_IDV_SPEC> {
-        #[allow(clippy::no_effect)]
-        [(); 8][n as usize];
+        #[allow(clippy::no_effect)] [(); 8][n as usize];
         CH_W::new(self, n * 2)
     }
     ///Bits 0:1 - Configure channel 0 output value. 0: hold output value. 1: set output value. 2: clear output value. 3: inverse output value.

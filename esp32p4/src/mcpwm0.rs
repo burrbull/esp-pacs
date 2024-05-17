@@ -166,27 +166,17 @@ impl RegisterBlock {
     ///0x12c..0x138 - Generator%s timer stamp E1 value register
     #[inline(always)]
     pub const fn op_tstmp_e1(&self, n: usize) -> &OP_TSTMP_E1 {
-        #[allow(clippy::no_effect)]
-        [(); 3][n];
-        unsafe {
-            &*(self as *const Self)
-                .cast::<u8>()
-                .add(300)
-                .add(8 * n)
-                .cast()
-        }
+        #[allow(clippy::no_effect)] [(); 3][n];
+        unsafe { &*(self as *const Self).cast::<u8>().add(300).add(8 * n).cast() }
     }
     ///Iterator for array of:
     ///0x12c..0x138 - Generator%s timer stamp E1 value register
     #[inline(always)]
     pub fn op_tstmp_e1_iter(&self) -> impl Iterator<Item = &OP_TSTMP_E1> {
-        (0..3).map(move |n| unsafe {
-            &*(self as *const Self)
-                .cast::<u8>()
-                .add(300)
-                .add(8 * n)
-                .cast()
-        })
+        (0..3)
+            .map(move |n| unsafe {
+                &*(self as *const Self).cast::<u8>().add(300).add(8 * n).cast()
+            })
     }
     ///0x12c - Generator0 timer stamp E1 value register
     #[inline(always)]
@@ -206,27 +196,17 @@ impl RegisterBlock {
     ///0x130..0x13c - Generator%s timer stamp E2 value register
     #[inline(always)]
     pub const fn op_tstmp_e2(&self, n: usize) -> &OP_TSTMP_E2 {
-        #[allow(clippy::no_effect)]
-        [(); 3][n];
-        unsafe {
-            &*(self as *const Self)
-                .cast::<u8>()
-                .add(304)
-                .add(8 * n)
-                .cast()
-        }
+        #[allow(clippy::no_effect)] [(); 3][n];
+        unsafe { &*(self as *const Self).cast::<u8>().add(304).add(8 * n).cast() }
     }
     ///Iterator for array of:
     ///0x130..0x13c - Generator%s timer stamp E2 value register
     #[inline(always)]
     pub fn op_tstmp_e2_iter(&self) -> impl Iterator<Item = &OP_TSTMP_E2> {
-        (0..3).map(move |n| unsafe {
-            &*(self as *const Self)
-                .cast::<u8>()
-                .add(304)
-                .add(8 * n)
-                .cast()
-        })
+        (0..3)
+            .map(move |n| unsafe {
+                &*(self as *const Self).cast::<u8>().add(304).add(8 * n).cast()
+            })
     }
     ///0x130 - Generator0 timer stamp E2 value register
     #[inline(always)]

@@ -25,7 +25,9 @@ impl W {
     ///Bits 0:6 - Configure H264 no region qp in video B, delta qp.
     #[inline(always)]
     #[must_use]
-    pub fn b_no_roi_region_qp(&mut self) -> B_NO_ROI_REGION_QP_W<B_NO_ROI_REGION_QP_OFFSET_SPEC> {
+    pub fn b_no_roi_region_qp(
+        &mut self,
+    ) -> B_NO_ROI_REGION_QP_W<B_NO_ROI_REGION_QP_OFFSET_SPEC> {
         B_NO_ROI_REGION_QP_W::new(self, 0)
     }
 }

@@ -175,61 +175,81 @@ impl W {
     ///Bit 0 - NA
     #[inline(always)]
     #[must_use]
-    pub fn force_err_f_seq_vc0(&mut self) -> FORCE_ERR_F_SEQ_VC0_W<INT_FORCE_SEQ_FRAME_FATAL_SPEC> {
+    pub fn force_err_f_seq_vc0(
+        &mut self,
+    ) -> FORCE_ERR_F_SEQ_VC0_W<INT_FORCE_SEQ_FRAME_FATAL_SPEC> {
         FORCE_ERR_F_SEQ_VC0_W::new(self, 0)
     }
     ///Bit 1 - NA
     #[inline(always)]
     #[must_use]
-    pub fn force_err_f_seq_vc1(&mut self) -> FORCE_ERR_F_SEQ_VC1_W<INT_FORCE_SEQ_FRAME_FATAL_SPEC> {
+    pub fn force_err_f_seq_vc1(
+        &mut self,
+    ) -> FORCE_ERR_F_SEQ_VC1_W<INT_FORCE_SEQ_FRAME_FATAL_SPEC> {
         FORCE_ERR_F_SEQ_VC1_W::new(self, 1)
     }
     ///Bit 2 - NA
     #[inline(always)]
     #[must_use]
-    pub fn force_err_f_seq_vc2(&mut self) -> FORCE_ERR_F_SEQ_VC2_W<INT_FORCE_SEQ_FRAME_FATAL_SPEC> {
+    pub fn force_err_f_seq_vc2(
+        &mut self,
+    ) -> FORCE_ERR_F_SEQ_VC2_W<INT_FORCE_SEQ_FRAME_FATAL_SPEC> {
         FORCE_ERR_F_SEQ_VC2_W::new(self, 2)
     }
     ///Bit 3 - NA
     #[inline(always)]
     #[must_use]
-    pub fn force_err_f_seq_vc3(&mut self) -> FORCE_ERR_F_SEQ_VC3_W<INT_FORCE_SEQ_FRAME_FATAL_SPEC> {
+    pub fn force_err_f_seq_vc3(
+        &mut self,
+    ) -> FORCE_ERR_F_SEQ_VC3_W<INT_FORCE_SEQ_FRAME_FATAL_SPEC> {
         FORCE_ERR_F_SEQ_VC3_W::new(self, 3)
     }
     ///Bit 4 - NA
     #[inline(always)]
     #[must_use]
-    pub fn force_err_f_seq_vc4(&mut self) -> FORCE_ERR_F_SEQ_VC4_W<INT_FORCE_SEQ_FRAME_FATAL_SPEC> {
+    pub fn force_err_f_seq_vc4(
+        &mut self,
+    ) -> FORCE_ERR_F_SEQ_VC4_W<INT_FORCE_SEQ_FRAME_FATAL_SPEC> {
         FORCE_ERR_F_SEQ_VC4_W::new(self, 4)
     }
     ///Bit 5 - NA
     #[inline(always)]
     #[must_use]
-    pub fn force_err_f_seq_vc5(&mut self) -> FORCE_ERR_F_SEQ_VC5_W<INT_FORCE_SEQ_FRAME_FATAL_SPEC> {
+    pub fn force_err_f_seq_vc5(
+        &mut self,
+    ) -> FORCE_ERR_F_SEQ_VC5_W<INT_FORCE_SEQ_FRAME_FATAL_SPEC> {
         FORCE_ERR_F_SEQ_VC5_W::new(self, 5)
     }
     ///Bit 6 - NA
     #[inline(always)]
     #[must_use]
-    pub fn force_err_f_seq_vc6(&mut self) -> FORCE_ERR_F_SEQ_VC6_W<INT_FORCE_SEQ_FRAME_FATAL_SPEC> {
+    pub fn force_err_f_seq_vc6(
+        &mut self,
+    ) -> FORCE_ERR_F_SEQ_VC6_W<INT_FORCE_SEQ_FRAME_FATAL_SPEC> {
         FORCE_ERR_F_SEQ_VC6_W::new(self, 6)
     }
     ///Bit 7 - NA
     #[inline(always)]
     #[must_use]
-    pub fn force_err_f_seq_vc7(&mut self) -> FORCE_ERR_F_SEQ_VC7_W<INT_FORCE_SEQ_FRAME_FATAL_SPEC> {
+    pub fn force_err_f_seq_vc7(
+        &mut self,
+    ) -> FORCE_ERR_F_SEQ_VC7_W<INT_FORCE_SEQ_FRAME_FATAL_SPEC> {
         FORCE_ERR_F_SEQ_VC7_W::new(self, 7)
     }
     ///Bit 8 - NA
     #[inline(always)]
     #[must_use]
-    pub fn force_err_f_seq_vc8(&mut self) -> FORCE_ERR_F_SEQ_VC8_W<INT_FORCE_SEQ_FRAME_FATAL_SPEC> {
+    pub fn force_err_f_seq_vc8(
+        &mut self,
+    ) -> FORCE_ERR_F_SEQ_VC8_W<INT_FORCE_SEQ_FRAME_FATAL_SPEC> {
         FORCE_ERR_F_SEQ_VC8_W::new(self, 8)
     }
     ///Bit 9 - NA
     #[inline(always)]
     #[must_use]
-    pub fn force_err_f_seq_vc9(&mut self) -> FORCE_ERR_F_SEQ_VC9_W<INT_FORCE_SEQ_FRAME_FATAL_SPEC> {
+    pub fn force_err_f_seq_vc9(
+        &mut self,
+    ) -> FORCE_ERR_F_SEQ_VC9_W<INT_FORCE_SEQ_FRAME_FATAL_SPEC> {
         FORCE_ERR_F_SEQ_VC9_W::new(self, 9)
     }
     ///Bit 10 - NA

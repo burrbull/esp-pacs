@@ -296,70 +296,22 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("EVT_ST0")
-            .field(
-                "gpio_evt_ch0_rise_edge_st",
-                &self.gpio_evt_ch0_rise_edge_st(),
-            )
-            .field(
-                "gpio_evt_ch1_rise_edge_st",
-                &self.gpio_evt_ch1_rise_edge_st(),
-            )
-            .field(
-                "gpio_evt_ch2_rise_edge_st",
-                &self.gpio_evt_ch2_rise_edge_st(),
-            )
-            .field(
-                "gpio_evt_ch3_rise_edge_st",
-                &self.gpio_evt_ch3_rise_edge_st(),
-            )
-            .field(
-                "gpio_evt_ch4_rise_edge_st",
-                &self.gpio_evt_ch4_rise_edge_st(),
-            )
-            .field(
-                "gpio_evt_ch5_rise_edge_st",
-                &self.gpio_evt_ch5_rise_edge_st(),
-            )
-            .field(
-                "gpio_evt_ch6_rise_edge_st",
-                &self.gpio_evt_ch6_rise_edge_st(),
-            )
-            .field(
-                "gpio_evt_ch7_rise_edge_st",
-                &self.gpio_evt_ch7_rise_edge_st(),
-            )
-            .field(
-                "gpio_evt_ch0_fall_edge_st",
-                &self.gpio_evt_ch0_fall_edge_st(),
-            )
-            .field(
-                "gpio_evt_ch1_fall_edge_st",
-                &self.gpio_evt_ch1_fall_edge_st(),
-            )
-            .field(
-                "gpio_evt_ch2_fall_edge_st",
-                &self.gpio_evt_ch2_fall_edge_st(),
-            )
-            .field(
-                "gpio_evt_ch3_fall_edge_st",
-                &self.gpio_evt_ch3_fall_edge_st(),
-            )
-            .field(
-                "gpio_evt_ch4_fall_edge_st",
-                &self.gpio_evt_ch4_fall_edge_st(),
-            )
-            .field(
-                "gpio_evt_ch5_fall_edge_st",
-                &self.gpio_evt_ch5_fall_edge_st(),
-            )
-            .field(
-                "gpio_evt_ch6_fall_edge_st",
-                &self.gpio_evt_ch6_fall_edge_st(),
-            )
-            .field(
-                "gpio_evt_ch7_fall_edge_st",
-                &self.gpio_evt_ch7_fall_edge_st(),
-            )
+            .field("gpio_evt_ch0_rise_edge_st", &self.gpio_evt_ch0_rise_edge_st())
+            .field("gpio_evt_ch1_rise_edge_st", &self.gpio_evt_ch1_rise_edge_st())
+            .field("gpio_evt_ch2_rise_edge_st", &self.gpio_evt_ch2_rise_edge_st())
+            .field("gpio_evt_ch3_rise_edge_st", &self.gpio_evt_ch3_rise_edge_st())
+            .field("gpio_evt_ch4_rise_edge_st", &self.gpio_evt_ch4_rise_edge_st())
+            .field("gpio_evt_ch5_rise_edge_st", &self.gpio_evt_ch5_rise_edge_st())
+            .field("gpio_evt_ch6_rise_edge_st", &self.gpio_evt_ch6_rise_edge_st())
+            .field("gpio_evt_ch7_rise_edge_st", &self.gpio_evt_ch7_rise_edge_st())
+            .field("gpio_evt_ch0_fall_edge_st", &self.gpio_evt_ch0_fall_edge_st())
+            .field("gpio_evt_ch1_fall_edge_st", &self.gpio_evt_ch1_fall_edge_st())
+            .field("gpio_evt_ch2_fall_edge_st", &self.gpio_evt_ch2_fall_edge_st())
+            .field("gpio_evt_ch3_fall_edge_st", &self.gpio_evt_ch3_fall_edge_st())
+            .field("gpio_evt_ch4_fall_edge_st", &self.gpio_evt_ch4_fall_edge_st())
+            .field("gpio_evt_ch5_fall_edge_st", &self.gpio_evt_ch5_fall_edge_st())
+            .field("gpio_evt_ch6_fall_edge_st", &self.gpio_evt_ch6_fall_edge_st())
+            .field("gpio_evt_ch7_fall_edge_st", &self.gpio_evt_ch7_fall_edge_st())
             .field("gpio_evt_ch0_any_edge_st", &self.gpio_evt_ch0_any_edge_st())
             .field("gpio_evt_ch1_any_edge_st", &self.gpio_evt_ch1_any_edge_st())
             .field("gpio_evt_ch2_any_edge_st", &self.gpio_evt_ch2_any_edge_st())
@@ -368,22 +320,10 @@ impl core::fmt::Debug for R {
             .field("gpio_evt_ch5_any_edge_st", &self.gpio_evt_ch5_any_edge_st())
             .field("gpio_evt_ch6_any_edge_st", &self.gpio_evt_ch6_any_edge_st())
             .field("gpio_evt_ch7_any_edge_st", &self.gpio_evt_ch7_any_edge_st())
-            .field(
-                "gpio_evt_zero_det_pos0_st",
-                &self.gpio_evt_zero_det_pos0_st(),
-            )
-            .field(
-                "gpio_evt_zero_det_neg0_st",
-                &self.gpio_evt_zero_det_neg0_st(),
-            )
-            .field(
-                "gpio_evt_zero_det_pos1_st",
-                &self.gpio_evt_zero_det_pos1_st(),
-            )
-            .field(
-                "gpio_evt_zero_det_neg1_st",
-                &self.gpio_evt_zero_det_neg1_st(),
-            )
+            .field("gpio_evt_zero_det_pos0_st", &self.gpio_evt_zero_det_pos0_st())
+            .field("gpio_evt_zero_det_neg0_st", &self.gpio_evt_zero_det_neg0_st())
+            .field("gpio_evt_zero_det_pos1_st", &self.gpio_evt_zero_det_pos1_st())
+            .field("gpio_evt_zero_det_neg1_st", &self.gpio_evt_zero_det_neg1_st())
             .field(
                 "ledc_evt_duty_chng_end_ch0_st",
                 &self.ledc_evt_duty_chng_end_ch0_st(),
@@ -407,169 +347,225 @@ impl W {
     ///Bit 0 - Represents GPIO_evt_ch0_rise_edge trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn gpio_evt_ch0_rise_edge_st(&mut self) -> GPIO_EVT_CH0_RISE_EDGE_ST_W<EVT_ST0_SPEC> {
+    pub fn gpio_evt_ch0_rise_edge_st(
+        &mut self,
+    ) -> GPIO_EVT_CH0_RISE_EDGE_ST_W<EVT_ST0_SPEC> {
         GPIO_EVT_CH0_RISE_EDGE_ST_W::new(self, 0)
     }
     ///Bit 1 - Represents GPIO_evt_ch1_rise_edge trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn gpio_evt_ch1_rise_edge_st(&mut self) -> GPIO_EVT_CH1_RISE_EDGE_ST_W<EVT_ST0_SPEC> {
+    pub fn gpio_evt_ch1_rise_edge_st(
+        &mut self,
+    ) -> GPIO_EVT_CH1_RISE_EDGE_ST_W<EVT_ST0_SPEC> {
         GPIO_EVT_CH1_RISE_EDGE_ST_W::new(self, 1)
     }
     ///Bit 2 - Represents GPIO_evt_ch2_rise_edge trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn gpio_evt_ch2_rise_edge_st(&mut self) -> GPIO_EVT_CH2_RISE_EDGE_ST_W<EVT_ST0_SPEC> {
+    pub fn gpio_evt_ch2_rise_edge_st(
+        &mut self,
+    ) -> GPIO_EVT_CH2_RISE_EDGE_ST_W<EVT_ST0_SPEC> {
         GPIO_EVT_CH2_RISE_EDGE_ST_W::new(self, 2)
     }
     ///Bit 3 - Represents GPIO_evt_ch3_rise_edge trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn gpio_evt_ch3_rise_edge_st(&mut self) -> GPIO_EVT_CH3_RISE_EDGE_ST_W<EVT_ST0_SPEC> {
+    pub fn gpio_evt_ch3_rise_edge_st(
+        &mut self,
+    ) -> GPIO_EVT_CH3_RISE_EDGE_ST_W<EVT_ST0_SPEC> {
         GPIO_EVT_CH3_RISE_EDGE_ST_W::new(self, 3)
     }
     ///Bit 4 - Represents GPIO_evt_ch4_rise_edge trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn gpio_evt_ch4_rise_edge_st(&mut self) -> GPIO_EVT_CH4_RISE_EDGE_ST_W<EVT_ST0_SPEC> {
+    pub fn gpio_evt_ch4_rise_edge_st(
+        &mut self,
+    ) -> GPIO_EVT_CH4_RISE_EDGE_ST_W<EVT_ST0_SPEC> {
         GPIO_EVT_CH4_RISE_EDGE_ST_W::new(self, 4)
     }
     ///Bit 5 - Represents GPIO_evt_ch5_rise_edge trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn gpio_evt_ch5_rise_edge_st(&mut self) -> GPIO_EVT_CH5_RISE_EDGE_ST_W<EVT_ST0_SPEC> {
+    pub fn gpio_evt_ch5_rise_edge_st(
+        &mut self,
+    ) -> GPIO_EVT_CH5_RISE_EDGE_ST_W<EVT_ST0_SPEC> {
         GPIO_EVT_CH5_RISE_EDGE_ST_W::new(self, 5)
     }
     ///Bit 6 - Represents GPIO_evt_ch6_rise_edge trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn gpio_evt_ch6_rise_edge_st(&mut self) -> GPIO_EVT_CH6_RISE_EDGE_ST_W<EVT_ST0_SPEC> {
+    pub fn gpio_evt_ch6_rise_edge_st(
+        &mut self,
+    ) -> GPIO_EVT_CH6_RISE_EDGE_ST_W<EVT_ST0_SPEC> {
         GPIO_EVT_CH6_RISE_EDGE_ST_W::new(self, 6)
     }
     ///Bit 7 - Represents GPIO_evt_ch7_rise_edge trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn gpio_evt_ch7_rise_edge_st(&mut self) -> GPIO_EVT_CH7_RISE_EDGE_ST_W<EVT_ST0_SPEC> {
+    pub fn gpio_evt_ch7_rise_edge_st(
+        &mut self,
+    ) -> GPIO_EVT_CH7_RISE_EDGE_ST_W<EVT_ST0_SPEC> {
         GPIO_EVT_CH7_RISE_EDGE_ST_W::new(self, 7)
     }
     ///Bit 8 - Represents GPIO_evt_ch0_fall_edge trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn gpio_evt_ch0_fall_edge_st(&mut self) -> GPIO_EVT_CH0_FALL_EDGE_ST_W<EVT_ST0_SPEC> {
+    pub fn gpio_evt_ch0_fall_edge_st(
+        &mut self,
+    ) -> GPIO_EVT_CH0_FALL_EDGE_ST_W<EVT_ST0_SPEC> {
         GPIO_EVT_CH0_FALL_EDGE_ST_W::new(self, 8)
     }
     ///Bit 9 - Represents GPIO_evt_ch1_fall_edge trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn gpio_evt_ch1_fall_edge_st(&mut self) -> GPIO_EVT_CH1_FALL_EDGE_ST_W<EVT_ST0_SPEC> {
+    pub fn gpio_evt_ch1_fall_edge_st(
+        &mut self,
+    ) -> GPIO_EVT_CH1_FALL_EDGE_ST_W<EVT_ST0_SPEC> {
         GPIO_EVT_CH1_FALL_EDGE_ST_W::new(self, 9)
     }
     ///Bit 10 - Represents GPIO_evt_ch2_fall_edge trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn gpio_evt_ch2_fall_edge_st(&mut self) -> GPIO_EVT_CH2_FALL_EDGE_ST_W<EVT_ST0_SPEC> {
+    pub fn gpio_evt_ch2_fall_edge_st(
+        &mut self,
+    ) -> GPIO_EVT_CH2_FALL_EDGE_ST_W<EVT_ST0_SPEC> {
         GPIO_EVT_CH2_FALL_EDGE_ST_W::new(self, 10)
     }
     ///Bit 11 - Represents GPIO_evt_ch3_fall_edge trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn gpio_evt_ch3_fall_edge_st(&mut self) -> GPIO_EVT_CH3_FALL_EDGE_ST_W<EVT_ST0_SPEC> {
+    pub fn gpio_evt_ch3_fall_edge_st(
+        &mut self,
+    ) -> GPIO_EVT_CH3_FALL_EDGE_ST_W<EVT_ST0_SPEC> {
         GPIO_EVT_CH3_FALL_EDGE_ST_W::new(self, 11)
     }
     ///Bit 12 - Represents GPIO_evt_ch4_fall_edge trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn gpio_evt_ch4_fall_edge_st(&mut self) -> GPIO_EVT_CH4_FALL_EDGE_ST_W<EVT_ST0_SPEC> {
+    pub fn gpio_evt_ch4_fall_edge_st(
+        &mut self,
+    ) -> GPIO_EVT_CH4_FALL_EDGE_ST_W<EVT_ST0_SPEC> {
         GPIO_EVT_CH4_FALL_EDGE_ST_W::new(self, 12)
     }
     ///Bit 13 - Represents GPIO_evt_ch5_fall_edge trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn gpio_evt_ch5_fall_edge_st(&mut self) -> GPIO_EVT_CH5_FALL_EDGE_ST_W<EVT_ST0_SPEC> {
+    pub fn gpio_evt_ch5_fall_edge_st(
+        &mut self,
+    ) -> GPIO_EVT_CH5_FALL_EDGE_ST_W<EVT_ST0_SPEC> {
         GPIO_EVT_CH5_FALL_EDGE_ST_W::new(self, 13)
     }
     ///Bit 14 - Represents GPIO_evt_ch6_fall_edge trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn gpio_evt_ch6_fall_edge_st(&mut self) -> GPIO_EVT_CH6_FALL_EDGE_ST_W<EVT_ST0_SPEC> {
+    pub fn gpio_evt_ch6_fall_edge_st(
+        &mut self,
+    ) -> GPIO_EVT_CH6_FALL_EDGE_ST_W<EVT_ST0_SPEC> {
         GPIO_EVT_CH6_FALL_EDGE_ST_W::new(self, 14)
     }
     ///Bit 15 - Represents GPIO_evt_ch7_fall_edge trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn gpio_evt_ch7_fall_edge_st(&mut self) -> GPIO_EVT_CH7_FALL_EDGE_ST_W<EVT_ST0_SPEC> {
+    pub fn gpio_evt_ch7_fall_edge_st(
+        &mut self,
+    ) -> GPIO_EVT_CH7_FALL_EDGE_ST_W<EVT_ST0_SPEC> {
         GPIO_EVT_CH7_FALL_EDGE_ST_W::new(self, 15)
     }
     ///Bit 16 - Represents GPIO_evt_ch0_any_edge trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn gpio_evt_ch0_any_edge_st(&mut self) -> GPIO_EVT_CH0_ANY_EDGE_ST_W<EVT_ST0_SPEC> {
+    pub fn gpio_evt_ch0_any_edge_st(
+        &mut self,
+    ) -> GPIO_EVT_CH0_ANY_EDGE_ST_W<EVT_ST0_SPEC> {
         GPIO_EVT_CH0_ANY_EDGE_ST_W::new(self, 16)
     }
     ///Bit 17 - Represents GPIO_evt_ch1_any_edge trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn gpio_evt_ch1_any_edge_st(&mut self) -> GPIO_EVT_CH1_ANY_EDGE_ST_W<EVT_ST0_SPEC> {
+    pub fn gpio_evt_ch1_any_edge_st(
+        &mut self,
+    ) -> GPIO_EVT_CH1_ANY_EDGE_ST_W<EVT_ST0_SPEC> {
         GPIO_EVT_CH1_ANY_EDGE_ST_W::new(self, 17)
     }
     ///Bit 18 - Represents GPIO_evt_ch2_any_edge trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn gpio_evt_ch2_any_edge_st(&mut self) -> GPIO_EVT_CH2_ANY_EDGE_ST_W<EVT_ST0_SPEC> {
+    pub fn gpio_evt_ch2_any_edge_st(
+        &mut self,
+    ) -> GPIO_EVT_CH2_ANY_EDGE_ST_W<EVT_ST0_SPEC> {
         GPIO_EVT_CH2_ANY_EDGE_ST_W::new(self, 18)
     }
     ///Bit 19 - Represents GPIO_evt_ch3_any_edge trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn gpio_evt_ch3_any_edge_st(&mut self) -> GPIO_EVT_CH3_ANY_EDGE_ST_W<EVT_ST0_SPEC> {
+    pub fn gpio_evt_ch3_any_edge_st(
+        &mut self,
+    ) -> GPIO_EVT_CH3_ANY_EDGE_ST_W<EVT_ST0_SPEC> {
         GPIO_EVT_CH3_ANY_EDGE_ST_W::new(self, 19)
     }
     ///Bit 20 - Represents GPIO_evt_ch4_any_edge trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn gpio_evt_ch4_any_edge_st(&mut self) -> GPIO_EVT_CH4_ANY_EDGE_ST_W<EVT_ST0_SPEC> {
+    pub fn gpio_evt_ch4_any_edge_st(
+        &mut self,
+    ) -> GPIO_EVT_CH4_ANY_EDGE_ST_W<EVT_ST0_SPEC> {
         GPIO_EVT_CH4_ANY_EDGE_ST_W::new(self, 20)
     }
     ///Bit 21 - Represents GPIO_evt_ch5_any_edge trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn gpio_evt_ch5_any_edge_st(&mut self) -> GPIO_EVT_CH5_ANY_EDGE_ST_W<EVT_ST0_SPEC> {
+    pub fn gpio_evt_ch5_any_edge_st(
+        &mut self,
+    ) -> GPIO_EVT_CH5_ANY_EDGE_ST_W<EVT_ST0_SPEC> {
         GPIO_EVT_CH5_ANY_EDGE_ST_W::new(self, 21)
     }
     ///Bit 22 - Represents GPIO_evt_ch6_any_edge trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn gpio_evt_ch6_any_edge_st(&mut self) -> GPIO_EVT_CH6_ANY_EDGE_ST_W<EVT_ST0_SPEC> {
+    pub fn gpio_evt_ch6_any_edge_st(
+        &mut self,
+    ) -> GPIO_EVT_CH6_ANY_EDGE_ST_W<EVT_ST0_SPEC> {
         GPIO_EVT_CH6_ANY_EDGE_ST_W::new(self, 22)
     }
     ///Bit 23 - Represents GPIO_evt_ch7_any_edge trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn gpio_evt_ch7_any_edge_st(&mut self) -> GPIO_EVT_CH7_ANY_EDGE_ST_W<EVT_ST0_SPEC> {
+    pub fn gpio_evt_ch7_any_edge_st(
+        &mut self,
+    ) -> GPIO_EVT_CH7_ANY_EDGE_ST_W<EVT_ST0_SPEC> {
         GPIO_EVT_CH7_ANY_EDGE_ST_W::new(self, 23)
     }
     ///Bit 24 - Represents GPIO_evt_zero_det_pos0 trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn gpio_evt_zero_det_pos0_st(&mut self) -> GPIO_EVT_ZERO_DET_POS0_ST_W<EVT_ST0_SPEC> {
+    pub fn gpio_evt_zero_det_pos0_st(
+        &mut self,
+    ) -> GPIO_EVT_ZERO_DET_POS0_ST_W<EVT_ST0_SPEC> {
         GPIO_EVT_ZERO_DET_POS0_ST_W::new(self, 24)
     }
     ///Bit 25 - Represents GPIO_evt_zero_det_neg0 trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn gpio_evt_zero_det_neg0_st(&mut self) -> GPIO_EVT_ZERO_DET_NEG0_ST_W<EVT_ST0_SPEC> {
+    pub fn gpio_evt_zero_det_neg0_st(
+        &mut self,
+    ) -> GPIO_EVT_ZERO_DET_NEG0_ST_W<EVT_ST0_SPEC> {
         GPIO_EVT_ZERO_DET_NEG0_ST_W::new(self, 25)
     }
     ///Bit 26 - Represents GPIO_evt_zero_det_pos1 trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn gpio_evt_zero_det_pos1_st(&mut self) -> GPIO_EVT_ZERO_DET_POS1_ST_W<EVT_ST0_SPEC> {
+    pub fn gpio_evt_zero_det_pos1_st(
+        &mut self,
+    ) -> GPIO_EVT_ZERO_DET_POS1_ST_W<EVT_ST0_SPEC> {
         GPIO_EVT_ZERO_DET_POS1_ST_W::new(self, 26)
     }
     ///Bit 27 - Represents GPIO_evt_zero_det_neg1 trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn gpio_evt_zero_det_neg1_st(&mut self) -> GPIO_EVT_ZERO_DET_NEG1_ST_W<EVT_ST0_SPEC> {
+    pub fn gpio_evt_zero_det_neg1_st(
+        &mut self,
+    ) -> GPIO_EVT_ZERO_DET_NEG1_ST_W<EVT_ST0_SPEC> {
         GPIO_EVT_ZERO_DET_NEG1_ST_W::new(self, 27)
     }
     ///Bit 28 - Represents LEDC_evt_duty_chng_end_ch0 trigger status.\\0: Not triggered\\1: Triggered

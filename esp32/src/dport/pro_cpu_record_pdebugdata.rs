@@ -166,7 +166,9 @@ impl R {
     }
     ///Bit 2
     #[inline(always)]
-    pub fn record_pdebugdata_stall_buffconfl(&self) -> RECORD_PDEBUGDATA_STALL_BUFFCONFL_R {
+    pub fn record_pdebugdata_stall_buffconfl(
+        &self,
+    ) -> RECORD_PDEBUGDATA_STALL_BUFFCONFL_R {
         RECORD_PDEBUGDATA_STALL_BUFFCONFL_R::new(((self.bits >> 2) & 1) != 0)
     }
     ///Bits 2:13
@@ -191,7 +193,9 @@ impl R {
     }
     ///Bit 7
     #[inline(always)]
-    pub fn record_pdebugdata_stall_irambusy(&self) -> RECORD_PDEBUGDATA_STALL_IRAMBUSY_R {
+    pub fn record_pdebugdata_stall_irambusy(
+        &self,
+    ) -> RECORD_PDEBUGDATA_STALL_IRAMBUSY_R {
         RECORD_PDEBUGDATA_STALL_IRAMBUSY_R::new(((self.bits >> 7) & 1) != 0)
     }
     ///Bit 8
@@ -241,7 +245,9 @@ impl R {
     }
     ///Bit 12
     #[inline(always)]
-    pub fn record_pdebugdata_stall_bpifetch(&self) -> RECORD_PDEBUGDATA_STALL_BPIFETCH_R {
+    pub fn record_pdebugdata_stall_bpifetch(
+        &self,
+    ) -> RECORD_PDEBUGDATA_STALL_BPIFETCH_R {
         RECORD_PDEBUGDATA_STALL_BPIFETCH_R::new(((self.bits >> 12) & 1) != 0)
     }
     ///Bit 13
@@ -271,7 +277,9 @@ impl R {
     }
     ///Bit 16
     #[inline(always)]
-    pub fn record_pdebugdata_stall_bankconfl(&self) -> RECORD_PDEBUGDATA_STALL_BANKCONFL_R {
+    pub fn record_pdebugdata_stall_bankconfl(
+        &self,
+    ) -> RECORD_PDEBUGDATA_STALL_BANKCONFL_R {
         RECORD_PDEBUGDATA_STALL_BANKCONFL_R::new(((self.bits >> 16) & 1) != 0)
     }
     ///Bit 17
@@ -295,10 +303,7 @@ impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PRO_CPU_RECORD_PDEBUGDATA")
             .field("record_pro_pdebugdata", &self.record_pro_pdebugdata())
-            .field(
-                "record_pdebugdata_dep_other",
-                &self.record_pdebugdata_dep_other(),
-            )
+            .field("record_pdebugdata_dep_other", &self.record_pdebugdata_dep_other())
             .field("record_pdebugdata_excvec", &self.record_pdebugdata_excvec())
             .field(
                 "record_pdebugdata_insntype_sr",
@@ -308,10 +313,7 @@ impl core::fmt::Debug for R {
                 "record_pdebugdata_insntype_rer",
                 &self.record_pdebugdata_insntype_rer(),
             )
-            .field(
-                "record_pdebugdata_stall_buff",
-                &self.record_pdebugdata_stall_buff(),
-            )
+            .field("record_pdebugdata_stall_buff", &self.record_pdebugdata_stall_buff())
             .field(
                 "record_pdebugdata_insntype_wer",
                 &self.record_pdebugdata_insntype_wer(),
@@ -324,63 +326,36 @@ impl core::fmt::Debug for R {
                 "record_pdebugdata_insntype_er",
                 &self.record_pdebugdata_insntype_er(),
             )
-            .field(
-                "record_pdebugdata_stall_dcm",
-                &self.record_pdebugdata_stall_dcm(),
-            )
-            .field(
-                "record_pdebugdata_stall_lsu",
-                &self.record_pdebugdata_stall_lsu(),
-            )
-            .field(
-                "record_pdebugdata_stall_icm",
-                &self.record_pdebugdata_stall_icm(),
-            )
+            .field("record_pdebugdata_stall_dcm", &self.record_pdebugdata_stall_dcm())
+            .field("record_pdebugdata_stall_lsu", &self.record_pdebugdata_stall_lsu())
+            .field("record_pdebugdata_stall_icm", &self.record_pdebugdata_stall_icm())
             .field(
                 "record_pdebugdata_stall_irambusy",
                 &self.record_pdebugdata_stall_irambusy(),
             )
-            .field(
-                "record_pdebugdata_dep_lsu",
-                &self.record_pdebugdata_dep_lsu(),
-            )
-            .field(
-                "record_pdebugdata_stall_ipif",
-                &self.record_pdebugdata_stall_ipif(),
-            )
+            .field("record_pdebugdata_dep_lsu", &self.record_pdebugdata_dep_lsu())
+            .field("record_pdebugdata_stall_ipif", &self.record_pdebugdata_stall_ipif())
             .field(
                 "record_pdebugdata_insntype_rsr",
                 &self.record_pdebugdata_insntype_rsr(),
             )
-            .field(
-                "record_pdebugdata_stall_tie",
-                &self.record_pdebugdata_stall_tie(),
-            )
+            .field("record_pdebugdata_stall_tie", &self.record_pdebugdata_stall_tie())
             .field(
                 "record_pdebugdata_insntype_wsr",
                 &self.record_pdebugdata_insntype_wsr(),
             )
-            .field(
-                "record_pdebugdata_stall_run",
-                &self.record_pdebugdata_stall_run(),
-            )
+            .field("record_pdebugdata_stall_run", &self.record_pdebugdata_stall_run())
             .field(
                 "record_pdebugdata_insntype_xsr",
                 &self.record_pdebugdata_insntype_xsr(),
             )
-            .field(
-                "record_pdebugdata_dep_str",
-                &self.record_pdebugdata_dep_str(),
-            )
+            .field("record_pdebugdata_dep_str", &self.record_pdebugdata_dep_str())
             .field("record_pdebugdata_dep", &self.record_pdebugdata_dep())
             .field(
                 "record_pdebugdata_stall_bpifetch",
                 &self.record_pdebugdata_stall_bpifetch(),
             )
-            .field(
-                "record_pdebugdata_stall_l32r",
-                &self.record_pdebugdata_stall_l32r(),
-            )
+            .field("record_pdebugdata_stall_l32r", &self.record_pdebugdata_stall_l32r())
             .field(
                 "record_pdebugdata_stall_lsproc",
                 &self.record_pdebugdata_stall_lsproc(),
@@ -389,22 +364,13 @@ impl core::fmt::Debug for R {
                 "record_pdebugdata_stall_bpload",
                 &self.record_pdebugdata_stall_bpload(),
             )
-            .field(
-                "record_pdebugdata_dep_memw",
-                &self.record_pdebugdata_dep_memw(),
-            )
-            .field(
-                "record_pdebugdata_exccause",
-                &self.record_pdebugdata_exccause(),
-            )
+            .field("record_pdebugdata_dep_memw", &self.record_pdebugdata_dep_memw())
+            .field("record_pdebugdata_exccause", &self.record_pdebugdata_exccause())
             .field(
                 "record_pdebugdata_stall_bankconfl",
                 &self.record_pdebugdata_stall_bankconfl(),
             )
-            .field(
-                "record_pdebugdata_dep_halt",
-                &self.record_pdebugdata_dep_halt(),
-            )
+            .field("record_pdebugdata_dep_halt", &self.record_pdebugdata_dep_halt())
             .field(
                 "record_pdebugdata_stall_itermul",
                 &self.record_pdebugdata_stall_itermul(),

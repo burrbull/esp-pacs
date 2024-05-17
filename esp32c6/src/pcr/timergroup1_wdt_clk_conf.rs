@@ -35,7 +35,9 @@ impl W {
     ///Bits 20:21 - set this field to select clock-source. 0(default): XTAL, 1: 80MHz, 2: FOSC, 3: reserved.
     #[inline(always)]
     #[must_use]
-    pub fn tg1_wdt_clk_sel(&mut self) -> TG1_WDT_CLK_SEL_W<TIMERGROUP1_WDT_CLK_CONF_SPEC> {
+    pub fn tg1_wdt_clk_sel(
+        &mut self,
+    ) -> TG1_WDT_CLK_SEL_W<TIMERGROUP1_WDT_CLK_CONF_SPEC> {
         TG1_WDT_CLK_SEL_W::new(self, 20)
     }
     ///Bit 22 - Set 1 to enable timer_group0 wdt clock

@@ -32,7 +32,9 @@ impl W {
     #[must_use]
     pub fn dma_apbperi_lcd_cam_pms_constrain_lock(
         &mut self,
-    ) -> DMA_APBPERI_LCD_CAM_PMS_CONSTRAIN_LOCK_W<DMA_APBPERI_LCD_CAM_PMS_CONSTRAIN_0_SPEC> {
+    ) -> DMA_APBPERI_LCD_CAM_PMS_CONSTRAIN_LOCK_W<
+        DMA_APBPERI_LCD_CAM_PMS_CONSTRAIN_0_SPEC,
+    > {
         DMA_APBPERI_LCD_CAM_PMS_CONSTRAIN_LOCK_W::new(self, 0)
     }
 }

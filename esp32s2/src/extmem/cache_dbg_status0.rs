@@ -152,33 +152,18 @@ impl core::fmt::Debug for R {
             .field("ibus0_acs_cnt_ovf_st", &self.ibus0_acs_cnt_ovf_st())
             .field("ibus1_acs_cnt_ovf_st", &self.ibus1_acs_cnt_ovf_st())
             .field("ibus2_acs_cnt_ovf_st", &self.ibus2_acs_cnt_ovf_st())
-            .field(
-                "ibus0_acs_miss_cnt_ovf_st",
-                &self.ibus0_acs_miss_cnt_ovf_st(),
-            )
-            .field(
-                "ibus1_acs_miss_cnt_ovf_st",
-                &self.ibus1_acs_miss_cnt_ovf_st(),
-            )
-            .field(
-                "ibus2_acs_miss_cnt_ovf_st",
-                &self.ibus2_acs_miss_cnt_ovf_st(),
-            )
+            .field("ibus0_acs_miss_cnt_ovf_st", &self.ibus0_acs_miss_cnt_ovf_st())
+            .field("ibus1_acs_miss_cnt_ovf_st", &self.ibus1_acs_miss_cnt_ovf_st())
+            .field("ibus2_acs_miss_cnt_ovf_st", &self.ibus2_acs_miss_cnt_ovf_st())
             .field("ibus0_abandon_cnt_ovf_st", &self.ibus0_abandon_cnt_ovf_st())
             .field("ibus1_abandon_cnt_ovf_st", &self.ibus1_abandon_cnt_ovf_st())
             .field("ibus2_abandon_cnt_ovf_st", &self.ibus2_abandon_cnt_ovf_st())
-            .field(
-                "ic_preload_miss_cnt_ovf_st",
-                &self.ic_preload_miss_cnt_ovf_st(),
-            )
+            .field("ic_preload_miss_cnt_ovf_st", &self.ic_preload_miss_cnt_ovf_st())
             .field("ic_preload_cnt_ovf_st", &self.ic_preload_cnt_ovf_st())
             .field("ic_sync_size_fault_st", &self.ic_sync_size_fault_st())
             .field("ic_preload_size_fault_st", &self.ic_preload_size_fault_st())
             .field("icache_reject_st", &self.icache_reject_st())
-            .field(
-                "icache_set_preload_ilg_st",
-                &self.icache_set_preload_ilg_st(),
-            )
+            .field("icache_set_preload_ilg_st", &self.icache_set_preload_ilg_st())
             .field("icache_set_sync_ilg_st", &self.icache_set_sync_ilg_st())
             .field("icache_set_lock_ilg_st", &self.icache_set_lock_ilg_st())
             .finish()

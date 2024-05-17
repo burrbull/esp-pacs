@@ -100,14 +100,8 @@ impl core::fmt::Debug for R {
             .field("km_huk_gen_state_high", &self.km_huk_gen_state_high())
             .field("km_rnd_switch_cycle", &self.km_rnd_switch_cycle())
             .field("km_deploy_only_once", &self.km_deploy_only_once())
-            .field(
-                "force_use_key_manager_key",
-                &self.force_use_key_manager_key(),
-            )
-            .field(
-                "force_disable_sw_init_key",
-                &self.force_disable_sw_init_key(),
-            )
+            .field("force_use_key_manager_key", &self.force_use_key_manager_key())
+            .field("force_disable_sw_init_key", &self.force_disable_sw_init_key())
             .field("xts_key_length_256", &self.xts_key_length_256())
             .field("wdt_delay_sel", &self.wdt_delay_sel())
             .field("spi_boot_crypt_cnt", &self.spi_boot_crypt_cnt())

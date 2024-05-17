@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("APB_PERIPHERAL_1")
-            .field(
-                "apb_peripheral_split_burst",
-                &self.apb_peripheral_split_burst(),
-            )
+            .field("apb_peripheral_split_burst", &self.apb_peripheral_split_burst())
             .finish()
     }
 }

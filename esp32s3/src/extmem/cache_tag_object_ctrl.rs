@@ -35,13 +35,17 @@ impl W {
     ///Bit 0 - Set this bit to set icache tag memory as object. This bit should be onehot with the others fields inside this register.
     #[inline(always)]
     #[must_use]
-    pub fn icache_tag_object(&mut self) -> ICACHE_TAG_OBJECT_W<CACHE_TAG_OBJECT_CTRL_SPEC> {
+    pub fn icache_tag_object(
+        &mut self,
+    ) -> ICACHE_TAG_OBJECT_W<CACHE_TAG_OBJECT_CTRL_SPEC> {
         ICACHE_TAG_OBJECT_W::new(self, 0)
     }
     ///Bit 1 - Set this bit to set dcache tag memory as object. This bit should be onehot with the others fields inside this register.
     #[inline(always)]
     #[must_use]
-    pub fn dcache_tag_object(&mut self) -> DCACHE_TAG_OBJECT_W<CACHE_TAG_OBJECT_CTRL_SPEC> {
+    pub fn dcache_tag_object(
+        &mut self,
+    ) -> DCACHE_TAG_OBJECT_W<CACHE_TAG_OBJECT_CTRL_SPEC> {
         DCACHE_TAG_OBJECT_W::new(self, 1)
     }
 }

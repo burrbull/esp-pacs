@@ -103,7 +103,9 @@ impl W {
     ///Bits 3:4 - When SPI_MEM_WAITI_ADDR_EN is set, the cycle length of sent out address is (SPI_MEM_WAITI_ADDR_CYCLELEN\[1:0\] + 1) SPI bus clock cycles. It is not active when SPI_MEM_WAITI_ADDR_EN is cleared.
     #[inline(always)]
     #[must_use]
-    pub fn waiti_addr_cyclelen(&mut self) -> WAITI_ADDR_CYCLELEN_W<FLASH_WAITI_CTRL_SPEC> {
+    pub fn waiti_addr_cyclelen(
+        &mut self,
+    ) -> WAITI_ADDR_CYCLELEN_W<FLASH_WAITI_CTRL_SPEC> {
         WAITI_ADDR_CYCLELEN_W::new(self, 3)
     }
     ///Bit 9 - 1:The wait idle command bit length is 16. 0: The wait idle command bit length is 8.
@@ -115,7 +117,9 @@ impl W {
     ///Bits 10:15 - The dummy cycle length when wait flash idle(RDSR).
     #[inline(always)]
     #[must_use]
-    pub fn waiti_dummy_cyclelen(&mut self) -> WAITI_DUMMY_CYCLELEN_W<FLASH_WAITI_CTRL_SPEC> {
+    pub fn waiti_dummy_cyclelen(
+        &mut self,
+    ) -> WAITI_DUMMY_CYCLELEN_W<FLASH_WAITI_CTRL_SPEC> {
         WAITI_DUMMY_CYCLELEN_W::new(self, 10)
     }
     ///Bits 16:31 - The command value to wait flash idle(RDSR).

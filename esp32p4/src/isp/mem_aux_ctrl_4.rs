@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("MEM_AUX_CTRL_4")
-            .field(
-                "sharp_matrix_uv_mem_aux_ctrl",
-                &self.sharp_matrix_uv_mem_aux_ctrl(),
-            )
+            .field("sharp_matrix_uv_mem_aux_ctrl", &self.sharp_matrix_uv_mem_aux_ctrl())
             .finish()
     }
 }

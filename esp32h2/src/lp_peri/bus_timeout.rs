@@ -29,10 +29,7 @@ impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("BUS_TIMEOUT")
             .field("lp_peri_timeout_thres", &self.lp_peri_timeout_thres())
-            .field(
-                "lp_peri_timeout_protect_en",
-                &self.lp_peri_timeout_protect_en(),
-            )
+            .field("lp_peri_timeout_protect_en", &self.lp_peri_timeout_protect_en())
             .finish()
     }
 }
@@ -40,19 +37,25 @@ impl W {
     ///Bits 14:29 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn lp_peri_timeout_thres(&mut self) -> LP_PERI_TIMEOUT_THRES_W<BUS_TIMEOUT_SPEC> {
+    pub fn lp_peri_timeout_thres(
+        &mut self,
+    ) -> LP_PERI_TIMEOUT_THRES_W<BUS_TIMEOUT_SPEC> {
         LP_PERI_TIMEOUT_THRES_W::new(self, 14)
     }
     ///Bit 30 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn lp_peri_timeout_int_clear(&mut self) -> LP_PERI_TIMEOUT_INT_CLEAR_W<BUS_TIMEOUT_SPEC> {
+    pub fn lp_peri_timeout_int_clear(
+        &mut self,
+    ) -> LP_PERI_TIMEOUT_INT_CLEAR_W<BUS_TIMEOUT_SPEC> {
         LP_PERI_TIMEOUT_INT_CLEAR_W::new(self, 30)
     }
     ///Bit 31 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn lp_peri_timeout_protect_en(&mut self) -> LP_PERI_TIMEOUT_PROTECT_EN_W<BUS_TIMEOUT_SPEC> {
+    pub fn lp_peri_timeout_protect_en(
+        &mut self,
+    ) -> LP_PERI_TIMEOUT_PROTECT_EN_W<BUS_TIMEOUT_SPEC> {
         LP_PERI_TIMEOUT_PROTECT_EN_W::new(self, 31)
     }
 }

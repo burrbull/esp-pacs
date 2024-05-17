@@ -35,18 +35,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("L2_CACHE_TAG_MEM_POWER_CTRL")
-            .field(
-                "l2_cache_tag_mem_force_on",
-                &self.l2_cache_tag_mem_force_on(),
-            )
-            .field(
-                "l2_cache_tag_mem_force_pd",
-                &self.l2_cache_tag_mem_force_pd(),
-            )
-            .field(
-                "l2_cache_tag_mem_force_pu",
-                &self.l2_cache_tag_mem_force_pu(),
-            )
+            .field("l2_cache_tag_mem_force_on", &self.l2_cache_tag_mem_force_on())
+            .field("l2_cache_tag_mem_force_pd", &self.l2_cache_tag_mem_force_pd())
+            .field("l2_cache_tag_mem_force_pu", &self.l2_cache_tag_mem_force_pu())
             .finish()
     }
 }

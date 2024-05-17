@@ -13,7 +13,9 @@ pub type TIMING_ERR_CNT_O_VT1_PD_SITE0_UNIT2_R = crate::FieldReader<u16>;
 impl R {
     ///Bits 0:1 - needs field desc
     #[inline(always)]
-    pub fn monitor_edg_mod_vt1_pd_site0_unit2(&self) -> MONITOR_EDG_MOD_VT1_PD_SITE0_UNIT2_R {
+    pub fn monitor_edg_mod_vt1_pd_site0_unit2(
+        &self,
+    ) -> MONITOR_EDG_MOD_VT1_PD_SITE0_UNIT2_R {
         MONITOR_EDG_MOD_VT1_PD_SITE0_UNIT2_R::new((self.bits & 3) as u8)
     }
     ///Bit 15 - needs field desc
@@ -23,7 +25,9 @@ impl R {
     }
     ///Bits 16:31 - needs field desc
     #[inline(always)]
-    pub fn timing_err_cnt_o_vt1_pd_site0_unit2(&self) -> TIMING_ERR_CNT_O_VT1_PD_SITE0_UNIT2_R {
+    pub fn timing_err_cnt_o_vt1_pd_site0_unit2(
+        &self,
+    ) -> TIMING_ERR_CNT_O_VT1_PD_SITE0_UNIT2_R {
         TIMING_ERR_CNT_O_VT1_PD_SITE0_UNIT2_R::new(((self.bits >> 16) & 0xffff) as u16)
     }
 }
@@ -35,10 +39,7 @@ impl core::fmt::Debug for R {
                 "monitor_edg_mod_vt1_pd_site0_unit2",
                 &self.monitor_edg_mod_vt1_pd_site0_unit2(),
             )
-            .field(
-                "delay_ovf_vt1_pd_site0_unit2",
-                &self.delay_ovf_vt1_pd_site0_unit2(),
-            )
+            .field("delay_ovf_vt1_pd_site0_unit2", &self.delay_ovf_vt1_pd_site0_unit2())
             .field(
                 "timing_err_cnt_o_vt1_pd_site0_unit2",
                 &self.timing_err_cnt_o_vt1_pd_site0_unit2(),

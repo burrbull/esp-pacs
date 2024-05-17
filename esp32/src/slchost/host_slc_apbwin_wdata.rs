@@ -25,7 +25,9 @@ impl W {
     ///Bits 0:31
     #[inline(always)]
     #[must_use]
-    pub fn host_slc_apbwin_wdata(&mut self) -> HOST_SLC_APBWIN_WDATA_W<HOST_SLC_APBWIN_WDATA_SPEC> {
+    pub fn host_slc_apbwin_wdata(
+        &mut self,
+    ) -> HOST_SLC_APBWIN_WDATA_W<HOST_SLC_APBWIN_WDATA_SPEC> {
         HOST_SLC_APBWIN_WDATA_W::new(self, 0)
     }
 }

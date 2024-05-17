@@ -144,21 +144,12 @@ impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("ERROR_CNT_CLEAR")
             .field("cca_busy_cnt_clear", &self.cca_busy_cnt_clear())
-            .field(
-                "tx_security_error_cnt_clear",
-                &self.tx_security_error_cnt_clear(),
-            )
+            .field("tx_security_error_cnt_clear", &self.tx_security_error_cnt_clear())
             .field("tx_break_coex_cnt_clear", &self.tx_break_coex_cnt_clear())
             .field("rx_ack_timeout_cnt_clear", &self.rx_ack_timeout_cnt_clear())
-            .field(
-                "rx_ack_abort_coex_cnt_clear",
-                &self.rx_ack_abort_coex_cnt_clear(),
-            )
+            .field("rx_ack_abort_coex_cnt_clear", &self.rx_ack_abort_coex_cnt_clear())
             .field("ed_scan_coex_cnt_clear", &self.ed_scan_coex_cnt_clear())
-            .field(
-                "tx_ack_abort_coex_cnt_clear",
-                &self.tx_ack_abort_coex_cnt_clear(),
-            )
+            .field("tx_ack_abort_coex_cnt_clear", &self.tx_ack_abort_coex_cnt_clear())
             .field("rx_restart_cnt_clear", &self.rx_restart_cnt_clear())
             .field("rx_abort_coex_cnt_clear", &self.rx_abort_coex_cnt_clear())
             .field("no_rss_detect_cnt_clear", &self.no_rss_detect_cnt_clear())
@@ -188,13 +179,17 @@ impl W {
     ///Bit 2
     #[inline(always)]
     #[must_use]
-    pub fn tx_break_coex_cnt_clear(&mut self) -> TX_BREAK_COEX_CNT_CLEAR_W<ERROR_CNT_CLEAR_SPEC> {
+    pub fn tx_break_coex_cnt_clear(
+        &mut self,
+    ) -> TX_BREAK_COEX_CNT_CLEAR_W<ERROR_CNT_CLEAR_SPEC> {
         TX_BREAK_COEX_CNT_CLEAR_W::new(self, 2)
     }
     ///Bit 3
     #[inline(always)]
     #[must_use]
-    pub fn rx_ack_timeout_cnt_clear(&mut self) -> RX_ACK_TIMEOUT_CNT_CLEAR_W<ERROR_CNT_CLEAR_SPEC> {
+    pub fn rx_ack_timeout_cnt_clear(
+        &mut self,
+    ) -> RX_ACK_TIMEOUT_CNT_CLEAR_W<ERROR_CNT_CLEAR_SPEC> {
         RX_ACK_TIMEOUT_CNT_CLEAR_W::new(self, 3)
     }
     ///Bit 4
@@ -208,7 +203,9 @@ impl W {
     ///Bit 5
     #[inline(always)]
     #[must_use]
-    pub fn ed_scan_coex_cnt_clear(&mut self) -> ED_SCAN_COEX_CNT_CLEAR_W<ERROR_CNT_CLEAR_SPEC> {
+    pub fn ed_scan_coex_cnt_clear(
+        &mut self,
+    ) -> ED_SCAN_COEX_CNT_CLEAR_W<ERROR_CNT_CLEAR_SPEC> {
         ED_SCAN_COEX_CNT_CLEAR_W::new(self, 5)
     }
     ///Bit 6
@@ -222,25 +219,33 @@ impl W {
     ///Bit 7
     #[inline(always)]
     #[must_use]
-    pub fn rx_restart_cnt_clear(&mut self) -> RX_RESTART_CNT_CLEAR_W<ERROR_CNT_CLEAR_SPEC> {
+    pub fn rx_restart_cnt_clear(
+        &mut self,
+    ) -> RX_RESTART_CNT_CLEAR_W<ERROR_CNT_CLEAR_SPEC> {
         RX_RESTART_CNT_CLEAR_W::new(self, 7)
     }
     ///Bit 8
     #[inline(always)]
     #[must_use]
-    pub fn rx_abort_coex_cnt_clear(&mut self) -> RX_ABORT_COEX_CNT_CLEAR_W<ERROR_CNT_CLEAR_SPEC> {
+    pub fn rx_abort_coex_cnt_clear(
+        &mut self,
+    ) -> RX_ABORT_COEX_CNT_CLEAR_W<ERROR_CNT_CLEAR_SPEC> {
         RX_ABORT_COEX_CNT_CLEAR_W::new(self, 8)
     }
     ///Bit 9
     #[inline(always)]
     #[must_use]
-    pub fn no_rss_detect_cnt_clear(&mut self) -> NO_RSS_DETECT_CNT_CLEAR_W<ERROR_CNT_CLEAR_SPEC> {
+    pub fn no_rss_detect_cnt_clear(
+        &mut self,
+    ) -> NO_RSS_DETECT_CNT_CLEAR_W<ERROR_CNT_CLEAR_SPEC> {
         NO_RSS_DETECT_CNT_CLEAR_W::new(self, 9)
     }
     ///Bit 10
     #[inline(always)]
     #[must_use]
-    pub fn rx_filter_fail_cnt_clear(&mut self) -> RX_FILTER_FAIL_CNT_CLEAR_W<ERROR_CNT_CLEAR_SPEC> {
+    pub fn rx_filter_fail_cnt_clear(
+        &mut self,
+    ) -> RX_FILTER_FAIL_CNT_CLEAR_W<ERROR_CNT_CLEAR_SPEC> {
         RX_FILTER_FAIL_CNT_CLEAR_W::new(self, 10)
     }
     ///Bit 11
@@ -258,13 +263,17 @@ impl W {
     ///Bit 13
     #[inline(always)]
     #[must_use]
-    pub fn crc_error_cnt_clear(&mut self) -> CRC_ERROR_CNT_CLEAR_W<ERROR_CNT_CLEAR_SPEC> {
+    pub fn crc_error_cnt_clear(
+        &mut self,
+    ) -> CRC_ERROR_CNT_CLEAR_W<ERROR_CNT_CLEAR_SPEC> {
         CRC_ERROR_CNT_CLEAR_W::new(self, 13)
     }
     ///Bit 14
     #[inline(always)]
     #[must_use]
-    pub fn sfd_timeout_cnt_clear(&mut self) -> SFD_TIMEOUT_CNT_CLEAR_W<ERROR_CNT_CLEAR_SPEC> {
+    pub fn sfd_timeout_cnt_clear(
+        &mut self,
+    ) -> SFD_TIMEOUT_CNT_CLEAR_W<ERROR_CNT_CLEAR_SPEC> {
         SFD_TIMEOUT_CNT_CLEAR_W::new(self, 14)
     }
 }

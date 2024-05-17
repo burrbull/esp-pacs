@@ -140,65 +140,23 @@ impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("LP_INT_ST")
             .field("lp_cpu_sleep_reject", &self.lp_cpu_sleep_reject())
-            .field(
-                "_0p1a_cnt_target0_reach_0_lp",
-                &self._0p1a_cnt_target0_reach_0_lp(),
-            )
-            .field(
-                "_0p1a_cnt_target1_reach_0_lp",
-                &self._0p1a_cnt_target1_reach_0_lp(),
-            )
-            .field(
-                "_0p1a_cnt_target0_reach_1_lp",
-                &self._0p1a_cnt_target0_reach_1_lp(),
-            )
-            .field(
-                "_0p1a_cnt_target1_reach_1_lp",
-                &self._0p1a_cnt_target1_reach_1_lp(),
-            )
-            .field(
-                "_0p2a_cnt_target0_reach_0_lp",
-                &self._0p2a_cnt_target0_reach_0_lp(),
-            )
-            .field(
-                "_0p2a_cnt_target1_reach_0_lp",
-                &self._0p2a_cnt_target1_reach_0_lp(),
-            )
-            .field(
-                "_0p2a_cnt_target0_reach_1_lp",
-                &self._0p2a_cnt_target0_reach_1_lp(),
-            )
-            .field(
-                "_0p2a_cnt_target1_reach_1_lp",
-                &self._0p2a_cnt_target1_reach_1_lp(),
-            )
-            .field(
-                "_0p3a_cnt_target0_reach_0_lp",
-                &self._0p3a_cnt_target0_reach_0_lp(),
-            )
-            .field(
-                "_0p3a_cnt_target1_reach_0_lp",
-                &self._0p3a_cnt_target1_reach_0_lp(),
-            )
-            .field(
-                "_0p3a_cnt_target0_reach_1_lp",
-                &self._0p3a_cnt_target0_reach_1_lp(),
-            )
-            .field(
-                "_0p3a_cnt_target1_reach_1_lp",
-                &self._0p3a_cnt_target1_reach_1_lp(),
-            )
+            .field("_0p1a_cnt_target0_reach_0_lp", &self._0p1a_cnt_target0_reach_0_lp())
+            .field("_0p1a_cnt_target1_reach_0_lp", &self._0p1a_cnt_target1_reach_0_lp())
+            .field("_0p1a_cnt_target0_reach_1_lp", &self._0p1a_cnt_target0_reach_1_lp())
+            .field("_0p1a_cnt_target1_reach_1_lp", &self._0p1a_cnt_target1_reach_1_lp())
+            .field("_0p2a_cnt_target0_reach_0_lp", &self._0p2a_cnt_target0_reach_0_lp())
+            .field("_0p2a_cnt_target1_reach_0_lp", &self._0p2a_cnt_target1_reach_0_lp())
+            .field("_0p2a_cnt_target0_reach_1_lp", &self._0p2a_cnt_target0_reach_1_lp())
+            .field("_0p2a_cnt_target1_reach_1_lp", &self._0p2a_cnt_target1_reach_1_lp())
+            .field("_0p3a_cnt_target0_reach_0_lp", &self._0p3a_cnt_target0_reach_0_lp())
+            .field("_0p3a_cnt_target1_reach_0_lp", &self._0p3a_cnt_target1_reach_0_lp())
+            .field("_0p3a_cnt_target0_reach_1_lp", &self._0p3a_cnt_target0_reach_1_lp())
+            .field("_0p3a_cnt_target1_reach_1_lp", &self._0p3a_cnt_target1_reach_1_lp())
             .field("lp_cpu_wakeup", &self.lp_cpu_wakeup())
             .field("sleep_switch_active_end", &self.sleep_switch_active_end())
             .field("active_switch_sleep_end", &self.active_switch_sleep_end())
-            .field(
-                "sleep_switch_active_start",
-                &self.sleep_switch_active_start(),
-            )
-            .field(
-                "active_switch_sleep_start",
-                &self.active_switch_sleep_start(),
-            )
+            .field("sleep_switch_active_start", &self.sleep_switch_active_start())
+            .field("active_switch_sleep_start", &self.active_switch_sleep_start())
             .field("hp_sw_trigger", &self.hp_sw_trigger())
             .finish()
     }

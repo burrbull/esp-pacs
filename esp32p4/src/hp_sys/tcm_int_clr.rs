@@ -12,7 +12,9 @@ impl W {
     ///Bit 31 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn tcm_parity_err_int_clr(&mut self) -> TCM_PARITY_ERR_INT_CLR_W<TCM_INT_CLR_SPEC> {
+    pub fn tcm_parity_err_int_clr(
+        &mut self,
+    ) -> TCM_PARITY_ERR_INT_CLR_W<TCM_INT_CLR_SPEC> {
         TCM_PARITY_ERR_INT_CLR_W::new(self, 31)
     }
 }

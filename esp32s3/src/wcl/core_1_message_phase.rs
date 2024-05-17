@@ -37,10 +37,7 @@ impl core::fmt::Debug for R {
             .field("core_1_message_match", &self.core_1_message_match())
             .field("core_1_message_expect", &self.core_1_message_expect())
             .field("core_1_message_dataphase", &self.core_1_message_dataphase())
-            .field(
-                "core_1_message_addressphase",
-                &self.core_1_message_addressphase(),
-            )
+            .field("core_1_message_addressphase", &self.core_1_message_addressphase())
             .finish()
     }
 }

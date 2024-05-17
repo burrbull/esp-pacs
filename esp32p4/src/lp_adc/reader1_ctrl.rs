@@ -105,7 +105,9 @@ impl W {
     ///Bits 30:31 - Force enable adc en_pad to analog circuit 2'b11: force enable .
     #[inline(always)]
     #[must_use]
-    pub fn sar1_en_pad_force_enable(&mut self) -> SAR1_EN_PAD_FORCE_ENABLE_W<READER1_CTRL_SPEC> {
+    pub fn sar1_en_pad_force_enable(
+        &mut self,
+    ) -> SAR1_EN_PAD_FORCE_ENABLE_W<READER1_CTRL_SPEC> {
         SAR1_EN_PAD_FORCE_ENABLE_W::new(self, 30)
     }
 }

@@ -64,22 +64,10 @@ impl core::fmt::Debug for R {
         f.debug_struct("COCPU_INT_RAW")
             .field("cocpu_saradc1_int_raw", &self.cocpu_saradc1_int_raw())
             .field("cocpu_saradc2_int_raw", &self.cocpu_saradc2_int_raw())
-            .field(
-                "cocpu_saradc1_error_int_raw",
-                &self.cocpu_saradc1_error_int_raw(),
-            )
-            .field(
-                "cocpu_saradc2_error_int_raw",
-                &self.cocpu_saradc2_error_int_raw(),
-            )
-            .field(
-                "cocpu_saradc1_wake_int_raw",
-                &self.cocpu_saradc1_wake_int_raw(),
-            )
-            .field(
-                "cocpu_saradc2_wake_int_raw",
-                &self.cocpu_saradc2_wake_int_raw(),
-            )
+            .field("cocpu_saradc1_error_int_raw", &self.cocpu_saradc1_error_int_raw())
+            .field("cocpu_saradc2_error_int_raw", &self.cocpu_saradc2_error_int_raw())
+            .field("cocpu_saradc1_wake_int_raw", &self.cocpu_saradc1_wake_int_raw())
+            .field("cocpu_saradc2_wake_int_raw", &self.cocpu_saradc2_wake_int_raw())
             .finish()
     }
 }
@@ -87,13 +75,17 @@ impl W {
     ///Bit 0 - ADC1 Conversion is done, int raw.
     #[inline(always)]
     #[must_use]
-    pub fn cocpu_saradc1_int_raw(&mut self) -> COCPU_SARADC1_INT_RAW_W<COCPU_INT_RAW_SPEC> {
+    pub fn cocpu_saradc1_int_raw(
+        &mut self,
+    ) -> COCPU_SARADC1_INT_RAW_W<COCPU_INT_RAW_SPEC> {
         COCPU_SARADC1_INT_RAW_W::new(self, 0)
     }
     ///Bit 1 - ADC2 Conversion is done, int raw.
     #[inline(always)]
     #[must_use]
-    pub fn cocpu_saradc2_int_raw(&mut self) -> COCPU_SARADC2_INT_RAW_W<COCPU_INT_RAW_SPEC> {
+    pub fn cocpu_saradc2_int_raw(
+        &mut self,
+    ) -> COCPU_SARADC2_INT_RAW_W<COCPU_INT_RAW_SPEC> {
         COCPU_SARADC2_INT_RAW_W::new(self, 1)
     }
     ///Bit 2 - An errro occurs from ADC1, int raw.

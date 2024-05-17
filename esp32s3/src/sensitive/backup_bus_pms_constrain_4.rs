@@ -13,7 +13,11 @@ pub type BACKUP_BUS_PMS_CONSTRAIN_USB_WRAP_W<'a, REG> = crate::FieldWriter<'a, R
 ///Field `BACKUP_BUS_PMS_CONSTRAIN_CRYPTO_PERI` reader - BackUp access crypto_peri permission.
 pub type BACKUP_BUS_PMS_CONSTRAIN_CRYPTO_PERI_R = crate::FieldReader;
 ///Field `BACKUP_BUS_PMS_CONSTRAIN_CRYPTO_PERI` writer - BackUp access crypto_peri permission.
-pub type BACKUP_BUS_PMS_CONSTRAIN_CRYPTO_PERI_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
+pub type BACKUP_BUS_PMS_CONSTRAIN_CRYPTO_PERI_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 ///Field `BACKUP_BUS_PMS_CONSTRAIN_CRYPTO_DMA` reader - BackUp access crypto_dma permission.
 pub type BACKUP_BUS_PMS_CONSTRAIN_CRYPTO_DMA_R = crate::FieldReader;
 ///Field `BACKUP_BUS_PMS_CONSTRAIN_CRYPTO_DMA` writer - BackUp access crypto_dma permission.
@@ -53,7 +57,11 @@ pub type BACKUP_BUS_PMS_CONSTRAIN_DMA_COPY_W<'a, REG> = crate::FieldWriter<'a, R
 ///Field `BACKUP_BUS_PMS_CONSTRAIN_CACHE_CONFIG` reader - BackUp access cache_config permission.
 pub type BACKUP_BUS_PMS_CONSTRAIN_CACHE_CONFIG_R = crate::FieldReader;
 ///Field `BACKUP_BUS_PMS_CONSTRAIN_CACHE_CONFIG` writer - BackUp access cache_config permission.
-pub type BACKUP_BUS_PMS_CONSTRAIN_CACHE_CONFIG_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
+pub type BACKUP_BUS_PMS_CONSTRAIN_CACHE_CONFIG_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 ///Field `BACKUP_BUS_PMS_CONSTRAIN_AD` reader - BackUp access ad permission.
 pub type BACKUP_BUS_PMS_CONSTRAIN_AD_R = crate::FieldReader;
 ///Field `BACKUP_BUS_PMS_CONSTRAIN_AD` writer - BackUp access ad permission.
@@ -65,36 +73,52 @@ pub type BACKUP_BUS_PMS_CONSTRAIN_DIO_W<'a, REG> = crate::FieldWriter<'a, REG, 2
 ///Field `BACKUP_BUS_PMS_CONSTRAIN_WORLD_CONTROLLER` reader - BackUp access world_controller permission.
 pub type BACKUP_BUS_PMS_CONSTRAIN_WORLD_CONTROLLER_R = crate::FieldReader;
 ///Field `BACKUP_BUS_PMS_CONSTRAIN_WORLD_CONTROLLER` writer - BackUp access world_controller permission.
-pub type BACKUP_BUS_PMS_CONSTRAIN_WORLD_CONTROLLER_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
+pub type BACKUP_BUS_PMS_CONSTRAIN_WORLD_CONTROLLER_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 impl R {
     ///Bits 0:1 - BackUp access usb_device permission.
     #[inline(always)]
-    pub fn backup_bus_pms_constrain_usb_device(&self) -> BACKUP_BUS_PMS_CONSTRAIN_USB_DEVICE_R {
+    pub fn backup_bus_pms_constrain_usb_device(
+        &self,
+    ) -> BACKUP_BUS_PMS_CONSTRAIN_USB_DEVICE_R {
         BACKUP_BUS_PMS_CONSTRAIN_USB_DEVICE_R::new((self.bits & 3) as u8)
     }
     ///Bits 2:3 - BackUp access usb_wrap permission.
     #[inline(always)]
-    pub fn backup_bus_pms_constrain_usb_wrap(&self) -> BACKUP_BUS_PMS_CONSTRAIN_USB_WRAP_R {
+    pub fn backup_bus_pms_constrain_usb_wrap(
+        &self,
+    ) -> BACKUP_BUS_PMS_CONSTRAIN_USB_WRAP_R {
         BACKUP_BUS_PMS_CONSTRAIN_USB_WRAP_R::new(((self.bits >> 2) & 3) as u8)
     }
     ///Bits 4:5 - BackUp access crypto_peri permission.
     #[inline(always)]
-    pub fn backup_bus_pms_constrain_crypto_peri(&self) -> BACKUP_BUS_PMS_CONSTRAIN_CRYPTO_PERI_R {
+    pub fn backup_bus_pms_constrain_crypto_peri(
+        &self,
+    ) -> BACKUP_BUS_PMS_CONSTRAIN_CRYPTO_PERI_R {
         BACKUP_BUS_PMS_CONSTRAIN_CRYPTO_PERI_R::new(((self.bits >> 4) & 3) as u8)
     }
     ///Bits 6:7 - BackUp access crypto_dma permission.
     #[inline(always)]
-    pub fn backup_bus_pms_constrain_crypto_dma(&self) -> BACKUP_BUS_PMS_CONSTRAIN_CRYPTO_DMA_R {
+    pub fn backup_bus_pms_constrain_crypto_dma(
+        &self,
+    ) -> BACKUP_BUS_PMS_CONSTRAIN_CRYPTO_DMA_R {
         BACKUP_BUS_PMS_CONSTRAIN_CRYPTO_DMA_R::new(((self.bits >> 6) & 3) as u8)
     }
     ///Bits 8:9 - BackUp access apb_adc permission.
     #[inline(always)]
-    pub fn backup_bus_pms_constrain_apb_adc(&self) -> BACKUP_BUS_PMS_CONSTRAIN_APB_ADC_R {
+    pub fn backup_bus_pms_constrain_apb_adc(
+        &self,
+    ) -> BACKUP_BUS_PMS_CONSTRAIN_APB_ADC_R {
         BACKUP_BUS_PMS_CONSTRAIN_APB_ADC_R::new(((self.bits >> 8) & 3) as u8)
     }
     ///Bits 10:11 - BackUp access lcd_cam permission.
     #[inline(always)]
-    pub fn backup_bus_pms_constrain_lcd_cam(&self) -> BACKUP_BUS_PMS_CONSTRAIN_LCD_CAM_R {
+    pub fn backup_bus_pms_constrain_lcd_cam(
+        &self,
+    ) -> BACKUP_BUS_PMS_CONSTRAIN_LCD_CAM_R {
         BACKUP_BUS_PMS_CONSTRAIN_LCD_CAM_R::new(((self.bits >> 10) & 3) as u8)
     }
     ///Bits 12:13 - BackUp access bt_pwr permission.
@@ -114,22 +138,30 @@ impl R {
     }
     ///Bits 18:19 - BackUp access sensitive permission.
     #[inline(always)]
-    pub fn backup_bus_pms_constrain_sensitive(&self) -> BACKUP_BUS_PMS_CONSTRAIN_SENSITIVE_R {
+    pub fn backup_bus_pms_constrain_sensitive(
+        &self,
+    ) -> BACKUP_BUS_PMS_CONSTRAIN_SENSITIVE_R {
         BACKUP_BUS_PMS_CONSTRAIN_SENSITIVE_R::new(((self.bits >> 18) & 3) as u8)
     }
     ///Bits 20:21 - BackUp access interrupt permission.
     #[inline(always)]
-    pub fn backup_bus_pms_constrain_interrupt(&self) -> BACKUP_BUS_PMS_CONSTRAIN_INTERRUPT_R {
+    pub fn backup_bus_pms_constrain_interrupt(
+        &self,
+    ) -> BACKUP_BUS_PMS_CONSTRAIN_INTERRUPT_R {
         BACKUP_BUS_PMS_CONSTRAIN_INTERRUPT_R::new(((self.bits >> 20) & 3) as u8)
     }
     ///Bits 22:23 - BackUp access dma_copy permission.
     #[inline(always)]
-    pub fn backup_bus_pms_constrain_dma_copy(&self) -> BACKUP_BUS_PMS_CONSTRAIN_DMA_COPY_R {
+    pub fn backup_bus_pms_constrain_dma_copy(
+        &self,
+    ) -> BACKUP_BUS_PMS_CONSTRAIN_DMA_COPY_R {
         BACKUP_BUS_PMS_CONSTRAIN_DMA_COPY_R::new(((self.bits >> 22) & 3) as u8)
     }
     ///Bits 24:25 - BackUp access cache_config permission.
     #[inline(always)]
-    pub fn backup_bus_pms_constrain_cache_config(&self) -> BACKUP_BUS_PMS_CONSTRAIN_CACHE_CONFIG_R {
+    pub fn backup_bus_pms_constrain_cache_config(
+        &self,
+    ) -> BACKUP_BUS_PMS_CONSTRAIN_CACHE_CONFIG_R {
         BACKUP_BUS_PMS_CONSTRAIN_CACHE_CONFIG_R::new(((self.bits >> 24) & 3) as u8)
     }
     ///Bits 26:27 - BackUp access ad permission.
@@ -182,10 +214,7 @@ impl core::fmt::Debug for R {
                 "backup_bus_pms_constrain_bt_pwr",
                 &self.backup_bus_pms_constrain_bt_pwr(),
             )
-            .field(
-                "backup_bus_pms_constrain_usb",
-                &self.backup_bus_pms_constrain_usb(),
-            )
+            .field("backup_bus_pms_constrain_usb", &self.backup_bus_pms_constrain_usb())
             .field(
                 "backup_bus_pms_constrain_system",
                 &self.backup_bus_pms_constrain_system(),
@@ -206,14 +235,8 @@ impl core::fmt::Debug for R {
                 "backup_bus_pms_constrain_cache_config",
                 &self.backup_bus_pms_constrain_cache_config(),
             )
-            .field(
-                "backup_bus_pms_constrain_ad",
-                &self.backup_bus_pms_constrain_ad(),
-            )
-            .field(
-                "backup_bus_pms_constrain_dio",
-                &self.backup_bus_pms_constrain_dio(),
-            )
+            .field("backup_bus_pms_constrain_ad", &self.backup_bus_pms_constrain_ad())
+            .field("backup_bus_pms_constrain_dio", &self.backup_bus_pms_constrain_dio())
             .field(
                 "backup_bus_pms_constrain_world_controller",
                 &self.backup_bus_pms_constrain_world_controller(),

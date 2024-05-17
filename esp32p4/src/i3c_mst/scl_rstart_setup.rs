@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SCL_RSTART_SETUP")
-            .field(
-                "reg_scl_rstart_setup_time",
-                &self.reg_scl_rstart_setup_time(),
-            )
+            .field("reg_scl_rstart_setup_time", &self.reg_scl_rstart_setup_time())
             .finish()
     }
 }

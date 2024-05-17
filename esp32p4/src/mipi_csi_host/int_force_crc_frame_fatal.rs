@@ -162,30 +162,12 @@ impl core::fmt::Debug for R {
             .field("force_err_frame_data_vc7", &self.force_err_frame_data_vc7())
             .field("force_err_frame_data_vc8", &self.force_err_frame_data_vc8())
             .field("force_err_frame_data_vc9", &self.force_err_frame_data_vc9())
-            .field(
-                "force_err_frame_data_vc10",
-                &self.force_err_frame_data_vc10(),
-            )
-            .field(
-                "force_err_frame_data_vc11",
-                &self.force_err_frame_data_vc11(),
-            )
-            .field(
-                "force_err_frame_data_vc12",
-                &self.force_err_frame_data_vc12(),
-            )
-            .field(
-                "force_err_frame_data_vc13",
-                &self.force_err_frame_data_vc13(),
-            )
-            .field(
-                "force_err_frame_data_vc14",
-                &self.force_err_frame_data_vc14(),
-            )
-            .field(
-                "force_err_frame_data_vc15",
-                &self.force_err_frame_data_vc15(),
-            )
+            .field("force_err_frame_data_vc10", &self.force_err_frame_data_vc10())
+            .field("force_err_frame_data_vc11", &self.force_err_frame_data_vc11())
+            .field("force_err_frame_data_vc12", &self.force_err_frame_data_vc12())
+            .field("force_err_frame_data_vc13", &self.force_err_frame_data_vc13())
+            .field("force_err_frame_data_vc14", &self.force_err_frame_data_vc14())
+            .field("force_err_frame_data_vc15", &self.force_err_frame_data_vc15())
             .finish()
     }
 }

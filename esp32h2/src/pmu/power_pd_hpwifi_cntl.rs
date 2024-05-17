@@ -95,13 +95,17 @@ impl W {
     ///Bit 0 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn force_hp_wifi_reset(&mut self) -> FORCE_HP_WIFI_RESET_W<POWER_PD_HPWIFI_CNTL_SPEC> {
+    pub fn force_hp_wifi_reset(
+        &mut self,
+    ) -> FORCE_HP_WIFI_RESET_W<POWER_PD_HPWIFI_CNTL_SPEC> {
         FORCE_HP_WIFI_RESET_W::new(self, 0)
     }
     ///Bit 1 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn force_hp_wifi_iso(&mut self) -> FORCE_HP_WIFI_ISO_W<POWER_PD_HPWIFI_CNTL_SPEC> {
+    pub fn force_hp_wifi_iso(
+        &mut self,
+    ) -> FORCE_HP_WIFI_ISO_W<POWER_PD_HPWIFI_CNTL_SPEC> {
         FORCE_HP_WIFI_ISO_W::new(self, 1)
     }
     ///Bit 2 - need_des
@@ -121,7 +125,9 @@ impl W {
     ///Bit 4 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn force_hp_wifi_no_iso(&mut self) -> FORCE_HP_WIFI_NO_ISO_W<POWER_PD_HPWIFI_CNTL_SPEC> {
+    pub fn force_hp_wifi_no_iso(
+        &mut self,
+    ) -> FORCE_HP_WIFI_NO_ISO_W<POWER_PD_HPWIFI_CNTL_SPEC> {
         FORCE_HP_WIFI_NO_ISO_W::new(self, 4)
     }
     ///Bit 5 - need_des
@@ -139,7 +145,9 @@ impl W {
     ///Bits 27:31 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn pd_hp_wifi_pd_mask(&mut self) -> PD_HP_WIFI_PD_MASK_W<POWER_PD_HPWIFI_CNTL_SPEC> {
+    pub fn pd_hp_wifi_pd_mask(
+        &mut self,
+    ) -> PD_HP_WIFI_PD_MASK_W<POWER_PD_HPWIFI_CNTL_SPEC> {
         PD_HP_WIFI_PD_MASK_W::new(self, 27)
     }
 }

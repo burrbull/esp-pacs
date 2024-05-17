@@ -81,19 +81,25 @@ impl W {
     ///Bit 2
     #[inline(always)]
     #[must_use]
-    pub fn clk_coex_lp_sel_xtal(&mut self) -> CLK_COEX_LP_SEL_XTAL_W<COEX_LP_CLK_CONF_SPEC> {
+    pub fn clk_coex_lp_sel_xtal(
+        &mut self,
+    ) -> CLK_COEX_LP_SEL_XTAL_W<COEX_LP_CLK_CONF_SPEC> {
         CLK_COEX_LP_SEL_XTAL_W::new(self, 2)
     }
     ///Bit 3
     #[inline(always)]
     #[must_use]
-    pub fn clk_coex_lp_sel_xtal32k(&mut self) -> CLK_COEX_LP_SEL_XTAL32K_W<COEX_LP_CLK_CONF_SPEC> {
+    pub fn clk_coex_lp_sel_xtal32k(
+        &mut self,
+    ) -> CLK_COEX_LP_SEL_XTAL32K_W<COEX_LP_CLK_CONF_SPEC> {
         CLK_COEX_LP_SEL_XTAL32K_W::new(self, 3)
     }
     ///Bits 4:15
     #[inline(always)]
     #[must_use]
-    pub fn clk_coex_lp_div_num(&mut self) -> CLK_COEX_LP_DIV_NUM_W<COEX_LP_CLK_CONF_SPEC> {
+    pub fn clk_coex_lp_div_num(
+        &mut self,
+    ) -> CLK_COEX_LP_DIV_NUM_W<COEX_LP_CLK_CONF_SPEC> {
         CLK_COEX_LP_DIV_NUM_W::new(self, 4)
     }
 }

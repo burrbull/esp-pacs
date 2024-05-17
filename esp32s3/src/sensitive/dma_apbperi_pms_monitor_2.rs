@@ -9,7 +9,9 @@ pub type DMA_APBPERI_PMS_MONITOR_VIOLATE_STATUS_ADDR_R = crate::FieldReader<u32>
 impl R {
     ///Bit 0 - recorded dma's interrupt status when dma access violated permission
     #[inline(always)]
-    pub fn dma_apbperi_pms_monitor_violate_intr(&self) -> DMA_APBPERI_PMS_MONITOR_VIOLATE_INTR_R {
+    pub fn dma_apbperi_pms_monitor_violate_intr(
+        &self,
+    ) -> DMA_APBPERI_PMS_MONITOR_VIOLATE_INTR_R {
         DMA_APBPERI_PMS_MONITOR_VIOLATE_INTR_R::new((self.bits & 1) != 0)
     }
     ///Bits 1:2 - recorded dma's world status when dma access violated permission
@@ -24,7 +26,9 @@ impl R {
     pub fn dma_apbperi_pms_monitor_violate_status_addr(
         &self,
     ) -> DMA_APBPERI_PMS_MONITOR_VIOLATE_STATUS_ADDR_R {
-        DMA_APBPERI_PMS_MONITOR_VIOLATE_STATUS_ADDR_R::new((self.bits >> 3) & 0x003f_ffff)
+        DMA_APBPERI_PMS_MONITOR_VIOLATE_STATUS_ADDR_R::new(
+            (self.bits >> 3) & 0x003f_ffff,
+        )
     }
 }
 #[cfg(feature = "impl-register-debug")]

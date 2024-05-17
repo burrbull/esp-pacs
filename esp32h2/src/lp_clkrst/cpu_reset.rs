@@ -55,7 +55,9 @@ impl W {
     ///Bits 22:24 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn rtc_wdt_cpu_reset_length(&mut self) -> RTC_WDT_CPU_RESET_LENGTH_W<CPU_RESET_SPEC> {
+    pub fn rtc_wdt_cpu_reset_length(
+        &mut self,
+    ) -> RTC_WDT_CPU_RESET_LENGTH_W<CPU_RESET_SPEC> {
         RTC_WDT_CPU_RESET_LENGTH_W::new(self, 22)
     }
     ///Bit 25 - need_des

@@ -21,8 +21,7 @@ impl W {
     #[inline(always)]
     #[must_use]
     pub fn ch_tx_end(&mut self, n: u8) -> CH_TX_END_W<INT_CLR_SPEC> {
-        #[allow(clippy::no_effect)]
-        [(); 8][n as usize];
+        #[allow(clippy::no_effect)] [(); 8][n as usize];
         CH_TX_END_W::new(self, n * 3)
     }
     ///Bit 0 - Set this bit to clear the rmt_ch0_rx_end_int_raw..
@@ -79,8 +78,7 @@ impl W {
     #[inline(always)]
     #[must_use]
     pub fn ch_rx_end(&mut self, n: u8) -> CH_RX_END_W<INT_CLR_SPEC> {
-        #[allow(clippy::no_effect)]
-        [(); 8][n as usize];
+        #[allow(clippy::no_effect)] [(); 8][n as usize];
         CH_RX_END_W::new(self, n * 3 + 1)
     }
     ///Bit 1 - Set this bit to clear the rmt_ch0_tx_end_int_raw.
@@ -137,8 +135,7 @@ impl W {
     #[inline(always)]
     #[must_use]
     pub fn ch_err(&mut self, n: u8) -> CH_ERR_W<INT_CLR_SPEC> {
-        #[allow(clippy::no_effect)]
-        [(); 8][n as usize];
+        #[allow(clippy::no_effect)] [(); 8][n as usize];
         CH_ERR_W::new(self, n * 3 + 2)
     }
     ///Bit 2 - Set this bit to clear the rmt_ch0_err_int_raw.
@@ -195,8 +192,7 @@ impl W {
     #[inline(always)]
     #[must_use]
     pub fn ch_tx_thr_event(&mut self, n: u8) -> CH_TX_THR_EVENT_W<INT_CLR_SPEC> {
-        #[allow(clippy::no_effect)]
-        [(); 8][n as usize];
+        #[allow(clippy::no_effect)] [(); 8][n as usize];
         CH_TX_THR_EVENT_W::new(self, n + 24)
     }
     ///Bit 24 - Set this bit to clear the rmt_ch0_tx_thr_event_int_raw interrupt.

@@ -56,7 +56,9 @@ impl W {
     ///Bit 1 - The clear bit for SPI_DMA_OUTFIFO_EMPTY_ERR_INT interrupt.
     #[inline(always)]
     #[must_use]
-    pub fn dma_outfifo_empty_err(&mut self) -> DMA_OUTFIFO_EMPTY_ERR_W<DMA_INT_CLR_SPEC> {
+    pub fn dma_outfifo_empty_err(
+        &mut self,
+    ) -> DMA_OUTFIFO_EMPTY_ERR_W<DMA_INT_CLR_SPEC> {
         DMA_OUTFIFO_EMPTY_ERR_W::new(self, 1)
     }
     ///Bit 2 - The clear bit for SPI slave Ex_QPI interrupt.
@@ -146,13 +148,17 @@ impl W {
     ///Bit 17 - The clear bit for SPI_MST_RX_AFIFO_WFULL_ERR_INT interrupt.
     #[inline(always)]
     #[must_use]
-    pub fn mst_rx_afifo_wfull_err(&mut self) -> MST_RX_AFIFO_WFULL_ERR_W<DMA_INT_CLR_SPEC> {
+    pub fn mst_rx_afifo_wfull_err(
+        &mut self,
+    ) -> MST_RX_AFIFO_WFULL_ERR_W<DMA_INT_CLR_SPEC> {
         MST_RX_AFIFO_WFULL_ERR_W::new(self, 17)
     }
     ///Bit 18 - The clear bit for SPI_MST_TX_AFIFO_REMPTY_ERR_INT interrupt.
     #[inline(always)]
     #[must_use]
-    pub fn mst_tx_afifo_rempty_err(&mut self) -> MST_TX_AFIFO_REMPTY_ERR_W<DMA_INT_CLR_SPEC> {
+    pub fn mst_tx_afifo_rempty_err(
+        &mut self,
+    ) -> MST_TX_AFIFO_REMPTY_ERR_W<DMA_INT_CLR_SPEC> {
         MST_TX_AFIFO_REMPTY_ERR_W::new(self, 18)
     }
     ///Bit 19 - The clear bit for SPI_APP2_INT interrupt.

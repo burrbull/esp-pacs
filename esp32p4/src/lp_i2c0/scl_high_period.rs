@@ -41,7 +41,9 @@ impl W {
     ///Bits 9:15 - Configures the SCL_FSM's waiting period for SCL high level in master mode. Measurement unit: i2c_sclk
     #[inline(always)]
     #[must_use]
-    pub fn scl_wait_high_period(&mut self) -> SCL_WAIT_HIGH_PERIOD_W<SCL_HIGH_PERIOD_SPEC> {
+    pub fn scl_wait_high_period(
+        &mut self,
+    ) -> SCL_WAIT_HIGH_PERIOD_W<SCL_HIGH_PERIOD_SPEC> {
         SCL_WAIT_HIGH_PERIOD_W::new(self, 9)
     }
 }

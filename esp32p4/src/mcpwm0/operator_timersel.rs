@@ -45,19 +45,25 @@ impl W {
     ///Bits 0:1 - Configures which PWM timer will be the timing reference for PWM operator0.\\0: Timer0\\1: Timer1\\2: Timer2\\3: Invalid, will select timer2
     #[inline(always)]
     #[must_use]
-    pub fn operator0_timersel(&mut self) -> OPERATOR0_TIMERSEL_W<OPERATOR_TIMERSEL_SPEC> {
+    pub fn operator0_timersel(
+        &mut self,
+    ) -> OPERATOR0_TIMERSEL_W<OPERATOR_TIMERSEL_SPEC> {
         OPERATOR0_TIMERSEL_W::new(self, 0)
     }
     ///Bits 2:3 - Configures which PWM timer will be the timing reference for PWM operator1.\\0: Timer0\\1: Timer1\\2: Timer2\\3: Invalid, will select timer2
     #[inline(always)]
     #[must_use]
-    pub fn operator1_timersel(&mut self) -> OPERATOR1_TIMERSEL_W<OPERATOR_TIMERSEL_SPEC> {
+    pub fn operator1_timersel(
+        &mut self,
+    ) -> OPERATOR1_TIMERSEL_W<OPERATOR_TIMERSEL_SPEC> {
         OPERATOR1_TIMERSEL_W::new(self, 2)
     }
     ///Bits 4:5 - Configures which PWM timer will be the timing reference for PWM operator2.\\0: Timer0\\1: Timer1\\2: Timer2\\3: Invalid, will select timer2
     #[inline(always)]
     #[must_use]
-    pub fn operator2_timersel(&mut self) -> OPERATOR2_TIMERSEL_W<OPERATOR_TIMERSEL_SPEC> {
+    pub fn operator2_timersel(
+        &mut self,
+    ) -> OPERATOR2_TIMERSEL_W<OPERATOR_TIMERSEL_SPEC> {
         OPERATOR2_TIMERSEL_W::new(self, 4)
     }
 }

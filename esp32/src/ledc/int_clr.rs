@@ -21,8 +21,7 @@ impl W {
     #[inline(always)]
     #[must_use]
     pub fn hstimer_ovf(&mut self, n: u8) -> HSTIMER_OVF_W<INT_CLR_SPEC> {
-        #[allow(clippy::no_effect)]
-        [(); 4][n as usize];
+        #[allow(clippy::no_effect)] [(); 4][n as usize];
         HSTIMER_OVF_W::new(self, n)
     }
     ///Bit 0 - Set this bit to clear high speed channel0 counter overflow interrupt.
@@ -55,8 +54,7 @@ impl W {
     #[inline(always)]
     #[must_use]
     pub fn lstimer_ovf(&mut self, n: u8) -> LSTIMER_OVF_W<INT_CLR_SPEC> {
-        #[allow(clippy::no_effect)]
-        [(); 4][n as usize];
+        #[allow(clippy::no_effect)] [(); 4][n as usize];
         LSTIMER_OVF_W::new(self, n + 4)
     }
     ///Bit 4 - Set this bit to clear low speed channel0 counter overflow interrupt.
@@ -89,8 +87,7 @@ impl W {
     #[inline(always)]
     #[must_use]
     pub fn duty_chng_end_hsch(&mut self, n: u8) -> DUTY_CHNG_END_HSCH_W<INT_CLR_SPEC> {
-        #[allow(clippy::no_effect)]
-        [(); 8][n as usize];
+        #[allow(clippy::no_effect)] [(); 8][n as usize];
         DUTY_CHNG_END_HSCH_W::new(self, n + 8)
     }
     ///Bit 8 - Set this bit to clear high speed channel 0 duty change done interrupt.
@@ -147,8 +144,7 @@ impl W {
     #[inline(always)]
     #[must_use]
     pub fn duty_chng_end_lsch(&mut self, n: u8) -> DUTY_CHNG_END_LSCH_W<INT_CLR_SPEC> {
-        #[allow(clippy::no_effect)]
-        [(); 8][n as usize];
+        #[allow(clippy::no_effect)] [(); 8][n as usize];
         DUTY_CHNG_END_LSCH_W::new(self, n + 16)
     }
     ///Bit 16 - Set this bit to clear low speed channel 0 duty change done interrupt.

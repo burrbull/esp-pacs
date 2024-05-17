@@ -304,15 +304,9 @@ impl core::fmt::Debug for R {
             .field("force_norst_tcmmon", &self.force_norst_tcmmon())
             .field("force_norst_gdma", &self.force_norst_gdma())
             .field("force_norst_mspi_axi", &self.force_norst_mspi_axi())
-            .field(
-                "force_norst_dual_mspi_axi",
-                &self.force_norst_dual_mspi_axi(),
-            )
+            .field("force_norst_dual_mspi_axi", &self.force_norst_dual_mspi_axi())
             .field("force_norst_mspi_apb", &self.force_norst_mspi_apb())
-            .field(
-                "force_norst_dual_mspi_apb",
-                &self.force_norst_dual_mspi_apb(),
-            )
+            .field("force_norst_dual_mspi_apb", &self.force_norst_dual_mspi_apb())
             .field("force_norst_dsi_brg", &self.force_norst_dsi_brg())
             .field("force_norst_csi_host", &self.force_norst_csi_host())
             .field("force_norst_csi_brg", &self.force_norst_csi_brg())
@@ -353,19 +347,25 @@ impl W {
     ///Bit 2 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn force_norst_coretrace0(&mut self) -> FORCE_NORST_CORETRACE0_W<HP_FORCE_NORST0_SPEC> {
+    pub fn force_norst_coretrace0(
+        &mut self,
+    ) -> FORCE_NORST_CORETRACE0_W<HP_FORCE_NORST0_SPEC> {
         FORCE_NORST_CORETRACE0_W::new(self, 2)
     }
     ///Bit 3 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn force_norst_coretrace1(&mut self) -> FORCE_NORST_CORETRACE1_W<HP_FORCE_NORST0_SPEC> {
+    pub fn force_norst_coretrace1(
+        &mut self,
+    ) -> FORCE_NORST_CORETRACE1_W<HP_FORCE_NORST0_SPEC> {
         FORCE_NORST_CORETRACE1_W::new(self, 3)
     }
     ///Bit 4 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn force_norst_l2memmon(&mut self) -> FORCE_NORST_L2MEMMON_W<HP_FORCE_NORST0_SPEC> {
+    pub fn force_norst_l2memmon(
+        &mut self,
+    ) -> FORCE_NORST_L2MEMMON_W<HP_FORCE_NORST0_SPEC> {
         FORCE_NORST_L2MEMMON_W::new(self, 4)
     }
     ///Bit 5 - Reserved
@@ -383,7 +383,9 @@ impl W {
     ///Bit 7 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn force_norst_mspi_axi(&mut self) -> FORCE_NORST_MSPI_AXI_W<HP_FORCE_NORST0_SPEC> {
+    pub fn force_norst_mspi_axi(
+        &mut self,
+    ) -> FORCE_NORST_MSPI_AXI_W<HP_FORCE_NORST0_SPEC> {
         FORCE_NORST_MSPI_AXI_W::new(self, 7)
     }
     ///Bit 8 - Reserved
@@ -397,7 +399,9 @@ impl W {
     ///Bit 9 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn force_norst_mspi_apb(&mut self) -> FORCE_NORST_MSPI_APB_W<HP_FORCE_NORST0_SPEC> {
+    pub fn force_norst_mspi_apb(
+        &mut self,
+    ) -> FORCE_NORST_MSPI_APB_W<HP_FORCE_NORST0_SPEC> {
         FORCE_NORST_MSPI_APB_W::new(self, 9)
     }
     ///Bit 10 - Reserved
@@ -411,19 +415,25 @@ impl W {
     ///Bit 11 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn force_norst_dsi_brg(&mut self) -> FORCE_NORST_DSI_BRG_W<HP_FORCE_NORST0_SPEC> {
+    pub fn force_norst_dsi_brg(
+        &mut self,
+    ) -> FORCE_NORST_DSI_BRG_W<HP_FORCE_NORST0_SPEC> {
         FORCE_NORST_DSI_BRG_W::new(self, 11)
     }
     ///Bit 12 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn force_norst_csi_host(&mut self) -> FORCE_NORST_CSI_HOST_W<HP_FORCE_NORST0_SPEC> {
+    pub fn force_norst_csi_host(
+        &mut self,
+    ) -> FORCE_NORST_CSI_HOST_W<HP_FORCE_NORST0_SPEC> {
         FORCE_NORST_CSI_HOST_W::new(self, 12)
     }
     ///Bit 13 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn force_norst_csi_brg(&mut self) -> FORCE_NORST_CSI_BRG_W<HP_FORCE_NORST0_SPEC> {
+    pub fn force_norst_csi_brg(
+        &mut self,
+    ) -> FORCE_NORST_CSI_BRG_W<HP_FORCE_NORST0_SPEC> {
         FORCE_NORST_CSI_BRG_W::new(self, 13)
     }
     ///Bit 14 - Reserved
@@ -453,13 +463,17 @@ impl W {
     ///Bit 18 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn force_norst_ahb_pdma(&mut self) -> FORCE_NORST_AHB_PDMA_W<HP_FORCE_NORST0_SPEC> {
+    pub fn force_norst_ahb_pdma(
+        &mut self,
+    ) -> FORCE_NORST_AHB_PDMA_W<HP_FORCE_NORST0_SPEC> {
         FORCE_NORST_AHB_PDMA_W::new(self, 18)
     }
     ///Bit 19 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn force_norst_axi_pdma(&mut self) -> FORCE_NORST_AXI_PDMA_W<HP_FORCE_NORST0_SPEC> {
+    pub fn force_norst_axi_pdma(
+        &mut self,
+    ) -> FORCE_NORST_AXI_PDMA_W<HP_FORCE_NORST0_SPEC> {
         FORCE_NORST_AXI_PDMA_W::new(self, 19)
     }
     ///Bit 20 - Reserved
@@ -471,7 +485,9 @@ impl W {
     ///Bit 21 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn force_norst_padbist(&mut self) -> FORCE_NORST_PADBIST_W<HP_FORCE_NORST0_SPEC> {
+    pub fn force_norst_padbist(
+        &mut self,
+    ) -> FORCE_NORST_PADBIST_W<HP_FORCE_NORST0_SPEC> {
         FORCE_NORST_PADBIST_W::new(self, 21)
     }
     ///Bit 22 - Reserved
@@ -483,13 +499,17 @@ impl W {
     ///Bit 23 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn force_norst_timergrp0(&mut self) -> FORCE_NORST_TIMERGRP0_W<HP_FORCE_NORST0_SPEC> {
+    pub fn force_norst_timergrp0(
+        &mut self,
+    ) -> FORCE_NORST_TIMERGRP0_W<HP_FORCE_NORST0_SPEC> {
         FORCE_NORST_TIMERGRP0_W::new(self, 23)
     }
     ///Bit 24 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn force_norst_timergrp1(&mut self) -> FORCE_NORST_TIMERGRP1_W<HP_FORCE_NORST0_SPEC> {
+    pub fn force_norst_timergrp1(
+        &mut self,
+    ) -> FORCE_NORST_TIMERGRP1_W<HP_FORCE_NORST0_SPEC> {
         FORCE_NORST_TIMERGRP1_W::new(self, 24)
     }
     ///Bit 25 - Reserved

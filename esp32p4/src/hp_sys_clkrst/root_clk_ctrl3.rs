@@ -25,7 +25,9 @@ impl W {
     ///Bits 0:7 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn apb_clk_div_denominator(&mut self) -> APB_CLK_DIV_DENOMINATOR_W<ROOT_CLK_CTRL3_SPEC> {
+    pub fn apb_clk_div_denominator(
+        &mut self,
+    ) -> APB_CLK_DIV_DENOMINATOR_W<ROOT_CLK_CTRL3_SPEC> {
         APB_CLK_DIV_DENOMINATOR_W::new(self, 0)
     }
 }

@@ -21,10 +21,7 @@ impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PKT_LEN2")
             .field("hostslchost_slc0_len2", &self.hostslchost_slc0_len2())
-            .field(
-                "hostslchost_slc0_len2_check",
-                &self.hostslchost_slc0_len2_check(),
-            )
+            .field("hostslchost_slc0_len2_check", &self.hostslchost_slc0_len2_check())
             .finish()
     }
 }

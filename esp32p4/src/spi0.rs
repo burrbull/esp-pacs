@@ -842,7 +842,9 @@ pub mod spi_smem_ecc_ctrl;
 You can [`read`](crate::generic::Reg::read) this register and get [`spi_smem_axi_addr_ctrl::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@spi_smem_axi_addr_ctrl`] module*/
-pub type SPI_SMEM_AXI_ADDR_CTRL = crate::Reg<spi_smem_axi_addr_ctrl::SPI_SMEM_AXI_ADDR_CTRL_SPEC>;
+pub type SPI_SMEM_AXI_ADDR_CTRL = crate::Reg<
+    spi_smem_axi_addr_ctrl::SPI_SMEM_AXI_ADDR_CTRL_SPEC,
+>;
 ///SPI0 AXI address control register
 pub mod spi_smem_axi_addr_ctrl;
 /**AXI_ERR_RESP_EN (rw) register accessor: SPI0 AXI error response enable register
@@ -890,7 +892,9 @@ pub mod dout_mode;
 You can [`read`](crate::generic::Reg::read) this register and get [`spi_smem_timing_cali::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`spi_smem_timing_cali::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@spi_smem_timing_cali`] module*/
-pub type SPI_SMEM_TIMING_CALI = crate::Reg<spi_smem_timing_cali::SPI_SMEM_TIMING_CALI_SPEC>;
+pub type SPI_SMEM_TIMING_CALI = crate::Reg<
+    spi_smem_timing_cali::SPI_SMEM_TIMING_CALI_SPEC,
+>;
 ///MSPI external RAM timing calibration register
 pub mod spi_smem_timing_cali;
 /**SPI_SMEM_DIN_MODE (rw) register accessor: MSPI external RAM input timing delay mode control register
@@ -930,7 +934,9 @@ pub mod spi_smem_ac;
 You can [`read`](crate::generic::Reg::read) this register and get [`spi_smem_din_hex_mode::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`spi_smem_din_hex_mode::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@spi_smem_din_hex_mode`] module*/
-pub type SPI_SMEM_DIN_HEX_MODE = crate::Reg<spi_smem_din_hex_mode::SPI_SMEM_DIN_HEX_MODE_SPEC>;
+pub type SPI_SMEM_DIN_HEX_MODE = crate::Reg<
+    spi_smem_din_hex_mode::SPI_SMEM_DIN_HEX_MODE_SPEC,
+>;
 ///MSPI 16x external RAM input timing delay mode control register
 pub mod spi_smem_din_hex_mode;
 /**SPI_SMEM_DIN_HEX_NUM (rw) register accessor: MSPI 16x external RAM input timing delay number control register
@@ -938,7 +944,9 @@ pub mod spi_smem_din_hex_mode;
 You can [`read`](crate::generic::Reg::read) this register and get [`spi_smem_din_hex_num::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`spi_smem_din_hex_num::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@spi_smem_din_hex_num`] module*/
-pub type SPI_SMEM_DIN_HEX_NUM = crate::Reg<spi_smem_din_hex_num::SPI_SMEM_DIN_HEX_NUM_SPEC>;
+pub type SPI_SMEM_DIN_HEX_NUM = crate::Reg<
+    spi_smem_din_hex_num::SPI_SMEM_DIN_HEX_NUM_SPEC,
+>;
 ///MSPI 16x external RAM input timing delay number control register
 pub mod spi_smem_din_hex_num;
 /**SPI_SMEM_DOUT_HEX_MODE (rw) register accessor: MSPI 16x external RAM output timing adjustment control register
@@ -946,7 +954,9 @@ pub mod spi_smem_din_hex_num;
 You can [`read`](crate::generic::Reg::read) this register and get [`spi_smem_dout_hex_mode::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`spi_smem_dout_hex_mode::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@spi_smem_dout_hex_mode`] module*/
-pub type SPI_SMEM_DOUT_HEX_MODE = crate::Reg<spi_smem_dout_hex_mode::SPI_SMEM_DOUT_HEX_MODE_SPEC>;
+pub type SPI_SMEM_DOUT_HEX_MODE = crate::Reg<
+    spi_smem_dout_hex_mode::SPI_SMEM_DOUT_HEX_MODE_SPEC,
+>;
 ///MSPI 16x external RAM output timing adjustment control register
 pub mod spi_smem_dout_hex_mode;
 /**CLOCK_GATE (rw) register accessor: SPI0 clock gate register
@@ -986,7 +996,9 @@ pub mod xts_destination;
 You can [`read`](crate::generic::Reg::read) this register and get [`xts_physical_address::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`xts_physical_address::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@xts_physical_address`] module*/
-pub type XTS_PHYSICAL_ADDRESS = crate::Reg<xts_physical_address::XTS_PHYSICAL_ADDRESS_SPEC>;
+pub type XTS_PHYSICAL_ADDRESS = crate::Reg<
+    xts_physical_address::XTS_PHYSICAL_ADDRESS_SPEC,
+>;
 ///Manual Encryption physical address register
 pub mod xts_physical_address;
 /**XTS_TRIGGER (w) register accessor: Manual Encryption physical address register
@@ -1066,7 +1078,9 @@ pub mod dpa_ctrl;
 You can [`read`](crate::generic::Reg::read) this register and get [`registerrnd_eco_high::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`registerrnd_eco_high::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@registerrnd_eco_high`] module*/
-pub type REGISTERRND_ECO_HIGH = crate::Reg<registerrnd_eco_high::REGISTERRND_ECO_HIGH_SPEC>;
+pub type REGISTERRND_ECO_HIGH = crate::Reg<
+    registerrnd_eco_high::REGISTERRND_ECO_HIGH_SPEC,
+>;
 ///MSPI ECO high register
 pub mod registerrnd_eco_high;
 /**REGISTERRND_ECO_LOW (rw) register accessor: MSPI ECO low register

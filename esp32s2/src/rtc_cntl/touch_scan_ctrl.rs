@@ -73,10 +73,7 @@ impl core::fmt::Debug for R {
         f.debug_struct("TOUCH_SCAN_CTRL")
             .field("touch_denoise_res", &self.touch_denoise_res())
             .field("touch_denoise_en", &self.touch_denoise_en())
-            .field(
-                "touch_inactive_connection",
-                &self.touch_inactive_connection(),
-            )
+            .field("touch_inactive_connection", &self.touch_inactive_connection())
             .field("touch_shield_pad_en", &self.touch_shield_pad_en())
             .field("touch_scan_pad_map", &self.touch_scan_pad_map())
             .field("touch_bufdrv", &self.touch_bufdrv())
@@ -108,7 +105,9 @@ impl W {
     ///Bit 9 - Touch pad 14 will be used as shield_pad.
     #[inline(always)]
     #[must_use]
-    pub fn touch_shield_pad_en(&mut self) -> TOUCH_SHIELD_PAD_EN_W<TOUCH_SCAN_CTRL_SPEC> {
+    pub fn touch_shield_pad_en(
+        &mut self,
+    ) -> TOUCH_SHIELD_PAD_EN_W<TOUCH_SCAN_CTRL_SPEC> {
         TOUCH_SHIELD_PAD_EN_W::new(self, 9)
     }
     ///Bits 10:24 - Pad enable map for touch scan mode.

@@ -61,7 +61,9 @@ impl W {
     ///Bits 2:5 - The bit is used to set the gid of l2 cache prelock.
     #[inline(always)]
     #[must_use]
-    pub fn l2_cache_prelock_rgid(&mut self) -> L2_CACHE_PRELOCK_RGID_W<L2_CACHE_PRELOCK_CONF_SPEC> {
+    pub fn l2_cache_prelock_rgid(
+        &mut self,
+    ) -> L2_CACHE_PRELOCK_RGID_W<L2_CACHE_PRELOCK_CONF_SPEC> {
         L2_CACHE_PRELOCK_RGID_W::new(self, 2)
     }
 }

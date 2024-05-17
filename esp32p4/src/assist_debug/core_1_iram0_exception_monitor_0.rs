@@ -19,7 +19,9 @@ impl R {
     }
     ///Bit 25 - reg_core_1_iram0_recording_loadstore_0
     #[inline(always)]
-    pub fn core_1_iram0_recording_loadstore_0(&self) -> CORE_1_IRAM0_RECORDING_LOADSTORE_0_R {
+    pub fn core_1_iram0_recording_loadstore_0(
+        &self,
+    ) -> CORE_1_IRAM0_RECORDING_LOADSTORE_0_R {
         CORE_1_IRAM0_RECORDING_LOADSTORE_0_R::new(((self.bits >> 25) & 1) != 0)
     }
 }
@@ -31,10 +33,7 @@ impl core::fmt::Debug for R {
                 "core_1_iram0_recording_addr_0",
                 &self.core_1_iram0_recording_addr_0(),
             )
-            .field(
-                "core_1_iram0_recording_wr_0",
-                &self.core_1_iram0_recording_wr_0(),
-            )
+            .field("core_1_iram0_recording_wr_0", &self.core_1_iram0_recording_wr_0())
             .field(
                 "core_1_iram0_recording_loadstore_0",
                 &self.core_1_iram0_recording_loadstore_0(),

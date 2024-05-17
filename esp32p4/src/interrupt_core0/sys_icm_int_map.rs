@@ -25,7 +25,9 @@ impl W {
     ///Bits 0:5 - NA
     #[inline(always)]
     #[must_use]
-    pub fn core0_sys_icm_int_map(&mut self) -> CORE0_SYS_ICM_INT_MAP_W<SYS_ICM_INT_MAP_SPEC> {
+    pub fn core0_sys_icm_int_map(
+        &mut self,
+    ) -> CORE0_SYS_ICM_INT_MAP_W<SYS_ICM_INT_MAP_SPEC> {
         CORE0_SYS_ICM_INT_MAP_W::new(self, 0)
     }
 }

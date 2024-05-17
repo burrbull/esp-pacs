@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("LP_SLEEP_LP_REGULATOR1")
-            .field(
-                "lp_sleep_lp_regulator_drv_b",
-                &self.lp_sleep_lp_regulator_drv_b(),
-            )
+            .field("lp_sleep_lp_regulator_drv_b", &self.lp_sleep_lp_regulator_drv_b())
             .finish()
     }
 }

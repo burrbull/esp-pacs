@@ -247,7 +247,9 @@ impl W {
     ///Bits 27:28 - force touch timer done
     #[inline(always)]
     #[must_use]
-    pub fn touch_timer_force_done(&mut self) -> TOUCH_TIMER_FORCE_DONE_W<TOUCH_CTRL2_SPEC> {
+    pub fn touch_timer_force_done(
+        &mut self,
+    ) -> TOUCH_TIMER_FORCE_DONE_W<TOUCH_CTRL2_SPEC> {
         TOUCH_TIMER_FORCE_DONE_W::new(self, 27)
     }
     ///Bit 29 - reset upgrade touch

@@ -396,27 +396,17 @@ impl RegisterBlock {
     ///0x1000..0x1040 - Read and write data to the USB FIFOs through this register.
     #[inline(always)]
     pub const fn fifo(&self, n: usize) -> &FIFO {
-        #[allow(clippy::no_effect)]
-        [(); 16][n];
-        unsafe {
-            &*(self as *const Self)
-                .cast::<u8>()
-                .add(4096)
-                .add(4096 * n)
-                .cast()
-        }
+        #[allow(clippy::no_effect)] [(); 16][n];
+        unsafe { &*(self as *const Self).cast::<u8>().add(4096).add(4096 * n).cast() }
     }
     ///Iterator for array of:
     ///0x1000..0x1040 - Read and write data to the USB FIFOs through this register.
     #[inline(always)]
     pub fn fifo_iter(&self) -> impl Iterator<Item = &FIFO> {
-        (0..16).map(move |n| unsafe {
-            &*(self as *const Self)
-                .cast::<u8>()
-                .add(4096)
-                .add(4096 * n)
-                .cast()
-        })
+        (0..16)
+            .map(move |n| unsafe {
+                &*(self as *const Self).cast::<u8>().add(4096).add(4096 * n).cast()
+            })
     }
 }
 /**GOTGCTL (rw) register accessor:

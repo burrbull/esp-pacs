@@ -26,7 +26,9 @@ impl W {
     ///Bit 29 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn tie_low_lp_pad_hold_all(&mut self) -> TIE_LOW_LP_PAD_HOLD_ALL_W<IMM_PAD_HOLD_ALL_SPEC> {
+    pub fn tie_low_lp_pad_hold_all(
+        &mut self,
+    ) -> TIE_LOW_LP_PAD_HOLD_ALL_W<IMM_PAD_HOLD_ALL_SPEC> {
         TIE_LOW_LP_PAD_HOLD_ALL_W::new(self, 29)
     }
     ///Bit 30 - need_des
@@ -40,7 +42,9 @@ impl W {
     ///Bit 31 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn tie_low_hp_pad_hold_all(&mut self) -> TIE_LOW_HP_PAD_HOLD_ALL_W<IMM_PAD_HOLD_ALL_SPEC> {
+    pub fn tie_low_hp_pad_hold_all(
+        &mut self,
+    ) -> TIE_LOW_HP_PAD_HOLD_ALL_W<IMM_PAD_HOLD_ALL_SPEC> {
         TIE_LOW_HP_PAD_HOLD_ALL_W::new(self, 31)
     }
 }

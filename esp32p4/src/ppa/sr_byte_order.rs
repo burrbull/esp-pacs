@@ -57,7 +57,9 @@ impl W {
     ///Bit 2 - Set this bit to 1 to bypass the macro block order function. This function is used to improve efficient accessing external memory.
     #[inline(always)]
     #[must_use]
-    pub fn sr_macro_bk_ro_bypass(&mut self) -> SR_MACRO_BK_RO_BYPASS_W<SR_BYTE_ORDER_SPEC> {
+    pub fn sr_macro_bk_ro_bypass(
+        &mut self,
+    ) -> SR_MACRO_BK_RO_BYPASS_W<SR_BYTE_ORDER_SPEC> {
         SR_MACRO_BK_RO_BYPASS_W::new(self, 2)
     }
 }

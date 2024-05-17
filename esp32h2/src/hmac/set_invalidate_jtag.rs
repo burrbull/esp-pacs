@@ -12,7 +12,9 @@ impl W {
     ///Bit 0 - Clear result from hmac downstream JTAG.
     #[inline(always)]
     #[must_use]
-    pub fn set_invalidate_jtag(&mut self) -> SET_INVALIDATE_JTAG_W<SET_INVALIDATE_JTAG_SPEC> {
+    pub fn set_invalidate_jtag(
+        &mut self,
+    ) -> SET_INVALIDATE_JTAG_W<SET_INVALIDATE_JTAG_SPEC> {
         SET_INVALIDATE_JTAG_W::new(self, 0)
     }
 }

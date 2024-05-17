@@ -9,7 +9,9 @@ pub type CORE_0_TOOMANYEXCEPTIONS_M_OVERRIDE_W<'a, REG> = crate::BitWriter<'a, R
 impl R {
     ///Bit 0 - Set 1 to mask toomanyexception.
     #[inline(always)]
-    pub fn core_0_toomanyexceptions_m_override(&self) -> CORE_0_TOOMANYEXCEPTIONS_M_OVERRIDE_R {
+    pub fn core_0_toomanyexceptions_m_override(
+        &self,
+    ) -> CORE_0_TOOMANYEXCEPTIONS_M_OVERRIDE_R {
         CORE_0_TOOMANYEXCEPTIONS_M_OVERRIDE_R::new((self.bits & 1) != 0)
     }
 }
@@ -30,7 +32,9 @@ impl W {
     #[must_use]
     pub fn core_0_toomanyexceptions_m_override(
         &mut self,
-    ) -> CORE_0_TOOMANYEXCEPTIONS_M_OVERRIDE_W<CORE_0_TOOMANYEXCEPTIONS_M_OVERRIDE_1_SPEC> {
+    ) -> CORE_0_TOOMANYEXCEPTIONS_M_OVERRIDE_W<
+        CORE_0_TOOMANYEXCEPTIONS_M_OVERRIDE_1_SPEC,
+    > {
         CORE_0_TOOMANYEXCEPTIONS_M_OVERRIDE_W::new(self, 0)
     }
 }

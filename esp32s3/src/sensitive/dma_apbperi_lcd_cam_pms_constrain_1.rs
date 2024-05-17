@@ -5,29 +5,51 @@ pub type W = crate::W<DMA_APBPERI_LCD_CAM_PMS_CONSTRAIN_1_SPEC>;
 ///Field `DMA_APBPERI_LCD_CAM_PMS_CONSTRAIN_SRAM_PMS_0` reader - lcd_cam's permission(store,load) in data region0 of SRAM
 pub type DMA_APBPERI_LCD_CAM_PMS_CONSTRAIN_SRAM_PMS_0_R = crate::FieldReader;
 ///Field `DMA_APBPERI_LCD_CAM_PMS_CONSTRAIN_SRAM_PMS_0` writer - lcd_cam's permission(store,load) in data region0 of SRAM
-pub type DMA_APBPERI_LCD_CAM_PMS_CONSTRAIN_SRAM_PMS_0_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
+pub type DMA_APBPERI_LCD_CAM_PMS_CONSTRAIN_SRAM_PMS_0_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 ///Field `DMA_APBPERI_LCD_CAM_PMS_CONSTRAIN_SRAM_PMS_1` reader - lcd_cam's permission(store,load) in data region1 of SRAM
 pub type DMA_APBPERI_LCD_CAM_PMS_CONSTRAIN_SRAM_PMS_1_R = crate::FieldReader;
 ///Field `DMA_APBPERI_LCD_CAM_PMS_CONSTRAIN_SRAM_PMS_1` writer - lcd_cam's permission(store,load) in data region1 of SRAM
-pub type DMA_APBPERI_LCD_CAM_PMS_CONSTRAIN_SRAM_PMS_1_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
+pub type DMA_APBPERI_LCD_CAM_PMS_CONSTRAIN_SRAM_PMS_1_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 ///Field `DMA_APBPERI_LCD_CAM_PMS_CONSTRAIN_SRAM_PMS_2` reader - lcd_cam's permission(store,load) in data region2 of SRAM
 pub type DMA_APBPERI_LCD_CAM_PMS_CONSTRAIN_SRAM_PMS_2_R = crate::FieldReader;
 ///Field `DMA_APBPERI_LCD_CAM_PMS_CONSTRAIN_SRAM_PMS_2` writer - lcd_cam's permission(store,load) in data region2 of SRAM
-pub type DMA_APBPERI_LCD_CAM_PMS_CONSTRAIN_SRAM_PMS_2_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
+pub type DMA_APBPERI_LCD_CAM_PMS_CONSTRAIN_SRAM_PMS_2_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 ///Field `DMA_APBPERI_LCD_CAM_PMS_CONSTRAIN_SRAM_PMS_3` reader - lcd_cam's permission(store,load) in data region3 of SRAM
 pub type DMA_APBPERI_LCD_CAM_PMS_CONSTRAIN_SRAM_PMS_3_R = crate::FieldReader;
 ///Field `DMA_APBPERI_LCD_CAM_PMS_CONSTRAIN_SRAM_PMS_3` writer - lcd_cam's permission(store,load) in data region3 of SRAM
-pub type DMA_APBPERI_LCD_CAM_PMS_CONSTRAIN_SRAM_PMS_3_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
+pub type DMA_APBPERI_LCD_CAM_PMS_CONSTRAIN_SRAM_PMS_3_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 ///Field `DMA_APBPERI_LCD_CAM_PMS_CONSTRAIN_SRAM_CACHEDATAARRAY_PMS_0` reader - lcd_cam's permission(store,load) in dcache data sram block0
 pub type DMA_APBPERI_LCD_CAM_PMS_CONSTRAIN_SRAM_CACHEDATAARRAY_PMS_0_R = crate::FieldReader;
 ///Field `DMA_APBPERI_LCD_CAM_PMS_CONSTRAIN_SRAM_CACHEDATAARRAY_PMS_0` writer - lcd_cam's permission(store,load) in dcache data sram block0
-pub type DMA_APBPERI_LCD_CAM_PMS_CONSTRAIN_SRAM_CACHEDATAARRAY_PMS_0_W<'a, REG> =
-    crate::FieldWriter<'a, REG, 2>;
+pub type DMA_APBPERI_LCD_CAM_PMS_CONSTRAIN_SRAM_CACHEDATAARRAY_PMS_0_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 ///Field `DMA_APBPERI_LCD_CAM_PMS_CONSTRAIN_SRAM_CACHEDATAARRAY_PMS_1` reader - lcd_cam's permission(store,load) in dcache data sram block1
 pub type DMA_APBPERI_LCD_CAM_PMS_CONSTRAIN_SRAM_CACHEDATAARRAY_PMS_1_R = crate::FieldReader;
 ///Field `DMA_APBPERI_LCD_CAM_PMS_CONSTRAIN_SRAM_CACHEDATAARRAY_PMS_1` writer - lcd_cam's permission(store,load) in dcache data sram block1
-pub type DMA_APBPERI_LCD_CAM_PMS_CONSTRAIN_SRAM_CACHEDATAARRAY_PMS_1_W<'a, REG> =
-    crate::FieldWriter<'a, REG, 2>;
+pub type DMA_APBPERI_LCD_CAM_PMS_CONSTRAIN_SRAM_CACHEDATAARRAY_PMS_1_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 impl R {
     ///Bits 0:1 - lcd_cam's permission(store,load) in data region0 of SRAM
     #[inline(always)]
@@ -113,8 +135,9 @@ impl W {
     #[must_use]
     pub fn dma_apbperi_lcd_cam_pms_constrain_sram_pms_0(
         &mut self,
-    ) -> DMA_APBPERI_LCD_CAM_PMS_CONSTRAIN_SRAM_PMS_0_W<DMA_APBPERI_LCD_CAM_PMS_CONSTRAIN_1_SPEC>
-    {
+    ) -> DMA_APBPERI_LCD_CAM_PMS_CONSTRAIN_SRAM_PMS_0_W<
+        DMA_APBPERI_LCD_CAM_PMS_CONSTRAIN_1_SPEC,
+    > {
         DMA_APBPERI_LCD_CAM_PMS_CONSTRAIN_SRAM_PMS_0_W::new(self, 0)
     }
     ///Bits 2:3 - lcd_cam's permission(store,load) in data region1 of SRAM
@@ -122,8 +145,9 @@ impl W {
     #[must_use]
     pub fn dma_apbperi_lcd_cam_pms_constrain_sram_pms_1(
         &mut self,
-    ) -> DMA_APBPERI_LCD_CAM_PMS_CONSTRAIN_SRAM_PMS_1_W<DMA_APBPERI_LCD_CAM_PMS_CONSTRAIN_1_SPEC>
-    {
+    ) -> DMA_APBPERI_LCD_CAM_PMS_CONSTRAIN_SRAM_PMS_1_W<
+        DMA_APBPERI_LCD_CAM_PMS_CONSTRAIN_1_SPEC,
+    > {
         DMA_APBPERI_LCD_CAM_PMS_CONSTRAIN_SRAM_PMS_1_W::new(self, 2)
     }
     ///Bits 4:5 - lcd_cam's permission(store,load) in data region2 of SRAM
@@ -131,8 +155,9 @@ impl W {
     #[must_use]
     pub fn dma_apbperi_lcd_cam_pms_constrain_sram_pms_2(
         &mut self,
-    ) -> DMA_APBPERI_LCD_CAM_PMS_CONSTRAIN_SRAM_PMS_2_W<DMA_APBPERI_LCD_CAM_PMS_CONSTRAIN_1_SPEC>
-    {
+    ) -> DMA_APBPERI_LCD_CAM_PMS_CONSTRAIN_SRAM_PMS_2_W<
+        DMA_APBPERI_LCD_CAM_PMS_CONSTRAIN_1_SPEC,
+    > {
         DMA_APBPERI_LCD_CAM_PMS_CONSTRAIN_SRAM_PMS_2_W::new(self, 4)
     }
     ///Bits 6:7 - lcd_cam's permission(store,load) in data region3 of SRAM
@@ -140,8 +165,9 @@ impl W {
     #[must_use]
     pub fn dma_apbperi_lcd_cam_pms_constrain_sram_pms_3(
         &mut self,
-    ) -> DMA_APBPERI_LCD_CAM_PMS_CONSTRAIN_SRAM_PMS_3_W<DMA_APBPERI_LCD_CAM_PMS_CONSTRAIN_1_SPEC>
-    {
+    ) -> DMA_APBPERI_LCD_CAM_PMS_CONSTRAIN_SRAM_PMS_3_W<
+        DMA_APBPERI_LCD_CAM_PMS_CONSTRAIN_1_SPEC,
+    > {
         DMA_APBPERI_LCD_CAM_PMS_CONSTRAIN_SRAM_PMS_3_W::new(self, 6)
     }
     ///Bits 8:9 - lcd_cam's permission(store,load) in dcache data sram block0

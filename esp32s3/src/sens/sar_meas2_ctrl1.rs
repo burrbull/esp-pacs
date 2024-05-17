@@ -93,13 +93,17 @@ impl W {
     ///Bit 3 - rtc control pwdet enable
     #[inline(always)]
     #[must_use]
-    pub fn sar_sar2_pwdet_cal_en(&mut self) -> SAR_SAR2_PWDET_CAL_EN_W<SAR_MEAS2_CTRL1_SPEC> {
+    pub fn sar_sar2_pwdet_cal_en(
+        &mut self,
+    ) -> SAR_SAR2_PWDET_CAL_EN_W<SAR_MEAS2_CTRL1_SPEC> {
         SAR_SAR2_PWDET_CAL_EN_W::new(self, 3)
     }
     ///Bit 4 - rtc control pkdet enable
     #[inline(always)]
     #[must_use]
-    pub fn sar_sar2_pkdet_cal_en(&mut self) -> SAR_SAR2_PKDET_CAL_EN_W<SAR_MEAS2_CTRL1_SPEC> {
+    pub fn sar_sar2_pkdet_cal_en(
+        &mut self,
+    ) -> SAR_SAR2_PKDET_CAL_EN_W<SAR_MEAS2_CTRL1_SPEC> {
         SAR_SAR2_PKDET_CAL_EN_W::new(self, 4)
     }
     ///Bit 5 - SAR2_EN_TEST
@@ -111,13 +115,17 @@ impl W {
     ///Bits 6:7 - no public
     #[inline(always)]
     #[must_use]
-    pub fn sar_sar2_rstb_force(&mut self) -> SAR_SAR2_RSTB_FORCE_W<SAR_MEAS2_CTRL1_SPEC> {
+    pub fn sar_sar2_rstb_force(
+        &mut self,
+    ) -> SAR_SAR2_RSTB_FORCE_W<SAR_MEAS2_CTRL1_SPEC> {
         SAR_SAR2_RSTB_FORCE_W::new(self, 6)
     }
     ///Bits 8:15 - no public
     #[inline(always)]
     #[must_use]
-    pub fn sar_sar2_standby_wait(&mut self) -> SAR_SAR2_STANDBY_WAIT_W<SAR_MEAS2_CTRL1_SPEC> {
+    pub fn sar_sar2_standby_wait(
+        &mut self,
+    ) -> SAR_SAR2_STANDBY_WAIT_W<SAR_MEAS2_CTRL1_SPEC> {
         SAR_SAR2_STANDBY_WAIT_W::new(self, 8)
     }
     ///Bits 16:23 - no public

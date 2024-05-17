@@ -12,9 +12,7 @@ impl R {
 #[cfg(feature = "impl-register-debug")]
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("STATE")
-            .field("tx_idle", &self.tx_idle())
-            .finish()
+        f.debug_struct("STATE").field("tx_idle", &self.tx_idle()).finish()
     }
 }
 /**I2S TX status register

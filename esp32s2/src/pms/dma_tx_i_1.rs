@@ -193,7 +193,9 @@ impl W {
     ///Bits 8:24 - Configure the split address of SRAM Block 4-21 for TX Copy DMA access.
     #[inline(always)]
     #[must_use]
-    pub fn dma_tx_i_sram_4_spltaddr(&mut self) -> DMA_TX_I_SRAM_4_SPLTADDR_W<DMA_TX_I_1_SPEC> {
+    pub fn dma_tx_i_sram_4_spltaddr(
+        &mut self,
+    ) -> DMA_TX_I_SRAM_4_SPLTADDR_W<DMA_TX_I_1_SPEC> {
         DMA_TX_I_SRAM_4_SPLTADDR_W::new(self, 8)
     }
     ///Bit 25 - Setting to 1 grants TX Copy DMA permission to read SRAM Block 4-21 low address region.

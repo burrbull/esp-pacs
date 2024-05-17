@@ -41,16 +41,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CORE0_ACS_CACHE_INT_ST")
-            .field(
-                "core0_ibus_acs_msk_icache",
-                &self.core0_ibus_acs_msk_icache(),
-            )
+            .field("core0_ibus_acs_msk_icache", &self.core0_ibus_acs_msk_icache())
             .field("core0_ibus_wr_icache", &self.core0_ibus_wr_icache())
             .field("core0_ibus_reject", &self.core0_ibus_reject())
-            .field(
-                "core0_dbus_acs_msk_dcache",
-                &self.core0_dbus_acs_msk_dcache(),
-            )
+            .field("core0_dbus_acs_msk_dcache", &self.core0_dbus_acs_msk_dcache())
             .field("core0_dbus_reject", &self.core0_dbus_reject())
             .finish()
     }

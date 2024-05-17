@@ -53,15 +53,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("HP_ACTIVE_DIG_POWER")
-            .field(
-                "hp_active_dcdc_switch_pd_en",
-                &self.hp_active_dcdc_switch_pd_en(),
-            )
+            .field("hp_active_dcdc_switch_pd_en", &self.hp_active_dcdc_switch_pd_en())
             .field("hp_active_hp_mem_dslp", &self.hp_active_hp_mem_dslp())
-            .field(
-                "hp_active_pd_hp_mem_pd_en",
-                &self.hp_active_pd_hp_mem_pd_en(),
-            )
+            .field("hp_active_pd_hp_mem_pd_en", &self.hp_active_pd_hp_mem_pd_en())
             .field("hp_active_pd_cnnt_pd_en", &self.hp_active_pd_cnnt_pd_en())
             .field("hp_active_pd_top_pd_en", &self.hp_active_pd_top_pd_en())
             .finish()
@@ -79,7 +73,9 @@ impl W {
     ///Bit 22 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn hp_active_hp_mem_dslp(&mut self) -> HP_ACTIVE_HP_MEM_DSLP_W<HP_ACTIVE_DIG_POWER_SPEC> {
+    pub fn hp_active_hp_mem_dslp(
+        &mut self,
+    ) -> HP_ACTIVE_HP_MEM_DSLP_W<HP_ACTIVE_DIG_POWER_SPEC> {
         HP_ACTIVE_HP_MEM_DSLP_W::new(self, 22)
     }
     ///Bit 23 - need_des
@@ -101,7 +97,9 @@ impl W {
     ///Bit 31 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn hp_active_pd_top_pd_en(&mut self) -> HP_ACTIVE_PD_TOP_PD_EN_W<HP_ACTIVE_DIG_POWER_SPEC> {
+    pub fn hp_active_pd_top_pd_en(
+        &mut self,
+    ) -> HP_ACTIVE_PD_TOP_PD_EN_W<HP_ACTIVE_DIG_POWER_SPEC> {
         HP_ACTIVE_PD_TOP_PD_EN_W::new(self, 31)
     }
 }

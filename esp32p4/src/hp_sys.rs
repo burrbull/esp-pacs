@@ -650,7 +650,9 @@ pub mod tcm_ram_wrr_config;
 You can [`read`](crate::generic::Reg::read) this register and get [`tcm_sw_parity_bwe_mask::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`tcm_sw_parity_bwe_mask::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@tcm_sw_parity_bwe_mask`] module*/
-pub type TCM_SW_PARITY_BWE_MASK = crate::Reg<tcm_sw_parity_bwe_mask::TCM_SW_PARITY_BWE_MASK_SPEC>;
+pub type TCM_SW_PARITY_BWE_MASK = crate::Reg<
+    tcm_sw_parity_bwe_mask::TCM_SW_PARITY_BWE_MASK_SPEC,
+>;
 ///NA
 pub mod tcm_sw_parity_bwe_mask;
 /**TCM_RAM_PWR_CTRL0 (rw) register accessor: NA
@@ -698,7 +700,9 @@ pub mod probe_out;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_mem_ram_pwr_ctrl0::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l2_mem_ram_pwr_ctrl0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_mem_ram_pwr_ctrl0`] module*/
-pub type L2_MEM_RAM_PWR_CTRL0 = crate::Reg<l2_mem_ram_pwr_ctrl0::L2_MEM_RAM_PWR_CTRL0_SPEC>;
+pub type L2_MEM_RAM_PWR_CTRL0 = crate::Reg<
+    l2_mem_ram_pwr_ctrl0::L2_MEM_RAM_PWR_CTRL0_SPEC,
+>;
 ///NA
 pub mod l2_mem_ram_pwr_ctrl0;
 /**CPU_CORESTALLED_ST (r) register accessor: NA
@@ -898,7 +902,9 @@ pub mod gpio_ded_hold_ctrl;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_mem_sw_ecc_bwe_mask::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l2_mem_sw_ecc_bwe_mask::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_mem_sw_ecc_bwe_mask`] module*/
-pub type L2_MEM_SW_ECC_BWE_MASK = crate::Reg<l2_mem_sw_ecc_bwe_mask::L2_MEM_SW_ECC_BWE_MASK_SPEC>;
+pub type L2_MEM_SW_ECC_BWE_MASK = crate::Reg<
+    l2_mem_sw_ecc_bwe_mask::L2_MEM_SW_ECC_BWE_MASK_SPEC,
+>;
 ///NA
 pub mod l2_mem_sw_ecc_bwe_mask;
 /**USB20OTG_MEM_CTRL (rw) register accessor: NA
@@ -946,7 +952,9 @@ pub mod tcm_int_clr;
 You can [`read`](crate::generic::Reg::read) this register and get [`tcm_parity_int_record::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@tcm_parity_int_record`] module*/
-pub type TCM_PARITY_INT_RECORD = crate::Reg<tcm_parity_int_record::TCM_PARITY_INT_RECORD_SPEC>;
+pub type TCM_PARITY_INT_RECORD = crate::Reg<
+    tcm_parity_int_record::TCM_PARITY_INT_RECORD_SPEC,
+>;
 ///need_des
 pub mod tcm_parity_int_record;
 /**L1_CACHE_PWR_CTRL (rw) register accessor: NA
@@ -978,8 +986,9 @@ pub mod cpu_waiti_conf;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_debug_runstall_conf::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_debug_runstall_conf::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_debug_runstall_conf`] module*/
-pub type CORE_DEBUG_RUNSTALL_CONF =
-    crate::Reg<core_debug_runstall_conf::CORE_DEBUG_RUNSTALL_CONF_SPEC>;
+pub type CORE_DEBUG_RUNSTALL_CONF = crate::Reg<
+    core_debug_runstall_conf::CORE_DEBUG_RUNSTALL_CONF_SPEC,
+>;
 ///Core Debug runstall configure register
 pub mod core_debug_runstall_conf;
 /**CORE_AHB_TIMEOUT (rw) register accessor: need_des
@@ -1027,7 +1036,9 @@ pub mod peri1_apb_postw_en;
 You can [`read`](crate::generic::Reg::read) this register and get [`bitscrambler_peri_sel::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`bitscrambler_peri_sel::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@bitscrambler_peri_sel`] module*/
-pub type BITSCRAMBLER_PERI_SEL = crate::Reg<bitscrambler_peri_sel::BITSCRAMBLER_PERI_SEL_SPEC>;
+pub type BITSCRAMBLER_PERI_SEL = crate::Reg<
+    bitscrambler_peri_sel::BITSCRAMBLER_PERI_SEL_SPEC,
+>;
 ///Bitscrambler Peri Sel
 pub mod bitscrambler_peri_sel;
 /**APB_SYNC_POSTW_EN (rw) register accessor: N/A
@@ -1115,7 +1126,9 @@ pub mod tcm_init;
 You can [`read`](crate::generic::Reg::read) this register and get [`tcm_parity_check_ctrl::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`tcm_parity_check_ctrl::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@tcm_parity_check_ctrl`] module*/
-pub type TCM_PARITY_CHECK_CTRL = crate::Reg<tcm_parity_check_ctrl::TCM_PARITY_CHECK_CTRL_SPEC>;
+pub type TCM_PARITY_CHECK_CTRL = crate::Reg<
+    tcm_parity_check_ctrl::TCM_PARITY_CHECK_CTRL_SPEC,
+>;
 ///need_des
 pub mod tcm_parity_check_ctrl;
 /**DESIGN_FOR_VERIFICATION0 (rw) register accessor: need_des
@@ -1123,8 +1136,9 @@ pub mod tcm_parity_check_ctrl;
 You can [`read`](crate::generic::Reg::read) this register and get [`design_for_verification0::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`design_for_verification0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@design_for_verification0`] module*/
-pub type DESIGN_FOR_VERIFICATION0 =
-    crate::Reg<design_for_verification0::DESIGN_FOR_VERIFICATION0_SPEC>;
+pub type DESIGN_FOR_VERIFICATION0 = crate::Reg<
+    design_for_verification0::DESIGN_FOR_VERIFICATION0_SPEC,
+>;
 ///need_des
 pub mod design_for_verification0;
 /**DESIGN_FOR_VERIFICATION1 (rw) register accessor: need_des
@@ -1132,8 +1146,9 @@ pub mod design_for_verification0;
 You can [`read`](crate::generic::Reg::read) this register and get [`design_for_verification1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`design_for_verification1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@design_for_verification1`] module*/
-pub type DESIGN_FOR_VERIFICATION1 =
-    crate::Reg<design_for_verification1::DESIGN_FOR_VERIFICATION1_SPEC>;
+pub type DESIGN_FOR_VERIFICATION1 = crate::Reg<
+    design_for_verification1::DESIGN_FOR_VERIFICATION1_SPEC,
+>;
 ///need_des
 pub mod design_for_verification1;
 /**PSRAM_FLASH_ADDR_INTERCHANGE (rw) register accessor: need_des
@@ -1141,8 +1156,9 @@ pub mod design_for_verification1;
 You can [`read`](crate::generic::Reg::read) this register and get [`psram_flash_addr_interchange::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`psram_flash_addr_interchange::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@psram_flash_addr_interchange`] module*/
-pub type PSRAM_FLASH_ADDR_INTERCHANGE =
-    crate::Reg<psram_flash_addr_interchange::PSRAM_FLASH_ADDR_INTERCHANGE_SPEC>;
+pub type PSRAM_FLASH_ADDR_INTERCHANGE = crate::Reg<
+    psram_flash_addr_interchange::PSRAM_FLASH_ADDR_INTERCHANGE_SPEC,
+>;
 ///need_des
 pub mod psram_flash_addr_interchange;
 /**AHB2AXI_BRESP_ERR_INT_RAW (rw) register accessor: NA
@@ -1150,8 +1166,9 @@ pub mod psram_flash_addr_interchange;
 You can [`read`](crate::generic::Reg::read) this register and get [`ahb2axi_bresp_err_int_raw::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`ahb2axi_bresp_err_int_raw::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@ahb2axi_bresp_err_int_raw`] module*/
-pub type AHB2AXI_BRESP_ERR_INT_RAW =
-    crate::Reg<ahb2axi_bresp_err_int_raw::AHB2AXI_BRESP_ERR_INT_RAW_SPEC>;
+pub type AHB2AXI_BRESP_ERR_INT_RAW = crate::Reg<
+    ahb2axi_bresp_err_int_raw::AHB2AXI_BRESP_ERR_INT_RAW_SPEC,
+>;
 ///NA
 pub mod ahb2axi_bresp_err_int_raw;
 /**AHB2AXI_BRESP_ERR_INT_ST (r) register accessor: need_des
@@ -1159,8 +1176,9 @@ pub mod ahb2axi_bresp_err_int_raw;
 You can [`read`](crate::generic::Reg::read) this register and get [`ahb2axi_bresp_err_int_st::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@ahb2axi_bresp_err_int_st`] module*/
-pub type AHB2AXI_BRESP_ERR_INT_ST =
-    crate::Reg<ahb2axi_bresp_err_int_st::AHB2AXI_BRESP_ERR_INT_ST_SPEC>;
+pub type AHB2AXI_BRESP_ERR_INT_ST = crate::Reg<
+    ahb2axi_bresp_err_int_st::AHB2AXI_BRESP_ERR_INT_ST_SPEC,
+>;
 ///need_des
 pub mod ahb2axi_bresp_err_int_st;
 /**AHB2AXI_BRESP_ERR_INT_ENA (rw) register accessor: need_des
@@ -1168,8 +1186,9 @@ pub mod ahb2axi_bresp_err_int_st;
 You can [`read`](crate::generic::Reg::read) this register and get [`ahb2axi_bresp_err_int_ena::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`ahb2axi_bresp_err_int_ena::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@ahb2axi_bresp_err_int_ena`] module*/
-pub type AHB2AXI_BRESP_ERR_INT_ENA =
-    crate::Reg<ahb2axi_bresp_err_int_ena::AHB2AXI_BRESP_ERR_INT_ENA_SPEC>;
+pub type AHB2AXI_BRESP_ERR_INT_ENA = crate::Reg<
+    ahb2axi_bresp_err_int_ena::AHB2AXI_BRESP_ERR_INT_ENA_SPEC,
+>;
 ///need_des
 pub mod ahb2axi_bresp_err_int_ena;
 /**AHB2AXI_BRESP_ERR_INT_CLR (w) register accessor: need_des
@@ -1177,8 +1196,9 @@ pub mod ahb2axi_bresp_err_int_ena;
 You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`ahb2axi_bresp_err_int_clr::W`]. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@ahb2axi_bresp_err_int_clr`] module*/
-pub type AHB2AXI_BRESP_ERR_INT_CLR =
-    crate::Reg<ahb2axi_bresp_err_int_clr::AHB2AXI_BRESP_ERR_INT_CLR_SPEC>;
+pub type AHB2AXI_BRESP_ERR_INT_CLR = crate::Reg<
+    ahb2axi_bresp_err_int_clr::AHB2AXI_BRESP_ERR_INT_CLR_SPEC,
+>;
 ///need_des
 pub mod ahb2axi_bresp_err_int_clr;
 /**L2_MEM_ERR_RESP_CTRL (rw) register accessor: need_des
@@ -1186,7 +1206,9 @@ pub mod ahb2axi_bresp_err_int_clr;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_mem_err_resp_ctrl::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l2_mem_err_resp_ctrl::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_mem_err_resp_ctrl`] module*/
-pub type L2_MEM_ERR_RESP_CTRL = crate::Reg<l2_mem_err_resp_ctrl::L2_MEM_ERR_RESP_CTRL_SPEC>;
+pub type L2_MEM_ERR_RESP_CTRL = crate::Reg<
+    l2_mem_err_resp_ctrl::L2_MEM_ERR_RESP_CTRL_SPEC,
+>;
 ///need_des
 pub mod l2_mem_err_resp_ctrl;
 /**L2_MEM_AHB_BUFFER_CTRL (rw) register accessor: need_des
@@ -1194,7 +1216,9 @@ pub mod l2_mem_err_resp_ctrl;
 You can [`read`](crate::generic::Reg::read) this register and get [`l2_mem_ahb_buffer_ctrl::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`l2_mem_ahb_buffer_ctrl::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@l2_mem_ahb_buffer_ctrl`] module*/
-pub type L2_MEM_AHB_BUFFER_CTRL = crate::Reg<l2_mem_ahb_buffer_ctrl::L2_MEM_AHB_BUFFER_CTRL_SPEC>;
+pub type L2_MEM_AHB_BUFFER_CTRL = crate::Reg<
+    l2_mem_ahb_buffer_ctrl::L2_MEM_AHB_BUFFER_CTRL_SPEC,
+>;
 ///need_des
 pub mod l2_mem_ahb_buffer_ctrl;
 /**CORE_DMACTIVE_LPCORE (r) register accessor: need_des
@@ -1202,7 +1226,9 @@ pub mod l2_mem_ahb_buffer_ctrl;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_dmactive_lpcore::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_dmactive_lpcore`] module*/
-pub type CORE_DMACTIVE_LPCORE = crate::Reg<core_dmactive_lpcore::CORE_DMACTIVE_LPCORE_SPEC>;
+pub type CORE_DMACTIVE_LPCORE = crate::Reg<
+    core_dmactive_lpcore::CORE_DMACTIVE_LPCORE_SPEC,
+>;
 ///need_des
 pub mod core_dmactive_lpcore;
 /**CORE_ERR_RESP_DIS (rw) register accessor: need_des
@@ -1218,7 +1244,9 @@ pub mod core_err_resp_dis;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_timeout_int_raw::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_timeout_int_raw::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_timeout_int_raw`] module*/
-pub type CORE_TIMEOUT_INT_RAW = crate::Reg<core_timeout_int_raw::CORE_TIMEOUT_INT_RAW_SPEC>;
+pub type CORE_TIMEOUT_INT_RAW = crate::Reg<
+    core_timeout_int_raw::CORE_TIMEOUT_INT_RAW_SPEC,
+>;
 ///Hp core bus timeout interrupt raw register
 pub mod core_timeout_int_raw;
 /**CORE_TIMEOUT_INT_ST (r) register accessor: masked interrupt register
@@ -1234,7 +1262,9 @@ pub mod core_timeout_int_st;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_timeout_int_ena::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_timeout_int_ena::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_timeout_int_ena`] module*/
-pub type CORE_TIMEOUT_INT_ENA = crate::Reg<core_timeout_int_ena::CORE_TIMEOUT_INT_ENA_SPEC>;
+pub type CORE_TIMEOUT_INT_ENA = crate::Reg<
+    core_timeout_int_ena::CORE_TIMEOUT_INT_ENA_SPEC,
+>;
 ///masked interrupt register
 pub mod core_timeout_int_ena;
 /**CORE_TIMEOUT_INT_CLR (w) register accessor: interrupt clear register
@@ -1242,7 +1272,9 @@ pub mod core_timeout_int_ena;
 You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_timeout_int_clr::W`]. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_timeout_int_clr`] module*/
-pub type CORE_TIMEOUT_INT_CLR = crate::Reg<core_timeout_int_clr::CORE_TIMEOUT_INT_CLR_SPEC>;
+pub type CORE_TIMEOUT_INT_CLR = crate::Reg<
+    core_timeout_int_clr::CORE_TIMEOUT_INT_CLR_SPEC,
+>;
 ///interrupt clear register
 pub mod core_timeout_int_clr;
 /**GPIO_O_HYS_CTRL0 (rw) register accessor: NA
@@ -1298,6 +1330,8 @@ pub mod uart_pd_ctrl;
 You can [`read`](crate::generic::Reg::read) this register and get [`peri_mem_clk_force_on::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`peri_mem_clk_force_on::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@peri_mem_clk_force_on`] module*/
-pub type PERI_MEM_CLK_FORCE_ON = crate::Reg<peri_mem_clk_force_on::PERI_MEM_CLK_FORCE_ON_SPEC>;
+pub type PERI_MEM_CLK_FORCE_ON = crate::Reg<
+    peri_mem_clk_force_on::PERI_MEM_CLK_FORCE_ON_SPEC,
+>;
 ///hp peri mem clk force on regpster
 pub mod peri_mem_clk_force_on;

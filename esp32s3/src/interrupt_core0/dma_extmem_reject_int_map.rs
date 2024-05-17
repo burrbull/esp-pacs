@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("DMA_EXTMEM_REJECT_INT_MAP")
-            .field(
-                "dma_extmem_reject_int_map",
-                &self.dma_extmem_reject_int_map(),
-            )
+            .field("dma_extmem_reject_int_map", &self.dma_extmem_reject_int_map())
             .finish()
     }
 }

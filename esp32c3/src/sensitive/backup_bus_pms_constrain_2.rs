@@ -33,7 +33,11 @@ pub type BACKUP_BUS_PMS_CONSTRAIN_TIMERGROUP_W<'a, REG> = crate::FieldWriter<'a,
 ///Field `BACKUP_BUS_PMS_CONSTRAIN_TIMERGROUP1` reader - backup_bus_pms_constrain_timergroup1
 pub type BACKUP_BUS_PMS_CONSTRAIN_TIMERGROUP1_R = crate::FieldReader;
 ///Field `BACKUP_BUS_PMS_CONSTRAIN_TIMERGROUP1` writer - backup_bus_pms_constrain_timergroup1
-pub type BACKUP_BUS_PMS_CONSTRAIN_TIMERGROUP1_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
+pub type BACKUP_BUS_PMS_CONSTRAIN_TIMERGROUP1_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 ///Field `BACKUP_BUS_PMS_CONSTRAIN_SYSTIMER` reader - backup_bus_pms_constrain_systimer
 pub type BACKUP_BUS_PMS_CONSTRAIN_SYSTIMER_R = crate::FieldReader;
 ///Field `BACKUP_BUS_PMS_CONSTRAIN_SYSTIMER` writer - backup_bus_pms_constrain_systimer
@@ -46,7 +50,9 @@ impl R {
     }
     ///Bits 4:5 - backup_bus_pms_constrain_i2c_ext0
     #[inline(always)]
-    pub fn backup_bus_pms_constrain_i2c_ext0(&self) -> BACKUP_BUS_PMS_CONSTRAIN_I2C_EXT0_R {
+    pub fn backup_bus_pms_constrain_i2c_ext0(
+        &self,
+    ) -> BACKUP_BUS_PMS_CONSTRAIN_I2C_EXT0_R {
         BACKUP_BUS_PMS_CONSTRAIN_I2C_EXT0_R::new(((self.bits >> 4) & 3) as u8)
     }
     ///Bits 6:7 - backup_bus_pms_constrain_uhci0
@@ -71,17 +77,23 @@ impl R {
     }
     ///Bits 26:27 - backup_bus_pms_constrain_timergroup
     #[inline(always)]
-    pub fn backup_bus_pms_constrain_timergroup(&self) -> BACKUP_BUS_PMS_CONSTRAIN_TIMERGROUP_R {
+    pub fn backup_bus_pms_constrain_timergroup(
+        &self,
+    ) -> BACKUP_BUS_PMS_CONSTRAIN_TIMERGROUP_R {
         BACKUP_BUS_PMS_CONSTRAIN_TIMERGROUP_R::new(((self.bits >> 26) & 3) as u8)
     }
     ///Bits 28:29 - backup_bus_pms_constrain_timergroup1
     #[inline(always)]
-    pub fn backup_bus_pms_constrain_timergroup1(&self) -> BACKUP_BUS_PMS_CONSTRAIN_TIMERGROUP1_R {
+    pub fn backup_bus_pms_constrain_timergroup1(
+        &self,
+    ) -> BACKUP_BUS_PMS_CONSTRAIN_TIMERGROUP1_R {
         BACKUP_BUS_PMS_CONSTRAIN_TIMERGROUP1_R::new(((self.bits >> 28) & 3) as u8)
     }
     ///Bits 30:31 - backup_bus_pms_constrain_systimer
     #[inline(always)]
-    pub fn backup_bus_pms_constrain_systimer(&self) -> BACKUP_BUS_PMS_CONSTRAIN_SYSTIMER_R {
+    pub fn backup_bus_pms_constrain_systimer(
+        &self,
+    ) -> BACKUP_BUS_PMS_CONSTRAIN_SYSTIMER_R {
         BACKUP_BUS_PMS_CONSTRAIN_SYSTIMER_R::new(((self.bits >> 30) & 3) as u8)
     }
 }
@@ -89,10 +101,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("BACKUP_BUS_PMS_CONSTRAIN_2")
-            .field(
-                "backup_bus_pms_constrain_bt",
-                &self.backup_bus_pms_constrain_bt(),
-            )
+            .field("backup_bus_pms_constrain_bt", &self.backup_bus_pms_constrain_bt())
             .field(
                 "backup_bus_pms_constrain_i2c_ext0",
                 &self.backup_bus_pms_constrain_i2c_ext0(),
@@ -101,18 +110,12 @@ impl core::fmt::Debug for R {
                 "backup_bus_pms_constrain_uhci0",
                 &self.backup_bus_pms_constrain_uhci0(),
             )
-            .field(
-                "backup_bus_pms_constrain_rmt",
-                &self.backup_bus_pms_constrain_rmt(),
-            )
+            .field("backup_bus_pms_constrain_rmt", &self.backup_bus_pms_constrain_rmt())
             .field(
                 "backup_bus_pms_constrain_ledc",
                 &self.backup_bus_pms_constrain_ledc(),
             )
-            .field(
-                "backup_bus_pms_constrain_bb",
-                &self.backup_bus_pms_constrain_bb(),
-            )
+            .field("backup_bus_pms_constrain_bb", &self.backup_bus_pms_constrain_bb())
             .field(
                 "backup_bus_pms_constrain_timergroup",
                 &self.backup_bus_pms_constrain_timergroup(),

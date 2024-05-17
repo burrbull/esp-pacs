@@ -184,10 +184,7 @@ impl core::fmt::Debug for R {
             .field("spi_smem_clk_diff_en", &self.spi_smem_clk_diff_en())
             .field("spi_smem_hyperbus_mode", &self.spi_smem_hyperbus_mode())
             .field("spi_smem_dqs_ca_in", &self.spi_smem_dqs_ca_in())
-            .field(
-                "spi_smem_hyperbus_dummy_2x",
-                &self.spi_smem_hyperbus_dummy_2x(),
-            )
+            .field("spi_smem_hyperbus_dummy_2x", &self.spi_smem_hyperbus_dummy_2x())
             .field("spi_smem_clk_diff_inv", &self.spi_smem_clk_diff_inv())
             .field("spi_smem_octa_ram_addr", &self.spi_smem_octa_ram_addr())
             .field("spi_smem_hyperbus_ca", &self.spi_smem_hyperbus_ca())
@@ -228,25 +225,33 @@ impl W {
     ///Bits 5:11 - It is the minimum output data length in the ddr psram.
     #[inline(always)]
     #[must_use]
-    pub fn spi_smem_outminbytelen(&mut self) -> SPI_SMEM_OUTMINBYTELEN_W<SPI_SMEM_DDR_SPEC> {
+    pub fn spi_smem_outminbytelen(
+        &mut self,
+    ) -> SPI_SMEM_OUTMINBYTELEN_W<SPI_SMEM_DDR_SPEC> {
         SPI_SMEM_OUTMINBYTELEN_W::new(self, 5)
     }
     ///Bit 12 - Set this bit to mask the first or the last byte in MSPI ECC DDR write mode, when accesses to external RAM.
     #[inline(always)]
     #[must_use]
-    pub fn spi_smem_tx_ddr_msk_en(&mut self) -> SPI_SMEM_TX_DDR_MSK_EN_W<SPI_SMEM_DDR_SPEC> {
+    pub fn spi_smem_tx_ddr_msk_en(
+        &mut self,
+    ) -> SPI_SMEM_TX_DDR_MSK_EN_W<SPI_SMEM_DDR_SPEC> {
         SPI_SMEM_TX_DDR_MSK_EN_W::new(self, 12)
     }
     ///Bit 13 - Set this bit to mask the first or the last byte in MSPI ECC DDR read mode, when accesses to external RAM.
     #[inline(always)]
     #[must_use]
-    pub fn spi_smem_rx_ddr_msk_en(&mut self) -> SPI_SMEM_RX_DDR_MSK_EN_W<SPI_SMEM_DDR_SPEC> {
+    pub fn spi_smem_rx_ddr_msk_en(
+        &mut self,
+    ) -> SPI_SMEM_RX_DDR_MSK_EN_W<SPI_SMEM_DDR_SPEC> {
         SPI_SMEM_RX_DDR_MSK_EN_W::new(self, 13)
     }
     ///Bits 14:20 - The delay number of data strobe which from memory based on SPI_CLK.
     #[inline(always)]
     #[must_use]
-    pub fn spi_smem_usr_ddr_dqs_thd(&mut self) -> SPI_SMEM_USR_DDR_DQS_THD_W<SPI_SMEM_DDR_SPEC> {
+    pub fn spi_smem_usr_ddr_dqs_thd(
+        &mut self,
+    ) -> SPI_SMEM_USR_DDR_DQS_THD_W<SPI_SMEM_DDR_SPEC> {
         SPI_SMEM_USR_DDR_DQS_THD_W::new(self, 14)
     }
     ///Bit 21 - 1: Use internal signal as data strobe, the strobe can not be delayed by input timing module. 0: Use input SPI_DQS signal from PAD as data strobe, the strobe can be delayed by input timing module
@@ -270,7 +275,9 @@ impl W {
     ///Bit 25 - Set this bit to enable the SPI HyperBus mode.
     #[inline(always)]
     #[must_use]
-    pub fn spi_smem_hyperbus_mode(&mut self) -> SPI_SMEM_HYPERBUS_MODE_W<SPI_SMEM_DDR_SPEC> {
+    pub fn spi_smem_hyperbus_mode(
+        &mut self,
+    ) -> SPI_SMEM_HYPERBUS_MODE_W<SPI_SMEM_DDR_SPEC> {
         SPI_SMEM_HYPERBUS_MODE_W::new(self, 25)
     }
     ///Bit 26 - Set this bit to enable the input of SPI_DQS signal in SPI phases of CMD and ADDR.
@@ -290,13 +297,17 @@ impl W {
     ///Bit 28 - Set this bit to invert SPI_DIFF when accesses to external RAM. .
     #[inline(always)]
     #[must_use]
-    pub fn spi_smem_clk_diff_inv(&mut self) -> SPI_SMEM_CLK_DIFF_INV_W<SPI_SMEM_DDR_SPEC> {
+    pub fn spi_smem_clk_diff_inv(
+        &mut self,
+    ) -> SPI_SMEM_CLK_DIFF_INV_W<SPI_SMEM_DDR_SPEC> {
         SPI_SMEM_CLK_DIFF_INV_W::new(self, 28)
     }
     ///Bit 29 - Set this bit to enable octa_ram address out when accesses to external RAM, which means ADDR_OUT\[31:0\] = {spi_usr_addr_value\[25:4\], 6'd0, spi_usr_addr_value\[3:1\], 1'b0}.
     #[inline(always)]
     #[must_use]
-    pub fn spi_smem_octa_ram_addr(&mut self) -> SPI_SMEM_OCTA_RAM_ADDR_W<SPI_SMEM_DDR_SPEC> {
+    pub fn spi_smem_octa_ram_addr(
+        &mut self,
+    ) -> SPI_SMEM_OCTA_RAM_ADDR_W<SPI_SMEM_DDR_SPEC> {
         SPI_SMEM_OCTA_RAM_ADDR_W::new(self, 29)
     }
     ///Bit 30 - Set this bit to enable HyperRAM address out when accesses to external RAM, which means ADDR_OUT\[31:0\] = {spi_usr_addr_value\[19:4\], 13'd0, spi_usr_addr_value\[3:1\]}.

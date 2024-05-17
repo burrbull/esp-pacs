@@ -51,7 +51,9 @@ impl W {
     ///Bits 8:10
     #[inline(always)]
     #[must_use]
-    pub fn lc_fifo_timeout_shift(&mut self) -> LC_FIFO_TIMEOUT_SHIFT_W<LC_HUNG_CONF_SPEC> {
+    pub fn lc_fifo_timeout_shift(
+        &mut self,
+    ) -> LC_FIFO_TIMEOUT_SHIFT_W<LC_HUNG_CONF_SPEC> {
         LC_FIFO_TIMEOUT_SHIFT_W::new(self, 8)
     }
     ///Bit 11

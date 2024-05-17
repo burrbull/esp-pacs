@@ -24,10 +24,7 @@ impl core::fmt::Debug for R {
                 "core_0_dram0_recording_addr_0",
                 &self.core_0_dram0_recording_addr_0(),
             )
-            .field(
-                "core_0_dram0_recording_wr_0",
-                &self.core_0_dram0_recording_wr_0(),
-            )
+            .field("core_0_dram0_recording_wr_0", &self.core_0_dram0_recording_wr_0())
             .finish()
     }
 }

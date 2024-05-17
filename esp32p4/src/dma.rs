@@ -187,8 +187,9 @@ pub mod commonreg_intclear0;
 You can [`read`](crate::generic::Reg::read) this register and get [`commonreg_intstatus_enable0::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`commonreg_intstatus_enable0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@commonreg_intstatus_enable0`] module*/
-pub type COMMONREG_INTSTATUS_ENABLE0 =
-    crate::Reg<commonreg_intstatus_enable0::COMMONREG_INTSTATUS_ENABLE0_SPEC>;
+pub type COMMONREG_INTSTATUS_ENABLE0 = crate::Reg<
+    commonreg_intstatus_enable0::COMMONREG_INTSTATUS_ENABLE0_SPEC,
+>;
 ///NA
 pub mod commonreg_intstatus_enable0;
 /**COMMONREG_INTSIGNAL_ENABLE0 (rw) register accessor: NA
@@ -196,8 +197,9 @@ pub mod commonreg_intstatus_enable0;
 You can [`read`](crate::generic::Reg::read) this register and get [`commonreg_intsignal_enable0::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`commonreg_intsignal_enable0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@commonreg_intsignal_enable0`] module*/
-pub type COMMONREG_INTSIGNAL_ENABLE0 =
-    crate::Reg<commonreg_intsignal_enable0::COMMONREG_INTSIGNAL_ENABLE0_SPEC>;
+pub type COMMONREG_INTSIGNAL_ENABLE0 = crate::Reg<
+    commonreg_intsignal_enable0::COMMONREG_INTSIGNAL_ENABLE0_SPEC,
+>;
 ///NA
 pub mod commonreg_intsignal_enable0;
 /**COMMONREG_INTSTATUS0 (r) register accessor: NA
@@ -205,7 +207,9 @@ pub mod commonreg_intsignal_enable0;
 You can [`read`](crate::generic::Reg::read) this register and get [`commonreg_intstatus0::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@commonreg_intstatus0`] module*/
-pub type COMMONREG_INTSTATUS0 = crate::Reg<commonreg_intstatus0::COMMONREG_INTSTATUS0_SPEC>;
+pub type COMMONREG_INTSTATUS0 = crate::Reg<
+    commonreg_intstatus0::COMMONREG_INTSTATUS0_SPEC,
+>;
 ///NA
 pub mod commonreg_intstatus0;
 /**RESET0 (rw) register accessor: NA

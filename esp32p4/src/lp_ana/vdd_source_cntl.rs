@@ -51,7 +51,9 @@ impl W {
     ///Bits 16:23 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn vbat_event_record_clr(&mut self) -> VBAT_EVENT_RECORD_CLR_W<VDD_SOURCE_CNTL_SPEC> {
+    pub fn vbat_event_record_clr(
+        &mut self,
+    ) -> VBAT_EVENT_RECORD_CLR_W<VDD_SOURCE_CNTL_SPEC> {
         VBAT_EVENT_RECORD_CLR_W::new(self, 16)
     }
     ///Bits 24:31 - need_des

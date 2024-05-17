@@ -83,7 +83,9 @@ impl W {
     ///Bits 9:18 - reg_peri_backup_tout_thres
     #[inline(always)]
     #[must_use]
-    pub fn peri_backup_tout_thres(&mut self) -> PERI_BACKUP_TOUT_THRES_W<PERI_BACKUP_CONFIG_SPEC> {
+    pub fn peri_backup_tout_thres(
+        &mut self,
+    ) -> PERI_BACKUP_TOUT_THRES_W<PERI_BACKUP_CONFIG_SPEC> {
         PERI_BACKUP_TOUT_THRES_W::new(self, 9)
     }
     ///Bits 19:28 - reg_peri_backup_size
@@ -101,7 +103,9 @@ impl W {
     ///Bit 30 - reg_peri_backup_to_mem
     #[inline(always)]
     #[must_use]
-    pub fn peri_backup_to_mem(&mut self) -> PERI_BACKUP_TO_MEM_W<PERI_BACKUP_CONFIG_SPEC> {
+    pub fn peri_backup_to_mem(
+        &mut self,
+    ) -> PERI_BACKUP_TO_MEM_W<PERI_BACKUP_CONFIG_SPEC> {
         PERI_BACKUP_TO_MEM_W::new(self, 30)
     }
     ///Bit 31 - reg_peri_backup_ena

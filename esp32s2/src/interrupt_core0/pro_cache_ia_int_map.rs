@@ -25,7 +25,9 @@ impl W {
     ///Bits 0:4 - This register is used to map CACHE_IA_INT interrupt signal to one of the CPU interrupts.
     #[inline(always)]
     #[must_use]
-    pub fn pro_cache_ia_int_map(&mut self) -> PRO_CACHE_IA_INT_MAP_W<PRO_CACHE_IA_INT_MAP_SPEC> {
+    pub fn pro_cache_ia_int_map(
+        &mut self,
+    ) -> PRO_CACHE_IA_INT_MAP_W<PRO_CACHE_IA_INT_MAP_SPEC> {
         PRO_CACHE_IA_INT_MAP_W::new(self, 0)
     }
 }

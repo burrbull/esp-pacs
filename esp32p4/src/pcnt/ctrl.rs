@@ -24,8 +24,7 @@ impl R {
     ///NOTE: `n` is number of field in register. `n == 0` corresponds to `CNT_RST_U0` field
     #[inline(always)]
     pub fn cnt_rst_u(&self, n: u8) -> CNT_RST_U_R {
-        #[allow(clippy::no_effect)]
-        [(); 4][n as usize];
+        #[allow(clippy::no_effect)] [(); 4][n as usize];
         CNT_RST_U_R::new(((self.bits >> (n * 2)) & 1) != 0)
     }
     ///Iterator for array of:
@@ -59,8 +58,7 @@ impl R {
     ///NOTE: `n` is number of field in register. `n == 0` corresponds to `CNT_PAUSE_U0` field
     #[inline(always)]
     pub fn cnt_pause_u(&self, n: u8) -> CNT_PAUSE_U_R {
-        #[allow(clippy::no_effect)]
-        [(); 4][n as usize];
+        #[allow(clippy::no_effect)] [(); 4][n as usize];
         CNT_PAUSE_U_R::new(((self.bits >> (n * 2 + 1)) & 1) != 0)
     }
     ///Iterator for array of:
@@ -94,14 +92,15 @@ impl R {
     ///NOTE: `n` is number of field in register. `n == 0` corresponds to `DALTA_CHANGE_EN_U0` field
     #[inline(always)]
     pub fn dalta_change_en_u(&self, n: u8) -> DALTA_CHANGE_EN_U_R {
-        #[allow(clippy::no_effect)]
-        [(); 4][n as usize];
+        #[allow(clippy::no_effect)] [(); 4][n as usize];
         DALTA_CHANGE_EN_U_R::new(((self.bits >> (n + 8)) & 1) != 0)
     }
     ///Iterator for array of:
     ///Configures this bit to enable unit (0-3)'s step comparator.
     #[inline(always)]
-    pub fn dalta_change_en_u_iter(&self) -> impl Iterator<Item = DALTA_CHANGE_EN_U_R> + '_ {
+    pub fn dalta_change_en_u_iter(
+        &self,
+    ) -> impl Iterator<Item = DALTA_CHANGE_EN_U_R> + '_ {
         (0..4).map(move |n| DALTA_CHANGE_EN_U_R::new(((self.bits >> (n + 8)) & 1) != 0))
     }
     ///Bit 8 - Configures this bit to enable unit 0's step comparator.
@@ -157,8 +156,7 @@ impl W {
     #[inline(always)]
     #[must_use]
     pub fn cnt_rst_u(&mut self, n: u8) -> CNT_RST_U_W<CTRL_SPEC> {
-        #[allow(clippy::no_effect)]
-        [(); 4][n as usize];
+        #[allow(clippy::no_effect)] [(); 4][n as usize];
         CNT_RST_U_W::new(self, n * 2)
     }
     ///Bit 0 - Set this bit to clear unit 0's counter.
@@ -191,8 +189,7 @@ impl W {
     #[inline(always)]
     #[must_use]
     pub fn cnt_pause_u(&mut self, n: u8) -> CNT_PAUSE_U_W<CTRL_SPEC> {
-        #[allow(clippy::no_effect)]
-        [(); 4][n as usize];
+        #[allow(clippy::no_effect)] [(); 4][n as usize];
         CNT_PAUSE_U_W::new(self, n * 2 + 1)
     }
     ///Bit 1 - Set this bit to freeze unit 0's counter.
@@ -225,8 +222,7 @@ impl W {
     #[inline(always)]
     #[must_use]
     pub fn dalta_change_en_u(&mut self, n: u8) -> DALTA_CHANGE_EN_U_W<CTRL_SPEC> {
-        #[allow(clippy::no_effect)]
-        [(); 4][n as usize];
+        #[allow(clippy::no_effect)] [(); 4][n as usize];
         DALTA_CHANGE_EN_U_W::new(self, n + 8)
     }
     ///Bit 8 - Configures this bit to enable unit 0's step comparator.

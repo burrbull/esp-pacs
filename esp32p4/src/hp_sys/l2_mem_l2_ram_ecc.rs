@@ -75,37 +75,49 @@ impl W {
     ///Bit 0 - NA
     #[inline(always)]
     #[must_use]
-    pub fn reg_l2_ram_unit0_ecc_en(&mut self) -> REG_L2_RAM_UNIT0_ECC_EN_W<L2_MEM_L2_RAM_ECC_SPEC> {
+    pub fn reg_l2_ram_unit0_ecc_en(
+        &mut self,
+    ) -> REG_L2_RAM_UNIT0_ECC_EN_W<L2_MEM_L2_RAM_ECC_SPEC> {
         REG_L2_RAM_UNIT0_ECC_EN_W::new(self, 0)
     }
     ///Bit 1 - NA
     #[inline(always)]
     #[must_use]
-    pub fn reg_l2_ram_unit1_ecc_en(&mut self) -> REG_L2_RAM_UNIT1_ECC_EN_W<L2_MEM_L2_RAM_ECC_SPEC> {
+    pub fn reg_l2_ram_unit1_ecc_en(
+        &mut self,
+    ) -> REG_L2_RAM_UNIT1_ECC_EN_W<L2_MEM_L2_RAM_ECC_SPEC> {
         REG_L2_RAM_UNIT1_ECC_EN_W::new(self, 1)
     }
     ///Bit 2 - NA
     #[inline(always)]
     #[must_use]
-    pub fn reg_l2_ram_unit2_ecc_en(&mut self) -> REG_L2_RAM_UNIT2_ECC_EN_W<L2_MEM_L2_RAM_ECC_SPEC> {
+    pub fn reg_l2_ram_unit2_ecc_en(
+        &mut self,
+    ) -> REG_L2_RAM_UNIT2_ECC_EN_W<L2_MEM_L2_RAM_ECC_SPEC> {
         REG_L2_RAM_UNIT2_ECC_EN_W::new(self, 2)
     }
     ///Bit 3 - NA
     #[inline(always)]
     #[must_use]
-    pub fn reg_l2_ram_unit3_ecc_en(&mut self) -> REG_L2_RAM_UNIT3_ECC_EN_W<L2_MEM_L2_RAM_ECC_SPEC> {
+    pub fn reg_l2_ram_unit3_ecc_en(
+        &mut self,
+    ) -> REG_L2_RAM_UNIT3_ECC_EN_W<L2_MEM_L2_RAM_ECC_SPEC> {
         REG_L2_RAM_UNIT3_ECC_EN_W::new(self, 3)
     }
     ///Bit 4 - NA
     #[inline(always)]
     #[must_use]
-    pub fn reg_l2_ram_unit4_ecc_en(&mut self) -> REG_L2_RAM_UNIT4_ECC_EN_W<L2_MEM_L2_RAM_ECC_SPEC> {
+    pub fn reg_l2_ram_unit4_ecc_en(
+        &mut self,
+    ) -> REG_L2_RAM_UNIT4_ECC_EN_W<L2_MEM_L2_RAM_ECC_SPEC> {
         REG_L2_RAM_UNIT4_ECC_EN_W::new(self, 4)
     }
     ///Bit 5 - NA
     #[inline(always)]
     #[must_use]
-    pub fn reg_l2_ram_unit5_ecc_en(&mut self) -> REG_L2_RAM_UNIT5_ECC_EN_W<L2_MEM_L2_RAM_ECC_SPEC> {
+    pub fn reg_l2_ram_unit5_ecc_en(
+        &mut self,
+    ) -> REG_L2_RAM_UNIT5_ECC_EN_W<L2_MEM_L2_RAM_ECC_SPEC> {
         REG_L2_RAM_UNIT5_ECC_EN_W::new(self, 5)
     }
 }

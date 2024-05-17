@@ -75,13 +75,17 @@ impl W {
     ///Bits 0:3 - VAD parameter
     #[inline(always)]
     #[must_use]
-    pub fn param_min_speech_count(&mut self) -> PARAM_MIN_SPEECH_COUNT_W<VAD_PARAM1_SPEC> {
+    pub fn param_min_speech_count(
+        &mut self,
+    ) -> PARAM_MIN_SPEECH_COUNT_W<VAD_PARAM1_SPEC> {
         PARAM_MIN_SPEECH_COUNT_W::new(self, 0)
     }
     ///Bits 4:10 - VAD parameter
     #[inline(always)]
     #[must_use]
-    pub fn param_max_speech_count(&mut self) -> PARAM_MAX_SPEECH_COUNT_W<VAD_PARAM1_SPEC> {
+    pub fn param_max_speech_count(
+        &mut self,
+    ) -> PARAM_MAX_SPEECH_COUNT_W<VAD_PARAM1_SPEC> {
         PARAM_MAX_SPEECH_COUNT_W::new(self, 4)
     }
     ///Bits 11:15 - VAD parameter
@@ -105,7 +109,9 @@ impl W {
     ///Bit 31 - Set 1 to skip band energy check.
     #[inline(always)]
     #[must_use]
-    pub fn param_skip_band_energy(&mut self) -> PARAM_SKIP_BAND_ENERGY_W<VAD_PARAM1_SPEC> {
+    pub fn param_skip_band_energy(
+        &mut self,
+    ) -> PARAM_SKIP_BAND_ENERGY_W<VAD_PARAM1_SPEC> {
         PARAM_SKIP_BAND_ENERGY_W::new(self, 31)
     }
 }

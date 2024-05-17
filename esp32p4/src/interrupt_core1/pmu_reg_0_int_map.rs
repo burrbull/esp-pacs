@@ -25,7 +25,9 @@ impl W {
     ///Bits 0:5 - NA
     #[inline(always)]
     #[must_use]
-    pub fn core1_pmu_reg_0_int_map(&mut self) -> CORE1_PMU_REG_0_INT_MAP_W<PMU_REG_0_INT_MAP_SPEC> {
+    pub fn core1_pmu_reg_0_int_map(
+        &mut self,
+    ) -> CORE1_PMU_REG_0_INT_MAP_W<PMU_REG_0_INT_MAP_SPEC> {
         CORE1_PMU_REG_0_INT_MAP_W::new(self, 0)
     }
 }

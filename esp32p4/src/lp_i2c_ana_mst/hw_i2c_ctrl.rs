@@ -51,7 +51,9 @@ impl W {
     ///Bits 6:10 - need des
     #[inline(always)]
     #[must_use]
-    pub fn hw_i2c_sda_side_guard(&mut self) -> HW_I2C_SDA_SIDE_GUARD_W<HW_I2C_CTRL_SPEC> {
+    pub fn hw_i2c_sda_side_guard(
+        &mut self,
+    ) -> HW_I2C_SDA_SIDE_GUARD_W<HW_I2C_CTRL_SPEC> {
         HW_I2C_SDA_SIDE_GUARD_W::new(self, 6)
     }
     ///Bit 11 - need des

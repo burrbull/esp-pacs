@@ -98,14 +98,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PERI_CLK_CTRL21")
-            .field(
-                "timergrp0_tgrt_clk_src_sel",
-                &self.timergrp0_tgrt_clk_src_sel(),
-            )
-            .field(
-                "timergrp0_tgrt_clk_div_num",
-                &self.timergrp0_tgrt_clk_div_num(),
-            )
+            .field("timergrp0_tgrt_clk_src_sel", &self.timergrp0_tgrt_clk_src_sel())
+            .field("timergrp0_tgrt_clk_div_num", &self.timergrp0_tgrt_clk_div_num())
             .field("timergrp1_t0_src_sel", &self.timergrp1_t0_src_sel())
             .field("timergrp1_t0_clk_en", &self.timergrp1_t0_clk_en())
             .field("timergrp1_t1_src_sel", &self.timergrp1_t1_src_sel())
@@ -137,43 +131,57 @@ impl W {
     ///Bits 20:21 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn timergrp1_t0_src_sel(&mut self) -> TIMERGRP1_T0_SRC_SEL_W<PERI_CLK_CTRL21_SPEC> {
+    pub fn timergrp1_t0_src_sel(
+        &mut self,
+    ) -> TIMERGRP1_T0_SRC_SEL_W<PERI_CLK_CTRL21_SPEC> {
         TIMERGRP1_T0_SRC_SEL_W::new(self, 20)
     }
     ///Bit 22 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn timergrp1_t0_clk_en(&mut self) -> TIMERGRP1_T0_CLK_EN_W<PERI_CLK_CTRL21_SPEC> {
+    pub fn timergrp1_t0_clk_en(
+        &mut self,
+    ) -> TIMERGRP1_T0_CLK_EN_W<PERI_CLK_CTRL21_SPEC> {
         TIMERGRP1_T0_CLK_EN_W::new(self, 22)
     }
     ///Bits 23:24 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn timergrp1_t1_src_sel(&mut self) -> TIMERGRP1_T1_SRC_SEL_W<PERI_CLK_CTRL21_SPEC> {
+    pub fn timergrp1_t1_src_sel(
+        &mut self,
+    ) -> TIMERGRP1_T1_SRC_SEL_W<PERI_CLK_CTRL21_SPEC> {
         TIMERGRP1_T1_SRC_SEL_W::new(self, 23)
     }
     ///Bit 25 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn timergrp1_t1_clk_en(&mut self) -> TIMERGRP1_T1_CLK_EN_W<PERI_CLK_CTRL21_SPEC> {
+    pub fn timergrp1_t1_clk_en(
+        &mut self,
+    ) -> TIMERGRP1_T1_CLK_EN_W<PERI_CLK_CTRL21_SPEC> {
         TIMERGRP1_T1_CLK_EN_W::new(self, 25)
     }
     ///Bits 26:27 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn timergrp1_wdt_src_sel(&mut self) -> TIMERGRP1_WDT_SRC_SEL_W<PERI_CLK_CTRL21_SPEC> {
+    pub fn timergrp1_wdt_src_sel(
+        &mut self,
+    ) -> TIMERGRP1_WDT_SRC_SEL_W<PERI_CLK_CTRL21_SPEC> {
         TIMERGRP1_WDT_SRC_SEL_W::new(self, 26)
     }
     ///Bit 28 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn timergrp1_wdt_clk_en(&mut self) -> TIMERGRP1_WDT_CLK_EN_W<PERI_CLK_CTRL21_SPEC> {
+    pub fn timergrp1_wdt_clk_en(
+        &mut self,
+    ) -> TIMERGRP1_WDT_CLK_EN_W<PERI_CLK_CTRL21_SPEC> {
         TIMERGRP1_WDT_CLK_EN_W::new(self, 28)
     }
     ///Bit 29 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn systimer_clk_src_sel(&mut self) -> SYSTIMER_CLK_SRC_SEL_W<PERI_CLK_CTRL21_SPEC> {
+    pub fn systimer_clk_src_sel(
+        &mut self,
+    ) -> SYSTIMER_CLK_SRC_SEL_W<PERI_CLK_CTRL21_SPEC> {
         SYSTIMER_CLK_SRC_SEL_W::new(self, 29)
     }
     ///Bit 30 - Reserved

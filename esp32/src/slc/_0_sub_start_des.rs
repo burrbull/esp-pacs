@@ -13,10 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("_0_SUB_START_DES")
-            .field(
-                "slc0_sub_pac_start_dscr_addr",
-                &self.slc0_sub_pac_start_dscr_addr(),
-            )
+            .field("slc0_sub_pac_start_dscr_addr", &self.slc0_sub_pac_start_dscr_addr())
             .finish()
     }
 }

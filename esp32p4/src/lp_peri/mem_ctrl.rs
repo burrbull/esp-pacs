@@ -57,7 +57,9 @@ impl W {
     ///Bit 0 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn lp_uart_wakeup_flag_clr(&mut self) -> LP_UART_WAKEUP_FLAG_CLR_W<MEM_CTRL_SPEC> {
+    pub fn lp_uart_wakeup_flag_clr(
+        &mut self,
+    ) -> LP_UART_WAKEUP_FLAG_CLR_W<MEM_CTRL_SPEC> {
         LP_UART_WAKEUP_FLAG_CLR_W::new(self, 0)
     }
     ///Bit 1 - need_des

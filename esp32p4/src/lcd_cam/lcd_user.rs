@@ -147,14 +147,8 @@ impl core::fmt::Debug for R {
         f.debug_struct("LCD_USER")
             .field("lcd_dout_cyclelen", &self.lcd_dout_cyclelen())
             .field("lcd_always_out_en", &self.lcd_always_out_en())
-            .field(
-                "lcd_dout_byte_swizzle_mode",
-                &self.lcd_dout_byte_swizzle_mode(),
-            )
-            .field(
-                "lcd_dout_byte_swizzle_enable",
-                &self.lcd_dout_byte_swizzle_enable(),
-            )
+            .field("lcd_dout_byte_swizzle_mode", &self.lcd_dout_byte_swizzle_mode())
+            .field("lcd_dout_byte_swizzle_enable", &self.lcd_dout_byte_swizzle_enable())
             .field("lcd_dout_bit_order", &self.lcd_dout_bit_order())
             .field("lcd_byte_mode", &self.lcd_byte_mode())
             .field("lcd_update", &self.lcd_update())
@@ -185,7 +179,9 @@ impl W {
     ///Bits 14:16 - 0: ABAB->BABA. 1: ABC->ACB. 2: ABC->BAC. 3: ABC->BCA. 4:ABC->CAB. 5:ABC->CBA
     #[inline(always)]
     #[must_use]
-    pub fn lcd_dout_byte_swizzle_mode(&mut self) -> LCD_DOUT_BYTE_SWIZZLE_MODE_W<LCD_USER_SPEC> {
+    pub fn lcd_dout_byte_swizzle_mode(
+        &mut self,
+    ) -> LCD_DOUT_BYTE_SWIZZLE_MODE_W<LCD_USER_SPEC> {
         LCD_DOUT_BYTE_SWIZZLE_MODE_W::new(self, 14)
     }
     ///Bit 17 - 1: enable byte swizzle 0: disable

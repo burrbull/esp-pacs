@@ -55,7 +55,9 @@ impl W {
     ///Bits 0:15 - The integral part of the frequency divider factor of the parl tx clock.
     #[inline(always)]
     #[must_use]
-    pub fn parl_clk_tx_div_num(&mut self) -> PARL_CLK_TX_DIV_NUM_W<PARL_CLK_TX_CONF_SPEC> {
+    pub fn parl_clk_tx_div_num(
+        &mut self,
+    ) -> PARL_CLK_TX_DIV_NUM_W<PARL_CLK_TX_CONF_SPEC> {
         PARL_CLK_TX_DIV_NUM_W::new(self, 0)
     }
     ///Bits 16:17 - set this field to select clock-source. 0(default): XTAL, 1: 240MHz, 2: FOSC, 3: user clock from pad.

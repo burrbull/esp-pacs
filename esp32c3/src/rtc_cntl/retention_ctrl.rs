@@ -77,7 +77,9 @@ impl W {
     ///Bits 22:25 - Retention clkoff wait time
     #[inline(always)]
     #[must_use]
-    pub fn retention_clkoff_wait(&mut self) -> RETENTION_CLKOFF_WAIT_W<RETENTION_CTRL_SPEC> {
+    pub fn retention_clkoff_wait(
+        &mut self,
+    ) -> RETENTION_CLKOFF_WAIT_W<RETENTION_CTRL_SPEC> {
         RETENTION_CLKOFF_WAIT_W::new(self, 22)
     }
     ///Bit 26 - enable cpu retention when light sleep

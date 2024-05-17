@@ -133,10 +133,7 @@ impl core::fmt::Debug for R {
             .field("phy_lp_txvalidesc_0", &self.phy_lp_txvalidesc_0())
             .field("phy_lp_txlpdtesc_0", &self.phy_lp_txlpdtesc_0())
             .field("phy_lp_basedir_0", &self.phy_lp_basedir_0())
-            .field(
-                "phy_lp_loopback_check_done",
-                &self.phy_lp_loopback_check_done(),
-            )
+            .field("phy_lp_loopback_check_done", &self.phy_lp_loopback_check_done())
             .field("phy_lp_loopback_en", &self.phy_lp_loopback_en())
             .field("phy_lp_loopback_ok", &self.phy_lp_loopback_ok())
             .finish()
@@ -146,25 +143,33 @@ impl W {
     ///Bits 0:7 - txdataesc_1 ctrl when enable dsi phy lp_loopback_test
     #[inline(always)]
     #[must_use]
-    pub fn phy_lp_txdataesc_1(&mut self) -> PHY_LP_TXDATAESC_1_W<PHY_LP_LOOPBACK_CTRL_SPEC> {
+    pub fn phy_lp_txdataesc_1(
+        &mut self,
+    ) -> PHY_LP_TXDATAESC_1_W<PHY_LP_LOOPBACK_CTRL_SPEC> {
         PHY_LP_TXDATAESC_1_W::new(self, 0)
     }
     ///Bit 8 - txrequestesc_1 ctrl when enable dsi phy lp_loopback_test
     #[inline(always)]
     #[must_use]
-    pub fn phy_lp_txrequestesc_1(&mut self) -> PHY_LP_TXREQUESTESC_1_W<PHY_LP_LOOPBACK_CTRL_SPEC> {
+    pub fn phy_lp_txrequestesc_1(
+        &mut self,
+    ) -> PHY_LP_TXREQUESTESC_1_W<PHY_LP_LOOPBACK_CTRL_SPEC> {
         PHY_LP_TXREQUESTESC_1_W::new(self, 8)
     }
     ///Bit 9 - txvalidesc_1 ctrl when enable dsi phy lp_loopback_test
     #[inline(always)]
     #[must_use]
-    pub fn phy_lp_txvalidesc_1(&mut self) -> PHY_LP_TXVALIDESC_1_W<PHY_LP_LOOPBACK_CTRL_SPEC> {
+    pub fn phy_lp_txvalidesc_1(
+        &mut self,
+    ) -> PHY_LP_TXVALIDESC_1_W<PHY_LP_LOOPBACK_CTRL_SPEC> {
         PHY_LP_TXVALIDESC_1_W::new(self, 9)
     }
     ///Bit 10 - txlpdtesc_1 ctrl when enable dsi phy lp_loopback_test
     #[inline(always)]
     #[must_use]
-    pub fn phy_lp_txlpdtesc_1(&mut self) -> PHY_LP_TXLPDTESC_1_W<PHY_LP_LOOPBACK_CTRL_SPEC> {
+    pub fn phy_lp_txlpdtesc_1(
+        &mut self,
+    ) -> PHY_LP_TXLPDTESC_1_W<PHY_LP_LOOPBACK_CTRL_SPEC> {
         PHY_LP_TXLPDTESC_1_W::new(self, 10)
     }
     ///Bit 11 - basedir_1 ctrl when enable dsi phy lp_loopback_test
@@ -176,25 +181,33 @@ impl W {
     ///Bits 16:23 - txdataesc_0 ctrl when enable dsi phy lp_loopback_test
     #[inline(always)]
     #[must_use]
-    pub fn phy_lp_txdataesc_0(&mut self) -> PHY_LP_TXDATAESC_0_W<PHY_LP_LOOPBACK_CTRL_SPEC> {
+    pub fn phy_lp_txdataesc_0(
+        &mut self,
+    ) -> PHY_LP_TXDATAESC_0_W<PHY_LP_LOOPBACK_CTRL_SPEC> {
         PHY_LP_TXDATAESC_0_W::new(self, 16)
     }
     ///Bit 24 - txrequestesc_0 ctrl when enable dsi phy lp_loopback_test
     #[inline(always)]
     #[must_use]
-    pub fn phy_lp_txrequestesc_0(&mut self) -> PHY_LP_TXREQUESTESC_0_W<PHY_LP_LOOPBACK_CTRL_SPEC> {
+    pub fn phy_lp_txrequestesc_0(
+        &mut self,
+    ) -> PHY_LP_TXREQUESTESC_0_W<PHY_LP_LOOPBACK_CTRL_SPEC> {
         PHY_LP_TXREQUESTESC_0_W::new(self, 24)
     }
     ///Bit 25 - txvalidesc_0 ctrl when enable dsi phy lp_loopback_test
     #[inline(always)]
     #[must_use]
-    pub fn phy_lp_txvalidesc_0(&mut self) -> PHY_LP_TXVALIDESC_0_W<PHY_LP_LOOPBACK_CTRL_SPEC> {
+    pub fn phy_lp_txvalidesc_0(
+        &mut self,
+    ) -> PHY_LP_TXVALIDESC_0_W<PHY_LP_LOOPBACK_CTRL_SPEC> {
         PHY_LP_TXVALIDESC_0_W::new(self, 25)
     }
     ///Bit 26 - txlpdtesc_0 ctrl when enable dsi phy lp_loopback_test
     #[inline(always)]
     #[must_use]
-    pub fn phy_lp_txlpdtesc_0(&mut self) -> PHY_LP_TXLPDTESC_0_W<PHY_LP_LOOPBACK_CTRL_SPEC> {
+    pub fn phy_lp_txlpdtesc_0(
+        &mut self,
+    ) -> PHY_LP_TXLPDTESC_0_W<PHY_LP_LOOPBACK_CTRL_SPEC> {
         PHY_LP_TXLPDTESC_0_W::new(self, 26)
     }
     ///Bit 27 - basedir_0 ctrl when enable dsi phy lp_loopback_test
@@ -206,13 +219,17 @@ impl W {
     ///Bit 28 - dsi phy lp_loopback test start check
     #[inline(always)]
     #[must_use]
-    pub fn phy_lp_loopback_check(&mut self) -> PHY_LP_LOOPBACK_CHECK_W<PHY_LP_LOOPBACK_CTRL_SPEC> {
+    pub fn phy_lp_loopback_check(
+        &mut self,
+    ) -> PHY_LP_LOOPBACK_CHECK_W<PHY_LP_LOOPBACK_CTRL_SPEC> {
         PHY_LP_LOOPBACK_CHECK_W::new(self, 28)
     }
     ///Bit 30 - dsi phy lp_loopback ctrl en
     #[inline(always)]
     #[must_use]
-    pub fn phy_lp_loopback_en(&mut self) -> PHY_LP_LOOPBACK_EN_W<PHY_LP_LOOPBACK_CTRL_SPEC> {
+    pub fn phy_lp_loopback_en(
+        &mut self,
+    ) -> PHY_LP_LOOPBACK_EN_W<PHY_LP_LOOPBACK_CTRL_SPEC> {
         PHY_LP_LOOPBACK_EN_W::new(self, 30)
     }
 }

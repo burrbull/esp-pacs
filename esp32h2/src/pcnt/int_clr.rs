@@ -15,8 +15,7 @@ impl W {
     #[inline(always)]
     #[must_use]
     pub fn cnt_thr_event_u(&mut self, n: u8) -> CNT_THR_EVENT_U_W<INT_CLR_SPEC> {
-        #[allow(clippy::no_effect)]
-        [(); 4][n as usize];
+        #[allow(clippy::no_effect)] [(); 4][n as usize];
         CNT_THR_EVENT_U_W::new(self, n)
     }
     ///Bit 0 - Set this bit to clear the PCNT_CNT_THR_EVENT_U0_INT interrupt.

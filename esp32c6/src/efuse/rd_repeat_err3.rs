@@ -51,7 +51,9 @@ impl R {
     }
     ///Bit 4 - Indicates a programming error of DIS_USB_SERIAL_JTAG_DOWNLOAD_MODE.
     #[inline(always)]
-    pub fn dis_usb_serial_jtag_download_mode_err(&self) -> DIS_USB_SERIAL_JTAG_DOWNLOAD_MODE_ERR_R {
+    pub fn dis_usb_serial_jtag_download_mode_err(
+        &self,
+    ) -> DIS_USB_SERIAL_JTAG_DOWNLOAD_MODE_ERR_R {
         DIS_USB_SERIAL_JTAG_DOWNLOAD_MODE_ERR_R::new(((self.bits >> 4) & 1) != 0)
     }
     ///Bit 5 - Indicates a programming error of ENABLE_SECURITY_DOWNLOAD.
@@ -112,10 +114,7 @@ impl core::fmt::Debug for R {
                 "dis_usb_serial_jtag_download_mode_err",
                 &self.dis_usb_serial_jtag_download_mode_err(),
             )
-            .field(
-                "enable_security_download_err",
-                &self.enable_security_download_err(),
-            )
+            .field("enable_security_download_err", &self.enable_security_download_err())
             .field("uart_print_control_err", &self.uart_print_control_err())
             .field("rpt4_reserved3_err_4", &self.rpt4_reserved3_err_4())
             .field("rpt4_reserved3_err_3", &self.rpt4_reserved3_err_3())

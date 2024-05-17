@@ -73,7 +73,9 @@ impl W {
     ///Bits 24:30
     #[inline(always)]
     #[must_use]
-    pub fn txdma_fetch_byte_cnt(&mut self) -> TXDMA_FETCH_BYTE_CNT_W<TXDMA_CTRL_STATE_SPEC> {
+    pub fn txdma_fetch_byte_cnt(
+        &mut self,
+    ) -> TXDMA_FETCH_BYTE_CNT_W<TXDMA_CTRL_STATE_SPEC> {
         TXDMA_FETCH_BYTE_CNT_W::new(self, 24)
     }
 }

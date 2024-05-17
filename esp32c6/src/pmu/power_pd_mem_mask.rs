@@ -75,19 +75,25 @@ impl W {
     ///Bits 0:4 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn pd_hp_mem2_pd_mask(&mut self) -> PD_HP_MEM2_PD_MASK_W<POWER_PD_MEM_MASK_SPEC> {
+    pub fn pd_hp_mem2_pd_mask(
+        &mut self,
+    ) -> PD_HP_MEM2_PD_MASK_W<POWER_PD_MEM_MASK_SPEC> {
         PD_HP_MEM2_PD_MASK_W::new(self, 0)
     }
     ///Bits 5:9 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn pd_hp_mem1_pd_mask(&mut self) -> PD_HP_MEM1_PD_MASK_W<POWER_PD_MEM_MASK_SPEC> {
+    pub fn pd_hp_mem1_pd_mask(
+        &mut self,
+    ) -> PD_HP_MEM1_PD_MASK_W<POWER_PD_MEM_MASK_SPEC> {
         PD_HP_MEM1_PD_MASK_W::new(self, 5)
     }
     ///Bits 10:14 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn pd_hp_mem0_pd_mask(&mut self) -> PD_HP_MEM0_PD_MASK_W<POWER_PD_MEM_MASK_SPEC> {
+    pub fn pd_hp_mem0_pd_mask(
+        &mut self,
+    ) -> PD_HP_MEM0_PD_MASK_W<POWER_PD_MEM_MASK_SPEC> {
         PD_HP_MEM0_PD_MASK_W::new(self, 10)
     }
     ///Bits 17:21 - need_des

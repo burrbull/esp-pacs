@@ -149,7 +149,9 @@ impl W {
     ///Bit 8 - 1: ULP-coprocessor is started by SW 0: ULP-coprocessor is started by timer
     #[inline(always)]
     #[must_use]
-    pub fn ulp_cp_force_start_top(&mut self) -> ULP_CP_FORCE_START_TOP_W<SAR_START_FORCE_SPEC> {
+    pub fn ulp_cp_force_start_top(
+        &mut self,
+    ) -> ULP_CP_FORCE_START_TOP_W<SAR_START_FORCE_SPEC> {
         ULP_CP_FORCE_START_TOP_W::new(self, 8)
     }
     ///Bit 9 - Write 1 to start ULP-coprocessor only active when reg_ulp_cp_force_start_top = 1

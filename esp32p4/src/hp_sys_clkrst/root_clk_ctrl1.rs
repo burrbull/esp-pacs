@@ -61,13 +61,17 @@ impl W {
     ///Bits 8:15 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn mem_clk_div_numerator(&mut self) -> MEM_CLK_DIV_NUMERATOR_W<ROOT_CLK_CTRL1_SPEC> {
+    pub fn mem_clk_div_numerator(
+        &mut self,
+    ) -> MEM_CLK_DIV_NUMERATOR_W<ROOT_CLK_CTRL1_SPEC> {
         MEM_CLK_DIV_NUMERATOR_W::new(self, 8)
     }
     ///Bits 16:23 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn mem_clk_div_denominator(&mut self) -> MEM_CLK_DIV_DENOMINATOR_W<ROOT_CLK_CTRL1_SPEC> {
+    pub fn mem_clk_div_denominator(
+        &mut self,
+    ) -> MEM_CLK_DIV_DENOMINATOR_W<ROOT_CLK_CTRL1_SPEC> {
         MEM_CLK_DIV_DENOMINATOR_W::new(self, 16)
     }
     ///Bits 24:31 - Reserved

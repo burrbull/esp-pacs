@@ -7,35 +7,59 @@ pub type CLEAR_SLVIF_COMMONREG_WR2RO_ERR_INTSTAT_W<'a, REG> = crate::BitWriter<'
 ///Field `CLEAR_SLVIF_COMMONREG_RD2WO_ERR_INTSTAT` writer - NA
 pub type CLEAR_SLVIF_COMMONREG_RD2WO_ERR_INTSTAT_W<'a, REG> = crate::BitWriter<'a, REG>;
 ///Field `CLEAR_SLVIF_COMMONREG_WRONHOLD_ERR_INTSTAT` writer - NA
-pub type CLEAR_SLVIF_COMMONREG_WRONHOLD_ERR_INTSTAT_W<'a, REG> = crate::BitWriter<'a, REG>;
+pub type CLEAR_SLVIF_COMMONREG_WRONHOLD_ERR_INTSTAT_W<'a, REG> = crate::BitWriter<
+    'a,
+    REG,
+>;
 ///Field `CLEAR_SLVIF_COMMONREG_WRPARITY_ERR_INTSTAT` writer - NA
-pub type CLEAR_SLVIF_COMMONREG_WRPARITY_ERR_INTSTAT_W<'a, REG> = crate::BitWriter<'a, REG>;
+pub type CLEAR_SLVIF_COMMONREG_WRPARITY_ERR_INTSTAT_W<'a, REG> = crate::BitWriter<
+    'a,
+    REG,
+>;
 ///Field `CLEAR_SLVIF_UNDEFINEDREG_DEC_ERR_INTSTAT` writer - NA
 pub type CLEAR_SLVIF_UNDEFINEDREG_DEC_ERR_INTSTAT_W<'a, REG> = crate::BitWriter<'a, REG>;
 ///Field `CLEAR_MXIF1_RCH0_ECCPROT_CORRERR_INTSTAT` writer - NA
 pub type CLEAR_MXIF1_RCH0_ECCPROT_CORRERR_INTSTAT_W<'a, REG> = crate::BitWriter<'a, REG>;
 ///Field `CLEAR_MXIF1_RCH0_ECCPROT_UNCORRERR_INTSTAT` writer - NA
-pub type CLEAR_MXIF1_RCH0_ECCPROT_UNCORRERR_INTSTAT_W<'a, REG> = crate::BitWriter<'a, REG>;
+pub type CLEAR_MXIF1_RCH0_ECCPROT_UNCORRERR_INTSTAT_W<'a, REG> = crate::BitWriter<
+    'a,
+    REG,
+>;
 ///Field `CLEAR_MXIF1_RCH1_ECCPROT_CORRERR_INTSTAT` writer - NA
 pub type CLEAR_MXIF1_RCH1_ECCPROT_CORRERR_INTSTAT_W<'a, REG> = crate::BitWriter<'a, REG>;
 ///Field `CLEAR_MXIF1_RCH1_ECCPROT_UNCORRERR_INTSTAT` writer - NA
-pub type CLEAR_MXIF1_RCH1_ECCPROT_UNCORRERR_INTSTAT_W<'a, REG> = crate::BitWriter<'a, REG>;
+pub type CLEAR_MXIF1_RCH1_ECCPROT_UNCORRERR_INTSTAT_W<'a, REG> = crate::BitWriter<
+    'a,
+    REG,
+>;
 ///Field `CLEAR_MXIF1_BCH_ECCPROT_CORRERR_INTSTAT` writer - NA
 pub type CLEAR_MXIF1_BCH_ECCPROT_CORRERR_INTSTAT_W<'a, REG> = crate::BitWriter<'a, REG>;
 ///Field `CLEAR_MXIF1_BCH_ECCPROT_UNCORRERR_INTSTAT` writer - NA
-pub type CLEAR_MXIF1_BCH_ECCPROT_UNCORRERR_INTSTAT_W<'a, REG> = crate::BitWriter<'a, REG>;
+pub type CLEAR_MXIF1_BCH_ECCPROT_UNCORRERR_INTSTAT_W<'a, REG> = crate::BitWriter<
+    'a,
+    REG,
+>;
 ///Field `CLEAR_MXIF2_RCH0_ECCPROT_CORRERR_INTSTAT` writer - NA
 pub type CLEAR_MXIF2_RCH0_ECCPROT_CORRERR_INTSTAT_W<'a, REG> = crate::BitWriter<'a, REG>;
 ///Field `CLEAR_MXIF2_RCH0_ECCPROT_UNCORRERR_INTSTAT` writer - NA
-pub type CLEAR_MXIF2_RCH0_ECCPROT_UNCORRERR_INTSTAT_W<'a, REG> = crate::BitWriter<'a, REG>;
+pub type CLEAR_MXIF2_RCH0_ECCPROT_UNCORRERR_INTSTAT_W<'a, REG> = crate::BitWriter<
+    'a,
+    REG,
+>;
 ///Field `CLEAR_MXIF2_RCH1_ECCPROT_CORRERR_INTSTAT` writer - NA
 pub type CLEAR_MXIF2_RCH1_ECCPROT_CORRERR_INTSTAT_W<'a, REG> = crate::BitWriter<'a, REG>;
 ///Field `CLEAR_MXIF2_RCH1_ECCPROT_UNCORRERR_INTSTAT` writer - NA
-pub type CLEAR_MXIF2_RCH1_ECCPROT_UNCORRERR_INTSTAT_W<'a, REG> = crate::BitWriter<'a, REG>;
+pub type CLEAR_MXIF2_RCH1_ECCPROT_UNCORRERR_INTSTAT_W<'a, REG> = crate::BitWriter<
+    'a,
+    REG,
+>;
 ///Field `CLEAR_MXIF2_BCH_ECCPROT_CORRERR_INTSTAT` writer - NA
 pub type CLEAR_MXIF2_BCH_ECCPROT_CORRERR_INTSTAT_W<'a, REG> = crate::BitWriter<'a, REG>;
 ///Field `CLEAR_MXIF2_BCH_ECCPROT_UNCORRERR_INTSTAT` writer - NA
-pub type CLEAR_MXIF2_BCH_ECCPROT_UNCORRERR_INTSTAT_W<'a, REG> = crate::BitWriter<'a, REG>;
+pub type CLEAR_MXIF2_BCH_ECCPROT_UNCORRERR_INTSTAT_W<'a, REG> = crate::BitWriter<
+    'a,
+    REG,
+>;
 #[cfg(feature = "impl-register-debug")]
 impl core::fmt::Debug for crate::generic::Reg<COMMONREG_INTCLEAR0_SPEC> {
     fn fmt(&self, f: &mut core::fmt::Formatter<'_>) -> core::fmt::Result {

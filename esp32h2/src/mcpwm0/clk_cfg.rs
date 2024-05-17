@@ -16,9 +16,7 @@ impl R {
 #[cfg(feature = "impl-register-debug")]
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("CLK_CFG")
-            .field("clk_prescale", &self.clk_prescale())
-            .finish()
+        f.debug_struct("CLK_CFG").field("clk_prescale", &self.clk_prescale()).finish()
     }
 }
 impl W {

@@ -44,10 +44,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("LP_AONCLKRST_HP_SDMMC_EMAC_RST_CTRL")
-            .field(
-                "lp_aonclkrst_rst_en_sdmmc",
-                &self.lp_aonclkrst_rst_en_sdmmc(),
-            )
+            .field("lp_aonclkrst_rst_en_sdmmc", &self.lp_aonclkrst_rst_en_sdmmc())
             .field(
                 "lp_aonclkrst_force_norst_sdmmc",
                 &self.lp_aonclkrst_force_norst_sdmmc(),

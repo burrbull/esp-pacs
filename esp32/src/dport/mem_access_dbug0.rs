@@ -77,10 +77,7 @@ impl core::fmt::Debug for R {
             .field("share_rom_ia", &self.share_rom_ia())
             .field("internal_sram_mmu_ad", &self.internal_sram_mmu_ad())
             .field("internal_sram_ia", &self.internal_sram_ia())
-            .field(
-                "internal_sram_mmu_multi_hit",
-                &self.internal_sram_mmu_multi_hit(),
-            )
+            .field("internal_sram_mmu_multi_hit", &self.internal_sram_mmu_multi_hit())
             .finish()
     }
 }

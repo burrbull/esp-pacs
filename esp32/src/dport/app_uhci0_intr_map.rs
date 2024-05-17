@@ -25,7 +25,9 @@ impl W {
     ///Bits 0:4
     #[inline(always)]
     #[must_use]
-    pub fn app_uhci0_intr_map(&mut self) -> APP_UHCI0_INTR_MAP_W<APP_UHCI0_INTR_MAP_SPEC> {
+    pub fn app_uhci0_intr_map(
+        &mut self,
+    ) -> APP_UHCI0_INTR_MAP_W<APP_UHCI0_INTR_MAP_SPEC> {
         APP_UHCI0_INTR_MAP_W::new(self, 0)
     }
 }

@@ -12,9 +12,7 @@ impl R {
 #[cfg(feature = "impl-register-debug")]
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("RESPONSE_BUF_PORT")
-            .field("response", &self.response())
-            .finish()
+        f.debug_struct("RESPONSE_BUF_PORT").field("response", &self.response()).finish()
     }
 }
 /**NA

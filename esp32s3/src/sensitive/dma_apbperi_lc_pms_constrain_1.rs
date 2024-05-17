@@ -5,29 +5,51 @@ pub type W = crate::W<DMA_APBPERI_LC_PMS_CONSTRAIN_1_SPEC>;
 ///Field `DMA_APBPERI_LC_PMS_CONSTRAIN_SRAM_PMS_0` reader - lc's permission(store,load) in data region0 of SRAM
 pub type DMA_APBPERI_LC_PMS_CONSTRAIN_SRAM_PMS_0_R = crate::FieldReader;
 ///Field `DMA_APBPERI_LC_PMS_CONSTRAIN_SRAM_PMS_0` writer - lc's permission(store,load) in data region0 of SRAM
-pub type DMA_APBPERI_LC_PMS_CONSTRAIN_SRAM_PMS_0_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
+pub type DMA_APBPERI_LC_PMS_CONSTRAIN_SRAM_PMS_0_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 ///Field `DMA_APBPERI_LC_PMS_CONSTRAIN_SRAM_PMS_1` reader - lc's permission(store,load) in data region1 of SRAM
 pub type DMA_APBPERI_LC_PMS_CONSTRAIN_SRAM_PMS_1_R = crate::FieldReader;
 ///Field `DMA_APBPERI_LC_PMS_CONSTRAIN_SRAM_PMS_1` writer - lc's permission(store,load) in data region1 of SRAM
-pub type DMA_APBPERI_LC_PMS_CONSTRAIN_SRAM_PMS_1_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
+pub type DMA_APBPERI_LC_PMS_CONSTRAIN_SRAM_PMS_1_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 ///Field `DMA_APBPERI_LC_PMS_CONSTRAIN_SRAM_PMS_2` reader - lc's permission(store,load) in data region2 of SRAM
 pub type DMA_APBPERI_LC_PMS_CONSTRAIN_SRAM_PMS_2_R = crate::FieldReader;
 ///Field `DMA_APBPERI_LC_PMS_CONSTRAIN_SRAM_PMS_2` writer - lc's permission(store,load) in data region2 of SRAM
-pub type DMA_APBPERI_LC_PMS_CONSTRAIN_SRAM_PMS_2_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
+pub type DMA_APBPERI_LC_PMS_CONSTRAIN_SRAM_PMS_2_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 ///Field `DMA_APBPERI_LC_PMS_CONSTRAIN_SRAM_PMS_3` reader - lc's permission(store,load) in data region3 of SRAM
 pub type DMA_APBPERI_LC_PMS_CONSTRAIN_SRAM_PMS_3_R = crate::FieldReader;
 ///Field `DMA_APBPERI_LC_PMS_CONSTRAIN_SRAM_PMS_3` writer - lc's permission(store,load) in data region3 of SRAM
-pub type DMA_APBPERI_LC_PMS_CONSTRAIN_SRAM_PMS_3_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
+pub type DMA_APBPERI_LC_PMS_CONSTRAIN_SRAM_PMS_3_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 ///Field `DMA_APBPERI_LC_PMS_CONSTRAIN_SRAM_CACHEDATAARRAY_PMS_0` reader - lc's permission(store,load) in dcache data sram block0
 pub type DMA_APBPERI_LC_PMS_CONSTRAIN_SRAM_CACHEDATAARRAY_PMS_0_R = crate::FieldReader;
 ///Field `DMA_APBPERI_LC_PMS_CONSTRAIN_SRAM_CACHEDATAARRAY_PMS_0` writer - lc's permission(store,load) in dcache data sram block0
-pub type DMA_APBPERI_LC_PMS_CONSTRAIN_SRAM_CACHEDATAARRAY_PMS_0_W<'a, REG> =
-    crate::FieldWriter<'a, REG, 2>;
+pub type DMA_APBPERI_LC_PMS_CONSTRAIN_SRAM_CACHEDATAARRAY_PMS_0_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 ///Field `DMA_APBPERI_LC_PMS_CONSTRAIN_SRAM_CACHEDATAARRAY_PMS_1` reader - lc's permission(store,load) in dcache data sram block1
 pub type DMA_APBPERI_LC_PMS_CONSTRAIN_SRAM_CACHEDATAARRAY_PMS_1_R = crate::FieldReader;
 ///Field `DMA_APBPERI_LC_PMS_CONSTRAIN_SRAM_CACHEDATAARRAY_PMS_1` writer - lc's permission(store,load) in dcache data sram block1
-pub type DMA_APBPERI_LC_PMS_CONSTRAIN_SRAM_CACHEDATAARRAY_PMS_1_W<'a, REG> =
-    crate::FieldWriter<'a, REG, 2>;
+pub type DMA_APBPERI_LC_PMS_CONSTRAIN_SRAM_CACHEDATAARRAY_PMS_1_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 impl R {
     ///Bits 0:1 - lc's permission(store,load) in data region0 of SRAM
     #[inline(always)]
@@ -62,14 +84,18 @@ impl R {
     pub fn dma_apbperi_lc_pms_constrain_sram_cachedataarray_pms_0(
         &self,
     ) -> DMA_APBPERI_LC_PMS_CONSTRAIN_SRAM_CACHEDATAARRAY_PMS_0_R {
-        DMA_APBPERI_LC_PMS_CONSTRAIN_SRAM_CACHEDATAARRAY_PMS_0_R::new(((self.bits >> 8) & 3) as u8)
+        DMA_APBPERI_LC_PMS_CONSTRAIN_SRAM_CACHEDATAARRAY_PMS_0_R::new(
+            ((self.bits >> 8) & 3) as u8,
+        )
     }
     ///Bits 10:11 - lc's permission(store,load) in dcache data sram block1
     #[inline(always)]
     pub fn dma_apbperi_lc_pms_constrain_sram_cachedataarray_pms_1(
         &self,
     ) -> DMA_APBPERI_LC_PMS_CONSTRAIN_SRAM_CACHEDATAARRAY_PMS_1_R {
-        DMA_APBPERI_LC_PMS_CONSTRAIN_SRAM_CACHEDATAARRAY_PMS_1_R::new(((self.bits >> 10) & 3) as u8)
+        DMA_APBPERI_LC_PMS_CONSTRAIN_SRAM_CACHEDATAARRAY_PMS_1_R::new(
+            ((self.bits >> 10) & 3) as u8,
+        )
     }
 }
 #[cfg(feature = "impl-register-debug")]
@@ -141,8 +167,9 @@ impl W {
     #[must_use]
     pub fn dma_apbperi_lc_pms_constrain_sram_cachedataarray_pms_0(
         &mut self,
-    ) -> DMA_APBPERI_LC_PMS_CONSTRAIN_SRAM_CACHEDATAARRAY_PMS_0_W<DMA_APBPERI_LC_PMS_CONSTRAIN_1_SPEC>
-    {
+    ) -> DMA_APBPERI_LC_PMS_CONSTRAIN_SRAM_CACHEDATAARRAY_PMS_0_W<
+        DMA_APBPERI_LC_PMS_CONSTRAIN_1_SPEC,
+    > {
         DMA_APBPERI_LC_PMS_CONSTRAIN_SRAM_CACHEDATAARRAY_PMS_0_W::new(self, 8)
     }
     ///Bits 10:11 - lc's permission(store,load) in dcache data sram block1
@@ -150,8 +177,9 @@ impl W {
     #[must_use]
     pub fn dma_apbperi_lc_pms_constrain_sram_cachedataarray_pms_1(
         &mut self,
-    ) -> DMA_APBPERI_LC_PMS_CONSTRAIN_SRAM_CACHEDATAARRAY_PMS_1_W<DMA_APBPERI_LC_PMS_CONSTRAIN_1_SPEC>
-    {
+    ) -> DMA_APBPERI_LC_PMS_CONSTRAIN_SRAM_CACHEDATAARRAY_PMS_1_W<
+        DMA_APBPERI_LC_PMS_CONSTRAIN_1_SPEC,
+    > {
         DMA_APBPERI_LC_PMS_CONSTRAIN_SRAM_CACHEDATAARRAY_PMS_1_W::new(self, 10)
     }
 }

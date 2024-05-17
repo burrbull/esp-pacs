@@ -35,13 +35,17 @@ impl W {
     ///Bit 6 - reg_clk_en_assist_debug
     #[inline(always)]
     #[must_use]
-    pub fn clk_en_assist_debug(&mut self) -> CLK_EN_ASSIST_DEBUG_W<CPU_PERI_CLK_EN_SPEC> {
+    pub fn clk_en_assist_debug(
+        &mut self,
+    ) -> CLK_EN_ASSIST_DEBUG_W<CPU_PERI_CLK_EN_SPEC> {
         CLK_EN_ASSIST_DEBUG_W::new(self, 6)
     }
     ///Bit 7 - reg_clk_en_dedicated_gpio
     #[inline(always)]
     #[must_use]
-    pub fn clk_en_dedicated_gpio(&mut self) -> CLK_EN_DEDICATED_GPIO_W<CPU_PERI_CLK_EN_SPEC> {
+    pub fn clk_en_dedicated_gpio(
+        &mut self,
+    ) -> CLK_EN_DEDICATED_GPIO_W<CPU_PERI_CLK_EN_SPEC> {
         CLK_EN_DEDICATED_GPIO_W::new(self, 7)
     }
 }

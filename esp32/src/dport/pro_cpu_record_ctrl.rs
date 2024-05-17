@@ -45,19 +45,25 @@ impl W {
     ///Bit 0
     #[inline(always)]
     #[must_use]
-    pub fn pro_cpu_record_enable(&mut self) -> PRO_CPU_RECORD_ENABLE_W<PRO_CPU_RECORD_CTRL_SPEC> {
+    pub fn pro_cpu_record_enable(
+        &mut self,
+    ) -> PRO_CPU_RECORD_ENABLE_W<PRO_CPU_RECORD_CTRL_SPEC> {
         PRO_CPU_RECORD_ENABLE_W::new(self, 0)
     }
     ///Bit 4
     #[inline(always)]
     #[must_use]
-    pub fn pro_cpu_record_disable(&mut self) -> PRO_CPU_RECORD_DISABLE_W<PRO_CPU_RECORD_CTRL_SPEC> {
+    pub fn pro_cpu_record_disable(
+        &mut self,
+    ) -> PRO_CPU_RECORD_DISABLE_W<PRO_CPU_RECORD_CTRL_SPEC> {
         PRO_CPU_RECORD_DISABLE_W::new(self, 4)
     }
     ///Bit 8
     #[inline(always)]
     #[must_use]
-    pub fn pro_cpu_pdebug_enable(&mut self) -> PRO_CPU_PDEBUG_ENABLE_W<PRO_CPU_RECORD_CTRL_SPEC> {
+    pub fn pro_cpu_pdebug_enable(
+        &mut self,
+    ) -> PRO_CPU_PDEBUG_ENABLE_W<PRO_CPU_RECORD_CTRL_SPEC> {
         PRO_CPU_PDEBUG_ENABLE_W::new(self, 8)
     }
 }

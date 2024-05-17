@@ -35,10 +35,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CACHE_ENCRYPT_DECRYPT_CLK_FORCE_ON")
-            .field(
-                "clk_force_on_manual_crypt",
-                &self.clk_force_on_manual_crypt(),
-            )
+            .field("clk_force_on_manual_crypt", &self.clk_force_on_manual_crypt())
             .field("clk_force_on_auto_crypt", &self.clk_force_on_auto_crypt())
             .field("clk_force_on_crypt", &self.clk_force_on_crypt())
             .finish()

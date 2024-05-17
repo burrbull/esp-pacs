@@ -620,8 +620,9 @@ pub mod lp_int_clr;
 You can [`read`](crate::generic::Reg::read) this register and get [`touch_approach_work_meas_num::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`touch_approach_work_meas_num::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@touch_approach_work_meas_num`] module*/
-pub type TOUCH_APPROACH_WORK_MEAS_NUM =
-    crate::Reg<touch_approach_work_meas_num::TOUCH_APPROACH_WORK_MEAS_NUM_SPEC>;
+pub type TOUCH_APPROACH_WORK_MEAS_NUM = crate::Reg<
+    touch_approach_work_meas_num::TOUCH_APPROACH_WORK_MEAS_NUM_SPEC,
+>;
 ///need_des
 pub mod touch_approach_work_meas_num;
 /**TOUCH_SCAN_CTRL1 (rw) register accessor: need_des
@@ -717,7 +718,9 @@ pub mod touch_approach;
 You can [`read`](crate::generic::Reg::read) this register and get [`touch_freq0_scan_para::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`touch_freq0_scan_para::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@touch_freq0_scan_para`] module*/
-pub type TOUCH_FREQ0_SCAN_PARA = crate::Reg<touch_freq0_scan_para::TOUCH_FREQ0_SCAN_PARA_SPEC>;
+pub type TOUCH_FREQ0_SCAN_PARA = crate::Reg<
+    touch_freq0_scan_para::TOUCH_FREQ0_SCAN_PARA_SPEC,
+>;
 ///need_des
 pub mod touch_freq0_scan_para;
 /**TOUCH_FREQ1_SCAN_PARA (rw) register accessor: need_des
@@ -725,7 +728,9 @@ pub mod touch_freq0_scan_para;
 You can [`read`](crate::generic::Reg::read) this register and get [`touch_freq1_scan_para::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`touch_freq1_scan_para::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@touch_freq1_scan_para`] module*/
-pub type TOUCH_FREQ1_SCAN_PARA = crate::Reg<touch_freq1_scan_para::TOUCH_FREQ1_SCAN_PARA_SPEC>;
+pub type TOUCH_FREQ1_SCAN_PARA = crate::Reg<
+    touch_freq1_scan_para::TOUCH_FREQ1_SCAN_PARA_SPEC,
+>;
 ///need_des
 pub mod touch_freq1_scan_para;
 /**TOUCH_FREQ2_SCAN_PARA (rw) register accessor: need_des
@@ -733,7 +738,9 @@ pub mod touch_freq1_scan_para;
 You can [`read`](crate::generic::Reg::read) this register and get [`touch_freq2_scan_para::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`touch_freq2_scan_para::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@touch_freq2_scan_para`] module*/
-pub type TOUCH_FREQ2_SCAN_PARA = crate::Reg<touch_freq2_scan_para::TOUCH_FREQ2_SCAN_PARA_SPEC>;
+pub type TOUCH_FREQ2_SCAN_PARA = crate::Reg<
+    touch_freq2_scan_para::TOUCH_FREQ2_SCAN_PARA_SPEC,
+>;
 ///need_des
 pub mod touch_freq2_scan_para;
 /**TOUCH_ANA_PARA (rw) register accessor: need_des

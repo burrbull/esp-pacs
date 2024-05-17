@@ -83,15 +83,9 @@ impl core::fmt::Debug for R {
                 "st_status_int_crc_frame_fatal",
                 &self.st_status_int_crc_frame_fatal(),
             )
-            .field(
-                "st_status_int_pld_crc_fatal",
-                &self.st_status_int_pld_crc_fatal(),
-            )
+            .field("st_status_int_pld_crc_fatal", &self.st_status_int_pld_crc_fatal())
             .field("st_status_int_data_id", &self.st_status_int_data_id())
-            .field(
-                "st_status_int_ecc_corrected",
-                &self.st_status_int_ecc_corrected(),
-            )
+            .field("st_status_int_ecc_corrected", &self.st_status_int_ecc_corrected())
             .field("st_status_int_phy", &self.st_status_int_phy())
             .finish()
     }

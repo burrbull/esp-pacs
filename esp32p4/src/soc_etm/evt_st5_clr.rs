@@ -74,7 +74,9 @@ impl W {
     ///Bit 0 - Configures whether or not to clear ULP_evt_err_intr trigger status.\\0: Invalid, No effect\\1: Clear
     #[inline(always)]
     #[must_use]
-    pub fn ulp_evt_err_intr_st_clr(&mut self) -> ULP_EVT_ERR_INTR_ST_CLR_W<EVT_ST5_CLR_SPEC> {
+    pub fn ulp_evt_err_intr_st_clr(
+        &mut self,
+    ) -> ULP_EVT_ERR_INTR_ST_CLR_W<EVT_ST5_CLR_SPEC> {
         ULP_EVT_ERR_INTR_ST_CLR_W::new(self, 0)
     }
     ///Bit 1 - Configures whether or not to clear ULP_evt_halt trigger status.\\0: Invalid, No effect\\1: Clear
@@ -86,7 +88,9 @@ impl W {
     ///Bit 2 - Configures whether or not to clear ULP_evt_start_intr trigger status.\\0: Invalid, No effect\\1: Clear
     #[inline(always)]
     #[must_use]
-    pub fn ulp_evt_start_intr_st_clr(&mut self) -> ULP_EVT_START_INTR_ST_CLR_W<EVT_ST5_CLR_SPEC> {
+    pub fn ulp_evt_start_intr_st_clr(
+        &mut self,
+    ) -> ULP_EVT_START_INTR_ST_CLR_W<EVT_ST5_CLR_SPEC> {
         ULP_EVT_START_INTR_ST_CLR_W::new(self, 2)
     }
     ///Bit 3 - Configures whether or not to clear RTC_evt_tick trigger status.\\0: Invalid, No effect\\1: Clear

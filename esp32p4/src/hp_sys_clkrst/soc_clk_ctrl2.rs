@@ -341,7 +341,9 @@ impl W {
     ///Bit 1 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn hp_clkrst_apb_clk_en(&mut self) -> HP_CLKRST_APB_CLK_EN_W<SOC_CLK_CTRL2_SPEC> {
+    pub fn hp_clkrst_apb_clk_en(
+        &mut self,
+    ) -> HP_CLKRST_APB_CLK_EN_W<SOC_CLK_CTRL2_SPEC> {
         HP_CLKRST_APB_CLK_EN_W::new(self, 1)
     }
     ///Bit 2 - Reserved
@@ -461,13 +463,17 @@ impl W {
     ///Bit 21 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn timergrp0_apb_clk_en(&mut self) -> TIMERGRP0_APB_CLK_EN_W<SOC_CLK_CTRL2_SPEC> {
+    pub fn timergrp0_apb_clk_en(
+        &mut self,
+    ) -> TIMERGRP0_APB_CLK_EN_W<SOC_CLK_CTRL2_SPEC> {
         TIMERGRP0_APB_CLK_EN_W::new(self, 21)
     }
     ///Bit 22 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn timergrp1_apb_clk_en(&mut self) -> TIMERGRP1_APB_CLK_EN_W<SOC_CLK_CTRL2_SPEC> {
+    pub fn timergrp1_apb_clk_en(
+        &mut self,
+    ) -> TIMERGRP1_APB_CLK_EN_W<SOC_CLK_CTRL2_SPEC> {
         TIMERGRP1_APB_CLK_EN_W::new(self, 22)
     }
     ///Bit 23 - Reserved
@@ -509,7 +515,9 @@ impl W {
     ///Bit 29 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn usb_device_apb_clk_en(&mut self) -> USB_DEVICE_APB_CLK_EN_W<SOC_CLK_CTRL2_SPEC> {
+    pub fn usb_device_apb_clk_en(
+        &mut self,
+    ) -> USB_DEVICE_APB_CLK_EN_W<SOC_CLK_CTRL2_SPEC> {
         USB_DEVICE_APB_CLK_EN_W::new(self, 29)
     }
     ///Bit 30 - Reserved

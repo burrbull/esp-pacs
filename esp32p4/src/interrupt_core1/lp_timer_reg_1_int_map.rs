@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("LP_TIMER_REG_1_INT_MAP")
-            .field(
-                "core1_lp_timer_reg_1_int_map",
-                &self.core1_lp_timer_reg_1_int_map(),
-            )
+            .field("core1_lp_timer_reg_1_int_map", &self.core1_lp_timer_reg_1_int_map())
             .finish()
     }
 }

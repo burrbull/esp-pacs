@@ -55,19 +55,25 @@ impl W {
     ///Bits 0:1 - intoe on dat1 end ahead of time: 0/3-no, 1-ahead 1sdclk, 2-ahead 2sdclk
     #[inline(always)]
     #[must_use]
-    pub fn intoe_end_ahead_mode(&mut self) -> INTOE_END_AHEAD_MODE_W<CFG_UHS1_INT_MODE_SPEC> {
+    pub fn intoe_end_ahead_mode(
+        &mut self,
+    ) -> INTOE_END_AHEAD_MODE_W<CFG_UHS1_INT_MODE_SPEC> {
         INTOE_END_AHEAD_MODE_W::new(self, 0)
     }
     ///Bits 2:3 - int on dat1 end ahead of time: 0/3-no, 1-ahead 1sdclk, 2-ahead 2sdclk
     #[inline(always)]
     #[must_use]
-    pub fn int_end_ahead_mode(&mut self) -> INT_END_AHEAD_MODE_W<CFG_UHS1_INT_MODE_SPEC> {
+    pub fn int_end_ahead_mode(
+        &mut self,
+    ) -> INT_END_AHEAD_MODE_W<CFG_UHS1_INT_MODE_SPEC> {
         INT_END_AHEAD_MODE_W::new(self, 2)
     }
     ///Bits 4:5 - intoe on dat1 start ahead of time: 0/3-no, 1-ahead 1sdclk, 2-ahead 2sdclk
     #[inline(always)]
     #[must_use]
-    pub fn intoe_st_ahead_mode(&mut self) -> INTOE_ST_AHEAD_MODE_W<CFG_UHS1_INT_MODE_SPEC> {
+    pub fn intoe_st_ahead_mode(
+        &mut self,
+    ) -> INTOE_ST_AHEAD_MODE_W<CFG_UHS1_INT_MODE_SPEC> {
         INTOE_ST_AHEAD_MODE_W::new(self, 4)
     }
     ///Bits 6:7 - int on dat1 start ahead of time: 0/3-no, 1-ahead 1sdclk, 2-ahead 2sdclk

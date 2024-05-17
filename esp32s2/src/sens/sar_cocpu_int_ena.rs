@@ -90,14 +90,8 @@ impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SAR_COCPU_INT_ENA")
             .field("cocpu_touch_done_int_ena", &self.cocpu_touch_done_int_ena())
-            .field(
-                "cocpu_touch_inactive_int_ena",
-                &self.cocpu_touch_inactive_int_ena(),
-            )
-            .field(
-                "cocpu_touch_active_int_ena",
-                &self.cocpu_touch_active_int_ena(),
-            )
+            .field("cocpu_touch_inactive_int_ena", &self.cocpu_touch_inactive_int_ena())
+            .field("cocpu_touch_active_int_ena", &self.cocpu_touch_active_int_ena())
             .field("cocpu_saradc1_int_ena", &self.cocpu_saradc1_int_ena())
             .field("cocpu_saradc2_int_ena", &self.cocpu_saradc2_int_ena())
             .field("cocpu_tsens_int_ena", &self.cocpu_tsens_int_ena())
@@ -135,25 +129,33 @@ impl W {
     ///Bit 3 - SARADC1_DONE_INT interrupt enable bit
     #[inline(always)]
     #[must_use]
-    pub fn cocpu_saradc1_int_ena(&mut self) -> COCPU_SARADC1_INT_ENA_W<SAR_COCPU_INT_ENA_SPEC> {
+    pub fn cocpu_saradc1_int_ena(
+        &mut self,
+    ) -> COCPU_SARADC1_INT_ENA_W<SAR_COCPU_INT_ENA_SPEC> {
         COCPU_SARADC1_INT_ENA_W::new(self, 3)
     }
     ///Bit 4 - SARADC2_DONE_INT interrupt enable bit
     #[inline(always)]
     #[must_use]
-    pub fn cocpu_saradc2_int_ena(&mut self) -> COCPU_SARADC2_INT_ENA_W<SAR_COCPU_INT_ENA_SPEC> {
+    pub fn cocpu_saradc2_int_ena(
+        &mut self,
+    ) -> COCPU_SARADC2_INT_ENA_W<SAR_COCPU_INT_ENA_SPEC> {
         COCPU_SARADC2_INT_ENA_W::new(self, 4)
     }
     ///Bit 5 - TSENS_DONE_INT interrupt enable bit
     #[inline(always)]
     #[must_use]
-    pub fn cocpu_tsens_int_ena(&mut self) -> COCPU_TSENS_INT_ENA_W<SAR_COCPU_INT_ENA_SPEC> {
+    pub fn cocpu_tsens_int_ena(
+        &mut self,
+    ) -> COCPU_TSENS_INT_ENA_W<SAR_COCPU_INT_ENA_SPEC> {
         COCPU_TSENS_INT_ENA_W::new(self, 5)
     }
     ///Bit 6 - RISCV_START_INT interrupt enable bit
     #[inline(always)]
     #[must_use]
-    pub fn cocpu_start_int_ena(&mut self) -> COCPU_START_INT_ENA_W<SAR_COCPU_INT_ENA_SPEC> {
+    pub fn cocpu_start_int_ena(
+        &mut self,
+    ) -> COCPU_START_INT_ENA_W<SAR_COCPU_INT_ENA_SPEC> {
         COCPU_START_INT_ENA_W::new(self, 6)
     }
     ///Bit 7 - SW_INT interrupt enable bit

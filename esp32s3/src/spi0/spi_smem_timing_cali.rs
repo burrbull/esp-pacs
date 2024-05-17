@@ -56,7 +56,9 @@ impl W {
     ///Bit 1 - Set this bit to add extra SPI_CLK cycles in DUMMY phase for all reading operations.
     #[inline(always)]
     #[must_use]
-    pub fn spi_smem_timing_cali(&mut self) -> SPI_SMEM_TIMING_CALI_W<SPI_SMEM_TIMING_CALI_SPEC> {
+    pub fn spi_smem_timing_cali(
+        &mut self,
+    ) -> SPI_SMEM_TIMING_CALI_W<SPI_SMEM_TIMING_CALI_SPEC> {
         SPI_SMEM_TIMING_CALI_W::new(self, 1)
     }
     ///Bits 2:4 - Extra SPI_CLK cycles added in DUMMY phase for timing compensation, when SPI0 accesses to Ext_RAM. Active when SPI_SMEM_TIMING_CALI bit is set.

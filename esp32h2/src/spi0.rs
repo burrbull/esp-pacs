@@ -845,7 +845,9 @@ pub mod dout_mode;
 You can [`read`](crate::generic::Reg::read) this register and get [`spi_smem_timing_cali::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@spi_smem_timing_cali`] module*/
-pub type SPI_SMEM_TIMING_CALI = crate::Reg<spi_smem_timing_cali::SPI_SMEM_TIMING_CALI_SPEC>;
+pub type SPI_SMEM_TIMING_CALI = crate::Reg<
+    spi_smem_timing_cali::SPI_SMEM_TIMING_CALI_SPEC,
+>;
 ///MSPI external RAM timing calibration register
 pub mod spi_smem_timing_cali;
 /**SPI_SMEM_DIN_MODE (r) register accessor: MSPI external RAM input timing delay mode control register
@@ -917,7 +919,9 @@ pub mod xts_destination;
 You can [`read`](crate::generic::Reg::read) this register and get [`xts_physical_address::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`xts_physical_address::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@xts_physical_address`] module*/
-pub type XTS_PHYSICAL_ADDRESS = crate::Reg<xts_physical_address::XTS_PHYSICAL_ADDRESS_SPEC>;
+pub type XTS_PHYSICAL_ADDRESS = crate::Reg<
+    xts_physical_address::XTS_PHYSICAL_ADDRESS_SPEC,
+>;
 ///Manual Encryption physical address register
 pub mod xts_physical_address;
 /**XTS_TRIGGER (w) register accessor: Manual Encryption physical address register
@@ -997,7 +1001,9 @@ pub mod dpa_ctrl;
 You can [`read`](crate::generic::Reg::read) this register and get [`registerrnd_eco_high::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@registerrnd_eco_high`] module*/
-pub type REGISTERRND_ECO_HIGH = crate::Reg<registerrnd_eco_high::REGISTERRND_ECO_HIGH_SPEC>;
+pub type REGISTERRND_ECO_HIGH = crate::Reg<
+    registerrnd_eco_high::REGISTERRND_ECO_HIGH_SPEC,
+>;
 ///MSPI ECO high register
 pub mod registerrnd_eco_high;
 /**REGISTERRND_ECO_LOW (r) register accessor: MSPI ECO low register

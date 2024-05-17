@@ -25,7 +25,9 @@ impl W {
     ///Bits 0:15
     #[inline(always)]
     #[must_use]
-    pub fn clk_count_match_val(&mut self) -> CLK_COUNT_MATCH_VAL_W<CLK_COUNTER_MATCH_VAL_SPEC> {
+    pub fn clk_count_match_val(
+        &mut self,
+    ) -> CLK_COUNT_MATCH_VAL_W<CLK_COUNTER_MATCH_VAL_SPEC> {
         CLK_COUNT_MATCH_VAL_W::new(self, 0)
     }
 }

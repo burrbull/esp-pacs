@@ -97,10 +97,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("RD_REPEAT_ERR1")
-            .field(
-                "km_huk_gen_state_high_err",
-                &self.km_huk_gen_state_high_err(),
-            )
+            .field("km_huk_gen_state_high_err", &self.km_huk_gen_state_high_err())
             .field("km_rnd_switch_cycle_err", &self.km_rnd_switch_cycle_err())
             .field("km_deploy_only_once_err", &self.km_deploy_only_once_err())
             .field(
@@ -114,18 +111,9 @@ impl core::fmt::Debug for R {
             .field("xts_key_length_256_err", &self.xts_key_length_256_err())
             .field("wdt_delay_sel_err", &self.wdt_delay_sel_err())
             .field("spi_boot_crypt_cnt_err", &self.spi_boot_crypt_cnt_err())
-            .field(
-                "secure_boot_key_revoke0_err",
-                &self.secure_boot_key_revoke0_err(),
-            )
-            .field(
-                "secure_boot_key_revoke1_err",
-                &self.secure_boot_key_revoke1_err(),
-            )
-            .field(
-                "secure_boot_key_revoke2_err",
-                &self.secure_boot_key_revoke2_err(),
-            )
+            .field("secure_boot_key_revoke0_err", &self.secure_boot_key_revoke0_err())
+            .field("secure_boot_key_revoke1_err", &self.secure_boot_key_revoke1_err())
+            .field("secure_boot_key_revoke2_err", &self.secure_boot_key_revoke2_err())
             .field("key_purpose_0_err", &self.key_purpose_0_err())
             .field("key_purpose_1_err", &self.key_purpose_1_err())
             .finish()

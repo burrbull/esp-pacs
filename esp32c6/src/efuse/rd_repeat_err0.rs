@@ -153,10 +153,7 @@ impl core::fmt::Debug for R {
             .field("dis_download_icache_err", &self.dis_download_icache_err())
             .field("dis_usb_serial_jtag_err", &self.dis_usb_serial_jtag_err())
             .field("dis_force_download_err", &self.dis_force_download_err())
-            .field(
-                "spi_download_mspi_dis_err",
-                &self.spi_download_mspi_dis_err(),
-            )
+            .field("spi_download_mspi_dis_err", &self.spi_download_mspi_dis_err())
             .field("dis_twai_err", &self.dis_twai_err())
             .field("jtag_sel_enable_err", &self.jtag_sel_enable_err())
             .field("soft_dis_jtag_err", &self.soft_dis_jtag_err())

@@ -103,12 +103,16 @@ impl R {
     }
     ///Bit 10 - IBUS busy monitor enable
     #[inline(always)]
-    pub fn core_0_iram0_exception_monitor_ena(&self) -> CORE_0_IRAM0_EXCEPTION_MONITOR_ENA_R {
+    pub fn core_0_iram0_exception_monitor_ena(
+        &self,
+    ) -> CORE_0_IRAM0_EXCEPTION_MONITOR_ENA_R {
         CORE_0_IRAM0_EXCEPTION_MONITOR_ENA_R::new(((self.bits >> 10) & 1) != 0)
     }
     ///Bit 11 - DBUS busy monitor enbale
     #[inline(always)]
-    pub fn core_0_dram0_exception_monitor_ena(&self) -> CORE_0_DRAM0_EXCEPTION_MONITOR_ENA_R {
+    pub fn core_0_dram0_exception_monitor_ena(
+        &self,
+    ) -> CORE_0_DRAM0_EXCEPTION_MONITOR_ENA_R {
         CORE_0_DRAM0_EXCEPTION_MONITOR_ENA_R::new(((self.bits >> 11) & 1) != 0)
     }
 }
@@ -116,22 +120,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CORE_0_MONTR_ENA")
-            .field(
-                "core_0_area_dram0_0_rd_ena",
-                &self.core_0_area_dram0_0_rd_ena(),
-            )
-            .field(
-                "core_0_area_dram0_0_wr_ena",
-                &self.core_0_area_dram0_0_wr_ena(),
-            )
-            .field(
-                "core_0_area_dram0_1_rd_ena",
-                &self.core_0_area_dram0_1_rd_ena(),
-            )
-            .field(
-                "core_0_area_dram0_1_wr_ena",
-                &self.core_0_area_dram0_1_wr_ena(),
-            )
+            .field("core_0_area_dram0_0_rd_ena", &self.core_0_area_dram0_0_rd_ena())
+            .field("core_0_area_dram0_0_wr_ena", &self.core_0_area_dram0_0_wr_ena())
+            .field("core_0_area_dram0_1_rd_ena", &self.core_0_area_dram0_1_rd_ena())
+            .field("core_0_area_dram0_1_wr_ena", &self.core_0_area_dram0_1_wr_ena())
             .field("core_0_area_pif_0_rd_ena", &self.core_0_area_pif_0_rd_ena())
             .field("core_0_area_pif_0_wr_ena", &self.core_0_area_pif_0_wr_ena())
             .field("core_0_area_pif_1_rd_ena", &self.core_0_area_pif_1_rd_ena())
@@ -217,13 +209,17 @@ impl W {
     ///Bit 8 - Core0 stackpoint overflow monitor enable
     #[inline(always)]
     #[must_use]
-    pub fn core_0_sp_spill_min_ena(&mut self) -> CORE_0_SP_SPILL_MIN_ENA_W<CORE_0_MONTR_ENA_SPEC> {
+    pub fn core_0_sp_spill_min_ena(
+        &mut self,
+    ) -> CORE_0_SP_SPILL_MIN_ENA_W<CORE_0_MONTR_ENA_SPEC> {
         CORE_0_SP_SPILL_MIN_ENA_W::new(self, 8)
     }
     ///Bit 9 - Core0 stackpoint underflow monitor enable
     #[inline(always)]
     #[must_use]
-    pub fn core_0_sp_spill_max_ena(&mut self) -> CORE_0_SP_SPILL_MAX_ENA_W<CORE_0_MONTR_ENA_SPEC> {
+    pub fn core_0_sp_spill_max_ena(
+        &mut self,
+    ) -> CORE_0_SP_SPILL_MAX_ENA_W<CORE_0_MONTR_ENA_SPEC> {
         CORE_0_SP_SPILL_MAX_ENA_W::new(self, 9)
     }
     ///Bit 10 - IBUS busy monitor enable

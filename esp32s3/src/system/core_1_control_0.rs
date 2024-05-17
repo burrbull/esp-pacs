@@ -36,10 +36,7 @@ impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CORE_1_CONTROL_0")
             .field("control_core_1_runstall", &self.control_core_1_runstall())
-            .field(
-                "control_core_1_clkgate_en",
-                &self.control_core_1_clkgate_en(),
-            )
+            .field("control_core_1_clkgate_en", &self.control_core_1_clkgate_en())
             .field("control_core_1_reseting", &self.control_core_1_reseting())
             .finish()
     }
@@ -48,7 +45,9 @@ impl W {
     ///Bit 0 - Set 1 to stall core1
     #[inline(always)]
     #[must_use]
-    pub fn control_core_1_runstall(&mut self) -> CONTROL_CORE_1_RUNSTALL_W<CORE_1_CONTROL_0_SPEC> {
+    pub fn control_core_1_runstall(
+        &mut self,
+    ) -> CONTROL_CORE_1_RUNSTALL_W<CORE_1_CONTROL_0_SPEC> {
         CONTROL_CORE_1_RUNSTALL_W::new(self, 0)
     }
     ///Bit 1 - Set 1 to open core1 clock
@@ -62,7 +61,9 @@ impl W {
     ///Bit 2 - Set 1 to let core1 reset
     #[inline(always)]
     #[must_use]
-    pub fn control_core_1_reseting(&mut self) -> CONTROL_CORE_1_RESETING_W<CORE_1_CONTROL_0_SPEC> {
+    pub fn control_core_1_reseting(
+        &mut self,
+    ) -> CONTROL_CORE_1_RESETING_W<CORE_1_CONTROL_0_SPEC> {
         CONTROL_CORE_1_RESETING_W::new(self, 2)
     }
 }

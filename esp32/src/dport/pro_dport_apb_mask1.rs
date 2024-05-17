@@ -25,7 +25,9 @@ impl W {
     ///Bits 0:31
     #[inline(always)]
     #[must_use]
-    pub fn prodport_apb_mask1(&mut self) -> PRODPORT_APB_MASK1_W<PRO_DPORT_APB_MASK1_SPEC> {
+    pub fn prodport_apb_mask1(
+        &mut self,
+    ) -> PRODPORT_APB_MASK1_W<PRO_DPORT_APB_MASK1_SPEC> {
         PRODPORT_APB_MASK1_W::new(self, 0)
     }
 }

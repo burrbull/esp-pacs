@@ -26,10 +26,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("L2_CACHE_SYNC_PRELOAD_INT_RAW")
-            .field(
-                "l2_cache_pld_done_int_raw",
-                &self.l2_cache_pld_done_int_raw(),
-            )
+            .field("l2_cache_pld_done_int_raw", &self.l2_cache_pld_done_int_raw())
             .field("l2_cache_pld_err_int_raw", &self.l2_cache_pld_err_int_raw())
             .finish()
     }

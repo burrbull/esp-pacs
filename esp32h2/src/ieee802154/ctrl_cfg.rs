@@ -176,10 +176,7 @@ impl core::fmt::Debug for R {
             .field("dis_ifs_control", &self.dis_ifs_control())
             .field("pan_coordinator", &self.pan_coordinator())
             .field("promiscuous_mode", &self.promiscuous_mode())
-            .field(
-                "dis_frame_version_rsv_filter",
-                &self.dis_frame_version_rsv_filter(),
-            )
+            .field("dis_frame_version_rsv_filter", &self.dis_frame_version_rsv_filter())
             .field("autopend_enhance", &self.autopend_enhance())
             .field("filter_enhance", &self.filter_enhance())
             .field("coex_arb_delay", &self.coex_arb_delay())

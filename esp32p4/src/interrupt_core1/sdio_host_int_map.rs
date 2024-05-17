@@ -25,7 +25,9 @@ impl W {
     ///Bits 0:5 - NA
     #[inline(always)]
     #[must_use]
-    pub fn core1_sdio_host_int_map(&mut self) -> CORE1_SDIO_HOST_INT_MAP_W<SDIO_HOST_INT_MAP_SPEC> {
+    pub fn core1_sdio_host_int_map(
+        &mut self,
+    ) -> CORE1_SDIO_HOST_INT_MAP_W<SDIO_HOST_INT_MAP_SPEC> {
         CORE1_SDIO_HOST_INT_MAP_W::new(self, 0)
     }
 }

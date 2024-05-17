@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("HP_ACTIVE_ICG_HP_FUNC")
-            .field(
-                "hp_active_dig_icg_func_en",
-                &self.hp_active_dig_icg_func_en(),
-            )
+            .field("hp_active_dig_icg_func_en", &self.hp_active_dig_icg_func_en())
             .finish()
     }
 }

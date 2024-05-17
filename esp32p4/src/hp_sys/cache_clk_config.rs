@@ -55,25 +55,33 @@ impl W {
     ///Bit 0 - l2 cahce clk enable
     #[inline(always)]
     #[must_use]
-    pub fn reg_l2_cache_clk_on(&mut self) -> REG_L2_CACHE_CLK_ON_W<CACHE_CLK_CONFIG_SPEC> {
+    pub fn reg_l2_cache_clk_on(
+        &mut self,
+    ) -> REG_L2_CACHE_CLK_ON_W<CACHE_CLK_CONFIG_SPEC> {
         REG_L2_CACHE_CLK_ON_W::new(self, 0)
     }
     ///Bit 1 - l1 dcahce clk enable
     #[inline(always)]
     #[must_use]
-    pub fn reg_l1_d_cache_clk_on(&mut self) -> REG_L1_D_CACHE_CLK_ON_W<CACHE_CLK_CONFIG_SPEC> {
+    pub fn reg_l1_d_cache_clk_on(
+        &mut self,
+    ) -> REG_L1_D_CACHE_CLK_ON_W<CACHE_CLK_CONFIG_SPEC> {
         REG_L1_D_CACHE_CLK_ON_W::new(self, 1)
     }
     ///Bit 4 - l1 icahce1 clk enable
     #[inline(always)]
     #[must_use]
-    pub fn reg_l1_i1_cache_clk_on(&mut self) -> REG_L1_I1_CACHE_CLK_ON_W<CACHE_CLK_CONFIG_SPEC> {
+    pub fn reg_l1_i1_cache_clk_on(
+        &mut self,
+    ) -> REG_L1_I1_CACHE_CLK_ON_W<CACHE_CLK_CONFIG_SPEC> {
         REG_L1_I1_CACHE_CLK_ON_W::new(self, 4)
     }
     ///Bit 5 - l1 icahce0 clk enable
     #[inline(always)]
     #[must_use]
-    pub fn reg_l1_i0_cache_clk_on(&mut self) -> REG_L1_I0_CACHE_CLK_ON_W<CACHE_CLK_CONFIG_SPEC> {
+    pub fn reg_l1_i0_cache_clk_on(
+        &mut self,
+    ) -> REG_L1_I0_CACHE_CLK_ON_W<CACHE_CLK_CONFIG_SPEC> {
         REG_L1_I0_CACHE_CLK_ON_W::new(self, 5)
     }
 }

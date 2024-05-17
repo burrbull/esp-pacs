@@ -12,8 +12,7 @@ impl R {
     ///NOTE: `n` is number of field in register. `n == 0` corresponds to `M0_PMS_FUNC_EN` field
     #[inline(always)]
     pub fn m_pms_func_en(&self, n: u8) -> M_PMS_FUNC_EN_R {
-        #[allow(clippy::no_effect)]
-        [(); 1][n as usize];
+        #[allow(clippy::no_effect)] [(); 1][n as usize];
         M_PMS_FUNC_EN_R::new(((self.bits >> (n * 0)) & 1) != 0)
     }
     ///Iterator for array of:
@@ -43,8 +42,7 @@ impl W {
     #[inline(always)]
     #[must_use]
     pub fn m_pms_func_en(&mut self, n: u8) -> M_PMS_FUNC_EN_W<FUNC_CTRL_SPEC> {
-        #[allow(clippy::no_effect)]
-        [(); 1][n as usize];
+        #[allow(clippy::no_effect)] [(); 1][n as usize];
         M_PMS_FUNC_EN_W::new(self, n * 0)
     }
     ///Bit 0 - PMS M0 function enable

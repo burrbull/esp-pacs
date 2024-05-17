@@ -133,10 +133,7 @@ impl core::fmt::Debug for R {
             .field("pro_dram0_sram_2_w", &self.pro_dram0_sram_2_w())
             .field("pro_dram0_sram_3_r", &self.pro_dram0_sram_3_r())
             .field("pro_dram0_sram_3_w", &self.pro_dram0_sram_3_w())
-            .field(
-                "pro_dram0_sram_4_spltaddr",
-                &self.pro_dram0_sram_4_spltaddr(),
-            )
+            .field("pro_dram0_sram_4_spltaddr", &self.pro_dram0_sram_4_spltaddr())
             .field("pro_dram0_sram_4_l_r", &self.pro_dram0_sram_4_l_r())
             .field("pro_dram0_sram_4_l_w", &self.pro_dram0_sram_4_l_w())
             .field("pro_dram0_sram_4_h_r", &self.pro_dram0_sram_4_h_r())
@@ -196,7 +193,9 @@ impl W {
     ///Bits 8:24 - Configure the split address of SRAM Block 4-21 for DBUS0 access.
     #[inline(always)]
     #[must_use]
-    pub fn pro_dram0_sram_4_spltaddr(&mut self) -> PRO_DRAM0_SRAM_4_SPLTADDR_W<PRO_DRAM0_1_SPEC> {
+    pub fn pro_dram0_sram_4_spltaddr(
+        &mut self,
+    ) -> PRO_DRAM0_SRAM_4_SPLTADDR_W<PRO_DRAM0_1_SPEC> {
         PRO_DRAM0_SRAM_4_SPLTADDR_W::new(self, 8)
     }
     ///Bit 25 - Setting to 1 grants DBUS0 permission to read SRAM Block 4-21 low address region.

@@ -36,19 +36,25 @@ impl W {
     ///Bit 2 - Write 1 to clear lp_core_ahb_timeout int
     #[inline(always)]
     #[must_use]
-    pub fn lp_core_ahb_timeout_int_clr(&mut self) -> LP_CORE_AHB_TIMEOUT_INT_CLR_W<INT_CLR_SPEC> {
+    pub fn lp_core_ahb_timeout_int_clr(
+        &mut self,
+    ) -> LP_CORE_AHB_TIMEOUT_INT_CLR_W<INT_CLR_SPEC> {
         LP_CORE_AHB_TIMEOUT_INT_CLR_W::new(self, 2)
     }
     ///Bit 3 - Write 1 to clear lp_core_ibus_timeout int
     #[inline(always)]
     #[must_use]
-    pub fn lp_core_ibus_timeout_int_clr(&mut self) -> LP_CORE_IBUS_TIMEOUT_INT_CLR_W<INT_CLR_SPEC> {
+    pub fn lp_core_ibus_timeout_int_clr(
+        &mut self,
+    ) -> LP_CORE_IBUS_TIMEOUT_INT_CLR_W<INT_CLR_SPEC> {
         LP_CORE_IBUS_TIMEOUT_INT_CLR_W::new(self, 3)
     }
     ///Bit 4 - Write 1 to clear lp_core_dbus_timeout int
     #[inline(always)]
     #[must_use]
-    pub fn lp_core_dbus_timeout_int_clr(&mut self) -> LP_CORE_DBUS_TIMEOUT_INT_CLR_W<INT_CLR_SPEC> {
+    pub fn lp_core_dbus_timeout_int_clr(
+        &mut self,
+    ) -> LP_CORE_DBUS_TIMEOUT_INT_CLR_W<INT_CLR_SPEC> {
         LP_CORE_DBUS_TIMEOUT_INT_CLR_W::new(self, 4)
     }
     ///Bit 5 - Write 1 to clear etm tasl ulp int

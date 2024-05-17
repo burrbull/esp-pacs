@@ -25,7 +25,9 @@ impl W {
     ///Bits 0:15
     #[inline(always)]
     #[must_use]
-    pub fn tx_ack_abort_coex_cnt(&mut self) -> TX_ACK_ABORT_COEX_CNT_W<TX_ACK_ABORT_COEX_CNT_SPEC> {
+    pub fn tx_ack_abort_coex_cnt(
+        &mut self,
+    ) -> TX_ACK_ABORT_COEX_CNT_W<TX_ACK_ABORT_COEX_CNT_SPEC> {
         TX_ACK_ABORT_COEX_CNT_W::new(self, 0)
     }
 }

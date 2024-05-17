@@ -81,7 +81,9 @@ impl W {
     ///Bits 16:17 - wait arbit stable after sar_done
     #[inline(always)]
     #[must_use]
-    pub fn sar_sar2_wait_arb_cycle(&mut self) -> SAR_SAR2_WAIT_ARB_CYCLE_W<SAR_READER2_CTRL_SPEC> {
+    pub fn sar_sar2_wait_arb_cycle(
+        &mut self,
+    ) -> SAR_SAR2_WAIT_ARB_CYCLE_W<SAR_READER2_CTRL_SPEC> {
         SAR_SAR2_WAIT_ARB_CYCLE_W::new(self, 16)
     }
     ///Bit 18 - ******* Description ***********
@@ -93,7 +95,9 @@ impl W {
     ///Bits 19:26 - ******* Description ***********
     #[inline(always)]
     #[must_use]
-    pub fn sar_sar2_sample_num(&mut self) -> SAR_SAR2_SAMPLE_NUM_W<SAR_READER2_CTRL_SPEC> {
+    pub fn sar_sar2_sample_num(
+        &mut self,
+    ) -> SAR_SAR2_SAMPLE_NUM_W<SAR_READER2_CTRL_SPEC> {
         SAR_SAR2_SAMPLE_NUM_W::new(self, 19)
     }
     ///Bit 29 - Invert SAR ADC2 data

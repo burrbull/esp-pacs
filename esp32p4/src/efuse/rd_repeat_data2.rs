@@ -119,10 +119,7 @@ impl core::fmt::Debug for R {
             .field("flash_type", &self.flash_type())
             .field("flash_page_size", &self.flash_page_size())
             .field("flash_ecc_en", &self.flash_ecc_en())
-            .field(
-                "dis_usb_otg_download_mode",
-                &self.dis_usb_otg_download_mode(),
-            )
+            .field("dis_usb_otg_download_mode", &self.dis_usb_otg_download_mode())
             .field("flash_tpuw", &self.flash_tpuw())
             .finish()
     }

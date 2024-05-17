@@ -26,10 +26,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("MEM_CLK_CTRL")
-            .field(
-                "dsi_bridge_mem_clk_force_on",
-                &self.dsi_bridge_mem_clk_force_on(),
-            )
+            .field("dsi_bridge_mem_clk_force_on", &self.dsi_bridge_mem_clk_force_on())
             .field("dsi_mem_clk_force_on", &self.dsi_mem_clk_force_on())
             .finish()
     }

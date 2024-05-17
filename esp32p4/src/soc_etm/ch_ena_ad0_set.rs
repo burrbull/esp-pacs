@@ -15,8 +15,7 @@ impl W {
     #[inline(always)]
     #[must_use]
     pub fn ch_set(&mut self, n: u8) -> CH_SET_W<CH_ENA_AD0_SET_SPEC> {
-        #[allow(clippy::no_effect)]
-        [(); 32][n as usize];
+        #[allow(clippy::no_effect)] [(); 32][n as usize];
         CH_SET_W::new(self, n)
     }
     ///Bit 0 - Configures whether or not to enable ch0.\\0: Invalid, No effect\\1: Enable

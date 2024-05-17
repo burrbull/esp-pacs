@@ -94,14 +94,8 @@ impl core::fmt::Debug for R {
             .field("dis_legacy_spi_boot_err", &self.dis_legacy_spi_boot_err())
             .field("uart_print_channel_err", &self.uart_print_channel_err())
             .field("rpt4_reserved3_err", &self.rpt4_reserved3_err())
-            .field(
-                "dis_usb_download_mode_err",
-                &self.dis_usb_download_mode_err(),
-            )
-            .field(
-                "enable_security_download_err",
-                &self.enable_security_download_err(),
-            )
+            .field("dis_usb_download_mode_err", &self.dis_usb_download_mode_err())
+            .field("enable_security_download_err", &self.enable_security_download_err())
             .field("uart_print_control_err", &self.uart_print_control_err())
             .field("pin_power_selection_err", &self.pin_power_selection_err())
             .field("flash_type_err", &self.flash_type_err())

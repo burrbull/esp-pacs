@@ -312,89 +312,32 @@ impl core::fmt::Debug for R {
                 "ledc_evt_duty_chng_end_ch7_st",
                 &self.ledc_evt_duty_chng_end_ch7_st(),
             )
-            .field(
-                "ledc_evt_ovf_cnt_pls_ch0_st",
-                &self.ledc_evt_ovf_cnt_pls_ch0_st(),
-            )
-            .field(
-                "ledc_evt_ovf_cnt_pls_ch1_st",
-                &self.ledc_evt_ovf_cnt_pls_ch1_st(),
-            )
-            .field(
-                "ledc_evt_ovf_cnt_pls_ch2_st",
-                &self.ledc_evt_ovf_cnt_pls_ch2_st(),
-            )
-            .field(
-                "ledc_evt_ovf_cnt_pls_ch3_st",
-                &self.ledc_evt_ovf_cnt_pls_ch3_st(),
-            )
-            .field(
-                "ledc_evt_ovf_cnt_pls_ch4_st",
-                &self.ledc_evt_ovf_cnt_pls_ch4_st(),
-            )
-            .field(
-                "ledc_evt_ovf_cnt_pls_ch5_st",
-                &self.ledc_evt_ovf_cnt_pls_ch5_st(),
-            )
-            .field(
-                "ledc_evt_ovf_cnt_pls_ch6_st",
-                &self.ledc_evt_ovf_cnt_pls_ch6_st(),
-            )
-            .field(
-                "ledc_evt_ovf_cnt_pls_ch7_st",
-                &self.ledc_evt_ovf_cnt_pls_ch7_st(),
-            )
-            .field(
-                "ledc_evt_time_ovf_timer0_st",
-                &self.ledc_evt_time_ovf_timer0_st(),
-            )
-            .field(
-                "ledc_evt_time_ovf_timer1_st",
-                &self.ledc_evt_time_ovf_timer1_st(),
-            )
-            .field(
-                "ledc_evt_time_ovf_timer2_st",
-                &self.ledc_evt_time_ovf_timer2_st(),
-            )
-            .field(
-                "ledc_evt_time_ovf_timer3_st",
-                &self.ledc_evt_time_ovf_timer3_st(),
-            )
+            .field("ledc_evt_ovf_cnt_pls_ch0_st", &self.ledc_evt_ovf_cnt_pls_ch0_st())
+            .field("ledc_evt_ovf_cnt_pls_ch1_st", &self.ledc_evt_ovf_cnt_pls_ch1_st())
+            .field("ledc_evt_ovf_cnt_pls_ch2_st", &self.ledc_evt_ovf_cnt_pls_ch2_st())
+            .field("ledc_evt_ovf_cnt_pls_ch3_st", &self.ledc_evt_ovf_cnt_pls_ch3_st())
+            .field("ledc_evt_ovf_cnt_pls_ch4_st", &self.ledc_evt_ovf_cnt_pls_ch4_st())
+            .field("ledc_evt_ovf_cnt_pls_ch5_st", &self.ledc_evt_ovf_cnt_pls_ch5_st())
+            .field("ledc_evt_ovf_cnt_pls_ch6_st", &self.ledc_evt_ovf_cnt_pls_ch6_st())
+            .field("ledc_evt_ovf_cnt_pls_ch7_st", &self.ledc_evt_ovf_cnt_pls_ch7_st())
+            .field("ledc_evt_time_ovf_timer0_st", &self.ledc_evt_time_ovf_timer0_st())
+            .field("ledc_evt_time_ovf_timer1_st", &self.ledc_evt_time_ovf_timer1_st())
+            .field("ledc_evt_time_ovf_timer2_st", &self.ledc_evt_time_ovf_timer2_st())
+            .field("ledc_evt_time_ovf_timer3_st", &self.ledc_evt_time_ovf_timer3_st())
             .field("ledc_evt_timer0_cmp_st", &self.ledc_evt_timer0_cmp_st())
             .field("ledc_evt_timer1_cmp_st", &self.ledc_evt_timer1_cmp_st())
             .field("ledc_evt_timer2_cmp_st", &self.ledc_evt_timer2_cmp_st())
             .field("ledc_evt_timer3_cmp_st", &self.ledc_evt_timer3_cmp_st())
-            .field(
-                "tg0_evt_cnt_cmp_timer0_st",
-                &self.tg0_evt_cnt_cmp_timer0_st(),
-            )
-            .field(
-                "tg0_evt_cnt_cmp_timer1_st",
-                &self.tg0_evt_cnt_cmp_timer1_st(),
-            )
-            .field(
-                "tg1_evt_cnt_cmp_timer0_st",
-                &self.tg1_evt_cnt_cmp_timer0_st(),
-            )
-            .field(
-                "tg1_evt_cnt_cmp_timer1_st",
-                &self.tg1_evt_cnt_cmp_timer1_st(),
-            )
+            .field("tg0_evt_cnt_cmp_timer0_st", &self.tg0_evt_cnt_cmp_timer0_st())
+            .field("tg0_evt_cnt_cmp_timer1_st", &self.tg0_evt_cnt_cmp_timer1_st())
+            .field("tg1_evt_cnt_cmp_timer0_st", &self.tg1_evt_cnt_cmp_timer0_st())
+            .field("tg1_evt_cnt_cmp_timer1_st", &self.tg1_evt_cnt_cmp_timer1_st())
             .field("systimer_evt_cnt_cmp0_st", &self.systimer_evt_cnt_cmp0_st())
             .field("systimer_evt_cnt_cmp1_st", &self.systimer_evt_cnt_cmp1_st())
             .field("systimer_evt_cnt_cmp2_st", &self.systimer_evt_cnt_cmp2_st())
-            .field(
-                "mcpwm0_evt_timer0_stop_st",
-                &self.mcpwm0_evt_timer0_stop_st(),
-            )
-            .field(
-                "mcpwm0_evt_timer1_stop_st",
-                &self.mcpwm0_evt_timer1_stop_st(),
-            )
-            .field(
-                "mcpwm0_evt_timer2_stop_st",
-                &self.mcpwm0_evt_timer2_stop_st(),
-            )
+            .field("mcpwm0_evt_timer0_stop_st", &self.mcpwm0_evt_timer0_stop_st())
+            .field("mcpwm0_evt_timer1_stop_st", &self.mcpwm0_evt_timer1_stop_st())
+            .field("mcpwm0_evt_timer2_stop_st", &self.mcpwm0_evt_timer2_stop_st())
             .field("mcpwm0_evt_timer0_tez_st", &self.mcpwm0_evt_timer0_tez_st())
             .field("mcpwm0_evt_timer1_tez_st", &self.mcpwm0_evt_timer1_tez_st())
             .finish()
@@ -436,73 +379,97 @@ impl W {
     ///Bit 4 - Represents LEDC_evt_ovf_cnt_pls_ch0 trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn ledc_evt_ovf_cnt_pls_ch0_st(&mut self) -> LEDC_EVT_OVF_CNT_PLS_CH0_ST_W<EVT_ST1_SPEC> {
+    pub fn ledc_evt_ovf_cnt_pls_ch0_st(
+        &mut self,
+    ) -> LEDC_EVT_OVF_CNT_PLS_CH0_ST_W<EVT_ST1_SPEC> {
         LEDC_EVT_OVF_CNT_PLS_CH0_ST_W::new(self, 4)
     }
     ///Bit 5 - Represents LEDC_evt_ovf_cnt_pls_ch1 trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn ledc_evt_ovf_cnt_pls_ch1_st(&mut self) -> LEDC_EVT_OVF_CNT_PLS_CH1_ST_W<EVT_ST1_SPEC> {
+    pub fn ledc_evt_ovf_cnt_pls_ch1_st(
+        &mut self,
+    ) -> LEDC_EVT_OVF_CNT_PLS_CH1_ST_W<EVT_ST1_SPEC> {
         LEDC_EVT_OVF_CNT_PLS_CH1_ST_W::new(self, 5)
     }
     ///Bit 6 - Represents LEDC_evt_ovf_cnt_pls_ch2 trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn ledc_evt_ovf_cnt_pls_ch2_st(&mut self) -> LEDC_EVT_OVF_CNT_PLS_CH2_ST_W<EVT_ST1_SPEC> {
+    pub fn ledc_evt_ovf_cnt_pls_ch2_st(
+        &mut self,
+    ) -> LEDC_EVT_OVF_CNT_PLS_CH2_ST_W<EVT_ST1_SPEC> {
         LEDC_EVT_OVF_CNT_PLS_CH2_ST_W::new(self, 6)
     }
     ///Bit 7 - Represents LEDC_evt_ovf_cnt_pls_ch3 trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn ledc_evt_ovf_cnt_pls_ch3_st(&mut self) -> LEDC_EVT_OVF_CNT_PLS_CH3_ST_W<EVT_ST1_SPEC> {
+    pub fn ledc_evt_ovf_cnt_pls_ch3_st(
+        &mut self,
+    ) -> LEDC_EVT_OVF_CNT_PLS_CH3_ST_W<EVT_ST1_SPEC> {
         LEDC_EVT_OVF_CNT_PLS_CH3_ST_W::new(self, 7)
     }
     ///Bit 8 - Represents LEDC_evt_ovf_cnt_pls_ch4 trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn ledc_evt_ovf_cnt_pls_ch4_st(&mut self) -> LEDC_EVT_OVF_CNT_PLS_CH4_ST_W<EVT_ST1_SPEC> {
+    pub fn ledc_evt_ovf_cnt_pls_ch4_st(
+        &mut self,
+    ) -> LEDC_EVT_OVF_CNT_PLS_CH4_ST_W<EVT_ST1_SPEC> {
         LEDC_EVT_OVF_CNT_PLS_CH4_ST_W::new(self, 8)
     }
     ///Bit 9 - Represents LEDC_evt_ovf_cnt_pls_ch5 trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn ledc_evt_ovf_cnt_pls_ch5_st(&mut self) -> LEDC_EVT_OVF_CNT_PLS_CH5_ST_W<EVT_ST1_SPEC> {
+    pub fn ledc_evt_ovf_cnt_pls_ch5_st(
+        &mut self,
+    ) -> LEDC_EVT_OVF_CNT_PLS_CH5_ST_W<EVT_ST1_SPEC> {
         LEDC_EVT_OVF_CNT_PLS_CH5_ST_W::new(self, 9)
     }
     ///Bit 10 - Represents LEDC_evt_ovf_cnt_pls_ch6 trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn ledc_evt_ovf_cnt_pls_ch6_st(&mut self) -> LEDC_EVT_OVF_CNT_PLS_CH6_ST_W<EVT_ST1_SPEC> {
+    pub fn ledc_evt_ovf_cnt_pls_ch6_st(
+        &mut self,
+    ) -> LEDC_EVT_OVF_CNT_PLS_CH6_ST_W<EVT_ST1_SPEC> {
         LEDC_EVT_OVF_CNT_PLS_CH6_ST_W::new(self, 10)
     }
     ///Bit 11 - Represents LEDC_evt_ovf_cnt_pls_ch7 trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn ledc_evt_ovf_cnt_pls_ch7_st(&mut self) -> LEDC_EVT_OVF_CNT_PLS_CH7_ST_W<EVT_ST1_SPEC> {
+    pub fn ledc_evt_ovf_cnt_pls_ch7_st(
+        &mut self,
+    ) -> LEDC_EVT_OVF_CNT_PLS_CH7_ST_W<EVT_ST1_SPEC> {
         LEDC_EVT_OVF_CNT_PLS_CH7_ST_W::new(self, 11)
     }
     ///Bit 12 - Represents LEDC_evt_time_ovf_timer0 trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn ledc_evt_time_ovf_timer0_st(&mut self) -> LEDC_EVT_TIME_OVF_TIMER0_ST_W<EVT_ST1_SPEC> {
+    pub fn ledc_evt_time_ovf_timer0_st(
+        &mut self,
+    ) -> LEDC_EVT_TIME_OVF_TIMER0_ST_W<EVT_ST1_SPEC> {
         LEDC_EVT_TIME_OVF_TIMER0_ST_W::new(self, 12)
     }
     ///Bit 13 - Represents LEDC_evt_time_ovf_timer1 trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn ledc_evt_time_ovf_timer1_st(&mut self) -> LEDC_EVT_TIME_OVF_TIMER1_ST_W<EVT_ST1_SPEC> {
+    pub fn ledc_evt_time_ovf_timer1_st(
+        &mut self,
+    ) -> LEDC_EVT_TIME_OVF_TIMER1_ST_W<EVT_ST1_SPEC> {
         LEDC_EVT_TIME_OVF_TIMER1_ST_W::new(self, 13)
     }
     ///Bit 14 - Represents LEDC_evt_time_ovf_timer2 trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn ledc_evt_time_ovf_timer2_st(&mut self) -> LEDC_EVT_TIME_OVF_TIMER2_ST_W<EVT_ST1_SPEC> {
+    pub fn ledc_evt_time_ovf_timer2_st(
+        &mut self,
+    ) -> LEDC_EVT_TIME_OVF_TIMER2_ST_W<EVT_ST1_SPEC> {
         LEDC_EVT_TIME_OVF_TIMER2_ST_W::new(self, 14)
     }
     ///Bit 15 - Represents LEDC_evt_time_ovf_timer3 trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn ledc_evt_time_ovf_timer3_st(&mut self) -> LEDC_EVT_TIME_OVF_TIMER3_ST_W<EVT_ST1_SPEC> {
+    pub fn ledc_evt_time_ovf_timer3_st(
+        &mut self,
+    ) -> LEDC_EVT_TIME_OVF_TIMER3_ST_W<EVT_ST1_SPEC> {
         LEDC_EVT_TIME_OVF_TIMER3_ST_W::new(self, 15)
     }
     ///Bit 16 - Represents LEDC_evt_timer0_cmp trigger status.\\0: Not triggered\\1: Triggered
@@ -532,73 +499,97 @@ impl W {
     ///Bit 20 - Represents TG0_evt_cnt_cmp_timer0 trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn tg0_evt_cnt_cmp_timer0_st(&mut self) -> TG0_EVT_CNT_CMP_TIMER0_ST_W<EVT_ST1_SPEC> {
+    pub fn tg0_evt_cnt_cmp_timer0_st(
+        &mut self,
+    ) -> TG0_EVT_CNT_CMP_TIMER0_ST_W<EVT_ST1_SPEC> {
         TG0_EVT_CNT_CMP_TIMER0_ST_W::new(self, 20)
     }
     ///Bit 21 - Represents TG0_evt_cnt_cmp_timer1 trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn tg0_evt_cnt_cmp_timer1_st(&mut self) -> TG0_EVT_CNT_CMP_TIMER1_ST_W<EVT_ST1_SPEC> {
+    pub fn tg0_evt_cnt_cmp_timer1_st(
+        &mut self,
+    ) -> TG0_EVT_CNT_CMP_TIMER1_ST_W<EVT_ST1_SPEC> {
         TG0_EVT_CNT_CMP_TIMER1_ST_W::new(self, 21)
     }
     ///Bit 22 - Represents TG1_evt_cnt_cmp_timer0 trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn tg1_evt_cnt_cmp_timer0_st(&mut self) -> TG1_EVT_CNT_CMP_TIMER0_ST_W<EVT_ST1_SPEC> {
+    pub fn tg1_evt_cnt_cmp_timer0_st(
+        &mut self,
+    ) -> TG1_EVT_CNT_CMP_TIMER0_ST_W<EVT_ST1_SPEC> {
         TG1_EVT_CNT_CMP_TIMER0_ST_W::new(self, 22)
     }
     ///Bit 23 - Represents TG1_evt_cnt_cmp_timer1 trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn tg1_evt_cnt_cmp_timer1_st(&mut self) -> TG1_EVT_CNT_CMP_TIMER1_ST_W<EVT_ST1_SPEC> {
+    pub fn tg1_evt_cnt_cmp_timer1_st(
+        &mut self,
+    ) -> TG1_EVT_CNT_CMP_TIMER1_ST_W<EVT_ST1_SPEC> {
         TG1_EVT_CNT_CMP_TIMER1_ST_W::new(self, 23)
     }
     ///Bit 24 - Represents SYSTIMER_evt_cnt_cmp0 trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn systimer_evt_cnt_cmp0_st(&mut self) -> SYSTIMER_EVT_CNT_CMP0_ST_W<EVT_ST1_SPEC> {
+    pub fn systimer_evt_cnt_cmp0_st(
+        &mut self,
+    ) -> SYSTIMER_EVT_CNT_CMP0_ST_W<EVT_ST1_SPEC> {
         SYSTIMER_EVT_CNT_CMP0_ST_W::new(self, 24)
     }
     ///Bit 25 - Represents SYSTIMER_evt_cnt_cmp1 trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn systimer_evt_cnt_cmp1_st(&mut self) -> SYSTIMER_EVT_CNT_CMP1_ST_W<EVT_ST1_SPEC> {
+    pub fn systimer_evt_cnt_cmp1_st(
+        &mut self,
+    ) -> SYSTIMER_EVT_CNT_CMP1_ST_W<EVT_ST1_SPEC> {
         SYSTIMER_EVT_CNT_CMP1_ST_W::new(self, 25)
     }
     ///Bit 26 - Represents SYSTIMER_evt_cnt_cmp2 trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn systimer_evt_cnt_cmp2_st(&mut self) -> SYSTIMER_EVT_CNT_CMP2_ST_W<EVT_ST1_SPEC> {
+    pub fn systimer_evt_cnt_cmp2_st(
+        &mut self,
+    ) -> SYSTIMER_EVT_CNT_CMP2_ST_W<EVT_ST1_SPEC> {
         SYSTIMER_EVT_CNT_CMP2_ST_W::new(self, 26)
     }
     ///Bit 27 - Represents MCPWM0_evt_timer0_stop trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn mcpwm0_evt_timer0_stop_st(&mut self) -> MCPWM0_EVT_TIMER0_STOP_ST_W<EVT_ST1_SPEC> {
+    pub fn mcpwm0_evt_timer0_stop_st(
+        &mut self,
+    ) -> MCPWM0_EVT_TIMER0_STOP_ST_W<EVT_ST1_SPEC> {
         MCPWM0_EVT_TIMER0_STOP_ST_W::new(self, 27)
     }
     ///Bit 28 - Represents MCPWM0_evt_timer1_stop trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn mcpwm0_evt_timer1_stop_st(&mut self) -> MCPWM0_EVT_TIMER1_STOP_ST_W<EVT_ST1_SPEC> {
+    pub fn mcpwm0_evt_timer1_stop_st(
+        &mut self,
+    ) -> MCPWM0_EVT_TIMER1_STOP_ST_W<EVT_ST1_SPEC> {
         MCPWM0_EVT_TIMER1_STOP_ST_W::new(self, 28)
     }
     ///Bit 29 - Represents MCPWM0_evt_timer2_stop trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn mcpwm0_evt_timer2_stop_st(&mut self) -> MCPWM0_EVT_TIMER2_STOP_ST_W<EVT_ST1_SPEC> {
+    pub fn mcpwm0_evt_timer2_stop_st(
+        &mut self,
+    ) -> MCPWM0_EVT_TIMER2_STOP_ST_W<EVT_ST1_SPEC> {
         MCPWM0_EVT_TIMER2_STOP_ST_W::new(self, 29)
     }
     ///Bit 30 - Represents MCPWM0_evt_timer0_tez trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn mcpwm0_evt_timer0_tez_st(&mut self) -> MCPWM0_EVT_TIMER0_TEZ_ST_W<EVT_ST1_SPEC> {
+    pub fn mcpwm0_evt_timer0_tez_st(
+        &mut self,
+    ) -> MCPWM0_EVT_TIMER0_TEZ_ST_W<EVT_ST1_SPEC> {
         MCPWM0_EVT_TIMER0_TEZ_ST_W::new(self, 30)
     }
     ///Bit 31 - Represents MCPWM0_evt_timer1_tez trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn mcpwm0_evt_timer1_tez_st(&mut self) -> MCPWM0_EVT_TIMER1_TEZ_ST_W<EVT_ST1_SPEC> {
+    pub fn mcpwm0_evt_timer1_tez_st(
+        &mut self,
+    ) -> MCPWM0_EVT_TIMER1_TEZ_ST_W<EVT_ST1_SPEC> {
         MCPWM0_EVT_TIMER1_TEZ_ST_W::new(self, 31)
     }
 }

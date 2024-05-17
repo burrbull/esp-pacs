@@ -528,8 +528,9 @@ pub mod a_roi_region4_7_qp;
 You can [`read`](crate::generic::Reg::read) this register and get [`a_no_roi_region_qp_offset::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`a_no_roi_region_qp_offset::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@a_no_roi_region_qp_offset`] module*/
-pub type A_NO_ROI_REGION_QP_OFFSET =
-    crate::Reg<a_no_roi_region_qp_offset::A_NO_ROI_REGION_QP_OFFSET_SPEC>;
+pub type A_NO_ROI_REGION_QP_OFFSET = crate::Reg<
+    a_no_roi_region_qp_offset::A_NO_ROI_REGION_QP_OFFSET_SPEC,
+>;
 ///Video A H264 no roi region QP register.
 pub mod a_no_roi_region_qp_offset;
 /**A_ROI_CONFIG (rw) register accessor: Video A H264 ROI configure register.
@@ -681,8 +682,9 @@ pub mod b_roi_region4_7_qp;
 You can [`read`](crate::generic::Reg::read) this register and get [`b_no_roi_region_qp_offset::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`b_no_roi_region_qp_offset::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@b_no_roi_region_qp_offset`] module*/
-pub type B_NO_ROI_REGION_QP_OFFSET =
-    crate::Reg<b_no_roi_region_qp_offset::B_NO_ROI_REGION_QP_OFFSET_SPEC>;
+pub type B_NO_ROI_REGION_QP_OFFSET = crate::Reg<
+    b_no_roi_region_qp_offset::B_NO_ROI_REGION_QP_OFFSET_SPEC,
+>;
 ///Video B H264 no roi region QP register.
 pub mod b_no_roi_region_qp_offset;
 /**B_ROI_CONFIG (rw) register accessor: Video B H264 ROI configure register.
@@ -730,8 +732,9 @@ pub mod slice_header_remain;
 You can [`read`](crate::generic::Reg::read) this register and get [`slice_header_byte_length::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`slice_header_byte_length::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@slice_header_byte_length`] module*/
-pub type SLICE_HEADER_BYTE_LENGTH =
-    crate::Reg<slice_header_byte_length::SLICE_HEADER_BYTE_LENGTH_SPEC>;
+pub type SLICE_HEADER_BYTE_LENGTH = crate::Reg<
+    slice_header_byte_length::SLICE_HEADER_BYTE_LENGTH_SPEC,
+>;
 ///Frame Slice Header byte length register.
 pub mod slice_header_byte_length;
 /**BS_THRESHOLD (rw) register accessor: Bitstream buffer overflow threshold register

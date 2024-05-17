@@ -3,19 +3,18 @@ pub type R = crate::R<LCD_DLY_MODE_CFG2_SPEC>;
 ///Register `LCD_DLY_MODE_CFG2` writer
 pub type W = crate::W<LCD_DLY_MODE_CFG2_SPEC>;
 ///The output data bit %s is delayed by module clock LCD_CLK
-pub use super::lcd_dly_mode_cfg1::DELAY_MODE;
+pub use super::lcd_dly_mode_cfg1::DELAY_MODE as DELAY_MODE;
 ///Field `DOUT_MODE(0-15)` reader - The output data bit %s is delayed by module clock LCD_CLK
-pub use super::lcd_dly_mode_cfg1::DOUT_MODE_R;
+pub use super::lcd_dly_mode_cfg1::DOUT_MODE_R as DOUT_MODE_R;
 ///Field `DOUT_MODE(0-15)` writer - The output data bit %s is delayed by module clock LCD_CLK
-pub use super::lcd_dly_mode_cfg1::DOUT_MODE_W;
+pub use super::lcd_dly_mode_cfg1::DOUT_MODE_W as DOUT_MODE_W;
 impl R {
     ///The output data bit (0-15) is delayed by module clock LCD_CLK
     ///
     ///NOTE: `n` is number of field in register. `n == 0` corresponds to `DOUT0_MODE` field
     #[inline(always)]
     pub fn dout_mode(&self, n: u8) -> DOUT_MODE_R {
-        #[allow(clippy::no_effect)]
-        [(); 16][n as usize];
+        #[allow(clippy::no_effect)] [(); 16][n as usize];
         DOUT_MODE_R::new(((self.bits >> (n * 2)) & 3) as u8)
     }
     ///Iterator for array of:
@@ -135,8 +134,7 @@ impl W {
     #[inline(always)]
     #[must_use]
     pub fn dout_mode(&mut self, n: u8) -> DOUT_MODE_W<LCD_DLY_MODE_CFG2_SPEC> {
-        #[allow(clippy::no_effect)]
-        [(); 16][n as usize];
+        #[allow(clippy::no_effect)] [(); 16][n as usize];
         DOUT_MODE_W::new(self, n * 2)
     }
     ///Bits 0:1 - The output data bit 0 is delayed by module clock LCD_CLK

@@ -100,8 +100,13 @@ impl WDT_SYS_RESET_LENGTH_R {
     }
 }
 ///Field `WDT_SYS_RESET_LENGTH` writer - length of system reset selection. 0: 100ns 1: 200ns 2: 300ns 3: 400ns 4: 500ns 5: 800ns 6: 1.6us 7: 3.2us
-pub type WDT_SYS_RESET_LENGTH_W<'a, REG> =
-    crate::FieldWriter<'a, REG, 3, WDT_SYS_RESET_LENGTH, crate::Safe>;
+pub type WDT_SYS_RESET_LENGTH_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    3,
+    WDT_SYS_RESET_LENGTH,
+    crate::Safe,
+>;
 impl<'a, REG> WDT_SYS_RESET_LENGTH_W<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -242,8 +247,13 @@ impl WDT_CPU_RESET_LENGTH_R {
     }
 }
 ///Field `WDT_CPU_RESET_LENGTH` writer - length of CPU reset selection. 0: 100ns 1: 200ns 2: 300ns 3: 400ns 4: 500ns 5: 800ns 6: 1.6us 7: 3.2us
-pub type WDT_CPU_RESET_LENGTH_W<'a, REG> =
-    crate::FieldWriter<'a, REG, 3, WDT_CPU_RESET_LENGTH, crate::Safe>;
+pub type WDT_CPU_RESET_LENGTH_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    3,
+    WDT_CPU_RESET_LENGTH,
+    crate::Safe,
+>;
 impl<'a, REG> WDT_CPU_RESET_LENGTH_W<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -389,14 +399,14 @@ where
 }
 ///Field `WDT_STG2` reader - Stage 2 configuration. 0: off 1: interrupt 2: reset CPU 3: reset system
 pub use WDT_STG3_R as WDT_STG2_R;
-///Field `WDT_STG1` reader - Stage 1 configuration. 0: off 1: interrupt 2: reset CPU 3: reset system
-pub use WDT_STG3_R as WDT_STG1_R;
-///Field `WDT_STG0` reader - Stage 0 configuration. 0: off 1: interrupt 2: reset CPU 3: reset system
-pub use WDT_STG3_R as WDT_STG0_R;
 ///Field `WDT_STG2` writer - Stage 2 configuration. 0: off 1: interrupt 2: reset CPU 3: reset system
 pub use WDT_STG3_W as WDT_STG2_W;
+///Field `WDT_STG1` reader - Stage 1 configuration. 0: off 1: interrupt 2: reset CPU 3: reset system
+pub use WDT_STG3_R as WDT_STG1_R;
 ///Field `WDT_STG1` writer - Stage 1 configuration. 0: off 1: interrupt 2: reset CPU 3: reset system
 pub use WDT_STG3_W as WDT_STG1_W;
+///Field `WDT_STG0` reader - Stage 0 configuration. 0: off 1: interrupt 2: reset CPU 3: reset system
+pub use WDT_STG3_R as WDT_STG0_R;
 ///Field `WDT_STG0` writer - Stage 0 configuration. 0: off 1: interrupt 2: reset CPU 3: reset system
 pub use WDT_STG3_W as WDT_STG0_W;
 ///Field `WDT_EN` reader - When set SWDT is enabled

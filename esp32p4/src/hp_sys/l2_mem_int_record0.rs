@@ -19,7 +19,9 @@ impl R {
     }
     ///Bits 22:24 - NA
     #[inline(always)]
-    pub fn reg_l2_mem_exceed_addr_int_master(&self) -> REG_L2_MEM_EXCEED_ADDR_INT_MASTER_R {
+    pub fn reg_l2_mem_exceed_addr_int_master(
+        &self,
+    ) -> REG_L2_MEM_EXCEED_ADDR_INT_MASTER_R {
         REG_L2_MEM_EXCEED_ADDR_INT_MASTER_R::new(((self.bits >> 22) & 7) as u8)
     }
 }

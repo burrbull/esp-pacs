@@ -113,7 +113,9 @@ impl W {
     ///Bit 3 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn force_top_no_reset(&mut self) -> FORCE_TOP_NO_RESET_W<POWER_PD_TOP_CNTL_SPEC> {
+    pub fn force_top_no_reset(
+        &mut self,
+    ) -> FORCE_TOP_NO_RESET_W<POWER_PD_TOP_CNTL_SPEC> {
         FORCE_TOP_NO_RESET_W::new(self, 3)
     }
     ///Bit 4 - need_des

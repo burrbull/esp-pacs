@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("ASSIST_DEBUG_INT_MAP")
-            .field(
-                "core0_assist_debug_int_map",
-                &self.core0_assist_debug_int_map(),
-            )
+            .field("core0_assist_debug_int_map", &self.core0_assist_debug_int_map())
             .finish()
     }
 }

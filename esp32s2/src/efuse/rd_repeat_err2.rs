@@ -51,7 +51,9 @@ impl R {
     }
     ///Bit 21 - Any bit equal to 1 denotes a programming error in EFUSE_SECURE_BOOT_AGGRESSIVE_REVOKE.
     #[inline(always)]
-    pub fn secure_boot_aggressive_revoke_err(&self) -> SECURE_BOOT_AGGRESSIVE_REVOKE_ERR_R {
+    pub fn secure_boot_aggressive_revoke_err(
+        &self,
+    ) -> SECURE_BOOT_AGGRESSIVE_REVOKE_ERR_R {
         SECURE_BOOT_AGGRESSIVE_REVOKE_ERR_R::new(((self.bits >> 21) & 1) != 0)
     }
     ///Bits 22:27 - Any bit equal to 1 denotes a programming error in EFUSE_RPT4_RESERVED1.

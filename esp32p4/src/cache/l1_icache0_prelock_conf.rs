@@ -35,14 +35,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("L1_ICACHE0_PRELOCK_CONF")
-            .field(
-                "l1_icache0_prelock_sct0_en",
-                &self.l1_icache0_prelock_sct0_en(),
-            )
-            .field(
-                "l1_icache0_prelock_sct1_en",
-                &self.l1_icache0_prelock_sct1_en(),
-            )
+            .field("l1_icache0_prelock_sct0_en", &self.l1_icache0_prelock_sct0_en())
+            .field("l1_icache0_prelock_sct1_en", &self.l1_icache0_prelock_sct1_en())
             .field("l1_icache0_prelock_rgid", &self.l1_icache0_prelock_rgid())
             .finish()
     }

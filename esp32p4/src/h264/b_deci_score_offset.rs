@@ -44,22 +44,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("B_DECI_SCORE_OFFSET")
-            .field(
-                "b_i16x16_deci_score_offset",
-                &self.b_i16x16_deci_score_offset(),
-            )
-            .field(
-                "b_i_chroma_deci_score_offset",
-                &self.b_i_chroma_deci_score_offset(),
-            )
-            .field(
-                "b_p16x16_deci_score_offset",
-                &self.b_p16x16_deci_score_offset(),
-            )
-            .field(
-                "b_p_chroma_deci_score_offset",
-                &self.b_p_chroma_deci_score_offset(),
-            )
+            .field("b_i16x16_deci_score_offset", &self.b_i16x16_deci_score_offset())
+            .field("b_i_chroma_deci_score_offset", &self.b_i_chroma_deci_score_offset())
+            .field("b_p16x16_deci_score_offset", &self.b_p16x16_deci_score_offset())
+            .field("b_p_chroma_deci_score_offset", &self.b_p_chroma_deci_score_offset())
             .finish()
     }
 }

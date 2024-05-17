@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CPU_PERI_TIMEOUT_INTR_MAP")
-            .field(
-                "cpu_peri_timeout_intr_map",
-                &self.cpu_peri_timeout_intr_map(),
-            )
+            .field("cpu_peri_timeout_intr_map", &self.cpu_peri_timeout_intr_map())
             .finish()
     }
 }

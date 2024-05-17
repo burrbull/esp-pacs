@@ -16,9 +16,7 @@ impl R {
 #[cfg(feature = "impl-register-debug")]
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("TIMER_COUNT")
-            .field("timer_count", &self.timer_count())
-            .finish()
+        f.debug_struct("TIMER_COUNT").field("timer_count", &self.timer_count()).finish()
     }
 }
 impl W {

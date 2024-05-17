@@ -296,22 +296,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("TASK_ST2")
-            .field(
-                "ledc_task_timer0_pause_st",
-                &self.ledc_task_timer0_pause_st(),
-            )
-            .field(
-                "ledc_task_timer1_pause_st",
-                &self.ledc_task_timer1_pause_st(),
-            )
-            .field(
-                "ledc_task_timer2_pause_st",
-                &self.ledc_task_timer2_pause_st(),
-            )
-            .field(
-                "ledc_task_timer3_pause_st",
-                &self.ledc_task_timer3_pause_st(),
-            )
+            .field("ledc_task_timer0_pause_st", &self.ledc_task_timer0_pause_st())
+            .field("ledc_task_timer1_pause_st", &self.ledc_task_timer1_pause_st())
+            .field("ledc_task_timer2_pause_st", &self.ledc_task_timer2_pause_st())
+            .field("ledc_task_timer3_pause_st", &self.ledc_task_timer3_pause_st())
             .field(
                 "ledc_task_gamma_restart_ch0_st",
                 &self.ledc_task_gamma_restart_ch0_st(),
@@ -344,38 +332,14 @@ impl core::fmt::Debug for R {
                 "ledc_task_gamma_restart_ch7_st",
                 &self.ledc_task_gamma_restart_ch7_st(),
             )
-            .field(
-                "ledc_task_gamma_pause_ch0_st",
-                &self.ledc_task_gamma_pause_ch0_st(),
-            )
-            .field(
-                "ledc_task_gamma_pause_ch1_st",
-                &self.ledc_task_gamma_pause_ch1_st(),
-            )
-            .field(
-                "ledc_task_gamma_pause_ch2_st",
-                &self.ledc_task_gamma_pause_ch2_st(),
-            )
-            .field(
-                "ledc_task_gamma_pause_ch3_st",
-                &self.ledc_task_gamma_pause_ch3_st(),
-            )
-            .field(
-                "ledc_task_gamma_pause_ch4_st",
-                &self.ledc_task_gamma_pause_ch4_st(),
-            )
-            .field(
-                "ledc_task_gamma_pause_ch5_st",
-                &self.ledc_task_gamma_pause_ch5_st(),
-            )
-            .field(
-                "ledc_task_gamma_pause_ch6_st",
-                &self.ledc_task_gamma_pause_ch6_st(),
-            )
-            .field(
-                "ledc_task_gamma_pause_ch7_st",
-                &self.ledc_task_gamma_pause_ch7_st(),
-            )
+            .field("ledc_task_gamma_pause_ch0_st", &self.ledc_task_gamma_pause_ch0_st())
+            .field("ledc_task_gamma_pause_ch1_st", &self.ledc_task_gamma_pause_ch1_st())
+            .field("ledc_task_gamma_pause_ch2_st", &self.ledc_task_gamma_pause_ch2_st())
+            .field("ledc_task_gamma_pause_ch3_st", &self.ledc_task_gamma_pause_ch3_st())
+            .field("ledc_task_gamma_pause_ch4_st", &self.ledc_task_gamma_pause_ch4_st())
+            .field("ledc_task_gamma_pause_ch5_st", &self.ledc_task_gamma_pause_ch5_st())
+            .field("ledc_task_gamma_pause_ch6_st", &self.ledc_task_gamma_pause_ch6_st())
+            .field("ledc_task_gamma_pause_ch7_st", &self.ledc_task_gamma_pause_ch7_st())
             .field(
                 "ledc_task_gamma_resume_ch0_st",
                 &self.ledc_task_gamma_resume_ch0_st(),
@@ -408,18 +372,12 @@ impl core::fmt::Debug for R {
                 "ledc_task_gamma_resume_ch7_st",
                 &self.ledc_task_gamma_resume_ch7_st(),
             )
-            .field(
-                "tg0_task_cnt_start_timer0_st",
-                &self.tg0_task_cnt_start_timer0_st(),
-            )
+            .field("tg0_task_cnt_start_timer0_st", &self.tg0_task_cnt_start_timer0_st())
             .field(
                 "tg0_task_alarm_start_timer0_st",
                 &self.tg0_task_alarm_start_timer0_st(),
             )
-            .field(
-                "tg0_task_cnt_stop_timer0_st",
-                &self.tg0_task_cnt_stop_timer0_st(),
-            )
+            .field("tg0_task_cnt_stop_timer0_st", &self.tg0_task_cnt_stop_timer0_st())
             .field(
                 "tg0_task_cnt_reload_timer0_st",
                 &self.tg0_task_cnt_reload_timer0_st(),
@@ -431,25 +389,33 @@ impl W {
     ///Bit 0 - Represents LEDC_task_timer0_pause trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn ledc_task_timer0_pause_st(&mut self) -> LEDC_TASK_TIMER0_PAUSE_ST_W<TASK_ST2_SPEC> {
+    pub fn ledc_task_timer0_pause_st(
+        &mut self,
+    ) -> LEDC_TASK_TIMER0_PAUSE_ST_W<TASK_ST2_SPEC> {
         LEDC_TASK_TIMER0_PAUSE_ST_W::new(self, 0)
     }
     ///Bit 1 - Represents LEDC_task_timer1_pause trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn ledc_task_timer1_pause_st(&mut self) -> LEDC_TASK_TIMER1_PAUSE_ST_W<TASK_ST2_SPEC> {
+    pub fn ledc_task_timer1_pause_st(
+        &mut self,
+    ) -> LEDC_TASK_TIMER1_PAUSE_ST_W<TASK_ST2_SPEC> {
         LEDC_TASK_TIMER1_PAUSE_ST_W::new(self, 1)
     }
     ///Bit 2 - Represents LEDC_task_timer2_pause trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn ledc_task_timer2_pause_st(&mut self) -> LEDC_TASK_TIMER2_PAUSE_ST_W<TASK_ST2_SPEC> {
+    pub fn ledc_task_timer2_pause_st(
+        &mut self,
+    ) -> LEDC_TASK_TIMER2_PAUSE_ST_W<TASK_ST2_SPEC> {
         LEDC_TASK_TIMER2_PAUSE_ST_W::new(self, 2)
     }
     ///Bit 3 - Represents LEDC_task_timer3_pause trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn ledc_task_timer3_pause_st(&mut self) -> LEDC_TASK_TIMER3_PAUSE_ST_W<TASK_ST2_SPEC> {
+    pub fn ledc_task_timer3_pause_st(
+        &mut self,
+    ) -> LEDC_TASK_TIMER3_PAUSE_ST_W<TASK_ST2_SPEC> {
         LEDC_TASK_TIMER3_PAUSE_ST_W::new(self, 3)
     }
     ///Bit 4 - Represents LEDC_task_gamma_restart_ch0 trigger status.\\0: Not triggered\\1: Triggered
@@ -663,7 +629,9 @@ impl W {
     ///Bit 30 - Represents TG0_task_cnt_stop_timer0 trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn tg0_task_cnt_stop_timer0_st(&mut self) -> TG0_TASK_CNT_STOP_TIMER0_ST_W<TASK_ST2_SPEC> {
+    pub fn tg0_task_cnt_stop_timer0_st(
+        &mut self,
+    ) -> TG0_TASK_CNT_STOP_TIMER0_ST_W<TASK_ST2_SPEC> {
         TG0_TASK_CNT_STOP_TIMER0_ST_W::new(self, 30)
     }
     ///Bit 31 - Represents TG0_task_cnt_reload_timer0 trigger status.\\0: Not triggered\\1: Triggered

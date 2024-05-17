@@ -113,7 +113,9 @@ impl W {
     ///Bits 1:6 - Time from ULP-RISCV startup to pull down reset
     #[inline(always)]
     #[must_use]
-    pub fn cocpu_start_2_reset_dis(&mut self) -> COCPU_START_2_RESET_DIS_W<COCPU_CTRL_SPEC> {
+    pub fn cocpu_start_2_reset_dis(
+        &mut self,
+    ) -> COCPU_START_2_RESET_DIS_W<COCPU_CTRL_SPEC> {
         COCPU_START_2_RESET_DIS_W::new(self, 1)
     }
     ///Bits 7:12 - Time from ULP-RISCV startup to send out RISCV_START_INT interrupt

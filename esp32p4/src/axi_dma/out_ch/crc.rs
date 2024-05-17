@@ -82,7 +82,9 @@ pub mod out_crc_clear;
 You can [`read`](crate::generic::Reg::read) this register and get [`out_crc_final_result::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@out_crc_final_result`] module*/
-pub type OUT_CRC_FINAL_RESULT = crate::Reg<out_crc_final_result::OUT_CRC_FINAL_RESULT_SPEC>;
+pub type OUT_CRC_FINAL_RESULT = crate::Reg<
+    out_crc_final_result::OUT_CRC_FINAL_RESULT_SPEC,
+>;
 ///This register is used to store ch0 crc result
 pub mod out_crc_final_result;
 /**TX_CRC_EN_WR_DATA (rw) register accessor: This resister is used to config ch0 crc en for every bit
@@ -106,7 +108,9 @@ pub mod tx_crc_en_addr;
 You can [`read`](crate::generic::Reg::read) this register and get [`tx_crc_data_en_wr_data::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`tx_crc_data_en_wr_data::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@tx_crc_data_en_wr_data`] module*/
-pub type TX_CRC_DATA_EN_WR_DATA = crate::Reg<tx_crc_data_en_wr_data::TX_CRC_DATA_EN_WR_DATA_SPEC>;
+pub type TX_CRC_DATA_EN_WR_DATA = crate::Reg<
+    tx_crc_data_en_wr_data::TX_CRC_DATA_EN_WR_DATA_SPEC,
+>;
 ///This register is used to config crc data_8bit en
 pub mod tx_crc_data_en_wr_data;
 /**TX_CRC_DATA_EN_ADDR (rw) register accessor: This register is used to config addr of crc data_8bit en

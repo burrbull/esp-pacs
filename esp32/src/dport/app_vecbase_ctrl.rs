@@ -25,7 +25,9 @@ impl W {
     ///Bits 0:1
     #[inline(always)]
     #[must_use]
-    pub fn app_out_vecbase_sel(&mut self) -> APP_OUT_VECBASE_SEL_W<APP_VECBASE_CTRL_SPEC> {
+    pub fn app_out_vecbase_sel(
+        &mut self,
+    ) -> APP_OUT_VECBASE_SEL_W<APP_VECBASE_CTRL_SPEC> {
         APP_OUT_VECBASE_SEL_W::new(self, 0)
     }
 }

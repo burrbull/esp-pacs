@@ -71,13 +71,17 @@ impl W {
     ///Bits 8:15 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn lcd_clk_div_numerator(&mut self) -> LCD_CLK_DIV_NUMERATOR_W<PERI_CLK_CTRL110_SPEC> {
+    pub fn lcd_clk_div_numerator(
+        &mut self,
+    ) -> LCD_CLK_DIV_NUMERATOR_W<PERI_CLK_CTRL110_SPEC> {
         LCD_CLK_DIV_NUMERATOR_W::new(self, 8)
     }
     ///Bits 16:23 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn lcd_clk_div_denominator(&mut self) -> LCD_CLK_DIV_DENOMINATOR_W<PERI_CLK_CTRL110_SPEC> {
+    pub fn lcd_clk_div_denominator(
+        &mut self,
+    ) -> LCD_CLK_DIV_DENOMINATOR_W<PERI_CLK_CTRL110_SPEC> {
         LCD_CLK_DIV_DENOMINATOR_W::new(self, 16)
     }
     ///Bits 24:25 - Reserved

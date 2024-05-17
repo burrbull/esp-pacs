@@ -12,8 +12,7 @@ impl R {
     ///NOTE: `n` is number of field in register. `n == 0` corresponds to `CH_ENA32` field
     #[inline(always)]
     pub fn ch_ena(&self, n: u8) -> CH_ENA_R {
-        #[allow(clippy::no_effect)]
-        [(); 18][n as usize];
+        #[allow(clippy::no_effect)] [(); 18][n as usize];
         CH_ENA_R::new(((self.bits >> n) & 1) != 0)
     }
     ///Iterator for array of:
@@ -145,8 +144,7 @@ impl W {
     #[inline(always)]
     #[must_use]
     pub fn ch_ena(&mut self, n: u8) -> CH_ENA_W<CH_ENA_AD1_SPEC> {
-        #[allow(clippy::no_effect)]
-        [(); 18][n as usize];
+        #[allow(clippy::no_effect)] [(); 18][n as usize];
         CH_ENA_W::new(self, n)
     }
     ///Bit 0 - ch32 enable

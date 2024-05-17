@@ -17,8 +17,7 @@ impl W {
     #[inline(always)]
     #[must_use]
     pub fn t(&mut self, n: u8) -> T_W<INT_CLR_TIMERS_SPEC> {
-        #[allow(clippy::no_effect)]
-        [(); 1][n as usize];
+        #[allow(clippy::no_effect)] [(); 1][n as usize];
         T_W::new(self, n * 0)
     }
     ///Bit 0 - Set this bit to clear the TIMG_T0_INT interrupt.

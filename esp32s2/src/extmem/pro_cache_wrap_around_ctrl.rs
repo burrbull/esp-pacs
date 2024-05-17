@@ -26,10 +26,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PRO_CACHE_WRAP_AROUND_CTRL")
-            .field(
-                "pro_cache_flash_wrap_around",
-                &self.pro_cache_flash_wrap_around(),
-            )
+            .field("pro_cache_flash_wrap_around", &self.pro_cache_flash_wrap_around())
             .field(
                 "pro_cache_sram_rd_wrap_around",
                 &self.pro_cache_sram_rd_wrap_around(),

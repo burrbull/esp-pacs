@@ -162,7 +162,13 @@ impl CH_HCTRL_MODE_R {
     }
 }
 ///Field `CH_HCTRL_MODE(0-1)` writer - Configures how the CHn_POS_MODE/CHn_NEG_MODE settings will be modified when the control signal is high.
-pub type CH_HCTRL_MODE_W<'a, REG> = crate::FieldWriter<'a, REG, 2, CTRL_MODE, crate::Safe>;
+pub type CH_HCTRL_MODE_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+    CTRL_MODE,
+    crate::Safe,
+>;
 impl<'a, REG> CH_HCTRL_MODE_W<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -229,8 +235,7 @@ impl R {
     ///NOTE: `n` is number of field in register. `n == 0` corresponds to `CH0_NEG_MODE` field
     #[inline(always)]
     pub fn ch_neg_mode(&self, n: u8) -> CH_NEG_MODE_R {
-        #[allow(clippy::no_effect)]
-        [(); 2][n as usize];
+        #[allow(clippy::no_effect)] [(); 2][n as usize];
         CH_NEG_MODE_R::new(((self.bits >> (n * 8 + 16)) & 3) as u8)
     }
     ///Iterator for array of:
@@ -254,8 +259,7 @@ impl R {
     ///NOTE: `n` is number of field in register. `n == 0` corresponds to `CH0_POS_MODE` field
     #[inline(always)]
     pub fn ch_pos_mode(&self, n: u8) -> CH_POS_MODE_R {
-        #[allow(clippy::no_effect)]
-        [(); 2][n as usize];
+        #[allow(clippy::no_effect)] [(); 2][n as usize];
         CH_POS_MODE_R::new(((self.bits >> (n * 8 + 18)) & 3) as u8)
     }
     ///Iterator for array of:
@@ -279,15 +283,15 @@ impl R {
     ///NOTE: `n` is number of field in register. `n == 0` corresponds to `CH0_HCTRL_MODE` field
     #[inline(always)]
     pub fn ch_hctrl_mode(&self, n: u8) -> CH_HCTRL_MODE_R {
-        #[allow(clippy::no_effect)]
-        [(); 2][n as usize];
+        #[allow(clippy::no_effect)] [(); 2][n as usize];
         CH_HCTRL_MODE_R::new(((self.bits >> (n * 8 + 20)) & 3) as u8)
     }
     ///Iterator for array of:
     ///Configures how the CHn_POS_MODE/CHn_NEG_MODE settings will be modified when the control signal is high.
     #[inline(always)]
     pub fn ch_hctrl_mode_iter(&self) -> impl Iterator<Item = CH_HCTRL_MODE_R> + '_ {
-        (0..2).map(move |n| CH_HCTRL_MODE_R::new(((self.bits >> (n * 8 + 20)) & 3) as u8))
+        (0..2)
+            .map(move |n| CH_HCTRL_MODE_R::new(((self.bits >> (n * 8 + 20)) & 3) as u8))
     }
     ///Bits 20:21 - Configures how the CHn_POS_MODE/CHn_NEG_MODE settings will be modified when the control signal is high.
     #[inline(always)]
@@ -304,15 +308,15 @@ impl R {
     ///NOTE: `n` is number of field in register. `n == 0` corresponds to `CH0_LCTRL_MODE` field
     #[inline(always)]
     pub fn ch_lctrl_mode(&self, n: u8) -> CH_LCTRL_MODE_R {
-        #[allow(clippy::no_effect)]
-        [(); 2][n as usize];
+        #[allow(clippy::no_effect)] [(); 2][n as usize];
         CH_LCTRL_MODE_R::new(((self.bits >> (n * 8 + 22)) & 3) as u8)
     }
     ///Iterator for array of:
     ///Configures how the CHn_POS_MODE/CHn_NEG_MODE settings will be modified when the control signal is low.
     #[inline(always)]
     pub fn ch_lctrl_mode_iter(&self) -> impl Iterator<Item = CH_LCTRL_MODE_R> + '_ {
-        (0..2).map(move |n| CH_LCTRL_MODE_R::new(((self.bits >> (n * 8 + 22)) & 3) as u8))
+        (0..2)
+            .map(move |n| CH_LCTRL_MODE_R::new(((self.bits >> (n * 8 + 22)) & 3) as u8))
     }
     ///Bits 22:23 - Configures how the CHn_POS_MODE/CHn_NEG_MODE settings will be modified when the control signal is low.
     #[inline(always)]
@@ -396,8 +400,7 @@ impl W {
     #[inline(always)]
     #[must_use]
     pub fn ch_neg_mode(&mut self, n: u8) -> CH_NEG_MODE_W<CONF0_SPEC> {
-        #[allow(clippy::no_effect)]
-        [(); 2][n as usize];
+        #[allow(clippy::no_effect)] [(); 2][n as usize];
         CH_NEG_MODE_W::new(self, n * 8 + 16)
     }
     ///Bits 16:17 - Configures the behavior when the signal input of channel 0 detects a negative edge.
@@ -418,8 +421,7 @@ impl W {
     #[inline(always)]
     #[must_use]
     pub fn ch_pos_mode(&mut self, n: u8) -> CH_POS_MODE_W<CONF0_SPEC> {
-        #[allow(clippy::no_effect)]
-        [(); 2][n as usize];
+        #[allow(clippy::no_effect)] [(); 2][n as usize];
         CH_POS_MODE_W::new(self, n * 8 + 18)
     }
     ///Bits 18:19 - Configures the behavior when the signal input of channel 0 detects a positive edge.
@@ -440,8 +442,7 @@ impl W {
     #[inline(always)]
     #[must_use]
     pub fn ch_hctrl_mode(&mut self, n: u8) -> CH_HCTRL_MODE_W<CONF0_SPEC> {
-        #[allow(clippy::no_effect)]
-        [(); 2][n as usize];
+        #[allow(clippy::no_effect)] [(); 2][n as usize];
         CH_HCTRL_MODE_W::new(self, n * 8 + 20)
     }
     ///Bits 20:21 - Configures how the CHn_POS_MODE/CHn_NEG_MODE settings will be modified when the control signal is high.
@@ -462,8 +463,7 @@ impl W {
     #[inline(always)]
     #[must_use]
     pub fn ch_lctrl_mode(&mut self, n: u8) -> CH_LCTRL_MODE_W<CONF0_SPEC> {
-        #[allow(clippy::no_effect)]
-        [(); 2][n as usize];
+        #[allow(clippy::no_effect)] [(); 2][n as usize];
         CH_LCTRL_MODE_W::new(self, n * 8 + 22)
     }
     ///Bits 22:23 - Configures how the CHn_POS_MODE/CHn_NEG_MODE settings will be modified when the control signal is low.

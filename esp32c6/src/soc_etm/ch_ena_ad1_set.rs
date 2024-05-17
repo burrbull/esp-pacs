@@ -15,8 +15,7 @@ impl W {
     #[inline(always)]
     #[must_use]
     pub fn ch_set(&mut self, n: u8) -> CH_SET_W<CH_ENA_AD1_SET_SPEC> {
-        #[allow(clippy::no_effect)]
-        [(); 18][n as usize];
+        #[allow(clippy::no_effect)] [(); 18][n as usize];
         CH_SET_W::new(self, n)
     }
     ///Bit 0 - ch32 set

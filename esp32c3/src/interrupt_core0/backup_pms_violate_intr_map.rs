@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("BACKUP_PMS_VIOLATE_INTR_MAP")
-            .field(
-                "backup_pms_violate_intr_map",
-                &self.backup_pms_violate_intr_map(),
-            )
+            .field("backup_pms_violate_intr_map", &self.backup_pms_violate_intr_map())
             .finish()
     }
 }

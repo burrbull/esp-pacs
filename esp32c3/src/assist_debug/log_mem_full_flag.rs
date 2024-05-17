@@ -33,7 +33,9 @@ impl W {
     ///Bit 1 - reg_clr_log_mem_full_flag
     #[inline(always)]
     #[must_use]
-    pub fn clr_log_mem_full_flag(&mut self) -> CLR_LOG_MEM_FULL_FLAG_W<LOG_MEM_FULL_FLAG_SPEC> {
+    pub fn clr_log_mem_full_flag(
+        &mut self,
+    ) -> CLR_LOG_MEM_FULL_FLAG_W<LOG_MEM_FULL_FLAG_SPEC> {
         CLR_LOG_MEM_FULL_FLAG_W::new(self, 1)
     }
 }

@@ -133,13 +133,17 @@ impl W {
     ///Bit 29 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn lp_core_etm_wakeup_flag_clr(&mut self) -> LP_CORE_ETM_WAKEUP_FLAG_CLR_W<SYS_CTRL_SPEC> {
+    pub fn lp_core_etm_wakeup_flag_clr(
+        &mut self,
+    ) -> LP_CORE_ETM_WAKEUP_FLAG_CLR_W<SYS_CTRL_SPEC> {
         LP_CORE_ETM_WAKEUP_FLAG_CLR_W::new(self, 29)
     }
     ///Bit 30 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn lp_core_etm_wakeup_flag(&mut self) -> LP_CORE_ETM_WAKEUP_FLAG_W<SYS_CTRL_SPEC> {
+    pub fn lp_core_etm_wakeup_flag(
+        &mut self,
+    ) -> LP_CORE_ETM_WAKEUP_FLAG_W<SYS_CTRL_SPEC> {
         LP_CORE_ETM_WAKEUP_FLAG_W::new(self, 30)
     }
     ///Bit 31 - 0: use systimer_stall signal from hp_core0, 1: use systimer_stall signal from hp_core1

@@ -20,13 +20,17 @@ impl W {
     ///Bit 27 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn vddbat_charge_upvoltage(&mut self) -> VDDBAT_CHARGE_UPVOLTAGE_W<INT_CLR_SPEC> {
+    pub fn vddbat_charge_upvoltage(
+        &mut self,
+    ) -> VDDBAT_CHARGE_UPVOLTAGE_W<INT_CLR_SPEC> {
         VDDBAT_CHARGE_UPVOLTAGE_W::new(self, 27)
     }
     ///Bit 28 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn vddbat_charge_undervoltage(&mut self) -> VDDBAT_CHARGE_UNDERVOLTAGE_W<INT_CLR_SPEC> {
+    pub fn vddbat_charge_undervoltage(
+        &mut self,
+    ) -> VDDBAT_CHARGE_UNDERVOLTAGE_W<INT_CLR_SPEC> {
         VDDBAT_CHARGE_UNDERVOLTAGE_W::new(self, 28)
     }
     ///Bit 29 - need_des

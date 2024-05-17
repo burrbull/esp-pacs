@@ -216,21 +216,12 @@ impl core::fmt::Debug for R {
             .field("slc0_tohost_int_st1", &self.slc0_tohost_int_st1())
             .field("slc0_tx_dscr_err_int_st1", &self.slc0_tx_dscr_err_int_st1())
             .field("slc0_rx_dscr_err_int_st1", &self.slc0_rx_dscr_err_int_st1())
-            .field(
-                "slc0_tx_dscr_empty_int_st1",
-                &self.slc0_tx_dscr_empty_int_st1(),
-            )
+            .field("slc0_tx_dscr_empty_int_st1", &self.slc0_tx_dscr_empty_int_st1())
             .field("slc0_host_rd_ack_int_st1", &self.slc0_host_rd_ack_int_st1())
-            .field(
-                "slc0_wr_retry_done_int_st1",
-                &self.slc0_wr_retry_done_int_st1(),
-            )
+            .field("slc0_wr_retry_done_int_st1", &self.slc0_wr_retry_done_int_st1())
             .field("slc0_tx_err_eof_int_st1", &self.slc0_tx_err_eof_int_st1())
             .field("cmd_dtc_int_st1", &self.cmd_dtc_int_st1())
-            .field(
-                "slc0_rx_quick_eof_int_st1",
-                &self.slc0_rx_quick_eof_int_st1(),
-            )
+            .field("slc0_rx_quick_eof_int_st1", &self.slc0_rx_quick_eof_int_st1())
             .finish()
     }
 }

@@ -57,10 +57,7 @@ impl core::fmt::Debug for R {
             .field("lp_sleep_bod_source_sel", &self.lp_sleep_bod_source_sel())
             .field("lp_sleep_vddbat_mode", &self.lp_sleep_vddbat_mode())
             .field("lp_sleep_lp_mem_dslp", &self.lp_sleep_lp_mem_dslp())
-            .field(
-                "lp_sleep_pd_lp_peri_pd_en",
-                &self.lp_sleep_pd_lp_peri_pd_en(),
-            )
+            .field("lp_sleep_pd_lp_peri_pd_en", &self.lp_sleep_pd_lp_peri_pd_en())
             .finish()
     }
 }
@@ -84,13 +81,17 @@ impl W {
     ///Bits 28:29 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn lp_sleep_vddbat_mode(&mut self) -> LP_SLEEP_VDDBAT_MODE_W<LP_SLEEP_LP_DIG_POWER_SPEC> {
+    pub fn lp_sleep_vddbat_mode(
+        &mut self,
+    ) -> LP_SLEEP_VDDBAT_MODE_W<LP_SLEEP_LP_DIG_POWER_SPEC> {
         LP_SLEEP_VDDBAT_MODE_W::new(self, 28)
     }
     ///Bit 30 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn lp_sleep_lp_mem_dslp(&mut self) -> LP_SLEEP_LP_MEM_DSLP_W<LP_SLEEP_LP_DIG_POWER_SPEC> {
+    pub fn lp_sleep_lp_mem_dslp(
+        &mut self,
+    ) -> LP_SLEEP_LP_MEM_DSLP_W<LP_SLEEP_LP_DIG_POWER_SPEC> {
         LP_SLEEP_LP_MEM_DSLP_W::new(self, 30)
     }
     ///Bit 31 - need_des

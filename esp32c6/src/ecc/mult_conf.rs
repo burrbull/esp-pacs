@@ -121,7 +121,9 @@ impl W {
     ///Bit 31 - ECC memory clock gate force on register
     #[inline(always)]
     #[must_use]
-    pub fn mem_clock_gate_force_on(&mut self) -> MEM_CLOCK_GATE_FORCE_ON_W<MULT_CONF_SPEC> {
+    pub fn mem_clock_gate_force_on(
+        &mut self,
+    ) -> MEM_CLOCK_GATE_FORCE_ON_W<MULT_CONF_SPEC> {
         MEM_CLOCK_GATE_FORCE_ON_W::new(self, 31)
     }
 }

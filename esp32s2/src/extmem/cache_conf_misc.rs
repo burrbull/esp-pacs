@@ -20,7 +20,9 @@ impl R {
     }
     ///Bit 1 - The bit is used to disable checking mmu entry fault by sync operation.
     #[inline(always)]
-    pub fn pro_cache_ignore_sync_mmu_entry_fault(&self) -> PRO_CACHE_IGNORE_SYNC_MMU_ENTRY_FAULT_R {
+    pub fn pro_cache_ignore_sync_mmu_entry_fault(
+        &self,
+    ) -> PRO_CACHE_IGNORE_SYNC_MMU_ENTRY_FAULT_R {
         PRO_CACHE_IGNORE_SYNC_MMU_ENTRY_FAULT_R::new(((self.bits >> 1) & 1) != 0)
     }
 }

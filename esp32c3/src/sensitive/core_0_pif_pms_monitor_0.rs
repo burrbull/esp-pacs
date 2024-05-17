@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CORE_0_PIF_PMS_MONITOR_0")
-            .field(
-                "core_0_pif_pms_monitor_lock",
-                &self.core_0_pif_pms_monitor_lock(),
-            )
+            .field("core_0_pif_pms_monitor_lock", &self.core_0_pif_pms_monitor_lock())
             .finish()
     }
 }

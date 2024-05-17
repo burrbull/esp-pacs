@@ -3,11 +3,20 @@ pub type W = crate::W<INTCLEAR1_SPEC>;
 ///Field `CH1_CLEAR_ECC_PROT_CHMEM_CORRERR_INTSTAT` writer - NA
 pub type CH1_CLEAR_ECC_PROT_CHMEM_CORRERR_INTSTAT_W<'a, REG> = crate::BitWriter<'a, REG>;
 ///Field `CH1_CLEAR_ECC_PROT_CHMEM_UNCORRERR_INTSTAT` writer - NA
-pub type CH1_CLEAR_ECC_PROT_CHMEM_UNCORRERR_INTSTAT_W<'a, REG> = crate::BitWriter<'a, REG>;
+pub type CH1_CLEAR_ECC_PROT_CHMEM_UNCORRERR_INTSTAT_W<'a, REG> = crate::BitWriter<
+    'a,
+    REG,
+>;
 ///Field `CH1_CLEAR_ECC_PROT_UIDMEM_CORRERR_INTSTAT` writer - NA
-pub type CH1_CLEAR_ECC_PROT_UIDMEM_CORRERR_INTSTAT_W<'a, REG> = crate::BitWriter<'a, REG>;
+pub type CH1_CLEAR_ECC_PROT_UIDMEM_CORRERR_INTSTAT_W<'a, REG> = crate::BitWriter<
+    'a,
+    REG,
+>;
 ///Field `CH1_CLEAR_ECC_PROT_UIDMEM_UNCORRERR_INTSTAT` writer - NA
-pub type CH1_CLEAR_ECC_PROT_UIDMEM_UNCORRERR_INTSTAT_W<'a, REG> = crate::BitWriter<'a, REG>;
+pub type CH1_CLEAR_ECC_PROT_UIDMEM_UNCORRERR_INTSTAT_W<'a, REG> = crate::BitWriter<
+    'a,
+    REG,
+>;
 #[cfg(feature = "impl-register-debug")]
 impl core::fmt::Debug for crate::generic::Reg<INTCLEAR1_SPEC> {
     fn fmt(&self, f: &mut core::fmt::Formatter<'_>) -> core::fmt::Result {

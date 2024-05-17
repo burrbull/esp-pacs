@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PRO_GPIO_INTERRUPT_MAP")
-            .field(
-                "pro_gpio_interrupt_pro_map",
-                &self.pro_gpio_interrupt_pro_map(),
-            )
+            .field("pro_gpio_interrupt_pro_map", &self.pro_gpio_interrupt_pro_map())
             .finish()
     }
 }

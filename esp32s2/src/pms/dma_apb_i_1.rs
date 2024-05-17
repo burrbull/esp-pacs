@@ -133,10 +133,7 @@ impl core::fmt::Debug for R {
             .field("dma_apb_i_sram_2_w", &self.dma_apb_i_sram_2_w())
             .field("dma_apb_i_sram_3_r", &self.dma_apb_i_sram_3_r())
             .field("dma_apb_i_sram_3_w", &self.dma_apb_i_sram_3_w())
-            .field(
-                "dma_apb_i_sram_4_spltaddr",
-                &self.dma_apb_i_sram_4_spltaddr(),
-            )
+            .field("dma_apb_i_sram_4_spltaddr", &self.dma_apb_i_sram_4_spltaddr())
             .field("dma_apb_i_sram_4_l_r", &self.dma_apb_i_sram_4_l_r())
             .field("dma_apb_i_sram_4_l_w", &self.dma_apb_i_sram_4_l_w())
             .field("dma_apb_i_sram_4_h_r", &self.dma_apb_i_sram_4_h_r())
@@ -196,7 +193,9 @@ impl W {
     ///Bits 8:24 - Configure the split address of SRAM Block 4-21 for internal DMA access.
     #[inline(always)]
     #[must_use]
-    pub fn dma_apb_i_sram_4_spltaddr(&mut self) -> DMA_APB_I_SRAM_4_SPLTADDR_W<DMA_APB_I_1_SPEC> {
+    pub fn dma_apb_i_sram_4_spltaddr(
+        &mut self,
+    ) -> DMA_APB_I_SRAM_4_SPLTADDR_W<DMA_APB_I_1_SPEC> {
         DMA_APB_I_SRAM_4_SPLTADDR_W::new(self, 8)
     }
     ///Bit 25 - Setting to 1 grants internal DMA permission to read SRAM Block 4-21 low address region.

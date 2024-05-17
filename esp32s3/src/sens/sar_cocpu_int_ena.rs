@@ -45,7 +45,10 @@ pub type SAR_COCPU_TOUCH_TIMEOUT_INT_ENA_W<'a, REG> = crate::BitWriter<'a, REG>;
 ///Field `SAR_COCPU_TOUCH_APPROACH_LOOP_DONE_INT_ENA` reader - int enable of approach loop done
 pub type SAR_COCPU_TOUCH_APPROACH_LOOP_DONE_INT_ENA_R = crate::BitReader;
 ///Field `SAR_COCPU_TOUCH_APPROACH_LOOP_DONE_INT_ENA` writer - int enable of approach loop done
-pub type SAR_COCPU_TOUCH_APPROACH_LOOP_DONE_INT_ENA_W<'a, REG> = crate::BitWriter<'a, REG>;
+pub type SAR_COCPU_TOUCH_APPROACH_LOOP_DONE_INT_ENA_W<'a, REG> = crate::BitWriter<
+    'a,
+    REG,
+>;
 ///Field `SAR_COCPU_TOUCH_SCAN_DONE_INT_ENA` reader - int enable of touch scan done
 pub type SAR_COCPU_TOUCH_SCAN_DONE_INT_ENA_R = crate::BitReader;
 ///Field `SAR_COCPU_TOUCH_SCAN_DONE_INT_ENA` writer - int enable of touch scan done
@@ -58,7 +61,9 @@ impl R {
     }
     ///Bit 1 - int enable of from touch inactive
     #[inline(always)]
-    pub fn sar_cocpu_touch_inactive_int_ena(&self) -> SAR_COCPU_TOUCH_INACTIVE_INT_ENA_R {
+    pub fn sar_cocpu_touch_inactive_int_ena(
+        &self,
+    ) -> SAR_COCPU_TOUCH_INACTIVE_INT_ENA_R {
         SAR_COCPU_TOUCH_INACTIVE_INT_ENA_R::new(((self.bits >> 1) & 1) != 0)
     }
     ///Bit 2 - int enable of touch active
@@ -110,7 +115,9 @@ impl R {
     }
     ///Bit 11 - int enable of touch scan done
     #[inline(always)]
-    pub fn sar_cocpu_touch_scan_done_int_ena(&self) -> SAR_COCPU_TOUCH_SCAN_DONE_INT_ENA_R {
+    pub fn sar_cocpu_touch_scan_done_int_ena(
+        &self,
+    ) -> SAR_COCPU_TOUCH_SCAN_DONE_INT_ENA_R {
         SAR_COCPU_TOUCH_SCAN_DONE_INT_ENA_R::new(((self.bits >> 11) & 1) != 0)
     }
 }
@@ -118,10 +125,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SAR_COCPU_INT_ENA")
-            .field(
-                "sar_cocpu_touch_done_int_ena",
-                &self.sar_cocpu_touch_done_int_ena(),
-            )
+            .field("sar_cocpu_touch_done_int_ena", &self.sar_cocpu_touch_done_int_ena())
             .field(
                 "sar_cocpu_touch_inactive_int_ena",
                 &self.sar_cocpu_touch_inactive_int_ena(),
@@ -130,14 +134,8 @@ impl core::fmt::Debug for R {
                 "sar_cocpu_touch_active_int_ena",
                 &self.sar_cocpu_touch_active_int_ena(),
             )
-            .field(
-                "sar_cocpu_saradc1_int_ena",
-                &self.sar_cocpu_saradc1_int_ena(),
-            )
-            .field(
-                "sar_cocpu_saradc2_int_ena",
-                &self.sar_cocpu_saradc2_int_ena(),
-            )
+            .field("sar_cocpu_saradc1_int_ena", &self.sar_cocpu_saradc1_int_ena())
+            .field("sar_cocpu_saradc2_int_ena", &self.sar_cocpu_saradc2_int_ena())
             .field("sar_cocpu_tsens_int_ena", &self.sar_cocpu_tsens_int_ena())
             .field("sar_cocpu_start_int_ena", &self.sar_cocpu_start_int_ena())
             .field("sar_cocpu_sw_int_ena", &self.sar_cocpu_sw_int_ena())
@@ -201,25 +199,33 @@ impl W {
     ///Bit 5 - int enable of tsens
     #[inline(always)]
     #[must_use]
-    pub fn sar_cocpu_tsens_int_ena(&mut self) -> SAR_COCPU_TSENS_INT_ENA_W<SAR_COCPU_INT_ENA_SPEC> {
+    pub fn sar_cocpu_tsens_int_ena(
+        &mut self,
+    ) -> SAR_COCPU_TSENS_INT_ENA_W<SAR_COCPU_INT_ENA_SPEC> {
         SAR_COCPU_TSENS_INT_ENA_W::new(self, 5)
     }
     ///Bit 6 - int enable of start
     #[inline(always)]
     #[must_use]
-    pub fn sar_cocpu_start_int_ena(&mut self) -> SAR_COCPU_START_INT_ENA_W<SAR_COCPU_INT_ENA_SPEC> {
+    pub fn sar_cocpu_start_int_ena(
+        &mut self,
+    ) -> SAR_COCPU_START_INT_ENA_W<SAR_COCPU_INT_ENA_SPEC> {
         SAR_COCPU_START_INT_ENA_W::new(self, 6)
     }
     ///Bit 7 - int enable of software
     #[inline(always)]
     #[must_use]
-    pub fn sar_cocpu_sw_int_ena(&mut self) -> SAR_COCPU_SW_INT_ENA_W<SAR_COCPU_INT_ENA_SPEC> {
+    pub fn sar_cocpu_sw_int_ena(
+        &mut self,
+    ) -> SAR_COCPU_SW_INT_ENA_W<SAR_COCPU_INT_ENA_SPEC> {
         SAR_COCPU_SW_INT_ENA_W::new(self, 7)
     }
     ///Bit 8 - int enable of super watch dog
     #[inline(always)]
     #[must_use]
-    pub fn sar_cocpu_swd_int_ena(&mut self) -> SAR_COCPU_SWD_INT_ENA_W<SAR_COCPU_INT_ENA_SPEC> {
+    pub fn sar_cocpu_swd_int_ena(
+        &mut self,
+    ) -> SAR_COCPU_SWD_INT_ENA_W<SAR_COCPU_INT_ENA_SPEC> {
         SAR_COCPU_SWD_INT_ENA_W::new(self, 8)
     }
     ///Bit 9 - int enable of timeout done

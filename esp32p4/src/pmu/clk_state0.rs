@@ -120,33 +120,18 @@ impl core::fmt::Debug for R {
         f.debug_struct("CLK_STATE0")
             .field("stable_xpd_pll_state", &self.stable_xpd_pll_state())
             .field("stable_xpd_xtal_state", &self.stable_xpd_xtal_state())
-            .field(
-                "pmu_ana_xpd_pll_i2c_state",
-                &self.pmu_ana_xpd_pll_i2c_state(),
-            )
-            .field(
-                "pmu_sys_clk_slp_sel_state",
-                &self.pmu_sys_clk_slp_sel_state(),
-            )
+            .field("pmu_ana_xpd_pll_i2c_state", &self.pmu_ana_xpd_pll_i2c_state())
+            .field("pmu_sys_clk_slp_sel_state", &self.pmu_sys_clk_slp_sel_state())
             .field("pmu_sys_clk_sel_state", &self.pmu_sys_clk_sel_state())
             .field("pmu_sys_clk_no_div_state", &self.pmu_sys_clk_no_div_state())
             .field("pmu_icg_sys_clk_en_state", &self.pmu_icg_sys_clk_en_state())
-            .field(
-                "pmu_icg_modem_switch_state",
-                &self.pmu_icg_modem_switch_state(),
-            )
+            .field("pmu_icg_modem_switch_state", &self.pmu_icg_modem_switch_state())
             .field("pmu_icg_modem_code_state", &self.pmu_icg_modem_code_state())
             .field("pmu_icg_slp_sel_state", &self.pmu_icg_slp_sel_state())
-            .field(
-                "pmu_icg_global_xtal_state",
-                &self.pmu_icg_global_xtal_state(),
-            )
+            .field("pmu_icg_global_xtal_state", &self.pmu_icg_global_xtal_state())
             .field("pmu_icg_global_pll_state", &self.pmu_icg_global_pll_state())
             .field("pmu_ana_i2c_iso_en_state", &self.pmu_ana_i2c_iso_en_state())
-            .field(
-                "pmu_ana_i2c_retention_state",
-                &self.pmu_ana_i2c_retention_state(),
-            )
+            .field("pmu_ana_i2c_retention_state", &self.pmu_ana_i2c_retention_state())
             .field("pmu_ana_xpd_pll_state", &self.pmu_ana_xpd_pll_state())
             .field("pmu_ana_xpd_xtal_state", &self.pmu_ana_xpd_xtal_state())
             .finish()

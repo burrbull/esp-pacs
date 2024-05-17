@@ -43,13 +43,17 @@ impl W {
     ///Bit 0 - The bit is used to enable preload operation. It will be cleared by hardware after preload operation done.
     #[inline(always)]
     #[must_use]
-    pub fn dcache_preload_ena(&mut self) -> DCACHE_PRELOAD_ENA_W<DCACHE_PRELOAD_CTRL_SPEC> {
+    pub fn dcache_preload_ena(
+        &mut self,
+    ) -> DCACHE_PRELOAD_ENA_W<DCACHE_PRELOAD_CTRL_SPEC> {
         DCACHE_PRELOAD_ENA_W::new(self, 0)
     }
     ///Bit 2 - The bit is used to configure the direction of preload operation. 1: descending, 0: ascending.
     #[inline(always)]
     #[must_use]
-    pub fn dcache_preload_order(&mut self) -> DCACHE_PRELOAD_ORDER_W<DCACHE_PRELOAD_CTRL_SPEC> {
+    pub fn dcache_preload_order(
+        &mut self,
+    ) -> DCACHE_PRELOAD_ORDER_W<DCACHE_PRELOAD_CTRL_SPEC> {
         DCACHE_PRELOAD_ORDER_W::new(self, 2)
     }
 }

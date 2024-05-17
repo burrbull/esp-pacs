@@ -46,10 +46,7 @@ impl core::fmt::Debug for R {
         f.debug_struct("DATE")
             .field("spi_smem_spiclk_fun_drv", &self.spi_smem_spiclk_fun_drv())
             .field("spi_fmem_spiclk_fun_drv", &self.spi_fmem_spiclk_fun_drv())
-            .field(
-                "spi_spiclk_pad_drv_ctl_en",
-                &self.spi_spiclk_pad_drv_ctl_en(),
-            )
+            .field("spi_spiclk_pad_drv_ctl_en", &self.spi_spiclk_pad_drv_ctl_en())
             .field("date", &self.date())
             .finish()
     }
@@ -70,7 +67,9 @@ impl W {
     ///Bit 4 - SPI_CLK PAD driver control signal. 1: The driver of SPI_CLK PAD is controlled by the bits SPI_FMEM_SPICLK_FUN_DRV\[1:0\] and SPI_SMEM_SPICLK_FUN_DRV\[1:0\]. 0: The driver of SPI_CLK PAD is controlled by the bits IO_MUX_FUNC_DRV\[1:0\] of SPICLK PAD.
     #[inline(always)]
     #[must_use]
-    pub fn spi_spiclk_pad_drv_ctl_en(&mut self) -> SPI_SPICLK_PAD_DRV_CTL_EN_W<DATE_SPEC> {
+    pub fn spi_spiclk_pad_drv_ctl_en(
+        &mut self,
+    ) -> SPI_SPICLK_PAD_DRV_CTL_EN_W<DATE_SPEC> {
         SPI_SPICLK_PAD_DRV_CTL_EN_W::new(self, 4)
     }
     ///Bits 5:27 - SPI register version.

@@ -74,10 +74,7 @@ impl core::fmt::Debug for R {
             .field("mac_reserved_2", &self.mac_reserved_2())
             .field("wafer_version_minor", &self.wafer_version_minor())
             .field("wafer_version_major", &self.wafer_version_major())
-            .field(
-                "disable_wafer_version_major",
-                &self.disable_wafer_version_major(),
-            )
+            .field("disable_wafer_version_major", &self.disable_wafer_version_major())
             .field("flash_cap", &self.flash_cap())
             .field("flash_temp", &self.flash_temp())
             .field("flash_vendor", &self.flash_vendor())

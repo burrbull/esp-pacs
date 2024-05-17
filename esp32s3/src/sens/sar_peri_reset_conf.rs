@@ -61,7 +61,9 @@ impl W {
     ///Bit 27 - Reserved.
     #[inline(always)]
     #[must_use]
-    pub fn sar_rtc_i2c_reset(&mut self) -> SAR_RTC_I2C_RESET_W<SAR_PERI_RESET_CONF_SPEC> {
+    pub fn sar_rtc_i2c_reset(
+        &mut self,
+    ) -> SAR_RTC_I2C_RESET_W<SAR_PERI_RESET_CONF_SPEC> {
         SAR_RTC_I2C_RESET_W::new(self, 27)
     }
     ///Bit 29 - enbale saradc reset

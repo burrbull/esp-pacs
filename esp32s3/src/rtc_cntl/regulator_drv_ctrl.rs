@@ -63,7 +63,9 @@ impl W {
     ///Bits 6:11 - No public
     #[inline(always)]
     #[must_use]
-    pub fn regulator_drv_b_slp(&mut self) -> REGULATOR_DRV_B_SLP_W<REGULATOR_DRV_CTRL_SPEC> {
+    pub fn regulator_drv_b_slp(
+        &mut self,
+    ) -> REGULATOR_DRV_B_SLP_W<REGULATOR_DRV_CTRL_SPEC> {
         REGULATOR_DRV_B_SLP_W::new(self, 6)
     }
     ///Bits 12:19 - No public
@@ -75,7 +77,9 @@ impl W {
     ///Bits 20:27 - No public
     #[inline(always)]
     #[must_use]
-    pub fn dg_vdd_drv_b_monitor(&mut self) -> DG_VDD_DRV_B_MONITOR_W<REGULATOR_DRV_CTRL_SPEC> {
+    pub fn dg_vdd_drv_b_monitor(
+        &mut self,
+    ) -> DG_VDD_DRV_B_MONITOR_W<REGULATOR_DRV_CTRL_SPEC> {
         DG_VDD_DRV_B_MONITOR_W::new(self, 20)
     }
 }

@@ -88,22 +88,10 @@ impl core::fmt::Debug for R {
                 "l1_cache_autoload_trigger_mode",
                 &self.l1_cache_autoload_trigger_mode(),
             )
-            .field(
-                "l1_cache_autoload_sct0_ena",
-                &self.l1_cache_autoload_sct0_ena(),
-            )
-            .field(
-                "l1_cache_autoload_sct1_ena",
-                &self.l1_cache_autoload_sct1_ena(),
-            )
-            .field(
-                "l1_cache_autoload_sct2_ena",
-                &self.l1_cache_autoload_sct2_ena(),
-            )
-            .field(
-                "l1_cache_autoload_sct3_ena",
-                &self.l1_cache_autoload_sct3_ena(),
-            )
+            .field("l1_cache_autoload_sct0_ena", &self.l1_cache_autoload_sct0_ena())
+            .field("l1_cache_autoload_sct1_ena", &self.l1_cache_autoload_sct1_ena())
+            .field("l1_cache_autoload_sct2_ena", &self.l1_cache_autoload_sct2_ena())
+            .field("l1_cache_autoload_sct3_ena", &self.l1_cache_autoload_sct3_ena())
             .field("l1_cache_autoload_rgid", &self.l1_cache_autoload_rgid())
             .finish()
     }

@@ -92,7 +92,9 @@ impl W {
     ///Bit 8
     #[inline(always)]
     #[must_use]
-    pub fn host_slc0host_len_wr(&mut self) -> HOST_SLC0HOST_LEN_WR_W<HOST_SLCHOST_TOKEN_CON_SPEC> {
+    pub fn host_slc0host_len_wr(
+        &mut self,
+    ) -> HOST_SLC0HOST_LEN_WR_W<HOST_SLCHOST_TOKEN_CON_SPEC> {
         HOST_SLC0HOST_LEN_WR_W::new(self, 8)
     }
 }

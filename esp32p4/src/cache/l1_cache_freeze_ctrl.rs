@@ -147,7 +147,9 @@ impl W {
     ///Bit 0 - The bit is used to enable freeze operation on L1-ICache0. It can be cleared by software.
     #[inline(always)]
     #[must_use]
-    pub fn l1_icache0_freeze_en(&mut self) -> L1_ICACHE0_FREEZE_EN_W<L1_CACHE_FREEZE_CTRL_SPEC> {
+    pub fn l1_icache0_freeze_en(
+        &mut self,
+    ) -> L1_ICACHE0_FREEZE_EN_W<L1_CACHE_FREEZE_CTRL_SPEC> {
         L1_ICACHE0_FREEZE_EN_W::new(self, 0)
     }
     ///Bit 1 - The bit is used to configure mode of freeze operation L1-ICache0. 0: a miss-access will not stuck. 1: a miss-access will stuck.
@@ -161,7 +163,9 @@ impl W {
     ///Bit 4 - The bit is used to enable freeze operation on L1-ICache1. It can be cleared by software.
     #[inline(always)]
     #[must_use]
-    pub fn l1_icache1_freeze_en(&mut self) -> L1_ICACHE1_FREEZE_EN_W<L1_CACHE_FREEZE_CTRL_SPEC> {
+    pub fn l1_icache1_freeze_en(
+        &mut self,
+    ) -> L1_ICACHE1_FREEZE_EN_W<L1_CACHE_FREEZE_CTRL_SPEC> {
         L1_ICACHE1_FREEZE_EN_W::new(self, 4)
     }
     ///Bit 5 - The bit is used to configure mode of freeze operation L1-ICache1. 0: a miss-access will not stuck. 1: a miss-access will stuck.
@@ -175,13 +179,17 @@ impl W {
     ///Bit 16 - The bit is used to enable freeze operation on L1-DCache. It can be cleared by software.
     #[inline(always)]
     #[must_use]
-    pub fn l1_dcache_freeze_en(&mut self) -> L1_DCACHE_FREEZE_EN_W<L1_CACHE_FREEZE_CTRL_SPEC> {
+    pub fn l1_dcache_freeze_en(
+        &mut self,
+    ) -> L1_DCACHE_FREEZE_EN_W<L1_CACHE_FREEZE_CTRL_SPEC> {
         L1_DCACHE_FREEZE_EN_W::new(self, 16)
     }
     ///Bit 17 - The bit is used to configure mode of freeze operation L1-DCache. 0: a miss-access will not stuck. 1: a miss-access will stuck.
     #[inline(always)]
     #[must_use]
-    pub fn l1_dcache_freeze_mode(&mut self) -> L1_DCACHE_FREEZE_MODE_W<L1_CACHE_FREEZE_CTRL_SPEC> {
+    pub fn l1_dcache_freeze_mode(
+        &mut self,
+    ) -> L1_DCACHE_FREEZE_MODE_W<L1_CACHE_FREEZE_CTRL_SPEC> {
         L1_DCACHE_FREEZE_MODE_W::new(self, 17)
     }
 }

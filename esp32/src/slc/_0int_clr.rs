@@ -136,13 +136,17 @@ impl W {
     ///Bit 12
     #[inline(always)]
     #[must_use]
-    pub fn slc0_token0_1to0_int_clr(&mut self) -> SLC0_TOKEN0_1TO0_INT_CLR_W<_0INT_CLR_SPEC> {
+    pub fn slc0_token0_1to0_int_clr(
+        &mut self,
+    ) -> SLC0_TOKEN0_1TO0_INT_CLR_W<_0INT_CLR_SPEC> {
         SLC0_TOKEN0_1TO0_INT_CLR_W::new(self, 12)
     }
     ///Bit 13
     #[inline(always)]
     #[must_use]
-    pub fn slc0_token1_1to0_int_clr(&mut self) -> SLC0_TOKEN1_1TO0_INT_CLR_W<_0INT_CLR_SPEC> {
+    pub fn slc0_token1_1to0_int_clr(
+        &mut self,
+    ) -> SLC0_TOKEN1_1TO0_INT_CLR_W<_0INT_CLR_SPEC> {
         SLC0_TOKEN1_1TO0_INT_CLR_W::new(self, 13)
     }
     ///Bit 14
@@ -154,7 +158,9 @@ impl W {
     ///Bit 15
     #[inline(always)]
     #[must_use]
-    pub fn slc0_tx_suc_eof_int_clr(&mut self) -> SLC0_TX_SUC_EOF_INT_CLR_W<_0INT_CLR_SPEC> {
+    pub fn slc0_tx_suc_eof_int_clr(
+        &mut self,
+    ) -> SLC0_TX_SUC_EOF_INT_CLR_W<_0INT_CLR_SPEC> {
         SLC0_TX_SUC_EOF_INT_CLR_W::new(self, 15)
     }
     ///Bit 16
@@ -178,37 +184,49 @@ impl W {
     ///Bit 19
     #[inline(always)]
     #[must_use]
-    pub fn slc0_tx_dscr_err_int_clr(&mut self) -> SLC0_TX_DSCR_ERR_INT_CLR_W<_0INT_CLR_SPEC> {
+    pub fn slc0_tx_dscr_err_int_clr(
+        &mut self,
+    ) -> SLC0_TX_DSCR_ERR_INT_CLR_W<_0INT_CLR_SPEC> {
         SLC0_TX_DSCR_ERR_INT_CLR_W::new(self, 19)
     }
     ///Bit 20
     #[inline(always)]
     #[must_use]
-    pub fn slc0_rx_dscr_err_int_clr(&mut self) -> SLC0_RX_DSCR_ERR_INT_CLR_W<_0INT_CLR_SPEC> {
+    pub fn slc0_rx_dscr_err_int_clr(
+        &mut self,
+    ) -> SLC0_RX_DSCR_ERR_INT_CLR_W<_0INT_CLR_SPEC> {
         SLC0_RX_DSCR_ERR_INT_CLR_W::new(self, 20)
     }
     ///Bit 21
     #[inline(always)]
     #[must_use]
-    pub fn slc0_tx_dscr_empty_int_clr(&mut self) -> SLC0_TX_DSCR_EMPTY_INT_CLR_W<_0INT_CLR_SPEC> {
+    pub fn slc0_tx_dscr_empty_int_clr(
+        &mut self,
+    ) -> SLC0_TX_DSCR_EMPTY_INT_CLR_W<_0INT_CLR_SPEC> {
         SLC0_TX_DSCR_EMPTY_INT_CLR_W::new(self, 21)
     }
     ///Bit 22
     #[inline(always)]
     #[must_use]
-    pub fn slc0_host_rd_ack_int_clr(&mut self) -> SLC0_HOST_RD_ACK_INT_CLR_W<_0INT_CLR_SPEC> {
+    pub fn slc0_host_rd_ack_int_clr(
+        &mut self,
+    ) -> SLC0_HOST_RD_ACK_INT_CLR_W<_0INT_CLR_SPEC> {
         SLC0_HOST_RD_ACK_INT_CLR_W::new(self, 22)
     }
     ///Bit 23
     #[inline(always)]
     #[must_use]
-    pub fn slc0_wr_retry_done_int_clr(&mut self) -> SLC0_WR_RETRY_DONE_INT_CLR_W<_0INT_CLR_SPEC> {
+    pub fn slc0_wr_retry_done_int_clr(
+        &mut self,
+    ) -> SLC0_WR_RETRY_DONE_INT_CLR_W<_0INT_CLR_SPEC> {
         SLC0_WR_RETRY_DONE_INT_CLR_W::new(self, 23)
     }
     ///Bit 24
     #[inline(always)]
     #[must_use]
-    pub fn slc0_tx_err_eof_int_clr(&mut self) -> SLC0_TX_ERR_EOF_INT_CLR_W<_0INT_CLR_SPEC> {
+    pub fn slc0_tx_err_eof_int_clr(
+        &mut self,
+    ) -> SLC0_TX_ERR_EOF_INT_CLR_W<_0INT_CLR_SPEC> {
         SLC0_TX_ERR_EOF_INT_CLR_W::new(self, 24)
     }
     ///Bit 25
@@ -220,7 +238,9 @@ impl W {
     ///Bit 26
     #[inline(always)]
     #[must_use]
-    pub fn slc0_rx_quick_eof_int_clr(&mut self) -> SLC0_RX_QUICK_EOF_INT_CLR_W<_0INT_CLR_SPEC> {
+    pub fn slc0_rx_quick_eof_int_clr(
+        &mut self,
+    ) -> SLC0_RX_QUICK_EOF_INT_CLR_W<_0INT_CLR_SPEC> {
         SLC0_RX_QUICK_EOF_INT_CLR_W::new(self, 26)
     }
 }

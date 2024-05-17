@@ -102,25 +102,33 @@ impl W {
     ///Bit 8 - The software set bit for SPI_SLV_RD_DMA_DONE_INT interrupt.
     #[inline(always)]
     #[must_use]
-    pub fn slv_rd_dma_done_int_set(&mut self) -> SLV_RD_DMA_DONE_INT_SET_W<DMA_INT_SET_SPEC> {
+    pub fn slv_rd_dma_done_int_set(
+        &mut self,
+    ) -> SLV_RD_DMA_DONE_INT_SET_W<DMA_INT_SET_SPEC> {
         SLV_RD_DMA_DONE_INT_SET_W::new(self, 8)
     }
     ///Bit 9 - The software set bit for SPI_SLV_WR_DMA_DONE_INT interrupt.
     #[inline(always)]
     #[must_use]
-    pub fn slv_wr_dma_done_int_set(&mut self) -> SLV_WR_DMA_DONE_INT_SET_W<DMA_INT_SET_SPEC> {
+    pub fn slv_wr_dma_done_int_set(
+        &mut self,
+    ) -> SLV_WR_DMA_DONE_INT_SET_W<DMA_INT_SET_SPEC> {
         SLV_WR_DMA_DONE_INT_SET_W::new(self, 9)
     }
     ///Bit 10 - The software set bit for SPI_SLV_RD_BUF_DONE_INT interrupt.
     #[inline(always)]
     #[must_use]
-    pub fn slv_rd_buf_done_int_set(&mut self) -> SLV_RD_BUF_DONE_INT_SET_W<DMA_INT_SET_SPEC> {
+    pub fn slv_rd_buf_done_int_set(
+        &mut self,
+    ) -> SLV_RD_BUF_DONE_INT_SET_W<DMA_INT_SET_SPEC> {
         SLV_RD_BUF_DONE_INT_SET_W::new(self, 10)
     }
     ///Bit 11 - The software set bit for SPI_SLV_WR_BUF_DONE_INT interrupt.
     #[inline(always)]
     #[must_use]
-    pub fn slv_wr_buf_done_int_set(&mut self) -> SLV_WR_BUF_DONE_INT_SET_W<DMA_INT_SET_SPEC> {
+    pub fn slv_wr_buf_done_int_set(
+        &mut self,
+    ) -> SLV_WR_BUF_DONE_INT_SET_W<DMA_INT_SET_SPEC> {
         SLV_WR_BUF_DONE_INT_SET_W::new(self, 11)
     }
     ///Bit 12 - The software set bit for SPI_TRANS_DONE_INT interrupt.
@@ -132,13 +140,17 @@ impl W {
     ///Bit 13 - The software set bit for SPI_DMA_SEG_TRANS_DONE_INT interrupt.
     #[inline(always)]
     #[must_use]
-    pub fn dma_seg_trans_done_int_set(&mut self) -> DMA_SEG_TRANS_DONE_INT_SET_W<DMA_INT_SET_SPEC> {
+    pub fn dma_seg_trans_done_int_set(
+        &mut self,
+    ) -> DMA_SEG_TRANS_DONE_INT_SET_W<DMA_INT_SET_SPEC> {
         DMA_SEG_TRANS_DONE_INT_SET_W::new(self, 13)
     }
     ///Bit 15 - The software set bit for SPI_SLV_BUF_ADDR_ERR_INT interrupt.
     #[inline(always)]
     #[must_use]
-    pub fn slv_buf_addr_err_int_set(&mut self) -> SLV_BUF_ADDR_ERR_INT_SET_W<DMA_INT_SET_SPEC> {
+    pub fn slv_buf_addr_err_int_set(
+        &mut self,
+    ) -> SLV_BUF_ADDR_ERR_INT_SET_W<DMA_INT_SET_SPEC> {
         SLV_BUF_ADDR_ERR_INT_SET_W::new(self, 15)
     }
     ///Bit 16 - The software set bit for SPI_SLV_CMD_ERR_INT interrupt.

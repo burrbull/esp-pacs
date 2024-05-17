@@ -26,14 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CORE_0_INTR_ENA")
-            .field(
-                "core_0_sp_spill_min_intr_ena",
-                &self.core_0_sp_spill_min_intr_ena(),
-            )
-            .field(
-                "core_0_sp_spill_max_intr_ena",
-                &self.core_0_sp_spill_max_intr_ena(),
-            )
+            .field("core_0_sp_spill_min_intr_ena", &self.core_0_sp_spill_min_intr_ena())
+            .field("core_0_sp_spill_max_intr_ena", &self.core_0_sp_spill_max_intr_ena())
             .finish()
     }
 }

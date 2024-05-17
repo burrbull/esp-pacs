@@ -16,9 +16,7 @@ impl R {
 #[cfg(feature = "impl-register-debug")]
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("LUT_WDATA")
-            .field("lut_wdata", &self.lut_wdata())
-            .finish()
+        f.debug_struct("LUT_WDATA").field("lut_wdata", &self.lut_wdata()).finish()
     }
 }
 impl W {

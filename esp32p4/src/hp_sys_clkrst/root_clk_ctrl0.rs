@@ -83,13 +83,17 @@ impl W {
     ///Bits 13:20 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn cpu_clk_div_numerator(&mut self) -> CPU_CLK_DIV_NUMERATOR_W<ROOT_CLK_CTRL0_SPEC> {
+    pub fn cpu_clk_div_numerator(
+        &mut self,
+    ) -> CPU_CLK_DIV_NUMERATOR_W<ROOT_CLK_CTRL0_SPEC> {
         CPU_CLK_DIV_NUMERATOR_W::new(self, 13)
     }
     ///Bits 21:28 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn cpu_clk_div_denominator(&mut self) -> CPU_CLK_DIV_DENOMINATOR_W<ROOT_CLK_CTRL0_SPEC> {
+    pub fn cpu_clk_div_denominator(
+        &mut self,
+    ) -> CPU_CLK_DIV_DENOMINATOR_W<ROOT_CLK_CTRL0_SPEC> {
         CPU_CLK_DIV_DENOMINATOR_W::new(self, 21)
     }
 }

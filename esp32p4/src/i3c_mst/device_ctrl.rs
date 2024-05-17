@@ -168,10 +168,7 @@ impl core::fmt::Debug for R {
             .field("reg_auto_dis_ibi_en", &self.reg_auto_dis_ibi_en())
             .field("reg_dma_rx_en", &self.reg_dma_rx_en())
             .field("reg_dma_tx_en", &self.reg_dma_tx_en())
-            .field(
-                "reg_multi_slv_single_ccc_en",
-                &self.reg_multi_slv_single_ccc_en(),
-            )
+            .field("reg_multi_slv_single_ccc_en", &self.reg_multi_slv_single_ccc_en())
             .field("reg_rx_bit_order", &self.reg_rx_bit_order())
             .field("reg_rx_byte_order", &self.reg_rx_byte_order())
             .field("reg_scl_pullup_force_en", &self.reg_scl_pullup_force_en())
@@ -182,10 +179,7 @@ impl core::fmt::Debug for R {
                 &self.reg_sda_rd_tbit_hlvl_pullup_en(),
             )
             .field("reg_sda_pp_wr_pullup_en", &self.reg_sda_pp_wr_pullup_en())
-            .field(
-                "reg_data_byte_cnt_unlatch",
-                &self.reg_data_byte_cnt_unlatch(),
-            )
+            .field("reg_data_byte_cnt_unlatch", &self.reg_data_byte_cnt_unlatch())
             .field("reg_mem_clk_force_on", &self.reg_mem_clk_force_on())
             .finish()
     }
@@ -212,7 +206,9 @@ impl W {
     ///Bit 4 - NA
     #[inline(always)]
     #[must_use]
-    pub fn reg_ibi_rstart_trans_en(&mut self) -> REG_IBI_RSTART_TRANS_EN_W<DEVICE_CTRL_SPEC> {
+    pub fn reg_ibi_rstart_trans_en(
+        &mut self,
+    ) -> REG_IBI_RSTART_TRANS_EN_W<DEVICE_CTRL_SPEC> {
         REG_IBI_RSTART_TRANS_EN_W::new(self, 4)
     }
     ///Bit 5 - NA
@@ -256,7 +252,9 @@ impl W {
     ///Bit 11 - This bit is used to force scl_pullup_en
     #[inline(always)]
     #[must_use]
-    pub fn reg_scl_pullup_force_en(&mut self) -> REG_SCL_PULLUP_FORCE_EN_W<DEVICE_CTRL_SPEC> {
+    pub fn reg_scl_pullup_force_en(
+        &mut self,
+    ) -> REG_SCL_PULLUP_FORCE_EN_W<DEVICE_CTRL_SPEC> {
         REG_SCL_PULLUP_FORCE_EN_W::new(self, 11)
     }
     ///Bit 12 - This bit is used to force scl_oe
@@ -268,7 +266,9 @@ impl W {
     ///Bit 13 - NA
     #[inline(always)]
     #[must_use]
-    pub fn reg_sda_pp_rd_pullup_en(&mut self) -> REG_SDA_PP_RD_PULLUP_EN_W<DEVICE_CTRL_SPEC> {
+    pub fn reg_sda_pp_rd_pullup_en(
+        &mut self,
+    ) -> REG_SDA_PP_RD_PULLUP_EN_W<DEVICE_CTRL_SPEC> {
         REG_SDA_PP_RD_PULLUP_EN_W::new(self, 13)
     }
     ///Bit 14 - NA
@@ -282,13 +282,17 @@ impl W {
     ///Bit 15 - NA
     #[inline(always)]
     #[must_use]
-    pub fn reg_sda_pp_wr_pullup_en(&mut self) -> REG_SDA_PP_WR_PULLUP_EN_W<DEVICE_CTRL_SPEC> {
+    pub fn reg_sda_pp_wr_pullup_en(
+        &mut self,
+    ) -> REG_SDA_PP_WR_PULLUP_EN_W<DEVICE_CTRL_SPEC> {
         REG_SDA_PP_WR_PULLUP_EN_W::new(self, 15)
     }
     ///Bit 16 - 1: read current real-time updated value 0: read latch data byte cnt value
     #[inline(always)]
     #[must_use]
-    pub fn reg_data_byte_cnt_unlatch(&mut self) -> REG_DATA_BYTE_CNT_UNLATCH_W<DEVICE_CTRL_SPEC> {
+    pub fn reg_data_byte_cnt_unlatch(
+        &mut self,
+    ) -> REG_DATA_BYTE_CNT_UNLATCH_W<DEVICE_CTRL_SPEC> {
         REG_DATA_BYTE_CNT_UNLATCH_W::new(self, 16)
     }
     ///Bit 17 - 1: dev characteristic and address table memory clk date force on . 0 : clock gating by rd/wr.

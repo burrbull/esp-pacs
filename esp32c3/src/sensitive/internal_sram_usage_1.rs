@@ -30,10 +30,7 @@ impl core::fmt::Debug for R {
                 "internal_sram_usage_cpu_cache",
                 &self.internal_sram_usage_cpu_cache(),
             )
-            .field(
-                "internal_sram_usage_cpu_sram",
-                &self.internal_sram_usage_cpu_sram(),
-            )
+            .field("internal_sram_usage_cpu_sram", &self.internal_sram_usage_cpu_sram())
             .finish()
     }
 }

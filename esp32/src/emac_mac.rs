@@ -265,7 +265,9 @@ pub mod emaclpi_crs;
 You can [`read`](crate::generic::Reg::read) this register and get [`emaclpitimerscontrol::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@emaclpitimerscontrol`] module*/
-pub type EMACLPITIMERSCONTROL = crate::Reg<emaclpitimerscontrol::EMACLPITIMERSCONTROL_SPEC>;
+pub type EMACLPITIMERSCONTROL = crate::Reg<
+    emaclpitimerscontrol::EMACLPITIMERSCONTROL_SPEC,
+>;
 ///LPI Timers Control
 pub mod emaclpitimerscontrol;
 /**EMACINTS (r) register accessor: Interrupt status

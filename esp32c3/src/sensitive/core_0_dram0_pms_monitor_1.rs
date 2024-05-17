@@ -13,12 +13,16 @@ pub type CORE_0_DRAM0_PMS_MONITOR_VIOLATE_EN_W<'a, REG> = crate::BitWriter<'a, R
 impl R {
     ///Bit 0 - core_0_dram0_pms_monitor_violate_clr
     #[inline(always)]
-    pub fn core_0_dram0_pms_monitor_violate_clr(&self) -> CORE_0_DRAM0_PMS_MONITOR_VIOLATE_CLR_R {
+    pub fn core_0_dram0_pms_monitor_violate_clr(
+        &self,
+    ) -> CORE_0_DRAM0_PMS_MONITOR_VIOLATE_CLR_R {
         CORE_0_DRAM0_PMS_MONITOR_VIOLATE_CLR_R::new((self.bits & 1) != 0)
     }
     ///Bit 1 - core_0_dram0_pms_monitor_violate_en
     #[inline(always)]
-    pub fn core_0_dram0_pms_monitor_violate_en(&self) -> CORE_0_DRAM0_PMS_MONITOR_VIOLATE_EN_R {
+    pub fn core_0_dram0_pms_monitor_violate_en(
+        &self,
+    ) -> CORE_0_DRAM0_PMS_MONITOR_VIOLATE_EN_R {
         CORE_0_DRAM0_PMS_MONITOR_VIOLATE_EN_R::new(((self.bits >> 1) & 1) != 0)
     }
 }

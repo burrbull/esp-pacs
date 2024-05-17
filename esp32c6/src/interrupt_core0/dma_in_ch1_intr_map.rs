@@ -25,7 +25,9 @@ impl W {
     ///Bits 0:4 - Need add description
     #[inline(always)]
     #[must_use]
-    pub fn dma_in_ch1_intr_map(&mut self) -> DMA_IN_CH1_INTR_MAP_W<DMA_IN_CH1_INTR_MAP_SPEC> {
+    pub fn dma_in_ch1_intr_map(
+        &mut self,
+    ) -> DMA_IN_CH1_INTR_MAP_W<DMA_IN_CH1_INTR_MAP_SPEC> {
         DMA_IN_CH1_INTR_MAP_W::new(self, 0)
     }
 }

@@ -21,7 +21,10 @@ pub type SAR_COCPU_SWD_INT_ENA_W1TC_W<'a, REG> = crate::BitWriter<'a, REG>;
 ///Field `SAR_COCPU_TOUCH_TIMEOUT_INT_ENA_W1TC` writer - Clear int enable of timeout done
 pub type SAR_COCPU_TOUCH_TIMEOUT_INT_ENA_W1TC_W<'a, REG> = crate::BitWriter<'a, REG>;
 ///Field `SAR_COCPU_TOUCH_APPROACH_LOOP_DONE_INT_ENA_W1TC` writer - Clear int enable of approach loop done
-pub type SAR_COCPU_TOUCH_APPROACH_LOOP_DONE_INT_ENA_W1TC_W<'a, REG> = crate::BitWriter<'a, REG>;
+pub type SAR_COCPU_TOUCH_APPROACH_LOOP_DONE_INT_ENA_W1TC_W<'a, REG> = crate::BitWriter<
+    'a,
+    REG,
+>;
 ///Field `SAR_COCPU_TOUCH_SCAN_DONE_INT_ENA_W1TC` writer - Clear int enable of touch scan done
 pub type SAR_COCPU_TOUCH_SCAN_DONE_INT_ENA_W1TC_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[cfg(feature = "impl-register-debug")]

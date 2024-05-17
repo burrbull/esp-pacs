@@ -25,7 +25,9 @@ impl W {
     ///Bits 0:31 - GPIO analog comparator zero detect filter count
     #[inline(always)]
     #[must_use]
-    pub fn zero_det0_filter_cnt(&mut self) -> ZERO_DET0_FILTER_CNT_W<ZERO_DET0_FILTER_CNT_SPEC> {
+    pub fn zero_det0_filter_cnt(
+        &mut self,
+    ) -> ZERO_DET0_FILTER_CNT_W<ZERO_DET0_FILTER_CNT_SPEC> {
         ZERO_DET0_FILTER_CNT_W::new(self, 0)
     }
 }

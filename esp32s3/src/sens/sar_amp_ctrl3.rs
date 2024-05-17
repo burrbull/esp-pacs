@@ -109,7 +109,9 @@ impl W {
     ///Bits 16:19 - no public
     #[inline(always)]
     #[must_use]
-    pub fn amp_short_ref_gnd_fsm(&mut self) -> AMP_SHORT_REF_GND_FSM_W<SAR_AMP_CTRL3_SPEC> {
+    pub fn amp_short_ref_gnd_fsm(
+        &mut self,
+    ) -> AMP_SHORT_REF_GND_FSM_W<SAR_AMP_CTRL3_SPEC> {
         AMP_SHORT_REF_GND_FSM_W::new(self, 16)
     }
     ///Bits 20:23 - no public

@@ -115,14 +115,8 @@ impl core::fmt::Debug for R {
             .field("wdt_delay_sel", &self.wdt_delay_sel())
             .field("dis_pad_jtag", &self.dis_pad_jtag())
             .field("dis_download_icache", &self.dis_download_icache())
-            .field(
-                "dis_download_manual_encrypt",
-                &self.dis_download_manual_encrypt(),
-            )
-            .field(
-                "spi_boot_encrypt_decrypt_cnt",
-                &self.spi_boot_encrypt_decrypt_cnt(),
-            )
+            .field("dis_download_manual_encrypt", &self.dis_download_manual_encrypt())
+            .field("spi_boot_encrypt_decrypt_cnt", &self.spi_boot_encrypt_decrypt_cnt())
             .field("xts_key_length_256", &self.xts_key_length_256())
             .field("uart_print_control", &self.uart_print_control())
             .field("force_send_resume", &self.force_send_resume())

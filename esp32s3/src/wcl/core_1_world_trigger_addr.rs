@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("Core_1_World_TRIGGER_ADDR")
-            .field(
-                "core_1_world_trigger_addr",
-                &self.core_1_world_trigger_addr(),
-            )
+            .field("core_1_world_trigger_addr", &self.core_1_world_trigger_addr())
             .finish()
     }
 }

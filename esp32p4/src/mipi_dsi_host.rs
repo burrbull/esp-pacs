@@ -926,7 +926,9 @@ pub mod dpi_vcid_act;
 You can [`read`](crate::generic::Reg::read) this register and get [`dpi_color_coding_act::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dpi_color_coding_act`] module*/
-pub type DPI_COLOR_CODING_ACT = crate::Reg<dpi_color_coding_act::DPI_COLOR_CODING_ACT_SPEC>;
+pub type DPI_COLOR_CODING_ACT = crate::Reg<
+    dpi_color_coding_act::DPI_COLOR_CODING_ACT_SPEC,
+>;
 ///NA
 pub mod dpi_color_coding_act;
 /**DPI_LP_CMD_TIM_ACT (r) register accessor: NA
@@ -1030,7 +1032,9 @@ pub mod vid_vfp_lines_act;
 You can [`read`](crate::generic::Reg::read) this register and get [`vid_vactive_lines_act::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@vid_vactive_lines_act`] module*/
-pub type VID_VACTIVE_LINES_ACT = crate::Reg<vid_vactive_lines_act::VID_VACTIVE_LINES_ACT_SPEC>;
+pub type VID_VACTIVE_LINES_ACT = crate::Reg<
+    vid_vactive_lines_act::VID_VACTIVE_LINES_ACT_SPEC,
+>;
 ///NA
 pub mod vid_vactive_lines_act;
 /**VID_PKT_STATUS (r) register accessor: NA

@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("INTERNAL_SRAM_USAGE_3")
-            .field(
-                "internal_sram_mac_dump_usage",
-                &self.internal_sram_mac_dump_usage(),
-            )
+            .field("internal_sram_mac_dump_usage", &self.internal_sram_mac_dump_usage())
             .finish()
     }
 }

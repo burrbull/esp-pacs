@@ -25,7 +25,9 @@ impl W {
     ///Bits 0:5 - NA
     #[inline(always)]
     #[must_use]
-    pub fn core1_h264_reg_int_map(&mut self) -> CORE1_H264_REG_INT_MAP_W<H264_REG_INT_MAP_SPEC> {
+    pub fn core1_h264_reg_int_map(
+        &mut self,
+    ) -> CORE1_H264_REG_INT_MAP_W<H264_REG_INT_MAP_SPEC> {
         CORE1_H264_REG_INT_MAP_W::new(self, 0)
     }
 }

@@ -45,7 +45,9 @@ impl R {
     }
     ///Bit 9
     #[inline(always)]
-    pub fn app_cpu_disabled_cache_ia_opposite(&self) -> APP_CPU_DISABLED_CACHE_IA_OPPOSITE_R {
+    pub fn app_cpu_disabled_cache_ia_opposite(
+        &self,
+    ) -> APP_CPU_DISABLED_CACHE_IA_OPPOSITE_R {
         APP_CPU_DISABLED_CACHE_IA_OPPOSITE_R::new(((self.bits >> 9) & 1) != 0)
     }
     ///Bit 10
@@ -84,10 +86,7 @@ impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("APP_DCACHE_DBUG3")
             .field("app_mmu_rdata", &self.app_mmu_rdata())
-            .field(
-                "app_cpu_disabled_cache_ia",
-                &self.app_cpu_disabled_cache_ia(),
-            )
+            .field("app_cpu_disabled_cache_ia", &self.app_cpu_disabled_cache_ia())
             .field(
                 "app_cpu_disabled_cache_ia_opposite",
                 &self.app_cpu_disabled_cache_ia_opposite(),
@@ -112,10 +111,7 @@ impl core::fmt::Debug for R {
                 "app_cpu_disabled_cache_ia_drom0",
                 &self.app_cpu_disabled_cache_ia_drom0(),
             )
-            .field(
-                "app_cache_iram0_pid_error",
-                &self.app_cache_iram0_pid_error(),
-            )
+            .field("app_cache_iram0_pid_error", &self.app_cache_iram0_pid_error())
             .finish()
     }
 }

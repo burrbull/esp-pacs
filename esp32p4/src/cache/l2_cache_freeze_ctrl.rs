@@ -43,13 +43,17 @@ impl W {
     ///Bit 20 - The bit is used to enable freeze operation on L2-Cache. It can be cleared by software.
     #[inline(always)]
     #[must_use]
-    pub fn l2_cache_freeze_en(&mut self) -> L2_CACHE_FREEZE_EN_W<L2_CACHE_FREEZE_CTRL_SPEC> {
+    pub fn l2_cache_freeze_en(
+        &mut self,
+    ) -> L2_CACHE_FREEZE_EN_W<L2_CACHE_FREEZE_CTRL_SPEC> {
         L2_CACHE_FREEZE_EN_W::new(self, 20)
     }
     ///Bit 21 - The bit is used to configure mode of freeze operation L2-Cache. 0: a miss-access will not stuck. 1: a miss-access will stuck.
     #[inline(always)]
     #[must_use]
-    pub fn l2_cache_freeze_mode(&mut self) -> L2_CACHE_FREEZE_MODE_W<L2_CACHE_FREEZE_CTRL_SPEC> {
+    pub fn l2_cache_freeze_mode(
+        &mut self,
+    ) -> L2_CACHE_FREEZE_MODE_W<L2_CACHE_FREEZE_CTRL_SPEC> {
         L2_CACHE_FREEZE_MODE_W::new(self, 21)
     }
 }

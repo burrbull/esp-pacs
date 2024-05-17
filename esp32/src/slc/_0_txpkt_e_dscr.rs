@@ -25,7 +25,9 @@ impl W {
     ///Bits 0:31
     #[inline(always)]
     #[must_use]
-    pub fn slc0_tx_pkt_e_dscr_addr(&mut self) -> SLC0_TX_PKT_E_DSCR_ADDR_W<_0_TXPKT_E_DSCR_SPEC> {
+    pub fn slc0_tx_pkt_e_dscr_addr(
+        &mut self,
+    ) -> SLC0_TX_PKT_E_DSCR_ADDR_W<_0_TXPKT_E_DSCR_SPEC> {
         SLC0_TX_PKT_E_DSCR_ADDR_W::new(self, 0)
     }
 }

@@ -21,12 +21,16 @@ pub type CACHE_MMU_PAGE_SIZE_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
 impl R {
     ///Bit 0 - The bit is used to disable checking mmu entry fault by preload operation.
     #[inline(always)]
-    pub fn cache_ignore_preload_mmu_entry_fault(&self) -> CACHE_IGNORE_PRELOAD_MMU_ENTRY_FAULT_R {
+    pub fn cache_ignore_preload_mmu_entry_fault(
+        &self,
+    ) -> CACHE_IGNORE_PRELOAD_MMU_ENTRY_FAULT_R {
         CACHE_IGNORE_PRELOAD_MMU_ENTRY_FAULT_R::new((self.bits & 1) != 0)
     }
     ///Bit 1 - The bit is used to disable checking mmu entry fault by sync operation.
     #[inline(always)]
-    pub fn cache_ignore_sync_mmu_entry_fault(&self) -> CACHE_IGNORE_SYNC_MMU_ENTRY_FAULT_R {
+    pub fn cache_ignore_sync_mmu_entry_fault(
+        &self,
+    ) -> CACHE_IGNORE_SYNC_MMU_ENTRY_FAULT_R {
         CACHE_IGNORE_SYNC_MMU_ENTRY_FAULT_R::new(((self.bits >> 1) & 1) != 0)
     }
     ///Bit 2 - The bit is used to enable cache trace function.
@@ -83,7 +87,9 @@ impl W {
     ///Bits 3:4 - This bit is used to choose mmu page size. 2:64KB. 1. 32KB. 0: 16KB
     #[inline(always)]
     #[must_use]
-    pub fn cache_mmu_page_size(&mut self) -> CACHE_MMU_PAGE_SIZE_W<CACHE_CONF_MISC_SPEC> {
+    pub fn cache_mmu_page_size(
+        &mut self,
+    ) -> CACHE_MMU_PAGE_SIZE_W<CACHE_CONF_MISC_SPEC> {
         CACHE_MMU_PAGE_SIZE_W::new(self, 3)
     }
 }

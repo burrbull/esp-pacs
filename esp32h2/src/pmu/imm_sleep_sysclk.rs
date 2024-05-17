@@ -18,25 +18,33 @@ impl W {
     ///Bit 28 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn update_dig_icg_switch(&mut self) -> UPDATE_DIG_ICG_SWITCH_W<IMM_SLEEP_SYSCLK_SPEC> {
+    pub fn update_dig_icg_switch(
+        &mut self,
+    ) -> UPDATE_DIG_ICG_SWITCH_W<IMM_SLEEP_SYSCLK_SPEC> {
         UPDATE_DIG_ICG_SWITCH_W::new(self, 28)
     }
     ///Bit 29 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn tie_low_icg_slp_sel(&mut self) -> TIE_LOW_ICG_SLP_SEL_W<IMM_SLEEP_SYSCLK_SPEC> {
+    pub fn tie_low_icg_slp_sel(
+        &mut self,
+    ) -> TIE_LOW_ICG_SLP_SEL_W<IMM_SLEEP_SYSCLK_SPEC> {
         TIE_LOW_ICG_SLP_SEL_W::new(self, 29)
     }
     ///Bit 30 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn tie_high_icg_slp_sel(&mut self) -> TIE_HIGH_ICG_SLP_SEL_W<IMM_SLEEP_SYSCLK_SPEC> {
+    pub fn tie_high_icg_slp_sel(
+        &mut self,
+    ) -> TIE_HIGH_ICG_SLP_SEL_W<IMM_SLEEP_SYSCLK_SPEC> {
         TIE_HIGH_ICG_SLP_SEL_W::new(self, 30)
     }
     ///Bit 31 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn update_dig_sys_clk_sel(&mut self) -> UPDATE_DIG_SYS_CLK_SEL_W<IMM_SLEEP_SYSCLK_SPEC> {
+    pub fn update_dig_sys_clk_sel(
+        &mut self,
+    ) -> UPDATE_DIG_SYS_CLK_SEL_W<IMM_SLEEP_SYSCLK_SPEC> {
         UPDATE_DIG_SYS_CLK_SEL_W::new(self, 31)
     }
 }

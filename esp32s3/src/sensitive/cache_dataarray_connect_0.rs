@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CACHE_DATAARRAY_CONNECT_0")
-            .field(
-                "cache_dataarray_connect_lock",
-                &self.cache_dataarray_connect_lock(),
-            )
+            .field("cache_dataarray_connect_lock", &self.cache_dataarray_connect_lock())
             .finish()
     }
 }

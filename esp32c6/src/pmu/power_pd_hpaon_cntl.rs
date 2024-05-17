@@ -95,7 +95,9 @@ impl W {
     ///Bit 0 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn force_hp_aon_reset(&mut self) -> FORCE_HP_AON_RESET_W<POWER_PD_HPAON_CNTL_SPEC> {
+    pub fn force_hp_aon_reset(
+        &mut self,
+    ) -> FORCE_HP_AON_RESET_W<POWER_PD_HPAON_CNTL_SPEC> {
         FORCE_HP_AON_RESET_W::new(self, 0)
     }
     ///Bit 1 - need_des
@@ -113,13 +115,17 @@ impl W {
     ///Bit 3 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn force_hp_aon_no_reset(&mut self) -> FORCE_HP_AON_NO_RESET_W<POWER_PD_HPAON_CNTL_SPEC> {
+    pub fn force_hp_aon_no_reset(
+        &mut self,
+    ) -> FORCE_HP_AON_NO_RESET_W<POWER_PD_HPAON_CNTL_SPEC> {
         FORCE_HP_AON_NO_RESET_W::new(self, 3)
     }
     ///Bit 4 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn force_hp_aon_no_iso(&mut self) -> FORCE_HP_AON_NO_ISO_W<POWER_PD_HPAON_CNTL_SPEC> {
+    pub fn force_hp_aon_no_iso(
+        &mut self,
+    ) -> FORCE_HP_AON_NO_ISO_W<POWER_PD_HPAON_CNTL_SPEC> {
         FORCE_HP_AON_NO_ISO_W::new(self, 4)
     }
     ///Bit 5 - need_des
@@ -137,7 +143,9 @@ impl W {
     ///Bits 27:31 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn pd_hp_aon_pd_mask(&mut self) -> PD_HP_AON_PD_MASK_W<POWER_PD_HPAON_CNTL_SPEC> {
+    pub fn pd_hp_aon_pd_mask(
+        &mut self,
+    ) -> PD_HP_AON_PD_MASK_W<POWER_PD_HPAON_CNTL_SPEC> {
         PD_HP_AON_PD_MASK_W::new(self, 27)
     }
 }

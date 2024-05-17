@@ -9,19 +9,35 @@ pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_BT_W<'a, REG> = crate::FieldWriter<'a,
 ///Field `CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_I2C_EXT0` reader - core_0_pif_pms_constrain_world_0_i2c_ext0
 pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_I2C_EXT0_R = crate::FieldReader;
 ///Field `CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_I2C_EXT0` writer - core_0_pif_pms_constrain_world_0_i2c_ext0
-pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_I2C_EXT0_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
+pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_I2C_EXT0_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 ///Field `CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_UHCI0` reader - core_0_pif_pms_constrain_world_0_uhci0
 pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_UHCI0_R = crate::FieldReader;
 ///Field `CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_UHCI0` writer - core_0_pif_pms_constrain_world_0_uhci0
-pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_UHCI0_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
+pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_UHCI0_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 ///Field `CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_RMT` reader - core_0_pif_pms_constrain_world_0_rmt
 pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_RMT_R = crate::FieldReader;
 ///Field `CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_RMT` writer - core_0_pif_pms_constrain_world_0_rmt
-pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_RMT_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
+pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_RMT_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 ///Field `CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_LEDC` reader - core_0_pif_pms_constrain_world_0_ledc
 pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_LEDC_R = crate::FieldReader;
 ///Field `CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_LEDC` writer - core_0_pif_pms_constrain_world_0_ledc
-pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_LEDC_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
+pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_LEDC_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 ///Field `CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_BB` reader - core_0_pif_pms_constrain_world_0_bb
 pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_BB_R = crate::FieldReader;
 ///Field `CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_BB` writer - core_0_pif_pms_constrain_world_0_bb
@@ -29,19 +45,33 @@ pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_BB_W<'a, REG> = crate::FieldWriter<'a,
 ///Field `CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_TIMERGROUP` reader - core_0_pif_pms_constrain_world_0_timergroup
 pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_TIMERGROUP_R = crate::FieldReader;
 ///Field `CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_TIMERGROUP` writer - core_0_pif_pms_constrain_world_0_timergroup
-pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_TIMERGROUP_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
+pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_TIMERGROUP_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 ///Field `CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_TIMERGROUP1` reader - core_0_pif_pms_constrain_world_0_timergroup1
 pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_TIMERGROUP1_R = crate::FieldReader;
 ///Field `CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_TIMERGROUP1` writer - core_0_pif_pms_constrain_world_0_timergroup1
-pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_TIMERGROUP1_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
+pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_TIMERGROUP1_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 ///Field `CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_SYSTIMER` reader - core_0_pif_pms_constrain_world_0_systimer
 pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_SYSTIMER_R = crate::FieldReader;
 ///Field `CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_SYSTIMER` writer - core_0_pif_pms_constrain_world_0_systimer
-pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_SYSTIMER_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
+pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_SYSTIMER_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 impl R {
     ///Bits 0:1 - core_0_pif_pms_constrain_world_0_bt
     #[inline(always)]
-    pub fn core_0_pif_pms_constrain_world_0_bt(&self) -> CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_BT_R {
+    pub fn core_0_pif_pms_constrain_world_0_bt(
+        &self,
+    ) -> CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_BT_R {
         CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_BT_R::new((self.bits & 3) as u8)
     }
     ///Bits 4:5 - core_0_pif_pms_constrain_world_0_i2c_ext0
@@ -60,17 +90,23 @@ impl R {
     }
     ///Bits 10:11 - core_0_pif_pms_constrain_world_0_rmt
     #[inline(always)]
-    pub fn core_0_pif_pms_constrain_world_0_rmt(&self) -> CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_RMT_R {
+    pub fn core_0_pif_pms_constrain_world_0_rmt(
+        &self,
+    ) -> CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_RMT_R {
         CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_RMT_R::new(((self.bits >> 10) & 3) as u8)
     }
     ///Bits 16:17 - core_0_pif_pms_constrain_world_0_ledc
     #[inline(always)]
-    pub fn core_0_pif_pms_constrain_world_0_ledc(&self) -> CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_LEDC_R {
+    pub fn core_0_pif_pms_constrain_world_0_ledc(
+        &self,
+    ) -> CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_LEDC_R {
         CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_LEDC_R::new(((self.bits >> 16) & 3) as u8)
     }
     ///Bits 22:23 - core_0_pif_pms_constrain_world_0_bb
     #[inline(always)]
-    pub fn core_0_pif_pms_constrain_world_0_bb(&self) -> CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_BB_R {
+    pub fn core_0_pif_pms_constrain_world_0_bb(
+        &self,
+    ) -> CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_BB_R {
         CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_BB_R::new(((self.bits >> 22) & 3) as u8)
     }
     ///Bits 26:27 - core_0_pif_pms_constrain_world_0_timergroup
@@ -85,7 +121,9 @@ impl R {
     pub fn core_0_pif_pms_constrain_world_0_timergroup1(
         &self,
     ) -> CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_TIMERGROUP1_R {
-        CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_TIMERGROUP1_R::new(((self.bits >> 28) & 3) as u8)
+        CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_TIMERGROUP1_R::new(
+            ((self.bits >> 28) & 3) as u8,
+        )
     }
     ///Bits 30:31 - core_0_pif_pms_constrain_world_0_systimer
     #[inline(always)]
@@ -200,7 +238,9 @@ impl W {
     #[must_use]
     pub fn core_0_pif_pms_constrain_world_0_timergroup1(
         &mut self,
-    ) -> CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_TIMERGROUP1_W<CORE_0_PIF_PMS_CONSTRAIN_2_SPEC> {
+    ) -> CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_TIMERGROUP1_W<
+        CORE_0_PIF_PMS_CONSTRAIN_2_SPEC,
+    > {
         CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_TIMERGROUP1_W::new(self, 28)
     }
     ///Bits 30:31 - core_0_pif_pms_constrain_world_0_systimer

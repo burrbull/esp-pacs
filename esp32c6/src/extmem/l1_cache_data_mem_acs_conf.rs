@@ -82,38 +82,14 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("L1_CACHE_DATA_MEM_ACS_CONF")
-            .field(
-                "l1_icache0_data_mem_rd_en",
-                &self.l1_icache0_data_mem_rd_en(),
-            )
-            .field(
-                "l1_icache0_data_mem_wr_en",
-                &self.l1_icache0_data_mem_wr_en(),
-            )
-            .field(
-                "l1_icache1_data_mem_rd_en",
-                &self.l1_icache1_data_mem_rd_en(),
-            )
-            .field(
-                "l1_icache1_data_mem_wr_en",
-                &self.l1_icache1_data_mem_wr_en(),
-            )
-            .field(
-                "l1_icache2_data_mem_rd_en",
-                &self.l1_icache2_data_mem_rd_en(),
-            )
-            .field(
-                "l1_icache2_data_mem_wr_en",
-                &self.l1_icache2_data_mem_wr_en(),
-            )
-            .field(
-                "l1_icache3_data_mem_rd_en",
-                &self.l1_icache3_data_mem_rd_en(),
-            )
-            .field(
-                "l1_icache3_data_mem_wr_en",
-                &self.l1_icache3_data_mem_wr_en(),
-            )
+            .field("l1_icache0_data_mem_rd_en", &self.l1_icache0_data_mem_rd_en())
+            .field("l1_icache0_data_mem_wr_en", &self.l1_icache0_data_mem_wr_en())
+            .field("l1_icache1_data_mem_rd_en", &self.l1_icache1_data_mem_rd_en())
+            .field("l1_icache1_data_mem_wr_en", &self.l1_icache1_data_mem_wr_en())
+            .field("l1_icache2_data_mem_rd_en", &self.l1_icache2_data_mem_rd_en())
+            .field("l1_icache2_data_mem_wr_en", &self.l1_icache2_data_mem_wr_en())
+            .field("l1_icache3_data_mem_rd_en", &self.l1_icache3_data_mem_rd_en())
+            .field("l1_icache3_data_mem_wr_en", &self.l1_icache3_data_mem_wr_en())
             .field("l1_cache_data_mem_rd_en", &self.l1_cache_data_mem_rd_en())
             .field("l1_cache_data_mem_wr_en", &self.l1_cache_data_mem_wr_en())
             .finish()

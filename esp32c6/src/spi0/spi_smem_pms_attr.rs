@@ -45,13 +45,17 @@ impl W {
     ///Bit 0 - 1: SPI1 external RAM ACE section %s read accessible. 0: Not allowed.
     #[inline(always)]
     #[must_use]
-    pub fn spi_smem_pms_rd_attr(&mut self) -> SPI_SMEM_PMS_RD_ATTR_W<SPI_SMEM_PMS_ATTR_SPEC> {
+    pub fn spi_smem_pms_rd_attr(
+        &mut self,
+    ) -> SPI_SMEM_PMS_RD_ATTR_W<SPI_SMEM_PMS_ATTR_SPEC> {
         SPI_SMEM_PMS_RD_ATTR_W::new(self, 0)
     }
     ///Bit 1 - 1: SPI1 external RAM ACE section %s write accessible. 0: Not allowed.
     #[inline(always)]
     #[must_use]
-    pub fn spi_smem_pms_wr_attr(&mut self) -> SPI_SMEM_PMS_WR_ATTR_W<SPI_SMEM_PMS_ATTR_SPEC> {
+    pub fn spi_smem_pms_wr_attr(
+        &mut self,
+    ) -> SPI_SMEM_PMS_WR_ATTR_W<SPI_SMEM_PMS_ATTR_SPEC> {
         SPI_SMEM_PMS_WR_ATTR_W::new(self, 1)
     }
     ///Bit 2 - SPI1 external RAM ACE section %s ECC mode, 1: enable ECC mode. 0: Disable it. The external RAM ACE section %s is configured by registers SPI_SMEM_PMS%s_ADDR_REG and SPI_SMEM_PMS%s_SIZE_REG.

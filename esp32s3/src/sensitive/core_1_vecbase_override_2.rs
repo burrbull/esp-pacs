@@ -5,11 +5,18 @@ pub type W = crate::W<CORE_1_VECBASE_OVERRIDE_2_SPEC>;
 ///Field `CORE_1_VECBASE_OVERRIDE_WORLD1_VALUE` reader - world1 vecbase_override register, when core1 in world1 use this register to override vecbase register.
 pub type CORE_1_VECBASE_OVERRIDE_WORLD1_VALUE_R = crate::FieldReader<u32>;
 ///Field `CORE_1_VECBASE_OVERRIDE_WORLD1_VALUE` writer - world1 vecbase_override register, when core1 in world1 use this register to override vecbase register.
-pub type CORE_1_VECBASE_OVERRIDE_WORLD1_VALUE_W<'a, REG> = crate::FieldWriter<'a, REG, 22, u32>;
+pub type CORE_1_VECBASE_OVERRIDE_WORLD1_VALUE_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    22,
+    u32,
+>;
 impl R {
     ///Bits 0:21 - world1 vecbase_override register, when core1 in world1 use this register to override vecbase register.
     #[inline(always)]
-    pub fn core_1_vecbase_override_world1_value(&self) -> CORE_1_VECBASE_OVERRIDE_WORLD1_VALUE_R {
+    pub fn core_1_vecbase_override_world1_value(
+        &self,
+    ) -> CORE_1_VECBASE_OVERRIDE_WORLD1_VALUE_R {
         CORE_1_VECBASE_OVERRIDE_WORLD1_VALUE_R::new(self.bits & 0x003f_ffff)
     }
 }

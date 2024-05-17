@@ -92,7 +92,9 @@ impl W {
     ///Bit 4 - write 1 to clear setting invalid reg_data_type
     #[inline(always)]
     #[must_use]
-    pub fn isp_data_type_setting_err(&mut self) -> ISP_DATA_TYPE_SETTING_ERR_W<INT_CLR_SPEC> {
+    pub fn isp_data_type_setting_err(
+        &mut self,
+    ) -> ISP_DATA_TYPE_SETTING_ERR_W<INT_CLR_SPEC> {
         ISP_DATA_TYPE_SETTING_ERR_W::new(self, 4)
     }
     ///Bit 5 - write 1 to clear hnum setting unmatch with mipi input

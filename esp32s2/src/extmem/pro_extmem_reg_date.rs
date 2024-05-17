@@ -25,7 +25,9 @@ impl W {
     ///Bits 0:27 - Reserved.
     #[inline(always)]
     #[must_use]
-    pub fn pro_extmem_reg_date(&mut self) -> PRO_EXTMEM_REG_DATE_W<PRO_EXTMEM_REG_DATE_SPEC> {
+    pub fn pro_extmem_reg_date(
+        &mut self,
+    ) -> PRO_EXTMEM_REG_DATE_W<PRO_EXTMEM_REG_DATE_SPEC> {
         PRO_EXTMEM_REG_DATE_W::new(self, 0)
     }
 }

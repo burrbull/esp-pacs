@@ -44,15 +44,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("FUNC8_OUT_SEL_CFG")
-            .field(
-                "reg_gpio_func8_oe_inv_sel",
-                &self.reg_gpio_func8_oe_inv_sel(),
-            )
+            .field("reg_gpio_func8_oe_inv_sel", &self.reg_gpio_func8_oe_inv_sel())
             .field("reg_gpio_func8_oe_sel", &self.reg_gpio_func8_oe_sel())
-            .field(
-                "reg_gpio_func8_out_inv_sel",
-                &self.reg_gpio_func8_out_inv_sel(),
-            )
+            .field("reg_gpio_func8_out_inv_sel", &self.reg_gpio_func8_out_inv_sel())
             .field("reg_gpio_func8_out_sel", &self.reg_gpio_func8_out_sel())
             .finish()
     }
@@ -69,7 +63,9 @@ impl W {
     ///Bit 1 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn reg_gpio_func8_oe_sel(&mut self) -> REG_GPIO_FUNC8_OE_SEL_W<FUNC8_OUT_SEL_CFG_SPEC> {
+    pub fn reg_gpio_func8_oe_sel(
+        &mut self,
+    ) -> REG_GPIO_FUNC8_OE_SEL_W<FUNC8_OUT_SEL_CFG_SPEC> {
         REG_GPIO_FUNC8_OE_SEL_W::new(self, 1)
     }
     ///Bit 2 - Reserved
@@ -83,7 +79,9 @@ impl W {
     ///Bits 3:8 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn reg_gpio_func8_out_sel(&mut self) -> REG_GPIO_FUNC8_OUT_SEL_W<FUNC8_OUT_SEL_CFG_SPEC> {
+    pub fn reg_gpio_func8_out_sel(
+        &mut self,
+    ) -> REG_GPIO_FUNC8_OUT_SEL_W<FUNC8_OUT_SEL_CFG_SPEC> {
         REG_GPIO_FUNC8_OUT_SEL_W::new(self, 3)
     }
 }

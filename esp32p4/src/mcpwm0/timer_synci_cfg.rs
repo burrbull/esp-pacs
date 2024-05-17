@@ -93,19 +93,25 @@ impl W {
     ///Bit 9 - Configures whether or not to invert SYNC0 from GPIO matrix.\\0: Not invert\\1: Invert
     #[inline(always)]
     #[must_use]
-    pub fn external_synci0_invert(&mut self) -> EXTERNAL_SYNCI0_INVERT_W<TIMER_SYNCI_CFG_SPEC> {
+    pub fn external_synci0_invert(
+        &mut self,
+    ) -> EXTERNAL_SYNCI0_INVERT_W<TIMER_SYNCI_CFG_SPEC> {
         EXTERNAL_SYNCI0_INVERT_W::new(self, 9)
     }
     ///Bit 10 - Configures whether or not to invert SYNC1 from GPIO matrix.\\0: Not invert\\1: Invert
     #[inline(always)]
     #[must_use]
-    pub fn external_synci1_invert(&mut self) -> EXTERNAL_SYNCI1_INVERT_W<TIMER_SYNCI_CFG_SPEC> {
+    pub fn external_synci1_invert(
+        &mut self,
+    ) -> EXTERNAL_SYNCI1_INVERT_W<TIMER_SYNCI_CFG_SPEC> {
         EXTERNAL_SYNCI1_INVERT_W::new(self, 10)
     }
     ///Bit 11 - Configures whether or not to invert SYNC2 from GPIO matrix.\\0: Not invert\\1: Invert
     #[inline(always)]
     #[must_use]
-    pub fn external_synci2_invert(&mut self) -> EXTERNAL_SYNCI2_INVERT_W<TIMER_SYNCI_CFG_SPEC> {
+    pub fn external_synci2_invert(
+        &mut self,
+    ) -> EXTERNAL_SYNCI2_INVERT_W<TIMER_SYNCI_CFG_SPEC> {
         EXTERNAL_SYNCI2_INVERT_W::new(self, 11)
     }
 }

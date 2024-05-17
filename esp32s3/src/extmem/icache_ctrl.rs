@@ -73,7 +73,9 @@ impl W {
     ///Bit 3 - The bit is used to configure cache block size.0: 16 bytes, 1: 32 bytes
     #[inline(always)]
     #[must_use]
-    pub fn icache_blocksize_mode(&mut self) -> ICACHE_BLOCKSIZE_MODE_W<ICACHE_CTRL_SPEC> {
+    pub fn icache_blocksize_mode(
+        &mut self,
+    ) -> ICACHE_BLOCKSIZE_MODE_W<ICACHE_CTRL_SPEC> {
         ICACHE_BLOCKSIZE_MODE_W::new(self, 3)
     }
 }

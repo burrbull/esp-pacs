@@ -133,25 +133,33 @@ impl W {
     ///Bit 25
     #[inline(always)]
     #[must_use]
-    pub fn clk_modem_sec_ecb_fo(&mut self) -> CLK_MODEM_SEC_ECB_FO_W<CLK_CONF_FORCE_ON_SPEC> {
+    pub fn clk_modem_sec_ecb_fo(
+        &mut self,
+    ) -> CLK_MODEM_SEC_ECB_FO_W<CLK_CONF_FORCE_ON_SPEC> {
         CLK_MODEM_SEC_ECB_FO_W::new(self, 25)
     }
     ///Bit 26
     #[inline(always)]
     #[must_use]
-    pub fn clk_modem_sec_ccm_fo(&mut self) -> CLK_MODEM_SEC_CCM_FO_W<CLK_CONF_FORCE_ON_SPEC> {
+    pub fn clk_modem_sec_ccm_fo(
+        &mut self,
+    ) -> CLK_MODEM_SEC_CCM_FO_W<CLK_CONF_FORCE_ON_SPEC> {
         CLK_MODEM_SEC_CCM_FO_W::new(self, 26)
     }
     ///Bit 27
     #[inline(always)]
     #[must_use]
-    pub fn clk_modem_sec_bah_fo(&mut self) -> CLK_MODEM_SEC_BAH_FO_W<CLK_CONF_FORCE_ON_SPEC> {
+    pub fn clk_modem_sec_bah_fo(
+        &mut self,
+    ) -> CLK_MODEM_SEC_BAH_FO_W<CLK_CONF_FORCE_ON_SPEC> {
         CLK_MODEM_SEC_BAH_FO_W::new(self, 27)
     }
     ///Bit 28
     #[inline(always)]
     #[must_use]
-    pub fn clk_modem_sec_apb_fo(&mut self) -> CLK_MODEM_SEC_APB_FO_W<CLK_CONF_FORCE_ON_SPEC> {
+    pub fn clk_modem_sec_apb_fo(
+        &mut self,
+    ) -> CLK_MODEM_SEC_APB_FO_W<CLK_CONF_FORCE_ON_SPEC> {
         CLK_MODEM_SEC_APB_FO_W::new(self, 28)
     }
     ///Bit 29

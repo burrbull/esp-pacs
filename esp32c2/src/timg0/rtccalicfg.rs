@@ -63,7 +63,9 @@ impl W {
     ///Bit 12 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn rtc_cali_start_cycling(&mut self) -> RTC_CALI_START_CYCLING_W<RTCCALICFG_SPEC> {
+    pub fn rtc_cali_start_cycling(
+        &mut self,
+    ) -> RTC_CALI_START_CYCLING_W<RTCCALICFG_SPEC> {
         RTC_CALI_START_CYCLING_W::new(self, 12)
     }
     ///Bits 13:14 - 0:rtc slow clock. 1:clk_8m, 2:xtal_32k.

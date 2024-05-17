@@ -37,15 +37,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PIN10")
-            .field(
-                "reg_gpio_pin10_wakeup_enable",
-                &self.reg_gpio_pin10_wakeup_enable(),
-            )
+            .field("reg_gpio_pin10_wakeup_enable", &self.reg_gpio_pin10_wakeup_enable())
             .field("reg_gpio_pin10_int_type", &self.reg_gpio_pin10_int_type())
-            .field(
-                "reg_gpio_pin10_pad_driver",
-                &self.reg_gpio_pin10_pad_driver(),
-            )
+            .field("reg_gpio_pin10_pad_driver", &self.reg_gpio_pin10_pad_driver())
             .finish()
     }
 }
@@ -53,7 +47,9 @@ impl W {
     ///Bit 0 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn reg_gpio_pin10_wakeup_enable(&mut self) -> REG_GPIO_PIN10_WAKEUP_ENABLE_W<PIN10_SPEC> {
+    pub fn reg_gpio_pin10_wakeup_enable(
+        &mut self,
+    ) -> REG_GPIO_PIN10_WAKEUP_ENABLE_W<PIN10_SPEC> {
         REG_GPIO_PIN10_WAKEUP_ENABLE_W::new(self, 0)
     }
     ///Bits 1:3 - Reserved
@@ -65,7 +61,9 @@ impl W {
     ///Bit 4 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn reg_gpio_pin10_pad_driver(&mut self) -> REG_GPIO_PIN10_PAD_DRIVER_W<PIN10_SPEC> {
+    pub fn reg_gpio_pin10_pad_driver(
+        &mut self,
+    ) -> REG_GPIO_PIN10_PAD_DRIVER_W<PIN10_SPEC> {
         REG_GPIO_PIN10_PAD_DRIVER_W::new(self, 4)
     }
     ///Bit 5 - need des

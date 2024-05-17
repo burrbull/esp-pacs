@@ -50,22 +50,10 @@ impl core::fmt::Debug for R {
         f.debug_struct("CORE_TIMEOUT_INT_ST")
             .field("core0_ahb_timeout_int_st", &self.core0_ahb_timeout_int_st())
             .field("core1_ahb_timeout_int_st", &self.core1_ahb_timeout_int_st())
-            .field(
-                "core0_ibus_timeout_int_st",
-                &self.core0_ibus_timeout_int_st(),
-            )
-            .field(
-                "core1_ibus_timeout_int_st",
-                &self.core1_ibus_timeout_int_st(),
-            )
-            .field(
-                "core0_dbus_timeout_int_st",
-                &self.core0_dbus_timeout_int_st(),
-            )
-            .field(
-                "core1_dbus_timeout_int_st",
-                &self.core1_dbus_timeout_int_st(),
-            )
+            .field("core0_ibus_timeout_int_st", &self.core0_ibus_timeout_int_st())
+            .field("core1_ibus_timeout_int_st", &self.core1_ibus_timeout_int_st())
+            .field("core0_dbus_timeout_int_st", &self.core0_dbus_timeout_int_st())
+            .field("core1_dbus_timeout_int_st", &self.core1_dbus_timeout_int_st())
             .finish()
     }
 }

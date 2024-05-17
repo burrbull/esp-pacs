@@ -39,10 +39,7 @@ impl core::fmt::Debug for R {
                 "a_db_tmp_ready_trigger_mb_num",
                 &self.a_db_tmp_ready_trigger_mb_num(),
             )
-            .field(
-                "a_rec_ready_trigger_mb_lines",
-                &self.a_rec_ready_trigger_mb_lines(),
-            )
+            .field("a_rec_ready_trigger_mb_lines", &self.a_rec_ready_trigger_mb_lines())
             .field("a_intra_cost_cmp_offset", &self.a_intra_cost_cmp_offset())
             .finish()
     }
@@ -67,7 +64,9 @@ impl W {
     ///Bits 14:29 - Configures video A intra cost offset when I MB compared with P MB.
     #[inline(always)]
     #[must_use]
-    pub fn a_intra_cost_cmp_offset(&mut self) -> A_INTRA_COST_CMP_OFFSET_W<A_SYS_CONF_SPEC> {
+    pub fn a_intra_cost_cmp_offset(
+        &mut self,
+    ) -> A_INTRA_COST_CMP_OFFSET_W<A_SYS_CONF_SPEC> {
         A_INTRA_COST_CMP_OFFSET_W::new(self, 14)
     }
 }

@@ -25,7 +25,9 @@ impl W {
     ///Bits 0:16 - needs field desc
     #[inline(always)]
     #[must_use]
-    pub fn dbias_channel2_cfg(&mut self) -> DBIAS_CHANNEL2_CFG_W<DBIAS_CHANNEL2_SEL_SPEC> {
+    pub fn dbias_channel2_cfg(
+        &mut self,
+    ) -> DBIAS_CHANNEL2_CFG_W<DBIAS_CHANNEL2_SEL_SPEC> {
         DBIAS_CHANNEL2_CFG_W::new(self, 0)
     }
 }

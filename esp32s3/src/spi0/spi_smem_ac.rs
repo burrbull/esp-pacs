@@ -93,18 +93,12 @@ impl core::fmt::Debug for R {
             .field("spi_smem_cs_hold", &self.spi_smem_cs_hold())
             .field("spi_smem_cs_setup_time", &self.spi_smem_cs_setup_time())
             .field("spi_smem_cs_hold_time", &self.spi_smem_cs_hold_time())
-            .field(
-                "spi_smem_ecc_cs_hold_time",
-                &self.spi_smem_ecc_cs_hold_time(),
-            )
+            .field("spi_smem_ecc_cs_hold_time", &self.spi_smem_ecc_cs_hold_time())
             .field(
                 "spi_smem_ecc_skip_page_corner",
                 &self.spi_smem_ecc_skip_page_corner(),
             )
-            .field(
-                "spi_smem_ecc_16to18_byte_en",
-                &self.spi_smem_ecc_16to18_byte_en(),
-            )
+            .field("spi_smem_ecc_16to18_byte_en", &self.spi_smem_ecc_16to18_byte_en())
             .field("spi_smem_ecc_err_int_en", &self.spi_smem_ecc_err_int_en())
             .field("spi_smem_cs_hold_delay", &self.spi_smem_cs_hold_delay())
             .finish()
@@ -126,19 +120,25 @@ impl W {
     ///Bits 2:6 - (cycles-1) of PREP phase by SPI_CLK, which is the SPI_CS setup time. These bits are combined with SPI_MEM_CS_SETUP bit.
     #[inline(always)]
     #[must_use]
-    pub fn spi_smem_cs_setup_time(&mut self) -> SPI_SMEM_CS_SETUP_TIME_W<SPI_SMEM_AC_SPEC> {
+    pub fn spi_smem_cs_setup_time(
+        &mut self,
+    ) -> SPI_SMEM_CS_SETUP_TIME_W<SPI_SMEM_AC_SPEC> {
         SPI_SMEM_CS_SETUP_TIME_W::new(self, 2)
     }
     ///Bits 7:11 - SPI Bus CS (SPI_CS) signal is delayed to inactive by SPI Bus clock (SPI_CLK), which is the SPI_CS hold time in non-ECC mode. These bits are combined with SPI_MEM_CS_HOLD bit.
     #[inline(always)]
     #[must_use]
-    pub fn spi_smem_cs_hold_time(&mut self) -> SPI_SMEM_CS_HOLD_TIME_W<SPI_SMEM_AC_SPEC> {
+    pub fn spi_smem_cs_hold_time(
+        &mut self,
+    ) -> SPI_SMEM_CS_HOLD_TIME_W<SPI_SMEM_AC_SPEC> {
         SPI_SMEM_CS_HOLD_TIME_W::new(self, 7)
     }
     ///Bits 12:14 - SPI_SMEM_CS_HOLD_TIME + SPI_SMEM_ECC_CS_HOLD_TIME is the MSPI CS hold cycles in ECC mode when accesses to external RAM.
     #[inline(always)]
     #[must_use]
-    pub fn spi_smem_ecc_cs_hold_time(&mut self) -> SPI_SMEM_ECC_CS_HOLD_TIME_W<SPI_SMEM_AC_SPEC> {
+    pub fn spi_smem_ecc_cs_hold_time(
+        &mut self,
+    ) -> SPI_SMEM_ECC_CS_HOLD_TIME_W<SPI_SMEM_AC_SPEC> {
         SPI_SMEM_ECC_CS_HOLD_TIME_W::new(self, 12)
     }
     ///Bit 15 - 1: MSPI skips page corner when accesses to external RAM. 0: Not skip page corner when accesses to external RAM.
@@ -160,13 +160,17 @@ impl W {
     ///Bit 24 - Set this bit to calculate the error times of MSPI ECC read when accesses to external RAM.
     #[inline(always)]
     #[must_use]
-    pub fn spi_smem_ecc_err_int_en(&mut self) -> SPI_SMEM_ECC_ERR_INT_EN_W<SPI_SMEM_AC_SPEC> {
+    pub fn spi_smem_ecc_err_int_en(
+        &mut self,
+    ) -> SPI_SMEM_ECC_ERR_INT_EN_W<SPI_SMEM_AC_SPEC> {
         SPI_SMEM_ECC_ERR_INT_EN_W::new(self, 24)
     }
     ///Bits 25:30 - These bits are used to set the minimum CS high time tSHSL between SPI burst transfer when accesses to external RAM. tSHSL is (SPI_SMEM_CS_HOLD_DELAY\[5:0\] + 1) MSPI core clock cycles.
     #[inline(always)]
     #[must_use]
-    pub fn spi_smem_cs_hold_delay(&mut self) -> SPI_SMEM_CS_HOLD_DELAY_W<SPI_SMEM_AC_SPEC> {
+    pub fn spi_smem_cs_hold_delay(
+        &mut self,
+    ) -> SPI_SMEM_CS_HOLD_DELAY_W<SPI_SMEM_AC_SPEC> {
         SPI_SMEM_CS_HOLD_DELAY_W::new(self, 25)
     }
 }

@@ -800,7 +800,9 @@ pub mod rx_abort_intr_ctrl;
 You can [`read`](crate::generic::Reg::read) this register and get [`ack_frame_pending_en::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`ack_frame_pending_en::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@ack_frame_pending_en`] module*/
-pub type ACK_FRAME_PENDING_EN = crate::Reg<ack_frame_pending_en::ACK_FRAME_PENDING_EN_SPEC>;
+pub type ACK_FRAME_PENDING_EN = crate::Reg<
+    ack_frame_pending_en::ACK_FRAME_PENDING_EN_SPEC,
+>;
 ///
 pub mod ack_frame_pending_en;
 /**COEX_PTI (rw) register accessor:
@@ -824,8 +826,9 @@ pub mod core_dummy_data;
 You can [`read`](crate::generic::Reg::read) this register and get [`tx_abort_interrupt_control::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`tx_abort_interrupt_control::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@tx_abort_interrupt_control`] module*/
-pub type TX_ABORT_INTERRUPT_CONTROL =
-    crate::Reg<tx_abort_interrupt_control::TX_ABORT_INTERRUPT_CONTROL_SPEC>;
+pub type TX_ABORT_INTERRUPT_CONTROL = crate::Reg<
+    tx_abort_interrupt_control::TX_ABORT_INTERRUPT_CONTROL_SPEC,
+>;
 ///
 pub mod tx_abort_interrupt_control;
 /**ENHANCE_ACK_CFG (rw) register accessor:
@@ -865,7 +868,9 @@ pub mod txrx_status;
 You can [`read`](crate::generic::Reg::read) this register and get [`tx_ccm_schedule_status::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`tx_ccm_schedule_status::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@tx_ccm_schedule_status`] module*/
-pub type TX_CCM_SCHEDULE_STATUS = crate::Reg<tx_ccm_schedule_status::TX_CCM_SCHEDULE_STATUS_SPEC>;
+pub type TX_CCM_SCHEDULE_STATUS = crate::Reg<
+    tx_ccm_schedule_status::TX_CCM_SCHEDULE_STATUS_SPEC,
+>;
 ///
 pub mod tx_ccm_schedule_status;
 /**CORE_GCK_CFG (rw) register accessor:
@@ -953,7 +958,9 @@ pub mod time1_value;
 You can [`read`](crate::generic::Reg::read) this register and get [`clk_counter_match_val::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`clk_counter_match_val::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@clk_counter_match_val`] module*/
-pub type CLK_COUNTER_MATCH_VAL = crate::Reg<clk_counter_match_val::CLK_COUNTER_MATCH_VAL_SPEC>;
+pub type CLK_COUNTER_MATCH_VAL = crate::Reg<
+    clk_counter_match_val::CLK_COUNTER_MATCH_VAL_SPEC,
+>;
 ///
 pub mod clk_counter_match_val;
 /**CLK_COUNTER (rw) register accessor:
@@ -1257,7 +1264,9 @@ pub mod rx_restart_cnt;
 You can [`read`](crate::generic::Reg::read) this register and get [`tx_ack_abort_coex_cnt::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`tx_ack_abort_coex_cnt::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@tx_ack_abort_coex_cnt`] module*/
-pub type TX_ACK_ABORT_COEX_CNT = crate::Reg<tx_ack_abort_coex_cnt::TX_ACK_ABORT_COEX_CNT_SPEC>;
+pub type TX_ACK_ABORT_COEX_CNT = crate::Reg<
+    tx_ack_abort_coex_cnt::TX_ACK_ABORT_COEX_CNT_SPEC,
+>;
 ///
 pub mod tx_ack_abort_coex_cnt;
 /**ED_SCAN_COEX_CNT (rw) register accessor:
@@ -1273,7 +1282,9 @@ pub mod ed_scan_coex_cnt;
 You can [`read`](crate::generic::Reg::read) this register and get [`rx_ack_abort_coex_cnt::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`rx_ack_abort_coex_cnt::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@rx_ack_abort_coex_cnt`] module*/
-pub type RX_ACK_ABORT_COEX_CNT = crate::Reg<rx_ack_abort_coex_cnt::RX_ACK_ABORT_COEX_CNT_SPEC>;
+pub type RX_ACK_ABORT_COEX_CNT = crate::Reg<
+    rx_ack_abort_coex_cnt::RX_ACK_ABORT_COEX_CNT_SPEC,
+>;
 ///
 pub mod rx_ack_abort_coex_cnt;
 /**RX_ACK_TIMEOUT_CNT (rw) register accessor:
@@ -1297,7 +1308,9 @@ pub mod tx_break_coex_cnt;
 You can [`read`](crate::generic::Reg::read) this register and get [`tx_security_error_cnt::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`tx_security_error_cnt::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@tx_security_error_cnt`] module*/
-pub type TX_SECURITY_ERROR_CNT = crate::Reg<tx_security_error_cnt::TX_SECURITY_ERROR_CNT_SPEC>;
+pub type TX_SECURITY_ERROR_CNT = crate::Reg<
+    tx_security_error_cnt::TX_SECURITY_ERROR_CNT_SPEC,
+>;
 ///
 pub mod tx_security_error_cnt;
 /**CCA_BUSY_CNT (rw) register accessor:

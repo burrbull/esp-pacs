@@ -26,12 +26,16 @@ impl R {
     }
     ///Bit 1 - Set this bit to force on tx mem clk in bitscrambler
     #[inline(always)]
-    pub fn bitscrambler_tx_mem_clk_force_on(&self) -> BITSCRAMBLER_TX_MEM_CLK_FORCE_ON_R {
+    pub fn bitscrambler_tx_mem_clk_force_on(
+        &self,
+    ) -> BITSCRAMBLER_TX_MEM_CLK_FORCE_ON_R {
         BITSCRAMBLER_TX_MEM_CLK_FORCE_ON_R::new(((self.bits >> 1) & 1) != 0)
     }
     ///Bit 2 - Set this bit to force on rx mem clk in bitscrambler
     #[inline(always)]
-    pub fn bitscrambler_rx_mem_clk_force_on(&self) -> BITSCRAMBLER_RX_MEM_CLK_FORCE_ON_R {
+    pub fn bitscrambler_rx_mem_clk_force_on(
+        &self,
+    ) -> BITSCRAMBLER_RX_MEM_CLK_FORCE_ON_R {
         BITSCRAMBLER_RX_MEM_CLK_FORCE_ON_R::new(((self.bits >> 2) & 1) != 0)
     }
     ///Bit 3 - Set this bit to force on mem clk in gdma
@@ -61,7 +65,9 @@ impl W {
     ///Bit 0 - Set this bit to force on mem clk in rmt
     #[inline(always)]
     #[must_use]
-    pub fn rmt_mem_clk_force_on(&mut self) -> RMT_MEM_CLK_FORCE_ON_W<PERI_MEM_CLK_FORCE_ON_SPEC> {
+    pub fn rmt_mem_clk_force_on(
+        &mut self,
+    ) -> RMT_MEM_CLK_FORCE_ON_W<PERI_MEM_CLK_FORCE_ON_SPEC> {
         RMT_MEM_CLK_FORCE_ON_W::new(self, 0)
     }
     ///Bit 1 - Set this bit to force on tx mem clk in bitscrambler
@@ -83,7 +89,9 @@ impl W {
     ///Bit 3 - Set this bit to force on mem clk in gdma
     #[inline(always)]
     #[must_use]
-    pub fn gdma_mem_clk_force_on(&mut self) -> GDMA_MEM_CLK_FORCE_ON_W<PERI_MEM_CLK_FORCE_ON_SPEC> {
+    pub fn gdma_mem_clk_force_on(
+        &mut self,
+    ) -> GDMA_MEM_CLK_FORCE_ON_W<PERI_MEM_CLK_FORCE_ON_SPEC> {
         GDMA_MEM_CLK_FORCE_ON_W::new(self, 3)
     }
 }

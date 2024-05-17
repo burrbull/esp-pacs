@@ -18,16 +18,16 @@ impl R {
 #[cfg(feature = "impl-register-debug")]
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("TOUCH_APPROACH")
-            .field("meas_time", &self.meas_time())
-            .finish()
+        f.debug_struct("TOUCH_APPROACH").field("meas_time", &self.meas_time()).finish()
     }
 }
 impl W {
     ///Bit 23 - Clear touch sleep channel.
     #[inline(always)]
     #[must_use]
-    pub fn touch_slp_channel_clr(&mut self) -> TOUCH_SLP_CHANNEL_CLR_W<TOUCH_APPROACH_SPEC> {
+    pub fn touch_slp_channel_clr(
+        &mut self,
+    ) -> TOUCH_SLP_CHANNEL_CLR_W<TOUCH_APPROACH_SPEC> {
         TOUCH_SLP_CHANNEL_CLR_W::new(self, 23)
     }
     ///Bits 24:31 - Set the total measurement times for the pads in proximity mode. Range: 0 – 255.

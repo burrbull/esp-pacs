@@ -53,12 +53,16 @@ impl RegisterBlock {
     }
     ///0x14 - need_des
     #[inline(always)]
-    pub const fn lp_aonclkrst_hpcpu_reset_ctrl0(&self) -> &LP_AONCLKRST_HPCPU_RESET_CTRL0 {
+    pub const fn lp_aonclkrst_hpcpu_reset_ctrl0(
+        &self,
+    ) -> &LP_AONCLKRST_HPCPU_RESET_CTRL0 {
         &self.lp_aonclkrst_hpcpu_reset_ctrl0
     }
     ///0x18 - need_des
     #[inline(always)]
-    pub const fn lp_aonclkrst_hpcpu_reset_ctrl1(&self) -> &LP_AONCLKRST_HPCPU_RESET_CTRL1 {
+    pub const fn lp_aonclkrst_hpcpu_reset_ctrl1(
+        &self,
+    ) -> &LP_AONCLKRST_HPCPU_RESET_CTRL1 {
         &self.lp_aonclkrst_hpcpu_reset_ctrl1
     }
     ///0x1c - need_des
@@ -100,7 +104,9 @@ impl RegisterBlock {
     }
     ///0x38 - need_des
     #[inline(always)]
-    pub const fn lp_aonclkrst_hpsys_0_reset_bypass(&self) -> &LP_AONCLKRST_HPSYS_0_RESET_BYPASS {
+    pub const fn lp_aonclkrst_hpsys_0_reset_bypass(
+        &self,
+    ) -> &LP_AONCLKRST_HPSYS_0_RESET_BYPASS {
         &self.lp_aonclkrst_hpsys_0_reset_bypass
     }
     ///0x3c - need_des
@@ -117,12 +123,16 @@ impl RegisterBlock {
     }
     ///0x44 - HP USB Clock Reset Control Register.
     #[inline(always)]
-    pub const fn lp_aonclkrst_hp_usb_clkrst_ctrl0(&self) -> &LP_AONCLKRST_HP_USB_CLKRST_CTRL0 {
+    pub const fn lp_aonclkrst_hp_usb_clkrst_ctrl0(
+        &self,
+    ) -> &LP_AONCLKRST_HP_USB_CLKRST_CTRL0 {
         &self.lp_aonclkrst_hp_usb_clkrst_ctrl0
     }
     ///0x48 - HP USB Clock Reset Control Register.
     #[inline(always)]
-    pub const fn lp_aonclkrst_hp_usb_clkrst_ctrl1(&self) -> &LP_AONCLKRST_HP_USB_CLKRST_CTRL1 {
+    pub const fn lp_aonclkrst_hp_usb_clkrst_ctrl1(
+        &self,
+    ) -> &LP_AONCLKRST_HP_USB_CLKRST_CTRL1 {
         &self.lp_aonclkrst_hp_usb_clkrst_ctrl1
     }
     ///0x4c - need_des
@@ -143,8 +153,9 @@ impl RegisterBlock {
 You can [`read`](crate::generic::Reg::read) this register and get [`lp_aonclkrst_lp_clk_conf::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`lp_aonclkrst_lp_clk_conf::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@lp_aonclkrst_lp_clk_conf`] module*/
-pub type LP_AONCLKRST_LP_CLK_CONF =
-    crate::Reg<lp_aonclkrst_lp_clk_conf::LP_AONCLKRST_LP_CLK_CONF_SPEC>;
+pub type LP_AONCLKRST_LP_CLK_CONF = crate::Reg<
+    lp_aonclkrst_lp_clk_conf::LP_AONCLKRST_LP_CLK_CONF_SPEC,
+>;
 ///need_des
 pub mod lp_aonclkrst_lp_clk_conf;
 /**LP_AONCLKRST_LP_CLK_PO_EN (rw) register accessor: need_des
@@ -152,8 +163,9 @@ pub mod lp_aonclkrst_lp_clk_conf;
 You can [`read`](crate::generic::Reg::read) this register and get [`lp_aonclkrst_lp_clk_po_en::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`lp_aonclkrst_lp_clk_po_en::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@lp_aonclkrst_lp_clk_po_en`] module*/
-pub type LP_AONCLKRST_LP_CLK_PO_EN =
-    crate::Reg<lp_aonclkrst_lp_clk_po_en::LP_AONCLKRST_LP_CLK_PO_EN_SPEC>;
+pub type LP_AONCLKRST_LP_CLK_PO_EN = crate::Reg<
+    lp_aonclkrst_lp_clk_po_en::LP_AONCLKRST_LP_CLK_PO_EN_SPEC,
+>;
 ///need_des
 pub mod lp_aonclkrst_lp_clk_po_en;
 /**LP_AONCLKRST_LP_CLK_EN (rw) register accessor: need_des
@@ -161,7 +173,9 @@ pub mod lp_aonclkrst_lp_clk_po_en;
 You can [`read`](crate::generic::Reg::read) this register and get [`lp_aonclkrst_lp_clk_en::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`lp_aonclkrst_lp_clk_en::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@lp_aonclkrst_lp_clk_en`] module*/
-pub type LP_AONCLKRST_LP_CLK_EN = crate::Reg<lp_aonclkrst_lp_clk_en::LP_AONCLKRST_LP_CLK_EN_SPEC>;
+pub type LP_AONCLKRST_LP_CLK_EN = crate::Reg<
+    lp_aonclkrst_lp_clk_en::LP_AONCLKRST_LP_CLK_EN_SPEC,
+>;
 ///need_des
 pub mod lp_aonclkrst_lp_clk_en;
 /**LP_AONCLKRST_LP_RST_EN (rw) register accessor: need_des
@@ -169,7 +183,9 @@ pub mod lp_aonclkrst_lp_clk_en;
 You can [`read`](crate::generic::Reg::read) this register and get [`lp_aonclkrst_lp_rst_en::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`lp_aonclkrst_lp_rst_en::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@lp_aonclkrst_lp_rst_en`] module*/
-pub type LP_AONCLKRST_LP_RST_EN = crate::Reg<lp_aonclkrst_lp_rst_en::LP_AONCLKRST_LP_RST_EN_SPEC>;
+pub type LP_AONCLKRST_LP_RST_EN = crate::Reg<
+    lp_aonclkrst_lp_rst_en::LP_AONCLKRST_LP_RST_EN_SPEC,
+>;
 ///need_des
 pub mod lp_aonclkrst_lp_rst_en;
 /**LP_AONCLKRST_RESET_CAUSE (rw) register accessor: need_des
@@ -177,8 +193,9 @@ pub mod lp_aonclkrst_lp_rst_en;
 You can [`read`](crate::generic::Reg::read) this register and get [`lp_aonclkrst_reset_cause::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`lp_aonclkrst_reset_cause::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@lp_aonclkrst_reset_cause`] module*/
-pub type LP_AONCLKRST_RESET_CAUSE =
-    crate::Reg<lp_aonclkrst_reset_cause::LP_AONCLKRST_RESET_CAUSE_SPEC>;
+pub type LP_AONCLKRST_RESET_CAUSE = crate::Reg<
+    lp_aonclkrst_reset_cause::LP_AONCLKRST_RESET_CAUSE_SPEC,
+>;
 ///need_des
 pub mod lp_aonclkrst_reset_cause;
 /**LP_AONCLKRST_HPCPU_RESET_CTRL0 (rw) register accessor: need_des
@@ -186,8 +203,9 @@ pub mod lp_aonclkrst_reset_cause;
 You can [`read`](crate::generic::Reg::read) this register and get [`lp_aonclkrst_hpcpu_reset_ctrl0::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`lp_aonclkrst_hpcpu_reset_ctrl0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@lp_aonclkrst_hpcpu_reset_ctrl0`] module*/
-pub type LP_AONCLKRST_HPCPU_RESET_CTRL0 =
-    crate::Reg<lp_aonclkrst_hpcpu_reset_ctrl0::LP_AONCLKRST_HPCPU_RESET_CTRL0_SPEC>;
+pub type LP_AONCLKRST_HPCPU_RESET_CTRL0 = crate::Reg<
+    lp_aonclkrst_hpcpu_reset_ctrl0::LP_AONCLKRST_HPCPU_RESET_CTRL0_SPEC,
+>;
 ///need_des
 pub mod lp_aonclkrst_hpcpu_reset_ctrl0;
 /**LP_AONCLKRST_HPCPU_RESET_CTRL1 (rw) register accessor: need_des
@@ -195,8 +213,9 @@ pub mod lp_aonclkrst_hpcpu_reset_ctrl0;
 You can [`read`](crate::generic::Reg::read) this register and get [`lp_aonclkrst_hpcpu_reset_ctrl1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`lp_aonclkrst_hpcpu_reset_ctrl1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@lp_aonclkrst_hpcpu_reset_ctrl1`] module*/
-pub type LP_AONCLKRST_HPCPU_RESET_CTRL1 =
-    crate::Reg<lp_aonclkrst_hpcpu_reset_ctrl1::LP_AONCLKRST_HPCPU_RESET_CTRL1_SPEC>;
+pub type LP_AONCLKRST_HPCPU_RESET_CTRL1 = crate::Reg<
+    lp_aonclkrst_hpcpu_reset_ctrl1::LP_AONCLKRST_HPCPU_RESET_CTRL1_SPEC,
+>;
 ///need_des
 pub mod lp_aonclkrst_hpcpu_reset_ctrl1;
 /**LP_AONCLKRST_FOSC_CNTL (rw) register accessor: need_des
@@ -204,7 +223,9 @@ pub mod lp_aonclkrst_hpcpu_reset_ctrl1;
 You can [`read`](crate::generic::Reg::read) this register and get [`lp_aonclkrst_fosc_cntl::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`lp_aonclkrst_fosc_cntl::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@lp_aonclkrst_fosc_cntl`] module*/
-pub type LP_AONCLKRST_FOSC_CNTL = crate::Reg<lp_aonclkrst_fosc_cntl::LP_AONCLKRST_FOSC_CNTL_SPEC>;
+pub type LP_AONCLKRST_FOSC_CNTL = crate::Reg<
+    lp_aonclkrst_fosc_cntl::LP_AONCLKRST_FOSC_CNTL_SPEC,
+>;
 ///need_des
 pub mod lp_aonclkrst_fosc_cntl;
 /**LP_AONCLKRST_RC32K_CNTL (rw) register accessor: need_des
@@ -212,8 +233,9 @@ pub mod lp_aonclkrst_fosc_cntl;
 You can [`read`](crate::generic::Reg::read) this register and get [`lp_aonclkrst_rc32k_cntl::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`lp_aonclkrst_rc32k_cntl::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@lp_aonclkrst_rc32k_cntl`] module*/
-pub type LP_AONCLKRST_RC32K_CNTL =
-    crate::Reg<lp_aonclkrst_rc32k_cntl::LP_AONCLKRST_RC32K_CNTL_SPEC>;
+pub type LP_AONCLKRST_RC32K_CNTL = crate::Reg<
+    lp_aonclkrst_rc32k_cntl::LP_AONCLKRST_RC32K_CNTL_SPEC,
+>;
 ///need_des
 pub mod lp_aonclkrst_rc32k_cntl;
 /**LP_AONCLKRST_SOSC_CNTL (rw) register accessor: need_des
@@ -221,7 +243,9 @@ pub mod lp_aonclkrst_rc32k_cntl;
 You can [`read`](crate::generic::Reg::read) this register and get [`lp_aonclkrst_sosc_cntl::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`lp_aonclkrst_sosc_cntl::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@lp_aonclkrst_sosc_cntl`] module*/
-pub type LP_AONCLKRST_SOSC_CNTL = crate::Reg<lp_aonclkrst_sosc_cntl::LP_AONCLKRST_SOSC_CNTL_SPEC>;
+pub type LP_AONCLKRST_SOSC_CNTL = crate::Reg<
+    lp_aonclkrst_sosc_cntl::LP_AONCLKRST_SOSC_CNTL_SPEC,
+>;
 ///need_des
 pub mod lp_aonclkrst_sosc_cntl;
 /**LP_AONCLKRST_CLK_TO_HP (rw) register accessor: need_des
@@ -229,7 +253,9 @@ pub mod lp_aonclkrst_sosc_cntl;
 You can [`read`](crate::generic::Reg::read) this register and get [`lp_aonclkrst_clk_to_hp::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`lp_aonclkrst_clk_to_hp::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@lp_aonclkrst_clk_to_hp`] module*/
-pub type LP_AONCLKRST_CLK_TO_HP = crate::Reg<lp_aonclkrst_clk_to_hp::LP_AONCLKRST_CLK_TO_HP_SPEC>;
+pub type LP_AONCLKRST_CLK_TO_HP = crate::Reg<
+    lp_aonclkrst_clk_to_hp::LP_AONCLKRST_CLK_TO_HP_SPEC,
+>;
 ///need_des
 pub mod lp_aonclkrst_clk_to_hp;
 /**LP_AONCLKRST_LPMEM_FORCE (rw) register accessor: need_des
@@ -237,8 +263,9 @@ pub mod lp_aonclkrst_clk_to_hp;
 You can [`read`](crate::generic::Reg::read) this register and get [`lp_aonclkrst_lpmem_force::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`lp_aonclkrst_lpmem_force::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@lp_aonclkrst_lpmem_force`] module*/
-pub type LP_AONCLKRST_LPMEM_FORCE =
-    crate::Reg<lp_aonclkrst_lpmem_force::LP_AONCLKRST_LPMEM_FORCE_SPEC>;
+pub type LP_AONCLKRST_LPMEM_FORCE = crate::Reg<
+    lp_aonclkrst_lpmem_force::LP_AONCLKRST_LPMEM_FORCE_SPEC,
+>;
 ///need_des
 pub mod lp_aonclkrst_lpmem_force;
 /**LP_AONCLKRST_XTAL32K (rw) register accessor: need_des
@@ -246,7 +273,9 @@ pub mod lp_aonclkrst_lpmem_force;
 You can [`read`](crate::generic::Reg::read) this register and get [`lp_aonclkrst_xtal32k::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`lp_aonclkrst_xtal32k::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@lp_aonclkrst_xtal32k`] module*/
-pub type LP_AONCLKRST_XTAL32K = crate::Reg<lp_aonclkrst_xtal32k::LP_AONCLKRST_XTAL32K_SPEC>;
+pub type LP_AONCLKRST_XTAL32K = crate::Reg<
+    lp_aonclkrst_xtal32k::LP_AONCLKRST_XTAL32K_SPEC,
+>;
 ///need_des
 pub mod lp_aonclkrst_xtal32k;
 /**LP_AONCLKRST_MUX_HPSYS_RESET_BYPASS (rw) register accessor: need_des
@@ -254,8 +283,9 @@ pub mod lp_aonclkrst_xtal32k;
 You can [`read`](crate::generic::Reg::read) this register and get [`lp_aonclkrst_mux_hpsys_reset_bypass::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`lp_aonclkrst_mux_hpsys_reset_bypass::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@lp_aonclkrst_mux_hpsys_reset_bypass`] module*/
-pub type LP_AONCLKRST_MUX_HPSYS_RESET_BYPASS =
-    crate::Reg<lp_aonclkrst_mux_hpsys_reset_bypass::LP_AONCLKRST_MUX_HPSYS_RESET_BYPASS_SPEC>;
+pub type LP_AONCLKRST_MUX_HPSYS_RESET_BYPASS = crate::Reg<
+    lp_aonclkrst_mux_hpsys_reset_bypass::LP_AONCLKRST_MUX_HPSYS_RESET_BYPASS_SPEC,
+>;
 ///need_des
 pub mod lp_aonclkrst_mux_hpsys_reset_bypass;
 /**LP_AONCLKRST_HPSYS_0_RESET_BYPASS (rw) register accessor: need_des
@@ -263,8 +293,9 @@ pub mod lp_aonclkrst_mux_hpsys_reset_bypass;
 You can [`read`](crate::generic::Reg::read) this register and get [`lp_aonclkrst_hpsys_0_reset_bypass::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`lp_aonclkrst_hpsys_0_reset_bypass::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@lp_aonclkrst_hpsys_0_reset_bypass`] module*/
-pub type LP_AONCLKRST_HPSYS_0_RESET_BYPASS =
-    crate::Reg<lp_aonclkrst_hpsys_0_reset_bypass::LP_AONCLKRST_HPSYS_0_RESET_BYPASS_SPEC>;
+pub type LP_AONCLKRST_HPSYS_0_RESET_BYPASS = crate::Reg<
+    lp_aonclkrst_hpsys_0_reset_bypass::LP_AONCLKRST_HPSYS_0_RESET_BYPASS_SPEC,
+>;
 ///need_des
 pub mod lp_aonclkrst_hpsys_0_reset_bypass;
 /**LP_AONCLKRST_HPSYS_APM_RESET_BYPASS (rw) register accessor: need_des
@@ -272,8 +303,9 @@ pub mod lp_aonclkrst_hpsys_0_reset_bypass;
 You can [`read`](crate::generic::Reg::read) this register and get [`lp_aonclkrst_hpsys_apm_reset_bypass::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`lp_aonclkrst_hpsys_apm_reset_bypass::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@lp_aonclkrst_hpsys_apm_reset_bypass`] module*/
-pub type LP_AONCLKRST_HPSYS_APM_RESET_BYPASS =
-    crate::Reg<lp_aonclkrst_hpsys_apm_reset_bypass::LP_AONCLKRST_HPSYS_APM_RESET_BYPASS_SPEC>;
+pub type LP_AONCLKRST_HPSYS_APM_RESET_BYPASS = crate::Reg<
+    lp_aonclkrst_hpsys_apm_reset_bypass::LP_AONCLKRST_HPSYS_APM_RESET_BYPASS_SPEC,
+>;
 ///need_des
 pub mod lp_aonclkrst_hpsys_apm_reset_bypass;
 /**LP_AONCLKRST_HP_CLK_CTRL (rw) register accessor: HP Clock Control Register.
@@ -281,8 +313,9 @@ pub mod lp_aonclkrst_hpsys_apm_reset_bypass;
 You can [`read`](crate::generic::Reg::read) this register and get [`lp_aonclkrst_hp_clk_ctrl::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`lp_aonclkrst_hp_clk_ctrl::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@lp_aonclkrst_hp_clk_ctrl`] module*/
-pub type LP_AONCLKRST_HP_CLK_CTRL =
-    crate::Reg<lp_aonclkrst_hp_clk_ctrl::LP_AONCLKRST_HP_CLK_CTRL_SPEC>;
+pub type LP_AONCLKRST_HP_CLK_CTRL = crate::Reg<
+    lp_aonclkrst_hp_clk_ctrl::LP_AONCLKRST_HP_CLK_CTRL_SPEC,
+>;
 ///HP Clock Control Register.
 pub mod lp_aonclkrst_hp_clk_ctrl;
 /**LP_AONCLKRST_HP_USB_CLKRST_CTRL0 (rw) register accessor: HP USB Clock Reset Control Register.
@@ -290,8 +323,9 @@ pub mod lp_aonclkrst_hp_clk_ctrl;
 You can [`read`](crate::generic::Reg::read) this register and get [`lp_aonclkrst_hp_usb_clkrst_ctrl0::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`lp_aonclkrst_hp_usb_clkrst_ctrl0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@lp_aonclkrst_hp_usb_clkrst_ctrl0`] module*/
-pub type LP_AONCLKRST_HP_USB_CLKRST_CTRL0 =
-    crate::Reg<lp_aonclkrst_hp_usb_clkrst_ctrl0::LP_AONCLKRST_HP_USB_CLKRST_CTRL0_SPEC>;
+pub type LP_AONCLKRST_HP_USB_CLKRST_CTRL0 = crate::Reg<
+    lp_aonclkrst_hp_usb_clkrst_ctrl0::LP_AONCLKRST_HP_USB_CLKRST_CTRL0_SPEC,
+>;
 ///HP USB Clock Reset Control Register.
 pub mod lp_aonclkrst_hp_usb_clkrst_ctrl0;
 /**LP_AONCLKRST_HP_USB_CLKRST_CTRL1 (rw) register accessor: HP USB Clock Reset Control Register.
@@ -299,8 +333,9 @@ pub mod lp_aonclkrst_hp_usb_clkrst_ctrl0;
 You can [`read`](crate::generic::Reg::read) this register and get [`lp_aonclkrst_hp_usb_clkrst_ctrl1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`lp_aonclkrst_hp_usb_clkrst_ctrl1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@lp_aonclkrst_hp_usb_clkrst_ctrl1`] module*/
-pub type LP_AONCLKRST_HP_USB_CLKRST_CTRL1 =
-    crate::Reg<lp_aonclkrst_hp_usb_clkrst_ctrl1::LP_AONCLKRST_HP_USB_CLKRST_CTRL1_SPEC>;
+pub type LP_AONCLKRST_HP_USB_CLKRST_CTRL1 = crate::Reg<
+    lp_aonclkrst_hp_usb_clkrst_ctrl1::LP_AONCLKRST_HP_USB_CLKRST_CTRL1_SPEC,
+>;
 ///HP USB Clock Reset Control Register.
 pub mod lp_aonclkrst_hp_usb_clkrst_ctrl1;
 /**LP_AONCLKRST_HP_SDMMC_EMAC_RST_CTRL (rw) register accessor: need_des
@@ -308,8 +343,9 @@ pub mod lp_aonclkrst_hp_usb_clkrst_ctrl1;
 You can [`read`](crate::generic::Reg::read) this register and get [`lp_aonclkrst_hp_sdmmc_emac_rst_ctrl::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`lp_aonclkrst_hp_sdmmc_emac_rst_ctrl::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@lp_aonclkrst_hp_sdmmc_emac_rst_ctrl`] module*/
-pub type LP_AONCLKRST_HP_SDMMC_EMAC_RST_CTRL =
-    crate::Reg<lp_aonclkrst_hp_sdmmc_emac_rst_ctrl::LP_AONCLKRST_HP_SDMMC_EMAC_RST_CTRL_SPEC>;
+pub type LP_AONCLKRST_HP_SDMMC_EMAC_RST_CTRL = crate::Reg<
+    lp_aonclkrst_hp_sdmmc_emac_rst_ctrl::LP_AONCLKRST_HP_SDMMC_EMAC_RST_CTRL_SPEC,
+>;
 ///need_des
 pub mod lp_aonclkrst_hp_sdmmc_emac_rst_ctrl;
 /**LP_AONCLKRST_DATE (rw) register accessor: need_des

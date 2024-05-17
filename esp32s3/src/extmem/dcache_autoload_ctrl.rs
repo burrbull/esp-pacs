@@ -85,10 +85,7 @@ impl core::fmt::Debug for R {
             .field("dcache_autoload_order", &self.dcache_autoload_order())
             .field("dcache_autoload_rqst", &self.dcache_autoload_rqst())
             .field("dcache_autoload_size", &self.dcache_autoload_size())
-            .field(
-                "dcache_autoload_buffer_clear",
-                &self.dcache_autoload_buffer_clear(),
-            )
+            .field("dcache_autoload_buffer_clear", &self.dcache_autoload_buffer_clear())
             .finish()
     }
 }
@@ -112,25 +109,33 @@ impl W {
     ///Bit 2 - The bit is used to enable and disable autoload operation. It is combined with dcache_autoload_done. 1: enable, 0: disable.
     #[inline(always)]
     #[must_use]
-    pub fn dcache_autoload_ena(&mut self) -> DCACHE_AUTOLOAD_ENA_W<DCACHE_AUTOLOAD_CTRL_SPEC> {
+    pub fn dcache_autoload_ena(
+        &mut self,
+    ) -> DCACHE_AUTOLOAD_ENA_W<DCACHE_AUTOLOAD_CTRL_SPEC> {
         DCACHE_AUTOLOAD_ENA_W::new(self, 2)
     }
     ///Bit 4 - The bits are used to configure the direction of autoload. 1: descending, 0: ascending.
     #[inline(always)]
     #[must_use]
-    pub fn dcache_autoload_order(&mut self) -> DCACHE_AUTOLOAD_ORDER_W<DCACHE_AUTOLOAD_CTRL_SPEC> {
+    pub fn dcache_autoload_order(
+        &mut self,
+    ) -> DCACHE_AUTOLOAD_ORDER_W<DCACHE_AUTOLOAD_CTRL_SPEC> {
         DCACHE_AUTOLOAD_ORDER_W::new(self, 4)
     }
     ///Bits 5:6 - The bits are used to configure trigger conditions for autoload. 0/3: cache miss, 1: cache hit, 2: both cache miss and hit.
     #[inline(always)]
     #[must_use]
-    pub fn dcache_autoload_rqst(&mut self) -> DCACHE_AUTOLOAD_RQST_W<DCACHE_AUTOLOAD_CTRL_SPEC> {
+    pub fn dcache_autoload_rqst(
+        &mut self,
+    ) -> DCACHE_AUTOLOAD_RQST_W<DCACHE_AUTOLOAD_CTRL_SPEC> {
         DCACHE_AUTOLOAD_RQST_W::new(self, 5)
     }
     ///Bits 7:8 - The bits are used to configure the numbers of the cache block for the issuing autoload operation.
     #[inline(always)]
     #[must_use]
-    pub fn dcache_autoload_size(&mut self) -> DCACHE_AUTOLOAD_SIZE_W<DCACHE_AUTOLOAD_CTRL_SPEC> {
+    pub fn dcache_autoload_size(
+        &mut self,
+    ) -> DCACHE_AUTOLOAD_SIZE_W<DCACHE_AUTOLOAD_CTRL_SPEC> {
         DCACHE_AUTOLOAD_SIZE_W::new(self, 7)
     }
     ///Bit 9 - The bit is used to clear autoload buffer in dcache.

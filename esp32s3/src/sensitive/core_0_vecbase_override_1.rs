@@ -5,7 +5,12 @@ pub type W = crate::W<CORE_0_VECBASE_OVERRIDE_1_SPEC>;
 ///Field `CORE_0_VECBASE_OVERRIDE_WORLD0_VALUE` reader - world0 vecbase_override register, when core0 in world0 use this register to override vecbase register.
 pub type CORE_0_VECBASE_OVERRIDE_WORLD0_VALUE_R = crate::FieldReader<u32>;
 ///Field `CORE_0_VECBASE_OVERRIDE_WORLD0_VALUE` writer - world0 vecbase_override register, when core0 in world0 use this register to override vecbase register.
-pub type CORE_0_VECBASE_OVERRIDE_WORLD0_VALUE_W<'a, REG> = crate::FieldWriter<'a, REG, 22, u32>;
+pub type CORE_0_VECBASE_OVERRIDE_WORLD0_VALUE_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    22,
+    u32,
+>;
 ///Field `CORE_0_VECBASE_OVERRIDE_SEL` reader - Set 0x3 to sel vecbase_override to override vecbase register.
 pub type CORE_0_VECBASE_OVERRIDE_SEL_R = crate::FieldReader;
 ///Field `CORE_0_VECBASE_OVERRIDE_SEL` writer - Set 0x3 to sel vecbase_override to override vecbase register.
@@ -13,7 +18,9 @@ pub type CORE_0_VECBASE_OVERRIDE_SEL_W<'a, REG> = crate::FieldWriter<'a, REG, 2>
 impl R {
     ///Bits 0:21 - world0 vecbase_override register, when core0 in world0 use this register to override vecbase register.
     #[inline(always)]
-    pub fn core_0_vecbase_override_world0_value(&self) -> CORE_0_VECBASE_OVERRIDE_WORLD0_VALUE_R {
+    pub fn core_0_vecbase_override_world0_value(
+        &self,
+    ) -> CORE_0_VECBASE_OVERRIDE_WORLD0_VALUE_R {
         CORE_0_VECBASE_OVERRIDE_WORLD0_VALUE_R::new(self.bits & 0x003f_ffff)
     }
     ///Bits 22:23 - Set 0x3 to sel vecbase_override to override vecbase register.
@@ -30,10 +37,7 @@ impl core::fmt::Debug for R {
                 "core_0_vecbase_override_world0_value",
                 &self.core_0_vecbase_override_world0_value(),
             )
-            .field(
-                "core_0_vecbase_override_sel",
-                &self.core_0_vecbase_override_sel(),
-            )
+            .field("core_0_vecbase_override_sel", &self.core_0_vecbase_override_sel())
             .finish()
     }
 }

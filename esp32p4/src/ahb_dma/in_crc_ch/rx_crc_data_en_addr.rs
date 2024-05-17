@@ -25,7 +25,9 @@ impl W {
     ///Bits 0:31 - reserved
     #[inline(always)]
     #[must_use]
-    pub fn rx_crc_data_en_addr(&mut self) -> RX_CRC_DATA_EN_ADDR_W<RX_CRC_DATA_EN_ADDR_SPEC> {
+    pub fn rx_crc_data_en_addr(
+        &mut self,
+    ) -> RX_CRC_DATA_EN_ADDR_W<RX_CRC_DATA_EN_ADDR_SPEC> {
         RX_CRC_DATA_EN_ADDR_W::new(self, 0)
     }
 }

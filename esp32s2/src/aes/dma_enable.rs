@@ -16,9 +16,7 @@ impl R {
 #[cfg(feature = "impl-register-debug")]
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("DMA_ENABLE")
-            .field("dma_enable", &self.dma_enable())
-            .finish()
+        f.debug_struct("DMA_ENABLE").field("dma_enable", &self.dma_enable()).finish()
     }
 }
 impl W {

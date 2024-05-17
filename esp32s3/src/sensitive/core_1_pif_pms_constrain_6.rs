@@ -9,35 +9,67 @@ pub type CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_BT_W<'a, REG> = crate::FieldWriter<'a,
 ///Field `CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_I2C_EXT0` reader - Core1 access i2c_ext0 permission in world1.
 pub type CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_I2C_EXT0_R = crate::FieldReader;
 ///Field `CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_I2C_EXT0` writer - Core1 access i2c_ext0 permission in world1.
-pub type CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_I2C_EXT0_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
+pub type CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_I2C_EXT0_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 ///Field `CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_UHCI0` reader - Core1 access uhci0 permission in world1.
 pub type CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_UHCI0_R = crate::FieldReader;
 ///Field `CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_UHCI0` writer - Core1 access uhci0 permission in world1.
-pub type CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_UHCI0_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
+pub type CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_UHCI0_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 ///Field `CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_SLCHOST` reader - Core1 access slchost permission in world1.
 pub type CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_SLCHOST_R = crate::FieldReader;
 ///Field `CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_SLCHOST` writer - Core1 access slchost permission in world1.
-pub type CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_SLCHOST_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
+pub type CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_SLCHOST_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 ///Field `CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_RMT` reader - Core1 access rmt permission in world1.
 pub type CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_RMT_R = crate::FieldReader;
 ///Field `CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_RMT` writer - Core1 access rmt permission in world1.
-pub type CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_RMT_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
+pub type CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_RMT_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 ///Field `CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_PCNT` reader - Core1 access pcnt permission in world1.
 pub type CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_PCNT_R = crate::FieldReader;
 ///Field `CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_PCNT` writer - Core1 access pcnt permission in world1.
-pub type CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_PCNT_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
+pub type CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_PCNT_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 ///Field `CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_SLC` reader - Core1 access slc permission in world1.
 pub type CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_SLC_R = crate::FieldReader;
 ///Field `CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_SLC` writer - Core1 access slc permission in world1.
-pub type CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_SLC_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
+pub type CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_SLC_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 ///Field `CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_LEDC` reader - Core1 access ledc permission in world1.
 pub type CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_LEDC_R = crate::FieldReader;
 ///Field `CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_LEDC` writer - Core1 access ledc permission in world1.
-pub type CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_LEDC_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
+pub type CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_LEDC_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 ///Field `CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_BACKUP` reader - Core1 access backup permission in world1.
 pub type CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_BACKUP_R = crate::FieldReader;
 ///Field `CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_BACKUP` writer - Core1 access backup permission in world1.
-pub type CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_BACKUP_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
+pub type CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_BACKUP_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 ///Field `CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_BB` reader - Core1 access bb permission in world1.
 pub type CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_BB_R = crate::FieldReader;
 ///Field `CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_BB` writer - Core1 access bb permission in world1.
@@ -45,23 +77,41 @@ pub type CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_BB_W<'a, REG> = crate::FieldWriter<'a,
 ///Field `CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_PWM0` reader - Core1 access pwm0 permission in world1.
 pub type CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_PWM0_R = crate::FieldReader;
 ///Field `CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_PWM0` writer - Core1 access pwm0 permission in world1.
-pub type CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_PWM0_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
+pub type CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_PWM0_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 ///Field `CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_TIMERGROUP` reader - Core1 access timergroup permission in world1.
 pub type CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_TIMERGROUP_R = crate::FieldReader;
 ///Field `CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_TIMERGROUP` writer - Core1 access timergroup permission in world1.
-pub type CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_TIMERGROUP_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
+pub type CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_TIMERGROUP_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 ///Field `CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_TIMERGROUP1` reader - Core1 access timergroup1 permission in world1.
 pub type CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_TIMERGROUP1_R = crate::FieldReader;
 ///Field `CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_TIMERGROUP1` writer - Core1 access timergroup1 permission in world1.
-pub type CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_TIMERGROUP1_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
+pub type CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_TIMERGROUP1_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 ///Field `CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_SYSTIMER` reader - Core1 access systimer permission in world1.
 pub type CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_SYSTIMER_R = crate::FieldReader;
 ///Field `CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_SYSTIMER` writer - Core1 access systimer permission in world1.
-pub type CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_SYSTIMER_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
+pub type CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_SYSTIMER_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 impl R {
     ///Bits 0:1 - Core1 access bt permission in world1.
     #[inline(always)]
-    pub fn core_1_pif_pms_constrain_world_1_bt(&self) -> CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_BT_R {
+    pub fn core_1_pif_pms_constrain_world_1_bt(
+        &self,
+    ) -> CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_BT_R {
         CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_BT_R::new((self.bits & 3) as u8)
     }
     ///Bits 4:5 - Core1 access i2c_ext0 permission in world1.
@@ -87,22 +137,30 @@ impl R {
     }
     ///Bits 10:11 - Core1 access rmt permission in world1.
     #[inline(always)]
-    pub fn core_1_pif_pms_constrain_world_1_rmt(&self) -> CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_RMT_R {
+    pub fn core_1_pif_pms_constrain_world_1_rmt(
+        &self,
+    ) -> CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_RMT_R {
         CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_RMT_R::new(((self.bits >> 10) & 3) as u8)
     }
     ///Bits 12:13 - Core1 access pcnt permission in world1.
     #[inline(always)]
-    pub fn core_1_pif_pms_constrain_world_1_pcnt(&self) -> CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_PCNT_R {
+    pub fn core_1_pif_pms_constrain_world_1_pcnt(
+        &self,
+    ) -> CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_PCNT_R {
         CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_PCNT_R::new(((self.bits >> 12) & 3) as u8)
     }
     ///Bits 14:15 - Core1 access slc permission in world1.
     #[inline(always)]
-    pub fn core_1_pif_pms_constrain_world_1_slc(&self) -> CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_SLC_R {
+    pub fn core_1_pif_pms_constrain_world_1_slc(
+        &self,
+    ) -> CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_SLC_R {
         CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_SLC_R::new(((self.bits >> 14) & 3) as u8)
     }
     ///Bits 16:17 - Core1 access ledc permission in world1.
     #[inline(always)]
-    pub fn core_1_pif_pms_constrain_world_1_ledc(&self) -> CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_LEDC_R {
+    pub fn core_1_pif_pms_constrain_world_1_ledc(
+        &self,
+    ) -> CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_LEDC_R {
         CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_LEDC_R::new(((self.bits >> 16) & 3) as u8)
     }
     ///Bits 18:19 - Core1 access backup permission in world1.
@@ -114,12 +172,16 @@ impl R {
     }
     ///Bits 22:23 - Core1 access bb permission in world1.
     #[inline(always)]
-    pub fn core_1_pif_pms_constrain_world_1_bb(&self) -> CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_BB_R {
+    pub fn core_1_pif_pms_constrain_world_1_bb(
+        &self,
+    ) -> CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_BB_R {
         CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_BB_R::new(((self.bits >> 22) & 3) as u8)
     }
     ///Bits 24:25 - Core1 access pwm0 permission in world1.
     #[inline(always)]
-    pub fn core_1_pif_pms_constrain_world_1_pwm0(&self) -> CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_PWM0_R {
+    pub fn core_1_pif_pms_constrain_world_1_pwm0(
+        &self,
+    ) -> CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_PWM0_R {
         CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_PWM0_R::new(((self.bits >> 24) & 3) as u8)
     }
     ///Bits 26:27 - Core1 access timergroup permission in world1.
@@ -134,7 +196,9 @@ impl R {
     pub fn core_1_pif_pms_constrain_world_1_timergroup1(
         &self,
     ) -> CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_TIMERGROUP1_R {
-        CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_TIMERGROUP1_R::new(((self.bits >> 28) & 3) as u8)
+        CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_TIMERGROUP1_R::new(
+            ((self.bits >> 28) & 3) as u8,
+        )
     }
     ///Bits 30:31 - Core1 access systimer permission in world1.
     #[inline(always)]
@@ -309,7 +373,9 @@ impl W {
     #[must_use]
     pub fn core_1_pif_pms_constrain_world_1_timergroup1(
         &mut self,
-    ) -> CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_TIMERGROUP1_W<CORE_1_PIF_PMS_CONSTRAIN_6_SPEC> {
+    ) -> CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_TIMERGROUP1_W<
+        CORE_1_PIF_PMS_CONSTRAIN_6_SPEC,
+    > {
         CORE_1_PIF_PMS_CONSTRAIN_WORLD_1_TIMERGROUP1_W::new(self, 28)
     }
     ///Bits 30:31 - Core1 access systimer permission in world1.

@@ -45,14 +45,8 @@ impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("DEV_ADDR_TABLE4_LOC")
             .field("reg_dat_dev4_static_addr", &self.reg_dat_dev4_static_addr())
-            .field(
-                "reg_dat_dev4_dynamic_addr",
-                &self.reg_dat_dev4_dynamic_addr(),
-            )
-            .field(
-                "reg_dat_dev4_nack_retry_cnt",
-                &self.reg_dat_dev4_nack_retry_cnt(),
-            )
+            .field("reg_dat_dev4_dynamic_addr", &self.reg_dat_dev4_dynamic_addr())
+            .field("reg_dat_dev4_nack_retry_cnt", &self.reg_dat_dev4_nack_retry_cnt())
             .field("reg_dat_dev4_i2c", &self.reg_dat_dev4_i2c())
             .finish()
     }

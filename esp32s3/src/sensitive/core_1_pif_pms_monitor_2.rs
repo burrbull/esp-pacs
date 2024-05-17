@@ -13,7 +13,9 @@ pub type CORE_1_PIF_PMS_MONITOR_VIOLATE_STATUS_HWORLD_R = crate::FieldReader;
 impl R {
     ///Bit 0 - Record core1 illegal access interrupt state.
     #[inline(always)]
-    pub fn core_1_pif_pms_monitor_violate_intr(&self) -> CORE_1_PIF_PMS_MONITOR_VIOLATE_INTR_R {
+    pub fn core_1_pif_pms_monitor_violate_intr(
+        &self,
+    ) -> CORE_1_PIF_PMS_MONITOR_VIOLATE_INTR_R {
         CORE_1_PIF_PMS_MONITOR_VIOLATE_INTR_R::new((self.bits & 1) != 0)
     }
     ///Bit 1 - Record hport information when core1 initiate illegal access.

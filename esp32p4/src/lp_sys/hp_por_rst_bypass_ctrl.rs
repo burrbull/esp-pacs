@@ -26,10 +26,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("HP_POR_RST_BYPASS_CTRL")
-            .field(
-                "hp_po_cnnt_rstn_bypass_ctrl",
-                &self.hp_po_cnnt_rstn_bypass_ctrl(),
-            )
+            .field("hp_po_cnnt_rstn_bypass_ctrl", &self.hp_po_cnnt_rstn_bypass_ctrl())
             .field("hp_po_rstn_bypass_ctrl", &self.hp_po_rstn_bypass_ctrl())
             .finish()
     }

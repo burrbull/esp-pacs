@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("DBUS_TO_FLASH_START_VADDR")
-            .field(
-                "dbus_to_flash_start_vaddr",
-                &self.dbus_to_flash_start_vaddr(),
-            )
+            .field("dbus_to_flash_start_vaddr", &self.dbus_to_flash_start_vaddr())
             .finish()
     }
 }

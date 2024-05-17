@@ -25,7 +25,9 @@ impl W {
     ///Bits 0:5 - NA
     #[inline(always)]
     #[must_use]
-    pub fn core1_hp_sysreg_int_map(&mut self) -> CORE1_HP_SYSREG_INT_MAP_W<HP_SYSREG_INT_MAP_SPEC> {
+    pub fn core1_hp_sysreg_int_map(
+        &mut self,
+    ) -> CORE1_HP_SYSREG_INT_MAP_W<HP_SYSREG_INT_MAP_SPEC> {
         CORE1_HP_SYSREG_INT_MAP_W::new(self, 0)
     }
 }

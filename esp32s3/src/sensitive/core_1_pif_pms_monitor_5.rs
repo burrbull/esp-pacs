@@ -19,14 +19,18 @@ impl R {
     pub fn core_1_pif_pms_monitor_nonword_violate_status_hsize(
         &self,
     ) -> CORE_1_PIF_PMS_MONITOR_NONWORD_VIOLATE_STATUS_HSIZE_R {
-        CORE_1_PIF_PMS_MONITOR_NONWORD_VIOLATE_STATUS_HSIZE_R::new(((self.bits >> 1) & 3) as u8)
+        CORE_1_PIF_PMS_MONITOR_NONWORD_VIOLATE_STATUS_HSIZE_R::new(
+            ((self.bits >> 1) & 3) as u8,
+        )
     }
     ///Bits 3:4 - Record world information when core1 initiate unsupported access type.
     #[inline(always)]
     pub fn core_1_pif_pms_monitor_nonword_violate_status_hworld(
         &self,
     ) -> CORE_1_PIF_PMS_MONITOR_NONWORD_VIOLATE_STATUS_HWORLD_R {
-        CORE_1_PIF_PMS_MONITOR_NONWORD_VIOLATE_STATUS_HWORLD_R::new(((self.bits >> 3) & 3) as u8)
+        CORE_1_PIF_PMS_MONITOR_NONWORD_VIOLATE_STATUS_HWORLD_R::new(
+            ((self.bits >> 3) & 3) as u8,
+        )
     }
 }
 #[cfg(feature = "impl-register-debug")]

@@ -12,8 +12,7 @@ impl R {
     ///NOTE: `n` is number of field in register. `n == 0` corresponds to `TARGET0` field
     #[inline(always)]
     pub fn target(&self, n: u8) -> TARGET_R {
-        #[allow(clippy::no_effect)]
-        [(); 3][n as usize];
+        #[allow(clippy::no_effect)] [(); 3][n as usize];
         TARGET_R::new(((self.bits >> n) & 1) != 0)
     }
     ///Iterator for array of:
@@ -55,8 +54,7 @@ impl W {
     #[inline(always)]
     #[must_use]
     pub fn target(&mut self, n: u8) -> TARGET_W<INT_RAW_SPEC> {
-        #[allow(clippy::no_effect)]
-        [(); 3][n as usize];
+        #[allow(clippy::no_effect)] [(); 3][n as usize];
         TARGET_W::new(self, n)
     }
     ///Bit 0 - interupt0 raw

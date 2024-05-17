@@ -53,10 +53,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PERI_CLK_CTRL118")
-            .field(
-                "parlio_rx_clk_div_numerator",
-                &self.parlio_rx_clk_div_numerator(),
-            )
+            .field("parlio_rx_clk_div_numerator", &self.parlio_rx_clk_div_numerator())
             .field(
                 "parlio_rx_clk_div_denominator",
                 &self.parlio_rx_clk_div_denominator(),
@@ -87,7 +84,9 @@ impl W {
     ///Bits 16:17 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn parlio_tx_clk_src_sel(&mut self) -> PARLIO_TX_CLK_SRC_SEL_W<PERI_CLK_CTRL118_SPEC> {
+    pub fn parlio_tx_clk_src_sel(
+        &mut self,
+    ) -> PARLIO_TX_CLK_SRC_SEL_W<PERI_CLK_CTRL118_SPEC> {
         PARLIO_TX_CLK_SRC_SEL_W::new(self, 16)
     }
     ///Bit 18 - Reserved
@@ -99,7 +98,9 @@ impl W {
     ///Bits 19:26 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn parlio_tx_clk_div_num(&mut self) -> PARLIO_TX_CLK_DIV_NUM_W<PERI_CLK_CTRL118_SPEC> {
+    pub fn parlio_tx_clk_div_num(
+        &mut self,
+    ) -> PARLIO_TX_CLK_DIV_NUM_W<PERI_CLK_CTRL118_SPEC> {
         PARLIO_TX_CLK_DIV_NUM_W::new(self, 19)
     }
 }

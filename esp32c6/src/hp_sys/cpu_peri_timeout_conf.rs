@@ -29,10 +29,7 @@ impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CPU_PERI_TIMEOUT_CONF")
             .field("cpu_peri_timeout_thres", &self.cpu_peri_timeout_thres())
-            .field(
-                "cpu_peri_timeout_protect_en",
-                &self.cpu_peri_timeout_protect_en(),
-            )
+            .field("cpu_peri_timeout_protect_en", &self.cpu_peri_timeout_protect_en())
             .finish()
     }
 }

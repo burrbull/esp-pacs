@@ -91,7 +91,9 @@ impl W {
     ///Bit 3 - The bit is used to enable writeback-invalidate operation. It will be cleared by hardware after writeback-invalidate operation done. Note that this bit and the other sync-bits (invalidate_ena, clean_ena, writeback_ena) are mutually exclusive, that is, those bits can not be set to 1 at the same time.
     #[inline(always)]
     #[must_use]
-    pub fn writeback_invalidate_ena(&mut self) -> WRITEBACK_INVALIDATE_ENA_W<SYNC_CTRL_SPEC> {
+    pub fn writeback_invalidate_ena(
+        &mut self,
+    ) -> WRITEBACK_INVALIDATE_ENA_W<SYNC_CTRL_SPEC> {
         WRITEBACK_INVALIDATE_ENA_W::new(self, 3)
     }
     ///Bits 5:8 - The bit is used to set the gid of cache sync operation (invalidate, clean, writeback, writeback_invalidate)

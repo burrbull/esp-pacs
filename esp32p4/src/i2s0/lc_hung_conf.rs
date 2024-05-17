@@ -51,7 +51,9 @@ impl W {
     ///Bits 8:10 - The bits are used to scale tick counter threshold. The tick counter is reset when counter value >= 88000/2^i2s_lc_fifo_timeout_shift
     #[inline(always)]
     #[must_use]
-    pub fn lc_fifo_timeout_shift(&mut self) -> LC_FIFO_TIMEOUT_SHIFT_W<LC_HUNG_CONF_SPEC> {
+    pub fn lc_fifo_timeout_shift(
+        &mut self,
+    ) -> LC_FIFO_TIMEOUT_SHIFT_W<LC_HUNG_CONF_SPEC> {
         LC_FIFO_TIMEOUT_SHIFT_W::new(self, 8)
     }
     ///Bit 11 - The enable bit for FIFO timeout

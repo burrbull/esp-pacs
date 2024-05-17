@@ -73,7 +73,9 @@ impl W {
     ///Bits 10:15 - The dummy cycle length when wait flash idle(RDSR).
     #[inline(always)]
     #[must_use]
-    pub fn waiti_dummy_cyclelen(&mut self) -> WAITI_DUMMY_CYCLELEN_W<FLASH_WAITI_CTRL_SPEC> {
+    pub fn waiti_dummy_cyclelen(
+        &mut self,
+    ) -> WAITI_DUMMY_CYCLELEN_W<FLASH_WAITI_CTRL_SPEC> {
         WAITI_DUMMY_CYCLELEN_W::new(self, 10)
     }
 }

@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("TIMERGRP1_WDT_INT_MAP")
-            .field(
-                "core1_timergrp1_wdt_int_map",
-                &self.core1_timergrp1_wdt_int_map(),
-            )
+            .field("core1_timergrp1_wdt_int_map", &self.core1_timergrp1_wdt_int_map())
             .finish()
     }
 }

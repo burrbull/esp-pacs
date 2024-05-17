@@ -12,9 +12,7 @@ impl R {
 #[cfg(feature = "impl-register-debug")]
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("BLK5_W9")
-            .field("block5_w9", &self.block5_w9())
-            .finish()
+        f.debug_struct("BLK5_W9").field("block5_w9", &self.block5_w9()).finish()
     }
 }
 /**Otp debuger block5 data register9.

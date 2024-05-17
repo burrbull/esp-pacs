@@ -2182,7 +2182,9 @@ pub mod int_clr;
 You can [`read`](crate::generic::Reg::read) this register and get [`zero_det0_filter_cnt::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`zero_det0_filter_cnt::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@zero_det0_filter_cnt`] module*/
-pub type ZERO_DET0_FILTER_CNT = crate::Reg<zero_det0_filter_cnt::ZERO_DET0_FILTER_CNT_SPEC>;
+pub type ZERO_DET0_FILTER_CNT = crate::Reg<
+    zero_det0_filter_cnt::ZERO_DET0_FILTER_CNT_SPEC,
+>;
 ///GPIO analog comparator zero detect filter count
 pub mod zero_det0_filter_cnt;
 /**ZERO_DET1_FILTER_CNT (rw) register accessor: GPIO analog comparator zero detect filter count
@@ -2190,7 +2192,9 @@ pub mod zero_det0_filter_cnt;
 You can [`read`](crate::generic::Reg::read) this register and get [`zero_det1_filter_cnt::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`zero_det1_filter_cnt::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@zero_det1_filter_cnt`] module*/
-pub type ZERO_DET1_FILTER_CNT = crate::Reg<zero_det1_filter_cnt::ZERO_DET1_FILTER_CNT_SPEC>;
+pub type ZERO_DET1_FILTER_CNT = crate::Reg<
+    zero_det1_filter_cnt::ZERO_DET1_FILTER_CNT_SPEC,
+>;
 ///GPIO analog comparator zero detect filter count
 pub mod zero_det1_filter_cnt;
 /**SEND_SEQ (rw) register accessor: High speed sdio pad bist send sequence

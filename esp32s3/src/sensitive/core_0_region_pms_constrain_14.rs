@@ -5,11 +5,18 @@ pub type W = crate::W<CORE_0_REGION_PMS_CONSTRAIN_14_SPEC>;
 ///Field `CORE_0_REGION_PMS_CONSTRAIN_ADDR_11` reader - Region 10 end address for core0.
 pub type CORE_0_REGION_PMS_CONSTRAIN_ADDR_11_R = crate::FieldReader<u32>;
 ///Field `CORE_0_REGION_PMS_CONSTRAIN_ADDR_11` writer - Region 10 end address for core0.
-pub type CORE_0_REGION_PMS_CONSTRAIN_ADDR_11_W<'a, REG> = crate::FieldWriter<'a, REG, 30, u32>;
+pub type CORE_0_REGION_PMS_CONSTRAIN_ADDR_11_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    30,
+    u32,
+>;
 impl R {
     ///Bits 0:29 - Region 10 end address for core0.
     #[inline(always)]
-    pub fn core_0_region_pms_constrain_addr_11(&self) -> CORE_0_REGION_PMS_CONSTRAIN_ADDR_11_R {
+    pub fn core_0_region_pms_constrain_addr_11(
+        &self,
+    ) -> CORE_0_REGION_PMS_CONSTRAIN_ADDR_11_R {
         CORE_0_REGION_PMS_CONSTRAIN_ADDR_11_R::new(self.bits & 0x3fff_ffff)
     }
 }

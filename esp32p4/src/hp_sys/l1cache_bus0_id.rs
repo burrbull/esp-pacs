@@ -25,7 +25,9 @@ impl W {
     ///Bits 0:3 - NA
     #[inline(always)]
     #[must_use]
-    pub fn reg_l1_cache_bus0_id(&mut self) -> REG_L1_CACHE_BUS0_ID_W<L1CACHE_BUS0_ID_SPEC> {
+    pub fn reg_l1_cache_bus0_id(
+        &mut self,
+    ) -> REG_L1_CACHE_BUS0_ID_W<L1CACHE_BUS0_ID_SPEC> {
         REG_L1_CACHE_BUS0_ID_W::new(self, 0)
     }
 }

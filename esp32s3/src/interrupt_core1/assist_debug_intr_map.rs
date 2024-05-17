@@ -25,7 +25,9 @@ impl W {
     ///Bits 0:4 - this register used to map assist_debug interrupt to one of core1's external interrupt
     #[inline(always)]
     #[must_use]
-    pub fn assist_debug_intr_map(&mut self) -> ASSIST_DEBUG_INTR_MAP_W<ASSIST_DEBUG_INTR_MAP_SPEC> {
+    pub fn assist_debug_intr_map(
+        &mut self,
+    ) -> ASSIST_DEBUG_INTR_MAP_W<ASSIST_DEBUG_INTR_MAP_SPEC> {
         ASSIST_DEBUG_INTR_MAP_W::new(self, 0)
     }
 }

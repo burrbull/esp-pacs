@@ -83,14 +83,8 @@ impl core::fmt::Debug for R {
             .field("apb_fifo_mask", &self.apb_fifo_mask())
             .field("blend0_clut_mem_rst", &self.blend0_clut_mem_rst())
             .field("blend1_clut_mem_rst", &self.blend1_clut_mem_rst())
-            .field(
-                "blend0_clut_mem_rdaddr_rst",
-                &self.blend0_clut_mem_rdaddr_rst(),
-            )
-            .field(
-                "blend1_clut_mem_rdaddr_rst",
-                &self.blend1_clut_mem_rdaddr_rst(),
-            )
+            .field("blend0_clut_mem_rdaddr_rst", &self.blend0_clut_mem_rdaddr_rst())
+            .field("blend1_clut_mem_rdaddr_rst", &self.blend1_clut_mem_rdaddr_rst())
             .field("blend0_clut_mem_force_pd", &self.blend0_clut_mem_force_pd())
             .field("blend0_clut_mem_force_pu", &self.blend0_clut_mem_force_pu())
             .field("blend0_clut_mem_clk_ena", &self.blend0_clut_mem_clk_ena())
@@ -119,31 +113,41 @@ impl W {
     ///Bit 3 - Write 1 then write 0 to reset the read address of BLEND0 CLUT in fifo mode.
     #[inline(always)]
     #[must_use]
-    pub fn blend0_clut_mem_rdaddr_rst(&mut self) -> BLEND0_CLUT_MEM_RDADDR_RST_W<CLUT_CONF_SPEC> {
+    pub fn blend0_clut_mem_rdaddr_rst(
+        &mut self,
+    ) -> BLEND0_CLUT_MEM_RDADDR_RST_W<CLUT_CONF_SPEC> {
         BLEND0_CLUT_MEM_RDADDR_RST_W::new(self, 3)
     }
     ///Bit 4 - Write 1 then write 0 to reset the read address of BLEND1 CLUT in fifo mode.
     #[inline(always)]
     #[must_use]
-    pub fn blend1_clut_mem_rdaddr_rst(&mut self) -> BLEND1_CLUT_MEM_RDADDR_RST_W<CLUT_CONF_SPEC> {
+    pub fn blend1_clut_mem_rdaddr_rst(
+        &mut self,
+    ) -> BLEND1_CLUT_MEM_RDADDR_RST_W<CLUT_CONF_SPEC> {
         BLEND1_CLUT_MEM_RDADDR_RST_W::new(self, 4)
     }
     ///Bit 5 - 1: force power down BLEND CLUT memory.
     #[inline(always)]
     #[must_use]
-    pub fn blend0_clut_mem_force_pd(&mut self) -> BLEND0_CLUT_MEM_FORCE_PD_W<CLUT_CONF_SPEC> {
+    pub fn blend0_clut_mem_force_pd(
+        &mut self,
+    ) -> BLEND0_CLUT_MEM_FORCE_PD_W<CLUT_CONF_SPEC> {
         BLEND0_CLUT_MEM_FORCE_PD_W::new(self, 5)
     }
     ///Bit 6 - 1: force power up BLEND CLUT memory.
     #[inline(always)]
     #[must_use]
-    pub fn blend0_clut_mem_force_pu(&mut self) -> BLEND0_CLUT_MEM_FORCE_PU_W<CLUT_CONF_SPEC> {
+    pub fn blend0_clut_mem_force_pu(
+        &mut self,
+    ) -> BLEND0_CLUT_MEM_FORCE_PU_W<CLUT_CONF_SPEC> {
         BLEND0_CLUT_MEM_FORCE_PU_W::new(self, 6)
     }
     ///Bit 7 - 1: Force clock on for BLEND CLUT memory.
     #[inline(always)]
     #[must_use]
-    pub fn blend0_clut_mem_clk_ena(&mut self) -> BLEND0_CLUT_MEM_CLK_ENA_W<CLUT_CONF_SPEC> {
+    pub fn blend0_clut_mem_clk_ena(
+        &mut self,
+    ) -> BLEND0_CLUT_MEM_CLK_ENA_W<CLUT_CONF_SPEC> {
         BLEND0_CLUT_MEM_CLK_ENA_W::new(self, 7)
     }
 }

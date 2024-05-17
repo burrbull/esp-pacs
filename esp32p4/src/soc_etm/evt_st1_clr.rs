@@ -202,25 +202,33 @@ impl W {
     ///Bit 16 - Configures whether or not to clear LEDC_evt_timer0_cmp trigger status.\\0: Invalid, No effect\\1: Clear
     #[inline(always)]
     #[must_use]
-    pub fn ledc_evt_timer0_cmp_st_clr(&mut self) -> LEDC_EVT_TIMER0_CMP_ST_CLR_W<EVT_ST1_CLR_SPEC> {
+    pub fn ledc_evt_timer0_cmp_st_clr(
+        &mut self,
+    ) -> LEDC_EVT_TIMER0_CMP_ST_CLR_W<EVT_ST1_CLR_SPEC> {
         LEDC_EVT_TIMER0_CMP_ST_CLR_W::new(self, 16)
     }
     ///Bit 17 - Configures whether or not to clear LEDC_evt_timer1_cmp trigger status.\\0: Invalid, No effect\\1: Clear
     #[inline(always)]
     #[must_use]
-    pub fn ledc_evt_timer1_cmp_st_clr(&mut self) -> LEDC_EVT_TIMER1_CMP_ST_CLR_W<EVT_ST1_CLR_SPEC> {
+    pub fn ledc_evt_timer1_cmp_st_clr(
+        &mut self,
+    ) -> LEDC_EVT_TIMER1_CMP_ST_CLR_W<EVT_ST1_CLR_SPEC> {
         LEDC_EVT_TIMER1_CMP_ST_CLR_W::new(self, 17)
     }
     ///Bit 18 - Configures whether or not to clear LEDC_evt_timer2_cmp trigger status.\\0: Invalid, No effect\\1: Clear
     #[inline(always)]
     #[must_use]
-    pub fn ledc_evt_timer2_cmp_st_clr(&mut self) -> LEDC_EVT_TIMER2_CMP_ST_CLR_W<EVT_ST1_CLR_SPEC> {
+    pub fn ledc_evt_timer2_cmp_st_clr(
+        &mut self,
+    ) -> LEDC_EVT_TIMER2_CMP_ST_CLR_W<EVT_ST1_CLR_SPEC> {
         LEDC_EVT_TIMER2_CMP_ST_CLR_W::new(self, 18)
     }
     ///Bit 19 - Configures whether or not to clear LEDC_evt_timer3_cmp trigger status.\\0: Invalid, No effect\\1: Clear
     #[inline(always)]
     #[must_use]
-    pub fn ledc_evt_timer3_cmp_st_clr(&mut self) -> LEDC_EVT_TIMER3_CMP_ST_CLR_W<EVT_ST1_CLR_SPEC> {
+    pub fn ledc_evt_timer3_cmp_st_clr(
+        &mut self,
+    ) -> LEDC_EVT_TIMER3_CMP_ST_CLR_W<EVT_ST1_CLR_SPEC> {
         LEDC_EVT_TIMER3_CMP_ST_CLR_W::new(self, 19)
     }
     ///Bit 20 - Configures whether or not to clear TG0_evt_cnt_cmp_timer0 trigger status.\\0: Invalid, No effect\\1: Clear

@@ -13,12 +13,16 @@ pub type LP_AONCLKRST_HPCORE1_SW_STALL_CODE_W<'a, REG> = crate::FieldWriter<'a, 
 impl R {
     ///Bits 16:23 - HP core0 software stall when set to 8'h86
     #[inline(always)]
-    pub fn lp_aonclkrst_hpcore0_sw_stall_code(&self) -> LP_AONCLKRST_HPCORE0_SW_STALL_CODE_R {
+    pub fn lp_aonclkrst_hpcore0_sw_stall_code(
+        &self,
+    ) -> LP_AONCLKRST_HPCORE0_SW_STALL_CODE_R {
         LP_AONCLKRST_HPCORE0_SW_STALL_CODE_R::new(((self.bits >> 16) & 0xff) as u8)
     }
     ///Bits 24:31 - HP core1 software stall when set to 8'h86
     #[inline(always)]
-    pub fn lp_aonclkrst_hpcore1_sw_stall_code(&self) -> LP_AONCLKRST_HPCORE1_SW_STALL_CODE_R {
+    pub fn lp_aonclkrst_hpcore1_sw_stall_code(
+        &self,
+    ) -> LP_AONCLKRST_HPCORE1_SW_STALL_CODE_R {
         LP_AONCLKRST_HPCORE1_SW_STALL_CODE_R::new(((self.bits >> 24) & 0xff) as u8)
     }
 }

@@ -12,9 +12,7 @@ impl R {
 #[cfg(feature = "impl-register-debug")]
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("INLINK_DSCR")
-            .field("inlink_dscr", &self.inlink_dscr())
-            .finish()
+        f.debug_struct("INLINK_DSCR").field("inlink_dscr", &self.inlink_dscr()).finish()
     }
 }
 /**Address of current inlink descriptor

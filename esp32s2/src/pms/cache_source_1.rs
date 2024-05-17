@@ -62,30 +62,12 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CACHE_SOURCE_1")
-            .field(
-                "pro_cache_i_source_pro_iram1",
-                &self.pro_cache_i_source_pro_iram1(),
-            )
-            .field(
-                "pro_cache_i_source_pro_irom0",
-                &self.pro_cache_i_source_pro_irom0(),
-            )
-            .field(
-                "pro_cache_i_source_pro_drom0",
-                &self.pro_cache_i_source_pro_drom0(),
-            )
-            .field(
-                "pro_cache_d_source_pro_dram0",
-                &self.pro_cache_d_source_pro_dram0(),
-            )
-            .field(
-                "pro_cache_d_source_pro_dport",
-                &self.pro_cache_d_source_pro_dport(),
-            )
-            .field(
-                "pro_cache_d_source_pro_drom0",
-                &self.pro_cache_d_source_pro_drom0(),
-            )
+            .field("pro_cache_i_source_pro_iram1", &self.pro_cache_i_source_pro_iram1())
+            .field("pro_cache_i_source_pro_irom0", &self.pro_cache_i_source_pro_irom0())
+            .field("pro_cache_i_source_pro_drom0", &self.pro_cache_i_source_pro_drom0())
+            .field("pro_cache_d_source_pro_dram0", &self.pro_cache_d_source_pro_dram0())
+            .field("pro_cache_d_source_pro_dport", &self.pro_cache_d_source_pro_dport())
+            .field("pro_cache_d_source_pro_drom0", &self.pro_cache_d_source_pro_drom0())
             .finish()
     }
 }

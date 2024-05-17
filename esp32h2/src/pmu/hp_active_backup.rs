@@ -5,11 +5,19 @@ pub type W = crate::W<HP_ACTIVE_BACKUP_SPEC>;
 ///Field `HP_SLEEP2ACTIVE_BACKUP_MODEM_CLK_CODE` reader - need_des
 pub type HP_SLEEP2ACTIVE_BACKUP_MODEM_CLK_CODE_R = crate::FieldReader;
 ///Field `HP_SLEEP2ACTIVE_BACKUP_MODEM_CLK_CODE` writer - need_des
-pub type HP_SLEEP2ACTIVE_BACKUP_MODEM_CLK_CODE_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
+pub type HP_SLEEP2ACTIVE_BACKUP_MODEM_CLK_CODE_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 ///Field `HP_MODEM2ACTIVE_BACKUP_MODEM_CLK_CODE` reader - need_des
 pub type HP_MODEM2ACTIVE_BACKUP_MODEM_CLK_CODE_R = crate::FieldReader;
 ///Field `HP_MODEM2ACTIVE_BACKUP_MODEM_CLK_CODE` writer - need_des
-pub type HP_MODEM2ACTIVE_BACKUP_MODEM_CLK_CODE_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
+pub type HP_MODEM2ACTIVE_BACKUP_MODEM_CLK_CODE_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 ///Field `HP_ACTIVE_RETENTION_MODE` reader - need_des
 pub type HP_ACTIVE_RETENTION_MODE_R = crate::BitReader;
 ///Field `HP_ACTIVE_RETENTION_MODE` writer - need_des
@@ -49,12 +57,16 @@ pub type HP_MODEM2ACTIVE_BACKUP_EN_W<'a, REG> = crate::BitWriter<'a, REG>;
 impl R {
     ///Bits 4:5 - need_des
     #[inline(always)]
-    pub fn hp_sleep2active_backup_modem_clk_code(&self) -> HP_SLEEP2ACTIVE_BACKUP_MODEM_CLK_CODE_R {
+    pub fn hp_sleep2active_backup_modem_clk_code(
+        &self,
+    ) -> HP_SLEEP2ACTIVE_BACKUP_MODEM_CLK_CODE_R {
         HP_SLEEP2ACTIVE_BACKUP_MODEM_CLK_CODE_R::new(((self.bits >> 4) & 3) as u8)
     }
     ///Bits 6:7 - need_des
     #[inline(always)]
-    pub fn hp_modem2active_backup_modem_clk_code(&self) -> HP_MODEM2ACTIVE_BACKUP_MODEM_CLK_CODE_R {
+    pub fn hp_modem2active_backup_modem_clk_code(
+        &self,
+    ) -> HP_MODEM2ACTIVE_BACKUP_MODEM_CLK_CODE_R {
         HP_MODEM2ACTIVE_BACKUP_MODEM_CLK_CODE_R::new(((self.bits >> 6) & 3) as u8)
     }
     ///Bit 10 - need_des
@@ -116,14 +128,8 @@ impl core::fmt::Debug for R {
                 &self.hp_modem2active_backup_modem_clk_code(),
             )
             .field("hp_active_retention_mode", &self.hp_active_retention_mode())
-            .field(
-                "hp_sleep2active_retention_en",
-                &self.hp_sleep2active_retention_en(),
-            )
-            .field(
-                "hp_modem2active_retention_en",
-                &self.hp_modem2active_retention_en(),
-            )
+            .field("hp_sleep2active_retention_en", &self.hp_sleep2active_retention_en())
+            .field("hp_modem2active_retention_en", &self.hp_modem2active_retention_en())
             .field(
                 "hp_sleep2active_backup_clk_sel",
                 &self.hp_sleep2active_backup_clk_sel(),
@@ -132,22 +138,10 @@ impl core::fmt::Debug for R {
                 "hp_modem2active_backup_clk_sel",
                 &self.hp_modem2active_backup_clk_sel(),
             )
-            .field(
-                "hp_sleep2active_backup_mode",
-                &self.hp_sleep2active_backup_mode(),
-            )
-            .field(
-                "hp_modem2active_backup_mode",
-                &self.hp_modem2active_backup_mode(),
-            )
-            .field(
-                "hp_sleep2active_backup_en",
-                &self.hp_sleep2active_backup_en(),
-            )
-            .field(
-                "hp_modem2active_backup_en",
-                &self.hp_modem2active_backup_en(),
-            )
+            .field("hp_sleep2active_backup_mode", &self.hp_sleep2active_backup_mode())
+            .field("hp_modem2active_backup_mode", &self.hp_modem2active_backup_mode())
+            .field("hp_sleep2active_backup_en", &self.hp_sleep2active_backup_en())
+            .field("hp_modem2active_backup_en", &self.hp_modem2active_backup_en())
             .finish()
     }
 }

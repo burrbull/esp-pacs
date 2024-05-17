@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("L1_CACHE_AUTOLOAD_SCT1_ADDR")
-            .field(
-                "l1_cache_autoload_sct1_addr",
-                &self.l1_cache_autoload_sct1_addr(),
-            )
+            .field("l1_cache_autoload_sct1_addr", &self.l1_cache_autoload_sct1_addr())
             .finish()
     }
 }

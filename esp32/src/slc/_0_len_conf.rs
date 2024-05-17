@@ -87,25 +87,33 @@ impl W {
     ///Bit 23
     #[inline(always)]
     #[must_use]
-    pub fn slc0_rx_packet_load_en(&mut self) -> SLC0_RX_PACKET_LOAD_EN_W<_0_LEN_CONF_SPEC> {
+    pub fn slc0_rx_packet_load_en(
+        &mut self,
+    ) -> SLC0_RX_PACKET_LOAD_EN_W<_0_LEN_CONF_SPEC> {
         SLC0_RX_PACKET_LOAD_EN_W::new(self, 23)
     }
     ///Bit 24
     #[inline(always)]
     #[must_use]
-    pub fn slc0_tx_packet_load_en(&mut self) -> SLC0_TX_PACKET_LOAD_EN_W<_0_LEN_CONF_SPEC> {
+    pub fn slc0_tx_packet_load_en(
+        &mut self,
+    ) -> SLC0_TX_PACKET_LOAD_EN_W<_0_LEN_CONF_SPEC> {
         SLC0_TX_PACKET_LOAD_EN_W::new(self, 24)
     }
     ///Bit 25
     #[inline(always)]
     #[must_use]
-    pub fn slc0_rx_get_used_dscr(&mut self) -> SLC0_RX_GET_USED_DSCR_W<_0_LEN_CONF_SPEC> {
+    pub fn slc0_rx_get_used_dscr(
+        &mut self,
+    ) -> SLC0_RX_GET_USED_DSCR_W<_0_LEN_CONF_SPEC> {
         SLC0_RX_GET_USED_DSCR_W::new(self, 25)
     }
     ///Bit 26
     #[inline(always)]
     #[must_use]
-    pub fn slc0_tx_get_used_dscr(&mut self) -> SLC0_TX_GET_USED_DSCR_W<_0_LEN_CONF_SPEC> {
+    pub fn slc0_tx_get_used_dscr(
+        &mut self,
+    ) -> SLC0_TX_GET_USED_DSCR_W<_0_LEN_CONF_SPEC> {
         SLC0_TX_GET_USED_DSCR_W::new(self, 26)
     }
 }

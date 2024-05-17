@@ -109,82 +109,114 @@ pub type HOST_FN1_GPIO_SDIO_INT_ENA_W<'a, REG> = crate::BitWriter<'a, REG>;
 impl R {
     ///Bit 0
     #[inline(always)]
-    pub fn host_fn1_slc0_tohost_bit0_int_ena(&self) -> HOST_FN1_SLC0_TOHOST_BIT0_INT_ENA_R {
+    pub fn host_fn1_slc0_tohost_bit0_int_ena(
+        &self,
+    ) -> HOST_FN1_SLC0_TOHOST_BIT0_INT_ENA_R {
         HOST_FN1_SLC0_TOHOST_BIT0_INT_ENA_R::new((self.bits & 1) != 0)
     }
     ///Bit 1
     #[inline(always)]
-    pub fn host_fn1_slc0_tohost_bit1_int_ena(&self) -> HOST_FN1_SLC0_TOHOST_BIT1_INT_ENA_R {
+    pub fn host_fn1_slc0_tohost_bit1_int_ena(
+        &self,
+    ) -> HOST_FN1_SLC0_TOHOST_BIT1_INT_ENA_R {
         HOST_FN1_SLC0_TOHOST_BIT1_INT_ENA_R::new(((self.bits >> 1) & 1) != 0)
     }
     ///Bit 2
     #[inline(always)]
-    pub fn host_fn1_slc0_tohost_bit2_int_ena(&self) -> HOST_FN1_SLC0_TOHOST_BIT2_INT_ENA_R {
+    pub fn host_fn1_slc0_tohost_bit2_int_ena(
+        &self,
+    ) -> HOST_FN1_SLC0_TOHOST_BIT2_INT_ENA_R {
         HOST_FN1_SLC0_TOHOST_BIT2_INT_ENA_R::new(((self.bits >> 2) & 1) != 0)
     }
     ///Bit 3
     #[inline(always)]
-    pub fn host_fn1_slc0_tohost_bit3_int_ena(&self) -> HOST_FN1_SLC0_TOHOST_BIT3_INT_ENA_R {
+    pub fn host_fn1_slc0_tohost_bit3_int_ena(
+        &self,
+    ) -> HOST_FN1_SLC0_TOHOST_BIT3_INT_ENA_R {
         HOST_FN1_SLC0_TOHOST_BIT3_INT_ENA_R::new(((self.bits >> 3) & 1) != 0)
     }
     ///Bit 4
     #[inline(always)]
-    pub fn host_fn1_slc0_tohost_bit4_int_ena(&self) -> HOST_FN1_SLC0_TOHOST_BIT4_INT_ENA_R {
+    pub fn host_fn1_slc0_tohost_bit4_int_ena(
+        &self,
+    ) -> HOST_FN1_SLC0_TOHOST_BIT4_INT_ENA_R {
         HOST_FN1_SLC0_TOHOST_BIT4_INT_ENA_R::new(((self.bits >> 4) & 1) != 0)
     }
     ///Bit 5
     #[inline(always)]
-    pub fn host_fn1_slc0_tohost_bit5_int_ena(&self) -> HOST_FN1_SLC0_TOHOST_BIT5_INT_ENA_R {
+    pub fn host_fn1_slc0_tohost_bit5_int_ena(
+        &self,
+    ) -> HOST_FN1_SLC0_TOHOST_BIT5_INT_ENA_R {
         HOST_FN1_SLC0_TOHOST_BIT5_INT_ENA_R::new(((self.bits >> 5) & 1) != 0)
     }
     ///Bit 6
     #[inline(always)]
-    pub fn host_fn1_slc0_tohost_bit6_int_ena(&self) -> HOST_FN1_SLC0_TOHOST_BIT6_INT_ENA_R {
+    pub fn host_fn1_slc0_tohost_bit6_int_ena(
+        &self,
+    ) -> HOST_FN1_SLC0_TOHOST_BIT6_INT_ENA_R {
         HOST_FN1_SLC0_TOHOST_BIT6_INT_ENA_R::new(((self.bits >> 6) & 1) != 0)
     }
     ///Bit 7
     #[inline(always)]
-    pub fn host_fn1_slc0_tohost_bit7_int_ena(&self) -> HOST_FN1_SLC0_TOHOST_BIT7_INT_ENA_R {
+    pub fn host_fn1_slc0_tohost_bit7_int_ena(
+        &self,
+    ) -> HOST_FN1_SLC0_TOHOST_BIT7_INT_ENA_R {
         HOST_FN1_SLC0_TOHOST_BIT7_INT_ENA_R::new(((self.bits >> 7) & 1) != 0)
     }
     ///Bit 8
     #[inline(always)]
-    pub fn host_fn1_slc0_token0_1to0_int_ena(&self) -> HOST_FN1_SLC0_TOKEN0_1TO0_INT_ENA_R {
+    pub fn host_fn1_slc0_token0_1to0_int_ena(
+        &self,
+    ) -> HOST_FN1_SLC0_TOKEN0_1TO0_INT_ENA_R {
         HOST_FN1_SLC0_TOKEN0_1TO0_INT_ENA_R::new(((self.bits >> 8) & 1) != 0)
     }
     ///Bit 9
     #[inline(always)]
-    pub fn host_fn1_slc0_token1_1to0_int_ena(&self) -> HOST_FN1_SLC0_TOKEN1_1TO0_INT_ENA_R {
+    pub fn host_fn1_slc0_token1_1to0_int_ena(
+        &self,
+    ) -> HOST_FN1_SLC0_TOKEN1_1TO0_INT_ENA_R {
         HOST_FN1_SLC0_TOKEN1_1TO0_INT_ENA_R::new(((self.bits >> 9) & 1) != 0)
     }
     ///Bit 10
     #[inline(always)]
-    pub fn host_fn1_slc0_token0_0to1_int_ena(&self) -> HOST_FN1_SLC0_TOKEN0_0TO1_INT_ENA_R {
+    pub fn host_fn1_slc0_token0_0to1_int_ena(
+        &self,
+    ) -> HOST_FN1_SLC0_TOKEN0_0TO1_INT_ENA_R {
         HOST_FN1_SLC0_TOKEN0_0TO1_INT_ENA_R::new(((self.bits >> 10) & 1) != 0)
     }
     ///Bit 11
     #[inline(always)]
-    pub fn host_fn1_slc0_token1_0to1_int_ena(&self) -> HOST_FN1_SLC0_TOKEN1_0TO1_INT_ENA_R {
+    pub fn host_fn1_slc0_token1_0to1_int_ena(
+        &self,
+    ) -> HOST_FN1_SLC0_TOKEN1_0TO1_INT_ENA_R {
         HOST_FN1_SLC0_TOKEN1_0TO1_INT_ENA_R::new(((self.bits >> 11) & 1) != 0)
     }
     ///Bit 12
     #[inline(always)]
-    pub fn host_fn1_slc0host_rx_sof_int_ena(&self) -> HOST_FN1_SLC0HOST_RX_SOF_INT_ENA_R {
+    pub fn host_fn1_slc0host_rx_sof_int_ena(
+        &self,
+    ) -> HOST_FN1_SLC0HOST_RX_SOF_INT_ENA_R {
         HOST_FN1_SLC0HOST_RX_SOF_INT_ENA_R::new(((self.bits >> 12) & 1) != 0)
     }
     ///Bit 13
     #[inline(always)]
-    pub fn host_fn1_slc0host_rx_eof_int_ena(&self) -> HOST_FN1_SLC0HOST_RX_EOF_INT_ENA_R {
+    pub fn host_fn1_slc0host_rx_eof_int_ena(
+        &self,
+    ) -> HOST_FN1_SLC0HOST_RX_EOF_INT_ENA_R {
         HOST_FN1_SLC0HOST_RX_EOF_INT_ENA_R::new(((self.bits >> 13) & 1) != 0)
     }
     ///Bit 14
     #[inline(always)]
-    pub fn host_fn1_slc0host_rx_start_int_ena(&self) -> HOST_FN1_SLC0HOST_RX_START_INT_ENA_R {
+    pub fn host_fn1_slc0host_rx_start_int_ena(
+        &self,
+    ) -> HOST_FN1_SLC0HOST_RX_START_INT_ENA_R {
         HOST_FN1_SLC0HOST_RX_START_INT_ENA_R::new(((self.bits >> 14) & 1) != 0)
     }
     ///Bit 15
     #[inline(always)]
-    pub fn host_fn1_slc0host_tx_start_int_ena(&self) -> HOST_FN1_SLC0HOST_TX_START_INT_ENA_R {
+    pub fn host_fn1_slc0host_tx_start_int_ena(
+        &self,
+    ) -> HOST_FN1_SLC0HOST_TX_START_INT_ENA_R {
         HOST_FN1_SLC0HOST_TX_START_INT_ENA_R::new(((self.bits >> 15) & 1) != 0)
     }
     ///Bit 16
@@ -199,7 +231,9 @@ impl R {
     }
     ///Bit 18
     #[inline(always)]
-    pub fn host_fn1_slc0_rx_pf_valid_int_ena(&self) -> HOST_FN1_SLC0_RX_PF_VALID_INT_ENA_R {
+    pub fn host_fn1_slc0_rx_pf_valid_int_ena(
+        &self,
+    ) -> HOST_FN1_SLC0_RX_PF_VALID_INT_ENA_R {
         HOST_FN1_SLC0_RX_PF_VALID_INT_ENA_R::new(((self.bits >> 18) & 1) != 0)
     }
     ///Bit 19
@@ -224,12 +258,16 @@ impl R {
     }
     ///Bit 23
     #[inline(always)]
-    pub fn host_fn1_slc0_rx_new_packet_int_ena(&self) -> HOST_FN1_SLC0_RX_NEW_PACKET_INT_ENA_R {
+    pub fn host_fn1_slc0_rx_new_packet_int_ena(
+        &self,
+    ) -> HOST_FN1_SLC0_RX_NEW_PACKET_INT_ENA_R {
         HOST_FN1_SLC0_RX_NEW_PACKET_INT_ENA_R::new(((self.bits >> 23) & 1) != 0)
     }
     ///Bit 24
     #[inline(always)]
-    pub fn host_fn1_slc0_host_rd_retry_int_ena(&self) -> HOST_FN1_SLC0_HOST_RD_RETRY_INT_ENA_R {
+    pub fn host_fn1_slc0_host_rd_retry_int_ena(
+        &self,
+    ) -> HOST_FN1_SLC0_HOST_RD_RETRY_INT_ENA_R {
         HOST_FN1_SLC0_HOST_RD_RETRY_INT_ENA_R::new(((self.bits >> 24) & 1) != 0)
     }
     ///Bit 25
@@ -306,14 +344,8 @@ impl core::fmt::Debug for R {
                 "host_fn1_slc0host_tx_start_int_ena",
                 &self.host_fn1_slc0host_tx_start_int_ena(),
             )
-            .field(
-                "host_fn1_slc0_rx_udf_int_ena",
-                &self.host_fn1_slc0_rx_udf_int_ena(),
-            )
-            .field(
-                "host_fn1_slc0_tx_ovf_int_ena",
-                &self.host_fn1_slc0_tx_ovf_int_ena(),
-            )
+            .field("host_fn1_slc0_rx_udf_int_ena", &self.host_fn1_slc0_rx_udf_int_ena())
+            .field("host_fn1_slc0_tx_ovf_int_ena", &self.host_fn1_slc0_tx_ovf_int_ena())
             .field(
                 "host_fn1_slc0_rx_pf_valid_int_ena",
                 &self.host_fn1_slc0_rx_pf_valid_int_ena(),
@@ -342,10 +374,7 @@ impl core::fmt::Debug for R {
                 "host_fn1_slc0_host_rd_retry_int_ena",
                 &self.host_fn1_slc0_host_rd_retry_int_ena(),
             )
-            .field(
-                "host_fn1_gpio_sdio_int_ena",
-                &self.host_fn1_gpio_sdio_int_ena(),
-            )
+            .field("host_fn1_gpio_sdio_int_ena", &self.host_fn1_gpio_sdio_int_ena())
             .finish()
     }
 }

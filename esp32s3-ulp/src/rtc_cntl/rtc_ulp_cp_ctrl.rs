@@ -77,19 +77,25 @@ impl W {
     ///Bits 0:10 - No public
     #[inline(always)]
     #[must_use]
-    pub fn ulp_cp_mem_addr_init(&mut self) -> ULP_CP_MEM_ADDR_INIT_W<RTC_ULP_CP_CTRL_SPEC> {
+    pub fn ulp_cp_mem_addr_init(
+        &mut self,
+    ) -> ULP_CP_MEM_ADDR_INIT_W<RTC_ULP_CP_CTRL_SPEC> {
         ULP_CP_MEM_ADDR_INIT_W::new(self, 0)
     }
     ///Bits 11:21 - No public
     #[inline(always)]
     #[must_use]
-    pub fn ulp_cp_mem_addr_size(&mut self) -> ULP_CP_MEM_ADDR_SIZE_W<RTC_ULP_CP_CTRL_SPEC> {
+    pub fn ulp_cp_mem_addr_size(
+        &mut self,
+    ) -> ULP_CP_MEM_ADDR_SIZE_W<RTC_ULP_CP_CTRL_SPEC> {
         ULP_CP_MEM_ADDR_SIZE_W::new(self, 11)
     }
     ///Bit 22 - No public
     #[inline(always)]
     #[must_use]
-    pub fn ulp_cp_mem_offst_clr(&mut self) -> ULP_CP_MEM_OFFST_CLR_W<RTC_ULP_CP_CTRL_SPEC> {
+    pub fn ulp_cp_mem_offst_clr(
+        &mut self,
+    ) -> ULP_CP_MEM_OFFST_CLR_W<RTC_ULP_CP_CTRL_SPEC> {
         ULP_CP_MEM_OFFST_CLR_W::new(self, 22)
     }
     ///Bit 28 - ulp coprocessor clk force on
@@ -107,7 +113,9 @@ impl W {
     ///Bit 30 - 1: ULP-coprocessor is started by SW
     #[inline(always)]
     #[must_use]
-    pub fn ulp_cp_force_start_top(&mut self) -> ULP_CP_FORCE_START_TOP_W<RTC_ULP_CP_CTRL_SPEC> {
+    pub fn ulp_cp_force_start_top(
+        &mut self,
+    ) -> ULP_CP_FORCE_START_TOP_W<RTC_ULP_CP_CTRL_SPEC> {
         ULP_CP_FORCE_START_TOP_W::new(self, 30)
     }
     ///Bit 31 - Write 1 to start ULP-coprocessor

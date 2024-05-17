@@ -300,22 +300,10 @@ impl core::fmt::Debug for R {
             .field("mcpwm1_evt_op1_tee2_st", &self.mcpwm1_evt_op1_tee2_st())
             .field("mcpwm1_evt_op2_tee2_st", &self.mcpwm1_evt_op2_tee2_st())
             .field("adc_evt_conv_cmplt0_st", &self.adc_evt_conv_cmplt0_st())
-            .field(
-                "adc_evt_eq_above_thresh0_st",
-                &self.adc_evt_eq_above_thresh0_st(),
-            )
-            .field(
-                "adc_evt_eq_above_thresh1_st",
-                &self.adc_evt_eq_above_thresh1_st(),
-            )
-            .field(
-                "adc_evt_eq_below_thresh0_st",
-                &self.adc_evt_eq_below_thresh0_st(),
-            )
-            .field(
-                "adc_evt_eq_below_thresh1_st",
-                &self.adc_evt_eq_below_thresh1_st(),
-            )
+            .field("adc_evt_eq_above_thresh0_st", &self.adc_evt_eq_above_thresh0_st())
+            .field("adc_evt_eq_above_thresh1_st", &self.adc_evt_eq_above_thresh1_st())
+            .field("adc_evt_eq_below_thresh0_st", &self.adc_evt_eq_below_thresh0_st())
+            .field("adc_evt_eq_below_thresh1_st", &self.adc_evt_eq_below_thresh1_st())
             .field("adc_evt_result_done0_st", &self.adc_evt_result_done0_st())
             .field("adc_evt_stopped0_st", &self.adc_evt_stopped0_st())
             .field("adc_evt_started0_st", &self.adc_evt_started0_st())
@@ -327,30 +315,18 @@ impl core::fmt::Debug for R {
             .field("regdma_evt_err1_st", &self.regdma_evt_err1_st())
             .field("regdma_evt_err2_st", &self.regdma_evt_err2_st())
             .field("regdma_evt_err3_st", &self.regdma_evt_err3_st())
-            .field(
-                "tmpsnsr_evt_over_limit_st",
-                &self.tmpsnsr_evt_over_limit_st(),
-            )
+            .field("tmpsnsr_evt_over_limit_st", &self.tmpsnsr_evt_over_limit_st())
             .field("i2s0_evt_rx_done_st", &self.i2s0_evt_rx_done_st())
             .field("i2s0_evt_tx_done_st", &self.i2s0_evt_tx_done_st())
-            .field(
-                "i2s0_evt_x_words_received_st",
-                &self.i2s0_evt_x_words_received_st(),
-            )
+            .field("i2s0_evt_x_words_received_st", &self.i2s0_evt_x_words_received_st())
             .field("i2s0_evt_x_words_sent_st", &self.i2s0_evt_x_words_sent_st())
             .field("i2s1_evt_rx_done_st", &self.i2s1_evt_rx_done_st())
             .field("i2s1_evt_tx_done_st", &self.i2s1_evt_tx_done_st())
-            .field(
-                "i2s1_evt_x_words_received_st",
-                &self.i2s1_evt_x_words_received_st(),
-            )
+            .field("i2s1_evt_x_words_received_st", &self.i2s1_evt_x_words_received_st())
             .field("i2s1_evt_x_words_sent_st", &self.i2s1_evt_x_words_sent_st())
             .field("i2s2_evt_rx_done_st", &self.i2s2_evt_rx_done_st())
             .field("i2s2_evt_tx_done_st", &self.i2s2_evt_tx_done_st())
-            .field(
-                "i2s2_evt_x_words_received_st",
-                &self.i2s2_evt_x_words_received_st(),
-            )
+            .field("i2s2_evt_x_words_received_st", &self.i2s2_evt_x_words_received_st())
             .field("i2s2_evt_x_words_sent_st", &self.i2s2_evt_x_words_sent_st())
             .finish()
     }
@@ -383,31 +359,41 @@ impl W {
     ///Bit 4 - Represents ADC_evt_eq_above_thresh0 trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn adc_evt_eq_above_thresh0_st(&mut self) -> ADC_EVT_EQ_ABOVE_THRESH0_ST_W<EVT_ST4_SPEC> {
+    pub fn adc_evt_eq_above_thresh0_st(
+        &mut self,
+    ) -> ADC_EVT_EQ_ABOVE_THRESH0_ST_W<EVT_ST4_SPEC> {
         ADC_EVT_EQ_ABOVE_THRESH0_ST_W::new(self, 4)
     }
     ///Bit 5 - Represents ADC_evt_eq_above_thresh1 trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn adc_evt_eq_above_thresh1_st(&mut self) -> ADC_EVT_EQ_ABOVE_THRESH1_ST_W<EVT_ST4_SPEC> {
+    pub fn adc_evt_eq_above_thresh1_st(
+        &mut self,
+    ) -> ADC_EVT_EQ_ABOVE_THRESH1_ST_W<EVT_ST4_SPEC> {
         ADC_EVT_EQ_ABOVE_THRESH1_ST_W::new(self, 5)
     }
     ///Bit 6 - Represents ADC_evt_eq_below_thresh0 trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn adc_evt_eq_below_thresh0_st(&mut self) -> ADC_EVT_EQ_BELOW_THRESH0_ST_W<EVT_ST4_SPEC> {
+    pub fn adc_evt_eq_below_thresh0_st(
+        &mut self,
+    ) -> ADC_EVT_EQ_BELOW_THRESH0_ST_W<EVT_ST4_SPEC> {
         ADC_EVT_EQ_BELOW_THRESH0_ST_W::new(self, 6)
     }
     ///Bit 7 - Represents ADC_evt_eq_below_thresh1 trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn adc_evt_eq_below_thresh1_st(&mut self) -> ADC_EVT_EQ_BELOW_THRESH1_ST_W<EVT_ST4_SPEC> {
+    pub fn adc_evt_eq_below_thresh1_st(
+        &mut self,
+    ) -> ADC_EVT_EQ_BELOW_THRESH1_ST_W<EVT_ST4_SPEC> {
         ADC_EVT_EQ_BELOW_THRESH1_ST_W::new(self, 7)
     }
     ///Bit 8 - Represents ADC_evt_result_done0 trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn adc_evt_result_done0_st(&mut self) -> ADC_EVT_RESULT_DONE0_ST_W<EVT_ST4_SPEC> {
+    pub fn adc_evt_result_done0_st(
+        &mut self,
+    ) -> ADC_EVT_RESULT_DONE0_ST_W<EVT_ST4_SPEC> {
         ADC_EVT_RESULT_DONE0_ST_W::new(self, 8)
     }
     ///Bit 9 - Represents ADC_evt_stopped0 trigger status.\\0: Not triggered\\1: Triggered
@@ -473,7 +459,9 @@ impl W {
     ///Bit 19 - Represents TMPSNSR_evt_over_limit trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn tmpsnsr_evt_over_limit_st(&mut self) -> TMPSNSR_EVT_OVER_LIMIT_ST_W<EVT_ST4_SPEC> {
+    pub fn tmpsnsr_evt_over_limit_st(
+        &mut self,
+    ) -> TMPSNSR_EVT_OVER_LIMIT_ST_W<EVT_ST4_SPEC> {
         TMPSNSR_EVT_OVER_LIMIT_ST_W::new(self, 19)
     }
     ///Bit 20 - Represents I2S0_evt_rx_done trigger status.\\0: Not triggered\\1: Triggered
@@ -491,13 +479,17 @@ impl W {
     ///Bit 22 - Represents I2S0_evt_x_words_received trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn i2s0_evt_x_words_received_st(&mut self) -> I2S0_EVT_X_WORDS_RECEIVED_ST_W<EVT_ST4_SPEC> {
+    pub fn i2s0_evt_x_words_received_st(
+        &mut self,
+    ) -> I2S0_EVT_X_WORDS_RECEIVED_ST_W<EVT_ST4_SPEC> {
         I2S0_EVT_X_WORDS_RECEIVED_ST_W::new(self, 22)
     }
     ///Bit 23 - Represents I2S0_evt_x_words_sent trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn i2s0_evt_x_words_sent_st(&mut self) -> I2S0_EVT_X_WORDS_SENT_ST_W<EVT_ST4_SPEC> {
+    pub fn i2s0_evt_x_words_sent_st(
+        &mut self,
+    ) -> I2S0_EVT_X_WORDS_SENT_ST_W<EVT_ST4_SPEC> {
         I2S0_EVT_X_WORDS_SENT_ST_W::new(self, 23)
     }
     ///Bit 24 - Represents I2S1_evt_rx_done trigger status.\\0: Not triggered\\1: Triggered
@@ -515,13 +507,17 @@ impl W {
     ///Bit 26 - Represents I2S1_evt_x_words_received trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn i2s1_evt_x_words_received_st(&mut self) -> I2S1_EVT_X_WORDS_RECEIVED_ST_W<EVT_ST4_SPEC> {
+    pub fn i2s1_evt_x_words_received_st(
+        &mut self,
+    ) -> I2S1_EVT_X_WORDS_RECEIVED_ST_W<EVT_ST4_SPEC> {
         I2S1_EVT_X_WORDS_RECEIVED_ST_W::new(self, 26)
     }
     ///Bit 27 - Represents I2S1_evt_x_words_sent trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn i2s1_evt_x_words_sent_st(&mut self) -> I2S1_EVT_X_WORDS_SENT_ST_W<EVT_ST4_SPEC> {
+    pub fn i2s1_evt_x_words_sent_st(
+        &mut self,
+    ) -> I2S1_EVT_X_WORDS_SENT_ST_W<EVT_ST4_SPEC> {
         I2S1_EVT_X_WORDS_SENT_ST_W::new(self, 27)
     }
     ///Bit 28 - Represents I2S2_evt_rx_done trigger status.\\0: Not triggered\\1: Triggered
@@ -539,13 +535,17 @@ impl W {
     ///Bit 30 - Represents I2S2_evt_x_words_received trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn i2s2_evt_x_words_received_st(&mut self) -> I2S2_EVT_X_WORDS_RECEIVED_ST_W<EVT_ST4_SPEC> {
+    pub fn i2s2_evt_x_words_received_st(
+        &mut self,
+    ) -> I2S2_EVT_X_WORDS_RECEIVED_ST_W<EVT_ST4_SPEC> {
         I2S2_EVT_X_WORDS_RECEIVED_ST_W::new(self, 30)
     }
     ///Bit 31 - Represents I2S2_evt_x_words_sent trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn i2s2_evt_x_words_sent_st(&mut self) -> I2S2_EVT_X_WORDS_SENT_ST_W<EVT_ST4_SPEC> {
+    pub fn i2s2_evt_x_words_sent_st(
+        &mut self,
+    ) -> I2S2_EVT_X_WORDS_SENT_ST_W<EVT_ST4_SPEC> {
         I2S2_EVT_X_WORDS_SENT_ST_W::new(self, 31)
     }
 }

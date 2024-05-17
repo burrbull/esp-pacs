@@ -33,7 +33,9 @@ impl W {
     ///Bit 0 - The bit is used to enable invalidate operation. It will be cleared by hardware after invalidate operation done.
     #[inline(always)]
     #[must_use]
-    pub fn icache_invalidate_ena(&mut self) -> ICACHE_INVALIDATE_ENA_W<ICACHE_SYNC_CTRL_SPEC> {
+    pub fn icache_invalidate_ena(
+        &mut self,
+    ) -> ICACHE_INVALIDATE_ENA_W<ICACHE_SYNC_CTRL_SPEC> {
         ICACHE_INVALIDATE_ENA_W::new(self, 0)
     }
 }

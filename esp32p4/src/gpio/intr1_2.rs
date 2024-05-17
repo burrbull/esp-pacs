@@ -12,9 +12,7 @@ impl R {
 #[cfg(feature = "impl-register-debug")]
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("INTR1_2")
-            .field("int1_2", &self.int1_2())
-            .finish()
+        f.debug_struct("INTR1_2").field("int1_2", &self.int1_2()).finish()
     }
 }
 /**GPIO interrupt 2 status register for GPIO32-56

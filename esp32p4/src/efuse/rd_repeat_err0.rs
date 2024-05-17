@@ -130,18 +130,12 @@ impl core::fmt::Debug for R {
                 "dis_usb_device_exchg_pins_err",
                 &self.dis_usb_device_exchg_pins_err(),
             )
-            .field(
-                "dis_usb_otg11_exchg_pins_err",
-                &self.dis_usb_otg11_exchg_pins_err(),
-            )
+            .field("dis_usb_otg11_exchg_pins_err", &self.dis_usb_otg11_exchg_pins_err())
             .field("dis_usb_jtag_err", &self.dis_usb_jtag_err())
             .field("powerglitch_en_err", &self.powerglitch_en_err())
             .field("dis_usb_serial_jtag_err", &self.dis_usb_serial_jtag_err())
             .field("dis_force_download_err", &self.dis_force_download_err())
-            .field(
-                "spi_download_mspi_dis_err",
-                &self.spi_download_mspi_dis_err(),
-            )
+            .field("spi_download_mspi_dis_err", &self.spi_download_mspi_dis_err())
             .field("dis_twai_err", &self.dis_twai_err())
             .field("jtag_sel_enable_err", &self.jtag_sel_enable_err())
             .field("soft_dis_jtag_err", &self.soft_dis_jtag_err())

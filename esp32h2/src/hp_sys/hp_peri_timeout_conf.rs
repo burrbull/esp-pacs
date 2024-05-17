@@ -29,10 +29,7 @@ impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("HP_PERI_TIMEOUT_CONF")
             .field("hp_peri_timeout_thres", &self.hp_peri_timeout_thres())
-            .field(
-                "hp_peri_timeout_protect_en",
-                &self.hp_peri_timeout_protect_en(),
-            )
+            .field("hp_peri_timeout_protect_en", &self.hp_peri_timeout_protect_en())
             .finish()
     }
 }
@@ -40,7 +37,9 @@ impl W {
     ///Bits 0:15 - Set the timeout threshold for bus access, corresponding to the number of clock cycles of the clock domain.
     #[inline(always)]
     #[must_use]
-    pub fn hp_peri_timeout_thres(&mut self) -> HP_PERI_TIMEOUT_THRES_W<HP_PERI_TIMEOUT_CONF_SPEC> {
+    pub fn hp_peri_timeout_thres(
+        &mut self,
+    ) -> HP_PERI_TIMEOUT_THRES_W<HP_PERI_TIMEOUT_CONF_SPEC> {
         HP_PERI_TIMEOUT_THRES_W::new(self, 0)
     }
     ///Bit 16 - Set this bit as 1 to clear timeout interrupt

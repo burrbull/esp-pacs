@@ -239,7 +239,9 @@ impl W {
     ///Bit 11
     #[inline(always)]
     #[must_use]
-    pub fn usb_pad_enable_override(&mut self) -> USB_PAD_ENABLE_OVERRIDE_W<USB_CONF_SPEC> {
+    pub fn usb_pad_enable_override(
+        &mut self,
+    ) -> USB_PAD_ENABLE_OVERRIDE_W<USB_CONF_SPEC> {
         USB_PAD_ENABLE_OVERRIDE_W::new(self, 11)
     }
     ///Bit 12

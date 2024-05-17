@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("APP_CPU_INTR_FROM_CPU_2_MAP")
-            .field(
-                "app_cpu_intr_from_cpu_2_map",
-                &self.app_cpu_intr_from_cpu_2_map(),
-            )
+            .field("app_cpu_intr_from_cpu_2_map", &self.app_cpu_intr_from_cpu_2_map())
             .finish()
     }
 }

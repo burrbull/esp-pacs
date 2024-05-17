@@ -41,32 +41,44 @@ pub type LP_AONCLKRST_USB_12M_DIV_NUM_W<'a, REG> = crate::FieldWriter<'a, REG, 8
 impl R {
     ///Bit 0 - unused.
     #[inline(always)]
-    pub fn lp_aonclkrst_usb_otg20_sleep_mode(&self) -> LP_AONCLKRST_USB_OTG20_SLEEP_MODE_R {
+    pub fn lp_aonclkrst_usb_otg20_sleep_mode(
+        &self,
+    ) -> LP_AONCLKRST_USB_OTG20_SLEEP_MODE_R {
         LP_AONCLKRST_USB_OTG20_SLEEP_MODE_R::new((self.bits & 1) != 0)
     }
     ///Bit 1 - unused.
     #[inline(always)]
-    pub fn lp_aonclkrst_usb_otg20_bk_sys_clk_en(&self) -> LP_AONCLKRST_USB_OTG20_BK_SYS_CLK_EN_R {
+    pub fn lp_aonclkrst_usb_otg20_bk_sys_clk_en(
+        &self,
+    ) -> LP_AONCLKRST_USB_OTG20_BK_SYS_CLK_EN_R {
         LP_AONCLKRST_USB_OTG20_BK_SYS_CLK_EN_R::new(((self.bits >> 1) & 1) != 0)
     }
     ///Bit 2 - unused.
     #[inline(always)]
-    pub fn lp_aonclkrst_usb_otg11_sleep_mode(&self) -> LP_AONCLKRST_USB_OTG11_SLEEP_MODE_R {
+    pub fn lp_aonclkrst_usb_otg11_sleep_mode(
+        &self,
+    ) -> LP_AONCLKRST_USB_OTG11_SLEEP_MODE_R {
         LP_AONCLKRST_USB_OTG11_SLEEP_MODE_R::new(((self.bits >> 2) & 1) != 0)
     }
     ///Bit 3 - unused.
     #[inline(always)]
-    pub fn lp_aonclkrst_usb_otg11_bk_sys_clk_en(&self) -> LP_AONCLKRST_USB_OTG11_BK_SYS_CLK_EN_R {
+    pub fn lp_aonclkrst_usb_otg11_bk_sys_clk_en(
+        &self,
+    ) -> LP_AONCLKRST_USB_OTG11_BK_SYS_CLK_EN_R {
         LP_AONCLKRST_USB_OTG11_BK_SYS_CLK_EN_R::new(((self.bits >> 3) & 1) != 0)
     }
     ///Bit 4 - usb otg11 fs phy clock enable.
     #[inline(always)]
-    pub fn lp_aonclkrst_usb_otg11_48m_clk_en(&self) -> LP_AONCLKRST_USB_OTG11_48M_CLK_EN_R {
+    pub fn lp_aonclkrst_usb_otg11_48m_clk_en(
+        &self,
+    ) -> LP_AONCLKRST_USB_OTG11_48M_CLK_EN_R {
         LP_AONCLKRST_USB_OTG11_48M_CLK_EN_R::new(((self.bits >> 4) & 1) != 0)
     }
     ///Bit 5 - usb device fs phy clock enable.
     #[inline(always)]
-    pub fn lp_aonclkrst_usb_device_48m_clk_en(&self) -> LP_AONCLKRST_USB_DEVICE_48M_CLK_EN_R {
+    pub fn lp_aonclkrst_usb_device_48m_clk_en(
+        &self,
+    ) -> LP_AONCLKRST_USB_DEVICE_48M_CLK_EN_R {
         LP_AONCLKRST_USB_DEVICE_48M_CLK_EN_R::new(((self.bits >> 5) & 1) != 0)
     }
     ///Bits 6:13 - usb 480m to 25m divide number.
@@ -113,18 +125,9 @@ impl core::fmt::Debug for R {
                 "lp_aonclkrst_usb_device_48m_clk_en",
                 &self.lp_aonclkrst_usb_device_48m_clk_en(),
             )
-            .field(
-                "lp_aonclkrst_usb_48m_div_num",
-                &self.lp_aonclkrst_usb_48m_div_num(),
-            )
-            .field(
-                "lp_aonclkrst_usb_25m_div_num",
-                &self.lp_aonclkrst_usb_25m_div_num(),
-            )
-            .field(
-                "lp_aonclkrst_usb_12m_div_num",
-                &self.lp_aonclkrst_usb_12m_div_num(),
-            )
+            .field("lp_aonclkrst_usb_48m_div_num", &self.lp_aonclkrst_usb_48m_div_num())
+            .field("lp_aonclkrst_usb_25m_div_num", &self.lp_aonclkrst_usb_25m_div_num())
+            .field("lp_aonclkrst_usb_12m_div_num", &self.lp_aonclkrst_usb_12m_div_num())
             .finish()
     }
 }

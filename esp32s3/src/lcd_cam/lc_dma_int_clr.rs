@@ -24,7 +24,9 @@ impl W {
     ///Bit 1 - The clear bit for LCD_CAM_LCD_TRANS_DONE_INT interrupt.
     #[inline(always)]
     #[must_use]
-    pub fn lcd_trans_done_int_clr(&mut self) -> LCD_TRANS_DONE_INT_CLR_W<LC_DMA_INT_CLR_SPEC> {
+    pub fn lcd_trans_done_int_clr(
+        &mut self,
+    ) -> LCD_TRANS_DONE_INT_CLR_W<LC_DMA_INT_CLR_SPEC> {
         LCD_TRANS_DONE_INT_CLR_W::new(self, 1)
     }
     ///Bit 2 - The clear bit for LCD_CAM_CAM_VSYNC_INT interrupt.

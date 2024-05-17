@@ -97,13 +97,17 @@ impl W {
     ///Bits 4:11 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn gpspi2_hs_clk_div_num(&mut self) -> GPSPI2_HS_CLK_DIV_NUM_W<PERI_CLK_CTRL116_SPEC> {
+    pub fn gpspi2_hs_clk_div_num(
+        &mut self,
+    ) -> GPSPI2_HS_CLK_DIV_NUM_W<PERI_CLK_CTRL116_SPEC> {
         GPSPI2_HS_CLK_DIV_NUM_W::new(self, 4)
     }
     ///Bits 12:19 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn gpspi2_mst_clk_div_num(&mut self) -> GPSPI2_MST_CLK_DIV_NUM_W<PERI_CLK_CTRL116_SPEC> {
+    pub fn gpspi2_mst_clk_div_num(
+        &mut self,
+    ) -> GPSPI2_MST_CLK_DIV_NUM_W<PERI_CLK_CTRL116_SPEC> {
         GPSPI2_MST_CLK_DIV_NUM_W::new(self, 12)
     }
     ///Bit 20 - Reserved

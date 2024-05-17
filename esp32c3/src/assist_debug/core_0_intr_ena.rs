@@ -103,12 +103,16 @@ impl R {
     }
     ///Bit 10 - reg_core_0_iram0_exception_monitor_ena
     #[inline(always)]
-    pub fn core_0_iram0_exception_monitor_rls(&self) -> CORE_0_IRAM0_EXCEPTION_MONITOR_RLS_R {
+    pub fn core_0_iram0_exception_monitor_rls(
+        &self,
+    ) -> CORE_0_IRAM0_EXCEPTION_MONITOR_RLS_R {
         CORE_0_IRAM0_EXCEPTION_MONITOR_RLS_R::new(((self.bits >> 10) & 1) != 0)
     }
     ///Bit 11 - reg_core_0_dram0_exception_monitor_ena
     #[inline(always)]
-    pub fn core_0_dram0_exception_monitor_rls(&self) -> CORE_0_DRAM0_EXCEPTION_MONITOR_RLS_R {
+    pub fn core_0_dram0_exception_monitor_rls(
+        &self,
+    ) -> CORE_0_DRAM0_EXCEPTION_MONITOR_RLS_R {
         CORE_0_DRAM0_EXCEPTION_MONITOR_RLS_R::new(((self.bits >> 11) & 1) != 0)
     }
 }
@@ -148,14 +152,8 @@ impl core::fmt::Debug for R {
                 "core_0_area_pif_1_wr_intr_ena",
                 &self.core_0_area_pif_1_wr_intr_ena(),
             )
-            .field(
-                "core_0_sp_spill_min_intr_ena",
-                &self.core_0_sp_spill_min_intr_ena(),
-            )
-            .field(
-                "core_0_sp_spill_max_intr_ena",
-                &self.core_0_sp_spill_max_intr_ena(),
-            )
+            .field("core_0_sp_spill_min_intr_ena", &self.core_0_sp_spill_min_intr_ena())
+            .field("core_0_sp_spill_max_intr_ena", &self.core_0_sp_spill_max_intr_ena())
             .field(
                 "core_0_iram0_exception_monitor_rls",
                 &self.core_0_iram0_exception_monitor_rls(),

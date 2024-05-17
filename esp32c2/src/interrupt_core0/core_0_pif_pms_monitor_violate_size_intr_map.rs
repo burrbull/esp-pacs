@@ -5,7 +5,11 @@ pub type W = crate::W<CORE_0_PIF_PMS_MONITOR_VIOLATE_SIZE_INTR_MAP_SPEC>;
 ///Field `CORE_0_PIF_PMS_MONITOR_VIOLATE_SIZE_INTR_MAP` reader - Need add description
 pub type CORE_0_PIF_PMS_MONITOR_VIOLATE_SIZE_INTR_MAP_R = crate::FieldReader;
 ///Field `CORE_0_PIF_PMS_MONITOR_VIOLATE_SIZE_INTR_MAP` writer - Need add description
-pub type CORE_0_PIF_PMS_MONITOR_VIOLATE_SIZE_INTR_MAP_W<'a, REG> = crate::FieldWriter<'a, REG, 5>;
+pub type CORE_0_PIF_PMS_MONITOR_VIOLATE_SIZE_INTR_MAP_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    5,
+>;
 impl R {
     ///Bits 0:4 - Need add description
     #[inline(always)]

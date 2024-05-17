@@ -35,10 +35,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("FUNC0_IN_SEL_CFG")
-            .field(
-                "reg_gpio_func0_in_inv_sel",
-                &self.reg_gpio_func0_in_inv_sel(),
-            )
+            .field("reg_gpio_func0_in_inv_sel", &self.reg_gpio_func0_in_inv_sel())
             .field("reg_gpio_sig0_in_sel", &self.reg_gpio_sig0_in_sel())
             .field("reg_gpio_func0_in_sel", &self.reg_gpio_func0_in_sel())
             .finish()
@@ -56,13 +53,17 @@ impl W {
     ///Bit 1 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn reg_gpio_sig0_in_sel(&mut self) -> REG_GPIO_SIG0_IN_SEL_W<FUNC0_IN_SEL_CFG_SPEC> {
+    pub fn reg_gpio_sig0_in_sel(
+        &mut self,
+    ) -> REG_GPIO_SIG0_IN_SEL_W<FUNC0_IN_SEL_CFG_SPEC> {
         REG_GPIO_SIG0_IN_SEL_W::new(self, 1)
     }
     ///Bits 2:7 - reg_gpio_func0_in_sel\[5:4\]==2'b11->constant 1,reg_gpio_func0_in_sel\[5:4\]==2'b10->constant 0
     #[inline(always)]
     #[must_use]
-    pub fn reg_gpio_func0_in_sel(&mut self) -> REG_GPIO_FUNC0_IN_SEL_W<FUNC0_IN_SEL_CFG_SPEC> {
+    pub fn reg_gpio_func0_in_sel(
+        &mut self,
+    ) -> REG_GPIO_FUNC0_IN_SEL_W<FUNC0_IN_SEL_CFG_SPEC> {
         REG_GPIO_FUNC0_IN_SEL_W::new(self, 2)
     }
 }

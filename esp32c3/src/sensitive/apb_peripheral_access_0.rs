@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("APB_PERIPHERAL_ACCESS_0")
-            .field(
-                "apb_peripheral_access_lock",
-                &self.apb_peripheral_access_lock(),
-            )
+            .field("apb_peripheral_access_lock", &self.apb_peripheral_access_lock())
             .finish()
     }
 }

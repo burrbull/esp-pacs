@@ -125,13 +125,17 @@ impl W {
     ///Bit 0
     #[inline(always)]
     #[must_use]
-    pub fn int_revmii_rx_clk_sel(&mut self) -> INT_REVMII_RX_CLK_SEL_W<EX_PHYINF_CONF_SPEC> {
+    pub fn int_revmii_rx_clk_sel(
+        &mut self,
+    ) -> INT_REVMII_RX_CLK_SEL_W<EX_PHYINF_CONF_SPEC> {
         INT_REVMII_RX_CLK_SEL_W::new(self, 0)
     }
     ///Bit 1
     #[inline(always)]
     #[must_use]
-    pub fn ext_revmii_rx_clk_sel(&mut self) -> EXT_REVMII_RX_CLK_SEL_W<EX_PHYINF_CONF_SPEC> {
+    pub fn ext_revmii_rx_clk_sel(
+        &mut self,
+    ) -> EXT_REVMII_RX_CLK_SEL_W<EX_PHYINF_CONF_SPEC> {
         EXT_REVMII_RX_CLK_SEL_W::new(self, 1)
     }
     ///Bit 2

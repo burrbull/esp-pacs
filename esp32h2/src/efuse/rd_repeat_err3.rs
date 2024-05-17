@@ -45,7 +45,9 @@ impl R {
     }
     ///Bit 4 - Indicates a programming error of DIS_USB_SERIAL_JTAG_DOWNLOAD_MODE.
     #[inline(always)]
-    pub fn dis_usb_serial_jtag_download_mode_err(&self) -> DIS_USB_SERIAL_JTAG_DOWNLOAD_MODE_ERR_R {
+    pub fn dis_usb_serial_jtag_download_mode_err(
+        &self,
+    ) -> DIS_USB_SERIAL_JTAG_DOWNLOAD_MODE_ERR_R {
         DIS_USB_SERIAL_JTAG_DOWNLOAD_MODE_ERR_R::new(((self.bits >> 4) & 1) != 0)
     }
     ///Bit 5 - Indicates a programming error of ENABLE_SECURITY_DOWNLOAD.
@@ -70,7 +72,9 @@ impl R {
     }
     ///Bit 25 - Indicates a programming error of SECURE_BOOT_DISABLE_FAST_WAKE.
     #[inline(always)]
-    pub fn secure_boot_disable_fast_wake_err(&self) -> SECURE_BOOT_DISABLE_FAST_WAKE_ERR_R {
+    pub fn secure_boot_disable_fast_wake_err(
+        &self,
+    ) -> SECURE_BOOT_DISABLE_FAST_WAKE_ERR_R {
         SECURE_BOOT_DISABLE_FAST_WAKE_ERR_R::new(((self.bits >> 25) & 1) != 0)
     }
     ///Bits 26:31 - Indicates a programming error of HYS_EN_PAD0.
@@ -91,10 +95,7 @@ impl core::fmt::Debug for R {
                 "dis_usb_serial_jtag_download_mode_err",
                 &self.dis_usb_serial_jtag_download_mode_err(),
             )
-            .field(
-                "enable_security_download_err",
-                &self.enable_security_download_err(),
-            )
+            .field("enable_security_download_err", &self.enable_security_download_err())
             .field("uart_print_control_err", &self.uart_print_control_err())
             .field("force_send_resume_err", &self.force_send_resume_err())
             .field("secure_version_err", &self.secure_version_err())

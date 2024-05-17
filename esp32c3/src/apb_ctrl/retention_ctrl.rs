@@ -41,7 +41,9 @@ impl W {
     ///Bit 27 - reg_nobypass_cpu_iso_rst
     #[inline(always)]
     #[must_use]
-    pub fn nobypass_cpu_iso_rst(&mut self) -> NOBYPASS_CPU_ISO_RST_W<RETENTION_CTRL_SPEC> {
+    pub fn nobypass_cpu_iso_rst(
+        &mut self,
+    ) -> NOBYPASS_CPU_ISO_RST_W<RETENTION_CTRL_SPEC> {
         NOBYPASS_CPU_ISO_RST_W::new(self, 27)
     }
 }

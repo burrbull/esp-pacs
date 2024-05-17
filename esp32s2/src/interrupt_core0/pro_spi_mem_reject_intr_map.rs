@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PRO_SPI_MEM_REJECT_INTR_MAP")
-            .field(
-                "pro_spi_mem_reject_intr_map",
-                &self.pro_spi_mem_reject_intr_map(),
-            )
+            .field("pro_spi_mem_reject_intr_map", &self.pro_spi_mem_reject_intr_map())
             .finish()
     }
 }

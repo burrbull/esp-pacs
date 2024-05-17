@@ -14,13 +14,17 @@ impl W {
     ///Bit 30 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn tie_low_lp_rootclk_sel(&mut self) -> TIE_LOW_LP_ROOTCLK_SEL_W<IMM_LP_ICG_SPEC> {
+    pub fn tie_low_lp_rootclk_sel(
+        &mut self,
+    ) -> TIE_LOW_LP_ROOTCLK_SEL_W<IMM_LP_ICG_SPEC> {
         TIE_LOW_LP_ROOTCLK_SEL_W::new(self, 30)
     }
     ///Bit 31 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn tie_high_lp_rootclk_sel(&mut self) -> TIE_HIGH_LP_ROOTCLK_SEL_W<IMM_LP_ICG_SPEC> {
+    pub fn tie_high_lp_rootclk_sel(
+        &mut self,
+    ) -> TIE_HIGH_LP_ROOTCLK_SEL_W<IMM_LP_ICG_SPEC> {
         TIE_HIGH_LP_ROOTCLK_SEL_W::new(self, 31)
     }
 }

@@ -9,7 +9,9 @@ pub type DMA_APBPERI_BACKUP_PMS_CONSTRAIN_LOCK_W<'a, REG> = crate::BitWriter<'a,
 impl R {
     ///Bit 0 - dma_apbperi_backup_pms_constrain_lock
     #[inline(always)]
-    pub fn dma_apbperi_backup_pms_constrain_lock(&self) -> DMA_APBPERI_BACKUP_PMS_CONSTRAIN_LOCK_R {
+    pub fn dma_apbperi_backup_pms_constrain_lock(
+        &self,
+    ) -> DMA_APBPERI_BACKUP_PMS_CONSTRAIN_LOCK_R {
         DMA_APBPERI_BACKUP_PMS_CONSTRAIN_LOCK_R::new((self.bits & 1) != 0)
     }
 }
@@ -30,7 +32,9 @@ impl W {
     #[must_use]
     pub fn dma_apbperi_backup_pms_constrain_lock(
         &mut self,
-    ) -> DMA_APBPERI_BACKUP_PMS_CONSTRAIN_LOCK_W<DMA_APBPERI_BACKUP_PMS_CONSTRAIN_0_SPEC> {
+    ) -> DMA_APBPERI_BACKUP_PMS_CONSTRAIN_LOCK_W<
+        DMA_APBPERI_BACKUP_PMS_CONSTRAIN_0_SPEC,
+    > {
         DMA_APBPERI_BACKUP_PMS_CONSTRAIN_LOCK_W::new(self, 0)
     }
 }

@@ -35,7 +35,9 @@ impl W {
     ///Bits 0:2 - Configures Slice Header remain bit number
     #[inline(always)]
     #[must_use]
-    pub fn slice_remain_bitlength(&mut self) -> SLICE_REMAIN_BITLENGTH_W<SLICE_HEADER_REMAIN_SPEC> {
+    pub fn slice_remain_bitlength(
+        &mut self,
+    ) -> SLICE_REMAIN_BITLENGTH_W<SLICE_HEADER_REMAIN_SPEC> {
         SLICE_REMAIN_BITLENGTH_W::new(self, 0)
     }
     ///Bits 3:10 - Configures Slice Header remain bit

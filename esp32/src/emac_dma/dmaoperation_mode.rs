@@ -210,7 +210,9 @@ impl W {
     ///Bit 24 - When this bit is set the Rx DMA does not flush any frames because of the unavailability of receive descriptors or buffers.
     #[inline(always)]
     #[must_use]
-    pub fn dis_flush_recv_frames(&mut self) -> DIS_FLUSH_RECV_FRAMES_W<DMAOPERATION_MODE_SPEC> {
+    pub fn dis_flush_recv_frames(
+        &mut self,
+    ) -> DIS_FLUSH_RECV_FRAMES_W<DMAOPERATION_MODE_SPEC> {
         DIS_FLUSH_RECV_FRAMES_W::new(self, 24)
     }
     ///Bit 25 - When this bit is set the MTL reads a frame from the Rx FIFO only after the complete frame has been written to it.
@@ -222,7 +224,9 @@ impl W {
     ///Bit 26 - When this bit is set the MAC does not drop the frames which only have errors detected by the Receive Checksum engine.When this bit is reset all error frames are dropped if the Fwd_Err_Frame bit is reset.
     #[inline(always)]
     #[must_use]
-    pub fn dis_drop_tcpip_err_fram(&mut self) -> DIS_DROP_TCPIP_ERR_FRAM_W<DMAOPERATION_MODE_SPEC> {
+    pub fn dis_drop_tcpip_err_fram(
+        &mut self,
+    ) -> DIS_DROP_TCPIP_ERR_FRAM_W<DMAOPERATION_MODE_SPEC> {
         DIS_DROP_TCPIP_ERR_FRAM_W::new(self, 26)
     }
 }

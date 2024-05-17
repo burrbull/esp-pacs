@@ -26,14 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CACHE_ENCRYPT_DECRYPT_RECORD_DISABLE")
-            .field(
-                "record_disable_db_encrypt",
-                &self.record_disable_db_encrypt(),
-            )
-            .field(
-                "record_disable_g0cb_decrypt",
-                &self.record_disable_g0cb_decrypt(),
-            )
+            .field("record_disable_db_encrypt", &self.record_disable_db_encrypt())
+            .field("record_disable_g0cb_decrypt", &self.record_disable_g0cb_decrypt())
             .finish()
     }
 }

@@ -63,18 +63,9 @@ impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("HP_ACTIVE_HP_SYS_CNTL")
             .field("hp_active_uart_wakeup_en", &self.hp_active_uart_wakeup_en())
-            .field(
-                "hp_active_lp_pad_hold_all",
-                &self.hp_active_lp_pad_hold_all(),
-            )
-            .field(
-                "hp_active_hp_pad_hold_all",
-                &self.hp_active_hp_pad_hold_all(),
-            )
-            .field(
-                "hp_active_dig_pad_slp_sel",
-                &self.hp_active_dig_pad_slp_sel(),
-            )
+            .field("hp_active_lp_pad_hold_all", &self.hp_active_lp_pad_hold_all())
+            .field("hp_active_hp_pad_hold_all", &self.hp_active_hp_pad_hold_all())
+            .field("hp_active_dig_pad_slp_sel", &self.hp_active_dig_pad_slp_sel())
             .field("hp_active_dig_pause_wdt", &self.hp_active_dig_pause_wdt())
             .field("hp_active_dig_cpu_stall", &self.hp_active_dig_cpu_stall())
             .finish()

@@ -25,7 +25,9 @@ impl W {
     ///Bits 0:4 - This register is used to map UHCI0_INTR interrupt signal to one of the CPU interrupts.
     #[inline(always)]
     #[must_use]
-    pub fn pro_uhci0_intr_map(&mut self) -> PRO_UHCI0_INTR_MAP_W<PRO_UHCI0_INTR_MAP_SPEC> {
+    pub fn pro_uhci0_intr_map(
+        &mut self,
+    ) -> PRO_UHCI0_INTR_MAP_W<PRO_UHCI0_INTR_MAP_SPEC> {
         PRO_UHCI0_INTR_MAP_W::new(self, 0)
     }
 }

@@ -33,7 +33,9 @@ impl W {
     ///Bit 16 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn touch_update_baseline_sw(&mut self) -> TOUCH_UPDATE_BASELINE_SW_W<TOUCH_FILTER3_SPEC> {
+    pub fn touch_update_baseline_sw(
+        &mut self,
+    ) -> TOUCH_UPDATE_BASELINE_SW_W<TOUCH_FILTER3_SPEC> {
         TOUCH_UPDATE_BASELINE_SW_W::new(self, 16)
     }
 }

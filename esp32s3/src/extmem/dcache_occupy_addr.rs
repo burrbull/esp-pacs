@@ -25,7 +25,9 @@ impl W {
     ///Bits 0:31 - The bits are used to configure the start virtual address for occupy operation. It should be combined with DCACHE_OCCUPY_SIZE_REG.
     #[inline(always)]
     #[must_use]
-    pub fn dcache_occupy_addr(&mut self) -> DCACHE_OCCUPY_ADDR_W<DCACHE_OCCUPY_ADDR_SPEC> {
+    pub fn dcache_occupy_addr(
+        &mut self,
+    ) -> DCACHE_OCCUPY_ADDR_W<DCACHE_OCCUPY_ADDR_SPEC> {
         DCACHE_OCCUPY_ADDR_W::new(self, 0)
     }
 }

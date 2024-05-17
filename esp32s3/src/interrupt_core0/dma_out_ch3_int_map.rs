@@ -25,7 +25,9 @@ impl W {
     ///Bits 0:4 - this register used to map dma_out_ch3 interrupt to one of core0's external interrupt
     #[inline(always)]
     #[must_use]
-    pub fn dma_out_ch3_int_map(&mut self) -> DMA_OUT_CH3_INT_MAP_W<DMA_OUT_CH3_INT_MAP_SPEC> {
+    pub fn dma_out_ch3_int_map(
+        &mut self,
+    ) -> DMA_OUT_CH3_INT_MAP_W<DMA_OUT_CH3_INT_MAP_SPEC> {
         DMA_OUT_CH3_INT_MAP_W::new(self, 0)
     }
 }

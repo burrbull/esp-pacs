@@ -35,13 +35,17 @@ impl W {
     ///Bit 0 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn force_dcdc_switch_pu(&mut self) -> FORCE_DCDC_SWITCH_PU_W<POWER_DCDC_SWITCH_SPEC> {
+    pub fn force_dcdc_switch_pu(
+        &mut self,
+    ) -> FORCE_DCDC_SWITCH_PU_W<POWER_DCDC_SWITCH_SPEC> {
         FORCE_DCDC_SWITCH_PU_W::new(self, 0)
     }
     ///Bit 1 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn force_dcdc_switch_pd(&mut self) -> FORCE_DCDC_SWITCH_PD_W<POWER_DCDC_SWITCH_SPEC> {
+    pub fn force_dcdc_switch_pd(
+        &mut self,
+    ) -> FORCE_DCDC_SWITCH_PD_W<POWER_DCDC_SWITCH_SPEC> {
         FORCE_DCDC_SWITCH_PD_W::new(self, 1)
     }
 }

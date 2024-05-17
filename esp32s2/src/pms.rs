@@ -909,7 +909,9 @@ pub mod apb_peripheral_intr;
 You can [`read`](crate::generic::Reg::read) this register and get [`apb_peripheral_status::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@apb_peripheral_status`] module*/
-pub type APB_PERIPHERAL_STATUS = crate::Reg<apb_peripheral_status::APB_PERIPHERAL_STATUS_SPEC>;
+pub type APB_PERIPHERAL_STATUS = crate::Reg<
+    apb_peripheral_status::APB_PERIPHERAL_STATUS_SPEC,
+>;
 ///PeribBus2 peripheral access status register.
 pub mod apb_peripheral_status;
 /**CPU_PERIPHERAL_INTR (rw) register accessor: PeribBus1 permission control register.
@@ -925,7 +927,9 @@ pub mod cpu_peripheral_intr;
 You can [`read`](crate::generic::Reg::read) this register and get [`cpu_peripheral_status::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@cpu_peripheral_status`] module*/
-pub type CPU_PERIPHERAL_STATUS = crate::Reg<cpu_peripheral_status::CPU_PERIPHERAL_STATUS_SPEC>;
+pub type CPU_PERIPHERAL_STATUS = crate::Reg<
+    cpu_peripheral_status::CPU_PERIPHERAL_STATUS_SPEC,
+>;
 ///PeribBus1 peripheral access status register.
 pub mod cpu_peripheral_status;
 /**CLOCK_GATE (rw) register accessor: Clock gate register of permission control.

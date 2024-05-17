@@ -12,9 +12,7 @@ impl R {
 #[cfg(feature = "impl-register-debug")]
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("CDETECT")
-            .field("card_detect_n", &self.card_detect_n())
-            .finish()
+        f.debug_struct("CDETECT").field("card_detect_n", &self.card_detect_n()).finish()
     }
 }
 /**Card detect register

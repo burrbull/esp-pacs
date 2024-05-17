@@ -233,7 +233,9 @@ impl W {
     ///Bit 19 - NA
     #[inline(always)]
     #[must_use]
-    pub fn mask_dpi_buff_pld_under(&mut self) -> MASK_DPI_BUFF_PLD_UNDER_W<INT_MSK1_SPEC> {
+    pub fn mask_dpi_buff_pld_under(
+        &mut self,
+    ) -> MASK_DPI_BUFF_PLD_UNDER_W<INT_MSK1_SPEC> {
         MASK_DPI_BUFF_PLD_UNDER_W::new(self, 19)
     }
 }

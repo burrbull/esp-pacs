@@ -41,7 +41,9 @@ impl W {
     ///Bits 10:19 - I2S ETM receive x words event. When receiving word number of reg_etm_rx_receive_word_num\[9:0\], i2s will trigger an etm event.
     #[inline(always)]
     #[must_use]
-    pub fn etm_rx_receive_word_num(&mut self) -> ETM_RX_RECEIVE_WORD_NUM_W<ETM_CONF_SPEC> {
+    pub fn etm_rx_receive_word_num(
+        &mut self,
+    ) -> ETM_RX_RECEIVE_WORD_NUM_W<ETM_CONF_SPEC> {
         ETM_RX_RECEIVE_WORD_NUM_W::new(self, 10)
     }
 }

@@ -13,12 +13,16 @@ pub type DMA_APBPERI_PMS_MONITOR_VIOLATE_EN_W<'a, REG> = crate::BitWriter<'a, RE
 impl R {
     ///Bit 0 - dma_apbperi_pms_monitor_violate_clr
     #[inline(always)]
-    pub fn dma_apbperi_pms_monitor_violate_clr(&self) -> DMA_APBPERI_PMS_MONITOR_VIOLATE_CLR_R {
+    pub fn dma_apbperi_pms_monitor_violate_clr(
+        &self,
+    ) -> DMA_APBPERI_PMS_MONITOR_VIOLATE_CLR_R {
         DMA_APBPERI_PMS_MONITOR_VIOLATE_CLR_R::new((self.bits & 1) != 0)
     }
     ///Bit 1 - dma_apbperi_pms_monitor_violate_en
     #[inline(always)]
-    pub fn dma_apbperi_pms_monitor_violate_en(&self) -> DMA_APBPERI_PMS_MONITOR_VIOLATE_EN_R {
+    pub fn dma_apbperi_pms_monitor_violate_en(
+        &self,
+    ) -> DMA_APBPERI_PMS_MONITOR_VIOLATE_EN_R {
         DMA_APBPERI_PMS_MONITOR_VIOLATE_EN_R::new(((self.bits >> 1) & 1) != 0)
     }
 }

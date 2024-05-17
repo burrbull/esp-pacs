@@ -125,19 +125,25 @@ impl W {
     ///Bit 25
     #[inline(always)]
     #[must_use]
-    pub fn host_sdio20_int_delay(&mut self) -> HOST_SDIO20_INT_DELAY_W<HOST_SLCHOST_CONF_SPEC> {
+    pub fn host_sdio20_int_delay(
+        &mut self,
+    ) -> HOST_SDIO20_INT_DELAY_W<HOST_SLCHOST_CONF_SPEC> {
         HOST_SDIO20_INT_DELAY_W::new(self, 25)
     }
     ///Bit 26
     #[inline(always)]
     #[must_use]
-    pub fn host_sdio_pad_pullup(&mut self) -> HOST_SDIO_PAD_PULLUP_W<HOST_SLCHOST_CONF_SPEC> {
+    pub fn host_sdio_pad_pullup(
+        &mut self,
+    ) -> HOST_SDIO_PAD_PULLUP_W<HOST_SLCHOST_CONF_SPEC> {
         HOST_SDIO_PAD_PULLUP_W::new(self, 26)
     }
     ///Bit 27
     #[inline(always)]
     #[must_use]
-    pub fn host_hspeed_con_en(&mut self) -> HOST_HSPEED_CON_EN_W<HOST_SLCHOST_CONF_SPEC> {
+    pub fn host_hspeed_con_en(
+        &mut self,
+    ) -> HOST_HSPEED_CON_EN_W<HOST_SLCHOST_CONF_SPEC> {
         HOST_HSPEED_CON_EN_W::new(self, 27)
     }
 }

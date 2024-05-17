@@ -44,14 +44,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("DEMOSAIC_MATRIX_CTRL")
-            .field(
-                "demosaic_tail_pixen_pulse_tl",
-                &self.demosaic_tail_pixen_pulse_tl(),
-            )
-            .field(
-                "demosaic_tail_pixen_pulse_th",
-                &self.demosaic_tail_pixen_pulse_th(),
-            )
+            .field("demosaic_tail_pixen_pulse_tl", &self.demosaic_tail_pixen_pulse_tl())
+            .field("demosaic_tail_pixen_pulse_th", &self.demosaic_tail_pixen_pulse_th())
             .field("demosaic_padding_data", &self.demosaic_padding_data())
             .field("demosaic_padding_mode", &self.demosaic_padding_mode())
             .finish()
@@ -77,13 +71,17 @@ impl W {
     ///Bits 16:23 - this field configures demosaic matrix padding data
     #[inline(always)]
     #[must_use]
-    pub fn demosaic_padding_data(&mut self) -> DEMOSAIC_PADDING_DATA_W<DEMOSAIC_MATRIX_CTRL_SPEC> {
+    pub fn demosaic_padding_data(
+        &mut self,
+    ) -> DEMOSAIC_PADDING_DATA_W<DEMOSAIC_MATRIX_CTRL_SPEC> {
         DEMOSAIC_PADDING_DATA_W::new(self, 16)
     }
     ///Bit 24 - this bit configures the padding mode of demosaic matrix. 0: use pixel in image to do padding 1: use reg_padding_data to do padding
     #[inline(always)]
     #[must_use]
-    pub fn demosaic_padding_mode(&mut self) -> DEMOSAIC_PADDING_MODE_W<DEMOSAIC_MATRIX_CTRL_SPEC> {
+    pub fn demosaic_padding_mode(
+        &mut self,
+    ) -> DEMOSAIC_PADDING_MODE_W<DEMOSAIC_MATRIX_CTRL_SPEC> {
         DEMOSAIC_PADDING_MODE_W::new(self, 24)
     }
 }

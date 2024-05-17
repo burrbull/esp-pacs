@@ -67,7 +67,9 @@ impl R {
     }
     ///Bit 30 - need_des
     #[inline(always)]
-    pub fn lp_aonclkrst_rst_en_lp_aonefusereg(&self) -> LP_AONCLKRST_RST_EN_LP_AONEFUSEREG_R {
+    pub fn lp_aonclkrst_rst_en_lp_aonefusereg(
+        &self,
+    ) -> LP_AONCLKRST_RST_EN_LP_AONEFUSEREG_R {
         LP_AONCLKRST_RST_EN_LP_AONEFUSEREG_R::new(((self.bits >> 30) & 1) != 0)
     }
     ///Bit 31 - need_des
@@ -80,26 +82,14 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("LP_AONCLKRST_LP_RST_EN")
-            .field(
-                "lp_aonclkrst_rst_en_lp_huk",
-                &self.lp_aonclkrst_rst_en_lp_huk(),
-            )
+            .field("lp_aonclkrst_rst_en_lp_huk", &self.lp_aonclkrst_rst_en_lp_huk())
             .field(
                 "lp_aonclkrst_rst_en_lp_anaperi",
                 &self.lp_aonclkrst_rst_en_lp_anaperi(),
             )
-            .field(
-                "lp_aonclkrst_rst_en_lp_wdt",
-                &self.lp_aonclkrst_rst_en_lp_wdt(),
-            )
-            .field(
-                "lp_aonclkrst_rst_en_lp_timer",
-                &self.lp_aonclkrst_rst_en_lp_timer(),
-            )
-            .field(
-                "lp_aonclkrst_rst_en_lp_rtc",
-                &self.lp_aonclkrst_rst_en_lp_rtc(),
-            )
+            .field("lp_aonclkrst_rst_en_lp_wdt", &self.lp_aonclkrst_rst_en_lp_wdt())
+            .field("lp_aonclkrst_rst_en_lp_timer", &self.lp_aonclkrst_rst_en_lp_timer())
+            .field("lp_aonclkrst_rst_en_lp_rtc", &self.lp_aonclkrst_rst_en_lp_rtc())
             .field(
                 "lp_aonclkrst_rst_en_lp_mailbox",
                 &self.lp_aonclkrst_rst_en_lp_mailbox(),
@@ -108,10 +98,7 @@ impl core::fmt::Debug for R {
                 "lp_aonclkrst_rst_en_lp_aonefusereg",
                 &self.lp_aonclkrst_rst_en_lp_aonefusereg(),
             )
-            .field(
-                "lp_aonclkrst_rst_en_lp_ram",
-                &self.lp_aonclkrst_rst_en_lp_ram(),
-            )
+            .field("lp_aonclkrst_rst_en_lp_ram", &self.lp_aonclkrst_rst_en_lp_ram())
             .finish()
     }
 }

@@ -16,9 +16,7 @@ impl R {
 #[cfg(feature = "impl-register-debug")]
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("BLK2_WDATA4")
-            .field("blk2_din4", &self.blk2_din4())
-            .finish()
+        f.debug_struct("BLK2_WDATA4").field("blk2_din4", &self.blk2_din4()).finish()
     }
 }
 impl W {

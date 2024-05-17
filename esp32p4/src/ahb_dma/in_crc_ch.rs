@@ -118,7 +118,9 @@ pub mod rx_crc_en_addr;
 You can [`read`](crate::generic::Reg::read) this register and get [`rx_crc_data_en_wr_data::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`rx_crc_data_en_wr_data::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@rx_crc_data_en_wr_data`] module*/
-pub type RX_CRC_DATA_EN_WR_DATA = crate::Reg<rx_crc_data_en_wr_data::RX_CRC_DATA_EN_WR_DATA_SPEC>;
+pub type RX_CRC_DATA_EN_WR_DATA = crate::Reg<
+    rx_crc_data_en_wr_data::RX_CRC_DATA_EN_WR_DATA_SPEC,
+>;
 ///This register is used to config crc data_8bit en
 pub mod rx_crc_data_en_wr_data;
 /**RX_CRC_DATA_EN_ADDR (rw) register accessor: This register is used to config addr of crc data_8bit en
@@ -142,6 +144,8 @@ pub mod rx_ch_arb_weigh;
 You can [`read`](crate::generic::Reg::read) this register and get [`rx_arb_weigh_opt_dir::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`rx_arb_weigh_opt_dir::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@rx_arb_weigh_opt_dir`] module*/
-pub type RX_ARB_WEIGH_OPT_DIR = crate::Reg<rx_arb_weigh_opt_dir::RX_ARB_WEIGH_OPT_DIR_SPEC>;
+pub type RX_ARB_WEIGH_OPT_DIR = crate::Reg<
+    rx_arb_weigh_opt_dir::RX_ARB_WEIGH_OPT_DIR_SPEC,
+>;
 ///This register is used to config off or on weigh optimization
 pub mod rx_arb_weigh_opt_dir;

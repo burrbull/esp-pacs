@@ -46,10 +46,7 @@ impl core::fmt::Debug for R {
         f.debug_struct("BACKUP_DMA_CFG0")
             .field("burst_limit_aon", &self.burst_limit_aon())
             .field("read_interval_aon", &self.read_interval_aon())
-            .field(
-                "link_backup_tout_thres_aon",
-                &self.link_backup_tout_thres_aon(),
-            )
+            .field("link_backup_tout_thres_aon", &self.link_backup_tout_thres_aon())
             .field("link_tout_thres_aon", &self.link_tout_thres_aon())
             .finish()
     }
@@ -78,7 +75,9 @@ impl W {
     ///Bits 22:31 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn link_tout_thres_aon(&mut self) -> LINK_TOUT_THRES_AON_W<BACKUP_DMA_CFG0_SPEC> {
+    pub fn link_tout_thres_aon(
+        &mut self,
+    ) -> LINK_TOUT_THRES_AON_W<BACKUP_DMA_CFG0_SPEC> {
         LINK_TOUT_THRES_AON_W::new(self, 22)
     }
 }

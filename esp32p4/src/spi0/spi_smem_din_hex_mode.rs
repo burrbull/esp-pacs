@@ -105,49 +105,65 @@ impl W {
     ///Bits 0:2 - the input signals are delayed by system clock cycles, 0: input without delayed, 1: input with the posedge of clk_apb,2 input with the negedge of clk_apb, 3: input with the posedge of clk_160, 4 input with the negedge of clk_160, 5: input with the spi_clk high edge, 6: input with the spi_clk low edge
     #[inline(always)]
     #[must_use]
-    pub fn spi_smem_din08_mode(&mut self) -> SPI_SMEM_DIN08_MODE_W<SPI_SMEM_DIN_HEX_MODE_SPEC> {
+    pub fn spi_smem_din08_mode(
+        &mut self,
+    ) -> SPI_SMEM_DIN08_MODE_W<SPI_SMEM_DIN_HEX_MODE_SPEC> {
         SPI_SMEM_DIN08_MODE_W::new(self, 0)
     }
     ///Bits 3:5 - the input signals are delayed by system clock cycles, 0: input without delayed, 1: input with the posedge of clk_apb,2 input with the negedge of clk_apb, 3: input with the posedge of clk_160, 4 input with the negedge of clk_160, 5: input with the spi_clk high edge, 6: input with the spi_clk low edge
     #[inline(always)]
     #[must_use]
-    pub fn spi_smem_din09_mode(&mut self) -> SPI_SMEM_DIN09_MODE_W<SPI_SMEM_DIN_HEX_MODE_SPEC> {
+    pub fn spi_smem_din09_mode(
+        &mut self,
+    ) -> SPI_SMEM_DIN09_MODE_W<SPI_SMEM_DIN_HEX_MODE_SPEC> {
         SPI_SMEM_DIN09_MODE_W::new(self, 3)
     }
     ///Bits 6:8 - the input signals are delayed by system clock cycles, 0: input without delayed, 1: input with the posedge of clk_apb,2 input with the negedge of clk_apb, 3: input with the posedge of clk_160, 4 input with the negedge of clk_160, 5: input with the spi_clk high edge, 6: input with the spi_clk low edge
     #[inline(always)]
     #[must_use]
-    pub fn spi_smem_din10_mode(&mut self) -> SPI_SMEM_DIN10_MODE_W<SPI_SMEM_DIN_HEX_MODE_SPEC> {
+    pub fn spi_smem_din10_mode(
+        &mut self,
+    ) -> SPI_SMEM_DIN10_MODE_W<SPI_SMEM_DIN_HEX_MODE_SPEC> {
         SPI_SMEM_DIN10_MODE_W::new(self, 6)
     }
     ///Bits 9:11 - the input signals are delayed by system clock cycles, 0: input without delayed, 1: input with the posedge of clk_apb,2 input with the negedge of clk_apb, 3: input with the posedge of clk_160, 4 input with the negedge of clk_160, 5: input with the spi_clk high edge, 6: input with the spi_clk low edge
     #[inline(always)]
     #[must_use]
-    pub fn spi_smem_din11_mode(&mut self) -> SPI_SMEM_DIN11_MODE_W<SPI_SMEM_DIN_HEX_MODE_SPEC> {
+    pub fn spi_smem_din11_mode(
+        &mut self,
+    ) -> SPI_SMEM_DIN11_MODE_W<SPI_SMEM_DIN_HEX_MODE_SPEC> {
         SPI_SMEM_DIN11_MODE_W::new(self, 9)
     }
     ///Bits 12:14 - the input signals are delayed by system clock cycles, 0: input without delayed, 1: input with the posedge of clk_apb,2 input with the negedge of clk_apb, 3: input with the posedge of clk_160, 4 input with the negedge of clk_160, 5: input with the spi_clk high edge, 6: input with the spi_clk low edge
     #[inline(always)]
     #[must_use]
-    pub fn spi_smem_din12_mode(&mut self) -> SPI_SMEM_DIN12_MODE_W<SPI_SMEM_DIN_HEX_MODE_SPEC> {
+    pub fn spi_smem_din12_mode(
+        &mut self,
+    ) -> SPI_SMEM_DIN12_MODE_W<SPI_SMEM_DIN_HEX_MODE_SPEC> {
         SPI_SMEM_DIN12_MODE_W::new(self, 12)
     }
     ///Bits 15:17 - the input signals are delayed by system clock cycles, 0: input without delayed, 1: input with the posedge of clk_apb,2 input with the negedge of clk_apb, 3: input with the posedge of clk_160, 4 input with the negedge of clk_160, 5: input with the spi_clk high edge, 6: input with the spi_clk low edge
     #[inline(always)]
     #[must_use]
-    pub fn spi_smem_din13_mode(&mut self) -> SPI_SMEM_DIN13_MODE_W<SPI_SMEM_DIN_HEX_MODE_SPEC> {
+    pub fn spi_smem_din13_mode(
+        &mut self,
+    ) -> SPI_SMEM_DIN13_MODE_W<SPI_SMEM_DIN_HEX_MODE_SPEC> {
         SPI_SMEM_DIN13_MODE_W::new(self, 15)
     }
     ///Bits 18:20 - the input signals are delayed by system clock cycles, 0: input without delayed, 1: input with the posedge of clk_apb,2 input with the negedge of clk_apb, 3: input with the posedge of clk_160, 4 input with the negedge of clk_160, 5: input with the spi_clk high edge, 6: input with the spi_clk low edge
     #[inline(always)]
     #[must_use]
-    pub fn spi_smem_din14_mode(&mut self) -> SPI_SMEM_DIN14_MODE_W<SPI_SMEM_DIN_HEX_MODE_SPEC> {
+    pub fn spi_smem_din14_mode(
+        &mut self,
+    ) -> SPI_SMEM_DIN14_MODE_W<SPI_SMEM_DIN_HEX_MODE_SPEC> {
         SPI_SMEM_DIN14_MODE_W::new(self, 18)
     }
     ///Bits 21:23 - the input signals are delayed by system clock cycles, 0: input without delayed, 1: input with the posedge of clk_apb,2 input with the negedge of clk_apb, 3: input with the posedge of clk_160, 4 input with the negedge of clk_160, 5: input with the spi_clk high edge, 6: input with the spi_clk low edge
     #[inline(always)]
     #[must_use]
-    pub fn spi_smem_din15_mode(&mut self) -> SPI_SMEM_DIN15_MODE_W<SPI_SMEM_DIN_HEX_MODE_SPEC> {
+    pub fn spi_smem_din15_mode(
+        &mut self,
+    ) -> SPI_SMEM_DIN15_MODE_W<SPI_SMEM_DIN_HEX_MODE_SPEC> {
         SPI_SMEM_DIN15_MODE_W::new(self, 21)
     }
     ///Bits 24:26 - the input signals are delayed by system clock cycles, 0: input without delayed, 1: input with the posedge of clk_apb,2 input with the negedge of clk_apb, 3: input with the posedge of clk_160, 4 input with the negedge of clk_160, 5: input with the spi_clk high edge, 6: input with the spi_clk low edge

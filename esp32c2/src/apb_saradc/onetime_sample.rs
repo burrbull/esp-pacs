@@ -83,13 +83,17 @@ impl W {
     ///Bit 30 - Need add description
     #[inline(always)]
     #[must_use]
-    pub fn saradc2_onetime_sample(&mut self) -> SARADC2_ONETIME_SAMPLE_W<ONETIME_SAMPLE_SPEC> {
+    pub fn saradc2_onetime_sample(
+        &mut self,
+    ) -> SARADC2_ONETIME_SAMPLE_W<ONETIME_SAMPLE_SPEC> {
         SARADC2_ONETIME_SAMPLE_W::new(self, 30)
     }
     ///Bit 31 - Need add description
     #[inline(always)]
     #[must_use]
-    pub fn saradc1_onetime_sample(&mut self) -> SARADC1_ONETIME_SAMPLE_W<ONETIME_SAMPLE_SPEC> {
+    pub fn saradc1_onetime_sample(
+        &mut self,
+    ) -> SARADC1_ONETIME_SAMPLE_W<ONETIME_SAMPLE_SPEC> {
         SARADC1_ONETIME_SAMPLE_W::new(self, 31)
     }
 }

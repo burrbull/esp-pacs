@@ -53,10 +53,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PRO_DRAM0_2")
-            .field(
-                "pro_dram0_rtcfast_spltaddr",
-                &self.pro_dram0_rtcfast_spltaddr(),
-            )
+            .field("pro_dram0_rtcfast_spltaddr", &self.pro_dram0_rtcfast_spltaddr())
             .field("pro_dram0_rtcfast_l_r", &self.pro_dram0_rtcfast_l_r())
             .field("pro_dram0_rtcfast_l_w", &self.pro_dram0_rtcfast_l_w())
             .field("pro_dram0_rtcfast_h_r", &self.pro_dram0_rtcfast_h_r())
@@ -68,31 +65,41 @@ impl W {
     ///Bits 0:10 - Configure the split address of RTC FAST for DBUS0 access.
     #[inline(always)]
     #[must_use]
-    pub fn pro_dram0_rtcfast_spltaddr(&mut self) -> PRO_DRAM0_RTCFAST_SPLTADDR_W<PRO_DRAM0_2_SPEC> {
+    pub fn pro_dram0_rtcfast_spltaddr(
+        &mut self,
+    ) -> PRO_DRAM0_RTCFAST_SPLTADDR_W<PRO_DRAM0_2_SPEC> {
         PRO_DRAM0_RTCFAST_SPLTADDR_W::new(self, 0)
     }
     ///Bit 11 - Setting to 1 grants DBUS0 permission to read RTC FAST low address region.
     #[inline(always)]
     #[must_use]
-    pub fn pro_dram0_rtcfast_l_r(&mut self) -> PRO_DRAM0_RTCFAST_L_R_W<PRO_DRAM0_2_SPEC> {
+    pub fn pro_dram0_rtcfast_l_r(
+        &mut self,
+    ) -> PRO_DRAM0_RTCFAST_L_R_W<PRO_DRAM0_2_SPEC> {
         PRO_DRAM0_RTCFAST_L_R_W::new(self, 11)
     }
     ///Bit 12 - Setting to 1 grants DBUS0 permission to write RTC FAST low address region.
     #[inline(always)]
     #[must_use]
-    pub fn pro_dram0_rtcfast_l_w(&mut self) -> PRO_DRAM0_RTCFAST_L_W_W<PRO_DRAM0_2_SPEC> {
+    pub fn pro_dram0_rtcfast_l_w(
+        &mut self,
+    ) -> PRO_DRAM0_RTCFAST_L_W_W<PRO_DRAM0_2_SPEC> {
         PRO_DRAM0_RTCFAST_L_W_W::new(self, 12)
     }
     ///Bit 13 - Setting to 1 grants DBUS0 permission to read RTC FAST high address region.
     #[inline(always)]
     #[must_use]
-    pub fn pro_dram0_rtcfast_h_r(&mut self) -> PRO_DRAM0_RTCFAST_H_R_W<PRO_DRAM0_2_SPEC> {
+    pub fn pro_dram0_rtcfast_h_r(
+        &mut self,
+    ) -> PRO_DRAM0_RTCFAST_H_R_W<PRO_DRAM0_2_SPEC> {
         PRO_DRAM0_RTCFAST_H_R_W::new(self, 13)
     }
     ///Bit 14 - Setting to 1 grants DBUS0 permission to write RTC FAST high address region.
     #[inline(always)]
     #[must_use]
-    pub fn pro_dram0_rtcfast_h_w(&mut self) -> PRO_DRAM0_RTCFAST_H_W_W<PRO_DRAM0_2_SPEC> {
+    pub fn pro_dram0_rtcfast_h_w(
+        &mut self,
+    ) -> PRO_DRAM0_RTCFAST_H_W_W<PRO_DRAM0_2_SPEC> {
         PRO_DRAM0_RTCFAST_H_W_W::new(self, 14)
     }
 }

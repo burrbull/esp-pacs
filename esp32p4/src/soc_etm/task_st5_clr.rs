@@ -74,25 +74,33 @@ impl W {
     ///Bit 0 - Configures whether or not to clear REGDMA_task_start0 trigger status.\\0: Invalid, No effect\\1: Clear
     #[inline(always)]
     #[must_use]
-    pub fn regdma_task_start0_st_clr(&mut self) -> REGDMA_TASK_START0_ST_CLR_W<TASK_ST5_CLR_SPEC> {
+    pub fn regdma_task_start0_st_clr(
+        &mut self,
+    ) -> REGDMA_TASK_START0_ST_CLR_W<TASK_ST5_CLR_SPEC> {
         REGDMA_TASK_START0_ST_CLR_W::new(self, 0)
     }
     ///Bit 1 - Configures whether or not to clear REGDMA_task_start1 trigger status.\\0: Invalid, No effect\\1: Clear
     #[inline(always)]
     #[must_use]
-    pub fn regdma_task_start1_st_clr(&mut self) -> REGDMA_TASK_START1_ST_CLR_W<TASK_ST5_CLR_SPEC> {
+    pub fn regdma_task_start1_st_clr(
+        &mut self,
+    ) -> REGDMA_TASK_START1_ST_CLR_W<TASK_ST5_CLR_SPEC> {
         REGDMA_TASK_START1_ST_CLR_W::new(self, 1)
     }
     ///Bit 2 - Configures whether or not to clear REGDMA_task_start2 trigger status.\\0: Invalid, No effect\\1: Clear
     #[inline(always)]
     #[must_use]
-    pub fn regdma_task_start2_st_clr(&mut self) -> REGDMA_TASK_START2_ST_CLR_W<TASK_ST5_CLR_SPEC> {
+    pub fn regdma_task_start2_st_clr(
+        &mut self,
+    ) -> REGDMA_TASK_START2_ST_CLR_W<TASK_ST5_CLR_SPEC> {
         REGDMA_TASK_START2_ST_CLR_W::new(self, 2)
     }
     ///Bit 3 - Configures whether or not to clear REGDMA_task_start3 trigger status.\\0: Invalid, No effect\\1: Clear
     #[inline(always)]
     #[must_use]
-    pub fn regdma_task_start3_st_clr(&mut self) -> REGDMA_TASK_START3_ST_CLR_W<TASK_ST5_CLR_SPEC> {
+    pub fn regdma_task_start3_st_clr(
+        &mut self,
+    ) -> REGDMA_TASK_START3_ST_CLR_W<TASK_ST5_CLR_SPEC> {
         REGDMA_TASK_START3_ST_CLR_W::new(self, 3)
     }
     ///Bit 4 - Configures whether or not to clear TMPSNSR_task_start_sample trigger status.\\0: Invalid, No effect\\1: Clear
@@ -114,73 +122,97 @@ impl W {
     ///Bit 6 - Configures whether or not to clear I2S0_task_start_rx trigger status.\\0: Invalid, No effect\\1: Clear
     #[inline(always)]
     #[must_use]
-    pub fn i2s0_task_start_rx_st_clr(&mut self) -> I2S0_TASK_START_RX_ST_CLR_W<TASK_ST5_CLR_SPEC> {
+    pub fn i2s0_task_start_rx_st_clr(
+        &mut self,
+    ) -> I2S0_TASK_START_RX_ST_CLR_W<TASK_ST5_CLR_SPEC> {
         I2S0_TASK_START_RX_ST_CLR_W::new(self, 6)
     }
     ///Bit 7 - Configures whether or not to clear I2S0_task_start_tx trigger status.\\0: Invalid, No effect\\1: Clear
     #[inline(always)]
     #[must_use]
-    pub fn i2s0_task_start_tx_st_clr(&mut self) -> I2S0_TASK_START_TX_ST_CLR_W<TASK_ST5_CLR_SPEC> {
+    pub fn i2s0_task_start_tx_st_clr(
+        &mut self,
+    ) -> I2S0_TASK_START_TX_ST_CLR_W<TASK_ST5_CLR_SPEC> {
         I2S0_TASK_START_TX_ST_CLR_W::new(self, 7)
     }
     ///Bit 8 - Configures whether or not to clear I2S0_task_stop_rx trigger status.\\0: Invalid, No effect\\1: Clear
     #[inline(always)]
     #[must_use]
-    pub fn i2s0_task_stop_rx_st_clr(&mut self) -> I2S0_TASK_STOP_RX_ST_CLR_W<TASK_ST5_CLR_SPEC> {
+    pub fn i2s0_task_stop_rx_st_clr(
+        &mut self,
+    ) -> I2S0_TASK_STOP_RX_ST_CLR_W<TASK_ST5_CLR_SPEC> {
         I2S0_TASK_STOP_RX_ST_CLR_W::new(self, 8)
     }
     ///Bit 9 - Configures whether or not to clear I2S0_task_stop_tx trigger status.\\0: Invalid, No effect\\1: Clear
     #[inline(always)]
     #[must_use]
-    pub fn i2s0_task_stop_tx_st_clr(&mut self) -> I2S0_TASK_STOP_TX_ST_CLR_W<TASK_ST5_CLR_SPEC> {
+    pub fn i2s0_task_stop_tx_st_clr(
+        &mut self,
+    ) -> I2S0_TASK_STOP_TX_ST_CLR_W<TASK_ST5_CLR_SPEC> {
         I2S0_TASK_STOP_TX_ST_CLR_W::new(self, 9)
     }
     ///Bit 10 - Configures whether or not to clear I2S1_task_start_rx trigger status.\\0: Invalid, No effect\\1: Clear
     #[inline(always)]
     #[must_use]
-    pub fn i2s1_task_start_rx_st_clr(&mut self) -> I2S1_TASK_START_RX_ST_CLR_W<TASK_ST5_CLR_SPEC> {
+    pub fn i2s1_task_start_rx_st_clr(
+        &mut self,
+    ) -> I2S1_TASK_START_RX_ST_CLR_W<TASK_ST5_CLR_SPEC> {
         I2S1_TASK_START_RX_ST_CLR_W::new(self, 10)
     }
     ///Bit 11 - Configures whether or not to clear I2S1_task_start_tx trigger status.\\0: Invalid, No effect\\1: Clear
     #[inline(always)]
     #[must_use]
-    pub fn i2s1_task_start_tx_st_clr(&mut self) -> I2S1_TASK_START_TX_ST_CLR_W<TASK_ST5_CLR_SPEC> {
+    pub fn i2s1_task_start_tx_st_clr(
+        &mut self,
+    ) -> I2S1_TASK_START_TX_ST_CLR_W<TASK_ST5_CLR_SPEC> {
         I2S1_TASK_START_TX_ST_CLR_W::new(self, 11)
     }
     ///Bit 12 - Configures whether or not to clear I2S1_task_stop_rx trigger status.\\0: Invalid, No effect\\1: Clear
     #[inline(always)]
     #[must_use]
-    pub fn i2s1_task_stop_rx_st_clr(&mut self) -> I2S1_TASK_STOP_RX_ST_CLR_W<TASK_ST5_CLR_SPEC> {
+    pub fn i2s1_task_stop_rx_st_clr(
+        &mut self,
+    ) -> I2S1_TASK_STOP_RX_ST_CLR_W<TASK_ST5_CLR_SPEC> {
         I2S1_TASK_STOP_RX_ST_CLR_W::new(self, 12)
     }
     ///Bit 13 - Configures whether or not to clear I2S1_task_stop_tx trigger status.\\0: Invalid, No effect\\1: Clear
     #[inline(always)]
     #[must_use]
-    pub fn i2s1_task_stop_tx_st_clr(&mut self) -> I2S1_TASK_STOP_TX_ST_CLR_W<TASK_ST5_CLR_SPEC> {
+    pub fn i2s1_task_stop_tx_st_clr(
+        &mut self,
+    ) -> I2S1_TASK_STOP_TX_ST_CLR_W<TASK_ST5_CLR_SPEC> {
         I2S1_TASK_STOP_TX_ST_CLR_W::new(self, 13)
     }
     ///Bit 14 - Configures whether or not to clear I2S2_task_start_rx trigger status.\\0: Invalid, No effect\\1: Clear
     #[inline(always)]
     #[must_use]
-    pub fn i2s2_task_start_rx_st_clr(&mut self) -> I2S2_TASK_START_RX_ST_CLR_W<TASK_ST5_CLR_SPEC> {
+    pub fn i2s2_task_start_rx_st_clr(
+        &mut self,
+    ) -> I2S2_TASK_START_RX_ST_CLR_W<TASK_ST5_CLR_SPEC> {
         I2S2_TASK_START_RX_ST_CLR_W::new(self, 14)
     }
     ///Bit 15 - Configures whether or not to clear I2S2_task_start_tx trigger status.\\0: Invalid, No effect\\1: Clear
     #[inline(always)]
     #[must_use]
-    pub fn i2s2_task_start_tx_st_clr(&mut self) -> I2S2_TASK_START_TX_ST_CLR_W<TASK_ST5_CLR_SPEC> {
+    pub fn i2s2_task_start_tx_st_clr(
+        &mut self,
+    ) -> I2S2_TASK_START_TX_ST_CLR_W<TASK_ST5_CLR_SPEC> {
         I2S2_TASK_START_TX_ST_CLR_W::new(self, 15)
     }
     ///Bit 16 - Configures whether or not to clear I2S2_task_stop_rx trigger status.\\0: Invalid, No effect\\1: Clear
     #[inline(always)]
     #[must_use]
-    pub fn i2s2_task_stop_rx_st_clr(&mut self) -> I2S2_TASK_STOP_RX_ST_CLR_W<TASK_ST5_CLR_SPEC> {
+    pub fn i2s2_task_stop_rx_st_clr(
+        &mut self,
+    ) -> I2S2_TASK_STOP_RX_ST_CLR_W<TASK_ST5_CLR_SPEC> {
         I2S2_TASK_STOP_RX_ST_CLR_W::new(self, 16)
     }
     ///Bit 17 - Configures whether or not to clear I2S2_task_stop_tx trigger status.\\0: Invalid, No effect\\1: Clear
     #[inline(always)]
     #[must_use]
-    pub fn i2s2_task_stop_tx_st_clr(&mut self) -> I2S2_TASK_STOP_TX_ST_CLR_W<TASK_ST5_CLR_SPEC> {
+    pub fn i2s2_task_stop_tx_st_clr(
+        &mut self,
+    ) -> I2S2_TASK_STOP_TX_ST_CLR_W<TASK_ST5_CLR_SPEC> {
         I2S2_TASK_STOP_TX_ST_CLR_W::new(self, 17)
     }
     ///Bit 18 - Configures whether or not to clear ULP_task_wakeup_cpu trigger status.\\0: Invalid, No effect\\1: Clear
@@ -194,13 +226,17 @@ impl W {
     ///Bit 19 - Configures whether or not to clear ULP_task_int_cpu trigger status.\\0: Invalid, No effect\\1: Clear
     #[inline(always)]
     #[must_use]
-    pub fn ulp_task_int_cpu_st_clr(&mut self) -> ULP_TASK_INT_CPU_ST_CLR_W<TASK_ST5_CLR_SPEC> {
+    pub fn ulp_task_int_cpu_st_clr(
+        &mut self,
+    ) -> ULP_TASK_INT_CPU_ST_CLR_W<TASK_ST5_CLR_SPEC> {
         ULP_TASK_INT_CPU_ST_CLR_W::new(self, 19)
     }
     ///Bit 20 - Configures whether or not to clear RTC_task_start trigger status.\\0: Invalid, No effect\\1: Clear
     #[inline(always)]
     #[must_use]
-    pub fn rtc_task_start_st_clr(&mut self) -> RTC_TASK_START_ST_CLR_W<TASK_ST5_CLR_SPEC> {
+    pub fn rtc_task_start_st_clr(
+        &mut self,
+    ) -> RTC_TASK_START_ST_CLR_W<TASK_ST5_CLR_SPEC> {
         RTC_TASK_START_ST_CLR_W::new(self, 20)
     }
     ///Bit 21 - Configures whether or not to clear RTC_task_stop trigger status.\\0: Invalid, No effect\\1: Clear

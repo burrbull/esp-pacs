@@ -224,12 +224,16 @@ impl R {
     }
     ///Bit 23
     #[inline(always)]
-    pub fn host_slc0_rx_new_packet_int_ena1(&self) -> HOST_SLC0_RX_NEW_PACKET_INT_ENA1_R {
+    pub fn host_slc0_rx_new_packet_int_ena1(
+        &self,
+    ) -> HOST_SLC0_RX_NEW_PACKET_INT_ENA1_R {
         HOST_SLC0_RX_NEW_PACKET_INT_ENA1_R::new(((self.bits >> 23) & 1) != 0)
     }
     ///Bit 24
     #[inline(always)]
-    pub fn host_slc0_host_rd_retry_int_ena1(&self) -> HOST_SLC0_HOST_RD_RETRY_INT_ENA1_R {
+    pub fn host_slc0_host_rd_retry_int_ena1(
+        &self,
+    ) -> HOST_SLC0_HOST_RD_RETRY_INT_ENA1_R {
         HOST_SLC0_HOST_RD_RETRY_INT_ENA1_R::new(((self.bits >> 24) & 1) != 0)
     }
     ///Bit 25
@@ -306,34 +310,16 @@ impl core::fmt::Debug for R {
                 "host_slc0host_tx_start_int_ena1",
                 &self.host_slc0host_tx_start_int_ena1(),
             )
-            .field(
-                "host_slc0_rx_udf_int_ena1",
-                &self.host_slc0_rx_udf_int_ena1(),
-            )
-            .field(
-                "host_slc0_tx_ovf_int_ena1",
-                &self.host_slc0_tx_ovf_int_ena1(),
-            )
+            .field("host_slc0_rx_udf_int_ena1", &self.host_slc0_rx_udf_int_ena1())
+            .field("host_slc0_tx_ovf_int_ena1", &self.host_slc0_tx_ovf_int_ena1())
             .field(
                 "host_slc0_rx_pf_valid_int_ena1",
                 &self.host_slc0_rx_pf_valid_int_ena1(),
             )
-            .field(
-                "host_slc0_ext_bit0_int_ena1",
-                &self.host_slc0_ext_bit0_int_ena1(),
-            )
-            .field(
-                "host_slc0_ext_bit1_int_ena1",
-                &self.host_slc0_ext_bit1_int_ena1(),
-            )
-            .field(
-                "host_slc0_ext_bit2_int_ena1",
-                &self.host_slc0_ext_bit2_int_ena1(),
-            )
-            .field(
-                "host_slc0_ext_bit3_int_ena1",
-                &self.host_slc0_ext_bit3_int_ena1(),
-            )
+            .field("host_slc0_ext_bit0_int_ena1", &self.host_slc0_ext_bit0_int_ena1())
+            .field("host_slc0_ext_bit1_int_ena1", &self.host_slc0_ext_bit1_int_ena1())
+            .field("host_slc0_ext_bit2_int_ena1", &self.host_slc0_ext_bit2_int_ena1())
+            .field("host_slc0_ext_bit3_int_ena1", &self.host_slc0_ext_bit3_int_ena1())
             .field(
                 "host_slc0_rx_new_packet_int_ena1",
                 &self.host_slc0_rx_new_packet_int_ena1(),

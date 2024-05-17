@@ -25,7 +25,9 @@ impl W {
     ///Bits 0:4
     #[inline(always)]
     #[must_use]
-    pub fn pro_spi_intr_0_map(&mut self) -> PRO_SPI_INTR_0_MAP_W<PRO_SPI_INTR_0_MAP_SPEC> {
+    pub fn pro_spi_intr_0_map(
+        &mut self,
+    ) -> PRO_SPI_INTR_0_MAP_W<PRO_SPI_INTR_0_MAP_SPEC> {
         PRO_SPI_INTR_0_MAP_W::new(self, 0)
     }
 }

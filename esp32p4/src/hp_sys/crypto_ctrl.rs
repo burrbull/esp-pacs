@@ -31,12 +31,16 @@ impl R {
     }
     ///Bit 2 - NA
     #[inline(always)]
-    pub fn reg_enable_download_g0cb_decrypt(&self) -> REG_ENABLE_DOWNLOAD_G0CB_DECRYPT_R {
+    pub fn reg_enable_download_g0cb_decrypt(
+        &self,
+    ) -> REG_ENABLE_DOWNLOAD_G0CB_DECRYPT_R {
         REG_ENABLE_DOWNLOAD_G0CB_DECRYPT_R::new(((self.bits >> 2) & 1) != 0)
     }
     ///Bit 3 - NA
     #[inline(always)]
-    pub fn reg_enable_download_manual_encrypt(&self) -> REG_ENABLE_DOWNLOAD_MANUAL_ENCRYPT_R {
+    pub fn reg_enable_download_manual_encrypt(
+        &self,
+    ) -> REG_ENABLE_DOWNLOAD_MANUAL_ENCRYPT_R {
         REG_ENABLE_DOWNLOAD_MANUAL_ENCRYPT_R::new(((self.bits >> 3) & 1) != 0)
     }
 }

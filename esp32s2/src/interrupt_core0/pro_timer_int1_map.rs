@@ -25,7 +25,9 @@ impl W {
     ///Bits 0:4 - This register is used to map TIMER_INT1 interrupt signal to one of the CPU interrupts.
     #[inline(always)]
     #[must_use]
-    pub fn pro_timer_int1_map(&mut self) -> PRO_TIMER_INT1_MAP_W<PRO_TIMER_INT1_MAP_SPEC> {
+    pub fn pro_timer_int1_map(
+        &mut self,
+    ) -> PRO_TIMER_INT1_MAP_W<PRO_TIMER_INT1_MAP_SPEC> {
         PRO_TIMER_INT1_MAP_W::new(self, 0)
     }
 }

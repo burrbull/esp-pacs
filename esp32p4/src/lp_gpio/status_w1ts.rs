@@ -12,7 +12,9 @@ impl W {
     ///Bits 0:15 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn reg_gpio_status_data_w1ts(&mut self) -> REG_GPIO_STATUS_DATA_W1TS_W<STATUS_W1TS_SPEC> {
+    pub fn reg_gpio_status_data_w1ts(
+        &mut self,
+    ) -> REG_GPIO_STATUS_DATA_W1TS_W<STATUS_W1TS_SPEC> {
         REG_GPIO_STATUS_DATA_W1TS_W::new(self, 0)
     }
 }

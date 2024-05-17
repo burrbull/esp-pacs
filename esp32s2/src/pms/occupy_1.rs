@@ -16,9 +16,7 @@ impl R {
 #[cfg(feature = "impl-register-debug")]
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("OCCUPY_1")
-            .field("occupy_cache", &self.occupy_cache())
-            .finish()
+        f.debug_struct("OCCUPY_1").field("occupy_cache", &self.occupy_cache()).finish()
     }
 }
 impl W {

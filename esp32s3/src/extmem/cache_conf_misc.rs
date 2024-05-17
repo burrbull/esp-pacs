@@ -17,12 +17,16 @@ pub type CACHE_TRACE_ENA_W<'a, REG> = crate::BitWriter<'a, REG>;
 impl R {
     ///Bit 0 - The bit is used to disable checking mmu entry fault by preload operation.
     #[inline(always)]
-    pub fn cache_ignore_preload_mmu_entry_fault(&self) -> CACHE_IGNORE_PRELOAD_MMU_ENTRY_FAULT_R {
+    pub fn cache_ignore_preload_mmu_entry_fault(
+        &self,
+    ) -> CACHE_IGNORE_PRELOAD_MMU_ENTRY_FAULT_R {
         CACHE_IGNORE_PRELOAD_MMU_ENTRY_FAULT_R::new((self.bits & 1) != 0)
     }
     ///Bit 1 - The bit is used to disable checking mmu entry fault by sync operation.
     #[inline(always)]
-    pub fn cache_ignore_sync_mmu_entry_fault(&self) -> CACHE_IGNORE_SYNC_MMU_ENTRY_FAULT_R {
+    pub fn cache_ignore_sync_mmu_entry_fault(
+        &self,
+    ) -> CACHE_IGNORE_SYNC_MMU_ENTRY_FAULT_R {
         CACHE_IGNORE_SYNC_MMU_ENTRY_FAULT_R::new(((self.bits >> 1) & 1) != 0)
     }
     ///Bit 2 - The bit is used to enable cache trace function.

@@ -357,13 +357,17 @@ impl W {
     ///Bit 19 - 1: spi_dma_infifo_full_vld is cleared by spi slave CMD5. 0: spi_dma_infifo_full_vld is cleared by SPI_TRANS_DONE.
     #[inline(always)]
     #[must_use]
-    pub fn slv_rx_seg_trans_clr_en(&mut self) -> SLV_RX_SEG_TRANS_CLR_EN_W<DMA_CONF_SPEC> {
+    pub fn slv_rx_seg_trans_clr_en(
+        &mut self,
+    ) -> SLV_RX_SEG_TRANS_CLR_EN_W<DMA_CONF_SPEC> {
         SLV_RX_SEG_TRANS_CLR_EN_W::new(self, 19)
     }
     ///Bit 20 - 1: spi_dma_outfifo_empty_vld is cleared by spi slave CMD6. 0: spi_dma_outfifo_empty_vld is cleared by SPI_TRANS_DONE.
     #[inline(always)]
     #[must_use]
-    pub fn slv_tx_seg_trans_clr_en(&mut self) -> SLV_TX_SEG_TRANS_CLR_EN_W<DMA_CONF_SPEC> {
+    pub fn slv_tx_seg_trans_clr_en(
+        &mut self,
+    ) -> SLV_TX_SEG_TRANS_CLR_EN_W<DMA_CONF_SPEC> {
         SLV_TX_SEG_TRANS_CLR_EN_W::new(self, 20)
     }
     ///Bit 21 - 1: SPI_IN_SUC_EOF_INT_RAW is set when the number of dma pushed data bytes is equal to the value of SPI_SLV_DMA_RD_BYTELEN\[19:0\]/ SPI_MST_DMA_RD_BYTELEN\[19:0\] in spi dma transition. 0: SPI_IN_SUC_EOF_INT_RAW is set by SPI_TRANS_DONE in non-seg-trans or SPI_DMA_SEG_TRANS_DONE in seg-trans.

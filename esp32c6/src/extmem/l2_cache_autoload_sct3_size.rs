@@ -13,10 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("L2_CACHE_AUTOLOAD_SCT3_SIZE")
-            .field(
-                "l2_cache_autoload_sct3_size",
-                &self.l2_cache_autoload_sct3_size(),
-            )
+            .field("l2_cache_autoload_sct3_size", &self.l2_cache_autoload_sct3_size())
             .finish()
     }
 }

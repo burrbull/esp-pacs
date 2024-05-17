@@ -90,10 +90,7 @@ impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("BROWN_OUT")
             .field("brown_out_int_wait", &self.brown_out_int_wait())
-            .field(
-                "brown_out_close_flash_ena",
-                &self.brown_out_close_flash_ena(),
-            )
+            .field("brown_out_close_flash_ena", &self.brown_out_close_flash_ena())
             .field("brown_out_pd_rf_ena", &self.brown_out_pd_rf_ena())
             .field("brown_out_rst_wait", &self.brown_out_rst_wait())
             .field("brown_out_rst_ena", &self.brown_out_rst_ena())
@@ -114,7 +111,9 @@ impl W {
     ///Bit 14 - enable close flash when brown out happens
     #[inline(always)]
     #[must_use]
-    pub fn brown_out_close_flash_ena(&mut self) -> BROWN_OUT_CLOSE_FLASH_ENA_W<BROWN_OUT_SPEC> {
+    pub fn brown_out_close_flash_ena(
+        &mut self,
+    ) -> BROWN_OUT_CLOSE_FLASH_ENA_W<BROWN_OUT_SPEC> {
         BROWN_OUT_CLOSE_FLASH_ENA_W::new(self, 14)
     }
     ///Bit 15 - enable power down RF when brown out happens

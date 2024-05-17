@@ -1,7 +1,12 @@
 ///Register `ENABLE_W1TC` writer
 pub type W = crate::W<ENABLE_W1TC_SPEC>;
 ///Field `REG_RTCIO_REG_GPIO_ENABLE_W1TC` writer - GPIO0 ~ 21 output enable clear register. If the value 1 is written to a bit here, the corresponding bit in RTCIO_RTC_GPIO_ENABLE_REG will be cleared. Recommended operation: use this register to clear RTCIO_RTC_GPIO_ENABLE_REG.
-pub type REG_RTCIO_REG_GPIO_ENABLE_W1TC_W<'a, REG> = crate::FieldWriter<'a, REG, 22, u32>;
+pub type REG_RTCIO_REG_GPIO_ENABLE_W1TC_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    22,
+    u32,
+>;
 #[cfg(feature = "impl-register-debug")]
 impl core::fmt::Debug for crate::generic::Reg<ENABLE_W1TC_SPEC> {
     fn fmt(&self, f: &mut core::fmt::Formatter<'_>) -> core::fmt::Result {

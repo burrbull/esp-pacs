@@ -57,7 +57,9 @@ impl W {
     ///Bits 3:4 - The bit is used to configure cache block size.0: 16 bytes, 1: 32 bytes,2: 64 bytes
     #[inline(always)]
     #[must_use]
-    pub fn dcache_blocksize_mode(&mut self) -> DCACHE_BLOCKSIZE_MODE_W<DCACHE_CTRL_SPEC> {
+    pub fn dcache_blocksize_mode(
+        &mut self,
+    ) -> DCACHE_BLOCKSIZE_MODE_W<DCACHE_CTRL_SPEC> {
         DCACHE_BLOCKSIZE_MODE_W::new(self, 3)
     }
 }

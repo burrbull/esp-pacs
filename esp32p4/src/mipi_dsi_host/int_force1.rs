@@ -215,7 +215,9 @@ impl W {
     ///Bit 10 - NA
     #[inline(always)]
     #[must_use]
-    pub fn force_gen_pld_send_err(&mut self) -> FORCE_GEN_PLD_SEND_ERR_W<INT_FORCE1_SPEC> {
+    pub fn force_gen_pld_send_err(
+        &mut self,
+    ) -> FORCE_GEN_PLD_SEND_ERR_W<INT_FORCE1_SPEC> {
         FORCE_GEN_PLD_SEND_ERR_W::new(self, 10)
     }
     ///Bit 11 - NA
@@ -227,13 +229,17 @@ impl W {
     ///Bit 12 - NA
     #[inline(always)]
     #[must_use]
-    pub fn force_gen_pld_recev_err(&mut self) -> FORCE_GEN_PLD_RECEV_ERR_W<INT_FORCE1_SPEC> {
+    pub fn force_gen_pld_recev_err(
+        &mut self,
+    ) -> FORCE_GEN_PLD_RECEV_ERR_W<INT_FORCE1_SPEC> {
         FORCE_GEN_PLD_RECEV_ERR_W::new(self, 12)
     }
     ///Bit 19 - NA
     #[inline(always)]
     #[must_use]
-    pub fn force_dpi_buff_pld_under(&mut self) -> FORCE_DPI_BUFF_PLD_UNDER_W<INT_FORCE1_SPEC> {
+    pub fn force_dpi_buff_pld_under(
+        &mut self,
+    ) -> FORCE_DPI_BUFF_PLD_UNDER_W<INT_FORCE1_SPEC> {
         FORCE_DPI_BUFF_PLD_UNDER_W::new(self, 19)
     }
 }

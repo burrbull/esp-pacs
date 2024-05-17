@@ -25,7 +25,10 @@ pub type CH1_CLEAR_LLI_RD_SLV_ERR_INTSTAT_W<'a, REG> = crate::BitWriter<'a, REG>
 ///Field `CH1_CLEAR_LLI_WR_SLV_ERR_INTSTAT` writer - NA
 pub type CH1_CLEAR_LLI_WR_SLV_ERR_INTSTAT_W<'a, REG> = crate::BitWriter<'a, REG>;
 ///Field `CH1_CLEAR_SHADOWREG_OR_LLI_INVALID_ERR_INTSTAT` writer - NA
-pub type CH1_CLEAR_SHADOWREG_OR_LLI_INVALID_ERR_INTSTAT_W<'a, REG> = crate::BitWriter<'a, REG>;
+pub type CH1_CLEAR_SHADOWREG_OR_LLI_INVALID_ERR_INTSTAT_W<'a, REG> = crate::BitWriter<
+    'a,
+    REG,
+>;
 ///Field `CH1_CLEAR_SLVIF_MULTIBLKTYPE_ERR_INTSTAT` writer - NA
 pub type CH1_CLEAR_SLVIF_MULTIBLKTYPE_ERR_INTSTAT_W<'a, REG> = crate::BitWriter<'a, REG>;
 ///Field `CH1_CLEAR_SLVIF_DEC_ERR_INTSTAT` writer - NA
@@ -37,7 +40,10 @@ pub type CH1_CLEAR_SLVIF_RD2RWO_ERR_INTSTAT_W<'a, REG> = crate::BitWriter<'a, RE
 ///Field `CH1_CLEAR_SLVIF_WRONCHEN_ERR_INTSTAT` writer - NA
 pub type CH1_CLEAR_SLVIF_WRONCHEN_ERR_INTSTAT_W<'a, REG> = crate::BitWriter<'a, REG>;
 ///Field `CH1_CLEAR_SLVIF_SHADOWREG_WRON_VALID_ERR_INTSTAT` writer - NA
-pub type CH1_CLEAR_SLVIF_SHADOWREG_WRON_VALID_ERR_INTSTAT_W<'a, REG> = crate::BitWriter<'a, REG>;
+pub type CH1_CLEAR_SLVIF_SHADOWREG_WRON_VALID_ERR_INTSTAT_W<'a, REG> = crate::BitWriter<
+    'a,
+    REG,
+>;
 ///Field `CH1_CLEAR_SLVIF_WRONHOLD_ERR_INTSTAT` writer - NA
 pub type CH1_CLEAR_SLVIF_WRONHOLD_ERR_INTSTAT_W<'a, REG> = crate::BitWriter<'a, REG>;
 ///Field `CH1_CLEAR_SLVIF_WRPARITY_ERR_INTSTAT` writer - NA

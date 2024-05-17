@@ -55,7 +55,9 @@ impl W {
     ///Bits 16:19
     #[inline(always)]
     #[must_use]
-    pub fn clk_wifipwr_st_map(&mut self) -> CLK_WIFIPWR_ST_MAP_W<CLK_CONF_POWER_ST_SPEC> {
+    pub fn clk_wifipwr_st_map(
+        &mut self,
+    ) -> CLK_WIFIPWR_ST_MAP_W<CLK_CONF_POWER_ST_SPEC> {
         CLK_WIFIPWR_ST_MAP_W::new(self, 16)
     }
     ///Bits 20:23
@@ -67,7 +69,9 @@ impl W {
     ///Bits 24:27
     #[inline(always)]
     #[must_use]
-    pub fn clk_i2c_mst_st_map(&mut self) -> CLK_I2C_MST_ST_MAP_W<CLK_CONF_POWER_ST_SPEC> {
+    pub fn clk_i2c_mst_st_map(
+        &mut self,
+    ) -> CLK_I2C_MST_ST_MAP_W<CLK_CONF_POWER_ST_SPEC> {
         CLK_I2C_MST_ST_MAP_W::new(self, 24)
     }
     ///Bits 28:31

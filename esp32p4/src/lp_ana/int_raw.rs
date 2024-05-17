@@ -54,10 +54,7 @@ impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("INT_RAW")
             .field("vddbat_charge_upvoltage", &self.vddbat_charge_upvoltage())
-            .field(
-                "vddbat_charge_undervoltage",
-                &self.vddbat_charge_undervoltage(),
-            )
+            .field("vddbat_charge_undervoltage", &self.vddbat_charge_undervoltage())
             .field("vddbat_upvoltage", &self.vddbat_upvoltage())
             .field("vddbat_undervoltage", &self.vddbat_undervoltage())
             .field("bod_mode0", &self.bod_mode0())
@@ -68,13 +65,17 @@ impl W {
     ///Bit 27 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn vddbat_charge_upvoltage(&mut self) -> VDDBAT_CHARGE_UPVOLTAGE_W<INT_RAW_SPEC> {
+    pub fn vddbat_charge_upvoltage(
+        &mut self,
+    ) -> VDDBAT_CHARGE_UPVOLTAGE_W<INT_RAW_SPEC> {
         VDDBAT_CHARGE_UPVOLTAGE_W::new(self, 27)
     }
     ///Bit 28 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn vddbat_charge_undervoltage(&mut self) -> VDDBAT_CHARGE_UNDERVOLTAGE_W<INT_RAW_SPEC> {
+    pub fn vddbat_charge_undervoltage(
+        &mut self,
+    ) -> VDDBAT_CHARGE_UNDERVOLTAGE_W<INT_RAW_SPEC> {
         VDDBAT_CHARGE_UNDERVOLTAGE_W::new(self, 28)
     }
     ///Bit 29 - need_des

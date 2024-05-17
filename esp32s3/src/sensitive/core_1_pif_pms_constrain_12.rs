@@ -5,19 +5,35 @@ pub type W = crate::W<CORE_1_PIF_PMS_CONSTRAIN_12_SPEC>;
 ///Field `CORE_1_PIF_PMS_CONSTRAIN_RTCSLOW_0_WORLD_0_L` reader - RTCSlow_0 memory low region permission in world 0 for core1.
 pub type CORE_1_PIF_PMS_CONSTRAIN_RTCSLOW_0_WORLD_0_L_R = crate::FieldReader;
 ///Field `CORE_1_PIF_PMS_CONSTRAIN_RTCSLOW_0_WORLD_0_L` writer - RTCSlow_0 memory low region permission in world 0 for core1.
-pub type CORE_1_PIF_PMS_CONSTRAIN_RTCSLOW_0_WORLD_0_L_W<'a, REG> = crate::FieldWriter<'a, REG, 3>;
+pub type CORE_1_PIF_PMS_CONSTRAIN_RTCSLOW_0_WORLD_0_L_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    3,
+>;
 ///Field `CORE_1_PIF_PMS_CONSTRAIN_RTCSLOW_0_WORLD_0_H` reader - RTCSlow_0 memory high region permission in world 0 for core1.
 pub type CORE_1_PIF_PMS_CONSTRAIN_RTCSLOW_0_WORLD_0_H_R = crate::FieldReader;
 ///Field `CORE_1_PIF_PMS_CONSTRAIN_RTCSLOW_0_WORLD_0_H` writer - RTCSlow_0 memory high region permission in world 0 for core1.
-pub type CORE_1_PIF_PMS_CONSTRAIN_RTCSLOW_0_WORLD_0_H_W<'a, REG> = crate::FieldWriter<'a, REG, 3>;
+pub type CORE_1_PIF_PMS_CONSTRAIN_RTCSLOW_0_WORLD_0_H_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    3,
+>;
 ///Field `CORE_1_PIF_PMS_CONSTRAIN_RTCSLOW_0_WORLD_1_L` reader - RTCSlow_0 memory low region permission in world 1 for core1.
 pub type CORE_1_PIF_PMS_CONSTRAIN_RTCSLOW_0_WORLD_1_L_R = crate::FieldReader;
 ///Field `CORE_1_PIF_PMS_CONSTRAIN_RTCSLOW_0_WORLD_1_L` writer - RTCSlow_0 memory low region permission in world 1 for core1.
-pub type CORE_1_PIF_PMS_CONSTRAIN_RTCSLOW_0_WORLD_1_L_W<'a, REG> = crate::FieldWriter<'a, REG, 3>;
+pub type CORE_1_PIF_PMS_CONSTRAIN_RTCSLOW_0_WORLD_1_L_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    3,
+>;
 ///Field `CORE_1_PIF_PMS_CONSTRAIN_RTCSLOW_0_WORLD_1_H` reader - RTCSlow_0 memory high region permission in world 1 for core1.
 pub type CORE_1_PIF_PMS_CONSTRAIN_RTCSLOW_0_WORLD_1_H_R = crate::FieldReader;
 ///Field `CORE_1_PIF_PMS_CONSTRAIN_RTCSLOW_0_WORLD_1_H` writer - RTCSlow_0 memory high region permission in world 1 for core1.
-pub type CORE_1_PIF_PMS_CONSTRAIN_RTCSLOW_0_WORLD_1_H_W<'a, REG> = crate::FieldWriter<'a, REG, 3>;
+pub type CORE_1_PIF_PMS_CONSTRAIN_RTCSLOW_0_WORLD_1_H_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    3,
+>;
 impl R {
     ///Bits 0:2 - RTCSlow_0 memory low region permission in world 0 for core1.
     #[inline(always)]
@@ -77,7 +93,9 @@ impl W {
     #[must_use]
     pub fn core_1_pif_pms_constrain_rtcslow_0_world_0_l(
         &mut self,
-    ) -> CORE_1_PIF_PMS_CONSTRAIN_RTCSLOW_0_WORLD_0_L_W<CORE_1_PIF_PMS_CONSTRAIN_12_SPEC> {
+    ) -> CORE_1_PIF_PMS_CONSTRAIN_RTCSLOW_0_WORLD_0_L_W<
+        CORE_1_PIF_PMS_CONSTRAIN_12_SPEC,
+    > {
         CORE_1_PIF_PMS_CONSTRAIN_RTCSLOW_0_WORLD_0_L_W::new(self, 0)
     }
     ///Bits 3:5 - RTCSlow_0 memory high region permission in world 0 for core1.
@@ -85,7 +103,9 @@ impl W {
     #[must_use]
     pub fn core_1_pif_pms_constrain_rtcslow_0_world_0_h(
         &mut self,
-    ) -> CORE_1_PIF_PMS_CONSTRAIN_RTCSLOW_0_WORLD_0_H_W<CORE_1_PIF_PMS_CONSTRAIN_12_SPEC> {
+    ) -> CORE_1_PIF_PMS_CONSTRAIN_RTCSLOW_0_WORLD_0_H_W<
+        CORE_1_PIF_PMS_CONSTRAIN_12_SPEC,
+    > {
         CORE_1_PIF_PMS_CONSTRAIN_RTCSLOW_0_WORLD_0_H_W::new(self, 3)
     }
     ///Bits 6:8 - RTCSlow_0 memory low region permission in world 1 for core1.
@@ -93,7 +113,9 @@ impl W {
     #[must_use]
     pub fn core_1_pif_pms_constrain_rtcslow_0_world_1_l(
         &mut self,
-    ) -> CORE_1_PIF_PMS_CONSTRAIN_RTCSLOW_0_WORLD_1_L_W<CORE_1_PIF_PMS_CONSTRAIN_12_SPEC> {
+    ) -> CORE_1_PIF_PMS_CONSTRAIN_RTCSLOW_0_WORLD_1_L_W<
+        CORE_1_PIF_PMS_CONSTRAIN_12_SPEC,
+    > {
         CORE_1_PIF_PMS_CONSTRAIN_RTCSLOW_0_WORLD_1_L_W::new(self, 6)
     }
     ///Bits 9:11 - RTCSlow_0 memory high region permission in world 1 for core1.
@@ -101,7 +123,9 @@ impl W {
     #[must_use]
     pub fn core_1_pif_pms_constrain_rtcslow_0_world_1_h(
         &mut self,
-    ) -> CORE_1_PIF_PMS_CONSTRAIN_RTCSLOW_0_WORLD_1_H_W<CORE_1_PIF_PMS_CONSTRAIN_12_SPEC> {
+    ) -> CORE_1_PIF_PMS_CONSTRAIN_RTCSLOW_0_WORLD_1_H_W<
+        CORE_1_PIF_PMS_CONSTRAIN_12_SPEC,
+    > {
         CORE_1_PIF_PMS_CONSTRAIN_RTCSLOW_0_WORLD_1_H_W::new(self, 9)
     }
 }

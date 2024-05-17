@@ -73,7 +73,9 @@ impl W {
     ///Bit 24 - when pixel in bg ck range but not in fg ck range, 0: the result is bg, 1: the result is fg
     #[inline(always)]
     #[must_use]
-    pub fn colorkey_fg_bg_reverse(&mut self) -> COLORKEY_FG_BG_REVERSE_W<CK_DEFAULT_SPEC> {
+    pub fn colorkey_fg_bg_reverse(
+        &mut self,
+    ) -> COLORKEY_FG_BG_REVERSE_W<CK_DEFAULT_SPEC> {
         COLORKEY_FG_BG_REVERSE_W::new(self, 24)
     }
 }

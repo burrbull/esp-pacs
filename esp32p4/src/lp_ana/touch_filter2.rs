@@ -37,10 +37,7 @@ impl core::fmt::Debug for R {
         f.debug_struct("TOUCH_FILTER2")
             .field("touch_outen", &self.touch_outen())
             .field("touch_bypass_noise_thres", &self.touch_bypass_noise_thres())
-            .field(
-                "touch_bypass_neg_noise_thres",
-                &self.touch_bypass_neg_noise_thres(),
-            )
+            .field("touch_bypass_neg_noise_thres", &self.touch_bypass_neg_noise_thres())
             .finish()
     }
 }
@@ -54,7 +51,9 @@ impl W {
     ///Bit 30 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn touch_bypass_noise_thres(&mut self) -> TOUCH_BYPASS_NOISE_THRES_W<TOUCH_FILTER2_SPEC> {
+    pub fn touch_bypass_noise_thres(
+        &mut self,
+    ) -> TOUCH_BYPASS_NOISE_THRES_W<TOUCH_FILTER2_SPEC> {
         TOUCH_BYPASS_NOISE_THRES_W::new(self, 30)
     }
     ///Bit 31 - need_des

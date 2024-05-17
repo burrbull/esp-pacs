@@ -73,7 +73,9 @@ impl W {
     ///Bit 12 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn touch_slp_approach_en(&mut self) -> TOUCH_SLP_APPROACH_EN_W<TOUCH_APPROACH_SPEC> {
+    pub fn touch_slp_approach_en(
+        &mut self,
+    ) -> TOUCH_SLP_APPROACH_EN_W<TOUCH_APPROACH_SPEC> {
         TOUCH_SLP_APPROACH_EN_W::new(self, 12)
     }
 }

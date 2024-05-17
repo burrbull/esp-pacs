@@ -211,14 +211,8 @@ impl core::fmt::Debug for R {
             .field("slc0_ext_bit1_int_st", &self.slc0_ext_bit1_int_st())
             .field("slc0_ext_bit2_int_st", &self.slc0_ext_bit2_int_st())
             .field("slc0_ext_bit3_int_st", &self.slc0_ext_bit3_int_st())
-            .field(
-                "slc0_rx_new_packet_int_st",
-                &self.slc0_rx_new_packet_int_st(),
-            )
-            .field(
-                "slc0_host_rd_retry_int_st",
-                &self.slc0_host_rd_retry_int_st(),
-            )
+            .field("slc0_rx_new_packet_int_st", &self.slc0_rx_new_packet_int_st())
+            .field("slc0_host_rd_retry_int_st", &self.slc0_host_rd_retry_int_st())
             .field("gpio_sdio_int_st", &self.gpio_sdio_int_st())
             .finish()
     }

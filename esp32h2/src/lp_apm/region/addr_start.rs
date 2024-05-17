@@ -16,9 +16,7 @@ impl R {
 #[cfg(feature = "impl-register-debug")]
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("ADDR_START")
-            .field("addr_start", &self.addr_start())
-            .finish()
+        f.debug_struct("ADDR_START").field("addr_start", &self.addr_start()).finish()
     }
 }
 impl W {

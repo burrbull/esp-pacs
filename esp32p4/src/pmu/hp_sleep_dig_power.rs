@@ -53,10 +53,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("HP_SLEEP_DIG_POWER")
-            .field(
-                "hp_sleep_dcdc_switch_pd_en",
-                &self.hp_sleep_dcdc_switch_pd_en(),
-            )
+            .field("hp_sleep_dcdc_switch_pd_en", &self.hp_sleep_dcdc_switch_pd_en())
             .field("hp_sleep_hp_mem_dslp", &self.hp_sleep_hp_mem_dslp())
             .field("hp_sleep_pd_hp_mem_pd_en", &self.hp_sleep_pd_hp_mem_pd_en())
             .field("hp_sleep_pd_cnnt_pd_en", &self.hp_sleep_pd_cnnt_pd_en())
@@ -76,7 +73,9 @@ impl W {
     ///Bit 22 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn hp_sleep_hp_mem_dslp(&mut self) -> HP_SLEEP_HP_MEM_DSLP_W<HP_SLEEP_DIG_POWER_SPEC> {
+    pub fn hp_sleep_hp_mem_dslp(
+        &mut self,
+    ) -> HP_SLEEP_HP_MEM_DSLP_W<HP_SLEEP_DIG_POWER_SPEC> {
         HP_SLEEP_HP_MEM_DSLP_W::new(self, 22)
     }
     ///Bit 23 - need_des
@@ -90,13 +89,17 @@ impl W {
     ///Bit 30 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn hp_sleep_pd_cnnt_pd_en(&mut self) -> HP_SLEEP_PD_CNNT_PD_EN_W<HP_SLEEP_DIG_POWER_SPEC> {
+    pub fn hp_sleep_pd_cnnt_pd_en(
+        &mut self,
+    ) -> HP_SLEEP_PD_CNNT_PD_EN_W<HP_SLEEP_DIG_POWER_SPEC> {
         HP_SLEEP_PD_CNNT_PD_EN_W::new(self, 30)
     }
     ///Bit 31 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn hp_sleep_pd_top_pd_en(&mut self) -> HP_SLEEP_PD_TOP_PD_EN_W<HP_SLEEP_DIG_POWER_SPEC> {
+    pub fn hp_sleep_pd_top_pd_en(
+        &mut self,
+    ) -> HP_SLEEP_PD_TOP_PD_EN_W<HP_SLEEP_DIG_POWER_SPEC> {
         HP_SLEEP_PD_TOP_PD_EN_W::new(self, 31)
     }
 }

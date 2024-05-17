@@ -75,13 +75,17 @@ impl W {
     ///Bit 0 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn force_lp_peri_reset(&mut self) -> FORCE_LP_PERI_RESET_W<POWER_PD_LPPERI_CNTL_SPEC> {
+    pub fn force_lp_peri_reset(
+        &mut self,
+    ) -> FORCE_LP_PERI_RESET_W<POWER_PD_LPPERI_CNTL_SPEC> {
         FORCE_LP_PERI_RESET_W::new(self, 0)
     }
     ///Bit 1 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn force_lp_peri_iso(&mut self) -> FORCE_LP_PERI_ISO_W<POWER_PD_LPPERI_CNTL_SPEC> {
+    pub fn force_lp_peri_iso(
+        &mut self,
+    ) -> FORCE_LP_PERI_ISO_W<POWER_PD_LPPERI_CNTL_SPEC> {
         FORCE_LP_PERI_ISO_W::new(self, 1)
     }
     ///Bit 2 - need_des
@@ -101,7 +105,9 @@ impl W {
     ///Bit 4 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn force_lp_peri_no_iso(&mut self) -> FORCE_LP_PERI_NO_ISO_W<POWER_PD_LPPERI_CNTL_SPEC> {
+    pub fn force_lp_peri_no_iso(
+        &mut self,
+    ) -> FORCE_LP_PERI_NO_ISO_W<POWER_PD_LPPERI_CNTL_SPEC> {
         FORCE_LP_PERI_NO_ISO_W::new(self, 4)
     }
     ///Bit 5 - need_des

@@ -55,7 +55,9 @@ impl W {
     ///Bit 14 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn ext_wakeup_status_clr(&mut self) -> EXT_WAKEUP_STATUS_CLR_W<EXT_WAKEUP_CNTL_SPEC> {
+    pub fn ext_wakeup_status_clr(
+        &mut self,
+    ) -> EXT_WAKEUP_STATUS_CLR_W<EXT_WAKEUP_CNTL_SPEC> {
         EXT_WAKEUP_STATUS_CLR_W::new(self, 14)
     }
     ///Bits 15:22 - need_des

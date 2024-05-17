@@ -105,7 +105,9 @@ impl W {
     ///Bit 25 - configure rtc debug
     #[inline(always)]
     #[must_use]
-    pub fn rtc_debug_12m_no_gating(&mut self) -> RTC_DEBUG_12M_NO_GATING_W<RTC_DEBUG_SEL_SPEC> {
+    pub fn rtc_debug_12m_no_gating(
+        &mut self,
+    ) -> RTC_DEBUG_12M_NO_GATING_W<RTC_DEBUG_SEL_SPEC> {
         RTC_DEBUG_12M_NO_GATING_W::new(self, 25)
     }
 }

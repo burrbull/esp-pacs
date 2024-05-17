@@ -126,7 +126,9 @@ pub mod adc_ctrl;
 You can [`read`](crate::generic::Reg::read) this register and get [`lp_i2s_rxclk_div_num::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`lp_i2s_rxclk_div_num::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@lp_i2s_rxclk_div_num`] module*/
-pub type LP_I2S_RXCLK_DIV_NUM = crate::Reg<lp_i2s_rxclk_div_num::LP_I2S_RXCLK_DIV_NUM_SPEC>;
+pub type LP_I2S_RXCLK_DIV_NUM = crate::Reg<
+    lp_i2s_rxclk_div_num::LP_I2S_RXCLK_DIV_NUM_SPEC,
+>;
 ///need_des
 pub mod lp_i2s_rxclk_div_num;
 /**LP_I2S_RXCLK_DIV_XYZ (rw) register accessor: need_des
@@ -134,7 +136,9 @@ pub mod lp_i2s_rxclk_div_num;
 You can [`read`](crate::generic::Reg::read) this register and get [`lp_i2s_rxclk_div_xyz::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`lp_i2s_rxclk_div_xyz::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@lp_i2s_rxclk_div_xyz`] module*/
-pub type LP_I2S_RXCLK_DIV_XYZ = crate::Reg<lp_i2s_rxclk_div_xyz::LP_I2S_RXCLK_DIV_XYZ_SPEC>;
+pub type LP_I2S_RXCLK_DIV_XYZ = crate::Reg<
+    lp_i2s_rxclk_div_xyz::LP_I2S_RXCLK_DIV_XYZ_SPEC,
+>;
 ///need_des
 pub mod lp_i2s_rxclk_div_xyz;
 /**LP_I2S_TXCLK_DIV_NUM (rw) register accessor: need_des
@@ -142,7 +146,9 @@ pub mod lp_i2s_rxclk_div_xyz;
 You can [`read`](crate::generic::Reg::read) this register and get [`lp_i2s_txclk_div_num::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`lp_i2s_txclk_div_num::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@lp_i2s_txclk_div_num`] module*/
-pub type LP_I2S_TXCLK_DIV_NUM = crate::Reg<lp_i2s_txclk_div_num::LP_I2S_TXCLK_DIV_NUM_SPEC>;
+pub type LP_I2S_TXCLK_DIV_NUM = crate::Reg<
+    lp_i2s_txclk_div_num::LP_I2S_TXCLK_DIV_NUM_SPEC,
+>;
 ///need_des
 pub mod lp_i2s_txclk_div_num;
 /**LP_I2S_TXCLK_DIV_XYZ (rw) register accessor: need_des
@@ -150,7 +156,9 @@ pub mod lp_i2s_txclk_div_num;
 You can [`read`](crate::generic::Reg::read) this register and get [`lp_i2s_txclk_div_xyz::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`lp_i2s_txclk_div_xyz::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@lp_i2s_txclk_div_xyz`] module*/
-pub type LP_I2S_TXCLK_DIV_XYZ = crate::Reg<lp_i2s_txclk_div_xyz::LP_I2S_TXCLK_DIV_XYZ_SPEC>;
+pub type LP_I2S_TXCLK_DIV_XYZ = crate::Reg<
+    lp_i2s_txclk_div_xyz::LP_I2S_TXCLK_DIV_XYZ_SPEC,
+>;
 ///need_des
 pub mod lp_i2s_txclk_div_xyz;
 /**DATE (rw) register accessor: need_des

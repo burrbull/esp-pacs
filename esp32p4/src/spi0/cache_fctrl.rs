@@ -116,10 +116,7 @@ impl core::fmt::Debug for R {
             .field("fdin_quad", &self.fdin_quad())
             .field("fdout_quad", &self.fdout_quad())
             .field("faddr_quad", &self.faddr_quad())
-            .field(
-                "spi_same_aw_ar_addr_chk_en",
-                &self.spi_same_aw_ar_addr_chk_en(),
-            )
+            .field("spi_same_aw_ar_addr_chk_en", &self.spi_same_aw_ar_addr_chk_en())
             .field("spi_close_axi_inf_en", &self.spi_close_axi_inf_en())
             .finish()
     }
@@ -182,7 +179,9 @@ impl W {
     ///Bit 30 - Set this bit to check AXI read/write the same address region.
     #[inline(always)]
     #[must_use]
-    pub fn spi_same_aw_ar_addr_chk_en(&mut self) -> SPI_SAME_AW_AR_ADDR_CHK_EN_W<CACHE_FCTRL_SPEC> {
+    pub fn spi_same_aw_ar_addr_chk_en(
+        &mut self,
+    ) -> SPI_SAME_AW_AR_ADDR_CHK_EN_W<CACHE_FCTRL_SPEC> {
         SPI_SAME_AW_AR_ADDR_CHK_EN_W::new(self, 30)
     }
     ///Bit 31 - Set this bit to close AXI read/write transfer to MSPI, which means that only SLV_ERR will be replied to BRESP/RRESP.

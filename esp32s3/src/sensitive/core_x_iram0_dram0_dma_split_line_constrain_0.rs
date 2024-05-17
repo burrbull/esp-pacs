@@ -5,7 +5,10 @@ pub type W = crate::W<CORE_X_IRAM0_DRAM0_DMA_SPLIT_LINE_CONSTRAIN_0_SPEC>;
 ///Field `CORE_X_IRAM0_DRAM0_DMA_SPLIT_LINE_CONSTRAIN_LOCK` reader - Set 1 to lock sram split configuration register
 pub type CORE_X_IRAM0_DRAM0_DMA_SPLIT_LINE_CONSTRAIN_LOCK_R = crate::BitReader;
 ///Field `CORE_X_IRAM0_DRAM0_DMA_SPLIT_LINE_CONSTRAIN_LOCK` writer - Set 1 to lock sram split configuration register
-pub type CORE_X_IRAM0_DRAM0_DMA_SPLIT_LINE_CONSTRAIN_LOCK_W<'a, REG> = crate::BitWriter<'a, REG>;
+pub type CORE_X_IRAM0_DRAM0_DMA_SPLIT_LINE_CONSTRAIN_LOCK_W<'a, REG> = crate::BitWriter<
+    'a,
+    REG,
+>;
 impl R {
     ///Bit 0 - Set 1 to lock sram split configuration register
     #[inline(always)]

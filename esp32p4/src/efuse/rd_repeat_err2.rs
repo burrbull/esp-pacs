@@ -71,7 +71,9 @@ impl R {
     }
     ///Bit 21 - Indicates a programming error of SECURE_BOOT_AGGRESSIVE_REVOKE.
     #[inline(always)]
-    pub fn secure_boot_aggressive_revoke_err(&self) -> SECURE_BOOT_AGGRESSIVE_REVOKE_ERR_R {
+    pub fn secure_boot_aggressive_revoke_err(
+        &self,
+    ) -> SECURE_BOOT_AGGRESSIVE_REVOKE_ERR_R {
         SECURE_BOOT_AGGRESSIVE_REVOKE_ERR_R::new(((self.bits >> 21) & 1) != 0)
     }
     ///Bit 23 - Indicates a programming error of FLASH_TYPE.

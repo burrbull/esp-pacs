@@ -224,7 +224,9 @@ impl R {
     }
     ///Bit 23 - *******Description***********
     #[inline(always)]
-    pub fn fn2_slc1_wifi_rx_new_packet_int_ena(&self) -> FN2_SLC1_WIFI_RX_NEW_PACKET_INT_ENA_R {
+    pub fn fn2_slc1_wifi_rx_new_packet_int_ena(
+        &self,
+    ) -> FN2_SLC1_WIFI_RX_NEW_PACKET_INT_ENA_R {
         FN2_SLC1_WIFI_RX_NEW_PACKET_INT_ENA_R::new(((self.bits >> 23) & 1) != 0)
     }
     ///Bit 24 - *******Description***********
@@ -234,7 +236,9 @@ impl R {
     }
     ///Bit 25 - *******Description***********
     #[inline(always)]
-    pub fn fn2_slc1_bt_rx_new_packet_int_ena(&self) -> FN2_SLC1_BT_RX_NEW_PACKET_INT_ENA_R {
+    pub fn fn2_slc1_bt_rx_new_packet_int_ena(
+        &self,
+    ) -> FN2_SLC1_BT_RX_NEW_PACKET_INT_ENA_R {
         FN2_SLC1_BT_RX_NEW_PACKET_INT_ENA_R::new(((self.bits >> 25) & 1) != 0)
     }
 }
@@ -242,62 +246,20 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SLC1HOST_FUNC2_INT_ENA")
-            .field(
-                "fn2_slc1_tohost_bit0_int_ena",
-                &self.fn2_slc1_tohost_bit0_int_ena(),
-            )
-            .field(
-                "fn2_slc1_tohost_bit1_int_ena",
-                &self.fn2_slc1_tohost_bit1_int_ena(),
-            )
-            .field(
-                "fn2_slc1_tohost_bit2_int_ena",
-                &self.fn2_slc1_tohost_bit2_int_ena(),
-            )
-            .field(
-                "fn2_slc1_tohost_bit3_int_ena",
-                &self.fn2_slc1_tohost_bit3_int_ena(),
-            )
-            .field(
-                "fn2_slc1_tohost_bit4_int_ena",
-                &self.fn2_slc1_tohost_bit4_int_ena(),
-            )
-            .field(
-                "fn2_slc1_tohost_bit5_int_ena",
-                &self.fn2_slc1_tohost_bit5_int_ena(),
-            )
-            .field(
-                "fn2_slc1_tohost_bit6_int_ena",
-                &self.fn2_slc1_tohost_bit6_int_ena(),
-            )
-            .field(
-                "fn2_slc1_tohost_bit7_int_ena",
-                &self.fn2_slc1_tohost_bit7_int_ena(),
-            )
-            .field(
-                "fn2_slc1_token0_1to0_int_ena",
-                &self.fn2_slc1_token0_1to0_int_ena(),
-            )
-            .field(
-                "fn2_slc1_token1_1to0_int_ena",
-                &self.fn2_slc1_token1_1to0_int_ena(),
-            )
-            .field(
-                "fn2_slc1_token0_0to1_int_ena",
-                &self.fn2_slc1_token0_0to1_int_ena(),
-            )
-            .field(
-                "fn2_slc1_token1_0to1_int_ena",
-                &self.fn2_slc1_token1_0to1_int_ena(),
-            )
-            .field(
-                "fn2_slc1host_rx_sof_int_ena",
-                &self.fn2_slc1host_rx_sof_int_ena(),
-            )
-            .field(
-                "fn2_slc1host_rx_eof_int_ena",
-                &self.fn2_slc1host_rx_eof_int_ena(),
-            )
+            .field("fn2_slc1_tohost_bit0_int_ena", &self.fn2_slc1_tohost_bit0_int_ena())
+            .field("fn2_slc1_tohost_bit1_int_ena", &self.fn2_slc1_tohost_bit1_int_ena())
+            .field("fn2_slc1_tohost_bit2_int_ena", &self.fn2_slc1_tohost_bit2_int_ena())
+            .field("fn2_slc1_tohost_bit3_int_ena", &self.fn2_slc1_tohost_bit3_int_ena())
+            .field("fn2_slc1_tohost_bit4_int_ena", &self.fn2_slc1_tohost_bit4_int_ena())
+            .field("fn2_slc1_tohost_bit5_int_ena", &self.fn2_slc1_tohost_bit5_int_ena())
+            .field("fn2_slc1_tohost_bit6_int_ena", &self.fn2_slc1_tohost_bit6_int_ena())
+            .field("fn2_slc1_tohost_bit7_int_ena", &self.fn2_slc1_tohost_bit7_int_ena())
+            .field("fn2_slc1_token0_1to0_int_ena", &self.fn2_slc1_token0_1to0_int_ena())
+            .field("fn2_slc1_token1_1to0_int_ena", &self.fn2_slc1_token1_1to0_int_ena())
+            .field("fn2_slc1_token0_0to1_int_ena", &self.fn2_slc1_token0_0to1_int_ena())
+            .field("fn2_slc1_token1_0to1_int_ena", &self.fn2_slc1_token1_0to1_int_ena())
+            .field("fn2_slc1host_rx_sof_int_ena", &self.fn2_slc1host_rx_sof_int_ena())
+            .field("fn2_slc1host_rx_eof_int_ena", &self.fn2_slc1host_rx_eof_int_ena())
             .field(
                 "fn2_slc1host_rx_start_int_ena",
                 &self.fn2_slc1host_rx_start_int_ena(),
@@ -308,26 +270,11 @@ impl core::fmt::Debug for R {
             )
             .field("fn2_slc1_rx_udf_int_ena", &self.fn2_slc1_rx_udf_int_ena())
             .field("fn2_slc1_tx_ovf_int_ena", &self.fn2_slc1_tx_ovf_int_ena())
-            .field(
-                "fn2_slc1_rx_pf_valid_int_ena",
-                &self.fn2_slc1_rx_pf_valid_int_ena(),
-            )
-            .field(
-                "fn2_slc1_ext_bit0_int_ena",
-                &self.fn2_slc1_ext_bit0_int_ena(),
-            )
-            .field(
-                "fn2_slc1_ext_bit1_int_ena",
-                &self.fn2_slc1_ext_bit1_int_ena(),
-            )
-            .field(
-                "fn2_slc1_ext_bit2_int_ena",
-                &self.fn2_slc1_ext_bit2_int_ena(),
-            )
-            .field(
-                "fn2_slc1_ext_bit3_int_ena",
-                &self.fn2_slc1_ext_bit3_int_ena(),
-            )
+            .field("fn2_slc1_rx_pf_valid_int_ena", &self.fn2_slc1_rx_pf_valid_int_ena())
+            .field("fn2_slc1_ext_bit0_int_ena", &self.fn2_slc1_ext_bit0_int_ena())
+            .field("fn2_slc1_ext_bit1_int_ena", &self.fn2_slc1_ext_bit1_int_ena())
+            .field("fn2_slc1_ext_bit2_int_ena", &self.fn2_slc1_ext_bit2_int_ena())
+            .field("fn2_slc1_ext_bit3_int_ena", &self.fn2_slc1_ext_bit3_int_ena())
             .field(
                 "fn2_slc1_wifi_rx_new_packet_int_ena",
                 &self.fn2_slc1_wifi_rx_new_packet_int_ena(),

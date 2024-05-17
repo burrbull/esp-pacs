@@ -12,9 +12,7 @@ impl R {
 #[cfg(feature = "impl-register-debug")]
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("AF_LUM_C")
-            .field("af_lumc", &self.af_lumc())
-            .finish()
+        f.debug_struct("AF_LUM_C").field("af_lumc", &self.af_lumc()).finish()
     }
 }
 /**result of lum of af window c

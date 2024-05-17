@@ -20,10 +20,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("RTCCALICFG1")
-            .field(
-                "rtc_cali_cycling_data_vld",
-                &self.rtc_cali_cycling_data_vld(),
-            )
+            .field("rtc_cali_cycling_data_vld", &self.rtc_cali_cycling_data_vld())
             .field("rtc_cali_value", &self.rtc_cali_value())
             .finish()
     }

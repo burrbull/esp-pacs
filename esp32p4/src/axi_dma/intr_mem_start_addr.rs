@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("INTR_MEM_START_ADDR")
-            .field(
-                "access_intr_mem_start_addr",
-                &self.access_intr_mem_start_addr(),
-            )
+            .field("access_intr_mem_start_addr", &self.access_intr_mem_start_addr())
             .finish()
     }
 }

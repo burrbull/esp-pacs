@@ -25,7 +25,9 @@ impl W {
     ///Bits 0:21 - Finger threshold for touch pad 13
     #[inline(always)]
     #[must_use]
-    pub fn sar_touch_out_th13(&mut self) -> SAR_TOUCH_OUT_TH13_W<SAR_TOUCH_THRES13_SPEC> {
+    pub fn sar_touch_out_th13(
+        &mut self,
+    ) -> SAR_TOUCH_OUT_TH13_W<SAR_TOUCH_THRES13_SPEC> {
         SAR_TOUCH_OUT_TH13_W::new(self, 0)
     }
 }

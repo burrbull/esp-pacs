@@ -38,13 +38,17 @@ impl W {
     ///Bit 0 - The bit is used to clear interrupt by cpu access icache while the corresponding ibus is disabled or icache is disabled which include speculative access.
     #[inline(always)]
     #[must_use]
-    pub fn ibus_acs_msk_ic_int_clr(&mut self) -> IBUS_ACS_MSK_IC_INT_CLR_W<CACHE_DBG_INT_CLR_SPEC> {
+    pub fn ibus_acs_msk_ic_int_clr(
+        &mut self,
+    ) -> IBUS_ACS_MSK_IC_INT_CLR_W<CACHE_DBG_INT_CLR_SPEC> {
         IBUS_ACS_MSK_IC_INT_CLR_W::new(self, 0)
     }
     ///Bit 1 - The bit is used to clear interrupt by ibus counter overflow.
     #[inline(always)]
     #[must_use]
-    pub fn ibus_cnt_ovf_int_clr(&mut self) -> IBUS_CNT_OVF_INT_CLR_W<CACHE_DBG_INT_CLR_SPEC> {
+    pub fn ibus_cnt_ovf_int_clr(
+        &mut self,
+    ) -> IBUS_CNT_OVF_INT_CLR_W<CACHE_DBG_INT_CLR_SPEC> {
         IBUS_CNT_OVF_INT_CLR_W::new(self, 1)
     }
     ///Bit 2 - The bit is used to clear interrupt by manual sync configurations fault.
@@ -66,25 +70,33 @@ impl W {
     ///Bit 4 - The bit is used to clear interrupt by authentication fail.
     #[inline(always)]
     #[must_use]
-    pub fn icache_reject_int_clr(&mut self) -> ICACHE_REJECT_INT_CLR_W<CACHE_DBG_INT_CLR_SPEC> {
+    pub fn icache_reject_int_clr(
+        &mut self,
+    ) -> ICACHE_REJECT_INT_CLR_W<CACHE_DBG_INT_CLR_SPEC> {
         ICACHE_REJECT_INT_CLR_W::new(self, 4)
     }
     ///Bit 5 - The bit is used to clear interrupt by illegal writing lock registers of icache while icache is busy to issue lock,sync or pre-load operations.
     #[inline(always)]
     #[must_use]
-    pub fn icache_set_ilg_int_clr(&mut self) -> ICACHE_SET_ILG_INT_CLR_W<CACHE_DBG_INT_CLR_SPEC> {
+    pub fn icache_set_ilg_int_clr(
+        &mut self,
+    ) -> ICACHE_SET_ILG_INT_CLR_W<CACHE_DBG_INT_CLR_SPEC> {
         ICACHE_SET_ILG_INT_CLR_W::new(self, 5)
     }
     ///Bit 6 - The bit is used to clear interrupt by cpu access dcache while the corresponding dbus is disabled or dcache is disabled which include speculative access.
     #[inline(always)]
     #[must_use]
-    pub fn dbus_acs_msk_dc_int_clr(&mut self) -> DBUS_ACS_MSK_DC_INT_CLR_W<CACHE_DBG_INT_CLR_SPEC> {
+    pub fn dbus_acs_msk_dc_int_clr(
+        &mut self,
+    ) -> DBUS_ACS_MSK_DC_INT_CLR_W<CACHE_DBG_INT_CLR_SPEC> {
         DBUS_ACS_MSK_DC_INT_CLR_W::new(self, 6)
     }
     ///Bit 7 - The bit is used to clear interrupt by dbus counter overflow.
     #[inline(always)]
     #[must_use]
-    pub fn dbus_cnt_ovf_int_clr(&mut self) -> DBUS_CNT_OVF_INT_CLR_W<CACHE_DBG_INT_CLR_SPEC> {
+    pub fn dbus_cnt_ovf_int_clr(
+        &mut self,
+    ) -> DBUS_CNT_OVF_INT_CLR_W<CACHE_DBG_INT_CLR_SPEC> {
         DBUS_CNT_OVF_INT_CLR_W::new(self, 7)
     }
     ///Bit 8 - The bit is used to clear interrupt by manual sync configurations fault.
@@ -114,19 +126,25 @@ impl W {
     ///Bit 11 - The bit is used to clear interrupt by authentication fail.
     #[inline(always)]
     #[must_use]
-    pub fn dcache_reject_int_clr(&mut self) -> DCACHE_REJECT_INT_CLR_W<CACHE_DBG_INT_CLR_SPEC> {
+    pub fn dcache_reject_int_clr(
+        &mut self,
+    ) -> DCACHE_REJECT_INT_CLR_W<CACHE_DBG_INT_CLR_SPEC> {
         DCACHE_REJECT_INT_CLR_W::new(self, 11)
     }
     ///Bit 12 - The bit is used to clear interrupt by illegal writing lock registers of dcache while dcache is busy to issue lock,sync or pre-load operations.
     #[inline(always)]
     #[must_use]
-    pub fn dcache_set_ilg_int_clr(&mut self) -> DCACHE_SET_ILG_INT_CLR_W<CACHE_DBG_INT_CLR_SPEC> {
+    pub fn dcache_set_ilg_int_clr(
+        &mut self,
+    ) -> DCACHE_SET_ILG_INT_CLR_W<CACHE_DBG_INT_CLR_SPEC> {
         DCACHE_SET_ILG_INT_CLR_W::new(self, 12)
     }
     ///Bit 13 - The bit is used to clear interrupt by mmu entry fault.
     #[inline(always)]
     #[must_use]
-    pub fn mmu_entry_fault_int_clr(&mut self) -> MMU_ENTRY_FAULT_INT_CLR_W<CACHE_DBG_INT_CLR_SPEC> {
+    pub fn mmu_entry_fault_int_clr(
+        &mut self,
+    ) -> MMU_ENTRY_FAULT_INT_CLR_W<CACHE_DBG_INT_CLR_SPEC> {
         MMU_ENTRY_FAULT_INT_CLR_W::new(self, 13)
     }
 }

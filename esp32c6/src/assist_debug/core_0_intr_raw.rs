@@ -77,12 +77,16 @@ impl R {
     }
     ///Bit 10 - IBUS busy monitor interrupt status
     #[inline(always)]
-    pub fn core_0_iram0_exception_monitor_raw(&self) -> CORE_0_IRAM0_EXCEPTION_MONITOR_RAW_R {
+    pub fn core_0_iram0_exception_monitor_raw(
+        &self,
+    ) -> CORE_0_IRAM0_EXCEPTION_MONITOR_RAW_R {
         CORE_0_IRAM0_EXCEPTION_MONITOR_RAW_R::new(((self.bits >> 10) & 1) != 0)
     }
     ///Bit 11 - DBUS busy monitor initerrupt status
     #[inline(always)]
-    pub fn core_0_dram0_exception_monitor_raw(&self) -> CORE_0_DRAM0_EXCEPTION_MONITOR_RAW_R {
+    pub fn core_0_dram0_exception_monitor_raw(
+        &self,
+    ) -> CORE_0_DRAM0_EXCEPTION_MONITOR_RAW_R {
         CORE_0_DRAM0_EXCEPTION_MONITOR_RAW_R::new(((self.bits >> 11) & 1) != 0)
     }
 }
@@ -90,22 +94,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CORE_0_INTR_RAW")
-            .field(
-                "core_0_area_dram0_0_rd_raw",
-                &self.core_0_area_dram0_0_rd_raw(),
-            )
-            .field(
-                "core_0_area_dram0_0_wr_raw",
-                &self.core_0_area_dram0_0_wr_raw(),
-            )
-            .field(
-                "core_0_area_dram0_1_rd_raw",
-                &self.core_0_area_dram0_1_rd_raw(),
-            )
-            .field(
-                "core_0_area_dram0_1_wr_raw",
-                &self.core_0_area_dram0_1_wr_raw(),
-            )
+            .field("core_0_area_dram0_0_rd_raw", &self.core_0_area_dram0_0_rd_raw())
+            .field("core_0_area_dram0_0_wr_raw", &self.core_0_area_dram0_0_wr_raw())
+            .field("core_0_area_dram0_1_rd_raw", &self.core_0_area_dram0_1_rd_raw())
+            .field("core_0_area_dram0_1_wr_raw", &self.core_0_area_dram0_1_wr_raw())
             .field("core_0_area_pif_0_rd_raw", &self.core_0_area_pif_0_rd_raw())
             .field("core_0_area_pif_0_wr_raw", &self.core_0_area_pif_0_wr_raw())
             .field("core_0_area_pif_1_rd_raw", &self.core_0_area_pif_1_rd_raw())

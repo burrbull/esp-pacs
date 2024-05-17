@@ -5,7 +5,11 @@ pub type W = crate::W<CORE_1_IRAM0_PMS_MONITOR_VIOLATE_INTR_MAP_SPEC>;
 ///Field `CORE_1_IRAM0_PMS_MONITOR_VIOLATE_INTR_MAP` reader - this register used to map core1_IRam0_pms_monitor_violatile interrupt to one of core0's external interrupt
 pub type CORE_1_IRAM0_PMS_MONITOR_VIOLATE_INTR_MAP_R = crate::FieldReader;
 ///Field `CORE_1_IRAM0_PMS_MONITOR_VIOLATE_INTR_MAP` writer - this register used to map core1_IRam0_pms_monitor_violatile interrupt to one of core0's external interrupt
-pub type CORE_1_IRAM0_PMS_MONITOR_VIOLATE_INTR_MAP_W<'a, REG> = crate::FieldWriter<'a, REG, 5>;
+pub type CORE_1_IRAM0_PMS_MONITOR_VIOLATE_INTR_MAP_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    5,
+>;
 impl R {
     ///Bits 0:4 - this register used to map core1_IRam0_pms_monitor_violatile interrupt to one of core0's external interrupt
     #[inline(always)]
@@ -32,8 +36,9 @@ impl W {
     #[must_use]
     pub fn core_1_iram0_pms_monitor_violate_intr_map(
         &mut self,
-    ) -> CORE_1_IRAM0_PMS_MONITOR_VIOLATE_INTR_MAP_W<CORE_1_IRAM0_PMS_MONITOR_VIOLATE_INTR_MAP_SPEC>
-    {
+    ) -> CORE_1_IRAM0_PMS_MONITOR_VIOLATE_INTR_MAP_W<
+        CORE_1_IRAM0_PMS_MONITOR_VIOLATE_INTR_MAP_SPEC,
+    > {
         CORE_1_IRAM0_PMS_MONITOR_VIOLATE_INTR_MAP_W::new(self, 0)
     }
 }

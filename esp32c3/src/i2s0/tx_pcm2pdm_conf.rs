@@ -122,14 +122,8 @@ impl core::fmt::Debug for R {
             .field("tx_pdm_hp_in_shift", &self.tx_pdm_hp_in_shift())
             .field("tx_pdm_lp_in_shift", &self.tx_pdm_lp_in_shift())
             .field("tx_pdm_sinc_in_shift", &self.tx_pdm_sinc_in_shift())
-            .field(
-                "tx_pdm_sigmadelta_in_shift",
-                &self.tx_pdm_sigmadelta_in_shift(),
-            )
-            .field(
-                "tx_pdm_sigmadelta_dither2",
-                &self.tx_pdm_sigmadelta_dither2(),
-            )
+            .field("tx_pdm_sigmadelta_in_shift", &self.tx_pdm_sigmadelta_in_shift())
+            .field("tx_pdm_sigmadelta_dither2", &self.tx_pdm_sigmadelta_dither2())
             .field("tx_pdm_sigmadelta_dither", &self.tx_pdm_sigmadelta_dither())
             .field("tx_pdm_dac_2out_en", &self.tx_pdm_dac_2out_en())
             .field("tx_pdm_dac_mode_en", &self.tx_pdm_dac_mode_en())
@@ -171,7 +165,9 @@ impl W {
     ///Bits 17:18 - I2S TX PDM sigmadelta scale shift number: 0:/2 , 1:x1 , 2:x2 , 3: x4
     #[inline(always)]
     #[must_use]
-    pub fn tx_pdm_sinc_in_shift(&mut self) -> TX_PDM_SINC_IN_SHIFT_W<TX_PCM2PDM_CONF_SPEC> {
+    pub fn tx_pdm_sinc_in_shift(
+        &mut self,
+    ) -> TX_PDM_SINC_IN_SHIFT_W<TX_PCM2PDM_CONF_SPEC> {
         TX_PDM_SINC_IN_SHIFT_W::new(self, 17)
     }
     ///Bits 19:20 - I2S TX PDM sigmadelta scale shift number: 0:/2 , 1:x1 , 2:x2 , 3: x4
@@ -193,7 +189,9 @@ impl W {
     ///Bit 22 - I2S TX PDM sigmadelta dither value
     #[inline(always)]
     #[must_use]
-    pub fn tx_pdm_sigmadelta_dither(&mut self) -> TX_PDM_SIGMADELTA_DITHER_W<TX_PCM2PDM_CONF_SPEC> {
+    pub fn tx_pdm_sigmadelta_dither(
+        &mut self,
+    ) -> TX_PDM_SIGMADELTA_DITHER_W<TX_PCM2PDM_CONF_SPEC> {
         TX_PDM_SIGMADELTA_DITHER_W::new(self, 22)
     }
     ///Bit 23 - I2S TX PDM dac mode enable

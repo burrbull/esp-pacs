@@ -25,7 +25,9 @@ impl W {
     ///Bits 0:4
     #[inline(always)]
     #[must_use]
-    pub fn app_rtc_core_intr_map(&mut self) -> APP_RTC_CORE_INTR_MAP_W<APP_RTC_CORE_INTR_MAP_SPEC> {
+    pub fn app_rtc_core_intr_map(
+        &mut self,
+    ) -> APP_RTC_CORE_INTR_MAP_W<APP_RTC_CORE_INTR_MAP_SPEC> {
         APP_RTC_CORE_INTR_MAP_W::new(self, 0)
     }
 }

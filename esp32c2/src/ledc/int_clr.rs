@@ -19,8 +19,7 @@ impl W {
     #[inline(always)]
     #[must_use]
     pub fn timer_ovf(&mut self, n: u8) -> TIMER_OVF_W<INT_CLR_SPEC> {
-        #[allow(clippy::no_effect)]
-        [(); 4][n as usize];
+        #[allow(clippy::no_effect)] [(); 4][n as usize];
         TIMER_OVF_W::new(self, n)
     }
     ///Bit 0 - Set this bit to clear the TIMER0_OVF interrupt.
@@ -53,8 +52,7 @@ impl W {
     #[inline(always)]
     #[must_use]
     pub fn duty_chng_end_ch(&mut self, n: u8) -> DUTY_CHNG_END_CH_W<INT_CLR_SPEC> {
-        #[allow(clippy::no_effect)]
-        [(); 6][n as usize];
+        #[allow(clippy::no_effect)] [(); 6][n as usize];
         DUTY_CHNG_END_CH_W::new(self, n + 4)
     }
     ///Bit 4 - Set this bit to clear the DUTY_CHNG_END_CH0 interrupt.
@@ -99,8 +97,7 @@ impl W {
     #[inline(always)]
     #[must_use]
     pub fn ovf_cnt_ch(&mut self, n: u8) -> OVF_CNT_CH_W<INT_CLR_SPEC> {
-        #[allow(clippy::no_effect)]
-        [(); 6][n as usize];
+        #[allow(clippy::no_effect)] [(); 6][n as usize];
         OVF_CNT_CH_W::new(self, n + 10)
     }
     ///Bit 10 - Set this bit to clear the OVF_CNT_CH0 interrupt.

@@ -35,13 +35,17 @@ impl W {
     ///Bits 0:11 - *******Description***********
     #[inline(always)]
     #[must_use]
-    pub fn slc1host_token0_wd(&mut self) -> SLC1HOST_TOKEN0_WD_W<SLC1HOST_TOKEN_WDATA_SPEC> {
+    pub fn slc1host_token0_wd(
+        &mut self,
+    ) -> SLC1HOST_TOKEN0_WD_W<SLC1HOST_TOKEN_WDATA_SPEC> {
         SLC1HOST_TOKEN0_WD_W::new(self, 0)
     }
     ///Bits 16:27 - *******Description***********
     #[inline(always)]
     #[must_use]
-    pub fn slc1host_token1_wd(&mut self) -> SLC1HOST_TOKEN1_WD_W<SLC1HOST_TOKEN_WDATA_SPEC> {
+    pub fn slc1host_token1_wd(
+        &mut self,
+    ) -> SLC1HOST_TOKEN1_WD_W<SLC1HOST_TOKEN_WDATA_SPEC> {
         SLC1HOST_TOKEN1_WD_W::new(self, 16)
     }
 }

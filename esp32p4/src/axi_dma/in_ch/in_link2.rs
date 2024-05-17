@@ -16,9 +16,7 @@ impl R {
 #[cfg(feature = "impl-register-debug")]
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("IN_LINK2")
-            .field("inlink_addr", &self.inlink_addr())
-            .finish()
+        f.debug_struct("IN_LINK2").field("inlink_addr", &self.inlink_addr()).finish()
     }
 }
 impl W {

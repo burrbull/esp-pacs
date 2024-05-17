@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PRO_ICACHE_PRELOAD_INT_MAP")
-            .field(
-                "pro_icache_preload_int_map",
-                &self.pro_icache_preload_int_map(),
-            )
+            .field("pro_icache_preload_int_map", &self.pro_icache_preload_int_map())
             .finish()
     }
 }

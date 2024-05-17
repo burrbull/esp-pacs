@@ -490,8 +490,9 @@ pub mod dma_flow_ctrl;
 You can [`read`](crate::generic::Reg::read) this register and get [`raw_buf_almost_empty_thrd::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`raw_buf_almost_empty_thrd::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@raw_buf_almost_empty_thrd`] module*/
-pub type RAW_BUF_ALMOST_EMPTY_THRD =
-    crate::Reg<raw_buf_almost_empty_thrd::RAW_BUF_ALMOST_EMPTY_THRD_SPEC>;
+pub type RAW_BUF_ALMOST_EMPTY_THRD = crate::Reg<
+    raw_buf_almost_empty_thrd::RAW_BUF_ALMOST_EMPTY_THRD_SPEC,
+>;
 ///dsi_bridge buffer empty threshold register
 pub mod raw_buf_almost_empty_thrd;
 /**YUV_CFG (rw) register accessor: dsi_bridge yuv format config register
@@ -507,7 +508,9 @@ pub mod yuv_cfg;
 You can [`read`](crate::generic::Reg::read) this register and get [`phy_lp_loopback_ctrl::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`phy_lp_loopback_ctrl::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@phy_lp_loopback_ctrl`] module*/
-pub type PHY_LP_LOOPBACK_CTRL = crate::Reg<phy_lp_loopback_ctrl::PHY_LP_LOOPBACK_CTRL_SPEC>;
+pub type PHY_LP_LOOPBACK_CTRL = crate::Reg<
+    phy_lp_loopback_ctrl::PHY_LP_LOOPBACK_CTRL_SPEC,
+>;
 ///dsi phy lp_loopback test ctrl
 pub mod phy_lp_loopback_ctrl;
 /**PHY_HS_LOOPBACK_CTRL (rw) register accessor: dsi phy hp_loopback test ctrl
@@ -515,7 +518,9 @@ pub mod phy_lp_loopback_ctrl;
 You can [`read`](crate::generic::Reg::read) this register and get [`phy_hs_loopback_ctrl::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`phy_hs_loopback_ctrl::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@phy_hs_loopback_ctrl`] module*/
-pub type PHY_HS_LOOPBACK_CTRL = crate::Reg<phy_hs_loopback_ctrl::PHY_HS_LOOPBACK_CTRL_SPEC>;
+pub type PHY_HS_LOOPBACK_CTRL = crate::Reg<
+    phy_hs_loopback_ctrl::PHY_HS_LOOPBACK_CTRL_SPEC,
+>;
 ///dsi phy hp_loopback test ctrl
 pub mod phy_hs_loopback_ctrl;
 /**PHY_LOOPBACK_CNT (rw) register accessor: loopback test cnt

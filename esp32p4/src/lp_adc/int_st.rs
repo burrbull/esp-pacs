@@ -50,22 +50,10 @@ impl core::fmt::Debug for R {
         f.debug_struct("INT_ST")
             .field("cocpu_saradc1_int_st", &self.cocpu_saradc1_int_st())
             .field("cocpu_saradc2_int_st", &self.cocpu_saradc2_int_st())
-            .field(
-                "cocpu_saradc1_error_int_st",
-                &self.cocpu_saradc1_error_int_st(),
-            )
-            .field(
-                "cocpu_saradc2_error_int_st",
-                &self.cocpu_saradc2_error_int_st(),
-            )
-            .field(
-                "cocpu_saradc1_wake_int_st",
-                &self.cocpu_saradc1_wake_int_st(),
-            )
-            .field(
-                "cocpu_saradc2_wake_int_st",
-                &self.cocpu_saradc2_wake_int_st(),
-            )
+            .field("cocpu_saradc1_error_int_st", &self.cocpu_saradc1_error_int_st())
+            .field("cocpu_saradc2_error_int_st", &self.cocpu_saradc2_error_int_st())
+            .field("cocpu_saradc1_wake_int_st", &self.cocpu_saradc1_wake_int_st())
+            .field("cocpu_saradc2_wake_int_st", &self.cocpu_saradc2_wake_int_st())
             .finish()
     }
 }

@@ -35,13 +35,17 @@ impl W {
     ///Bits 0:7 - xxxx
     #[inline(always)]
     #[must_use]
-    pub fn pwdet_sar_clk_div_num(&mut self) -> PWDET_SAR_CLK_DIV_NUM_W<PWDET_SAR_CLK_CONF_SPEC> {
+    pub fn pwdet_sar_clk_div_num(
+        &mut self,
+    ) -> PWDET_SAR_CLK_DIV_NUM_W<PWDET_SAR_CLK_CONF_SPEC> {
         PWDET_SAR_CLK_DIV_NUM_W::new(self, 0)
     }
     ///Bit 8 - xxxx
     #[inline(always)]
     #[must_use]
-    pub fn pwdet_sar_reader_en(&mut self) -> PWDET_SAR_READER_EN_W<PWDET_SAR_CLK_CONF_SPEC> {
+    pub fn pwdet_sar_reader_en(
+        &mut self,
+    ) -> PWDET_SAR_READER_EN_W<PWDET_SAR_CLK_CONF_SPEC> {
         PWDET_SAR_READER_EN_W::new(self, 8)
     }
 }

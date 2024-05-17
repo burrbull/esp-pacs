@@ -5,19 +5,35 @@ pub type W = crate::W<CORE_0_PIF_PMS_CONSTRAIN_10_SPEC>;
 ///Field `CORE_0_PIF_PMS_CONSTRAIN_RTCFAST_WORLD_0_L` reader - core_0_pif_pms_constrain_rtcfast_world_0_l
 pub type CORE_0_PIF_PMS_CONSTRAIN_RTCFAST_WORLD_0_L_R = crate::FieldReader;
 ///Field `CORE_0_PIF_PMS_CONSTRAIN_RTCFAST_WORLD_0_L` writer - core_0_pif_pms_constrain_rtcfast_world_0_l
-pub type CORE_0_PIF_PMS_CONSTRAIN_RTCFAST_WORLD_0_L_W<'a, REG> = crate::FieldWriter<'a, REG, 3>;
+pub type CORE_0_PIF_PMS_CONSTRAIN_RTCFAST_WORLD_0_L_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    3,
+>;
 ///Field `CORE_0_PIF_PMS_CONSTRAIN_RTCFAST_WORLD_0_H` reader - core_0_pif_pms_constrain_rtcfast_world_0_h
 pub type CORE_0_PIF_PMS_CONSTRAIN_RTCFAST_WORLD_0_H_R = crate::FieldReader;
 ///Field `CORE_0_PIF_PMS_CONSTRAIN_RTCFAST_WORLD_0_H` writer - core_0_pif_pms_constrain_rtcfast_world_0_h
-pub type CORE_0_PIF_PMS_CONSTRAIN_RTCFAST_WORLD_0_H_W<'a, REG> = crate::FieldWriter<'a, REG, 3>;
+pub type CORE_0_PIF_PMS_CONSTRAIN_RTCFAST_WORLD_0_H_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    3,
+>;
 ///Field `CORE_0_PIF_PMS_CONSTRAIN_RTCFAST_WORLD_1_L` reader - core_0_pif_pms_constrain_rtcfast_world_1_l
 pub type CORE_0_PIF_PMS_CONSTRAIN_RTCFAST_WORLD_1_L_R = crate::FieldReader;
 ///Field `CORE_0_PIF_PMS_CONSTRAIN_RTCFAST_WORLD_1_L` writer - core_0_pif_pms_constrain_rtcfast_world_1_l
-pub type CORE_0_PIF_PMS_CONSTRAIN_RTCFAST_WORLD_1_L_W<'a, REG> = crate::FieldWriter<'a, REG, 3>;
+pub type CORE_0_PIF_PMS_CONSTRAIN_RTCFAST_WORLD_1_L_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    3,
+>;
 ///Field `CORE_0_PIF_PMS_CONSTRAIN_RTCFAST_WORLD_1_H` reader - core_0_pif_pms_constrain_rtcfast_world_1_h
 pub type CORE_0_PIF_PMS_CONSTRAIN_RTCFAST_WORLD_1_H_R = crate::FieldReader;
 ///Field `CORE_0_PIF_PMS_CONSTRAIN_RTCFAST_WORLD_1_H` writer - core_0_pif_pms_constrain_rtcfast_world_1_h
-pub type CORE_0_PIF_PMS_CONSTRAIN_RTCFAST_WORLD_1_H_W<'a, REG> = crate::FieldWriter<'a, REG, 3>;
+pub type CORE_0_PIF_PMS_CONSTRAIN_RTCFAST_WORLD_1_H_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    3,
+>;
 impl R {
     ///Bits 0:2 - core_0_pif_pms_constrain_rtcfast_world_0_l
     #[inline(always)]

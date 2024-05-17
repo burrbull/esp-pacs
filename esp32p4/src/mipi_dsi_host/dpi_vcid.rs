@@ -16,9 +16,7 @@ impl R {
 #[cfg(feature = "impl-register-debug")]
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("DPI_VCID")
-            .field("dpi_vcid", &self.dpi_vcid())
-            .finish()
+        f.debug_struct("DPI_VCID").field("dpi_vcid", &self.dpi_vcid()).finish()
     }
 }
 impl W {

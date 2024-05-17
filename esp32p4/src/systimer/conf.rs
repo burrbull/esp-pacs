@@ -121,22 +121,10 @@ impl core::fmt::Debug for R {
             .field("target2_work_en", &self.target2_work_en())
             .field("target1_work_en", &self.target1_work_en())
             .field("target0_work_en", &self.target0_work_en())
-            .field(
-                "timer_unit1_core1_stall_en",
-                &self.timer_unit1_core1_stall_en(),
-            )
-            .field(
-                "timer_unit1_core0_stall_en",
-                &self.timer_unit1_core0_stall_en(),
-            )
-            .field(
-                "timer_unit0_core1_stall_en",
-                &self.timer_unit0_core1_stall_en(),
-            )
-            .field(
-                "timer_unit0_core0_stall_en",
-                &self.timer_unit0_core0_stall_en(),
-            )
+            .field("timer_unit1_core1_stall_en", &self.timer_unit1_core1_stall_en())
+            .field("timer_unit1_core0_stall_en", &self.timer_unit1_core0_stall_en())
+            .field("timer_unit0_core1_stall_en", &self.timer_unit0_core1_stall_en())
+            .field("timer_unit0_core0_stall_en", &self.timer_unit0_core0_stall_en())
             .field("timer_unit1_work_en", &self.timer_unit1_work_en())
             .field("timer_unit0_work_en", &self.timer_unit0_work_en())
             .field("clk_en", &self.clk_en())
@@ -177,25 +165,33 @@ impl W {
     ///Bit 25 - If timer unit1 is stalled when core1 stalled
     #[inline(always)]
     #[must_use]
-    pub fn timer_unit1_core1_stall_en(&mut self) -> TIMER_UNIT1_CORE1_STALL_EN_W<CONF_SPEC> {
+    pub fn timer_unit1_core1_stall_en(
+        &mut self,
+    ) -> TIMER_UNIT1_CORE1_STALL_EN_W<CONF_SPEC> {
         TIMER_UNIT1_CORE1_STALL_EN_W::new(self, 25)
     }
     ///Bit 26 - If timer unit1 is stalled when core0 stalled
     #[inline(always)]
     #[must_use]
-    pub fn timer_unit1_core0_stall_en(&mut self) -> TIMER_UNIT1_CORE0_STALL_EN_W<CONF_SPEC> {
+    pub fn timer_unit1_core0_stall_en(
+        &mut self,
+    ) -> TIMER_UNIT1_CORE0_STALL_EN_W<CONF_SPEC> {
         TIMER_UNIT1_CORE0_STALL_EN_W::new(self, 26)
     }
     ///Bit 27 - If timer unit0 is stalled when core1 stalled
     #[inline(always)]
     #[must_use]
-    pub fn timer_unit0_core1_stall_en(&mut self) -> TIMER_UNIT0_CORE1_STALL_EN_W<CONF_SPEC> {
+    pub fn timer_unit0_core1_stall_en(
+        &mut self,
+    ) -> TIMER_UNIT0_CORE1_STALL_EN_W<CONF_SPEC> {
         TIMER_UNIT0_CORE1_STALL_EN_W::new(self, 27)
     }
     ///Bit 28 - If timer unit0 is stalled when core0 stalled
     #[inline(always)]
     #[must_use]
-    pub fn timer_unit0_core0_stall_en(&mut self) -> TIMER_UNIT0_CORE0_STALL_EN_W<CONF_SPEC> {
+    pub fn timer_unit0_core0_stall_en(
+        &mut self,
+    ) -> TIMER_UNIT0_CORE0_STALL_EN_W<CONF_SPEC> {
         TIMER_UNIT0_CORE0_STALL_EN_W::new(self, 28)
     }
     ///Bit 29 - timer unit1 work enable

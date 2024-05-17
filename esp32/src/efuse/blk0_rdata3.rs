@@ -127,7 +127,9 @@ impl W {
     ///Bit 13
     #[inline(always)]
     #[must_use]
-    pub fn rd_chip_cpu_freq_rated(&mut self) -> RD_CHIP_CPU_FREQ_RATED_W<BLK0_RDATA3_SPEC> {
+    pub fn rd_chip_cpu_freq_rated(
+        &mut self,
+    ) -> RD_CHIP_CPU_FREQ_RATED_W<BLK0_RDATA3_SPEC> {
         RD_CHIP_CPU_FREQ_RATED_W::new(self, 13)
     }
     ///Bit 14

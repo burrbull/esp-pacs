@@ -13,7 +13,9 @@ pub type CORE_0_PIF_PMS_MONITOR_VIOLATE_STATUS_HWORLD_R = crate::FieldReader;
 impl R {
     ///Bit 0 - core_0_pif_pms_monitor_violate_intr
     #[inline(always)]
-    pub fn core_0_pif_pms_monitor_violate_intr(&self) -> CORE_0_PIF_PMS_MONITOR_VIOLATE_INTR_R {
+    pub fn core_0_pif_pms_monitor_violate_intr(
+        &self,
+    ) -> CORE_0_PIF_PMS_MONITOR_VIOLATE_INTR_R {
         CORE_0_PIF_PMS_MONITOR_VIOLATE_INTR_R::new((self.bits & 1) != 0)
     }
     ///Bit 1 - core_0_pif_pms_monitor_violate_status_hport_0

@@ -216,15 +216,9 @@ impl core::fmt::Debug for R {
             .field("slc0_tohost_int_st", &self.slc0_tohost_int_st())
             .field("slc0_tx_dscr_err_int_st", &self.slc0_tx_dscr_err_int_st())
             .field("slc0_rx_dscr_err_int_st", &self.slc0_rx_dscr_err_int_st())
-            .field(
-                "slc0_tx_dscr_empty_int_st",
-                &self.slc0_tx_dscr_empty_int_st(),
-            )
+            .field("slc0_tx_dscr_empty_int_st", &self.slc0_tx_dscr_empty_int_st())
             .field("slc0_host_rd_ack_int_st", &self.slc0_host_rd_ack_int_st())
-            .field(
-                "slc0_wr_retry_done_int_st",
-                &self.slc0_wr_retry_done_int_st(),
-            )
+            .field("slc0_wr_retry_done_int_st", &self.slc0_wr_retry_done_int_st())
             .field("slc0_tx_err_eof_int_st", &self.slc0_tx_err_eof_int_st())
             .field("cmd_dtc_int_st", &self.cmd_dtc_int_st())
             .field("slc0_rx_quick_eof_int_st", &self.slc0_rx_quick_eof_int_st())

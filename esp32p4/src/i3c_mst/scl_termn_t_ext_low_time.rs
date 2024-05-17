@@ -9,7 +9,9 @@ pub type REG_I3C_MST_TERMN_T_EXT_LOW_TIME_W<'a, REG> = crate::FieldWriter<'a, RE
 impl R {
     ///Bits 0:7 - NA
     #[inline(always)]
-    pub fn reg_i3c_mst_termn_t_ext_low_time(&self) -> REG_I3C_MST_TERMN_T_EXT_LOW_TIME_R {
+    pub fn reg_i3c_mst_termn_t_ext_low_time(
+        &self,
+    ) -> REG_I3C_MST_TERMN_T_EXT_LOW_TIME_R {
         REG_I3C_MST_TERMN_T_EXT_LOW_TIME_R::new((self.bits & 0xff) as u8)
     }
 }

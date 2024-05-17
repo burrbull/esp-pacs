@@ -65,19 +65,25 @@ impl W {
     ///Bit 18 - Need add desc
     #[inline(always)]
     #[must_use]
-    pub fn retention_clk_sel(&mut self) -> RETENTION_CLK_SEL_W<CNTL_RETENTION_CTRL_SPEC> {
+    pub fn retention_clk_sel(
+        &mut self,
+    ) -> RETENTION_CLK_SEL_W<CNTL_RETENTION_CTRL_SPEC> {
         RETENTION_CLK_SEL_W::new(self, 18)
     }
     ///Bits 19:21 - Need add desc
     #[inline(always)]
     #[must_use]
-    pub fn retention_done_wait(&mut self) -> RETENTION_DONE_WAIT_W<CNTL_RETENTION_CTRL_SPEC> {
+    pub fn retention_done_wait(
+        &mut self,
+    ) -> RETENTION_DONE_WAIT_W<CNTL_RETENTION_CTRL_SPEC> {
         RETENTION_DONE_WAIT_W::new(self, 19)
     }
     ///Bits 22:25 - Need add desc
     #[inline(always)]
     #[must_use]
-    pub fn retention_clkoff_wait(&mut self) -> RETENTION_CLKOFF_WAIT_W<CNTL_RETENTION_CTRL_SPEC> {
+    pub fn retention_clkoff_wait(
+        &mut self,
+    ) -> RETENTION_CLKOFF_WAIT_W<CNTL_RETENTION_CTRL_SPEC> {
         RETENTION_CLKOFF_WAIT_W::new(self, 22)
     }
     ///Bit 26 - Need add desc

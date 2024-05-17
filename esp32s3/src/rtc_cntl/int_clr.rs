@@ -172,7 +172,9 @@ impl W {
     ///Bit 20 - cleartouch approach mode loop interrupt state
     #[inline(always)]
     #[must_use]
-    pub fn touch_approach_loop_done(&mut self) -> TOUCH_APPROACH_LOOP_DONE_W<INT_CLR_SPEC> {
+    pub fn touch_approach_loop_done(
+        &mut self,
+    ) -> TOUCH_APPROACH_LOOP_DONE_W<INT_CLR_SPEC> {
         TOUCH_APPROACH_LOOP_DONE_W::new(self, 20)
     }
 }

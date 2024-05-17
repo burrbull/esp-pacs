@@ -67,7 +67,9 @@ impl W {
     ///Bits 0:5
     #[inline(always)]
     #[must_use]
-    pub fn wifi_clk_wifi_bt_common(&mut self) -> WIFI_CLK_WIFI_BT_COMMON_W<WIFI_CLK_EN_SPEC> {
+    pub fn wifi_clk_wifi_bt_common(
+        &mut self,
+    ) -> WIFI_CLK_WIFI_BT_COMMON_W<WIFI_CLK_EN_SPEC> {
         WIFI_CLK_WIFI_BT_COMMON_W::new(self, 0)
     }
     ///Bits 11:13

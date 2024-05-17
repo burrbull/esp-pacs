@@ -53,23 +53,11 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("HP_ACTIVE_SYSCLK")
-            .field(
-                "hp_active_dig_sys_clk_no_div",
-                &self.hp_active_dig_sys_clk_no_div(),
-            )
-            .field(
-                "hp_active_icg_sys_clock_en",
-                &self.hp_active_icg_sys_clock_en(),
-            )
-            .field(
-                "hp_active_sys_clk_slp_sel",
-                &self.hp_active_sys_clk_slp_sel(),
-            )
+            .field("hp_active_dig_sys_clk_no_div", &self.hp_active_dig_sys_clk_no_div())
+            .field("hp_active_icg_sys_clock_en", &self.hp_active_icg_sys_clock_en())
+            .field("hp_active_sys_clk_slp_sel", &self.hp_active_sys_clk_slp_sel())
             .field("hp_active_icg_slp_sel", &self.hp_active_icg_slp_sel())
-            .field(
-                "hp_active_dig_sys_clk_sel",
-                &self.hp_active_dig_sys_clk_sel(),
-            )
+            .field("hp_active_dig_sys_clk_sel", &self.hp_active_dig_sys_clk_sel())
             .finish()
     }
 }
@@ -101,7 +89,9 @@ impl W {
     ///Bit 29 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn hp_active_icg_slp_sel(&mut self) -> HP_ACTIVE_ICG_SLP_SEL_W<HP_ACTIVE_SYSCLK_SPEC> {
+    pub fn hp_active_icg_slp_sel(
+        &mut self,
+    ) -> HP_ACTIVE_ICG_SLP_SEL_W<HP_ACTIVE_SYSCLK_SPEC> {
         HP_ACTIVE_ICG_SLP_SEL_W::new(self, 29)
     }
     ///Bits 30:31 - need_des

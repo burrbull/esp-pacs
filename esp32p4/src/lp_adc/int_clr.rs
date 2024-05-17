@@ -34,25 +34,33 @@ impl W {
     ///Bit 2 - An errro occurs from ADC1, int clear.
     #[inline(always)]
     #[must_use]
-    pub fn cocpu_saradc1_error_int_clr(&mut self) -> COCPU_SARADC1_ERROR_INT_CLR_W<INT_CLR_SPEC> {
+    pub fn cocpu_saradc1_error_int_clr(
+        &mut self,
+    ) -> COCPU_SARADC1_ERROR_INT_CLR_W<INT_CLR_SPEC> {
         COCPU_SARADC1_ERROR_INT_CLR_W::new(self, 2)
     }
     ///Bit 3 - An errro occurs from ADC2, int clear.
     #[inline(always)]
     #[must_use]
-    pub fn cocpu_saradc2_error_int_clr(&mut self) -> COCPU_SARADC2_ERROR_INT_CLR_W<INT_CLR_SPEC> {
+    pub fn cocpu_saradc2_error_int_clr(
+        &mut self,
+    ) -> COCPU_SARADC2_ERROR_INT_CLR_W<INT_CLR_SPEC> {
         COCPU_SARADC2_ERROR_INT_CLR_W::new(self, 3)
     }
     ///Bit 4 - A wakeup event is triggered from ADC1, int clear.
     #[inline(always)]
     #[must_use]
-    pub fn cocpu_saradc1_wake_int_clr(&mut self) -> COCPU_SARADC1_WAKE_INT_CLR_W<INT_CLR_SPEC> {
+    pub fn cocpu_saradc1_wake_int_clr(
+        &mut self,
+    ) -> COCPU_SARADC1_WAKE_INT_CLR_W<INT_CLR_SPEC> {
         COCPU_SARADC1_WAKE_INT_CLR_W::new(self, 4)
     }
     ///Bit 5 - A wakeup event is triggered from ADC2, int clear.
     #[inline(always)]
     #[must_use]
-    pub fn cocpu_saradc2_wake_int_clr(&mut self) -> COCPU_SARADC2_WAKE_INT_CLR_W<INT_CLR_SPEC> {
+    pub fn cocpu_saradc2_wake_int_clr(
+        &mut self,
+    ) -> COCPU_SARADC2_WAKE_INT_CLR_W<INT_CLR_SPEC> {
         COCPU_SARADC2_WAKE_INT_CLR_W::new(self, 5)
     }
 }

@@ -227,7 +227,9 @@ impl RegisterBlock {
     }
     ///0x60 - GPIO_INTERRUPT_PRO_NMI interrupt configuration register
     #[inline(always)]
-    pub const fn pro_gpio_interrupt_pro_nmi_map(&self) -> &PRO_GPIO_INTERRUPT_PRO_NMI_MAP {
+    pub const fn pro_gpio_interrupt_pro_nmi_map(
+        &self,
+    ) -> &PRO_GPIO_INTERRUPT_PRO_NMI_MAP {
         &self.pro_gpio_interrupt_pro_nmi_map
     }
     ///0x64 - GPIO_INTERRUPT_APP interrupt configuration register
@@ -237,12 +239,16 @@ impl RegisterBlock {
     }
     ///0x68 - GPIO_INTERRUPT_APP_NMI interrupt configuration register
     #[inline(always)]
-    pub const fn pro_gpio_interrupt_app_nmi_map(&self) -> &PRO_GPIO_INTERRUPT_APP_NMI_MAP {
+    pub const fn pro_gpio_interrupt_app_nmi_map(
+        &self,
+    ) -> &PRO_GPIO_INTERRUPT_APP_NMI_MAP {
         &self.pro_gpio_interrupt_app_nmi_map
     }
     ///0x6c - DEDICATED_GPIO_IN_INTR interrupt configuration register
     #[inline(always)]
-    pub const fn pro_dedicated_gpio_in_intr_map(&self) -> &PRO_DEDICATED_GPIO_IN_INTR_MAP {
+    pub const fn pro_dedicated_gpio_in_intr_map(
+        &self,
+    ) -> &PRO_DEDICATED_GPIO_IN_INTR_MAP {
         &self.pro_dedicated_gpio_in_intr_map
     }
     ///0x70 - CPU_INTR_FROM_CPU_0 interrupt configuration register
@@ -482,17 +488,23 @@ impl RegisterBlock {
     }
     ///0x12c - PMS_PRO_IRAM0_ILG interrupt configuration register
     #[inline(always)]
-    pub const fn pro_pms_pro_iram0_ilg_intr_map(&self) -> &PRO_PMS_PRO_IRAM0_ILG_INTR_MAP {
+    pub const fn pro_pms_pro_iram0_ilg_intr_map(
+        &self,
+    ) -> &PRO_PMS_PRO_IRAM0_ILG_INTR_MAP {
         &self.pro_pms_pro_iram0_ilg_intr_map
     }
     ///0x130 - PMS_PRO_DRAM0_ILG interrupt configuration register
     #[inline(always)]
-    pub const fn pro_pms_pro_dram0_ilg_intr_map(&self) -> &PRO_PMS_PRO_DRAM0_ILG_INTR_MAP {
+    pub const fn pro_pms_pro_dram0_ilg_intr_map(
+        &self,
+    ) -> &PRO_PMS_PRO_DRAM0_ILG_INTR_MAP {
         &self.pro_pms_pro_dram0_ilg_intr_map
     }
     ///0x134 - PMS_PRO_DPORT_ILG interrupt configuration register
     #[inline(always)]
-    pub const fn pro_pms_pro_dport_ilg_intr_map(&self) -> &PRO_PMS_PRO_DPORT_ILG_INTR_MAP {
+    pub const fn pro_pms_pro_dport_ilg_intr_map(
+        &self,
+    ) -> &PRO_PMS_PRO_DPORT_ILG_INTR_MAP {
         &self.pro_pms_pro_dport_ilg_intr_map
     }
     ///0x138 - PMS_PRO_AHB_ILG interrupt configuration register
@@ -502,12 +514,16 @@ impl RegisterBlock {
     }
     ///0x13c - PMS_PRO_CACHE_ILG interrupt configuration register
     #[inline(always)]
-    pub const fn pro_pms_pro_cache_ilg_intr_map(&self) -> &PRO_PMS_PRO_CACHE_ILG_INTR_MAP {
+    pub const fn pro_pms_pro_cache_ilg_intr_map(
+        &self,
+    ) -> &PRO_PMS_PRO_CACHE_ILG_INTR_MAP {
         &self.pro_pms_pro_cache_ilg_intr_map
     }
     ///0x140 - PMS_DMA_APB_I_ILG interrupt configuration register
     #[inline(always)]
-    pub const fn pro_pms_dma_apb_i_ilg_intr_map(&self) -> &PRO_PMS_DMA_APB_I_ILG_INTR_MAP {
+    pub const fn pro_pms_dma_apb_i_ilg_intr_map(
+        &self,
+    ) -> &PRO_PMS_DMA_APB_I_ILG_INTR_MAP {
         &self.pro_pms_dma_apb_i_ilg_intr_map
     }
     ///0x144 - PMS_DMA_RX_I_ILG interrupt configuration register
@@ -731,8 +747,9 @@ pub mod pro_uhci1_intr_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_tg_t0_level_int_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_tg_t0_level_int_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_tg_t0_level_int_map`] module*/
-pub type PRO_TG_T0_LEVEL_INT_MAP =
-    crate::Reg<pro_tg_t0_level_int_map::PRO_TG_T0_LEVEL_INT_MAP_SPEC>;
+pub type PRO_TG_T0_LEVEL_INT_MAP = crate::Reg<
+    pro_tg_t0_level_int_map::PRO_TG_T0_LEVEL_INT_MAP_SPEC,
+>;
 ///TG_T0_LEVEL_INT interrupt configuration register
 pub mod pro_tg_t0_level_int_map;
 /**PRO_TG_T1_LEVEL_INT_MAP (rw) register accessor: TG_T1_LEVEL_INT interrupt configuration register
@@ -740,8 +757,9 @@ pub mod pro_tg_t0_level_int_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_tg_t1_level_int_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_tg_t1_level_int_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_tg_t1_level_int_map`] module*/
-pub type PRO_TG_T1_LEVEL_INT_MAP =
-    crate::Reg<pro_tg_t1_level_int_map::PRO_TG_T1_LEVEL_INT_MAP_SPEC>;
+pub type PRO_TG_T1_LEVEL_INT_MAP = crate::Reg<
+    pro_tg_t1_level_int_map::PRO_TG_T1_LEVEL_INT_MAP_SPEC,
+>;
 ///TG_T1_LEVEL_INT interrupt configuration register
 pub mod pro_tg_t1_level_int_map;
 /**PRO_TG_WDT_LEVEL_INT_MAP (rw) register accessor: TG_WDT_LEVEL_INT interrupt configuration register
@@ -749,8 +767,9 @@ pub mod pro_tg_t1_level_int_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_tg_wdt_level_int_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_tg_wdt_level_int_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_tg_wdt_level_int_map`] module*/
-pub type PRO_TG_WDT_LEVEL_INT_MAP =
-    crate::Reg<pro_tg_wdt_level_int_map::PRO_TG_WDT_LEVEL_INT_MAP_SPEC>;
+pub type PRO_TG_WDT_LEVEL_INT_MAP = crate::Reg<
+    pro_tg_wdt_level_int_map::PRO_TG_WDT_LEVEL_INT_MAP_SPEC,
+>;
 ///TG_WDT_LEVEL_INT interrupt configuration register
 pub mod pro_tg_wdt_level_int_map;
 /**PRO_TG_LACT_LEVEL_INT_MAP (rw) register accessor: TG_LACT_LEVEL_INT interrupt configuration register
@@ -758,8 +777,9 @@ pub mod pro_tg_wdt_level_int_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_tg_lact_level_int_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_tg_lact_level_int_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_tg_lact_level_int_map`] module*/
-pub type PRO_TG_LACT_LEVEL_INT_MAP =
-    crate::Reg<pro_tg_lact_level_int_map::PRO_TG_LACT_LEVEL_INT_MAP_SPEC>;
+pub type PRO_TG_LACT_LEVEL_INT_MAP = crate::Reg<
+    pro_tg_lact_level_int_map::PRO_TG_LACT_LEVEL_INT_MAP_SPEC,
+>;
 ///TG_LACT_LEVEL_INT interrupt configuration register
 pub mod pro_tg_lact_level_int_map;
 /**PRO_TG1_T0_LEVEL_INT_MAP (rw) register accessor: TG1_T0_LEVEL_INT interrupt configuration register
@@ -767,8 +787,9 @@ pub mod pro_tg_lact_level_int_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_tg1_t0_level_int_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_tg1_t0_level_int_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_tg1_t0_level_int_map`] module*/
-pub type PRO_TG1_T0_LEVEL_INT_MAP =
-    crate::Reg<pro_tg1_t0_level_int_map::PRO_TG1_T0_LEVEL_INT_MAP_SPEC>;
+pub type PRO_TG1_T0_LEVEL_INT_MAP = crate::Reg<
+    pro_tg1_t0_level_int_map::PRO_TG1_T0_LEVEL_INT_MAP_SPEC,
+>;
 ///TG1_T0_LEVEL_INT interrupt configuration register
 pub mod pro_tg1_t0_level_int_map;
 /**PRO_TG1_T1_LEVEL_INT_MAP (rw) register accessor: TG1_T1_LEVEL_INT interrupt configuration register
@@ -776,8 +797,9 @@ pub mod pro_tg1_t0_level_int_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_tg1_t1_level_int_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_tg1_t1_level_int_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_tg1_t1_level_int_map`] module*/
-pub type PRO_TG1_T1_LEVEL_INT_MAP =
-    crate::Reg<pro_tg1_t1_level_int_map::PRO_TG1_T1_LEVEL_INT_MAP_SPEC>;
+pub type PRO_TG1_T1_LEVEL_INT_MAP = crate::Reg<
+    pro_tg1_t1_level_int_map::PRO_TG1_T1_LEVEL_INT_MAP_SPEC,
+>;
 ///TG1_T1_LEVEL_INT interrupt configuration register
 pub mod pro_tg1_t1_level_int_map;
 /**PRO_TG1_WDT_LEVEL_INT_MAP (rw) register accessor: TG1_WDT_LEVEL_INT interrupt configuration register
@@ -785,8 +807,9 @@ pub mod pro_tg1_t1_level_int_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_tg1_wdt_level_int_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_tg1_wdt_level_int_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_tg1_wdt_level_int_map`] module*/
-pub type PRO_TG1_WDT_LEVEL_INT_MAP =
-    crate::Reg<pro_tg1_wdt_level_int_map::PRO_TG1_WDT_LEVEL_INT_MAP_SPEC>;
+pub type PRO_TG1_WDT_LEVEL_INT_MAP = crate::Reg<
+    pro_tg1_wdt_level_int_map::PRO_TG1_WDT_LEVEL_INT_MAP_SPEC,
+>;
 ///TG1_WDT_LEVEL_INT interrupt configuration register
 pub mod pro_tg1_wdt_level_int_map;
 /**PRO_TG1_LACT_LEVEL_INT_MAP (rw) register accessor: TG1_LACT_LEVEL_INT interrupt configuration register
@@ -794,8 +817,9 @@ pub mod pro_tg1_wdt_level_int_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_tg1_lact_level_int_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_tg1_lact_level_int_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_tg1_lact_level_int_map`] module*/
-pub type PRO_TG1_LACT_LEVEL_INT_MAP =
-    crate::Reg<pro_tg1_lact_level_int_map::PRO_TG1_LACT_LEVEL_INT_MAP_SPEC>;
+pub type PRO_TG1_LACT_LEVEL_INT_MAP = crate::Reg<
+    pro_tg1_lact_level_int_map::PRO_TG1_LACT_LEVEL_INT_MAP_SPEC,
+>;
 ///TG1_LACT_LEVEL_INT interrupt configuration register
 pub mod pro_tg1_lact_level_int_map;
 /**PRO_GPIO_INTERRUPT_PRO_MAP (rw) register accessor: GPIO_INTERRUPT_PRO interrupt configuration register
@@ -803,8 +827,9 @@ pub mod pro_tg1_lact_level_int_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_gpio_interrupt_pro_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_gpio_interrupt_pro_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_gpio_interrupt_pro_map`] module*/
-pub type PRO_GPIO_INTERRUPT_PRO_MAP =
-    crate::Reg<pro_gpio_interrupt_pro_map::PRO_GPIO_INTERRUPT_PRO_MAP_SPEC>;
+pub type PRO_GPIO_INTERRUPT_PRO_MAP = crate::Reg<
+    pro_gpio_interrupt_pro_map::PRO_GPIO_INTERRUPT_PRO_MAP_SPEC,
+>;
 ///GPIO_INTERRUPT_PRO interrupt configuration register
 pub mod pro_gpio_interrupt_pro_map;
 /**PRO_GPIO_INTERRUPT_PRO_NMI_MAP (rw) register accessor: GPIO_INTERRUPT_PRO_NMI interrupt configuration register
@@ -812,8 +837,9 @@ pub mod pro_gpio_interrupt_pro_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_gpio_interrupt_pro_nmi_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_gpio_interrupt_pro_nmi_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_gpio_interrupt_pro_nmi_map`] module*/
-pub type PRO_GPIO_INTERRUPT_PRO_NMI_MAP =
-    crate::Reg<pro_gpio_interrupt_pro_nmi_map::PRO_GPIO_INTERRUPT_PRO_NMI_MAP_SPEC>;
+pub type PRO_GPIO_INTERRUPT_PRO_NMI_MAP = crate::Reg<
+    pro_gpio_interrupt_pro_nmi_map::PRO_GPIO_INTERRUPT_PRO_NMI_MAP_SPEC,
+>;
 ///GPIO_INTERRUPT_PRO_NMI interrupt configuration register
 pub mod pro_gpio_interrupt_pro_nmi_map;
 /**PRO_GPIO_INTERRUPT_APP_MAP (rw) register accessor: GPIO_INTERRUPT_APP interrupt configuration register
@@ -821,8 +847,9 @@ pub mod pro_gpio_interrupt_pro_nmi_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_gpio_interrupt_app_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_gpio_interrupt_app_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_gpio_interrupt_app_map`] module*/
-pub type PRO_GPIO_INTERRUPT_APP_MAP =
-    crate::Reg<pro_gpio_interrupt_app_map::PRO_GPIO_INTERRUPT_APP_MAP_SPEC>;
+pub type PRO_GPIO_INTERRUPT_APP_MAP = crate::Reg<
+    pro_gpio_interrupt_app_map::PRO_GPIO_INTERRUPT_APP_MAP_SPEC,
+>;
 ///GPIO_INTERRUPT_APP interrupt configuration register
 pub mod pro_gpio_interrupt_app_map;
 /**PRO_GPIO_INTERRUPT_APP_NMI_MAP (rw) register accessor: GPIO_INTERRUPT_APP_NMI interrupt configuration register
@@ -830,8 +857,9 @@ pub mod pro_gpio_interrupt_app_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_gpio_interrupt_app_nmi_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_gpio_interrupt_app_nmi_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_gpio_interrupt_app_nmi_map`] module*/
-pub type PRO_GPIO_INTERRUPT_APP_NMI_MAP =
-    crate::Reg<pro_gpio_interrupt_app_nmi_map::PRO_GPIO_INTERRUPT_APP_NMI_MAP_SPEC>;
+pub type PRO_GPIO_INTERRUPT_APP_NMI_MAP = crate::Reg<
+    pro_gpio_interrupt_app_nmi_map::PRO_GPIO_INTERRUPT_APP_NMI_MAP_SPEC,
+>;
 ///GPIO_INTERRUPT_APP_NMI interrupt configuration register
 pub mod pro_gpio_interrupt_app_nmi_map;
 /**PRO_DEDICATED_GPIO_IN_INTR_MAP (rw) register accessor: DEDICATED_GPIO_IN_INTR interrupt configuration register
@@ -839,8 +867,9 @@ pub mod pro_gpio_interrupt_app_nmi_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_dedicated_gpio_in_intr_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_dedicated_gpio_in_intr_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_dedicated_gpio_in_intr_map`] module*/
-pub type PRO_DEDICATED_GPIO_IN_INTR_MAP =
-    crate::Reg<pro_dedicated_gpio_in_intr_map::PRO_DEDICATED_GPIO_IN_INTR_MAP_SPEC>;
+pub type PRO_DEDICATED_GPIO_IN_INTR_MAP = crate::Reg<
+    pro_dedicated_gpio_in_intr_map::PRO_DEDICATED_GPIO_IN_INTR_MAP_SPEC,
+>;
 ///DEDICATED_GPIO_IN_INTR interrupt configuration register
 pub mod pro_dedicated_gpio_in_intr_map;
 /**PRO_CPU_INTR_FROM_CPU_0_MAP (rw) register accessor: CPU_INTR_FROM_CPU_0 interrupt configuration register
@@ -848,8 +877,9 @@ pub mod pro_dedicated_gpio_in_intr_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_cpu_intr_from_cpu_0_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_cpu_intr_from_cpu_0_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_cpu_intr_from_cpu_0_map`] module*/
-pub type PRO_CPU_INTR_FROM_CPU_0_MAP =
-    crate::Reg<pro_cpu_intr_from_cpu_0_map::PRO_CPU_INTR_FROM_CPU_0_MAP_SPEC>;
+pub type PRO_CPU_INTR_FROM_CPU_0_MAP = crate::Reg<
+    pro_cpu_intr_from_cpu_0_map::PRO_CPU_INTR_FROM_CPU_0_MAP_SPEC,
+>;
 ///CPU_INTR_FROM_CPU_0 interrupt configuration register
 pub mod pro_cpu_intr_from_cpu_0_map;
 /**PRO_CPU_INTR_FROM_CPU_1_MAP (rw) register accessor: CPU_INTR_FROM_CPU_1 interrupt configuration register
@@ -857,8 +887,9 @@ pub mod pro_cpu_intr_from_cpu_0_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_cpu_intr_from_cpu_1_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_cpu_intr_from_cpu_1_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_cpu_intr_from_cpu_1_map`] module*/
-pub type PRO_CPU_INTR_FROM_CPU_1_MAP =
-    crate::Reg<pro_cpu_intr_from_cpu_1_map::PRO_CPU_INTR_FROM_CPU_1_MAP_SPEC>;
+pub type PRO_CPU_INTR_FROM_CPU_1_MAP = crate::Reg<
+    pro_cpu_intr_from_cpu_1_map::PRO_CPU_INTR_FROM_CPU_1_MAP_SPEC,
+>;
 ///CPU_INTR_FROM_CPU_1 interrupt configuration register
 pub mod pro_cpu_intr_from_cpu_1_map;
 /**PRO_CPU_INTR_FROM_CPU_2_MAP (rw) register accessor: CPU_INTR_FROM_CPU_2 interrupt configuration register
@@ -866,8 +897,9 @@ pub mod pro_cpu_intr_from_cpu_1_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_cpu_intr_from_cpu_2_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_cpu_intr_from_cpu_2_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_cpu_intr_from_cpu_2_map`] module*/
-pub type PRO_CPU_INTR_FROM_CPU_2_MAP =
-    crate::Reg<pro_cpu_intr_from_cpu_2_map::PRO_CPU_INTR_FROM_CPU_2_MAP_SPEC>;
+pub type PRO_CPU_INTR_FROM_CPU_2_MAP = crate::Reg<
+    pro_cpu_intr_from_cpu_2_map::PRO_CPU_INTR_FROM_CPU_2_MAP_SPEC,
+>;
 ///CPU_INTR_FROM_CPU_2 interrupt configuration register
 pub mod pro_cpu_intr_from_cpu_2_map;
 /**PRO_CPU_INTR_FROM_CPU_3_MAP (rw) register accessor: CPU_INTR_FROM_CPU_3 interrupt configuration register
@@ -875,8 +907,9 @@ pub mod pro_cpu_intr_from_cpu_2_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_cpu_intr_from_cpu_3_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_cpu_intr_from_cpu_3_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_cpu_intr_from_cpu_3_map`] module*/
-pub type PRO_CPU_INTR_FROM_CPU_3_MAP =
-    crate::Reg<pro_cpu_intr_from_cpu_3_map::PRO_CPU_INTR_FROM_CPU_3_MAP_SPEC>;
+pub type PRO_CPU_INTR_FROM_CPU_3_MAP = crate::Reg<
+    pro_cpu_intr_from_cpu_3_map::PRO_CPU_INTR_FROM_CPU_3_MAP_SPEC,
+>;
 ///CPU_INTR_FROM_CPU_3 interrupt configuration register
 pub mod pro_cpu_intr_from_cpu_3_map;
 /**PRO_SPI_INTR_1_MAP (rw) register accessor: SPI_INTR_1 interrupt configuration register
@@ -948,8 +981,9 @@ pub mod pro_uart2_intr_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_sdio_host_interrupt_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_sdio_host_interrupt_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_sdio_host_interrupt_map`] module*/
-pub type PRO_SDIO_HOST_INTERRUPT_MAP =
-    crate::Reg<pro_sdio_host_interrupt_map::PRO_SDIO_HOST_INTERRUPT_MAP_SPEC>;
+pub type PRO_SDIO_HOST_INTERRUPT_MAP = crate::Reg<
+    pro_sdio_host_interrupt_map::PRO_SDIO_HOST_INTERRUPT_MAP_SPEC,
+>;
 ///SDIO_HOST_INTERRUPT configuration register
 pub mod pro_sdio_host_interrupt_map;
 /**PRO_PWM0_INTR_MAP (rw) register accessor: PWM0_INTR interrupt configuration register
@@ -1021,7 +1055,9 @@ pub mod pro_usb_intr_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_rtc_core_intr_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_rtc_core_intr_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_rtc_core_intr_map`] module*/
-pub type PRO_RTC_CORE_INTR_MAP = crate::Reg<pro_rtc_core_intr_map::PRO_RTC_CORE_INTR_MAP_SPEC>;
+pub type PRO_RTC_CORE_INTR_MAP = crate::Reg<
+    pro_rtc_core_intr_map::PRO_RTC_CORE_INTR_MAP_SPEC,
+>;
 ///RTC_CORE_INTR interrupt configuration register
 pub mod pro_rtc_core_intr_map;
 /**PRO_RMT_INTR_MAP (rw) register accessor: RMT_INTR interrupt configuration register
@@ -1045,7 +1081,9 @@ pub mod pro_pcnt_intr_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_i2c_ext0_intr_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_i2c_ext0_intr_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_i2c_ext0_intr_map`] module*/
-pub type PRO_I2C_EXT0_INTR_MAP = crate::Reg<pro_i2c_ext0_intr_map::PRO_I2C_EXT0_INTR_MAP_SPEC>;
+pub type PRO_I2C_EXT0_INTR_MAP = crate::Reg<
+    pro_i2c_ext0_intr_map::PRO_I2C_EXT0_INTR_MAP_SPEC,
+>;
 ///I2C_EXT0_INTR interrupt configuration register
 pub mod pro_i2c_ext0_intr_map;
 /**PRO_I2C_EXT1_INTR_MAP (rw) register accessor: I2C_EXT1_INTR interrupt configuration register
@@ -1053,7 +1091,9 @@ pub mod pro_i2c_ext0_intr_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_i2c_ext1_intr_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_i2c_ext1_intr_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_i2c_ext1_intr_map`] module*/
-pub type PRO_I2C_EXT1_INTR_MAP = crate::Reg<pro_i2c_ext1_intr_map::PRO_I2C_EXT1_INTR_MAP_SPEC>;
+pub type PRO_I2C_EXT1_INTR_MAP = crate::Reg<
+    pro_i2c_ext1_intr_map::PRO_I2C_EXT1_INTR_MAP_SPEC,
+>;
 ///I2C_EXT1_INTR interrupt configuration register
 pub mod pro_i2c_ext1_intr_map;
 /**PRO_RSA_INTR_MAP (rw) register accessor: RSA_INTR interrupt configuration register
@@ -1085,7 +1125,9 @@ pub mod pro_aes_intr_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_spi2_dma_int_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_spi2_dma_int_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_spi2_dma_int_map`] module*/
-pub type PRO_SPI2_DMA_INT_MAP = crate::Reg<pro_spi2_dma_int_map::PRO_SPI2_DMA_INT_MAP_SPEC>;
+pub type PRO_SPI2_DMA_INT_MAP = crate::Reg<
+    pro_spi2_dma_int_map::PRO_SPI2_DMA_INT_MAP_SPEC,
+>;
 ///SPI2_DMA_INT interrupt configuration register
 pub mod pro_spi2_dma_int_map;
 /**PRO_SPI3_DMA_INT_MAP (rw) register accessor: SPI3_DMA_INT interrupt configuration register
@@ -1093,7 +1135,9 @@ pub mod pro_spi2_dma_int_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_spi3_dma_int_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_spi3_dma_int_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_spi3_dma_int_map`] module*/
-pub type PRO_SPI3_DMA_INT_MAP = crate::Reg<pro_spi3_dma_int_map::PRO_SPI3_DMA_INT_MAP_SPEC>;
+pub type PRO_SPI3_DMA_INT_MAP = crate::Reg<
+    pro_spi3_dma_int_map::PRO_SPI3_DMA_INT_MAP_SPEC,
+>;
 ///SPI3_DMA_INT interrupt configuration register
 pub mod pro_spi3_dma_int_map;
 /**PRO_WDG_INT_MAP (rw) register accessor: WDG_INT interrupt configuration register
@@ -1125,7 +1169,9 @@ pub mod pro_timer_int2_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_tg_t0_edge_int_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_tg_t0_edge_int_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_tg_t0_edge_int_map`] module*/
-pub type PRO_TG_T0_EDGE_INT_MAP = crate::Reg<pro_tg_t0_edge_int_map::PRO_TG_T0_EDGE_INT_MAP_SPEC>;
+pub type PRO_TG_T0_EDGE_INT_MAP = crate::Reg<
+    pro_tg_t0_edge_int_map::PRO_TG_T0_EDGE_INT_MAP_SPEC,
+>;
 ///TG_T0_EDGE_INT interrupt configuration register
 pub mod pro_tg_t0_edge_int_map;
 /**PRO_TG_T1_EDGE_INT_MAP (rw) register accessor: TG_T1_EDGE_INT interrupt configuration register
@@ -1133,7 +1179,9 @@ pub mod pro_tg_t0_edge_int_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_tg_t1_edge_int_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_tg_t1_edge_int_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_tg_t1_edge_int_map`] module*/
-pub type PRO_TG_T1_EDGE_INT_MAP = crate::Reg<pro_tg_t1_edge_int_map::PRO_TG_T1_EDGE_INT_MAP_SPEC>;
+pub type PRO_TG_T1_EDGE_INT_MAP = crate::Reg<
+    pro_tg_t1_edge_int_map::PRO_TG_T1_EDGE_INT_MAP_SPEC,
+>;
 ///TG_T1_EDGE_INT interrupt configuration register
 pub mod pro_tg_t1_edge_int_map;
 /**PRO_TG_WDT_EDGE_INT_MAP (rw) register accessor: TG_WDT_EDGE_INT interrupt configuration register
@@ -1141,8 +1189,9 @@ pub mod pro_tg_t1_edge_int_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_tg_wdt_edge_int_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_tg_wdt_edge_int_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_tg_wdt_edge_int_map`] module*/
-pub type PRO_TG_WDT_EDGE_INT_MAP =
-    crate::Reg<pro_tg_wdt_edge_int_map::PRO_TG_WDT_EDGE_INT_MAP_SPEC>;
+pub type PRO_TG_WDT_EDGE_INT_MAP = crate::Reg<
+    pro_tg_wdt_edge_int_map::PRO_TG_WDT_EDGE_INT_MAP_SPEC,
+>;
 ///TG_WDT_EDGE_INT interrupt configuration register
 pub mod pro_tg_wdt_edge_int_map;
 /**PRO_TG_LACT_EDGE_INT_MAP (rw) register accessor: TG_LACT_EDGE_INT interrupt configuration register
@@ -1150,8 +1199,9 @@ pub mod pro_tg_wdt_edge_int_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_tg_lact_edge_int_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_tg_lact_edge_int_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_tg_lact_edge_int_map`] module*/
-pub type PRO_TG_LACT_EDGE_INT_MAP =
-    crate::Reg<pro_tg_lact_edge_int_map::PRO_TG_LACT_EDGE_INT_MAP_SPEC>;
+pub type PRO_TG_LACT_EDGE_INT_MAP = crate::Reg<
+    pro_tg_lact_edge_int_map::PRO_TG_LACT_EDGE_INT_MAP_SPEC,
+>;
 ///TG_LACT_EDGE_INT interrupt configuration register
 pub mod pro_tg_lact_edge_int_map;
 /**PRO_TG1_T0_EDGE_INT_MAP (rw) register accessor: TG1_T0_EDGE_INT interrupt configuration register
@@ -1159,8 +1209,9 @@ pub mod pro_tg_lact_edge_int_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_tg1_t0_edge_int_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_tg1_t0_edge_int_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_tg1_t0_edge_int_map`] module*/
-pub type PRO_TG1_T0_EDGE_INT_MAP =
-    crate::Reg<pro_tg1_t0_edge_int_map::PRO_TG1_T0_EDGE_INT_MAP_SPEC>;
+pub type PRO_TG1_T0_EDGE_INT_MAP = crate::Reg<
+    pro_tg1_t0_edge_int_map::PRO_TG1_T0_EDGE_INT_MAP_SPEC,
+>;
 ///TG1_T0_EDGE_INT interrupt configuration register
 pub mod pro_tg1_t0_edge_int_map;
 /**PRO_TG1_T1_EDGE_INT_MAP (rw) register accessor: TG1_T1_EDGE_INT interrupt configuration register
@@ -1168,8 +1219,9 @@ pub mod pro_tg1_t0_edge_int_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_tg1_t1_edge_int_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_tg1_t1_edge_int_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_tg1_t1_edge_int_map`] module*/
-pub type PRO_TG1_T1_EDGE_INT_MAP =
-    crate::Reg<pro_tg1_t1_edge_int_map::PRO_TG1_T1_EDGE_INT_MAP_SPEC>;
+pub type PRO_TG1_T1_EDGE_INT_MAP = crate::Reg<
+    pro_tg1_t1_edge_int_map::PRO_TG1_T1_EDGE_INT_MAP_SPEC,
+>;
 ///TG1_T1_EDGE_INT interrupt configuration register
 pub mod pro_tg1_t1_edge_int_map;
 /**PRO_TG1_WDT_EDGE_INT_MAP (rw) register accessor: TG1_WDT_EDGE_INT interrupt configuration register
@@ -1177,8 +1229,9 @@ pub mod pro_tg1_t1_edge_int_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_tg1_wdt_edge_int_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_tg1_wdt_edge_int_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_tg1_wdt_edge_int_map`] module*/
-pub type PRO_TG1_WDT_EDGE_INT_MAP =
-    crate::Reg<pro_tg1_wdt_edge_int_map::PRO_TG1_WDT_EDGE_INT_MAP_SPEC>;
+pub type PRO_TG1_WDT_EDGE_INT_MAP = crate::Reg<
+    pro_tg1_wdt_edge_int_map::PRO_TG1_WDT_EDGE_INT_MAP_SPEC,
+>;
 ///TG1_WDT_EDGE_INT interrupt configuration register
 pub mod pro_tg1_wdt_edge_int_map;
 /**PRO_TG1_LACT_EDGE_INT_MAP (rw) register accessor: TG1_LACT_EDGE_INT interrupt configuration register
@@ -1186,8 +1239,9 @@ pub mod pro_tg1_wdt_edge_int_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_tg1_lact_edge_int_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_tg1_lact_edge_int_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_tg1_lact_edge_int_map`] module*/
-pub type PRO_TG1_LACT_EDGE_INT_MAP =
-    crate::Reg<pro_tg1_lact_edge_int_map::PRO_TG1_LACT_EDGE_INT_MAP_SPEC>;
+pub type PRO_TG1_LACT_EDGE_INT_MAP = crate::Reg<
+    pro_tg1_lact_edge_int_map::PRO_TG1_LACT_EDGE_INT_MAP_SPEC,
+>;
 ///TG1_LACT_EDGE_INT interrupt configuration register
 pub mod pro_tg1_lact_edge_int_map;
 /**PRO_CACHE_IA_INT_MAP (rw) register accessor: CACHE_IA_INT interrupt configuration register
@@ -1195,7 +1249,9 @@ pub mod pro_tg1_lact_edge_int_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_cache_ia_int_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_cache_ia_int_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_cache_ia_int_map`] module*/
-pub type PRO_CACHE_IA_INT_MAP = crate::Reg<pro_cache_ia_int_map::PRO_CACHE_IA_INT_MAP_SPEC>;
+pub type PRO_CACHE_IA_INT_MAP = crate::Reg<
+    pro_cache_ia_int_map::PRO_CACHE_IA_INT_MAP_SPEC,
+>;
 ///CACHE_IA_INT interrupt configuration register
 pub mod pro_cache_ia_int_map;
 /**PRO_SYSTIMER_TARGET0_INT_MAP (rw) register accessor: SYSTIMER_TARGET0_INT interrupt configuration register
@@ -1203,8 +1259,9 @@ pub mod pro_cache_ia_int_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_systimer_target0_int_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_systimer_target0_int_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_systimer_target0_int_map`] module*/
-pub type PRO_SYSTIMER_TARGET0_INT_MAP =
-    crate::Reg<pro_systimer_target0_int_map::PRO_SYSTIMER_TARGET0_INT_MAP_SPEC>;
+pub type PRO_SYSTIMER_TARGET0_INT_MAP = crate::Reg<
+    pro_systimer_target0_int_map::PRO_SYSTIMER_TARGET0_INT_MAP_SPEC,
+>;
 ///SYSTIMER_TARGET0_INT interrupt configuration register
 pub mod pro_systimer_target0_int_map;
 /**PRO_SYSTIMER_TARGET1_INT_MAP (rw) register accessor: SYSTIMER_TARGET1_INT interrupt configuration register
@@ -1212,8 +1269,9 @@ pub mod pro_systimer_target0_int_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_systimer_target1_int_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_systimer_target1_int_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_systimer_target1_int_map`] module*/
-pub type PRO_SYSTIMER_TARGET1_INT_MAP =
-    crate::Reg<pro_systimer_target1_int_map::PRO_SYSTIMER_TARGET1_INT_MAP_SPEC>;
+pub type PRO_SYSTIMER_TARGET1_INT_MAP = crate::Reg<
+    pro_systimer_target1_int_map::PRO_SYSTIMER_TARGET1_INT_MAP_SPEC,
+>;
 ///SYSTIMER_TARGET1_INT interrupt configuration register
 pub mod pro_systimer_target1_int_map;
 /**PRO_SYSTIMER_TARGET2_INT_MAP (rw) register accessor: SYSTIMER_TARGET2_INT interrupt configuration register
@@ -1221,8 +1279,9 @@ pub mod pro_systimer_target1_int_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_systimer_target2_int_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_systimer_target2_int_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_systimer_target2_int_map`] module*/
-pub type PRO_SYSTIMER_TARGET2_INT_MAP =
-    crate::Reg<pro_systimer_target2_int_map::PRO_SYSTIMER_TARGET2_INT_MAP_SPEC>;
+pub type PRO_SYSTIMER_TARGET2_INT_MAP = crate::Reg<
+    pro_systimer_target2_int_map::PRO_SYSTIMER_TARGET2_INT_MAP_SPEC,
+>;
 ///SYSTIMER_TARGET2_INT interrupt configuration register
 pub mod pro_systimer_target2_int_map;
 /**PRO_ASSIST_DEBUG_INTR_MAP (rw) register accessor: ASSIST_DEBUG_INTR interrupt configuration register
@@ -1230,8 +1289,9 @@ pub mod pro_systimer_target2_int_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_assist_debug_intr_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_assist_debug_intr_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_assist_debug_intr_map`] module*/
-pub type PRO_ASSIST_DEBUG_INTR_MAP =
-    crate::Reg<pro_assist_debug_intr_map::PRO_ASSIST_DEBUG_INTR_MAP_SPEC>;
+pub type PRO_ASSIST_DEBUG_INTR_MAP = crate::Reg<
+    pro_assist_debug_intr_map::PRO_ASSIST_DEBUG_INTR_MAP_SPEC,
+>;
 ///ASSIST_DEBUG_INTR interrupt configuration register
 pub mod pro_assist_debug_intr_map;
 /**PRO_PMS_PRO_IRAM0_ILG_INTR_MAP (rw) register accessor: PMS_PRO_IRAM0_ILG interrupt configuration register
@@ -1239,8 +1299,9 @@ pub mod pro_assist_debug_intr_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_pms_pro_iram0_ilg_intr_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_pms_pro_iram0_ilg_intr_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_pms_pro_iram0_ilg_intr_map`] module*/
-pub type PRO_PMS_PRO_IRAM0_ILG_INTR_MAP =
-    crate::Reg<pro_pms_pro_iram0_ilg_intr_map::PRO_PMS_PRO_IRAM0_ILG_INTR_MAP_SPEC>;
+pub type PRO_PMS_PRO_IRAM0_ILG_INTR_MAP = crate::Reg<
+    pro_pms_pro_iram0_ilg_intr_map::PRO_PMS_PRO_IRAM0_ILG_INTR_MAP_SPEC,
+>;
 ///PMS_PRO_IRAM0_ILG interrupt configuration register
 pub mod pro_pms_pro_iram0_ilg_intr_map;
 /**PRO_PMS_PRO_DRAM0_ILG_INTR_MAP (rw) register accessor: PMS_PRO_DRAM0_ILG interrupt configuration register
@@ -1248,8 +1309,9 @@ pub mod pro_pms_pro_iram0_ilg_intr_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_pms_pro_dram0_ilg_intr_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_pms_pro_dram0_ilg_intr_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_pms_pro_dram0_ilg_intr_map`] module*/
-pub type PRO_PMS_PRO_DRAM0_ILG_INTR_MAP =
-    crate::Reg<pro_pms_pro_dram0_ilg_intr_map::PRO_PMS_PRO_DRAM0_ILG_INTR_MAP_SPEC>;
+pub type PRO_PMS_PRO_DRAM0_ILG_INTR_MAP = crate::Reg<
+    pro_pms_pro_dram0_ilg_intr_map::PRO_PMS_PRO_DRAM0_ILG_INTR_MAP_SPEC,
+>;
 ///PMS_PRO_DRAM0_ILG interrupt configuration register
 pub mod pro_pms_pro_dram0_ilg_intr_map;
 /**PRO_PMS_PRO_DPORT_ILG_INTR_MAP (rw) register accessor: PMS_PRO_DPORT_ILG interrupt configuration register
@@ -1257,8 +1319,9 @@ pub mod pro_pms_pro_dram0_ilg_intr_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_pms_pro_dport_ilg_intr_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_pms_pro_dport_ilg_intr_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_pms_pro_dport_ilg_intr_map`] module*/
-pub type PRO_PMS_PRO_DPORT_ILG_INTR_MAP =
-    crate::Reg<pro_pms_pro_dport_ilg_intr_map::PRO_PMS_PRO_DPORT_ILG_INTR_MAP_SPEC>;
+pub type PRO_PMS_PRO_DPORT_ILG_INTR_MAP = crate::Reg<
+    pro_pms_pro_dport_ilg_intr_map::PRO_PMS_PRO_DPORT_ILG_INTR_MAP_SPEC,
+>;
 ///PMS_PRO_DPORT_ILG interrupt configuration register
 pub mod pro_pms_pro_dport_ilg_intr_map;
 /**PRO_PMS_PRO_AHB_ILG_INTR_MAP (rw) register accessor: PMS_PRO_AHB_ILG interrupt configuration register
@@ -1266,8 +1329,9 @@ pub mod pro_pms_pro_dport_ilg_intr_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_pms_pro_ahb_ilg_intr_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_pms_pro_ahb_ilg_intr_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_pms_pro_ahb_ilg_intr_map`] module*/
-pub type PRO_PMS_PRO_AHB_ILG_INTR_MAP =
-    crate::Reg<pro_pms_pro_ahb_ilg_intr_map::PRO_PMS_PRO_AHB_ILG_INTR_MAP_SPEC>;
+pub type PRO_PMS_PRO_AHB_ILG_INTR_MAP = crate::Reg<
+    pro_pms_pro_ahb_ilg_intr_map::PRO_PMS_PRO_AHB_ILG_INTR_MAP_SPEC,
+>;
 ///PMS_PRO_AHB_ILG interrupt configuration register
 pub mod pro_pms_pro_ahb_ilg_intr_map;
 /**PRO_PMS_PRO_CACHE_ILG_INTR_MAP (rw) register accessor: PMS_PRO_CACHE_ILG interrupt configuration register
@@ -1275,8 +1339,9 @@ pub mod pro_pms_pro_ahb_ilg_intr_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_pms_pro_cache_ilg_intr_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_pms_pro_cache_ilg_intr_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_pms_pro_cache_ilg_intr_map`] module*/
-pub type PRO_PMS_PRO_CACHE_ILG_INTR_MAP =
-    crate::Reg<pro_pms_pro_cache_ilg_intr_map::PRO_PMS_PRO_CACHE_ILG_INTR_MAP_SPEC>;
+pub type PRO_PMS_PRO_CACHE_ILG_INTR_MAP = crate::Reg<
+    pro_pms_pro_cache_ilg_intr_map::PRO_PMS_PRO_CACHE_ILG_INTR_MAP_SPEC,
+>;
 ///PMS_PRO_CACHE_ILG interrupt configuration register
 pub mod pro_pms_pro_cache_ilg_intr_map;
 /**PRO_PMS_DMA_APB_I_ILG_INTR_MAP (rw) register accessor: PMS_DMA_APB_I_ILG interrupt configuration register
@@ -1284,8 +1349,9 @@ pub mod pro_pms_pro_cache_ilg_intr_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_pms_dma_apb_i_ilg_intr_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_pms_dma_apb_i_ilg_intr_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_pms_dma_apb_i_ilg_intr_map`] module*/
-pub type PRO_PMS_DMA_APB_I_ILG_INTR_MAP =
-    crate::Reg<pro_pms_dma_apb_i_ilg_intr_map::PRO_PMS_DMA_APB_I_ILG_INTR_MAP_SPEC>;
+pub type PRO_PMS_DMA_APB_I_ILG_INTR_MAP = crate::Reg<
+    pro_pms_dma_apb_i_ilg_intr_map::PRO_PMS_DMA_APB_I_ILG_INTR_MAP_SPEC,
+>;
 ///PMS_DMA_APB_I_ILG interrupt configuration register
 pub mod pro_pms_dma_apb_i_ilg_intr_map;
 /**PRO_PMS_DMA_RX_I_ILG_INTR_MAP (rw) register accessor: PMS_DMA_RX_I_ILG interrupt configuration register
@@ -1293,8 +1359,9 @@ pub mod pro_pms_dma_apb_i_ilg_intr_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_pms_dma_rx_i_ilg_intr_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_pms_dma_rx_i_ilg_intr_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_pms_dma_rx_i_ilg_intr_map`] module*/
-pub type PRO_PMS_DMA_RX_I_ILG_INTR_MAP =
-    crate::Reg<pro_pms_dma_rx_i_ilg_intr_map::PRO_PMS_DMA_RX_I_ILG_INTR_MAP_SPEC>;
+pub type PRO_PMS_DMA_RX_I_ILG_INTR_MAP = crate::Reg<
+    pro_pms_dma_rx_i_ilg_intr_map::PRO_PMS_DMA_RX_I_ILG_INTR_MAP_SPEC,
+>;
 ///PMS_DMA_RX_I_ILG interrupt configuration register
 pub mod pro_pms_dma_rx_i_ilg_intr_map;
 /**PRO_PMS_DMA_TX_I_ILG_INTR_MAP (rw) register accessor: PMS_DMA_TX_I_ILG interrupt configuration register
@@ -1302,8 +1369,9 @@ pub mod pro_pms_dma_rx_i_ilg_intr_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_pms_dma_tx_i_ilg_intr_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_pms_dma_tx_i_ilg_intr_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_pms_dma_tx_i_ilg_intr_map`] module*/
-pub type PRO_PMS_DMA_TX_I_ILG_INTR_MAP =
-    crate::Reg<pro_pms_dma_tx_i_ilg_intr_map::PRO_PMS_DMA_TX_I_ILG_INTR_MAP_SPEC>;
+pub type PRO_PMS_DMA_TX_I_ILG_INTR_MAP = crate::Reg<
+    pro_pms_dma_tx_i_ilg_intr_map::PRO_PMS_DMA_TX_I_ILG_INTR_MAP_SPEC,
+>;
 ///PMS_DMA_TX_I_ILG interrupt configuration register
 pub mod pro_pms_dma_tx_i_ilg_intr_map;
 /**PRO_SPI_MEM_REJECT_INTR_MAP (rw) register accessor: SPI_MEM_REJECT_INTR interrupt configuration register
@@ -1311,8 +1379,9 @@ pub mod pro_pms_dma_tx_i_ilg_intr_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_spi_mem_reject_intr_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_spi_mem_reject_intr_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_spi_mem_reject_intr_map`] module*/
-pub type PRO_SPI_MEM_REJECT_INTR_MAP =
-    crate::Reg<pro_spi_mem_reject_intr_map::PRO_SPI_MEM_REJECT_INTR_MAP_SPEC>;
+pub type PRO_SPI_MEM_REJECT_INTR_MAP = crate::Reg<
+    pro_spi_mem_reject_intr_map::PRO_SPI_MEM_REJECT_INTR_MAP_SPEC,
+>;
 ///SPI_MEM_REJECT_INTR interrupt configuration register
 pub mod pro_spi_mem_reject_intr_map;
 /**PRO_DMA_COPY_INTR_MAP (rw) register accessor: DMA_COPY_INTR interrupt configuration register
@@ -1320,7 +1389,9 @@ pub mod pro_spi_mem_reject_intr_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_dma_copy_intr_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_dma_copy_intr_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_dma_copy_intr_map`] module*/
-pub type PRO_DMA_COPY_INTR_MAP = crate::Reg<pro_dma_copy_intr_map::PRO_DMA_COPY_INTR_MAP_SPEC>;
+pub type PRO_DMA_COPY_INTR_MAP = crate::Reg<
+    pro_dma_copy_intr_map::PRO_DMA_COPY_INTR_MAP_SPEC,
+>;
 ///DMA_COPY_INTR interrupt configuration register
 pub mod pro_dma_copy_intr_map;
 /**PRO_SPI4_DMA_INT_MAP (rw) register accessor: SPI4_DMA_INT interrupt configuration register
@@ -1328,7 +1399,9 @@ pub mod pro_dma_copy_intr_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_spi4_dma_int_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_spi4_dma_int_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_spi4_dma_int_map`] module*/
-pub type PRO_SPI4_DMA_INT_MAP = crate::Reg<pro_spi4_dma_int_map::PRO_SPI4_DMA_INT_MAP_SPEC>;
+pub type PRO_SPI4_DMA_INT_MAP = crate::Reg<
+    pro_spi4_dma_int_map::PRO_SPI4_DMA_INT_MAP_SPEC,
+>;
 ///SPI4_DMA_INT interrupt configuration register
 pub mod pro_spi4_dma_int_map;
 /**PRO_SPI_INTR_4_MAP (rw) register accessor: SPI_INTR_4 interrupt configuration register
@@ -1344,8 +1417,9 @@ pub mod pro_spi_intr_4_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_dcache_preload_int_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_dcache_preload_int_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_dcache_preload_int_map`] module*/
-pub type PRO_DCACHE_PRELOAD_INT_MAP =
-    crate::Reg<pro_dcache_preload_int_map::PRO_DCACHE_PRELOAD_INT_MAP_SPEC>;
+pub type PRO_DCACHE_PRELOAD_INT_MAP = crate::Reg<
+    pro_dcache_preload_int_map::PRO_DCACHE_PRELOAD_INT_MAP_SPEC,
+>;
 ///DCACHE_PRELOAD_INT interrupt configuration register
 pub mod pro_dcache_preload_int_map;
 /**PRO_ICACHE_PRELOAD_INT_MAP (rw) register accessor: ICACHE_PRELOAD_INT interrupt configuration register
@@ -1353,8 +1427,9 @@ pub mod pro_dcache_preload_int_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_icache_preload_int_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_icache_preload_int_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_icache_preload_int_map`] module*/
-pub type PRO_ICACHE_PRELOAD_INT_MAP =
-    crate::Reg<pro_icache_preload_int_map::PRO_ICACHE_PRELOAD_INT_MAP_SPEC>;
+pub type PRO_ICACHE_PRELOAD_INT_MAP = crate::Reg<
+    pro_icache_preload_int_map::PRO_ICACHE_PRELOAD_INT_MAP_SPEC,
+>;
 ///ICACHE_PRELOAD_INT interrupt configuration register
 pub mod pro_icache_preload_int_map;
 /**PRO_APB_ADC_INT_MAP (rw) register accessor: APB_ADC_INT interrupt configuration register
@@ -1370,7 +1445,9 @@ pub mod pro_apb_adc_int_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_crypto_dma_int_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_crypto_dma_int_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_crypto_dma_int_map`] module*/
-pub type PRO_CRYPTO_DMA_INT_MAP = crate::Reg<pro_crypto_dma_int_map::PRO_CRYPTO_DMA_INT_MAP_SPEC>;
+pub type PRO_CRYPTO_DMA_INT_MAP = crate::Reg<
+    pro_crypto_dma_int_map::PRO_CRYPTO_DMA_INT_MAP_SPEC,
+>;
 ///CRYPTO_DMA_INT interrupt configuration register
 pub mod pro_crypto_dma_int_map;
 /**PRO_CPU_PERI_ERROR_INT_MAP (rw) register accessor: CPU_PERI_ERROR_INT interrupt configuration register
@@ -1378,8 +1455,9 @@ pub mod pro_crypto_dma_int_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_cpu_peri_error_int_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_cpu_peri_error_int_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_cpu_peri_error_int_map`] module*/
-pub type PRO_CPU_PERI_ERROR_INT_MAP =
-    crate::Reg<pro_cpu_peri_error_int_map::PRO_CPU_PERI_ERROR_INT_MAP_SPEC>;
+pub type PRO_CPU_PERI_ERROR_INT_MAP = crate::Reg<
+    pro_cpu_peri_error_int_map::PRO_CPU_PERI_ERROR_INT_MAP_SPEC,
+>;
 ///CPU_PERI_ERROR_INT interrupt configuration register
 pub mod pro_cpu_peri_error_int_map;
 /**PRO_APB_PERI_ERROR_INT_MAP (rw) register accessor: APB_PERI_ERROR_INT interrupt configuration register
@@ -1387,8 +1465,9 @@ pub mod pro_cpu_peri_error_int_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_apb_peri_error_int_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_apb_peri_error_int_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_apb_peri_error_int_map`] module*/
-pub type PRO_APB_PERI_ERROR_INT_MAP =
-    crate::Reg<pro_apb_peri_error_int_map::PRO_APB_PERI_ERROR_INT_MAP_SPEC>;
+pub type PRO_APB_PERI_ERROR_INT_MAP = crate::Reg<
+    pro_apb_peri_error_int_map::PRO_APB_PERI_ERROR_INT_MAP_SPEC,
+>;
 ///APB_PERI_ERROR_INT interrupt configuration register
 pub mod pro_apb_peri_error_int_map;
 /**PRO_DCACHE_SYNC_INT_MAP (rw) register accessor: DCACHE_SYNC_INT interrupt configuration register
@@ -1396,8 +1475,9 @@ pub mod pro_apb_peri_error_int_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_dcache_sync_int_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_dcache_sync_int_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_dcache_sync_int_map`] module*/
-pub type PRO_DCACHE_SYNC_INT_MAP =
-    crate::Reg<pro_dcache_sync_int_map::PRO_DCACHE_SYNC_INT_MAP_SPEC>;
+pub type PRO_DCACHE_SYNC_INT_MAP = crate::Reg<
+    pro_dcache_sync_int_map::PRO_DCACHE_SYNC_INT_MAP_SPEC,
+>;
 ///DCACHE_SYNC_INT interrupt configuration register
 pub mod pro_dcache_sync_int_map;
 /**PRO_ICACHE_SYNC_INT_MAP (rw) register accessor: ICACHE_SYNC_INT interrupt configuration register
@@ -1405,8 +1485,9 @@ pub mod pro_dcache_sync_int_map;
 You can [`read`](crate::generic::Reg::read) this register and get [`pro_icache_sync_int_map::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pro_icache_sync_int_map::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@pro_icache_sync_int_map`] module*/
-pub type PRO_ICACHE_SYNC_INT_MAP =
-    crate::Reg<pro_icache_sync_int_map::PRO_ICACHE_SYNC_INT_MAP_SPEC>;
+pub type PRO_ICACHE_SYNC_INT_MAP = crate::Reg<
+    pro_icache_sync_int_map::PRO_ICACHE_SYNC_INT_MAP_SPEC,
+>;
 ///ICACHE_SYNC_INT interrupt configuration register
 pub mod pro_icache_sync_int_map;
 /**PRO_INTR_STATUS_0 (r) register accessor: Interrupt status register 0

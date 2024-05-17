@@ -25,7 +25,11 @@ pub type LP_AONCLKRST_RST_EN_USB_DEVICE_W<'a, REG> = crate::BitWriter<'a, REG>;
 ///Field `LP_AONCLKRST_USB_OTG20_PHYREF_CLK_SRC_SEL` reader - usb otg20 hs phy src sel. 2'd0: 12m, 2'd1: 25m, 2'd2: pad_hsphy_refclk.
 pub type LP_AONCLKRST_USB_OTG20_PHYREF_CLK_SRC_SEL_R = crate::FieldReader;
 ///Field `LP_AONCLKRST_USB_OTG20_PHYREF_CLK_SRC_SEL` writer - usb otg20 hs phy src sel. 2'd0: 12m, 2'd1: 25m, 2'd2: pad_hsphy_refclk.
-pub type LP_AONCLKRST_USB_OTG20_PHYREF_CLK_SRC_SEL_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
+pub type LP_AONCLKRST_USB_OTG20_PHYREF_CLK_SRC_SEL_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 ///Field `LP_AONCLKRST_USB_OTG20_PHYREF_CLK_EN` reader - usb otg20 hs phy refclk enable.
 pub type LP_AONCLKRST_USB_OTG20_PHYREF_CLK_EN_R = crate::BitReader;
 ///Field `LP_AONCLKRST_USB_OTG20_PHYREF_CLK_EN` writer - usb otg20 hs phy refclk enable.
@@ -37,12 +41,16 @@ pub type LP_AONCLKRST_USB_OTG20_ULPI_CLK_EN_W<'a, REG> = crate::BitWriter<'a, RE
 impl R {
     ///Bit 0 - usb otg20 adp reset en
     #[inline(always)]
-    pub fn lp_aonclkrst_rst_en_usb_otg20_adp(&self) -> LP_AONCLKRST_RST_EN_USB_OTG20_ADP_R {
+    pub fn lp_aonclkrst_rst_en_usb_otg20_adp(
+        &self,
+    ) -> LP_AONCLKRST_RST_EN_USB_OTG20_ADP_R {
         LP_AONCLKRST_RST_EN_USB_OTG20_ADP_R::new((self.bits & 1) != 0)
     }
     ///Bit 1 - usb otg20 phy reset en
     #[inline(always)]
-    pub fn lp_aonclkrst_rst_en_usb_otg20_phy(&self) -> LP_AONCLKRST_RST_EN_USB_OTG20_PHY_R {
+    pub fn lp_aonclkrst_rst_en_usb_otg20_phy(
+        &self,
+    ) -> LP_AONCLKRST_RST_EN_USB_OTG20_PHY_R {
         LP_AONCLKRST_RST_EN_USB_OTG20_PHY_R::new(((self.bits >> 1) & 1) != 0)
     }
     ///Bit 2 - usb otg20 reset en
@@ -69,12 +77,16 @@ impl R {
     }
     ///Bit 30 - usb otg20 hs phy refclk enable.
     #[inline(always)]
-    pub fn lp_aonclkrst_usb_otg20_phyref_clk_en(&self) -> LP_AONCLKRST_USB_OTG20_PHYREF_CLK_EN_R {
+    pub fn lp_aonclkrst_usb_otg20_phyref_clk_en(
+        &self,
+    ) -> LP_AONCLKRST_USB_OTG20_PHYREF_CLK_EN_R {
         LP_AONCLKRST_USB_OTG20_PHYREF_CLK_EN_R::new(((self.bits >> 30) & 1) != 0)
     }
     ///Bit 31 - usb otg20 ulpi clock enable.
     #[inline(always)]
-    pub fn lp_aonclkrst_usb_otg20_ulpi_clk_en(&self) -> LP_AONCLKRST_USB_OTG20_ULPI_CLK_EN_R {
+    pub fn lp_aonclkrst_usb_otg20_ulpi_clk_en(
+        &self,
+    ) -> LP_AONCLKRST_USB_OTG20_ULPI_CLK_EN_R {
         LP_AONCLKRST_USB_OTG20_ULPI_CLK_EN_R::new(((self.bits >> 31) & 1) != 0)
     }
 }
@@ -163,7 +175,9 @@ impl W {
     #[must_use]
     pub fn lp_aonclkrst_usb_otg20_phyref_clk_src_sel(
         &mut self,
-    ) -> LP_AONCLKRST_USB_OTG20_PHYREF_CLK_SRC_SEL_W<LP_AONCLKRST_HP_USB_CLKRST_CTRL1_SPEC> {
+    ) -> LP_AONCLKRST_USB_OTG20_PHYREF_CLK_SRC_SEL_W<
+        LP_AONCLKRST_HP_USB_CLKRST_CTRL1_SPEC,
+    > {
         LP_AONCLKRST_USB_OTG20_PHYREF_CLK_SRC_SEL_W::new(self, 28)
     }
     ///Bit 30 - usb otg20 hs phy refclk enable.

@@ -26,14 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SCL_I3C_MST_OD_TIME")
-            .field(
-                "reg_i3c_mst_od_low_period",
-                &self.reg_i3c_mst_od_low_period(),
-            )
-            .field(
-                "reg_i3c_mst_od_high_period",
-                &self.reg_i3c_mst_od_high_period(),
-            )
+            .field("reg_i3c_mst_od_low_period", &self.reg_i3c_mst_od_low_period())
+            .field("reg_i3c_mst_od_high_period", &self.reg_i3c_mst_od_high_period())
             .finish()
     }
 }

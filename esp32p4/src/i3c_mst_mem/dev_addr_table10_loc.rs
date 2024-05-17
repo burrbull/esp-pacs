@@ -44,18 +44,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("DEV_ADDR_TABLE10_LOC")
-            .field(
-                "reg_dat_dev10_static_addr",
-                &self.reg_dat_dev10_static_addr(),
-            )
-            .field(
-                "reg_dat_dev10_dynamic_addr",
-                &self.reg_dat_dev10_dynamic_addr(),
-            )
-            .field(
-                "reg_dat_dev10_nack_retry_cnt",
-                &self.reg_dat_dev10_nack_retry_cnt(),
-            )
+            .field("reg_dat_dev10_static_addr", &self.reg_dat_dev10_static_addr())
+            .field("reg_dat_dev10_dynamic_addr", &self.reg_dat_dev10_dynamic_addr())
+            .field("reg_dat_dev10_nack_retry_cnt", &self.reg_dat_dev10_nack_retry_cnt())
             .field("reg_dat_dev10_i2c", &self.reg_dat_dev10_i2c())
             .finish()
     }
@@ -88,7 +79,9 @@ impl W {
     ///Bit 31 - Legacy I2C device or not. This bit should be set to 1 if the device is a legacy I2C device.
     #[inline(always)]
     #[must_use]
-    pub fn reg_dat_dev10_i2c(&mut self) -> REG_DAT_DEV10_I2C_W<DEV_ADDR_TABLE10_LOC_SPEC> {
+    pub fn reg_dat_dev10_i2c(
+        &mut self,
+    ) -> REG_DAT_DEV10_I2C_W<DEV_ADDR_TABLE10_LOC_SPEC> {
         REG_DAT_DEV10_I2C_W::new(self, 31)
     }
 }

@@ -25,7 +25,9 @@ impl W {
     ///Bit 0
     #[inline(always)]
     #[must_use]
-    pub fn cpu_intr_from_cpu_1(&mut self) -> CPU_INTR_FROM_CPU_1_W<CPU_INTR_FROM_CPU_1_SPEC> {
+    pub fn cpu_intr_from_cpu_1(
+        &mut self,
+    ) -> CPU_INTR_FROM_CPU_1_W<CPU_INTR_FROM_CPU_1_SPEC> {
         CPU_INTR_FROM_CPU_1_W::new(self, 0)
     }
 }

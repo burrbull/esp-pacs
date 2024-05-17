@@ -73,7 +73,9 @@ impl W {
     ///Bits 30:31 - N/A
     #[inline(always)]
     #[must_use]
-    pub fn amp_short_ref_gnd_force(&mut self) -> AMP_SHORT_REF_GND_FORCE_W<MEAS1_CTRL1_SPEC> {
+    pub fn amp_short_ref_gnd_force(
+        &mut self,
+    ) -> AMP_SHORT_REF_GND_FORCE_W<MEAS1_CTRL1_SPEC> {
         AMP_SHORT_REF_GND_FORCE_W::new(self, 30)
     }
 }

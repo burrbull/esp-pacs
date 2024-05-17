@@ -684,7 +684,9 @@ pub mod ana_xpd_pad_group;
 You can [`read`](crate::generic::Reg::read) this register and get [`lp_tcm_ram_rdn_eco_cs::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`lp_tcm_ram_rdn_eco_cs::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@lp_tcm_ram_rdn_eco_cs`] module*/
-pub type LP_TCM_RAM_RDN_ECO_CS = crate::Reg<lp_tcm_ram_rdn_eco_cs::LP_TCM_RAM_RDN_ECO_CS_SPEC>;
+pub type LP_TCM_RAM_RDN_ECO_CS = crate::Reg<
+    lp_tcm_ram_rdn_eco_cs::LP_TCM_RAM_RDN_ECO_CS_SPEC,
+>;
 ///need_des
 pub mod lp_tcm_ram_rdn_eco_cs;
 /**LP_TCM_RAM_RDN_ECO_LOW (rw) register accessor: need_des
@@ -692,7 +694,9 @@ pub mod lp_tcm_ram_rdn_eco_cs;
 You can [`read`](crate::generic::Reg::read) this register and get [`lp_tcm_ram_rdn_eco_low::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`lp_tcm_ram_rdn_eco_low::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@lp_tcm_ram_rdn_eco_low`] module*/
-pub type LP_TCM_RAM_RDN_ECO_LOW = crate::Reg<lp_tcm_ram_rdn_eco_low::LP_TCM_RAM_RDN_ECO_LOW_SPEC>;
+pub type LP_TCM_RAM_RDN_ECO_LOW = crate::Reg<
+    lp_tcm_ram_rdn_eco_low::LP_TCM_RAM_RDN_ECO_LOW_SPEC,
+>;
 ///need_des
 pub mod lp_tcm_ram_rdn_eco_low;
 /**LP_TCM_RAM_RDN_ECO_HIGH (rw) register accessor: need_des
@@ -700,8 +704,9 @@ pub mod lp_tcm_ram_rdn_eco_low;
 You can [`read`](crate::generic::Reg::read) this register and get [`lp_tcm_ram_rdn_eco_high::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`lp_tcm_ram_rdn_eco_high::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@lp_tcm_ram_rdn_eco_high`] module*/
-pub type LP_TCM_RAM_RDN_ECO_HIGH =
-    crate::Reg<lp_tcm_ram_rdn_eco_high::LP_TCM_RAM_RDN_ECO_HIGH_SPEC>;
+pub type LP_TCM_RAM_RDN_ECO_HIGH = crate::Reg<
+    lp_tcm_ram_rdn_eco_high::LP_TCM_RAM_RDN_ECO_HIGH_SPEC,
+>;
 ///need_des
 pub mod lp_tcm_ram_rdn_eco_high;
 /**LP_TCM_ROM_RDN_ECO_CS (rw) register accessor: need_des
@@ -709,7 +714,9 @@ pub mod lp_tcm_ram_rdn_eco_high;
 You can [`read`](crate::generic::Reg::read) this register and get [`lp_tcm_rom_rdn_eco_cs::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`lp_tcm_rom_rdn_eco_cs::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@lp_tcm_rom_rdn_eco_cs`] module*/
-pub type LP_TCM_ROM_RDN_ECO_CS = crate::Reg<lp_tcm_rom_rdn_eco_cs::LP_TCM_ROM_RDN_ECO_CS_SPEC>;
+pub type LP_TCM_ROM_RDN_ECO_CS = crate::Reg<
+    lp_tcm_rom_rdn_eco_cs::LP_TCM_ROM_RDN_ECO_CS_SPEC,
+>;
 ///need_des
 pub mod lp_tcm_rom_rdn_eco_cs;
 /**LP_TCM_ROM_RDN_ECO_LOW (rw) register accessor: need_des
@@ -717,7 +724,9 @@ pub mod lp_tcm_rom_rdn_eco_cs;
 You can [`read`](crate::generic::Reg::read) this register and get [`lp_tcm_rom_rdn_eco_low::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`lp_tcm_rom_rdn_eco_low::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@lp_tcm_rom_rdn_eco_low`] module*/
-pub type LP_TCM_ROM_RDN_ECO_LOW = crate::Reg<lp_tcm_rom_rdn_eco_low::LP_TCM_ROM_RDN_ECO_LOW_SPEC>;
+pub type LP_TCM_ROM_RDN_ECO_LOW = crate::Reg<
+    lp_tcm_rom_rdn_eco_low::LP_TCM_ROM_RDN_ECO_LOW_SPEC,
+>;
 ///need_des
 pub mod lp_tcm_rom_rdn_eco_low;
 /**LP_TCM_ROM_RDN_ECO_HIGH (rw) register accessor: need_des
@@ -725,8 +734,9 @@ pub mod lp_tcm_rom_rdn_eco_low;
 You can [`read`](crate::generic::Reg::read) this register and get [`lp_tcm_rom_rdn_eco_high::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`lp_tcm_rom_rdn_eco_high::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@lp_tcm_rom_rdn_eco_high`] module*/
-pub type LP_TCM_ROM_RDN_ECO_HIGH =
-    crate::Reg<lp_tcm_rom_rdn_eco_high::LP_TCM_ROM_RDN_ECO_HIGH_SPEC>;
+pub type LP_TCM_ROM_RDN_ECO_HIGH = crate::Reg<
+    lp_tcm_rom_rdn_eco_high::LP_TCM_ROM_RDN_ECO_HIGH_SPEC,
+>;
 ///need_des
 pub mod lp_tcm_rom_rdn_eco_high;
 /**HP_ROOT_CLK_CTRL (rw) register accessor: need_des
@@ -918,7 +928,9 @@ pub mod idbus_addrhole_info;
 You can [`read`](crate::generic::Reg::read) this register and get [`hp_por_rst_bypass_ctrl::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`hp_por_rst_bypass_ctrl::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@hp_por_rst_bypass_ctrl`] module*/
-pub type HP_POR_RST_BYPASS_CTRL = crate::Reg<hp_por_rst_bypass_ctrl::HP_POR_RST_BYPASS_CTRL_SPEC>;
+pub type HP_POR_RST_BYPASS_CTRL = crate::Reg<
+    hp_por_rst_bypass_ctrl::HP_POR_RST_BYPASS_CTRL_SPEC,
+>;
 ///need_des
 pub mod hp_por_rst_bypass_ctrl;
 /**RNG_DATA (r) register accessor: rng data register
@@ -942,7 +954,9 @@ pub mod lp_core_ahb_timeout;
 You can [`read`](crate::generic::Reg::read) this register and get [`lp_core_ibus_timeout::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`lp_core_ibus_timeout::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@lp_core_ibus_timeout`] module*/
-pub type LP_CORE_IBUS_TIMEOUT = crate::Reg<lp_core_ibus_timeout::LP_CORE_IBUS_TIMEOUT_SPEC>;
+pub type LP_CORE_IBUS_TIMEOUT = crate::Reg<
+    lp_core_ibus_timeout::LP_CORE_IBUS_TIMEOUT_SPEC,
+>;
 ///need_des
 pub mod lp_core_ibus_timeout;
 /**LP_CORE_DBUS_TIMEOUT (rw) register accessor: need_des
@@ -950,7 +964,9 @@ pub mod lp_core_ibus_timeout;
 You can [`read`](crate::generic::Reg::read) this register and get [`lp_core_dbus_timeout::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`lp_core_dbus_timeout::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@lp_core_dbus_timeout`] module*/
-pub type LP_CORE_DBUS_TIMEOUT = crate::Reg<lp_core_dbus_timeout::LP_CORE_DBUS_TIMEOUT_SPEC>;
+pub type LP_CORE_DBUS_TIMEOUT = crate::Reg<
+    lp_core_dbus_timeout::LP_CORE_DBUS_TIMEOUT_SPEC,
+>;
 ///need_des
 pub mod lp_core_dbus_timeout;
 /**LP_CORE_ERR_RESP_DIS (rw) register accessor: need_des
@@ -958,7 +974,9 @@ pub mod lp_core_dbus_timeout;
 You can [`read`](crate::generic::Reg::read) this register and get [`lp_core_err_resp_dis::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`lp_core_err_resp_dis::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@lp_core_err_resp_dis`] module*/
-pub type LP_CORE_ERR_RESP_DIS = crate::Reg<lp_core_err_resp_dis::LP_CORE_ERR_RESP_DIS_SPEC>;
+pub type LP_CORE_ERR_RESP_DIS = crate::Reg<
+    lp_core_err_resp_dis::LP_CORE_ERR_RESP_DIS_SPEC,
+>;
 ///need_des
 pub mod lp_core_err_resp_dis;
 /**RNG_CFG (rw) register accessor: rng cfg register

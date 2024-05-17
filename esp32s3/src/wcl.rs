@@ -629,7 +629,9 @@ You can [`read`](crate::generic::Reg::read) this register and get [`core_0_entry
 
 For information about available fields see [`mod@core_0_entry_10_addr`] module*/
 #[doc(alias = "Core_0_ENTRY_10_ADDR")]
-pub type CORE_0_ENTRY_10_ADDR = crate::Reg<core_0_entry_10_addr::CORE_0_ENTRY_10_ADDR_SPEC>;
+pub type CORE_0_ENTRY_10_ADDR = crate::Reg<
+    core_0_entry_10_addr::CORE_0_ENTRY_10_ADDR_SPEC,
+>;
 ///Core_0 Entry 10 address configuration Register
 pub mod core_0_entry_10_addr;
 /**Core_0_ENTRY_11_ADDR (rw) register accessor: Core_0 Entry 11 address configuration Register
@@ -638,7 +640,9 @@ You can [`read`](crate::generic::Reg::read) this register and get [`core_0_entry
 
 For information about available fields see [`mod@core_0_entry_11_addr`] module*/
 #[doc(alias = "Core_0_ENTRY_11_ADDR")]
-pub type CORE_0_ENTRY_11_ADDR = crate::Reg<core_0_entry_11_addr::CORE_0_ENTRY_11_ADDR_SPEC>;
+pub type CORE_0_ENTRY_11_ADDR = crate::Reg<
+    core_0_entry_11_addr::CORE_0_ENTRY_11_ADDR_SPEC,
+>;
 ///Core_0 Entry 11 address configuration Register
 pub mod core_0_entry_11_addr;
 /**Core_0_ENTRY_12_ADDR (rw) register accessor: Core_0 Entry 12 address configuration Register
@@ -647,7 +651,9 @@ You can [`read`](crate::generic::Reg::read) this register and get [`core_0_entry
 
 For information about available fields see [`mod@core_0_entry_12_addr`] module*/
 #[doc(alias = "Core_0_ENTRY_12_ADDR")]
-pub type CORE_0_ENTRY_12_ADDR = crate::Reg<core_0_entry_12_addr::CORE_0_ENTRY_12_ADDR_SPEC>;
+pub type CORE_0_ENTRY_12_ADDR = crate::Reg<
+    core_0_entry_12_addr::CORE_0_ENTRY_12_ADDR_SPEC,
+>;
 ///Core_0 Entry 12 address configuration Register
 pub mod core_0_entry_12_addr;
 /**Core_0_ENTRY_13_ADDR (rw) register accessor: Core_0 Entry 13 address configuration Register
@@ -656,7 +662,9 @@ You can [`read`](crate::generic::Reg::read) this register and get [`core_0_entry
 
 For information about available fields see [`mod@core_0_entry_13_addr`] module*/
 #[doc(alias = "Core_0_ENTRY_13_ADDR")]
-pub type CORE_0_ENTRY_13_ADDR = crate::Reg<core_0_entry_13_addr::CORE_0_ENTRY_13_ADDR_SPEC>;
+pub type CORE_0_ENTRY_13_ADDR = crate::Reg<
+    core_0_entry_13_addr::CORE_0_ENTRY_13_ADDR_SPEC,
+>;
 ///Core_0 Entry 13 address configuration Register
 pub mod core_0_entry_13_addr;
 /**Core_0_ENTRY_CHECK (rw) register accessor: Core_0 Entry check configuration Register
@@ -755,7 +763,9 @@ You can [`read`](crate::generic::Reg::read) this register and get [`core_0_statu
 
 For information about available fields see [`mod@core_0_statustable10`] module*/
 #[doc(alias = "Core_0_STATUSTABLE10")]
-pub type CORE_0_STATUSTABLE10 = crate::Reg<core_0_statustable10::CORE_0_STATUSTABLE10_SPEC>;
+pub type CORE_0_STATUSTABLE10 = crate::Reg<
+    core_0_statustable10::CORE_0_STATUSTABLE10_SPEC,
+>;
 ///Status register of world switch of entry 10
 pub mod core_0_statustable10;
 /**Core_0_STATUSTABLE11 (rw) register accessor: Status register of world switch of entry 11
@@ -764,7 +774,9 @@ You can [`read`](crate::generic::Reg::read) this register and get [`core_0_statu
 
 For information about available fields see [`mod@core_0_statustable11`] module*/
 #[doc(alias = "Core_0_STATUSTABLE11")]
-pub type CORE_0_STATUSTABLE11 = crate::Reg<core_0_statustable11::CORE_0_STATUSTABLE11_SPEC>;
+pub type CORE_0_STATUSTABLE11 = crate::Reg<
+    core_0_statustable11::CORE_0_STATUSTABLE11_SPEC,
+>;
 ///Status register of world switch of entry 11
 pub mod core_0_statustable11;
 /**Core_0_STATUSTABLE12 (rw) register accessor: Status register of world switch of entry 12
@@ -773,7 +785,9 @@ You can [`read`](crate::generic::Reg::read) this register and get [`core_0_statu
 
 For information about available fields see [`mod@core_0_statustable12`] module*/
 #[doc(alias = "Core_0_STATUSTABLE12")]
-pub type CORE_0_STATUSTABLE12 = crate::Reg<core_0_statustable12::CORE_0_STATUSTABLE12_SPEC>;
+pub type CORE_0_STATUSTABLE12 = crate::Reg<
+    core_0_statustable12::CORE_0_STATUSTABLE12_SPEC,
+>;
 ///Status register of world switch of entry 12
 pub mod core_0_statustable12;
 /**Core_0_STATUSTABLE13 (rw) register accessor: Status register of world switch of entry 13
@@ -782,7 +796,9 @@ You can [`read`](crate::generic::Reg::read) this register and get [`core_0_statu
 
 For information about available fields see [`mod@core_0_statustable13`] module*/
 #[doc(alias = "Core_0_STATUSTABLE13")]
-pub type CORE_0_STATUSTABLE13 = crate::Reg<core_0_statustable13::CORE_0_STATUSTABLE13_SPEC>;
+pub type CORE_0_STATUSTABLE13 = crate::Reg<
+    core_0_statustable13::CORE_0_STATUSTABLE13_SPEC,
+>;
 ///Status register of world switch of entry 13
 pub mod core_0_statustable13;
 /**Core_0_STATUSTABLE_CURRENT (rw) register accessor: Status register of statustable current
@@ -791,8 +807,9 @@ You can [`read`](crate::generic::Reg::read) this register and get [`core_0_statu
 
 For information about available fields see [`mod@core_0_statustable_current`] module*/
 #[doc(alias = "Core_0_STATUSTABLE_CURRENT")]
-pub type CORE_0_STATUSTABLE_CURRENT =
-    crate::Reg<core_0_statustable_current::CORE_0_STATUSTABLE_CURRENT_SPEC>;
+pub type CORE_0_STATUSTABLE_CURRENT = crate::Reg<
+    core_0_statustable_current::CORE_0_STATUSTABLE_CURRENT_SPEC,
+>;
 ///Status register of statustable current
 pub mod core_0_statustable_current;
 /**Core_0_MESSAGE_ADDR (rw) register accessor: Clear writer_buffer write address configuration register
@@ -819,7 +836,9 @@ You can [`read`](crate::generic::Reg::read) this register and get [`core_0_messa
 
 For information about available fields see [`mod@core_0_message_phase`] module*/
 #[doc(alias = "Core_0_MESSAGE_PHASE")]
-pub type CORE_0_MESSAGE_PHASE = crate::Reg<core_0_message_phase::CORE_0_MESSAGE_PHASE_SPEC>;
+pub type CORE_0_MESSAGE_PHASE = crate::Reg<
+    core_0_message_phase::CORE_0_MESSAGE_PHASE_SPEC,
+>;
 ///Clear writer_buffer status register
 pub mod core_0_message_phase;
 /**Core_0_World_TRIGGER_ADDR (rw) register accessor: Core_0 trigger address configuration Register
@@ -828,8 +847,9 @@ You can [`read`](crate::generic::Reg::read) this register and get [`core_0_world
 
 For information about available fields see [`mod@core_0_world_trigger_addr`] module*/
 #[doc(alias = "Core_0_World_TRIGGER_ADDR")]
-pub type CORE_0_WORLD_TRIGGER_ADDR =
-    crate::Reg<core_0_world_trigger_addr::CORE_0_WORLD_TRIGGER_ADDR_SPEC>;
+pub type CORE_0_WORLD_TRIGGER_ADDR = crate::Reg<
+    core_0_world_trigger_addr::CORE_0_WORLD_TRIGGER_ADDR_SPEC,
+>;
 ///Core_0 trigger address configuration Register
 pub mod core_0_world_trigger_addr;
 /**Core_0_World_PREPARE (rw) register accessor: Core_0 prepare world configuration Register
@@ -838,7 +858,9 @@ You can [`read`](crate::generic::Reg::read) this register and get [`core_0_world
 
 For information about available fields see [`mod@core_0_world_prepare`] module*/
 #[doc(alias = "Core_0_World_PREPARE")]
-pub type CORE_0_WORLD_PREPARE = crate::Reg<core_0_world_prepare::CORE_0_WORLD_PREPARE_SPEC>;
+pub type CORE_0_WORLD_PREPARE = crate::Reg<
+    core_0_world_prepare::CORE_0_WORLD_PREPARE_SPEC,
+>;
 ///Core_0 prepare world configuration Register
 pub mod core_0_world_prepare;
 /**Core_0_World_UPDATE (w) register accessor: Core_0 configuration update register
@@ -874,7 +896,9 @@ You can [`read`](crate::generic::Reg::read) this register and get [`core_0_world
 
 For information about available fields see [`mod@core_0_world_dram0_pif`] module*/
 #[doc(alias = "Core_0_World_DRam0_PIF")]
-pub type CORE_0_WORLD_DRAM0_PIF = crate::Reg<core_0_world_dram0_pif::CORE_0_WORLD_DRAM0_PIF_SPEC>;
+pub type CORE_0_WORLD_DRAM0_PIF = crate::Reg<
+    core_0_world_dram0_pif::CORE_0_WORLD_DRAM0_PIF_SPEC,
+>;
 ///Core_0 dram0 and PIF world register
 pub mod core_0_world_dram0_pif;
 /**Core_0_World_Phase (r) register accessor: Core_0 world status register
@@ -892,7 +916,9 @@ You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::wr
 
 For information about available fields see [`mod@core_0_nmi_mask_enable`] module*/
 #[doc(alias = "Core_0_NMI_MASK_ENABLE")]
-pub type CORE_0_NMI_MASK_ENABLE = crate::Reg<core_0_nmi_mask_enable::CORE_0_NMI_MASK_ENABLE_SPEC>;
+pub type CORE_0_NMI_MASK_ENABLE = crate::Reg<
+    core_0_nmi_mask_enable::CORE_0_NMI_MASK_ENABLE_SPEC,
+>;
 ///Core_0 NMI mask enable register
 pub mod core_0_nmi_mask_enable;
 /**Core_0_NMI_MASK_TRIGGER_ADDR (rw) register accessor: Core_0 NMI mask trigger address register
@@ -901,8 +927,9 @@ You can [`read`](crate::generic::Reg::read) this register and get [`core_0_nmi_m
 
 For information about available fields see [`mod@core_0_nmi_mask_trigger_addr`] module*/
 #[doc(alias = "Core_0_NMI_MASK_TRIGGER_ADDR")]
-pub type CORE_0_NMI_MASK_TRIGGER_ADDR =
-    crate::Reg<core_0_nmi_mask_trigger_addr::CORE_0_NMI_MASK_TRIGGER_ADDR_SPEC>;
+pub type CORE_0_NMI_MASK_TRIGGER_ADDR = crate::Reg<
+    core_0_nmi_mask_trigger_addr::CORE_0_NMI_MASK_TRIGGER_ADDR_SPEC,
+>;
 ///Core_0 NMI mask trigger address register
 pub mod core_0_nmi_mask_trigger_addr;
 /**Core_0_NMI_MASK_DISABLE (w) register accessor: Core_0 NMI mask disable register
@@ -911,8 +938,9 @@ You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::wr
 
 For information about available fields see [`mod@core_0_nmi_mask_disable`] module*/
 #[doc(alias = "Core_0_NMI_MASK_DISABLE")]
-pub type CORE_0_NMI_MASK_DISABLE =
-    crate::Reg<core_0_nmi_mask_disable::CORE_0_NMI_MASK_DISABLE_SPEC>;
+pub type CORE_0_NMI_MASK_DISABLE = crate::Reg<
+    core_0_nmi_mask_disable::CORE_0_NMI_MASK_DISABLE_SPEC,
+>;
 ///Core_0 NMI mask disable register
 pub mod core_0_nmi_mask_disable;
 /**Core_0_NMI_MASK_CANCLE (w) register accessor: Core_0 NMI mask disable register
@@ -921,7 +949,9 @@ You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::wr
 
 For information about available fields see [`mod@core_0_nmi_mask_cancle`] module*/
 #[doc(alias = "Core_0_NMI_MASK_CANCLE")]
-pub type CORE_0_NMI_MASK_CANCLE = crate::Reg<core_0_nmi_mask_cancle::CORE_0_NMI_MASK_CANCLE_SPEC>;
+pub type CORE_0_NMI_MASK_CANCLE = crate::Reg<
+    core_0_nmi_mask_cancle::CORE_0_NMI_MASK_CANCLE_SPEC,
+>;
 ///Core_0 NMI mask disable register
 pub mod core_0_nmi_mask_cancle;
 /**Core_0_NMI_MASK (rw) register accessor: Core_0 NMI mask register
@@ -939,7 +969,9 @@ You can [`read`](crate::generic::Reg::read) this register and get [`core_0_nmi_m
 
 For information about available fields see [`mod@core_0_nmi_mask_phase`] module*/
 #[doc(alias = "Core_0_NMI_MASK_PHASE")]
-pub type CORE_0_NMI_MASK_PHASE = crate::Reg<core_0_nmi_mask_phase::CORE_0_NMI_MASK_PHASE_SPEC>;
+pub type CORE_0_NMI_MASK_PHASE = crate::Reg<
+    core_0_nmi_mask_phase::CORE_0_NMI_MASK_PHASE_SPEC,
+>;
 ///Core_0 NMI mask phase register
 pub mod core_0_nmi_mask_phase;
 /**Core_1_ENTRY_1_ADDR (rw) register accessor: Core_1 Entry 1 address configuration Register
@@ -1029,7 +1061,9 @@ You can [`read`](crate::generic::Reg::read) this register and get [`core_1_entry
 
 For information about available fields see [`mod@core_1_entry_10_addr`] module*/
 #[doc(alias = "Core_1_ENTRY_10_ADDR")]
-pub type CORE_1_ENTRY_10_ADDR = crate::Reg<core_1_entry_10_addr::CORE_1_ENTRY_10_ADDR_SPEC>;
+pub type CORE_1_ENTRY_10_ADDR = crate::Reg<
+    core_1_entry_10_addr::CORE_1_ENTRY_10_ADDR_SPEC,
+>;
 ///Core_1 Entry 10 address configuration Register
 pub mod core_1_entry_10_addr;
 /**Core_1_ENTRY_11_ADDR (rw) register accessor: Core_1 Entry 11 address configuration Register
@@ -1038,7 +1072,9 @@ You can [`read`](crate::generic::Reg::read) this register and get [`core_1_entry
 
 For information about available fields see [`mod@core_1_entry_11_addr`] module*/
 #[doc(alias = "Core_1_ENTRY_11_ADDR")]
-pub type CORE_1_ENTRY_11_ADDR = crate::Reg<core_1_entry_11_addr::CORE_1_ENTRY_11_ADDR_SPEC>;
+pub type CORE_1_ENTRY_11_ADDR = crate::Reg<
+    core_1_entry_11_addr::CORE_1_ENTRY_11_ADDR_SPEC,
+>;
 ///Core_1 Entry 11 address configuration Register
 pub mod core_1_entry_11_addr;
 /**Core_1_ENTRY_12_ADDR (rw) register accessor: Core_1 Entry 12 address configuration Register
@@ -1047,7 +1083,9 @@ You can [`read`](crate::generic::Reg::read) this register and get [`core_1_entry
 
 For information about available fields see [`mod@core_1_entry_12_addr`] module*/
 #[doc(alias = "Core_1_ENTRY_12_ADDR")]
-pub type CORE_1_ENTRY_12_ADDR = crate::Reg<core_1_entry_12_addr::CORE_1_ENTRY_12_ADDR_SPEC>;
+pub type CORE_1_ENTRY_12_ADDR = crate::Reg<
+    core_1_entry_12_addr::CORE_1_ENTRY_12_ADDR_SPEC,
+>;
 ///Core_1 Entry 12 address configuration Register
 pub mod core_1_entry_12_addr;
 /**Core_1_ENTRY_13_ADDR (rw) register accessor: Core_1 Entry 13 address configuration Register
@@ -1056,7 +1094,9 @@ You can [`read`](crate::generic::Reg::read) this register and get [`core_1_entry
 
 For information about available fields see [`mod@core_1_entry_13_addr`] module*/
 #[doc(alias = "Core_1_ENTRY_13_ADDR")]
-pub type CORE_1_ENTRY_13_ADDR = crate::Reg<core_1_entry_13_addr::CORE_1_ENTRY_13_ADDR_SPEC>;
+pub type CORE_1_ENTRY_13_ADDR = crate::Reg<
+    core_1_entry_13_addr::CORE_1_ENTRY_13_ADDR_SPEC,
+>;
 ///Core_1 Entry 13 address configuration Register
 pub mod core_1_entry_13_addr;
 /**Core_1_ENTRY_CHECK (rw) register accessor: Core_1 Entry check configuration Register
@@ -1155,7 +1195,9 @@ You can [`read`](crate::generic::Reg::read) this register and get [`core_1_statu
 
 For information about available fields see [`mod@core_1_statustable10`] module*/
 #[doc(alias = "Core_1_STATUSTABLE10")]
-pub type CORE_1_STATUSTABLE10 = crate::Reg<core_1_statustable10::CORE_1_STATUSTABLE10_SPEC>;
+pub type CORE_1_STATUSTABLE10 = crate::Reg<
+    core_1_statustable10::CORE_1_STATUSTABLE10_SPEC,
+>;
 ///Status register of world switch of entry 10
 pub mod core_1_statustable10;
 /**Core_1_STATUSTABLE11 (rw) register accessor: Status register of world switch of entry 11
@@ -1164,7 +1206,9 @@ You can [`read`](crate::generic::Reg::read) this register and get [`core_1_statu
 
 For information about available fields see [`mod@core_1_statustable11`] module*/
 #[doc(alias = "Core_1_STATUSTABLE11")]
-pub type CORE_1_STATUSTABLE11 = crate::Reg<core_1_statustable11::CORE_1_STATUSTABLE11_SPEC>;
+pub type CORE_1_STATUSTABLE11 = crate::Reg<
+    core_1_statustable11::CORE_1_STATUSTABLE11_SPEC,
+>;
 ///Status register of world switch of entry 11
 pub mod core_1_statustable11;
 /**Core_1_STATUSTABLE12 (rw) register accessor: Status register of world switch of entry 12
@@ -1173,7 +1217,9 @@ You can [`read`](crate::generic::Reg::read) this register and get [`core_1_statu
 
 For information about available fields see [`mod@core_1_statustable12`] module*/
 #[doc(alias = "Core_1_STATUSTABLE12")]
-pub type CORE_1_STATUSTABLE12 = crate::Reg<core_1_statustable12::CORE_1_STATUSTABLE12_SPEC>;
+pub type CORE_1_STATUSTABLE12 = crate::Reg<
+    core_1_statustable12::CORE_1_STATUSTABLE12_SPEC,
+>;
 ///Status register of world switch of entry 12
 pub mod core_1_statustable12;
 /**Core_1_STATUSTABLE13 (rw) register accessor: Status register of world switch of entry 13
@@ -1182,7 +1228,9 @@ You can [`read`](crate::generic::Reg::read) this register and get [`core_1_statu
 
 For information about available fields see [`mod@core_1_statustable13`] module*/
 #[doc(alias = "Core_1_STATUSTABLE13")]
-pub type CORE_1_STATUSTABLE13 = crate::Reg<core_1_statustable13::CORE_1_STATUSTABLE13_SPEC>;
+pub type CORE_1_STATUSTABLE13 = crate::Reg<
+    core_1_statustable13::CORE_1_STATUSTABLE13_SPEC,
+>;
 ///Status register of world switch of entry 13
 pub mod core_1_statustable13;
 /**Core_1_STATUSTABLE_CURRENT (rw) register accessor: Status register of statustable current
@@ -1191,8 +1239,9 @@ You can [`read`](crate::generic::Reg::read) this register and get [`core_1_statu
 
 For information about available fields see [`mod@core_1_statustable_current`] module*/
 #[doc(alias = "Core_1_STATUSTABLE_CURRENT")]
-pub type CORE_1_STATUSTABLE_CURRENT =
-    crate::Reg<core_1_statustable_current::CORE_1_STATUSTABLE_CURRENT_SPEC>;
+pub type CORE_1_STATUSTABLE_CURRENT = crate::Reg<
+    core_1_statustable_current::CORE_1_STATUSTABLE_CURRENT_SPEC,
+>;
 ///Status register of statustable current
 pub mod core_1_statustable_current;
 /**Core_1_MESSAGE_ADDR (rw) register accessor: Clear writer_buffer write address configuration register
@@ -1219,7 +1268,9 @@ You can [`read`](crate::generic::Reg::read) this register and get [`core_1_messa
 
 For information about available fields see [`mod@core_1_message_phase`] module*/
 #[doc(alias = "Core_1_MESSAGE_PHASE")]
-pub type CORE_1_MESSAGE_PHASE = crate::Reg<core_1_message_phase::CORE_1_MESSAGE_PHASE_SPEC>;
+pub type CORE_1_MESSAGE_PHASE = crate::Reg<
+    core_1_message_phase::CORE_1_MESSAGE_PHASE_SPEC,
+>;
 ///Clear writer_buffer status register
 pub mod core_1_message_phase;
 /**Core_1_World_TRIGGER_ADDR (rw) register accessor: Core_1 trigger address configuration Register
@@ -1228,8 +1279,9 @@ You can [`read`](crate::generic::Reg::read) this register and get [`core_1_world
 
 For information about available fields see [`mod@core_1_world_trigger_addr`] module*/
 #[doc(alias = "Core_1_World_TRIGGER_ADDR")]
-pub type CORE_1_WORLD_TRIGGER_ADDR =
-    crate::Reg<core_1_world_trigger_addr::CORE_1_WORLD_TRIGGER_ADDR_SPEC>;
+pub type CORE_1_WORLD_TRIGGER_ADDR = crate::Reg<
+    core_1_world_trigger_addr::CORE_1_WORLD_TRIGGER_ADDR_SPEC,
+>;
 ///Core_1 trigger address configuration Register
 pub mod core_1_world_trigger_addr;
 /**Core_1_World_PREPARE (rw) register accessor: Core_1 prepare world configuration Register
@@ -1238,7 +1290,9 @@ You can [`read`](crate::generic::Reg::read) this register and get [`core_1_world
 
 For information about available fields see [`mod@core_1_world_prepare`] module*/
 #[doc(alias = "Core_1_World_PREPARE")]
-pub type CORE_1_WORLD_PREPARE = crate::Reg<core_1_world_prepare::CORE_1_WORLD_PREPARE_SPEC>;
+pub type CORE_1_WORLD_PREPARE = crate::Reg<
+    core_1_world_prepare::CORE_1_WORLD_PREPARE_SPEC,
+>;
 ///Core_1 prepare world configuration Register
 pub mod core_1_world_prepare;
 /**Core_1_World_UPDATE (w) register accessor: Core_1 configuration update register
@@ -1274,7 +1328,9 @@ You can [`read`](crate::generic::Reg::read) this register and get [`core_1_world
 
 For information about available fields see [`mod@core_1_world_dram0_pif`] module*/
 #[doc(alias = "Core_1_World_DRam0_PIF")]
-pub type CORE_1_WORLD_DRAM0_PIF = crate::Reg<core_1_world_dram0_pif::CORE_1_WORLD_DRAM0_PIF_SPEC>;
+pub type CORE_1_WORLD_DRAM0_PIF = crate::Reg<
+    core_1_world_dram0_pif::CORE_1_WORLD_DRAM0_PIF_SPEC,
+>;
 ///Core_1 dram0 and PIF world register
 pub mod core_1_world_dram0_pif;
 /**Core_1_World_Phase (r) register accessor: Core_0 world status register
@@ -1292,7 +1348,9 @@ You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::wr
 
 For information about available fields see [`mod@core_1_nmi_mask_enable`] module*/
 #[doc(alias = "Core_1_NMI_MASK_ENABLE")]
-pub type CORE_1_NMI_MASK_ENABLE = crate::Reg<core_1_nmi_mask_enable::CORE_1_NMI_MASK_ENABLE_SPEC>;
+pub type CORE_1_NMI_MASK_ENABLE = crate::Reg<
+    core_1_nmi_mask_enable::CORE_1_NMI_MASK_ENABLE_SPEC,
+>;
 ///Core_1 NMI mask enable register
 pub mod core_1_nmi_mask_enable;
 /**Core_1_NMI_MASK_TRIGGER_ADDR (rw) register accessor: Core_1 NMI mask trigger addr register
@@ -1301,8 +1359,9 @@ You can [`read`](crate::generic::Reg::read) this register and get [`core_1_nmi_m
 
 For information about available fields see [`mod@core_1_nmi_mask_trigger_addr`] module*/
 #[doc(alias = "Core_1_NMI_MASK_TRIGGER_ADDR")]
-pub type CORE_1_NMI_MASK_TRIGGER_ADDR =
-    crate::Reg<core_1_nmi_mask_trigger_addr::CORE_1_NMI_MASK_TRIGGER_ADDR_SPEC>;
+pub type CORE_1_NMI_MASK_TRIGGER_ADDR = crate::Reg<
+    core_1_nmi_mask_trigger_addr::CORE_1_NMI_MASK_TRIGGER_ADDR_SPEC,
+>;
 ///Core_1 NMI mask trigger addr register
 pub mod core_1_nmi_mask_trigger_addr;
 /**Core_1_NMI_MASK_DISABLE (w) register accessor: Core_1 NMI mask disable register
@@ -1311,8 +1370,9 @@ You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::wr
 
 For information about available fields see [`mod@core_1_nmi_mask_disable`] module*/
 #[doc(alias = "Core_1_NMI_MASK_DISABLE")]
-pub type CORE_1_NMI_MASK_DISABLE =
-    crate::Reg<core_1_nmi_mask_disable::CORE_1_NMI_MASK_DISABLE_SPEC>;
+pub type CORE_1_NMI_MASK_DISABLE = crate::Reg<
+    core_1_nmi_mask_disable::CORE_1_NMI_MASK_DISABLE_SPEC,
+>;
 ///Core_1 NMI mask disable register
 pub mod core_1_nmi_mask_disable;
 /**Core_1_NMI_MASK_CANCLE (w) register accessor: Core_1 NMI mask disable register
@@ -1321,7 +1381,9 @@ You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::wr
 
 For information about available fields see [`mod@core_1_nmi_mask_cancle`] module*/
 #[doc(alias = "Core_1_NMI_MASK_CANCLE")]
-pub type CORE_1_NMI_MASK_CANCLE = crate::Reg<core_1_nmi_mask_cancle::CORE_1_NMI_MASK_CANCLE_SPEC>;
+pub type CORE_1_NMI_MASK_CANCLE = crate::Reg<
+    core_1_nmi_mask_cancle::CORE_1_NMI_MASK_CANCLE_SPEC,
+>;
 ///Core_1 NMI mask disable register
 pub mod core_1_nmi_mask_cancle;
 /**Core_1_NMI_MASK (rw) register accessor: Core_1 NMI mask register
@@ -1339,6 +1401,8 @@ You can [`read`](crate::generic::Reg::read) this register and get [`core_1_nmi_m
 
 For information about available fields see [`mod@core_1_nmi_mask_phase`] module*/
 #[doc(alias = "Core_1_NMI_MASK_PHASE")]
-pub type CORE_1_NMI_MASK_PHASE = crate::Reg<core_1_nmi_mask_phase::CORE_1_NMI_MASK_PHASE_SPEC>;
+pub type CORE_1_NMI_MASK_PHASE = crate::Reg<
+    core_1_nmi_mask_phase::CORE_1_NMI_MASK_PHASE_SPEC,
+>;
 ///Core_1 NMI mask phase register
 pub mod core_1_nmi_mask_phase;

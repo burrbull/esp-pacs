@@ -48,7 +48,9 @@ impl W {
     ///Bit 13 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn lp_cpu_sleep_reject_lp(&mut self) -> LP_CPU_SLEEP_REJECT_LP_W<LP_INT_CLR_SPEC> {
+    pub fn lp_cpu_sleep_reject_lp(
+        &mut self,
+    ) -> LP_CPU_SLEEP_REJECT_LP_W<LP_INT_CLR_SPEC> {
         LP_CPU_SLEEP_REJECT_LP_W::new(self, 13)
     }
     ///Bit 14 - reg_0p1a_0_counter after xpd reach target0
@@ -156,25 +158,33 @@ impl W {
     ///Bit 27 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn sleep_switch_active_end(&mut self) -> SLEEP_SWITCH_ACTIVE_END_W<LP_INT_CLR_SPEC> {
+    pub fn sleep_switch_active_end(
+        &mut self,
+    ) -> SLEEP_SWITCH_ACTIVE_END_W<LP_INT_CLR_SPEC> {
         SLEEP_SWITCH_ACTIVE_END_W::new(self, 27)
     }
     ///Bit 28 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn active_switch_sleep_end(&mut self) -> ACTIVE_SWITCH_SLEEP_END_W<LP_INT_CLR_SPEC> {
+    pub fn active_switch_sleep_end(
+        &mut self,
+    ) -> ACTIVE_SWITCH_SLEEP_END_W<LP_INT_CLR_SPEC> {
         ACTIVE_SWITCH_SLEEP_END_W::new(self, 28)
     }
     ///Bit 29 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn sleep_switch_active_start(&mut self) -> SLEEP_SWITCH_ACTIVE_START_W<LP_INT_CLR_SPEC> {
+    pub fn sleep_switch_active_start(
+        &mut self,
+    ) -> SLEEP_SWITCH_ACTIVE_START_W<LP_INT_CLR_SPEC> {
         SLEEP_SWITCH_ACTIVE_START_W::new(self, 29)
     }
     ///Bit 30 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn active_switch_sleep_start(&mut self) -> ACTIVE_SWITCH_SLEEP_START_W<LP_INT_CLR_SPEC> {
+    pub fn active_switch_sleep_start(
+        &mut self,
+    ) -> ACTIVE_SWITCH_SLEEP_START_W<LP_INT_CLR_SPEC> {
         ACTIVE_SWITCH_SLEEP_START_W::new(self, 30)
     }
     ///Bit 31 - need_des

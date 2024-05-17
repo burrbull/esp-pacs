@@ -16,8 +16,7 @@ impl R {
     ///NOTE: `n` is number of field in register. `n == 0` corresponds to `T0` field
     #[inline(always)]
     pub fn t(&self, n: u8) -> T_R {
-        #[allow(clippy::no_effect)]
-        [(); 2][n as usize];
+        #[allow(clippy::no_effect)] [(); 2][n as usize];
         T_R::new(((self.bits >> n) & 1) != 0)
     }
     ///Iterator for array of:
@@ -59,8 +58,7 @@ impl W {
     #[inline(always)]
     #[must_use]
     pub fn t(&mut self, n: u8) -> T_W<INT_RAW_TIMERS_SPEC> {
-        #[allow(clippy::no_effect)]
-        [(); 2][n as usize];
+        #[allow(clippy::no_effect)] [(); 2][n as usize];
         T_W::new(self, n)
     }
     ///Bit 0 - The raw interrupt status bit for the TIMG_T0_INT interrupt.

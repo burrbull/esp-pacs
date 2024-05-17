@@ -135,18 +135,9 @@ impl core::fmt::Debug for R {
         f.debug_struct("PRO_ICACHE_CTRL")
             .field("pro_icache_enable", &self.pro_icache_enable())
             .field("pro_icache_setsize_mode", &self.pro_icache_setsize_mode())
-            .field(
-                "pro_icache_blocksize_mode",
-                &self.pro_icache_blocksize_mode(),
-            )
-            .field(
-                "pro_icache_invalidate_ena",
-                &self.pro_icache_invalidate_ena(),
-            )
-            .field(
-                "pro_icache_invalidate_done",
-                &self.pro_icache_invalidate_done(),
-            )
+            .field("pro_icache_blocksize_mode", &self.pro_icache_blocksize_mode())
+            .field("pro_icache_invalidate_ena", &self.pro_icache_invalidate_ena())
+            .field("pro_icache_invalidate_done", &self.pro_icache_invalidate_done())
             .field("pro_icache_lock0_en", &self.pro_icache_lock0_en())
             .field("pro_icache_lock1_en", &self.pro_icache_lock1_en())
             .field("pro_icache_autoload_ena", &self.pro_icache_autoload_ena())
@@ -170,7 +161,9 @@ impl W {
     ///Bit 2 - The bit is used to configure cache memory size.0: 8KB, 1: 16KB
     #[inline(always)]
     #[must_use]
-    pub fn pro_icache_setsize_mode(&mut self) -> PRO_ICACHE_SETSIZE_MODE_W<PRO_ICACHE_CTRL_SPEC> {
+    pub fn pro_icache_setsize_mode(
+        &mut self,
+    ) -> PRO_ICACHE_SETSIZE_MODE_W<PRO_ICACHE_CTRL_SPEC> {
         PRO_ICACHE_SETSIZE_MODE_W::new(self, 2)
     }
     ///Bit 3 - The bit is used to configure cache block size.0: 16 bytes, 1: 32 bytes
@@ -192,37 +185,49 @@ impl W {
     ///Bit 14 - The bit is used to enable pre-lock operation which is combined with PRO_ICACHE_LOCK0_ADDR_REG and PRO_ICACHE_LOCK0_SIZE_REG.
     #[inline(always)]
     #[must_use]
-    pub fn pro_icache_lock0_en(&mut self) -> PRO_ICACHE_LOCK0_EN_W<PRO_ICACHE_CTRL_SPEC> {
+    pub fn pro_icache_lock0_en(
+        &mut self,
+    ) -> PRO_ICACHE_LOCK0_EN_W<PRO_ICACHE_CTRL_SPEC> {
         PRO_ICACHE_LOCK0_EN_W::new(self, 14)
     }
     ///Bit 15 - The bit is used to enable pre-lock operation which is combined with PRO_ICACHE_LOCK1_ADDR_REG and PRO_ICACHE_LOCK1_SIZE_REG.
     #[inline(always)]
     #[must_use]
-    pub fn pro_icache_lock1_en(&mut self) -> PRO_ICACHE_LOCK1_EN_W<PRO_ICACHE_CTRL_SPEC> {
+    pub fn pro_icache_lock1_en(
+        &mut self,
+    ) -> PRO_ICACHE_LOCK1_EN_W<PRO_ICACHE_CTRL_SPEC> {
         PRO_ICACHE_LOCK1_EN_W::new(self, 15)
     }
     ///Bit 18 - The bit is used to enable and disable conditional-preload operation. It is combined with pre_dcache_autoload_done. 1: enable, 0: disable.
     #[inline(always)]
     #[must_use]
-    pub fn pro_icache_autoload_ena(&mut self) -> PRO_ICACHE_AUTOLOAD_ENA_W<PRO_ICACHE_CTRL_SPEC> {
+    pub fn pro_icache_autoload_ena(
+        &mut self,
+    ) -> PRO_ICACHE_AUTOLOAD_ENA_W<PRO_ICACHE_CTRL_SPEC> {
         PRO_ICACHE_AUTOLOAD_ENA_W::new(self, 18)
     }
     ///Bit 20 - The bit is used to enable preload operation. It will be cleared by hardware after preload operation done.
     #[inline(always)]
     #[must_use]
-    pub fn pro_icache_preload_ena(&mut self) -> PRO_ICACHE_PRELOAD_ENA_W<PRO_ICACHE_CTRL_SPEC> {
+    pub fn pro_icache_preload_ena(
+        &mut self,
+    ) -> PRO_ICACHE_PRELOAD_ENA_W<PRO_ICACHE_CTRL_SPEC> {
         PRO_ICACHE_PRELOAD_ENA_W::new(self, 20)
     }
     ///Bit 22 - The bit is used to enable unlock operation. It will be cleared by hardware after unlock operation done.
     #[inline(always)]
     #[must_use]
-    pub fn pro_icache_unlock_ena(&mut self) -> PRO_ICACHE_UNLOCK_ENA_W<PRO_ICACHE_CTRL_SPEC> {
+    pub fn pro_icache_unlock_ena(
+        &mut self,
+    ) -> PRO_ICACHE_UNLOCK_ENA_W<PRO_ICACHE_CTRL_SPEC> {
         PRO_ICACHE_UNLOCK_ENA_W::new(self, 22)
     }
     ///Bit 24 - The bit is used to enable lock operation. It will be cleared by hardware after lock operation done.
     #[inline(always)]
     #[must_use]
-    pub fn pro_icache_lock_ena(&mut self) -> PRO_ICACHE_LOCK_ENA_W<PRO_ICACHE_CTRL_SPEC> {
+    pub fn pro_icache_lock_ena(
+        &mut self,
+    ) -> PRO_ICACHE_LOCK_ENA_W<PRO_ICACHE_CTRL_SPEC> {
         PRO_ICACHE_LOCK_ENA_W::new(self, 24)
     }
 }

@@ -16,9 +16,7 @@ impl R {
 #[cfg(feature = "impl-register-debug")]
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("SFD_WAIT_SYMBOL")
-            .field("num", &self.num())
-            .finish()
+        f.debug_struct("SFD_WAIT_SYMBOL").field("num", &self.num()).finish()
     }
 }
 impl W {

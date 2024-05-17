@@ -180,17 +180,11 @@ impl core::fmt::Debug for R {
             .field("spi_fmem_rx_ddr_msk_en", &self.spi_fmem_rx_ddr_msk_en())
             .field("spi_fmem_usr_ddr_dqs_thd", &self.spi_fmem_usr_ddr_dqs_thd())
             .field("spi_fmem_ddr_dqs_loop", &self.spi_fmem_ddr_dqs_loop())
-            .field(
-                "spi_fmem_ddr_dqs_loop_mode",
-                &self.spi_fmem_ddr_dqs_loop_mode(),
-            )
+            .field("spi_fmem_ddr_dqs_loop_mode", &self.spi_fmem_ddr_dqs_loop_mode())
             .field("spi_fmem_clk_diff_en", &self.spi_fmem_clk_diff_en())
             .field("spi_fmem_hyperbus_mode", &self.spi_fmem_hyperbus_mode())
             .field("spi_fmem_dqs_ca_in", &self.spi_fmem_dqs_ca_in())
-            .field(
-                "spi_fmem_hyperbus_dummy_2x",
-                &self.spi_fmem_hyperbus_dummy_2x(),
-            )
+            .field("spi_fmem_hyperbus_dummy_2x", &self.spi_fmem_hyperbus_dummy_2x())
             .field("spi_fmem_clk_diff_inv", &self.spi_fmem_clk_diff_inv())
             .field("spi_fmem_octa_ram_addr", &self.spi_fmem_octa_ram_addr())
             .field("spi_fmem_hyperbus_ca", &self.spi_fmem_hyperbus_ca())
@@ -261,7 +255,9 @@ impl W {
     ///Bit 22 - When SPI_FMEM_DDR_DQS_LOOP and SPI_FMEM_DDR_EN are set, 1: Use internal SPI_CLK as data strobe. 0: Use internal ~SPI_CLK as data strobe. Otherwise this bit is not active.
     #[inline(always)]
     #[must_use]
-    pub fn spi_fmem_ddr_dqs_loop_mode(&mut self) -> SPI_FMEM_DDR_DQS_LOOP_MODE_W<DDR_SPEC> {
+    pub fn spi_fmem_ddr_dqs_loop_mode(
+        &mut self,
+    ) -> SPI_FMEM_DDR_DQS_LOOP_MODE_W<DDR_SPEC> {
         SPI_FMEM_DDR_DQS_LOOP_MODE_W::new(self, 22)
     }
     ///Bit 24 - Set this bit to enable the differential SPI_CLK#.
@@ -285,7 +281,9 @@ impl W {
     ///Bit 27 - Set this bit to enable the vary dummy function in SPI HyperBus mode, when SPI0 accesses to flash or SPI1 accesses flash or sram.
     #[inline(always)]
     #[must_use]
-    pub fn spi_fmem_hyperbus_dummy_2x(&mut self) -> SPI_FMEM_HYPERBUS_DUMMY_2X_W<DDR_SPEC> {
+    pub fn spi_fmem_hyperbus_dummy_2x(
+        &mut self,
+    ) -> SPI_FMEM_HYPERBUS_DUMMY_2X_W<DDR_SPEC> {
         SPI_FMEM_HYPERBUS_DUMMY_2X_W::new(self, 27)
     }
     ///Bit 28 - Set this bit to invert SPI_DIFF when accesses to flash. .

@@ -73,7 +73,9 @@ impl W {
     ///Bit 31 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn touch_sleep_timer_en(&mut self) -> TOUCH_SLEEP_TIMER_EN_W<TOUCH_PWR_CNTL_SPEC> {
+    pub fn touch_sleep_timer_en(
+        &mut self,
+    ) -> TOUCH_SLEEP_TIMER_EN_W<TOUCH_PWR_CNTL_SPEC> {
         TOUCH_SLEEP_TIMER_EN_W::new(self, 31)
     }
 }

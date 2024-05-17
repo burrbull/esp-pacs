@@ -197,7 +197,9 @@ pub mod rst_conf;
 You can [`read`](crate::generic::Reg::read) this register and get [`inter_mem_start_addr0::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`inter_mem_start_addr0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@inter_mem_start_addr0`] module*/
-pub type INTER_MEM_START_ADDR0 = crate::Reg<inter_mem_start_addr0::INTER_MEM_START_ADDR0_SPEC>;
+pub type INTER_MEM_START_ADDR0 = crate::Reg<
+    inter_mem_start_addr0::INTER_MEM_START_ADDR0_SPEC,
+>;
 ///Start address of inter memory range0 register
 pub mod inter_mem_start_addr0;
 /**INTER_MEM_END_ADDR0 (rw) register accessor: end address of inter memory range0 register
@@ -213,7 +215,9 @@ pub mod inter_mem_end_addr0;
 You can [`read`](crate::generic::Reg::read) this register and get [`inter_mem_start_addr1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`inter_mem_start_addr1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@inter_mem_start_addr1`] module*/
-pub type INTER_MEM_START_ADDR1 = crate::Reg<inter_mem_start_addr1::INTER_MEM_START_ADDR1_SPEC>;
+pub type INTER_MEM_START_ADDR1 = crate::Reg<
+    inter_mem_start_addr1::INTER_MEM_START_ADDR1_SPEC,
+>;
 ///Start address of inter memory range1 register
 pub mod inter_mem_start_addr1;
 /**INTER_MEM_END_ADDR1 (rw) register accessor: end address of inter memory range1 register
@@ -229,7 +233,9 @@ pub mod inter_mem_end_addr1;
 You can [`read`](crate::generic::Reg::read) this register and get [`exter_mem_start_addr0::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`exter_mem_start_addr0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@exter_mem_start_addr0`] module*/
-pub type EXTER_MEM_START_ADDR0 = crate::Reg<exter_mem_start_addr0::EXTER_MEM_START_ADDR0_SPEC>;
+pub type EXTER_MEM_START_ADDR0 = crate::Reg<
+    exter_mem_start_addr0::EXTER_MEM_START_ADDR0_SPEC,
+>;
 ///Start address of exter memory range0 register
 pub mod exter_mem_start_addr0;
 /**EXTER_MEM_END_ADDR0 (rw) register accessor: end address of exter memory range0 register
@@ -245,7 +251,9 @@ pub mod exter_mem_end_addr0;
 You can [`read`](crate::generic::Reg::read) this register and get [`exter_mem_start_addr1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`exter_mem_start_addr1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@exter_mem_start_addr1`] module*/
-pub type EXTER_MEM_START_ADDR1 = crate::Reg<exter_mem_start_addr1::EXTER_MEM_START_ADDR1_SPEC>;
+pub type EXTER_MEM_START_ADDR1 = crate::Reg<
+    exter_mem_start_addr1::EXTER_MEM_START_ADDR1_SPEC,
+>;
 ///Start address of exter memory range1 register
 pub mod exter_mem_start_addr1;
 /**EXTER_MEM_END_ADDR1 (rw) register accessor: end address of exter memory range1 register

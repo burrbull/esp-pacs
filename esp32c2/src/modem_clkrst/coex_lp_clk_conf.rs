@@ -65,7 +65,9 @@ impl W {
     ///Bit 0 - .
     #[inline(always)]
     #[must_use]
-    pub fn coex_lpclk_sel_rtc_slow(&mut self) -> COEX_LPCLK_SEL_RTC_SLOW_W<COEX_LP_CLK_CONF_SPEC> {
+    pub fn coex_lpclk_sel_rtc_slow(
+        &mut self,
+    ) -> COEX_LPCLK_SEL_RTC_SLOW_W<COEX_LP_CLK_CONF_SPEC> {
         COEX_LPCLK_SEL_RTC_SLOW_W::new(self, 0)
     }
     ///Bit 1 - .
@@ -77,13 +79,17 @@ impl W {
     ///Bit 2 - .
     #[inline(always)]
     #[must_use]
-    pub fn coex_lpclk_sel_xtal(&mut self) -> COEX_LPCLK_SEL_XTAL_W<COEX_LP_CLK_CONF_SPEC> {
+    pub fn coex_lpclk_sel_xtal(
+        &mut self,
+    ) -> COEX_LPCLK_SEL_XTAL_W<COEX_LP_CLK_CONF_SPEC> {
         COEX_LPCLK_SEL_XTAL_W::new(self, 2)
     }
     ///Bit 3 - .
     #[inline(always)]
     #[must_use]
-    pub fn coex_lpclk_sel_xtal32k(&mut self) -> COEX_LPCLK_SEL_XTAL32K_W<COEX_LP_CLK_CONF_SPEC> {
+    pub fn coex_lpclk_sel_xtal32k(
+        &mut self,
+    ) -> COEX_LPCLK_SEL_XTAL32K_W<COEX_LP_CLK_CONF_SPEC> {
         COEX_LPCLK_SEL_XTAL32K_W::new(self, 3)
     }
     ///Bits 4:11 - .

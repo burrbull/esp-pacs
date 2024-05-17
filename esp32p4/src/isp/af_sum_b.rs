@@ -12,9 +12,7 @@ impl R {
 #[cfg(feature = "impl-register-debug")]
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("AF_SUM_B")
-            .field("af_sumb", &self.af_sumb())
-            .finish()
+        f.debug_struct("AF_SUM_B").field("af_sumb", &self.af_sumb()).finish()
     }
 }
 /**result of sum of af window b

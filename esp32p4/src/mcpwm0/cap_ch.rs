@@ -12,9 +12,7 @@ impl R {
 #[cfg(feature = "impl-register-debug")]
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("CAP_CH")
-            .field("value", &self.value())
-            .finish()
+        f.debug_struct("CAP_CH").field("value", &self.value()).finish()
     }
 }
 /**CAP%s capture value register

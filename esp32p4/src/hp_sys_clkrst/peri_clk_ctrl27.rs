@@ -55,13 +55,17 @@ impl W {
     ///Bits 0:7 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn padbist_rx_clk_div_num(&mut self) -> PADBIST_RX_CLK_DIV_NUM_W<PERI_CLK_CTRL27_SPEC> {
+    pub fn padbist_rx_clk_div_num(
+        &mut self,
+    ) -> PADBIST_RX_CLK_DIV_NUM_W<PERI_CLK_CTRL27_SPEC> {
         PADBIST_RX_CLK_DIV_NUM_W::new(self, 0)
     }
     ///Bit 8 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn padbist_tx_clk_src_sel(&mut self) -> PADBIST_TX_CLK_SRC_SEL_W<PERI_CLK_CTRL27_SPEC> {
+    pub fn padbist_tx_clk_src_sel(
+        &mut self,
+    ) -> PADBIST_TX_CLK_SRC_SEL_W<PERI_CLK_CTRL27_SPEC> {
         PADBIST_TX_CLK_SRC_SEL_W::new(self, 8)
     }
     ///Bit 9 - Reserved
@@ -73,7 +77,9 @@ impl W {
     ///Bits 10:17 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn padbist_tx_clk_div_num(&mut self) -> PADBIST_TX_CLK_DIV_NUM_W<PERI_CLK_CTRL27_SPEC> {
+    pub fn padbist_tx_clk_div_num(
+        &mut self,
+    ) -> PADBIST_TX_CLK_DIV_NUM_W<PERI_CLK_CTRL27_SPEC> {
         PADBIST_TX_CLK_DIV_NUM_W::new(self, 10)
     }
 }

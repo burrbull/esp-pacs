@@ -1,7 +1,11 @@
 ///Register `HP_MODEM_BACKUP` writer
 pub type W = crate::W<HP_MODEM_BACKUP_SPEC>;
 ///Field `HP_SLEEP2MODEM_BACKUP_MODEM_CLK_CODE` writer - need_des
-pub type HP_SLEEP2MODEM_BACKUP_MODEM_CLK_CODE_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
+pub type HP_SLEEP2MODEM_BACKUP_MODEM_CLK_CODE_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 ///Field `HP_MODEM_RETENTION_MODE` writer - need_des
 pub type HP_MODEM_RETENTION_MODE_W<'a, REG> = crate::BitWriter<'a, REG>;
 ///Field `HP_SLEEP2MODEM_RETENTION_EN` writer - need_des
@@ -30,7 +34,9 @@ impl W {
     ///Bit 10 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn hp_modem_retention_mode(&mut self) -> HP_MODEM_RETENTION_MODE_W<HP_MODEM_BACKUP_SPEC> {
+    pub fn hp_modem_retention_mode(
+        &mut self,
+    ) -> HP_MODEM_RETENTION_MODE_W<HP_MODEM_BACKUP_SPEC> {
         HP_MODEM_RETENTION_MODE_W::new(self, 10)
     }
     ///Bit 11 - need_des
@@ -60,7 +66,9 @@ impl W {
     ///Bit 29 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn hp_sleep2modem_backup_en(&mut self) -> HP_SLEEP2MODEM_BACKUP_EN_W<HP_MODEM_BACKUP_SPEC> {
+    pub fn hp_sleep2modem_backup_en(
+        &mut self,
+    ) -> HP_SLEEP2MODEM_BACKUP_EN_W<HP_MODEM_BACKUP_SPEC> {
         HP_SLEEP2MODEM_BACKUP_EN_W::new(self, 29)
     }
 }

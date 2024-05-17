@@ -103,12 +103,16 @@ impl R {
     }
     ///Bit 10 - IBUS busy monitor interrupt clr
     #[inline(always)]
-    pub fn core_0_iram0_exception_monitor_clr(&self) -> CORE_0_IRAM0_EXCEPTION_MONITOR_CLR_R {
+    pub fn core_0_iram0_exception_monitor_clr(
+        &self,
+    ) -> CORE_0_IRAM0_EXCEPTION_MONITOR_CLR_R {
         CORE_0_IRAM0_EXCEPTION_MONITOR_CLR_R::new(((self.bits >> 10) & 1) != 0)
     }
     ///Bit 11 - DBUS busy monitor interrupt clr
     #[inline(always)]
-    pub fn core_0_dram0_exception_monitor_clr(&self) -> CORE_0_DRAM0_EXCEPTION_MONITOR_CLR_R {
+    pub fn core_0_dram0_exception_monitor_clr(
+        &self,
+    ) -> CORE_0_DRAM0_EXCEPTION_MONITOR_CLR_R {
         CORE_0_DRAM0_EXCEPTION_MONITOR_CLR_R::new(((self.bits >> 11) & 1) != 0)
     }
 }
@@ -116,22 +120,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CORE_0_INTR_CLR")
-            .field(
-                "core_0_area_dram0_0_rd_clr",
-                &self.core_0_area_dram0_0_rd_clr(),
-            )
-            .field(
-                "core_0_area_dram0_0_wr_clr",
-                &self.core_0_area_dram0_0_wr_clr(),
-            )
-            .field(
-                "core_0_area_dram0_1_rd_clr",
-                &self.core_0_area_dram0_1_rd_clr(),
-            )
-            .field(
-                "core_0_area_dram0_1_wr_clr",
-                &self.core_0_area_dram0_1_wr_clr(),
-            )
+            .field("core_0_area_dram0_0_rd_clr", &self.core_0_area_dram0_0_rd_clr())
+            .field("core_0_area_dram0_0_wr_clr", &self.core_0_area_dram0_0_wr_clr())
+            .field("core_0_area_dram0_1_rd_clr", &self.core_0_area_dram0_1_rd_clr())
+            .field("core_0_area_dram0_1_wr_clr", &self.core_0_area_dram0_1_wr_clr())
             .field("core_0_area_pif_0_rd_clr", &self.core_0_area_pif_0_rd_clr())
             .field("core_0_area_pif_0_wr_clr", &self.core_0_area_pif_0_wr_clr())
             .field("core_0_area_pif_1_rd_clr", &self.core_0_area_pif_1_rd_clr())
@@ -185,37 +177,49 @@ impl W {
     ///Bit 4 - Core0 PIF area0 read monitor interrupt clr
     #[inline(always)]
     #[must_use]
-    pub fn core_0_area_pif_0_rd_clr(&mut self) -> CORE_0_AREA_PIF_0_RD_CLR_W<CORE_0_INTR_CLR_SPEC> {
+    pub fn core_0_area_pif_0_rd_clr(
+        &mut self,
+    ) -> CORE_0_AREA_PIF_0_RD_CLR_W<CORE_0_INTR_CLR_SPEC> {
         CORE_0_AREA_PIF_0_RD_CLR_W::new(self, 4)
     }
     ///Bit 5 - Core0 PIF area0 write monitor interrupt clr
     #[inline(always)]
     #[must_use]
-    pub fn core_0_area_pif_0_wr_clr(&mut self) -> CORE_0_AREA_PIF_0_WR_CLR_W<CORE_0_INTR_CLR_SPEC> {
+    pub fn core_0_area_pif_0_wr_clr(
+        &mut self,
+    ) -> CORE_0_AREA_PIF_0_WR_CLR_W<CORE_0_INTR_CLR_SPEC> {
         CORE_0_AREA_PIF_0_WR_CLR_W::new(self, 5)
     }
     ///Bit 6 - Core0 PIF area1 read monitor interrupt clr
     #[inline(always)]
     #[must_use]
-    pub fn core_0_area_pif_1_rd_clr(&mut self) -> CORE_0_AREA_PIF_1_RD_CLR_W<CORE_0_INTR_CLR_SPEC> {
+    pub fn core_0_area_pif_1_rd_clr(
+        &mut self,
+    ) -> CORE_0_AREA_PIF_1_RD_CLR_W<CORE_0_INTR_CLR_SPEC> {
         CORE_0_AREA_PIF_1_RD_CLR_W::new(self, 6)
     }
     ///Bit 7 - Core0 PIF area1 write monitor interrupt clr
     #[inline(always)]
     #[must_use]
-    pub fn core_0_area_pif_1_wr_clr(&mut self) -> CORE_0_AREA_PIF_1_WR_CLR_W<CORE_0_INTR_CLR_SPEC> {
+    pub fn core_0_area_pif_1_wr_clr(
+        &mut self,
+    ) -> CORE_0_AREA_PIF_1_WR_CLR_W<CORE_0_INTR_CLR_SPEC> {
         CORE_0_AREA_PIF_1_WR_CLR_W::new(self, 7)
     }
     ///Bit 8 - Core0 stackpoint overflow monitor interrupt clr
     #[inline(always)]
     #[must_use]
-    pub fn core_0_sp_spill_min_clr(&mut self) -> CORE_0_SP_SPILL_MIN_CLR_W<CORE_0_INTR_CLR_SPEC> {
+    pub fn core_0_sp_spill_min_clr(
+        &mut self,
+    ) -> CORE_0_SP_SPILL_MIN_CLR_W<CORE_0_INTR_CLR_SPEC> {
         CORE_0_SP_SPILL_MIN_CLR_W::new(self, 8)
     }
     ///Bit 9 - Core0 stackpoint underflow monitor interrupt clr
     #[inline(always)]
     #[must_use]
-    pub fn core_0_sp_spill_max_clr(&mut self) -> CORE_0_SP_SPILL_MAX_CLR_W<CORE_0_INTR_CLR_SPEC> {
+    pub fn core_0_sp_spill_max_clr(
+        &mut self,
+    ) -> CORE_0_SP_SPILL_MAX_CLR_W<CORE_0_INTR_CLR_SPEC> {
         CORE_0_SP_SPILL_MAX_CLR_W::new(self, 9)
     }
     ///Bit 10 - IBUS busy monitor interrupt clr

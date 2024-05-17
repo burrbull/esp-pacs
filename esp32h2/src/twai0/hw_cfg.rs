@@ -16,9 +16,7 @@ impl R {
 #[cfg(feature = "impl-register-debug")]
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("HW_CFG")
-            .field("hw_standby_en", &self.hw_standby_en())
-            .finish()
+        f.debug_struct("HW_CFG").field("hw_standby_en", &self.hw_standby_en()).finish()
     }
 }
 impl W {

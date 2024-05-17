@@ -5,55 +5,107 @@ pub type W = crate::W<CORE_0_PIF_PMS_CONSTRAIN_4_SPEC>;
 ///Field `CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_USB_DEVICE` reader - Core0 access usb_device permission in world0.
 pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_USB_DEVICE_R = crate::FieldReader;
 ///Field `CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_USB_DEVICE` writer - Core0 access usb_device permission in world0.
-pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_USB_DEVICE_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
+pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_USB_DEVICE_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 ///Field `CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_USB_WRAP` reader - Core0 access usb_wrap permission in world0.
 pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_USB_WRAP_R = crate::FieldReader;
 ///Field `CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_USB_WRAP` writer - Core0 access usb_wrap permission in world0.
-pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_USB_WRAP_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
+pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_USB_WRAP_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 ///Field `CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_CRYPTO_PERI` reader - Core0 access crypto_peri permission in world0.
 pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_CRYPTO_PERI_R = crate::FieldReader;
 ///Field `CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_CRYPTO_PERI` writer - Core0 access crypto_peri permission in world0.
-pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_CRYPTO_PERI_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
+pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_CRYPTO_PERI_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 ///Field `CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_CRYPTO_DMA` reader - Core0 access crypto_dma permission in world0.
 pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_CRYPTO_DMA_R = crate::FieldReader;
 ///Field `CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_CRYPTO_DMA` writer - Core0 access crypto_dma permission in world0.
-pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_CRYPTO_DMA_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
+pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_CRYPTO_DMA_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 ///Field `CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_APB_ADC` reader - Core0 access apb_adc permission in world0.
 pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_APB_ADC_R = crate::FieldReader;
 ///Field `CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_APB_ADC` writer - Core0 access apb_adc permission in world0.
-pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_APB_ADC_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
+pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_APB_ADC_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 ///Field `CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_LCD_CAM` reader - Core0 access lcd_cam permission in world0.
 pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_LCD_CAM_R = crate::FieldReader;
 ///Field `CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_LCD_CAM` writer - Core0 access lcd_cam permission in world0.
-pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_LCD_CAM_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
+pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_LCD_CAM_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 ///Field `CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_BT_PWR` reader - Core0 access bt_pwr permission in world0.
 pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_BT_PWR_R = crate::FieldReader;
 ///Field `CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_BT_PWR` writer - Core0 access bt_pwr permission in world0.
-pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_BT_PWR_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
+pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_BT_PWR_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 ///Field `CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_USB` reader - Core0 access usb permission in world0.
 pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_USB_R = crate::FieldReader;
 ///Field `CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_USB` writer - Core0 access usb permission in world0.
-pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_USB_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
+pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_USB_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 ///Field `CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_SYSTEM` reader - Core0 access system permission in world0.
 pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_SYSTEM_R = crate::FieldReader;
 ///Field `CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_SYSTEM` writer - Core0 access system permission in world0.
-pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_SYSTEM_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
+pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_SYSTEM_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 ///Field `CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_SENSITIVE` reader - Core0 access sensitive permission in world0.
 pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_SENSITIVE_R = crate::FieldReader;
 ///Field `CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_SENSITIVE` writer - Core0 access sensitive permission in world0.
-pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_SENSITIVE_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
+pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_SENSITIVE_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 ///Field `CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_INTERRUPT` reader - Core0 access interrupt permission in world0.
 pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_INTERRUPT_R = crate::FieldReader;
 ///Field `CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_INTERRUPT` writer - Core0 access interrupt permission in world0.
-pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_INTERRUPT_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
+pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_INTERRUPT_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 ///Field `CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_DMA_COPY` reader - Core0 access dma_copy permission in world0.
 pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_DMA_COPY_R = crate::FieldReader;
 ///Field `CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_DMA_COPY` writer - Core0 access dma_copy permission in world0.
-pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_DMA_COPY_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
+pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_DMA_COPY_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 ///Field `CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_CACHE_CONFIG` reader - Core0 access cache_config permission in world0.
 pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_CACHE_CONFIG_R = crate::FieldReader;
 ///Field `CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_CACHE_CONFIG` writer - Core0 access cache_config permission in world0.
-pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_CACHE_CONFIG_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
+pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_CACHE_CONFIG_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 ///Field `CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_AD` reader - Core0 access ad permission in world0.
 pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_AD_R = crate::FieldReader;
 ///Field `CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_AD` writer - Core0 access ad permission in world0.
@@ -61,12 +113,19 @@ pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_AD_W<'a, REG> = crate::FieldWriter<'a,
 ///Field `CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_DIO` reader - Core0 access dio permission in world0.
 pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_DIO_R = crate::FieldReader;
 ///Field `CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_DIO` writer - Core0 access dio permission in world0.
-pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_DIO_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
+pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_DIO_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 ///Field `CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_WORLD_CONTROLLER` reader - Core0 access world_controller permission in world0.
 pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_WORLD_CONTROLLER_R = crate::FieldReader;
 ///Field `CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_WORLD_CONTROLLER` writer - Core0 access world_controller permission in world0.
-pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_WORLD_CONTROLLER_W<'a, REG> =
-    crate::FieldWriter<'a, REG, 2>;
+pub type CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_WORLD_CONTROLLER_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 impl R {
     ///Bits 0:1 - Core0 access usb_device permission in world0.
     #[inline(always)]
@@ -119,7 +178,9 @@ impl R {
     }
     ///Bits 14:15 - Core0 access usb permission in world0.
     #[inline(always)]
-    pub fn core_0_pif_pms_constrain_world_0_usb(&self) -> CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_USB_R {
+    pub fn core_0_pif_pms_constrain_world_0_usb(
+        &self,
+    ) -> CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_USB_R {
         CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_USB_R::new(((self.bits >> 14) & 3) as u8)
     }
     ///Bits 16:17 - Core0 access system permission in world0.
@@ -155,16 +216,22 @@ impl R {
     pub fn core_0_pif_pms_constrain_world_0_cache_config(
         &self,
     ) -> CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_CACHE_CONFIG_R {
-        CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_CACHE_CONFIG_R::new(((self.bits >> 24) & 3) as u8)
+        CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_CACHE_CONFIG_R::new(
+            ((self.bits >> 24) & 3) as u8,
+        )
     }
     ///Bits 26:27 - Core0 access ad permission in world0.
     #[inline(always)]
-    pub fn core_0_pif_pms_constrain_world_0_ad(&self) -> CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_AD_R {
+    pub fn core_0_pif_pms_constrain_world_0_ad(
+        &self,
+    ) -> CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_AD_R {
         CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_AD_R::new(((self.bits >> 26) & 3) as u8)
     }
     ///Bits 28:29 - Core0 access dio permission in world0.
     #[inline(always)]
-    pub fn core_0_pif_pms_constrain_world_0_dio(&self) -> CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_DIO_R {
+    pub fn core_0_pif_pms_constrain_world_0_dio(
+        &self,
+    ) -> CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_DIO_R {
         CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_DIO_R::new(((self.bits >> 28) & 3) as u8)
     }
     ///Bits 30:31 - Core0 access world_controller permission in world0.
@@ -172,7 +239,9 @@ impl R {
     pub fn core_0_pif_pms_constrain_world_0_world_controller(
         &self,
     ) -> CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_WORLD_CONTROLLER_R {
-        CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_WORLD_CONTROLLER_R::new(((self.bits >> 30) & 3) as u8)
+        CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_WORLD_CONTROLLER_R::new(
+            ((self.bits >> 30) & 3) as u8,
+        )
     }
 }
 #[cfg(feature = "impl-register-debug")]
@@ -268,7 +337,9 @@ impl W {
     #[must_use]
     pub fn core_0_pif_pms_constrain_world_0_crypto_peri(
         &mut self,
-    ) -> CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_CRYPTO_PERI_W<CORE_0_PIF_PMS_CONSTRAIN_4_SPEC> {
+    ) -> CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_CRYPTO_PERI_W<
+        CORE_0_PIF_PMS_CONSTRAIN_4_SPEC,
+    > {
         CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_CRYPTO_PERI_W::new(self, 4)
     }
     ///Bits 6:7 - Core0 access crypto_dma permission in world0.
@@ -348,7 +419,9 @@ impl W {
     #[must_use]
     pub fn core_0_pif_pms_constrain_world_0_cache_config(
         &mut self,
-    ) -> CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_CACHE_CONFIG_W<CORE_0_PIF_PMS_CONSTRAIN_4_SPEC> {
+    ) -> CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_CACHE_CONFIG_W<
+        CORE_0_PIF_PMS_CONSTRAIN_4_SPEC,
+    > {
         CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_CACHE_CONFIG_W::new(self, 24)
     }
     ///Bits 26:27 - Core0 access ad permission in world0.
@@ -372,7 +445,9 @@ impl W {
     #[must_use]
     pub fn core_0_pif_pms_constrain_world_0_world_controller(
         &mut self,
-    ) -> CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_WORLD_CONTROLLER_W<CORE_0_PIF_PMS_CONSTRAIN_4_SPEC> {
+    ) -> CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_WORLD_CONTROLLER_W<
+        CORE_0_PIF_PMS_CONSTRAIN_4_SPEC,
+    > {
         CORE_0_PIF_PMS_CONSTRAIN_WORLD_0_WORLD_CONTROLLER_W::new(self, 30)
     }
 }

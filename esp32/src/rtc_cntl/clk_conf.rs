@@ -253,7 +253,13 @@ impl SOC_CLK_SEL_R {
     }
 }
 ///Field `SOC_CLK_SEL` writer - SOC clock sel. 0: XTAL 1: PLL 2: CK8M 3: APLL
-pub type SOC_CLK_SEL_W<'a, REG> = crate::FieldWriter<'a, REG, 2, SOC_CLK_SEL, crate::Safe>;
+pub type SOC_CLK_SEL_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+    SOC_CLK_SEL,
+    crate::Safe,
+>;
 impl<'a, REG> SOC_CLK_SEL_W<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,

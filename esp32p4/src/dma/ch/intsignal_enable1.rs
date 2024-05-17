@@ -35,7 +35,9 @@ impl R {
     pub fn ch1_enable_ecc_prot_uidmem_uncorrerr_intsignal(
         &self,
     ) -> CH1_ENABLE_ECC_PROT_UIDMEM_UNCORRERR_INTSIGNAL_R {
-        CH1_ENABLE_ECC_PROT_UIDMEM_UNCORRERR_INTSIGNAL_R::new(((self.bits >> 3) & 1) != 0)
+        CH1_ENABLE_ECC_PROT_UIDMEM_UNCORRERR_INTSIGNAL_R::new(
+            ((self.bits >> 3) & 1) != 0,
+        )
     }
 }
 #[cfg(feature = "impl-register-debug")]

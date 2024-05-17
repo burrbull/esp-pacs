@@ -61,19 +61,25 @@ impl W {
     ///Bit 0 - The bit is used to enable bypass L1-ICache0. 0: disable bypass, 1: enable bypass.
     #[inline(always)]
     #[must_use]
-    pub fn bypass_l1_icache0_en(&mut self) -> BYPASS_L1_ICACHE0_EN_W<L1_BYPASS_CACHE_CONF_SPEC> {
+    pub fn bypass_l1_icache0_en(
+        &mut self,
+    ) -> BYPASS_L1_ICACHE0_EN_W<L1_BYPASS_CACHE_CONF_SPEC> {
         BYPASS_L1_ICACHE0_EN_W::new(self, 0)
     }
     ///Bit 1 - The bit is used to enable bypass L1-ICache1. 0: disable bypass, 1: enable bypass.
     #[inline(always)]
     #[must_use]
-    pub fn bypass_l1_icache1_en(&mut self) -> BYPASS_L1_ICACHE1_EN_W<L1_BYPASS_CACHE_CONF_SPEC> {
+    pub fn bypass_l1_icache1_en(
+        &mut self,
+    ) -> BYPASS_L1_ICACHE1_EN_W<L1_BYPASS_CACHE_CONF_SPEC> {
         BYPASS_L1_ICACHE1_EN_W::new(self, 1)
     }
     ///Bit 4 - The bit is used to enable bypass L1-DCache. 0: disable bypass, 1: enable bypass.
     #[inline(always)]
     #[must_use]
-    pub fn bypass_l1_dcache_en(&mut self) -> BYPASS_L1_DCACHE_EN_W<L1_BYPASS_CACHE_CONF_SPEC> {
+    pub fn bypass_l1_dcache_en(
+        &mut self,
+    ) -> BYPASS_L1_DCACHE_EN_W<L1_BYPASS_CACHE_CONF_SPEC> {
         BYPASS_L1_DCACHE_EN_W::new(self, 4)
     }
 }

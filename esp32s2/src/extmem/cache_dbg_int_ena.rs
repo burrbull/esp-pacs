@@ -182,10 +182,7 @@ impl core::fmt::Debug for R {
             .field("cache_dbg_en", &self.cache_dbg_en())
             .field("ibus_acs_msk_ic_int_ena", &self.ibus_acs_msk_ic_int_ena())
             .field("ibus_cnt_ovf_int_ena", &self.ibus_cnt_ovf_int_ena())
-            .field(
-                "ic_sync_size_fault_int_ena",
-                &self.ic_sync_size_fault_int_ena(),
-            )
+            .field("ic_sync_size_fault_int_ena", &self.ic_sync_size_fault_int_ena())
             .field(
                 "ic_preload_size_fault_int_ena",
                 &self.ic_preload_size_fault_int_ena(),
@@ -195,41 +192,23 @@ impl core::fmt::Debug for R {
                 "icache_set_preload_ilg_int_ena",
                 &self.icache_set_preload_ilg_int_ena(),
             )
-            .field(
-                "icache_set_sync_ilg_int_ena",
-                &self.icache_set_sync_ilg_int_ena(),
-            )
-            .field(
-                "icache_set_lock_ilg_int_ena",
-                &self.icache_set_lock_ilg_int_ena(),
-            )
+            .field("icache_set_sync_ilg_int_ena", &self.icache_set_sync_ilg_int_ena())
+            .field("icache_set_lock_ilg_int_ena", &self.icache_set_lock_ilg_int_ena())
             .field("dbus_acs_msk_dc_int_ena", &self.dbus_acs_msk_dc_int_ena())
             .field("dbus_cnt_ovf_int_ena", &self.dbus_cnt_ovf_int_ena())
-            .field(
-                "dc_sync_size_fault_int_ena",
-                &self.dc_sync_size_fault_int_ena(),
-            )
+            .field("dc_sync_size_fault_int_ena", &self.dc_sync_size_fault_int_ena())
             .field(
                 "dc_preload_size_fault_int_ena",
                 &self.dc_preload_size_fault_int_ena(),
             )
-            .field(
-                "dcache_write_flash_int_ena",
-                &self.dcache_write_flash_int_ena(),
-            )
+            .field("dcache_write_flash_int_ena", &self.dcache_write_flash_int_ena())
             .field("dcache_reject_int_ena", &self.dcache_reject_int_ena())
             .field(
                 "dcache_set_preload_ilg_int_ena",
                 &self.dcache_set_preload_ilg_int_ena(),
             )
-            .field(
-                "dcache_set_sync_ilg_int_ena",
-                &self.dcache_set_sync_ilg_int_ena(),
-            )
-            .field(
-                "dcache_set_lock_ilg_int_ena",
-                &self.dcache_set_lock_ilg_int_ena(),
-            )
+            .field("dcache_set_sync_ilg_int_ena", &self.dcache_set_sync_ilg_int_ena())
+            .field("dcache_set_lock_ilg_int_ena", &self.dcache_set_lock_ilg_int_ena())
             .field("mmu_entry_fault_int_ena", &self.mmu_entry_fault_int_ena())
             .finish()
     }
@@ -244,13 +223,17 @@ impl W {
     ///Bit 2 - The bit is used to enable interrupt by cpu access icache while the corresponding ibus is disabled which include speculative access.
     #[inline(always)]
     #[must_use]
-    pub fn ibus_acs_msk_ic_int_ena(&mut self) -> IBUS_ACS_MSK_IC_INT_ENA_W<CACHE_DBG_INT_ENA_SPEC> {
+    pub fn ibus_acs_msk_ic_int_ena(
+        &mut self,
+    ) -> IBUS_ACS_MSK_IC_INT_ENA_W<CACHE_DBG_INT_ENA_SPEC> {
         IBUS_ACS_MSK_IC_INT_ENA_W::new(self, 2)
     }
     ///Bit 3 - The bit is used to enable interrupt by ibus counter overflow.
     #[inline(always)]
     #[must_use]
-    pub fn ibus_cnt_ovf_int_ena(&mut self) -> IBUS_CNT_OVF_INT_ENA_W<CACHE_DBG_INT_ENA_SPEC> {
+    pub fn ibus_cnt_ovf_int_ena(
+        &mut self,
+    ) -> IBUS_CNT_OVF_INT_ENA_W<CACHE_DBG_INT_ENA_SPEC> {
         IBUS_CNT_OVF_INT_ENA_W::new(self, 3)
     }
     ///Bit 4 - The bit is used to enable interrupt by manual sync configurations fault.
@@ -272,7 +255,9 @@ impl W {
     ///Bit 6 - The bit is used to enable interrupt by authentication fail.
     #[inline(always)]
     #[must_use]
-    pub fn icache_reject_int_ena(&mut self) -> ICACHE_REJECT_INT_ENA_W<CACHE_DBG_INT_ENA_SPEC> {
+    pub fn icache_reject_int_ena(
+        &mut self,
+    ) -> ICACHE_REJECT_INT_ENA_W<CACHE_DBG_INT_ENA_SPEC> {
         ICACHE_REJECT_INT_ENA_W::new(self, 6)
     }
     ///Bit 7 - The bit is used to enable interrupt by illegal writing preload registers of icache while icache is busy to issue lock,sync and pre-load operations.
@@ -302,13 +287,17 @@ impl W {
     ///Bit 10 - The bit is used to enable interrupt by cpu access dcache while the corresponding dbus is disabled which include speculative access.
     #[inline(always)]
     #[must_use]
-    pub fn dbus_acs_msk_dc_int_ena(&mut self) -> DBUS_ACS_MSK_DC_INT_ENA_W<CACHE_DBG_INT_ENA_SPEC> {
+    pub fn dbus_acs_msk_dc_int_ena(
+        &mut self,
+    ) -> DBUS_ACS_MSK_DC_INT_ENA_W<CACHE_DBG_INT_ENA_SPEC> {
         DBUS_ACS_MSK_DC_INT_ENA_W::new(self, 10)
     }
     ///Bit 11 - The bit is used to enable interrupt by dbus counter overflow.
     #[inline(always)]
     #[must_use]
-    pub fn dbus_cnt_ovf_int_ena(&mut self) -> DBUS_CNT_OVF_INT_ENA_W<CACHE_DBG_INT_ENA_SPEC> {
+    pub fn dbus_cnt_ovf_int_ena(
+        &mut self,
+    ) -> DBUS_CNT_OVF_INT_ENA_W<CACHE_DBG_INT_ENA_SPEC> {
         DBUS_CNT_OVF_INT_ENA_W::new(self, 11)
     }
     ///Bit 12 - The bit is used to enable interrupt by manual sync configurations fault.
@@ -338,7 +327,9 @@ impl W {
     ///Bit 15 - The bit is used to enable interrupt by authentication fail.
     #[inline(always)]
     #[must_use]
-    pub fn dcache_reject_int_ena(&mut self) -> DCACHE_REJECT_INT_ENA_W<CACHE_DBG_INT_ENA_SPEC> {
+    pub fn dcache_reject_int_ena(
+        &mut self,
+    ) -> DCACHE_REJECT_INT_ENA_W<CACHE_DBG_INT_ENA_SPEC> {
         DCACHE_REJECT_INT_ENA_W::new(self, 15)
     }
     ///Bit 16 - The bit is used to enable interrupt by illegal writing preload registers of dcache while dcache is busy to issue lock,sync and pre-load operations.
@@ -368,7 +359,9 @@ impl W {
     ///Bit 19 - The bit is used to enable interrupt by mmu entry fault.
     #[inline(always)]
     #[must_use]
-    pub fn mmu_entry_fault_int_ena(&mut self) -> MMU_ENTRY_FAULT_INT_ENA_W<CACHE_DBG_INT_ENA_SPEC> {
+    pub fn mmu_entry_fault_int_ena(
+        &mut self,
+    ) -> MMU_ENTRY_FAULT_INT_ENA_W<CACHE_DBG_INT_ENA_SPEC> {
         MMU_ENTRY_FAULT_INT_ENA_W::new(self, 19)
     }
 }

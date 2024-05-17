@@ -37,42 +37,58 @@ pub type CORE_X_IRAM0_SRAM_LINE_1_SPLITADDR_W<'a, REG> = crate::FieldWriter<'a, 
 impl R {
     ///Bits 0:1 - category0 of core_x_iram0_dram_dma_line, if the splitaddress in block0 of SRAM, configured as 0x10, else if the splitaddress below block0 of SRAM, configured as 0x11, else if splitaddress higher than block0 of SRAM, configured as 0x00
     #[inline(always)]
-    pub fn core_x_iram0_sram_line_1_category_0(&self) -> CORE_X_IRAM0_SRAM_LINE_1_CATEGORY_0_R {
+    pub fn core_x_iram0_sram_line_1_category_0(
+        &self,
+    ) -> CORE_X_IRAM0_SRAM_LINE_1_CATEGORY_0_R {
         CORE_X_IRAM0_SRAM_LINE_1_CATEGORY_0_R::new((self.bits & 3) as u8)
     }
     ///Bits 2:3 - category1 of core_x_iram0_dram_dma_line, if the splitaddress in block1 of SRAM, configured as 0x10, else if the splitaddress below block1 of SRAM, configured as 0x11, else if splitaddress higher than block1 of SRAM, configured as 0x00
     #[inline(always)]
-    pub fn core_x_iram0_sram_line_1_category_1(&self) -> CORE_X_IRAM0_SRAM_LINE_1_CATEGORY_1_R {
+    pub fn core_x_iram0_sram_line_1_category_1(
+        &self,
+    ) -> CORE_X_IRAM0_SRAM_LINE_1_CATEGORY_1_R {
         CORE_X_IRAM0_SRAM_LINE_1_CATEGORY_1_R::new(((self.bits >> 2) & 3) as u8)
     }
     ///Bits 4:5 - category2 of core_x_iram0_dram_dma_line, if the splitaddress in block2 of SRAM, configured as 0x10, else if the splitaddress below block2 of SRAM, configured as 0x11, else if splitaddress higher than block2 of SRAM, configured as 0x00
     #[inline(always)]
-    pub fn core_x_iram0_sram_line_1_category_2(&self) -> CORE_X_IRAM0_SRAM_LINE_1_CATEGORY_2_R {
+    pub fn core_x_iram0_sram_line_1_category_2(
+        &self,
+    ) -> CORE_X_IRAM0_SRAM_LINE_1_CATEGORY_2_R {
         CORE_X_IRAM0_SRAM_LINE_1_CATEGORY_2_R::new(((self.bits >> 4) & 3) as u8)
     }
     ///Bits 6:7 - category3 of core_x_iram0_dram_dma_line, if the splitaddress in block3 of SRAM, configured as 0x10, else if the splitaddress below block3 of SRAM, configured as 0x11, else if splitaddress higher than block3 of SRAM, configured as 0x00
     #[inline(always)]
-    pub fn core_x_iram0_sram_line_1_category_3(&self) -> CORE_X_IRAM0_SRAM_LINE_1_CATEGORY_3_R {
+    pub fn core_x_iram0_sram_line_1_category_3(
+        &self,
+    ) -> CORE_X_IRAM0_SRAM_LINE_1_CATEGORY_3_R {
         CORE_X_IRAM0_SRAM_LINE_1_CATEGORY_3_R::new(((self.bits >> 6) & 3) as u8)
     }
     ///Bits 8:9 - category4 of core_x_iram0_dram_dma_line, if the splitaddress in block4 of SRAM, configured as 0x10, else if the splitaddress below block4 of SRAM, configured as 0x11, else if splitaddress higher than block4 of SRAM, configured as 0x00
     #[inline(always)]
-    pub fn core_x_iram0_sram_line_1_category_4(&self) -> CORE_X_IRAM0_SRAM_LINE_1_CATEGORY_4_R {
+    pub fn core_x_iram0_sram_line_1_category_4(
+        &self,
+    ) -> CORE_X_IRAM0_SRAM_LINE_1_CATEGORY_4_R {
         CORE_X_IRAM0_SRAM_LINE_1_CATEGORY_4_R::new(((self.bits >> 8) & 3) as u8)
     }
     ///Bits 10:11 - category5 of core_x_iram0_dram_dma_line, if the splitaddress in block5 of SRAM, configured as 0x10, else if the splitaddress below block5 of SRAM, configured as 0x11, else if splitaddress higher than block5 of SRAM, configured as 0x00
     #[inline(always)]
-    pub fn core_x_iram0_sram_line_1_category_5(&self) -> CORE_X_IRAM0_SRAM_LINE_1_CATEGORY_5_R {
+    pub fn core_x_iram0_sram_line_1_category_5(
+        &self,
+    ) -> CORE_X_IRAM0_SRAM_LINE_1_CATEGORY_5_R {
         CORE_X_IRAM0_SRAM_LINE_1_CATEGORY_5_R::new(((self.bits >> 10) & 3) as u8)
     }
     ///Bits 12:13 - category6 of core_x_iram0_dram_dma_line, if the splitaddress in block6 of SRAM, configured as 0x10, else if the splitaddress below block6 of SRAM, configured as 0x11, else if splitaddress higher than block6 of SRAM, configured as 0x00
     #[inline(always)]
-    pub fn core_x_iram0_sram_line_1_category_6(&self) -> CORE_X_IRAM0_SRAM_LINE_1_CATEGORY_6_R {
+    pub fn core_x_iram0_sram_line_1_category_6(
+        &self,
+    ) -> CORE_X_IRAM0_SRAM_LINE_1_CATEGORY_6_R {
         CORE_X_IRAM0_SRAM_LINE_1_CATEGORY_6_R::new(((self.bits >> 12) & 3) as u8)
     }
     ///Bits 14:21 - splitaddr of core_x_iram0_dram_dma_line, configured as \[15:8\]bit of actual address
     #[inline(always)]
-    pub fn core_x_iram0_sram_line_1_splitaddr(&self) -> CORE_X_IRAM0_SRAM_LINE_1_SPLITADDR_R {
+    pub fn core_x_iram0_sram_line_1_splitaddr(
+        &self,
+    ) -> CORE_X_IRAM0_SRAM_LINE_1_SPLITADDR_R {
         CORE_X_IRAM0_SRAM_LINE_1_SPLITADDR_R::new(((self.bits >> 14) & 0xff) as u8)
     }
 }
@@ -121,8 +137,9 @@ impl W {
     #[must_use]
     pub fn core_x_iram0_sram_line_1_category_0(
         &mut self,
-    ) -> CORE_X_IRAM0_SRAM_LINE_1_CATEGORY_0_W<CORE_X_IRAM0_DRAM0_DMA_SPLIT_LINE_CONSTRAIN_3_SPEC>
-    {
+    ) -> CORE_X_IRAM0_SRAM_LINE_1_CATEGORY_0_W<
+        CORE_X_IRAM0_DRAM0_DMA_SPLIT_LINE_CONSTRAIN_3_SPEC,
+    > {
         CORE_X_IRAM0_SRAM_LINE_1_CATEGORY_0_W::new(self, 0)
     }
     ///Bits 2:3 - category1 of core_x_iram0_dram_dma_line, if the splitaddress in block1 of SRAM, configured as 0x10, else if the splitaddress below block1 of SRAM, configured as 0x11, else if splitaddress higher than block1 of SRAM, configured as 0x00
@@ -130,8 +147,9 @@ impl W {
     #[must_use]
     pub fn core_x_iram0_sram_line_1_category_1(
         &mut self,
-    ) -> CORE_X_IRAM0_SRAM_LINE_1_CATEGORY_1_W<CORE_X_IRAM0_DRAM0_DMA_SPLIT_LINE_CONSTRAIN_3_SPEC>
-    {
+    ) -> CORE_X_IRAM0_SRAM_LINE_1_CATEGORY_1_W<
+        CORE_X_IRAM0_DRAM0_DMA_SPLIT_LINE_CONSTRAIN_3_SPEC,
+    > {
         CORE_X_IRAM0_SRAM_LINE_1_CATEGORY_1_W::new(self, 2)
     }
     ///Bits 4:5 - category2 of core_x_iram0_dram_dma_line, if the splitaddress in block2 of SRAM, configured as 0x10, else if the splitaddress below block2 of SRAM, configured as 0x11, else if splitaddress higher than block2 of SRAM, configured as 0x00
@@ -139,8 +157,9 @@ impl W {
     #[must_use]
     pub fn core_x_iram0_sram_line_1_category_2(
         &mut self,
-    ) -> CORE_X_IRAM0_SRAM_LINE_1_CATEGORY_2_W<CORE_X_IRAM0_DRAM0_DMA_SPLIT_LINE_CONSTRAIN_3_SPEC>
-    {
+    ) -> CORE_X_IRAM0_SRAM_LINE_1_CATEGORY_2_W<
+        CORE_X_IRAM0_DRAM0_DMA_SPLIT_LINE_CONSTRAIN_3_SPEC,
+    > {
         CORE_X_IRAM0_SRAM_LINE_1_CATEGORY_2_W::new(self, 4)
     }
     ///Bits 6:7 - category3 of core_x_iram0_dram_dma_line, if the splitaddress in block3 of SRAM, configured as 0x10, else if the splitaddress below block3 of SRAM, configured as 0x11, else if splitaddress higher than block3 of SRAM, configured as 0x00
@@ -148,8 +167,9 @@ impl W {
     #[must_use]
     pub fn core_x_iram0_sram_line_1_category_3(
         &mut self,
-    ) -> CORE_X_IRAM0_SRAM_LINE_1_CATEGORY_3_W<CORE_X_IRAM0_DRAM0_DMA_SPLIT_LINE_CONSTRAIN_3_SPEC>
-    {
+    ) -> CORE_X_IRAM0_SRAM_LINE_1_CATEGORY_3_W<
+        CORE_X_IRAM0_DRAM0_DMA_SPLIT_LINE_CONSTRAIN_3_SPEC,
+    > {
         CORE_X_IRAM0_SRAM_LINE_1_CATEGORY_3_W::new(self, 6)
     }
     ///Bits 8:9 - category4 of core_x_iram0_dram_dma_line, if the splitaddress in block4 of SRAM, configured as 0x10, else if the splitaddress below block4 of SRAM, configured as 0x11, else if splitaddress higher than block4 of SRAM, configured as 0x00
@@ -157,8 +177,9 @@ impl W {
     #[must_use]
     pub fn core_x_iram0_sram_line_1_category_4(
         &mut self,
-    ) -> CORE_X_IRAM0_SRAM_LINE_1_CATEGORY_4_W<CORE_X_IRAM0_DRAM0_DMA_SPLIT_LINE_CONSTRAIN_3_SPEC>
-    {
+    ) -> CORE_X_IRAM0_SRAM_LINE_1_CATEGORY_4_W<
+        CORE_X_IRAM0_DRAM0_DMA_SPLIT_LINE_CONSTRAIN_3_SPEC,
+    > {
         CORE_X_IRAM0_SRAM_LINE_1_CATEGORY_4_W::new(self, 8)
     }
     ///Bits 10:11 - category5 of core_x_iram0_dram_dma_line, if the splitaddress in block5 of SRAM, configured as 0x10, else if the splitaddress below block5 of SRAM, configured as 0x11, else if splitaddress higher than block5 of SRAM, configured as 0x00
@@ -166,8 +187,9 @@ impl W {
     #[must_use]
     pub fn core_x_iram0_sram_line_1_category_5(
         &mut self,
-    ) -> CORE_X_IRAM0_SRAM_LINE_1_CATEGORY_5_W<CORE_X_IRAM0_DRAM0_DMA_SPLIT_LINE_CONSTRAIN_3_SPEC>
-    {
+    ) -> CORE_X_IRAM0_SRAM_LINE_1_CATEGORY_5_W<
+        CORE_X_IRAM0_DRAM0_DMA_SPLIT_LINE_CONSTRAIN_3_SPEC,
+    > {
         CORE_X_IRAM0_SRAM_LINE_1_CATEGORY_5_W::new(self, 10)
     }
     ///Bits 12:13 - category6 of core_x_iram0_dram_dma_line, if the splitaddress in block6 of SRAM, configured as 0x10, else if the splitaddress below block6 of SRAM, configured as 0x11, else if splitaddress higher than block6 of SRAM, configured as 0x00
@@ -175,8 +197,9 @@ impl W {
     #[must_use]
     pub fn core_x_iram0_sram_line_1_category_6(
         &mut self,
-    ) -> CORE_X_IRAM0_SRAM_LINE_1_CATEGORY_6_W<CORE_X_IRAM0_DRAM0_DMA_SPLIT_LINE_CONSTRAIN_3_SPEC>
-    {
+    ) -> CORE_X_IRAM0_SRAM_LINE_1_CATEGORY_6_W<
+        CORE_X_IRAM0_DRAM0_DMA_SPLIT_LINE_CONSTRAIN_3_SPEC,
+    > {
         CORE_X_IRAM0_SRAM_LINE_1_CATEGORY_6_W::new(self, 12)
     }
     ///Bits 14:21 - splitaddr of core_x_iram0_dram_dma_line, configured as \[15:8\]bit of actual address
@@ -184,8 +207,9 @@ impl W {
     #[must_use]
     pub fn core_x_iram0_sram_line_1_splitaddr(
         &mut self,
-    ) -> CORE_X_IRAM0_SRAM_LINE_1_SPLITADDR_W<CORE_X_IRAM0_DRAM0_DMA_SPLIT_LINE_CONSTRAIN_3_SPEC>
-    {
+    ) -> CORE_X_IRAM0_SRAM_LINE_1_SPLITADDR_W<
+        CORE_X_IRAM0_DRAM0_DMA_SPLIT_LINE_CONSTRAIN_3_SPEC,
+    > {
         CORE_X_IRAM0_SRAM_LINE_1_SPLITADDR_W::new(self, 14)
     }
 }

@@ -55,10 +55,7 @@ impl core::fmt::Debug for R {
         f.debug_struct("PERI_CLK_CTRL111")
             .field("uart0_sclk_div_num", &self.uart0_sclk_div_num())
             .field("uart0_sclk_div_numerator", &self.uart0_sclk_div_numerator())
-            .field(
-                "uart0_sclk_div_denominator",
-                &self.uart0_sclk_div_denominator(),
-            )
+            .field("uart0_sclk_div_denominator", &self.uart0_sclk_div_denominator())
             .field("uart1_clk_src_sel", &self.uart1_clk_src_sel())
             .field("uart1_clk_en", &self.uart1_clk_en())
             .finish()

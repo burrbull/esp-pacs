@@ -33,18 +33,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("I2C0_DATA")
-            .field(
-                "lp_i2c_ana_mast_i2c0_rdata",
-                &self.lp_i2c_ana_mast_i2c0_rdata(),
-            )
-            .field(
-                "lp_i2c_ana_mast_i2c0_clk_sel",
-                &self.lp_i2c_ana_mast_i2c0_clk_sel(),
-            )
-            .field(
-                "lp_i2c_ana_mast_i2c_mst_sel",
-                &self.lp_i2c_ana_mast_i2c_mst_sel(),
-            )
+            .field("lp_i2c_ana_mast_i2c0_rdata", &self.lp_i2c_ana_mast_i2c0_rdata())
+            .field("lp_i2c_ana_mast_i2c0_clk_sel", &self.lp_i2c_ana_mast_i2c0_clk_sel())
+            .field("lp_i2c_ana_mast_i2c_mst_sel", &self.lp_i2c_ana_mast_i2c_mst_sel())
             .finish()
     }
 }
@@ -60,7 +51,9 @@ impl W {
     ///Bit 11 - need des
     #[inline(always)]
     #[must_use]
-    pub fn lp_i2c_ana_mast_i2c_mst_sel(&mut self) -> LP_I2C_ANA_MAST_I2C_MST_SEL_W<I2C0_DATA_SPEC> {
+    pub fn lp_i2c_ana_mast_i2c_mst_sel(
+        &mut self,
+    ) -> LP_I2C_ANA_MAST_I2C_MST_SEL_W<I2C0_DATA_SPEC> {
         LP_I2C_ANA_MAST_I2C_MST_SEL_W::new(self, 11)
     }
 }

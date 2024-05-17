@@ -24,14 +24,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("I2C0_CTRL")
-            .field(
-                "lp_i2c_ana_mast_i2c0_ctrl",
-                &self.lp_i2c_ana_mast_i2c0_ctrl(),
-            )
-            .field(
-                "lp_i2c_ana_mast_i2c0_busy",
-                &self.lp_i2c_ana_mast_i2c0_busy(),
-            )
+            .field("lp_i2c_ana_mast_i2c0_ctrl", &self.lp_i2c_ana_mast_i2c0_ctrl())
+            .field("lp_i2c_ana_mast_i2c0_busy", &self.lp_i2c_ana_mast_i2c0_busy())
             .finish()
     }
 }
@@ -39,7 +33,9 @@ impl W {
     ///Bits 0:24 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn lp_i2c_ana_mast_i2c0_ctrl(&mut self) -> LP_I2C_ANA_MAST_I2C0_CTRL_W<I2C0_CTRL_SPEC> {
+    pub fn lp_i2c_ana_mast_i2c0_ctrl(
+        &mut self,
+    ) -> LP_I2C_ANA_MAST_I2C0_CTRL_W<I2C0_CTRL_SPEC> {
         LP_I2C_ANA_MAST_I2C0_CTRL_W::new(self, 0)
     }
 }

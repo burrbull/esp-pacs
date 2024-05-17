@@ -46,14 +46,8 @@ impl core::fmt::Debug for R {
         f.debug_struct("APB_SYNC_POSTW_EN")
             .field("gmac_apb_postw_en", &self.gmac_apb_postw_en())
             .field("dsi_host_apb_postw_en", &self.dsi_host_apb_postw_en())
-            .field(
-                "csi_host_apb_sync_postw_en",
-                &self.csi_host_apb_sync_postw_en(),
-            )
-            .field(
-                "csi_host_apb_async_postw_en",
-                &self.csi_host_apb_async_postw_en(),
-            )
+            .field("csi_host_apb_sync_postw_en", &self.csi_host_apb_sync_postw_en())
+            .field("csi_host_apb_async_postw_en", &self.csi_host_apb_async_postw_en())
             .finish()
     }
 }
@@ -67,7 +61,9 @@ impl W {
     ///Bit 1 - N/A
     #[inline(always)]
     #[must_use]
-    pub fn dsi_host_apb_postw_en(&mut self) -> DSI_HOST_APB_POSTW_EN_W<APB_SYNC_POSTW_EN_SPEC> {
+    pub fn dsi_host_apb_postw_en(
+        &mut self,
+    ) -> DSI_HOST_APB_POSTW_EN_W<APB_SYNC_POSTW_EN_SPEC> {
         DSI_HOST_APB_POSTW_EN_W::new(self, 1)
     }
     ///Bit 2 - N/A

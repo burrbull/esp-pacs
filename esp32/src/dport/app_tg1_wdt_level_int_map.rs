@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("APP_TG1_WDT_LEVEL_INT_MAP")
-            .field(
-                "app_tg1_wdt_level_int_map",
-                &self.app_tg1_wdt_level_int_map(),
-            )
+            .field("app_tg1_wdt_level_int_map", &self.app_tg1_wdt_level_int_map())
             .finish()
     }
 }

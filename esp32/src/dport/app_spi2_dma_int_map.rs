@@ -25,7 +25,9 @@ impl W {
     ///Bits 0:4
     #[inline(always)]
     #[must_use]
-    pub fn app_spi2_dma_int_map(&mut self) -> APP_SPI2_DMA_INT_MAP_W<APP_SPI2_DMA_INT_MAP_SPEC> {
+    pub fn app_spi2_dma_int_map(
+        &mut self,
+    ) -> APP_SPI2_DMA_INT_MAP_W<APP_SPI2_DMA_INT_MAP_SPEC> {
         APP_SPI2_DMA_INT_MAP_W::new(self, 0)
     }
 }

@@ -55,25 +55,33 @@ impl W {
     ///Bit 0 - Set this bit to 1 the data into Rx channel 0 would be swapped in byte. The Byte0 and Byte1 would be swapped while byte 2 and byte 3 would be swappped.
     #[inline(always)]
     #[must_use]
-    pub fn blend0_rx_byte_swap_en(&mut self) -> BLEND0_RX_BYTE_SWAP_EN_W<BLEND_BYTE_ORDER_SPEC> {
+    pub fn blend0_rx_byte_swap_en(
+        &mut self,
+    ) -> BLEND0_RX_BYTE_SWAP_EN_W<BLEND_BYTE_ORDER_SPEC> {
         BLEND0_RX_BYTE_SWAP_EN_W::new(self, 0)
     }
     ///Bit 1 - Set this bit to 1 the data into Rx channel 0 would be swapped in byte. The Byte0 and Byte1 would be swapped while byte 2 and byte 3 would be swappped.
     #[inline(always)]
     #[must_use]
-    pub fn blend1_rx_byte_swap_en(&mut self) -> BLEND1_RX_BYTE_SWAP_EN_W<BLEND_BYTE_ORDER_SPEC> {
+    pub fn blend1_rx_byte_swap_en(
+        &mut self,
+    ) -> BLEND1_RX_BYTE_SWAP_EN_W<BLEND_BYTE_ORDER_SPEC> {
         BLEND1_RX_BYTE_SWAP_EN_W::new(self, 1)
     }
     ///Bit 2 - Set this bit to 1 the data into Rx channel 0 would be swapped in rgb. It means rgb would be swap to bgr.
     #[inline(always)]
     #[must_use]
-    pub fn blend0_rx_rgb_swap_en(&mut self) -> BLEND0_RX_RGB_SWAP_EN_W<BLEND_BYTE_ORDER_SPEC> {
+    pub fn blend0_rx_rgb_swap_en(
+        &mut self,
+    ) -> BLEND0_RX_RGB_SWAP_EN_W<BLEND_BYTE_ORDER_SPEC> {
         BLEND0_RX_RGB_SWAP_EN_W::new(self, 2)
     }
     ///Bit 3 - Set this bit to 1 the data into Rx channel 0 would be swapped in rgb. It means rgb would be swap to bgr.
     #[inline(always)]
     #[must_use]
-    pub fn blend1_rx_rgb_swap_en(&mut self) -> BLEND1_RX_RGB_SWAP_EN_W<BLEND_BYTE_ORDER_SPEC> {
+    pub fn blend1_rx_rgb_swap_en(
+        &mut self,
+    ) -> BLEND1_RX_RGB_SWAP_EN_W<BLEND_BYTE_ORDER_SPEC> {
         BLEND1_RX_RGB_SWAP_EN_W::new(self, 3)
     }
 }

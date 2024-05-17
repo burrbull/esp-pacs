@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PRO_SDIO_HOST_INTERRUPT_MAP")
-            .field(
-                "pro_sdio_host_interrupt_map",
-                &self.pro_sdio_host_interrupt_map(),
-            )
+            .field("pro_sdio_host_interrupt_map", &self.pro_sdio_host_interrupt_map())
             .finish()
     }
 }

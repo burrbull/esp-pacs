@@ -213,7 +213,9 @@ pub mod filter_control;
 You can [`read`](crate::generic::Reg::read) this register and get [`filter_match_control::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`filter_match_control::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@filter_match_control`] module*/
-pub type FILTER_MATCH_CONTROL = crate::Reg<filter_match_control::FILTER_MATCH_CONTROL_SPEC>;
+pub type FILTER_MATCH_CONTROL = crate::Reg<
+    filter_match_control::FILTER_MATCH_CONTROL_SPEC,
+>;
 ///filter match control register
 pub mod filter_match_control;
 /**FILTER_COMPARATOR_CONTROL (rw) register accessor: filter comparator match control register
@@ -221,8 +223,9 @@ pub mod filter_match_control;
 You can [`read`](crate::generic::Reg::read) this register and get [`filter_comparator_control::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`filter_comparator_control::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@filter_comparator_control`] module*/
-pub type FILTER_COMPARATOR_CONTROL =
-    crate::Reg<filter_comparator_control::FILTER_COMPARATOR_CONTROL_SPEC>;
+pub type FILTER_COMPARATOR_CONTROL = crate::Reg<
+    filter_comparator_control::FILTER_COMPARATOR_CONTROL_SPEC,
+>;
 ///filter comparator match control register
 pub mod filter_comparator_control;
 /**FILTER_P_COMPARATOR_MATCH (rw) register accessor: primary comparator match value
@@ -230,8 +233,9 @@ pub mod filter_comparator_control;
 You can [`read`](crate::generic::Reg::read) this register and get [`filter_p_comparator_match::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`filter_p_comparator_match::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@filter_p_comparator_match`] module*/
-pub type FILTER_P_COMPARATOR_MATCH =
-    crate::Reg<filter_p_comparator_match::FILTER_P_COMPARATOR_MATCH_SPEC>;
+pub type FILTER_P_COMPARATOR_MATCH = crate::Reg<
+    filter_p_comparator_match::FILTER_P_COMPARATOR_MATCH_SPEC,
+>;
 ///primary comparator match value
 pub mod filter_p_comparator_match;
 /**FILTER_S_COMPARATOR_MATCH (rw) register accessor: secondary comparator match value
@@ -239,8 +243,9 @@ pub mod filter_p_comparator_match;
 You can [`read`](crate::generic::Reg::read) this register and get [`filter_s_comparator_match::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`filter_s_comparator_match::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@filter_s_comparator_match`] module*/
-pub type FILTER_S_COMPARATOR_MATCH =
-    crate::Reg<filter_s_comparator_match::FILTER_S_COMPARATOR_MATCH_SPEC>;
+pub type FILTER_S_COMPARATOR_MATCH = crate::Reg<
+    filter_s_comparator_match::FILTER_S_COMPARATOR_MATCH_SPEC,
+>;
 ///secondary comparator match value
 pub mod filter_s_comparator_match;
 /**RESYNC_PROLONGED (rw) register accessor: resync configuration register

@@ -84,7 +84,9 @@ impl R {
     }
     ///Bit 11 - int state of touch scan done
     #[inline(always)]
-    pub fn sar_cocpu_touch_scan_done_int_st(&self) -> SAR_COCPU_TOUCH_SCAN_DONE_INT_ST_R {
+    pub fn sar_cocpu_touch_scan_done_int_st(
+        &self,
+    ) -> SAR_COCPU_TOUCH_SCAN_DONE_INT_ST_R {
         SAR_COCPU_TOUCH_SCAN_DONE_INT_ST_R::new(((self.bits >> 11) & 1) != 0)
     }
 }
@@ -92,10 +94,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SAR_COCPU_INT_ST")
-            .field(
-                "sar_cocpu_touch_done_int_st",
-                &self.sar_cocpu_touch_done_int_st(),
-            )
+            .field("sar_cocpu_touch_done_int_st", &self.sar_cocpu_touch_done_int_st())
             .field(
                 "sar_cocpu_touch_inactive_int_st",
                 &self.sar_cocpu_touch_inactive_int_st(),

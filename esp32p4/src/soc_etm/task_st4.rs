@@ -302,43 +302,16 @@ impl core::fmt::Debug for R {
             .field("mcpwm0_task_cap0_st", &self.mcpwm0_task_cap0_st())
             .field("mcpwm0_task_cap1_st", &self.mcpwm0_task_cap1_st())
             .field("mcpwm0_task_cap2_st", &self.mcpwm0_task_cap2_st())
-            .field(
-                "mcpwm1_task_cmpr0_a_up_st",
-                &self.mcpwm1_task_cmpr0_a_up_st(),
-            )
-            .field(
-                "mcpwm1_task_cmpr1_a_up_st",
-                &self.mcpwm1_task_cmpr1_a_up_st(),
-            )
-            .field(
-                "mcpwm1_task_cmpr2_a_up_st",
-                &self.mcpwm1_task_cmpr2_a_up_st(),
-            )
-            .field(
-                "mcpwm1_task_cmpr0_b_up_st",
-                &self.mcpwm1_task_cmpr0_b_up_st(),
-            )
-            .field(
-                "mcpwm1_task_cmpr1_b_up_st",
-                &self.mcpwm1_task_cmpr1_b_up_st(),
-            )
-            .field(
-                "mcpwm1_task_cmpr2_b_up_st",
-                &self.mcpwm1_task_cmpr2_b_up_st(),
-            )
+            .field("mcpwm1_task_cmpr0_a_up_st", &self.mcpwm1_task_cmpr0_a_up_st())
+            .field("mcpwm1_task_cmpr1_a_up_st", &self.mcpwm1_task_cmpr1_a_up_st())
+            .field("mcpwm1_task_cmpr2_a_up_st", &self.mcpwm1_task_cmpr2_a_up_st())
+            .field("mcpwm1_task_cmpr0_b_up_st", &self.mcpwm1_task_cmpr0_b_up_st())
+            .field("mcpwm1_task_cmpr1_b_up_st", &self.mcpwm1_task_cmpr1_b_up_st())
+            .field("mcpwm1_task_cmpr2_b_up_st", &self.mcpwm1_task_cmpr2_b_up_st())
             .field("mcpwm1_task_gen_stop_st", &self.mcpwm1_task_gen_stop_st())
-            .field(
-                "mcpwm1_task_timer0_syn_st",
-                &self.mcpwm1_task_timer0_syn_st(),
-            )
-            .field(
-                "mcpwm1_task_timer1_syn_st",
-                &self.mcpwm1_task_timer1_syn_st(),
-            )
-            .field(
-                "mcpwm1_task_timer2_syn_st",
-                &self.mcpwm1_task_timer2_syn_st(),
-            )
+            .field("mcpwm1_task_timer0_syn_st", &self.mcpwm1_task_timer0_syn_st())
+            .field("mcpwm1_task_timer1_syn_st", &self.mcpwm1_task_timer1_syn_st())
+            .field("mcpwm1_task_timer2_syn_st", &self.mcpwm1_task_timer2_syn_st())
             .field(
                 "mcpwm1_task_timer0_period_up_st",
                 &self.mcpwm1_task_timer0_period_up_st(),
@@ -371,19 +344,25 @@ impl W {
     ///Bit 0 - Represents MCPWM0_task_clr0_ost trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn mcpwm0_task_clr0_ost_st(&mut self) -> MCPWM0_TASK_CLR0_OST_ST_W<TASK_ST4_SPEC> {
+    pub fn mcpwm0_task_clr0_ost_st(
+        &mut self,
+    ) -> MCPWM0_TASK_CLR0_OST_ST_W<TASK_ST4_SPEC> {
         MCPWM0_TASK_CLR0_OST_ST_W::new(self, 0)
     }
     ///Bit 1 - Represents MCPWM0_task_clr1_ost trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn mcpwm0_task_clr1_ost_st(&mut self) -> MCPWM0_TASK_CLR1_OST_ST_W<TASK_ST4_SPEC> {
+    pub fn mcpwm0_task_clr1_ost_st(
+        &mut self,
+    ) -> MCPWM0_TASK_CLR1_OST_ST_W<TASK_ST4_SPEC> {
         MCPWM0_TASK_CLR1_OST_ST_W::new(self, 1)
     }
     ///Bit 2 - Represents MCPWM0_task_clr2_ost trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn mcpwm0_task_clr2_ost_st(&mut self) -> MCPWM0_TASK_CLR2_OST_ST_W<TASK_ST4_SPEC> {
+    pub fn mcpwm0_task_clr2_ost_st(
+        &mut self,
+    ) -> MCPWM0_TASK_CLR2_OST_ST_W<TASK_ST4_SPEC> {
         MCPWM0_TASK_CLR2_OST_ST_W::new(self, 2)
     }
     ///Bit 3 - Represents MCPWM0_task_cap0 trigger status.\\0: Not triggered\\1: Triggered
@@ -407,61 +386,81 @@ impl W {
     ///Bit 6 - Represents MCPWM1_task_cmpr0_a_up trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn mcpwm1_task_cmpr0_a_up_st(&mut self) -> MCPWM1_TASK_CMPR0_A_UP_ST_W<TASK_ST4_SPEC> {
+    pub fn mcpwm1_task_cmpr0_a_up_st(
+        &mut self,
+    ) -> MCPWM1_TASK_CMPR0_A_UP_ST_W<TASK_ST4_SPEC> {
         MCPWM1_TASK_CMPR0_A_UP_ST_W::new(self, 6)
     }
     ///Bit 7 - Represents MCPWM1_task_cmpr1_a_up trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn mcpwm1_task_cmpr1_a_up_st(&mut self) -> MCPWM1_TASK_CMPR1_A_UP_ST_W<TASK_ST4_SPEC> {
+    pub fn mcpwm1_task_cmpr1_a_up_st(
+        &mut self,
+    ) -> MCPWM1_TASK_CMPR1_A_UP_ST_W<TASK_ST4_SPEC> {
         MCPWM1_TASK_CMPR1_A_UP_ST_W::new(self, 7)
     }
     ///Bit 8 - Represents MCPWM1_task_cmpr2_a_up trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn mcpwm1_task_cmpr2_a_up_st(&mut self) -> MCPWM1_TASK_CMPR2_A_UP_ST_W<TASK_ST4_SPEC> {
+    pub fn mcpwm1_task_cmpr2_a_up_st(
+        &mut self,
+    ) -> MCPWM1_TASK_CMPR2_A_UP_ST_W<TASK_ST4_SPEC> {
         MCPWM1_TASK_CMPR2_A_UP_ST_W::new(self, 8)
     }
     ///Bit 9 - Represents MCPWM1_task_cmpr0_b_up trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn mcpwm1_task_cmpr0_b_up_st(&mut self) -> MCPWM1_TASK_CMPR0_B_UP_ST_W<TASK_ST4_SPEC> {
+    pub fn mcpwm1_task_cmpr0_b_up_st(
+        &mut self,
+    ) -> MCPWM1_TASK_CMPR0_B_UP_ST_W<TASK_ST4_SPEC> {
         MCPWM1_TASK_CMPR0_B_UP_ST_W::new(self, 9)
     }
     ///Bit 10 - Represents MCPWM1_task_cmpr1_b_up trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn mcpwm1_task_cmpr1_b_up_st(&mut self) -> MCPWM1_TASK_CMPR1_B_UP_ST_W<TASK_ST4_SPEC> {
+    pub fn mcpwm1_task_cmpr1_b_up_st(
+        &mut self,
+    ) -> MCPWM1_TASK_CMPR1_B_UP_ST_W<TASK_ST4_SPEC> {
         MCPWM1_TASK_CMPR1_B_UP_ST_W::new(self, 10)
     }
     ///Bit 11 - Represents MCPWM1_task_cmpr2_b_up trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn mcpwm1_task_cmpr2_b_up_st(&mut self) -> MCPWM1_TASK_CMPR2_B_UP_ST_W<TASK_ST4_SPEC> {
+    pub fn mcpwm1_task_cmpr2_b_up_st(
+        &mut self,
+    ) -> MCPWM1_TASK_CMPR2_B_UP_ST_W<TASK_ST4_SPEC> {
         MCPWM1_TASK_CMPR2_B_UP_ST_W::new(self, 11)
     }
     ///Bit 12 - Represents MCPWM1_task_gen_stop trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn mcpwm1_task_gen_stop_st(&mut self) -> MCPWM1_TASK_GEN_STOP_ST_W<TASK_ST4_SPEC> {
+    pub fn mcpwm1_task_gen_stop_st(
+        &mut self,
+    ) -> MCPWM1_TASK_GEN_STOP_ST_W<TASK_ST4_SPEC> {
         MCPWM1_TASK_GEN_STOP_ST_W::new(self, 12)
     }
     ///Bit 13 - Represents MCPWM1_task_timer0_syn trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn mcpwm1_task_timer0_syn_st(&mut self) -> MCPWM1_TASK_TIMER0_SYN_ST_W<TASK_ST4_SPEC> {
+    pub fn mcpwm1_task_timer0_syn_st(
+        &mut self,
+    ) -> MCPWM1_TASK_TIMER0_SYN_ST_W<TASK_ST4_SPEC> {
         MCPWM1_TASK_TIMER0_SYN_ST_W::new(self, 13)
     }
     ///Bit 14 - Represents MCPWM1_task_timer1_syn trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn mcpwm1_task_timer1_syn_st(&mut self) -> MCPWM1_TASK_TIMER1_SYN_ST_W<TASK_ST4_SPEC> {
+    pub fn mcpwm1_task_timer1_syn_st(
+        &mut self,
+    ) -> MCPWM1_TASK_TIMER1_SYN_ST_W<TASK_ST4_SPEC> {
         MCPWM1_TASK_TIMER1_SYN_ST_W::new(self, 14)
     }
     ///Bit 15 - Represents MCPWM1_task_timer2_syn trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn mcpwm1_task_timer2_syn_st(&mut self) -> MCPWM1_TASK_TIMER2_SYN_ST_W<TASK_ST4_SPEC> {
+    pub fn mcpwm1_task_timer2_syn_st(
+        &mut self,
+    ) -> MCPWM1_TASK_TIMER2_SYN_ST_W<TASK_ST4_SPEC> {
         MCPWM1_TASK_TIMER2_SYN_ST_W::new(self, 15)
     }
     ///Bit 16 - Represents MCPWM1_task_timer0_period_up trigger status.\\0: Not triggered\\1: Triggered
@@ -509,19 +508,25 @@ impl W {
     ///Bit 22 - Represents MCPWM1_task_clr0_ost trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn mcpwm1_task_clr0_ost_st(&mut self) -> MCPWM1_TASK_CLR0_OST_ST_W<TASK_ST4_SPEC> {
+    pub fn mcpwm1_task_clr0_ost_st(
+        &mut self,
+    ) -> MCPWM1_TASK_CLR0_OST_ST_W<TASK_ST4_SPEC> {
         MCPWM1_TASK_CLR0_OST_ST_W::new(self, 22)
     }
     ///Bit 23 - Represents MCPWM1_task_clr1_ost trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn mcpwm1_task_clr1_ost_st(&mut self) -> MCPWM1_TASK_CLR1_OST_ST_W<TASK_ST4_SPEC> {
+    pub fn mcpwm1_task_clr1_ost_st(
+        &mut self,
+    ) -> MCPWM1_TASK_CLR1_OST_ST_W<TASK_ST4_SPEC> {
         MCPWM1_TASK_CLR1_OST_ST_W::new(self, 23)
     }
     ///Bit 24 - Represents MCPWM1_task_clr2_ost trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn mcpwm1_task_clr2_ost_st(&mut self) -> MCPWM1_TASK_CLR2_OST_ST_W<TASK_ST4_SPEC> {
+    pub fn mcpwm1_task_clr2_ost_st(
+        &mut self,
+    ) -> MCPWM1_TASK_CLR2_OST_ST_W<TASK_ST4_SPEC> {
         MCPWM1_TASK_CLR2_OST_ST_W::new(self, 24)
     }
     ///Bit 25 - Represents MCPWM1_task_cap0 trigger status.\\0: Not triggered\\1: Triggered

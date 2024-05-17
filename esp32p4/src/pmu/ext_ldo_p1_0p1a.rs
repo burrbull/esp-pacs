@@ -108,7 +108,9 @@ impl W {
     ///Bit 7 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn _0p1a_force_tieh_sel_1(&mut self) -> _0P1A_FORCE_TIEH_SEL_1_W<EXT_LDO_P1_0P1A_SPEC> {
+    pub fn _0p1a_force_tieh_sel_1(
+        &mut self,
+    ) -> _0P1A_FORCE_TIEH_SEL_1_W<EXT_LDO_P1_0P1A_SPEC> {
         _0P1A_FORCE_TIEH_SEL_1_W::new(self, 7)
     }
     ///Bit 8 - need_des
@@ -126,13 +128,17 @@ impl W {
     ///Bit 12 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn _0p1a_tieh_pos_en_1(&mut self) -> _0P1A_TIEH_POS_EN_1_W<EXT_LDO_P1_0P1A_SPEC> {
+    pub fn _0p1a_tieh_pos_en_1(
+        &mut self,
+    ) -> _0P1A_TIEH_POS_EN_1_W<EXT_LDO_P1_0P1A_SPEC> {
         _0P1A_TIEH_POS_EN_1_W::new(self, 12)
     }
     ///Bit 13 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn _0p1a_tieh_neg_en_1(&mut self) -> _0P1A_TIEH_NEG_EN_1_W<EXT_LDO_P1_0P1A_SPEC> {
+    pub fn _0p1a_tieh_neg_en_1(
+        &mut self,
+    ) -> _0P1A_TIEH_NEG_EN_1_W<EXT_LDO_P1_0P1A_SPEC> {
         _0P1A_TIEH_NEG_EN_1_W::new(self, 13)
     }
     ///Bit 14 - need_des

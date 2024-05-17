@@ -215,14 +215,8 @@ impl core::fmt::Debug for R {
                 "slc1_wifi_rx_new_packet_int_st",
                 &self.slc1_wifi_rx_new_packet_int_st(),
             )
-            .field(
-                "slc1_host_rd_retry_int_st",
-                &self.slc1_host_rd_retry_int_st(),
-            )
-            .field(
-                "slc1_bt_rx_new_packet_int_st",
-                &self.slc1_bt_rx_new_packet_int_st(),
-            )
+            .field("slc1_host_rd_retry_int_st", &self.slc1_host_rd_retry_int_st())
+            .field("slc1_bt_rx_new_packet_int_st", &self.slc1_bt_rx_new_packet_int_st())
             .finish()
     }
 }

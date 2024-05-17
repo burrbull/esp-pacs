@@ -169,7 +169,9 @@ impl W {
     ///Bit 24 - Enable ultra high speed mode, use dll to generate clk.
     #[inline(always)]
     #[must_use]
-    pub fn ultra_high_speed_mode(&mut self) -> ULTRA_HIGH_SPEED_MODE_W<CLK_EDGE_SEL_SPEC> {
+    pub fn ultra_high_speed_mode(
+        &mut self,
+    ) -> ULTRA_HIGH_SPEED_MODE_W<CLK_EDGE_SEL_SPEC> {
         ULTRA_HIGH_SPEED_MODE_W::new(self, 24)
     }
 }

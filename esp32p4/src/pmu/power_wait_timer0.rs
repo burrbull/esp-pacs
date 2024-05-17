@@ -45,13 +45,17 @@ impl W {
     ///Bits 5:13 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn dg_hp_powerdown_timer(&mut self) -> DG_HP_POWERDOWN_TIMER_W<POWER_WAIT_TIMER0_SPEC> {
+    pub fn dg_hp_powerdown_timer(
+        &mut self,
+    ) -> DG_HP_POWERDOWN_TIMER_W<POWER_WAIT_TIMER0_SPEC> {
         DG_HP_POWERDOWN_TIMER_W::new(self, 5)
     }
     ///Bits 14:22 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn dg_hp_powerup_timer(&mut self) -> DG_HP_POWERUP_TIMER_W<POWER_WAIT_TIMER0_SPEC> {
+    pub fn dg_hp_powerup_timer(
+        &mut self,
+    ) -> DG_HP_POWERUP_TIMER_W<POWER_WAIT_TIMER0_SPEC> {
         DG_HP_POWERUP_TIMER_W::new(self, 14)
     }
     ///Bits 23:31 - need_des

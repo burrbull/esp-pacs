@@ -26,14 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("RDCLR0")
-            .field(
-                "slchost_slc0_bit7_clraddr",
-                &self.slchost_slc0_bit7_clraddr(),
-            )
-            .field(
-                "slchost_slc0_bit6_clraddr",
-                &self.slchost_slc0_bit6_clraddr(),
-            )
+            .field("slchost_slc0_bit7_clraddr", &self.slchost_slc0_bit7_clraddr())
+            .field("slchost_slc0_bit6_clraddr", &self.slchost_slc0_bit6_clraddr())
             .finish()
     }
 }
@@ -41,13 +35,17 @@ impl W {
     ///Bits 0:8 - *******Description***********
     #[inline(always)]
     #[must_use]
-    pub fn slchost_slc0_bit7_clraddr(&mut self) -> SLCHOST_SLC0_BIT7_CLRADDR_W<RDCLR0_SPEC> {
+    pub fn slchost_slc0_bit7_clraddr(
+        &mut self,
+    ) -> SLCHOST_SLC0_BIT7_CLRADDR_W<RDCLR0_SPEC> {
         SLCHOST_SLC0_BIT7_CLRADDR_W::new(self, 0)
     }
     ///Bits 9:17 - *******Description***********
     #[inline(always)]
     #[must_use]
-    pub fn slchost_slc0_bit6_clraddr(&mut self) -> SLCHOST_SLC0_BIT6_CLRADDR_W<RDCLR0_SPEC> {
+    pub fn slchost_slc0_bit6_clraddr(
+        &mut self,
+    ) -> SLCHOST_SLC0_BIT6_CLRADDR_W<RDCLR0_SPEC> {
         SLCHOST_SLC0_BIT6_CLRADDR_W::new(self, 9)
     }
 }

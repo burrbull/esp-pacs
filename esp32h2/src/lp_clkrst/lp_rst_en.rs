@@ -55,7 +55,9 @@ impl W {
     ///Bit 28 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn aon_efuse_core_reset_en(&mut self) -> AON_EFUSE_CORE_RESET_EN_W<LP_RST_EN_SPEC> {
+    pub fn aon_efuse_core_reset_en(
+        &mut self,
+    ) -> AON_EFUSE_CORE_RESET_EN_W<LP_RST_EN_SPEC> {
         AON_EFUSE_CORE_RESET_EN_W::new(self, 28)
     }
     ///Bit 29 - need_des

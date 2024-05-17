@@ -107,10 +107,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("TOUCH_FILTER_CTRL")
-            .field(
-                "touch_bypass_neg_noise_thres",
-                &self.touch_bypass_neg_noise_thres(),
-            )
+            .field("touch_bypass_neg_noise_thres", &self.touch_bypass_neg_noise_thres())
             .field("touch_bypass_noise_thres", &self.touch_bypass_noise_thres())
             .field("touch_smooth_lvl", &self.touch_smooth_lvl())
             .field("touch_jitter_step", &self.touch_jitter_step())
@@ -156,13 +153,17 @@ impl W {
     ///Bits 15:18 - negative threshold counter limit
     #[inline(always)]
     #[must_use]
-    pub fn touch_neg_noise_limit(&mut self) -> TOUCH_NEG_NOISE_LIMIT_W<TOUCH_FILTER_CTRL_SPEC> {
+    pub fn touch_neg_noise_limit(
+        &mut self,
+    ) -> TOUCH_NEG_NOISE_LIMIT_W<TOUCH_FILTER_CTRL_SPEC> {
         TOUCH_NEG_NOISE_LIMIT_W::new(self, 15)
     }
     ///Bits 19:20 - neg noise thres
     #[inline(always)]
     #[must_use]
-    pub fn touch_neg_noise_thres(&mut self) -> TOUCH_NEG_NOISE_THRES_W<TOUCH_FILTER_CTRL_SPEC> {
+    pub fn touch_neg_noise_thres(
+        &mut self,
+    ) -> TOUCH_NEG_NOISE_THRES_W<TOUCH_FILTER_CTRL_SPEC> {
         TOUCH_NEG_NOISE_THRES_W::new(self, 19)
     }
     ///Bits 21:22 - noise thres

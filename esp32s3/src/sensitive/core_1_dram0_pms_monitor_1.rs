@@ -13,12 +13,16 @@ pub type CORE_1_DRAM0_PMS_MONITOR_VIOLATE_EN_W<'a, REG> = crate::BitWriter<'a, R
 impl R {
     ///Bit 0 - Set 1 to clear core1 dram0 permission monior interrupt.
     #[inline(always)]
-    pub fn core_1_dram0_pms_monitor_violate_clr(&self) -> CORE_1_DRAM0_PMS_MONITOR_VIOLATE_CLR_R {
+    pub fn core_1_dram0_pms_monitor_violate_clr(
+        &self,
+    ) -> CORE_1_DRAM0_PMS_MONITOR_VIOLATE_CLR_R {
         CORE_1_DRAM0_PMS_MONITOR_VIOLATE_CLR_R::new((self.bits & 1) != 0)
     }
     ///Bit 1 - Set 1 to enable core1 dram0 permission monitor interrupt.
     #[inline(always)]
-    pub fn core_1_dram0_pms_monitor_violate_en(&self) -> CORE_1_DRAM0_PMS_MONITOR_VIOLATE_EN_R {
+    pub fn core_1_dram0_pms_monitor_violate_en(
+        &self,
+    ) -> CORE_1_DRAM0_PMS_MONITOR_VIOLATE_EN_R {
         CORE_1_DRAM0_PMS_MONITOR_VIOLATE_EN_R::new(((self.bits >> 1) & 1) != 0)
     }
 }

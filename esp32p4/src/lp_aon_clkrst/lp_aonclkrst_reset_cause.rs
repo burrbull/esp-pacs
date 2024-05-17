@@ -17,7 +17,10 @@ pub type LP_AONCLKRST_HPCORE1_RESET_FLAG_R = crate::BitReader;
 ///Field `LP_AONCLKRST_LPCORE_RESET_CAUSE_PMU_LP_CPU_MASK` reader - 1'b0: enable lpcore pmu_lp_cpu_reset reset_cause, 1'b1: disable lpcore pmu_lp_cpu_reset reset_cause
 pub type LP_AONCLKRST_LPCORE_RESET_CAUSE_PMU_LP_CPU_MASK_R = crate::BitReader;
 ///Field `LP_AONCLKRST_LPCORE_RESET_CAUSE_PMU_LP_CPU_MASK` writer - 1'b0: enable lpcore pmu_lp_cpu_reset reset_cause, 1'b1: disable lpcore pmu_lp_cpu_reset reset_cause
-pub type LP_AONCLKRST_LPCORE_RESET_CAUSE_PMU_LP_CPU_MASK_W<'a, REG> = crate::BitWriter<'a, REG>;
+pub type LP_AONCLKRST_LPCORE_RESET_CAUSE_PMU_LP_CPU_MASK_W<'a, REG> = crate::BitWriter<
+    'a,
+    REG,
+>;
 ///Field `LP_AONCLKRST_LPCORE_RESET_CAUSE_CLR` writer - need_des
 pub type LP_AONCLKRST_LPCORE_RESET_CAUSE_CLR_W<'a, REG> = crate::BitWriter<'a, REG>;
 ///Field `LP_AONCLKRST_LPCORE_RESET_FLAG_CLR` writer - need_des
@@ -43,7 +46,9 @@ impl R {
     }
     ///Bits 7:12 - 6'h1: POR reset 6'h3: digital system software reset 6'h5: PMU HP system power down reset 6'h7: HP system reset from HP watchdog 6'h9: HP system reset from LP watchdog 6'hb: HP core reset from HP watchdog 6'hc: HP core software reset 6'hd: HP core reset from LP watchdog 6'hf: brown out reset 6'h10: LP watchdog chip reset 6'h12: super watch dog reset 6'h13: glitch reset 6'h14: efuse crc error reset 6'h16: HP usb jtag chip reset 6'h17: HP usb uart chip reset 6'h18: HP jtag reset 6'h1a: HP core lockup
     #[inline(always)]
-    pub fn lp_aonclkrst_hpcore0_reset_cause(&self) -> LP_AONCLKRST_HPCORE0_RESET_CAUSE_R {
+    pub fn lp_aonclkrst_hpcore0_reset_cause(
+        &self,
+    ) -> LP_AONCLKRST_HPCORE0_RESET_CAUSE_R {
         LP_AONCLKRST_HPCORE0_RESET_CAUSE_R::new(((self.bits >> 7) & 0x3f) as u8)
     }
     ///Bit 13 - need_des
@@ -53,7 +58,9 @@ impl R {
     }
     ///Bits 14:19 - 6'h1: POR reset 6'h3: digital system software reset 6'h5: PMU HP system power down reset 6'h7: HP system reset from HP watchdog 6'h9: HP system reset from LP watchdog 6'hb: HP core reset from HP watchdog 6'hc: HP core software reset 6'hd: HP core reset from LP watchdog 6'hf: brown out reset 6'h10: LP watchdog chip reset 6'h12: super watch dog reset 6'h13: glitch reset 6'h14: efuse crc error reset 6'h16: HP usb jtag chip reset 6'h17: HP usb uart chip reset 6'h18: HP jtag reset 6'h1a: HP core lockup
     #[inline(always)]
-    pub fn lp_aonclkrst_hpcore1_reset_cause(&self) -> LP_AONCLKRST_HPCORE1_RESET_CAUSE_R {
+    pub fn lp_aonclkrst_hpcore1_reset_cause(
+        &self,
+    ) -> LP_AONCLKRST_HPCORE1_RESET_CAUSE_R {
         LP_AONCLKRST_HPCORE1_RESET_CAUSE_R::new(((self.bits >> 14) & 0x3f) as u8)
     }
     ///Bit 20 - need_des
@@ -66,7 +73,9 @@ impl R {
     pub fn lp_aonclkrst_lpcore_reset_cause_pmu_lp_cpu_mask(
         &self,
     ) -> LP_AONCLKRST_LPCORE_RESET_CAUSE_PMU_LP_CPU_MASK_R {
-        LP_AONCLKRST_LPCORE_RESET_CAUSE_PMU_LP_CPU_MASK_R::new(((self.bits >> 25) & 1) != 0)
+        LP_AONCLKRST_LPCORE_RESET_CAUSE_PMU_LP_CPU_MASK_R::new(
+            ((self.bits >> 25) & 1) != 0,
+        )
     }
 }
 #[cfg(feature = "impl-register-debug")]
@@ -110,7 +119,9 @@ impl W {
     #[must_use]
     pub fn lp_aonclkrst_lpcore_reset_cause_pmu_lp_cpu_mask(
         &mut self,
-    ) -> LP_AONCLKRST_LPCORE_RESET_CAUSE_PMU_LP_CPU_MASK_W<LP_AONCLKRST_RESET_CAUSE_SPEC> {
+    ) -> LP_AONCLKRST_LPCORE_RESET_CAUSE_PMU_LP_CPU_MASK_W<
+        LP_AONCLKRST_RESET_CAUSE_SPEC,
+    > {
         LP_AONCLKRST_LPCORE_RESET_CAUSE_PMU_LP_CPU_MASK_W::new(self, 25)
     }
     ///Bit 26 - need_des

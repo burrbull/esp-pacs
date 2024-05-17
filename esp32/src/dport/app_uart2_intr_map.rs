@@ -25,7 +25,9 @@ impl W {
     ///Bits 0:4
     #[inline(always)]
     #[must_use]
-    pub fn app_uart2_intr_map(&mut self) -> APP_UART2_INTR_MAP_W<APP_UART2_INTR_MAP_SPEC> {
+    pub fn app_uart2_intr_map(
+        &mut self,
+    ) -> APP_UART2_INTR_MAP_W<APP_UART2_INTR_MAP_SPEC> {
         APP_UART2_INTR_MAP_W::new(self, 0)
     }
 }

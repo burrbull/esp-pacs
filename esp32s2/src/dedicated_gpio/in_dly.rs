@@ -12,8 +12,7 @@ impl R {
     ///NOTE: `n` is number of field in register. `n == 0` corresponds to `CH0` field
     #[inline(always)]
     pub fn ch(&self, n: u8) -> CH_R {
-        #[allow(clippy::no_effect)]
-        [(); 8][n as usize];
+        #[allow(clippy::no_effect)] [(); 8][n as usize];
         CH_R::new(((self.bits >> (n * 2)) & 3) as u8)
     }
     ///Iterator for array of:
@@ -85,8 +84,7 @@ impl W {
     #[inline(always)]
     #[must_use]
     pub fn ch(&mut self, n: u8) -> CH_W<IN_DLY_SPEC> {
-        #[allow(clippy::no_effect)]
-        [(); 8][n as usize];
+        #[allow(clippy::no_effect)] [(); 8][n as usize];
         CH_W::new(self, n * 2)
     }
     ///Bits 0:1 - Configure GPIO0 input delay. 0: no delay. 1: one clock delay. 2: two clock delay. 3: three clock delay.

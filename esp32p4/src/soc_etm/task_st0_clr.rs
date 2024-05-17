@@ -74,49 +74,65 @@ impl W {
     ///Bit 0 - Configures whether or not to clear GPIO_task_ch0_set trigger status.\\0: Invalid, No effect\\1: Clear
     #[inline(always)]
     #[must_use]
-    pub fn gpio_task_ch0_set_st_clr(&mut self) -> GPIO_TASK_CH0_SET_ST_CLR_W<TASK_ST0_CLR_SPEC> {
+    pub fn gpio_task_ch0_set_st_clr(
+        &mut self,
+    ) -> GPIO_TASK_CH0_SET_ST_CLR_W<TASK_ST0_CLR_SPEC> {
         GPIO_TASK_CH0_SET_ST_CLR_W::new(self, 0)
     }
     ///Bit 1 - Configures whether or not to clear GPIO_task_ch1_set trigger status.\\0: Invalid, No effect\\1: Clear
     #[inline(always)]
     #[must_use]
-    pub fn gpio_task_ch1_set_st_clr(&mut self) -> GPIO_TASK_CH1_SET_ST_CLR_W<TASK_ST0_CLR_SPEC> {
+    pub fn gpio_task_ch1_set_st_clr(
+        &mut self,
+    ) -> GPIO_TASK_CH1_SET_ST_CLR_W<TASK_ST0_CLR_SPEC> {
         GPIO_TASK_CH1_SET_ST_CLR_W::new(self, 1)
     }
     ///Bit 2 - Configures whether or not to clear GPIO_task_ch2_set trigger status.\\0: Invalid, No effect\\1: Clear
     #[inline(always)]
     #[must_use]
-    pub fn gpio_task_ch2_set_st_clr(&mut self) -> GPIO_TASK_CH2_SET_ST_CLR_W<TASK_ST0_CLR_SPEC> {
+    pub fn gpio_task_ch2_set_st_clr(
+        &mut self,
+    ) -> GPIO_TASK_CH2_SET_ST_CLR_W<TASK_ST0_CLR_SPEC> {
         GPIO_TASK_CH2_SET_ST_CLR_W::new(self, 2)
     }
     ///Bit 3 - Configures whether or not to clear GPIO_task_ch3_set trigger status.\\0: Invalid, No effect\\1: Clear
     #[inline(always)]
     #[must_use]
-    pub fn gpio_task_ch3_set_st_clr(&mut self) -> GPIO_TASK_CH3_SET_ST_CLR_W<TASK_ST0_CLR_SPEC> {
+    pub fn gpio_task_ch3_set_st_clr(
+        &mut self,
+    ) -> GPIO_TASK_CH3_SET_ST_CLR_W<TASK_ST0_CLR_SPEC> {
         GPIO_TASK_CH3_SET_ST_CLR_W::new(self, 3)
     }
     ///Bit 4 - Configures whether or not to clear GPIO_task_ch4_set trigger status.\\0: Invalid, No effect\\1: Clear
     #[inline(always)]
     #[must_use]
-    pub fn gpio_task_ch4_set_st_clr(&mut self) -> GPIO_TASK_CH4_SET_ST_CLR_W<TASK_ST0_CLR_SPEC> {
+    pub fn gpio_task_ch4_set_st_clr(
+        &mut self,
+    ) -> GPIO_TASK_CH4_SET_ST_CLR_W<TASK_ST0_CLR_SPEC> {
         GPIO_TASK_CH4_SET_ST_CLR_W::new(self, 4)
     }
     ///Bit 5 - Configures whether or not to clear GPIO_task_ch5_set trigger status.\\0: Invalid, No effect\\1: Clear
     #[inline(always)]
     #[must_use]
-    pub fn gpio_task_ch5_set_st_clr(&mut self) -> GPIO_TASK_CH5_SET_ST_CLR_W<TASK_ST0_CLR_SPEC> {
+    pub fn gpio_task_ch5_set_st_clr(
+        &mut self,
+    ) -> GPIO_TASK_CH5_SET_ST_CLR_W<TASK_ST0_CLR_SPEC> {
         GPIO_TASK_CH5_SET_ST_CLR_W::new(self, 5)
     }
     ///Bit 6 - Configures whether or not to clear GPIO_task_ch6_set trigger status.\\0: Invalid, No effect\\1: Clear
     #[inline(always)]
     #[must_use]
-    pub fn gpio_task_ch6_set_st_clr(&mut self) -> GPIO_TASK_CH6_SET_ST_CLR_W<TASK_ST0_CLR_SPEC> {
+    pub fn gpio_task_ch6_set_st_clr(
+        &mut self,
+    ) -> GPIO_TASK_CH6_SET_ST_CLR_W<TASK_ST0_CLR_SPEC> {
         GPIO_TASK_CH6_SET_ST_CLR_W::new(self, 6)
     }
     ///Bit 7 - Configures whether or not to clear GPIO_task_ch7_set trigger status.\\0: Invalid, No effect\\1: Clear
     #[inline(always)]
     #[must_use]
-    pub fn gpio_task_ch7_set_st_clr(&mut self) -> GPIO_TASK_CH7_SET_ST_CLR_W<TASK_ST0_CLR_SPEC> {
+    pub fn gpio_task_ch7_set_st_clr(
+        &mut self,
+    ) -> GPIO_TASK_CH7_SET_ST_CLR_W<TASK_ST0_CLR_SPEC> {
         GPIO_TASK_CH7_SET_ST_CLR_W::new(self, 7)
     }
     ///Bit 8 - Configures whether or not to clear GPIO_task_ch0_clear trigger status.\\0: Invalid, No effect\\1: Clear

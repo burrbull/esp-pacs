@@ -173,10 +173,7 @@ impl core::fmt::Debug for R {
             .field("stop_abort_cmd", &self.stop_abort_cmd())
             .field("send_initialization", &self.send_initialization())
             .field("card_number", &self.card_number())
-            .field(
-                "update_clock_registers_only",
-                &self.update_clock_registers_only(),
-            )
+            .field("update_clock_registers_only", &self.update_clock_registers_only())
             .field("read_ceata_device", &self.read_ceata_device())
             .field("ccs_expected", &self.ccs_expected())
             .field("use_hole", &self.use_hole())
@@ -260,7 +257,9 @@ impl W {
     ///Bit 21 - 0: Normal command sequence; 1: Do not send commands, just update clock register value into card clock domain. Following register values are transferred into card clock domain: CLKDIV, CLRSRC, and CLKENA. Changes card clocks (change frequency, truncate off or on, and set low-frequency mode). This is provided in order to change clock frequency or stop clock without having to send command to cards. During normal command sequence, when sdhost_update_clock_registers_only = 0, following control registers are transferred from BIU to CIU: CMD, CMDARG, TMOUT, CTYPE, BLKSIZ, and BYTCNT. CIU uses new register values for new command sequence to card(s). When bit is set, there are no Command Done interrupts because no command is sent to SD_MMC_CEATA cards.
     #[inline(always)]
     #[must_use]
-    pub fn update_clock_registers_only(&mut self) -> UPDATE_CLOCK_REGISTERS_ONLY_W<CMD_SPEC> {
+    pub fn update_clock_registers_only(
+        &mut self,
+    ) -> UPDATE_CLOCK_REGISTERS_ONLY_W<CMD_SPEC> {
         UPDATE_CLOCK_REGISTERS_ONLY_W::new(self, 21)
     }
     ///Bit 22 - Read access flag. 0: Host is not performing read access (RW_REG or RW_BLK)towards CE-ATA device; 1: Host is performing read access (RW_REG or RW_BLK) towards CE-ATA device. Software should set this bit to indicate that CE-ATA device is being accessed for read transfer. This bit is used to disable read data timeout indication while performing CE-ATA read transfers. Maximum value of I/O transmission delay can be no less than 10 seconds. SD/MMC should not indicate read data timeout while waiting for data from CE-ATA device.

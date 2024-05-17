@@ -55,13 +55,17 @@ impl W {
     ///Bit 0
     #[inline(always)]
     #[must_use]
-    pub fn saradc_meas_num_limit(&mut self) -> SARADC_MEAS_NUM_LIMIT_W<APB_SARADC_CTRL2_SPEC> {
+    pub fn saradc_meas_num_limit(
+        &mut self,
+    ) -> SARADC_MEAS_NUM_LIMIT_W<APB_SARADC_CTRL2_SPEC> {
         SARADC_MEAS_NUM_LIMIT_W::new(self, 0)
     }
     ///Bits 1:8 - max conversion number
     #[inline(always)]
     #[must_use]
-    pub fn saradc_max_meas_num(&mut self) -> SARADC_MAX_MEAS_NUM_W<APB_SARADC_CTRL2_SPEC> {
+    pub fn saradc_max_meas_num(
+        &mut self,
+    ) -> SARADC_MAX_MEAS_NUM_W<APB_SARADC_CTRL2_SPEC> {
         SARADC_MAX_MEAS_NUM_W::new(self, 1)
     }
     ///Bit 9 - 1: data to DIG ADC1 CTRL is inverted otherwise not

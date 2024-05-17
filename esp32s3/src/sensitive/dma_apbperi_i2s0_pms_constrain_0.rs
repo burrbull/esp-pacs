@@ -9,7 +9,9 @@ pub type DMA_APBPERI_I2S0_PMS_CONSTRAIN_LOCK_W<'a, REG> = crate::BitWriter<'a, R
 impl R {
     ///Bit 0 - Set 1 to lock i2s0 dma permission Configuration Register.
     #[inline(always)]
-    pub fn dma_apbperi_i2s0_pms_constrain_lock(&self) -> DMA_APBPERI_I2S0_PMS_CONSTRAIN_LOCK_R {
+    pub fn dma_apbperi_i2s0_pms_constrain_lock(
+        &self,
+    ) -> DMA_APBPERI_I2S0_PMS_CONSTRAIN_LOCK_R {
         DMA_APBPERI_I2S0_PMS_CONSTRAIN_LOCK_R::new((self.bits & 1) != 0)
     }
 }

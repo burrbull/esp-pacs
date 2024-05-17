@@ -518,7 +518,9 @@ pub mod peri_backup_config;
 You can [`read`](crate::generic::Reg::read) this register and get [`peri_backup_apb_addr::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`peri_backup_apb_addr::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@peri_backup_apb_addr`] module*/
-pub type PERI_BACKUP_APB_ADDR = crate::Reg<peri_backup_apb_addr::PERI_BACKUP_APB_ADDR_SPEC>;
+pub type PERI_BACKUP_APB_ADDR = crate::Reg<
+    peri_backup_apb_addr::PERI_BACKUP_APB_ADDR_SPEC,
+>;
 ///APB_CTRL_PERI_BACKUP_APB_ADDR_REG_REG
 pub mod peri_backup_apb_addr;
 /**PERI_BACKUP_MEM_ADDR (rw) register accessor: APB_CTRL_PERI_BACKUP_MEM_ADDR_REG_REG
@@ -526,7 +528,9 @@ pub mod peri_backup_apb_addr;
 You can [`read`](crate::generic::Reg::read) this register and get [`peri_backup_mem_addr::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`peri_backup_mem_addr::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@peri_backup_mem_addr`] module*/
-pub type PERI_BACKUP_MEM_ADDR = crate::Reg<peri_backup_mem_addr::PERI_BACKUP_MEM_ADDR_SPEC>;
+pub type PERI_BACKUP_MEM_ADDR = crate::Reg<
+    peri_backup_mem_addr::PERI_BACKUP_MEM_ADDR_SPEC,
+>;
 ///APB_CTRL_PERI_BACKUP_MEM_ADDR_REG_REG
 pub mod peri_backup_mem_addr;
 /**PERI_BACKUP_INT_RAW (r) register accessor: APB_CTRL_PERI_BACKUP_INT_RAW_REG

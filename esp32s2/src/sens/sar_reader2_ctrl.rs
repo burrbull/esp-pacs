@@ -81,7 +81,9 @@ impl W {
     ///Bits 16:17 - wait arbit stable after sar_done
     #[inline(always)]
     #[must_use]
-    pub fn sar2_wait_arb_cycle(&mut self) -> SAR2_WAIT_ARB_CYCLE_W<SAR_READER2_CTRL_SPEC> {
+    pub fn sar2_wait_arb_cycle(
+        &mut self,
+    ) -> SAR2_WAIT_ARB_CYCLE_W<SAR_READER2_CTRL_SPEC> {
         SAR2_WAIT_ARB_CYCLE_W::new(self, 16)
     }
     ///Bit 18

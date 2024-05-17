@@ -87,7 +87,9 @@ impl W {
     ///Bits 8:11 - 1: Force to open the clock and bypass the gate-clock when accessing the SRAM. 0: A gate-clock will be used when accessing the SRAM.
     #[inline(always)]
     #[must_use]
-    pub fn sram_clkgate_force_on(&mut self) -> SRAM_CLKGATE_FORCE_ON_W<SRAM_POWER_CONF_SPEC> {
+    pub fn sram_clkgate_force_on(
+        &mut self,
+    ) -> SRAM_CLKGATE_FORCE_ON_W<SRAM_POWER_CONF_SPEC> {
         SRAM_CLKGATE_FORCE_ON_W::new(self, 8)
     }
     ///Bits 12:14 - Set this bit to force power up ROM
@@ -105,7 +107,9 @@ impl W {
     ///Bits 18:20 - 1: Force to open the clock and bypass the gate-clock when accessing the ROM. 0: A gate-clock will be used when accessing the ROM.
     #[inline(always)]
     #[must_use]
-    pub fn rom_clkgate_force_on(&mut self) -> ROM_CLKGATE_FORCE_ON_W<SRAM_POWER_CONF_SPEC> {
+    pub fn rom_clkgate_force_on(
+        &mut self,
+    ) -> ROM_CLKGATE_FORCE_ON_W<SRAM_POWER_CONF_SPEC> {
         ROM_CLKGATE_FORCE_ON_W::new(self, 18)
     }
 }

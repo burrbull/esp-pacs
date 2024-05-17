@@ -98,22 +98,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("EVT_ST7")
-            .field(
-                "dma2d_evt_in_suc_eof_ch1_st",
-                &self.dma2d_evt_in_suc_eof_ch1_st(),
-            )
-            .field(
-                "dma2d_evt_out_done_ch0_st",
-                &self.dma2d_evt_out_done_ch0_st(),
-            )
-            .field(
-                "dma2d_evt_out_done_ch1_st",
-                &self.dma2d_evt_out_done_ch1_st(),
-            )
-            .field(
-                "dma2d_evt_out_done_ch2_st",
-                &self.dma2d_evt_out_done_ch2_st(),
-            )
+            .field("dma2d_evt_in_suc_eof_ch1_st", &self.dma2d_evt_in_suc_eof_ch1_st())
+            .field("dma2d_evt_out_done_ch0_st", &self.dma2d_evt_out_done_ch0_st())
+            .field("dma2d_evt_out_done_ch1_st", &self.dma2d_evt_out_done_ch1_st())
+            .field("dma2d_evt_out_done_ch2_st", &self.dma2d_evt_out_done_ch2_st())
             .field("dma2d_evt_out_eof_ch0_st", &self.dma2d_evt_out_eof_ch0_st())
             .field("dma2d_evt_out_eof_ch1_st", &self.dma2d_evt_out_eof_ch1_st())
             .field("dma2d_evt_out_eof_ch2_st", &self.dma2d_evt_out_eof_ch2_st())
@@ -136,43 +124,57 @@ impl W {
     ///Bit 0 - Represents DMA2D_evt_in_suc_eof_ch1 trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn dma2d_evt_in_suc_eof_ch1_st(&mut self) -> DMA2D_EVT_IN_SUC_EOF_CH1_ST_W<EVT_ST7_SPEC> {
+    pub fn dma2d_evt_in_suc_eof_ch1_st(
+        &mut self,
+    ) -> DMA2D_EVT_IN_SUC_EOF_CH1_ST_W<EVT_ST7_SPEC> {
         DMA2D_EVT_IN_SUC_EOF_CH1_ST_W::new(self, 0)
     }
     ///Bit 1 - Represents DMA2D_evt_out_done_ch0 trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn dma2d_evt_out_done_ch0_st(&mut self) -> DMA2D_EVT_OUT_DONE_CH0_ST_W<EVT_ST7_SPEC> {
+    pub fn dma2d_evt_out_done_ch0_st(
+        &mut self,
+    ) -> DMA2D_EVT_OUT_DONE_CH0_ST_W<EVT_ST7_SPEC> {
         DMA2D_EVT_OUT_DONE_CH0_ST_W::new(self, 1)
     }
     ///Bit 2 - Represents DMA2D_evt_out_done_ch1 trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn dma2d_evt_out_done_ch1_st(&mut self) -> DMA2D_EVT_OUT_DONE_CH1_ST_W<EVT_ST7_SPEC> {
+    pub fn dma2d_evt_out_done_ch1_st(
+        &mut self,
+    ) -> DMA2D_EVT_OUT_DONE_CH1_ST_W<EVT_ST7_SPEC> {
         DMA2D_EVT_OUT_DONE_CH1_ST_W::new(self, 2)
     }
     ///Bit 3 - Represents DMA2D_evt_out_done_ch2 trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn dma2d_evt_out_done_ch2_st(&mut self) -> DMA2D_EVT_OUT_DONE_CH2_ST_W<EVT_ST7_SPEC> {
+    pub fn dma2d_evt_out_done_ch2_st(
+        &mut self,
+    ) -> DMA2D_EVT_OUT_DONE_CH2_ST_W<EVT_ST7_SPEC> {
         DMA2D_EVT_OUT_DONE_CH2_ST_W::new(self, 3)
     }
     ///Bit 4 - Represents DMA2D_evt_out_eof_ch0 trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn dma2d_evt_out_eof_ch0_st(&mut self) -> DMA2D_EVT_OUT_EOF_CH0_ST_W<EVT_ST7_SPEC> {
+    pub fn dma2d_evt_out_eof_ch0_st(
+        &mut self,
+    ) -> DMA2D_EVT_OUT_EOF_CH0_ST_W<EVT_ST7_SPEC> {
         DMA2D_EVT_OUT_EOF_CH0_ST_W::new(self, 4)
     }
     ///Bit 5 - Represents DMA2D_evt_out_eof_ch1 trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn dma2d_evt_out_eof_ch1_st(&mut self) -> DMA2D_EVT_OUT_EOF_CH1_ST_W<EVT_ST7_SPEC> {
+    pub fn dma2d_evt_out_eof_ch1_st(
+        &mut self,
+    ) -> DMA2D_EVT_OUT_EOF_CH1_ST_W<EVT_ST7_SPEC> {
         DMA2D_EVT_OUT_EOF_CH1_ST_W::new(self, 5)
     }
     ///Bit 6 - Represents DMA2D_evt_out_eof_ch2 trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn dma2d_evt_out_eof_ch2_st(&mut self) -> DMA2D_EVT_OUT_EOF_CH2_ST_W<EVT_ST7_SPEC> {
+    pub fn dma2d_evt_out_eof_ch2_st(
+        &mut self,
+    ) -> DMA2D_EVT_OUT_EOF_CH2_ST_W<EVT_ST7_SPEC> {
         DMA2D_EVT_OUT_EOF_CH2_ST_W::new(self, 6)
     }
     ///Bit 7 - Represents DMA2D_evt_out_total_eof_ch0 trigger status.\\0: Not triggered\\1: Triggered

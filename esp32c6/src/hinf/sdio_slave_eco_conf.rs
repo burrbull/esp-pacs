@@ -62,18 +62,12 @@ impl core::fmt::Debug for R {
                 "sdio_slave_sdio_clk_rdn_result",
                 &self.sdio_slave_sdio_clk_rdn_result(),
             )
-            .field(
-                "sdio_slave_sdio_clk_rdn_ena",
-                &self.sdio_slave_sdio_clk_rdn_ena(),
-            )
+            .field("sdio_slave_sdio_clk_rdn_ena", &self.sdio_slave_sdio_clk_rdn_ena())
             .field(
                 "sdio_slave_sdclk_pad_rdn_result",
                 &self.sdio_slave_sdclk_pad_rdn_result(),
             )
-            .field(
-                "sdio_slave_sdclk_pad_rdn_ena",
-                &self.sdio_slave_sdclk_pad_rdn_ena(),
-            )
+            .field("sdio_slave_sdclk_pad_rdn_ena", &self.sdio_slave_sdclk_pad_rdn_ena())
             .finish()
     }
 }
@@ -81,7 +75,9 @@ impl W {
     ///Bit 1 - redundant registers for sdio_slave
     #[inline(always)]
     #[must_use]
-    pub fn sdio_slave_rdn_ena(&mut self) -> SDIO_SLAVE_RDN_ENA_W<SDIO_SLAVE_ECO_CONF_SPEC> {
+    pub fn sdio_slave_rdn_ena(
+        &mut self,
+    ) -> SDIO_SLAVE_RDN_ENA_W<SDIO_SLAVE_ECO_CONF_SPEC> {
         SDIO_SLAVE_RDN_ENA_W::new(self, 1)
     }
     ///Bit 3 - redundant registers for sdio_slave

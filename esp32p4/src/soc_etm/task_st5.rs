@@ -300,14 +300,8 @@ impl core::fmt::Debug for R {
             .field("regdma_task_start1_st", &self.regdma_task_start1_st())
             .field("regdma_task_start2_st", &self.regdma_task_start2_st())
             .field("regdma_task_start3_st", &self.regdma_task_start3_st())
-            .field(
-                "tmpsnsr_task_start_sample_st",
-                &self.tmpsnsr_task_start_sample_st(),
-            )
-            .field(
-                "tmpsnsr_task_stop_sample_st",
-                &self.tmpsnsr_task_stop_sample_st(),
-            )
+            .field("tmpsnsr_task_start_sample_st", &self.tmpsnsr_task_start_sample_st())
+            .field("tmpsnsr_task_stop_sample_st", &self.tmpsnsr_task_stop_sample_st())
             .field("i2s0_task_start_rx_st", &self.i2s0_task_start_rx_st())
             .field("i2s0_task_start_tx_st", &self.i2s0_task_start_tx_st())
             .field("i2s0_task_stop_rx_st", &self.i2s0_task_stop_rx_st())
@@ -397,7 +391,9 @@ impl W {
     ///Bit 5 - Represents TMPSNSR_task_stop_sample trigger status.\\0: Not triggered\\1: Triggered
     #[inline(always)]
     #[must_use]
-    pub fn tmpsnsr_task_stop_sample_st(&mut self) -> TMPSNSR_TASK_STOP_SAMPLE_ST_W<TASK_ST5_SPEC> {
+    pub fn tmpsnsr_task_stop_sample_st(
+        &mut self,
+    ) -> TMPSNSR_TASK_STOP_SAMPLE_ST_W<TASK_ST5_SPEC> {
         TMPSNSR_TASK_STOP_SAMPLE_ST_W::new(self, 5)
     }
     ///Bit 6 - Represents I2S0_task_start_rx trigger status.\\0: Not triggered\\1: Triggered

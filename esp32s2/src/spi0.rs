@@ -559,7 +559,9 @@ pub mod inlink_dscr_bf1;
 You can [`read`](crate::generic::Reg::read) this register and get [`out_eof_bfr_des_addr::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@out_eof_bfr_des_addr`] module*/
-pub type OUT_EOF_BFR_DES_ADDR = crate::Reg<out_eof_bfr_des_addr::OUT_EOF_BFR_DES_ADDR_SPEC>;
+pub type OUT_EOF_BFR_DES_ADDR = crate::Reg<
+    out_eof_bfr_des_addr::OUT_EOF_BFR_DES_ADDR_SPEC,
+>;
 ///The latest SPI DMA eof TX buffer address
 pub mod out_eof_bfr_des_addr;
 /**OUT_EOF_DES_ADDR (r) register accessor: The latest SPI DMA eof TX descriptor address

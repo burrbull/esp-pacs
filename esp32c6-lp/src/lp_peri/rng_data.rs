@@ -12,9 +12,7 @@ impl R {
 #[cfg(feature = "impl-register-debug")]
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("RNG_DATA")
-            .field("rnd_data", &self.rnd_data())
-            .finish()
+        f.debug_struct("RNG_DATA").field("rnd_data", &self.rnd_data()).finish()
     }
 }
 /**need_des

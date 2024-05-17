@@ -37,7 +37,9 @@ impl W {
     ///Bit 29 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn core0_reset_cause_clr(&mut self) -> CORE0_RESET_CAUSE_CLR_W<RESET_CAUSE_SPEC> {
+    pub fn core0_reset_cause_clr(
+        &mut self,
+    ) -> CORE0_RESET_CAUSE_CLR_W<RESET_CAUSE_SPEC> {
         CORE0_RESET_CAUSE_CLR_W::new(self, 29)
     }
     ///Bit 30 - need_des

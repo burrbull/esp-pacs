@@ -27,10 +27,7 @@ impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("HP_SLEEP_LP_DIG_POWER")
             .field("hp_sleep_lp_mem_dslp", &self.hp_sleep_lp_mem_dslp())
-            .field(
-                "hp_sleep_pd_lp_peri_pd_en",
-                &self.hp_sleep_pd_lp_peri_pd_en(),
-            )
+            .field("hp_sleep_pd_lp_peri_pd_en", &self.hp_sleep_pd_lp_peri_pd_en())
             .finish()
     }
 }
@@ -38,7 +35,9 @@ impl W {
     ///Bit 30 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn hp_sleep_lp_mem_dslp(&mut self) -> HP_SLEEP_LP_MEM_DSLP_W<HP_SLEEP_LP_DIG_POWER_SPEC> {
+    pub fn hp_sleep_lp_mem_dslp(
+        &mut self,
+    ) -> HP_SLEEP_LP_MEM_DSLP_W<HP_SLEEP_LP_DIG_POWER_SPEC> {
         HP_SLEEP_LP_MEM_DSLP_W::new(self, 30)
     }
     ///Bit 31 - need_des

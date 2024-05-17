@@ -62,30 +62,12 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("CORE_TIMEOUT_INT_ENA")
-            .field(
-                "core0_ahb_timeout_int_ena",
-                &self.core0_ahb_timeout_int_ena(),
-            )
-            .field(
-                "core1_ahb_timeout_int_ena",
-                &self.core1_ahb_timeout_int_ena(),
-            )
-            .field(
-                "core0_ibus_timeout_int_ena",
-                &self.core0_ibus_timeout_int_ena(),
-            )
-            .field(
-                "core1_ibus_timeout_int_ena",
-                &self.core1_ibus_timeout_int_ena(),
-            )
-            .field(
-                "core0_dbus_timeout_int_ena",
-                &self.core0_dbus_timeout_int_ena(),
-            )
-            .field(
-                "core1_dbus_timeout_int_ena",
-                &self.core1_dbus_timeout_int_ena(),
-            )
+            .field("core0_ahb_timeout_int_ena", &self.core0_ahb_timeout_int_ena())
+            .field("core1_ahb_timeout_int_ena", &self.core1_ahb_timeout_int_ena())
+            .field("core0_ibus_timeout_int_ena", &self.core0_ibus_timeout_int_ena())
+            .field("core1_ibus_timeout_int_ena", &self.core1_ibus_timeout_int_ena())
+            .field("core0_dbus_timeout_int_ena", &self.core0_dbus_timeout_int_ena())
+            .field("core1_dbus_timeout_int_ena", &self.core1_dbus_timeout_int_ena())
             .finish()
     }
 }

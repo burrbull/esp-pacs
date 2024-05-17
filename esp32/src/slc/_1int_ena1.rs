@@ -245,39 +245,18 @@ impl core::fmt::Debug for R {
             .field("slc1_tx_start_int_ena1", &self.slc1_tx_start_int_ena1())
             .field("slc1_rx_udf_int_ena1", &self.slc1_rx_udf_int_ena1())
             .field("slc1_tx_ovf_int_ena1", &self.slc1_tx_ovf_int_ena1())
-            .field(
-                "slc1_token0_1to0_int_ena1",
-                &self.slc1_token0_1to0_int_ena1(),
-            )
-            .field(
-                "slc1_token1_1to0_int_ena1",
-                &self.slc1_token1_1to0_int_ena1(),
-            )
+            .field("slc1_token0_1to0_int_ena1", &self.slc1_token0_1to0_int_ena1())
+            .field("slc1_token1_1to0_int_ena1", &self.slc1_token1_1to0_int_ena1())
             .field("slc1_tx_done_int_ena1", &self.slc1_tx_done_int_ena1())
             .field("slc1_tx_suc_eof_int_ena1", &self.slc1_tx_suc_eof_int_ena1())
             .field("slc1_rx_done_int_ena1", &self.slc1_rx_done_int_ena1())
             .field("slc1_rx_eof_int_ena1", &self.slc1_rx_eof_int_ena1())
             .field("slc1_tohost_int_ena1", &self.slc1_tohost_int_ena1())
-            .field(
-                "slc1_tx_dscr_err_int_ena1",
-                &self.slc1_tx_dscr_err_int_ena1(),
-            )
-            .field(
-                "slc1_rx_dscr_err_int_ena1",
-                &self.slc1_rx_dscr_err_int_ena1(),
-            )
-            .field(
-                "slc1_tx_dscr_empty_int_ena1",
-                &self.slc1_tx_dscr_empty_int_ena1(),
-            )
-            .field(
-                "slc1_host_rd_ack_int_ena1",
-                &self.slc1_host_rd_ack_int_ena1(),
-            )
-            .field(
-                "slc1_wr_retry_done_int_ena1",
-                &self.slc1_wr_retry_done_int_ena1(),
-            )
+            .field("slc1_tx_dscr_err_int_ena1", &self.slc1_tx_dscr_err_int_ena1())
+            .field("slc1_rx_dscr_err_int_ena1", &self.slc1_rx_dscr_err_int_ena1())
+            .field("slc1_tx_dscr_empty_int_ena1", &self.slc1_tx_dscr_empty_int_ena1())
+            .field("slc1_host_rd_ack_int_ena1", &self.slc1_host_rd_ack_int_ena1())
+            .field("slc1_wr_retry_done_int_ena1", &self.slc1_wr_retry_done_int_ena1())
             .field("slc1_tx_err_eof_int_ena1", &self.slc1_tx_err_eof_int_ena1())
             .finish()
     }
@@ -334,13 +313,17 @@ impl W {
     ///Bit 8
     #[inline(always)]
     #[must_use]
-    pub fn slc1_rx_start_int_ena1(&mut self) -> SLC1_RX_START_INT_ENA1_W<_1INT_ENA1_SPEC> {
+    pub fn slc1_rx_start_int_ena1(
+        &mut self,
+    ) -> SLC1_RX_START_INT_ENA1_W<_1INT_ENA1_SPEC> {
         SLC1_RX_START_INT_ENA1_W::new(self, 8)
     }
     ///Bit 9
     #[inline(always)]
     #[must_use]
-    pub fn slc1_tx_start_int_ena1(&mut self) -> SLC1_TX_START_INT_ENA1_W<_1INT_ENA1_SPEC> {
+    pub fn slc1_tx_start_int_ena1(
+        &mut self,
+    ) -> SLC1_TX_START_INT_ENA1_W<_1INT_ENA1_SPEC> {
         SLC1_TX_START_INT_ENA1_W::new(self, 9)
     }
     ///Bit 10
@@ -358,13 +341,17 @@ impl W {
     ///Bit 12
     #[inline(always)]
     #[must_use]
-    pub fn slc1_token0_1to0_int_ena1(&mut self) -> SLC1_TOKEN0_1TO0_INT_ENA1_W<_1INT_ENA1_SPEC> {
+    pub fn slc1_token0_1to0_int_ena1(
+        &mut self,
+    ) -> SLC1_TOKEN0_1TO0_INT_ENA1_W<_1INT_ENA1_SPEC> {
         SLC1_TOKEN0_1TO0_INT_ENA1_W::new(self, 12)
     }
     ///Bit 13
     #[inline(always)]
     #[must_use]
-    pub fn slc1_token1_1to0_int_ena1(&mut self) -> SLC1_TOKEN1_1TO0_INT_ENA1_W<_1INT_ENA1_SPEC> {
+    pub fn slc1_token1_1to0_int_ena1(
+        &mut self,
+    ) -> SLC1_TOKEN1_1TO0_INT_ENA1_W<_1INT_ENA1_SPEC> {
         SLC1_TOKEN1_1TO0_INT_ENA1_W::new(self, 13)
     }
     ///Bit 14
@@ -376,7 +363,9 @@ impl W {
     ///Bit 15
     #[inline(always)]
     #[must_use]
-    pub fn slc1_tx_suc_eof_int_ena1(&mut self) -> SLC1_TX_SUC_EOF_INT_ENA1_W<_1INT_ENA1_SPEC> {
+    pub fn slc1_tx_suc_eof_int_ena1(
+        &mut self,
+    ) -> SLC1_TX_SUC_EOF_INT_ENA1_W<_1INT_ENA1_SPEC> {
         SLC1_TX_SUC_EOF_INT_ENA1_W::new(self, 15)
     }
     ///Bit 16
@@ -400,13 +389,17 @@ impl W {
     ///Bit 19
     #[inline(always)]
     #[must_use]
-    pub fn slc1_tx_dscr_err_int_ena1(&mut self) -> SLC1_TX_DSCR_ERR_INT_ENA1_W<_1INT_ENA1_SPEC> {
+    pub fn slc1_tx_dscr_err_int_ena1(
+        &mut self,
+    ) -> SLC1_TX_DSCR_ERR_INT_ENA1_W<_1INT_ENA1_SPEC> {
         SLC1_TX_DSCR_ERR_INT_ENA1_W::new(self, 19)
     }
     ///Bit 20
     #[inline(always)]
     #[must_use]
-    pub fn slc1_rx_dscr_err_int_ena1(&mut self) -> SLC1_RX_DSCR_ERR_INT_ENA1_W<_1INT_ENA1_SPEC> {
+    pub fn slc1_rx_dscr_err_int_ena1(
+        &mut self,
+    ) -> SLC1_RX_DSCR_ERR_INT_ENA1_W<_1INT_ENA1_SPEC> {
         SLC1_RX_DSCR_ERR_INT_ENA1_W::new(self, 20)
     }
     ///Bit 21
@@ -420,7 +413,9 @@ impl W {
     ///Bit 22
     #[inline(always)]
     #[must_use]
-    pub fn slc1_host_rd_ack_int_ena1(&mut self) -> SLC1_HOST_RD_ACK_INT_ENA1_W<_1INT_ENA1_SPEC> {
+    pub fn slc1_host_rd_ack_int_ena1(
+        &mut self,
+    ) -> SLC1_HOST_RD_ACK_INT_ENA1_W<_1INT_ENA1_SPEC> {
         SLC1_HOST_RD_ACK_INT_ENA1_W::new(self, 22)
     }
     ///Bit 23
@@ -434,7 +429,9 @@ impl W {
     ///Bit 24
     #[inline(always)]
     #[must_use]
-    pub fn slc1_tx_err_eof_int_ena1(&mut self) -> SLC1_TX_ERR_EOF_INT_ENA1_W<_1INT_ENA1_SPEC> {
+    pub fn slc1_tx_err_eof_int_ena1(
+        &mut self,
+    ) -> SLC1_TX_ERR_EOF_INT_ENA1_W<_1INT_ENA1_SPEC> {
         SLC1_TX_ERR_EOF_INT_ENA1_W::new(self, 24)
     }
 }

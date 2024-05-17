@@ -35,18 +35,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PRO_CACHE_MMU_POWER_CTRL")
-            .field(
-                "pro_cache_mmu_mem_force_on",
-                &self.pro_cache_mmu_mem_force_on(),
-            )
-            .field(
-                "pro_cache_mmu_mem_force_pd",
-                &self.pro_cache_mmu_mem_force_pd(),
-            )
-            .field(
-                "pro_cache_mmu_mem_force_pu",
-                &self.pro_cache_mmu_mem_force_pu(),
-            )
+            .field("pro_cache_mmu_mem_force_on", &self.pro_cache_mmu_mem_force_on())
+            .field("pro_cache_mmu_mem_force_pd", &self.pro_cache_mmu_mem_force_pd())
+            .field("pro_cache_mmu_mem_force_pu", &self.pro_cache_mmu_mem_force_pu())
             .finish()
     }
 }

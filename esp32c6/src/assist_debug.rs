@@ -139,32 +139,44 @@ impl RegisterBlock {
     }
     ///0x50 - exception monitor status register0
     #[inline(always)]
-    pub const fn core_0_iram0_exception_monitor_0(&self) -> &CORE_0_IRAM0_EXCEPTION_MONITOR_0 {
+    pub const fn core_0_iram0_exception_monitor_0(
+        &self,
+    ) -> &CORE_0_IRAM0_EXCEPTION_MONITOR_0 {
         &self.core_0_iram0_exception_monitor_0
     }
     ///0x54 - exception monitor status register1
     #[inline(always)]
-    pub const fn core_0_iram0_exception_monitor_1(&self) -> &CORE_0_IRAM0_EXCEPTION_MONITOR_1 {
+    pub const fn core_0_iram0_exception_monitor_1(
+        &self,
+    ) -> &CORE_0_IRAM0_EXCEPTION_MONITOR_1 {
         &self.core_0_iram0_exception_monitor_1
     }
     ///0x58 - exception monitor status register2
     #[inline(always)]
-    pub const fn core_0_dram0_exception_monitor_0(&self) -> &CORE_0_DRAM0_EXCEPTION_MONITOR_0 {
+    pub const fn core_0_dram0_exception_monitor_0(
+        &self,
+    ) -> &CORE_0_DRAM0_EXCEPTION_MONITOR_0 {
         &self.core_0_dram0_exception_monitor_0
     }
     ///0x5c - exception monitor status register3
     #[inline(always)]
-    pub const fn core_0_dram0_exception_monitor_1(&self) -> &CORE_0_DRAM0_EXCEPTION_MONITOR_1 {
+    pub const fn core_0_dram0_exception_monitor_1(
+        &self,
+    ) -> &CORE_0_DRAM0_EXCEPTION_MONITOR_1 {
         &self.core_0_dram0_exception_monitor_1
     }
     ///0x60 - exception monitor status register4
     #[inline(always)]
-    pub const fn core_0_dram0_exception_monitor_2(&self) -> &CORE_0_DRAM0_EXCEPTION_MONITOR_2 {
+    pub const fn core_0_dram0_exception_monitor_2(
+        &self,
+    ) -> &CORE_0_DRAM0_EXCEPTION_MONITOR_2 {
         &self.core_0_dram0_exception_monitor_2
     }
     ///0x64 - exception monitor status register5
     #[inline(always)]
-    pub const fn core_0_dram0_exception_monitor_3(&self) -> &CORE_0_DRAM0_EXCEPTION_MONITOR_3 {
+    pub const fn core_0_dram0_exception_monitor_3(
+        &self,
+    ) -> &CORE_0_DRAM0_EXCEPTION_MONITOR_3 {
         &self.core_0_dram0_exception_monitor_3
     }
     ///0x68 - exception monitor status register6
@@ -183,7 +195,9 @@ impl RegisterBlock {
     }
     ///0x70 - cpu status register
     #[inline(always)]
-    pub const fn c0re_0_lastpc_before_exception(&self) -> &C0RE_0_LASTPC_BEFORE_EXCEPTION {
+    pub const fn c0re_0_lastpc_before_exception(
+        &self,
+    ) -> &C0RE_0_LASTPC_BEFORE_EXCEPTION {
         &self.c0re_0_lastpc_before_exception
     }
     ///0x74 - cpu status register
@@ -239,8 +253,9 @@ pub mod core_0_intr_clr;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_0_area_dram0_0_min::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_0_area_dram0_0_min::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_0_area_dram0_0_min`] module*/
-pub type CORE_0_AREA_DRAM0_0_MIN =
-    crate::Reg<core_0_area_dram0_0_min::CORE_0_AREA_DRAM0_0_MIN_SPEC>;
+pub type CORE_0_AREA_DRAM0_0_MIN = crate::Reg<
+    core_0_area_dram0_0_min::CORE_0_AREA_DRAM0_0_MIN_SPEC,
+>;
 ///core0 dram0 region0 addr configuration register
 pub mod core_0_area_dram0_0_min;
 /**CORE_0_AREA_DRAM0_0_MAX (rw) register accessor: core0 dram0 region0 addr configuration register
@@ -248,8 +263,9 @@ pub mod core_0_area_dram0_0_min;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_0_area_dram0_0_max::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_0_area_dram0_0_max::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_0_area_dram0_0_max`] module*/
-pub type CORE_0_AREA_DRAM0_0_MAX =
-    crate::Reg<core_0_area_dram0_0_max::CORE_0_AREA_DRAM0_0_MAX_SPEC>;
+pub type CORE_0_AREA_DRAM0_0_MAX = crate::Reg<
+    core_0_area_dram0_0_max::CORE_0_AREA_DRAM0_0_MAX_SPEC,
+>;
 ///core0 dram0 region0 addr configuration register
 pub mod core_0_area_dram0_0_max;
 /**CORE_0_AREA_DRAM0_1_MIN (rw) register accessor: core0 dram0 region1 addr configuration register
@@ -257,8 +273,9 @@ pub mod core_0_area_dram0_0_max;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_0_area_dram0_1_min::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_0_area_dram0_1_min::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_0_area_dram0_1_min`] module*/
-pub type CORE_0_AREA_DRAM0_1_MIN =
-    crate::Reg<core_0_area_dram0_1_min::CORE_0_AREA_DRAM0_1_MIN_SPEC>;
+pub type CORE_0_AREA_DRAM0_1_MIN = crate::Reg<
+    core_0_area_dram0_1_min::CORE_0_AREA_DRAM0_1_MIN_SPEC,
+>;
 ///core0 dram0 region1 addr configuration register
 pub mod core_0_area_dram0_1_min;
 /**CORE_0_AREA_DRAM0_1_MAX (rw) register accessor: core0 dram0 region1 addr configuration register
@@ -266,8 +283,9 @@ pub mod core_0_area_dram0_1_min;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_0_area_dram0_1_max::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_0_area_dram0_1_max::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_0_area_dram0_1_max`] module*/
-pub type CORE_0_AREA_DRAM0_1_MAX =
-    crate::Reg<core_0_area_dram0_1_max::CORE_0_AREA_DRAM0_1_MAX_SPEC>;
+pub type CORE_0_AREA_DRAM0_1_MAX = crate::Reg<
+    core_0_area_dram0_1_max::CORE_0_AREA_DRAM0_1_MAX_SPEC,
+>;
 ///core0 dram0 region1 addr configuration register
 pub mod core_0_area_dram0_1_max;
 /**CORE_0_AREA_PIF_0_MIN (rw) register accessor: core0 PIF region0 addr configuration register
@@ -275,7 +293,9 @@ pub mod core_0_area_dram0_1_max;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_0_area_pif_0_min::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_0_area_pif_0_min::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_0_area_pif_0_min`] module*/
-pub type CORE_0_AREA_PIF_0_MIN = crate::Reg<core_0_area_pif_0_min::CORE_0_AREA_PIF_0_MIN_SPEC>;
+pub type CORE_0_AREA_PIF_0_MIN = crate::Reg<
+    core_0_area_pif_0_min::CORE_0_AREA_PIF_0_MIN_SPEC,
+>;
 ///core0 PIF region0 addr configuration register
 pub mod core_0_area_pif_0_min;
 /**CORE_0_AREA_PIF_0_MAX (rw) register accessor: core0 PIF region0 addr configuration register
@@ -283,7 +303,9 @@ pub mod core_0_area_pif_0_min;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_0_area_pif_0_max::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_0_area_pif_0_max::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_0_area_pif_0_max`] module*/
-pub type CORE_0_AREA_PIF_0_MAX = crate::Reg<core_0_area_pif_0_max::CORE_0_AREA_PIF_0_MAX_SPEC>;
+pub type CORE_0_AREA_PIF_0_MAX = crate::Reg<
+    core_0_area_pif_0_max::CORE_0_AREA_PIF_0_MAX_SPEC,
+>;
 ///core0 PIF region0 addr configuration register
 pub mod core_0_area_pif_0_max;
 /**CORE_0_AREA_PIF_1_MIN (rw) register accessor: core0 PIF region1 addr configuration register
@@ -291,7 +313,9 @@ pub mod core_0_area_pif_0_max;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_0_area_pif_1_min::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_0_area_pif_1_min::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_0_area_pif_1_min`] module*/
-pub type CORE_0_AREA_PIF_1_MIN = crate::Reg<core_0_area_pif_1_min::CORE_0_AREA_PIF_1_MIN_SPEC>;
+pub type CORE_0_AREA_PIF_1_MIN = crate::Reg<
+    core_0_area_pif_1_min::CORE_0_AREA_PIF_1_MIN_SPEC,
+>;
 ///core0 PIF region1 addr configuration register
 pub mod core_0_area_pif_1_min;
 /**CORE_0_AREA_PIF_1_MAX (rw) register accessor: core0 PIF region1 addr configuration register
@@ -299,7 +323,9 @@ pub mod core_0_area_pif_1_min;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_0_area_pif_1_max::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_0_area_pif_1_max::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_0_area_pif_1_max`] module*/
-pub type CORE_0_AREA_PIF_1_MAX = crate::Reg<core_0_area_pif_1_max::CORE_0_AREA_PIF_1_MAX_SPEC>;
+pub type CORE_0_AREA_PIF_1_MAX = crate::Reg<
+    core_0_area_pif_1_max::CORE_0_AREA_PIF_1_MAX_SPEC,
+>;
 ///core0 PIF region1 addr configuration register
 pub mod core_0_area_pif_1_max;
 /**CORE_0_AREA_PC (r) register accessor: core0 area pc status register
@@ -371,8 +397,9 @@ pub mod core_0_rcd_pdebugsp;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_0_iram0_exception_monitor_0::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_0_iram0_exception_monitor_0`] module*/
-pub type CORE_0_IRAM0_EXCEPTION_MONITOR_0 =
-    crate::Reg<core_0_iram0_exception_monitor_0::CORE_0_IRAM0_EXCEPTION_MONITOR_0_SPEC>;
+pub type CORE_0_IRAM0_EXCEPTION_MONITOR_0 = crate::Reg<
+    core_0_iram0_exception_monitor_0::CORE_0_IRAM0_EXCEPTION_MONITOR_0_SPEC,
+>;
 ///exception monitor status register0
 pub mod core_0_iram0_exception_monitor_0;
 /**CORE_0_IRAM0_EXCEPTION_MONITOR_1 (r) register accessor: exception monitor status register1
@@ -380,8 +407,9 @@ pub mod core_0_iram0_exception_monitor_0;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_0_iram0_exception_monitor_1::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_0_iram0_exception_monitor_1`] module*/
-pub type CORE_0_IRAM0_EXCEPTION_MONITOR_1 =
-    crate::Reg<core_0_iram0_exception_monitor_1::CORE_0_IRAM0_EXCEPTION_MONITOR_1_SPEC>;
+pub type CORE_0_IRAM0_EXCEPTION_MONITOR_1 = crate::Reg<
+    core_0_iram0_exception_monitor_1::CORE_0_IRAM0_EXCEPTION_MONITOR_1_SPEC,
+>;
 ///exception monitor status register1
 pub mod core_0_iram0_exception_monitor_1;
 /**CORE_0_DRAM0_EXCEPTION_MONITOR_0 (r) register accessor: exception monitor status register2
@@ -389,8 +417,9 @@ pub mod core_0_iram0_exception_monitor_1;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_0_dram0_exception_monitor_0::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_0_dram0_exception_monitor_0`] module*/
-pub type CORE_0_DRAM0_EXCEPTION_MONITOR_0 =
-    crate::Reg<core_0_dram0_exception_monitor_0::CORE_0_DRAM0_EXCEPTION_MONITOR_0_SPEC>;
+pub type CORE_0_DRAM0_EXCEPTION_MONITOR_0 = crate::Reg<
+    core_0_dram0_exception_monitor_0::CORE_0_DRAM0_EXCEPTION_MONITOR_0_SPEC,
+>;
 ///exception monitor status register2
 pub mod core_0_dram0_exception_monitor_0;
 /**CORE_0_DRAM0_EXCEPTION_MONITOR_1 (r) register accessor: exception monitor status register3
@@ -398,8 +427,9 @@ pub mod core_0_dram0_exception_monitor_0;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_0_dram0_exception_monitor_1::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_0_dram0_exception_monitor_1`] module*/
-pub type CORE_0_DRAM0_EXCEPTION_MONITOR_1 =
-    crate::Reg<core_0_dram0_exception_monitor_1::CORE_0_DRAM0_EXCEPTION_MONITOR_1_SPEC>;
+pub type CORE_0_DRAM0_EXCEPTION_MONITOR_1 = crate::Reg<
+    core_0_dram0_exception_monitor_1::CORE_0_DRAM0_EXCEPTION_MONITOR_1_SPEC,
+>;
 ///exception monitor status register3
 pub mod core_0_dram0_exception_monitor_1;
 /**CORE_0_DRAM0_EXCEPTION_MONITOR_2 (r) register accessor: exception monitor status register4
@@ -407,8 +437,9 @@ pub mod core_0_dram0_exception_monitor_1;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_0_dram0_exception_monitor_2::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_0_dram0_exception_monitor_2`] module*/
-pub type CORE_0_DRAM0_EXCEPTION_MONITOR_2 =
-    crate::Reg<core_0_dram0_exception_monitor_2::CORE_0_DRAM0_EXCEPTION_MONITOR_2_SPEC>;
+pub type CORE_0_DRAM0_EXCEPTION_MONITOR_2 = crate::Reg<
+    core_0_dram0_exception_monitor_2::CORE_0_DRAM0_EXCEPTION_MONITOR_2_SPEC,
+>;
 ///exception monitor status register4
 pub mod core_0_dram0_exception_monitor_2;
 /**CORE_0_DRAM0_EXCEPTION_MONITOR_3 (r) register accessor: exception monitor status register5
@@ -416,8 +447,9 @@ pub mod core_0_dram0_exception_monitor_2;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_0_dram0_exception_monitor_3::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_0_dram0_exception_monitor_3`] module*/
-pub type CORE_0_DRAM0_EXCEPTION_MONITOR_3 =
-    crate::Reg<core_0_dram0_exception_monitor_3::CORE_0_DRAM0_EXCEPTION_MONITOR_3_SPEC>;
+pub type CORE_0_DRAM0_EXCEPTION_MONITOR_3 = crate::Reg<
+    core_0_dram0_exception_monitor_3::CORE_0_DRAM0_EXCEPTION_MONITOR_3_SPEC,
+>;
 ///exception monitor status register5
 pub mod core_0_dram0_exception_monitor_3;
 /**CORE_X_IRAM0_DRAM0_EXCEPTION_MONITOR_0 (rw) register accessor: exception monitor status register6
@@ -425,8 +457,9 @@ pub mod core_0_dram0_exception_monitor_3;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_x_iram0_dram0_exception_monitor_0::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_x_iram0_dram0_exception_monitor_0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_x_iram0_dram0_exception_monitor_0`] module*/
-pub type CORE_X_IRAM0_DRAM0_EXCEPTION_MONITOR_0 =
-    crate::Reg<core_x_iram0_dram0_exception_monitor_0::CORE_X_IRAM0_DRAM0_EXCEPTION_MONITOR_0_SPEC>;
+pub type CORE_X_IRAM0_DRAM0_EXCEPTION_MONITOR_0 = crate::Reg<
+    core_x_iram0_dram0_exception_monitor_0::CORE_X_IRAM0_DRAM0_EXCEPTION_MONITOR_0_SPEC,
+>;
 ///exception monitor status register6
 pub mod core_x_iram0_dram0_exception_monitor_0;
 /**CORE_X_IRAM0_DRAM0_EXCEPTION_MONITOR_1 (rw) register accessor: exception monitor status register7
@@ -434,8 +467,9 @@ pub mod core_x_iram0_dram0_exception_monitor_0;
 You can [`read`](crate::generic::Reg::read) this register and get [`core_x_iram0_dram0_exception_monitor_1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`core_x_iram0_dram0_exception_monitor_1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@core_x_iram0_dram0_exception_monitor_1`] module*/
-pub type CORE_X_IRAM0_DRAM0_EXCEPTION_MONITOR_1 =
-    crate::Reg<core_x_iram0_dram0_exception_monitor_1::CORE_X_IRAM0_DRAM0_EXCEPTION_MONITOR_1_SPEC>;
+pub type CORE_X_IRAM0_DRAM0_EXCEPTION_MONITOR_1 = crate::Reg<
+    core_x_iram0_dram0_exception_monitor_1::CORE_X_IRAM0_DRAM0_EXCEPTION_MONITOR_1_SPEC,
+>;
 ///exception monitor status register7
 pub mod core_x_iram0_dram0_exception_monitor_1;
 /**C0RE_0_LASTPC_BEFORE_EXCEPTION (r) register accessor: cpu status register
@@ -443,8 +477,9 @@ pub mod core_x_iram0_dram0_exception_monitor_1;
 You can [`read`](crate::generic::Reg::read) this register and get [`c0re_0_lastpc_before_exception::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@c0re_0_lastpc_before_exception`] module*/
-pub type C0RE_0_LASTPC_BEFORE_EXCEPTION =
-    crate::Reg<c0re_0_lastpc_before_exception::C0RE_0_LASTPC_BEFORE_EXCEPTION_SPEC>;
+pub type C0RE_0_LASTPC_BEFORE_EXCEPTION = crate::Reg<
+    c0re_0_lastpc_before_exception::C0RE_0_LASTPC_BEFORE_EXCEPTION_SPEC,
+>;
 ///cpu status register
 pub mod c0re_0_lastpc_before_exception;
 /**C0RE_0_DEBUG_MODE (r) register accessor: cpu status register

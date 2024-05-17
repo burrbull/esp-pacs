@@ -15,11 +15,21 @@ pub type VDDBAT_CHARGE_CNT_CLR_W<'a, REG> = crate::BitWriter<'a, REG>;
 ///Field `VDDBAT_CHARGE_UPVOLTAGE_TARGET` reader - need_des
 pub type VDDBAT_CHARGE_UPVOLTAGE_TARGET_R = crate::FieldReader<u16>;
 ///Field `VDDBAT_CHARGE_UPVOLTAGE_TARGET` writer - need_des
-pub type VDDBAT_CHARGE_UPVOLTAGE_TARGET_W<'a, REG> = crate::FieldWriter<'a, REG, 10, u16>;
+pub type VDDBAT_CHARGE_UPVOLTAGE_TARGET_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    10,
+    u16,
+>;
 ///Field `VDDBAT_CHARGE_UNDERVOLTAGE_TARGET` reader - need_des
 pub type VDDBAT_CHARGE_UNDERVOLTAGE_TARGET_R = crate::FieldReader<u16>;
 ///Field `VDDBAT_CHARGE_UNDERVOLTAGE_TARGET` writer - need_des
-pub type VDDBAT_CHARGE_UNDERVOLTAGE_TARGET_W<'a, REG> = crate::FieldWriter<'a, REG, 10, u16>;
+pub type VDDBAT_CHARGE_UNDERVOLTAGE_TARGET_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    10,
+    u16,
+>;
 impl R {
     ///Bit 0 - need_des
     #[inline(always)]
@@ -43,7 +53,9 @@ impl R {
     }
     ///Bits 22:31 - need_des
     #[inline(always)]
-    pub fn vddbat_charge_undervoltage_target(&self) -> VDDBAT_CHARGE_UNDERVOLTAGE_TARGET_R {
+    pub fn vddbat_charge_undervoltage_target(
+        &self,
+    ) -> VDDBAT_CHARGE_UNDERVOLTAGE_TARGET_R {
         VDDBAT_CHARGE_UNDERVOLTAGE_TARGET_R::new(((self.bits >> 22) & 0x03ff) as u16)
     }
 }
@@ -72,13 +84,17 @@ impl W {
     ///Bit 10 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn vddbat_charge_charger(&mut self) -> VDDBAT_CHARGE_CHARGER_W<VDDBAT_CHARGE_CNTL_SPEC> {
+    pub fn vddbat_charge_charger(
+        &mut self,
+    ) -> VDDBAT_CHARGE_CHARGER_W<VDDBAT_CHARGE_CNTL_SPEC> {
         VDDBAT_CHARGE_CHARGER_W::new(self, 10)
     }
     ///Bit 11 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn vddbat_charge_cnt_clr(&mut self) -> VDDBAT_CHARGE_CNT_CLR_W<VDDBAT_CHARGE_CNTL_SPEC> {
+    pub fn vddbat_charge_cnt_clr(
+        &mut self,
+    ) -> VDDBAT_CHARGE_CNT_CLR_W<VDDBAT_CHARGE_CNTL_SPEC> {
         VDDBAT_CHARGE_CNT_CLR_W::new(self, 11)
     }
     ///Bits 12:21 - need_des

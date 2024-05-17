@@ -121,10 +121,7 @@ impl core::fmt::Debug for R {
             .field("xpd_sar_amp_fsm_idle", &self.xpd_sar_amp_fsm_idle())
             .field("amp_rst_fb_fsm_idle", &self.amp_rst_fb_fsm_idle())
             .field("amp_short_ref_fsm_idle", &self.amp_short_ref_fsm_idle())
-            .field(
-                "amp_short_ref_gnd_fsm_idle",
-                &self.amp_short_ref_gnd_fsm_idle(),
-            )
+            .field("amp_short_ref_gnd_fsm_idle", &self.amp_short_ref_gnd_fsm_idle())
             .field("xpd_sar_fsm_idle", &self.xpd_sar_fsm_idle())
             .field("sar_rstb_fsm_idle", &self.sar_rstb_fsm_idle())
             .field("sar2_rstb_force", &self.sar2_rstb_force())
@@ -144,13 +141,17 @@ impl W {
     ///Bit 4
     #[inline(always)]
     #[must_use]
-    pub fn sar1_dac_xpd_fsm_idle(&mut self) -> SAR1_DAC_XPD_FSM_IDLE_W<SAR_MEAS_CTRL2_SPEC> {
+    pub fn sar1_dac_xpd_fsm_idle(
+        &mut self,
+    ) -> SAR1_DAC_XPD_FSM_IDLE_W<SAR_MEAS_CTRL2_SPEC> {
         SAR1_DAC_XPD_FSM_IDLE_W::new(self, 4)
     }
     ///Bit 5
     #[inline(always)]
     #[must_use]
-    pub fn xpd_sar_amp_fsm_idle(&mut self) -> XPD_SAR_AMP_FSM_IDLE_W<SAR_MEAS_CTRL2_SPEC> {
+    pub fn xpd_sar_amp_fsm_idle(
+        &mut self,
+    ) -> XPD_SAR_AMP_FSM_IDLE_W<SAR_MEAS_CTRL2_SPEC> {
         XPD_SAR_AMP_FSM_IDLE_W::new(self, 5)
     }
     ///Bit 6
@@ -162,7 +163,9 @@ impl W {
     ///Bit 7
     #[inline(always)]
     #[must_use]
-    pub fn amp_short_ref_fsm_idle(&mut self) -> AMP_SHORT_REF_FSM_IDLE_W<SAR_MEAS_CTRL2_SPEC> {
+    pub fn amp_short_ref_fsm_idle(
+        &mut self,
+    ) -> AMP_SHORT_REF_FSM_IDLE_W<SAR_MEAS_CTRL2_SPEC> {
         AMP_SHORT_REF_FSM_IDLE_W::new(self, 7)
     }
     ///Bit 8
@@ -206,7 +209,9 @@ impl W {
     ///Bits 17:18
     #[inline(always)]
     #[must_use]
-    pub fn amp_short_ref_gnd_force(&mut self) -> AMP_SHORT_REF_GND_FORCE_W<SAR_MEAS_CTRL2_SPEC> {
+    pub fn amp_short_ref_gnd_force(
+        &mut self,
+    ) -> AMP_SHORT_REF_GND_FORCE_W<SAR_MEAS_CTRL2_SPEC> {
         AMP_SHORT_REF_GND_FORCE_W::new(self, 17)
     }
 }

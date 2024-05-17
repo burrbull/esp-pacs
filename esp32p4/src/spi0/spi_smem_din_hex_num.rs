@@ -105,55 +105,73 @@ impl W {
     ///Bits 0:1 - the input signals are delayed by system clock cycles, 0: delayed by 1 cycle, 1: delayed by 2 cycles,...
     #[inline(always)]
     #[must_use]
-    pub fn spi_smem_din08_num(&mut self) -> SPI_SMEM_DIN08_NUM_W<SPI_SMEM_DIN_HEX_NUM_SPEC> {
+    pub fn spi_smem_din08_num(
+        &mut self,
+    ) -> SPI_SMEM_DIN08_NUM_W<SPI_SMEM_DIN_HEX_NUM_SPEC> {
         SPI_SMEM_DIN08_NUM_W::new(self, 0)
     }
     ///Bits 2:3 - the input signals are delayed by system clock cycles, 0: delayed by 1 cycle, 1: delayed by 2 cycles,...
     #[inline(always)]
     #[must_use]
-    pub fn spi_smem_din09_num(&mut self) -> SPI_SMEM_DIN09_NUM_W<SPI_SMEM_DIN_HEX_NUM_SPEC> {
+    pub fn spi_smem_din09_num(
+        &mut self,
+    ) -> SPI_SMEM_DIN09_NUM_W<SPI_SMEM_DIN_HEX_NUM_SPEC> {
         SPI_SMEM_DIN09_NUM_W::new(self, 2)
     }
     ///Bits 4:5 - the input signals are delayed by system clock cycles, 0: delayed by 1 cycle, 1: delayed by 2 cycles,...
     #[inline(always)]
     #[must_use]
-    pub fn spi_smem_din10_num(&mut self) -> SPI_SMEM_DIN10_NUM_W<SPI_SMEM_DIN_HEX_NUM_SPEC> {
+    pub fn spi_smem_din10_num(
+        &mut self,
+    ) -> SPI_SMEM_DIN10_NUM_W<SPI_SMEM_DIN_HEX_NUM_SPEC> {
         SPI_SMEM_DIN10_NUM_W::new(self, 4)
     }
     ///Bits 6:7 - the input signals are delayed by system clock cycles, 0: delayed by 1 cycle, 1: delayed by 2 cycles,...
     #[inline(always)]
     #[must_use]
-    pub fn spi_smem_din11_num(&mut self) -> SPI_SMEM_DIN11_NUM_W<SPI_SMEM_DIN_HEX_NUM_SPEC> {
+    pub fn spi_smem_din11_num(
+        &mut self,
+    ) -> SPI_SMEM_DIN11_NUM_W<SPI_SMEM_DIN_HEX_NUM_SPEC> {
         SPI_SMEM_DIN11_NUM_W::new(self, 6)
     }
     ///Bits 8:9 - the input signals are delayed by system clock cycles, 0: delayed by 1 cycle, 1: delayed by 2 cycles,...
     #[inline(always)]
     #[must_use]
-    pub fn spi_smem_din12_num(&mut self) -> SPI_SMEM_DIN12_NUM_W<SPI_SMEM_DIN_HEX_NUM_SPEC> {
+    pub fn spi_smem_din12_num(
+        &mut self,
+    ) -> SPI_SMEM_DIN12_NUM_W<SPI_SMEM_DIN_HEX_NUM_SPEC> {
         SPI_SMEM_DIN12_NUM_W::new(self, 8)
     }
     ///Bits 10:11 - the input signals are delayed by system clock cycles, 0: delayed by 1 cycle, 1: delayed by 2 cycles,...
     #[inline(always)]
     #[must_use]
-    pub fn spi_smem_din13_num(&mut self) -> SPI_SMEM_DIN13_NUM_W<SPI_SMEM_DIN_HEX_NUM_SPEC> {
+    pub fn spi_smem_din13_num(
+        &mut self,
+    ) -> SPI_SMEM_DIN13_NUM_W<SPI_SMEM_DIN_HEX_NUM_SPEC> {
         SPI_SMEM_DIN13_NUM_W::new(self, 10)
     }
     ///Bits 12:13 - the input signals are delayed by system clock cycles, 0: delayed by 1 cycle, 1: delayed by 2 cycles,...
     #[inline(always)]
     #[must_use]
-    pub fn spi_smem_din14_num(&mut self) -> SPI_SMEM_DIN14_NUM_W<SPI_SMEM_DIN_HEX_NUM_SPEC> {
+    pub fn spi_smem_din14_num(
+        &mut self,
+    ) -> SPI_SMEM_DIN14_NUM_W<SPI_SMEM_DIN_HEX_NUM_SPEC> {
         SPI_SMEM_DIN14_NUM_W::new(self, 12)
     }
     ///Bits 14:15 - the input signals are delayed by system clock cycles, 0: delayed by 1 cycle, 1: delayed by 2 cycles,...
     #[inline(always)]
     #[must_use]
-    pub fn spi_smem_din15_num(&mut self) -> SPI_SMEM_DIN15_NUM_W<SPI_SMEM_DIN_HEX_NUM_SPEC> {
+    pub fn spi_smem_din15_num(
+        &mut self,
+    ) -> SPI_SMEM_DIN15_NUM_W<SPI_SMEM_DIN_HEX_NUM_SPEC> {
         SPI_SMEM_DIN15_NUM_W::new(self, 14)
     }
     ///Bits 16:17 - the input signals are delayed by system clock cycles, 0: delayed by 1 cycle, 1: delayed by 2 cycles,...
     #[inline(always)]
     #[must_use]
-    pub fn spi_smem_dins_hex_num(&mut self) -> SPI_SMEM_DINS_HEX_NUM_W<SPI_SMEM_DIN_HEX_NUM_SPEC> {
+    pub fn spi_smem_dins_hex_num(
+        &mut self,
+    ) -> SPI_SMEM_DINS_HEX_NUM_W<SPI_SMEM_DIN_HEX_NUM_SPEC> {
         SPI_SMEM_DINS_HEX_NUM_W::new(self, 16)
     }
 }

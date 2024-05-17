@@ -25,7 +25,9 @@ impl W {
     ///Bits 1:13 - This filed is used to enable entry address check
     #[inline(always)]
     #[must_use]
-    pub fn core_0_entry_check(&mut self) -> CORE_0_ENTRY_CHECK_W<CORE_0_ENTRY_CHECK_SPEC> {
+    pub fn core_0_entry_check(
+        &mut self,
+    ) -> CORE_0_ENTRY_CHECK_W<CORE_0_ENTRY_CHECK_SPEC> {
         CORE_0_ENTRY_CHECK_W::new(self, 1)
     }
 }

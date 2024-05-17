@@ -125,49 +125,65 @@ impl W {
     ///Bit 0
     #[inline(always)]
     #[must_use]
-    pub fn pro_cache_mask_iram0(&mut self) -> PRO_CACHE_MASK_IRAM0_W<PRO_CACHE_CTRL1_SPEC> {
+    pub fn pro_cache_mask_iram0(
+        &mut self,
+    ) -> PRO_CACHE_MASK_IRAM0_W<PRO_CACHE_CTRL1_SPEC> {
         PRO_CACHE_MASK_IRAM0_W::new(self, 0)
     }
     ///Bit 1
     #[inline(always)]
     #[must_use]
-    pub fn pro_cache_mask_iram1(&mut self) -> PRO_CACHE_MASK_IRAM1_W<PRO_CACHE_CTRL1_SPEC> {
+    pub fn pro_cache_mask_iram1(
+        &mut self,
+    ) -> PRO_CACHE_MASK_IRAM1_W<PRO_CACHE_CTRL1_SPEC> {
         PRO_CACHE_MASK_IRAM1_W::new(self, 1)
     }
     ///Bit 2
     #[inline(always)]
     #[must_use]
-    pub fn pro_cache_mask_irom0(&mut self) -> PRO_CACHE_MASK_IROM0_W<PRO_CACHE_CTRL1_SPEC> {
+    pub fn pro_cache_mask_irom0(
+        &mut self,
+    ) -> PRO_CACHE_MASK_IROM0_W<PRO_CACHE_CTRL1_SPEC> {
         PRO_CACHE_MASK_IROM0_W::new(self, 2)
     }
     ///Bit 3
     #[inline(always)]
     #[must_use]
-    pub fn pro_cache_mask_dram1(&mut self) -> PRO_CACHE_MASK_DRAM1_W<PRO_CACHE_CTRL1_SPEC> {
+    pub fn pro_cache_mask_dram1(
+        &mut self,
+    ) -> PRO_CACHE_MASK_DRAM1_W<PRO_CACHE_CTRL1_SPEC> {
         PRO_CACHE_MASK_DRAM1_W::new(self, 3)
     }
     ///Bit 4
     #[inline(always)]
     #[must_use]
-    pub fn pro_cache_mask_drom0(&mut self) -> PRO_CACHE_MASK_DROM0_W<PRO_CACHE_CTRL1_SPEC> {
+    pub fn pro_cache_mask_drom0(
+        &mut self,
+    ) -> PRO_CACHE_MASK_DROM0_W<PRO_CACHE_CTRL1_SPEC> {
         PRO_CACHE_MASK_DROM0_W::new(self, 4)
     }
     ///Bit 5
     #[inline(always)]
     #[must_use]
-    pub fn pro_cache_mask_opsdram(&mut self) -> PRO_CACHE_MASK_OPSDRAM_W<PRO_CACHE_CTRL1_SPEC> {
+    pub fn pro_cache_mask_opsdram(
+        &mut self,
+    ) -> PRO_CACHE_MASK_OPSDRAM_W<PRO_CACHE_CTRL1_SPEC> {
         PRO_CACHE_MASK_OPSDRAM_W::new(self, 5)
     }
     ///Bits 6:8
     #[inline(always)]
     #[must_use]
-    pub fn pro_cmmu_sram_page_mode(&mut self) -> PRO_CMMU_SRAM_PAGE_MODE_W<PRO_CACHE_CTRL1_SPEC> {
+    pub fn pro_cmmu_sram_page_mode(
+        &mut self,
+    ) -> PRO_CMMU_SRAM_PAGE_MODE_W<PRO_CACHE_CTRL1_SPEC> {
         PRO_CMMU_SRAM_PAGE_MODE_W::new(self, 6)
     }
     ///Bits 9:10
     #[inline(always)]
     #[must_use]
-    pub fn pro_cmmu_flash_page_mode(&mut self) -> PRO_CMMU_FLASH_PAGE_MODE_W<PRO_CACHE_CTRL1_SPEC> {
+    pub fn pro_cmmu_flash_page_mode(
+        &mut self,
+    ) -> PRO_CMMU_FLASH_PAGE_MODE_W<PRO_CACHE_CTRL1_SPEC> {
         PRO_CMMU_FLASH_PAGE_MODE_W::new(self, 9)
     }
     ///Bit 11
@@ -185,7 +201,9 @@ impl W {
     ///Bit 13
     #[inline(always)]
     #[must_use]
-    pub fn pro_cache_mmu_ia_clr(&mut self) -> PRO_CACHE_MMU_IA_CLR_W<PRO_CACHE_CTRL1_SPEC> {
+    pub fn pro_cache_mmu_ia_clr(
+        &mut self,
+    ) -> PRO_CACHE_MMU_IA_CLR_W<PRO_CACHE_CTRL1_SPEC> {
         PRO_CACHE_MMU_IA_CLR_W::new(self, 13)
     }
 }

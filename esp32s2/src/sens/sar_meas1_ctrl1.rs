@@ -81,7 +81,9 @@ impl W {
     ///Bit 23 - Enable bit of SAR ADC clock gate.
     #[inline(always)]
     #[must_use]
-    pub fn rtc_saradc_clkgate_en(&mut self) -> RTC_SARADC_CLKGATE_EN_W<SAR_MEAS1_CTRL1_SPEC> {
+    pub fn rtc_saradc_clkgate_en(
+        &mut self,
+    ) -> RTC_SARADC_CLKGATE_EN_W<SAR_MEAS1_CTRL1_SPEC> {
         RTC_SARADC_CLKGATE_EN_W::new(self, 23)
     }
     ///Bits 24:25
@@ -99,13 +101,17 @@ impl W {
     ///Bits 28:29
     #[inline(always)]
     #[must_use]
-    pub fn amp_short_ref_force(&mut self) -> AMP_SHORT_REF_FORCE_W<SAR_MEAS1_CTRL1_SPEC> {
+    pub fn amp_short_ref_force(
+        &mut self,
+    ) -> AMP_SHORT_REF_FORCE_W<SAR_MEAS1_CTRL1_SPEC> {
         AMP_SHORT_REF_FORCE_W::new(self, 28)
     }
     ///Bits 30:31
     #[inline(always)]
     #[must_use]
-    pub fn amp_short_ref_gnd_force(&mut self) -> AMP_SHORT_REF_GND_FORCE_W<SAR_MEAS1_CTRL1_SPEC> {
+    pub fn amp_short_ref_gnd_force(
+        &mut self,
+    ) -> AMP_SHORT_REF_GND_FORCE_W<SAR_MEAS1_CTRL1_SPEC> {
         AMP_SHORT_REF_GND_FORCE_W::new(self, 30)
     }
 }

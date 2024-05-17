@@ -25,7 +25,9 @@ impl W {
     ///Bits 0:2 - Set bit0 to disable ibus err resp;Set bit1 to disable dbus err resp; Set bit 2 to disable ahb err resp.
     #[inline(always)]
     #[must_use]
-    pub fn lp_core_err_resp_dis(&mut self) -> LP_CORE_ERR_RESP_DIS_W<LP_CORE_ERR_RESP_DIS_SPEC> {
+    pub fn lp_core_err_resp_dis(
+        &mut self,
+    ) -> LP_CORE_ERR_RESP_DIS_W<LP_CORE_ERR_RESP_DIS_SPEC> {
         LP_CORE_ERR_RESP_DIS_W::new(self, 0)
     }
 }

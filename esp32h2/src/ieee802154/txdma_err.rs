@@ -16,9 +16,7 @@ impl R {
 #[cfg(feature = "impl-register-debug")]
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("TXDMA_ERR")
-            .field("txdma_err", &self.txdma_err())
-            .finish()
+        f.debug_struct("TXDMA_ERR").field("txdma_err", &self.txdma_err()).finish()
     }
 }
 impl W {

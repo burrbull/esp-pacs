@@ -41,7 +41,9 @@ impl W {
     ///Bit 1 - .
     #[inline(always)]
     #[must_use]
-    pub fn bletimer_clk_is_active(&mut self) -> BLETIMER_CLK_IS_ACTIVE_W<BLE_TIMER_CLK_CONF_SPEC> {
+    pub fn bletimer_clk_is_active(
+        &mut self,
+    ) -> BLETIMER_CLK_IS_ACTIVE_W<BLE_TIMER_CLK_CONF_SPEC> {
         BLETIMER_CLK_IS_ACTIVE_W::new(self, 1)
     }
 }

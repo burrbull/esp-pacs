@@ -77,7 +77,9 @@ impl W {
     ///Bits 19:26 - no public
     #[inline(always)]
     #[must_use]
-    pub fn sar_sar1_sample_num(&mut self) -> SAR_SAR1_SAMPLE_NUM_W<SAR_READER1_CTRL_SPEC> {
+    pub fn sar_sar1_sample_num(
+        &mut self,
+    ) -> SAR_SAR1_SAMPLE_NUM_W<SAR_READER1_CTRL_SPEC> {
         SAR_SAR1_SAMPLE_NUM_W::new(self, 19)
     }
     ///Bit 28 - Invert SAR ADC1 data

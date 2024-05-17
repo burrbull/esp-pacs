@@ -67,7 +67,9 @@ impl W {
     ///Bit 3 - reg_cpu_wait_mode_force_on
     #[inline(always)]
     #[must_use]
-    pub fn cpu_wait_mode_force_on(&mut self) -> CPU_WAIT_MODE_FORCE_ON_W<CPU_PER_CONF_SPEC> {
+    pub fn cpu_wait_mode_force_on(
+        &mut self,
+    ) -> CPU_WAIT_MODE_FORCE_ON_W<CPU_PER_CONF_SPEC> {
         CPU_WAIT_MODE_FORCE_ON_W::new(self, 3)
     }
     ///Bits 4:7 - reg_cpu_waiti_delay_num

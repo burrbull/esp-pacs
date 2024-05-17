@@ -46,7 +46,9 @@ impl R {
     }
     ///Bits 14:17 - Represents intra_16x16_chroma_ctrl module FSM info.
     #[inline(always)]
-    pub fn intra_16x16_chroma_ctrl_debug_state(&self) -> INTRA_16X16_CHROMA_CTRL_DEBUG_STATE_R {
+    pub fn intra_16x16_chroma_ctrl_debug_state(
+        &self,
+    ) -> INTRA_16X16_CHROMA_CTRL_DEBUG_STATE_R {
         INTRA_16X16_CHROMA_CTRL_DEBUG_STATE_R::new(((self.bits >> 14) & 0x0f) as u8)
     }
     ///Bits 18:21 - Represents intra_4x4_ctrl module FSM info.
@@ -69,14 +71,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("DEBUG_INFO0")
-            .field(
-                "top_ctrl_inter_debug_state",
-                &self.top_ctrl_inter_debug_state(),
-            )
-            .field(
-                "top_ctrl_intra_debug_state",
-                &self.top_ctrl_intra_debug_state(),
-            )
+            .field("top_ctrl_inter_debug_state", &self.top_ctrl_inter_debug_state())
+            .field("top_ctrl_intra_debug_state", &self.top_ctrl_intra_debug_state())
             .field("p_i_cmp_debug_state", &self.p_i_cmp_debug_state())
             .field("mvd_debug_state", &self.mvd_debug_state())
             .field("mc_chroma_ip_debug_state", &self.mc_chroma_ip_debug_state())
@@ -84,14 +80,8 @@ impl core::fmt::Debug for R {
                 "intra_16x16_chroma_ctrl_debug_state",
                 &self.intra_16x16_chroma_ctrl_debug_state(),
             )
-            .field(
-                "intra_4x4_ctrl_debug_state",
-                &self.intra_4x4_ctrl_debug_state(),
-            )
-            .field(
-                "intra_top_ctrl_debug_state",
-                &self.intra_top_ctrl_debug_state(),
-            )
+            .field("intra_4x4_ctrl_debug_state", &self.intra_4x4_ctrl_debug_state())
+            .field("intra_top_ctrl_debug_state", &self.intra_top_ctrl_debug_state())
             .field("ime_ctrl_debug_state", &self.ime_ctrl_debug_state())
             .finish()
     }

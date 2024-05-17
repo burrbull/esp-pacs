@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("AHBLITE_MPU_TABLE_BT_BUFFER")
-            .field(
-                "btbuffer_access_grant_config",
-                &self.btbuffer_access_grant_config(),
-            )
+            .field("btbuffer_access_grant_config", &self.btbuffer_access_grant_config())
             .finish()
     }
 }

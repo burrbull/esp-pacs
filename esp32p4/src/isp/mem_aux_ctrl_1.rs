@@ -26,14 +26,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("MEM_AUX_CTRL_1")
-            .field(
-                "lsc_lut_r_gr_mem_aux_ctrl",
-                &self.lsc_lut_r_gr_mem_aux_ctrl(),
-            )
-            .field(
-                "lsc_lut_gb_b_mem_aux_ctrl",
-                &self.lsc_lut_gb_b_mem_aux_ctrl(),
-            )
+            .field("lsc_lut_r_gr_mem_aux_ctrl", &self.lsc_lut_r_gr_mem_aux_ctrl())
+            .field("lsc_lut_gb_b_mem_aux_ctrl", &self.lsc_lut_gb_b_mem_aux_ctrl())
             .finish()
     }
 }

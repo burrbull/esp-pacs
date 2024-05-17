@@ -25,7 +25,9 @@ impl W {
     ///Bit 0 - Set 1 to turn on tcm parity check
     #[inline(always)]
     #[must_use]
-    pub fn tcm_parity_check_en(&mut self) -> TCM_PARITY_CHECK_EN_W<TCM_PARITY_CHECK_CTRL_SPEC> {
+    pub fn tcm_parity_check_en(
+        &mut self,
+    ) -> TCM_PARITY_CHECK_EN_W<TCM_PARITY_CHECK_CTRL_SPEC> {
         TCM_PARITY_CHECK_EN_W::new(self, 0)
     }
 }

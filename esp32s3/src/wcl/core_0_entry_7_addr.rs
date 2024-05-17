@@ -25,7 +25,9 @@ impl W {
     ///Bits 0:31 - Core_0 Entry 7 address from WORLD1 to WORLD0
     #[inline(always)]
     #[must_use]
-    pub fn core_0_entry_7_addr(&mut self) -> CORE_0_ENTRY_7_ADDR_W<CORE_0_ENTRY_7_ADDR_SPEC> {
+    pub fn core_0_entry_7_addr(
+        &mut self,
+    ) -> CORE_0_ENTRY_7_ADDR_W<CORE_0_ENTRY_7_ADDR_SPEC> {
         CORE_0_ENTRY_7_ADDR_W::new(self, 0)
     }
 }

@@ -44,14 +44,8 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SHARP_MATRIX_CTRL")
-            .field(
-                "sharp_tail_pixen_pulse_tl",
-                &self.sharp_tail_pixen_pulse_tl(),
-            )
-            .field(
-                "sharp_tail_pixen_pulse_th",
-                &self.sharp_tail_pixen_pulse_th(),
-            )
+            .field("sharp_tail_pixen_pulse_tl", &self.sharp_tail_pixen_pulse_tl())
+            .field("sharp_tail_pixen_pulse_th", &self.sharp_tail_pixen_pulse_th())
             .field("sharp_padding_data", &self.sharp_padding_data())
             .field("sharp_padding_mode", &self.sharp_padding_mode())
             .finish()
@@ -77,13 +71,17 @@ impl W {
     ///Bits 16:23 - this field configures sharp padding data
     #[inline(always)]
     #[must_use]
-    pub fn sharp_padding_data(&mut self) -> SHARP_PADDING_DATA_W<SHARP_MATRIX_CTRL_SPEC> {
+    pub fn sharp_padding_data(
+        &mut self,
+    ) -> SHARP_PADDING_DATA_W<SHARP_MATRIX_CTRL_SPEC> {
         SHARP_PADDING_DATA_W::new(self, 16)
     }
     ///Bit 24 - this field configures sharp padding mode
     #[inline(always)]
     #[must_use]
-    pub fn sharp_padding_mode(&mut self) -> SHARP_PADDING_MODE_W<SHARP_MATRIX_CTRL_SPEC> {
+    pub fn sharp_padding_mode(
+        &mut self,
+    ) -> SHARP_PADDING_MODE_W<SHARP_MATRIX_CTRL_SPEC> {
         SHARP_PADDING_MODE_W::new(self, 24)
     }
 }

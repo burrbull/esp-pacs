@@ -16,9 +16,7 @@ impl R {
 #[cfg(feature = "impl-register-debug")]
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("ADDR")
-            .field("usr_addr_value", &self.usr_addr_value())
-            .finish()
+        f.debug_struct("ADDR").field("usr_addr_value", &self.usr_addr_value()).finish()
     }
 }
 impl W {

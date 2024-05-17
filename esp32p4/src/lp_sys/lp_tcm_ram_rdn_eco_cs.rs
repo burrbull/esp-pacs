@@ -25,10 +25,7 @@ impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("LP_TCM_RAM_RDN_ECO_CS")
             .field("lp_tcm_ram_rdn_eco_en", &self.lp_tcm_ram_rdn_eco_en())
-            .field(
-                "lp_tcm_ram_rdn_eco_result",
-                &self.lp_tcm_ram_rdn_eco_result(),
-            )
+            .field("lp_tcm_ram_rdn_eco_result", &self.lp_tcm_ram_rdn_eco_result())
             .finish()
     }
 }
@@ -36,7 +33,9 @@ impl W {
     ///Bit 0 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn lp_tcm_ram_rdn_eco_en(&mut self) -> LP_TCM_RAM_RDN_ECO_EN_W<LP_TCM_RAM_RDN_ECO_CS_SPEC> {
+    pub fn lp_tcm_ram_rdn_eco_en(
+        &mut self,
+    ) -> LP_TCM_RAM_RDN_ECO_EN_W<LP_TCM_RAM_RDN_ECO_CS_SPEC> {
         LP_TCM_RAM_RDN_ECO_EN_W::new(self, 0)
     }
 }

@@ -20,7 +20,9 @@ impl R {
     }
     ///Bit 1 - Need add description
     #[inline(always)]
-    pub fn pif_access_monitor_nonword_violate_en(&self) -> PIF_ACCESS_MONITOR_NONWORD_VIOLATE_EN_R {
+    pub fn pif_access_monitor_nonword_violate_en(
+        &self,
+    ) -> PIF_ACCESS_MONITOR_NONWORD_VIOLATE_EN_R {
         PIF_ACCESS_MONITOR_NONWORD_VIOLATE_EN_R::new(((self.bits >> 1) & 1) != 0)
     }
 }

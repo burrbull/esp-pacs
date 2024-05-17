@@ -12,9 +12,7 @@ impl R {
 #[cfg(feature = "impl-register-debug")]
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("RESP3")
-            .field("response3", &self.response3())
-            .finish()
+        f.debug_struct("RESP3").field("response3", &self.response3()).finish()
     }
 }
 /**Long response data register

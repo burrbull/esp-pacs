@@ -61,7 +61,9 @@ impl W {
     ///Bits 10:27 - this field configures the max frame_interval_cnt, frame_interval_cnt increased by 1 when frame_slot_cnt if full
     #[inline(always)]
     #[must_use]
-    pub fn dma_frame_interval(&mut self) -> DMA_FRAME_INTERVAL_W<DMA_FRAME_INTERVAL_SPEC> {
+    pub fn dma_frame_interval(
+        &mut self,
+    ) -> DMA_FRAME_INTERVAL_W<DMA_FRAME_INTERVAL_SPEC> {
         DMA_FRAME_INTERVAL_W::new(self, 10)
     }
     ///Bit 28 - this bit configures enable multi-blk transfer, 0: disable, 1: enable

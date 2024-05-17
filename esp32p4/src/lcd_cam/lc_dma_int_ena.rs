@@ -61,7 +61,9 @@ impl W {
     ///Bit 1 - The enable bit for lcd transfer end interrupt.
     #[inline(always)]
     #[must_use]
-    pub fn lcd_trans_done_int_ena(&mut self) -> LCD_TRANS_DONE_INT_ENA_W<LC_DMA_INT_ENA_SPEC> {
+    pub fn lcd_trans_done_int_ena(
+        &mut self,
+    ) -> LCD_TRANS_DONE_INT_ENA_W<LC_DMA_INT_ENA_SPEC> {
         LCD_TRANS_DONE_INT_ENA_W::new(self, 1)
     }
     ///Bit 2 - The enable bit for Camera frame end interrupt.

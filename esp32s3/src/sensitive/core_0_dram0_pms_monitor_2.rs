@@ -11,7 +11,9 @@ pub type CORE_0_DRAM0_PMS_MONITOR_VIOLATE_STATUS_ADDR_R = crate::FieldReader<u32
 impl R {
     ///Bit 0 - recorded core0 dram0 permission monitor interrupt status.
     #[inline(always)]
-    pub fn core_0_dram0_pms_monitor_violate_intr(&self) -> CORE_0_DRAM0_PMS_MONITOR_VIOLATE_INTR_R {
+    pub fn core_0_dram0_pms_monitor_violate_intr(
+        &self,
+    ) -> CORE_0_DRAM0_PMS_MONITOR_VIOLATE_INTR_R {
         CORE_0_DRAM0_PMS_MONITOR_VIOLATE_INTR_R::new((self.bits & 1) != 0)
     }
     ///Bit 1 - recorded core0 dram0 lock status, 1 means s32c1i access.
@@ -26,14 +28,18 @@ impl R {
     pub fn core_0_dram0_pms_monitor_violate_status_world(
         &self,
     ) -> CORE_0_DRAM0_PMS_MONITOR_VIOLATE_STATUS_WORLD_R {
-        CORE_0_DRAM0_PMS_MONITOR_VIOLATE_STATUS_WORLD_R::new(((self.bits >> 2) & 3) as u8)
+        CORE_0_DRAM0_PMS_MONITOR_VIOLATE_STATUS_WORLD_R::new(
+            ((self.bits >> 2) & 3) as u8,
+        )
     }
     ///Bits 4:25 - recorded core0 dram0 address\[25:4\] status when core0 dram0 violated permission,the real address is 0x3c000000+addr*16
     #[inline(always)]
     pub fn core_0_dram0_pms_monitor_violate_status_addr(
         &self,
     ) -> CORE_0_DRAM0_PMS_MONITOR_VIOLATE_STATUS_ADDR_R {
-        CORE_0_DRAM0_PMS_MONITOR_VIOLATE_STATUS_ADDR_R::new((self.bits >> 4) & 0x003f_ffff)
+        CORE_0_DRAM0_PMS_MONITOR_VIOLATE_STATUS_ADDR_R::new(
+            (self.bits >> 4) & 0x003f_ffff,
+        )
     }
 }
 #[cfg(feature = "impl-register-debug")]

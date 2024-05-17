@@ -48,18 +48,12 @@ impl core::fmt::Debug for R {
                 "hp_sleep_lp_regulator_slp_xpd",
                 &self.hp_sleep_lp_regulator_slp_xpd(),
             )
-            .field(
-                "hp_sleep_lp_regulator_xpd",
-                &self.hp_sleep_lp_regulator_xpd(),
-            )
+            .field("hp_sleep_lp_regulator_xpd", &self.hp_sleep_lp_regulator_xpd())
             .field(
                 "hp_sleep_lp_regulator_slp_dbias",
                 &self.hp_sleep_lp_regulator_slp_dbias(),
             )
-            .field(
-                "hp_sleep_lp_regulator_dbias",
-                &self.hp_sleep_lp_regulator_dbias(),
-            )
+            .field("hp_sleep_lp_regulator_dbias", &self.hp_sleep_lp_regulator_dbias())
             .finish()
     }
 }

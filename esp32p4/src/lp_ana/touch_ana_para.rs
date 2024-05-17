@@ -57,7 +57,9 @@ impl W {
     ///Bits 4:10 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn touch_touch_dcap_cal(&mut self) -> TOUCH_TOUCH_DCAP_CAL_W<TOUCH_ANA_PARA_SPEC> {
+    pub fn touch_touch_dcap_cal(
+        &mut self,
+    ) -> TOUCH_TOUCH_DCAP_CAL_W<TOUCH_ANA_PARA_SPEC> {
         TOUCH_TOUCH_DCAP_CAL_W::new(self, 4)
     }
 }

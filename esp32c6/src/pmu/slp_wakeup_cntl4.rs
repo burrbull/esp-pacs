@@ -12,7 +12,9 @@ impl W {
     ///Bit 31 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn slp_reject_cause_clr(&mut self) -> SLP_REJECT_CAUSE_CLR_W<SLP_WAKEUP_CNTL4_SPEC> {
+    pub fn slp_reject_cause_clr(
+        &mut self,
+    ) -> SLP_REJECT_CAUSE_CLR_W<SLP_WAKEUP_CNTL4_SPEC> {
         SLP_REJECT_CAUSE_CLR_W::new(self, 31)
     }
 }

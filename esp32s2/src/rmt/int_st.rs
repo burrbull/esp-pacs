@@ -16,8 +16,7 @@ impl R {
     ///NOTE: `n` is number of field in register. `n == 0` corresponds to `CH0_TX_END` field
     #[inline(always)]
     pub fn ch_tx_end(&self, n: u8) -> CH_TX_END_R {
-        #[allow(clippy::no_effect)]
-        [(); 4][n as usize];
+        #[allow(clippy::no_effect)] [(); 4][n as usize];
         CH_TX_END_R::new(((self.bits >> (n * 3)) & 1) != 0)
     }
     ///Iterator for array of:
@@ -51,8 +50,7 @@ impl R {
     ///NOTE: `n` is number of field in register. `n == 0` corresponds to `CH0_RX_END` field
     #[inline(always)]
     pub fn ch_rx_end(&self, n: u8) -> CH_RX_END_R {
-        #[allow(clippy::no_effect)]
-        [(); 4][n as usize];
+        #[allow(clippy::no_effect)] [(); 4][n as usize];
         CH_RX_END_R::new(((self.bits >> (n * 3 + 1)) & 1) != 0)
     }
     ///Iterator for array of:
@@ -86,8 +84,7 @@ impl R {
     ///NOTE: `n` is number of field in register. `n == 0` corresponds to `CH0_ERR` field
     #[inline(always)]
     pub fn ch_err(&self, n: u8) -> CH_ERR_R {
-        #[allow(clippy::no_effect)]
-        [(); 4][n as usize];
+        #[allow(clippy::no_effect)] [(); 4][n as usize];
         CH_ERR_R::new(((self.bits >> (n * 3 + 2)) & 1) != 0)
     }
     ///Iterator for array of:
@@ -121,8 +118,7 @@ impl R {
     ///NOTE: `n` is number of field in register. `n == 0` corresponds to `CH0_TX_THR_EVENT` field
     #[inline(always)]
     pub fn ch_tx_thr_event(&self, n: u8) -> CH_TX_THR_EVENT_R {
-        #[allow(clippy::no_effect)]
-        [(); 4][n as usize];
+        #[allow(clippy::no_effect)] [(); 4][n as usize];
         CH_TX_THR_EVENT_R::new(((self.bits >> (n + 12)) & 1) != 0)
     }
     ///Iterator for array of:
@@ -156,8 +152,7 @@ impl R {
     ///NOTE: `n` is number of field in register. `n == 0` corresponds to `CH0_TX_LOOP` field
     #[inline(always)]
     pub fn ch_tx_loop(&self, n: u8) -> CH_TX_LOOP_R {
-        #[allow(clippy::no_effect)]
-        [(); 4][n as usize];
+        #[allow(clippy::no_effect)] [(); 4][n as usize];
         CH_TX_LOOP_R::new(((self.bits >> (n + 16)) & 1) != 0)
     }
     ///Iterator for array of:

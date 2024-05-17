@@ -221,7 +221,9 @@ impl W {
     ///Bit 1 - 1: The current data rate of DMA TX is smaller than that of SPI. SPI will stop in master mode and send out all 0 in slave mode. 0: Others.
     #[inline(always)]
     #[must_use]
-    pub fn dma_outfifo_empty_err(&mut self) -> DMA_OUTFIFO_EMPTY_ERR_W<DMA_INT_RAW_SPEC> {
+    pub fn dma_outfifo_empty_err(
+        &mut self,
+    ) -> DMA_OUTFIFO_EMPTY_ERR_W<DMA_INT_RAW_SPEC> {
         DMA_OUTFIFO_EMPTY_ERR_W::new(self, 1)
     }
     ///Bit 2 - The raw bit for SPI slave Ex_QPI interrupt. 1: SPI slave mode Ex_QPI transmission is ended. 0: Others.
@@ -311,13 +313,17 @@ impl W {
     ///Bit 17 - The raw bit for SPI_MST_RX_AFIFO_WFULL_ERR_INT interrupt. 1: There is a RX AFIFO write-full error when SPI inputs data in master mode. 0: Others.
     #[inline(always)]
     #[must_use]
-    pub fn mst_rx_afifo_wfull_err(&mut self) -> MST_RX_AFIFO_WFULL_ERR_W<DMA_INT_RAW_SPEC> {
+    pub fn mst_rx_afifo_wfull_err(
+        &mut self,
+    ) -> MST_RX_AFIFO_WFULL_ERR_W<DMA_INT_RAW_SPEC> {
         MST_RX_AFIFO_WFULL_ERR_W::new(self, 17)
     }
     ///Bit 18 - The raw bit for SPI_MST_TX_AFIFO_REMPTY_ERR_INT interrupt. 1: There is a TX BUF AFIFO read-empty error when SPI outputs data in master mode. 0: Others.
     #[inline(always)]
     #[must_use]
-    pub fn mst_tx_afifo_rempty_err(&mut self) -> MST_TX_AFIFO_REMPTY_ERR_W<DMA_INT_RAW_SPEC> {
+    pub fn mst_tx_afifo_rempty_err(
+        &mut self,
+    ) -> MST_TX_AFIFO_REMPTY_ERR_W<DMA_INT_RAW_SPEC> {
         MST_TX_AFIFO_REMPTY_ERR_W::new(self, 18)
     }
     ///Bit 19 - The raw bit for SPI_APP2_INT interrupt. The value is only controlled by software.

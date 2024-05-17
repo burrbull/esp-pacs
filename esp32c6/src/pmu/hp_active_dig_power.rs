@@ -73,22 +73,10 @@ impl core::fmt::Debug for R {
         f.debug_struct("HP_ACTIVE_DIG_POWER")
             .field("hp_active_vdd_spi_pd_en", &self.hp_active_vdd_spi_pd_en())
             .field("hp_active_hp_mem_dslp", &self.hp_active_hp_mem_dslp())
-            .field(
-                "hp_active_pd_hp_mem_pd_en",
-                &self.hp_active_pd_hp_mem_pd_en(),
-            )
-            .field(
-                "hp_active_pd_hp_wifi_pd_en",
-                &self.hp_active_pd_hp_wifi_pd_en(),
-            )
-            .field(
-                "hp_active_pd_hp_cpu_pd_en",
-                &self.hp_active_pd_hp_cpu_pd_en(),
-            )
-            .field(
-                "hp_active_pd_hp_aon_pd_en",
-                &self.hp_active_pd_hp_aon_pd_en(),
-            )
+            .field("hp_active_pd_hp_mem_pd_en", &self.hp_active_pd_hp_mem_pd_en())
+            .field("hp_active_pd_hp_wifi_pd_en", &self.hp_active_pd_hp_wifi_pd_en())
+            .field("hp_active_pd_hp_cpu_pd_en", &self.hp_active_pd_hp_cpu_pd_en())
+            .field("hp_active_pd_hp_aon_pd_en", &self.hp_active_pd_hp_aon_pd_en())
             .field("hp_active_pd_top_pd_en", &self.hp_active_pd_top_pd_en())
             .finish()
     }
@@ -105,7 +93,9 @@ impl W {
     ///Bit 22 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn hp_active_hp_mem_dslp(&mut self) -> HP_ACTIVE_HP_MEM_DSLP_W<HP_ACTIVE_DIG_POWER_SPEC> {
+    pub fn hp_active_hp_mem_dslp(
+        &mut self,
+    ) -> HP_ACTIVE_HP_MEM_DSLP_W<HP_ACTIVE_DIG_POWER_SPEC> {
         HP_ACTIVE_HP_MEM_DSLP_W::new(self, 22)
     }
     ///Bits 23:26 - need_des
@@ -143,7 +133,9 @@ impl W {
     ///Bit 31 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn hp_active_pd_top_pd_en(&mut self) -> HP_ACTIVE_PD_TOP_PD_EN_W<HP_ACTIVE_DIG_POWER_SPEC> {
+    pub fn hp_active_pd_top_pd_en(
+        &mut self,
+    ) -> HP_ACTIVE_PD_TOP_PD_EN_W<HP_ACTIVE_DIG_POWER_SPEC> {
         HP_ACTIVE_PD_TOP_PD_EN_W::new(self, 31)
     }
 }

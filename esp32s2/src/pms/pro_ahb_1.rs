@@ -71,10 +71,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PRO_AHB_1")
-            .field(
-                "pro_ahb_rtcslow_0_spltaddr",
-                &self.pro_ahb_rtcslow_0_spltaddr(),
-            )
+            .field("pro_ahb_rtcslow_0_spltaddr", &self.pro_ahb_rtcslow_0_spltaddr())
             .field("pro_ahb_rtcslow_0_l_f", &self.pro_ahb_rtcslow_0_l_f())
             .field("pro_ahb_rtcslow_0_l_r", &self.pro_ahb_rtcslow_0_l_r())
             .field("pro_ahb_rtcslow_0_l_w", &self.pro_ahb_rtcslow_0_l_w())
@@ -88,7 +85,9 @@ impl W {
     ///Bits 0:10 - Configure the split address of RTCSlow_0 for PeriBus2 access.
     #[inline(always)]
     #[must_use]
-    pub fn pro_ahb_rtcslow_0_spltaddr(&mut self) -> PRO_AHB_RTCSLOW_0_SPLTADDR_W<PRO_AHB_1_SPEC> {
+    pub fn pro_ahb_rtcslow_0_spltaddr(
+        &mut self,
+    ) -> PRO_AHB_RTCSLOW_0_SPLTADDR_W<PRO_AHB_1_SPEC> {
         PRO_AHB_RTCSLOW_0_SPLTADDR_W::new(self, 0)
     }
     ///Bit 11 - Setting to 1 grants PeriBus2 permission to fetch RTCSlow_0 low address region.

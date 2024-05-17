@@ -41,10 +41,7 @@ impl core::fmt::Debug for R {
             .field("i2c_mst_burst_done", &self.i2c_mst_burst_done())
             .field("i2c_mst0_burst_err_flag", &self.i2c_mst0_burst_err_flag())
             .field("i2c_mst1_burst_err_flag", &self.i2c_mst1_burst_err_flag())
-            .field(
-                "i2c_mst_burst_timeout_cnt",
-                &self.i2c_mst_burst_timeout_cnt(),
-            )
+            .field("i2c_mst_burst_timeout_cnt", &self.i2c_mst_burst_timeout_cnt())
             .finish()
     }
 }

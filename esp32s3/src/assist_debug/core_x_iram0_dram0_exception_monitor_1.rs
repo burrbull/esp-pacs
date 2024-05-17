@@ -5,11 +5,18 @@ pub type W = crate::W<CORE_X_IRAM0_DRAM0_EXCEPTION_MONITOR_1_SPEC>;
 ///Field `CORE_X_IRAM0_DRAM0_LIMIT_CYCLE_1` reader - non busy cycle,for example: when cycle=100 and cycle=10,it means that in 100 cycle, if busy access success time less than 10, it will trigger interrutpt
 pub type CORE_X_IRAM0_DRAM0_LIMIT_CYCLE_1_R = crate::FieldReader<u32>;
 ///Field `CORE_X_IRAM0_DRAM0_LIMIT_CYCLE_1` writer - non busy cycle,for example: when cycle=100 and cycle=10,it means that in 100 cycle, if busy access success time less than 10, it will trigger interrutpt
-pub type CORE_X_IRAM0_DRAM0_LIMIT_CYCLE_1_W<'a, REG> = crate::FieldWriter<'a, REG, 20, u32>;
+pub type CORE_X_IRAM0_DRAM0_LIMIT_CYCLE_1_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    20,
+    u32,
+>;
 impl R {
     ///Bits 0:19 - non busy cycle,for example: when cycle=100 and cycle=10,it means that in 100 cycle, if busy access success time less than 10, it will trigger interrutpt
     #[inline(always)]
-    pub fn core_x_iram0_dram0_limit_cycle_1(&self) -> CORE_X_IRAM0_DRAM0_LIMIT_CYCLE_1_R {
+    pub fn core_x_iram0_dram0_limit_cycle_1(
+        &self,
+    ) -> CORE_X_IRAM0_DRAM0_LIMIT_CYCLE_1_R {
         CORE_X_IRAM0_DRAM0_LIMIT_CYCLE_1_R::new(self.bits & 0x000f_ffff)
     }
 }
@@ -30,7 +37,9 @@ impl W {
     #[must_use]
     pub fn core_x_iram0_dram0_limit_cycle_1(
         &mut self,
-    ) -> CORE_X_IRAM0_DRAM0_LIMIT_CYCLE_1_W<CORE_X_IRAM0_DRAM0_EXCEPTION_MONITOR_1_SPEC> {
+    ) -> CORE_X_IRAM0_DRAM0_LIMIT_CYCLE_1_W<
+        CORE_X_IRAM0_DRAM0_EXCEPTION_MONITOR_1_SPEC,
+    > {
         CORE_X_IRAM0_DRAM0_LIMIT_CYCLE_1_W::new(self, 0)
     }
 }

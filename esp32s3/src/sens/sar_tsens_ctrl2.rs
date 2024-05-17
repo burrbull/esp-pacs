@@ -51,7 +51,9 @@ impl W {
     ///Bits 12:13 - no public
     #[inline(always)]
     #[must_use]
-    pub fn sar_tsens_xpd_force(&mut self) -> SAR_TSENS_XPD_FORCE_W<SAR_TSENS_CTRL2_SPEC> {
+    pub fn sar_tsens_xpd_force(
+        &mut self,
+    ) -> SAR_TSENS_XPD_FORCE_W<SAR_TSENS_CTRL2_SPEC> {
         SAR_TSENS_XPD_FORCE_W::new(self, 12)
     }
     ///Bit 14 - no public

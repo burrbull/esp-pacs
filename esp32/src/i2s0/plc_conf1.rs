@@ -71,13 +71,17 @@ impl W {
     ///Bits 8:11
     #[inline(always)]
     #[must_use]
-    pub fn bad_cef_atten_para_shift(&mut self) -> BAD_CEF_ATTEN_PARA_SHIFT_W<PLC_CONF1_SPEC> {
+    pub fn bad_cef_atten_para_shift(
+        &mut self,
+    ) -> BAD_CEF_ATTEN_PARA_SHIFT_W<PLC_CONF1_SPEC> {
         BAD_CEF_ATTEN_PARA_SHIFT_W::new(self, 8)
     }
     ///Bits 12:15
     #[inline(always)]
     #[must_use]
-    pub fn bad_ola_win2_para_shift(&mut self) -> BAD_OLA_WIN2_PARA_SHIFT_W<PLC_CONF1_SPEC> {
+    pub fn bad_ola_win2_para_shift(
+        &mut self,
+    ) -> BAD_OLA_WIN2_PARA_SHIFT_W<PLC_CONF1_SPEC> {
         BAD_OLA_WIN2_PARA_SHIFT_W::new(self, 12)
     }
     ///Bits 16:23

@@ -5,11 +5,17 @@ pub type W = crate::W<CORE_0_PIF_PMS_MONITOR_4_SPEC>;
 ///Field `CORE_0_PIF_PMS_MONITOR_NONWORD_VIOLATE_CLR` reader - core_0_pif_pms_monitor_nonword_violate_clr
 pub type CORE_0_PIF_PMS_MONITOR_NONWORD_VIOLATE_CLR_R = crate::BitReader;
 ///Field `CORE_0_PIF_PMS_MONITOR_NONWORD_VIOLATE_CLR` writer - core_0_pif_pms_monitor_nonword_violate_clr
-pub type CORE_0_PIF_PMS_MONITOR_NONWORD_VIOLATE_CLR_W<'a, REG> = crate::BitWriter<'a, REG>;
+pub type CORE_0_PIF_PMS_MONITOR_NONWORD_VIOLATE_CLR_W<'a, REG> = crate::BitWriter<
+    'a,
+    REG,
+>;
 ///Field `CORE_0_PIF_PMS_MONITOR_NONWORD_VIOLATE_EN` reader - core_0_pif_pms_monitor_nonword_violate_en
 pub type CORE_0_PIF_PMS_MONITOR_NONWORD_VIOLATE_EN_R = crate::BitReader;
 ///Field `CORE_0_PIF_PMS_MONITOR_NONWORD_VIOLATE_EN` writer - core_0_pif_pms_monitor_nonword_violate_en
-pub type CORE_0_PIF_PMS_MONITOR_NONWORD_VIOLATE_EN_W<'a, REG> = crate::BitWriter<'a, REG>;
+pub type CORE_0_PIF_PMS_MONITOR_NONWORD_VIOLATE_EN_W<'a, REG> = crate::BitWriter<
+    'a,
+    REG,
+>;
 impl R {
     ///Bit 0 - core_0_pif_pms_monitor_nonword_violate_clr
     #[inline(always)]

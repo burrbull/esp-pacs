@@ -25,7 +25,9 @@ impl W {
     ///Bits 0:31 - NA
     #[inline(always)]
     #[must_use]
-    pub fn reg_hp_tcm_rdn_eco_high(&mut self) -> REG_HP_TCM_RDN_ECO_HIGH_W<TCM_RDN_ECO_HIGH_SPEC> {
+    pub fn reg_hp_tcm_rdn_eco_high(
+        &mut self,
+    ) -> REG_HP_TCM_RDN_ECO_HIGH_W<TCM_RDN_ECO_HIGH_SPEC> {
         REG_HP_TCM_RDN_ECO_HIGH_W::new(self, 0)
     }
 }

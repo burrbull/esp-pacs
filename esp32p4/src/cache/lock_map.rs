@@ -16,9 +16,7 @@ impl R {
 #[cfg(feature = "impl-register-debug")]
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("LOCK_MAP")
-            .field("lock_map", &self.lock_map())
-            .finish()
+        f.debug_struct("LOCK_MAP").field("lock_map", &self.lock_map()).finish()
     }
 }
 impl W {

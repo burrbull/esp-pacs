@@ -25,7 +25,9 @@ impl W {
     ///Bits 0:26 - ******* Description ***********
     #[inline(always)]
     #[must_use]
-    pub fn retention_tag_link_addr(&mut self) -> RETENTION_TAG_LINK_ADDR_W<RETENTION_CTRL1_SPEC> {
+    pub fn retention_tag_link_addr(
+        &mut self,
+    ) -> RETENTION_TAG_LINK_ADDR_W<RETENTION_CTRL1_SPEC> {
         RETENTION_TAG_LINK_ADDR_W::new(self, 0)
     }
 }

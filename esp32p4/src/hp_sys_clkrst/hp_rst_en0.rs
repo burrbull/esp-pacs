@@ -347,25 +347,33 @@ impl W {
     ///Bit 2 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn rst_en_pvt_peri_group1(&mut self) -> RST_EN_PVT_PERI_GROUP1_W<HP_RST_EN0_SPEC> {
+    pub fn rst_en_pvt_peri_group1(
+        &mut self,
+    ) -> RST_EN_PVT_PERI_GROUP1_W<HP_RST_EN0_SPEC> {
         RST_EN_PVT_PERI_GROUP1_W::new(self, 2)
     }
     ///Bit 3 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn rst_en_pvt_peri_group2(&mut self) -> RST_EN_PVT_PERI_GROUP2_W<HP_RST_EN0_SPEC> {
+    pub fn rst_en_pvt_peri_group2(
+        &mut self,
+    ) -> RST_EN_PVT_PERI_GROUP2_W<HP_RST_EN0_SPEC> {
         RST_EN_PVT_PERI_GROUP2_W::new(self, 3)
     }
     ///Bit 4 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn rst_en_pvt_peri_group3(&mut self) -> RST_EN_PVT_PERI_GROUP3_W<HP_RST_EN0_SPEC> {
+    pub fn rst_en_pvt_peri_group3(
+        &mut self,
+    ) -> RST_EN_PVT_PERI_GROUP3_W<HP_RST_EN0_SPEC> {
         RST_EN_PVT_PERI_GROUP3_W::new(self, 4)
     }
     ///Bit 5 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn rst_en_pvt_peri_group4(&mut self) -> RST_EN_PVT_PERI_GROUP4_W<HP_RST_EN0_SPEC> {
+    pub fn rst_en_pvt_peri_group4(
+        &mut self,
+    ) -> RST_EN_PVT_PERI_GROUP4_W<HP_RST_EN0_SPEC> {
         RST_EN_PVT_PERI_GROUP4_W::new(self, 5)
     }
     ///Bit 6 - Reserved

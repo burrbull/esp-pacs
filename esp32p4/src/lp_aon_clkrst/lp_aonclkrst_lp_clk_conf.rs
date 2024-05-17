@@ -44,18 +44,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("LP_AONCLKRST_LP_CLK_CONF")
-            .field(
-                "lp_aonclkrst_slow_clk_sel",
-                &self.lp_aonclkrst_slow_clk_sel(),
-            )
-            .field(
-                "lp_aonclkrst_fast_clk_sel",
-                &self.lp_aonclkrst_fast_clk_sel(),
-            )
-            .field(
-                "lp_aonclkrst_lp_peri_div_num",
-                &self.lp_aonclkrst_lp_peri_div_num(),
-            )
+            .field("lp_aonclkrst_slow_clk_sel", &self.lp_aonclkrst_slow_clk_sel())
+            .field("lp_aonclkrst_fast_clk_sel", &self.lp_aonclkrst_fast_clk_sel())
+            .field("lp_aonclkrst_lp_peri_div_num", &self.lp_aonclkrst_lp_peri_div_num())
             .field(
                 "lp_aonclkrst_ana_sel_ref_pll8m",
                 &self.lp_aonclkrst_ana_sel_ref_pll8m(),

@@ -57,18 +57,9 @@ impl core::fmt::Debug for R {
         f.debug_struct("INT_ST")
             .field("lp_addrhole_int_st", &self.lp_addrhole_int_st())
             .field("idbus_addrhole_int_st", &self.idbus_addrhole_int_st())
-            .field(
-                "lp_core_ahb_timeout_int_st",
-                &self.lp_core_ahb_timeout_int_st(),
-            )
-            .field(
-                "lp_core_ibus_timeout_int_st",
-                &self.lp_core_ibus_timeout_int_st(),
-            )
-            .field(
-                "lp_core_dbus_timeout_int_st",
-                &self.lp_core_dbus_timeout_int_st(),
-            )
+            .field("lp_core_ahb_timeout_int_st", &self.lp_core_ahb_timeout_int_st())
+            .field("lp_core_ibus_timeout_int_st", &self.lp_core_ibus_timeout_int_st())
+            .field("lp_core_dbus_timeout_int_st", &self.lp_core_dbus_timeout_int_st())
             .field("etm_task_ulp_int_st", &self.etm_task_ulp_int_st())
             .field("slow_clk_tick_int_st", &self.slow_clk_tick_int_st())
             .finish()

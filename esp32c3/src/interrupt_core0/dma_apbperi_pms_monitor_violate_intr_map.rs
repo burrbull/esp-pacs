@@ -5,7 +5,11 @@ pub type W = crate::W<DMA_APBPERI_PMS_MONITOR_VIOLATE_INTR_MAP_SPEC>;
 ///Field `DMA_APBPERI_PMS_MONITOR_VIOLATE_INTR_MAP` reader - reg_core0_dma_apbperi_pms_monitor_violate_intr_map
 pub type DMA_APBPERI_PMS_MONITOR_VIOLATE_INTR_MAP_R = crate::FieldReader;
 ///Field `DMA_APBPERI_PMS_MONITOR_VIOLATE_INTR_MAP` writer - reg_core0_dma_apbperi_pms_monitor_violate_intr_map
-pub type DMA_APBPERI_PMS_MONITOR_VIOLATE_INTR_MAP_W<'a, REG> = crate::FieldWriter<'a, REG, 5>;
+pub type DMA_APBPERI_PMS_MONITOR_VIOLATE_INTR_MAP_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    5,
+>;
 impl R {
     ///Bits 0:4 - reg_core0_dma_apbperi_pms_monitor_violate_intr_map
     #[inline(always)]
@@ -32,8 +36,9 @@ impl W {
     #[must_use]
     pub fn dma_apbperi_pms_monitor_violate_intr_map(
         &mut self,
-    ) -> DMA_APBPERI_PMS_MONITOR_VIOLATE_INTR_MAP_W<DMA_APBPERI_PMS_MONITOR_VIOLATE_INTR_MAP_SPEC>
-    {
+    ) -> DMA_APBPERI_PMS_MONITOR_VIOLATE_INTR_MAP_W<
+        DMA_APBPERI_PMS_MONITOR_VIOLATE_INTR_MAP_SPEC,
+    > {
         DMA_APBPERI_PMS_MONITOR_VIOLATE_INTR_MAP_W::new(self, 0)
     }
 }

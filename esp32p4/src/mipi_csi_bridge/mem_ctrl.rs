@@ -26,10 +26,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("MEM_CTRL")
-            .field(
-                "csi_bridge_mem_clk_force_on",
-                &self.csi_bridge_mem_clk_force_on(),
-            )
+            .field("csi_bridge_mem_clk_force_on", &self.csi_bridge_mem_clk_force_on())
             .field("csi_mem_aux_ctrl", &self.csi_mem_aux_ctrl())
             .finish()
     }
@@ -38,7 +35,9 @@ impl W {
     ///Bit 0 - csi bridge memory clock gating force on.
     #[inline(always)]
     #[must_use]
-    pub fn csi_bridge_mem_clk_force_on(&mut self) -> CSI_BRIDGE_MEM_CLK_FORCE_ON_W<MEM_CTRL_SPEC> {
+    pub fn csi_bridge_mem_clk_force_on(
+        &mut self,
+    ) -> CSI_BRIDGE_MEM_CLK_FORCE_ON_W<MEM_CTRL_SPEC> {
         CSI_BRIDGE_MEM_CLK_FORCE_ON_W::new(self, 0)
     }
     ///Bits 1:14 - N/A

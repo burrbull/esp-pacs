@@ -2401,7 +2401,9 @@ pub mod wr_tim_conf2;
 You can [`read`](crate::generic::Reg::read) this register and get [`wr_tim_conf0_rs_bypass::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`wr_tim_conf0_rs_bypass::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@wr_tim_conf0_rs_bypass`] module*/
-pub type WR_TIM_CONF0_RS_BYPASS = crate::Reg<wr_tim_conf0_rs_bypass::WR_TIM_CONF0_RS_BYPASS_SPEC>;
+pub type WR_TIM_CONF0_RS_BYPASS = crate::Reg<
+    wr_tim_conf0_rs_bypass::WR_TIM_CONF0_RS_BYPASS_SPEC,
+>;
 ///Configurarion register0 of eFuse programming time parameters and rs bypass operation.
 pub mod wr_tim_conf0_rs_bypass;
 /**DATE (rw) register accessor: eFuse version register.
@@ -2425,8 +2427,9 @@ pub mod apb2otp_wr_dis;
 You can [`read`](crate::generic::Reg::read) this register and get [`apb2otp_blk0_backup1_w1::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@apb2otp_blk0_backup1_w1`] module*/
-pub type APB2OTP_BLK0_BACKUP1_W1 =
-    crate::Reg<apb2otp_blk0_backup1_w1::APB2OTP_BLK0_BACKUP1_W1_SPEC>;
+pub type APB2OTP_BLK0_BACKUP1_W1 = crate::Reg<
+    apb2otp_blk0_backup1_w1::APB2OTP_BLK0_BACKUP1_W1_SPEC,
+>;
 ///eFuse apb2otp block0 data register2.
 pub mod apb2otp_blk0_backup1_w1;
 /**APB2OTP_BLK0_BACKUP1_W2 (r) register accessor: eFuse apb2otp block0 data register3.
@@ -2434,8 +2437,9 @@ pub mod apb2otp_blk0_backup1_w1;
 You can [`read`](crate::generic::Reg::read) this register and get [`apb2otp_blk0_backup1_w2::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@apb2otp_blk0_backup1_w2`] module*/
-pub type APB2OTP_BLK0_BACKUP1_W2 =
-    crate::Reg<apb2otp_blk0_backup1_w2::APB2OTP_BLK0_BACKUP1_W2_SPEC>;
+pub type APB2OTP_BLK0_BACKUP1_W2 = crate::Reg<
+    apb2otp_blk0_backup1_w2::APB2OTP_BLK0_BACKUP1_W2_SPEC,
+>;
 ///eFuse apb2otp block0 data register3.
 pub mod apb2otp_blk0_backup1_w2;
 /**APB2OTP_BLK0_BACKUP1_W3 (r) register accessor: eFuse apb2otp block0 data register4.
@@ -2443,8 +2447,9 @@ pub mod apb2otp_blk0_backup1_w2;
 You can [`read`](crate::generic::Reg::read) this register and get [`apb2otp_blk0_backup1_w3::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@apb2otp_blk0_backup1_w3`] module*/
-pub type APB2OTP_BLK0_BACKUP1_W3 =
-    crate::Reg<apb2otp_blk0_backup1_w3::APB2OTP_BLK0_BACKUP1_W3_SPEC>;
+pub type APB2OTP_BLK0_BACKUP1_W3 = crate::Reg<
+    apb2otp_blk0_backup1_w3::APB2OTP_BLK0_BACKUP1_W3_SPEC,
+>;
 ///eFuse apb2otp block0 data register4.
 pub mod apb2otp_blk0_backup1_w3;
 /**APB2OTP_BLK0_BACKUP1_W4 (r) register accessor: eFuse apb2otp block0 data register5.
@@ -2452,8 +2457,9 @@ pub mod apb2otp_blk0_backup1_w3;
 You can [`read`](crate::generic::Reg::read) this register and get [`apb2otp_blk0_backup1_w4::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@apb2otp_blk0_backup1_w4`] module*/
-pub type APB2OTP_BLK0_BACKUP1_W4 =
-    crate::Reg<apb2otp_blk0_backup1_w4::APB2OTP_BLK0_BACKUP1_W4_SPEC>;
+pub type APB2OTP_BLK0_BACKUP1_W4 = crate::Reg<
+    apb2otp_blk0_backup1_w4::APB2OTP_BLK0_BACKUP1_W4_SPEC,
+>;
 ///eFuse apb2otp block0 data register5.
 pub mod apb2otp_blk0_backup1_w4;
 /**APB2OTP_BLK0_BACKUP1_W5 (r) register accessor: eFuse apb2otp block0 data register6.
@@ -2461,8 +2467,9 @@ pub mod apb2otp_blk0_backup1_w4;
 You can [`read`](crate::generic::Reg::read) this register and get [`apb2otp_blk0_backup1_w5::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@apb2otp_blk0_backup1_w5`] module*/
-pub type APB2OTP_BLK0_BACKUP1_W5 =
-    crate::Reg<apb2otp_blk0_backup1_w5::APB2OTP_BLK0_BACKUP1_W5_SPEC>;
+pub type APB2OTP_BLK0_BACKUP1_W5 = crate::Reg<
+    apb2otp_blk0_backup1_w5::APB2OTP_BLK0_BACKUP1_W5_SPEC,
+>;
 ///eFuse apb2otp block0 data register6.
 pub mod apb2otp_blk0_backup1_w5;
 /**APB2OTP_BLK0_BACKUP2_W1 (r) register accessor: eFuse apb2otp block0 data register7.
@@ -2470,8 +2477,9 @@ pub mod apb2otp_blk0_backup1_w5;
 You can [`read`](crate::generic::Reg::read) this register and get [`apb2otp_blk0_backup2_w1::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@apb2otp_blk0_backup2_w1`] module*/
-pub type APB2OTP_BLK0_BACKUP2_W1 =
-    crate::Reg<apb2otp_blk0_backup2_w1::APB2OTP_BLK0_BACKUP2_W1_SPEC>;
+pub type APB2OTP_BLK0_BACKUP2_W1 = crate::Reg<
+    apb2otp_blk0_backup2_w1::APB2OTP_BLK0_BACKUP2_W1_SPEC,
+>;
 ///eFuse apb2otp block0 data register7.
 pub mod apb2otp_blk0_backup2_w1;
 /**APB2OTP_BLK0_BACKUP2_W2 (r) register accessor: eFuse apb2otp block0 data register8.
@@ -2479,8 +2487,9 @@ pub mod apb2otp_blk0_backup2_w1;
 You can [`read`](crate::generic::Reg::read) this register and get [`apb2otp_blk0_backup2_w2::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@apb2otp_blk0_backup2_w2`] module*/
-pub type APB2OTP_BLK0_BACKUP2_W2 =
-    crate::Reg<apb2otp_blk0_backup2_w2::APB2OTP_BLK0_BACKUP2_W2_SPEC>;
+pub type APB2OTP_BLK0_BACKUP2_W2 = crate::Reg<
+    apb2otp_blk0_backup2_w2::APB2OTP_BLK0_BACKUP2_W2_SPEC,
+>;
 ///eFuse apb2otp block0 data register8.
 pub mod apb2otp_blk0_backup2_w2;
 /**APB2OTP_BLK0_BACKUP2_W3 (r) register accessor: eFuse apb2otp block0 data register9.
@@ -2488,8 +2497,9 @@ pub mod apb2otp_blk0_backup2_w2;
 You can [`read`](crate::generic::Reg::read) this register and get [`apb2otp_blk0_backup2_w3::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@apb2otp_blk0_backup2_w3`] module*/
-pub type APB2OTP_BLK0_BACKUP2_W3 =
-    crate::Reg<apb2otp_blk0_backup2_w3::APB2OTP_BLK0_BACKUP2_W3_SPEC>;
+pub type APB2OTP_BLK0_BACKUP2_W3 = crate::Reg<
+    apb2otp_blk0_backup2_w3::APB2OTP_BLK0_BACKUP2_W3_SPEC,
+>;
 ///eFuse apb2otp block0 data register9.
 pub mod apb2otp_blk0_backup2_w3;
 /**APB2OTP_BLK0_BACKUP2_W4 (r) register accessor: eFuse apb2otp block0 data register10.
@@ -2497,8 +2507,9 @@ pub mod apb2otp_blk0_backup2_w3;
 You can [`read`](crate::generic::Reg::read) this register and get [`apb2otp_blk0_backup2_w4::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@apb2otp_blk0_backup2_w4`] module*/
-pub type APB2OTP_BLK0_BACKUP2_W4 =
-    crate::Reg<apb2otp_blk0_backup2_w4::APB2OTP_BLK0_BACKUP2_W4_SPEC>;
+pub type APB2OTP_BLK0_BACKUP2_W4 = crate::Reg<
+    apb2otp_blk0_backup2_w4::APB2OTP_BLK0_BACKUP2_W4_SPEC,
+>;
 ///eFuse apb2otp block0 data register10.
 pub mod apb2otp_blk0_backup2_w4;
 /**APB2OTP_BLK0_BACKUP2_W5 (r) register accessor: eFuse apb2otp block0 data register11.
@@ -2506,8 +2517,9 @@ pub mod apb2otp_blk0_backup2_w4;
 You can [`read`](crate::generic::Reg::read) this register and get [`apb2otp_blk0_backup2_w5::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@apb2otp_blk0_backup2_w5`] module*/
-pub type APB2OTP_BLK0_BACKUP2_W5 =
-    crate::Reg<apb2otp_blk0_backup2_w5::APB2OTP_BLK0_BACKUP2_W5_SPEC>;
+pub type APB2OTP_BLK0_BACKUP2_W5 = crate::Reg<
+    apb2otp_blk0_backup2_w5::APB2OTP_BLK0_BACKUP2_W5_SPEC,
+>;
 ///eFuse apb2otp block0 data register11.
 pub mod apb2otp_blk0_backup2_w5;
 /**APB2OTP_BLK0_BACKUP3_W1 (r) register accessor: eFuse apb2otp block0 data register12.
@@ -2515,8 +2527,9 @@ pub mod apb2otp_blk0_backup2_w5;
 You can [`read`](crate::generic::Reg::read) this register and get [`apb2otp_blk0_backup3_w1::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@apb2otp_blk0_backup3_w1`] module*/
-pub type APB2OTP_BLK0_BACKUP3_W1 =
-    crate::Reg<apb2otp_blk0_backup3_w1::APB2OTP_BLK0_BACKUP3_W1_SPEC>;
+pub type APB2OTP_BLK0_BACKUP3_W1 = crate::Reg<
+    apb2otp_blk0_backup3_w1::APB2OTP_BLK0_BACKUP3_W1_SPEC,
+>;
 ///eFuse apb2otp block0 data register12.
 pub mod apb2otp_blk0_backup3_w1;
 /**APB2OTP_BLK0_BACKUP3_W2 (r) register accessor: eFuse apb2otp block0 data register13.
@@ -2524,8 +2537,9 @@ pub mod apb2otp_blk0_backup3_w1;
 You can [`read`](crate::generic::Reg::read) this register and get [`apb2otp_blk0_backup3_w2::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@apb2otp_blk0_backup3_w2`] module*/
-pub type APB2OTP_BLK0_BACKUP3_W2 =
-    crate::Reg<apb2otp_blk0_backup3_w2::APB2OTP_BLK0_BACKUP3_W2_SPEC>;
+pub type APB2OTP_BLK0_BACKUP3_W2 = crate::Reg<
+    apb2otp_blk0_backup3_w2::APB2OTP_BLK0_BACKUP3_W2_SPEC,
+>;
 ///eFuse apb2otp block0 data register13.
 pub mod apb2otp_blk0_backup3_w2;
 /**APB2OTP_BLK0_BACKUP3_W3 (r) register accessor: eFuse apb2otp block0 data register14.
@@ -2533,8 +2547,9 @@ pub mod apb2otp_blk0_backup3_w2;
 You can [`read`](crate::generic::Reg::read) this register and get [`apb2otp_blk0_backup3_w3::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@apb2otp_blk0_backup3_w3`] module*/
-pub type APB2OTP_BLK0_BACKUP3_W3 =
-    crate::Reg<apb2otp_blk0_backup3_w3::APB2OTP_BLK0_BACKUP3_W3_SPEC>;
+pub type APB2OTP_BLK0_BACKUP3_W3 = crate::Reg<
+    apb2otp_blk0_backup3_w3::APB2OTP_BLK0_BACKUP3_W3_SPEC,
+>;
 ///eFuse apb2otp block0 data register14.
 pub mod apb2otp_blk0_backup3_w3;
 /**APB2OTP_BLK0_BACKUP3_W4 (r) register accessor: eFuse apb2otp block0 data register15.
@@ -2542,8 +2557,9 @@ pub mod apb2otp_blk0_backup3_w3;
 You can [`read`](crate::generic::Reg::read) this register and get [`apb2otp_blk0_backup3_w4::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@apb2otp_blk0_backup3_w4`] module*/
-pub type APB2OTP_BLK0_BACKUP3_W4 =
-    crate::Reg<apb2otp_blk0_backup3_w4::APB2OTP_BLK0_BACKUP3_W4_SPEC>;
+pub type APB2OTP_BLK0_BACKUP3_W4 = crate::Reg<
+    apb2otp_blk0_backup3_w4::APB2OTP_BLK0_BACKUP3_W4_SPEC,
+>;
 ///eFuse apb2otp block0 data register15.
 pub mod apb2otp_blk0_backup3_w4;
 /**APB2OTP_BLK0_BACKUP3_W5 (r) register accessor: eFuse apb2otp block0 data register16.
@@ -2551,8 +2567,9 @@ pub mod apb2otp_blk0_backup3_w4;
 You can [`read`](crate::generic::Reg::read) this register and get [`apb2otp_blk0_backup3_w5::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@apb2otp_blk0_backup3_w5`] module*/
-pub type APB2OTP_BLK0_BACKUP3_W5 =
-    crate::Reg<apb2otp_blk0_backup3_w5::APB2OTP_BLK0_BACKUP3_W5_SPEC>;
+pub type APB2OTP_BLK0_BACKUP3_W5 = crate::Reg<
+    apb2otp_blk0_backup3_w5::APB2OTP_BLK0_BACKUP3_W5_SPEC,
+>;
 ///eFuse apb2otp block0 data register16.
 pub mod apb2otp_blk0_backup3_w5;
 /**APB2OTP_BLK0_BACKUP4_W1 (r) register accessor: eFuse apb2otp block0 data register17.
@@ -2560,8 +2577,9 @@ pub mod apb2otp_blk0_backup3_w5;
 You can [`read`](crate::generic::Reg::read) this register and get [`apb2otp_blk0_backup4_w1::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@apb2otp_blk0_backup4_w1`] module*/
-pub type APB2OTP_BLK0_BACKUP4_W1 =
-    crate::Reg<apb2otp_blk0_backup4_w1::APB2OTP_BLK0_BACKUP4_W1_SPEC>;
+pub type APB2OTP_BLK0_BACKUP4_W1 = crate::Reg<
+    apb2otp_blk0_backup4_w1::APB2OTP_BLK0_BACKUP4_W1_SPEC,
+>;
 ///eFuse apb2otp block0 data register17.
 pub mod apb2otp_blk0_backup4_w1;
 /**APB2OTP_BLK0_BACKUP4_W2 (r) register accessor: eFuse apb2otp block0 data register18.
@@ -2569,8 +2587,9 @@ pub mod apb2otp_blk0_backup4_w1;
 You can [`read`](crate::generic::Reg::read) this register and get [`apb2otp_blk0_backup4_w2::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@apb2otp_blk0_backup4_w2`] module*/
-pub type APB2OTP_BLK0_BACKUP4_W2 =
-    crate::Reg<apb2otp_blk0_backup4_w2::APB2OTP_BLK0_BACKUP4_W2_SPEC>;
+pub type APB2OTP_BLK0_BACKUP4_W2 = crate::Reg<
+    apb2otp_blk0_backup4_w2::APB2OTP_BLK0_BACKUP4_W2_SPEC,
+>;
 ///eFuse apb2otp block0 data register18.
 pub mod apb2otp_blk0_backup4_w2;
 /**APB2OTP_BLK0_BACKUP4_W3 (r) register accessor: eFuse apb2otp block0 data register19.
@@ -2578,8 +2597,9 @@ pub mod apb2otp_blk0_backup4_w2;
 You can [`read`](crate::generic::Reg::read) this register and get [`apb2otp_blk0_backup4_w3::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@apb2otp_blk0_backup4_w3`] module*/
-pub type APB2OTP_BLK0_BACKUP4_W3 =
-    crate::Reg<apb2otp_blk0_backup4_w3::APB2OTP_BLK0_BACKUP4_W3_SPEC>;
+pub type APB2OTP_BLK0_BACKUP4_W3 = crate::Reg<
+    apb2otp_blk0_backup4_w3::APB2OTP_BLK0_BACKUP4_W3_SPEC,
+>;
 ///eFuse apb2otp block0 data register19.
 pub mod apb2otp_blk0_backup4_w3;
 /**APB2OTP_BLK0_BACKUP4_W4 (r) register accessor: eFuse apb2otp block0 data register20.
@@ -2587,8 +2607,9 @@ pub mod apb2otp_blk0_backup4_w3;
 You can [`read`](crate::generic::Reg::read) this register and get [`apb2otp_blk0_backup4_w4::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@apb2otp_blk0_backup4_w4`] module*/
-pub type APB2OTP_BLK0_BACKUP4_W4 =
-    crate::Reg<apb2otp_blk0_backup4_w4::APB2OTP_BLK0_BACKUP4_W4_SPEC>;
+pub type APB2OTP_BLK0_BACKUP4_W4 = crate::Reg<
+    apb2otp_blk0_backup4_w4::APB2OTP_BLK0_BACKUP4_W4_SPEC,
+>;
 ///eFuse apb2otp block0 data register20.
 pub mod apb2otp_blk0_backup4_w4;
 /**APB2OTP_BLK0_BACKUP4_W5 (r) register accessor: eFuse apb2otp block0 data register21.
@@ -2596,8 +2617,9 @@ pub mod apb2otp_blk0_backup4_w4;
 You can [`read`](crate::generic::Reg::read) this register and get [`apb2otp_blk0_backup4_w5::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@apb2otp_blk0_backup4_w5`] module*/
-pub type APB2OTP_BLK0_BACKUP4_W5 =
-    crate::Reg<apb2otp_blk0_backup4_w5::APB2OTP_BLK0_BACKUP4_W5_SPEC>;
+pub type APB2OTP_BLK0_BACKUP4_W5 = crate::Reg<
+    apb2otp_blk0_backup4_w5::APB2OTP_BLK0_BACKUP4_W5_SPEC,
+>;
 ///eFuse apb2otp block0 data register21.
 pub mod apb2otp_blk0_backup4_w5;
 /**APB2OTP_BLK1_W1 (r) register accessor: eFuse apb2otp block1 data register1.

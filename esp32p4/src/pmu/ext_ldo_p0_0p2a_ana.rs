@@ -61,13 +61,17 @@ impl W {
     ///Bit 26 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn ana_0p2a_en_vdet_0(&mut self) -> ANA_0P2A_EN_VDET_0_W<EXT_LDO_P0_0P2A_ANA_SPEC> {
+    pub fn ana_0p2a_en_vdet_0(
+        &mut self,
+    ) -> ANA_0P2A_EN_VDET_0_W<EXT_LDO_P0_0P2A_ANA_SPEC> {
         ANA_0P2A_EN_VDET_0_W::new(self, 26)
     }
     ///Bit 27 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn ana_0p2a_en_cur_lim_0(&mut self) -> ANA_0P2A_EN_CUR_LIM_0_W<EXT_LDO_P0_0P2A_ANA_SPEC> {
+    pub fn ana_0p2a_en_cur_lim_0(
+        &mut self,
+    ) -> ANA_0P2A_EN_CUR_LIM_0_W<EXT_LDO_P0_0P2A_ANA_SPEC> {
         ANA_0P2A_EN_CUR_LIM_0_W::new(self, 27)
     }
     ///Bits 28:31 - need_des

@@ -73,20 +73,11 @@ impl core::fmt::Debug for R {
         f.debug_struct("PRO_DCACHE_AUTOLOAD_CFG")
             .field("pro_dcache_autoload_mode", &self.pro_dcache_autoload_mode())
             .field("pro_dcache_autoload_step", &self.pro_dcache_autoload_step())
-            .field(
-                "pro_dcache_autoload_order",
-                &self.pro_dcache_autoload_order(),
-            )
+            .field("pro_dcache_autoload_order", &self.pro_dcache_autoload_order())
             .field("pro_dcache_autoload_rqst", &self.pro_dcache_autoload_rqst())
             .field("pro_dcache_autoload_size", &self.pro_dcache_autoload_size())
-            .field(
-                "pro_dcache_autoload_sct0_ena",
-                &self.pro_dcache_autoload_sct0_ena(),
-            )
-            .field(
-                "pro_dcache_autoload_sct1_ena",
-                &self.pro_dcache_autoload_sct1_ena(),
-            )
+            .field("pro_dcache_autoload_sct0_ena", &self.pro_dcache_autoload_sct0_ena())
+            .field("pro_dcache_autoload_sct1_ena", &self.pro_dcache_autoload_sct1_ena())
             .finish()
     }
 }

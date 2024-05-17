@@ -29,7 +29,9 @@ pub type LP_AONCLKRST_FOSC_CLK_FORCE_ON_W<'a, REG> = crate::BitWriter<'a, REG>;
 impl R {
     ///Bit 26 - need_des
     #[inline(always)]
-    pub fn lp_aonclkrst_lp_rtc_xtal_force_on(&self) -> LP_AONCLKRST_LP_RTC_XTAL_FORCE_ON_R {
+    pub fn lp_aonclkrst_lp_rtc_xtal_force_on(
+        &self,
+    ) -> LP_AONCLKRST_LP_RTC_XTAL_FORCE_ON_R {
         LP_AONCLKRST_LP_RTC_XTAL_FORCE_ON_R::new(((self.bits >> 26) & 1) != 0)
     }
     ///Bit 27 - need_des
@@ -66,10 +68,7 @@ impl core::fmt::Debug for R {
                 "lp_aonclkrst_lp_rtc_xtal_force_on",
                 &self.lp_aonclkrst_lp_rtc_xtal_force_on(),
             )
-            .field(
-                "lp_aonclkrst_ck_en_lp_ram",
-                &self.lp_aonclkrst_ck_en_lp_ram(),
-            )
+            .field("lp_aonclkrst_ck_en_lp_ram", &self.lp_aonclkrst_ck_en_lp_ram())
             .field(
                 "lp_aonclkrst_etm_event_tick_en",
                 &self.lp_aonclkrst_etm_event_tick_en(),

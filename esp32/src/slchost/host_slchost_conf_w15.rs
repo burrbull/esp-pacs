@@ -55,25 +55,33 @@ impl W {
     ///Bits 0:7
     #[inline(always)]
     #[must_use]
-    pub fn host_slchost_conf60(&mut self) -> HOST_SLCHOST_CONF60_W<HOST_SLCHOST_CONF_W15_SPEC> {
+    pub fn host_slchost_conf60(
+        &mut self,
+    ) -> HOST_SLCHOST_CONF60_W<HOST_SLCHOST_CONF_W15_SPEC> {
         HOST_SLCHOST_CONF60_W::new(self, 0)
     }
     ///Bits 8:15
     #[inline(always)]
     #[must_use]
-    pub fn host_slchost_conf61(&mut self) -> HOST_SLCHOST_CONF61_W<HOST_SLCHOST_CONF_W15_SPEC> {
+    pub fn host_slchost_conf61(
+        &mut self,
+    ) -> HOST_SLCHOST_CONF61_W<HOST_SLCHOST_CONF_W15_SPEC> {
         HOST_SLCHOST_CONF61_W::new(self, 8)
     }
     ///Bits 16:23
     #[inline(always)]
     #[must_use]
-    pub fn host_slchost_conf62(&mut self) -> HOST_SLCHOST_CONF62_W<HOST_SLCHOST_CONF_W15_SPEC> {
+    pub fn host_slchost_conf62(
+        &mut self,
+    ) -> HOST_SLCHOST_CONF62_W<HOST_SLCHOST_CONF_W15_SPEC> {
         HOST_SLCHOST_CONF62_W::new(self, 16)
     }
     ///Bits 24:31
     #[inline(always)]
     #[must_use]
-    pub fn host_slchost_conf63(&mut self) -> HOST_SLCHOST_CONF63_W<HOST_SLCHOST_CONF_W15_SPEC> {
+    pub fn host_slchost_conf63(
+        &mut self,
+    ) -> HOST_SLCHOST_CONF63_W<HOST_SLCHOST_CONF_W15_SPEC> {
         HOST_SLCHOST_CONF63_W::new(self, 24)
     }
 }

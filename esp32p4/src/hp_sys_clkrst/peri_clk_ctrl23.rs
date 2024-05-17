@@ -67,13 +67,17 @@ impl W {
     ///Bits 9:16 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn adc_clk_div_numerator(&mut self) -> ADC_CLK_DIV_NUMERATOR_W<PERI_CLK_CTRL23_SPEC> {
+    pub fn adc_clk_div_numerator(
+        &mut self,
+    ) -> ADC_CLK_DIV_NUMERATOR_W<PERI_CLK_CTRL23_SPEC> {
         ADC_CLK_DIV_NUMERATOR_W::new(self, 9)
     }
     ///Bits 17:24 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn adc_clk_div_denominator(&mut self) -> ADC_CLK_DIV_DENOMINATOR_W<PERI_CLK_CTRL23_SPEC> {
+    pub fn adc_clk_div_denominator(
+        &mut self,
+    ) -> ADC_CLK_DIV_DENOMINATOR_W<PERI_CLK_CTRL23_SPEC> {
         ADC_CLK_DIV_DENOMINATOR_W::new(self, 17)
     }
 }

@@ -11,22 +11,30 @@ pub type CH1_ECC_PROT_UIDMEM_UNCORRERR_INTSTAT_R = crate::BitReader;
 impl R {
     ///Bit 0 - NA
     #[inline(always)]
-    pub fn ch1_ecc_prot_chmem_correrr_intstat(&self) -> CH1_ECC_PROT_CHMEM_CORRERR_INTSTAT_R {
+    pub fn ch1_ecc_prot_chmem_correrr_intstat(
+        &self,
+    ) -> CH1_ECC_PROT_CHMEM_CORRERR_INTSTAT_R {
         CH1_ECC_PROT_CHMEM_CORRERR_INTSTAT_R::new((self.bits & 1) != 0)
     }
     ///Bit 1 - NA
     #[inline(always)]
-    pub fn ch1_ecc_prot_chmem_uncorrerr_intstat(&self) -> CH1_ECC_PROT_CHMEM_UNCORRERR_INTSTAT_R {
+    pub fn ch1_ecc_prot_chmem_uncorrerr_intstat(
+        &self,
+    ) -> CH1_ECC_PROT_CHMEM_UNCORRERR_INTSTAT_R {
         CH1_ECC_PROT_CHMEM_UNCORRERR_INTSTAT_R::new(((self.bits >> 1) & 1) != 0)
     }
     ///Bit 2 - NA
     #[inline(always)]
-    pub fn ch1_ecc_prot_uidmem_correrr_intstat(&self) -> CH1_ECC_PROT_UIDMEM_CORRERR_INTSTAT_R {
+    pub fn ch1_ecc_prot_uidmem_correrr_intstat(
+        &self,
+    ) -> CH1_ECC_PROT_UIDMEM_CORRERR_INTSTAT_R {
         CH1_ECC_PROT_UIDMEM_CORRERR_INTSTAT_R::new(((self.bits >> 2) & 1) != 0)
     }
     ///Bit 3 - NA
     #[inline(always)]
-    pub fn ch1_ecc_prot_uidmem_uncorrerr_intstat(&self) -> CH1_ECC_PROT_UIDMEM_UNCORRERR_INTSTAT_R {
+    pub fn ch1_ecc_prot_uidmem_uncorrerr_intstat(
+        &self,
+    ) -> CH1_ECC_PROT_UIDMEM_UNCORRERR_INTSTAT_R {
         CH1_ECC_PROT_UIDMEM_UNCORRERR_INTSTAT_R::new(((self.bits >> 3) & 1) != 0)
     }
 }

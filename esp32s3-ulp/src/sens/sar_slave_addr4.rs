@@ -35,13 +35,17 @@ impl W {
     ///Bits 0:10 - configure i2c slave address7
     #[inline(always)]
     #[must_use]
-    pub fn sar_i2c_slave_addr7(&mut self) -> SAR_I2C_SLAVE_ADDR7_W<SAR_SLAVE_ADDR4_SPEC> {
+    pub fn sar_i2c_slave_addr7(
+        &mut self,
+    ) -> SAR_I2C_SLAVE_ADDR7_W<SAR_SLAVE_ADDR4_SPEC> {
         SAR_I2C_SLAVE_ADDR7_W::new(self, 0)
     }
     ///Bits 11:21 - configure i2c slave address6
     #[inline(always)]
     #[must_use]
-    pub fn sar_i2c_slave_addr6(&mut self) -> SAR_I2C_SLAVE_ADDR6_W<SAR_SLAVE_ADDR4_SPEC> {
+    pub fn sar_i2c_slave_addr6(
+        &mut self,
+    ) -> SAR_I2C_SLAVE_ADDR6_W<SAR_SLAVE_ADDR4_SPEC> {
         SAR_I2C_SLAVE_ADDR6_W::new(self, 11)
     }
 }

@@ -27,11 +27,19 @@ pub type HP_ACTIVE_HP_REGULATOR_XPD_W<'a, REG> = crate::BitWriter<'a, REG>;
 ///Field `HP_ACTIVE_HP_REGULATOR_SLP_MEM_DBIAS` reader - need_des
 pub type HP_ACTIVE_HP_REGULATOR_SLP_MEM_DBIAS_R = crate::FieldReader;
 ///Field `HP_ACTIVE_HP_REGULATOR_SLP_MEM_DBIAS` writer - need_des
-pub type HP_ACTIVE_HP_REGULATOR_SLP_MEM_DBIAS_W<'a, REG> = crate::FieldWriter<'a, REG, 4>;
+pub type HP_ACTIVE_HP_REGULATOR_SLP_MEM_DBIAS_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    4,
+>;
 ///Field `HP_ACTIVE_HP_REGULATOR_SLP_LOGIC_DBIAS` reader - need_des
 pub type HP_ACTIVE_HP_REGULATOR_SLP_LOGIC_DBIAS_R = crate::FieldReader;
 ///Field `HP_ACTIVE_HP_REGULATOR_SLP_LOGIC_DBIAS` writer - need_des
-pub type HP_ACTIVE_HP_REGULATOR_SLP_LOGIC_DBIAS_W<'a, REG> = crate::FieldWriter<'a, REG, 4>;
+pub type HP_ACTIVE_HP_REGULATOR_SLP_LOGIC_DBIAS_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    4,
+>;
 ///Field `HP_ACTIVE_HP_REGULATOR_DBIAS` reader - need_des
 pub type HP_ACTIVE_HP_REGULATOR_DBIAS_R = crate::FieldReader;
 ///Field `HP_ACTIVE_HP_REGULATOR_DBIAS` writer - need_des
@@ -54,12 +62,16 @@ impl R {
     }
     ///Bit 16 - need_des
     #[inline(always)]
-    pub fn hp_active_hp_regulator_slp_mem_xpd(&self) -> HP_ACTIVE_HP_REGULATOR_SLP_MEM_XPD_R {
+    pub fn hp_active_hp_regulator_slp_mem_xpd(
+        &self,
+    ) -> HP_ACTIVE_HP_REGULATOR_SLP_MEM_XPD_R {
         HP_ACTIVE_HP_REGULATOR_SLP_MEM_XPD_R::new(((self.bits >> 16) & 1) != 0)
     }
     ///Bit 17 - need_des
     #[inline(always)]
-    pub fn hp_active_hp_regulator_slp_logic_xpd(&self) -> HP_ACTIVE_HP_REGULATOR_SLP_LOGIC_XPD_R {
+    pub fn hp_active_hp_regulator_slp_logic_xpd(
+        &self,
+    ) -> HP_ACTIVE_HP_REGULATOR_SLP_LOGIC_XPD_R {
         HP_ACTIVE_HP_REGULATOR_SLP_LOGIC_XPD_R::new(((self.bits >> 17) & 1) != 0)
     }
     ///Bit 18 - need_des
@@ -69,7 +81,9 @@ impl R {
     }
     ///Bits 19:22 - need_des
     #[inline(always)]
-    pub fn hp_active_hp_regulator_slp_mem_dbias(&self) -> HP_ACTIVE_HP_REGULATOR_SLP_MEM_DBIAS_R {
+    pub fn hp_active_hp_regulator_slp_mem_dbias(
+        &self,
+    ) -> HP_ACTIVE_HP_REGULATOR_SLP_MEM_DBIAS_R {
         HP_ACTIVE_HP_REGULATOR_SLP_MEM_DBIAS_R::new(((self.bits >> 19) & 0x0f) as u8)
     }
     ///Bits 23:26 - need_des
@@ -100,10 +114,7 @@ impl core::fmt::Debug for R {
                 "hp_active_hp_regulator_slp_logic_xpd",
                 &self.hp_active_hp_regulator_slp_logic_xpd(),
             )
-            .field(
-                "hp_active_hp_regulator_xpd",
-                &self.hp_active_hp_regulator_xpd(),
-            )
+            .field("hp_active_hp_regulator_xpd", &self.hp_active_hp_regulator_xpd())
             .field(
                 "hp_active_hp_regulator_slp_mem_dbias",
                 &self.hp_active_hp_regulator_slp_mem_dbias(),
@@ -112,10 +123,7 @@ impl core::fmt::Debug for R {
                 "hp_active_hp_regulator_slp_logic_dbias",
                 &self.hp_active_hp_regulator_slp_logic_dbias(),
             )
-            .field(
-                "hp_active_hp_regulator_dbias",
-                &self.hp_active_hp_regulator_dbias(),
-            )
+            .field("hp_active_hp_regulator_dbias", &self.hp_active_hp_regulator_dbias())
             .finish()
     }
 }

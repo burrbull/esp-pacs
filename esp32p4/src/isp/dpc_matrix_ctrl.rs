@@ -55,13 +55,17 @@ impl W {
     ///Bits 0:7 - matrix tail pixen low level threshold, should not to large to prevent expanding to next frame, only reg_dpc_tail_pixen_pulse_th!=0 and reg_dpc_tail_pixen_pulse_tl!=0 and reg_dpc_tail_pixen_pulse_th &lt; reg_dpc_tail_pixen_pulse_tl will enable tail pulse function
     #[inline(always)]
     #[must_use]
-    pub fn dpc_tail_pixen_pulse_tl(&mut self) -> DPC_TAIL_PIXEN_PULSE_TL_W<DPC_MATRIX_CTRL_SPEC> {
+    pub fn dpc_tail_pixen_pulse_tl(
+        &mut self,
+    ) -> DPC_TAIL_PIXEN_PULSE_TL_W<DPC_MATRIX_CTRL_SPEC> {
         DPC_TAIL_PIXEN_PULSE_TL_W::new(self, 0)
     }
     ///Bits 8:15 - matrix tail pixen high level threshold, must &lt; hnum-1, only reg_dpc_tail_pixen_pulse_th!=0 and reg_dpc_tail_pixen_pulse_tl!=0 and reg_dpc_tail_pixen_pulse_th &lt; reg_dpc_tail_pixen_pulse_tl will enable tail pulse function
     #[inline(always)]
     #[must_use]
-    pub fn dpc_tail_pixen_pulse_th(&mut self) -> DPC_TAIL_PIXEN_PULSE_TH_W<DPC_MATRIX_CTRL_SPEC> {
+    pub fn dpc_tail_pixen_pulse_th(
+        &mut self,
+    ) -> DPC_TAIL_PIXEN_PULSE_TH_W<DPC_MATRIX_CTRL_SPEC> {
         DPC_TAIL_PIXEN_PULSE_TH_W::new(self, 8)
     }
     ///Bits 16:23 - this field configures dpc matrix padding data

@@ -44,18 +44,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("EXTERNAL_DEVICE_ENCRYPT_DECRYPT_CONTROL")
-            .field(
-                "enable_spi_manual_encrypt",
-                &self.enable_spi_manual_encrypt(),
-            )
-            .field(
-                "enable_download_db_encrypt",
-                &self.enable_download_db_encrypt(),
-            )
-            .field(
-                "enable_download_g0cb_decrypt",
-                &self.enable_download_g0cb_decrypt(),
-            )
+            .field("enable_spi_manual_encrypt", &self.enable_spi_manual_encrypt())
+            .field("enable_download_db_encrypt", &self.enable_download_db_encrypt())
+            .field("enable_download_g0cb_decrypt", &self.enable_download_g0cb_decrypt())
             .field(
                 "enable_download_manual_encrypt",
                 &self.enable_download_manual_encrypt(),

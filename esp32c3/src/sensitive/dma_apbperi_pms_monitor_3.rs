@@ -17,7 +17,9 @@ impl R {
     pub fn dma_apbperi_pms_monitor_violate_status_byteen(
         &self,
     ) -> DMA_APBPERI_PMS_MONITOR_VIOLATE_STATUS_BYTEEN_R {
-        DMA_APBPERI_PMS_MONITOR_VIOLATE_STATUS_BYTEEN_R::new(((self.bits >> 1) & 0x0f) as u8)
+        DMA_APBPERI_PMS_MONITOR_VIOLATE_STATUS_BYTEEN_R::new(
+            ((self.bits >> 1) & 0x0f) as u8,
+        )
     }
 }
 #[cfg(feature = "impl-register-debug")]

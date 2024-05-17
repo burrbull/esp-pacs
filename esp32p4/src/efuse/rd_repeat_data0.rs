@@ -137,10 +137,7 @@ impl core::fmt::Debug for R {
             .field("jtag_sel_enable", &self.jtag_sel_enable())
             .field("soft_dis_jtag", &self.soft_dis_jtag())
             .field("dis_pad_jtag", &self.dis_pad_jtag())
-            .field(
-                "dis_download_manual_encrypt",
-                &self.dis_download_manual_encrypt(),
-            )
+            .field("dis_download_manual_encrypt", &self.dis_download_manual_encrypt())
             .field("usb_device_drefh", &self.usb_device_drefh())
             .field("usb_otg11_drefh", &self.usb_otg11_drefh())
             .field("usb_phy_sel", &self.usb_phy_sel())

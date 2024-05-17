@@ -94,7 +94,9 @@ impl R {
     }
     ///Bit 11 - Represents dma move 2 ref mb line done status.\\0: not done\\1: done.
     #[inline(always)]
-    pub fn ref_move_2mb_line_done_debug_flag(&self) -> REF_MOVE_2MB_LINE_DONE_DEBUG_FLAG_R {
+    pub fn ref_move_2mb_line_done_debug_flag(
+        &self,
+    ) -> REF_MOVE_2MB_LINE_DONE_DEBUG_FLAG_R {
         REF_MOVE_2MB_LINE_DONE_DEBUG_FLAG_R::new(((self.bits >> 11) & 1) != 0)
     }
     ///Bit 12 - Represents I p_i_cmp done status.\\0: not done\\1: done.
@@ -133,24 +135,12 @@ impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("DEBUG_INFO2")
             .field("p_rc_done_debug_flag", &self.p_rc_done_debug_flag())
-            .field(
-                "p_p_i_cmp_done_debug_flag",
-                &self.p_p_i_cmp_done_debug_flag(),
-            )
-            .field(
-                "p_mv_merge_done_debug_flag",
-                &self.p_mv_merge_done_debug_flag(),
-            )
-            .field(
-                "p_move_ori_done_debug_flag",
-                &self.p_move_ori_done_debug_flag(),
-            )
+            .field("p_p_i_cmp_done_debug_flag", &self.p_p_i_cmp_done_debug_flag())
+            .field("p_mv_merge_done_debug_flag", &self.p_mv_merge_done_debug_flag())
+            .field("p_move_ori_done_debug_flag", &self.p_move_ori_done_debug_flag())
             .field("p_mc_done_debug_flag", &self.p_mc_done_debug_flag())
             .field("p_ime_done_debug_flag", &self.p_ime_done_debug_flag())
-            .field(
-                "p_get_ori_done_debug_flag",
-                &self.p_get_ori_done_debug_flag(),
-            )
+            .field("p_get_ori_done_debug_flag", &self.p_get_ori_done_debug_flag())
             .field("p_fme_done_debug_flag", &self.p_fme_done_debug_flag())
             .field("p_fetch_done_debug_flag", &self.p_fetch_done_debug_flag())
             .field("p_db_done_debug_flag", &self.p_db_done_debug_flag())
@@ -159,18 +149,9 @@ impl core::fmt::Debug for R {
                 "ref_move_2mb_line_done_debug_flag",
                 &self.ref_move_2mb_line_done_debug_flag(),
             )
-            .field(
-                "i_p_i_cmp_done_debug_flag",
-                &self.i_p_i_cmp_done_debug_flag(),
-            )
-            .field(
-                "i_move_ori_done_debug_flag",
-                &self.i_move_ori_done_debug_flag(),
-            )
-            .field(
-                "i_get_ori_done_debug_flag",
-                &self.i_get_ori_done_debug_flag(),
-            )
+            .field("i_p_i_cmp_done_debug_flag", &self.i_p_i_cmp_done_debug_flag())
+            .field("i_move_ori_done_debug_flag", &self.i_move_ori_done_debug_flag())
+            .field("i_get_ori_done_debug_flag", &self.i_get_ori_done_debug_flag())
             .field("i_ec_done_debug_flag", &self.i_ec_done_debug_flag())
             .field("i_db_done_debug_flag", &self.i_db_done_debug_flag())
             .field("i_bs_buf_done_debug_flag", &self.i_bs_buf_done_debug_flag())

@@ -5,11 +5,18 @@ pub type W = crate::W<LP_AONCLKRST_HPSYS_0_RESET_BYPASS_SPEC>;
 ///Field `LP_AONCLKRST_HPSYS_0_RESET_BYPASS` reader - reserved
 pub type LP_AONCLKRST_HPSYS_0_RESET_BYPASS_R = crate::FieldReader<u32>;
 ///Field `LP_AONCLKRST_HPSYS_0_RESET_BYPASS` writer - reserved
-pub type LP_AONCLKRST_HPSYS_0_RESET_BYPASS_W<'a, REG> = crate::FieldWriter<'a, REG, 32, u32>;
+pub type LP_AONCLKRST_HPSYS_0_RESET_BYPASS_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    32,
+    u32,
+>;
 impl R {
     ///Bits 0:31 - reserved
     #[inline(always)]
-    pub fn lp_aonclkrst_hpsys_0_reset_bypass(&self) -> LP_AONCLKRST_HPSYS_0_RESET_BYPASS_R {
+    pub fn lp_aonclkrst_hpsys_0_reset_bypass(
+        &self,
+    ) -> LP_AONCLKRST_HPSYS_0_RESET_BYPASS_R {
         LP_AONCLKRST_HPSYS_0_RESET_BYPASS_R::new(self.bits)
     }
 }

@@ -103,10 +103,7 @@ impl core::fmt::Debug for R {
             .field("phy_hs_txrequestdatahs_0", &self.phy_hs_txrequestdatahs_0())
             .field("phy_hs_basedir_0", &self.phy_hs_basedir_0())
             .field("phy_hs_txrequesthsclk", &self.phy_hs_txrequesthsclk())
-            .field(
-                "phy_hs_loopback_check_done",
-                &self.phy_hs_loopback_check_done(),
-            )
+            .field("phy_hs_loopback_check_done", &self.phy_hs_loopback_check_done())
             .field("phy_hs_loopback_en", &self.phy_hs_loopback_en())
             .field("phy_hs_loopback_ok", &self.phy_hs_loopback_ok())
             .finish()
@@ -116,7 +113,9 @@ impl W {
     ///Bits 0:7 - txdatahs_1 ctrl when enable dsi phy hs_loopback_test
     #[inline(always)]
     #[must_use]
-    pub fn phy_hs_txdatahs_1(&mut self) -> PHY_HS_TXDATAHS_1_W<PHY_HS_LOOPBACK_CTRL_SPEC> {
+    pub fn phy_hs_txdatahs_1(
+        &mut self,
+    ) -> PHY_HS_TXDATAHS_1_W<PHY_HS_LOOPBACK_CTRL_SPEC> {
         PHY_HS_TXDATAHS_1_W::new(self, 0)
     }
     ///Bit 8 - txrequestdatahs_1 ctrl when enable dsi phy hs_loopback_test
@@ -136,7 +135,9 @@ impl W {
     ///Bits 16:23 - txdatahs_0 ctrl when enable dsi phy hs_loopback_test
     #[inline(always)]
     #[must_use]
-    pub fn phy_hs_txdatahs_0(&mut self) -> PHY_HS_TXDATAHS_0_W<PHY_HS_LOOPBACK_CTRL_SPEC> {
+    pub fn phy_hs_txdatahs_0(
+        &mut self,
+    ) -> PHY_HS_TXDATAHS_0_W<PHY_HS_LOOPBACK_CTRL_SPEC> {
         PHY_HS_TXDATAHS_0_W::new(self, 16)
     }
     ///Bit 24 - txrequestdatahs_0 ctrl when enable dsi phy hs_loopback_test
@@ -156,19 +157,25 @@ impl W {
     ///Bit 27 - txrequesthsclk when enable dsi phy hs_loopback_test
     #[inline(always)]
     #[must_use]
-    pub fn phy_hs_txrequesthsclk(&mut self) -> PHY_HS_TXREQUESTHSCLK_W<PHY_HS_LOOPBACK_CTRL_SPEC> {
+    pub fn phy_hs_txrequesthsclk(
+        &mut self,
+    ) -> PHY_HS_TXREQUESTHSCLK_W<PHY_HS_LOOPBACK_CTRL_SPEC> {
         PHY_HS_TXREQUESTHSCLK_W::new(self, 27)
     }
     ///Bit 28 - dsi phy hs_loopback test start check
     #[inline(always)]
     #[must_use]
-    pub fn phy_hs_loopback_check(&mut self) -> PHY_HS_LOOPBACK_CHECK_W<PHY_HS_LOOPBACK_CTRL_SPEC> {
+    pub fn phy_hs_loopback_check(
+        &mut self,
+    ) -> PHY_HS_LOOPBACK_CHECK_W<PHY_HS_LOOPBACK_CTRL_SPEC> {
         PHY_HS_LOOPBACK_CHECK_W::new(self, 28)
     }
     ///Bit 30 - dsi phy hs_loopback ctrl en
     #[inline(always)]
     #[must_use]
-    pub fn phy_hs_loopback_en(&mut self) -> PHY_HS_LOOPBACK_EN_W<PHY_HS_LOOPBACK_CTRL_SPEC> {
+    pub fn phy_hs_loopback_en(
+        &mut self,
+    ) -> PHY_HS_LOOPBACK_EN_W<PHY_HS_LOOPBACK_CTRL_SPEC> {
         PHY_HS_LOOPBACK_EN_W::new(self, 30)
     }
 }

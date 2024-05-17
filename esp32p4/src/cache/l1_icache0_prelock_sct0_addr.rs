@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("L1_ICACHE0_PRELOCK_SCT0_ADDR")
-            .field(
-                "l1_icache0_prelock_sct0_addr",
-                &self.l1_icache0_prelock_sct0_addr(),
-            )
+            .field("l1_icache0_prelock_sct0_addr", &self.l1_icache0_prelock_sct0_addr())
             .finish()
     }
 }

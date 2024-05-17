@@ -12,7 +12,9 @@ impl W {
     ///Bits 0:15 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn reg_gpio_enable_data_w1tc(&mut self) -> REG_GPIO_ENABLE_DATA_W1TC_W<ENABLE_W1TC_SPEC> {
+    pub fn reg_gpio_enable_data_w1tc(
+        &mut self,
+    ) -> REG_GPIO_ENABLE_DATA_W1TC_W<ENABLE_W1TC_SPEC> {
         REG_GPIO_ENABLE_DATA_W1TC_W::new(self, 0)
     }
 }

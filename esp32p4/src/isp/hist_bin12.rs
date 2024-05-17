@@ -12,9 +12,7 @@ impl R {
 #[cfg(feature = "impl-register-debug")]
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("HIST_BIN12")
-            .field("hist_bin_12", &self.hist_bin_12())
-            .finish()
+        f.debug_struct("HIST_BIN12").field("hist_bin_12", &self.hist_bin_12()).finish()
     }
 }
 /**result of histogram bin 12

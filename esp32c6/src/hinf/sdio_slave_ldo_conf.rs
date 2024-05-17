@@ -45,7 +45,9 @@ impl W {
     ///Bit 0 - control ldo ready signal by sdio slave itself
     #[inline(always)]
     #[must_use]
-    pub fn ldo_ready_ctl_in_en(&mut self) -> LDO_READY_CTL_IN_EN_W<SDIO_SLAVE_LDO_CONF_SPEC> {
+    pub fn ldo_ready_ctl_in_en(
+        &mut self,
+    ) -> LDO_READY_CTL_IN_EN_W<SDIO_SLAVE_LDO_CONF_SPEC> {
         LDO_READY_CTL_IN_EN_W::new(self, 0)
     }
     ///Bits 1:5 - configure ldo ready counting threshold value, the actual counting target is 2^(ldo_ready_thres)-1
@@ -57,7 +59,9 @@ impl W {
     ///Bit 6 - ignore ldo ready signal
     #[inline(always)]
     #[must_use]
-    pub fn ldo_ready_ignore_en(&mut self) -> LDO_READY_IGNORE_EN_W<SDIO_SLAVE_LDO_CONF_SPEC> {
+    pub fn ldo_ready_ignore_en(
+        &mut self,
+    ) -> LDO_READY_IGNORE_EN_W<SDIO_SLAVE_LDO_CONF_SPEC> {
         LDO_READY_IGNORE_EN_W::new(self, 6)
     }
 }

@@ -62,12 +62,16 @@ impl R {
     }
     ///Bits 2:3 - BackUp access g0spi_1 permission.
     #[inline(always)]
-    pub fn backup_bus_pms_constrain_g0spi_1(&self) -> BACKUP_BUS_PMS_CONSTRAIN_G0SPI_1_R {
+    pub fn backup_bus_pms_constrain_g0spi_1(
+        &self,
+    ) -> BACKUP_BUS_PMS_CONSTRAIN_G0SPI_1_R {
         BACKUP_BUS_PMS_CONSTRAIN_G0SPI_1_R::new(((self.bits >> 2) & 3) as u8)
     }
     ///Bits 4:5 - BackUp access g0spi_0 permission.
     #[inline(always)]
-    pub fn backup_bus_pms_constrain_g0spi_0(&self) -> BACKUP_BUS_PMS_CONSTRAIN_G0SPI_0_R {
+    pub fn backup_bus_pms_constrain_g0spi_0(
+        &self,
+    ) -> BACKUP_BUS_PMS_CONSTRAIN_G0SPI_0_R {
         BACKUP_BUS_PMS_CONSTRAIN_G0SPI_0_R::new(((self.bits >> 4) & 3) as u8)
     }
     ///Bits 6:7 - BackUp access gpio permission.
@@ -141,18 +145,9 @@ impl core::fmt::Debug for R {
                 "backup_bus_pms_constrain_gpio",
                 &self.backup_bus_pms_constrain_gpio(),
             )
-            .field(
-                "backup_bus_pms_constrain_fe2",
-                &self.backup_bus_pms_constrain_fe2(),
-            )
-            .field(
-                "backup_bus_pms_constrain_fe",
-                &self.backup_bus_pms_constrain_fe(),
-            )
-            .field(
-                "backup_bus_pms_constrain_rtc",
-                &self.backup_bus_pms_constrain_rtc(),
-            )
+            .field("backup_bus_pms_constrain_fe2", &self.backup_bus_pms_constrain_fe2())
+            .field("backup_bus_pms_constrain_fe", &self.backup_bus_pms_constrain_fe())
+            .field("backup_bus_pms_constrain_rtc", &self.backup_bus_pms_constrain_rtc())
             .field(
                 "backup_bus_pms_constrain_io_mux",
                 &self.backup_bus_pms_constrain_io_mux(),
@@ -165,10 +160,7 @@ impl core::fmt::Debug for R {
                 "backup_bus_pms_constrain_misc",
                 &self.backup_bus_pms_constrain_misc(),
             )
-            .field(
-                "backup_bus_pms_constrain_i2c",
-                &self.backup_bus_pms_constrain_i2c(),
-            )
+            .field("backup_bus_pms_constrain_i2c", &self.backup_bus_pms_constrain_i2c())
             .field(
                 "backup_bus_pms_constrain_i2s0",
                 &self.backup_bus_pms_constrain_i2s0(),

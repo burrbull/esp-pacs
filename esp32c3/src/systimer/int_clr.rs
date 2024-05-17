@@ -15,8 +15,7 @@ impl W {
     #[inline(always)]
     #[must_use]
     pub fn target(&mut self, n: u8) -> TARGET_W<INT_CLR_SPEC> {
-        #[allow(clippy::no_effect)]
-        [(); 3][n as usize];
+        #[allow(clippy::no_effect)] [(); 3][n as usize];
         TARGET_W::new(self, n)
     }
     ///Bit 0 - interupt0 clear

@@ -41,7 +41,9 @@ impl W {
     ///Bit 8 - Set this bit to calculate the error times of MSPI ECC read when accesses to flash.
     #[inline(always)]
     #[must_use]
-    pub fn spi_fmem_ecc_err_int_en(&mut self) -> SPI_FMEM_ECC_ERR_INT_EN_W<ECC_CTRL_SPEC> {
+    pub fn spi_fmem_ecc_err_int_en(
+        &mut self,
+    ) -> SPI_FMEM_ECC_ERR_INT_EN_W<ECC_CTRL_SPEC> {
         SPI_FMEM_ECC_ERR_INT_EN_W::new(self, 8)
     }
 }

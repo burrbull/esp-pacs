@@ -125,7 +125,9 @@ impl W {
     ///Bit 0 - For SPI0, In the external RAM mode, cache read flash with 4 bytes command, 1: enable, 0:disable.
     #[inline(always)]
     #[must_use]
-    pub fn cache_usr_saddr_4byte(&mut self) -> CACHE_USR_SADDR_4BYTE_W<CACHE_SCTRL_SPEC> {
+    pub fn cache_usr_saddr_4byte(
+        &mut self,
+    ) -> CACHE_USR_SADDR_4BYTE_W<CACHE_SCTRL_SPEC> {
         CACHE_USR_SADDR_4BYTE_W::new(self, 0)
     }
     ///Bit 1 - For SPI0, In the external RAM mode, spi dual I/O mode enable, 1: enable, 0:disable

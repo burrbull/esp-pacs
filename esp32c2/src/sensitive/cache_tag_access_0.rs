@@ -25,7 +25,9 @@ impl W {
     ///Bit 0 - Need add description
     #[inline(always)]
     #[must_use]
-    pub fn cache_tag_access_lock(&mut self) -> CACHE_TAG_ACCESS_LOCK_W<CACHE_TAG_ACCESS_0_SPEC> {
+    pub fn cache_tag_access_lock(
+        &mut self,
+    ) -> CACHE_TAG_ACCESS_LOCK_W<CACHE_TAG_ACCESS_0_SPEC> {
         CACHE_TAG_ACCESS_LOCK_W::new(self, 0)
     }
 }

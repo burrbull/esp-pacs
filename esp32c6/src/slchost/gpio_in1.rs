@@ -12,9 +12,7 @@ impl R {
 #[cfg(feature = "impl-register-debug")]
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("GPIO_IN1")
-            .field("gpio_sdio_in1", &self.gpio_sdio_in1())
-            .finish()
+        f.debug_struct("GPIO_IN1").field("gpio_sdio_in1", &self.gpio_sdio_in1()).finish()
     }
 }
 #[doc = "*******Description***********\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpio_in1::R`](R).  See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]

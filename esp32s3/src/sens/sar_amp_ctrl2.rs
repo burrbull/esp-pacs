@@ -80,16 +80,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SAR_AMP_CTRL2")
-            .field(
-                "sar_sar1_dac_xpd_fsm_idle",
-                &self.sar_sar1_dac_xpd_fsm_idle(),
-            )
+            .field("sar_sar1_dac_xpd_fsm_idle", &self.sar_sar1_dac_xpd_fsm_idle())
             .field("sar_xpd_sar_amp_fsm_idle", &self.sar_xpd_sar_amp_fsm_idle())
             .field("sar_amp_rst_fb_fsm_idle", &self.sar_amp_rst_fb_fsm_idle())
-            .field(
-                "sar_amp_short_ref_fsm_idle",
-                &self.sar_amp_short_ref_fsm_idle(),
-            )
+            .field("sar_amp_short_ref_fsm_idle", &self.sar_amp_short_ref_fsm_idle())
             .field(
                 "sar_amp_short_ref_gnd_fsm_idle",
                 &self.sar_amp_short_ref_gnd_fsm_idle(),
@@ -104,19 +98,25 @@ impl W {
     ///Bit 0 - no public
     #[inline(always)]
     #[must_use]
-    pub fn sar_sar1_dac_xpd_fsm_idle(&mut self) -> SAR_SAR1_DAC_XPD_FSM_IDLE_W<SAR_AMP_CTRL2_SPEC> {
+    pub fn sar_sar1_dac_xpd_fsm_idle(
+        &mut self,
+    ) -> SAR_SAR1_DAC_XPD_FSM_IDLE_W<SAR_AMP_CTRL2_SPEC> {
         SAR_SAR1_DAC_XPD_FSM_IDLE_W::new(self, 0)
     }
     ///Bit 1 - no public
     #[inline(always)]
     #[must_use]
-    pub fn sar_xpd_sar_amp_fsm_idle(&mut self) -> SAR_XPD_SAR_AMP_FSM_IDLE_W<SAR_AMP_CTRL2_SPEC> {
+    pub fn sar_xpd_sar_amp_fsm_idle(
+        &mut self,
+    ) -> SAR_XPD_SAR_AMP_FSM_IDLE_W<SAR_AMP_CTRL2_SPEC> {
         SAR_XPD_SAR_AMP_FSM_IDLE_W::new(self, 1)
     }
     ///Bit 2 - no public
     #[inline(always)]
     #[must_use]
-    pub fn sar_amp_rst_fb_fsm_idle(&mut self) -> SAR_AMP_RST_FB_FSM_IDLE_W<SAR_AMP_CTRL2_SPEC> {
+    pub fn sar_amp_rst_fb_fsm_idle(
+        &mut self,
+    ) -> SAR_AMP_RST_FB_FSM_IDLE_W<SAR_AMP_CTRL2_SPEC> {
         SAR_AMP_RST_FB_FSM_IDLE_W::new(self, 2)
     }
     ///Bit 3 - no public
@@ -138,7 +138,9 @@ impl W {
     ///Bit 5 - no public
     #[inline(always)]
     #[must_use]
-    pub fn sar_xpd_sar_fsm_idle(&mut self) -> SAR_XPD_SAR_FSM_IDLE_W<SAR_AMP_CTRL2_SPEC> {
+    pub fn sar_xpd_sar_fsm_idle(
+        &mut self,
+    ) -> SAR_XPD_SAR_FSM_IDLE_W<SAR_AMP_CTRL2_SPEC> {
         SAR_XPD_SAR_FSM_IDLE_W::new(self, 5)
     }
     ///Bit 6 - no public

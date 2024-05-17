@@ -106,37 +106,49 @@ impl W {
     ///Bit 4 - Configures whether or not to clear MCPWM0_evt_op0_tea trigger status.\\0: Invalid, No effect\\1: Clear
     #[inline(always)]
     #[must_use]
-    pub fn mcpwm0_evt_op0_tea_st_clr(&mut self) -> MCPWM0_EVT_OP0_TEA_ST_CLR_W<EVT_ST2_CLR_SPEC> {
+    pub fn mcpwm0_evt_op0_tea_st_clr(
+        &mut self,
+    ) -> MCPWM0_EVT_OP0_TEA_ST_CLR_W<EVT_ST2_CLR_SPEC> {
         MCPWM0_EVT_OP0_TEA_ST_CLR_W::new(self, 4)
     }
     ///Bit 5 - Configures whether or not to clear MCPWM0_evt_op1_tea trigger status.\\0: Invalid, No effect\\1: Clear
     #[inline(always)]
     #[must_use]
-    pub fn mcpwm0_evt_op1_tea_st_clr(&mut self) -> MCPWM0_EVT_OP1_TEA_ST_CLR_W<EVT_ST2_CLR_SPEC> {
+    pub fn mcpwm0_evt_op1_tea_st_clr(
+        &mut self,
+    ) -> MCPWM0_EVT_OP1_TEA_ST_CLR_W<EVT_ST2_CLR_SPEC> {
         MCPWM0_EVT_OP1_TEA_ST_CLR_W::new(self, 5)
     }
     ///Bit 6 - Configures whether or not to clear MCPWM0_evt_op2_tea trigger status.\\0: Invalid, No effect\\1: Clear
     #[inline(always)]
     #[must_use]
-    pub fn mcpwm0_evt_op2_tea_st_clr(&mut self) -> MCPWM0_EVT_OP2_TEA_ST_CLR_W<EVT_ST2_CLR_SPEC> {
+    pub fn mcpwm0_evt_op2_tea_st_clr(
+        &mut self,
+    ) -> MCPWM0_EVT_OP2_TEA_ST_CLR_W<EVT_ST2_CLR_SPEC> {
         MCPWM0_EVT_OP2_TEA_ST_CLR_W::new(self, 6)
     }
     ///Bit 7 - Configures whether or not to clear MCPWM0_evt_op0_teb trigger status.\\0: Invalid, No effect\\1: Clear
     #[inline(always)]
     #[must_use]
-    pub fn mcpwm0_evt_op0_teb_st_clr(&mut self) -> MCPWM0_EVT_OP0_TEB_ST_CLR_W<EVT_ST2_CLR_SPEC> {
+    pub fn mcpwm0_evt_op0_teb_st_clr(
+        &mut self,
+    ) -> MCPWM0_EVT_OP0_TEB_ST_CLR_W<EVT_ST2_CLR_SPEC> {
         MCPWM0_EVT_OP0_TEB_ST_CLR_W::new(self, 7)
     }
     ///Bit 8 - Configures whether or not to clear MCPWM0_evt_op1_teb trigger status.\\0: Invalid, No effect\\1: Clear
     #[inline(always)]
     #[must_use]
-    pub fn mcpwm0_evt_op1_teb_st_clr(&mut self) -> MCPWM0_EVT_OP1_TEB_ST_CLR_W<EVT_ST2_CLR_SPEC> {
+    pub fn mcpwm0_evt_op1_teb_st_clr(
+        &mut self,
+    ) -> MCPWM0_EVT_OP1_TEB_ST_CLR_W<EVT_ST2_CLR_SPEC> {
         MCPWM0_EVT_OP1_TEB_ST_CLR_W::new(self, 8)
     }
     ///Bit 9 - Configures whether or not to clear MCPWM0_evt_op2_teb trigger status.\\0: Invalid, No effect\\1: Clear
     #[inline(always)]
     #[must_use]
-    pub fn mcpwm0_evt_op2_teb_st_clr(&mut self) -> MCPWM0_EVT_OP2_TEB_ST_CLR_W<EVT_ST2_CLR_SPEC> {
+    pub fn mcpwm0_evt_op2_teb_st_clr(
+        &mut self,
+    ) -> MCPWM0_EVT_OP2_TEB_ST_CLR_W<EVT_ST2_CLR_SPEC> {
         MCPWM0_EVT_OP2_TEB_ST_CLR_W::new(self, 9)
     }
     ///Bit 10 - Configures whether or not to clear MCPWM0_evt_f0 trigger status.\\0: Invalid, No effect\\1: Clear
@@ -160,109 +172,145 @@ impl W {
     ///Bit 13 - Configures whether or not to clear MCPWM0_evt_f0_clr trigger status.\\0: Invalid, No effect\\1: Clear
     #[inline(always)]
     #[must_use]
-    pub fn mcpwm0_evt_f0_clr_st_clr(&mut self) -> MCPWM0_EVT_F0_CLR_ST_CLR_W<EVT_ST2_CLR_SPEC> {
+    pub fn mcpwm0_evt_f0_clr_st_clr(
+        &mut self,
+    ) -> MCPWM0_EVT_F0_CLR_ST_CLR_W<EVT_ST2_CLR_SPEC> {
         MCPWM0_EVT_F0_CLR_ST_CLR_W::new(self, 13)
     }
     ///Bit 14 - Configures whether or not to clear MCPWM0_evt_f1_clr trigger status.\\0: Invalid, No effect\\1: Clear
     #[inline(always)]
     #[must_use]
-    pub fn mcpwm0_evt_f1_clr_st_clr(&mut self) -> MCPWM0_EVT_F1_CLR_ST_CLR_W<EVT_ST2_CLR_SPEC> {
+    pub fn mcpwm0_evt_f1_clr_st_clr(
+        &mut self,
+    ) -> MCPWM0_EVT_F1_CLR_ST_CLR_W<EVT_ST2_CLR_SPEC> {
         MCPWM0_EVT_F1_CLR_ST_CLR_W::new(self, 14)
     }
     ///Bit 15 - Configures whether or not to clear MCPWM0_evt_f2_clr trigger status.\\0: Invalid, No effect\\1: Clear
     #[inline(always)]
     #[must_use]
-    pub fn mcpwm0_evt_f2_clr_st_clr(&mut self) -> MCPWM0_EVT_F2_CLR_ST_CLR_W<EVT_ST2_CLR_SPEC> {
+    pub fn mcpwm0_evt_f2_clr_st_clr(
+        &mut self,
+    ) -> MCPWM0_EVT_F2_CLR_ST_CLR_W<EVT_ST2_CLR_SPEC> {
         MCPWM0_EVT_F2_CLR_ST_CLR_W::new(self, 15)
     }
     ///Bit 16 - Configures whether or not to clear MCPWM0_evt_tz0_cbc trigger status.\\0: Invalid, No effect\\1: Clear
     #[inline(always)]
     #[must_use]
-    pub fn mcpwm0_evt_tz0_cbc_st_clr(&mut self) -> MCPWM0_EVT_TZ0_CBC_ST_CLR_W<EVT_ST2_CLR_SPEC> {
+    pub fn mcpwm0_evt_tz0_cbc_st_clr(
+        &mut self,
+    ) -> MCPWM0_EVT_TZ0_CBC_ST_CLR_W<EVT_ST2_CLR_SPEC> {
         MCPWM0_EVT_TZ0_CBC_ST_CLR_W::new(self, 16)
     }
     ///Bit 17 - Configures whether or not to clear MCPWM0_evt_tz1_cbc trigger status.\\0: Invalid, No effect\\1: Clear
     #[inline(always)]
     #[must_use]
-    pub fn mcpwm0_evt_tz1_cbc_st_clr(&mut self) -> MCPWM0_EVT_TZ1_CBC_ST_CLR_W<EVT_ST2_CLR_SPEC> {
+    pub fn mcpwm0_evt_tz1_cbc_st_clr(
+        &mut self,
+    ) -> MCPWM0_EVT_TZ1_CBC_ST_CLR_W<EVT_ST2_CLR_SPEC> {
         MCPWM0_EVT_TZ1_CBC_ST_CLR_W::new(self, 17)
     }
     ///Bit 18 - Configures whether or not to clear MCPWM0_evt_tz2_cbc trigger status.\\0: Invalid, No effect\\1: Clear
     #[inline(always)]
     #[must_use]
-    pub fn mcpwm0_evt_tz2_cbc_st_clr(&mut self) -> MCPWM0_EVT_TZ2_CBC_ST_CLR_W<EVT_ST2_CLR_SPEC> {
+    pub fn mcpwm0_evt_tz2_cbc_st_clr(
+        &mut self,
+    ) -> MCPWM0_EVT_TZ2_CBC_ST_CLR_W<EVT_ST2_CLR_SPEC> {
         MCPWM0_EVT_TZ2_CBC_ST_CLR_W::new(self, 18)
     }
     ///Bit 19 - Configures whether or not to clear MCPWM0_evt_tz0_ost trigger status.\\0: Invalid, No effect\\1: Clear
     #[inline(always)]
     #[must_use]
-    pub fn mcpwm0_evt_tz0_ost_st_clr(&mut self) -> MCPWM0_EVT_TZ0_OST_ST_CLR_W<EVT_ST2_CLR_SPEC> {
+    pub fn mcpwm0_evt_tz0_ost_st_clr(
+        &mut self,
+    ) -> MCPWM0_EVT_TZ0_OST_ST_CLR_W<EVT_ST2_CLR_SPEC> {
         MCPWM0_EVT_TZ0_OST_ST_CLR_W::new(self, 19)
     }
     ///Bit 20 - Configures whether or not to clear MCPWM0_evt_tz1_ost trigger status.\\0: Invalid, No effect\\1: Clear
     #[inline(always)]
     #[must_use]
-    pub fn mcpwm0_evt_tz1_ost_st_clr(&mut self) -> MCPWM0_EVT_TZ1_OST_ST_CLR_W<EVT_ST2_CLR_SPEC> {
+    pub fn mcpwm0_evt_tz1_ost_st_clr(
+        &mut self,
+    ) -> MCPWM0_EVT_TZ1_OST_ST_CLR_W<EVT_ST2_CLR_SPEC> {
         MCPWM0_EVT_TZ1_OST_ST_CLR_W::new(self, 20)
     }
     ///Bit 21 - Configures whether or not to clear MCPWM0_evt_tz2_ost trigger status.\\0: Invalid, No effect\\1: Clear
     #[inline(always)]
     #[must_use]
-    pub fn mcpwm0_evt_tz2_ost_st_clr(&mut self) -> MCPWM0_EVT_TZ2_OST_ST_CLR_W<EVT_ST2_CLR_SPEC> {
+    pub fn mcpwm0_evt_tz2_ost_st_clr(
+        &mut self,
+    ) -> MCPWM0_EVT_TZ2_OST_ST_CLR_W<EVT_ST2_CLR_SPEC> {
         MCPWM0_EVT_TZ2_OST_ST_CLR_W::new(self, 21)
     }
     ///Bit 22 - Configures whether or not to clear MCPWM0_evt_cap0 trigger status.\\0: Invalid, No effect\\1: Clear
     #[inline(always)]
     #[must_use]
-    pub fn mcpwm0_evt_cap0_st_clr(&mut self) -> MCPWM0_EVT_CAP0_ST_CLR_W<EVT_ST2_CLR_SPEC> {
+    pub fn mcpwm0_evt_cap0_st_clr(
+        &mut self,
+    ) -> MCPWM0_EVT_CAP0_ST_CLR_W<EVT_ST2_CLR_SPEC> {
         MCPWM0_EVT_CAP0_ST_CLR_W::new(self, 22)
     }
     ///Bit 23 - Configures whether or not to clear MCPWM0_evt_cap1 trigger status.\\0: Invalid, No effect\\1: Clear
     #[inline(always)]
     #[must_use]
-    pub fn mcpwm0_evt_cap1_st_clr(&mut self) -> MCPWM0_EVT_CAP1_ST_CLR_W<EVT_ST2_CLR_SPEC> {
+    pub fn mcpwm0_evt_cap1_st_clr(
+        &mut self,
+    ) -> MCPWM0_EVT_CAP1_ST_CLR_W<EVT_ST2_CLR_SPEC> {
         MCPWM0_EVT_CAP1_ST_CLR_W::new(self, 23)
     }
     ///Bit 24 - Configures whether or not to clear MCPWM0_evt_cap2 trigger status.\\0: Invalid, No effect\\1: Clear
     #[inline(always)]
     #[must_use]
-    pub fn mcpwm0_evt_cap2_st_clr(&mut self) -> MCPWM0_EVT_CAP2_ST_CLR_W<EVT_ST2_CLR_SPEC> {
+    pub fn mcpwm0_evt_cap2_st_clr(
+        &mut self,
+    ) -> MCPWM0_EVT_CAP2_ST_CLR_W<EVT_ST2_CLR_SPEC> {
         MCPWM0_EVT_CAP2_ST_CLR_W::new(self, 24)
     }
     ///Bit 25 - Configures whether or not to clear MCPWM0_evt_op0_tee1 trigger status.\\0: Invalid, No effect\\1: Clear
     #[inline(always)]
     #[must_use]
-    pub fn mcpwm0_evt_op0_tee1_st_clr(&mut self) -> MCPWM0_EVT_OP0_TEE1_ST_CLR_W<EVT_ST2_CLR_SPEC> {
+    pub fn mcpwm0_evt_op0_tee1_st_clr(
+        &mut self,
+    ) -> MCPWM0_EVT_OP0_TEE1_ST_CLR_W<EVT_ST2_CLR_SPEC> {
         MCPWM0_EVT_OP0_TEE1_ST_CLR_W::new(self, 25)
     }
     ///Bit 26 - Configures whether or not to clear MCPWM0_evt_op1_tee1 trigger status.\\0: Invalid, No effect\\1: Clear
     #[inline(always)]
     #[must_use]
-    pub fn mcpwm0_evt_op1_tee1_st_clr(&mut self) -> MCPWM0_EVT_OP1_TEE1_ST_CLR_W<EVT_ST2_CLR_SPEC> {
+    pub fn mcpwm0_evt_op1_tee1_st_clr(
+        &mut self,
+    ) -> MCPWM0_EVT_OP1_TEE1_ST_CLR_W<EVT_ST2_CLR_SPEC> {
         MCPWM0_EVT_OP1_TEE1_ST_CLR_W::new(self, 26)
     }
     ///Bit 27 - Configures whether or not to clear MCPWM0_evt_op2_tee1 trigger status.\\0: Invalid, No effect\\1: Clear
     #[inline(always)]
     #[must_use]
-    pub fn mcpwm0_evt_op2_tee1_st_clr(&mut self) -> MCPWM0_EVT_OP2_TEE1_ST_CLR_W<EVT_ST2_CLR_SPEC> {
+    pub fn mcpwm0_evt_op2_tee1_st_clr(
+        &mut self,
+    ) -> MCPWM0_EVT_OP2_TEE1_ST_CLR_W<EVT_ST2_CLR_SPEC> {
         MCPWM0_EVT_OP2_TEE1_ST_CLR_W::new(self, 27)
     }
     ///Bit 28 - Configures whether or not to clear MCPWM0_evt_op0_tee2 trigger status.\\0: Invalid, No effect\\1: Clear
     #[inline(always)]
     #[must_use]
-    pub fn mcpwm0_evt_op0_tee2_st_clr(&mut self) -> MCPWM0_EVT_OP0_TEE2_ST_CLR_W<EVT_ST2_CLR_SPEC> {
+    pub fn mcpwm0_evt_op0_tee2_st_clr(
+        &mut self,
+    ) -> MCPWM0_EVT_OP0_TEE2_ST_CLR_W<EVT_ST2_CLR_SPEC> {
         MCPWM0_EVT_OP0_TEE2_ST_CLR_W::new(self, 28)
     }
     ///Bit 29 - Configures whether or not to clear MCPWM0_evt_op1_tee2 trigger status.\\0: Invalid, No effect\\1: Clear
     #[inline(always)]
     #[must_use]
-    pub fn mcpwm0_evt_op1_tee2_st_clr(&mut self) -> MCPWM0_EVT_OP1_TEE2_ST_CLR_W<EVT_ST2_CLR_SPEC> {
+    pub fn mcpwm0_evt_op1_tee2_st_clr(
+        &mut self,
+    ) -> MCPWM0_EVT_OP1_TEE2_ST_CLR_W<EVT_ST2_CLR_SPEC> {
         MCPWM0_EVT_OP1_TEE2_ST_CLR_W::new(self, 29)
     }
     ///Bit 30 - Configures whether or not to clear MCPWM0_evt_op2_tee2 trigger status.\\0: Invalid, No effect\\1: Clear
     #[inline(always)]
     #[must_use]
-    pub fn mcpwm0_evt_op2_tee2_st_clr(&mut self) -> MCPWM0_EVT_OP2_TEE2_ST_CLR_W<EVT_ST2_CLR_SPEC> {
+    pub fn mcpwm0_evt_op2_tee2_st_clr(
+        &mut self,
+    ) -> MCPWM0_EVT_OP2_TEE2_ST_CLR_W<EVT_ST2_CLR_SPEC> {
         MCPWM0_EVT_OP2_TEE2_ST_CLR_W::new(self, 30)
     }
     ///Bit 31 - Configures whether or not to clear MCPWM1_evt_timer0_stop trigger status.\\0: Invalid, No effect\\1: Clear

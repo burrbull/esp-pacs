@@ -35,13 +35,17 @@ impl W {
     ///Bit 0 - The bit is used to disable core0 dbus, 0: enable, 1: disable
     #[inline(always)]
     #[must_use]
-    pub fn dcache_shut_core0_bus(&mut self) -> DCACHE_SHUT_CORE0_BUS_W<DCACHE_CTRL1_SPEC> {
+    pub fn dcache_shut_core0_bus(
+        &mut self,
+    ) -> DCACHE_SHUT_CORE0_BUS_W<DCACHE_CTRL1_SPEC> {
         DCACHE_SHUT_CORE0_BUS_W::new(self, 0)
     }
     ///Bit 1 - The bit is used to disable core1 dbus, 0: enable, 1: disable
     #[inline(always)]
     #[must_use]
-    pub fn dcache_shut_core1_bus(&mut self) -> DCACHE_SHUT_CORE1_BUS_W<DCACHE_CTRL1_SPEC> {
+    pub fn dcache_shut_core1_bus(
+        &mut self,
+    ) -> DCACHE_SHUT_CORE1_BUS_W<DCACHE_CTRL1_SPEC> {
         DCACHE_SHUT_CORE1_BUS_W::new(self, 1)
     }
 }

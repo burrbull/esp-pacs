@@ -114,10 +114,7 @@ impl core::fmt::Debug for R {
             .field("spi_fmem_ddr_dqs_loop", &self.spi_fmem_ddr_dqs_loop())
             .field("spi_fmem_clk_diff_en", &self.spi_fmem_clk_diff_en())
             .field("spi_fmem_dqs_ca_in", &self.spi_fmem_dqs_ca_in())
-            .field(
-                "spi_fmem_hyperbus_dummy_2x",
-                &self.spi_fmem_hyperbus_dummy_2x(),
-            )
+            .field("spi_fmem_hyperbus_dummy_2x", &self.spi_fmem_hyperbus_dummy_2x())
             .field("spi_fmem_clk_diff_inv", &self.spi_fmem_clk_diff_inv())
             .field("spi_fmem_octa_ram_addr", &self.spi_fmem_octa_ram_addr())
             .field("spi_fmem_hyperbus_ca", &self.spi_fmem_hyperbus_ca())

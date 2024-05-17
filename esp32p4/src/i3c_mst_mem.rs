@@ -530,7 +530,9 @@ pub mod dev_addr_table9_loc;
 You can [`read`](crate::generic::Reg::read) this register and get [`dev_addr_table10_loc::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`dev_addr_table10_loc::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dev_addr_table10_loc`] module*/
-pub type DEV_ADDR_TABLE10_LOC = crate::Reg<dev_addr_table10_loc::DEV_ADDR_TABLE10_LOC_SPEC>;
+pub type DEV_ADDR_TABLE10_LOC = crate::Reg<
+    dev_addr_table10_loc::DEV_ADDR_TABLE10_LOC_SPEC,
+>;
 ///NA
 pub mod dev_addr_table10_loc;
 /**DEV_ADDR_TABLE11_LOC (rw) register accessor: NA
@@ -538,7 +540,9 @@ pub mod dev_addr_table10_loc;
 You can [`read`](crate::generic::Reg::read) this register and get [`dev_addr_table11_loc::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`dev_addr_table11_loc::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dev_addr_table11_loc`] module*/
-pub type DEV_ADDR_TABLE11_LOC = crate::Reg<dev_addr_table11_loc::DEV_ADDR_TABLE11_LOC_SPEC>;
+pub type DEV_ADDR_TABLE11_LOC = crate::Reg<
+    dev_addr_table11_loc::DEV_ADDR_TABLE11_LOC_SPEC,
+>;
 ///NA
 pub mod dev_addr_table11_loc;
 /**DEV_ADDR_TABLE12_LOC (rw) register accessor: NA
@@ -546,7 +550,9 @@ pub mod dev_addr_table11_loc;
 You can [`read`](crate::generic::Reg::read) this register and get [`dev_addr_table12_loc::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`dev_addr_table12_loc::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dev_addr_table12_loc`] module*/
-pub type DEV_ADDR_TABLE12_LOC = crate::Reg<dev_addr_table12_loc::DEV_ADDR_TABLE12_LOC_SPEC>;
+pub type DEV_ADDR_TABLE12_LOC = crate::Reg<
+    dev_addr_table12_loc::DEV_ADDR_TABLE12_LOC_SPEC,
+>;
 ///NA
 pub mod dev_addr_table12_loc;
 /**DEV_CHAR_TABLE1_LOC1 (r) register accessor: NA
@@ -554,7 +560,9 @@ pub mod dev_addr_table12_loc;
 You can [`read`](crate::generic::Reg::read) this register and get [`dev_char_table1_loc1::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dev_char_table1_loc1`] module*/
-pub type DEV_CHAR_TABLE1_LOC1 = crate::Reg<dev_char_table1_loc1::DEV_CHAR_TABLE1_LOC1_SPEC>;
+pub type DEV_CHAR_TABLE1_LOC1 = crate::Reg<
+    dev_char_table1_loc1::DEV_CHAR_TABLE1_LOC1_SPEC,
+>;
 ///NA
 pub mod dev_char_table1_loc1;
 /**DEV_CHAR_TABLE1_LOC2 (r) register accessor: NA
@@ -562,7 +570,9 @@ pub mod dev_char_table1_loc1;
 You can [`read`](crate::generic::Reg::read) this register and get [`dev_char_table1_loc2::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dev_char_table1_loc2`] module*/
-pub type DEV_CHAR_TABLE1_LOC2 = crate::Reg<dev_char_table1_loc2::DEV_CHAR_TABLE1_LOC2_SPEC>;
+pub type DEV_CHAR_TABLE1_LOC2 = crate::Reg<
+    dev_char_table1_loc2::DEV_CHAR_TABLE1_LOC2_SPEC,
+>;
 ///NA
 pub mod dev_char_table1_loc2;
 /**DEV_CHAR_TABLE1_LOC3 (r) register accessor: NA
@@ -570,7 +580,9 @@ pub mod dev_char_table1_loc2;
 You can [`read`](crate::generic::Reg::read) this register and get [`dev_char_table1_loc3::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dev_char_table1_loc3`] module*/
-pub type DEV_CHAR_TABLE1_LOC3 = crate::Reg<dev_char_table1_loc3::DEV_CHAR_TABLE1_LOC3_SPEC>;
+pub type DEV_CHAR_TABLE1_LOC3 = crate::Reg<
+    dev_char_table1_loc3::DEV_CHAR_TABLE1_LOC3_SPEC,
+>;
 ///NA
 pub mod dev_char_table1_loc3;
 /**DEV_CHAR_TABLE1_LOC4 (r) register accessor: NA
@@ -578,7 +590,9 @@ pub mod dev_char_table1_loc3;
 You can [`read`](crate::generic::Reg::read) this register and get [`dev_char_table1_loc4::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dev_char_table1_loc4`] module*/
-pub type DEV_CHAR_TABLE1_LOC4 = crate::Reg<dev_char_table1_loc4::DEV_CHAR_TABLE1_LOC4_SPEC>;
+pub type DEV_CHAR_TABLE1_LOC4 = crate::Reg<
+    dev_char_table1_loc4::DEV_CHAR_TABLE1_LOC4_SPEC,
+>;
 ///NA
 pub mod dev_char_table1_loc4;
 /**DEV_CHAR_TABLE2_LOC1 (r) register accessor: NA
@@ -586,7 +600,9 @@ pub mod dev_char_table1_loc4;
 You can [`read`](crate::generic::Reg::read) this register and get [`dev_char_table2_loc1::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dev_char_table2_loc1`] module*/
-pub type DEV_CHAR_TABLE2_LOC1 = crate::Reg<dev_char_table2_loc1::DEV_CHAR_TABLE2_LOC1_SPEC>;
+pub type DEV_CHAR_TABLE2_LOC1 = crate::Reg<
+    dev_char_table2_loc1::DEV_CHAR_TABLE2_LOC1_SPEC,
+>;
 ///NA
 pub mod dev_char_table2_loc1;
 /**DEV_CHAR_TABLE2_LOC2 (r) register accessor: NA
@@ -594,7 +610,9 @@ pub mod dev_char_table2_loc1;
 You can [`read`](crate::generic::Reg::read) this register and get [`dev_char_table2_loc2::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dev_char_table2_loc2`] module*/
-pub type DEV_CHAR_TABLE2_LOC2 = crate::Reg<dev_char_table2_loc2::DEV_CHAR_TABLE2_LOC2_SPEC>;
+pub type DEV_CHAR_TABLE2_LOC2 = crate::Reg<
+    dev_char_table2_loc2::DEV_CHAR_TABLE2_LOC2_SPEC,
+>;
 ///NA
 pub mod dev_char_table2_loc2;
 /**DEV_CHAR_TABLE2_LOC3 (r) register accessor: NA
@@ -602,7 +620,9 @@ pub mod dev_char_table2_loc2;
 You can [`read`](crate::generic::Reg::read) this register and get [`dev_char_table2_loc3::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dev_char_table2_loc3`] module*/
-pub type DEV_CHAR_TABLE2_LOC3 = crate::Reg<dev_char_table2_loc3::DEV_CHAR_TABLE2_LOC3_SPEC>;
+pub type DEV_CHAR_TABLE2_LOC3 = crate::Reg<
+    dev_char_table2_loc3::DEV_CHAR_TABLE2_LOC3_SPEC,
+>;
 ///NA
 pub mod dev_char_table2_loc3;
 /**DEV_CHAR_TABLE2_LOC4 (r) register accessor: NA
@@ -610,7 +630,9 @@ pub mod dev_char_table2_loc3;
 You can [`read`](crate::generic::Reg::read) this register and get [`dev_char_table2_loc4::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dev_char_table2_loc4`] module*/
-pub type DEV_CHAR_TABLE2_LOC4 = crate::Reg<dev_char_table2_loc4::DEV_CHAR_TABLE2_LOC4_SPEC>;
+pub type DEV_CHAR_TABLE2_LOC4 = crate::Reg<
+    dev_char_table2_loc4::DEV_CHAR_TABLE2_LOC4_SPEC,
+>;
 ///NA
 pub mod dev_char_table2_loc4;
 /**DEV_CHAR_TABLE3_LOC1 (r) register accessor: NA
@@ -618,7 +640,9 @@ pub mod dev_char_table2_loc4;
 You can [`read`](crate::generic::Reg::read) this register and get [`dev_char_table3_loc1::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dev_char_table3_loc1`] module*/
-pub type DEV_CHAR_TABLE3_LOC1 = crate::Reg<dev_char_table3_loc1::DEV_CHAR_TABLE3_LOC1_SPEC>;
+pub type DEV_CHAR_TABLE3_LOC1 = crate::Reg<
+    dev_char_table3_loc1::DEV_CHAR_TABLE3_LOC1_SPEC,
+>;
 ///NA
 pub mod dev_char_table3_loc1;
 /**DEV_CHAR_TABLE3_LOC2 (r) register accessor: NA
@@ -626,7 +650,9 @@ pub mod dev_char_table3_loc1;
 You can [`read`](crate::generic::Reg::read) this register and get [`dev_char_table3_loc2::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dev_char_table3_loc2`] module*/
-pub type DEV_CHAR_TABLE3_LOC2 = crate::Reg<dev_char_table3_loc2::DEV_CHAR_TABLE3_LOC2_SPEC>;
+pub type DEV_CHAR_TABLE3_LOC2 = crate::Reg<
+    dev_char_table3_loc2::DEV_CHAR_TABLE3_LOC2_SPEC,
+>;
 ///NA
 pub mod dev_char_table3_loc2;
 /**DEV_CHAR_TABLE3_LOC3 (r) register accessor: NA
@@ -634,7 +660,9 @@ pub mod dev_char_table3_loc2;
 You can [`read`](crate::generic::Reg::read) this register and get [`dev_char_table3_loc3::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dev_char_table3_loc3`] module*/
-pub type DEV_CHAR_TABLE3_LOC3 = crate::Reg<dev_char_table3_loc3::DEV_CHAR_TABLE3_LOC3_SPEC>;
+pub type DEV_CHAR_TABLE3_LOC3 = crate::Reg<
+    dev_char_table3_loc3::DEV_CHAR_TABLE3_LOC3_SPEC,
+>;
 ///NA
 pub mod dev_char_table3_loc3;
 /**DEV_CHAR_TABLE3_LOC4 (r) register accessor: NA
@@ -642,7 +670,9 @@ pub mod dev_char_table3_loc3;
 You can [`read`](crate::generic::Reg::read) this register and get [`dev_char_table3_loc4::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dev_char_table3_loc4`] module*/
-pub type DEV_CHAR_TABLE3_LOC4 = crate::Reg<dev_char_table3_loc4::DEV_CHAR_TABLE3_LOC4_SPEC>;
+pub type DEV_CHAR_TABLE3_LOC4 = crate::Reg<
+    dev_char_table3_loc4::DEV_CHAR_TABLE3_LOC4_SPEC,
+>;
 ///NA
 pub mod dev_char_table3_loc4;
 /**DEV_CHAR_TABLE4_LOC1 (r) register accessor: NA
@@ -650,7 +680,9 @@ pub mod dev_char_table3_loc4;
 You can [`read`](crate::generic::Reg::read) this register and get [`dev_char_table4_loc1::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dev_char_table4_loc1`] module*/
-pub type DEV_CHAR_TABLE4_LOC1 = crate::Reg<dev_char_table4_loc1::DEV_CHAR_TABLE4_LOC1_SPEC>;
+pub type DEV_CHAR_TABLE4_LOC1 = crate::Reg<
+    dev_char_table4_loc1::DEV_CHAR_TABLE4_LOC1_SPEC,
+>;
 ///NA
 pub mod dev_char_table4_loc1;
 /**DEV_CHAR_TABLE4_LOC2 (r) register accessor: NA
@@ -658,7 +690,9 @@ pub mod dev_char_table4_loc1;
 You can [`read`](crate::generic::Reg::read) this register and get [`dev_char_table4_loc2::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dev_char_table4_loc2`] module*/
-pub type DEV_CHAR_TABLE4_LOC2 = crate::Reg<dev_char_table4_loc2::DEV_CHAR_TABLE4_LOC2_SPEC>;
+pub type DEV_CHAR_TABLE4_LOC2 = crate::Reg<
+    dev_char_table4_loc2::DEV_CHAR_TABLE4_LOC2_SPEC,
+>;
 ///NA
 pub mod dev_char_table4_loc2;
 /**DEV_CHAR_TABLE4_LOC3 (r) register accessor: NA
@@ -666,7 +700,9 @@ pub mod dev_char_table4_loc2;
 You can [`read`](crate::generic::Reg::read) this register and get [`dev_char_table4_loc3::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dev_char_table4_loc3`] module*/
-pub type DEV_CHAR_TABLE4_LOC3 = crate::Reg<dev_char_table4_loc3::DEV_CHAR_TABLE4_LOC3_SPEC>;
+pub type DEV_CHAR_TABLE4_LOC3 = crate::Reg<
+    dev_char_table4_loc3::DEV_CHAR_TABLE4_LOC3_SPEC,
+>;
 ///NA
 pub mod dev_char_table4_loc3;
 /**DEV_CHAR_TABLE4_LOC4 (r) register accessor: NA
@@ -674,7 +710,9 @@ pub mod dev_char_table4_loc3;
 You can [`read`](crate::generic::Reg::read) this register and get [`dev_char_table4_loc4::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dev_char_table4_loc4`] module*/
-pub type DEV_CHAR_TABLE4_LOC4 = crate::Reg<dev_char_table4_loc4::DEV_CHAR_TABLE4_LOC4_SPEC>;
+pub type DEV_CHAR_TABLE4_LOC4 = crate::Reg<
+    dev_char_table4_loc4::DEV_CHAR_TABLE4_LOC4_SPEC,
+>;
 ///NA
 pub mod dev_char_table4_loc4;
 /**DEV_CHAR_TABLE5_LOC1 (r) register accessor: NA
@@ -682,7 +720,9 @@ pub mod dev_char_table4_loc4;
 You can [`read`](crate::generic::Reg::read) this register and get [`dev_char_table5_loc1::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dev_char_table5_loc1`] module*/
-pub type DEV_CHAR_TABLE5_LOC1 = crate::Reg<dev_char_table5_loc1::DEV_CHAR_TABLE5_LOC1_SPEC>;
+pub type DEV_CHAR_TABLE5_LOC1 = crate::Reg<
+    dev_char_table5_loc1::DEV_CHAR_TABLE5_LOC1_SPEC,
+>;
 ///NA
 pub mod dev_char_table5_loc1;
 /**DEV_CHAR_TABLE5_LOC2 (r) register accessor: NA
@@ -690,7 +730,9 @@ pub mod dev_char_table5_loc1;
 You can [`read`](crate::generic::Reg::read) this register and get [`dev_char_table5_loc2::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dev_char_table5_loc2`] module*/
-pub type DEV_CHAR_TABLE5_LOC2 = crate::Reg<dev_char_table5_loc2::DEV_CHAR_TABLE5_LOC2_SPEC>;
+pub type DEV_CHAR_TABLE5_LOC2 = crate::Reg<
+    dev_char_table5_loc2::DEV_CHAR_TABLE5_LOC2_SPEC,
+>;
 ///NA
 pub mod dev_char_table5_loc2;
 /**DEV_CHAR_TABLE5_LOC3 (r) register accessor: NA
@@ -698,7 +740,9 @@ pub mod dev_char_table5_loc2;
 You can [`read`](crate::generic::Reg::read) this register and get [`dev_char_table5_loc3::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dev_char_table5_loc3`] module*/
-pub type DEV_CHAR_TABLE5_LOC3 = crate::Reg<dev_char_table5_loc3::DEV_CHAR_TABLE5_LOC3_SPEC>;
+pub type DEV_CHAR_TABLE5_LOC3 = crate::Reg<
+    dev_char_table5_loc3::DEV_CHAR_TABLE5_LOC3_SPEC,
+>;
 ///NA
 pub mod dev_char_table5_loc3;
 /**DEV_CHAR_TABLE5_LOC4 (r) register accessor: NA
@@ -706,7 +750,9 @@ pub mod dev_char_table5_loc3;
 You can [`read`](crate::generic::Reg::read) this register and get [`dev_char_table5_loc4::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dev_char_table5_loc4`] module*/
-pub type DEV_CHAR_TABLE5_LOC4 = crate::Reg<dev_char_table5_loc4::DEV_CHAR_TABLE5_LOC4_SPEC>;
+pub type DEV_CHAR_TABLE5_LOC4 = crate::Reg<
+    dev_char_table5_loc4::DEV_CHAR_TABLE5_LOC4_SPEC,
+>;
 ///NA
 pub mod dev_char_table5_loc4;
 /**DEV_CHAR_TABLE6_LOC1 (r) register accessor: NA
@@ -714,7 +760,9 @@ pub mod dev_char_table5_loc4;
 You can [`read`](crate::generic::Reg::read) this register and get [`dev_char_table6_loc1::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dev_char_table6_loc1`] module*/
-pub type DEV_CHAR_TABLE6_LOC1 = crate::Reg<dev_char_table6_loc1::DEV_CHAR_TABLE6_LOC1_SPEC>;
+pub type DEV_CHAR_TABLE6_LOC1 = crate::Reg<
+    dev_char_table6_loc1::DEV_CHAR_TABLE6_LOC1_SPEC,
+>;
 ///NA
 pub mod dev_char_table6_loc1;
 /**DEV_CHAR_TABLE6_LOC2 (r) register accessor: NA
@@ -722,7 +770,9 @@ pub mod dev_char_table6_loc1;
 You can [`read`](crate::generic::Reg::read) this register and get [`dev_char_table6_loc2::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dev_char_table6_loc2`] module*/
-pub type DEV_CHAR_TABLE6_LOC2 = crate::Reg<dev_char_table6_loc2::DEV_CHAR_TABLE6_LOC2_SPEC>;
+pub type DEV_CHAR_TABLE6_LOC2 = crate::Reg<
+    dev_char_table6_loc2::DEV_CHAR_TABLE6_LOC2_SPEC,
+>;
 ///NA
 pub mod dev_char_table6_loc2;
 /**DEV_CHAR_TABLE6_LOC3 (r) register accessor: NA
@@ -730,7 +780,9 @@ pub mod dev_char_table6_loc2;
 You can [`read`](crate::generic::Reg::read) this register and get [`dev_char_table6_loc3::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dev_char_table6_loc3`] module*/
-pub type DEV_CHAR_TABLE6_LOC3 = crate::Reg<dev_char_table6_loc3::DEV_CHAR_TABLE6_LOC3_SPEC>;
+pub type DEV_CHAR_TABLE6_LOC3 = crate::Reg<
+    dev_char_table6_loc3::DEV_CHAR_TABLE6_LOC3_SPEC,
+>;
 ///NA
 pub mod dev_char_table6_loc3;
 /**DEV_CHAR_TABLE6_LOC4 (r) register accessor: NA
@@ -738,7 +790,9 @@ pub mod dev_char_table6_loc3;
 You can [`read`](crate::generic::Reg::read) this register and get [`dev_char_table6_loc4::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dev_char_table6_loc4`] module*/
-pub type DEV_CHAR_TABLE6_LOC4 = crate::Reg<dev_char_table6_loc4::DEV_CHAR_TABLE6_LOC4_SPEC>;
+pub type DEV_CHAR_TABLE6_LOC4 = crate::Reg<
+    dev_char_table6_loc4::DEV_CHAR_TABLE6_LOC4_SPEC,
+>;
 ///NA
 pub mod dev_char_table6_loc4;
 /**DEV_CHAR_TABLE7_LOC1 (r) register accessor: NA
@@ -746,7 +800,9 @@ pub mod dev_char_table6_loc4;
 You can [`read`](crate::generic::Reg::read) this register and get [`dev_char_table7_loc1::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dev_char_table7_loc1`] module*/
-pub type DEV_CHAR_TABLE7_LOC1 = crate::Reg<dev_char_table7_loc1::DEV_CHAR_TABLE7_LOC1_SPEC>;
+pub type DEV_CHAR_TABLE7_LOC1 = crate::Reg<
+    dev_char_table7_loc1::DEV_CHAR_TABLE7_LOC1_SPEC,
+>;
 ///NA
 pub mod dev_char_table7_loc1;
 /**DEV_CHAR_TABLE7_LOC2 (r) register accessor: NA
@@ -754,7 +810,9 @@ pub mod dev_char_table7_loc1;
 You can [`read`](crate::generic::Reg::read) this register and get [`dev_char_table7_loc2::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dev_char_table7_loc2`] module*/
-pub type DEV_CHAR_TABLE7_LOC2 = crate::Reg<dev_char_table7_loc2::DEV_CHAR_TABLE7_LOC2_SPEC>;
+pub type DEV_CHAR_TABLE7_LOC2 = crate::Reg<
+    dev_char_table7_loc2::DEV_CHAR_TABLE7_LOC2_SPEC,
+>;
 ///NA
 pub mod dev_char_table7_loc2;
 /**DEV_CHAR_TABLE7_LOC3 (r) register accessor: NA
@@ -762,7 +820,9 @@ pub mod dev_char_table7_loc2;
 You can [`read`](crate::generic::Reg::read) this register and get [`dev_char_table7_loc3::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dev_char_table7_loc3`] module*/
-pub type DEV_CHAR_TABLE7_LOC3 = crate::Reg<dev_char_table7_loc3::DEV_CHAR_TABLE7_LOC3_SPEC>;
+pub type DEV_CHAR_TABLE7_LOC3 = crate::Reg<
+    dev_char_table7_loc3::DEV_CHAR_TABLE7_LOC3_SPEC,
+>;
 ///NA
 pub mod dev_char_table7_loc3;
 /**DEV_CHAR_TABLE7_LOC4 (r) register accessor: NA
@@ -770,7 +830,9 @@ pub mod dev_char_table7_loc3;
 You can [`read`](crate::generic::Reg::read) this register and get [`dev_char_table7_loc4::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dev_char_table7_loc4`] module*/
-pub type DEV_CHAR_TABLE7_LOC4 = crate::Reg<dev_char_table7_loc4::DEV_CHAR_TABLE7_LOC4_SPEC>;
+pub type DEV_CHAR_TABLE7_LOC4 = crate::Reg<
+    dev_char_table7_loc4::DEV_CHAR_TABLE7_LOC4_SPEC,
+>;
 ///NA
 pub mod dev_char_table7_loc4;
 /**DEV_CHAR_TABLE8_LOC1 (r) register accessor: NA
@@ -778,7 +840,9 @@ pub mod dev_char_table7_loc4;
 You can [`read`](crate::generic::Reg::read) this register and get [`dev_char_table8_loc1::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dev_char_table8_loc1`] module*/
-pub type DEV_CHAR_TABLE8_LOC1 = crate::Reg<dev_char_table8_loc1::DEV_CHAR_TABLE8_LOC1_SPEC>;
+pub type DEV_CHAR_TABLE8_LOC1 = crate::Reg<
+    dev_char_table8_loc1::DEV_CHAR_TABLE8_LOC1_SPEC,
+>;
 ///NA
 pub mod dev_char_table8_loc1;
 /**DEV_CHAR_TABLE8_LOC2 (r) register accessor: NA
@@ -786,7 +850,9 @@ pub mod dev_char_table8_loc1;
 You can [`read`](crate::generic::Reg::read) this register and get [`dev_char_table8_loc2::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dev_char_table8_loc2`] module*/
-pub type DEV_CHAR_TABLE8_LOC2 = crate::Reg<dev_char_table8_loc2::DEV_CHAR_TABLE8_LOC2_SPEC>;
+pub type DEV_CHAR_TABLE8_LOC2 = crate::Reg<
+    dev_char_table8_loc2::DEV_CHAR_TABLE8_LOC2_SPEC,
+>;
 ///NA
 pub mod dev_char_table8_loc2;
 /**DEV_CHAR_TABLE8_LOC3 (r) register accessor: NA
@@ -794,7 +860,9 @@ pub mod dev_char_table8_loc2;
 You can [`read`](crate::generic::Reg::read) this register and get [`dev_char_table8_loc3::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dev_char_table8_loc3`] module*/
-pub type DEV_CHAR_TABLE8_LOC3 = crate::Reg<dev_char_table8_loc3::DEV_CHAR_TABLE8_LOC3_SPEC>;
+pub type DEV_CHAR_TABLE8_LOC3 = crate::Reg<
+    dev_char_table8_loc3::DEV_CHAR_TABLE8_LOC3_SPEC,
+>;
 ///NA
 pub mod dev_char_table8_loc3;
 /**DEV_CHAR_TABLE8_LOC4 (r) register accessor: NA
@@ -802,7 +870,9 @@ pub mod dev_char_table8_loc3;
 You can [`read`](crate::generic::Reg::read) this register and get [`dev_char_table8_loc4::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dev_char_table8_loc4`] module*/
-pub type DEV_CHAR_TABLE8_LOC4 = crate::Reg<dev_char_table8_loc4::DEV_CHAR_TABLE8_LOC4_SPEC>;
+pub type DEV_CHAR_TABLE8_LOC4 = crate::Reg<
+    dev_char_table8_loc4::DEV_CHAR_TABLE8_LOC4_SPEC,
+>;
 ///NA
 pub mod dev_char_table8_loc4;
 /**DEV_CHAR_TABLE9_LOC1 (r) register accessor: NA
@@ -810,7 +880,9 @@ pub mod dev_char_table8_loc4;
 You can [`read`](crate::generic::Reg::read) this register and get [`dev_char_table9_loc1::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dev_char_table9_loc1`] module*/
-pub type DEV_CHAR_TABLE9_LOC1 = crate::Reg<dev_char_table9_loc1::DEV_CHAR_TABLE9_LOC1_SPEC>;
+pub type DEV_CHAR_TABLE9_LOC1 = crate::Reg<
+    dev_char_table9_loc1::DEV_CHAR_TABLE9_LOC1_SPEC,
+>;
 ///NA
 pub mod dev_char_table9_loc1;
 /**DEV_CHAR_TABLE9_LOC2 (r) register accessor: NA
@@ -818,7 +890,9 @@ pub mod dev_char_table9_loc1;
 You can [`read`](crate::generic::Reg::read) this register and get [`dev_char_table9_loc2::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dev_char_table9_loc2`] module*/
-pub type DEV_CHAR_TABLE9_LOC2 = crate::Reg<dev_char_table9_loc2::DEV_CHAR_TABLE9_LOC2_SPEC>;
+pub type DEV_CHAR_TABLE9_LOC2 = crate::Reg<
+    dev_char_table9_loc2::DEV_CHAR_TABLE9_LOC2_SPEC,
+>;
 ///NA
 pub mod dev_char_table9_loc2;
 /**DEV_CHAR_TABLE9_LOC3 (r) register accessor: NA
@@ -826,7 +900,9 @@ pub mod dev_char_table9_loc2;
 You can [`read`](crate::generic::Reg::read) this register and get [`dev_char_table9_loc3::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dev_char_table9_loc3`] module*/
-pub type DEV_CHAR_TABLE9_LOC3 = crate::Reg<dev_char_table9_loc3::DEV_CHAR_TABLE9_LOC3_SPEC>;
+pub type DEV_CHAR_TABLE9_LOC3 = crate::Reg<
+    dev_char_table9_loc3::DEV_CHAR_TABLE9_LOC3_SPEC,
+>;
 ///NA
 pub mod dev_char_table9_loc3;
 /**DEV_CHAR_TABLE9_LOC4 (r) register accessor: NA
@@ -834,7 +910,9 @@ pub mod dev_char_table9_loc3;
 You can [`read`](crate::generic::Reg::read) this register and get [`dev_char_table9_loc4::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dev_char_table9_loc4`] module*/
-pub type DEV_CHAR_TABLE9_LOC4 = crate::Reg<dev_char_table9_loc4::DEV_CHAR_TABLE9_LOC4_SPEC>;
+pub type DEV_CHAR_TABLE9_LOC4 = crate::Reg<
+    dev_char_table9_loc4::DEV_CHAR_TABLE9_LOC4_SPEC,
+>;
 ///NA
 pub mod dev_char_table9_loc4;
 /**DEV_CHAR_TABLE10_LOC1 (r) register accessor: NA
@@ -842,7 +920,9 @@ pub mod dev_char_table9_loc4;
 You can [`read`](crate::generic::Reg::read) this register and get [`dev_char_table10_loc1::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dev_char_table10_loc1`] module*/
-pub type DEV_CHAR_TABLE10_LOC1 = crate::Reg<dev_char_table10_loc1::DEV_CHAR_TABLE10_LOC1_SPEC>;
+pub type DEV_CHAR_TABLE10_LOC1 = crate::Reg<
+    dev_char_table10_loc1::DEV_CHAR_TABLE10_LOC1_SPEC,
+>;
 ///NA
 pub mod dev_char_table10_loc1;
 /**DEV_CHAR_TABLE10_LOC2 (r) register accessor: NA
@@ -850,7 +930,9 @@ pub mod dev_char_table10_loc1;
 You can [`read`](crate::generic::Reg::read) this register and get [`dev_char_table10_loc2::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dev_char_table10_loc2`] module*/
-pub type DEV_CHAR_TABLE10_LOC2 = crate::Reg<dev_char_table10_loc2::DEV_CHAR_TABLE10_LOC2_SPEC>;
+pub type DEV_CHAR_TABLE10_LOC2 = crate::Reg<
+    dev_char_table10_loc2::DEV_CHAR_TABLE10_LOC2_SPEC,
+>;
 ///NA
 pub mod dev_char_table10_loc2;
 /**DEV_CHAR_TABLE10_LOC3 (r) register accessor: NA
@@ -858,7 +940,9 @@ pub mod dev_char_table10_loc2;
 You can [`read`](crate::generic::Reg::read) this register and get [`dev_char_table10_loc3::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dev_char_table10_loc3`] module*/
-pub type DEV_CHAR_TABLE10_LOC3 = crate::Reg<dev_char_table10_loc3::DEV_CHAR_TABLE10_LOC3_SPEC>;
+pub type DEV_CHAR_TABLE10_LOC3 = crate::Reg<
+    dev_char_table10_loc3::DEV_CHAR_TABLE10_LOC3_SPEC,
+>;
 ///NA
 pub mod dev_char_table10_loc3;
 /**DEV_CHAR_TABLE10_LOC4 (r) register accessor: NA
@@ -866,7 +950,9 @@ pub mod dev_char_table10_loc3;
 You can [`read`](crate::generic::Reg::read) this register and get [`dev_char_table10_loc4::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dev_char_table10_loc4`] module*/
-pub type DEV_CHAR_TABLE10_LOC4 = crate::Reg<dev_char_table10_loc4::DEV_CHAR_TABLE10_LOC4_SPEC>;
+pub type DEV_CHAR_TABLE10_LOC4 = crate::Reg<
+    dev_char_table10_loc4::DEV_CHAR_TABLE10_LOC4_SPEC,
+>;
 ///NA
 pub mod dev_char_table10_loc4;
 /**DEV_CHAR_TABLE11_LOC1 (r) register accessor: NA
@@ -874,7 +960,9 @@ pub mod dev_char_table10_loc4;
 You can [`read`](crate::generic::Reg::read) this register and get [`dev_char_table11_loc1::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dev_char_table11_loc1`] module*/
-pub type DEV_CHAR_TABLE11_LOC1 = crate::Reg<dev_char_table11_loc1::DEV_CHAR_TABLE11_LOC1_SPEC>;
+pub type DEV_CHAR_TABLE11_LOC1 = crate::Reg<
+    dev_char_table11_loc1::DEV_CHAR_TABLE11_LOC1_SPEC,
+>;
 ///NA
 pub mod dev_char_table11_loc1;
 /**DEV_CHAR_TABLE11_LOC2 (r) register accessor: NA
@@ -882,7 +970,9 @@ pub mod dev_char_table11_loc1;
 You can [`read`](crate::generic::Reg::read) this register and get [`dev_char_table11_loc2::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dev_char_table11_loc2`] module*/
-pub type DEV_CHAR_TABLE11_LOC2 = crate::Reg<dev_char_table11_loc2::DEV_CHAR_TABLE11_LOC2_SPEC>;
+pub type DEV_CHAR_TABLE11_LOC2 = crate::Reg<
+    dev_char_table11_loc2::DEV_CHAR_TABLE11_LOC2_SPEC,
+>;
 ///NA
 pub mod dev_char_table11_loc2;
 /**DEV_CHAR_TABLE11_LOC3 (r) register accessor: NA
@@ -890,7 +980,9 @@ pub mod dev_char_table11_loc2;
 You can [`read`](crate::generic::Reg::read) this register and get [`dev_char_table11_loc3::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dev_char_table11_loc3`] module*/
-pub type DEV_CHAR_TABLE11_LOC3 = crate::Reg<dev_char_table11_loc3::DEV_CHAR_TABLE11_LOC3_SPEC>;
+pub type DEV_CHAR_TABLE11_LOC3 = crate::Reg<
+    dev_char_table11_loc3::DEV_CHAR_TABLE11_LOC3_SPEC,
+>;
 ///NA
 pub mod dev_char_table11_loc3;
 /**DEV_CHAR_TABLE11_LOC4 (r) register accessor: NA
@@ -898,7 +990,9 @@ pub mod dev_char_table11_loc3;
 You can [`read`](crate::generic::Reg::read) this register and get [`dev_char_table11_loc4::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dev_char_table11_loc4`] module*/
-pub type DEV_CHAR_TABLE11_LOC4 = crate::Reg<dev_char_table11_loc4::DEV_CHAR_TABLE11_LOC4_SPEC>;
+pub type DEV_CHAR_TABLE11_LOC4 = crate::Reg<
+    dev_char_table11_loc4::DEV_CHAR_TABLE11_LOC4_SPEC,
+>;
 ///NA
 pub mod dev_char_table11_loc4;
 /**DEV_CHAR_TABLE12_LOC1 (r) register accessor: NA
@@ -906,7 +1000,9 @@ pub mod dev_char_table11_loc4;
 You can [`read`](crate::generic::Reg::read) this register and get [`dev_char_table12_loc1::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dev_char_table12_loc1`] module*/
-pub type DEV_CHAR_TABLE12_LOC1 = crate::Reg<dev_char_table12_loc1::DEV_CHAR_TABLE12_LOC1_SPEC>;
+pub type DEV_CHAR_TABLE12_LOC1 = crate::Reg<
+    dev_char_table12_loc1::DEV_CHAR_TABLE12_LOC1_SPEC,
+>;
 ///NA
 pub mod dev_char_table12_loc1;
 /**DEV_CHAR_TABLE12_LOC2 (r) register accessor: NA
@@ -914,7 +1010,9 @@ pub mod dev_char_table12_loc1;
 You can [`read`](crate::generic::Reg::read) this register and get [`dev_char_table12_loc2::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dev_char_table12_loc2`] module*/
-pub type DEV_CHAR_TABLE12_LOC2 = crate::Reg<dev_char_table12_loc2::DEV_CHAR_TABLE12_LOC2_SPEC>;
+pub type DEV_CHAR_TABLE12_LOC2 = crate::Reg<
+    dev_char_table12_loc2::DEV_CHAR_TABLE12_LOC2_SPEC,
+>;
 ///NA
 pub mod dev_char_table12_loc2;
 /**DEV_CHAR_TABLE12_LOC3 (r) register accessor: NA
@@ -922,7 +1020,9 @@ pub mod dev_char_table12_loc2;
 You can [`read`](crate::generic::Reg::read) this register and get [`dev_char_table12_loc3::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dev_char_table12_loc3`] module*/
-pub type DEV_CHAR_TABLE12_LOC3 = crate::Reg<dev_char_table12_loc3::DEV_CHAR_TABLE12_LOC3_SPEC>;
+pub type DEV_CHAR_TABLE12_LOC3 = crate::Reg<
+    dev_char_table12_loc3::DEV_CHAR_TABLE12_LOC3_SPEC,
+>;
 ///NA
 pub mod dev_char_table12_loc3;
 /**DEV_CHAR_TABLE12_LOC4 (r) register accessor: NA
@@ -930,6 +1030,8 @@ pub mod dev_char_table12_loc3;
 You can [`read`](crate::generic::Reg::read) this register and get [`dev_char_table12_loc4::R`].  See [API](https://docs.rs/svd2rust/#read--modify--write-api).
 
 For information about available fields see [`mod@dev_char_table12_loc4`] module*/
-pub type DEV_CHAR_TABLE12_LOC4 = crate::Reg<dev_char_table12_loc4::DEV_CHAR_TABLE12_LOC4_SPEC>;
+pub type DEV_CHAR_TABLE12_LOC4 = crate::Reg<
+    dev_char_table12_loc4::DEV_CHAR_TABLE12_LOC4_SPEC,
+>;
 ///NA
 pub mod dev_char_table12_loc4;

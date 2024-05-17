@@ -1,7 +1,12 @@
 ///Register `JTAG_CTRL_7` writer
 pub type W = crate::W<JTAG_CTRL_7_SPEC>;
 ///Field `CANCEL_EFUSE_DISABLE_JTAG_TEMPORARY_7` writer - Stores the 0 to 224 bits of the 255 bits register used to cancel the temporary disable of eFuse to JTAG.
-pub type CANCEL_EFUSE_DISABLE_JTAG_TEMPORARY_7_W<'a, REG> = crate::FieldWriter<'a, REG, 32, u32>;
+pub type CANCEL_EFUSE_DISABLE_JTAG_TEMPORARY_7_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    32,
+    u32,
+>;
 #[cfg(feature = "impl-register-debug")]
 impl core::fmt::Debug for crate::generic::Reg<JTAG_CTRL_7_SPEC> {
     fn fmt(&self, f: &mut core::fmt::Formatter<'_>) -> core::fmt::Result {

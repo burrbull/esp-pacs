@@ -53,19 +53,10 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("WIFI_LP_CLK_CONF")
-            .field(
-                "clk_wifipwr_lp_sel_osc_slow",
-                &self.clk_wifipwr_lp_sel_osc_slow(),
-            )
-            .field(
-                "clk_wifipwr_lp_sel_osc_fast",
-                &self.clk_wifipwr_lp_sel_osc_fast(),
-            )
+            .field("clk_wifipwr_lp_sel_osc_slow", &self.clk_wifipwr_lp_sel_osc_slow())
+            .field("clk_wifipwr_lp_sel_osc_fast", &self.clk_wifipwr_lp_sel_osc_fast())
             .field("clk_wifipwr_lp_sel_xtal", &self.clk_wifipwr_lp_sel_xtal())
-            .field(
-                "clk_wifipwr_lp_sel_xtal32k",
-                &self.clk_wifipwr_lp_sel_xtal32k(),
-            )
+            .field("clk_wifipwr_lp_sel_xtal32k", &self.clk_wifipwr_lp_sel_xtal32k())
             .field("clk_wifipwr_lp_div_num", &self.clk_wifipwr_lp_div_num())
             .finish()
     }
@@ -90,7 +81,9 @@ impl W {
     ///Bit 2
     #[inline(always)]
     #[must_use]
-    pub fn clk_wifipwr_lp_sel_xtal(&mut self) -> CLK_WIFIPWR_LP_SEL_XTAL_W<WIFI_LP_CLK_CONF_SPEC> {
+    pub fn clk_wifipwr_lp_sel_xtal(
+        &mut self,
+    ) -> CLK_WIFIPWR_LP_SEL_XTAL_W<WIFI_LP_CLK_CONF_SPEC> {
         CLK_WIFIPWR_LP_SEL_XTAL_W::new(self, 2)
     }
     ///Bit 3
@@ -104,7 +97,9 @@ impl W {
     ///Bits 4:15
     #[inline(always)]
     #[must_use]
-    pub fn clk_wifipwr_lp_div_num(&mut self) -> CLK_WIFIPWR_LP_DIV_NUM_W<WIFI_LP_CLK_CONF_SPEC> {
+    pub fn clk_wifipwr_lp_div_num(
+        &mut self,
+    ) -> CLK_WIFIPWR_LP_DIV_NUM_W<WIFI_LP_CLK_CONF_SPEC> {
         CLK_WIFIPWR_LP_DIV_NUM_W::new(self, 4)
     }
 }

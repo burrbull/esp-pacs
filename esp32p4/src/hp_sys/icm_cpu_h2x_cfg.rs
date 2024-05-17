@@ -34,10 +34,7 @@ impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("ICM_CPU_H2X_CFG")
             .field("cpu_icm_h2x_post_wr_en", &self.cpu_icm_h2x_post_wr_en())
-            .field(
-                "cpu_icm_h2x_cut_through_en",
-                &self.cpu_icm_h2x_cut_through_en(),
-            )
+            .field("cpu_icm_h2x_cut_through_en", &self.cpu_icm_h2x_cut_through_en())
             .field("cpu_icm_h2x_bridge_busy", &self.cpu_icm_h2x_bridge_busy())
             .finish()
     }
@@ -46,7 +43,9 @@ impl W {
     ///Bit 0 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn cpu_icm_h2x_post_wr_en(&mut self) -> CPU_ICM_H2X_POST_WR_EN_W<ICM_CPU_H2X_CFG_SPEC> {
+    pub fn cpu_icm_h2x_post_wr_en(
+        &mut self,
+    ) -> CPU_ICM_H2X_POST_WR_EN_W<ICM_CPU_H2X_CFG_SPEC> {
         CPU_ICM_H2X_POST_WR_EN_W::new(self, 0)
     }
     ///Bit 1 - need_des

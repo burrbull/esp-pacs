@@ -70,14 +70,8 @@ impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("SAR_COCPU_INT_ST")
             .field("cocpu_touch_done_int_st", &self.cocpu_touch_done_int_st())
-            .field(
-                "cocpu_touch_inactive_int_st",
-                &self.cocpu_touch_inactive_int_st(),
-            )
-            .field(
-                "cocpu_touch_active_int_st",
-                &self.cocpu_touch_active_int_st(),
-            )
+            .field("cocpu_touch_inactive_int_st", &self.cocpu_touch_inactive_int_st())
+            .field("cocpu_touch_active_int_st", &self.cocpu_touch_active_int_st())
             .field("cocpu_saradc1_int_st", &self.cocpu_saradc1_int_st())
             .field("cocpu_saradc2_int_st", &self.cocpu_saradc2_int_st())
             .field("cocpu_tsens_int_st", &self.cocpu_tsens_int_st())

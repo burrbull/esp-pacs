@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("APP_TG_LACT_LEVEL_INT_MAP")
-            .field(
-                "app_tg_lact_level_int_map",
-                &self.app_tg_lact_level_int_map(),
-            )
+            .field("app_tg_lact_level_int_map", &self.app_tg_lact_level_int_map())
             .finish()
     }
 }

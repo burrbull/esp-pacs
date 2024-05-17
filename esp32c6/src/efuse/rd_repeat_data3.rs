@@ -53,7 +53,9 @@ impl R {
     }
     ///Bit 4 - Represents whether the USB-Serial-JTAG download function is disabled or enabled. 1: disabled. 0: enabled.
     #[inline(always)]
-    pub fn dis_usb_serial_jtag_download_mode(&self) -> DIS_USB_SERIAL_JTAG_DOWNLOAD_MODE_R {
+    pub fn dis_usb_serial_jtag_download_mode(
+        &self,
+    ) -> DIS_USB_SERIAL_JTAG_DOWNLOAD_MODE_R {
         DIS_USB_SERIAL_JTAG_DOWNLOAD_MODE_R::new(((self.bits >> 4) & 1) != 0)
     }
     ///Bit 5 - Represents whether security download is enabled or disabled. 1: enabled. 0: disabled.

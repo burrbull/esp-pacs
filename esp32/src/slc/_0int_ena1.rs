@@ -263,45 +263,21 @@ impl core::fmt::Debug for R {
             .field("slc0_tx_start_int_ena1", &self.slc0_tx_start_int_ena1())
             .field("slc0_rx_udf_int_ena1", &self.slc0_rx_udf_int_ena1())
             .field("slc0_tx_ovf_int_ena1", &self.slc0_tx_ovf_int_ena1())
-            .field(
-                "slc0_token0_1to0_int_ena1",
-                &self.slc0_token0_1to0_int_ena1(),
-            )
-            .field(
-                "slc0_token1_1to0_int_ena1",
-                &self.slc0_token1_1to0_int_ena1(),
-            )
+            .field("slc0_token0_1to0_int_ena1", &self.slc0_token0_1to0_int_ena1())
+            .field("slc0_token1_1to0_int_ena1", &self.slc0_token1_1to0_int_ena1())
             .field("slc0_tx_done_int_ena1", &self.slc0_tx_done_int_ena1())
             .field("slc0_tx_suc_eof_int_ena1", &self.slc0_tx_suc_eof_int_ena1())
             .field("slc0_rx_done_int_ena1", &self.slc0_rx_done_int_ena1())
             .field("slc0_rx_eof_int_ena1", &self.slc0_rx_eof_int_ena1())
             .field("slc0_tohost_int_ena1", &self.slc0_tohost_int_ena1())
-            .field(
-                "slc0_tx_dscr_err_int_ena1",
-                &self.slc0_tx_dscr_err_int_ena1(),
-            )
-            .field(
-                "slc0_rx_dscr_err_int_ena1",
-                &self.slc0_rx_dscr_err_int_ena1(),
-            )
-            .field(
-                "slc0_tx_dscr_empty_int_ena1",
-                &self.slc0_tx_dscr_empty_int_ena1(),
-            )
-            .field(
-                "slc0_host_rd_ack_int_ena1",
-                &self.slc0_host_rd_ack_int_ena1(),
-            )
-            .field(
-                "slc0_wr_retry_done_int_ena1",
-                &self.slc0_wr_retry_done_int_ena1(),
-            )
+            .field("slc0_tx_dscr_err_int_ena1", &self.slc0_tx_dscr_err_int_ena1())
+            .field("slc0_rx_dscr_err_int_ena1", &self.slc0_rx_dscr_err_int_ena1())
+            .field("slc0_tx_dscr_empty_int_ena1", &self.slc0_tx_dscr_empty_int_ena1())
+            .field("slc0_host_rd_ack_int_ena1", &self.slc0_host_rd_ack_int_ena1())
+            .field("slc0_wr_retry_done_int_ena1", &self.slc0_wr_retry_done_int_ena1())
             .field("slc0_tx_err_eof_int_ena1", &self.slc0_tx_err_eof_int_ena1())
             .field("cmd_dtc_int_ena1", &self.cmd_dtc_int_ena1())
-            .field(
-                "slc0_rx_quick_eof_int_ena1",
-                &self.slc0_rx_quick_eof_int_ena1(),
-            )
+            .field("slc0_rx_quick_eof_int_ena1", &self.slc0_rx_quick_eof_int_ena1())
             .finish()
     }
 }
@@ -357,13 +333,17 @@ impl W {
     ///Bit 8
     #[inline(always)]
     #[must_use]
-    pub fn slc0_rx_start_int_ena1(&mut self) -> SLC0_RX_START_INT_ENA1_W<_0INT_ENA1_SPEC> {
+    pub fn slc0_rx_start_int_ena1(
+        &mut self,
+    ) -> SLC0_RX_START_INT_ENA1_W<_0INT_ENA1_SPEC> {
         SLC0_RX_START_INT_ENA1_W::new(self, 8)
     }
     ///Bit 9
     #[inline(always)]
     #[must_use]
-    pub fn slc0_tx_start_int_ena1(&mut self) -> SLC0_TX_START_INT_ENA1_W<_0INT_ENA1_SPEC> {
+    pub fn slc0_tx_start_int_ena1(
+        &mut self,
+    ) -> SLC0_TX_START_INT_ENA1_W<_0INT_ENA1_SPEC> {
         SLC0_TX_START_INT_ENA1_W::new(self, 9)
     }
     ///Bit 10
@@ -381,13 +361,17 @@ impl W {
     ///Bit 12
     #[inline(always)]
     #[must_use]
-    pub fn slc0_token0_1to0_int_ena1(&mut self) -> SLC0_TOKEN0_1TO0_INT_ENA1_W<_0INT_ENA1_SPEC> {
+    pub fn slc0_token0_1to0_int_ena1(
+        &mut self,
+    ) -> SLC0_TOKEN0_1TO0_INT_ENA1_W<_0INT_ENA1_SPEC> {
         SLC0_TOKEN0_1TO0_INT_ENA1_W::new(self, 12)
     }
     ///Bit 13
     #[inline(always)]
     #[must_use]
-    pub fn slc0_token1_1to0_int_ena1(&mut self) -> SLC0_TOKEN1_1TO0_INT_ENA1_W<_0INT_ENA1_SPEC> {
+    pub fn slc0_token1_1to0_int_ena1(
+        &mut self,
+    ) -> SLC0_TOKEN1_1TO0_INT_ENA1_W<_0INT_ENA1_SPEC> {
         SLC0_TOKEN1_1TO0_INT_ENA1_W::new(self, 13)
     }
     ///Bit 14
@@ -399,7 +383,9 @@ impl W {
     ///Bit 15
     #[inline(always)]
     #[must_use]
-    pub fn slc0_tx_suc_eof_int_ena1(&mut self) -> SLC0_TX_SUC_EOF_INT_ENA1_W<_0INT_ENA1_SPEC> {
+    pub fn slc0_tx_suc_eof_int_ena1(
+        &mut self,
+    ) -> SLC0_TX_SUC_EOF_INT_ENA1_W<_0INT_ENA1_SPEC> {
         SLC0_TX_SUC_EOF_INT_ENA1_W::new(self, 15)
     }
     ///Bit 16
@@ -423,13 +409,17 @@ impl W {
     ///Bit 19
     #[inline(always)]
     #[must_use]
-    pub fn slc0_tx_dscr_err_int_ena1(&mut self) -> SLC0_TX_DSCR_ERR_INT_ENA1_W<_0INT_ENA1_SPEC> {
+    pub fn slc0_tx_dscr_err_int_ena1(
+        &mut self,
+    ) -> SLC0_TX_DSCR_ERR_INT_ENA1_W<_0INT_ENA1_SPEC> {
         SLC0_TX_DSCR_ERR_INT_ENA1_W::new(self, 19)
     }
     ///Bit 20
     #[inline(always)]
     #[must_use]
-    pub fn slc0_rx_dscr_err_int_ena1(&mut self) -> SLC0_RX_DSCR_ERR_INT_ENA1_W<_0INT_ENA1_SPEC> {
+    pub fn slc0_rx_dscr_err_int_ena1(
+        &mut self,
+    ) -> SLC0_RX_DSCR_ERR_INT_ENA1_W<_0INT_ENA1_SPEC> {
         SLC0_RX_DSCR_ERR_INT_ENA1_W::new(self, 20)
     }
     ///Bit 21
@@ -443,7 +433,9 @@ impl W {
     ///Bit 22
     #[inline(always)]
     #[must_use]
-    pub fn slc0_host_rd_ack_int_ena1(&mut self) -> SLC0_HOST_RD_ACK_INT_ENA1_W<_0INT_ENA1_SPEC> {
+    pub fn slc0_host_rd_ack_int_ena1(
+        &mut self,
+    ) -> SLC0_HOST_RD_ACK_INT_ENA1_W<_0INT_ENA1_SPEC> {
         SLC0_HOST_RD_ACK_INT_ENA1_W::new(self, 22)
     }
     ///Bit 23
@@ -457,7 +449,9 @@ impl W {
     ///Bit 24
     #[inline(always)]
     #[must_use]
-    pub fn slc0_tx_err_eof_int_ena1(&mut self) -> SLC0_TX_ERR_EOF_INT_ENA1_W<_0INT_ENA1_SPEC> {
+    pub fn slc0_tx_err_eof_int_ena1(
+        &mut self,
+    ) -> SLC0_TX_ERR_EOF_INT_ENA1_W<_0INT_ENA1_SPEC> {
         SLC0_TX_ERR_EOF_INT_ENA1_W::new(self, 24)
     }
     ///Bit 25
@@ -469,7 +463,9 @@ impl W {
     ///Bit 26
     #[inline(always)]
     #[must_use]
-    pub fn slc0_rx_quick_eof_int_ena1(&mut self) -> SLC0_RX_QUICK_EOF_INT_ENA1_W<_0INT_ENA1_SPEC> {
+    pub fn slc0_rx_quick_eof_int_ena1(
+        &mut self,
+    ) -> SLC0_RX_QUICK_EOF_INT_ENA1_W<_0INT_ENA1_SPEC> {
         SLC0_RX_QUICK_EOF_INT_ENA1_W::new(self, 26)
     }
 }

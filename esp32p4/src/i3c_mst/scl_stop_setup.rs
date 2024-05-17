@@ -25,7 +25,9 @@ impl W {
     ///Bits 0:8 - I2C_SCL_STOP_SETUP_TIME
     #[inline(always)]
     #[must_use]
-    pub fn reg_scl_stop_setup_time(&mut self) -> REG_SCL_STOP_SETUP_TIME_W<SCL_STOP_SETUP_SPEC> {
+    pub fn reg_scl_stop_setup_time(
+        &mut self,
+    ) -> REG_SCL_STOP_SETUP_TIME_W<SCL_STOP_SETUP_SPEC> {
         REG_SCL_STOP_SETUP_TIME_W::new(self, 0)
     }
 }

@@ -9,7 +9,11 @@ pub type BACKUP_BUS_PMS_CONSTRAIN_USB_WRAP_W<'a, REG> = crate::FieldWriter<'a, R
 ///Field `BACKUP_BUS_PMS_CONSTRAIN_CRYPTO_PERI` reader - backup_bus_pms_constrain_crypto_peri
 pub type BACKUP_BUS_PMS_CONSTRAIN_CRYPTO_PERI_R = crate::FieldReader;
 ///Field `BACKUP_BUS_PMS_CONSTRAIN_CRYPTO_PERI` writer - backup_bus_pms_constrain_crypto_peri
-pub type BACKUP_BUS_PMS_CONSTRAIN_CRYPTO_PERI_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
+pub type BACKUP_BUS_PMS_CONSTRAIN_CRYPTO_PERI_W<'a, REG> = crate::FieldWriter<
+    'a,
+    REG,
+    2,
+>;
 ///Field `BACKUP_BUS_PMS_CONSTRAIN_CRYPTO_DMA` reader - backup_bus_pms_constrain_crypto_dma
 pub type BACKUP_BUS_PMS_CONSTRAIN_CRYPTO_DMA_R = crate::FieldReader;
 ///Field `BACKUP_BUS_PMS_CONSTRAIN_CRYPTO_DMA` writer - backup_bus_pms_constrain_crypto_dma
@@ -29,22 +33,30 @@ pub type BACKUP_BUS_PMS_CONSTRAIN_USB_DEVICE_W<'a, REG> = crate::FieldWriter<'a,
 impl R {
     ///Bits 2:3 - backup_bus_pms_constrain_usb_wrap
     #[inline(always)]
-    pub fn backup_bus_pms_constrain_usb_wrap(&self) -> BACKUP_BUS_PMS_CONSTRAIN_USB_WRAP_R {
+    pub fn backup_bus_pms_constrain_usb_wrap(
+        &self,
+    ) -> BACKUP_BUS_PMS_CONSTRAIN_USB_WRAP_R {
         BACKUP_BUS_PMS_CONSTRAIN_USB_WRAP_R::new(((self.bits >> 2) & 3) as u8)
     }
     ///Bits 4:5 - backup_bus_pms_constrain_crypto_peri
     #[inline(always)]
-    pub fn backup_bus_pms_constrain_crypto_peri(&self) -> BACKUP_BUS_PMS_CONSTRAIN_CRYPTO_PERI_R {
+    pub fn backup_bus_pms_constrain_crypto_peri(
+        &self,
+    ) -> BACKUP_BUS_PMS_CONSTRAIN_CRYPTO_PERI_R {
         BACKUP_BUS_PMS_CONSTRAIN_CRYPTO_PERI_R::new(((self.bits >> 4) & 3) as u8)
     }
     ///Bits 6:7 - backup_bus_pms_constrain_crypto_dma
     #[inline(always)]
-    pub fn backup_bus_pms_constrain_crypto_dma(&self) -> BACKUP_BUS_PMS_CONSTRAIN_CRYPTO_DMA_R {
+    pub fn backup_bus_pms_constrain_crypto_dma(
+        &self,
+    ) -> BACKUP_BUS_PMS_CONSTRAIN_CRYPTO_DMA_R {
         BACKUP_BUS_PMS_CONSTRAIN_CRYPTO_DMA_R::new(((self.bits >> 6) & 3) as u8)
     }
     ///Bits 8:9 - backup_bus_pms_constrain_apb_adc
     #[inline(always)]
-    pub fn backup_bus_pms_constrain_apb_adc(&self) -> BACKUP_BUS_PMS_CONSTRAIN_APB_ADC_R {
+    pub fn backup_bus_pms_constrain_apb_adc(
+        &self,
+    ) -> BACKUP_BUS_PMS_CONSTRAIN_APB_ADC_R {
         BACKUP_BUS_PMS_CONSTRAIN_APB_ADC_R::new(((self.bits >> 8) & 3) as u8)
     }
     ///Bits 12:13 - backup_bus_pms_constrain_bt_pwr
@@ -54,7 +66,9 @@ impl R {
     }
     ///Bits 14:15 - backup_bus_pms_constrain_usb_device
     #[inline(always)]
-    pub fn backup_bus_pms_constrain_usb_device(&self) -> BACKUP_BUS_PMS_CONSTRAIN_USB_DEVICE_R {
+    pub fn backup_bus_pms_constrain_usb_device(
+        &self,
+    ) -> BACKUP_BUS_PMS_CONSTRAIN_USB_DEVICE_R {
         BACKUP_BUS_PMS_CONSTRAIN_USB_DEVICE_R::new(((self.bits >> 14) & 3) as u8)
     }
 }

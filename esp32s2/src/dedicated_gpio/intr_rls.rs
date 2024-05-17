@@ -12,8 +12,7 @@ impl R {
     ///NOTE: `n` is number of field in register. `n == 0` corresponds to `GPIO0` field
     #[inline(always)]
     pub fn gpio(&self, n: u8) -> GPIO_R {
-        #[allow(clippy::no_effect)]
-        [(); 8][n as usize];
+        #[allow(clippy::no_effect)] [(); 8][n as usize];
         GPIO_R::new(((self.bits >> n) & 1) != 0)
     }
     ///Iterator for array of:
@@ -85,8 +84,7 @@ impl W {
     #[inline(always)]
     #[must_use]
     pub fn gpio(&mut self, n: u8) -> GPIO_W<INTR_RLS_SPEC> {
-        #[allow(clippy::no_effect)]
-        [(); 8][n as usize];
+        #[allow(clippy::no_effect)] [(); 8][n as usize];
         GPIO_W::new(self, n)
     }
     ///Bit 0 - The enable bit for DEDIC_GPIO0_INT_ST register.

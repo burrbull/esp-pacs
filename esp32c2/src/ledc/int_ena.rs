@@ -20,8 +20,7 @@ impl R {
     ///NOTE: `n` is number of field in register. `n == 0` corresponds to `TIMER0_OVF` field
     #[inline(always)]
     pub fn timer_ovf(&self, n: u8) -> TIMER_OVF_R {
-        #[allow(clippy::no_effect)]
-        [(); 4][n as usize];
+        #[allow(clippy::no_effect)] [(); 4][n as usize];
         TIMER_OVF_R::new(((self.bits >> n) & 1) != 0)
     }
     ///Iterator for array of:
@@ -55,14 +54,15 @@ impl R {
     ///NOTE: `n` is number of field in register. `n == 0` corresponds to `DUTY_CHNG_END_CH0` field
     #[inline(always)]
     pub fn duty_chng_end_ch(&self, n: u8) -> DUTY_CHNG_END_CH_R {
-        #[allow(clippy::no_effect)]
-        [(); 6][n as usize];
+        #[allow(clippy::no_effect)] [(); 6][n as usize];
         DUTY_CHNG_END_CH_R::new(((self.bits >> (n + 4)) & 1) != 0)
     }
     ///Iterator for array of:
     ///The interrupt enable bit for the DUTY_CHNG_END_CH(0-5) interrupt.
     #[inline(always)]
-    pub fn duty_chng_end_ch_iter(&self) -> impl Iterator<Item = DUTY_CHNG_END_CH_R> + '_ {
+    pub fn duty_chng_end_ch_iter(
+        &self,
+    ) -> impl Iterator<Item = DUTY_CHNG_END_CH_R> + '_ {
         (0..6).map(move |n| DUTY_CHNG_END_CH_R::new(((self.bits >> (n + 4)) & 1) != 0))
     }
     ///Bit 4 - The interrupt enable bit for the DUTY_CHNG_END_CH0 interrupt.
@@ -100,8 +100,7 @@ impl R {
     ///NOTE: `n` is number of field in register. `n == 0` corresponds to `OVF_CNT_CH0` field
     #[inline(always)]
     pub fn ovf_cnt_ch(&self, n: u8) -> OVF_CNT_CH_R {
-        #[allow(clippy::no_effect)]
-        [(); 6][n as usize];
+        #[allow(clippy::no_effect)] [(); 6][n as usize];
         OVF_CNT_CH_R::new(((self.bits >> (n + 10)) & 1) != 0)
     }
     ///Iterator for array of:
@@ -171,8 +170,7 @@ impl W {
     #[inline(always)]
     #[must_use]
     pub fn timer_ovf(&mut self, n: u8) -> TIMER_OVF_W<INT_ENA_SPEC> {
-        #[allow(clippy::no_effect)]
-        [(); 4][n as usize];
+        #[allow(clippy::no_effect)] [(); 4][n as usize];
         TIMER_OVF_W::new(self, n)
     }
     ///Bit 0 - The interrupt enable bit for the TIMER0_OVF interrupt.
@@ -205,8 +203,7 @@ impl W {
     #[inline(always)]
     #[must_use]
     pub fn duty_chng_end_ch(&mut self, n: u8) -> DUTY_CHNG_END_CH_W<INT_ENA_SPEC> {
-        #[allow(clippy::no_effect)]
-        [(); 6][n as usize];
+        #[allow(clippy::no_effect)] [(); 6][n as usize];
         DUTY_CHNG_END_CH_W::new(self, n + 4)
     }
     ///Bit 4 - The interrupt enable bit for the DUTY_CHNG_END_CH0 interrupt.
@@ -251,8 +248,7 @@ impl W {
     #[inline(always)]
     #[must_use]
     pub fn ovf_cnt_ch(&mut self, n: u8) -> OVF_CNT_CH_W<INT_ENA_SPEC> {
-        #[allow(clippy::no_effect)]
-        [(); 6][n as usize];
+        #[allow(clippy::no_effect)] [(); 6][n as usize];
         OVF_CNT_CH_W::new(self, n + 10)
     }
     ///Bit 10 - The interrupt enable bit for the OVF_CNT_CH0 interrupt.

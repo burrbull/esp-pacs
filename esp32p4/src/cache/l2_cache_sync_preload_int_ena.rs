@@ -26,10 +26,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("L2_CACHE_SYNC_PRELOAD_INT_ENA")
-            .field(
-                "l2_cache_pld_done_int_ena",
-                &self.l2_cache_pld_done_int_ena(),
-            )
+            .field("l2_cache_pld_done_int_ena", &self.l2_cache_pld_done_int_ena())
             .field("l2_cache_pld_err_int_ena", &self.l2_cache_pld_err_int_ena())
             .finish()
     }

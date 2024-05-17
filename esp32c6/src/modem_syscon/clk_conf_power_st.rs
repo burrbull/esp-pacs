@@ -99,13 +99,17 @@ impl W {
     ///Bits 24:27
     #[inline(always)]
     #[must_use]
-    pub fn clk_modem_peri_st_map(&mut self) -> CLK_MODEM_PERI_ST_MAP_W<CLK_CONF_POWER_ST_SPEC> {
+    pub fn clk_modem_peri_st_map(
+        &mut self,
+    ) -> CLK_MODEM_PERI_ST_MAP_W<CLK_CONF_POWER_ST_SPEC> {
         CLK_MODEM_PERI_ST_MAP_W::new(self, 24)
     }
     ///Bits 28:31
     #[inline(always)]
     #[must_use]
-    pub fn clk_modem_apb_st_map(&mut self) -> CLK_MODEM_APB_ST_MAP_W<CLK_CONF_POWER_ST_SPEC> {
+    pub fn clk_modem_apb_st_map(
+        &mut self,
+    ) -> CLK_MODEM_APB_ST_MAP_W<CLK_CONF_POWER_ST_SPEC> {
         CLK_MODEM_APB_ST_MAP_W::new(self, 28)
     }
 }

@@ -224,38 +224,14 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("EVT_TASK_EN2")
-            .field(
-                "task_gamma_restart_ch0_en",
-                &self.task_gamma_restart_ch0_en(),
-            )
-            .field(
-                "task_gamma_restart_ch1_en",
-                &self.task_gamma_restart_ch1_en(),
-            )
-            .field(
-                "task_gamma_restart_ch2_en",
-                &self.task_gamma_restart_ch2_en(),
-            )
-            .field(
-                "task_gamma_restart_ch3_en",
-                &self.task_gamma_restart_ch3_en(),
-            )
-            .field(
-                "task_gamma_restart_ch4_en",
-                &self.task_gamma_restart_ch4_en(),
-            )
-            .field(
-                "task_gamma_restart_ch5_en",
-                &self.task_gamma_restart_ch5_en(),
-            )
-            .field(
-                "task_gamma_restart_ch6_en",
-                &self.task_gamma_restart_ch6_en(),
-            )
-            .field(
-                "task_gamma_restart_ch7_en",
-                &self.task_gamma_restart_ch7_en(),
-            )
+            .field("task_gamma_restart_ch0_en", &self.task_gamma_restart_ch0_en())
+            .field("task_gamma_restart_ch1_en", &self.task_gamma_restart_ch1_en())
+            .field("task_gamma_restart_ch2_en", &self.task_gamma_restart_ch2_en())
+            .field("task_gamma_restart_ch3_en", &self.task_gamma_restart_ch3_en())
+            .field("task_gamma_restart_ch4_en", &self.task_gamma_restart_ch4_en())
+            .field("task_gamma_restart_ch5_en", &self.task_gamma_restart_ch5_en())
+            .field("task_gamma_restart_ch6_en", &self.task_gamma_restart_ch6_en())
+            .field("task_gamma_restart_ch7_en", &self.task_gamma_restart_ch7_en())
             .field("task_gamma_pause_ch0_en", &self.task_gamma_pause_ch0_en())
             .field("task_gamma_pause_ch1_en", &self.task_gamma_pause_ch1_en())
             .field("task_gamma_pause_ch2_en", &self.task_gamma_pause_ch2_en())
@@ -279,145 +255,193 @@ impl W {
     ///Bit 0 - Configures whether or not to enable ledc_ch0_gamma_restart task.\\0: Disable\\1: Enable
     #[inline(always)]
     #[must_use]
-    pub fn task_gamma_restart_ch0_en(&mut self) -> TASK_GAMMA_RESTART_CH0_EN_W<EVT_TASK_EN2_SPEC> {
+    pub fn task_gamma_restart_ch0_en(
+        &mut self,
+    ) -> TASK_GAMMA_RESTART_CH0_EN_W<EVT_TASK_EN2_SPEC> {
         TASK_GAMMA_RESTART_CH0_EN_W::new(self, 0)
     }
     ///Bit 1 - Configures whether or not to enable ledc_ch1_gamma_restart task.\\0: Disable\\1: Enable
     #[inline(always)]
     #[must_use]
-    pub fn task_gamma_restart_ch1_en(&mut self) -> TASK_GAMMA_RESTART_CH1_EN_W<EVT_TASK_EN2_SPEC> {
+    pub fn task_gamma_restart_ch1_en(
+        &mut self,
+    ) -> TASK_GAMMA_RESTART_CH1_EN_W<EVT_TASK_EN2_SPEC> {
         TASK_GAMMA_RESTART_CH1_EN_W::new(self, 1)
     }
     ///Bit 2 - Configures whether or not to enable ledc_ch2_gamma_restart task.\\0: Disable\\1: Enable
     #[inline(always)]
     #[must_use]
-    pub fn task_gamma_restart_ch2_en(&mut self) -> TASK_GAMMA_RESTART_CH2_EN_W<EVT_TASK_EN2_SPEC> {
+    pub fn task_gamma_restart_ch2_en(
+        &mut self,
+    ) -> TASK_GAMMA_RESTART_CH2_EN_W<EVT_TASK_EN2_SPEC> {
         TASK_GAMMA_RESTART_CH2_EN_W::new(self, 2)
     }
     ///Bit 3 - Configures whether or not to enable ledc_ch3_gamma_restart task.\\0: Disable\\1: Enable
     #[inline(always)]
     #[must_use]
-    pub fn task_gamma_restart_ch3_en(&mut self) -> TASK_GAMMA_RESTART_CH3_EN_W<EVT_TASK_EN2_SPEC> {
+    pub fn task_gamma_restart_ch3_en(
+        &mut self,
+    ) -> TASK_GAMMA_RESTART_CH3_EN_W<EVT_TASK_EN2_SPEC> {
         TASK_GAMMA_RESTART_CH3_EN_W::new(self, 3)
     }
     ///Bit 4 - Configures whether or not to enable ledc_ch4_gamma_restart task.\\0: Disable\\1: Enable
     #[inline(always)]
     #[must_use]
-    pub fn task_gamma_restart_ch4_en(&mut self) -> TASK_GAMMA_RESTART_CH4_EN_W<EVT_TASK_EN2_SPEC> {
+    pub fn task_gamma_restart_ch4_en(
+        &mut self,
+    ) -> TASK_GAMMA_RESTART_CH4_EN_W<EVT_TASK_EN2_SPEC> {
         TASK_GAMMA_RESTART_CH4_EN_W::new(self, 4)
     }
     ///Bit 5 - Configures whether or not to enable ledc_ch5_gamma_restart task.\\0: Disable\\1: Enable
     #[inline(always)]
     #[must_use]
-    pub fn task_gamma_restart_ch5_en(&mut self) -> TASK_GAMMA_RESTART_CH5_EN_W<EVT_TASK_EN2_SPEC> {
+    pub fn task_gamma_restart_ch5_en(
+        &mut self,
+    ) -> TASK_GAMMA_RESTART_CH5_EN_W<EVT_TASK_EN2_SPEC> {
         TASK_GAMMA_RESTART_CH5_EN_W::new(self, 5)
     }
     ///Bit 6 - Configures whether or not to enable ledc_ch6_gamma_restart task.\\0: Disable\\1: Enable
     #[inline(always)]
     #[must_use]
-    pub fn task_gamma_restart_ch6_en(&mut self) -> TASK_GAMMA_RESTART_CH6_EN_W<EVT_TASK_EN2_SPEC> {
+    pub fn task_gamma_restart_ch6_en(
+        &mut self,
+    ) -> TASK_GAMMA_RESTART_CH6_EN_W<EVT_TASK_EN2_SPEC> {
         TASK_GAMMA_RESTART_CH6_EN_W::new(self, 6)
     }
     ///Bit 7 - Configures whether or not to enable ledc_ch7_gamma_restart task.\\0: Disable\\1: Enable
     #[inline(always)]
     #[must_use]
-    pub fn task_gamma_restart_ch7_en(&mut self) -> TASK_GAMMA_RESTART_CH7_EN_W<EVT_TASK_EN2_SPEC> {
+    pub fn task_gamma_restart_ch7_en(
+        &mut self,
+    ) -> TASK_GAMMA_RESTART_CH7_EN_W<EVT_TASK_EN2_SPEC> {
         TASK_GAMMA_RESTART_CH7_EN_W::new(self, 7)
     }
     ///Bit 8 - Configures whether or not to enable ledc_ch0_gamma_pause task.\\0: Disable\\1: Enable
     #[inline(always)]
     #[must_use]
-    pub fn task_gamma_pause_ch0_en(&mut self) -> TASK_GAMMA_PAUSE_CH0_EN_W<EVT_TASK_EN2_SPEC> {
+    pub fn task_gamma_pause_ch0_en(
+        &mut self,
+    ) -> TASK_GAMMA_PAUSE_CH0_EN_W<EVT_TASK_EN2_SPEC> {
         TASK_GAMMA_PAUSE_CH0_EN_W::new(self, 8)
     }
     ///Bit 9 - Configures whether or not to enable ledc_ch1_gamma_pause task.\\0: Disable\\1: Enable
     #[inline(always)]
     #[must_use]
-    pub fn task_gamma_pause_ch1_en(&mut self) -> TASK_GAMMA_PAUSE_CH1_EN_W<EVT_TASK_EN2_SPEC> {
+    pub fn task_gamma_pause_ch1_en(
+        &mut self,
+    ) -> TASK_GAMMA_PAUSE_CH1_EN_W<EVT_TASK_EN2_SPEC> {
         TASK_GAMMA_PAUSE_CH1_EN_W::new(self, 9)
     }
     ///Bit 10 - Configures whether or not to enable ledc_ch2_gamma_pause task.\\0: Disable\\1: Enable
     #[inline(always)]
     #[must_use]
-    pub fn task_gamma_pause_ch2_en(&mut self) -> TASK_GAMMA_PAUSE_CH2_EN_W<EVT_TASK_EN2_SPEC> {
+    pub fn task_gamma_pause_ch2_en(
+        &mut self,
+    ) -> TASK_GAMMA_PAUSE_CH2_EN_W<EVT_TASK_EN2_SPEC> {
         TASK_GAMMA_PAUSE_CH2_EN_W::new(self, 10)
     }
     ///Bit 11 - Configures whether or not to enable ledc_ch3_gamma_pause task.\\0: Disable\\1: Enable
     #[inline(always)]
     #[must_use]
-    pub fn task_gamma_pause_ch3_en(&mut self) -> TASK_GAMMA_PAUSE_CH3_EN_W<EVT_TASK_EN2_SPEC> {
+    pub fn task_gamma_pause_ch3_en(
+        &mut self,
+    ) -> TASK_GAMMA_PAUSE_CH3_EN_W<EVT_TASK_EN2_SPEC> {
         TASK_GAMMA_PAUSE_CH3_EN_W::new(self, 11)
     }
     ///Bit 12 - Configures whether or not to enable ledc_ch4_gamma_pause task.\\0: Disable\\1: Enable
     #[inline(always)]
     #[must_use]
-    pub fn task_gamma_pause_ch4_en(&mut self) -> TASK_GAMMA_PAUSE_CH4_EN_W<EVT_TASK_EN2_SPEC> {
+    pub fn task_gamma_pause_ch4_en(
+        &mut self,
+    ) -> TASK_GAMMA_PAUSE_CH4_EN_W<EVT_TASK_EN2_SPEC> {
         TASK_GAMMA_PAUSE_CH4_EN_W::new(self, 12)
     }
     ///Bit 13 - Configures whether or not to enable ledc_ch5_gamma_pause task.\\0: Disable\\1: Enable
     #[inline(always)]
     #[must_use]
-    pub fn task_gamma_pause_ch5_en(&mut self) -> TASK_GAMMA_PAUSE_CH5_EN_W<EVT_TASK_EN2_SPEC> {
+    pub fn task_gamma_pause_ch5_en(
+        &mut self,
+    ) -> TASK_GAMMA_PAUSE_CH5_EN_W<EVT_TASK_EN2_SPEC> {
         TASK_GAMMA_PAUSE_CH5_EN_W::new(self, 13)
     }
     ///Bit 14 - Configures whether or not to enable ledc_ch6_gamma_pause task.\\0: Disable\\1: Enable
     #[inline(always)]
     #[must_use]
-    pub fn task_gamma_pause_ch6_en(&mut self) -> TASK_GAMMA_PAUSE_CH6_EN_W<EVT_TASK_EN2_SPEC> {
+    pub fn task_gamma_pause_ch6_en(
+        &mut self,
+    ) -> TASK_GAMMA_PAUSE_CH6_EN_W<EVT_TASK_EN2_SPEC> {
         TASK_GAMMA_PAUSE_CH6_EN_W::new(self, 14)
     }
     ///Bit 15 - Configures whether or not to enable ledc_ch7_gamma_pause task.\\0: Disable\\1: Enable
     #[inline(always)]
     #[must_use]
-    pub fn task_gamma_pause_ch7_en(&mut self) -> TASK_GAMMA_PAUSE_CH7_EN_W<EVT_TASK_EN2_SPEC> {
+    pub fn task_gamma_pause_ch7_en(
+        &mut self,
+    ) -> TASK_GAMMA_PAUSE_CH7_EN_W<EVT_TASK_EN2_SPEC> {
         TASK_GAMMA_PAUSE_CH7_EN_W::new(self, 15)
     }
     ///Bit 16 - Configures whether or not to enable ledc_ch0_gamma_resume task.\\0: Disable\\1: Enable
     #[inline(always)]
     #[must_use]
-    pub fn task_gamma_resume_ch0_en(&mut self) -> TASK_GAMMA_RESUME_CH0_EN_W<EVT_TASK_EN2_SPEC> {
+    pub fn task_gamma_resume_ch0_en(
+        &mut self,
+    ) -> TASK_GAMMA_RESUME_CH0_EN_W<EVT_TASK_EN2_SPEC> {
         TASK_GAMMA_RESUME_CH0_EN_W::new(self, 16)
     }
     ///Bit 17 - Configures whether or not to enable ledc_ch1_gamma_resume task.\\0: Disable\\1: Enable
     #[inline(always)]
     #[must_use]
-    pub fn task_gamma_resume_ch1_en(&mut self) -> TASK_GAMMA_RESUME_CH1_EN_W<EVT_TASK_EN2_SPEC> {
+    pub fn task_gamma_resume_ch1_en(
+        &mut self,
+    ) -> TASK_GAMMA_RESUME_CH1_EN_W<EVT_TASK_EN2_SPEC> {
         TASK_GAMMA_RESUME_CH1_EN_W::new(self, 17)
     }
     ///Bit 18 - Configures whether or not to enable ledc_ch2_gamma_resume task.\\0: Disable\\1: Enable
     #[inline(always)]
     #[must_use]
-    pub fn task_gamma_resume_ch2_en(&mut self) -> TASK_GAMMA_RESUME_CH2_EN_W<EVT_TASK_EN2_SPEC> {
+    pub fn task_gamma_resume_ch2_en(
+        &mut self,
+    ) -> TASK_GAMMA_RESUME_CH2_EN_W<EVT_TASK_EN2_SPEC> {
         TASK_GAMMA_RESUME_CH2_EN_W::new(self, 18)
     }
     ///Bit 19 - Configures whether or not to enable ledc_ch3_gamma_resume task.\\0: Disable\\1: Enable
     #[inline(always)]
     #[must_use]
-    pub fn task_gamma_resume_ch3_en(&mut self) -> TASK_GAMMA_RESUME_CH3_EN_W<EVT_TASK_EN2_SPEC> {
+    pub fn task_gamma_resume_ch3_en(
+        &mut self,
+    ) -> TASK_GAMMA_RESUME_CH3_EN_W<EVT_TASK_EN2_SPEC> {
         TASK_GAMMA_RESUME_CH3_EN_W::new(self, 19)
     }
     ///Bit 20 - Configures whether or not to enable ledc_ch4_gamma_resume task.\\0: Disable\\1: Enable
     #[inline(always)]
     #[must_use]
-    pub fn task_gamma_resume_ch4_en(&mut self) -> TASK_GAMMA_RESUME_CH4_EN_W<EVT_TASK_EN2_SPEC> {
+    pub fn task_gamma_resume_ch4_en(
+        &mut self,
+    ) -> TASK_GAMMA_RESUME_CH4_EN_W<EVT_TASK_EN2_SPEC> {
         TASK_GAMMA_RESUME_CH4_EN_W::new(self, 20)
     }
     ///Bit 21 - Configures whether or not to enable ledc_ch5_gamma_resume task.\\0: Disable\\1: Enable
     #[inline(always)]
     #[must_use]
-    pub fn task_gamma_resume_ch5_en(&mut self) -> TASK_GAMMA_RESUME_CH5_EN_W<EVT_TASK_EN2_SPEC> {
+    pub fn task_gamma_resume_ch5_en(
+        &mut self,
+    ) -> TASK_GAMMA_RESUME_CH5_EN_W<EVT_TASK_EN2_SPEC> {
         TASK_GAMMA_RESUME_CH5_EN_W::new(self, 21)
     }
     ///Bit 22 - Configures whether or not to enable ledc_ch6_gamma_resume task.\\0: Disable\\1: Enable
     #[inline(always)]
     #[must_use]
-    pub fn task_gamma_resume_ch6_en(&mut self) -> TASK_GAMMA_RESUME_CH6_EN_W<EVT_TASK_EN2_SPEC> {
+    pub fn task_gamma_resume_ch6_en(
+        &mut self,
+    ) -> TASK_GAMMA_RESUME_CH6_EN_W<EVT_TASK_EN2_SPEC> {
         TASK_GAMMA_RESUME_CH6_EN_W::new(self, 22)
     }
     ///Bit 23 - Configures whether or not to enable ledc_ch7_gamma_resume task.\\0: Disable\\1: Enable
     #[inline(always)]
     #[must_use]
-    pub fn task_gamma_resume_ch7_en(&mut self) -> TASK_GAMMA_RESUME_CH7_EN_W<EVT_TASK_EN2_SPEC> {
+    pub fn task_gamma_resume_ch7_en(
+        &mut self,
+    ) -> TASK_GAMMA_RESUME_CH7_EN_W<EVT_TASK_EN2_SPEC> {
         TASK_GAMMA_RESUME_CH7_EN_W::new(self, 23)
     }
 }

@@ -12,9 +12,7 @@ impl R {
 #[cfg(feature = "impl-register-debug")]
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("REGDMA_MEM_ADDR")
-            .field("mem_addr", &self.mem_addr())
-            .finish()
+        f.debug_struct("REGDMA_MEM_ADDR").field("mem_addr", &self.mem_addr()).finish()
     }
 }
 /**mem addr

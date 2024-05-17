@@ -213,10 +213,7 @@ impl core::fmt::Debug for R {
             .field("isp_async_fifo_ovf", &self.isp_async_fifo_ovf())
             .field("isp_buf_full", &self.isp_buf_full())
             .field("isp_hvnum_setting_err", &self.isp_hvnum_setting_err())
-            .field(
-                "isp_data_type_setting_err",
-                &self.isp_data_type_setting_err(),
-            )
+            .field("isp_data_type_setting_err", &self.isp_data_type_setting_err())
             .field("isp_mipi_hnum_unmatch", &self.isp_mipi_hnum_unmatch())
             .field("dpc_check_done", &self.dpc_check_done())
             .field("gamma_xcoord_err", &self.gamma_xcoord_err())

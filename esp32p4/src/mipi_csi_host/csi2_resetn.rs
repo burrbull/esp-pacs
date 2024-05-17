@@ -16,9 +16,7 @@ impl R {
 #[cfg(feature = "impl-register-debug")]
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("CSI2_RESETN")
-            .field("csi2_resetn", &self.csi2_resetn())
-            .finish()
+        f.debug_struct("CSI2_RESETN").field("csi2_resetn", &self.csi2_resetn()).finish()
     }
 }
 impl W {

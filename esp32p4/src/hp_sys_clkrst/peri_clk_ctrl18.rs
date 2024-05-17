@@ -99,7 +99,9 @@ impl W {
     ///Bits 20:21 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn i2s2_tx_clk_src_sel(&mut self) -> I2S2_TX_CLK_SRC_SEL_W<PERI_CLK_CTRL18_SPEC> {
+    pub fn i2s2_tx_clk_src_sel(
+        &mut self,
+    ) -> I2S2_TX_CLK_SRC_SEL_W<PERI_CLK_CTRL18_SPEC> {
         I2S2_TX_CLK_SRC_SEL_W::new(self, 20)
     }
     ///Bits 22:29 - Reserved

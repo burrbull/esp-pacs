@@ -67,7 +67,9 @@ impl W {
     ///Bit 17 - set this field to 1 to enable lp2hp ahb timeout handle
     #[inline(always)]
     #[must_use]
-    pub fn lp2hp_ahb_timeout_en(&mut self) -> LP2HP_AHB_TIMEOUT_EN_W<LP_CORE_AHB_TIMEOUT_SPEC> {
+    pub fn lp2hp_ahb_timeout_en(
+        &mut self,
+    ) -> LP2HP_AHB_TIMEOUT_EN_W<LP_CORE_AHB_TIMEOUT_SPEC> {
         LP2HP_AHB_TIMEOUT_EN_W::new(self, 17)
     }
     ///Bits 18:22 - This field used to set lp2hp ahb bus timeout threshold

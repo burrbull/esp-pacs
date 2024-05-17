@@ -33,7 +33,9 @@ impl W {
     ///Bit 31 - write 1 to update reg_dma_raw_num_total
     #[inline(always)]
     #[must_use]
-    pub fn dma_raw_num_total_set(&mut self) -> DMA_RAW_NUM_TOTAL_SET_W<DMA_RAW_DATA_SPEC> {
+    pub fn dma_raw_num_total_set(
+        &mut self,
+    ) -> DMA_RAW_NUM_TOTAL_SET_W<DMA_RAW_DATA_SPEC> {
         DMA_RAW_NUM_TOTAL_SET_W::new(self, 31)
     }
 }

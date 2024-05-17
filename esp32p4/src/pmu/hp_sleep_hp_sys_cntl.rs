@@ -71,10 +71,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("HP_SLEEP_HP_SYS_CNTL")
-            .field(
-                "hp_sleep_hp_power_det_bypass",
-                &self.hp_sleep_hp_power_det_bypass(),
-            )
+            .field("hp_sleep_hp_power_det_bypass", &self.hp_sleep_hp_power_det_bypass())
             .field("hp_sleep_uart_wakeup_en", &self.hp_sleep_uart_wakeup_en())
             .field("hp_sleep_lp_pad_hold_all", &self.hp_sleep_lp_pad_hold_all())
             .field("hp_sleep_hp_pad_hold_all", &self.hp_sleep_hp_pad_hold_all())

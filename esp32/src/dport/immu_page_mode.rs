@@ -35,7 +35,9 @@ impl W {
     ///Bit 0
     #[inline(always)]
     #[must_use]
-    pub fn internal_sram_immu_ena(&mut self) -> INTERNAL_SRAM_IMMU_ENA_W<IMMU_PAGE_MODE_SPEC> {
+    pub fn internal_sram_immu_ena(
+        &mut self,
+    ) -> INTERNAL_SRAM_IMMU_ENA_W<IMMU_PAGE_MODE_SPEC> {
         INTERNAL_SRAM_IMMU_ENA_W::new(self, 0)
     }
     ///Bits 1:2

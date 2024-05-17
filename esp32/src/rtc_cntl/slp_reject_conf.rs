@@ -75,7 +75,9 @@ impl W {
     ///Bit 26 - enable reject for light sleep
     #[inline(always)]
     #[must_use]
-    pub fn light_slp_reject_en(&mut self) -> LIGHT_SLP_REJECT_EN_W<SLP_REJECT_CONF_SPEC> {
+    pub fn light_slp_reject_en(
+        &mut self,
+    ) -> LIGHT_SLP_REJECT_EN_W<SLP_REJECT_CONF_SPEC> {
         LIGHT_SLP_REJECT_EN_W::new(self, 26)
     }
     ///Bit 27 - enable reject for deep sleep

@@ -35,18 +35,9 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("PRO_ICACHE_TAG_POWER_CTRL")
-            .field(
-                "pro_icache_tag_mem_force_on",
-                &self.pro_icache_tag_mem_force_on(),
-            )
-            .field(
-                "pro_icache_tag_mem_force_pd",
-                &self.pro_icache_tag_mem_force_pd(),
-            )
-            .field(
-                "pro_icache_tag_mem_force_pu",
-                &self.pro_icache_tag_mem_force_pu(),
-            )
+            .field("pro_icache_tag_mem_force_on", &self.pro_icache_tag_mem_force_on())
+            .field("pro_icache_tag_mem_force_pd", &self.pro_icache_tag_mem_force_pd())
+            .field("pro_icache_tag_mem_force_pu", &self.pro_icache_tag_mem_force_pu())
             .finish()
     }
 }

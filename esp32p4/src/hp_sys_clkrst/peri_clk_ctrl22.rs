@@ -125,13 +125,17 @@ impl W {
     ///Bits 14:21 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn rmt_clk_div_numerator(&mut self) -> RMT_CLK_DIV_NUMERATOR_W<PERI_CLK_CTRL22_SPEC> {
+    pub fn rmt_clk_div_numerator(
+        &mut self,
+    ) -> RMT_CLK_DIV_NUMERATOR_W<PERI_CLK_CTRL22_SPEC> {
         RMT_CLK_DIV_NUMERATOR_W::new(self, 14)
     }
     ///Bits 22:29 - Reserved
     #[inline(always)]
     #[must_use]
-    pub fn rmt_clk_div_denominator(&mut self) -> RMT_CLK_DIV_DENOMINATOR_W<PERI_CLK_CTRL22_SPEC> {
+    pub fn rmt_clk_div_denominator(
+        &mut self,
+    ) -> RMT_CLK_DIV_DENOMINATOR_W<PERI_CLK_CTRL22_SPEC> {
         RMT_CLK_DIV_DENOMINATOR_W::new(self, 22)
     }
     ///Bits 30:31 - Reserved

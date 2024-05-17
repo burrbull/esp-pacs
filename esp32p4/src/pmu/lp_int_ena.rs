@@ -180,65 +180,23 @@ impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("LP_INT_ENA")
             .field("lp_cpu_sleep_reject", &self.lp_cpu_sleep_reject())
-            .field(
-                "_0p1a_cnt_target0_reach_0_lp",
-                &self._0p1a_cnt_target0_reach_0_lp(),
-            )
-            .field(
-                "_0p1a_cnt_target1_reach_0_lp",
-                &self._0p1a_cnt_target1_reach_0_lp(),
-            )
-            .field(
-                "_0p1a_cnt_target0_reach_1_lp",
-                &self._0p1a_cnt_target0_reach_1_lp(),
-            )
-            .field(
-                "_0p1a_cnt_target1_reach_1_lp",
-                &self._0p1a_cnt_target1_reach_1_lp(),
-            )
-            .field(
-                "_0p2a_cnt_target0_reach_0_lp",
-                &self._0p2a_cnt_target0_reach_0_lp(),
-            )
-            .field(
-                "_0p2a_cnt_target1_reach_0_lp",
-                &self._0p2a_cnt_target1_reach_0_lp(),
-            )
-            .field(
-                "_0p2a_cnt_target0_reach_1_lp",
-                &self._0p2a_cnt_target0_reach_1_lp(),
-            )
-            .field(
-                "_0p2a_cnt_target1_reach_1_lp",
-                &self._0p2a_cnt_target1_reach_1_lp(),
-            )
-            .field(
-                "_0p3a_cnt_target0_reach_0_lp",
-                &self._0p3a_cnt_target0_reach_0_lp(),
-            )
-            .field(
-                "_0p3a_cnt_target1_reach_0_lp",
-                &self._0p3a_cnt_target1_reach_0_lp(),
-            )
-            .field(
-                "_0p3a_cnt_target0_reach_1_lp",
-                &self._0p3a_cnt_target0_reach_1_lp(),
-            )
-            .field(
-                "_0p3a_cnt_target1_reach_1_lp",
-                &self._0p3a_cnt_target1_reach_1_lp(),
-            )
+            .field("_0p1a_cnt_target0_reach_0_lp", &self._0p1a_cnt_target0_reach_0_lp())
+            .field("_0p1a_cnt_target1_reach_0_lp", &self._0p1a_cnt_target1_reach_0_lp())
+            .field("_0p1a_cnt_target0_reach_1_lp", &self._0p1a_cnt_target0_reach_1_lp())
+            .field("_0p1a_cnt_target1_reach_1_lp", &self._0p1a_cnt_target1_reach_1_lp())
+            .field("_0p2a_cnt_target0_reach_0_lp", &self._0p2a_cnt_target0_reach_0_lp())
+            .field("_0p2a_cnt_target1_reach_0_lp", &self._0p2a_cnt_target1_reach_0_lp())
+            .field("_0p2a_cnt_target0_reach_1_lp", &self._0p2a_cnt_target0_reach_1_lp())
+            .field("_0p2a_cnt_target1_reach_1_lp", &self._0p2a_cnt_target1_reach_1_lp())
+            .field("_0p3a_cnt_target0_reach_0_lp", &self._0p3a_cnt_target0_reach_0_lp())
+            .field("_0p3a_cnt_target1_reach_0_lp", &self._0p3a_cnt_target1_reach_0_lp())
+            .field("_0p3a_cnt_target0_reach_1_lp", &self._0p3a_cnt_target0_reach_1_lp())
+            .field("_0p3a_cnt_target1_reach_1_lp", &self._0p3a_cnt_target1_reach_1_lp())
             .field("lp_cpu_wakeup", &self.lp_cpu_wakeup())
             .field("sleep_switch_active_end", &self.sleep_switch_active_end())
             .field("active_switch_sleep_end", &self.active_switch_sleep_end())
-            .field(
-                "sleep_switch_active_start",
-                &self.sleep_switch_active_start(),
-            )
-            .field(
-                "active_switch_sleep_start",
-                &self.active_switch_sleep_start(),
-            )
+            .field("sleep_switch_active_start", &self.sleep_switch_active_start())
+            .field("active_switch_sleep_start", &self.active_switch_sleep_start())
             .field("hp_sw_trigger", &self.hp_sw_trigger())
             .finish()
     }
@@ -355,25 +313,33 @@ impl W {
     ///Bit 27 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn sleep_switch_active_end(&mut self) -> SLEEP_SWITCH_ACTIVE_END_W<LP_INT_ENA_SPEC> {
+    pub fn sleep_switch_active_end(
+        &mut self,
+    ) -> SLEEP_SWITCH_ACTIVE_END_W<LP_INT_ENA_SPEC> {
         SLEEP_SWITCH_ACTIVE_END_W::new(self, 27)
     }
     ///Bit 28 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn active_switch_sleep_end(&mut self) -> ACTIVE_SWITCH_SLEEP_END_W<LP_INT_ENA_SPEC> {
+    pub fn active_switch_sleep_end(
+        &mut self,
+    ) -> ACTIVE_SWITCH_SLEEP_END_W<LP_INT_ENA_SPEC> {
         ACTIVE_SWITCH_SLEEP_END_W::new(self, 28)
     }
     ///Bit 29 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn sleep_switch_active_start(&mut self) -> SLEEP_SWITCH_ACTIVE_START_W<LP_INT_ENA_SPEC> {
+    pub fn sleep_switch_active_start(
+        &mut self,
+    ) -> SLEEP_SWITCH_ACTIVE_START_W<LP_INT_ENA_SPEC> {
         SLEEP_SWITCH_ACTIVE_START_W::new(self, 29)
     }
     ///Bit 30 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn active_switch_sleep_start(&mut self) -> ACTIVE_SWITCH_SLEEP_START_W<LP_INT_ENA_SPEC> {
+    pub fn active_switch_sleep_start(
+        &mut self,
+    ) -> ACTIVE_SWITCH_SLEEP_START_W<LP_INT_ENA_SPEC> {
         ACTIVE_SWITCH_SLEEP_START_W::new(self, 30)
     }
     ///Bit 31 - need_des

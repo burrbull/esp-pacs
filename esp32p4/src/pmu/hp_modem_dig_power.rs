@@ -29,10 +29,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("HP_MODEM_DIG_POWER")
-            .field(
-                "hp_modem_dcdc_switch_pd_en",
-                &self.hp_modem_dcdc_switch_pd_en(),
-            )
+            .field("hp_modem_dcdc_switch_pd_en", &self.hp_modem_dcdc_switch_pd_en())
             .finish()
     }
 }
@@ -48,7 +45,9 @@ impl W {
     ///Bit 22 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn hp_modem_hp_mem_dslp(&mut self) -> HP_MODEM_HP_MEM_DSLP_W<HP_MODEM_DIG_POWER_SPEC> {
+    pub fn hp_modem_hp_mem_dslp(
+        &mut self,
+    ) -> HP_MODEM_HP_MEM_DSLP_W<HP_MODEM_DIG_POWER_SPEC> {
         HP_MODEM_HP_MEM_DSLP_W::new(self, 22)
     }
     ///Bits 23:26 - need_des
@@ -78,13 +77,17 @@ impl W {
     ///Bit 30 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn hp_modem_pd_cnnt_pd_en(&mut self) -> HP_MODEM_PD_CNNT_PD_EN_W<HP_MODEM_DIG_POWER_SPEC> {
+    pub fn hp_modem_pd_cnnt_pd_en(
+        &mut self,
+    ) -> HP_MODEM_PD_CNNT_PD_EN_W<HP_MODEM_DIG_POWER_SPEC> {
         HP_MODEM_PD_CNNT_PD_EN_W::new(self, 30)
     }
     ///Bit 31 - need_des
     #[inline(always)]
     #[must_use]
-    pub fn hp_modem_pd_top_pd_en(&mut self) -> HP_MODEM_PD_TOP_PD_EN_W<HP_MODEM_DIG_POWER_SPEC> {
+    pub fn hp_modem_pd_top_pd_en(
+        &mut self,
+    ) -> HP_MODEM_PD_TOP_PD_EN_W<HP_MODEM_DIG_POWER_SPEC> {
         HP_MODEM_PD_TOP_PD_EN_W::new(self, 31)
     }
 }

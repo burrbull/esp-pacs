@@ -35,13 +35,17 @@ impl W {
     ///Bit 0
     #[inline(always)]
     #[must_use]
-    pub fn ack_frame_pending_en(&mut self) -> ACK_FRAME_PENDING_EN_W<ACK_FRAME_PENDING_EN_SPEC> {
+    pub fn ack_frame_pending_en(
+        &mut self,
+    ) -> ACK_FRAME_PENDING_EN_W<ACK_FRAME_PENDING_EN_SPEC> {
         ACK_FRAME_PENDING_EN_W::new(self, 0)
     }
     ///Bits 16:31
     #[inline(always)]
     #[must_use]
-    pub fn ack_tx_ack_timeout(&mut self) -> ACK_TX_ACK_TIMEOUT_W<ACK_FRAME_PENDING_EN_SPEC> {
+    pub fn ack_tx_ack_timeout(
+        &mut self,
+    ) -> ACK_TX_ACK_TIMEOUT_W<ACK_FRAME_PENDING_EN_SPEC> {
         ACK_TX_ACK_TIMEOUT_W::new(self, 16)
     }
 }

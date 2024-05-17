@@ -33,7 +33,9 @@ impl W {
     ///Bit 0 - The redundant ECO drive bit to avoid optimization in circuits.
     #[inline(always)]
     #[must_use]
-    pub fn redundant_eco_drive(&mut self) -> REDUNDANT_ECO_DRIVE_W<REDUNDANT_ECO_CTRL_SPEC> {
+    pub fn redundant_eco_drive(
+        &mut self,
+    ) -> REDUNDANT_ECO_DRIVE_W<REDUNDANT_ECO_CTRL_SPEC> {
         REDUNDANT_ECO_DRIVE_W::new(self, 0)
     }
 }

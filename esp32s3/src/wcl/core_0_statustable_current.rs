@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("Core_0_STATUSTABLE_CURRENT")
-            .field(
-                "core_0_statustable_current",
-                &self.core_0_statustable_current(),
-            )
+            .field("core_0_statustable_current", &self.core_0_statustable_current())
             .finish()
     }
 }

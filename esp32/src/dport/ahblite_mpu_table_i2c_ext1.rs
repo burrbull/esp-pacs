@@ -17,10 +17,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("AHBLITE_MPU_TABLE_I2C_EXT1")
-            .field(
-                "i2cext1_access_grant_config",
-                &self.i2cext1_access_grant_config(),
-            )
+            .field("i2cext1_access_grant_config", &self.i2cext1_access_grant_config())
             .finish()
     }
 }

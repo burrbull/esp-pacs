@@ -20,8 +20,7 @@ impl R {
     ///NOTE: `n` is number of field in register. `n == 0` corresponds to `R0_PMS_X` field
     #[inline(always)]
     pub fn r_pms_x(&self, n: u8) -> R_PMS_X_R {
-        #[allow(clippy::no_effect)]
-        [(); 3][n as usize];
+        #[allow(clippy::no_effect)] [(); 3][n as usize];
         R_PMS_X_R::new(((self.bits >> (n * 4)) & 1) != 0)
     }
     ///Iterator for array of:
@@ -50,8 +49,7 @@ impl R {
     ///NOTE: `n` is number of field in register. `n == 0` corresponds to `R0_PMS_W` field
     #[inline(always)]
     pub fn r_pms_w(&self, n: u8) -> R_PMS_W_R {
-        #[allow(clippy::no_effect)]
-        [(); 3][n as usize];
+        #[allow(clippy::no_effect)] [(); 3][n as usize];
         R_PMS_W_R::new(((self.bits >> (n * 4 + 1)) & 1) != 0)
     }
     ///Iterator for array of:
@@ -80,8 +78,7 @@ impl R {
     ///NOTE: `n` is number of field in register. `n == 0` corresponds to `R0_PMS_R` field
     #[inline(always)]
     pub fn r_pms_r(&self, n: u8) -> R_PMS_R_R {
-        #[allow(clippy::no_effect)]
-        [(); 3][n as usize];
+        #[allow(clippy::no_effect)] [(); 3][n as usize];
         R_PMS_R_R::new(((self.bits >> (n * 4 + 2)) & 1) != 0)
     }
     ///Iterator for array of:
@@ -129,8 +126,7 @@ impl W {
     #[inline(always)]
     #[must_use]
     pub fn r_pms_x(&mut self, n: u8) -> R_PMS_X_W<PMS_ATTR_SPEC> {
-        #[allow(clippy::no_effect)]
-        [(); 3][n as usize];
+        #[allow(clippy::no_effect)] [(); 3][n as usize];
         R_PMS_X_W::new(self, n * 4)
     }
     ///Bit 0 - Region execute authority in REE_MODE0
@@ -157,8 +153,7 @@ impl W {
     #[inline(always)]
     #[must_use]
     pub fn r_pms_w(&mut self, n: u8) -> R_PMS_W_W<PMS_ATTR_SPEC> {
-        #[allow(clippy::no_effect)]
-        [(); 3][n as usize];
+        #[allow(clippy::no_effect)] [(); 3][n as usize];
         R_PMS_W_W::new(self, n * 4 + 1)
     }
     ///Bit 1 - Region write authority in REE_MODE0
@@ -185,8 +180,7 @@ impl W {
     #[inline(always)]
     #[must_use]
     pub fn r_pms_r(&mut self, n: u8) -> R_PMS_R_W<PMS_ATTR_SPEC> {
-        #[allow(clippy::no_effect)]
-        [(); 3][n as usize];
+        #[allow(clippy::no_effect)] [(); 3][n as usize];
         R_PMS_R_W::new(self, n * 4 + 2)
     }
     ///Bit 2 - Region read authority in REE_MODE0

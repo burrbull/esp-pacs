@@ -16,9 +16,7 @@ impl R {
 #[cfg(feature = "impl-register-debug")]
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("CH_RX_LIM")
-            .field("rx_lim_ch4", &self.rx_lim_ch4())
-            .finish()
+        f.debug_struct("CH_RX_LIM").field("rx_lim_ch4", &self.rx_lim_ch4()).finish()
     }
 }
 impl W {

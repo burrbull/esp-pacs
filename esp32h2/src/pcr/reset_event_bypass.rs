@@ -41,7 +41,9 @@ impl W {
     ///Bit 1 - This field is used to control reset event relationship for system-bus. 1: system bus (including arbiter/router) will only be reset by power-reset. some reset event will be bypass. 0: system bus (including arbiter/router) will not only be reset by power-reset, but also some reset event.
     #[inline(always)]
     #[must_use]
-    pub fn reset_event_bypass(&mut self) -> RESET_EVENT_BYPASS_W<RESET_EVENT_BYPASS_SPEC> {
+    pub fn reset_event_bypass(
+        &mut self,
+    ) -> RESET_EVENT_BYPASS_W<RESET_EVENT_BYPASS_SPEC> {
         RESET_EVENT_BYPASS_W::new(self, 1)
     }
 }

@@ -100,14 +100,8 @@ impl core::fmt::Debug for R {
             .field("ibus_acs_cnt_ovf", &self.ibus_acs_cnt_ovf())
             .field("ibus_acs_miss_cnt_ovf", &self.ibus_acs_miss_cnt_ovf())
             .field("dbus_acs_cnt_ovf", &self.dbus_acs_cnt_ovf())
-            .field(
-                "dbus_acs_flash_miss_cnt_ovf",
-                &self.dbus_acs_flash_miss_cnt_ovf(),
-            )
-            .field(
-                "dbus_acs_spiram_miss_cnt_ovf",
-                &self.dbus_acs_spiram_miss_cnt_ovf(),
-            )
+            .field("dbus_acs_flash_miss_cnt_ovf", &self.dbus_acs_flash_miss_cnt_ovf())
+            .field("dbus_acs_spiram_miss_cnt_ovf", &self.dbus_acs_spiram_miss_cnt_ovf())
             .finish()
     }
 }

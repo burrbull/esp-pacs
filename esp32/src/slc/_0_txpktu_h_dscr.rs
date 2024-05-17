@@ -13,10 +13,7 @@ impl R {
 impl core::fmt::Debug for R {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("_0_TXPKTU_H_DSCR")
-            .field(
-                "slc0_tx_pkt_start_dscr_addr",
-                &self.slc0_tx_pkt_start_dscr_addr(),
-            )
+            .field("slc0_tx_pkt_start_dscr_addr", &self.slc0_tx_pkt_start_dscr_addr())
             .finish()
     }
 }
