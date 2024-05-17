@@ -379,8 +379,8 @@ fn format(path: &Path) -> Result<()> {
 
     fs::remove_file(&lib_file)?;
 
-    Command::new("cargo")
-        .arg("fmt")
+    Command::new("rustfmt")
+        .arg("build.rs")
         .current_dir(path)
         .output()?;
 
