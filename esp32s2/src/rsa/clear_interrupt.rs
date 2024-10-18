@@ -11,7 +11,6 @@ impl core::fmt::Debug for crate::generic::Reg<CLEAR_INTERRUPT_SPEC> {
 impl W {
     #[doc = "Bit 0 - Set this bit to 1 to clear the RSA interrupts."]
     #[inline(always)]
-    #[must_use]
     pub fn clear_interrupt(&mut self) -> CLEAR_INTERRUPT_W<CLEAR_INTERRUPT_SPEC> {
         CLEAR_INTERRUPT_W::new(self, 0)
     }

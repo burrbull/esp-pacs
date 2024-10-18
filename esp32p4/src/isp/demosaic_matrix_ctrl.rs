@@ -60,7 +60,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:7 - matrix tail pixen low level threshold, should not to large to prevent expanding to next frame, only reg_demosaic_tail_pixen_pulse_th!=0 and reg_demosaic_tail_pixen_pulse_tl!=0 and reg_demosaic_tail_pixen_pulse_th &lt; reg_demosaic_tail_pixen_pulse_tl will enable tail pulse function"]
     #[inline(always)]
-    #[must_use]
     pub fn demosaic_tail_pixen_pulse_tl(
         &mut self,
     ) -> DEMOSAIC_TAIL_PIXEN_PULSE_TL_W<DEMOSAIC_MATRIX_CTRL_SPEC> {
@@ -68,7 +67,6 @@ impl W {
     }
     #[doc = "Bits 8:15 - matrix tail pixen high level threshold, must &lt; hnum-1, only reg_demosaic_tail_pixen_pulse_th!=0 and reg_demosaic_tail_pixen_pulse_tl!=0 and reg_demosaic_tail_pixen_pulse_th &lt; reg_demosaic_tail_pixen_pulse_tl will enable tail pulse function"]
     #[inline(always)]
-    #[must_use]
     pub fn demosaic_tail_pixen_pulse_th(
         &mut self,
     ) -> DEMOSAIC_TAIL_PIXEN_PULSE_TH_W<DEMOSAIC_MATRIX_CTRL_SPEC> {
@@ -76,13 +74,11 @@ impl W {
     }
     #[doc = "Bits 16:23 - this field configures demosaic matrix padding data"]
     #[inline(always)]
-    #[must_use]
     pub fn demosaic_padding_data(&mut self) -> DEMOSAIC_PADDING_DATA_W<DEMOSAIC_MATRIX_CTRL_SPEC> {
         DEMOSAIC_PADDING_DATA_W::new(self, 16)
     }
     #[doc = "Bit 24 - this bit configures the padding mode of demosaic matrix. 0: use pixel in image to do padding 1: use reg_padding_data to do padding"]
     #[inline(always)]
-    #[must_use]
     pub fn demosaic_padding_mode(&mut self) -> DEMOSAIC_PADDING_MODE_W<DEMOSAIC_MATRIX_CTRL_SPEC> {
         DEMOSAIC_PADDING_MODE_W::new(self, 24)
     }

@@ -12,6 +12,6 @@ form       = "0.12.1"
 log        = "0.4.22"
 semver     = "1.0.23"
 strum      = { version = "0.26.3", features = ["derive"] }
-svd2rust   = { version = "0.33.4", default-features = false }
-svdtools   = "0.3.18"
+svd2rust   = { git = "https://github.com/rust-embedded/svd2rust", default-features = false }
+svdtools   = { git = "https://github.com/rust-embedded/svdtools" }
 toml_edit  = "0.22.20"

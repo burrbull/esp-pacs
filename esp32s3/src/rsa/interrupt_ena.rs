@@ -24,7 +24,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bit 0 - Set this bit to 1 to enable the RSA interrupt. This option is enabled by default."]
     #[inline(always)]
-    #[must_use]
     pub fn interrupt_ena(&mut self) -> INTERRUPT_ENA_W<INTERRUPT_ENA_SPEC> {
         INTERRUPT_ENA_W::new(self, 0)
     }

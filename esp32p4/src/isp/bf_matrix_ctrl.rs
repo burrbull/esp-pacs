@@ -54,25 +54,21 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:7 - matrix tail pixen low level threshold, should not to large to prevent expanding to next frame, only reg_bf_tail_pixen_pulse_th!=0 and reg_bf_tail_pixen_pulse_tl!=0 and reg_bf_tail_pixen_pulse_th &lt; reg_bf_tail_pixen_pulse_tl will enable tail pulse function"]
     #[inline(always)]
-    #[must_use]
     pub fn bf_tail_pixen_pulse_tl(&mut self) -> BF_TAIL_PIXEN_PULSE_TL_W<BF_MATRIX_CTRL_SPEC> {
         BF_TAIL_PIXEN_PULSE_TL_W::new(self, 0)
     }
     #[doc = "Bits 8:15 - matrix tail pixen high level threshold, must &lt; hnum-1, only reg_bf_tail_pixen_pulse_th!=0 and reg_bf_tail_pixen_pulse_tl!=0 and reg_bf_tail_pixen_pulse_th &lt; reg_bf_tail_pixen_pulse_tl will enable tail pulse function"]
     #[inline(always)]
-    #[must_use]
     pub fn bf_tail_pixen_pulse_th(&mut self) -> BF_TAIL_PIXEN_PULSE_TH_W<BF_MATRIX_CTRL_SPEC> {
         BF_TAIL_PIXEN_PULSE_TH_W::new(self, 8)
     }
     #[doc = "Bits 16:23 - this field configures bf matrix padding data"]
     #[inline(always)]
-    #[must_use]
     pub fn bf_padding_data(&mut self) -> BF_PADDING_DATA_W<BF_MATRIX_CTRL_SPEC> {
         BF_PADDING_DATA_W::new(self, 16)
     }
     #[doc = "Bit 24 - this bit configures the padding mode of bf matrix. 0: use pixel in image to do padding 1: use reg_padding_data to do padding"]
     #[inline(always)]
-    #[must_use]
     pub fn bf_padding_mode(&mut self) -> BF_PADDING_MODE_W<BF_MATRIX_CTRL_SPEC> {
         BF_PADDING_MODE_W::new(self, 24)
     }

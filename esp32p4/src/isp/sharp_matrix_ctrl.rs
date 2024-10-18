@@ -60,7 +60,6 @@ impl core::fmt::Debug for R {
 impl W {
     #[doc = "Bits 0:7 - matrix tail pixen low level threshold, should not to large to prevent expanding to next frame, only reg_demosaic_tail_pixen_pulse_th!=0 and reg_demosaic_tail_pixen_pulse_tl!=0 and reg_demosaic_tail_pixen_pulse_th &lt; reg_demosaic_tail_pixen_pulse_tl will enable tail pulse function"]
     #[inline(always)]
-    #[must_use]
     pub fn sharp_tail_pixen_pulse_tl(
         &mut self,
     ) -> SHARP_TAIL_PIXEN_PULSE_TL_W<SHARP_MATRIX_CTRL_SPEC> {
@@ -68,7 +67,6 @@ impl W {
     }
     #[doc = "Bits 8:15 - matrix tail pixen high level threshold, must &lt; hnum-1, only reg_sharp_tail_pixen_pulse_th!=0 and reg_sharp_tail_pixen_pulse_tl!=0 and reg_sharp_tail_pixen_pulse_th &lt; reg_sharp_tail_pixen_pulse_tl will enable tail pulse function"]
     #[inline(always)]
-    #[must_use]
     pub fn sharp_tail_pixen_pulse_th(
         &mut self,
     ) -> SHARP_TAIL_PIXEN_PULSE_TH_W<SHARP_MATRIX_CTRL_SPEC> {
@@ -76,13 +74,11 @@ impl W {
     }
     #[doc = "Bits 16:23 - this field configures sharp padding data"]
     #[inline(always)]
-    #[must_use]
     pub fn sharp_padding_data(&mut self) -> SHARP_PADDING_DATA_W<SHARP_MATRIX_CTRL_SPEC> {
         SHARP_PADDING_DATA_W::new(self, 16)
     }
     #[doc = "Bit 24 - this field configures sharp padding mode"]
     #[inline(always)]
-    #[must_use]
     pub fn sharp_padding_mode(&mut self) -> SHARP_PADDING_MODE_W<SHARP_MATRIX_CTRL_SPEC> {
         SHARP_PADDING_MODE_W::new(self, 24)
     }
